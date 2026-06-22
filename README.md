@@ -10,7 +10,9 @@ Thiele/Small parameters. No install, no licence key, runs on a phone. One HTML
 file. Validated against the closed-form physics, with a self-test that proves it
 on every load.
 
-> **[▶ Open the simulator](index.html)**  ·  works offline — just open the file.
+> ## ▶ [**Launch Resonate**](https://johnlon.github.io/resonate/)
+> Runs in your browser — nothing to install. Also works offline: download
+> `index.html` and open it directly.
 
 ---
 
@@ -53,9 +55,9 @@ public. See [CONTRIBUTING.md](CONTRIBUTING.md) for the model.
 
 It's a single static file. Any of these work:
 
-- Open `index.html` directly in a browser, or
-- Serve the folder: `python -m http.server` then visit `http://localhost:8000`, or
-- Use the hosted build (GitHub Pages).
+- **Hosted:** <https://johnlon.github.io/resonate/> — nothing to install, or
+- **Offline:** download `index.html` and open it directly in a browser, or
+- **Local server:** `python -m http.server` then visit `http://localhost:8000`.
 
 No build step, no dependencies, no toolchain.
 
