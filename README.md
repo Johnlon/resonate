@@ -1,6 +1,6 @@
 # Welcome to Resonate 
 
-Resonate is a currently "shitty" vibe coded spike based on the functionality offer by WinIsd.
+Resonate is a currently "shitty" vibe coded spike based on the functionality offered by WinIsd.
 
 WinIsd has been abandoned and is closed source so there is no opportunity to move it forward.
 
