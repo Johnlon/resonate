@@ -111,8 +111,8 @@ your machine unless you choose to share them.
 
 The intention is to keep it that way for as long as it's feasible. Any feature
 that genuinely required a backend would be a large, explicit architectural
-decision — not a default direction. The core simulator will always run offline
-for free. The source is MIT-licensed; if the maintainers vanish, fork it and
+decision — not a default direction. The intention is that the core simulator
+runs offline for free. The source is MIT-licensed; if the maintainers vanish, fork it and
 carry on.
 
 ## License
