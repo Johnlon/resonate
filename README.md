@@ -1,3 +1,27 @@
+# Welcome to Resonate 
+
+Resonate is a currently "shitty" vibe coded spike based on the functionality offer by WinIsd.
+
+WinIsd has been abandoned and is closed source so there is no opportunity to move it forward.
+
+The intention of Resonate is to form a collaboration of interested parties to build a modern alternative to WinIsd.
+
+The technical goals include compatibility with WinIsd file formats (and other) and to create a modern intuitive tool that address the numerous complaints on the internet about the WinIsd tool.
+
+The long term goal of Resonate are to build something open source using modern tech and with proper tests and architecture so that it doesn't rot when I drop dead or lose interest, ie to make this not shitty.
+
+I am looking for a band of the willing to move this thing forward.
+
+Please volunteer your time with ideas and feedback and pull requests for improving it.
+
+## Who am I?
+
+I am a software engineer with 40 years of experience and would like to the right thing here and have a bit of fun at the same time.
+
+My bio, CV and all my Hackaday projects can be found on my personal page https://johnlon.github.io/
+
+But I need your help; that's the whole point!
+
 # Resonate
 
 **An open, community-owned loudspeaker enclosure simulator that runs in any browser.**
