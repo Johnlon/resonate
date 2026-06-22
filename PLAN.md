@@ -50,7 +50,7 @@ One module at a time into `src/core/*.js` with the dual export (classic script +
 
 ### Phase 2 — Define & version the `Design → Curves` contract
 Write it down (shape of the `Design` input and the `Curves` output) in
-`docs/CONTRACT.md`, version it (`v1`), and make the core expose exactly that
+`CONTRACT.md`, version it (`v1`), and make the core expose exactly that
 surface: `simulate(design) → curves`, `deriveDriver`, `parseWdr` / `toWdr`,
 `align(...)`, `serializeState` / `applyState`. Tests assert against the contract,
 not internals.
