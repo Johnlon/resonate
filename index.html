@@ -21,8 +21,27 @@
   .tabs{display:flex;gap:2px;padding:6px 10px 0;background:var(--panel);border-bottom:1px solid var(--line);flex-wrap:wrap}
   .tab{padding:5px 11px;cursor:pointer;border:1px solid transparent;border-bottom:none;border-radius:5px 5px 0 0;color:var(--mut);font-size:12px}
   .tab.on{background:var(--bg);color:var(--fg);border-color:var(--line)}
-  .plotwrap{flex:1;position:relative;padding:8px 10px}
   canvas{display:block;width:100%;height:100%}
+  /* graph toolbar */
+  .gtoolbar{display:flex;align-items:center;gap:6px;flex-wrap:wrap;padding:6px 10px;background:var(--panel);border-bottom:1px solid var(--line)}
+  .gchip{padding:3px 9px;border:1px solid var(--line);border-radius:12px;font-size:11px;color:var(--mut);cursor:pointer;user-select:none}
+  .gchip.on{background:var(--acc);color:#06223a;border-color:var(--acc);font-weight:600}
+  .gtoolbar .sep{width:1px;align-self:stretch;background:var(--line);margin:0 4px}
+  .gtoolbar .lab{font-size:11px;color:var(--mut)}
+  /* graph grid */
+  .ggrid{flex:1;display:grid;gap:8px;padding:8px 10px;overflow:auto;grid-auto-rows:minmax(160px,1fr)}
+  .gpanel{position:relative;border:1px solid var(--line);border-radius:6px;background:#0e1218;overflow:hidden;min-height:160px}
+  .gpanel canvas{position:absolute;inset:0}
+  .gpanel .gtitle{position:absolute;left:8px;top:5px;font-size:11px;color:var(--mut);pointer-events:none;z-index:2}
+  .gpanel .gread{position:absolute;right:6px;top:5px;font-size:10.5px;background:rgba(10,14,20,.82);border:1px solid var(--line);border-radius:4px;padding:3px 6px;z-index:2;pointer-events:none;display:none;max-width:60%}
+  .gpanel .gread b{color:var(--fg)}
+  /* collapsed driver summary */
+  .drvsum{display:flex;align-items:center;gap:8px;padding:6px 8px;background:var(--panel2);border-radius:5px;cursor:pointer}
+  .drvsum .nm{flex:1;font-weight:600;color:var(--fg);font-size:12px}
+  .drvsum .ed{font-size:10px;color:var(--acc);border:1px solid var(--line);border-radius:4px;padding:2px 7px}
+  .drvsum:hover .ed{border-color:var(--acc)}
+  .drvspecs{font-size:10.5px;color:var(--mut);padding:4px 8px 2px;line-height:1.5}
+  .drvspecs b{color:var(--acc2)}
   fieldset{border:1px solid var(--line);border-radius:6px;margin:0 0 10px;padding:8px 10px}
   legend{color:var(--acc);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.5px;padding:0 4px}
   .row{display:flex;align-items:center;gap:6px;margin:3px 0}
@@ -84,12 +103,8 @@
 <div class="layout">
   <div class="side" id="side"></div>
   <div class="main">
-    <div class="tabs" id="tabs"></div>
-    <div class="plotwrap">
-      <canvas id="plot"></canvas>
-      <div class="legend" id="legend"></div>
-      <div class="readout" id="readout"></div>
-    </div>
+    <div class="gtoolbar" id="gtoolbar"></div>
+    <div class="ggrid" id="ggrid"></div>
     <div class="stat" id="stat"></div>
   </div>
 </div>
@@ -447,14 +462,17 @@ const PRESETS = {
    STATE
    ========================================================================= */
 const state = {
-  driverRaw: Object.assign({}, PRESETS["Generic 6.5\" woofer"]),
+  driverRaw: Object.assign({name:"Generic 6.5\" woofer"}, PRESETS["Generic 6.5\" woofer"]),
   driver: null,
   box: 'vented',
   P: { Vb:0.030, Vf:0.015, Sp:Math.PI*0.025*0.025, Leff:0.10, Ql:7, Qp:100,
        fb:35, ventD:0.05, ventL:0.10, nDrivers:1, wiring:'parallel', eg:2.83,
        prSd:0.0133, prMmp:0.030, prCms:0.0008, prRms:1.0, prXmax:0.012,
        fmin:10, fmax:1000, N:400 },
-  tab: 'SPL',
+  graphs: ['SPL','Excursion','Zmag','GD'],   // graphs shown simultaneously
+  compare: [],                                // pinned design snapshots to overlay
+  editDriver: false,                          // is the driver panel expanded for editing?
+  cursorF: null,                              // synced hover frequency across graphs
 };
 function recompute(){ state.driver = deriveDriver(state.driverRaw); }
 
@@ -476,9 +494,14 @@ const TABS = [
 /* =========================================================================
    CANVAS PLOTTER  (log-x frequency, linear-y, multi-series, hover crosshair)
    ========================================================================= */
-const cv=document.getElementById('plot'), ctx=cv.getContext('2d');
-const side=document.getElementById('side'), tabs=document.getElementById('tabs');
-let plotData=null;   // {series:[{xs,ys,color,name}], yunit, ylabel, ymin,ymax, logy?}
+const side=document.getElementById('side');
+const ggrid=document.getElementById('ggrid'), gtoolbar=document.getElementById('gtoolbar');
+let GR=[];                       // [{id,panel,canvas,ctx,title,read,plotData}]
+const DPAL=['#4fb0ff','#ffb454','#5ad17a','#ff6b6b','#c08bff'];  // design colours when comparing
+// per-design curve cache (so each design is swept once, not once per graph)
+function syncP(d){ if(d.box==='vented'||d.box==='bandpass4'){ d.P.Sp=Math.PI*(d.P.ventD/2)**2; d.P.Leff=d.P.ventL+0.85*d.P.ventD; } return d; }
+function designCurves(d){ if(!d._sw){ syncP(d); d._sw=sweep(d.driver,d.box,d.P); } return d._sw; }
+function designMax(d){ if(!d._mc){ syncP(d); d._mc=maxCurves(d.driver,d.box,d.P); } return d._mc; }
 function fmtF(f){ return f>=1000? (f/1000).toFixed(f<10000?2:1)+'k' : (f>=100?f.toFixed(0):f.toFixed(0)); }
 function niceTicks(min,max,n=6){
   const span=max-min, step0=span/n, mag=Math.pow(10,Math.floor(Math.log10(step0)));
@@ -486,13 +509,14 @@ function niceTicks(min,max,n=6){
   const t=[]; for(let v=Math.ceil(min/s)*s; v<=max+1e-9; v+=s) t.push(+v.toFixed(6));
   return t;
 }
-function drawPlot(){
+function drawOne(G){
+  const cv=G.canvas, ctx=G.ctx, plotData=G.plotData;
   const dpr=window.devicePixelRatio||1;
-  const W=cv.clientWidth, Hh=cv.clientHeight;
+  const W=cv.clientWidth||cv.width||300, Hh=cv.clientHeight||cv.height||180;
   cv.width=W*dpr; cv.height=Hh*dpr; ctx.setTransform(dpr,0,0,dpr,0,0);
   ctx.clearRect(0,0,W,Hh);
   if(!plotData) return;
-  const m={l:54,r:14,t:14,b:28};
+  const m={l:44,r:10,t:18,b:20};
   const pw=W-m.l-m.r, ph=Hh-m.t-m.b;
   const f0=state.P.fmin, f1=state.P.fmax;
   const lx0=Math.log10(f0), lx1=Math.log10(f1);
@@ -500,32 +524,21 @@ function drawPlot(){
   const ly0= logy?Math.log10(ymin):ymin, ly1= logy?Math.log10(ymax):ymax;
   const X=f=> m.l + (Math.log10(f)-lx0)/(lx1-lx0)*pw;
   const Y=v=>{ const vv=logy?Math.log10(v):v; return m.t + (1-(vv-ly0)/(ly1-ly0))*ph; };
-  // grid: decade + 1-2-5 freq lines
-  ctx.strokeStyle='#243040'; ctx.fillStyle='#7c8a9c'; ctx.font='10px Segoe UI'; ctx.lineWidth=1;
-  for(let dec=Math.floor(lx0); dec<=Math.ceil(lx1); dec++){
-    for(const mul of [1,2,3,4,5,6,7,8,9]){
-      const f=mul*Math.pow(10,dec); if(f<f0||f>f1) continue;
-      const x=X(f); ctx.globalAlpha = mul===1?0.9:0.35;
-      ctx.beginPath(); ctx.moveTo(x,m.t); ctx.lineTo(x,m.t+ph); ctx.stroke();
-      if(mul===1||mul===2||mul===5){ ctx.globalAlpha=1; ctx.textAlign='center';
-        ctx.fillText(fmtF(f), x, m.t+ph+13); }
-    }
+  ctx.strokeStyle='#243040'; ctx.fillStyle='#7c8a9c'; ctx.font='9px Segoe UI'; ctx.lineWidth=1;
+  for(let dec=Math.floor(lx0); dec<=Math.ceil(lx1); dec++) for(const mul of [1,2,3,4,5,6,7,8,9]){
+    const f=mul*Math.pow(10,dec); if(f<f0||f>f1) continue;
+    const x=X(f); ctx.globalAlpha = mul===1?0.85:0.28;
+    ctx.beginPath(); ctx.moveTo(x,m.t); ctx.lineTo(x,m.t+ph); ctx.stroke();
+    if(mul===1||mul===2||mul===5){ ctx.globalAlpha=1; ctx.textAlign='center'; ctx.fillText(fmtF(f), x, m.t+ph+11); }
   }
   ctx.globalAlpha=1;
-  // y grid
-  const yt = logy? logTicks(ymin,ymax) : niceTicks(ymin,ymax,7);
+  const yt = logy? logTicks(ymin,ymax) : niceTicks(ymin,ymax,5);
   ctx.textAlign='right';
   for(const v of yt){ const y=Y(v); if(y<m.t-1||y>m.t+ph+1) continue;
-    ctx.globalAlpha=0.5; ctx.beginPath(); ctx.moveTo(m.l,y); ctx.lineTo(m.l+pw,y); ctx.stroke();
-    ctx.globalAlpha=1; ctx.fillText(fmtY(v), m.l-6, y+3); }
-  // axis labels
-  ctx.fillStyle='#9aa8ba'; ctx.textAlign='center';
-  ctx.fillText('Frequency (Hz)', m.l+pw/2, Hh-2);
-  ctx.save(); ctx.translate(12,m.t+ph/2); ctx.rotate(-Math.PI/2);
-  ctx.fillText(plotData.ylabel, 0,0); ctx.restore();
-  // series
+    ctx.globalAlpha=0.4; ctx.beginPath(); ctx.moveTo(m.l,y); ctx.lineTo(m.l+pw,y); ctx.stroke();
+    ctx.globalAlpha=1; ctx.fillText(fmtY(v), m.l-5, y+3); }
   for(const s of plotData.series){
-    ctx.strokeStyle=s.color; ctx.lineWidth= s.dash?1.4:1.8;
+    ctx.strokeStyle=s.color; ctx.lineWidth= s.dash?1.1:1.7;
     if(s.dash) ctx.setLineDash([5,4]); else ctx.setLineDash([]);
     ctx.beginPath(); let started=false;
     for(let i=0;i<s.xs.length;i++){
@@ -537,102 +550,144 @@ function drawPlot(){
   }
   ctx.setLineDash([]);
   plotData._geo={m,pw,ph,X,Y,f0,f1};
+  // synced cursor across all graphs
+  if(state.cursorF && plotData.series[0]){
+    const s0=plotData.series[0]; let bi=0,bd=1e9;
+    for(let i=0;i<s0.xs.length;i++){const dd=Math.abs(Math.log10(s0.xs[i])-Math.log10(state.cursorF)); if(dd<bd){bd=dd;bi=i;}}
+    const fx=s0.xs[bi];
+    ctx.strokeStyle='#ffffff55'; ctx.setLineDash([3,3]);
+    ctx.beginPath(); ctx.moveTo(X(fx),m.t); ctx.lineTo(X(fx),m.t+ph); ctx.stroke(); ctx.setLineDash([]);
+    let html=`<b>${fx.toFixed(fx<100?1:0)}Hz</b>`;
+    for(const s of plotData.series){ if(s.dash) continue; const y=s.ys[bi];
+      ctx.fillStyle=s.color; ctx.beginPath(); ctx.arc(X(fx),Y(y),2.6,0,7); ctx.fill();
+      html+=` <span style="color:${s.color}">${fmtVal(y,plotData.unit)}</span>`; }
+    if(G.read){ G.read.innerHTML=html; G.read.style.display='block'; }
+  } else if(G.read){ G.read.style.display='none'; }
 }
+function drawAll(){ for(const G of GR) drawOne(G); }
 function fmtY(v){ const a=Math.abs(v); if(a>=1000) return (v/1000).toFixed(1)+'k'; if(a>=10) return v.toFixed(0); if(a>=1) return v.toFixed(1); return v.toFixed(2); }
 function logTicks(min,max){ const t=[]; for(let d=Math.floor(Math.log10(min)); d<=Math.ceil(Math.log10(max)); d++){ for(const mul of [1,2,5]){ const v=mul*Math.pow(10,d); if(v>=min&&v<=max) t.push(v);} } return t; }
 
-// hover crosshair + readout
-cv.addEventListener('mousemove',e=>{
-  if(!plotData||!plotData._geo) return;
-  const rect=cv.getBoundingClientRect(); const mx=e.clientX-rect.left;
-  const g=plotData._geo;
-  const frac=(mx-g.m.l)/g.pw; if(frac<0||frac>1){ ro.style.display='none'; drawPlot(); return; }
-  const f=Math.pow(10, Math.log10(g.f0)+frac*(Math.log10(g.f1)-Math.log10(g.f0)));
-  drawPlot();
-  // nearest index
-  const s0=plotData.series[0]; let bi=0,bd=1e9;
-  for(let i=0;i<s0.xs.length;i++){const dd=Math.abs(Math.log10(s0.xs[i])-Math.log10(f)); if(dd<bd){bd=dd;bi=i;}}
-  const fx=s0.xs[bi];
-  ctx.strokeStyle='#ffffff55'; ctx.setLineDash([3,3]);
-  ctx.beginPath(); ctx.moveTo(g.X(fx),g.m.t); ctx.lineTo(g.X(fx),g.m.t+g.ph); ctx.stroke(); ctx.setLineDash([]);
-  let html=`<div class="k">f = </div><b>${fx.toFixed(fx<100?1:0)} Hz</b>`;
-  for(const s of plotData.series){
-    const y=s.ys[bi];
-    ctx.fillStyle=s.color; ctx.beginPath(); ctx.arc(g.X(fx),g.Y(y),3,0,7); ctx.fill();
-    html+=`<div style="color:${s.color}">${s.name}: <b>${fmtVal(y,plotData.unit)}</b></div>`;
-  }
-  ro.innerHTML=html; ro.style.display='block';
-});
-cv.addEventListener('mouseleave',()=>{ro.style.display='none'; drawPlot();});
-const ro=document.getElementById('readout');
 function fmtVal(v,u){ if(!isFinite(v))return '—'; const a=Math.abs(v); const d= a>=100?0:a>=10?1:2; return v.toFixed(d)+' '+u; }
 
 /* =========================================================================
    RENDER PLOT for current tab
    ========================================================================= */
-function render(){
-  recompute();
-  const drv=state.driver, box=state.box, P=state.P;
-  // sync derived port effective length from current vent geometry
-  if(box==='vented'||box==='bandpass4'){
-    P.Sp=Math.PI*(P.ventD/2)**2;
-    const d=P.ventD;
-    P.Leff=P.ventL + 0.85*d;     // one flanged + one free end ≈ 0.85d total (approx)
-  }
-  const sw=sweep(drv,box,P);
-  const meta=TABS.find(t=>t.id===state.tab);
-  let series=[], ylabel=meta.name+' ('+meta.unit+')', ymin,ymax,logy=false, unit=meta.unit;
-
+// curves for ONE graph + ONE design (pure; series[0] is the primary curve)
+function seriesFor(tabId, d){
+  const drv=d.driver, box=d.box, P=d.P, sw=designCurves(d);
+  const meta=TABS.find(t=>t.id===tabId);
+  let series=[], ymin,ymax,logy=false, unit=meta.unit;
   const pick=(arr)=>({xs:sw.fs,ys:arr});
-  if(state.tab==='SPL'){
-    const ys=sw.spl; series=[{...pick(ys),color:meta.color,name:'SPL'}];
-    const mx=Math.max(...ys); ymax=Math.ceil((mx+3)/5)*5; ymin=ymax-45;
-  }else if(state.tab==='Excursion'){
-    series=[{...pick(sw.exc),color:meta.color,name:'Driver cone'}];
+  if(tabId==='SPL'){
+    series=[{...pick(sw.spl),color:meta.color,name:'SPL'}];
+    const mx=Math.max(...sw.spl); ymax=Math.ceil((mx+3)/5)*5; ymin=ymax-45;
+  }else if(tabId==='Excursion'){
+    series=[{...pick(sw.exc),color:meta.color,name:'Cone'}];
     const xm=(drv.Xmax*1000);
-    series.push({xs:sw.fs,ys:sw.fs.map(_=>xm),color:'#ff6b6b',name:'Driver Xmax',dash:true});
+    series.push({xs:sw.fs,ys:sw.fs.map(_=>xm),color:'#ff6b6b',name:'Xmax',dash:true});
     let top=Math.max(xm*1.4, Math.max(...sw.exc.slice(0,20))*1.1);
-    if(box==='pr'){                       // add passive-radiator excursion + its limit
-      series.push({xs:sw.fs,ys:sw.excPR,color:'#5ad17a',name:'PR diaphragm'});
+    if(box==='pr'){
+      series.push({xs:sw.fs,ys:sw.excPR,color:'#5ad17a',name:'PR'});
       const xmp=(P.prXmax||0.01)*1000;
       series.push({xs:sw.fs,ys:sw.fs.map(_=>xmp),color:'#9ad17a',name:'PR Xmax',dash:true});
       top=Math.max(top, xmp*1.3, Math.max(...sw.excPR.slice(0,30))*1.1);
     }
     ymin=0; ymax=top;
-  }else if(state.tab==='Port'){
-    if(box!=='vented'&&box!=='bandpass4'){ series=[{xs:sw.fs,ys:sw.fs.map(_=>0),color:meta.color,name:box==='pr'?'PR — see Excursion tab':'n/a (no port)'}]; ymin=0;ymax=1; }
+  }else if(tabId==='Port'){
+    if(box!=='vented'&&box!=='bandpass4'){ series=[{xs:sw.fs,ys:sw.fs.map(_=>0),color:meta.color,name:'n/a'}]; ymin=0;ymax=1; }
     else { series=[{...pick(sw.pv),color:meta.color,name:'Port vel'}];
-      series.push({xs:sw.fs,ys:sw.fs.map(_=>0.05*C),color:'#ffb454',name:'17 m/s (chuff)',dash:true});
+      series.push({xs:sw.fs,ys:sw.fs.map(_=>0.05*C),color:'#ffb454',name:'17 m/s',dash:true});
       ymin=0; ymax=Math.max(20, Math.max(...sw.pv)*1.1); }
-  }else if(state.tab==='GD'){
+  }else if(tabId==='GD'){
     series=[{...pick(sw.gd),color:meta.color,name:'Group delay'}];
     const mx=Math.max(...sw.gd.filter(isFinite)); ymin=0; ymax=Math.max(mx*1.1,5);
-  }else if(state.tab==='Zmag'){
+  }else if(tabId==='Zmag'){
     series=[{...pick(sw.zmag),color:meta.color,name:'|Z|'}];
     logy=true; ymin=Math.max(1,Math.min(...sw.zmag)*0.9); ymax=Math.max(...sw.zmag)*1.15;
-  }else if(state.tab==='Zph'){
-    series=[{...pick(sw.zph),color:meta.color,name:'Z phase'}];
-    ymin=-90; ymax=90;
-  }else if(state.tab==='Phase'){
+  }else if(tabId==='Zph'){
+    series=[{...pick(sw.zph),color:meta.color,name:'Z phase'}]; ymin=-90; ymax=90;
+  }else if(tabId==='Phase'){
     series=[{xs:sw.fs,ys:sw.phase.map(p=>p*180/Math.PI),color:meta.color,name:'Phase'}];
     const ys=series[0].ys; ymin=Math.floor(Math.min(...ys)/90)*90; ymax=Math.ceil(Math.max(...ys)/90)*90;
-  }else if(state.tab==='MaxSPL'){
-    const mc=maxCurves(drv,box,P);
-    series=[{xs:mc.fs,ys:mc.maxspl,color:meta.color,name:'Max SPL'}];
+  }else if(tabId==='MaxSPL'){
+    const mc=designMax(d); series=[{xs:mc.fs,ys:mc.maxspl,color:meta.color,name:'Max SPL'}];
     const mx=Math.max(...mc.maxspl); ymax=Math.ceil(mx/5)*5; ymin=ymax-40;
-  }else if(state.tab==='MaxPwr'){
-    const mc=maxCurves(drv,box,P);
-    series=[{xs:mc.fs,ys:mc.maxpwr,color:meta.color,name:'Max power'}];
+  }else if(tabId==='MaxPwr'){
+    const mc=designMax(d); series=[{xs:mc.fs,ys:mc.maxpwr,color:meta.color,name:'Max power'}];
     logy=true; ymin=1; ymax=Math.max(...mc.maxpwr)*1.2;
   }
-  plotData={series,ylabel,ymin,ymax,logy,unit};
-  drawPlot();
-  renderLegend(series);
-  renderStat(sw,drv,box,P);
+  return {series,ymin,ymax,logy,unit};
 }
-function renderLegend(series){
-  document.getElementById('legend').innerHTML =
-    series.map(s=>`<span><i style="background:${s.color}"></i>${s.name}</span>`).join('');
+// merge current design + pinned comparisons into one graph's plotData
+function buildGraph(tabId, cur){
+  const designs=[cur, ...state.compare], multi=designs.length>1;
+  let out=null;
+  designs.forEach((d,di)=>{
+    const pd=seriesFor(tabId,d);
+    if(!out) out={series:[], ymin:pd.ymin, ymax:pd.ymax, logy:pd.logy, unit:pd.unit};
+    const prim={...pd.series[0]};
+    if(multi){ prim.color=d.color||DPAL[di%DPAL.length]; prim.name=d.name+': '+prim.name; }
+    out.series.push(prim);
+    if(di===0) for(let k=1;k<pd.series.length;k++) out.series.push(pd.series[k]); // reference lines from current only
+    out.ymin=Math.min(out.ymin,pd.ymin); out.ymax=Math.max(out.ymax,pd.ymax); out.logy=out.logy||pd.logy;
+  });
+  return out;
+}
+function driverShort(raw){ return ((raw.name)||[raw.brand,raw.model].filter(Boolean).join(' ')||'Driver').replace(/\.wdr$/i,''); }
+
+function buildGrid(){
+  ggrid.innerHTML=''; GR=[];
+  const n=state.graphs.length, cols = n<=1?1 : n<=4?2 : 3;
+  ggrid.style.gridTemplateColumns='repeat('+cols+',1fr)';
+  for(const id of state.graphs){
+    const meta=TABS.find(t=>t.id===id)||{name:id};
+    const panel=document.createElement('div'); panel.className='gpanel';
+    const canvas=document.createElement('canvas');
+    const title=document.createElement('div'); title.className='gtitle'; title.textContent=meta.name;
+    const read=document.createElement('div'); read.className='gread';
+    panel.appendChild(canvas); panel.appendChild(title); panel.appendChild(read);
+    ggrid.appendChild(panel);
+    const G={id,panel,canvas,ctx:canvas.getContext('2d'),title,read,plotData:null};
+    canvas.addEventListener('mousemove',e=>{
+      const pd=G.plotData; if(!pd||!pd._geo) return; const g=pd._geo;
+      const rect=canvas.getBoundingClientRect(); const frac=(e.clientX-rect.left-g.m.l)/g.pw;
+      if(frac<0||frac>1){ if(state.cursorF!==null){state.cursorF=null; drawAll();} return; }
+      state.cursorF=Math.pow(10, Math.log10(g.f0)+frac*(Math.log10(g.f1)-Math.log10(g.f0))); drawAll();
+    });
+    canvas.addEventListener('mouseleave',()=>{ state.cursorF=null; drawAll(); });
+    GR.push(G);
+  }
+}
+function buildToolbar(){
+  const chips = TABS.map(t=>`<span class="gchip ${state.graphs.includes(t.id)?'on':''}" data-g="${t.id}">${t.name}</span>`).join('');
+  const cmp = state.compare.map((d,i)=>`<span class="gchip on" style="border-color:${d.color};color:${d.color}" data-rm="${i}">${d.name} ✕</span>`).join('');
+  gtoolbar.innerHTML = `<span class="lab">Graphs:</span>${chips}<span class="sep"></span>`+
+    `<button id="pinCmp">+ Compare current</button>`+(state.compare.length?`<span class="lab">vs</span>${cmp}<button id="clrCmp">clear</button>`:'');
+  gtoolbar.querySelectorAll('.gchip[data-g]').forEach(el=>el.onclick=()=>{
+    const id=el.dataset.g, i=state.graphs.indexOf(id);
+    if(i>=0){ if(state.graphs.length>1) state.graphs.splice(i,1); } else state.graphs.push(id);
+    render();
+  });
+  const pin=gtoolbar.querySelector('#pinCmp'); if(pin) pin.onclick=()=>{
+    state.compare.push({ driver:deriveDriver(state.driverRaw), box:state.box,
+      P:JSON.parse(JSON.stringify(state.P)),
+      name:driverShort(state.driverRaw)+' ('+state.box+' '+(state.P.Vb*1000).toFixed(0)+'L)',
+      color:DPAL[(state.compare.length+1)%DPAL.length] });
+    render();
+  };
+  const clr=gtoolbar.querySelector('#clrCmp'); if(clr) clr.onclick=()=>{ state.compare=[]; render(); };
+  gtoolbar.querySelectorAll('.gchip[data-rm]').forEach(el=>el.onclick=()=>{ state.compare.splice(+el.dataset.rm,1); render(); });
+}
+function render(){
+  recompute();
+  if(state.box==='vented'||state.box==='bandpass4'){ state.P.Sp=Math.PI*(state.P.ventD/2)**2; state.P.Leff=state.P.ventL+0.85*state.P.ventD; }
+  const cur={driver:state.driver, box:state.box, P:state.P, name:driverShort(state.driverRaw), color:DPAL[0]};
+  if(GR.length!==state.graphs.length || GR.some((G,i)=>G.id!==state.graphs[i])) buildGrid();
+  for(const G of GR) G.plotData=buildGraph(G.id, cur);
+  drawAll();
+  renderStat(designCurves(cur), cur.driver, cur.box, cur.P);
+  buildToolbar();
 }
 function renderStat(sw,drv,box,P){
   const f3 = findF3(sw.fs,sw.spl);
@@ -678,25 +733,32 @@ function buildSide(){
   const eb=ebp(drv);
   const sug = eb<50?'sealed': eb>100?'vented':'either sealed or vented';
   let h='';
-  // driver
-  h+=`<fieldset><legend>Driver</legend>
-    <div class="row"><label>Preset</label><select id="preset">
-      <option value="">— load preset —</option>
-      ${Object.keys(PRESETS).map(k=>`<option>${k}</option>`).join('')}
-    </select></div>
-    ${num('Fs',d,'Fs','Hz')}
-    ${num('Qts',d,'Qts','')}
-    ${num('Qes',d,'Qes','')}
-    ${num('Qms',d,'Qms','')}
-    ${num('Vas',d,'Vas','L',1000)}
-    ${num('Sd',d,'Sd','cm²',1e4)}
-    ${num('Re',d,'Re','Ω')}
-    ${num('Le',d,'Le','mH',1000)}
-    ${num('Xmax',d,'Xmax','mm',1000)}
-    ${num('Pe',d,'Pe','W')}
-    <div class="ebp">EBP = Fs/Qes = <b>${eb.toFixed(0)}</b> → suggests <b>${sug}</b>.
-      Derived: Bl=${drv.Bl.toFixed(2)} Tm, Mms=${(drv.Mms*1000).toFixed(1)} g, Cms=${(drv.Cms*1000).toFixed(3)} mm/N</div>
-  </fieldset>`;
+  // driver — compact summary by default; full T/S only while editing
+  h+=`<fieldset><legend>Driver</legend>`;
+  if(!state.editDriver){
+    h+=`<div class="drvsum" id="drvEdit"><span class="nm">${driverShort(d)}</span><span class="ed">Edit ✎</span></div>
+        <div class="drvspecs">Fs <b>${(+d.Fs||0).toFixed(0)} Hz</b> · Qts <b>${(+drv.Qts||0).toFixed(2)}</b> · Vas <b>${(d.Vas*1000).toFixed(1)} L</b> · Sd <b>${(d.Sd*1e4).toFixed(0)} cm²</b> · Re <b>${(+d.Re||0).toFixed(1)} Ω</b> · Xmax <b>${(d.Xmax*1000).toFixed(1)} mm</b><br>
+          EBP <b>${eb.toFixed(0)}</b> → ${sug} · Bl ${drv.Bl.toFixed(1)} Tm · Mms ${(drv.Mms*1000).toFixed(1)} g</div>`;
+  } else {
+    h+=`<div class="row"><label>Preset</label><select id="preset">
+          <option value="">— load preset —</option>
+          ${Object.keys(PRESETS).map(k=>`<option>${k}</option>`).join('')}
+        </select></div>
+        ${num('Fs',d,'Fs','Hz')}
+        ${num('Qts',d,'Qts','')}
+        ${num('Qes',d,'Qes','')}
+        ${num('Qms',d,'Qms','')}
+        ${num('Vas',d,'Vas','L',1000)}
+        ${num('Sd',d,'Sd','cm²',1e4)}
+        ${num('Re',d,'Re','Ω')}
+        ${num('Le',d,'Le','mH',1000)}
+        ${num('Xmax',d,'Xmax','mm',1000)}
+        ${num('Pe',d,'Pe','W')}
+        <div class="ebp">EBP = Fs/Qes = <b>${eb.toFixed(0)}</b> → suggests <b>${sug}</b>.
+          Derived: Bl=${drv.Bl.toFixed(2)} Tm, Mms=${(drv.Mms*1000).toFixed(1)} g, Cms=${(drv.Cms*1000).toFixed(3)} mm/N</div>
+        <div class="btns"><button id="drvDone">Done editing</button></div>`;
+  }
+  h+=`</fieldset>`;
   // box
   h+=`<fieldset><legend>Enclosure</legend>
     <div class="row"><label>Type</label><select id="boxtype">
@@ -754,8 +816,10 @@ function wireSide(){
       refreshDerivedLabels();
     });
   });
+  const dEdit=side.querySelector('#drvEdit'); if(dEdit) dEdit.onclick=()=>{ state.editDriver=true; buildSide(); };
+  const dDone=side.querySelector('#drvDone'); if(dDone) dDone.onclick=()=>{ state.editDriver=false; buildSide(); };
   const preset=side.querySelector('#preset');
-  if(preset) preset.onchange=e=>{ if(e.target.value){ state.driverRaw=Object.assign({},PRESETS[e.target.value]); buildSide(); render(); } };
+  if(preset) preset.onchange=e=>{ if(e.target.value){ state.driverRaw=Object.assign({name:e.target.value},PRESETS[e.target.value]); buildSide(); render(); } };
   side.querySelector('#boxtype').onchange=e=>{ state.box=e.target.value; buildSide(); render(); };
   const w=side.querySelector('#wiring'); if(w) w.onchange=e=>{state.P.wiring=e.target.value; render();};
   const aq=side.querySelector('#alQtc'); if(aq) aq.onclick=()=>{ const vb=sealedFromQtc(state.driver,0.707); if(vb){state.P.Vb=vb; buildSide(); render();} };
@@ -773,11 +837,6 @@ function wireSide(){
 function refreshDerivedLabels(){
   // lightweight: rebuild only if the Fb / power labels exist — cheap full rebuild guarded to preserve focus
   const fbEl=side.querySelector('fieldset legend'); // no-op anchor
-}
-
-function buildTabs(){
-  tabs.innerHTML=TABS.map(t=>`<div class="tab ${state.tab===t.id?'on':''}" data-tab="${t.id}">${t.name}</div>`).join('');
-  tabs.querySelectorAll('.tab').forEach(el=>el.onclick=()=>{state.tab=el.dataset.tab; buildTabs(); render();});
 }
 
 /* =========================================================================
@@ -804,7 +863,7 @@ document.getElementById('fileImport').onchange=e=>{
       const o=JSON.parse(rd.result);                    // our JSON project
       if(o.driver) state.driverRaw=o.driver; if(o.box) state.box=o.box; if(o.P) Object.assign(state.P,o.P);
     }
-    buildSide(); buildTabs(); render();
+    buildSide(); render();
   }catch(err){ alert('Could not read "'+f.name+'": '+err.message);} };
   rd.readAsText(f);
 };
@@ -880,7 +939,7 @@ async function pickFile(f){
   try{
     const r=await fetch(rawUrl(f)); if(!r.ok) throw new Error('fetch failed ('+r.status+')');
     state.driverRaw = parseWdr(await r.text());
-    buildSide(); buildTabs(); render();
+    buildSide(); render();
     ov.classList.remove('on');
   }catch(err){ $('srcStatus').className='status err'; $('srcStatus').textContent='Could not load: '+err.message; }
 }
@@ -979,8 +1038,8 @@ function selfTest(){
 /* =========================================================================
    BOOT
    ========================================================================= */
-function init(){ recompute(); buildSide(); buildTabs(); render(); selfTest(); }
-window.addEventListener('resize', drawPlot);
+function init(){ recompute(); buildSide(); render(); selfTest(); }
+window.addEventListener('resize', drawAll);
 init();
 </script>
 </body>
