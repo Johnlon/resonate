@@ -8,11 +8,12 @@ The intention of Resonate is to form a collaboration of interested parties to bu
 
 The technical goals include compatibility with WinIsd file formats (and other) and to create a modern intuitive tool that address the numerous complaints on the internet about the WinIsd tool.
 
-The long term goal of Resonate are to build something open source using modern tech and with proper tests and architecture so that it doesn't rot when I drop dead or lose interest, ie to make this not shitty.
+The long term goals of Resonate are to build something open source using modern tech and with proper tests and architecture so that it doesn't rot when I drop dead or lose interest, ie to make this not shitty.
 
-I am looking for a band of the willing to move this thing forward.
+**I am looking for a band of the willing to move this thing forward.**
 
 Please volunteer your time with ideas and feedback and pull requests for improving it.
+
 
 ## Who am I?
 
@@ -98,6 +99,14 @@ Newcomers welcome — you do not need to be an acoustician. The engine is plain
 JavaScript in one file with no build step; a new box type or filter is a weekend
 and a pull request. Start with [CONTRIBUTING.md](CONTRIBUTING.md) and the
 [roadmap](ROADMAP.md).
+
+## Free?
+
+I have no intention of putting this behind a pay-wall, though also if we need certain features that require back end resources then that needs paying for. 
+
+The reality is that maybe at some point we will need a subscription for certain features to pay for the back end if we cant figure out how to avoid that. 
+
+But even then, what can be free will be free, and in any case you have the source code here to do with what you wish.
 
 ## License
 
