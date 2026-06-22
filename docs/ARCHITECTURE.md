@@ -33,30 +33,27 @@ that is a conscious decision to revisit this — not a default direction.
 
 ---
 
-## AD-2: Offline-safe module style (build step is a separate question)
+## AD-2: The shipped app must work from `file://`
 
-**Decision:** The shipped app uses classic `<script src>` includes rather than
-ES modules (`import` / `<script type="module">`).
+**Decision:** The built output must run when `index.html` is opened directly in
+a browser (no local server, no internet). This is a runtime output constraint,
+not a statement about the development workflow or build tooling.
 
 **Rationale:**
-- ES module `import` uses CORS fetch semantics. On a `file://` origin (double-
-  clicking `index.html` offline) this silently fails — the app breaks invisibly
-  without a local server. Classic `<script src>` works on `file://`.
-- This is a constraint on how the **app runs**, not on the development workflow.
-  A build step (bundler, transpiler, etc.) is a separate, independent decision:
-  it is fine to have one if it makes development easier, provided the *output*
-  satisfies the offline constraint.
+- ES module `import` uses CORS fetch semantics and silently fails on a `file://`
+  origin. The output therefore cannot use bare `import` statements.
+- How we *produce* that output — build step, bundler, hand-written — is a
+  separate concern and not decided here.
 
-**Implication:** Core modules use a dual export pattern so they run in both the
-browser (as `<script src>`) and in Node.js tests (`require()`):
+**Implication:** Whatever the build process produces, the output must load via
+classic `<script src>` or equivalent, not ES module imports. Core modules also
+expose a Node-compatible export for test use:
 
 ```js
 const API = { /* public functions */ };
 if (typeof module !== 'undefined') module.exports = API;          // Node tests
 if (typeof window !== 'undefined') window.R = Object.assign(window.R||{}, API); // browser
 ```
-
-See [DEVELOPMENT.md](DEVELOPMENT.md) for the full rationale.
 
 **Status:** Adopted.
 
