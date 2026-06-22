@@ -14,30 +14,35 @@ today's engine · **P2** = larger but well-defined · **P3** = big rocks (design
 
 Resonate is a spike: logic is one inline script in `index.html`, "verified" by a
 self-test that string-slices the engine out and `eval`s it, with no real UI tests.
-That doesn't scale. See [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) for the target.
-**Feature work is gated on this.**
+The aim: a decoupled, fully-tested core library that any UI (web, mobile,
+third-party) can build on. **Full plan: [docs/PLAN.md](docs/PLAN.md)** ·
+practices: [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) · oracles:
+[docs/REFERENCES.md](docs/REFERENCES.md). **Feature work is gated on this.**
 
-- [ ] **P0** Extract the core (physics, alignments, PR, `.wdr`, state) into
-      `src/core/*.js` — no DOM — with a dual export (classic `<script src>` for
-      the browser + `module.exports` for Node). Preserves offline `file://`; no
-      build step.
-- [ ] **P0** Go/no-go after first extraction: `index.html` still opens from
-      `file://` **and** `node --test` requires the module. Both pass → continue.
-- [ ] **P0** Migrate the physics gates + `.wdr`/state round-trips into real unit
-      tests under `node:test` (retire the string-slice hack).
-- [ ] **P0** Add functional tests with **Playwright** (headless browser): grid
-      renders non-blank canvases, driver collapse/expand, `.wdr` import changes
-      the curve, share-link round-trip. This automates the rendering check we
-      currently push onto the user.
-- [ ] **Research** Chrome's MCP server (browser-automation MCP) as a functional-
-      test driver — evaluate vs Playwright for driving the real app and checking
-      rendered canvases; note setup, CI fit, and whether it can replace or
-      complement Playwright.
-- [ ] **P0** Expand CI to run both suites on every push / PR.
-- [ ] **P0** Persist current design across reloads (ctrl-R must keep the selected
-      driver) — auto-save state to `localStorage`, restore on load.
-- [ ] **P0** Power input convention: drive the model by **power (W)** as the
-      primary input (derive voltage), matching WinISD's signal-source model.
+- [ ] **P0 · Phase 0** Golden-master fixtures: freeze current sweep outputs for
+      every box type, assert equality — the net that proves extraction preserves
+      behaviour, before any code moves.
+- [ ] **P0 · Phase 1** Extract the core (`complex`, `driver`, `wdr`, `circuit`,
+      `sweep`, `alignments`, `state`) into `src/core/*.js` — no DOM — one module
+      at a time, **extracting not rewriting**, with the dual export (classic
+      `<script src>` + `module.exports`). Go/no-go after each: opens from
+      `file://` **and** `node --test` requires it.
+- [ ] **P0 · Phase 2** Define & version the `Design → Curves` contract
+      (`docs/CONTRACT.md`) — the documented API third-party UIs depend on.
+- [ ] **P0 · Phase 3** Per-module functional tests vs tiered oracles (closed
+      forms > datasheets > alignment tables > cross-tool); retire the string-slice
+      hack. Verify alignment-table numbers against a primary source first.
+- [ ] **P0 · Phase 4** Rebuild the Resonate UI on the core contract only.
+- [ ] **P0 · Phase 5** Playwright functional tests + CI runs unit + golden +
+      functional on every push / PR.
+- [ ] **Research** Chrome's MCP server as a functional-test driver — evaluate vs
+      Playwright for driving the real app and checking rendered canvases.
+- [ ] **P1 · Phase 6** Mobile / responsive (PWA) UI as a second consumer of the
+      core — proves the decoupling; deferred, not part of the foundation.
+- [ ] **P1** Error visibility sized to a static client tool: global error
+      boundary + a debug-log toggle (not an observability stack).
+- [x] **P0** Persist design across reloads (ctrl-R keeps the driver) — localStorage
+- [x] **P0** Power input convention: primary input is **power (W)**, voltage derived
 
 ---
 
