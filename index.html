@@ -931,10 +931,11 @@ Curves: SPL, driver+PR excursion, air velocity, group delay,
 FILES:
   • Import / Export WinISD .wdr driver files (INI text, SI units). Imported
     drivers are made internally self-consistent; core T/S round-trips exactly.
+  • Browse drivers: load .wdr files on demand from federated GitHub repos
+    listed in drivers/sources.json, or any repo you paste.
   • Save/load whole projects as JSON.
-  • .wpr projects: WinISD writes these as a Lazarus binary component stream
-    (TBinaryObjectWriter). Not supported — would need a sample .wpr to match
-    the exact binary layout. Use the JSON project format instead.
+  • .wpr WinISD projects: plain INI text in current WinISD — import is feasible
+    and on the roadmap; for now, save/load as JSON.
 
 Not yet ported from WinISD: 6th-order bandpass, iso-baric, full filter/EQ
 chain (Linkwitz transform, parametric EQ), diffraction/baffle step.`);

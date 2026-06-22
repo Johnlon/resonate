@@ -100,7 +100,7 @@ proven by another tool.
 - ✅ Multiple drivers (series / parallel)
 - ✅ **WinISD `.wdr` import**
 - ✅ **WinISD `.wdr` export** — *00 Simulator also exports WinISD-compatible files*
-- ⬜ WinISD `.wpr` project import — *00 Simulator does this; Lazarus binary format, needs a sample*
+- ⬜ WinISD `.wpr` project import — *00 Simulator does this; `.wpr` is plain INI text in current WinISD (sections decoded), so this is feasible*
 - ⬜ Unibox spreadsheet import — *seen in 00 Simulator*
 - 🔨 Open, version-controlled driver database (`drivers/`) — seeded
 - ✅ **Federated driver sources** — link to other repos (`drivers/sources.json`)
