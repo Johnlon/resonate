@@ -5,8 +5,35 @@ enclosure-design tool. Items are described on their own terms; each notes how it
 fits the existing engine so it can become a GitHub issue. Priorities are a guide,
 not a contract — pick what interests you and open a PR.
 
-**P1** = high value, tractable on today's engine · **P2** = larger but well-defined
-· **P3** = big rocks (design first).
+**P0** = foundation, gates everything below · **P1** = high value, tractable on
+today's engine · **P2** = larger but well-defined · **P3** = big rocks (design first).
+
+---
+
+## P0 — Test & architecture foundation  *(do this before more features)*
+
+Resonate is a spike: logic is one inline script in `index.html`, "verified" by a
+self-test that string-slices the engine out and `eval`s it, with no real UI tests.
+That doesn't scale. See [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) for the target.
+**Feature work is gated on this.**
+
+- [ ] **P0** Extract the core (physics, alignments, PR, `.wdr`, state) into
+      `src/core/*.js` — no DOM — with a dual export (classic `<script src>` for
+      the browser + `module.exports` for Node). Preserves offline `file://`; no
+      build step.
+- [ ] **P0** Go/no-go after first extraction: `index.html` still opens from
+      `file://` **and** `node --test` requires the module. Both pass → continue.
+- [ ] **P0** Migrate the physics gates + `.wdr`/state round-trips into real unit
+      tests under `node:test` (retire the string-slice hack).
+- [ ] **P0** Add functional tests with **Playwright** (headless browser): grid
+      renders non-blank canvases, driver collapse/expand, `.wdr` import changes
+      the curve, share-link round-trip. This automates the rendering check we
+      currently push onto the user.
+- [ ] **P0** Expand CI to run both suites on every push / PR.
+- [ ] **P0** Persist current design across reloads (ctrl-R must keep the selected
+      driver) — auto-save state to `localStorage`, restore on load.
+- [ ] **P0** Power input convention: drive the model by **power (W)** as the
+      primary input (derive voltage), matching WinISD's signal-source model.
 
 ---
 
