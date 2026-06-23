@@ -11,6 +11,7 @@ export const state = reactive({
     nDrivers:1, wiring:'parallel', Pin:1,
     prSd:0.0133, prMmp:0.030, prCms:0.0008, prRms:1.0, prXmax:0.012,
     fmin:10, fmax:1000, N:400,
+    filters: [],
   },
   graphs: ['SPL', 'Excursion', 'Zmag', 'GD'],
   compare: [],
@@ -41,6 +42,7 @@ export function driverShort(raw) {
 
 export function pinCompare() {
   const p = { ...syncedP.value };
+  p.filters = (p.filters || []).map(f => ({ ...f }));  // snapshot; isolate from future edits
   const d = {
     driver: driver.value,
     box:    state.box,

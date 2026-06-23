@@ -15,6 +15,7 @@
 import { RHO, P0 } from './constants.js';
 import { cx, cScale, cMul, cAbs, cArg } from './complex.js';
 import { solve } from './circuit.js';
+import { applyFilters } from './filters.js';
 
 /**
  * Unwrap a phase array (radians) to remove ±π discontinuities.
@@ -56,7 +57,11 @@ export function sweep(drv, box, P) {
     const s   = solve(f, drv, box, P);
     const w   = 2 * Math.PI * f;
     // p = ρ·ω·U₀/(2π·r)  https://en.wikipedia.org/wiki/Acoustic_impedance#Radiation_impedance
-    const Hc  = cScale(cMul(cx(0, w), s.U0), RHO / (2 * Math.PI * r));
+    // Filters are line-level (upstream of amp) — multiply Hc, UD, UP; Zel is unaffected.
+    const Hf  = applyFilters(f, P.filters);
+    let   Hc  = cMul(cScale(cMul(cx(0, w), s.U0), RHO / (2 * Math.PI * r)), Hf);
+    const UD  = cMul(s.UD, Hf);
+    const UP  = cMul(s.UP, Hf);
     const pm  = cAbs(Hc);
     const Sdt = drv.Sd * (P.nDrivers || 1);
     const area = box === 'pr' ? P.prSd : P.Sp;
@@ -65,9 +70,9 @@ export function sweep(drv, box, P) {
     spl.push(pm > 0 ? 20 * Math.log10(pm / P0) : -200);
     phase.push(cArg(Hc));
     // x_peak = √2·|UD|/(ω·Sd)  https://en.wikipedia.org/wiki/Thiele/Small_parameters#Small_signal_parameters
-    exc.push(Math.SQRT2 * cAbs(s.UD) / (w * Sdt) * 1000);
-    pv.push(area ? Math.SQRT2 * cAbs(s.UP) / area : 0);
-    excPR.push(box === 'pr' ? Math.SQRT2 * cAbs(s.UP) / (w * P.prSd) * 1000 : 0);
+    exc.push(Math.SQRT2 * cAbs(UD) / (w * Sdt) * 1000);
+    pv.push(area ? Math.SQRT2 * cAbs(UP) / area : 0);
+    excPR.push(box === 'pr' ? Math.SQRT2 * cAbs(UP) / (w * P.prSd) * 1000 : 0);
     zmag.push(cAbs(s.Zel));
     zph.push(cArg(s.Zel) * 180 / Math.PI);
   }

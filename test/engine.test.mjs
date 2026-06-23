@@ -11,7 +11,8 @@
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
-import { deriveDriver, sweep, parseWdr, toWdr, prTuning, prMassForFp, RHO, C } from '../src/core/index.js';
+import { deriveDriver, sweep, parseWdr, toWdr, prTuning, prMassForFp, RHO, C,
+         highPass, lowPass, linkwitz, peakingEQ, applyFilters, cx, cAbs } from '../src/core/index.js';
 
 const here = dirname(fileURLToPath(import.meta.url));
 
@@ -104,6 +105,54 @@ console.log('\nResonate engine validation\n');
   const d = deriveDriver(rt);
   check('exported .wdr is internally self-consistent (Fs/Qts/Qes preserved)',
         Math.abs(d.Fs-45)<1e-6 && Math.abs(d.Qts-0.49)<1e-3 && Math.abs(d.Qes-0.57)<1e-3);
+}
+
+// --- Filter chain -----------------------------------------------------------
+{
+  // No-op: empty filter array must not change any existing sweep output
+  const d = deriveDriver({ ...testDrv, Le:0 }), Vb = 0.020;
+  const base = sweep(d, 'sealed', { Vb, Ql:1e6, eg:2.83, fmin:10, fmax:1000, N:50 });
+  const filt = sweep(d, 'sealed', { Vb, Ql:1e6, eg:2.83, fmin:10, fmax:1000, N:50, filters:[] });
+  let maxDiff = 0;
+  for (let i = 0; i < base.spl.length; i++) maxDiff = Math.max(maxDiff, Math.abs(base.spl[i]-filt.spl[i]));
+  check('empty filters[] is a no-op on SPL', maxDiff === 0);
+
+  // High-pass: at f = fc, |H| = 1/√2 → −3 dB; well above fc → 0 dB; well below → −40 dB/dec
+  const hp = highPass(80, 80);               // f=fc → |H|=1/√2
+  check('HP at fc = −3 dB', Math.abs(20*Math.log10(cAbs(hp)) - (-3.0103)) < 0.001);
+  const hpHF = highPass(8000, 80);           // f >> fc → |H| ≈ 1
+  check('HP well above fc ≈ 0 dB', Math.abs(20*Math.log10(cAbs(hpHF))) < 0.01);
+  const hpLF = highPass(8, 80);             // f = fc/10 → 2nd order → −40 dB
+  check('HP one decade below fc ≈ −40 dB', Math.abs(20*Math.log10(cAbs(hpLF)) - (-40)) < 0.5);
+
+  // Low-pass: symmetric
+  const lp = lowPass(80, 80);
+  check('LP at fc = −3 dB', Math.abs(20*Math.log10(cAbs(lp)) - (-3.0103)) < 0.001);
+
+  // Peaking EQ: gain at fc = gainDb, unity at DC and HF
+  const peqBoost = peakingEQ(300, 300, 1.0, 6);
+  check('PEQ boost: +6 dB at fc', Math.abs(20*Math.log10(cAbs(peqBoost)) - 6) < 0.01);
+  const peqDC = peakingEQ(0.001, 300, 1.0, 6);
+  check('PEQ: unity gain at DC', Math.abs(20*Math.log10(cAbs(peqDC))) < 0.1);
+  const peqHF = peakingEQ(30000, 300, 1.0, 6);
+  check('PEQ: unity gain at HF', Math.abs(20*Math.log10(cAbs(peqHF))) < 0.01);
+
+  // Linkwitz transform: unity gain at HF (pole/zero both go to 1 above)
+  const ltHF = linkwitz(30000, 50, 0.7, 20, 0.5);
+  check('Linkwitz: unity gain at HF', Math.abs(20*Math.log10(cAbs(ltHF))) < 0.01);
+
+  // applyFilters: disabled filter is skipped
+  const filtered = applyFilters(1000, [{ type:'peaking', enabled:false, fc:1000, Q:1, gain:12 }]);
+  check('disabled filter is a no-op', Math.abs(cAbs(filtered) - 1) < 1e-9);
+
+  // Sweep with HP applied: SPL below fc must be lower than without
+  const baseHP  = sweep(d, 'sealed', { Vb, Ql:1e6, eg:2.83, fmin:10, fmax:1000, N:50 });
+  const filtHP  = sweep(d, 'sealed', { Vb, Ql:1e6, eg:2.83, fmin:10, fmax:1000, N:50,
+                                        filters:[{ id:1, type:'highpass', enabled:true, fc:80, Q:0.7071 }] });
+  const i10 = filtHP.fs.findIndex(x => x >= 10);
+  check('sweep with HP: SPL at 10 Hz is reduced vs unfiltered', filtHP.spl[i10] < baseHP.spl[i10] - 20);
+  const iHF = filtHP.fs.findIndex(x => x >= 800);
+  check('sweep with HP: SPL above fc is nearly unchanged', Math.abs(filtHP.spl[iHF] - baseHP.spl[iHF]) < 0.5);
 }
 
 console.log(`\n${fails ? fails + ' check(s) FAILED' : 'All checks passed.'}\n`);
