@@ -120,10 +120,14 @@
   </div>
 </div>
 
-<script src="src/core/engine.js"></script>
-
-<script>
-"use strict";
+<script type="module">
+import { RHO, C, P0,
+         cx, cAdd, cSub, cMul, cDiv, cInv, cAbs, cArg, cScale, cPar,
+         deriveDriver, parseWdr, toWdr,
+         solve, portLoss,
+         sweep, unwrap, maxCurves,
+         ebp, sealedFromQtc, ventedAlignment, ventLength, tuningFromLength,
+         prTuning, prMassForFp } from './src/core/index.js';
 /* =========================================================================
    PRESET DRIVERS  (representative real-world T/S; sources noted)
    ========================================================================= */

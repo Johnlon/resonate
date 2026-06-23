@@ -11,12 +11,9 @@
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
-import { createRequire } from 'node:module';
+import { deriveDriver, sweep, parseWdr, toWdr, prTuning, prMassForFp, RHO, C } from '../src/core/index.js';
 
-const here    = dirname(fileURLToPath(import.meta.url));
-const require = createRequire(import.meta.url);
-const { deriveDriver, sweep, parseWdr, toWdr, prTuning, prMassForFp, RHO, C } =
-  require('../src/core/index.js');
+const here = dirname(fileURLToPath(import.meta.url));
 
 let fails = 0;
 const check = (name, ok, detail='') => {
