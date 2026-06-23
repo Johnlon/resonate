@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node server.js",
-    "test": "node test/engine.test.mjs && node test/golden.test.mjs",
+    "test": "node test/engine.test.mjs && node test/golden.test.mjs && playwright test",
     "gen-golden": "node test/gen-golden.mjs"
   },
   "keywords": [
@@ -22,5 +22,8 @@
   "repository": {
     "type": "git",
     "url": ""
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.0"
   }
 }

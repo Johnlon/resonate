@@ -1,17 +1,22 @@
-name: engine
+name: ci
 
 on:
   push:
   pull_request:
 
-# The physics is the product. Every push re-proves it against the closed form.
 jobs:
-  validate:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Validate simulation engine
-        run: npm test
+      - name: Install dependencies
+        run: npm install
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+      - name: Unit + golden-master tests
+        run: node test/engine.test.mjs && node test/golden.test.mjs
+      - name: Browser tests
+        run: npx playwright test

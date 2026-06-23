@@ -761,6 +761,7 @@ function selfTest(){
     `\n GATE2 sensitivity: circuit ${pb.toFixed(2)} dB vs predicted ${sens283.toFixed(2)} dB (Δ${(pb-sens283).toFixed(2)}) -> ${p2?'PASS':'FAIL'}`,
     `\n GATE3 vented slope ${slope.toFixed(1)} dB/oct, Z-peaks ${JSON.stringify(peaks)} -> ${p3?'PASS':'FAIL'}`,
     `\n OVERALL: ${p1&&p2&&p3?'%cALL PASS':'%cFAIL'}`,'font-weight:bold;color:'+(p1&&p2&&p3?'green':'red'));
+  window._selfTestDone = true;
   return {p1,p2,p3};
 }
 
