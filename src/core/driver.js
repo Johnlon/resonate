@@ -1,16 +1,38 @@
+/**
+ * Thiele-Small driver parameter derivation.
+ *
+ * Equations:
+ *   https://en.wikipedia.org/wiki/Thiele/Small_parameters#Small_signal_parameters
+ *
+ * Authoritative source (paywalled):
+ *   Small, R.H. "Direct-Radiator Loudspeaker System Analysis." JAES 20(5) 1972.
+ *   https://aes.org/e-lib/browse.cfm?elib=2008
+ */
+
 import { RHO, C } from './constants.js';
 
+/**
+ * Derive the full Thiele-Small parameter set from {Fs, Qts/Qes/Qms, Vas, Sd, Re, Le}.
+ *
+ * All equations: https://en.wikipedia.org/wiki/Thiele/Small_parameters#Small_signal_parameters
+ *
+ *   Qts = (Qes · Qms) / (Qes + Qms)
+ *   Vas = ρ · c² · Sd² · Cms   →   Cms = Vas / (ρ · c² · Sd²)
+ *   Mms = 1 / (ωs² · Cms)        from  ωs = 1/√(Mms · Cms)
+ *   Rms = 2π · Fs · Mms / Qms
+ *   Bl  = √(2π · Fs · Mms · Re / Qes)
+ */
 export function deriveDriver(d) {
   const r  = Object.assign({}, d);
   const ws = 2 * Math.PI * r.Fs;
   if (!r.Qts && r.Qes && r.Qms) r.Qts = (r.Qes * r.Qms) / (r.Qes + r.Qms);
   if (!r.Qes && r.Qts && r.Qms) r.Qes = (r.Qts * r.Qms) / (r.Qms - r.Qts);
   if (!r.Qms && r.Qts && r.Qes) r.Qms = (r.Qts * r.Qes) / (r.Qes - r.Qts);
-  const Cas = r.Vas / (RHO * C * C);
+  const Cas = r.Vas / (RHO * C * C);   // Cms = Vas/(ρc²Sd²)  https://en.wikipedia.org/wiki/Thiele/Small_parameters#Small_signal_parameters
   r.Cms = Cas / (r.Sd * r.Sd);
-  r.Mms = 1 / (ws * ws * r.Cms);
-  r.Rms = ws * r.Mms / r.Qms;
-  r.Bl  = Math.sqrt(ws * r.Mms * r.Re / r.Qes);
+  r.Mms = 1 / (ws * ws * r.Cms);       // Mms = 1/(ωs²·Cms)
+  r.Rms = ws * r.Mms / r.Qms;          // Rms = 2π·Fs·Mms/Qms
+  r.Bl  = Math.sqrt(ws * r.Mms * r.Re / r.Qes);  // Bl = √(2π·Fs·Mms·Re/Qes)
   return r;
 }
 
