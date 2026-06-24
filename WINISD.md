@@ -335,6 +335,6 @@ are significant, accepting that results will differ slightly from WinISD.
 | 1 | ~~Does WinISD use 2.83 V fixed or `sqrt(Pin × Z_nom)`?~~ **RESOLVED: uses `Eg = sqrt(P × Re)`** — confirmed in WinISD help file | Closed |
 | 2 | ~~Does WinISD include Le in its acoustic circuit model?~~ **RESOLVED: No. Le only for impedance. Source: aboutequivalentcircuits.html** | Closed |
 | 3 | ~~Does WinISD model box leakage (Ql)?~~ **RESOLVED: Ql=10, Qa=100, Qp=100; entry via "Advanced->" button in the Box tab panel (not the top-level Advanced tab). Confirmed by help file text + screenshots boxdes05/06.** | Closed |
-| 4 | What radiation model does WinISD use — infinite baffle / half-space? | Medium |
+| 4 | ~~What radiation model does WinISD use?~~ **RESOLVED: half-space (infinite baffle). Formula `p(r) = ρ·ω·U0/(2π·r)` confirmed in `aboutequivalentcircuits.html`. Resonate uses identical formula.** | Closed |
 | 5 | Does WinISD account for air load (radiation mass) on the PR separately from Mms? | Low |
 | 6 | Does WinISD's Qms in PR mode mean the same as T/S Qms? | Low |

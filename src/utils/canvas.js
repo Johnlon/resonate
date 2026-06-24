@@ -69,6 +69,22 @@ export function drawOne(canvas, plotData, cursorF, readEl) {
   }
   ctx.setLineDash([]);
 
+  // legend — only when there are multiple named series
+  const namedSeries = plotData.series.filter(s => s.name);
+  if (namedSeries.length > 1) {
+    ctx.font = '9px Segoe UI'; ctx.textAlign = 'left';
+    const lh = 13, lx = m.l + 6;
+    let ly = m.t + 6;
+    for (const s of namedSeries) {
+      ctx.strokeStyle = s.color; ctx.lineWidth = s.dash ? 1.1 : 1.7;
+      if (s.dash) ctx.setLineDash([4, 3]); else ctx.setLineDash([]);
+      ctx.beginPath(); ctx.moveTo(lx, ly + 3); ctx.lineTo(lx + 14, ly + 3); ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.fillStyle = s.color; ctx.fillText(s.name, lx + 17, ly + 6);
+      ly += lh;
+    }
+  }
+
   const geo = { m, pw, ph, X, Y, f0, f1 };
 
   // crosshair
