@@ -130,7 +130,34 @@ in review. Claude Code agent instructions (CLAUDE.md) enforce this at authoring 
 
 ---
 
-## UI-2: All docs, tooltips, values, and refs must cross-reference WinISD where relevant
+## UI-2: Box panel layout must be symmetric across all box types
+
+**Rule:** Controls that apply to all box types (Type selector, Vb, box losses) must
+occupy fixed positions shared by every box type. Box-type-specific controls (vent
+diameter/length, PR parameters, bandpass front chamber) go in a conditional block
+in the middle. All box types share the same structural skeleton:
+
+```
+[Type selector]
+[Vb]
+[Box losses toggle]   ← always here, applies to all types
+── box-specific block (conditional) ──
+[Alignment / tune buttons]
+```
+
+**Rationale:**
+- Users switch between box types to compare results. If a control appears to belong
+  to only one box type, they will be confused when it disappears on switching.
+- Consistent layout reduces cognitive load — the user knows where to find box
+  losses regardless of which box type is selected.
+- Asymmetric layouts create an implicit (wrong) message that a feature doesn't
+  apply to certain box types.
+
+**Status:** Adopted 2026-06-24.
+
+---
+
+## UI-3: All docs, tooltips, values, and refs must cross-reference WinISD where relevant
 
 **Rule:** Every tooltip, label, default value, doc section, and parameter description
 must mention its WinISD equivalent wherever one exists. This includes:

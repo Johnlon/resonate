@@ -126,6 +126,28 @@ function removePR(id) {
       <NumInput v-model="state.P.Vb" :scale="1000" :precision="4" />
       <span class="u">L</span>
     </div>
+    <div class="btns" style="margin-bottom:2px">
+      <button class="losses-toggle" @click="showLosses = !showLosses"
+        title="Expand box loss parameters: Ql (leakage) and Qa (absorption). Applies to all box types. WinISD defaults: Ql=10, Qa=100 — found in Box tab → Advanced→ popup.">
+        Box losses {{ showLosses ? '▾' : '▸' }}
+      </button>
+    </div>
+    <template v-if="showLosses">
+      <div class="row" title="Leakage loss — enclosure sealing and driver surround leaks. WinISD default: 10. Lower = more leakage.">
+        <label>Leakage Ql</label>
+        <NumInput v-model="state.P.Ql" :scale="1" :precision="3" />
+        <span class="u"></span>
+      </div>
+      <div class="row" title="Absorption loss from stuffing material. WinISD default: 100 (no stuffing).">
+        <label>Absorption Qa</label>
+        <NumInput v-model="state.P.Qa" :scale="1" :precision="3" />
+        <span class="u"></span>
+      </div>
+      <div class="losses-guide">
+        100 = no stuffing &nbsp;·&nbsp; 20–50 = light &nbsp;·&nbsp; 5–10 = heavy<br>
+        <span class="losses-note">Real stuffing also increases apparent Vb — this model captures resistive loss only.</span>
+      </div>
+    </template>
     <template v-if="state.box === 'bandpass4'">
       <div class="row">
         <label>Front chamber Vf</label>
@@ -300,27 +322,7 @@ function removePR(id) {
         title="Calculates and sets the added mass so Fp matches the B4 alignment's optimal tuning for this driver. B4 = 4th-order Butterworth — flat response to Fp, then steep rolloff.">
         Tune added mass to B4 Fp
       </button>
-      <button class="losses-toggle" @click="showLosses = !showLosses"
-        title="Expand box loss parameters: Ql (leakage) and Qa (absorption). WinISD defaults: Ql=10, Qa=100.">
-        Box losses {{ showLosses ? '▾' : '▸' }}
-      </button>
     </div>
-    <template v-if="showLosses">
-      <div class="row" title="Leakage loss — enclosure sealing and driver surround leaks. WinISD default: 10. Lower = more leakage.">
-        <label>Leakage Ql</label>
-        <NumInput v-model="state.P.Ql" :scale="1" :precision="3" />
-        <span class="u"></span>
-      </div>
-      <div class="row" title="Absorption loss from stuffing material. WinISD default: 100 (no stuffing).">
-        <label>Absorption Qa</label>
-        <NumInput v-model="state.P.Qa" :scale="1" :precision="3" />
-        <span class="u"></span>
-      </div>
-      <div class="losses-guide">
-        100 = no stuffing &nbsp;·&nbsp; 20–50 = light &nbsp;·&nbsp; 5–10 = heavy<br>
-        <span class="losses-note">Real stuffing also increases apparent Vb — this model captures resistive loss only.</span>
-      </div>
-    </template>
   </fieldset>
 </template>
 
