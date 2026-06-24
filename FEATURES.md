@@ -243,8 +243,9 @@ vents (multi/slot/selectable end-correction), 6th-order bandpass, `.wpr` import,
 datasheet→params paste, and EQ shelves. All tractable on the existing engine.
 
 ## Strategic framing
-The honest pitch isn’t “mine is better at simulation.” It’s: the best tools are
-closing up or charging, and even the friendliest only promises to open if it dies.
-Resonate is the neutral, already-open foundation — code *and* data — that no one
-can take away. As the driver library approaches 5,000+ drivers with verified
-provenance, that data commons becomes the deepest moat of all.
+Resonate’s pitch is not that it out-simulates the competition today — it doesn’t,
+and we say so plainly above. The pitch is that open code *and* open data, together,
+create something that benefits the whole speaker-building world: a permanent,
+vendor-neutral commons that anyone can build on, contribute to, and trust. As the
+driver library grows toward 5,000+ drivers with verified provenance, that shared
+foundation becomes more valuable than any single tool’s feature list.
