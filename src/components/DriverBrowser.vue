@@ -18,9 +18,12 @@ const sblLoaded   = ref(false);
 const sblLoading  = ref(false);
 
 const filteredFiles = computed(() => {
-  const q = filterQ.value.toLowerCase().trim();
-  if (!q) return allFiles.value;
-  return allFiles.value.filter(f => f.name.toLowerCase().includes(q));
+  const tokens = filterQ.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+  if (!tokens.length) return allFiles.value;
+  return allFiles.value.filter(f => {
+    const hay = f.name.toLowerCase();
+    return tokens.every(t => hay.includes(t));
+  });
 });
 
 // ── GitHub source helpers ────────────────────────────────────────────────────
