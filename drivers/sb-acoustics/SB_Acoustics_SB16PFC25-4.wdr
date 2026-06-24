@@ -1,0 +1,25 @@
+[Driver]
+Brand=SB Acoustics
+Model=SB16PFC25-4
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/6in-sb16pfc25-4-paper/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2020/11/6in-SB16PFC25-4-OEM-only.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=35.0
+Qts=0.34
+Qes=0.39
+Qms=2.76
+Znom=4.0
+Re=3.2
+Le=0.00056
+BL=5.0
+Mms=0.0138
+Cms=0.0015
+Sd=0.0124
+Vas=0.0327
+Xmax=0.0045
+Pe=40.0
+Vd=5.58e-05
+Dd=0.125650986
+EBP=89.74

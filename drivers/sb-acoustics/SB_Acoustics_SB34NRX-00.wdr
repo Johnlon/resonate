@@ -1,0 +1,15 @@
+[Driver]
+Brand=SB Acoustics
+Model=SB34NRX-00
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/12in-sb34nrx-00-norex/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2022/04/12in-SB34NRX-00.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=8.7
+Qms=12.1
+Mms=0.665
+Cms=0.0005
+Sd=0.0508
+Vas=0.183
+Dd=0.254323748

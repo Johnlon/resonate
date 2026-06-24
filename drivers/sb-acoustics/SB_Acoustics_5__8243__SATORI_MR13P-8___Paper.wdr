@@ -1,0 +1,25 @@
+[Driver]
+Brand=SB Acoustics
+Model=5&#8243; SATORI MR13P-8 / Paper
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/5-satori-mr13p-8/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2021/01/5in-SATORI-MR13P-8.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=45.0
+Qts=0.31
+Qes=0.33
+Qms=4.25
+Znom=8.0
+Re=6.8
+Le=0.00011
+BL=6.1
+Mms=0.006
+Cms=0.00186
+Sd=0.007
+Vas=0.0125
+Xmax=0.003
+Pe=30.0
+Vd=2.1e-05
+Dd=0.094406974
+EBP=136.36

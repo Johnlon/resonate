@@ -1,0 +1,34 @@
+{
+  "scraped": {
+    "https://sbacoustics.com/product/8in-sb23nrxs45-8-norex/": {
+      "scraped_at": "2026-06-24T20:36:20.453471+00:00",
+      "wdr": "SB_Acoustics_SB23NRXS45-8.wdr",
+      "status": "ok"
+    },
+    "https://sbacoustics.com/product/tifa-6/": {
+      "scraped_at": "2026-06-24T20:34:49.694669+00:00",
+      "wdr": null,
+      "status": "skipped"
+    },
+    "https://sbacoustics.com/product/8-sb23nrxs45-4-norex/": {
+      "scraped_at": "2026-06-24T20:24:47.607732+00:00",
+      "wdr": "8__SB23NRXS45-4___Norex.wdr",
+      "status": "ok"
+    },
+    "https://sbacoustics.com/product/8in-sb23nbacs45-8/": {
+      "scraped_at": "2026-06-24T20:24:54.977764+00:00",
+      "wdr": "8__SB23NBACS45-8___Aluminum.wdr",
+      "status": "ok"
+    },
+    "https://sbacoustics.com/product/8in-sb23nbacs45-4/": {
+      "scraped_at": "2026-06-24T20:24:56.445023+00:00",
+      "wdr": "8__SB23NBACS45-4___Aluminum.wdr",
+      "status": "ok"
+    },
+    "https://sbacoustics.com/product/8in-sb23nacs45-8/": {
+      "scraped_at": "2026-06-24T20:25:01.031915+00:00",
+      "wdr": "8__SB23NACS45-8___Aluminum.wdr",
+      "status": "ok"
+    }
+  }
+}

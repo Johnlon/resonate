@@ -1,0 +1,25 @@
+[Driver]
+Brand=SB Acoustics
+Model=SB17NBAC35-8
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/6in-sb17nbac35-8/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2025/12/6-inch-SB17NBAC35-8.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=31.5
+Qts=0.35
+Qes=0.38
+Qms=4.1
+Znom=8.0
+Re=5.7
+Le=0.00015
+BL=5.9
+Mms=0.0125
+Cms=0.0023
+Sd=0.0118
+Vas=0.045
+Xmax=0.0055
+Pe=60.0
+Vd=6.49e-05
+Dd=0.122573352
+EBP=82.89

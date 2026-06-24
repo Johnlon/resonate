@@ -1,0 +1,25 @@
+[Driver]
+Brand=SB Acoustics
+Model=SB15NBAC30-8
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/5in-sb15nbac30-8/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2020/02/5in-SB15NBAC30-8.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=35.5
+Qts=0.37
+Qes=0.41
+Qms=4.22
+Znom=8.0
+Re=5.7
+Le=0.00014
+BL=5.7
+Mms=0.01
+Cms=0.00181
+Sd=0.0082
+Vas=0.017
+Xmax=0.005
+Pe=50.0
+Vd=4.1e-05
+Dd=0.102179079
+EBP=86.59

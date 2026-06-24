@@ -2,6 +2,9 @@ node_modules/
 dist/
 test-results/
 
+# Scraper HTML cache — raw fetched pages, never commit
+drivers/**/_html/
+
 # OS / editor cruft
 .DS_Store
 Thumbs.db

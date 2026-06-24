@@ -1,0 +1,25 @@
+[Driver]
+Brand=SB Acoustics
+Model=SB29NRX75-8
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/10-sb29nrx75-8-norex/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2022/01/10in-SB29NRX75-8.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=26.0
+Qts=0.37
+Qes=0.39
+Qms=7.06
+Znom=8.0
+Re=6.2
+Le=0.0023
+BL=12.4
+Mms=0.0589
+Cms=0.00063
+Sd=0.0312
+Vas=0.0856
+Xmax=0.011
+Pe=200.0
+Vd=0.0003432
+Dd=0.199311499
+EBP=66.67

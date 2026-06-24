@@ -1,0 +1,15 @@
+[Driver]
+Brand=SB Acoustics
+Model=SB29NRX2-00
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/10-sb29nrx2-00-norex/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2020/10/10in-SB29NRX2-00.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=17.0
+Qms=7.3
+Mms=0.205
+Cms=0.00043
+Sd=0.0312
+Vas=0.06
+Dd=0.199311499

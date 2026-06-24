@@ -1,0 +1,24 @@
+[Driver]
+Brand=SB Acoustics
+Model=10″ SW26DBAC76-4 / Aluminum
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/10in-sw26dbac76-4/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2021/09/10in-SW26DBAC76-4.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=22.0
+Qts=0.46
+Qes=0.51
+Qms=4.5
+Znom=4.0
+Re=3.2
+BL=10.8
+Mms=0.134
+Cms=0.00039
+Sd=0.0312
+Vas=0.054
+Xmax=0.012
+Pe=200.0
+Vd=0.0003744
+Dd=0.199311499
+EBP=43.14

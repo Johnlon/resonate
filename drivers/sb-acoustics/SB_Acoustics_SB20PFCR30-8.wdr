@@ -1,0 +1,25 @@
+[Driver]
+Brand=SB Acoustics
+Model=SB20PFCR30-8
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/8-sb20pfcr30-8-paper/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2022/03/8in-SB20PFCR30-8.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=34.0
+Qts=0.37
+Qes=0.43
+Qms=2.66
+Znom=8.0
+Re=5.6
+Le=0.00084
+BL=7.7
+Mms=0.0212
+Cms=0.001
+Sd=0.0216
+Vas=0.0662
+Xmax=0.00575
+Pe=50.0
+Vd=0.0001242
+Dd=0.165837192
+EBP=79.07

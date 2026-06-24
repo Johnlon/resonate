@@ -1,0 +1,25 @@
+[Driver]
+Brand=SB Acoustics
+Model=SB15BAC30-8
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/sb15bac30-8-coax/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2026/03/5-inch-SB15BAC30-8-COAX.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=1120.0
+Qts=0.36
+Qes=0.39
+Qms=4.8
+Znom=4.0
+Re=3.8
+Le=0.00013
+BL=5.3
+Mms=0.0071
+Cms=0.00193
+Sd=0.008
+Vas=0.0175
+Xmax=0.003
+Pe=25.0
+Vd=2.4e-05
+Dd=0.100925301
+EBP=2871.79

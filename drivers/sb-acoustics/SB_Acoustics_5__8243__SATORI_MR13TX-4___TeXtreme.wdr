@@ -1,0 +1,25 @@
+[Driver]
+Brand=SB Acoustics
+Model=5&#8243; SATORI MR13TX-4 / TeXtreme
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/5-satori-mr13tx-4-textreme/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2024/05/5in-SATORI-MR13TX-4.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=44.0
+Qts=0.27
+Qes=0.28
+Qms=4.98
+Znom=4.0
+Re=3.4
+Le=0.00011
+BL=4.9
+Mms=0.0072
+Cms=0.00181
+Sd=0.0069
+Vas=0.0122
+Xmax=0.003
+Pe=30.0
+Vd=2.07e-05
+Dd=0.093730213
+EBP=157.14

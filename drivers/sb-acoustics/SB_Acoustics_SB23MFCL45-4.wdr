@@ -1,0 +1,25 @@
+[Driver]
+Brand=SB Acoustics
+Model=SB23MFCL45-4
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/8in-sb23mfcl45-4/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2026/05/8-inch-SB23MFCL45-4.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=27.0
+Qts=0.34
+Qes=0.36
+Qms=7.7
+Znom=4.0
+Re=3.3
+Le=0.00073
+BL=9.6
+Mms=0.059
+Cms=0.00059
+Sd=0.021
+Vas=0.037
+Xmax=0.012
+Pe=150.0
+Vd=0.000252
+Dd=0.163517676
+EBP=75.0

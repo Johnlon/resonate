@@ -1,0 +1,25 @@
+[Driver]
+Brand=SB Acoustics
+Model=SB12NRXF25-4
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/4in-sb12nrxf25-4-norex/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2023/07/4in-SB12NRXF25-4-OEM-only.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=61.0
+Qts=0.48
+Qes=0.53
+Qms=5.3
+Znom=4.0
+Re=3.1
+Le=0.00027
+BL=3.6
+Mms=0.0058
+Cms=0.00117
+Sd=0.005
+Vas=0.0041
+Xmax=0.005
+Pe=30.0
+Vd=2.5e-05
+Dd=0.079788456
+EBP=115.09

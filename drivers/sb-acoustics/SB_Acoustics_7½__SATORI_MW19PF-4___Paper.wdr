@@ -1,0 +1,25 @@
+[Driver]
+Brand=SB Acoustics
+Model=7½″ SATORI MW19PF-4 / Paper
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/7½″-satori-mw19pf-4-paper/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2021/02/7.5in-SATORI-MW19PF-4-OEM-only.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=29.0
+Qts=0.27
+Qes=0.28
+Qms=5.2
+Znom=4.0
+Re=3.4
+Le=0.0002
+BL=6.1
+Mms=0.017
+Cms=0.00177
+Sd=0.0158
+Vas=0.0627
+Xmax=0.0065
+Pe=70.0
+Vd=0.0001027
+Dd=0.141835062
+EBP=103.57

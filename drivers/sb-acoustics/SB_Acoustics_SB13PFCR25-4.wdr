@@ -1,0 +1,25 @@
+[Driver]
+Brand=SB Acoustics
+Model=SB13PFCR25-4
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/5-sb13pfcr25-4-paper/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2022/03/5in-SB13PFCR25-4.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=44.0
+Qts=0.29
+Qes=0.33
+Qms=2.6
+Znom=4.0
+Re=3.2
+Le=0.00056
+BL=5.3
+Mms=0.0105
+Cms=0.00125
+Sd=0.0087
+Vas=0.0134
+Xmax=0.0045
+Pe=40.0
+Vd=3.915e-05
+Dd=0.105248202
+EBP=133.33

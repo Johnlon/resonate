@@ -1,0 +1,25 @@
+[Driver]
+Brand=SB Acoustics
+Model=SB15NRX2C30-4
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/5in-sb15nrx2c30-4-norex/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2020/02/5in-SB15NRX2C30-4.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=34.5
+Qts=0.28
+Qes=0.3
+Qms=3.58
+Znom=4.0
+Re=3.1
+Le=0.00012
+BL=4.7
+Mms=0.0099
+Cms=0.00215
+Sd=0.0082
+Vas=0.0205
+Xmax=0.005
+Pe=50.0
+Vd=4.1e-05
+Dd=0.102179079
+EBP=115.0

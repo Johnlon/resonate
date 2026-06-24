@@ -1,0 +1,25 @@
+[Driver]
+Brand=SB Acoustics
+Model=6½″ SATORI MW16PF-4 / Paper
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/6½-satori-mw16pf-4-paper/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2021/02/6.5in-SATORI-MW16PF-4-OEM-only.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=28.0
+Qts=0.33
+Qes=0.35
+Qms=4.63
+Znom=4.0
+Re=3.3
+Le=0.0002
+BL=4.7
+Mms=0.0128
+Cms=0.0025
+Sd=0.0119
+Vas=0.049
+Xmax=0.0055
+Pe=60.0
+Vd=6.545e-05
+Dd=0.123091635
+EBP=80.0

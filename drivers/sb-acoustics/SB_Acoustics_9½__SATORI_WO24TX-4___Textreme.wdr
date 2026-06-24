@@ -1,0 +1,25 @@
+[Driver]
+Brand=SB Acoustics
+Model=9½″ SATORI WO24TX-4 / Textreme
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/95-satori-wo24tx-4-textreme/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2024/11/9.5in-SATORI-WO24TX-4.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=26.3
+Qts=0.35
+Qes=0.37
+Qms=5.66
+Znom=4.0
+Re=3.3
+Le=0.00029
+BL=7.9
+Mms=0.0428
+Cms=0.00086
+Sd=0.0255
+Vas=0.079
+Xmax=0.00875
+Pe=90.0
+Vd=0.000223125
+Dd=0.180187703
+EBP=71.08

@@ -1,0 +1,23 @@
+[Driver]
+Brand=SB Acoustics
+Model=SB26STC-C000-4 / Fabric
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/sb26stc-c000-4/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2020/11/SB26STC-C000-4-OEM-only.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=750.0
+Qts=1.12
+Qes=1.78
+Qms=3.0
+Znom=4.0
+Re=3.2
+Le=4e-05
+BL=1.6
+Mms=0.0003
+Sd=0.00062
+Xmax=0.0006
+Pe=120.0
+Vd=3.72e-07
+Dd=0.028096415
+EBP=421.35

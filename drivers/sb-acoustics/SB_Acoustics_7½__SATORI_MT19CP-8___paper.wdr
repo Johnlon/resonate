@@ -1,0 +1,25 @@
+[Driver]
+Brand=SB Acoustics
+Model=7½″ SATORI MT19CP-8 / paper
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/7½-satori-mt19cp-8-paper/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2024/04/7.5in-SATORI-MT19CP-8.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=1200.0
+Qts=0.31
+Qes=0.33
+Qms=6.54
+Znom=4.0
+Re=3.7
+Le=0.00012
+BL=8.05
+Mms=0.0121
+Cms=0.00113
+Sd=0.0152
+Vas=0.0371
+Xmax=0.0036
+Pe=60.0
+Vd=5.472e-05
+Dd=0.139115927
+EBP=3636.36

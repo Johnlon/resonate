@@ -1,0 +1,25 @@
+[Driver]
+Brand=SB Acoustics
+Model=6½″ SATORI MW16PNW-8 / Paper
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/6½in-satori-mw16pnw-8/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2021/01/6.5in-SATORI-MW16PNW-8.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=29.0
+Qts=0.32
+Qes=0.34
+Qms=4.72
+Znom=8.0
+Re=6.2
+Le=0.0002
+BL=6.3
+Mms=0.0121
+Cms=0.00253
+Sd=0.0119
+Vas=0.0499
+Xmax=0.006
+Pe=60.0
+Vd=7.14e-05
+Dd=0.123091635
+EBP=85.29

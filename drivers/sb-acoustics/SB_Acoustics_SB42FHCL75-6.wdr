@@ -1,0 +1,25 @@
+[Driver]
+Brand=SB Acoustics
+Model=SB42FHCL75-6
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/15in-sb42fhcl75-6/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2020/03/15in-SB42FHCL75-6.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=18.4
+Qts=0.31
+Qes=0.32
+Qms=7.4
+Znom=6.0
+Re=4.6
+Le=0.0021
+BL=16.7
+Mms=0.166
+Cms=0.00045
+Sd=0.085
+Vas=0.462
+Xmax=0.0115
+Pe=300.0
+Vd=0.0009775
+Dd=0.328976232
+EBP=57.5

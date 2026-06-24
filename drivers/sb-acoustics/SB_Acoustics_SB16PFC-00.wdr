@@ -1,0 +1,15 @@
+[Driver]
+Brand=SB Acoustics
+Model=SB16PFC-00
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/6-sb16pfc-00-paper/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2021/02/6in-SB16PFC-00-OEM-only.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=22.0
+Qms=4.4
+Mms=0.038
+Cms=0.0014
+Sd=0.0124
+Vas=0.03
+Dd=0.125650986

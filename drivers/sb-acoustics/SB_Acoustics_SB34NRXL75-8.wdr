@@ -1,0 +1,25 @@
+[Driver]
+Brand=SB Acoustics
+Model=SB34NRXL75-8
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/12-sb34nrxl75-8-norex/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2020/02/12in-SB34NRXL75-8.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=22.0
+Qts=0.28
+Qes=0.29
+Qms=5.5
+Znom=8.0
+Re=6.2
+Le=0.0012
+BL=16.6
+Mms=0.093
+Cms=0.00056
+Sd=0.0508
+Vas=0.205
+Xmax=0.01
+Pe=200.0
+Vd=0.000508
+Dd=0.254323748
+EBP=75.86

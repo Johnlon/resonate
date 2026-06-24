@@ -1,0 +1,25 @@
+[Driver]
+Brand=SB Acoustics
+Model=SB12PACR25-4
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/4-sb12pacr25-4-aluminum/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2020/04/4in-SB12PACR25-4.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=52.5
+Qts=0.31
+Qes=0.33
+Qms=5.0
+Znom=4.0
+Re=3.1
+Le=0.00025
+BL=4.35
+Mms=0.0061
+Cms=0.0015
+Sd=0.005
+Vas=0.0053
+Xmax=0.005
+Pe=30.0
+Vd=2.5e-05
+Dd=0.079788456
+EBP=159.09

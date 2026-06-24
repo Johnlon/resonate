@@ -1,0 +1,25 @@
+[Driver]
+Brand=SB Acoustics
+Model=6½″ SATORI MR16TX-8 / TeXtreme
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/6½-satori-mr16tx-8-textreme/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2024/05/6½in-SATORI-MR16TX-8.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=35.0
+Qts=0.31
+Qes=0.32
+Qms=6.47
+Znom=8.0
+Re=6.2
+Le=0.00011
+BL=6.6
+Mms=0.0103
+Cms=0.002
+Sd=0.0117
+Vas=0.0389
+Xmax=0.00285
+Pe=30.0
+Vd=3.3345e-05
+Dd=0.122052868
+EBP=109.38

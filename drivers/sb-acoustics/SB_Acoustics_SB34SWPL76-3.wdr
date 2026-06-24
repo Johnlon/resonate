@@ -1,0 +1,25 @@
+[Driver]
+Brand=SB Acoustics
+Model=SB34SWPL76-3
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/12in-sb34swpl76-3-dv/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2020/03/12in-SB34SWPL76-3-DV.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=27.5
+Qts=0.48
+Qes=0.52
+Qms=5.62
+Znom=2.0
+Re=2.0
+Le=0.0014
+BL=9.7
+Mms=0.231
+Cms=0.00014
+Sd=0.0458
+Vas=0.043
+Xmax=0.015
+Pe=300.0
+Vd=0.000687
+Dd=0.241483687
+EBP=52.88

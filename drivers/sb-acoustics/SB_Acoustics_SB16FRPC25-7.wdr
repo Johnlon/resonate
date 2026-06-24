@@ -1,0 +1,25 @@
+[Driver]
+Brand=SB Acoustics
+Model=SB16FRPC25-7
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/sb16frpc25-7/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2025/12/6-inch-SB16FRPC25-7.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=44.0
+Qts=0.46
+Qes=0.48
+Qms=9.0
+Znom=7.0
+Re=5.2
+Le=0.00022
+BL=5.4
+Mms=0.0098
+Cms=0.00133
+Sd=0.0128
+Vas=0.031
+Xmax=0.00305
+Pe=30.0
+Vd=3.904e-05
+Dd=0.12766153
+EBP=91.67

@@ -1,0 +1,25 @@
+[Driver]
+Brand=SB Acoustics
+Model=SB20FRPC30-8
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/8in-sb20frpc30-8-paper/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2022/04/8in-SB20FRPC30-8.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=39.4
+Qts=0.45
+Qes=0.47
+Qms=10.1
+Znom=8.0
+Re=6.0
+Le=0.00022
+BL=7.15
+Mms=0.0163
+Cms=0.001
+Sd=0.0216
+Vas=0.0663
+Xmax=0.0041
+Pe=40.0
+Vd=8.856e-05
+Dd=0.165837192
+EBP=83.83

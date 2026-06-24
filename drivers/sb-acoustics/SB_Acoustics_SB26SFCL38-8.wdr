@@ -1,0 +1,25 @@
+[Driver]
+Brand=SB Acoustics
+Model=SB26SFCL38-8
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/10-sb26sfcl38-8-paper/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2023/02/10in-SB26SFCL38-8.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=27.5
+Qts=0.53
+Qes=0.6
+Qms=5.09
+Znom=8.0
+Re=6.0
+Le=0.0016
+BL=9.6
+Mms=0.053
+Cms=0.00063
+Sd=0.0346
+Vas=0.107
+Xmax=0.0082
+Pe=80.0
+Vd=0.00028372
+Dd=0.209890658
+EBP=45.83

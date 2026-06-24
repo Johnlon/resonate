@@ -1,0 +1,25 @@
+[Driver]
+Brand=SB Acoustics
+Model=9½″ SATORI WO24P-8 / Paper
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/9½in-satori-wo24p-8/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2024/04/9.5in-SATORI-WO24P-8.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=24.5
+Qts=0.38
+Qes=0.41
+Qms=5.7
+Znom=8.0
+Re=5.8
+Le=0.00056
+BL=9.9
+Mms=0.0445
+Cms=0.00095
+Sd=0.0255
+Vas=0.0875
+Xmax=0.0085
+Pe=90.0
+Vd=0.00021675
+Dd=0.180187703
+EBP=59.76

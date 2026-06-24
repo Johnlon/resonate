@@ -1,0 +1,25 @@
+[Driver]
+Brand=SB Acoustics
+Model=6½″ SATORI MR16P-4 / Paper
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/6½in-satori-mr16p-4/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2021/01/6½in-SATORI-MR16P-4.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=31.0
+Qts=0.25
+Qes=0.26
+Qms=4.85
+Znom=4.0
+Re=3.2
+Le=0.00011
+BL=5.2
+Mms=0.0112
+Cms=0.00235
+Sd=0.0119
+Vas=0.0472
+Xmax=0.0031
+Pe=40.0
+Vd=3.689e-05
+Dd=0.123091635
+EBP=119.23

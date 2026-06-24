@@ -1,0 +1,25 @@
+[Driver]
+Brand=SB Acoustics
+Model=SB12CACS25-4
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/4in-sb12cacs25-4/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2020/02/4in-SB12CACS25-4.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=51.0
+Qts=0.31
+Qes=0.33
+Qms=4.89
+Znom=4.0
+Re=3.1
+Le=0.00026
+BL=4.3
+Mms=0.0061
+Cms=0.0016
+Sd=0.005
+Vas=0.0057
+Xmax=0.005
+Pe=30.0
+Vd=2.5e-05
+Dd=0.079788456
+EBP=154.55

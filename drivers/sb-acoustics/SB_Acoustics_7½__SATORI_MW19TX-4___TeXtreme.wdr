@@ -1,0 +1,25 @@
+[Driver]
+Brand=SB Acoustics
+Model=7½″ SATORI MW19TX-4 / TeXtreme
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/7½-satori-mw19tx-4-textreme/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2024/04/7.5in-SATORI-MW19TX-4.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=32.0
+Qts=0.27
+Qes=0.28
+Qms=5.43
+Znom=4.0
+Re=3.4
+Le=0.00014
+BL=6.3
+Mms=0.0162
+Cms=0.00152
+Sd=0.0158
+Vas=0.0532
+Xmax=0.0068
+Pe=70.0
+Vd=0.00010744
+Dd=0.141835062
+EBP=114.29

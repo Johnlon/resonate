@@ -1,0 +1,25 @@
+[Driver]
+Brand=SB Acoustics
+Model=SB12NRX25-8
+Manufacturer=SB Acoustics
+ProvidedBy=SB Acoustics website (scraped 2026-06-24)
+Comment=Source: https://sbacoustics.com/product/4in-sb12nrx25-8-norex/ | Datasheet: https://sbacoustics.com/wp-content/uploads/2021/03/4in-SB12NRX25-8.pdf
+DateAdded=2026-06-24
+DateModified=2026-06-24
+Fs=57.0
+Qts=0.37
+Qes=0.41
+Qms=4.1
+Znom=8.0
+Re=6.4
+Le=0.00034
+BL=5.4
+Mms=0.0052
+Cms=0.00149
+Sd=0.005
+Vas=0.0053
+Xmax=0.005
+Pe=30.0
+Vd=2.5e-05
+Dd=0.079788456
+EBP=139.02
