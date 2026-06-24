@@ -58,6 +58,23 @@ Note: 2.83 V is the IEC 60268-5 sensitivity standard and is *not* what WinISD us
 WinISD's Re-based convention means its SPL curves are reference-power curves, not
 IEC sensitivity curves.
 
+### ⚠ Observed sensitivity offset vs datasheet (2026-06-24)
+
+Test driver: Tang Band W5-1138SMF (Re ≈ 3.24 Ω, 4 Ω nominal). Datasheet: **82 dB 1W/1m**.
+
+| Drive condition | WinISD SPL | Spec |
+|---|---|---|
+| 1 W, 1.8 V (sqrt(Re)) | 79.75 dB | 82.00 dB → **−2.25 dB** |
+| 1.5 W, 2.3 V | 82.3 dB | 82.00 dB → **≈ match** |
+
+**Conclusion:** The datasheet "1W/1m" was measured at Z(1 kHz) ≈ 5.3 Ω, giving Vref = sqrt(5.3) ≈ 2.3 V.
+WinISD uses sqrt(Re) = 1.8 V, which is lower, producing a ~2.25 dB systematic shortfall vs
+manufacturer sensitivity specs for low-Re drivers.
+
+**To match a datasheet sensitivity in WinISD/Resonate:** set input power so that
+`sqrt(Pin × Re) ≈ sqrt(Z_measurement_freq)`, i.e. `Pin = Z_meas / Re` watts.
+For this driver: Pin ≈ 5.3 / 3.24 ≈ 1.63 W.
+
 ---
 
 ## 2. Passive radiator parameter entry
