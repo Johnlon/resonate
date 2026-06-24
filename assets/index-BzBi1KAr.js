@@ -5,7 +5,7 @@ A community-owned tool modelling the Thiele/Small electro-mechano-acoustical sys
 Box types: sealed, vented, 4th-order bandpass, passive radiator
 Curves: SPL, excursion, port velocity, group delay, impedance, max SPL/power
 
-See docs/MATHS.md for the circuit model and equations.`)}return(e,s)=>(V(),H(`header`,null,[s[0]||=U(`h1`,null,[G(`Resonate`),U(`span`,{style:{color:`var(--acc)`}},` ~`),G(` \xA0 `),U(`small`,null,`open loudspeaker enclosure simulator · community-owned · runs anywhere`)],-1),s[1]||=U(`div`,{class:`sp`},null,-1),U(`button`,{onClick:a,title:`Import a WinISD .wdr driver file or a Resonate .json project file`},`Import .wdr / project`),U(`button`,{onClick:r,title:`Export the current driver parameters as a WinISD-compatible .wdr file`},`Export driver .wdr`),U(`button`,{id:`btnShare`,onClick:t,title:`Copy a shareable URL that encodes the current design — paste into a forum or send to a colleague`},`Share link`),U(`button`,{onClick:n,title:`Export the full design (driver + box + settings) as a Resonate .json project file`},`Export design`),U(`button`,{onClick:c,title:`About Resonate — version, licence, and contributors`},`About`),U(`input`,{ref_key:`fileInput`,ref:i,type:`file`,accept:`.wdr,.json`,style:{display:`none`},onChange:o},null,544)]))}},Fs={class:`row`,style:{"margin-bottom":`6px`}},Is={class:`nm`},Ls={class:`drvspecs`},Rs={key:0,class:`drvsource`},zs={key:0},Bs={key:1},Vs={key:2},Hs={class:`row`},Us=[`value`],Ws={class:`row`},Gs=[`value`],Ks={class:`row`},qs=[`value`],Js={class:`row`},Ys=[`value`],Xs={class:`row`},Zs=[`value`],Qs={class:`row`},$s=[`value`],ec={class:`row`},tc=[`value`],nc={class:`row`},rc=[`value`],ic={class:`row`},ac=[`value`],oc={class:`row`},sc=[`value`],cc={class:`ebp`},lc={class:`btns`},uc={__name:`DriverPanel`,setup(e){let t=q(()=>Z.driverRaw),n=Q,r=q(()=>Ds(n.value)),i=q(()=>{let e=r.value;return e<50?`sealed`:e>100?`vented`:`sealed or vented`});function a(e,t,n){let r=parseFloat(n);isNaN(r)||(Z.driverRaw[e]=r/t)}return(e,o)=>(V(),H(`fieldset`,null,[o[46]||=U(`legend`,null,`Driver`,-1),U(`div`,Fs,[U(`button`,{style:{flex:`1`},onClick:o[0]||=e=>I(Z).browseOpen=!0,title:`Open the driver library to search and load a driver from the community database`},`Browse driver library…`)]),I(Z).editDriver?(V(),H(B,{key:1},[U(`div`,Hs,[o[22]||=U(`label`,null,`Fs`,-1),U(`input`,{type:`number`,step:`any`,"data-bind":`Fs`,value:(+t.value.Fs).toFixed(1),onInput:o[2]||=e=>a(`Fs`,1,e.target.value)},null,40,Us),o[23]||=U(`span`,{class:`u`},`Hz`,-1)]),U(`div`,Ws,[o[24]||=U(`label`,null,`Qts`,-1),U(`input`,{type:`number`,step:`any`,value:(+t.value.Qts).toPrecision(3),onInput:o[3]||=e=>a(`Qts`,1,e.target.value)},null,40,Gs),o[25]||=U(`span`,{class:`u`},null,-1)]),U(`div`,Ks,[o[26]||=U(`label`,null,`Qes`,-1),U(`input`,{type:`number`,step:`any`,value:(+t.value.Qes).toPrecision(3),onInput:o[4]||=e=>a(`Qes`,1,e.target.value)},null,40,qs),o[27]||=U(`span`,{class:`u`},null,-1)]),U(`div`,Js,[o[28]||=U(`label`,null,`Qms`,-1),U(`input`,{type:`number`,step:`any`,value:(+t.value.Qms).toPrecision(3),onInput:o[5]||=e=>a(`Qms`,1,e.target.value)},null,40,Ys),o[29]||=U(`span`,{class:`u`},null,-1)]),U(`div`,Xs,[o[30]||=U(`label`,null,`Vas`,-1),U(`input`,{type:`number`,step:`any`,value:(t.value.Vas*1e3).toPrecision(4),onInput:o[6]||=e=>a(`Vas`,1e3,e.target.value)},null,40,Zs),o[31]||=U(`span`,{class:`u`},`L`,-1)]),U(`div`,Qs,[o[32]||=U(`label`,null,`Sd`,-1),U(`input`,{type:`number`,step:`any`,value:(t.value.Sd*1e4).toPrecision(4),onInput:o[7]||=e=>a(`Sd`,1e4,e.target.value)},null,40,$s),o[33]||=U(`span`,{class:`u`},`cm²`,-1)]),U(`div`,ec,[o[34]||=U(`label`,null,`Re`,-1),U(`input`,{type:`number`,step:`any`,value:(+t.value.Re).toPrecision(3),onInput:o[8]||=e=>a(`Re`,1,e.target.value)},null,40,tc),o[35]||=U(`span`,{class:`u`},`Ω`,-1)]),U(`div`,nc,[o[36]||=U(`label`,null,`Le`,-1),U(`input`,{type:`number`,step:`any`,value:(t.value.Le*1e3).toPrecision(3),onInput:o[9]||=e=>a(`Le`,1e3,e.target.value)},null,40,rc),o[37]||=U(`span`,{class:`u`},`mH`,-1)]),U(`div`,ic,[o[38]||=U(`label`,null,`Xmax`,-1),U(`input`,{type:`number`,step:`any`,value:(t.value.Xmax*1e3).toPrecision(3),onInput:o[10]||=e=>a(`Xmax`,1e3,e.target.value)},null,40,ac),o[39]||=U(`span`,{class:`u`},`mm`,-1)]),U(`div`,oc,[o[40]||=U(`label`,null,`Pe`,-1),U(`input`,{type:`number`,step:`any`,value:+t.value.Pe||0,onInput:o[11]||=e=>a(`Pe`,1,e.target.value)},null,40,sc),o[41]||=U(`span`,{class:`u`},`W`,-1)]),U(`div`,cc,[o[42]||=G(` EBP = Fs/Qes = `,-1),U(`b`,null,k(r.value.toFixed(0)),1),o[43]||=G(` → suggests `,-1),U(`b`,null,k(i.value),1),o[44]||=G(`.`,-1),o[45]||=U(`br`,null,null,-1),G(` Derived: Bl=`+k(I(n).Bl.toFixed(2))+` Tm, Mms=`+k((I(n).Mms*1e3).toFixed(1))+` g, Cms=`+k((I(n).Cms*1e3).toFixed(3))+` mm/N `,1)]),U(`div`,lc,[U(`button`,{onClick:o[12]||=e=>I(Z).editDriver=!1,title:`Collapse the driver parameter editor and return to the summary view`},`Done editing`)])],64)):(V(),H(B,{key:0},[U(`div`,{class:`drvsum`,onClick:o[1]||=e=>I(Z).editDriver=!0,title:`Click to edit driver Thiele/Small parameters — opens the full T/S parameter editor`},[U(`span`,Is,k(I(gs)(t.value)),1),o[13]||=U(`span`,{class:`ed`},`Edit ✎`,-1)]),U(`div`,Ls,[o[14]||=G(` Fs `,-1),U(`b`,null,k((+t.value.Fs||0).toFixed(0))+` Hz`,1),o[15]||=G(` · Qts `,-1),U(`b`,null,k((I(n).Qts||0).toFixed(2)),1),o[16]||=G(` · Vas `,-1),U(`b`,null,k((t.value.Vas*1e3).toFixed(1))+` L`,1),o[17]||=G(` · Sd `,-1),U(`b`,null,k((t.value.Sd*1e4).toFixed(0))+` cm²`,1),o[18]||=G(` · Re `,-1),U(`b`,null,k((+t.value.Re||0).toFixed(1))+` Ω`,1),o[19]||=G(` · Xmax `,-1),U(`b`,null,k((t.value.Xmax*1e3).toFixed(1))+` mm`,1),o[20]||=U(`br`,null,null,-1),o[21]||=G(` EBP `,-1),U(`b`,null,k(r.value.toFixed(0)),1),G(` → `+k(i.value)+` · Bl `+k(I(n).Bl.toFixed(1))+` Tm · Mms `+k((I(n).Mms*1e3).toFixed(1))+` g `,1)]),t.value.providedBy||t.value.comment?(V(),H(`div`,Rs,[t.value.providedBy?(V(),H(`span`,zs,`Source: `+k(t.value.providedBy),1)):K(``,!0),t.value.providedBy&&t.value.comment?(V(),H(`span`,Bs,` · `)):K(``,!0),t.value.comment?(V(),H(`span`,Vs,k(t.value.comment),1)):K(``,!0)])):K(``,!0)],64))]))}},dc=[`step`,`min`,`value`],$={__name:`NumInput`,props:{modelValue:{type:Number,required:!0},scale:{type:Number,default:1},precision:{type:Number,default:4},step:{type:String,default:`any`},min:{type:Number,default:void 0}},emits:[`update:modelValue`],setup(e,{emit:t}){let n=e,r=t,i=F(!1);function a(e){let t=e*n.scale;return isFinite(t)?(+t.toPrecision(n.precision)).toString():``}let o=F(a(n.modelValue));Nn(()=>n.modelValue,e=>{i.value||(o.value=a(e))});function s(){i.value=!0,o.value=a(n.modelValue)}function c(e){o.value=e.target.value;let t=parseFloat(e.target.value);isFinite(t)&&r(`update:modelValue`,t/n.scale)}function l(e){i.value=!1;let t=parseFloat(e.target.value);isFinite(t)&&r(`update:modelValue`,t/n.scale),o.value=a(n.modelValue)}return(t,n)=>(V(),H(`input`,{type:`number`,step:e.step,min:e.min,value:o.value,onFocus:s,onInput:c,onBlur:l},null,40,dc))}},fc=`resonate_pr_lib`;function pc(){try{return JSON.parse(localStorage.getItem(fc)||`[]`)}catch{return[]}}function mc(){return pc()}function hc(e,t){let n=pc();return n.push({id:Date.now(),name:e,prSd:t.prSd,prMmd:t.prMmd,prCms:t.prCms,prRms:t.prRms,prXmax:t.prXmax,savedAt:new Date().toISOString()}),localStorage.setItem(fc,JSON.stringify(n)),n}function gc(e){let t=pc().filter(t=>t.id!==e);return localStorage.setItem(fc,JSON.stringify(t)),t}var _c={style:{"margin-bottom":`4px`}},vc={key:0,class:`pr-lib`,style:{"margin-bottom":`6px`}},yc={key:0,style:{color:`var(--mut)`,"font-size":`11px`,padding:`4px 0`}},bc=[`onClick`,`title`],xc=[`onClick`],Sc={class:`nm`},Cc={class:`drvspecs`},wc={class:`row`,title:`Name for this passive radiator — shown in the summary and saved with the PR library entry`},Tc=[`value`],Ec={class:`row`,title:`Number of passive radiators. Multiple PRs in parallel lower the effective acoustic impedance of the PR branch, increasing output without changing the tuning frequency Fp. WinISD: 'Number of radiators'.`},Dc={class:`row`,title:`Effective piston area of the passive radiator cone (from datasheet). WinISD: Sd.`},Oc={class:`row`,title:`Maximum linear one-way cone excursion before distortion (from datasheet). WinISD: Xmax.`},kc={class:`row`,title:`Choose between WinISD-style parameter entry (Fs, Qms, Vas) or raw T/S parameters (Mms, Cms, Rms). Both are equivalent — WinISD uses the same conversions internally.`},Ac={class:`row`,title:`PR free-air resonance (no added mass, no box).`},jc={class:`row`,title:`Mechanical Q of the PR suspension.`},Mc={class:`row`,title:`Compliance volume. Holds Fs and Qms fixed; updates Cms and Mms.`},Nc={class:`row`,title:`Total moving mass — diaphragm + surround + entrained air. No added weight.`},Pc={class:`row`,title:`Mechanical compliance of the PR suspension. Higher Cms → lower Fp.`},Fc={class:`row`,title:`Mechanical damping of the PR suspension.`},Ic={class:`row pr-derived`,title:`Derived: Mms = 1 / (4π²Fs²·Cms)`},Lc={class:`pr-roval`},Rc={class:`row pr-derived`,title:`Derived: Cms = Vas / (Sd²·ρc²)`},zc={class:`pr-roval`},Bc={class:`row pr-derived`,title:`Derived: Rms = √(Mms/Cms) / Qms`},Vc={class:`pr-roval`},Hc={class:`row pr-derived`,title:`Derived: Fs = 1/(2π·√(Mms·Cms))`},Uc={class:`pr-roval`},Wc={class:`row pr-derived`,title:`Derived: Qms = √(Mms/Cms) / Rms`},Gc={class:`pr-roval`},Kc={class:`row pr-derived`,title:`Derived: Vas = Cms × Sd² × ρc²`},qc={class:`pr-roval`},Jc={class:`btns`,style:{"margin-top":`4px`}},Yc={class:`row`,title:`Extra mass physically bolted to the PR cone (e.g. steel washer, lead shot). Shifts the tuning frequency down without changing the PR's other parameters. WinISD: 'Added mass'.`},Xc={class:`row`,title:`Total moving mass = Mms + added mass. This is what the acoustic circuit uses.`},Zc={style:{"font-size":`11px`,color:`var(--mut)`,"text-align":`right`,flex:`0 0 96px`}},Qc={class:`row`},$c={style:{"font-size":`11px`,color:`var(--acc2)`},title:`PR in-box tuning frequency — passive radiator resonance in this enclosure. Analogous to Fb in a vented box. WinISD: Fp.`},el={class:`row`,title:`Free-air PR resonance with added mass applied, no box. In-box Fp is higher because the box compliance in series reduces the total system compliance, raising the resonance. WinISD calls this 'Fs with added mass'.`},tl={style:{"font-size":`11px`,color:`var(--mut)`}},nl={__name:`PRPanel`,setup(e){let t=q(()=>Z.P),n=Q,r=q(()=>Ms(t.value)),i=q(()=>t.value.prCms*t.value.prSd*t.value.prSd*J*345*345*1e3),a=q(()=>{let{prMmd:e,prCms:n}=t.value;return e>0&&n>0?1/(2*Math.PI*Math.sqrt(e*n)):0}),o=q(()=>{let{prMmd:e,prCms:n,prRms:r}=t.value;return r>0?Math.sqrt(e/n)/r:0}),s=q(()=>{let{prMmd:e,prMadd:n,prCms:r}=t.value,i=e+n;return i>0&&r>0?1/(2*Math.PI*Math.sqrt(i*r)):0});function c(e){if(!(e>0))return;let t=o.value||5,n=1/((2*Math.PI*e)**2*Z.P.prCms);Z.P.prMmd=n,Z.P.prRms=Math.sqrt(n/Z.P.prCms)/t}function l(e){e>0&&(Z.P.prRms=Math.sqrt(Z.P.prMmd/Z.P.prCms)/e)}function u(e){if(!(e>0))return;let t=a.value||30,n=o.value||5,r=e/1e3/(Z.P.prSd*Z.P.prSd*J*345*345),i=1/((2*Math.PI*t)**2*r);Z.P.prCms=r,Z.P.prMmd=i,Z.P.prRms=Math.sqrt(i/r)/n}function d(){let e=ks(n.value).Fb,t=Ns(Z.P,e);Z.P.prMadd=Math.max(0,t-Z.P.prMmd)}let f=F(!1),p=F(mc()),m=F(!1);function h(){p.value=hc((Z.P.prName||``).trim()||`Custom PR`,Z.P)}function g(e){Z.P.prName=e.name,Z.P.prSd=e.prSd,Z.P.prMmd=e.prMmd,Z.P.prCms=e.prCms,Z.P.prRms=e.prRms,Z.P.prXmax=e.prXmax,m.value=!1,f.value=!1}function _(e){p.value=gc(e)}return(e,n)=>(V(),H(B,null,[U(`div`,_c,[U(`button`,{style:{width:`100%`},onClick:n[0]||=e=>m.value=!m.value,title:`Browse your saved passive radiators and load one into the current design — like 'Browse driver library' for PRs`},k(m.value?`Hide PR library ▾`:`Browse PR library… ▸`),1)]),m.value?(V(),H(`div`,vc,[p.value.length?K(``,!0):(V(),H(`div`,yc,`No saved PRs yet — edit the PR below and click Save to add one.`)),(V(!0),H(B,null,Cr(p.value,e=>(V(),H(`div`,{key:e.id,class:`pr-lib-item`},[U(`span`,{class:`pr-lib-name`,onClick:t=>g(e),title:`Click to load — Sd=${(e.prSd*1e4).toFixed(0)}cm² Mms=${(e.prMmd*1e3).toFixed(1)}g Cms=${(e.prCms*1e3).toFixed(2)}mm/N`},k(e.name),9,bc),U(`button`,{class:`pr-lib-del`,onClick:t=>_(e.id),title:`Remove this PR from the library`},`✕`,8,xc)]))),128))])):K(``,!0),f.value?(V(),H(B,{key:2},[U(`div`,wc,[n[18]||=U(`label`,null,`PR name`,-1),U(`input`,{style:{flex:`1`},type:`text`,value:I(Z).P.prName,onInput:n[2]||=e=>I(Z).P.prName=e.target.value,placeholder:`e.g. Dayton SD270A-88`},null,40,Tc)]),U(`div`,Ec,[n[19]||=U(`label`,null,`PR count`,-1),W($,{modelValue:I(Z).P.prNum,"onUpdate:modelValue":n[3]||=e=>I(Z).P.prNum=e,scale:1,precision:2,step:`1`,min:1},null,8,[`modelValue`]),n[20]||=U(`span`,{class:`u`},null,-1)]),U(`div`,Dc,[n[21]||=U(`label`,null,`Sd`,-1),W($,{modelValue:I(Z).P.prSd,"onUpdate:modelValue":n[4]||=e=>I(Z).P.prSd=e,scale:1e4,precision:4},null,8,[`modelValue`]),n[22]||=U(`span`,{class:`u`},`cm²`,-1)]),U(`div`,Oc,[n[23]||=U(`label`,null,`Xmax`,-1),W($,{modelValue:I(Z).P.prXmax,"onUpdate:modelValue":n[5]||=e=>I(Z).P.prXmax=e,scale:1e3,precision:3},null,8,[`modelValue`]),n[24]||=U(`span`,{class:`u`},`mm`,-1)]),U(`div`,kc,[n[26]||=U(`label`,null,`Input mode`,-1),Dn(U(`select`,{"onUpdate:modelValue":n[6]||=e=>I(Z).P.prMode=e,style:{flex:`1`}},[...n[25]||=[U(`option`,{value:`winisd`},`WinISD`,-1),U(`option`,{value:`ts`},`T/S`,-1)]],512),[[vo,I(Z).P.prMode]])]),t.value.prMode===`winisd`?(V(),H(B,{key:0},[U(`div`,Ac,[n[27]||=U(`label`,null,`Fs`,-1),W($,{"model-value":a.value,scale:1,precision:4,"onUpdate:modelValue":c},null,8,[`model-value`]),n[28]||=U(`span`,{class:`u`},`Hz`,-1)]),U(`div`,jc,[n[29]||=U(`label`,null,`Qms`,-1),W($,{"model-value":o.value,scale:1,precision:3,"onUpdate:modelValue":l},null,8,[`model-value`]),n[30]||=U(`span`,{class:`u`},null,-1)]),U(`div`,Mc,[n[31]||=U(`label`,null,`Vas`,-1),W($,{"model-value":i.value,scale:1,precision:3,"onUpdate:modelValue":u},null,8,[`model-value`]),n[32]||=U(`span`,{class:`u`},`L`,-1)])],64)):(V(),H(B,{key:1},[U(`div`,Nc,[n[33]||=U(`label`,null,`Mms`,-1),W($,{modelValue:I(Z).P.prMmd,"onUpdate:modelValue":n[7]||=e=>I(Z).P.prMmd=e,scale:1e3,precision:4},null,8,[`modelValue`]),n[34]||=U(`span`,{class:`u`},`g`,-1)]),U(`div`,Pc,[n[35]||=U(`label`,null,`Cms`,-1),W($,{modelValue:I(Z).P.prCms,"onUpdate:modelValue":n[8]||=e=>I(Z).P.prCms=e,scale:1e3,precision:3},null,8,[`modelValue`]),n[36]||=U(`span`,{class:`u`},`mm/N`,-1)]),U(`div`,Fc,[n[37]||=U(`label`,null,`Rms`,-1),W($,{modelValue:I(Z).P.prRms,"onUpdate:modelValue":n[9]||=e=>I(Z).P.prRms=e,scale:1,precision:3},null,8,[`modelValue`]),n[38]||=U(`span`,{class:`u`},`kg/s`,-1)])],64)),n[51]||=U(`div`,{class:`subsect`},`Derived`,-1),t.value.prMode===`winisd`?(V(),H(B,{key:2},[U(`div`,Ic,[n[39]||=U(`label`,null,`Mms`,-1),U(`span`,Lc,k((t.value.prMmd*1e3).toPrecision(4))+` g`,1),n[40]||=U(`span`,{class:`u`},null,-1)]),U(`div`,Rc,[n[41]||=U(`label`,null,`Cms`,-1),U(`span`,zc,k((t.value.prCms*1e3).toPrecision(3))+` mm/N`,1),n[42]||=U(`span`,{class:`u`},null,-1)]),U(`div`,Bc,[n[43]||=U(`label`,null,`Rms`,-1),U(`span`,Vc,k(t.value.prRms.toPrecision(3))+` kg/s`,1),n[44]||=U(`span`,{class:`u`},null,-1)])],64)):(V(),H(B,{key:3},[U(`div`,Hc,[n[45]||=U(`label`,null,`Fs`,-1),U(`span`,Uc,k(a.value.toFixed(2))+` Hz`,1),n[46]||=U(`span`,{class:`u`},null,-1)]),U(`div`,Wc,[n[47]||=U(`label`,null,`Qms`,-1),U(`span`,Gc,k(o.value.toFixed(2)),1),n[48]||=U(`span`,{class:`u`},null,-1)]),U(`div`,Kc,[n[49]||=U(`label`,null,`Vas`,-1),U(`span`,qc,k(i.value.toFixed(3))+` L`,1),n[50]||=U(`span`,{class:`u`},null,-1)])],64)),U(`div`,Jc,[U(`button`,{onClick:n[10]||=()=>{h(),f.value=!1},title:`Save these PR parameters to your library under the current PR name, then return to the summary view`},`Save`)])],64)):(V(),H(B,{key:1},[U(`div`,{class:`drvsum`,onClick:n[1]||=e=>f.value=!0,title:`Click to edit passive radiator parameters`},[U(`span`,Sc,k(I(Z).P.prName||`Custom PR`),1),n[12]||=U(`span`,{class:`ed`},`Edit ✎`,-1)]),U(`div`,Cc,[n[13]||=G(` Sd `,-1),U(`b`,null,k((I(Z).P.prSd*1e4).toFixed(0))+` cm²`,1),n[14]||=G(` · Fs `,-1),U(`b`,null,k(a.value.toFixed(1))+` Hz`,1),n[15]||=G(` · Qms `,-1),U(`b`,null,k(o.value.toFixed(2)),1),n[16]||=G(` · Vas `,-1),U(`b`,null,k(i.value.toFixed(2))+` L`,1),n[17]||=G(` · Xmax `,-1),U(`b`,null,k((I(Z).P.prXmax*1e3).toFixed(1))+` mm`,1)])],64)),n[59]||=U(`div`,{class:`subsect`},`PR tuning`,-1),U(`div`,Yc,[n[52]||=U(`label`,null,[G(`Added mass `),U(`span`,{style:{color:`var(--mut)`,"font-size":`10px`}},`(tunable)`)],-1),W($,{modelValue:I(Z).P.prMadd,"onUpdate:modelValue":n[11]||=e=>I(Z).P.prMadd=e,scale:1e3,precision:4},null,8,[`modelValue`]),n[53]||=U(`span`,{class:`u`},`g`,-1)]),U(`div`,Xc,[n[54]||=U(`label`,null,`Total Mms`,-1),U(`span`,Zc,k(((t.value.prMmd+t.value.prMadd)*1e3).toPrecision(4))+` g`,1),n[55]||=U(`span`,{class:`u`},null,-1)]),U(`div`,Qc,[n[57]||=U(`label`,null,null,-1),U(`span`,$c,[n[56]||=G(`Fp ≈ `,-1),U(`b`,null,k(r.value.toFixed(1))+` Hz`,1)])]),U(`div`,el,[n[58]||=U(`label`,null,null,-1),U(`span`,tl,`Fs+mass ≈ `+k(s.value.toFixed(1))+` Hz`,1)]),U(`div`,{class:`btns`},[U(`button`,{onClick:d,title:`Calculates and sets the added mass so Fp matches the B4 alignment's optimal tuning for this driver. B4 = 4th-order Butterworth — flat response to Fp, then steep rolloff.`},` Tune added mass to B4 Fp `)])],64))}},rl=(e,t)=>{let n=e.__vccOpts||e;for(let[e,r]of t)n[e]=r;return n},il={class:`row`},al={class:`row`,title:`Net acoustic internal volume — excludes driver displacement, port tube volume, and bracing. WinISD also uses net volume. Add ~0.5–1 L per 6.5" driver when sizing the physical box.`},ol={class:`btns`,style:{"margin-bottom":`2px`}},sl={class:`row`,title:`Leakage loss — enclosure sealing and driver surround leaks. WinISD default: 10. Lower = more leakage.`},cl={class:`row`,title:`Absorption loss from stuffing material. WinISD default: 100 (no stuffing).`},ll={key:0,class:`row`,title:`Port loss Q — air friction and turbulence in the vent tube. WinISD default: 100 (low-loss port). Lower values increase vent damping and broaden the bass-reflex peak.`},ul={key:1,class:`row`},dl={class:`row`},fl={class:`row`},pl={class:`row`},ml={style:{"font-size":`11px`,color:`var(--acc2)`}},hl={class:`btns`},gl=rl({__name:`BoxPanel`,setup(e){let t=q(()=>Z.P),n=Q,r=q(()=>{let e=Math.PI*(t.value.ventD/2)**2;return js(t.value.Vb,t.value.ventL,e)}),i=F(!1);function a(){let e=Os(n.value,.707);e&&(Z.P.Vb=e)}function o(){let e=ks(n.value);Z.P.Vb=e.Vb,Z.P.ventL=As(e.Vb,e.Fb,Math.PI*(Z.P.ventD/2)**2)}return(e,t)=>(V(),H(`fieldset`,null,[t[28]||=U(`legend`,null,`Enclosure`,-1),U(`div`,il,[t[10]||=U(`label`,null,`Type`,-1),Dn(U(`select`,{id:`boxtype`,"onUpdate:modelValue":t[0]||=e=>I(Z).box=e,style:{flex:`1`}},[...t[9]||=[U(`option`,{value:`sealed`},`Sealed (closed)`,-1),U(`option`,{value:`vented`},`Vented (bass-reflex)`,-1),U(`option`,{value:`bandpass4`},`Bandpass 4th order`,-1),U(`option`,{value:`pr`},`Passive radiator`,-1)]],512),[[vo,I(Z).box]])]),U(`div`,al,[t[11]||=U(`label`,null,`Box volume Vb`,-1),W($,{modelValue:I(Z).P.Vb,"onUpdate:modelValue":t[1]||=e=>I(Z).P.Vb=e,scale:1e3,precision:4},null,8,[`modelValue`]),t[12]||=U(`span`,{class:`u`},`L`,-1)]),U(`div`,ol,[U(`button`,{class:`losses-toggle`,onClick:t[2]||=e=>i.value=!i.value,title:`Expand box loss parameters: Ql (leakage) and Qa (absorption). Applies to all box types. WinISD defaults: Ql=10, Qa=100 — found in Box tab → Advanced→ popup.`},` Box losses `+k(i.value?`▾`:`▸`),1)]),i.value?(V(),H(B,{key:0},[U(`div`,sl,[t[13]||=U(`label`,null,`Leakage Ql`,-1),W($,{modelValue:I(Z).P.Ql,"onUpdate:modelValue":t[3]||=e=>I(Z).P.Ql=e,scale:1,precision:3},null,8,[`modelValue`]),t[14]||=U(`span`,{class:`u`},null,-1)]),U(`div`,cl,[t[15]||=U(`label`,null,`Absorption Qa`,-1),W($,{modelValue:I(Z).P.Qa,"onUpdate:modelValue":t[4]||=e=>I(Z).P.Qa=e,scale:1,precision:3},null,8,[`modelValue`]),t[16]||=U(`span`,{class:`u`},null,-1)]),I(Z).box===`vented`||I(Z).box===`bandpass4`?(V(),H(`div`,ll,[t[17]||=U(`label`,null,`Port loss Qp`,-1),W($,{modelValue:I(Z).P.Qp,"onUpdate:modelValue":t[5]||=e=>I(Z).P.Qp=e,scale:1,precision:3},null,8,[`modelValue`]),t[18]||=U(`span`,{class:`u`},null,-1)])):K(``,!0),t[19]||=U(`div`,{class:`losses-guide`},[G(` 100 = no stuffing \xA0·\xA0 20–50 = light \xA0·\xA0 5–10 = heavy`),U(`br`),U(`span`,{class:`losses-note`},`Real stuffing also increases apparent Vb — this model captures resistive loss only.`)],-1)],64)):K(``,!0),I(Z).box===`bandpass4`?(V(),H(`div`,ul,[t[20]||=U(`label`,null,`Front chamber Vf`,-1),W($,{modelValue:I(Z).P.Vf,"onUpdate:modelValue":t[6]||=e=>I(Z).P.Vf=e,scale:1e3,precision:3},null,8,[`modelValue`]),t[21]||=U(`span`,{class:`u`},`L`,-1)])):K(``,!0),I(Z).box===`vented`||I(Z).box===`bandpass4`?(V(),H(B,{key:2},[U(`div`,dl,[t[22]||=U(`label`,null,`Vent diameter`,-1),W($,{modelValue:I(Z).P.ventD,"onUpdate:modelValue":t[7]||=e=>I(Z).P.ventD=e,scale:100,precision:3},null,8,[`modelValue`]),t[23]||=U(`span`,{class:`u`},`cm`,-1)]),U(`div`,fl,[t[24]||=U(`label`,null,`Vent length`,-1),W($,{modelValue:I(Z).P.ventL,"onUpdate:modelValue":t[8]||=e=>I(Z).P.ventL=e,scale:100,precision:4},null,8,[`modelValue`]),t[25]||=U(`span`,{class:`u`},`cm`,-1)]),U(`div`,pl,[t[27]||=U(`label`,null,null,-1),U(`span`,ml,[t[26]||=G(`Fb ≈ `,-1),U(`b`,null,k(r.value.toFixed(1))+` Hz`,1)])])],64)):K(``,!0),I(Z).box===`pr`?(V(),Wi(nl,{key:3})):K(``,!0),U(`div`,hl,[I(Z).box===`sealed`?(V(),H(`button`,{key:0,onClick:a,title:`Sets the box volume so the system Q (Qtc) equals 0.707 — the Butterworth (B2) alignment. Maximally flat frequency response.`},` Set Vb for Qtc=0.707 `)):K(``,!0),I(Z).box===`vented`?(V(),H(`button`,{key:1,onClick:o,title:`Applies the QB3 or B4 vented alignment for this driver. Sets Vb and vent length for optimal bass-reflex tuning.`},` Auto QB3/B4 align `)):K(``,!0)])]))}},[[`__scopeId`,`data-v-68937cda`]]),_l={class:`row`,title:`WinISD: Le excluded from acoustic circuit — matches WinISD output exactly. Full gyrator: Le included in acoustic drive — physically more complete but diverges slightly from WinISD.`},vl={class:`row`,title:`Input power. Changing this updates the drive voltage below.`},yl=[`value`],bl={class:`row`,title:`Drive voltage = √(Pin × Re). Edit directly to set an exact voltage — input power updates automatically. Use 2.83V for IEC 60268-5 sensitivity reference (1W into 8Ω).`},xl=[`value`],Sl={class:`row`,title:`Series resistance (wire, crossover DCR, amplifier output impedance). WinISD default is 0.1 Ω.`},Cl=[`value`],wl={class:`row`},Tl=[`value`],El={class:`row`},Dl=rl({__name:`SignalPanel`,setup(e){let t=Q,n=q(()=>Math.sqrt((Z.P.Pin??1)*(t.value.Re||8)));function r(e){let n=parseFloat(e.target.value);isFinite(n)&&n>0&&(Z.P.Pin=n*n/(t.value.Re||8))}function i(){Z.P.Pin=2.83*2.83/(t.value.Re||8)}return(e,t)=>(V(),H(`fieldset`,null,[t[17]||=U(`legend`,null,`Signal & drivers`,-1),U(`div`,_l,[t[6]||=U(`label`,null,`Circuit model`,-1),Dn(U(`select`,{"onUpdate:modelValue":t[0]||=e=>I(Z).P.circuitModel=e,style:{flex:`1`}},[...t[5]||=[U(`option`,{value:`winisd`},`WinISD (Le acoustic-only)`,-1),U(`option`,{value:`gyrator`},`Full gyrator (Le everywhere)`,-1)]],512),[[vo,I(Z).P.circuitModel]])]),U(`div`,vl,[t[7]||=U(`label`,null,`Input power`,-1),U(`input`,{type:`number`,step:`0.001`,min:`0`,value:(I(Z).P.Pin??1).toFixed(3),onChange:t[1]||=e=>I(Z).P.Pin=parseFloat(e.target.value)||1},null,40,yl),t[8]||=U(`span`,{class:`u`},`W`,-1)]),U(`div`,bl,[t[9]||=U(`label`,null,`Drive voltage`,-1),U(`button`,{class:`iec-btn`,onClick:i,title:`Set to 2.83V — IEC 60268-5 sensitivity standard`},`2.83V`),U(`input`,{class:`v-input`,type:`number`,step:`0.01`,min:`0`,value:n.value.toFixed(3),onChange:r},null,40,xl),t[10]||=U(`span`,{class:`u`},`V`,-1)]),U(`div`,Sl,[t[11]||=U(`label`,null,`Series resistance`,-1),U(`input`,{type:`number`,step:`0.01`,min:`0`,value:I(Z).P.Rs,onInput:t[2]||=e=>I(Z).P.Rs=parseFloat(e.target.value)||0},null,40,Cl),t[12]||=U(`span`,{class:`u`},`Ω`,-1)]),U(`div`,wl,[t[13]||=U(`label`,null,`No. of drivers`,-1),U(`input`,{type:`number`,step:`1`,value:I(Z).P.nDrivers,onInput:t[3]||=e=>I(Z).P.nDrivers=parseInt(e.target.value)||1},null,40,Tl),t[14]||=U(`span`,{class:`u`},null,-1)]),U(`div`,El,[t[16]||=U(`label`,null,`Wiring`,-1),Dn(U(`select`,{"onUpdate:modelValue":t[4]||=e=>I(Z).P.wiring=e,style:{flex:`1`}},[...t[15]||=[U(`option`,{value:`parallel`},`Parallel`,-1),U(`option`,{value:`series`},`Series`,-1)]],512),[[vo,I(Z).P.wiring]])])]))}},[[`__scopeId`,`data-v-6966b186`]]),Ol={key:0,class:`flt-row`},kl=[`onUpdate:modelValue`],Al=[`value`,`onInput`],jl=[`value`,`onInput`],Ml=[`onClick`],Nl={key:1,class:`flt-row`},Pl=[`onUpdate:modelValue`],Fl=[`value`,`onInput`],Il=[`value`,`onInput`],Ll=[`onClick`],Rl={class:`flt-row`},zl=[`onUpdate:modelValue`],Bl=[`value`,`onInput`],Vl=[`value`,`onInput`],Hl=[`onClick`],Ul={class:`flt-row flt-sub`},Wl=[`value`,`onInput`],Gl=[`value`,`onInput`],Kl={key:3,class:`flt-row`},ql=[`onUpdate:modelValue`],Jl=[`value`,`onInput`],Yl=[`value`,`onInput`],Xl=[`value`,`onInput`],Zl=[`onClick`],Ql={key:0,class:`hint`,style:{margin:`4px 0 2px`}},$l={class:`btns`,style:{"margin-top":`6px`}},eu=rl({__name:`FiltersPanel`,setup(e){let t=1,n={highpass:{fc:80,Q:.7071},lowpass:{fc:200,Q:.7071},linkwitz:{f0:50,Q0:.7,fp:20,Qp:.5},peaking:{fc:300,Q:1,gain:-6}};function r(e){Z.P.filters.push({id:t++,type:e,enabled:!0,...n[e]})}function i(e){Z.P.filters.splice(e,1)}function a(e,t){return isFinite(e)?+e.toFixed(t):e}return(e,t)=>(V(),H(`fieldset`,null,[t[27]||=U(`legend`,null,`Filters / EQ`,-1),(V(!0),H(B,null,Cr(I(Z).P.filters,(e,n)=>(V(),H(`div`,{key:e.id,class:`flt-item`},[e.type===`highpass`?(V(),H(`div`,Ol,[Dn(U(`input`,{type:`checkbox`,"onUpdate:modelValue":t=>e.enabled=t,title:`Toggle this high-pass filter on/off — bypassed when unchecked, frequencies below cutoff roll through`},null,8,kl),[[go,e.enabled]]),t[4]||=U(`span`,{class:`flt-tag`},`HP`,-1),t[5]||=U(`span`,{class:`fp`},`fc`,-1),U(`input`,{type:`number`,step:`1`,min:`1`,value:a(e.fc,1),onInput:t=>e.fc=+t.target.value,class:`fi`},null,40,Al),t[6]||=U(`span`,{class:`fu`},`Hz`,-1),t[7]||=U(`span`,{class:`fp`},`Q`,-1),U(`input`,{type:`number`,step:`0.01`,min:`0.1`,value:a(e.Q,4),onInput:t=>e.Q=+t.target.value,class:`fi`},null,40,jl),U(`button`,{class:`fdel`,onClick:e=>i(n),title:`Remove this high-pass filter from the chain — low-frequency rolloff will no longer be applied`},`×`,8,Ml)])):e.type===`lowpass`?(V(),H(`div`,Nl,[Dn(U(`input`,{type:`checkbox`,"onUpdate:modelValue":t=>e.enabled=t,title:`Toggle this low-pass filter on/off — bypassed when unchecked, frequencies above cutoff roll through`},null,8,Pl),[[go,e.enabled]]),t[8]||=U(`span`,{class:`flt-tag`},`LP`,-1),t[9]||=U(`span`,{class:`fp`},`fc`,-1),U(`input`,{type:`number`,step:`1`,min:`1`,value:a(e.fc,1),onInput:t=>e.fc=+t.target.value,class:`fi`},null,40,Fl),t[10]||=U(`span`,{class:`fu`},`Hz`,-1),t[11]||=U(`span`,{class:`fp`},`Q`,-1),U(`input`,{type:`number`,step:`0.01`,min:`0.1`,value:a(e.Q,4),onInput:t=>e.Q=+t.target.value,class:`fi`},null,40,Il),U(`button`,{class:`fdel`,onClick:e=>i(n),title:`Remove this low-pass filter from the chain — high-frequency rolloff will no longer be applied`},`×`,8,Ll)])):e.type===`linkwitz`?(V(),H(B,{key:2},[U(`div`,Rl,[Dn(U(`input`,{type:`checkbox`,"onUpdate:modelValue":t=>e.enabled=t,title:`Toggle this Linkwitz transform on/off — bypassed when unchecked, bass extension will not be applied`},null,8,zl),[[go,e.enabled]]),t[12]||=U(`span`,{class:`flt-tag`},`LT`,-1),t[13]||=U(`span`,{class:`fp`},`f₀`,-1),U(`input`,{type:`number`,step:`1`,min:`1`,value:a(e.f0,1),onInput:t=>e.f0=+t.target.value,class:`fi`},null,40,Bl),t[14]||=U(`span`,{class:`fu`},`Hz`,-1),t[15]||=U(`span`,{class:`fp`},`Q₀`,-1),U(`input`,{type:`number`,step:`0.01`,min:`0.1`,value:a(e.Q0,3),onInput:t=>e.Q0=+t.target.value,class:`fi`},null,40,Vl),U(`button`,{class:`fdel`,onClick:e=>i(n),title:`Remove this Linkwitz transform from the chain — active bass extension will no longer be applied`},`×`,8,Hl)]),U(`div`,Ul,[t[16]||=U(`span`,{style:{width:`20px`}},null,-1),t[17]||=U(`span`,{class:`flt-tag`,style:{color:`var(--mut)`}},`→`,-1),t[18]||=U(`span`,{class:`fp`},`fp`,-1),U(`input`,{type:`number`,step:`1`,min:`1`,value:a(e.fp,1),onInput:t=>e.fp=+t.target.value,class:`fi`},null,40,Wl),t[19]||=U(`span`,{class:`fu`},`Hz`,-1),t[20]||=U(`span`,{class:`fp`},`Qp`,-1),U(`input`,{type:`number`,step:`0.01`,min:`0.1`,value:a(e.Qp,3),onInput:t=>e.Qp=+t.target.value,class:`fi`},null,40,Gl)])],64)):e.type===`peaking`?(V(),H(`div`,Kl,[Dn(U(`input`,{type:`checkbox`,"onUpdate:modelValue":t=>e.enabled=t,title:`Toggle this parametric EQ band on/off — bypassed when unchecked, boost/cut will not be applied`},null,8,ql),[[go,e.enabled]]),t[21]||=U(`span`,{class:`flt-tag`},`PEQ`,-1),t[22]||=U(`span`,{class:`fp`},`fc`,-1),U(`input`,{type:`number`,step:`1`,min:`1`,value:a(e.fc,1),onInput:t=>e.fc=+t.target.value,class:`fi`},null,40,Jl),t[23]||=U(`span`,{class:`fu`},`Hz`,-1),t[24]||=U(`span`,{class:`fp`},`Q`,-1),U(`input`,{type:`number`,step:`0.01`,min:`0.1`,value:a(e.Q,3),onInput:t=>e.Q=+t.target.value,class:`fi2`},null,40,Yl),t[25]||=U(`span`,{class:`fp`},`G`,-1),U(`input`,{type:`number`,step:`0.5`,value:a(e.gain,1),onInput:t=>e.gain=+t.target.value,class:`fi2`},null,40,Xl),t[26]||=U(`span`,{class:`fu`},`dB`,-1),U(`button`,{class:`fdel`,onClick:e=>i(n),title:`Remove this parametric EQ band from the chain — the boost/cut at this frequency will no longer be applied`},`×`,8,Zl)])):K(``,!0)]))),128)),I(Z).P.filters.length?K(``,!0):(V(),H(`div`,Ql,` No filters active. `)),U(`div`,$l,[U(`button`,{onClick:t[0]||=e=>r(`highpass`),title:`Add a high-pass filter — rolls off frequencies below the cutoff at 12 dB/oct (2nd order Butterworth)`},`+ HP`),U(`button`,{onClick:t[1]||=e=>r(`lowpass`),title:`Add a low-pass filter — rolls off frequencies above the cutoff at 12 dB/oct (2nd order Butterworth)`},`+ LP`),U(`button`,{onClick:t[2]||=e=>r(`linkwitz`),title:`Add a Linkwitz transform — shifts the sealed box resonance from Fc/Qtc to a new Fp/Qp for active bass extension`},`+ Linkwitz`),U(`button`,{onClick:t[3]||=e=>r(`peaking`),title:`Add a parametric EQ band — boost or cut a specific frequency range with adjustable centre frequency, Q, and gain`},`+ Peaking EQ`)])]))}},[[`__scopeId`,`data-v-a3aa7376`]]),tu={__name:`SidePanel`,setup(e){return(e,t)=>(V(),H(B,null,[W(uc),W(gl),W(Dl),W(eu),t[0]||=U(`div`,{class:`hint`,style:{padding:`4px 4px 2px`}},` Engine validated vs closed-form sealed (<0.03 dB), driver sensitivity, and vented 24 dB/oct. Lumped electro-acoustical circuit, half-space. `,-1)],64))}},nu=[{id:`SPL`,name:`SPL response`,unit:`dB`,color:`#4fb0ff`},{id:`Excursion`,name:`Cone excursion`,unit:`mm`,color:`#ffb454`},{id:`Port`,name:`Air velocity`,unit:`m/s`,color:`#5ad17a`},{id:`GD`,name:`Group delay`,unit:`ms`,color:`#c08bff`},{id:`Zmag`,name:`Impedance`,unit:`Ω`,color:`#ff6b6b`},{id:`Zph`,name:`Impedance phase`,unit:`°`,color:`#ff9bb0`},{id:`Phase`,name:`Transfer phase`,unit:`°`,color:`#7fd4ff`},{id:`MaxSPL`,name:`Maximum SPL`,unit:`dB`,color:`#5ad17a`},{id:`MaxPwr`,name:`Maximum power`,unit:`W`,color:`#ffd05a`}];function ru(e,t,n,r,i,a){let o=nu.find(t=>t.id===e),s=[],c,l,u=!1,d=o.unit,f=e=>({xs:i.fs,ys:e});if(e===`SPL`){s=[{...f(i.spl),color:o.color,name:`SPL`}];let e=Math.max(...i.spl);l=Math.ceil((e+3)/5)*5,c=l-45;let t=t=>{for(let n=0;n<i.fs.length;n++)if(i.spl[n]>=e-t)return i.fs[n];return null},n=t(3),r=t(6),a=t(10);n!=null&&s.push({xs:i.fs,ys:i.fs.map(()=>e-3),color:`#ffb454`,name:`F3 = ${n.toFixed(0)} Hz`,dash:!0}),r!=null&&s.push({xs:i.fs,ys:i.fs.map(()=>e-6),color:`#ff6b6b`,name:`F6 = ${r.toFixed(0)} Hz`,dash:!0}),a!=null&&s.push({xs:i.fs,ys:i.fs.map(()=>e-10),color:`#c08bff`,name:`F10 = ${a.toFixed(0)} Hz`,dash:!0})}else if(e===`Excursion`){s=[{...f(i.exc),color:o.color,name:`Cone`}];let e=t.Xmax*1e3;s.push({xs:i.fs,ys:i.fs.map(()=>e),color:`#ff6b6b`,name:`Xmax`,dash:!0});let a=Math.max(e*1.4,Math.max(...i.exc.slice(0,20))*1.1);if(n===`pr`){s.push({xs:i.fs,ys:i.excPR,color:`#5ad17a`,name:`PR`});let e=(r.prXmax||.01)*1e3;s.push({xs:i.fs,ys:i.fs.map(()=>e),color:`#9ad17a`,name:`PR Xmax`,dash:!0}),a=Math.max(a,e*1.3,Math.max(...i.excPR.slice(0,30))*1.1)}c=0,l=a}else if(e===`Port`)n!==`vented`&&n!==`bandpass4`?(s=[{xs:i.fs,ys:i.fs.map(()=>0),color:o.color,name:`n/a`}],c=0,l=1):(s=[{...f(i.pv),color:o.color,name:`Port vel`}],s.push({xs:i.fs,ys:i.fs.map(()=>.05*345),color:`#ffb454`,name:`17 m/s`,dash:!0}),c=0,l=Math.max(20,Math.max(...i.pv)*1.1));else if(e===`GD`){s=[{...f(i.gd),color:o.color,name:`Group delay`}];let e=Math.max(...i.gd.filter(isFinite));c=0,l=Math.max(e*1.1,5)}else if(e===`Zmag`)s=[{...f(i.zmag),color:o.color,name:`|Z|`}],u=!0,c=Math.max(1,Math.min(...i.zmag)*.9),l=Math.max(...i.zmag)*1.15;else if(e===`Zph`)s=[{...f(i.zph),color:o.color,name:`Z phase`}],c=-90,l=90;else if(e===`Phase`){s=[{xs:i.fs,ys:i.phase.map(e=>e*180/Math.PI),color:o.color,name:`Phase`}];let e=s[0].ys;c=Math.floor(Math.min(...e)/90)*90,l=Math.ceil(Math.max(...e)/90)*90}else if(e===`MaxSPL`){s=[{xs:a.fs,ys:a.maxspl,color:o.color,name:`Max SPL`}];let e=Math.max(...a.maxspl);l=Math.ceil(e/5)*5,c=l-40}else e===`MaxPwr`&&(s=[{xs:a.fs,ys:a.maxpwr,color:o.color,name:`Max power`}],u=!0,c=1,l=Math.max(...a.maxpwr)*1.2);return{series:s,ymin:c,ymax:l,logy:u,unit:d}}function iu(e,t,n,r,i){let a=[r,...i],o=a.length>1,s=null;return a.forEach((r,i)=>{let a=ru(e,r.driver,r.box,r.P,r.curves,r.maxCurves||r.maxCurvesData||{});s||={series:[],ymin:a.ymin,ymax:a.ymax,logy:a.logy,unit:a.unit,fmin:t,fmax:n};let c={...a.series[0]};if(o&&(c.color=r.color||rs[i%rs.length],c.name=r.name+`: `+c.name),s.series.push(c),i===0)for(let e=1;e<a.series.length;e++)s.series.push(a.series[e]);s.ymin=Math.min(s.ymin,a.ymin),s.ymax=Math.max(s.ymax,a.ymax),s.logy=s.logy||a.logy}),s}var au={class:`gtoolbar`},ou=[`title`,`onClick`],su=[`title`,`onClick`],cu=[`value`],lu=[`title`],uu=rl({__name:`GraphToolbar`,setup(e){function t(e){let t=Z.graphs.indexOf(e);t>=0?Z.graphs.length>1&&Z.graphs.splice(t,1):Z.graphs.push(e)}function n(e){Z.compare.splice(e,1)}function r(){Z.compare=[]}let i=q(()=>Z.cursorLocked?Z.pinnedF:Z.cursorF??Z.pinnedF);function a(e){let t=parseFloat(e.target.value);Z.pinnedF=isFinite(t)&&t>0?t:null}function o(e){let t=i.value;if(!t)return;let n=Math.max(.1,t*.01);Z.pinnedF=Math.max(.1,t+e*n)}function s(){Z.pinnedF=null,Z.cursorLocked=!1}function c(){Z.cursorLocked=!Z.cursorLocked,Z.cursorLocked&&Z.cursorF&&(Z.pinnedF=Z.cursorF)}return(e,l)=>(V(),H(`div`,au,[l[4]||=U(`span`,{class:`lab`},`Graphs:`,-1),(V(!0),H(B,null,Cr(I(nu),e=>(V(),H(`span`,{key:e.id,class:he([`gchip`,{on:I(Z).graphs.includes(e.id)}]),title:I(Z).graphs.includes(e.id)?`Hide ${e.name} graph`:`Show ${e.name} graph`,onClick:n=>t(e.id)},k(e.name),11,ou))),128)),l[5]||=U(`span`,{class:`sep`},null,-1),U(`button`,{onClick:l[0]||=(...e)=>I(_s)&&I(_s)(...e),title:`Snapshot the current design and overlay its curves on all graphs for comparison`},`+ Compare current`),I(Z).compare.length?(V(),H(B,{key:0},[l[3]||=U(`span`,{class:`lab`},`vs`,-1),(V(!0),H(B,null,Cr(I(Z).compare,(e,t)=>(V(),H(`span`,{key:t,class:`gchip on`,style:ue({borderColor:e.color,color:e.color}),title:`Remove '${e.name}' from comparison overlays`,onClick:e=>n(t)},k(e.name)+` ✕`,13,su))),128)),U(`button`,{onClick:r,title:`Remove all comparison overlays from graphs`},`clear`)],64)):K(``,!0),l[6]||=U(`span`,{class:`sep`},null,-1),l[7]||=U(`span`,{class:`lab`,title:`Right-click any graph to snap & lock cursor to nearest peak or trough`},`Cursor:`,-1),U(`button`,{class:`nudge-btn`,onClick:l[1]||=e=>o(-1),title:`Step cursor down ~1%`},`−`),U(`input`,{class:`cursor-hz`,type:`number`,min:`1`,max:`9999`,step:`0.1`,value:i.value?i.value.toFixed(1):``,onChange:a,placeholder:`Hz`},null,40,cu),U(`button`,{class:`nudge-btn`,onClick:l[2]||=e=>o(1),title:`Step cursor up ~1%`},`+`),U(`button`,{class:he([`nudge-btn lock-btn`,{locked:I(Z).cursorLocked}]),onClick:c,title:I(Z).cursorLocked?`Unlock cursor (hover will move it)`:`Lock cursor at current frequency`},k(I(Z).cursorLocked?`🔒`:`🔓`),11,lu),I(Z).pinnedF?(V(),H(`button`,{key:1,class:`nudge-btn`,onClick:s,title:`Clear pinned cursor`},`✕`)):K(``,!0)]))}},[[`__scopeId`,`data-v-d3d596d4`]]),du=e=>e>=1e3?(e/1e3).toFixed(e<1e4?2:1)+`k`:e.toFixed(0),fu=e=>{let t=Math.abs(e);return t>=1e3?(e/1e3).toFixed(1)+`k`:t>=10?e.toFixed(0):t>=1?e.toFixed(1):e.toFixed(2)},pu=(e,t)=>{if(!isFinite(e))return`—`;let n=Math.abs(e);return e.toFixed(n>=100?0:n>=10?1:2)+` `+t};function mu(e,t,n=6){let r=(t-e)/n,i=10**Math.floor(Math.log10(r)),a=r/i,o=(a<1.5?1:a<3?2:a<7?5:10)*i,s=[];for(let n=Math.ceil(e/o)*o;n<=t+1e-9;n+=o)s.push(+n.toFixed(6));return s}function hu(e,t){let n=[];for(let r=Math.floor(Math.log10(e));r<=Math.ceil(Math.log10(t));r++)for(let i of[1,2,5]){let a=i*10**r;a>=e&&a<=t&&n.push(a)}return n}function gu(e,t,n,r,i){if(!e||!t)return null;let a=e.getContext(`2d`),o=window.devicePixelRatio||1,s=e.clientWidth||300,c=e.clientHeight||180;e.width=s*o,e.height=c*o,a.setTransform(o,0,0,o,0,0),a.clearRect(0,0,s,c);let l={l:44,r:10,t:18,b:20},u=s-l.l-l.r,d=c-l.t-l.b,f=t.fmin||10,p=t.fmax||1e3,m=Math.log10(f),h=Math.log10(p),{ymin:g,ymax:_,logy:v}=t,y=v?Math.log10(g):g,b=v?Math.log10(_):_,x=e=>l.l+(Math.log10(e)-m)/(h-m)*u,S=e=>{let t=v?Math.log10(e):e;return l.t+(1-(t-y)/(b-y))*d};a.strokeStyle=`#243040`,a.fillStyle=`#7c8a9c`,a.font=`9px Segoe UI`,a.lineWidth=1;for(let e=Math.floor(m);e<=Math.ceil(h);e++)for(let t of[1,2,3,4,5,6,7,8,9]){let n=t*10**e;if(n<f||n>p)continue;let r=x(n);a.globalAlpha=t===1?.85:.28,a.beginPath(),a.moveTo(r,l.t),a.lineTo(r,l.t+d),a.stroke(),(t===1||t===2||t===5)&&(a.globalAlpha=1,a.textAlign=`center`,a.fillText(du(n),r,l.t+d+11))}a.globalAlpha=1;let C=v?hu(g,_):mu(g,_,5);a.textAlign=`right`;for(let e of C){let t=S(e);t<l.t-1||t>l.t+d+1||(a.globalAlpha=.4,a.beginPath(),a.moveTo(l.l,t),a.lineTo(l.l+u,t),a.stroke(),a.globalAlpha=1,a.fillText(fu(e),l.l-5,t+3))}for(let e of t.series){a.strokeStyle=e.color,a.lineWidth=e.dash?1.1:1.7,e.dash?a.setLineDash([5,4]):a.setLineDash([]),a.beginPath();let t=!1;for(let n=0;n<e.xs.length;n++){let r=S(e.ys[n]);if(!isFinite(r)){t=!1;continue}t?a.lineTo(x(e.xs[n]),r):(a.moveTo(x(e.xs[n]),r),t=!0)}a.stroke()}a.setLineDash([]);let w=t.series.filter(e=>e.name);if(w.length>1){a.font=`9px Segoe UI`,a.textAlign=`left`;let e=l.l+6,t=l.t+6;for(let n of w)a.strokeStyle=n.color,a.lineWidth=n.dash?1.1:1.7,n.dash?a.setLineDash([4,3]):a.setLineDash([]),a.beginPath(),a.moveTo(e,t+3),a.lineTo(e+14,t+3),a.stroke(),a.setLineDash([]),a.fillStyle=n.color,a.fillText(n.name,e+17,t+6),t+=13}let ee={m:l,pw:u,ph:d,X:x,Y:S,f0:f,f1:p};if(i){let e=x(Math.max(i.fLo,f)),n=x(Math.min(i.fHi,p));if(a.fillStyle=`rgba(255,255,255,0.07)`,a.fillRect(e,l.t,n-e,d),a.strokeStyle=`rgba(255,255,255,0.35)`,a.lineWidth=1,a.setLineDash([3,3]),a.beginPath(),a.moveTo(e,l.t),a.lineTo(e,l.t+d),a.stroke(),a.beginPath(),a.moveTo(n,l.t),a.lineTo(n,l.t+d),a.stroke(),a.setLineDash([]),r){let e=e=>e>=100?e.toFixed(0):e.toFixed(1),n=`<b>${e(i.fLo)}–${e(i.fHi)} Hz</b>`;i.dy!=null&&(n+=`  Δ = <b>${Math.abs(i.dy).toFixed(1)} ${t.unit}</b>`),r.innerHTML=n,r.style.display=`block`}}if(n&&t.series[0]){let e=t.series[0],i=0,o=1e9;for(let t=0;t<e.xs.length;t++){let r=Math.abs(Math.log10(e.xs[t])-Math.log10(n));r<o&&(o=r,i=t)}let s=e.xs[i];a.strokeStyle=`#ffffff55`,a.setLineDash([3,3]),a.beginPath(),a.moveTo(x(s),l.t),a.lineTo(x(s),l.t+d),a.stroke(),a.setLineDash([]);let c=`<b>${s.toFixed(+(s<100))}Hz</b>`;for(let e of t.series){if(e.dash)continue;let n=e.ys[i];a.fillStyle=e.color,a.beginPath(),a.arc(x(s),S(n),2.6,0,7),a.fill(),c+=` <span style="color:${e.color}">${pu(n,t.unit)}</span>`}r&&(r.innerHTML=c,r.style.display=`block`)}else r&&(r.style.display=`none`);return ee}var _u={class:`gpanel`},vu={class:`gtitle`},yu=rl({__name:`GraphPanel`,props:{tabId:String},setup(e){let t=e,n=F(null),r=F(null),i=q(()=>nu.find(e=>e.id===t.tabId)||{name:t.tabId}),a=q(()=>({driver:Q.value,box:Z.box,P:us.value,curves:ms.value,maxCurves:hs.value,name:`Current`,color:rs[0]})),o=q(()=>iu(t.tabId,Z.P.fmin,Z.P.fmax,a.value,Z.compare)),s=q(()=>Z.cursorLocked?Z.pinnedF:Z.cursorF??Z.pinnedF),c=null,l=F(null),u=null;function d(e){if(!c)return null;let{m:t,pw:r,f0:i,f1:a}=c,o=(e-n.value.getBoundingClientRect().left-t.l)/r;return o<0||o>1?null:10**(Math.log10(i)+o*(Math.log10(a)-Math.log10(i)))}function f(e){let t=o.value?.series?.[0];if(!t)return null;let n=0,r=1e9;for(let i=0;i<t.xs.length;i++){let a=Math.abs(Math.log10(t.xs[i])-Math.log10(e));a<r&&(r=a,n=i)}return t.ys[n]}function p(){c=gu(n.value,o.value,l.value?null:s.value,r.value,l.value)}function m(e){if(e.button!==0||!c)return;let t=d(e.clientX);t!==null&&(u={clientX:e.clientX,f:t})}function h(e){if(u&&e.buttons&1&&Math.abs(e.clientX-u.clientX)>=5){let t=d(e.clientX);if(t!==null){let e=Math.min(u.f,t),n=Math.max(u.f,t),r=f(e),i=f(n);l.value={fLo:e,fHi:n,dy:r!=null&&i!=null?i-r:null},p()}return}if(Z.cursorLocked||!c)return;let{m:t,pw:r,f0:i,f1:a}=c,o=n.value.getBoundingClientRect(),s=(e.clientX-o.left-t.l)/r;if(s<0||s>1){Z.cursorF!==null&&(Z.cursorF=null);return}Z.cursorF=10**(Math.log10(i)+s*(Math.log10(a)-Math.log10(i)))}function g(e){if(!u||e.button!==0){u=null;return}let t=Math.abs(e.clientX-u.clientX)>=5;if(u=null,t)return;l.value=null;let n=d(e.clientX);n!==null&&(Z.pinnedF=n,Z.cursorLocked=!0)}function _(){u=null,l.value=null,Z.cursorLocked||(Z.cursorF=null)}let v=F({visible:!1,x:0,y:0,f:null});function y(e){e.preventDefault();let t=Z.cursorLocked?Z.pinnedF:Z.cursorF;v.value={visible:!0,x:e.clientX,y:e.clientY,f:t}}function b(){v.value.visible=!1}function x(e,t){let n=o.value?.series?.find(e=>!e.dash);if(!n)return b();let r=v.value.f,i=t===`max`,a=[];for(let t=1;t<n.ys.length-1;t++){if(!isFinite(n.ys[t]))continue;let o=n.ys[t]>n.ys[t-1]&&n.ys[t]>n.ys[t+1],s=n.ys[t]<n.ys[t-1]&&n.ys[t]<n.ys[t+1];(i?!o:!s)||r!==null&&(e===`left`&&n.xs[t]>=r||e===`right`&&n.xs[t]<=r)||a.push(t)}if(!a.length)return b();let s=r??n.xs[Math.floor(n.xs.length/2)],c=a[0],l=1/0;for(let e of a){let t=Math.abs(Math.log10(n.xs[e])-Math.log10(s));t<l&&(l=t,c=e)}Z.pinnedF=n.xs[c],Z.cursorLocked=!0,b()}function S(){let e=v.value.f;e&&(Z.pinnedF=e,Z.cursorLocked=!0),b()}function C(e){v.value.visible&&b()}let w;return pr(()=>{w=new ResizeObserver(p),w.observe(n.value),document.addEventListener(`click`,C)}),_r(()=>{w?.disconnect(),document.removeEventListener(`click`,C)}),Nn([o,s],p,{flush:`post`}),(e,t)=>(V(),H(B,null,[U(`div`,_u,[U(`canvas`,{ref_key:`canvasEl`,ref:n,onMousedown:m,onMouseup:g,onMousemove:h,onMouseleave:_,onContextmenu:y},null,544),U(`div`,vu,k(i.value.name),1),U(`div`,{ref_key:`readEl`,ref:r,class:`gread`},null,512)]),(V(),Wi(Jn,{to:`body`},[v.value.visible?(V(),H(`div`,{key:0,class:`ctx-menu`,style:ue({left:v.value.x+`px`,top:v.value.y+`px`}),onClick:t[4]||=wo(()=>{},[`stop`])},[U(`div`,{class:`ctx-item`,onClick:S,title:`Pin the cursor to this frequency — hover will no longer move it`},`Lock cursor here`),t[5]||=U(`div`,{class:`ctx-sep`},null,-1),U(`div`,{class:`ctx-item`,onClick:t[0]||=e=>x(`left`,`max`),title:`Snap cursor left to the nearest peak (local maximum)`},`◄ Max to left`),U(`div`,{class:`ctx-item`,onClick:t[1]||=e=>x(`left`,`min`),title:`Snap cursor left to the nearest trough (local minimum)`},`◄ Min to left`),U(`div`,{class:`ctx-item`,onClick:t[2]||=e=>x(`right`,`max`),title:`Snap cursor right to the nearest peak (local maximum)`},`Max to right ►`),U(`div`,{class:`ctx-item`,onClick:t[3]||=e=>x(`right`,`min`),title:`Snap cursor right to the nearest trough (local minimum)`},`Min to right ►`)],4)):K(``,!0)]))],64))}},[[`__scopeId`,`data-v-ebe2d5c5`]]),bu={__name:`GraphGrid`,setup(e){let t=q(()=>{let e=Z.graphs.length;return e<=1?1:e<=4?2:3});return(e,n)=>(V(),H(`div`,{id:`ggrid`,class:`ggrid`,style:ue({gridTemplateColumns:`repeat(${t.value}, 1fr)`})},[(V(!0),H(B,null,Cr(I(Z).graphs,e=>(V(),Wi(yu,{key:e,tabId:e},null,8,[`tabId`]))),128))],4))}},xu={__name:`GraphArea`,setup(e){return(e,t)=>(V(),H(B,null,[W(uu),W(bu)],64))}},Su={id:`stat`,class:`stat`},Cu={key:0},wu={key:1},Tu={key:2},Eu={key:3},Du={key:4},Ou={key:5},ku={__name:`StatBar`,setup(e){let t=Q,n=us,r=ms;function i(e,t,n){let r=Math.max(...t);for(let i=0;i<e.length;i++)if(t[i]>=r-n)return e[i];return null}let a=q(()=>{let e=t.value,a=n.value,o=r.value,s=Z.box,c=i(o.fs,o.spl,3),l=i(o.fs,o.spl,6),u=i(o.fs,o.spl,10),d=Math.max(...o.zmag),f=s===`vented`?js(a.Vb,a.ventL,a.Sp||Math.PI*(a.ventD/2)**2):null,p=s===`pr`?Ms(a):null,m=s===`sealed`?e.Qts*Math.sqrt(1+e.Vas/a.Vb):null,h=s===`sealed`?e.Fs*Math.sqrt(1+e.Vas/a.Vb):null,g=s===`vented`||s===`bandpass4`?Math.max(...o.pv):null,_=s===`pr`?Math.max(...o.excPR):null;return{box:s,Vb:a.Vb,fc:h,Qtc:m,fb:f,fp:p,f3:c,f6:l,f10:u,peakZ:d,maxPV:g,maxPRx:_,ebpVal:Ds(e),prXmax:a.prXmax}});return(e,t)=>(V(),H(`div`,Su,[U(`span`,null,[t[0]||=G(`Box: `,-1),U(`b`,null,k(a.value.box),1)]),U(`span`,null,[t[1]||=G(`Vb: `,-1),U(`b`,null,k((a.value.Vb*1e3).toFixed(1))+` L`,1)]),a.value.fc?(V(),H(`span`,Cu,[t[2]||=G(`fc: `,-1),U(`b`,null,k(a.value.fc.toFixed(1))+` Hz`,1)])):K(``,!0),a.value.Qtc?(V(),H(`span`,wu,[t[3]||=G(`Qtc: `,-1),U(`b`,null,k(a.value.Qtc.toFixed(3)),1)])):K(``,!0),a.value.fb?(V(),H(`span`,Tu,[t[4]||=G(`Fb: `,-1),U(`b`,null,k(a.value.fb.toFixed(1))+` Hz`,1)])):K(``,!0),a.value.fp?(V(),H(`span`,Eu,[t[5]||=G(`Fp: `,-1),U(`b`,null,k(a.value.fp.toFixed(1))+` Hz`,1)])):K(``,!0),U(`span`,null,[t[6]||=G(`F3: `,-1),U(`b`,null,k(a.value.f3?a.value.f3.toFixed(1)+` Hz`:`—`),1)]),U(`span`,null,[t[7]||=G(`F6: `,-1),U(`b`,null,k(a.value.f6?a.value.f6.toFixed(1)+` Hz`:`—`),1)]),U(`span`,null,[t[8]||=G(`F10: `,-1),U(`b`,null,k(a.value.f10?a.value.f10.toFixed(1)+` Hz`:`—`),1)]),U(`span`,null,[t[9]||=G(`Z peak: `,-1),U(`b`,null,k(a.value.peakZ.toFixed(1))+` Ω`,1)]),a.value.maxPV==null?K(``,!0):(V(),H(`span`,Du,[t[10]||=G(`peak port: `,-1),U(`b`,null,k(a.value.maxPV.toFixed(1))+` m/s`,1)])),a.value.maxPRx==null?K(``,!0):(V(),H(`span`,Ou,[t[11]||=G(` peak PR: `,-1),U(`b`,null,k(a.value.maxPRx.toFixed(1))+` mm`,1),G(` (Xmax `+k(((a.value.prXmax||0)*1e3).toFixed(1))+`) `,1)])),U(`span`,null,[t[12]||=G(`EBP: `,-1),U(`b`,null,k(a.value.ebpVal.toFixed(0)),1)])]))}},Au={$schema:`./sources.schema.md`,version:1,description:`Federated driver-data sources. Resonate links to driver libraries wherever their owners maintain them, instead of copying the files. The in-app driver browser reads this list (and you can paste any GitHub repo ad hoc). Add a source by opening a PR that appends an entry here.`,sources:[{name:`Matt (mtg90) / AVS Forum`,url:`https://github.com/Johnlon/resonate/tree/main/drivers/matt`,description:`~430 drivers from the mtg90 AVS Forum collection. See drivers/matt/meta.json for provenance.`,license:`community / factual T/S measurements`},{name:`loudspeakerdatabase cached`,url:`https://github.com/Johnlon/resonate/tree/main/drivers/loudspeakerdatabase`,description:`Drivers sourced from loudspeakerdatabase.com.`,license:`see loudspeakerdatabase.com`},{name:`Choong Keat Yian`,url:`https://github.com/Johnlon/resonate/tree/main/drivers/Choong Keat Yian`,description:`1 driver contributed by Choong Keat Yian.`,license:`community contribution`},{name:`MWisBest / WinISDDrivers`,url:`https://github.com/Johnlon/resonate/tree/main/drivers/MWisBest`,description:`~108 subwoofer driver files for WinISD.`,license:`see repository`},{name:`SB Acoustics`,url:`https://github.com/Johnlon/resonate/tree/main/drivers/sb-acoustics`,description:`201 drivers scraped from sbacoustics.com. Covers SB Acoustics and Satori lines — woofers, midrange, tweeters. PDF datasheets linked in _meta.json. All quality=M (scraped, not human-verified). Refresh with: python scripts/scrape_sbacoustics.py`,license:`public product data from sbacoustics.com`},{name:`Parts Express woofer guide`,url:`https://github.com/Johnlon/resonate/tree/main/drivers/parts-express`,description:`1673 drivers fetched from the Parts Express product API (https://www.parts-express.com/api/items?q={sku}&fieldset=details). Covers woofers, subwoofers, tweeters, midrange/full-range, passive radiators, planar/ribbon, car audio, and pro audio drivers. Brands: Aurum Cantus, B&C Speakers, Beyma, Celestion, Ciare, CSS, Dayton Audio, EPIQUE, Eminence Speaker, FaitalPRO, Goldwood, GRS, HiVi, JBL Professional, Lavoce, Morel, Peerless by Tymphany, PRV Audio, Selenium, Tang Band, Tectonic, Timpano Audio, Visaton, Wavecor and others. Files with populated Qes have full T/S (quality=H); files with blank Qes have estimated Re and Sd only (quality=L). See meta.json for quality=M cases. Refresh with: node scripts/refresh-pe-catalog.mjs`,license:`public product data from parts-express.com`}]},ju={sources:[{name:`Matt (mtg90) / AVS Forum`,files:[{name:`AE IB15HT-8`,content:`[Driver]
+See docs/MATHS.md for the circuit model and equations.`)}return(e,s)=>(V(),H(`header`,null,[s[0]||=U(`h1`,null,[G(`Resonate`),U(`span`,{style:{color:`var(--acc)`}},` ~`),G(` \xA0 `),U(`small`,null,`open loudspeaker enclosure simulator · community-owned · runs anywhere`)],-1),s[1]||=U(`div`,{class:`sp`},null,-1),U(`button`,{onClick:a,title:`Import a WinISD .wdr driver file or a Resonate .json project file`},`Import .wdr / project`),U(`button`,{onClick:r,title:`Export the current driver parameters as a WinISD-compatible .wdr file`},`Export driver .wdr`),U(`button`,{id:`btnShare`,onClick:t,title:`Copy a shareable URL that encodes the current design — paste into a forum or send to a colleague`},`Share link`),U(`button`,{onClick:n,title:`Export the full design (driver + box + settings) as a Resonate .json project file`},`Export design`),U(`button`,{onClick:c,title:`About Resonate — version, licence, and contributors`},`About`),U(`input`,{ref_key:`fileInput`,ref:i,type:`file`,accept:`.wdr,.json`,style:{display:`none`},onChange:o},null,544)]))}},Fs={class:`row`,style:{"margin-bottom":`6px`}},Is={class:`nm`},Ls={class:`drvspecs`},Rs={key:0,class:`drvsource`},zs={key:0},Bs={key:1},Vs={key:2},Hs={class:`row`},Us=[`value`],Ws={class:`row`},Gs=[`value`],Ks={class:`row`},qs=[`value`],Js={class:`row`},Ys=[`value`],Xs={class:`row`},Zs=[`value`],Qs={class:`row`},$s=[`value`],ec={class:`row`},tc=[`value`],nc={class:`row`},rc=[`value`],ic={class:`row`},ac=[`value`],oc={class:`row`},sc=[`value`],cc={class:`ebp`},lc={class:`btns`},uc={__name:`DriverPanel`,setup(e){let t=q(()=>Z.driverRaw),n=Q,r=q(()=>Ds(n.value)),i=q(()=>{let e=r.value;return e<50?`sealed`:e>100?`vented`:`sealed or vented`});function a(e,t,n){let r=parseFloat(n);isNaN(r)||(Z.driverRaw[e]=r/t)}return(e,o)=>(V(),H(`fieldset`,null,[o[46]||=U(`legend`,null,`Driver`,-1),U(`div`,Fs,[U(`button`,{style:{flex:`1`},onClick:o[0]||=e=>I(Z).browseOpen=!0,title:`Open the driver library to search and load a driver from the community database`},`Browse driver library…`)]),I(Z).editDriver?(V(),H(B,{key:1},[U(`div`,Hs,[o[22]||=U(`label`,null,`Fs`,-1),U(`input`,{type:`number`,step:`any`,"data-bind":`Fs`,value:(+t.value.Fs).toFixed(1),onInput:o[2]||=e=>a(`Fs`,1,e.target.value)},null,40,Us),o[23]||=U(`span`,{class:`u`},`Hz`,-1)]),U(`div`,Ws,[o[24]||=U(`label`,null,`Qts`,-1),U(`input`,{type:`number`,step:`any`,value:(+t.value.Qts).toPrecision(3),onInput:o[3]||=e=>a(`Qts`,1,e.target.value)},null,40,Gs),o[25]||=U(`span`,{class:`u`},null,-1)]),U(`div`,Ks,[o[26]||=U(`label`,null,`Qes`,-1),U(`input`,{type:`number`,step:`any`,value:(+t.value.Qes).toPrecision(3),onInput:o[4]||=e=>a(`Qes`,1,e.target.value)},null,40,qs),o[27]||=U(`span`,{class:`u`},null,-1)]),U(`div`,Js,[o[28]||=U(`label`,null,`Qms`,-1),U(`input`,{type:`number`,step:`any`,value:(+t.value.Qms).toPrecision(3),onInput:o[5]||=e=>a(`Qms`,1,e.target.value)},null,40,Ys),o[29]||=U(`span`,{class:`u`},null,-1)]),U(`div`,Xs,[o[30]||=U(`label`,null,`Vas`,-1),U(`input`,{type:`number`,step:`any`,value:(t.value.Vas*1e3).toPrecision(4),onInput:o[6]||=e=>a(`Vas`,1e3,e.target.value)},null,40,Zs),o[31]||=U(`span`,{class:`u`},`L`,-1)]),U(`div`,Qs,[o[32]||=U(`label`,null,`Sd`,-1),U(`input`,{type:`number`,step:`any`,value:(t.value.Sd*1e4).toPrecision(4),onInput:o[7]||=e=>a(`Sd`,1e4,e.target.value)},null,40,$s),o[33]||=U(`span`,{class:`u`},`cm²`,-1)]),U(`div`,ec,[o[34]||=U(`label`,null,`Re`,-1),U(`input`,{type:`number`,step:`any`,value:(+t.value.Re).toPrecision(3),onInput:o[8]||=e=>a(`Re`,1,e.target.value)},null,40,tc),o[35]||=U(`span`,{class:`u`},`Ω`,-1)]),U(`div`,nc,[o[36]||=U(`label`,null,`Le`,-1),U(`input`,{type:`number`,step:`any`,value:(t.value.Le*1e3).toPrecision(3),onInput:o[9]||=e=>a(`Le`,1e3,e.target.value)},null,40,rc),o[37]||=U(`span`,{class:`u`},`mH`,-1)]),U(`div`,ic,[o[38]||=U(`label`,null,`Xmax`,-1),U(`input`,{type:`number`,step:`any`,value:(t.value.Xmax*1e3).toPrecision(3),onInput:o[10]||=e=>a(`Xmax`,1e3,e.target.value)},null,40,ac),o[39]||=U(`span`,{class:`u`},`mm`,-1)]),U(`div`,oc,[o[40]||=U(`label`,null,`Pe`,-1),U(`input`,{type:`number`,step:`any`,value:+t.value.Pe||0,onInput:o[11]||=e=>a(`Pe`,1,e.target.value)},null,40,sc),o[41]||=U(`span`,{class:`u`},`W`,-1)]),U(`div`,cc,[o[42]||=G(` EBP = Fs/Qes = `,-1),U(`b`,null,k(r.value.toFixed(0)),1),o[43]||=G(` → suggests `,-1),U(`b`,null,k(i.value),1),o[44]||=G(`.`,-1),o[45]||=U(`br`,null,null,-1),G(` Derived: Bl=`+k(I(n).Bl.toFixed(2))+` Tm, Mms=`+k((I(n).Mms*1e3).toFixed(1))+` g, Cms=`+k((I(n).Cms*1e3).toFixed(3))+` mm/N `,1)]),U(`div`,lc,[U(`button`,{onClick:o[12]||=e=>I(Z).editDriver=!1,title:`Collapse the driver parameter editor and return to the summary view`},`Done editing`)])],64)):(V(),H(B,{key:0},[U(`div`,{class:`drvsum`,onClick:o[1]||=e=>I(Z).editDriver=!0,title:`Click to edit driver Thiele/Small parameters — opens the full T/S parameter editor`},[U(`span`,Is,k(I(gs)(t.value)),1),o[13]||=U(`span`,{class:`ed`},`Edit ✎`,-1)]),U(`div`,Ls,[o[14]||=G(` Fs `,-1),U(`b`,null,k((+t.value.Fs||0).toFixed(0))+` Hz`,1),o[15]||=G(` · Qts `,-1),U(`b`,null,k((I(n).Qts||0).toFixed(2)),1),o[16]||=G(` · Vas `,-1),U(`b`,null,k((t.value.Vas*1e3).toFixed(1))+` L`,1),o[17]||=G(` · Sd `,-1),U(`b`,null,k((t.value.Sd*1e4).toFixed(0))+` cm²`,1),o[18]||=G(` · Re `,-1),U(`b`,null,k((+t.value.Re||0).toFixed(1))+` Ω`,1),o[19]||=G(` · Xmax `,-1),U(`b`,null,k((t.value.Xmax*1e3).toFixed(1))+` mm`,1),o[20]||=U(`br`,null,null,-1),o[21]||=G(` EBP `,-1),U(`b`,null,k(r.value.toFixed(0)),1),G(` → `+k(i.value)+` · Bl `+k(I(n).Bl.toFixed(1))+` Tm · Mms `+k((I(n).Mms*1e3).toFixed(1))+` g `,1)]),t.value.providedBy||t.value.comment?(V(),H(`div`,Rs,[t.value.providedBy?(V(),H(`span`,zs,`Source: `+k(t.value.providedBy),1)):K(``,!0),t.value.providedBy&&t.value.comment?(V(),H(`span`,Bs,` · `)):K(``,!0),t.value.comment?(V(),H(`span`,Vs,k(t.value.comment),1)):K(``,!0)])):K(``,!0)],64))]))}},dc=[`step`,`min`,`value`],$={__name:`NumInput`,props:{modelValue:{type:Number,required:!0},scale:{type:Number,default:1},precision:{type:Number,default:4},step:{type:String,default:`any`},min:{type:Number,default:void 0}},emits:[`update:modelValue`],setup(e,{emit:t}){let n=e,r=t,i=F(!1);function a(e){let t=e*n.scale;return isFinite(t)?(+t.toPrecision(n.precision)).toString():``}let o=F(a(n.modelValue));Nn(()=>n.modelValue,e=>{i.value||(o.value=a(e))});function s(){i.value=!0,o.value=a(n.modelValue)}function c(e){o.value=e.target.value;let t=parseFloat(e.target.value);isFinite(t)&&r(`update:modelValue`,t/n.scale)}function l(e){i.value=!1;let t=parseFloat(e.target.value);isFinite(t)&&r(`update:modelValue`,t/n.scale),o.value=a(n.modelValue)}return(t,n)=>(V(),H(`input`,{type:`number`,step:e.step,min:e.min,value:o.value,onFocus:s,onInput:c,onBlur:l},null,40,dc))}},fc=`resonate_pr_lib`;function pc(){try{return JSON.parse(localStorage.getItem(fc)||`[]`)}catch{return[]}}function mc(){return pc()}function hc(e,t){let n=pc();return n.push({id:Date.now(),name:e,prSd:t.prSd,prMmd:t.prMmd,prCms:t.prCms,prRms:t.prRms,prXmax:t.prXmax,savedAt:new Date().toISOString()}),localStorage.setItem(fc,JSON.stringify(n)),n}function gc(e){let t=pc().filter(t=>t.id!==e);return localStorage.setItem(fc,JSON.stringify(t)),t}var _c={style:{"margin-bottom":`4px`}},vc={key:0,class:`pr-lib`,style:{"margin-bottom":`6px`}},yc={key:0,style:{color:`var(--mut)`,"font-size":`11px`,padding:`4px 0`}},bc=[`onClick`,`title`],xc=[`onClick`],Sc={class:`nm`},Cc={class:`drvspecs`},wc={class:`row`,title:`Name for this passive radiator — shown in the summary and saved with the PR library entry`},Tc=[`value`],Ec={class:`row`,title:`Number of passive radiators. Multiple PRs in parallel lower the effective acoustic impedance of the PR branch, increasing output without changing the tuning frequency Fp. WinISD: 'Number of radiators'.`},Dc={class:`row`,title:`Effective piston area of the passive radiator cone (from datasheet). WinISD: Sd.`},Oc={class:`row`,title:`Maximum linear one-way cone excursion before distortion (from datasheet). WinISD: Xmax.`},kc={class:`row`,title:`Choose between WinISD-style parameter entry (Fs, Qms, Vas) or raw T/S parameters (Mms, Cms, Rms). Both are equivalent — WinISD uses the same conversions internally.`},Ac={class:`row`,title:`PR free-air resonance (no added mass, no box).`},jc={class:`row`,title:`Mechanical Q of the PR suspension.`},Mc={class:`row`,title:`Compliance volume. Holds Fs and Qms fixed; updates Cms and Mms.`},Nc={class:`row`,title:`Total moving mass — diaphragm + surround + entrained air. No added weight.`},Pc={class:`row`,title:`Mechanical compliance of the PR suspension. Higher Cms → lower Fp.`},Fc={class:`row`,title:`Mechanical damping of the PR suspension.`},Ic={class:`row pr-derived`,title:`Derived: Mms = 1 / (4π²Fs²·Cms)`},Lc={class:`pr-roval`},Rc={class:`row pr-derived`,title:`Derived: Cms = Vas / (Sd²·ρc²)`},zc={class:`pr-roval`},Bc={class:`row pr-derived`,title:`Derived: Rms = √(Mms/Cms) / Qms`},Vc={class:`pr-roval`},Hc={class:`row pr-derived`,title:`Derived: Fs = 1/(2π·√(Mms·Cms))`},Uc={class:`pr-roval`},Wc={class:`row pr-derived`,title:`Derived: Qms = √(Mms/Cms) / Rms`},Gc={class:`pr-roval`},Kc={class:`row pr-derived`,title:`Derived: Vas = Cms × Sd² × ρc²`},qc={class:`pr-roval`},Jc={class:`btns`,style:{"margin-top":`4px`}},Yc={class:`row`,title:`Extra mass physically bolted to the PR cone (e.g. steel washer, lead shot). Shifts the tuning frequency down without changing the PR's other parameters. WinISD: 'Added mass'.`},Xc={class:`row`,title:`Total moving mass = Mms + added mass. This is what the acoustic circuit uses.`},Zc={style:{"font-size":`11px`,color:`var(--mut)`,"text-align":`right`,flex:`0 0 96px`}},Qc={class:`row`},$c={style:{"font-size":`11px`,color:`var(--acc2)`},title:`PR in-box tuning frequency — passive radiator resonance in this enclosure. Analogous to Fb in a vented box. WinISD: Fp.`},el={class:`row`,title:`Free-air PR resonance with added mass applied, no box. In-box Fp is higher because the box compliance in series reduces the total system compliance, raising the resonance. WinISD calls this 'Fs with added mass'.`},tl={style:{"font-size":`11px`,color:`var(--mut)`}},nl={__name:`PRPanel`,setup(e){let t=q(()=>Z.P),n=Q,r=q(()=>Ms(t.value)),i=q(()=>t.value.prCms*t.value.prSd*t.value.prSd*J*345*345*1e3),a=q(()=>{let{prMmd:e,prCms:n}=t.value;return e>0&&n>0?1/(2*Math.PI*Math.sqrt(e*n)):0}),o=q(()=>{let{prMmd:e,prCms:n,prRms:r}=t.value;return r>0?Math.sqrt(e/n)/r:0}),s=q(()=>{let{prMmd:e,prMadd:n,prCms:r}=t.value,i=e+n;return i>0&&r>0?1/(2*Math.PI*Math.sqrt(i*r)):0});function c(e){if(!(e>0))return;let t=o.value||5,n=1/((2*Math.PI*e)**2*Z.P.prCms);Z.P.prMmd=n,Z.P.prRms=Math.sqrt(n/Z.P.prCms)/t}function l(e){e>0&&(Z.P.prRms=Math.sqrt(Z.P.prMmd/Z.P.prCms)/e)}function u(e){if(!(e>0))return;let t=a.value||30,n=o.value||5,r=e/1e3/(Z.P.prSd*Z.P.prSd*J*345*345),i=1/((2*Math.PI*t)**2*r);Z.P.prCms=r,Z.P.prMmd=i,Z.P.prRms=Math.sqrt(i/r)/n}function d(){let e=ks(n.value).Fb,t=Ns(Z.P,e);Z.P.prMadd=Math.max(0,t-Z.P.prMmd)}let f=F(!1),p=F(mc()),m=F(!1);function h(){p.value=hc((Z.P.prName||``).trim()||`Custom PR`,Z.P)}function g(e){Z.P.prName=e.name,Z.P.prSd=e.prSd,Z.P.prMmd=e.prMmd,Z.P.prCms=e.prCms,Z.P.prRms=e.prRms,Z.P.prXmax=e.prXmax,m.value=!1,f.value=!1}function _(e){p.value=gc(e)}return(e,n)=>(V(),H(B,null,[U(`div`,_c,[U(`button`,{style:{width:`100%`},onClick:n[0]||=e=>m.value=!m.value,title:`Browse your saved passive radiators and load one into the current design — like 'Browse driver library' for PRs`},k(m.value?`Hide PR library ▾`:`Browse PR library… ▸`),1)]),m.value?(V(),H(`div`,vc,[p.value.length?K(``,!0):(V(),H(`div`,yc,`No saved PRs yet — edit the PR below and click Save to add one.`)),(V(!0),H(B,null,Cr(p.value,e=>(V(),H(`div`,{key:e.id,class:`pr-lib-item`},[U(`span`,{class:`pr-lib-name`,onClick:t=>g(e),title:`Click to load — Sd=${(e.prSd*1e4).toFixed(0)}cm² Mms=${(e.prMmd*1e3).toFixed(1)}g Cms=${(e.prCms*1e3).toFixed(2)}mm/N`},k(e.name),9,bc),U(`button`,{class:`pr-lib-del`,onClick:t=>_(e.id),title:`Remove this PR from the library`},`✕`,8,xc)]))),128))])):K(``,!0),f.value?(V(),H(B,{key:2},[U(`div`,wc,[n[18]||=U(`label`,null,`PR name`,-1),U(`input`,{style:{flex:`1`},type:`text`,value:I(Z).P.prName,onInput:n[2]||=e=>I(Z).P.prName=e.target.value,placeholder:`e.g. Dayton SD270A-88`},null,40,Tc)]),U(`div`,Ec,[n[19]||=U(`label`,null,`PR count`,-1),W($,{modelValue:I(Z).P.prNum,"onUpdate:modelValue":n[3]||=e=>I(Z).P.prNum=e,scale:1,precision:2,step:`1`,min:1},null,8,[`modelValue`]),n[20]||=U(`span`,{class:`u`},null,-1)]),U(`div`,Dc,[n[21]||=U(`label`,null,`Sd`,-1),W($,{modelValue:I(Z).P.prSd,"onUpdate:modelValue":n[4]||=e=>I(Z).P.prSd=e,scale:1e4,precision:4},null,8,[`modelValue`]),n[22]||=U(`span`,{class:`u`},`cm²`,-1)]),U(`div`,Oc,[n[23]||=U(`label`,null,`Xmax`,-1),W($,{modelValue:I(Z).P.prXmax,"onUpdate:modelValue":n[5]||=e=>I(Z).P.prXmax=e,scale:1e3,precision:3},null,8,[`modelValue`]),n[24]||=U(`span`,{class:`u`},`mm`,-1)]),U(`div`,kc,[n[26]||=U(`label`,null,`Input mode`,-1),Dn(U(`select`,{"onUpdate:modelValue":n[6]||=e=>I(Z).P.prMode=e,style:{flex:`1`}},[...n[25]||=[U(`option`,{value:`winisd`},`WinISD`,-1),U(`option`,{value:`ts`},`T/S`,-1)]],512),[[vo,I(Z).P.prMode]])]),t.value.prMode===`winisd`?(V(),H(B,{key:0},[U(`div`,Ac,[n[27]||=U(`label`,null,`Fs`,-1),W($,{"model-value":a.value,scale:1,precision:4,"onUpdate:modelValue":c},null,8,[`model-value`]),n[28]||=U(`span`,{class:`u`},`Hz`,-1)]),U(`div`,jc,[n[29]||=U(`label`,null,`Qms`,-1),W($,{"model-value":o.value,scale:1,precision:3,"onUpdate:modelValue":l},null,8,[`model-value`]),n[30]||=U(`span`,{class:`u`},null,-1)]),U(`div`,Mc,[n[31]||=U(`label`,null,`Vas`,-1),W($,{"model-value":i.value,scale:1,precision:3,"onUpdate:modelValue":u},null,8,[`model-value`]),n[32]||=U(`span`,{class:`u`},`L`,-1)])],64)):(V(),H(B,{key:1},[U(`div`,Nc,[n[33]||=U(`label`,null,`Mms`,-1),W($,{modelValue:I(Z).P.prMmd,"onUpdate:modelValue":n[7]||=e=>I(Z).P.prMmd=e,scale:1e3,precision:4},null,8,[`modelValue`]),n[34]||=U(`span`,{class:`u`},`g`,-1)]),U(`div`,Pc,[n[35]||=U(`label`,null,`Cms`,-1),W($,{modelValue:I(Z).P.prCms,"onUpdate:modelValue":n[8]||=e=>I(Z).P.prCms=e,scale:1e3,precision:3},null,8,[`modelValue`]),n[36]||=U(`span`,{class:`u`},`mm/N`,-1)]),U(`div`,Fc,[n[37]||=U(`label`,null,`Rms`,-1),W($,{modelValue:I(Z).P.prRms,"onUpdate:modelValue":n[9]||=e=>I(Z).P.prRms=e,scale:1,precision:3},null,8,[`modelValue`]),n[38]||=U(`span`,{class:`u`},`kg/s`,-1)])],64)),n[51]||=U(`div`,{class:`subsect`},`Derived`,-1),t.value.prMode===`winisd`?(V(),H(B,{key:2},[U(`div`,Ic,[n[39]||=U(`label`,null,`Mms`,-1),U(`span`,Lc,k((t.value.prMmd*1e3).toPrecision(4))+` g`,1),n[40]||=U(`span`,{class:`u`},null,-1)]),U(`div`,Rc,[n[41]||=U(`label`,null,`Cms`,-1),U(`span`,zc,k((t.value.prCms*1e3).toPrecision(3))+` mm/N`,1),n[42]||=U(`span`,{class:`u`},null,-1)]),U(`div`,Bc,[n[43]||=U(`label`,null,`Rms`,-1),U(`span`,Vc,k(t.value.prRms.toPrecision(3))+` kg/s`,1),n[44]||=U(`span`,{class:`u`},null,-1)])],64)):(V(),H(B,{key:3},[U(`div`,Hc,[n[45]||=U(`label`,null,`Fs`,-1),U(`span`,Uc,k(a.value.toFixed(2))+` Hz`,1),n[46]||=U(`span`,{class:`u`},null,-1)]),U(`div`,Wc,[n[47]||=U(`label`,null,`Qms`,-1),U(`span`,Gc,k(o.value.toFixed(2)),1),n[48]||=U(`span`,{class:`u`},null,-1)]),U(`div`,Kc,[n[49]||=U(`label`,null,`Vas`,-1),U(`span`,qc,k(i.value.toFixed(3))+` L`,1),n[50]||=U(`span`,{class:`u`},null,-1)])],64)),U(`div`,Jc,[U(`button`,{onClick:n[10]||=()=>{h(),f.value=!1},title:`Save these PR parameters to your library under the current PR name, then return to the summary view`},`Save`)])],64)):(V(),H(B,{key:1},[U(`div`,{class:`drvsum`,onClick:n[1]||=e=>f.value=!0,title:`Click to edit passive radiator parameters`},[U(`span`,Sc,k(I(Z).P.prName||`Custom PR`),1),n[12]||=U(`span`,{class:`ed`},`Edit ✎`,-1)]),U(`div`,Cc,[n[13]||=G(` Sd `,-1),U(`b`,null,k((I(Z).P.prSd*1e4).toFixed(0))+` cm²`,1),n[14]||=G(` · Fs `,-1),U(`b`,null,k(a.value.toFixed(1))+` Hz`,1),n[15]||=G(` · Qms `,-1),U(`b`,null,k(o.value.toFixed(2)),1),n[16]||=G(` · Vas `,-1),U(`b`,null,k(i.value.toFixed(2))+` L`,1),n[17]||=G(` · Xmax `,-1),U(`b`,null,k((I(Z).P.prXmax*1e3).toFixed(1))+` mm`,1)])],64)),n[59]||=U(`div`,{class:`subsect`},`PR tuning`,-1),U(`div`,Yc,[n[52]||=U(`label`,null,[G(`Added mass `),U(`span`,{style:{color:`var(--mut)`,"font-size":`10px`}},`(tunable)`)],-1),W($,{modelValue:I(Z).P.prMadd,"onUpdate:modelValue":n[11]||=e=>I(Z).P.prMadd=e,scale:1e3,precision:4},null,8,[`modelValue`]),n[53]||=U(`span`,{class:`u`},`g`,-1)]),U(`div`,Xc,[n[54]||=U(`label`,null,`Total Mms`,-1),U(`span`,Zc,k(((t.value.prMmd+t.value.prMadd)*1e3).toPrecision(4))+` g`,1),n[55]||=U(`span`,{class:`u`},null,-1)]),U(`div`,Qc,[n[57]||=U(`label`,null,null,-1),U(`span`,$c,[n[56]||=G(`Fp ≈ `,-1),U(`b`,null,k(r.value.toFixed(1))+` Hz`,1)])]),U(`div`,el,[n[58]||=U(`label`,null,null,-1),U(`span`,tl,`Fs+mass ≈ `+k(s.value.toFixed(1))+` Hz`,1)]),U(`div`,{class:`btns`},[U(`button`,{onClick:d,title:`Calculates and sets the added mass so Fp matches the B4 alignment's optimal tuning for this driver. B4 = 4th-order Butterworth — flat response to Fp, then steep rolloff.`},` Tune added mass to B4 Fp `)])],64))}},rl=(e,t)=>{let n=e.__vccOpts||e;for(let[e,r]of t)n[e]=r;return n},il={class:`row`},al={class:`row`,title:`Net acoustic internal volume — excludes driver displacement, port tube volume, and bracing. WinISD also uses net volume. Add ~0.5–1 L per 6.5" driver when sizing the physical box.`},ol={class:`btns`,style:{"margin-bottom":`2px`}},sl={class:`row`,title:`Leakage loss — enclosure sealing and driver surround leaks. WinISD default: 10. Lower = more leakage.`},cl={class:`row`,title:`Absorption loss from stuffing material. WinISD default: 100 (no stuffing).`},ll={key:0,class:`row`,title:`Port loss Q — air friction and turbulence in the vent tube. WinISD default: 100 (low-loss port). Lower values increase vent damping and broaden the bass-reflex peak.`},ul={key:1,class:`row`},dl={class:`row`},fl={class:`row`},pl={class:`row`},ml={style:{"font-size":`11px`,color:`var(--acc2)`}},hl={class:`btns`},gl=rl({__name:`BoxPanel`,setup(e){let t=q(()=>Z.P),n=Q,r=q(()=>{let e=Math.PI*(t.value.ventD/2)**2;return js(t.value.Vb,t.value.ventL,e)}),i=F(!1);function a(){let e=Os(n.value,.707);e&&(Z.P.Vb=e)}function o(){let e=ks(n.value);Z.P.Vb=e.Vb,Z.P.ventL=As(e.Vb,e.Fb,Math.PI*(Z.P.ventD/2)**2)}return(e,t)=>(V(),H(`fieldset`,null,[t[28]||=U(`legend`,null,`Enclosure`,-1),U(`div`,il,[t[10]||=U(`label`,null,`Type`,-1),Dn(U(`select`,{id:`boxtype`,"onUpdate:modelValue":t[0]||=e=>I(Z).box=e,style:{flex:`1`}},[...t[9]||=[U(`option`,{value:`sealed`},`Sealed (closed)`,-1),U(`option`,{value:`vented`},`Vented (bass-reflex)`,-1),U(`option`,{value:`bandpass4`},`Bandpass 4th order`,-1),U(`option`,{value:`pr`},`Passive radiator`,-1)]],512),[[vo,I(Z).box]])]),U(`div`,al,[t[11]||=U(`label`,null,`Box volume Vb`,-1),W($,{modelValue:I(Z).P.Vb,"onUpdate:modelValue":t[1]||=e=>I(Z).P.Vb=e,scale:1e3,precision:4},null,8,[`modelValue`]),t[12]||=U(`span`,{class:`u`},`L`,-1)]),U(`div`,ol,[U(`button`,{class:`losses-toggle`,onClick:t[2]||=e=>i.value=!i.value,title:`Expand box loss parameters: Ql (leakage) and Qa (absorption). Applies to all box types. WinISD defaults: Ql=10, Qa=100 — found in Box tab → Advanced→ popup.`},` Box losses `+k(i.value?`▾`:`▸`),1)]),i.value?(V(),H(B,{key:0},[U(`div`,sl,[t[13]||=U(`label`,null,`Leakage Ql`,-1),W($,{modelValue:I(Z).P.Ql,"onUpdate:modelValue":t[3]||=e=>I(Z).P.Ql=e,scale:1,precision:3},null,8,[`modelValue`]),t[14]||=U(`span`,{class:`u`},null,-1)]),U(`div`,cl,[t[15]||=U(`label`,null,`Absorption Qa`,-1),W($,{modelValue:I(Z).P.Qa,"onUpdate:modelValue":t[4]||=e=>I(Z).P.Qa=e,scale:1,precision:3},null,8,[`modelValue`]),t[16]||=U(`span`,{class:`u`},null,-1)]),I(Z).box===`vented`||I(Z).box===`bandpass4`?(V(),H(`div`,ll,[t[17]||=U(`label`,null,`Port loss Qp`,-1),W($,{modelValue:I(Z).P.Qp,"onUpdate:modelValue":t[5]||=e=>I(Z).P.Qp=e,scale:1,precision:3},null,8,[`modelValue`]),t[18]||=U(`span`,{class:`u`},null,-1)])):K(``,!0),t[19]||=U(`div`,{class:`losses-guide`},[G(` 100 = no stuffing \xA0·\xA0 20–50 = light \xA0·\xA0 5–10 = heavy`),U(`br`),U(`span`,{class:`losses-note`},`Real stuffing also increases apparent Vb — this model captures resistive loss only.`)],-1)],64)):K(``,!0),I(Z).box===`bandpass4`?(V(),H(`div`,ul,[t[20]||=U(`label`,null,`Front chamber Vf`,-1),W($,{modelValue:I(Z).P.Vf,"onUpdate:modelValue":t[6]||=e=>I(Z).P.Vf=e,scale:1e3,precision:3},null,8,[`modelValue`]),t[21]||=U(`span`,{class:`u`},`L`,-1)])):K(``,!0),I(Z).box===`vented`||I(Z).box===`bandpass4`?(V(),H(B,{key:2},[U(`div`,dl,[t[22]||=U(`label`,null,`Vent diameter`,-1),W($,{modelValue:I(Z).P.ventD,"onUpdate:modelValue":t[7]||=e=>I(Z).P.ventD=e,scale:100,precision:3},null,8,[`modelValue`]),t[23]||=U(`span`,{class:`u`},`cm`,-1)]),U(`div`,fl,[t[24]||=U(`label`,null,`Vent length`,-1),W($,{modelValue:I(Z).P.ventL,"onUpdate:modelValue":t[8]||=e=>I(Z).P.ventL=e,scale:100,precision:4},null,8,[`modelValue`]),t[25]||=U(`span`,{class:`u`},`cm`,-1)]),U(`div`,pl,[t[27]||=U(`label`,null,null,-1),U(`span`,ml,[t[26]||=G(`Fb ≈ `,-1),U(`b`,null,k(r.value.toFixed(1))+` Hz`,1)])])],64)):K(``,!0),I(Z).box===`pr`?(V(),Wi(nl,{key:3})):K(``,!0),U(`div`,hl,[I(Z).box===`sealed`?(V(),H(`button`,{key:0,onClick:a,title:`Sets the box volume so the system Q (Qtc) equals 0.707 — the Butterworth (B2) alignment. Maximally flat frequency response.`},` Set Vb for Qtc=0.707 `)):K(``,!0),I(Z).box===`vented`?(V(),H(`button`,{key:1,onClick:o,title:`Applies the QB3 or B4 vented alignment for this driver. Sets Vb and vent length for optimal bass-reflex tuning.`},` Auto QB3/B4 align `)):K(``,!0)])]))}},[[`__scopeId`,`data-v-68937cda`]]),_l={class:`row`,title:`WinISD: Le excluded from acoustic circuit — matches WinISD output exactly. Full gyrator: Le included in acoustic drive — physically more complete but diverges slightly from WinISD.`},vl={class:`row`,title:`Input power. Changing this updates the drive voltage below.`},yl=[`value`],bl={class:`row`,title:`Drive voltage = √(Pin × Re). Edit directly to set an exact voltage — input power updates automatically. Use 2.83V for IEC 60268-5 sensitivity reference (1W into 8Ω).`},xl=[`value`],Sl={class:`row`,title:`Series resistance (wire, crossover DCR, amplifier output impedance). WinISD default is 0.1 Ω.`},Cl=[`value`],wl={class:`row`},Tl=[`value`],El={class:`row`},Dl=rl({__name:`SignalPanel`,setup(e){let t=Q,n=q(()=>Math.sqrt((Z.P.Pin??1)*(t.value.Re||8)));function r(e){let n=parseFloat(e.target.value);isFinite(n)&&n>0&&(Z.P.Pin=n*n/(t.value.Re||8))}function i(){Z.P.Pin=2.83*2.83/(t.value.Re||8)}return(e,t)=>(V(),H(`fieldset`,null,[t[17]||=U(`legend`,null,`Signal & drivers`,-1),U(`div`,_l,[t[6]||=U(`label`,null,`Circuit model`,-1),Dn(U(`select`,{"onUpdate:modelValue":t[0]||=e=>I(Z).P.circuitModel=e,style:{flex:`1`}},[...t[5]||=[U(`option`,{value:`winisd`},`WinISD (Le acoustic-only)`,-1),U(`option`,{value:`gyrator`},`Full gyrator (Le everywhere)`,-1)]],512),[[vo,I(Z).P.circuitModel]])]),U(`div`,vl,[t[7]||=U(`label`,null,`Input power`,-1),U(`input`,{type:`number`,step:`0.001`,min:`0`,value:(I(Z).P.Pin??1).toFixed(3),onChange:t[1]||=e=>I(Z).P.Pin=parseFloat(e.target.value)||1},null,40,yl),t[8]||=U(`span`,{class:`u`},`W`,-1)]),U(`div`,bl,[t[9]||=U(`label`,null,`Drive voltage`,-1),U(`button`,{class:`iec-btn`,onClick:i,title:`Set to 2.83V — IEC 60268-5 sensitivity standard`},`2.83V`),U(`input`,{class:`v-input`,type:`number`,step:`0.01`,min:`0`,value:n.value.toFixed(3),onChange:r},null,40,xl),t[10]||=U(`span`,{class:`u`},`V`,-1)]),U(`div`,Sl,[t[11]||=U(`label`,null,`Series resistance`,-1),U(`input`,{type:`number`,step:`0.01`,min:`0`,value:I(Z).P.Rs,onInput:t[2]||=e=>I(Z).P.Rs=parseFloat(e.target.value)||0},null,40,Cl),t[12]||=U(`span`,{class:`u`},`Ω`,-1)]),U(`div`,wl,[t[13]||=U(`label`,null,`No. of drivers`,-1),U(`input`,{type:`number`,step:`1`,value:I(Z).P.nDrivers,onInput:t[3]||=e=>I(Z).P.nDrivers=parseInt(e.target.value)||1},null,40,Tl),t[14]||=U(`span`,{class:`u`},null,-1)]),U(`div`,El,[t[16]||=U(`label`,null,`Wiring`,-1),Dn(U(`select`,{"onUpdate:modelValue":t[4]||=e=>I(Z).P.wiring=e,style:{flex:`1`}},[...t[15]||=[U(`option`,{value:`parallel`},`Parallel`,-1),U(`option`,{value:`series`},`Series`,-1)]],512),[[vo,I(Z).P.wiring]])])]))}},[[`__scopeId`,`data-v-6966b186`]]),Ol={key:0,class:`flt-row`},kl=[`onUpdate:modelValue`],Al=[`value`,`onInput`],jl=[`value`,`onInput`],Ml=[`onClick`],Nl={key:1,class:`flt-row`},Pl=[`onUpdate:modelValue`],Fl=[`value`,`onInput`],Il=[`value`,`onInput`],Ll=[`onClick`],Rl={class:`flt-row`},zl=[`onUpdate:modelValue`],Bl=[`value`,`onInput`],Vl=[`value`,`onInput`],Hl=[`onClick`],Ul={class:`flt-row flt-sub`},Wl=[`value`,`onInput`],Gl=[`value`,`onInput`],Kl={key:3,class:`flt-row`},ql=[`onUpdate:modelValue`],Jl=[`value`,`onInput`],Yl=[`value`,`onInput`],Xl=[`value`,`onInput`],Zl=[`onClick`],Ql={key:0,class:`hint`,style:{margin:`4px 0 2px`}},$l={class:`btns`,style:{"margin-top":`6px`}},eu=rl({__name:`FiltersPanel`,setup(e){let t=1,n={highpass:{fc:80,Q:.7071},lowpass:{fc:200,Q:.7071},linkwitz:{f0:50,Q0:.7,fp:20,Qp:.5},peaking:{fc:300,Q:1,gain:-6}};function r(e){Z.P.filters.push({id:t++,type:e,enabled:!0,...n[e]})}function i(e){Z.P.filters.splice(e,1)}function a(e,t){return isFinite(e)?+e.toFixed(t):e}return(e,t)=>(V(),H(`fieldset`,null,[t[27]||=U(`legend`,null,`Filters / EQ`,-1),(V(!0),H(B,null,Cr(I(Z).P.filters,(e,n)=>(V(),H(`div`,{key:e.id,class:`flt-item`},[e.type===`highpass`?(V(),H(`div`,Ol,[Dn(U(`input`,{type:`checkbox`,"onUpdate:modelValue":t=>e.enabled=t,title:`Toggle this high-pass filter on/off — bypassed when unchecked, frequencies below cutoff roll through`},null,8,kl),[[go,e.enabled]]),t[4]||=U(`span`,{class:`flt-tag`},`HP`,-1),t[5]||=U(`span`,{class:`fp`},`fc`,-1),U(`input`,{type:`number`,step:`1`,min:`1`,value:a(e.fc,1),onInput:t=>e.fc=+t.target.value,class:`fi`},null,40,Al),t[6]||=U(`span`,{class:`fu`},`Hz`,-1),t[7]||=U(`span`,{class:`fp`},`Q`,-1),U(`input`,{type:`number`,step:`0.01`,min:`0.1`,value:a(e.Q,4),onInput:t=>e.Q=+t.target.value,class:`fi`},null,40,jl),U(`button`,{class:`fdel`,onClick:e=>i(n),title:`Remove this high-pass filter from the chain — low-frequency rolloff will no longer be applied`},`×`,8,Ml)])):e.type===`lowpass`?(V(),H(`div`,Nl,[Dn(U(`input`,{type:`checkbox`,"onUpdate:modelValue":t=>e.enabled=t,title:`Toggle this low-pass filter on/off — bypassed when unchecked, frequencies above cutoff roll through`},null,8,Pl),[[go,e.enabled]]),t[8]||=U(`span`,{class:`flt-tag`},`LP`,-1),t[9]||=U(`span`,{class:`fp`},`fc`,-1),U(`input`,{type:`number`,step:`1`,min:`1`,value:a(e.fc,1),onInput:t=>e.fc=+t.target.value,class:`fi`},null,40,Fl),t[10]||=U(`span`,{class:`fu`},`Hz`,-1),t[11]||=U(`span`,{class:`fp`},`Q`,-1),U(`input`,{type:`number`,step:`0.01`,min:`0.1`,value:a(e.Q,4),onInput:t=>e.Q=+t.target.value,class:`fi`},null,40,Il),U(`button`,{class:`fdel`,onClick:e=>i(n),title:`Remove this low-pass filter from the chain — high-frequency rolloff will no longer be applied`},`×`,8,Ll)])):e.type===`linkwitz`?(V(),H(B,{key:2},[U(`div`,Rl,[Dn(U(`input`,{type:`checkbox`,"onUpdate:modelValue":t=>e.enabled=t,title:`Toggle this Linkwitz transform on/off — bypassed when unchecked, bass extension will not be applied`},null,8,zl),[[go,e.enabled]]),t[12]||=U(`span`,{class:`flt-tag`},`LT`,-1),t[13]||=U(`span`,{class:`fp`},`f₀`,-1),U(`input`,{type:`number`,step:`1`,min:`1`,value:a(e.f0,1),onInput:t=>e.f0=+t.target.value,class:`fi`},null,40,Bl),t[14]||=U(`span`,{class:`fu`},`Hz`,-1),t[15]||=U(`span`,{class:`fp`},`Q₀`,-1),U(`input`,{type:`number`,step:`0.01`,min:`0.1`,value:a(e.Q0,3),onInput:t=>e.Q0=+t.target.value,class:`fi`},null,40,Vl),U(`button`,{class:`fdel`,onClick:e=>i(n),title:`Remove this Linkwitz transform from the chain — active bass extension will no longer be applied`},`×`,8,Hl)]),U(`div`,Ul,[t[16]||=U(`span`,{style:{width:`20px`}},null,-1),t[17]||=U(`span`,{class:`flt-tag`,style:{color:`var(--mut)`}},`→`,-1),t[18]||=U(`span`,{class:`fp`},`fp`,-1),U(`input`,{type:`number`,step:`1`,min:`1`,value:a(e.fp,1),onInput:t=>e.fp=+t.target.value,class:`fi`},null,40,Wl),t[19]||=U(`span`,{class:`fu`},`Hz`,-1),t[20]||=U(`span`,{class:`fp`},`Qp`,-1),U(`input`,{type:`number`,step:`0.01`,min:`0.1`,value:a(e.Qp,3),onInput:t=>e.Qp=+t.target.value,class:`fi`},null,40,Gl)])],64)):e.type===`peaking`?(V(),H(`div`,Kl,[Dn(U(`input`,{type:`checkbox`,"onUpdate:modelValue":t=>e.enabled=t,title:`Toggle this parametric EQ band on/off — bypassed when unchecked, boost/cut will not be applied`},null,8,ql),[[go,e.enabled]]),t[21]||=U(`span`,{class:`flt-tag`},`PEQ`,-1),t[22]||=U(`span`,{class:`fp`},`fc`,-1),U(`input`,{type:`number`,step:`1`,min:`1`,value:a(e.fc,1),onInput:t=>e.fc=+t.target.value,class:`fi`},null,40,Jl),t[23]||=U(`span`,{class:`fu`},`Hz`,-1),t[24]||=U(`span`,{class:`fp`},`Q`,-1),U(`input`,{type:`number`,step:`0.01`,min:`0.1`,value:a(e.Q,3),onInput:t=>e.Q=+t.target.value,class:`fi2`},null,40,Yl),t[25]||=U(`span`,{class:`fp`},`G`,-1),U(`input`,{type:`number`,step:`0.5`,value:a(e.gain,1),onInput:t=>e.gain=+t.target.value,class:`fi2`},null,40,Xl),t[26]||=U(`span`,{class:`fu`},`dB`,-1),U(`button`,{class:`fdel`,onClick:e=>i(n),title:`Remove this parametric EQ band from the chain — the boost/cut at this frequency will no longer be applied`},`×`,8,Zl)])):K(``,!0)]))),128)),I(Z).P.filters.length?K(``,!0):(V(),H(`div`,Ql,` No filters active. `)),U(`div`,$l,[U(`button`,{onClick:t[0]||=e=>r(`highpass`),title:`Add a high-pass filter — rolls off frequencies below the cutoff at 12 dB/oct (2nd order Butterworth)`},`+ HP`),U(`button`,{onClick:t[1]||=e=>r(`lowpass`),title:`Add a low-pass filter — rolls off frequencies above the cutoff at 12 dB/oct (2nd order Butterworth)`},`+ LP`),U(`button`,{onClick:t[2]||=e=>r(`linkwitz`),title:`Add a Linkwitz transform — shifts the sealed box resonance from Fc/Qtc to a new Fp/Qp for active bass extension`},`+ Linkwitz`),U(`button`,{onClick:t[3]||=e=>r(`peaking`),title:`Add a parametric EQ band — boost or cut a specific frequency range with adjustable centre frequency, Q, and gain`},`+ Peaking EQ`)])]))}},[[`__scopeId`,`data-v-a3aa7376`]]),tu={__name:`SidePanel`,setup(e){return(e,t)=>(V(),H(B,null,[W(uc),W(gl),W(Dl),W(eu),t[0]||=U(`div`,{class:`hint`,style:{padding:`4px 4px 2px`}},` Engine validated vs closed-form sealed (<0.03 dB), driver sensitivity, and vented 24 dB/oct. Lumped electro-acoustical circuit, half-space. `,-1)],64))}},nu=[{id:`SPL`,name:`SPL response`,unit:`dB`,color:`#4fb0ff`},{id:`Excursion`,name:`Cone excursion`,unit:`mm`,color:`#ffb454`},{id:`Port`,name:`Air velocity`,unit:`m/s`,color:`#5ad17a`},{id:`GD`,name:`Group delay`,unit:`ms`,color:`#c08bff`},{id:`Zmag`,name:`Impedance`,unit:`Ω`,color:`#ff6b6b`},{id:`Zph`,name:`Impedance phase`,unit:`°`,color:`#ff9bb0`},{id:`Phase`,name:`Transfer phase`,unit:`°`,color:`#7fd4ff`},{id:`MaxSPL`,name:`Maximum SPL`,unit:`dB`,color:`#5ad17a`},{id:`MaxPwr`,name:`Maximum power`,unit:`W`,color:`#ffd05a`}];function ru(e,t,n,r,i,a){let o=nu.find(t=>t.id===e),s=[],c,l,u=!1,d=o.unit,f=e=>({xs:i.fs,ys:e});if(e===`SPL`){s=[{...f(i.spl),color:o.color,name:`SPL`}];let e=Math.max(...i.spl);l=Math.ceil((e+3)/5)*5,c=l-45;let t=t=>{for(let n=0;n<i.fs.length;n++)if(i.spl[n]>=e-t)return i.fs[n];return null},n=t(3),r=t(6),a=t(10);n!=null&&s.push({xs:i.fs,ys:i.fs.map(()=>e-3),color:`#ffb454`,name:`F3 = ${n.toFixed(0)} Hz`,dash:!0}),r!=null&&s.push({xs:i.fs,ys:i.fs.map(()=>e-6),color:`#ff6b6b`,name:`F6 = ${r.toFixed(0)} Hz`,dash:!0}),a!=null&&s.push({xs:i.fs,ys:i.fs.map(()=>e-10),color:`#c08bff`,name:`F10 = ${a.toFixed(0)} Hz`,dash:!0})}else if(e===`Excursion`){s=[{...f(i.exc),color:o.color,name:`Cone`}];let e=t.Xmax*1e3;s.push({xs:i.fs,ys:i.fs.map(()=>e),color:`#ff6b6b`,name:`Xmax`,dash:!0});let a=Math.max(e*1.4,Math.max(...i.exc.slice(0,20))*1.1);if(n===`pr`){s.push({xs:i.fs,ys:i.excPR,color:`#5ad17a`,name:`PR`});let e=(r.prXmax||.01)*1e3;s.push({xs:i.fs,ys:i.fs.map(()=>e),color:`#9ad17a`,name:`PR Xmax`,dash:!0}),a=Math.max(a,e*1.3,Math.max(...i.excPR.slice(0,30))*1.1)}c=0,l=a}else if(e===`Port`)n!==`vented`&&n!==`bandpass4`?(s=[{xs:i.fs,ys:i.fs.map(()=>0),color:o.color,name:`n/a`}],c=0,l=1):(s=[{...f(i.pv),color:o.color,name:`Port vel`}],s.push({xs:i.fs,ys:i.fs.map(()=>.05*345),color:`#ffb454`,name:`17 m/s`,dash:!0}),c=0,l=Math.max(20,Math.max(...i.pv)*1.1));else if(e===`GD`){s=[{...f(i.gd),color:o.color,name:`Group delay`}];let e=Math.max(...i.gd.filter(isFinite));c=0,l=Math.max(e*1.1,5)}else if(e===`Zmag`)s=[{...f(i.zmag),color:o.color,name:`|Z|`}],u=!0,c=Math.max(1,Math.min(...i.zmag)*.9),l=Math.max(...i.zmag)*1.15;else if(e===`Zph`)s=[{...f(i.zph),color:o.color,name:`Z phase`}],c=-90,l=90;else if(e===`Phase`){s=[{xs:i.fs,ys:i.phase.map(e=>e*180/Math.PI),color:o.color,name:`Phase`}];let e=s[0].ys;c=Math.floor(Math.min(...e)/90)*90,l=Math.ceil(Math.max(...e)/90)*90}else if(e===`MaxSPL`){s=[{xs:a.fs,ys:a.maxspl,color:o.color,name:`Max SPL`}];let e=Math.max(...a.maxspl);l=Math.ceil(e/5)*5,c=l-40}else e===`MaxPwr`&&(s=[{xs:a.fs,ys:a.maxpwr,color:o.color,name:`Max power`}],u=!0,c=1,l=Math.max(...a.maxpwr)*1.2);return{series:s,ymin:c,ymax:l,logy:u,unit:d}}function iu(e,t,n,r,i){let a=[r,...i],o=a.length>1,s=null;return a.forEach((r,i)=>{let a=ru(e,r.driver,r.box,r.P,r.curves,r.maxCurves||r.maxCurvesData||{});s||={series:[],ymin:a.ymin,ymax:a.ymax,logy:a.logy,unit:a.unit,fmin:t,fmax:n};let c={...a.series[0]};if(o&&(c.color=r.color||rs[i%rs.length],c.name=r.name+`: `+c.name),s.series.push(c),i===0)for(let e=1;e<a.series.length;e++)s.series.push(a.series[e]);s.ymin=Math.min(s.ymin,a.ymin),s.ymax=Math.max(s.ymax,a.ymax),s.logy=s.logy||a.logy}),s}var au={class:`gtoolbar`},ou=[`title`,`onClick`],su=[`title`,`onClick`],cu=[`value`],lu=[`title`],uu=rl({__name:`GraphToolbar`,setup(e){function t(e){let t=Z.graphs.indexOf(e);t>=0?Z.graphs.length>1&&Z.graphs.splice(t,1):Z.graphs.push(e)}function n(e){Z.compare.splice(e,1)}function r(){Z.compare=[]}let i=q(()=>Z.cursorLocked?Z.pinnedF:Z.cursorF??Z.pinnedF);function a(e){let t=parseFloat(e.target.value);Z.pinnedF=isFinite(t)&&t>0?t:null}function o(e){let t=i.value;if(!t)return;let n=Math.max(.1,t*.01);Z.pinnedF=Math.max(.1,t+e*n)}function s(){Z.pinnedF=null,Z.cursorLocked=!1}function c(){Z.cursorLocked=!Z.cursorLocked,Z.cursorLocked&&Z.cursorF&&(Z.pinnedF=Z.cursorF)}return(e,l)=>(V(),H(`div`,au,[l[4]||=U(`span`,{class:`lab`},`Graphs:`,-1),(V(!0),H(B,null,Cr(I(nu),e=>(V(),H(`span`,{key:e.id,class:he([`gchip`,{on:I(Z).graphs.includes(e.id)}]),title:I(Z).graphs.includes(e.id)?`Hide ${e.name} graph`:`Show ${e.name} graph`,onClick:n=>t(e.id)},k(e.name),11,ou))),128)),l[5]||=U(`span`,{class:`sep`},null,-1),U(`button`,{onClick:l[0]||=(...e)=>I(_s)&&I(_s)(...e),title:`Snapshot the current design and overlay its curves on all graphs for comparison`},`+ Compare current`),I(Z).compare.length?(V(),H(B,{key:0},[l[3]||=U(`span`,{class:`lab`},`vs`,-1),(V(!0),H(B,null,Cr(I(Z).compare,(e,t)=>(V(),H(`span`,{key:t,class:`gchip on`,style:ue({borderColor:e.color,color:e.color}),title:`Remove '${e.name}' from comparison overlays`,onClick:e=>n(t)},k(e.name)+` ✕`,13,su))),128)),U(`button`,{onClick:r,title:`Remove all comparison overlays from graphs`},`clear`)],64)):K(``,!0),l[6]||=U(`span`,{class:`sep`},null,-1),l[7]||=U(`span`,{class:`lab`,title:`Right-click any graph to snap & lock cursor to nearest peak or trough`},`Cursor:`,-1),U(`button`,{class:`nudge-btn`,onClick:l[1]||=e=>o(-1),title:`Step cursor down ~1%`},`−`),U(`input`,{class:`cursor-hz`,type:`number`,min:`1`,max:`9999`,step:`0.1`,value:i.value?i.value.toFixed(1):``,onChange:a,placeholder:`Hz`},null,40,cu),U(`button`,{class:`nudge-btn`,onClick:l[2]||=e=>o(1),title:`Step cursor up ~1%`},`+`),U(`button`,{class:he([`nudge-btn lock-btn`,{locked:I(Z).cursorLocked}]),onClick:c,title:I(Z).cursorLocked?`Unlock cursor (hover will move it)`:`Lock cursor at current frequency`},k(I(Z).cursorLocked?`🔒`:`🔓`),11,lu),I(Z).pinnedF?(V(),H(`button`,{key:1,class:`nudge-btn`,onClick:s,title:`Clear pinned cursor`},`✕`)):K(``,!0)]))}},[[`__scopeId`,`data-v-d3d596d4`]]),du=e=>e>=1e3?(e/1e3).toFixed(e<1e4?2:1)+`k`:e.toFixed(0),fu=e=>{let t=Math.abs(e);return t>=1e3?(e/1e3).toFixed(1)+`k`:t>=10?e.toFixed(0):t>=1?e.toFixed(1):e.toFixed(2)},pu=(e,t)=>{if(!isFinite(e))return`—`;let n=Math.abs(e);return e.toFixed(n>=100?0:n>=10?1:2)+` `+t};function mu(e,t,n=6){let r=(t-e)/n,i=10**Math.floor(Math.log10(r)),a=r/i,o=(a<1.5?1:a<3?2:a<7?5:10)*i,s=[];for(let n=Math.ceil(e/o)*o;n<=t+1e-9;n+=o)s.push(+n.toFixed(6));return s}function hu(e,t){let n=[];for(let r=Math.floor(Math.log10(e));r<=Math.ceil(Math.log10(t));r++)for(let i of[1,2,5]){let a=i*10**r;a>=e&&a<=t&&n.push(a)}return n}function gu(e,t,n,r,i){if(!e||!t)return null;let a=e.getContext(`2d`),o=window.devicePixelRatio||1,s=e.clientWidth||300,c=e.clientHeight||180;e.width=s*o,e.height=c*o,a.setTransform(o,0,0,o,0,0),a.clearRect(0,0,s,c);let l={l:44,r:10,t:18,b:20},u=s-l.l-l.r,d=c-l.t-l.b,f=t.fmin||10,p=t.fmax||1e3,m=Math.log10(f),h=Math.log10(p),{ymin:g,ymax:_,logy:v}=t,y=v?Math.log10(g):g,b=v?Math.log10(_):_,x=e=>l.l+(Math.log10(e)-m)/(h-m)*u,S=e=>{let t=v?Math.log10(e):e;return l.t+(1-(t-y)/(b-y))*d};a.strokeStyle=`#243040`,a.fillStyle=`#7c8a9c`,a.font=`9px Segoe UI`,a.lineWidth=1;for(let e=Math.floor(m);e<=Math.ceil(h);e++)for(let t of[1,2,3,4,5,6,7,8,9]){let n=t*10**e;if(n<f||n>p)continue;let r=x(n);a.globalAlpha=t===1?.85:.28,a.beginPath(),a.moveTo(r,l.t),a.lineTo(r,l.t+d),a.stroke(),(t===1||t===2||t===5)&&(a.globalAlpha=1,a.textAlign=`center`,a.fillText(du(n),r,l.t+d+11))}a.globalAlpha=1;let C=v?hu(g,_):mu(g,_,5);a.textAlign=`right`;for(let e of C){let t=S(e);t<l.t-1||t>l.t+d+1||(a.globalAlpha=.4,a.beginPath(),a.moveTo(l.l,t),a.lineTo(l.l+u,t),a.stroke(),a.globalAlpha=1,a.fillText(fu(e),l.l-5,t+3))}for(let e of t.series){a.strokeStyle=e.color,a.lineWidth=e.dash?1.1:1.7,e.dash?a.setLineDash([5,4]):a.setLineDash([]),a.beginPath();let t=!1;for(let n=0;n<e.xs.length;n++){let r=S(e.ys[n]);if(!isFinite(r)){t=!1;continue}t?a.lineTo(x(e.xs[n]),r):(a.moveTo(x(e.xs[n]),r),t=!0)}a.stroke()}a.setLineDash([]);let w=t.series.filter(e=>e.name);if(w.length>1){a.font=`9px Segoe UI`,a.textAlign=`left`;let e=l.l+6,t=l.t+6;for(let n of w)a.strokeStyle=n.color,a.lineWidth=n.dash?1.1:1.7,n.dash?a.setLineDash([4,3]):a.setLineDash([]),a.beginPath(),a.moveTo(e,t+3),a.lineTo(e+14,t+3),a.stroke(),a.setLineDash([]),a.fillStyle=n.color,a.fillText(n.name,e+17,t+6),t+=13}let ee={m:l,pw:u,ph:d,X:x,Y:S,f0:f,f1:p};if(i){let e=x(Math.max(i.fLo,f)),n=x(Math.min(i.fHi,p));if(a.fillStyle=`rgba(255,255,255,0.07)`,a.fillRect(e,l.t,n-e,d),a.strokeStyle=`rgba(255,255,255,0.35)`,a.lineWidth=1,a.setLineDash([3,3]),a.beginPath(),a.moveTo(e,l.t),a.lineTo(e,l.t+d),a.stroke(),a.beginPath(),a.moveTo(n,l.t),a.lineTo(n,l.t+d),a.stroke(),a.setLineDash([]),r){let e=e=>e>=100?e.toFixed(0):e.toFixed(1),n=`<b>${e(i.fLo)}–${e(i.fHi)} Hz</b>`;i.dy!=null&&(n+=`  Δ = <b>${Math.abs(i.dy).toFixed(1)} ${t.unit}</b>`),r.innerHTML=n,r.style.display=`block`}}if(n&&t.series[0]){let e=t.series[0],i=0,o=1e9;for(let t=0;t<e.xs.length;t++){let r=Math.abs(Math.log10(e.xs[t])-Math.log10(n));r<o&&(o=r,i=t)}let s=e.xs[i];a.strokeStyle=`#ffffff55`,a.setLineDash([3,3]),a.beginPath(),a.moveTo(x(s),l.t),a.lineTo(x(s),l.t+d),a.stroke(),a.setLineDash([]);let c=`<b>${s.toFixed(+(s<100))}Hz</b>`;for(let e of t.series){if(e.dash)continue;let n=e.ys[i];a.fillStyle=e.color,a.beginPath(),a.arc(x(s),S(n),2.6,0,7),a.fill(),c+=` <span style="color:${e.color}">${pu(n,t.unit)}</span>`}r&&(r.innerHTML=c,r.style.display=`block`)}else r&&(r.style.display=`none`);return ee}var _u={class:`gpanel`},vu={class:`gtitle`},yu=rl({__name:`GraphPanel`,props:{tabId:String},setup(e){let t=e,n=F(null),r=F(null),i=q(()=>nu.find(e=>e.id===t.tabId)||{name:t.tabId}),a=q(()=>({driver:Q.value,box:Z.box,P:us.value,curves:ms.value,maxCurves:hs.value,name:`Current`,color:rs[0]})),o=q(()=>iu(t.tabId,Z.P.fmin,Z.P.fmax,a.value,Z.compare)),s=q(()=>Z.cursorLocked?Z.pinnedF:Z.cursorF??Z.pinnedF),c=null,l=F(null),u=null;function d(e){if(!c)return null;let{m:t,pw:r,f0:i,f1:a}=c,o=(e-n.value.getBoundingClientRect().left-t.l)/r;return o<0||o>1?null:10**(Math.log10(i)+o*(Math.log10(a)-Math.log10(i)))}function f(e){let t=o.value?.series?.[0];if(!t)return null;let n=0,r=1e9;for(let i=0;i<t.xs.length;i++){let a=Math.abs(Math.log10(t.xs[i])-Math.log10(e));a<r&&(r=a,n=i)}return t.ys[n]}function p(){c=gu(n.value,o.value,l.value?null:s.value,r.value,l.value)}function m(e){if(e.button!==0||!c)return;let t=d(e.clientX);t!==null&&(u={clientX:e.clientX,f:t})}function h(e){if(u&&e.buttons&1&&Math.abs(e.clientX-u.clientX)>=5){let t=d(e.clientX);if(t!==null){let e=Math.min(u.f,t),n=Math.max(u.f,t),r=f(e),i=f(n);l.value={fLo:e,fHi:n,dy:r!=null&&i!=null?i-r:null},p()}return}if(Z.cursorLocked||!c)return;let{m:t,pw:r,f0:i,f1:a}=c,o=n.value.getBoundingClientRect(),s=(e.clientX-o.left-t.l)/r;if(s<0||s>1){Z.cursorF!==null&&(Z.cursorF=null);return}Z.cursorF=10**(Math.log10(i)+s*(Math.log10(a)-Math.log10(i)))}function g(e){if(!u||e.button!==0){u=null;return}let t=Math.abs(e.clientX-u.clientX)>=5;if(u=null,t)return;l.value=null;let n=d(e.clientX);n!==null&&(Z.pinnedF=n,Z.cursorLocked=!0)}function _(){u=null,l.value=null,Z.cursorLocked||(Z.cursorF=null)}let v=F({visible:!1,x:0,y:0,f:null});function y(e){e.preventDefault();let t=Z.cursorLocked?Z.pinnedF:Z.cursorF;v.value={visible:!0,x:e.clientX,y:e.clientY,f:t}}function b(){v.value.visible=!1}function x(e,t){let n=o.value?.series?.find(e=>!e.dash);if(!n)return b();let r=v.value.f,i=t===`max`,a=[];for(let t=1;t<n.ys.length-1;t++){if(!isFinite(n.ys[t]))continue;let o=n.ys[t]>n.ys[t-1]&&n.ys[t]>n.ys[t+1],s=n.ys[t]<n.ys[t-1]&&n.ys[t]<n.ys[t+1];(i?!o:!s)||r!==null&&(e===`left`&&n.xs[t]>=r||e===`right`&&n.xs[t]<=r)||a.push(t)}if(!a.length)return b();let s=r??n.xs[Math.floor(n.xs.length/2)],c=a[0],l=1/0;for(let e of a){let t=Math.abs(Math.log10(n.xs[e])-Math.log10(s));t<l&&(l=t,c=e)}Z.pinnedF=n.xs[c],Z.cursorLocked=!0,b()}function S(){let e=v.value.f;e&&(Z.pinnedF=e,Z.cursorLocked=!0),b()}function C(e){v.value.visible&&b()}let w;return pr(()=>{w=new ResizeObserver(p),w.observe(n.value),document.addEventListener(`click`,C)}),_r(()=>{w?.disconnect(),document.removeEventListener(`click`,C)}),Nn([o,s],p,{flush:`post`}),(e,t)=>(V(),H(B,null,[U(`div`,_u,[U(`canvas`,{ref_key:`canvasEl`,ref:n,onMousedown:m,onMouseup:g,onMousemove:h,onMouseleave:_,onContextmenu:y},null,544),U(`div`,vu,k(i.value.name),1),U(`div`,{ref_key:`readEl`,ref:r,class:`gread`},null,512)]),(V(),Wi(Jn,{to:`body`},[v.value.visible?(V(),H(`div`,{key:0,class:`ctx-menu`,style:ue({left:v.value.x+`px`,top:v.value.y+`px`}),onClick:t[4]||=wo(()=>{},[`stop`])},[U(`div`,{class:`ctx-item`,onClick:S,title:`Pin the cursor to this frequency — hover will no longer move it`},`Lock cursor here`),t[5]||=U(`div`,{class:`ctx-sep`},null,-1),U(`div`,{class:`ctx-item`,onClick:t[0]||=e=>x(`left`,`max`),title:`Snap cursor left to the nearest peak (local maximum)`},`◄ Max to left`),U(`div`,{class:`ctx-item`,onClick:t[1]||=e=>x(`left`,`min`),title:`Snap cursor left to the nearest trough (local minimum)`},`◄ Min to left`),U(`div`,{class:`ctx-item`,onClick:t[2]||=e=>x(`right`,`max`),title:`Snap cursor right to the nearest peak (local maximum)`},`Max to right ►`),U(`div`,{class:`ctx-item`,onClick:t[3]||=e=>x(`right`,`min`),title:`Snap cursor right to the nearest trough (local minimum)`},`Min to right ►`)],4)):K(``,!0)]))],64))}},[[`__scopeId`,`data-v-ebe2d5c5`]]),bu={__name:`GraphGrid`,setup(e){let t=q(()=>{let e=Z.graphs.length;return e<=1?1:e<=4?2:3});return(e,n)=>(V(),H(`div`,{id:`ggrid`,class:`ggrid`,style:ue({gridTemplateColumns:`repeat(${t.value}, 1fr)`})},[(V(!0),H(B,null,Cr(I(Z).graphs,e=>(V(),Wi(yu,{key:e,tabId:e},null,8,[`tabId`]))),128))],4))}},xu={__name:`GraphArea`,setup(e){return(e,t)=>(V(),H(B,null,[W(uu),W(bu)],64))}},Su={id:`stat`,class:`stat`},Cu={key:0},wu={key:1},Tu={key:2},Eu={key:3},Du={key:4},Ou={key:5},ku={__name:`StatBar`,setup(e){let t=Q,n=us,r=ms;function i(e,t,n){let r=Math.max(...t);for(let i=0;i<e.length;i++)if(t[i]>=r-n)return e[i];return null}let a=q(()=>{let e=t.value,a=n.value,o=r.value,s=Z.box,c=i(o.fs,o.spl,3),l=i(o.fs,o.spl,6),u=i(o.fs,o.spl,10),d=Math.max(...o.zmag),f=s===`vented`?js(a.Vb,a.ventL,a.Sp||Math.PI*(a.ventD/2)**2):null,p=s===`pr`?Ms(a):null,m=s===`sealed`?e.Qts*Math.sqrt(1+e.Vas/a.Vb):null,h=s===`sealed`?e.Fs*Math.sqrt(1+e.Vas/a.Vb):null,g=s===`vented`||s===`bandpass4`?Math.max(...o.pv):null,_=s===`pr`?Math.max(...o.excPR):null;return{box:s,Vb:a.Vb,fc:h,Qtc:m,fb:f,fp:p,f3:c,f6:l,f10:u,peakZ:d,maxPV:g,maxPRx:_,ebpVal:Ds(e),prXmax:a.prXmax}});return(e,t)=>(V(),H(`div`,Su,[U(`span`,null,[t[0]||=G(`Box: `,-1),U(`b`,null,k(a.value.box),1)]),U(`span`,null,[t[1]||=G(`Vb: `,-1),U(`b`,null,k((a.value.Vb*1e3).toFixed(1))+` L`,1)]),a.value.fc?(V(),H(`span`,Cu,[t[2]||=G(`fc: `,-1),U(`b`,null,k(a.value.fc.toFixed(1))+` Hz`,1)])):K(``,!0),a.value.Qtc?(V(),H(`span`,wu,[t[3]||=G(`Qtc: `,-1),U(`b`,null,k(a.value.Qtc.toFixed(3)),1)])):K(``,!0),a.value.fb?(V(),H(`span`,Tu,[t[4]||=G(`Fb: `,-1),U(`b`,null,k(a.value.fb.toFixed(1))+` Hz`,1)])):K(``,!0),a.value.fp?(V(),H(`span`,Eu,[t[5]||=G(`Fp: `,-1),U(`b`,null,k(a.value.fp.toFixed(1))+` Hz`,1)])):K(``,!0),U(`span`,null,[t[6]||=G(`F3: `,-1),U(`b`,null,k(a.value.f3?a.value.f3.toFixed(1)+` Hz`:`—`),1)]),U(`span`,null,[t[7]||=G(`F6: `,-1),U(`b`,null,k(a.value.f6?a.value.f6.toFixed(1)+` Hz`:`—`),1)]),U(`span`,null,[t[8]||=G(`F10: `,-1),U(`b`,null,k(a.value.f10?a.value.f10.toFixed(1)+` Hz`:`—`),1)]),U(`span`,null,[t[9]||=G(`Z peak: `,-1),U(`b`,null,k(a.value.peakZ.toFixed(1))+` Ω`,1)]),a.value.maxPV==null?K(``,!0):(V(),H(`span`,Du,[t[10]||=G(`peak port: `,-1),U(`b`,null,k(a.value.maxPV.toFixed(1))+` m/s`,1)])),a.value.maxPRx==null?K(``,!0):(V(),H(`span`,Ou,[t[11]||=G(` peak PR: `,-1),U(`b`,null,k(a.value.maxPRx.toFixed(1))+` mm`,1),G(` (Xmax `+k(((a.value.prXmax||0)*1e3).toFixed(1))+`) `,1)])),U(`span`,null,[t[12]||=G(`EBP: `,-1),U(`b`,null,k(a.value.ebpVal.toFixed(0)),1)])]))}},Au={$schema:`./sources.schema.md`,version:1,description:`Federated driver-data sources. Resonate links to driver libraries wherever their owners maintain them, instead of copying the files. The in-app driver browser reads this list (and you can paste any GitHub repo ad hoc). Add a source by opening a PR that appends an entry here.`,sources:[{name:`Matt (mtg90) / AVS Forum`,url:`https://github.com/Johnlon/resonate/tree/main/drivers/matt`,description:`~430 drivers from the mtg90 AVS Forum collection. See drivers/matt/meta.json for provenance.`,license:`community / factual T/S measurements`},{name:`loudspeakerdatabase cached`,url:`https://github.com/Johnlon/resonate/tree/main/drivers/loudspeakerdatabase`,description:`Drivers sourced from loudspeakerdatabase.com.`,license:`see loudspeakerdatabase.com`},{name:`Choong Keat Yian`,url:`https://github.com/Johnlon/resonate/tree/main/drivers/Choong Keat Yian`,description:`1 driver contributed by Choong Keat Yian.`,license:`community contribution`},{name:`MWisBest / WinISDDrivers`,url:`https://github.com/Johnlon/resonate/tree/main/drivers/MWisBest`,description:`~108 subwoofer driver files for WinISD.`,license:`see repository`},{name:`SB Acoustics`,url:`https://github.com/Johnlon/resonate/tree/main/drivers/sb-acoustics`,description:`201 drivers scraped from sbacoustics.com. Covers SB Acoustics and Satori lines — woofers, midrange, tweeters. PDF datasheets linked in _meta.json. All quality=M (scraped, not human-verified). Refresh with: python scripts/scrape_sbacoustics.py`,license:`public product data from sbacoustics.com`},{name:`Parts Express woofer guide`,url:`https://github.com/Johnlon/resonate/tree/main/drivers/parts-express`,description:`1673 drivers fetched from the Parts Express product API (https://www.parts-express.com/api/items?q={sku}&fieldset=details). Covers woofers, subwoofers, tweeters, midrange/full-range, passive radiators, planar/ribbon, car audio, and pro audio drivers. Brands: Aurum Cantus, B&C Speakers, Beyma, Celestion, Ciare, CSS, Dayton Audio, EPIQUE, Eminence Speaker, FaitalPRO, Goldwood, GRS, HiVi, JBL Professional, Lavoce, Morel, Peerless by Tymphany, PRV Audio, Selenium, Tang Band, Tectonic, Timpano Audio, Visaton, Wavecor and others. Files with populated Qes have full T/S (quality=H); files with blank Qes have estimated Re and Sd only (quality=L). See meta.json for quality=M cases. Refresh with: node scripts/refresh-pe-catalog.mjs`,license:`public product data from parts-express.com`}]},ju={sources:[{name:`Matt (mtg90) / AVS Forum`,files:[{name:`AE IB15HT-8`,date:`20150404`,content:`[Driver]
 Brand=AE
 Model=IB15HT-8
 Manufacturer=
@@ -62,7 +62,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`AE SB10-4ohm`,content:`[Driver]
+`},{name:`AE SB10-4ohm`,date:`20130918`,content:`[Driver]
 Brand=AE
 Model=SB10-4ohm
 Manufacturer=
@@ -119,7 +119,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`AE SB10-8ohm`,content:`[Driver]
+`},{name:`AE SB10-8ohm`,date:`20130918`,content:`[Driver]
 Brand=AE
 Model=SB10-8ohm
 Manufacturer=
@@ -176,7 +176,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`AE SB12-4ohm`,content:`[Driver]
+`},{name:`AE SB12-4ohm`,date:`20130918`,content:`[Driver]
 Brand=AE
 Model=SB12-4ohm
 Manufacturer=
@@ -233,7 +233,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`AE SB12-8ohm`,content:`[Driver]
+`},{name:`AE SB12-8ohm`,date:`20130918`,content:`[Driver]
 Brand=AE
 Model=SB12-8ohm
 Manufacturer=
@@ -290,7 +290,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`AE SB15-4ohm`,content:`[Driver]
+`},{name:`AE SB15-4ohm`,date:`20130918`,content:`[Driver]
 Brand=AE
 Model=SB15-4ohm
 Manufacturer=
@@ -347,7 +347,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`AE SB15-8ohm`,content:`[Driver]
+`},{name:`AE SB15-8ohm`,date:`20130918`,content:`[Driver]
 Brand=AE
 Model=SB15-8ohm
 Manufacturer=
@@ -404,7 +404,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`AE TD12M`,content:`[Driver]
+`},{name:`AE TD12M`,date:`20121229`,content:`[Driver]
 Brand=AE
 Model=TD12M
 Manufacturer=
@@ -461,7 +461,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`AE TD12X`,content:`[Driver]
+`},{name:`AE TD12X`,date:`20121229`,content:`[Driver]
 Brand=AE
 Model=TD12X
 Manufacturer=
@@ -518,7 +518,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEEEENNNCENCCCECCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`AE TD15M`,content:`[Driver]
+`},{name:`AE TD15M`,date:`20130207`,content:`[Driver]
 Brand=AE
 Model=TD15M
 Manufacturer=
@@ -575,7 +575,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`AE TD18H+`,content:`[Driver]
+`},{name:`AE TD18H+`,date:`20130210`,content:`[Driver]
 Brand=AE
 Model=TD18H+
 Manufacturer=
@@ -632,7 +632,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Alpine SWS-15D4`,content:`[Driver]
+`},{name:`Alpine SWS-15D4`,date:`20170804`,content:`[Driver]
 Brand=Alpine
 Model=SWS-15D4
 Manufacturer=
@@ -689,7 +689,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCEECEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Aura NS6-255-8A`,content:`[Driver]
+`},{name:`Aura NS6-255-8A`,date:`20110905`,content:`[Driver]
 Brand=Aura
 Model=NS6-255-8A
 Manufacturer=
@@ -746,7 +746,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Aurum Cantus  AC200_50C2C 8in Woofer`,content:`[Driver]
+`},{name:`Aurum Cantus  AC200_50C2C 8in Woofer`,date:`20120318`,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC200/50C2C
 Manufacturer=
@@ -803,7 +803,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Aurum Cantus  AC300-75C2C`,content:`[Driver]
+`},{name:`Aurum Cantus  AC300-75C2C`,date:`20120812`,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC300-75C2C
 Manufacturer=
@@ -860,7 +860,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C  12PE32`,content:`[Driver]
+`},{name:`B&C  12PE32`,date:`20130203`,content:`[Driver]
 Brand=B&C 
 Model=12PE32
 Manufacturer=
@@ -917,7 +917,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C  6PE13`,content:`[Driver]
+`},{name:`B&C  6PE13`,date:`20040406`,content:`[Driver]
 Brand=B&C
 Model=6PE13
 Manufacturer=B&C Speakers
@@ -972,7 +972,7 @@ Basket=0
 Outer=0.187
 Vcd=0
 DVol=0
-`},{name:`B&C 10CL51`,content:`[Driver]
+`},{name:`B&C 10CL51`,date:`20120805`,content:`[Driver]
 Brand=B&C
 Model=10CL51
 Manufacturer=
@@ -1029,7 +1029,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 10FW64`,content:`[Driver]
+`},{name:`B&C 10FW64`,date:`20140225`,content:`[Driver]
 Brand=B&C
 Model=10FW64
 Manufacturer=
@@ -1086,7 +1086,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 10HPL64`,content:`[Driver]
+`},{name:`B&C 10HPL64`,date:`20121028`,content:`[Driver]
 Brand=B&C
 Model=10HPL64
 Manufacturer=
@@ -1143,7 +1143,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENCCCECEECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 10MD26`,content:`[Driver]
+`},{name:`B&C 10MD26`,date:`20130202`,content:`[Driver]
 Brand=B&C
 Model=10MD26
 Manufacturer=
@@ -1200,7 +1200,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 10NW64`,content:`[Driver]
+`},{name:`B&C 10NW64`,date:`20121028`,content:`[Driver]
 Brand=B&C
 Model=10NW64
 Manufacturer=
@@ -1257,7 +1257,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENCEECCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 10PLB76`,content:`[Driver]
+`},{name:`B&C 10PLB76`,date:`20121102`,content:`[Driver]
 Brand=B&C
 Model=10PLB76
 Manufacturer=
@@ -1314,7 +1314,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENCECCCEECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 10PS26`,content:`[Driver]
+`},{name:`B&C 10PS26`,date:`20130710`,content:`[Driver]
 Brand=B&C
 Model=10PS26
 Manufacturer=
@@ -1371,7 +1371,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 12CL64`,content:`[Driver]
+`},{name:`B&C 12CL64`,date:`20120814`,content:`[Driver]
 Brand=B&C
 Model=12CL64
 Manufacturer=
@@ -1428,7 +1428,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 12CL76`,content:`[Driver]
+`},{name:`B&C 12CL76`,date:`20121103`,content:`[Driver]
 Brand=B&C
 Model=12CL76
 Manufacturer=
@@ -1485,7 +1485,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENCECCCEECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 12FW76`,content:`[Driver]
+`},{name:`B&C 12FW76`,date:`20131021`,content:`[Driver]
 Brand=B&C
 Model=12FW76
 Manufacturer=
@@ -1542,7 +1542,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 12HPL64`,content:`[Driver]
+`},{name:`B&C 12HPL64`,date:`20150218`,content:`[Driver]
 Brand=B&C
 Model=12HPL64
 Manufacturer=
@@ -1599,7 +1599,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 12HPL76`,content:`[Driver]
+`},{name:`B&C 12HPL76`,date:`20121028`,content:`[Driver]
 Brand=B&C
 Model=12HPL76
 Manufacturer=
@@ -1656,7 +1656,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 12PE32`,content:`[Driver]
+`},{name:`B&C 12PE32`,date:`20130203`,content:`[Driver]
 Brand=B&C
 Model=12PE32
 Manufacturer=
@@ -1713,7 +1713,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 12PLB76`,content:`[Driver]
+`},{name:`B&C 12PLB76`,date:`20121028`,content:`[Driver]
 Brand=B&C
 Model=12PLB76
 Manufacturer=
@@ -1770,7 +1770,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 12PS100`,content:`[Driver]
+`},{name:`B&C 12PS100`,date:`20121023`,content:`[Driver]
 Brand=B&C
 Model=12PS100
 Manufacturer=
@@ -1827,7 +1827,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 12TBX100`,content:`[Driver]
+`},{name:`B&C 12TBX100`,date:`20131021`,content:`[Driver]
 Brand=B&C
 Model=12TBX100
 Manufacturer=
@@ -1884,7 +1884,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 15FW76`,content:`[Driver]
+`},{name:`B&C 15FW76`,date:`20121229`,content:`[Driver]
 Brand=B&C
 Model=15FW76
 Manufacturer=
@@ -1941,7 +1941,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENCEECCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 15HPL76W`,content:`[Driver]
+`},{name:`B&C 15HPL76W`,date:`20121029`,content:`[Driver]
 Brand=B&C
 Model=15HPL76W
 Manufacturer=
@@ -1998,7 +1998,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 15NDL76`,content:`[Driver]
+`},{name:`B&C 15NDL76`,date:`20130101`,content:`[Driver]
 Brand=B&C
 Model=15NDL76
 Manufacturer=
@@ -2055,7 +2055,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENCEECCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 15PL100`,content:`[Driver]
+`},{name:`B&C 15PL100`,date:`20121020`,content:`[Driver]
 Brand=B&C
 Model=15PL100
 Manufacturer=
@@ -2112,7 +2112,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 15PLB76`,content:`[Driver]
+`},{name:`B&C 15PLB76`,date:`20131024`,content:`[Driver]
 Brand=B&C
 Model=15PLB76
 Manufacturer=
@@ -2169,7 +2169,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 15PS100`,content:`[Driver]
+`},{name:`B&C 15PS100`,date:`20121103`,content:`[Driver]
 Brand=B&C
 Model=15PS100
 Manufacturer=
@@ -2226,7 +2226,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENCECCCEECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 15TBX100`,content:`[Driver]
+`},{name:`B&C 15TBX100`,date:`20121020`,content:`[Driver]
 Brand=B&C
 Model=15TBX100
 Manufacturer=
@@ -2283,7 +2283,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 18PS76`,content:`[Driver]
+`},{name:`B&C 18PS76`,date:`20130128`,content:`[Driver]
 Brand=B&C
 Model=18PS76
 Manufacturer=
@@ -2340,7 +2340,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 18RBX100-4`,content:`[Driver]
+`},{name:`B&C 18RBX100-4`,date:`20170601`,content:`[Driver]
 Brand=B&C
 Model=18RBX100-4
 Manufacturer=
@@ -2397,7 +2397,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 18SW115`,content:`[Driver]
+`},{name:`B&C 18SW115`,date:`20160609`,content:`[Driver]
 Brand=B&C
 Model=18SW115
 Manufacturer=
@@ -2454,7 +2454,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 18TBW100-4`,content:`[Driver]
+`},{name:`B&C 18TBW100-4`,date:`20160816`,content:`[Driver]
 Brand=B&C
 Model=18TBW100-4
 Manufacturer=
@@ -2511,7 +2511,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 18TBX100`,content:`[Driver]
+`},{name:`B&C 18TBX100`,date:`20130129`,content:`[Driver]
 Brand=B&C
 Model=18TBX100
 Manufacturer=
@@ -2568,7 +2568,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 21DS115-4`,content:`[Driver]
+`},{name:`B&C 21DS115-4`,date:`20170221`,content:`[Driver]
 Brand=B&C
 Model=21DS115-4
 Manufacturer=
@@ -2625,7 +2625,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 21DS115`,content:`[Driver]
+`},{name:`B&C 21DS115`,date:`20170210`,content:`[Driver]
 Brand=B&C
 Model=21DS115
 Manufacturer=
@@ -2682,7 +2682,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 21IPAL`,content:`[Driver]
+`},{name:`B&C 21IPAL`,date:`20170416`,content:`[Driver]
 Brand=B&C
 Model=21IPAL
 Manufacturer=
@@ -2739,7 +2739,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 21SW115-4`,content:`[Driver]
+`},{name:`B&C 21SW115-4`,date:`20160206`,content:`[Driver]
 Brand=B&C
 Model=21SW115-4
 Manufacturer=
@@ -2796,7 +2796,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 21SW150`,content:`[Driver]
+`},{name:`B&C 21SW150`,date:`20090402`,content:`[Driver]
 Brand=B&C
 Model=21SW150
 Manufacturer=
@@ -2853,7 +2853,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECENNNEEECECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 21SW152`,content:`[Driver]
+`},{name:`B&C 21SW152`,date:`20150331`,content:`[Driver]
 Brand=B&C
 Model=21SW152
 Manufacturer=
@@ -2910,7 +2910,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENCEECCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 6NDL38`,content:`[Driver]
+`},{name:`B&C 6NDL38`,date:`20120726`,content:`[Driver]
 Brand=B&C
 Model=6NDL38
 Manufacturer=
@@ -2967,7 +2967,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECENNNEENCECCCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 6NDL44 6in woofer`,content:`[Driver]
+`},{name:`B&C 6NDL44 6in woofer`,date:`20120130`,content:`[Driver]
 Brand=B&C
 Model=6NDL44 6in woofer
 Manufacturer=
@@ -3024,7 +3024,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 8FG51`,content:`[Driver]
+`},{name:`B&C 8FG51`,date:`20130911`,content:`[Driver]
 Brand=B&C
 Model=8FG51
 Manufacturer=
@@ -3081,7 +3081,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 8FW51`,content:`[Driver]
+`},{name:`B&C 8FW51`,date:`20130911`,content:`[Driver]
 Brand=B&C
 Model=8FW51
 Manufacturer=
@@ -3138,7 +3138,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 8MDN51`,content:`[Driver]
+`},{name:`B&C 8MDN51`,date:`20120225`,content:`[Driver]
 Brand=B&C
 Model=8MDN51
 Manufacturer=
@@ -3195,7 +3195,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 8NDL51`,content:`[Driver]
+`},{name:`B&C 8NDL51`,date:`20130912`,content:`[Driver]
 Brand=B&C
 Model=8NDL51
 Manufacturer=
@@ -3252,7 +3252,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 8PE21 8in Woofer`,content:`[Driver]
+`},{name:`B&C 8PE21 8in Woofer`,date:`20111113`,content:`[Driver]
 Brand=B&C
 Model=8PE21
 Manufacturer= 
@@ -3309,7 +3309,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENCEECCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 8PS21 8in woofer`,content:`[Driver]
+`},{name:`B&C 8PS21 8in woofer`,date:`20111113`,content:`[Driver]
 Brand=B&C 
 Model=8PS21 8" woofer
 Manufacturer=
@@ -3366,7 +3366,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENCEECCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`BLG RXM8A`,content:`[Driver]
+`},{name:`BLG RXM8A`,date:`20161228`,content:`[Driver]
 Brand=BLG
 Model=RXM8A
 Manufacturer=
@@ -3423,7 +3423,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCNCEENNENNEECCCEENCNCCENNNNCNNNCCCCNNNNNNNNNNNCC
-`},{name:`BLG RXM8B`,content:`[Driver]
+`},{name:`BLG RXM8B`,date:`20161228`,content:`[Driver]
 Brand=BLG
 Model=RXM8B
 Manufacturer=
@@ -3480,7 +3480,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCNCEENNENNEECCCEENCNCCENNNNCNNNCCCCNNNNNNNNNNNCC
-`},{name:`BMS 12N620`,content:`[Driver]
+`},{name:`BMS 12N620`,date:`20130208`,content:`[Driver]
 Brand=BMS
 Model=12N620
 Manufacturer=
@@ -3537,7 +3537,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`BMS 12S320`,content:`[Driver]
+`},{name:`BMS 12S320`,date:`20130207`,content:`[Driver]
 Brand=BMS
 Model=12S320
 Manufacturer=
@@ -3594,7 +3594,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`BMS 12S330`,content:`[Driver]
+`},{name:`BMS 12S330`,date:`20130208`,content:`[Driver]
 Brand=BMS
 Model=12S330
 Manufacturer=
@@ -3651,7 +3651,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`BMS 15M830v2`,content:`[Driver]
+`},{name:`BMS 15M830v2`,date:`20130207`,content:`[Driver]
 Brand=BMS
 Model=15M830v2
 Manufacturer=
@@ -3708,7 +3708,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`BMS 15N620`,content:`[Driver]
+`},{name:`BMS 15N620`,date:`20130131`,content:`[Driver]
 Brand=BMS
 Model=15N620
 Manufacturer=
@@ -3765,7 +3765,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`BMS 15N630`,content:`[Driver]
+`},{name:`BMS 15N630`,date:`20130207`,content:`[Driver]
 Brand=BMS
 Model=15N630
 Manufacturer=
@@ -3822,7 +3822,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`BMS 15N820`,content:`[Driver]
+`},{name:`BMS 15N820`,date:`20130131`,content:`[Driver]
 Brand=BMS
 Model=15N820
 Manufacturer=
@@ -3879,7 +3879,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`BMS 15S320`,content:`[Driver]
+`},{name:`BMS 15S320`,date:`20130131`,content:`[Driver]
 Brand=BMS
 Model=15S320
 Manufacturer=
@@ -3936,7 +3936,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`BMS 15S330`,content:`[Driver]
+`},{name:`BMS 15S330`,date:`20130207`,content:`[Driver]
 Brand=BMS
 Model=15S330
 Manufacturer=
@@ -3993,7 +3993,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`BMS 15S430V2`,content:`[Driver]
+`},{name:`BMS 15S430V2`,date:`20130207`,content:`[Driver]
 Brand=BMS
 Model=15S430V2
 Manufacturer=
@@ -4050,7 +4050,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`BMS 18N830v2`,content:`[Driver]
+`},{name:`BMS 18N830v2`,date:`20130210`,content:`[Driver]
 Brand=BMS
 Model=18N830v2
 Manufacturer=
@@ -4107,7 +4107,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`BMS 18S430V`,content:`[Driver]
+`},{name:`BMS 18S430V`,date:`20130131`,content:`[Driver]
 Brand=BMS
 Model=18S430V
 Manufacturer=
@@ -4164,7 +4164,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Celestion CF1025C`,content:`[Driver]
+`},{name:`Celestion CF1025C`,date:`20140929`,content:`[Driver]
 Brand=Celestion
 Model=CF1025C
 Manufacturer=
@@ -4221,7 +4221,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Celestion FTR08-2011D`,content:`[Driver]
+`},{name:`Celestion FTR08-2011D`,date:`20140929`,content:`[Driver]
 Brand=Celestion
 Model=FTR08-2011D
 Manufacturer=
@@ -4278,7 +4278,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Celestion FTR12-4080`,content:`[Driver]
+`},{name:`Celestion FTR12-4080`,date:`20120807`,content:`[Driver]
 Brand=Celestion
 Model=FTR12-4080
 Manufacturer=
@@ -4335,7 +4335,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Celestion FTR15-3070C`,content:`[Driver]
+`},{name:`Celestion FTR15-3070C`,date:`20140301`,content:`[Driver]
 Brand=Celestion
 Model=FTR15-3070C
 Manufacturer=
@@ -4392,7 +4392,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Celestion NTR06-1705B`,content:`[Driver]
+`},{name:`Celestion NTR06-1705B`,date:`20140929`,content:`[Driver]
 Brand=Celestion
 Model=NTR06-1705B
 Manufacturer=
@@ -4449,7 +4449,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Celestion NTR21-5010JD`,content:`[Driver]
+`},{name:`Celestion NTR21-5010JD`,date:`20130826`,content:`[Driver]
 Brand=Celestion
 Model=NTR21-5010JD
 Manufacturer=
@@ -4506,7 +4506,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Celestion TF0510`,content:`[Driver]
+`},{name:`Celestion TF0510`,date:`20120807`,content:`[Driver]
 Brand=Celestion
 Model=TF0510
 Manufacturer=
@@ -4563,7 +4563,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Celestion TF0615`,content:`[Driver]
+`},{name:`Celestion TF0615`,date:`20140929`,content:`[Driver]
 Brand=Celestion
 Model=TF0615
 Manufacturer=
@@ -4620,7 +4620,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECENNNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Celestion TF0820`,content:`[Driver]
+`},{name:`Celestion TF0820`,date:`20170713`,content:`[Driver]
 Brand=Celestion
 Model=TF0820
 Manufacturer=
@@ -4677,7 +4677,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Celestion TF1020`,content:`[Driver]
+`},{name:`Celestion TF1020`,date:`20120805`,content:`[Driver]
 Brand=00
 Model=Celestion TF1020
 Manufacturer=
@@ -4734,7 +4734,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Celestion TF1218`,content:`[Driver]
+`},{name:`Celestion TF1218`,date:`20121126`,content:`[Driver]
 Brand=Celestion
 Model=TF1218
 Manufacturer=
@@ -4791,7 +4791,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Celestion TF1220`,content:`[Driver]
+`},{name:`Celestion TF1220`,date:`20121123`,content:`[Driver]
 Brand=Celestion
 Model=TF1220
 Manufacturer=
@@ -4848,7 +4848,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Celestion TF1225CX`,content:`[Driver]
+`},{name:`Celestion TF1225CX`,date:`20140929`,content:`[Driver]
 Brand=Celestion
 Model=TF1225CX
 Manufacturer=
@@ -4905,7 +4905,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Celestion TF1225e`,content:`[Driver]
+`},{name:`Celestion TF1225e`,date:`20120805`,content:`[Driver]
 Brand=Celestion
 Model=TF1225e
 Manufacturer=
@@ -4962,7 +4962,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Celestion TF1525e`,content:`[Driver]
+`},{name:`Celestion TF1525e`,date:`20130605`,content:`[Driver]
 Brand=Celestion
 Model=TF1525e
 Manufacturer=
@@ -5019,7 +5019,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Ciare 18.00 SW`,content:`[Driver]
+`},{name:`Ciare 18.00 SW`,date:`20160206`,content:`[Driver]
 Brand=Ciare
 Model=18.00 SW
 Manufacturer=
@@ -5076,7 +5076,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Ciare 6.38NdW`,content:`[Driver]
+`},{name:`Ciare 6.38NdW`,date:`20120726`,content:`[Driver]
 Brand=Ciare
 Model=6.38NdW
 Manufacturer=
@@ -5133,7 +5133,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Ciare 8.5NdW-8`,content:`[Driver]
+`},{name:`Ciare 8.5NdW-8`,date:`20120726`,content:`[Driver]
 Brand=Ciare
 Model=8.5NdW-8
 Manufacturer=
@@ -5190,7 +5190,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio CX120-8`,content:`[Driver]
+`},{name:`Dayton Audio CX120-8`,date:`20170728`,content:`[Driver]
 Brand=Dayton Audio
 Model=CX120-8
 Manufacturer=
@@ -5247,7 +5247,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DA115-8`,content:`[Driver]
+`},{name:`Dayton Audio DA115-8`,date:`20120120`,content:`[Driver]
 Brand=Dayton Audio
 Model=DA115-8
 Manufacturer=
@@ -5304,7 +5304,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DA135-8`,content:`[Driver]
+`},{name:`Dayton Audio DA135-8`,date:`20170310`,content:`[Driver]
 Brand=Dayton Audio
 Model=DA135-8
 Manufacturer=
@@ -5361,7 +5361,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DA215-8`,content:`[Driver]
+`},{name:`Dayton Audio DA215-8`,date:`20120603`,content:`[Driver]
 Brand=Dayton Audio
 Model=DA215-8
 Manufacturer=
@@ -5418,7 +5418,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DA270-8`,content:`[Driver]
+`},{name:`Dayton Audio DA270-8`,date:`20120603`,content:`[Driver]
 Brand=Dayton Audio
 Model=DA270-8
 Manufacturer=
@@ -5475,7 +5475,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DC130B-4`,content:`[Driver]
+`},{name:`Dayton Audio DC130B-4`,date:`20161203`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC130B-4
 Manufacturer=
@@ -5532,7 +5532,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DC160-4`,content:`[Driver]
+`},{name:`Dayton Audio DC160-4`,date:`20130916`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC160-4
 Manufacturer=
@@ -5589,7 +5589,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DC160-8`,content:`[Driver]
+`},{name:`Dayton Audio DC160-8`,date:`20130916`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC160-8
 Manufacturer=
@@ -5646,7 +5646,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DC200-8`,content:`[Driver]
+`},{name:`Dayton Audio DC200-8`,date:`20120109`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC200-8
 Manufacturer=
@@ -5703,7 +5703,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DC250-8`,content:`[Driver]
+`},{name:`Dayton Audio DC250-8`,date:`20120720`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC250-8
 Manufacturer=
@@ -5760,7 +5760,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DC300-8`,content:`[Driver]
+`},{name:`Dayton Audio DC300-8`,date:`20110919`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC300-8
 Manufacturer=
@@ -5817,7 +5817,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DC380-8`,content:`[Driver]
+`},{name:`Dayton Audio DC380-8`,date:`20120120`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC380-8
 Manufacturer=
@@ -5874,7 +5874,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DCS205-4`,content:`[Driver]
+`},{name:`Dayton Audio DCS205-4`,date:`20110524`,content:`[Driver]
 Brand=Dayton Audio
 Model=DCS205-4
 Manufacturer=
@@ -5931,7 +5931,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DCS255-4`,content:`[Driver]
+`},{name:`Dayton Audio DCS255-4`,date:`20110529`,content:`[Driver]
 Brand=Dayton Audio
 Model=DCS255-4
 Manufacturer=
@@ -5988,7 +5988,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENCECCCEECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DCS305-4`,content:`[Driver]
+`},{name:`Dayton Audio DCS305-4`,date:`20110530`,content:`[Driver]
 Brand=Dayton Audio
 Model=DCS305-4
 Manufacturer=
@@ -6045,7 +6045,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DCS380-4`,content:`[Driver]
+`},{name:`Dayton Audio DCS380-4`,date:`20081116`,content:`[Driver]
 Brand=Dayton Audio
 Model=DCS380-4
 Manufacturer=Dayton Audio
@@ -6102,7 +6102,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DCS385-4`,content:`[Driver]
+`},{name:`Dayton Audio DCS385-4`,date:`20120830`,content:`[Driver]
 Brand=Dayton Audio
 Model=DCS385-4
 Manufacturer=
@@ -6159,7 +6159,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DCS450-4`,content:`[Driver]
+`},{name:`Dayton Audio DCS450-4`,date:`20090402`,content:`[Driver]
 Brand=Dayton Audio
 Model=DCS450-4
 Manufacturer=Dayton Audio
@@ -6216,7 +6216,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DS115-8`,content:`[Driver]
+`},{name:`Dayton Audio DS115-8`,date:`20120322`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS115-8
 Manufacturer=
@@ -6273,7 +6273,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DS135-8`,content:`[Driver]
+`},{name:`Dayton Audio DS135-8`,date:`20131019`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS135-8
 Manufacturer=
@@ -6330,7 +6330,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DS175-8`,content:`[Driver]
+`},{name:`Dayton Audio DS175-8`,date:`20120413`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS175-8
 Manufacturer=
@@ -6387,7 +6387,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DS215-8`,content:`[Driver]
+`},{name:`Dayton Audio DS215-8`,date:`20120417`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS215-8
 Manufacturer=
@@ -6444,7 +6444,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DS270-8`,content:`[Driver]
+`},{name:`Dayton Audio DS270-8`,date:`20120523`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS270-8
 Manufacturer=
@@ -6501,7 +6501,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DS315-8`,content:`[Driver]
+`},{name:`Dayton Audio DS315-8`,date:`20120622`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS315-8
 Manufacturer=
@@ -6558,7 +6558,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DSA315-8`,content:`[Driver]
+`},{name:`Dayton Audio DSA315-8`,date:`20170106`,content:`[Driver]
 Brand=Dayton Audio
 Model=DSA315-8
 Manufacturer=
@@ -6615,7 +6615,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DVC310-88`,content:`[Driver]
+`},{name:`Dayton Audio DVC310-88`,date:`20120907`,content:`[Driver]
 Brand=Dayton Audio
 Model=DVC310-88
 Manufacturer=
@@ -6672,7 +6672,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DVC385-88 V2015`,content:`[Driver]
+`},{name:`Dayton Audio DVC385-88 V2015`,date:`20120326`,content:`[Driver]
 Brand=Dayton Audio
 Model=DVC385-88 V2015
 Manufacturer=
@@ -6729,7 +6729,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DVC385-88`,content:`[Driver]
+`},{name:`Dayton Audio DVC385-88`,date:`20120326`,content:`[Driver]
 Brand=Dayton Audio
 Model=DVC385-88
 Manufacturer=
@@ -6786,7 +6786,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio IB385-8`,content:`[Driver]
+`},{name:`Dayton Audio IB385-8`,date:`20121110`,content:`[Driver]
 Brand=Dayton Audio
 Model=IB385-8
 Manufacturer=
@@ -6843,7 +6843,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio LS10-44`,content:`[Driver]
+`},{name:`Dayton Audio LS10-44`,date:`20150322`,content:`[Driver]
 Brand=Dayton Audio
 Model=LS10-44
 Manufacturer=
@@ -6900,7 +6900,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio LS12-44`,content:`[Driver]
+`},{name:`Dayton Audio LS12-44`,date:`20150322`,content:`[Driver]
 Brand=Dayton Audio
 Model=LS12-44
 Manufacturer=
@@ -6957,7 +6957,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio ND105-8`,content:`[Driver]
+`},{name:`Dayton Audio ND105-8`,date:`20120225`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND105-8
 Manufacturer=
@@ -7014,7 +7014,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCEECEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio ND91-4`,content:`[Driver]
+`},{name:`Dayton Audio ND91-4`,date:`20161004`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND91-4
 Manufacturer=
@@ -7071,7 +7071,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio PA200-8`,content:`[Driver]
+`},{name:`Dayton Audio PA200-8`,date:`20150126`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA200-8
 Manufacturer=
@@ -7128,7 +7128,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio PA255-8`,content:`[Driver]
+`},{name:`Dayton Audio PA255-8`,date:`20110912`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA255-8
 Manufacturer=
@@ -7185,7 +7185,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio PA310-8`,content:`[Driver]
+`},{name:`Dayton Audio PA310-8`,date:`20120623`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA310-8
 Manufacturer=
@@ -7242,7 +7242,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio PA380-8`,content:`[Driver]
+`},{name:`Dayton Audio PA380-8`,date:`20121121`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA380-8
 Manufacturer=
@@ -7299,7 +7299,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio PA460-8 v2015`,content:`[Driver]
+`},{name:`Dayton Audio PA460-8 v2015`,date:`20110908`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA460-8
 Manufacturer=
@@ -7356,7 +7356,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio PA460-8`,content:`[Driver]
+`},{name:`Dayton Audio PA460-8`,date:`20110908`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA460-8
 Manufacturer=
@@ -7413,7 +7413,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio PK165-8`,content:`[Driver]
+`},{name:`Dayton Audio PK165-8`,date:`20130713`,content:`[Driver]
 Brand=Dayton Audio
 Model=PK165-8
 Manufacturer=
@@ -7470,7 +7470,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio QT210-4`,content:`[Driver]
+`},{name:`Dayton Audio QT210-4`,date:`20090208`,content:`[Driver]
 Brand=Dayton Audio
 Model=QT210-4
 Manufacturer=Dayton Audio
@@ -7527,7 +7527,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECENNNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RS100-8`,content:`[Driver]
+`},{name:`Dayton Audio RS100-8`,date:`20120210`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS100-8
 Manufacturer=
@@ -7584,7 +7584,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RS125-4`,content:`[Driver]
+`},{name:`Dayton Audio RS125-4`,date:`20170410`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS125-4
 Manufacturer=
@@ -7641,7 +7641,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RS125-8`,content:`[Driver]
+`},{name:`Dayton Audio RS125-8`,date:`20170410`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS125-8
 Manufacturer=
@@ -7698,7 +7698,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RS150-4`,content:`[Driver]
+`},{name:`Dayton Audio RS150-4`,date:`20130324`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS150-4
 Manufacturer=
@@ -7755,7 +7755,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RS150-8`,content:`[Driver]
+`},{name:`Dayton Audio RS150-8`,date:`20130324`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS150-8
 Manufacturer=
@@ -7812,7 +7812,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RS180-4`,content:`[Driver]
+`},{name:`Dayton Audio RS180-4`,date:`20120725`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS180-4
 Manufacturer=
@@ -7869,7 +7869,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RS225-4`,content:`[Driver]
+`},{name:`Dayton Audio RS225-4`,date:`20130727`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS225-4
 Manufacturer=
@@ -7926,7 +7926,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RS225-8`,content:`[Driver]
+`},{name:`Dayton Audio RS225-8`,date:`20130727`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS225-8
 Manufacturer=
@@ -7983,7 +7983,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RS225P-4`,content:`[Driver]
+`},{name:`Dayton Audio RS225P-4`,date:`20140413`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS225P-4
 Manufacturer=
@@ -8040,7 +8040,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RS225P-8`,content:`[Driver]
+`},{name:`Dayton Audio RS225P-8`,date:`20140413`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS225P-8
 Manufacturer=
@@ -8097,7 +8097,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RS270-8`,content:`[Driver]
+`},{name:`Dayton Audio RS270-8`,date:`20130416`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS270-8
 Manufacturer=
@@ -8154,7 +8154,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RSS210HF-4`,content:`[Driver]
+`},{name:`Dayton Audio RSS210HF-4`,date:`20081207`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS210HF-4
 Manufacturer=Dayton Audio
@@ -8211,7 +8211,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECENNNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RSS265HF-4`,content:`[Driver]
+`},{name:`Dayton Audio RSS265HF-4`,date:`20090208`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS265HF-4
 Manufacturer=Dayton Audio
@@ -8268,7 +8268,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RSS265HO-4`,content:`[Driver]
+`},{name:`Dayton Audio RSS265HO-4`,date:`20090208`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS265HO-4
 Manufacturer=Dayton Audio
@@ -8325,7 +8325,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RSS265HO-44`,content:`[Driver]
+`},{name:`Dayton Audio RSS265HO-44`,date:`20140412`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS265HO-44
 Manufacturer=
@@ -8382,7 +8382,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RSS315HF-4`,content:`[Driver]
+`},{name:`Dayton Audio RSS315HF-4`,date:`20090208`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS315HF-4
 Manufacturer=Dayton Audio
@@ -8439,7 +8439,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RSS315HFA-8`,content:`[Driver]
+`},{name:`Dayton Audio RSS315HFA-8`,date:`20140412`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS315HFA-8
 Manufacturer=
@@ -8496,7 +8496,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RSS315HO-4`,content:`[Driver]
+`},{name:`Dayton Audio RSS315HO-4`,date:`20090208`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS315HO-4
 Manufacturer=Dayton Audio
@@ -8553,7 +8553,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RSS315HO-44`,content:`[Driver]
+`},{name:`Dayton Audio RSS315HO-44`,date:`20140412`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS315HO-44
 Manufacturer=
@@ -8610,7 +8610,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RSS390HF-4`,content:`[Driver]
+`},{name:`Dayton Audio RSS390HF-4`,date:`20090102`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS390HF-4
 Manufacturer=Dayton Audio
@@ -8667,7 +8667,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RSS390HO-4`,content:`[Driver]
+`},{name:`Dayton Audio RSS390HO-4`,date:`20090125`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS390HO-4
 Manufacturer=Dayton Audio
@@ -8724,7 +8724,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RSS460HO-4`,content:`[Driver]
+`},{name:`Dayton Audio RSS460HO-4`,date:`20121007`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS460HO-4
 Manufacturer=
@@ -8781,7 +8781,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio SD215-88`,content:`[Driver]
+`},{name:`Dayton Audio SD215-88`,date:`20090123`,content:`[Driver]
 Brand=Dayton Shielded DVC 
 Model=8in SD215-88
 Manufacturer=Dayton Audio
@@ -8838,7 +8838,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECENNNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio SD215-88A`,content:`[Driver]
+`},{name:`Dayton Audio SD215-88A`,date:`20110908`,content:`[Driver]
 Brand=Dayton Audio
 Model=SD215-88A
 Manufacturer=
@@ -8895,7 +8895,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio SD270-88`,content:`[Driver]
+`},{name:`Dayton Audio SD270-88`,date:`20081004`,content:`[Driver]
 Brand=Dayton Audio
 Model=SD270-88
 Manufacturer=Dayton
@@ -8952,7 +8952,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECENNNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio SD270A-88`,content:`[Driver]
+`},{name:`Dayton Audio SD270A-88`,date:`20110814`,content:`[Driver]
 Brand=Dayton Audio
 Model=SD270A-88
 Manufacturer=
@@ -9009,7 +9009,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio SD315-88`,content:`[Driver]
+`},{name:`Dayton Audio SD315-88`,date:`20090717`,content:`[Driver]
 Brand=Dayton Audio
 Model=SD315-88
 Manufacturer=Dayton Audio
@@ -9066,7 +9066,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECENNNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio SD315A-88`,content:`[Driver]
+`},{name:`Dayton Audio SD315A-88`,date:`20130131`,content:`[Driver]
 Brand=Dayton Audio
 Model=SD315A-88
 Manufacturer=
@@ -9123,7 +9123,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio ST210-8`,content:`[Driver]
+`},{name:`Dayton Audio ST210-8`,date:`20110718`,content:`[Driver]
 Brand=Dayton Audio
 Model=ST210-8
 Manufacturer=
@@ -9180,7 +9180,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECCENNEENEEECCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio ST255-8`,content:`[Driver]
+`},{name:`Dayton Audio ST255-8`,date:`20130525`,content:`[Driver]
 Brand=Dayton Audio
 Model=ST255-8
 Manufacturer=
@@ -9237,7 +9237,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio ST305-8`,content:`[Driver]
+`},{name:`Dayton Audio ST305-8`,date:`20120123`,content:`[Driver]
 Brand=Dayton Audio
 Model=ST305-8
 Manufacturer=
@@ -9294,7 +9294,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio ST385-8`,content:`[Driver]
+`},{name:`Dayton Audio ST385-8`,date:`20130503`,content:`[Driver]
 Brand=Dayton Audio
 Model=ST385-8
 Manufacturer=
@@ -9351,7 +9351,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio TIT280C-4`,content:`[Driver]
+`},{name:`Dayton Audio TIT280C-4`,date:`20090208`,content:`[Driver]
 Brand=Dayton Audio
 Model=TIT280C-4
 Manufacturer=Dayton
@@ -9408,7 +9408,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio TIT320C-4`,content:`[Driver]
+`},{name:`Dayton Audio TIT320C-4`,date:`20090208`,content:`[Driver]
 Brand=Dayton Audio
 Model=TIT320C-4
 Manufacturer=Dayton Audio
@@ -9465,7 +9465,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio TIT400C-4`,content:`[Driver]
+`},{name:`Dayton Audio TIT400C-4`,date:`20120722`,content:`[Driver]
 Brand=Dayton Audio
 Model=TIT400C-4
 Manufacturer=
@@ -9522,7 +9522,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio UM10-22`,content:`[Driver]
+`},{name:`Dayton Audio UM10-22`,date:`20130920`,content:`[Driver]
 Brand=Dayton Audio
 Model=UM10-22
 Manufacturer=
@@ -9579,7 +9579,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio UM12-22`,content:`[Driver]
+`},{name:`Dayton Audio UM12-22`,date:`20130313`,content:`[Driver]
 Brand=Dayton Audio
 Model=UM12-22
 Manufacturer=
@@ -9636,7 +9636,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio UM15-22`,content:`[Driver]
+`},{name:`Dayton Audio UM15-22`,date:`20130131`,content:`[Driver]
 Brand=Dayton Audio
 Model=UM15-22
 Manufacturer=
@@ -9693,7 +9693,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio UM18-22 new`,content:`[Driver]
+`},{name:`Dayton Audio UM18-22 new`,date:`20170611`,content:`[Driver]
 Brand=Dayton Audio
 Model=UM18-22 new
 Manufacturer=
@@ -9750,7 +9750,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio UM18-22`,content:`[Driver]
+`},{name:`Dayton Audio UM18-22`,date:`20131117`,content:`[Driver]
 Brand=Dayton Audio
 Model=UM18-22
 Manufacturer=
@@ -9807,7 +9807,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`EAW LC10 Buyout`,content:`[Driver]
+`},{name:`EAW LC10 Buyout`,date:`20121228`,content:`[Driver]
 Brand=EAW
 Model=LC10 Buyout
 Manufacturer=
@@ -9864,7 +9864,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminece Legend BP122`,content:`[Driver]
+`},{name:`Eminece Legend BP122`,date:`20170530`,content:`[Driver]
 Brand=Eminence
 Model=Legend BP122
 Manufacturer=
@@ -9921,7 +9921,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence 2510-4`,content:`[Driver]
+`},{name:`Eminence 2510-4`,date:`20150526`,content:`[Driver]
 Brand=Eminence
 Model=2510-4
 Manufacturer=
@@ -9978,7 +9978,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=ECECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence 2510`,content:`[Driver]
+`},{name:`Eminence 2510`,date:`20121023`,content:`[Driver]
 Brand=Eminence
 Model=2510
 Manufacturer=
@@ -10035,7 +10035,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence 2512`,content:`[Driver]
+`},{name:`Eminence 2512`,date:`20120828`,content:`[Driver]
 Brand=Eminence
 Model=2512
 Manufacturer=
@@ -10092,7 +10092,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence 2515`,content:`[Driver]
+`},{name:`Eminence 2515`,date:`20121010`,content:`[Driver]
 Brand=Eminence
 Model=2515
 Manufacturer=
@@ -10149,7 +10149,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence 3010LF`,content:`[Driver]
+`},{name:`Eminence 3010LF`,date:`20160711`,content:`[Driver]
 Brand=Eminence
 Model=3010LF
 Manufacturer=
@@ -10206,7 +10206,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence 3010MB`,content:`[Driver]
+`},{name:`Eminence 3010MB`,date:`20130209`,content:`[Driver]
 Brand=Eminence
 Model=3010MB
 Manufacturer=
@@ -10263,7 +10263,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence 3012HO`,content:`[Driver]
+`},{name:`Eminence 3012HO`,date:`20120912`,content:`[Driver]
 Brand=Eminence
 Model=3012HO
 Manufacturer=
@@ -10320,7 +10320,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence 3012LF-4`,content:`[Driver]
+`},{name:`Eminence 3012LF-4`,date:`20160714`,content:`[Driver]
 Brand=Eminence
 Model=3012LF-4
 Manufacturer=
@@ -10377,7 +10377,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence 3015`,content:`[Driver]
+`},{name:`Eminence 3015`,date:`20121020`,content:`[Driver]
 Brand=Eminence
 Model=3015
 Manufacturer=
@@ -10434,7 +10434,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence 3015LF`,content:`[Driver]
+`},{name:`Eminence 3015LF`,date:`20130522`,content:`[Driver]
 Brand=Eminence
 Model=3015LF
 Manufacturer=
@@ -10491,7 +10491,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence 4012HO`,content:`[Driver]
+`},{name:`Eminence 4012HO`,date:`20121206`,content:`[Driver]
 Brand=Eminence
 Model=4012HO
 Manufacturer=
@@ -10548,7 +10548,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Alpha 4`,content:`[Driver]
+`},{name:`Eminence Alpha 4`,date:`20161203`,content:`[Driver]
 Brand=Eminence
 Model=Alpha 4
 Manufacturer=
@@ -10605,7 +10605,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Alpha-6A`,content:`[Driver]
+`},{name:`Eminence Alpha-6A`,date:`20121220`,content:`[Driver]
 Brand=Eminence
 Model=Alpha-6A
 Manufacturer=
@@ -10662,7 +10662,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Alpha-6C 4ohm`,content:`[Driver]
+`},{name:`Eminence Alpha-6C 4ohm`,date:`20120724`,content:`[Driver]
 Brand=Eminence
 Model=Alpha-6C 4ohm
 Manufacturer=
@@ -10719,7 +10719,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Alpha-8A`,content:`[Driver]
+`},{name:`Eminence Alpha-8A`,date:`20150111`,content:`[Driver]
 Brand=Eminence
 Model=Alpha-8A
 Manufacturer=
@@ -10776,7 +10776,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Basslite S2012`,content:`[Driver]
+`},{name:`Eminence Basslite S2012`,date:`20130227`,content:`[Driver]
 Brand=Eminence
 Model=Basslite S2012
 Manufacturer=
@@ -10833,7 +10833,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Beta-10CBMRA`,content:`[Driver]
+`},{name:`Eminence Beta-10CBMRA`,date:`20130202`,content:`[Driver]
 Brand=Eminence
 Model=Beta-10CBMRA
 Manufacturer=
@@ -10890,7 +10890,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCNCEENNENNEECCCEENCNCCENNNNCNNNCCCCNNNNNNNNNNNCC
-`},{name:`Eminence Beta-10a`,content:`[Driver]
+`},{name:`Eminence Beta-10a`,date:`20130617`,content:`[Driver]
 Brand=Eminence
 Model=Beta-10a
 Manufacturer=
@@ -10947,7 +10947,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Beta-12CX (2017)`,content:`[Driver]
+`},{name:`Eminence Beta-12CX (2017)`,date:`20170508`,content:`[Driver]
 Brand=Eminence
 Model=Beta-12CX
 Manufacturer=
@@ -11004,7 +11004,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Beta-6A`,content:`[Driver]
+`},{name:`Eminence Beta-6A`,date:`20120725`,content:`[Driver]
 Brand=Eminence
 Model=Beta-6A
 Manufacturer=
@@ -11061,7 +11061,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Beta-8CX`,content:`[Driver]
+`},{name:`Eminence Beta-8CX`,date:`20130824`,content:`[Driver]
 Brand=Eminence
 Model=Beta-8CX
 Manufacturer=
@@ -11118,7 +11118,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Beta-8a`,content:`[Driver]
+`},{name:`Eminence Beta-8a`,date:`20130102`,content:`[Driver]
 Brand=Eminence
 Model=Beta-8a
 Manufacturer=
@@ -11175,7 +11175,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence CA15-4`,content:`[Driver]
+`},{name:`Eminence CA15-4`,date:`20130117`,content:`[Driver]
 Brand=Eminence
 Model=CA15-4
 Manufacturer=
@@ -11232,7 +11232,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Delta Pro 12-450-4`,content:`[Driver]
+`},{name:`Eminence Delta Pro 12-450-4`,date:`20150927`,content:`[Driver]
 Brand=Eminence
 Model=Delta Pro 12-450-4
 Manufacturer=
@@ -11289,7 +11289,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECENNNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Delta Pro-18C`,content:`[Driver]
+`},{name:`Eminence Delta Pro-18C`,date:`20120824`,content:`[Driver]
 Brand=Eminence
 Model=Delta Pro-18C
 Manufacturer=
@@ -11346,7 +11346,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Delta Pro-8A`,content:`[Driver]
+`},{name:`Eminence Delta Pro-8A`,date:`20121225`,content:`[Driver]
 Brand=Eminence
 Model=Delta Pro-8A
 Manufacturer=
@@ -11403,7 +11403,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Delta-10A`,content:`[Driver]
+`},{name:`Eminence Delta-10A`,date:`20120828`,content:`[Driver]
 Brand=Eminence
 Model=Delta-10A
 Manufacturer=
@@ -11460,7 +11460,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Delta-12A`,content:`[Driver]
+`},{name:`Eminence Delta-12A`,date:`20130708`,content:`[Driver]
 Brand=Eminence
 Model=Delta-12A
 Manufacturer=
@@ -11517,7 +11517,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Delta-12B`,content:`[Driver]
+`},{name:`Eminence Delta-12B`,date:`20151014`,content:`[Driver]
 Brand=Eminence
 Model=Delta-12B
 Manufacturer=
@@ -11574,7 +11574,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Delta-12LF (C 16 ohm)`,content:`[Driver]
+`},{name:`Eminence Delta-12LF (C 16 ohm)`,date:`20151014`,content:`[Driver]
 Brand=Eminence
 Model=Delta-12LF (C 16 ohm)
 Manufacturer=
@@ -11631,7 +11631,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=ECECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Delta-12LFA`,content:`[Driver]
+`},{name:`Eminence Delta-12LFA`,date:`20120814`,content:`[Driver]
 Brand=Eminence
 Model=Delta-12LFA
 Manufacturer=
@@ -11688,7 +11688,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Delta-15A`,content:`[Driver]
+`},{name:`Eminence Delta-15A`,date:`20120512`,content:`[Driver]
 Brand=Eminence
 Model=Delta-15A
 Manufacturer=
@@ -11745,7 +11745,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Delta-15LF-4`,content:`[Driver]
+`},{name:`Eminence Delta-15LF-4`,date:`20160218`,content:`[Driver]
 Brand=Eminence
 Model=Delta-15LF-4
 Manufacturer=
@@ -11802,7 +11802,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Delta-Pro 15A`,content:`[Driver]
+`},{name:`Eminence Delta-Pro 15A`,date:`20131015`,content:`[Driver]
 Brand=Eminence
 Model=Delta-Pro 15A
 Manufacturer=
@@ -11859,7 +11859,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCNCEENNENNEECCCEENCNCCENNNNCNNNCCCCNNNNNNNNNNNCC
-`},{name:`Eminence Eminator 1508`,content:`[Driver]
+`},{name:`Eminence Eminator 1508`,date:`20150121`,content:`[Driver]
 Brand=Eminence
 Model=Eminator 1508
 Manufacturer=
@@ -11916,7 +11916,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Eminator 2512`,content:`[Driver]
+`},{name:`Eminence Eminator 2512`,date:`20170530`,content:`[Driver]
 Brand=Eminence
 Model=Eminator 2512
 Manufacturer=
@@ -11973,7 +11973,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Eminator 2515`,content:`[Driver]
+`},{name:`Eminence Eminator 2515`,date:`20170530`,content:`[Driver]
 Brand=Eminence
 Model=Eminator 2515
 Manufacturer=
@@ -12030,7 +12030,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence HL-10C`,content:`[Driver]
+`},{name:`Eminence HL-10C`,date:`20160823`,content:`[Driver]
 Brand=Eminence
 Model=HL-10C
 Manufacturer=
@@ -12087,7 +12087,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Impero 15A`,content:`[Driver]
+`},{name:`Eminence Impero 15A`,date:`20121020`,content:`[Driver]
 Brand=Eminence
 Model=Impero 15A
 Manufacturer=
@@ -12144,7 +12144,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Kappa Pro 18LF-8`,content:`[Driver]
+`},{name:`Eminence Kappa Pro 18LF-8`,date:`20160527`,content:`[Driver]
 Brand=Eminence
 Model=Kappa Pro 18LF-8
 Manufacturer=
@@ -12201,7 +12201,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Kappa Pro-10LF`,content:`[Driver]
+`},{name:`Eminence Kappa Pro-10LF`,date:`20151001`,content:`[Driver]
 Brand=Eminence
 Model=Kappa Pro-10LF
 Manufacturer=
@@ -12258,7 +12258,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Kappa Pro-12A`,content:`[Driver]
+`},{name:`Eminence Kappa Pro-12A`,date:`20120912`,content:`[Driver]
 Brand=Eminence
 Model=Kappa Pro-12A
 Manufacturer=
@@ -12315,7 +12315,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Kappa Pro-15LFC`,content:`[Driver]
+`},{name:`Eminence Kappa Pro-15LFC`,date:`20140509`,content:`[Driver]
 Brand=Eminence
 Model=Kappa Pro-15LFC
 Manufacturer=
@@ -12372,7 +12372,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Kappa-15LFA`,content:`[Driver]
+`},{name:`Eminence Kappa-15LFA`,date:`20130907`,content:`[Driver]
 Brand=Eminence
 Model=Kappa-15LFA
 Manufacturer=
@@ -12429,7 +12429,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Kappa-Pro-15LF-2`,content:`[Driver]
+`},{name:`Eminence Kappa-Pro-15LF-2`,date:`20140404`,content:`[Driver]
 Brand=Eminence
 Model=Kappa-Pro-15LF-2
 Manufacturer=
@@ -12486,7 +12486,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCNCEENNEENEECCCEECCNCCENNNCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Kappalite 3012LF`,content:`[Driver]
+`},{name:`Eminence Kappalite 3012LF`,date:`20120914`,content:`[Driver]
 Brand=Eminence
 Model=Kappalite 3012LF
 Manufacturer=
@@ -12543,7 +12543,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Kilomax Pro-18A`,content:`[Driver]
+`},{name:`Eminence Kilomax Pro-18A`,date:`20120412`,content:`[Driver]
 Brand=Eminence
 Model=Kilomax Pro-18A
 Manufacturer=
@@ -12600,7 +12600,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence LA8-CNMB`,content:`[Driver]
+`},{name:`Eminence LA8-CNMB`,date:`20150505`,content:`[Driver]
 Brand=Eminence
 Model=LA8-CNMB
 Manufacturer=
@@ -12657,7 +12657,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence LAB15`,content:`[Driver]
+`},{name:`Eminence LAB15`,date:`20121002`,content:`[Driver]
 Brand=Eminence
 Model=LAB15
 Manufacturer=
@@ -12714,7 +12714,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Lab 12C`,content:`[Driver]
+`},{name:`Eminence Lab 12C`,date:`20130313`,content:`[Driver]
 Brand=Eminence
 Model=Lab 12C
 Manufacturer=
@@ -12771,7 +12771,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Lab12`,content:`[Driver]
+`},{name:`Eminence Lab12`,date:`20121114`,content:`[Driver]
 Brand=Eminence
 Model=Lab12
 Manufacturer=
@@ -12828,7 +12828,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Legend BP102-4`,content:`[Driver]
+`},{name:`Eminence Legend BP102-4`,date:`20130907`,content:`[Driver]
 Brand=Eminence
 Model=Legend BP102-4
 Manufacturer=
@@ -12885,7 +12885,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCNCEENNENNEECCCEENCNCCENNNNCNNNCCCCNNNNNNNNNNNCC
-`},{name:`Eminence Legend BP122`,content:`[Driver]
+`},{name:`Eminence Legend BP122`,date:`20170530`,content:`[Driver]
 Brand=Eminence
 Model=Legend BP122
 Manufacturer=
@@ -12942,7 +12942,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Legend CB15`,content:`[Driver]
+`},{name:`Eminence Legend CB15`,date:`20120917`,content:`[Driver]
 Brand=Eminence
 Model=Legend CB15
 Manufacturer=
@@ -12999,7 +12999,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Omega Pro-15A`,content:`[Driver]
+`},{name:`Eminence Omega Pro-15A`,date:`20140316`,content:`[Driver]
 Brand=Eminence
 Model=Omega Pro-15A
 Manufacturer=
@@ -13056,7 +13056,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Omega Pro-18A`,content:`[Driver]
+`},{name:`Eminence Omega Pro-18A`,date:`20120510`,content:`[Driver]
 Brand=Eminence
 Model=Omega Pro-18A
 Manufacturer=
@@ -13113,7 +13113,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Sigma Pro 18-4`,content:`[Driver]
+`},{name:`Eminence Sigma Pro 18-4`,date:`20161122`,content:`[Driver]
 Brand=Eminence
 Model=Sigma Pro 18-4
 Manufacturer=
@@ -13170,7 +13170,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Sigma Pro 18A-2-subwoofer`,content:`[Driver]
+`},{name:`Eminence Sigma Pro 18A-2-subwoofer`,date:`20140131`,content:`[Driver]
 Brand=Eminence
 Model=Sigma Pro 18A-2
 Manufacturer=
@@ -13227,7 +13227,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Sigma Pro 18A-2`,content:`[Driver]
+`},{name:`Eminence Sigma Pro 18A-2`,date:`20140131`,content:`[Driver]
 Brand=Eminence
 Model=Sigma Pro 18A-2
 Manufacturer=
@@ -13284,7 +13284,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Exodus Anarchy`,content:`[Driver]
+`},{name:`Exodus Anarchy`,date:`20131120`,content:`[Driver]
 Brand=Exodus
 Model=Anarchy
 Manufacturer=
@@ -13341,7 +13341,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECENNNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 10FE200`,content:`[Driver]
+`},{name:`Faital Pro 10FE200`,date:`20121014`,content:`[Driver]
 Brand=Faital Pro
 Model=10FE200
 Manufacturer=
@@ -13398,7 +13398,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 10FH520`,content:`[Driver]
+`},{name:`Faital Pro 10FH520`,date:`20140209`,content:`[Driver]
 Brand=Faital Pro
 Model=10FH520
 Manufacturer=
@@ -13455,7 +13455,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 10PR310`,content:`[Driver]
+`},{name:`Faital Pro 10PR310`,date:`20121023`,content:`[Driver]
 Brand=Faital Pro
 Model=10PR310
 Manufacturer=
@@ -13512,7 +13512,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 12FH510`,content:`[Driver]
+`},{name:`Faital Pro 12FH510`,date:`20131021`,content:`[Driver]
 Brand=Faital Pro
 Model=12FH510
 Manufacturer=
@@ -13569,7 +13569,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 12FH520`,content:`[Driver]
+`},{name:`Faital Pro 12FH520`,date:`20121001`,content:`[Driver]
 Brand=Faital Pro
 Model=12FH520
 Manufacturer=
@@ -13626,7 +13626,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 12HP1010`,content:`[Driver]
+`},{name:`Faital Pro 12HP1010`,date:`20121025`,content:`[Driver]
 Brand=Faital Pro
 Model=12HP1010
 Manufacturer=
@@ -13683,7 +13683,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 12HP1060`,content:`[Driver]
+`},{name:`Faital Pro 12HP1060`,date:`20121025`,content:`[Driver]
 Brand=Faital Pro
 Model=12HP1060
 Manufacturer=
@@ -13740,7 +13740,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 12PR310`,content:`[Driver]
+`},{name:`Faital Pro 12PR310`,date:`20120807`,content:`[Driver]
 Brand=Faital Pro
 Model=12PR310
 Manufacturer=
@@ -13797,7 +13797,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 15FH510`,content:`[Driver]
+`},{name:`Faital Pro 15FH510`,date:`20121010`,content:`[Driver]
 Brand=Faital Pro
 Model=15FH510
 Manufacturer=
@@ -13854,7 +13854,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 15FH520`,content:`[Driver]
+`},{name:`Faital Pro 15FH520`,date:`20121001`,content:`[Driver]
 Brand=Faital Pro
 Model=15FH520
 Manufacturer=
@@ -13911,7 +13911,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 15HP1010`,content:`[Driver]
+`},{name:`Faital Pro 15HP1010`,date:`20121009`,content:`[Driver]
 Brand=Faital Pro
 Model=15HP1010
 Manufacturer=
@@ -13968,7 +13968,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 15PR400`,content:`[Driver]
+`},{name:`Faital Pro 15PR400`,date:`20120923`,content:`[Driver]
 Brand=Faital Pro
 Model=15PR400
 Manufacturer=
@@ -14025,7 +14025,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 4FE35`,content:`[Driver]
+`},{name:`Faital Pro 4FE35`,date:`20130810`,content:`[Driver]
 Brand=Faital Pro
 Model=4FE35
 Manufacturer=
@@ -14082,7 +14082,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEEEEECCCCECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 5FE120`,content:`[Driver]
+`},{name:`Faital Pro 5FE120`,date:`20120807`,content:`[Driver]
 Brand=Faital Pro
 Model=5FE120
 Manufacturer=
@@ -14139,7 +14139,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNCENEEECCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 6FE100`,content:`[Driver]
+`},{name:`Faital Pro 6FE100`,date:`20121011`,content:`[Driver]
 Brand=Faital Pro
 Model=6FE100
 Manufacturer=
@@ -14196,7 +14196,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 6FE200 4ohms`,content:`[Driver]
+`},{name:`Faital Pro 6FE200 4ohms`,date:`20131015`,content:`[Driver]
 Brand=Faital Pro
 Model=6FE200 4ohms
 Manufacturer=
@@ -14253,7 +14253,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 6FE200`,content:`[Driver]
+`},{name:`Faital Pro 6FE200`,date:`20120725`,content:`[Driver]
 Brand=Faital Pro
 Model=6FE200
 Manufacturer=
@@ -14310,7 +14310,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 6HX150`,content:`[Driver]
+`},{name:`Faital Pro 6HX150`,date:`20131013`,content:`[Driver]
 Brand=Faital Pro
 Model=6HX150
 Manufacturer=
@@ -14367,7 +14367,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 6PR110`,content:`[Driver]
+`},{name:`Faital Pro 6PR110`,date:`20120808`,content:`[Driver]
 Brand=Faital Pro
 Model=6PR110
 Manufacturer=
@@ -14424,7 +14424,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNCENEEECCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 8FE200`,content:`[Driver]
+`},{name:`Faital Pro 8FE200`,date:`20130907`,content:`[Driver]
 Brand=Faital Pro
 Model=8FE200
 Manufacturer=
@@ -14481,7 +14481,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 8PR200`,content:`[Driver]
+`},{name:`Faital Pro 8PR200`,date:`20120912`,content:`[Driver]
 Brand=Faital Pro
 Model=8PR200
 Manufacturer=
@@ -14538,7 +14538,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro W10N8-700`,content:`[Driver]
+`},{name:`Faital Pro W10N8-700`,date:`20150117`,content:`[Driver]
 Brand=Faital Pro
 Model=W10N8-700
 Manufacturer=
@@ -14595,7 +14595,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Fatial Pro 12FH520`,content:`[Driver]
+`},{name:`Fatial Pro 12FH520`,date:`20131021`,content:`[Driver]
 Brand=Fatial Pro
 Model=12FH520
 Manufacturer=
@@ -14652,7 +14652,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCNCEENNENNEECCCEENCNCCENNNNCNNNCCCCNNNNNNNNNNNCC
-`},{name:`GRS 10PF-8`,content:`[Driver]
+`},{name:`GRS 10PF-8`,date:`20150209`,content:`[Driver]
 Brand=GRS
 Model=10PF-8
 Manufacturer=
@@ -14709,7 +14709,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`GRS 10PR-8`,content:`[Driver]
+`},{name:`GRS 10PR-8`,date:`20150209`,content:`[Driver]
 Brand=GRS
 Model=10PR-8
 Manufacturer=
@@ -14766,7 +14766,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`GRS 12PF-8`,content:`[Driver]
+`},{name:`GRS 12PF-8`,date:`20150209`,content:`[Driver]
 Brand=GRS
 Model=12PF-8
 Manufacturer=
@@ -14823,7 +14823,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECENNNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`GRS 12PR-8`,content:`[Driver]
+`},{name:`GRS 12PR-8`,date:`20150209`,content:`[Driver]
 Brand=GRS
 Model=12PR-8
 Manufacturer=
@@ -14880,7 +14880,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`GRS 12SW-4`,content:`[Driver]
+`},{name:`GRS 12SW-4`,date:`20150209`,content:`[Driver]
 Brand=GRS
 Model=12SW-4
 Manufacturer=
@@ -14937,7 +14937,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`GRS 15PF-8`,content:`[Driver]
+`},{name:`GRS 15PF-8`,date:`20150209`,content:`[Driver]
 Brand=GRS
 Model=15PF-8
 Manufacturer=
@@ -14994,7 +14994,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`GRS 4FR-8`,content:`[Driver]
+`},{name:`GRS 4FR-8`,date:`20150110`,content:`[Driver]
 Brand=GRS
 Model=4FR-8
 Manufacturer=
@@ -15051,7 +15051,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`GRS 8FR-8`,content:`[Driver]
+`},{name:`GRS 8FR-8`,date:`20150115`,content:`[Driver]
 Brand=GRS
 Model=8FR-8
 Manufacturer=
@@ -15108,7 +15108,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`GRS 8PF-8`,content:`[Driver]
+`},{name:`GRS 8PF-8`,date:`20150110`,content:`[Driver]
 Brand=GRS
 Model=8PF-8
 Manufacturer=
@@ -15165,7 +15165,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`GRS 8PR-8`,content:`[Driver]
+`},{name:`GRS 8PR-8`,date:`20150110`,content:`[Driver]
 Brand=GRS
 Model=8PR-8
 Manufacturer=
@@ -15222,7 +15222,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`GRS 8SW-4`,content:`[Driver]
+`},{name:`GRS 8SW-4`,date:`20150110`,content:`[Driver]
 Brand=GRS
 Model=8SW-4
 Manufacturer=
@@ -15279,7 +15279,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Goldwood GW-212-8`,content:`[Driver]
+`},{name:`Goldwood GW-212-8`,date:`20120415`,content:`[Driver]
 Brand=Goldwood
 Model=GW-212-8
 Manufacturer=
@@ -15336,7 +15336,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Goldwood GW-8024 8in woofer`,content:`[Driver]
+`},{name:`Goldwood GW-8024 8in woofer`,date:`20120403`,content:`[Driver]
 Brand=Goldwood
 Model=GW-8024 8in woofer
 Manufacturer=
@@ -15393,7 +15393,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`HiVi B4N`,content:`[Driver]
+`},{name:`HiVi B4N`,date:`20140105`,content:`[Driver]
 Brand=HiVi
 Model=B4N
 Manufacturer=
@@ -15450,7 +15450,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECENNNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`HiVi M6N 6in woofer`,content:`[Driver]
+`},{name:`HiVi M6N 6in woofer`,date:`20120501`,content:`[Driver]
 Brand=HiVi
 Model=M6N 6in woofer
 Manufacturer=
@@ -15507,7 +15507,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECENNNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`HiVi M6a`,content:`[Driver]
+`},{name:`HiVi M6a`,date:`20110925`,content:`[Driver]
 Brand=HiVi
 Model=M6a
 Manufacturer=
@@ -15564,7 +15564,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECENNNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Infinity 1060w`,content:`[Driver]
+`},{name:`Infinity 1060w`,date:`20140416`,content:`[Driver]
 Brand=Infinity
 Model=1060w
 Manufacturer=
@@ -15621,7 +15621,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Infinity 1260w`,content:`[Driver]
+`},{name:`Infinity 1260w`,date:`20140416`,content:`[Driver]
 Brand=Infinity
 Model=1260w
 Manufacturer=
@@ -15678,7 +15678,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Infinity 860w`,content:`[Driver]
+`},{name:`Infinity 860w`,date:`20140526`,content:`[Driver]
 Brand=Infinity
 Model=860w
 Manufacturer=
@@ -15735,7 +15735,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`JBL 2206H`,content:`[Driver]
+`},{name:`JBL 2206H`,date:`20121025`,content:`[Driver]
 Brand=JBL
 Model=2206H
 Manufacturer=
@@ -15792,7 +15792,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`JBL 2226H`,content:`[Driver]
+`},{name:`JBL 2226H`,date:`20121127`,content:`[Driver]
 Brand=JBL
 Model=2226H
 Manufacturer=
@@ -15849,7 +15849,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECCENNEEECEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`JBL CS1214`,content:`[Driver]
+`},{name:`JBL CS1214`,date:`20160814`,content:`[Driver]
 Brand=JBL
 Model=CS1214
 Manufacturer=
@@ -15906,7 +15906,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`MCM 21in 800w pro woofer`,content:`[Driver]
+`},{name:`MCM 21in 800w pro woofer`,date:`20110523`,content:`[Driver]
 Brand=
 Model=
 Manufacturer=
@@ -15963,7 +15963,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=EEECENNNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`MISCQ OOC10WF-4-4B`,content:`[Driver]
+`},{name:`MISCQ OOC10WF-4-4B`,date:`20131119`,content:`[Driver]
 Brand=MISCQ
 Model=OOC10WF-4-4B
 Manufacturer=
@@ -16020,7 +16020,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`MISCQ OOC12WF-4-4B`,content:`[Driver]
+`},{name:`MISCQ OOC12WF-4-4B`,date:`20131119`,content:`[Driver]
 Brand=MISCQ
 Model=OOC12WF-4-4B
 Manufacturer=
@@ -16077,7 +16077,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`MISCQ RRC15WF-4-4A`,content:`[Driver]
+`},{name:`MISCQ RRC15WF-4-4A`,date:`20131119`,content:`[Driver]
 Brand=MISCQ
 Model=RRC15WF-4-4A
 Manufacturer=
@@ -16134,7 +16134,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECENNNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Max Fidelity 5.25in woofer AP130G8`,content:`[Driver]
+`},{name:`Max Fidelity 5.25in woofer AP130G8`,date:`20100722`,content:`[Driver]
 Brand=Max Fidelity
 Model=5.25in woofer AP130G8
 Manufacturer=
@@ -16191,7 +16191,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=NEENNNNNNENCNNENCCEENCNENNNCNNNNNNNNNCNNNNNNNNNCC
-`},{name:`Morel UW 1258`,content:`[Driver]
+`},{name:`Morel UW 1258`,date:`20130313`,content:`[Driver]
 Brand=Morel
 Model=UW 1258
 Manufacturer=
@@ -16248,7 +16248,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`NHT AR-12 Clone`,content:`[Driver]
+`},{name:`NHT AR-12 Clone`,date:`20151104`,content:`[Driver]
 Brand=NHT
 Model=AR-12 Clone
 Manufacturer=
@@ -16305,7 +16305,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`PRV Audio 15W1600`,content:`[Driver]
+`},{name:`PRV Audio 15W1600`,date:`20120824`,content:`[Driver]
 Brand=PRV Audio
 Model=15W1600
 Manufacturer=
@@ -16362,7 +16362,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECENNNEENCEECCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`PRV Audio 21SW4000`,content:`[Driver]
+`},{name:`PRV Audio 21SW4000`,date:`20130904`,content:`[Driver]
 Brand=PRV Audio
 Model=21SW4000
 Manufacturer=
@@ -16419,7 +16419,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECENNNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Peeless HDS 6.5in 830875`,content:`[Driver]
+`},{name:`Peeless HDS 6.5in 830875`,date:`20120328`,content:`[Driver]
 Brand=Peeless
 Model=HDS 6.5in 830875
 Manufacturer=
@@ -16476,7 +16476,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Peerless 830500 12in XLS`,content:`[Driver]
+`},{name:`Peerless 830500 12in XLS`,date:`20121114`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=830500 12" XLS
 Manufacturer=
@@ -16533,7 +16533,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Peerless 830656 SDS 5.25in`,content:`[Driver]
+`},{name:`Peerless 830656 SDS 5.25in`,date:`20170109`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=830656 SDS 5.25in
 Manufacturer=
@@ -16590,7 +16590,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Peerless 830668 SLS 10in`,content:`[Driver]
+`},{name:`Peerless 830668 SLS 10in`,date:`20170811`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=830668 SLS 10in
 Manufacturer=
@@ -16647,7 +16647,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Peerless 830869 8in HDS Nomex`,content:`[Driver]
+`},{name:`Peerless 830869 8in HDS Nomex`,date:`20130926`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=830869 8in HDS Nomex
 Manufacturer=
@@ -16704,7 +16704,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Peerless 8in HDS 830869`,content:`[Driver]
+`},{name:`Peerless 8in HDS 830869`,date:`20111110`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=830869
 Manufacturer=
@@ -16761,7 +16761,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Peerless HDS 6.5in 831735`,content:`[Driver]
+`},{name:`Peerless HDS 6.5in 831735`,date:`20110309`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=HDS 831735
 Manufacturer=
@@ -16818,7 +16818,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECENNNCENCCEECCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Peerless SDS-160PR01-08`,content:`[Driver]
+`},{name:`Peerless SDS-160PR01-08`,date:`20111213`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SDS-160PR01-08
 Manufacturer=
@@ -16875,7 +16875,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Peerless SLS-P930669 12in sub`,content:`[Driver]
+`},{name:`Peerless SLS-P930669 12in sub`,date:`20130313`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SLS-P930669 12in sub
 Manufacturer=
@@ -16932,7 +16932,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Peerless XLS 12in 830500`,content:`[Driver]
+`},{name:`Peerless XLS 12in 830500`,date:`20111020`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=XLS 12" 830500
 Manufacturer=
@@ -16989,7 +16989,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`RCF L10_568H`,content:`[Driver]
+`},{name:`RCF L10_568H`,date:`20140209`,content:`[Driver]
 Brand=RCF
 Model=L10/568H
 Manufacturer=
@@ -17046,7 +17046,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`RCF L15P530`,content:`[Driver]
+`},{name:`RCF L15P530`,date:`20121020`,content:`[Driver]
 Brand=RCF
 Model=L15P530
 Manufacturer=
@@ -17103,7 +17103,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEEECECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`RCF L15S801`,content:`[Driver]
+`},{name:`RCF L15S801`,date:`20121020`,content:`[Driver]
 Brand=RCF
 Model=L15S801
 Manufacturer=
@@ -17160,7 +17160,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEEECECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`RCF L15_554K`,content:`[Driver]
+`},{name:`RCF L15_554K`,date:`20121020`,content:`[Driver]
 Brand=RCF
 Model=L15/554K
 Manufacturer=
@@ -17217,7 +17217,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEEECECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`RCF L8S800`,content:`[Driver]
+`},{name:`RCF L8S800`,date:`20120726`,content:`[Driver]
 Brand=RCF
 Model=L8S800
 Manufacturer=
@@ -17274,7 +17274,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`RCF LF15X400`,content:`[Driver]
+`},{name:`RCF LF15X400`,date:`20130206`,content:`[Driver]
 Brand=RCF
 Model=LF15X400
 Manufacturer=
@@ -17331,7 +17331,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`RCF MB12G301`,content:`[Driver]
+`},{name:`RCF MB12G301`,date:`20131021`,content:`[Driver]
 Brand=RCF
 Model=MB12G301
 Manufacturer=
@@ -17388,7 +17388,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`RCF MB15H401`,content:`[Driver]
+`},{name:`RCF MB15H401`,date:`20121020`,content:`[Driver]
 Brand=RCF
 Model=MB15H401
 Manufacturer=
@@ -17445,7 +17445,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEEECECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`SB acoustics SB17NRXC35-4 6.5in woofer`,content:`[Driver]
+`},{name:`SB acoustics SB17NRXC35-4 6.5in woofer`,date:`20120724`,content:`[Driver]
 Brand=SB acoustics
 Model=SB17NRXC35-4 6.5in woofer
 Manufacturer=
@@ -17502,7 +17502,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Selenium 18SWS800`,content:`[Driver]
+`},{name:`Selenium 18SWS800`,date:`20120124`,content:`[Driver]
 Brand=Selenium
 Model=18SWS800
 Manufacturer=
@@ -17559,7 +17559,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Silver Flute W17RC38-04`,content:`[Driver]
+`},{name:`Silver Flute W17RC38-04`,date:`20130324`,content:`[Driver]
 Brand=Silver Flute
 Model=W17RC38-04
 Manufacturer=
@@ -17616,7 +17616,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Silver Flute W17RC38-08`,content:`[Driver]
+`},{name:`Silver Flute W17RC38-08`,date:`20130324`,content:`[Driver]
 Brand=Silver Flute
 Model=W17RC38-08
 Manufacturer=
@@ -17673,7 +17673,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`SoundStream SPL170`,content:`[Driver]
+`},{name:`SoundStream SPL170`,date:`20130701`,content:`[Driver]
 Brand=SoundStream
 Model=SPL170
 Manufacturer=
@@ -17730,7 +17730,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCNCEENNENNEECCCEENCNCCENNNNCNNNCCCCNNNNNNNNNNNCC
-`},{name:`Stereo Integrity BM mkV D2`,content:`[Driver]
+`},{name:`Stereo Integrity BM mkV D2`,date:`20171023`,content:`[Driver]
 Brand=Stereo Integrity
 Model=BM mkV D2
 Manufacturer=
@@ -17787,7 +17787,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity DS4-d2`,content:`[Driver]
+`},{name:`Stereo Integrity DS4-d2`,date:`20160527`,content:`[Driver]
 Brand=Stereo Integrity
 Model=DS4-d2
 Manufacturer=
@@ -17844,7 +17844,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity HS24 MKII D2`,content:`[Driver]
+`},{name:`Stereo Integrity HS24 MKII D2`,date:`20170728`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HS24 MKII D2
 Manufacturer=
@@ -17901,7 +17901,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity HS24-D2`,content:`[Driver]
+`},{name:`Stereo Integrity HS24-D2`,date:`20150329`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HS24-D2
 Manufacturer=
@@ -17958,7 +17958,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity HST-11 MKII`,content:`[Driver]
+`},{name:`Stereo Integrity HST-11 MKII`,date:`20170725`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HST-11 MKII
 Manufacturer=
@@ -18015,7 +18015,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity HST-12 mkII D2`,content:`[Driver]
+`},{name:`Stereo Integrity HST-12 mkII D2`,date:`20171023`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HST-12 mkII D2
 Manufacturer=
@@ -18072,7 +18072,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEEECECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity HST-18 mkII D2`,content:`[Driver]
+`},{name:`Stereo Integrity HST-18 mkII D2`,date:`20171023`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HST-18 mkII D2
 Manufacturer=
@@ -18129,7 +18129,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity HST18 D1`,content:`[Driver]
+`},{name:`Stereo Integrity HST18 D1`,date:`20150917`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HST18 D1
 Manufacturer=
@@ -18186,7 +18186,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity HST18 D2`,content:`[Driver]
+`},{name:`Stereo Integrity HST18 D2`,date:`20150917`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HST18 D2
 Manufacturer=
@@ -18243,7 +18243,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity HT 18 D2`,content:`[Driver]
+`},{name:`Stereo Integrity HT 18 D2`,date:`20130125`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HT 18 D2
 Manufacturer=
@@ -18300,7 +18300,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEEEEENNCENCECCCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity HT 18 D4 series`,content:`[Driver]
+`},{name:`Stereo Integrity HT 18 D4 series`,date:`20130125`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HT 18 D4 series
 Manufacturer=
@@ -18357,7 +18357,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity HT 18 D4`,content:`[Driver]
+`},{name:`Stereo Integrity HT 18 D4`,date:`20130125`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HT 18 D4
 Manufacturer=
@@ -18414,7 +18414,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity HT-18 V2 D2`,content:`[Driver]
+`},{name:`Stereo Integrity HT-18 V2 D2`,date:`20171023`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HT-18 V2 D2
 Manufacturer=
@@ -18471,7 +18471,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity HT15 D2`,content:`[Driver]
+`},{name:`Stereo Integrity HT15 D2`,date:`20140429`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HT15 D2
 Manufacturer=
@@ -18528,7 +18528,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity HT15`,content:`[Driver]
+`},{name:`Stereo Integrity HT15`,date:`20130314`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HT15
 Manufacturer=
@@ -18585,7 +18585,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity IB-24`,content:`[Driver]
+`},{name:`Stereo Integrity IB-24`,date:`20171023`,content:`[Driver]
 Brand=Stereo Integrity
 Model=IB-24
 Manufacturer=
@@ -18642,7 +18642,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity SHS-24`,content:`[Driver]
+`},{name:`Stereo Integrity SHS-24`,date:`20171023`,content:`[Driver]
 Brand=Stereo Integrity
 Model=SHS-24
 Manufacturer=
@@ -18699,7 +18699,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`TC Sounds Epic 12in`,content:`[Driver]
+`},{name:`TC Sounds Epic 12in`,date:`20120111`,content:`[Driver]
 Brand=TC Sounds
 Model=Epic 12in
 Manufacturer=
@@ -18756,7 +18756,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`TC Sounds LMS Ultra 5400`,content:`[Driver]
+`},{name:`TC Sounds LMS Ultra 5400`,date:`20111020`,content:`[Driver]
 Brand=TC Sounds
 Model=LMS Ultra 5400
 Manufacturer=
@@ -18813,7 +18813,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`TC Sounds LMS-R 12in`,content:`[Driver]
+`},{name:`TC Sounds LMS-R 12in`,date:`20130313`,content:`[Driver]
 Brand=TC Sounds
 Model=LMS-R 12in
 Manufacturer=
@@ -18870,7 +18870,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Tand Band W5-704D`,content:`[Driver]
+`},{name:`Tand Band W5-704D`,date:`20130323`,content:`[Driver]
 Brand=Tand Band
 Model=W5-704D
 Manufacturer=
@@ -18927,7 +18927,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Tang Band W5-1138SM`,content:`[Driver]
+`},{name:`Tang Band W5-1138SM`,date:`20161127`,content:`[Driver]
 Brand=Tang Band
 Model=W5-1138SM
 Manufacturer=
@@ -18984,7 +18984,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Tang Band W5-1880 5in fullrange`,content:`[Driver]
+`},{name:`Tang Band W5-1880 5in fullrange`,date:`20120219`,content:`[Driver]
 Brand=Tang Band
 Model=W5-1880 5in fullrange
 Manufacturer=
@@ -19041,7 +19041,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Tang Band W6-1139SI`,content:`[Driver]
+`},{name:`Tang Band W6-1139SI`,date:`20131115`,content:`[Driver]
 Brand=Tang Band
 Model=W6-1139SI
 Manufacturer=
@@ -19098,7 +19098,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Tang Band W6-789E`,content:`[Driver]
+`},{name:`Tang Band W6-789E`,date:`20130507`,content:`[Driver]
 Brand=Tang Band
 Model=W6-789E
 Manufacturer=
@@ -19155,7 +19155,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Tangband W6-1139SIF`,content:`[Driver]
+`},{name:`Tangband W6-1139SIF`,date:`20120223`,content:`[Driver]
 Brand=Tangband
 Model=W6-1139SIF
 Manufacturer=
@@ -19212,7 +19212,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Tymphany FSL-0615R02-08`,content:`[Driver]
+`},{name:`Tymphany FSL-0615R02-08`,date:`20161007`,content:`[Driver]
 Brand=Tymphany
 Model=FSL-0615R02-08
 Manufacturer=
@@ -19269,7 +19269,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Tymphany FSL-0818R01-08`,content:`[Driver]
+`},{name:`Tymphany FSL-0818R01-08`,date:`20141007`,content:`[Driver]
 Brand=Tymphany
 Model=FSL-0818R01-08
 Manufacturer=
@@ -19326,7 +19326,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Vifa NE265W-04 10 in subwoofer`,content:`[Driver]
+`},{name:`Vifa NE265W-04 10 in subwoofer`,date:`20110717`,content:`[Driver]
 Brand=Vifa
 Model=NE265W-04 10 in subwoofer
 Manufacturer=
@@ -19383,7 +19383,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Vifa NE265W-08`,content:`[Driver]
+`},{name:`Vifa NE265W-08`,date:`20120413`,content:`[Driver]
 Brand=Vifa
 Model=NE265W-08
 Manufacturer=
@@ -19440,7 +19440,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Vifa NE315W-04`,content:`[Driver]
+`},{name:`Vifa NE315W-04`,date:`20110717`,content:`[Driver]
 Brand=Vifa
 Model=NE315W-04
 Manufacturer=
@@ -19497,7 +19497,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Vifa NE316W-8`,content:`[Driver]
+`},{name:`Vifa NE316W-8`,date:`20130313`,content:`[Driver]
 Brand=Vifa
 Model=NE316W-8
 Manufacturer=
@@ -19554,7 +19554,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 AE TD6M-8 #1`,content:`[Driver]
+`},{name:`WT3 AE TD6M-8 #1`,date:`20130418`,content:`[Driver]
 Brand=AE
 Model=TD6M-8 #1
 Manufacturer=
@@ -19611,7 +19611,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Aura NS6-255-8A #1`,content:`[Driver]
+`},{name:`WT3 Aura NS6-255-8A #1`,date:`20120614`,content:`[Driver]
 Brand=Aura
 Model=NS6-255-8A #1
 Manufacturer=
@@ -19668,7 +19668,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 B&C 15PS76`,content:`[Driver]
+`},{name:`WT3 B&C 15PS76`,date:`20121119`,content:`[Driver]
 Brand=B&C
 Model=15PS76
 Manufacturer=
@@ -19725,7 +19725,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 B&C 8PS21 8_ woofer`,content:`[Driver]
+`},{name:`WT3 B&C 8PS21 8_ woofer`,date:`20111113`,content:`[Driver]
 Brand=B&C
 Model=8PS21 8" woofer
 Manufacturer=
@@ -19782,7 +19782,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Buyout Legacy 15in subwoofer`,content:`[Driver]
+`},{name:`WT3 Buyout Legacy 15in subwoofer`,date:`20160908`,content:`[Driver]
 Brand=Buyout Legacy
 Model=15in subwoofer
 Manufacturer=
@@ -19839,7 +19839,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Celestion FTX0617`,content:`[Driver]
+`},{name:`WT3 Celestion FTX0617`,date:`20160906`,content:`[Driver]
 Brand=Celestion
 Model=FTX0617
 Manufacturer=
@@ -19896,7 +19896,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCNCEENNENNEECCCEENCNCCENNNNCNNNCCCCNNNNNNNNNNNCC
-`},{name:`WT3 Celestion FTX0820`,content:`[Driver]
+`},{name:`WT3 Celestion FTX0820`,date:`20160816`,content:`[Driver]
 Brand=Celestion
 Model=FTX0820
 Manufacturer=
@@ -19953,7 +19953,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Celestion TF0818 8in woofer`,content:`[Driver]
+`},{name:`WT3 Celestion TF0818 8in woofer`,date:`20111231`,content:`[Driver]
 Brand=Celestion
 Model=TF0818 8in woofer
 Manufacturer=
@@ -20010,7 +20010,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Dayton DCS380-4 #2`,content:`[Driver]
+`},{name:`WT3 Dayton DCS380-4 #2`,date:`20130721`,content:`[Driver]
 Brand=Dayton Audio
 Model=DCS380-4 #2
 Manufacturer=
@@ -20067,7 +20067,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Dayton DS215-8 #1`,content:`[Driver]
+`},{name:`WT3 Dayton DS215-8 #1`,date:`20130721`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS215-8 #1
 Manufacturer=
@@ -20124,7 +20124,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Dayton DS215-8 #2`,content:`[Driver]
+`},{name:`WT3 Dayton DS215-8 #2`,date:`20130721`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS215-8 #2
 Manufacturer=
@@ -20181,7 +20181,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Dayton DS315-8`,content:`[Driver]
+`},{name:`WT3 Dayton DS315-8`,date:`20170417`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS315-8
 Manufacturer=
@@ -20238,7 +20238,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Dayton PA255-8 #1`,content:`[Driver]
+`},{name:`WT3 Dayton PA255-8 #1`,date:`20130721`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA255-8 #1
 Manufacturer=
@@ -20295,7 +20295,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Dayton PA255-8 #2`,content:`[Driver]
+`},{name:`WT3 Dayton PA255-8 #2`,date:`20130721`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA255-8 #2
 Manufacturer=
@@ -20352,7 +20352,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Dayton PA310-8 #1`,content:`[Driver]
+`},{name:`WT3 Dayton PA310-8 #1`,date:`20130721`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA310-8 #1
 Manufacturer=
@@ -20409,7 +20409,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Dayton PA310-8 #2`,content:`[Driver]
+`},{name:`WT3 Dayton PA310-8 #2`,date:`20150712`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA310-8 #2
 Manufacturer=
@@ -20466,7 +20466,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Dayton PA460-8 #1`,content:`[Driver]
+`},{name:`WT3 Dayton PA460-8 #1`,date:`20150725`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA460-8 #1
 Manufacturer=
@@ -20523,7 +20523,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Dayton PA460-8 #2`,content:`[Driver]
+`},{name:`WT3 Dayton PA460-8 #2`,date:`20150807`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA460-8 #2
 Manufacturer=
@@ -20580,7 +20580,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Dayton PK165-8 #1`,content:`[Driver]
+`},{name:`WT3 Dayton PK165-8 #1`,date:`20130721`,content:`[Driver]
 Brand=Dayton Audio
 Model=PK165-8 #1
 Manufacturer=
@@ -20637,7 +20637,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Dayton PK165-8 #2`,content:`[Driver]
+`},{name:`WT3 Dayton PK165-8 #2`,date:`20130721`,content:`[Driver]
 Brand=Dayton Audio
 Model=PK165-8 #2
 Manufacturer=
@@ -20694,7 +20694,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Dayton ST255-8 (soft)`,content:`[Driver]
+`},{name:`WT3 Dayton ST255-8 (soft)`,date:`20140928`,content:`[Driver]
 Brand=Dayton Audio
 Model=ST255-8 (soft)
 Manufacturer=
@@ -20751,7 +20751,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Dayton ST255-8 (stiff)`,content:`[Driver]
+`},{name:`WT3 Dayton ST255-8 (stiff)`,date:`20140928`,content:`[Driver]
 Brand=Dayton Audio
 Model=ST255-8 (stiff)
 Manufacturer=
@@ -20808,7 +20808,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECENNNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence 2510-8`,content:`[Driver]
+`},{name:`WT3 Eminence 2510-8`,date:`20160906`,content:`[Driver]
 Brand=Eminence
 Model=2510-8
 Manufacturer=
@@ -20865,7 +20865,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence 2512-8`,content:`[Driver]
+`},{name:`WT3 Eminence 2512-8`,date:`20160925`,content:`[Driver]
 Brand=Eminence
 Model=2512-8
 Manufacturer=
@@ -20922,7 +20922,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence 2515-8`,content:`[Driver]
+`},{name:`WT3 Eminence 2515-8`,date:`20160925`,content:`[Driver]
 Brand=Eminence
 Model=2515-8
 Manufacturer=
@@ -20979,7 +20979,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence 3015LF-4`,content:`[Driver]
+`},{name:`WT3 Eminence 3015LF-4`,date:`20160925`,content:`[Driver]
 Brand=Eminence
 Model=3015LF-4
 Manufacturer=
@@ -21036,7 +21036,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence Alpha-6A DATS`,content:`[Driver]
+`},{name:`WT3 Eminence Alpha-6A DATS`,date:`20141019`,content:`[Driver]
 Brand=Eminence
 Model=Alpha-6A DATS
 Manufacturer=
@@ -21093,7 +21093,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence Alpha-6C #1`,content:`[Driver]
+`},{name:`WT3 Eminence Alpha-6C #1`,date:`20130721`,content:`[Driver]
 Brand=Eminence
 Model=Alpha-6C #1
 Manufacturer=
@@ -21150,7 +21150,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence Alpha-6C #2`,content:`[Driver]
+`},{name:`WT3 Eminence Alpha-6C #2`,date:`20130721`,content:`[Driver]
 Brand=Eminence
 Model=Alpha-6C #2
 Manufacturer=
@@ -21207,7 +21207,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence Alpha-6C DATS`,content:`[Driver]
+`},{name:`WT3 Eminence Alpha-6C DATS`,date:`20141019`,content:`[Driver]
 Brand=Eminence
 Model=Alpha-6C DATS
 Manufacturer=
@@ -21264,7 +21264,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence Alpha6-A #1`,content:`[Driver]
+`},{name:`WT3 Eminence Alpha6-A #1`,date:`20130721`,content:`[Driver]
 Brand=Eminence
 Model=Alpha6-A #1
 Manufacturer=
@@ -21321,7 +21321,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence Alphalite-6a`,content:`[Driver]
+`},{name:`WT3 Eminence Alphalite-6a`,date:`20170102`,content:`[Driver]
 Brand=Eminence
 Model=Alphalite-6a
 Manufacturer=
@@ -21378,7 +21378,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence Beta-10CX`,content:`[Driver]
+`},{name:`WT3 Eminence Beta-10CX`,date:`20140928`,content:`[Driver]
 Brand=Eminence
 Model=Beta-10CX
 Manufacturer=
@@ -21435,7 +21435,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence Beta-12CX`,content:`[Driver]
+`},{name:`WT3 Eminence Beta-12CX`,date:`20170523`,content:`[Driver]
 Brand=Eminence
 Model=Beta-12CX
 Manufacturer=
@@ -21492,7 +21492,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence CA154`,content:`[Driver]
+`},{name:`WT3 Eminence CA154`,date:`20160925`,content:`[Driver]
 Brand=Eminence
 Model=CA154
 Manufacturer=
@@ -21549,7 +21549,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence CX2008`,content:`[Driver]
+`},{name:`WT3 Eminence CX2008`,date:`20120927`,content:`[Driver]
 Brand=Eminence
 Model=CX2008
 Manufacturer=
@@ -21606,7 +21606,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCNCEENNENNEECCCEENCNCCENNNNCNNNCCCCNNNNNNNNNNNCC
-`},{name:`WT3 Eminence Delta-12LFC`,content:`[Driver]
+`},{name:`WT3 Eminence Delta-12LFC`,date:`20170118`,content:`[Driver]
 Brand=Eminence
 Model=Delta-12LFC
 Manufacturer=
@@ -21663,7 +21663,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence Kappa-15LF`,content:`[Driver]
+`},{name:`WT3 Eminence Kappa-15LF`,date:`20160925`,content:`[Driver]
 Brand=Eminence
 Model=Kappa-15LF
 Manufacturer=
@@ -21720,7 +21720,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence Magnum-12`,content:`[Driver]
+`},{name:`WT3 Eminence Magnum-12`,date:`20150712`,content:`[Driver]
 Brand=Eminence
 Model=Magnum-12
 Manufacturer=
@@ -21777,7 +21777,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Faital Pro 12PR300`,content:`[Driver]
+`},{name:`WT3 Faital Pro 12PR300`,date:`20121008`,content:`[Driver]
 Brand=Faital Pro
 Model=12PR300
 Manufacturer=
@@ -21834,7 +21834,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 GRS 10SW-4`,content:`[Driver]
+`},{name:`WT3 GRS 10SW-4`,date:`20160602`,content:`[Driver]
 Brand=GRS
 Model=10SW-4
 Manufacturer=
@@ -21891,7 +21891,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 GRS 4FR-8 #1`,content:`[Driver]
+`},{name:`WT3 GRS 4FR-8 #1`,date:`20150115`,content:`[Driver]
 Brand=GRS
 Model=4FR-8 #1
 Manufacturer=
@@ -21948,7 +21948,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 GRS 4FR-8 #2`,content:`[Driver]
+`},{name:`WT3 GRS 4FR-8 #2`,date:`20150115`,content:`[Driver]
 Brand=GRS
 Model=4FR-8 #2
 Manufacturer=
@@ -22005,7 +22005,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 GRS 8FR-8 #1`,content:`[Driver]
+`},{name:`WT3 GRS 8FR-8 #1`,date:`20150211`,content:`[Driver]
 Brand=GRS
 Model=8FR-8 #1
 Manufacturer=
@@ -22062,7 +22062,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 GRS 8FR-8 #2`,content:`[Driver]
+`},{name:`WT3 GRS 8FR-8 #2`,date:`20150211`,content:`[Driver]
 Brand=GRS
 Model=8FR-8 #2
 Manufacturer=
@@ -22119,7 +22119,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 GRS 8PF-8 #1`,content:`[Driver]
+`},{name:`WT3 GRS 8PF-8 #1`,date:`20150115`,content:`[Driver]
 Brand=GRS
 Model=8PF-8 #1
 Manufacturer=
@@ -22176,7 +22176,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 GRS 8PF-8 #2`,content:`[Driver]
+`},{name:`WT3 GRS 8PF-8 #2`,date:`20150115`,content:`[Driver]
 Brand=GRS
 Model=8PF-8 #2
 Manufacturer=
@@ -22233,7 +22233,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 HiVi M5N`,content:`[Driver]
+`},{name:`WT3 HiVi M5N`,date:`20170406`,content:`[Driver]
 Brand=HiVi
 Model=M5N
 Manufacturer=
@@ -22290,7 +22290,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Infinity 1262W`,content:`[Driver]
+`},{name:`WT3 Infinity 1262W`,date:`20151127`,content:`[Driver]
 Brand=Infinity
 Model=1262W
 Manufacturer=
@@ -22347,7 +22347,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 JBL 2242HPL`,content:`[Driver]
+`},{name:`WT3 JBL 2242HPL`,date:`20130721`,content:`[Driver]
 Brand=JBL
 Model=2242HPL
 Manufacturer=
@@ -22404,7 +22404,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 JBL CS1214 #1`,content:`[Driver]
+`},{name:`WT3 JBL CS1214 #1`,date:`20160817`,content:`[Driver]
 Brand=JBL
 Model=CS1214 #1
 Manufacturer=
@@ -22461,7 +22461,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Peerless India W5-KA538A-SH #1`,content:`[Driver]
+`},{name:`WT3 Peerless India W5-KA538A-SH #1`,date:`20150106`,content:`[Driver]
 Brand=Peerless India
 Model=W5-KA538A-SH #1
 Manufacturer=
@@ -22518,7 +22518,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Peerless India W5-KA538A-SH #2`,content:`[Driver]
+`},{name:`WT3 Peerless India W5-KA538A-SH #2`,date:`20150106`,content:`[Driver]
 Brand=Peerless India
 Model=W5-KA538A-SH #2
 Manufacturer=
@@ -22575,7 +22575,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Peerless SDS 6.5in #1`,content:`[Driver]
+`},{name:`WT3 Peerless SDS 6.5in #1`,date:`20130321`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SDS 6.5in #1
 Manufacturer=
@@ -22632,7 +22632,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Peerless SDS 6.5in #2`,content:`[Driver]
+`},{name:`WT3 Peerless SDS 6.5in #2`,date:`20130321`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SDS 6.5in #2
 Manufacturer=
@@ -22689,7 +22689,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Radian 5210 10in coaxial`,content:`[Driver]
+`},{name:`WT3 Radian 5210 10in coaxial`,date:`20150409`,content:`[Driver]
 Brand=Radian
 Model=5210 10in coaxial
 Manufacturer=
@@ -22746,7 +22746,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECENNNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Sony 5.25 Neo woofer buyout`,content:`[Driver]
+`},{name:`WT3 Sony 5.25 Neo woofer buyout`,date:`20110810`,content:`[Driver]
 Brand=Sony
 Model=5.25 Neo
 Manufacturer=
@@ -22803,7 +22803,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Stereo Integrity HT 18 D4 series #1`,content:`[Driver]
+`},{name:`WT3 Stereo Integrity HT 18 D4 series #1`,date:`20130125`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HT 18 D4 series #1 Test3
 Manufacturer=
@@ -22860,7 +22860,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Stereo Integrity HT 18 D4 series #2`,content:`[Driver]
+`},{name:`WT3 Stereo Integrity HT 18 D4 series #2`,date:`20130125`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HT 18 D4 series #2 Test1
 Manufacturer=
@@ -22917,7 +22917,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Stereo Integrity HT-18 D2`,content:`[Driver]
+`},{name:`WT3 Stereo Integrity HT-18 D2`,date:`20151127`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HT-18 D2
 Manufacturer=
@@ -22974,7 +22974,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`eighteensound 6ND430-1`,content:`[Driver]
+`},{name:`eighteensound 6ND430-1`,date:`20120726`,content:`[Driver]
 Brand=eighteensound
 Model=6ND430-1
 Manufacturer=
@@ -23031,7 +23031,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`goldwood GW-10120 10in PA woofer`,content:`[Driver]
+`},{name:`goldwood GW-10120 10in PA woofer`,date:`20120103`,content:`[Driver]
 Brand=goldwood
 Model=GW-10120 10in PA woofer
 Manufacturer=
@@ -23088,7 +23088,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`goldwood GW-8PC-30-8`,content:`[Driver]
+`},{name:`goldwood GW-8PC-30-8`,date:`20120105`,content:`[Driver]
 Brand=goldwood
 Model=GW-8PC-30-8
 Manufacturer=
@@ -23145,7 +23145,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`mcm 12in pro 350w`,content:`[Driver]
+`},{name:`mcm 12in pro 350w`,date:`20110523`,content:`[Driver]
 Brand=
 Model=
 Manufacturer=
@@ -23202,7 +23202,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECENNNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`mcm 15in pro 500 watt`,content:`[Driver]
+`},{name:`mcm 15in pro 500 watt`,date:`20111208`,content:`[Driver]
 Brand=mcm
 Model=15in 500 watt
 Manufacturer=
@@ -23259,7 +23259,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECENNNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`mcm 18in pro`,content:`[Driver]
+`},{name:`mcm 18in pro`,date:`20110726`,content:`[Driver]
 Brand=MCM
 Model=55-2984
 Manufacturer=
@@ -23316,7 +23316,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECENNNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`peerless india w8-12t 12p`,content:`[Driver]
+`},{name:`peerless india w8-12t 12p`,date:`20120123`,content:`[Driver]
 Brand=00
 Model=peerless india w8-12t 12p
 Manufacturer=
@@ -23373,7 +23373,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`vifa NE123W-08`,content:`[Driver]
+`},{name:`vifa NE123W-08`,date:`20120202`,content:`[Driver]
 Brand=vifa
 Model=NE123W-08
 Manufacturer=
@@ -23430,7 +23430,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`}]},{name:`loudspeakerdatabase cached`,files:[{name:`Beyma 10BR60 V2`,content:`[Driver]
+`}]},{name:`loudspeakerdatabase cached`,files:[{name:`Beyma 10BR60 V2`,date:`20251206`,content:`[Driver]
 Brand=Beyma
 Model=10BR60 V2
 Manufacturer=
@@ -23487,7 +23487,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 8BR40_N`,content:`[Driver]
+`},{name:`Beyma 8BR40_N`,date:`20251203`,content:`[Driver]
 Brand=Beyma
 Model=8BR40/N
 Manufacturer=
@@ -23544,7 +23544,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC160S-4`,content:`[Driver]
+`},{name:`Dayton Audio DC160S-4`,date:`20251203`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC160S-4
 Manufacturer=
@@ -23601,7 +23601,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DCS165-4`,content:`[Driver]
+`},{name:`Dayton Audio DCS165-4`,date:`20251203`,content:`[Driver]
 Brand=Dayton Audio
 Model=DCS165-4
 Manufacturer=
@@ -23658,7 +23658,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio E150HE-44`,content:`[Driver]
+`},{name:`Dayton Audio E150HE-44`,date:`20260621`,content:`[Driver]
 Brand=Dayton Audio
 Model=E150HE-44
 Manufacturer=
@@ -23715,7 +23715,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`SB Acoustics SB23MFCL45-4`,content:`[Driver]
+`},{name:`SB Acoustics SB23MFCL45-4`,date:`20251210`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB23MFCL45-4
 Manufacturer=
@@ -23772,7 +23772,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`SB Acoustics SB26SFCL38-4`,content:`[Driver]
+`},{name:`SB Acoustics SB26SFCL38-4`,date:`20251206`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB26SFCL38-4
 Manufacturer=
@@ -23829,7 +23829,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W5-1138SMF`,content:`[Driver]
+`},{name:`Tang Band W5-1138SMF`,date:``,content:`[Driver]
 Brand=Tang Band
 Model=W5-1138SMF
 Manufacturer=
@@ -23857,7 +23857,7 @@ Dd=0.109
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W6-1139SIF`,content:`[Driver]
+`},{name:`Tang Band W6-1139SIF`,date:``,content:`[Driver]
 Brand=Tang Band
 Model=W6-1139SIF
 Manufacturer=
@@ -23885,7 +23885,7 @@ Dd=0.134
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`VISATON W 200 S - 4 Ohm`,content:`[Driver]
+`},{name:`VISATON W 200 S - 4 Ohm`,date:`20251206`,content:`[Driver]
 Brand=VISATON
 Model=W 200 S - 4 Ohm
 Manufacturer=
@@ -23942,7 +23942,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`}]},{name:`Choong Keat Yian`,files:[{name:`B&C 6PE13`,content:`[Driver]
+`}]},{name:`Choong Keat Yian`,files:[{name:`B&C 6PE13`,date:`20040406`,content:`[Driver]
 Brand=B&C
 Model=6 PE 13
 Manufacturer=B&C Speakers
@@ -23997,7 +23997,7 @@ Basket=0
 Outer=0.187
 Vcd=0
 DVol=0
-`}]},{name:`SB Acoustics`,files:[{name:`SB_Acoustics_10__SB29SWNRX-S75-6___Norex`,content:`[Driver]
+`}]},{name:`SB Acoustics`,files:[{name:`SB_Acoustics_10__SB29SWNRX-S75-6___Norex`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SB29SWNRX-S75-6 / Norex
 Manufacturer=SB Acoustics
@@ -24022,7 +24022,7 @@ Pe=200.0
 Vd=0.0003432
 Dd=0.199311499
 EBP=64.52
-`},{name:`SB_Acoustics_10__SW26DAC-00___Aluminum`,content:`[Driver]
+`},{name:`SB_Acoustics_10__SW26DAC-00___Aluminum`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SW26DAC-00 / Aluminum
 Manufacturer=SB Acoustics
@@ -24037,7 +24037,7 @@ Cms=0.00039
 Sd=0.0312
 Vas=0.054
 Dd=0.199311499
-`},{name:`SB_Acoustics_10__SW26DAC76-3-DV___Aluminum`,content:`[Driver]
+`},{name:`SB_Acoustics_10__SW26DAC76-3-DV___Aluminum`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SW26DAC76-3-DV / Aluminum
 Manufacturer=SB Acoustics
@@ -24061,7 +24061,7 @@ Pe=300.0
 Vd=0.0003744
 Dd=0.199311499
 EBP=67.24
-`},{name:`SB_Acoustics_10__SW26DAC76-4___Aluminum`,content:`[Driver]
+`},{name:`SB_Acoustics_10__SW26DAC76-4___Aluminum`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SW26DAC76-4 / Aluminum
 Manufacturer=SB Acoustics
@@ -24085,7 +24085,7 @@ Pe=200.0
 Vd=0.0003744
 Dd=0.199311499
 EBP=43.14
-`},{name:`SB_Acoustics_10__SW26DAC76-8___Aluminum`,content:`[Driver]
+`},{name:`SB_Acoustics_10__SW26DAC76-8___Aluminum`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SW26DAC76-8 / Aluminum
 Manufacturer=SB Acoustics
@@ -24109,7 +24109,7 @@ Pe=250.0
 Vd=0.0003744
 Dd=0.199311499
 EBP=67.24
-`},{name:`SB_Acoustics_10__SW26DBAC-00___Aluminum`,content:`[Driver]
+`},{name:`SB_Acoustics_10__SW26DBAC-00___Aluminum`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SW26DBAC-00 / Aluminum
 Manufacturer=SB Acoustics
@@ -24124,7 +24124,7 @@ Cms=0.00039
 Sd=0.0312
 Vas=0.054
 Dd=0.199311499
-`},{name:`SB_Acoustics_10__SW26DBAC76-3-DV___Aluminum`,content:`[Driver]
+`},{name:`SB_Acoustics_10__SW26DBAC76-3-DV___Aluminum`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SW26DBAC76-3-DV / Aluminum
 Manufacturer=SB Acoustics
@@ -24148,7 +24148,7 @@ Pe=300.0
 Vd=0.0003744
 Dd=0.199311499
 EBP=67.24
-`},{name:`SB_Acoustics_10__SW26DBAC76-4___Aluminum`,content:`[Driver]
+`},{name:`SB_Acoustics_10__SW26DBAC76-4___Aluminum`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SW26DBAC76-4 / Aluminum
 Manufacturer=SB Acoustics
@@ -24172,7 +24172,7 @@ Pe=200.0
 Vd=0.0003744
 Dd=0.199311499
 EBP=43.14
-`},{name:`SB_Acoustics_10__SW26DBAC76-8___Aluminum`,content:`[Driver]
+`},{name:`SB_Acoustics_10__SW26DBAC76-8___Aluminum`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SW26DBAC76-8 / Aluminum
 Manufacturer=SB Acoustics
@@ -24196,7 +24196,7 @@ Pe=250.0
 Vd=0.0003744
 Dd=0.199311499
 EBP=67.24
-`},{name:`SB_Acoustics_10__SW26SFC38-4___Paper`,content:`[Driver]
+`},{name:`SB_Acoustics_10__SW26SFC38-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SW26SFC38-4 / Paper
 Manufacturer=SB Acoustics
@@ -24221,7 +24221,7 @@ Pe=80.0
 Vd=0.000119
 Dd=0.208062838
 EBP=90.0
-`},{name:`SB_Acoustics_10__SW26SFC38-8___Paper`,content:`[Driver]
+`},{name:`SB_Acoustics_10__SW26SFC38-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SW26SFC38-8 / Paper
 Manufacturer=SB Acoustics
@@ -24246,7 +24246,7 @@ Pe=80.0
 Vd=0.000119
 Dd=0.208062838
 EBP=75.0
-`},{name:`SB_Acoustics_12__SB34SWNRX-S75-6___Norex`,content:`[Driver]
+`},{name:`SB_Acoustics_12__SB34SWNRX-S75-6___Norex`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=12″ SB34SWNRX-S75-6 / Norex
 Manufacturer=SB Acoustics
@@ -24271,7 +24271,7 @@ Pe=200.0
 Vd=0.0005588
 Dd=0.254323748
 EBP=55.88
-`},{name:`SB_Acoustics_13½__SATORI_WO34HC-4___Honeycomb`,content:`[Driver]
+`},{name:`SB_Acoustics_13½__SATORI_WO34HC-4___Honeycomb`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=13½″ SATORI WO34HC-4 / Honeycomb
 Manufacturer=SB Acoustics
@@ -24296,7 +24296,7 @@ Pe=200.0
 Vd=0.00048555
 Dd=0.27291851
 EBP=80.0
-`},{name:`SB_Acoustics_13½__SATORI_WO34HC-8___Honeycomb`,content:`[Driver]
+`},{name:`SB_Acoustics_13½__SATORI_WO34HC-8___Honeycomb`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=13½″ SATORI WO34HC-8 / Honeycomb
 Manufacturer=SB Acoustics
@@ -24321,7 +24321,7 @@ Pe=200.0
 Vd=0.00048555
 Dd=0.27291851
 EBP=67.33
-`},{name:`SB_Acoustics_2½__SATORI_MD60N-6___Fabric`,content:`[Driver]
+`},{name:`SB_Acoustics_2½__SATORI_MD60N-6___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=2½″ SATORI MD60N-6 / Fabric
 Manufacturer=SB Acoustics
@@ -24342,7 +24342,7 @@ Xmax=0.00025
 Pe=120.0
 Vd=8e-07
 Dd=0.063830765
-`},{name:`SB_Acoustics_5__8243__SATORI_MR13P-4___Paper`,content:`[Driver]
+`},{name:`SB_Acoustics_5__8243__SATORI_MR13P-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5&#8243; SATORI MR13P-4 / Paper
 Manufacturer=SB Acoustics
@@ -24367,7 +24367,7 @@ Pe=30.0
 Vd=2.1e-05
 Dd=0.094406974
 EBP=164.0
-`},{name:`SB_Acoustics_5__8243__SATORI_MR13P-8___Paper`,content:`[Driver]
+`},{name:`SB_Acoustics_5__8243__SATORI_MR13P-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5&#8243; SATORI MR13P-8 / Paper
 Manufacturer=SB Acoustics
@@ -24392,7 +24392,7 @@ Pe=30.0
 Vd=2.1e-05
 Dd=0.094406974
 EBP=136.36
-`},{name:`SB_Acoustics_5__8243__SATORI_MR13PNW-4___Paper`,content:`[Driver]
+`},{name:`SB_Acoustics_5__8243__SATORI_MR13PNW-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5&#8243; SATORI MR13PNW-4 / Paper
 Manufacturer=SB Acoustics
@@ -24417,7 +24417,7 @@ Pe=30.0
 Vd=2.1e-05
 Dd=0.094406974
 EBP=164.0
-`},{name:`SB_Acoustics_5__8243__SATORI_MR13PNW-8___Paper`,content:`[Driver]
+`},{name:`SB_Acoustics_5__8243__SATORI_MR13PNW-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5&#8243; SATORI MR13PNW-8 / Paper
 Manufacturer=SB Acoustics
@@ -24442,7 +24442,7 @@ Pe=30.0
 Vd=2.1e-05
 Dd=0.094406974
 EBP=146.88
-`},{name:`SB_Acoustics_5__8243__SATORI_MR13TX-4___TeXtreme`,content:`[Driver]
+`},{name:`SB_Acoustics_5__8243__SATORI_MR13TX-4___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5&#8243; SATORI MR13TX-4 / TeXtreme
 Manufacturer=SB Acoustics
@@ -24467,7 +24467,7 @@ Pe=30.0
 Vd=2.07e-05
 Dd=0.093730213
 EBP=157.14
-`},{name:`SB_Acoustics_5__SATORI_MW13P-4___Paper`,content:`[Driver]
+`},{name:`SB_Acoustics_5__SATORI_MW13P-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5″ SATORI MW13P-4 / Paper
 Manufacturer=SB Acoustics
@@ -24492,7 +24492,7 @@ Pe=40.0
 Vd=3.5e-05
 Dd=0.094406974
 EBP=141.38
-`},{name:`SB_Acoustics_5__SATORI_MW13P-8___Paper`,content:`[Driver]
+`},{name:`SB_Acoustics_5__SATORI_MW13P-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5″ SATORI MW13P-8 / Paper
 Manufacturer=SB Acoustics
@@ -24517,7 +24517,7 @@ Pe=40.0
 Vd=3.5e-05
 Dd=0.094406974
 EBP=125.76
-`},{name:`SB_Acoustics_5__SATORI_MW13PNW-4___Paper`,content:`[Driver]
+`},{name:`SB_Acoustics_5__SATORI_MW13PNW-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5″ SATORI MW13PNW-4 / Paper
 Manufacturer=SB Acoustics
@@ -24542,7 +24542,7 @@ Pe=40.0
 Vd=3.5e-05
 Dd=0.094406974
 EBP=141.38
-`},{name:`SB_Acoustics_5__SATORI_MW13PNW-8___Paper`,content:`[Driver]
+`},{name:`SB_Acoustics_5__SATORI_MW13PNW-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5″ SATORI MW13PNW-8 / Paper
 Manufacturer=SB Acoustics
@@ -24567,7 +24567,7 @@ Pe=40.0
 Vd=3.5e-05
 Dd=0.094406974
 EBP=124.24
-`},{name:`SB_Acoustics_5__SATORI_MW13TX-4___TeXtreme`,content:`[Driver]
+`},{name:`SB_Acoustics_5__SATORI_MW13TX-4___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5″ SATORI MW13TX-4 / TeXtreme
 Manufacturer=SB Acoustics
@@ -24592,7 +24592,7 @@ Pe=40.0
 Vd=3.5e-05
 Dd=0.094406974
 EBP=140.74
-`},{name:`SB_Acoustics_5__SATORI_MW13TX-8___TeXtreme`,content:`[Driver]
+`},{name:`SB_Acoustics_5__SATORI_MW13TX-8___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5″ SATORI MW13TX-8 / TeXtreme
 Manufacturer=SB Acoustics
@@ -24617,7 +24617,7 @@ Pe=40.0
 Vd=3.5e-05
 Dd=0.094406974
 EBP=117.65
-`},{name:`SB_Acoustics_6½__SATORI_MR16P-4___Paper`,content:`[Driver]
+`},{name:`SB_Acoustics_6½__SATORI_MR16P-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MR16P-4 / Paper
 Manufacturer=SB Acoustics
@@ -24642,7 +24642,7 @@ Pe=40.0
 Vd=3.689e-05
 Dd=0.123091635
 EBP=119.23
-`},{name:`SB_Acoustics_6½__SATORI_MR16P-8___Paper`,content:`[Driver]
+`},{name:`SB_Acoustics_6½__SATORI_MR16P-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MR16P-8 / Paper
 Manufacturer=SB Acoustics
@@ -24667,7 +24667,7 @@ Pe=30.0
 Vd=3.689e-05
 Dd=0.123091635
 EBP=100.0
-`},{name:`SB_Acoustics_6½__SATORI_MR16PNW-4___Paper`,content:`[Driver]
+`},{name:`SB_Acoustics_6½__SATORI_MR16PNW-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MR16PNW-4 / Paper
 Manufacturer=SB Acoustics
@@ -24692,7 +24692,7 @@ Pe=40.0
 Vd=3.689e-05
 Dd=0.123091635
 EBP=119.23
-`},{name:`SB_Acoustics_6½__SATORI_MR16PNW-8___Paper`,content:`[Driver]
+`},{name:`SB_Acoustics_6½__SATORI_MR16PNW-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MR16PNW-8 / Paper
 Manufacturer=SB Acoustics
@@ -24717,7 +24717,7 @@ Pe=30.0
 Vd=3.689e-05
 Dd=0.123091635
 EBP=91.18
-`},{name:`SB_Acoustics_6½__SATORI_MR16TX-8___TeXtreme`,content:`[Driver]
+`},{name:`SB_Acoustics_6½__SATORI_MR16TX-8___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MR16TX-8 / TeXtreme
 Manufacturer=SB Acoustics
@@ -24742,7 +24742,7 @@ Pe=30.0
 Vd=3.3345e-05
 Dd=0.122052868
 EBP=109.38
-`},{name:`SB_Acoustics_6½__SATORI_MW16P-12___Paper`,content:`[Driver]
+`},{name:`SB_Acoustics_6½__SATORI_MW16P-12___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MW16P-12 / Paper
 Manufacturer=SB Acoustics
@@ -24767,7 +24767,7 @@ Pe=60.0
 Vd=7.378e-05
 Dd=0.123091635
 EBP=76.5
-`},{name:`SB_Acoustics_6½__SATORI_MW16P-4___Paper`,content:`[Driver]
+`},{name:`SB_Acoustics_6½__SATORI_MW16P-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MW16P-4 / Paper
 Manufacturer=SB Acoustics
@@ -24792,7 +24792,7 @@ Pe=60.0
 Vd=7.14e-05
 Dd=0.123091635
 EBP=100.0
-`},{name:`SB_Acoustics_6½__SATORI_MW16P-8___Paper`,content:`[Driver]
+`},{name:`SB_Acoustics_6½__SATORI_MW16P-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MW16P-8 / Paper
 Manufacturer=SB Acoustics
@@ -24817,7 +24817,7 @@ Pe=60.0
 Vd=7.14e-05
 Dd=0.123091635
 EBP=82.86
-`},{name:`SB_Acoustics_6½__SATORI_MW16PF-4___Paper`,content:`[Driver]
+`},{name:`SB_Acoustics_6½__SATORI_MW16PF-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MW16PF-4 / Paper
 Manufacturer=SB Acoustics
@@ -24842,7 +24842,7 @@ Pe=60.0
 Vd=6.545e-05
 Dd=0.123091635
 EBP=80.0
-`},{name:`SB_Acoustics_6½__SATORI_MW16PF-8___Paper`,content:`[Driver]
+`},{name:`SB_Acoustics_6½__SATORI_MW16PF-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MW16PF-8 / Paper
 Manufacturer=SB Acoustics
@@ -24867,7 +24867,7 @@ Pe=60.0
 Vd=6.545e-05
 Dd=0.123091635
 EBP=69.05
-`},{name:`SB_Acoustics_6½__SATORI_MW16PNW-4___Paper`,content:`[Driver]
+`},{name:`SB_Acoustics_6½__SATORI_MW16PNW-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MW16PNW-4 / Paper
 Manufacturer=SB Acoustics
@@ -24892,7 +24892,7 @@ Pe=60.0
 Vd=7.14e-05
 Dd=0.123091635
 EBP=96.55
-`},{name:`SB_Acoustics_6½__SATORI_MW16PNW-8___Paper`,content:`[Driver]
+`},{name:`SB_Acoustics_6½__SATORI_MW16PNW-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MW16PNW-8 / Paper
 Manufacturer=SB Acoustics
@@ -24917,7 +24917,7 @@ Pe=60.0
 Vd=7.14e-05
 Dd=0.123091635
 EBP=85.29
-`},{name:`SB_Acoustics_6½__SATORI_MW16TX-4___TeXtreme`,content:`[Driver]
+`},{name:`SB_Acoustics_6½__SATORI_MW16TX-4___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MW16TX-4 / TeXtreme
 Manufacturer=SB Acoustics
@@ -24942,7 +24942,7 @@ Pe=60.0
 Vd=7.14e-05
 Dd=0.123091635
 EBP=100.0
-`},{name:`SB_Acoustics_6½__SATORI_MW16TX-8___TeXtreme`,content:`[Driver]
+`},{name:`SB_Acoustics_6½__SATORI_MW16TX-8___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MW16TX-8 / TeXtreme
 Manufacturer=SB Acoustics
@@ -24967,7 +24967,7 @@ Pe=60.0
 Vd=7.14e-05
 Dd=0.123091635
 EBP=83.71
-`},{name:`SB_Acoustics_7½__SATORI_MT19CP-8___paper`,content:`[Driver]
+`},{name:`SB_Acoustics_7½__SATORI_MT19CP-8___paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=7½″ SATORI MT19CP-8 / paper
 Manufacturer=SB Acoustics
@@ -24992,7 +24992,7 @@ Pe=60.0
 Vd=5.472e-05
 Dd=0.139115927
 EBP=3636.36
-`},{name:`SB_Acoustics_7½__SATORI_MW19P-4___Paper`,content:`[Driver]
+`},{name:`SB_Acoustics_7½__SATORI_MW19P-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=7½″ SATORI MW19P-4 / Paper
 Manufacturer=SB Acoustics
@@ -25017,7 +25017,7 @@ Pe=70.0
 Vd=0.00010744
 Dd=0.141835062
 EBP=111.54
-`},{name:`SB_Acoustics_7½__SATORI_MW19P-8___Paper`,content:`[Driver]
+`},{name:`SB_Acoustics_7½__SATORI_MW19P-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=7½″ SATORI MW19P-8 / Paper
 Manufacturer=SB Acoustics
@@ -25042,7 +25042,7 @@ Pe=70.0
 Vd=0.00010586
 Dd=0.141835062
 EBP=92.19
-`},{name:`SB_Acoustics_7½__SATORI_MW19PF-4___Paper`,content:`[Driver]
+`},{name:`SB_Acoustics_7½__SATORI_MW19PF-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=7½″ SATORI MW19PF-4 / Paper
 Manufacturer=SB Acoustics
@@ -25067,7 +25067,7 @@ Pe=70.0
 Vd=0.0001027
 Dd=0.141835062
 EBP=103.57
-`},{name:`SB_Acoustics_7½__SATORI_MW19PF-8___Paper`,content:`[Driver]
+`},{name:`SB_Acoustics_7½__SATORI_MW19PF-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=7½″ SATORI MW19PF-8 / Paper
 Manufacturer=SB Acoustics
@@ -25092,7 +25092,7 @@ Pe=70.0
 Vd=0.0001027
 Dd=0.141835062
 EBP=81.08
-`},{name:`SB_Acoustics_7½__SATORI_MW19PNW-4___Paper`,content:`[Driver]
+`},{name:`SB_Acoustics_7½__SATORI_MW19PNW-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=7½″ SATORI MW19PNW-4 / Paper
 Manufacturer=SB Acoustics
@@ -25117,7 +25117,7 @@ Pe=70.0
 Vd=0.00010744
 Dd=0.141835062
 EBP=111.54
-`},{name:`SB_Acoustics_7½__SATORI_MW19PNW-8___Paper`,content:`[Driver]
+`},{name:`SB_Acoustics_7½__SATORI_MW19PNW-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=7½″ SATORI MW19PNW-8 / Paper
 Manufacturer=SB Acoustics
@@ -25142,7 +25142,7 @@ Pe=70.0
 Vd=0.00010586
 Dd=0.141835062
 EBP=92.19
-`},{name:`SB_Acoustics_7½__SATORI_MW19TX-4___TeXtreme`,content:`[Driver]
+`},{name:`SB_Acoustics_7½__SATORI_MW19TX-4___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=7½″ SATORI MW19TX-4 / TeXtreme
 Manufacturer=SB Acoustics
@@ -25167,7 +25167,7 @@ Pe=70.0
 Vd=0.00010744
 Dd=0.141835062
 EBP=114.29
-`},{name:`SB_Acoustics_7½__SATORI_MW19TX-8___TeXtreme`,content:`[Driver]
+`},{name:`SB_Acoustics_7½__SATORI_MW19TX-8___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=7½″ SATORI MW19TX-8 / TeXtreme
 Manufacturer=SB Acoustics
@@ -25192,7 +25192,7 @@ Pe=70.0
 Vd=0.00010586
 Dd=0.141835062
 EBP=94.29
-`},{name:`SB_Acoustics_9½__SATORI_WO24P-4___Paper`,content:`[Driver]
+`},{name:`SB_Acoustics_9½__SATORI_WO24P-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=9½″ SATORI WO24P-4 / Paper
 Manufacturer=SB Acoustics
@@ -25217,7 +25217,7 @@ Pe=90.0
 Vd=0.00021675
 Dd=0.180187703
 EBP=66.67
-`},{name:`SB_Acoustics_9½__SATORI_WO24P-8___Paper`,content:`[Driver]
+`},{name:`SB_Acoustics_9½__SATORI_WO24P-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=9½″ SATORI WO24P-8 / Paper
 Manufacturer=SB Acoustics
@@ -25242,7 +25242,7 @@ Pe=90.0
 Vd=0.00021675
 Dd=0.180187703
 EBP=59.76
-`},{name:`SB_Acoustics_9½__SATORI_WO24TX-4___Textreme`,content:`[Driver]
+`},{name:`SB_Acoustics_9½__SATORI_WO24TX-4___Textreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=9½″ SATORI WO24TX-4 / Textreme
 Manufacturer=SB Acoustics
@@ -25267,7 +25267,7 @@ Pe=90.0
 Vd=0.000223125
 Dd=0.180187703
 EBP=71.08
-`},{name:`SB_Acoustics_9½__SATORI_WO24TX-8___Textreme`,content:`[Driver]
+`},{name:`SB_Acoustics_9½__SATORI_WO24TX-8___Textreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=9½″ SATORI WO24TX-8 / Textreme
 Manufacturer=SB Acoustics
@@ -25292,7 +25292,7 @@ Pe=90.0
 Vd=0.000218025
 Dd=0.180187703
 EBP=68.06
-`},{name:`SB_Acoustics_SATORI_AT60NC-4___Kapton`,content:`[Driver]
+`},{name:`SB_Acoustics_SATORI_AT60NC-4___Kapton`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI AT60NC-4 / Kapton
 Manufacturer=SB Acoustics
@@ -25306,7 +25306,7 @@ Re=3.9
 Sd=0.00126
 Pe=100.0
 Dd=0.040053487
-`},{name:`SB_Acoustics_SATORI_TW29B-B___Beryllium`,content:`[Driver]
+`},{name:`SB_Acoustics_SATORI_TW29B-B___Beryllium`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29B-B / Beryllium
 Manufacturer=SB Acoustics
@@ -25329,7 +25329,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=461.54
-`},{name:`SB_Acoustics_SATORI_TW29BN-8___Beryllium`,content:`[Driver]
+`},{name:`SB_Acoustics_SATORI_TW29BN-8___Beryllium`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29BN-8 / Beryllium
 Manufacturer=SB Acoustics
@@ -25352,7 +25352,7 @@ Pe=80.0
 Vd=1.92e-07
 Dd=0.03496155
 EBP=937.5
-`},{name:`SB_Acoustics_SATORI_TW29BN-B-8___Beryllium`,content:`[Driver]
+`},{name:`SB_Acoustics_SATORI_TW29BN-B-8___Beryllium`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29BN-B-8 / Beryllium
 Manufacturer=SB Acoustics
@@ -25375,7 +25375,7 @@ Pe=80.0
 Vd=1.92e-07
 Dd=0.03496155
 EBP=937.5
-`},{name:`SB_Acoustics_SATORI_TW29BN-B___Beryllium`,content:`[Driver]
+`},{name:`SB_Acoustics_SATORI_TW29BN-B___Beryllium`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29BN-B / Beryllium
 Manufacturer=SB Acoustics
@@ -25398,7 +25398,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=1166.67
-`},{name:`SB_Acoustics_SATORI_TW29BNWG-4___Beryllium`,content:`[Driver]
+`},{name:`SB_Acoustics_SATORI_TW29BNWG-4___Beryllium`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29BNWG-4 / Beryllium
 Manufacturer=SB Acoustics
@@ -25421,7 +25421,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=1166.67
-`},{name:`SB_Acoustics_SATORI_TW29BNWG-8___Beryllium`,content:`[Driver]
+`},{name:`SB_Acoustics_SATORI_TW29BNWG-8___Beryllium`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29BNWG-8 / Beryllium
 Manufacturer=SB Acoustics
@@ -25444,7 +25444,7 @@ Pe=80.0
 Vd=1.44e-07
 Dd=0.03496155
 EBP=937.5
-`},{name:`SB_Acoustics_SATORI_TW29BN___Beryllium`,content:`[Driver]
+`},{name:`SB_Acoustics_SATORI_TW29BN___Beryllium`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29BN / Beryllium
 Manufacturer=SB Acoustics
@@ -25467,7 +25467,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=1166.67
-`},{name:`SB_Acoustics_SATORI_TW29B___Beryllium`,content:`[Driver]
+`},{name:`SB_Acoustics_SATORI_TW29B___Beryllium`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29B / Beryllium
 Manufacturer=SB Acoustics
@@ -25490,7 +25490,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=461.54
-`},{name:`SB_Acoustics_SATORI_TW29D-B___Fabric`,content:`[Driver]
+`},{name:`SB_Acoustics_SATORI_TW29D-B___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29D-B / Fabric
 Manufacturer=SB Acoustics
@@ -25513,7 +25513,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=472.44
-`},{name:`SB_Acoustics_SATORI_TW29DN-8___Fabric`,content:`[Driver]
+`},{name:`SB_Acoustics_SATORI_TW29DN-8___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29DN-8 / Fabric
 Manufacturer=SB Acoustics
@@ -25536,7 +25536,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=1000.0
-`},{name:`SB_Acoustics_SATORI_TW29DN-B-8___Fabric`,content:`[Driver]
+`},{name:`SB_Acoustics_SATORI_TW29DN-B-8___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29DN-B-8 / Fabric
 Manufacturer=SB Acoustics
@@ -25559,7 +25559,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=1000.0
-`},{name:`SB_Acoustics_SATORI_TW29DN-B___Fabric`,content:`[Driver]
+`},{name:`SB_Acoustics_SATORI_TW29DN-B___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29DN-B / Fabric
 Manufacturer=SB Acoustics
@@ -25582,7 +25582,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=1140.35
-`},{name:`SB_Acoustics_SATORI_TW29DN___Fabric`,content:`[Driver]
+`},{name:`SB_Acoustics_SATORI_TW29DN___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29DN / Fabric
 Manufacturer=SB Acoustics
@@ -25605,7 +25605,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=1140.35
-`},{name:`SB_Acoustics_SATORI_TW29D___Fabric`,content:`[Driver]
+`},{name:`SB_Acoustics_SATORI_TW29D___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29D / Fabric
 Manufacturer=SB Acoustics
@@ -25628,7 +25628,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=472.44
-`},{name:`SB_Acoustics_SATORI_TW29R-B___Fabric`,content:`[Driver]
+`},{name:`SB_Acoustics_SATORI_TW29R-B___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29R-B / Fabric
 Manufacturer=SB Acoustics
@@ -25651,7 +25651,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=483.87
-`},{name:`SB_Acoustics_SATORI_TW29RN-8___Fabric`,content:`[Driver]
+`},{name:`SB_Acoustics_SATORI_TW29RN-8___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29RN-8 / Fabric
 Manufacturer=SB Acoustics
@@ -25674,7 +25674,7 @@ Pe=80.0
 Vd=1.92e-07
 Dd=0.03496155
 EBP=984.85
-`},{name:`SB_Acoustics_SATORI_TW29RN-B-8___Fabric`,content:`[Driver]
+`},{name:`SB_Acoustics_SATORI_TW29RN-B-8___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29RN-B-8 / Fabric
 Manufacturer=SB Acoustics
@@ -25697,7 +25697,7 @@ Pe=80.0
 Vd=1.92e-07
 Dd=0.03496155
 EBP=984.85
-`},{name:`SB_Acoustics_SATORI_TW29RN-B___Fabric`,content:`[Driver]
+`},{name:`SB_Acoustics_SATORI_TW29RN-B___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29RN-B / Fabric
 Manufacturer=SB Acoustics
@@ -25720,7 +25720,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=1076.92
-`},{name:`SB_Acoustics_SATORI_TW29RN___Fabric`,content:`[Driver]
+`},{name:`SB_Acoustics_SATORI_TW29RN___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29RN / Fabric
 Manufacturer=SB Acoustics
@@ -25743,7 +25743,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=1076.92
-`},{name:`SB_Acoustics_SATORI_TW29R___Fabric`,content:`[Driver]
+`},{name:`SB_Acoustics_SATORI_TW29R___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29R / Fabric
 Manufacturer=SB Acoustics
@@ -25766,7 +25766,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=483.87
-`},{name:`SB_Acoustics_SATORI_TW29TXN-B-8___TeXtreme`,content:`[Driver]
+`},{name:`SB_Acoustics_SATORI_TW29TXN-B-8___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29TXN-B-8 / TeXtreme
 Manufacturer=SB Acoustics
@@ -25789,7 +25789,7 @@ Pe=80.0
 Vd=1.92e-07
 Dd=0.03496155
 EBP=883.12
-`},{name:`SB_Acoustics_SATORI_TW29TXN-B___TeXtreme`,content:`[Driver]
+`},{name:`SB_Acoustics_SATORI_TW29TXN-B___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29TXN-B / TeXtreme
 Manufacturer=SB Acoustics
@@ -25812,7 +25812,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=1000.0
-`},{name:`SB_Acoustics_SATORI_TW29TXNWG-4___TeXtreme`,content:`[Driver]
+`},{name:`SB_Acoustics_SATORI_TW29TXNWG-4___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29TXNWG-4 / TeXtreme
 Manufacturer=SB Acoustics
@@ -25835,7 +25835,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=992.19
-`},{name:`SB_Acoustics_SB10PGC21-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB10PGC21-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB10PGC21-4
 Manufacturer=SB Acoustics
@@ -25860,7 +25860,7 @@ Pe=20.0
 Vd=6.075e-06
 Dd=0.058632301
 EBP=88.12
-`},{name:`SB_Acoustics_SB12CACS25-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB12CACS25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12CACS25-4
 Manufacturer=SB Acoustics
@@ -25885,7 +25885,7 @@ Pe=30.0
 Vd=2.5e-05
 Dd=0.079788456
 EBP=154.55
-`},{name:`SB_Acoustics_SB12CACS25-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB12CACS25-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12CACS25-8
 Manufacturer=SB Acoustics
@@ -25910,7 +25910,7 @@ Pe=30.0
 Vd=2.5e-05
 Dd=0.079788456
 EBP=127.5
-`},{name:`SB_Acoustics_SB12MNRX2-25`,content:`[Driver]
+`},{name:`SB_Acoustics_SB12MNRX2-25`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12MNRX2-25
 Manufacturer=SB Acoustics
@@ -25935,7 +25935,7 @@ Pe=50.0
 Vd=1.1e-05
 Dd=0.079788456
 EBP=181.43
-`},{name:`SB_Acoustics_SB12MNRX25-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB12MNRX25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12MNRX25-4
 Manufacturer=SB Acoustics
@@ -25960,7 +25960,7 @@ Pe=50.0
 Vd=1.125e-05
 Dd=0.079788456
 EBP=138.1
-`},{name:`SB_Acoustics_SB12NRX25-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB12NRX25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12NRX25-4
 Manufacturer=SB Acoustics
@@ -25985,7 +25985,7 @@ Pe=30.0
 Vd=2.5e-05
 Dd=0.079788456
 EBP=119.57
-`},{name:`SB_Acoustics_SB12NRX25-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB12NRX25-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12NRX25-8
 Manufacturer=SB Acoustics
@@ -26010,7 +26010,7 @@ Pe=30.0
 Vd=2.5e-05
 Dd=0.079788456
 EBP=139.02
-`},{name:`SB_Acoustics_SB12NRXF25-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB12NRXF25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12NRXF25-4
 Manufacturer=SB Acoustics
@@ -26035,7 +26035,7 @@ Pe=30.0
 Vd=2.5e-05
 Dd=0.079788456
 EBP=115.09
-`},{name:`SB_Acoustics_SB12NRXF25-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB12NRXF25-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12NRXF25-8
 Manufacturer=SB Acoustics
@@ -26060,7 +26060,7 @@ Pe=30.0
 Vd=2.5e-05
 Dd=0.079788456
 EBP=136.96
-`},{name:`SB_Acoustics_SB12PAC-00`,content:`[Driver]
+`},{name:`SB_Acoustics_SB12PAC-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12PAC-00
 Manufacturer=SB Acoustics
@@ -26075,7 +26075,7 @@ Cms=0.00121
 Sd=0.005
 Vas=0.0043
 Dd=0.079788456
-`},{name:`SB_Acoustics_SB12PAC25-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB12PAC25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12PAC25-4
 Manufacturer=SB Acoustics
@@ -26100,7 +26100,7 @@ Pe=30.0
 Vd=2.5e-05
 Dd=0.079788456
 EBP=159.09
-`},{name:`SB_Acoustics_SB12PACR-00`,content:`[Driver]
+`},{name:`SB_Acoustics_SB12PACR-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12PACR-00
 Manufacturer=SB Acoustics
@@ -26115,7 +26115,7 @@ Cms=0.00121
 Sd=0.005
 Vas=0.0043
 Dd=0.079788456
-`},{name:`SB_Acoustics_SB12PACR25-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB12PACR25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12PACR25-4
 Manufacturer=SB Acoustics
@@ -26140,7 +26140,7 @@ Pe=30.0
 Vd=2.5e-05
 Dd=0.079788456
 EBP=159.09
-`},{name:`SB_Acoustics_SB12PFC-00`,content:`[Driver]
+`},{name:`SB_Acoustics_SB12PFC-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12PFC-00
 Manufacturer=SB Acoustics
@@ -26155,7 +26155,7 @@ Cms=0.0012
 Sd=0.005
 Vas=0.0042
 Dd=0.079788456
-`},{name:`SB_Acoustics_SB12PFC25-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB12PFC25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12PFC25-4
 Manufacturer=SB Acoustics
@@ -26180,7 +26180,7 @@ Pe=30.0
 Vd=2.5e-05
 Dd=0.079788456
 EBP=118.37
-`},{name:`SB_Acoustics_SB12PFC25-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB12PFC25-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12PFC25-8
 Manufacturer=SB Acoustics
@@ -26205,7 +26205,7 @@ Pe=30.0
 Vd=2.5e-05
 Dd=0.079788456
 EBP=98.46
-`},{name:`SB_Acoustics_SB12PFCR-00`,content:`[Driver]
+`},{name:`SB_Acoustics_SB12PFCR-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12PFCR-00
 Manufacturer=SB Acoustics
@@ -26220,7 +26220,7 @@ Cms=0.0012
 Sd=0.005
 Vas=0.0042
 Dd=0.079788456
-`},{name:`SB_Acoustics_SB12PFCR25-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB12PFCR25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12PFCR25-4
 Manufacturer=SB Acoustics
@@ -26245,7 +26245,7 @@ Pe=10.0
 Vd=2.25e-05
 Dd=0.075693976
 EBP=3611.11
-`},{name:`SB_Acoustics_SB12PFCR25-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB12PFCR25-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12PFCR25-8
 Manufacturer=SB Acoustics
@@ -26270,7 +26270,7 @@ Pe=30.0
 Vd=2.5e-05
 Dd=0.079788456
 EBP=107.27
-`},{name:`SB_Acoustics_SB13PFC-00`,content:`[Driver]
+`},{name:`SB_Acoustics_SB13PFC-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB13PFC-00
 Manufacturer=SB Acoustics
@@ -26285,7 +26285,7 @@ Cms=0.00133
 Sd=0.0087
 Vas=0.0142
 Dd=0.105248202
-`},{name:`SB_Acoustics_SB13PFC25-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB13PFC25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB13PFC25-4
 Manufacturer=SB Acoustics
@@ -26310,7 +26310,7 @@ Pe=40.0
 Vd=3.915e-05
 Dd=0.105248202
 EBP=133.33
-`},{name:`SB_Acoustics_SB13PFC25-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB13PFC25-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB13PFC25-8
 Manufacturer=SB Acoustics
@@ -26335,7 +26335,7 @@ Pe=40.0
 Vd=3.915e-05
 Dd=0.105248202
 EBP=115.38
-`},{name:`SB_Acoustics_SB13PFCR-00`,content:`[Driver]
+`},{name:`SB_Acoustics_SB13PFCR-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB13PFCR-00
 Manufacturer=SB Acoustics
@@ -26350,7 +26350,7 @@ Cms=0.00133
 Sd=0.0087
 Vas=0.0142
 Dd=0.105248202
-`},{name:`SB_Acoustics_SB13PFCR25-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB13PFCR25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB13PFCR25-4
 Manufacturer=SB Acoustics
@@ -26375,7 +26375,7 @@ Pe=40.0
 Vd=3.915e-05
 Dd=0.105248202
 EBP=133.33
-`},{name:`SB_Acoustics_SB13PFCR25-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB13PFCR25-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB13PFCR25-8
 Manufacturer=SB Acoustics
@@ -26400,7 +26400,7 @@ Pe=40.0
 Vd=3.915e-05
 Dd=0.105248202
 EBP=115.38
-`},{name:`SB_Acoustics_SB14ST-C000-4___Fabric`,content:`[Driver]
+`},{name:`SB_Acoustics_SB14ST-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB14ST-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -26423,7 +26423,7 @@ Pe=10.0
 Vd=3.3e-08
 Dd=0.016736568
 EBP=0.16
-`},{name:`SB_Acoustics_SB15BAC30-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB15BAC30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15BAC30-8
 Manufacturer=SB Acoustics
@@ -26448,7 +26448,7 @@ Pe=25.0
 Vd=2.4e-05
 Dd=0.100925301
 EBP=2871.79
-`},{name:`SB_Acoustics_SB15CAC30-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB15CAC30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15CAC30-4
 Manufacturer=SB Acoustics
@@ -26473,7 +26473,7 @@ Pe=50.0
 Vd=4.1e-05
 Dd=0.102179079
 EBP=95.59
-`},{name:`SB_Acoustics_SB15CAC30-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB15CAC30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15CAC30-8
 Manufacturer=SB Acoustics
@@ -26498,7 +26498,7 @@ Pe=50.0
 Vd=4.1e-05
 Dd=0.102179079
 EBP=84.52
-`},{name:`SB_Acoustics_SB15CRC30-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB15CRC30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15CRC30-4
 Manufacturer=SB Acoustics
@@ -26523,7 +26523,7 @@ Pe=50.0
 Vd=4.51e-05
 Dd=0.102179079
 EBP=102.78
-`},{name:`SB_Acoustics_SB15CRC30-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB15CRC30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15CRC30-8
 Manufacturer=SB Acoustics
@@ -26548,7 +26548,7 @@ Pe=50.0
 Vd=4.51e-05
 Dd=0.102179079
 EBP=86.96
-`},{name:`SB_Acoustics_SB15MFC30-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB15MFC30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15MFC30-4
 Manufacturer=SB Acoustics
@@ -26573,7 +26573,7 @@ Pe=50.0
 Vd=4.1e-05
 Dd=0.102179079
 EBP=118.33
-`},{name:`SB_Acoustics_SB15MFC30-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB15MFC30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15MFC30-8
 Manufacturer=SB Acoustics
@@ -26598,7 +26598,7 @@ Pe=50.0
 Vd=4.1e-05
 Dd=0.102179079
 EBP=97.5
-`},{name:`SB_Acoustics_SB15NAC30-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB15NAC30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15NAC30-4
 Manufacturer=SB Acoustics
@@ -26623,7 +26623,7 @@ Pe=50.0
 Vd=4.1e-05
 Dd=0.102179079
 EBP=109.38
-`},{name:`SB_Acoustics_SB15NAC30-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB15NAC30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15NAC30-8
 Manufacturer=SB Acoustics
@@ -26648,7 +26648,7 @@ Pe=50.0
 Vd=4.1e-05
 Dd=0.102179079
 EBP=91.03
-`},{name:`SB_Acoustics_SB15NBAC30-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB15NBAC30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15NBAC30-4
 Manufacturer=SB Acoustics
@@ -26673,7 +26673,7 @@ Pe=50.0
 Vd=4.1e-05
 Dd=0.102179079
 EBP=106.45
-`},{name:`SB_Acoustics_SB15NBAC30-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB15NBAC30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15NBAC30-8
 Manufacturer=SB Acoustics
@@ -26698,7 +26698,7 @@ Pe=50.0
 Vd=4.1e-05
 Dd=0.102179079
 EBP=86.59
-`},{name:`SB_Acoustics_SB15NRX2C30-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB15NRX2C30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15NRX2C30-4
 Manufacturer=SB Acoustics
@@ -26723,7 +26723,7 @@ Pe=50.0
 Vd=4.1e-05
 Dd=0.102179079
 EBP=115.0
-`},{name:`SB_Acoustics_SB15NRX2C30-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB15NRX2C30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15NRX2C30-8
 Manufacturer=SB Acoustics
@@ -26748,7 +26748,7 @@ Pe=50.0
 Vd=4.1e-05
 Dd=0.102179079
 EBP=98.65
-`},{name:`SB_Acoustics_SB15NRXC30-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB15NRXC30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15NRXC30-4
 Manufacturer=SB Acoustics
@@ -26773,7 +26773,7 @@ Pe=50.0
 Vd=4.1e-05
 Dd=0.102179079
 EBP=132.26
-`},{name:`SB_Acoustics_SB15NRXC30-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB15NRXC30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15NRXC30-8
 Manufacturer=SB Acoustics
@@ -26798,7 +26798,7 @@ Pe=50.0
 Vd=4.1e-05
 Dd=0.102179079
 EBP=108.57
-`},{name:`SB_Acoustics_SB15SFCR-00`,content:`[Driver]
+`},{name:`SB_Acoustics_SB15SFCR-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15SFCR-00
 Manufacturer=SB Acoustics
@@ -26813,7 +26813,7 @@ Cms=0.00093
 Sd=0.0178
 Vas=0.0418
 Dd=0.150544558
-`},{name:`SB_Acoustics_SB15SFCR39-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB15SFCR39-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15SFCR39-4
 Manufacturer=SB Acoustics
@@ -26838,7 +26838,7 @@ Pe=80.0
 Vd=9.79e-05
 Dd=0.150544558
 EBP=91.18
-`},{name:`SB_Acoustics_SB15SFCR39-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB15SFCR39-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15SFCR39-8
 Manufacturer=SB Acoustics
@@ -26863,7 +26863,7 @@ Pe=80.0
 Vd=8.9e-05
 Dd=0.150544558
 EBP=71.11
-`},{name:`SB_Acoustics_SB16FRPC25-7`,content:`[Driver]
+`},{name:`SB_Acoustics_SB16FRPC25-7`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB16FRPC25-7
 Manufacturer=SB Acoustics
@@ -26888,7 +26888,7 @@ Pe=30.0
 Vd=3.904e-05
 Dd=0.12766153
 EBP=91.67
-`},{name:`SB_Acoustics_SB16PFC-00`,content:`[Driver]
+`},{name:`SB_Acoustics_SB16PFC-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB16PFC-00
 Manufacturer=SB Acoustics
@@ -26903,7 +26903,7 @@ Cms=0.0014
 Sd=0.0124
 Vas=0.03
 Dd=0.125650986
-`},{name:`SB_Acoustics_SB16PFC25-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB16PFC25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB16PFC25-4
 Manufacturer=SB Acoustics
@@ -26928,7 +26928,7 @@ Pe=40.0
 Vd=5.58e-05
 Dd=0.125650986
 EBP=89.74
-`},{name:`SB_Acoustics_SB16PFC25-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB16PFC25-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB16PFC25-8
 Manufacturer=SB Acoustics
@@ -26953,7 +26953,7 @@ Pe=40.0
 Vd=5.58e-05
 Dd=0.125650986
 EBP=79.17
-`},{name:`SB_Acoustics_SB16PFCR-00`,content:`[Driver]
+`},{name:`SB_Acoustics_SB16PFCR-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB16PFCR-00
 Manufacturer=SB Acoustics
@@ -26968,7 +26968,7 @@ Cms=0.0014
 Sd=0.0124
 Vas=0.03
 Dd=0.125650986
-`},{name:`SB_Acoustics_SB16PFCR25-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB16PFCR25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB16PFCR25-4
 Manufacturer=SB Acoustics
@@ -26993,7 +26993,7 @@ Pe=40.0
 Vd=5.58e-05
 Dd=0.125650986
 EBP=89.74
-`},{name:`SB_Acoustics_SB16PFCR25-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB16PFCR25-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB16PFCR25-8
 Manufacturer=SB Acoustics
@@ -27018,7 +27018,7 @@ Pe=40.0
 Vd=5.58e-05
 Dd=0.125650986
 EBP=79.17
-`},{name:`SB_Acoustics_SB17CAC35-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB17CAC35-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17CAC35-4
 Manufacturer=SB Acoustics
@@ -27043,7 +27043,7 @@ Pe=60.0
 Vd=6.49e-05
 Dd=0.122573352
 EBP=95.16
-`},{name:`SB_Acoustics_SB17CAC35-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB17CAC35-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17CAC35-8
 Manufacturer=SB Acoustics
@@ -27068,7 +27068,7 @@ Pe=60.0
 Vd=6.49e-05
 Dd=0.122573352
 EBP=70.0
-`},{name:`SB_Acoustics_SB17CRC35-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB17CRC35-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17CRC35-4
 Manufacturer=SB Acoustics
@@ -27093,7 +27093,7 @@ Pe=60.0
 Vd=6.49e-05
 Dd=0.122573352
 EBP=90.0
-`},{name:`SB_Acoustics_SB17CRC35-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB17CRC35-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17CRC35-8
 Manufacturer=SB Acoustics
@@ -27118,7 +27118,7 @@ Pe=60.0
 Vd=6.49e-05
 Dd=0.122573352
 EBP=75.68
-`},{name:`SB_Acoustics_SB17MFC35-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB17MFC35-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17MFC35-4
 Manufacturer=SB Acoustics
@@ -27143,7 +27143,7 @@ Pe=60.0
 Vd=6.49e-05
 Dd=0.122573352
 EBP=100.0
-`},{name:`SB_Acoustics_SB17MFC35-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB17MFC35-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17MFC35-8
 Manufacturer=SB Acoustics
@@ -27168,7 +27168,7 @@ Pe=60.0
 Vd=6.49e-05
 Dd=0.122573352
 EBP=82.5
-`},{name:`SB_Acoustics_SB17NAC35-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB17NAC35-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17NAC35-4
 Manufacturer=SB Acoustics
@@ -27193,7 +27193,7 @@ Pe=60.0
 Vd=6.49e-05
 Dd=0.122573352
 EBP=94.12
-`},{name:`SB_Acoustics_SB17NAC35-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB17NAC35-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17NAC35-8
 Manufacturer=SB Acoustics
@@ -27218,7 +27218,7 @@ Pe=60.0
 Vd=6.49e-05
 Dd=0.122573352
 EBP=70.0
-`},{name:`SB_Acoustics_SB17NBAC35-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB17NBAC35-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17NBAC35-4
 Manufacturer=SB Acoustics
@@ -27243,7 +27243,7 @@ Pe=60.0
 Vd=6.49e-05
 Dd=0.122573352
 EBP=96.77
-`},{name:`SB_Acoustics_SB17NBAC35-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB17NBAC35-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17NBAC35-8
 Manufacturer=SB Acoustics
@@ -27268,7 +27268,7 @@ Pe=60.0
 Vd=6.49e-05
 Dd=0.122573352
 EBP=82.89
-`},{name:`SB_Acoustics_SB17NRX2C35-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB17NRX2C35-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17NRX2C35-4
 Manufacturer=SB Acoustics
@@ -27293,7 +27293,7 @@ Pe=60.0
 Vd=6.49e-05
 Dd=0.122573352
 EBP=87.8
-`},{name:`SB_Acoustics_SB17NRX2C35-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB17NRX2C35-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17NRX2C35-8
 Manufacturer=SB Acoustics
@@ -27318,7 +27318,7 @@ Pe=50.0
 Vd=6.49e-05
 Dd=0.122573352
 EBP=77.66
-`},{name:`SB_Acoustics_SB17NRX2L35-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB17NRX2L35-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17NRX2L35-4
 Manufacturer=SB Acoustics
@@ -27343,7 +27343,7 @@ Pe=60.0
 Vd=5.664e-05
 Dd=0.122573352
 EBP=157.69
-`},{name:`SB_Acoustics_SB17NRX2L35-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB17NRX2L35-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17NRX2L35-8
 Manufacturer=SB Acoustics
@@ -27368,7 +27368,7 @@ Pe=50.0
 Vd=5.664e-05
 Dd=0.122573352
 EBP=126.0
-`},{name:`SB_Acoustics_SB17NRXC35-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB17NRXC35-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17NRXC35-4
 Manufacturer=SB Acoustics
@@ -27393,7 +27393,7 @@ Pe=60.0
 Vd=6.49e-05
 Dd=0.122573352
 EBP=102.94
-`},{name:`SB_Acoustics_SB17NRXC35-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB17NRXC35-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17NRXC35-8
 Manufacturer=SB Acoustics
@@ -27418,7 +27418,7 @@ Pe=60.0
 Vd=6.49e-05
 Dd=0.122573352
 EBP=88.89
-`},{name:`SB_Acoustics_SB19ST-C000-4___Fabric`,content:`[Driver]
+`},{name:`SB_Acoustics_SB19ST-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB19ST-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -27441,7 +27441,7 @@ Pe=30.0
 Vd=2.28e-07
 Dd=0.021996159
 EBP=653.33
-`},{name:`SB_Acoustics_SB20FRPC30-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB20FRPC30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB20FRPC30-8
 Manufacturer=SB Acoustics
@@ -27466,7 +27466,7 @@ Pe=40.0
 Vd=8.856e-05
 Dd=0.165837192
 EBP=83.83
-`},{name:`SB_Acoustics_SB20PFC-00`,content:`[Driver]
+`},{name:`SB_Acoustics_SB20PFC-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB20PFC-00
 Manufacturer=SB Acoustics
@@ -27481,7 +27481,7 @@ Cms=0.00083
 Sd=0.0216
 Vas=0.055
 Dd=0.165837192
-`},{name:`SB_Acoustics_SB20PFC30-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB20PFC30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB20PFC30-4
 Manufacturer=SB Acoustics
@@ -27506,7 +27506,7 @@ Pe=50.0
 Vd=0.0001242
 Dd=0.165837192
 EBP=91.08
-`},{name:`SB_Acoustics_SB20PFC30-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB20PFC30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB20PFC30-8
 Manufacturer=SB Acoustics
@@ -27531,7 +27531,7 @@ Pe=50.0
 Vd=0.00012204
 Dd=0.165837192
 EBP=79.07
-`},{name:`SB_Acoustics_SB20PFCR-00`,content:`[Driver]
+`},{name:`SB_Acoustics_SB20PFCR-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB20PFCR-00
 Manufacturer=SB Acoustics
@@ -27546,7 +27546,7 @@ Cms=0.00083
 Sd=0.0216
 Vas=0.055
 Dd=0.165837192
-`},{name:`SB_Acoustics_SB20PFCR30-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB20PFCR30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB20PFCR30-4
 Manufacturer=SB Acoustics
@@ -27571,7 +27571,7 @@ Pe=50.0
 Vd=0.0001242
 Dd=0.165837192
 EBP=91.89
-`},{name:`SB_Acoustics_SB20PFCR30-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB20PFCR30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB20PFCR30-8
 Manufacturer=SB Acoustics
@@ -27596,7 +27596,7 @@ Pe=50.0
 Vd=0.0001242
 Dd=0.165837192
 EBP=79.07
-`},{name:`SB_Acoustics_SB20PFCS30-7`,content:`[Driver]
+`},{name:`SB_Acoustics_SB20PFCS30-7`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB20PFCS30-7
 Manufacturer=SB Acoustics
@@ -27621,7 +27621,7 @@ Pe=40.0
 Vd=0.0001221
 Dd=0.168124709
 EBP=50.65
-`},{name:`SB_Acoustics_SB21RDC-C000-4___Fabric`,content:`[Driver]
+`},{name:`SB_Acoustics_SB21RDC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB21RDC-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -27644,7 +27644,7 @@ Pe=40.0
 Vd=2.3e-07
 Dd=0.024201037
 EBP=463.41
-`},{name:`SB_Acoustics_SB21RDCN-C000-4___Fabric`,content:`[Driver]
+`},{name:`SB_Acoustics_SB21RDCN-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB21RDCN-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -27667,7 +27667,7 @@ Pe=40.0
 Vd=1.15e-07
 Dd=0.024201037
 EBP=346.94
-`},{name:`SB_Acoustics_SB21SDC-C000-4___Fabric`,content:`[Driver]
+`},{name:`SB_Acoustics_SB21SDC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB21SDC-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -27690,7 +27690,7 @@ Pe=40.0
 Vd=2.45e-07
 Dd=0.024977738
 EBP=464.52
-`},{name:`SB_Acoustics_SB21SDCN-C000-4___Fabric`,content:`[Driver]
+`},{name:`SB_Acoustics_SB21SDCN-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB21SDCN-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -27713,7 +27713,7 @@ Pe=40.0
 Vd=1.22e-07
 Dd=0.024977738
 EBP=346.94
-`},{name:`SB_Acoustics_SB23CACS45-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB23CACS45-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB23CACS45-4
 Manufacturer=SB Acoustics
@@ -27738,7 +27738,7 @@ Pe=60.0
 Vd=0.0001404
 Dd=0.165837192
 EBP=65.71
-`},{name:`SB_Acoustics_SB23CACS45-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB23CACS45-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB23CACS45-8
 Manufacturer=SB Acoustics
@@ -27763,7 +27763,7 @@ Pe=50.0
 Vd=0.0001404
 Dd=0.165837192
 EBP=56.82
-`},{name:`SB_Acoustics_SB23MFCL-00`,content:`[Driver]
+`},{name:`SB_Acoustics_SB23MFCL-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB23MFCL-00
 Manufacturer=SB Acoustics
@@ -27778,7 +27778,7 @@ Cms=0.0005
 Sd=0.021
 Vas=0.0312
 Dd=0.163517676
-`},{name:`SB_Acoustics_SB23MFCL45-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB23MFCL45-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB23MFCL45-4
 Manufacturer=SB Acoustics
@@ -27803,7 +27803,7 @@ Pe=150.0
 Vd=0.000252
 Dd=0.163517676
 EBP=75.0
-`},{name:`SB_Acoustics_SB23MFCL45-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB23MFCL45-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB23MFCL45-8
 Manufacturer=SB Acoustics
@@ -27828,7 +27828,7 @@ Pe=150.0
 Vd=0.0002205
 Dd=0.163517676
 EBP=61.96
-`},{name:`SB_Acoustics_SB23NACS45-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB23NACS45-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB23NACS45-4
 Manufacturer=SB Acoustics
@@ -27853,7 +27853,7 @@ Pe=60.0
 Vd=0.0001404
 Dd=0.165837192
 EBP=65.71
-`},{name:`SB_Acoustics_SB26ADC-C000-4___Aluminum`,content:`[Driver]
+`},{name:`SB_Acoustics_SB26ADC-C000-4___Aluminum`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB26ADC-C000-4 / Aluminum
 Manufacturer=SB Acoustics
@@ -27876,7 +27876,7 @@ Pe=120.0
 Vd=3.72e-07
 Dd=0.028096415
 EBP=361.7
-`},{name:`SB_Acoustics_SB26CDC-C000-4___Ceramic`,content:`[Driver]
+`},{name:`SB_Acoustics_SB26CDC-C000-4___Ceramic`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB26CDC-C000-4 / Ceramic
 Manufacturer=SB Acoustics
@@ -27899,7 +27899,7 @@ Pe=100.0
 Vd=3.72e-07
 Dd=0.028096415
 EBP=345.0
-`},{name:`SB_Acoustics_SB26SFCL38-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB26SFCL38-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB26SFCL38-4
 Manufacturer=SB Acoustics
@@ -27924,7 +27924,7 @@ Pe=80.0
 Vd=0.00027334
 Dd=0.209890658
 EBP=58.3
-`},{name:`SB_Acoustics_SB26SFCL38-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB26SFCL38-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB26SFCL38-8
 Manufacturer=SB Acoustics
@@ -27949,7 +27949,7 @@ Pe=80.0
 Vd=0.00028372
 Dd=0.209890658
 EBP=45.83
-`},{name:`SB_Acoustics_SB26ST-C000-5___Fabric`,content:`[Driver]
+`},{name:`SB_Acoustics_SB26ST-C000-5___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB26ST-C000-5 / Fabric
 Manufacturer=SB Acoustics
@@ -27972,7 +27972,7 @@ Pe=80.0
 Vd=3.72e-07
 Dd=0.028096415
 EBP=530.49
-`},{name:`SB_Acoustics_SB26STAC-C000-4___Fabric`,content:`[Driver]
+`},{name:`SB_Acoustics_SB26STAC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB26STAC-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -27995,7 +27995,7 @@ Pe=120.0
 Vd=3.72e-07
 Dd=0.028096415
 EBP=421.35
-`},{name:`SB_Acoustics_SB26STC-C000-4___Fabric`,content:`[Driver]
+`},{name:`SB_Acoustics_SB26STC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB26STC-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -28018,7 +28018,7 @@ Pe=120.0
 Vd=3.72e-07
 Dd=0.028096415
 EBP=421.35
-`},{name:`SB_Acoustics_SB26STCN-C000-4___Fabric`,content:`[Driver]
+`},{name:`SB_Acoustics_SB26STCN-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB26STCN-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -28041,7 +28041,7 @@ Pe=120.0
 Vd=3.72e-07
 Dd=0.028096415
 EBP=542.37
-`},{name:`SB_Acoustics_SB26STWGC-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB26STWGC-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB26STWGC-4
 Manufacturer=SB Acoustics
@@ -28064,7 +28064,7 @@ Pe=120.0
 Vd=0.00049266
 Dd=1.022475912
 EBP=0.09
-`},{name:`SB_Acoustics_SB29BAC-C000-4___Beryllium`,content:`[Driver]
+`},{name:`SB_Acoustics_SB29BAC-C000-4___Beryllium`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29BAC-C000-4 / Beryllium
 Manufacturer=SB Acoustics
@@ -28087,7 +28087,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=532.79
-`},{name:`SB_Acoustics_SB29BNC-C000-4___Beryllium`,content:`[Driver]
+`},{name:`SB_Acoustics_SB29BNC-C000-4___Beryllium`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29BNC-C000-4 / Beryllium
 Manufacturer=SB Acoustics
@@ -28110,7 +28110,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=678.57
-`},{name:`SB_Acoustics_SB29NRX-00`,content:`[Driver]
+`},{name:`SB_Acoustics_SB29NRX-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29NRX-00
 Manufacturer=SB Acoustics
@@ -28125,7 +28125,7 @@ Cms=0.00048
 Sd=0.0312
 Vas=0.066
 Dd=0.199311499
-`},{name:`SB_Acoustics_SB29NRX2-00`,content:`[Driver]
+`},{name:`SB_Acoustics_SB29NRX2-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29NRX2-00
 Manufacturer=SB Acoustics
@@ -28140,7 +28140,7 @@ Cms=0.00043
 Sd=0.0312
 Vas=0.06
 Dd=0.199311499
-`},{name:`SB_Acoustics_SB29NRX75-6`,content:`[Driver]
+`},{name:`SB_Acoustics_SB29NRX75-6`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29NRX75-6
 Manufacturer=SB Acoustics
@@ -28165,7 +28165,7 @@ Pe=200.0
 Vd=0.0003432
 Dd=0.199311499
 EBP=55.26
-`},{name:`SB_Acoustics_SB29NRX75-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB29NRX75-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29NRX75-8
 Manufacturer=SB Acoustics
@@ -28190,7 +28190,7 @@ Pe=200.0
 Vd=0.0003432
 Dd=0.199311499
 EBP=66.67
-`},{name:`SB_Acoustics_SB29RDAC-C000-4___Fabric`,content:`[Driver]
+`},{name:`SB_Acoustics_SB29RDAC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29RDAC-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -28213,7 +28213,7 @@ Pe=100.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=666.67
-`},{name:`SB_Acoustics_SB29RDC-C000-4___Fabric`,content:`[Driver]
+`},{name:`SB_Acoustics_SB29RDC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29RDC-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -28236,7 +28236,7 @@ Pe=100.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=666.67
-`},{name:`SB_Acoustics_SB29RDNC-C000-4___Fabric`,content:`[Driver]
+`},{name:`SB_Acoustics_SB29RDNC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29RDNC-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -28259,7 +28259,7 @@ Pe=100.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=944.44
-`},{name:`SB_Acoustics_SB29SDAC-C000-4___Fabric`,content:`[Driver]
+`},{name:`SB_Acoustics_SB29SDAC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29SDAC-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -28282,7 +28282,7 @@ Pe=60.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=550.46
-`},{name:`SB_Acoustics_SB29SDNC-C000-4___Fabric`,content:`[Driver]
+`},{name:`SB_Acoustics_SB29SDNC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29SDNC-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -28305,7 +28305,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=797.47
-`},{name:`SB_Acoustics_SB34NRX-00`,content:`[Driver]
+`},{name:`SB_Acoustics_SB34NRX-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB34NRX-00
 Manufacturer=SB Acoustics
@@ -28320,7 +28320,7 @@ Cms=0.0005
 Sd=0.0508
 Vas=0.183
 Dd=0.254323748
-`},{name:`SB_Acoustics_SB34NRX2-00`,content:`[Driver]
+`},{name:`SB_Acoustics_SB34NRX2-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB34NRX2-00
 Manufacturer=SB Acoustics
@@ -28335,7 +28335,7 @@ Cms=0.00044
 Sd=0.0506
 Vas=0.16
 Dd=0.253822617
-`},{name:`SB_Acoustics_SB34NRX75-16`,content:`[Driver]
+`},{name:`SB_Acoustics_SB34NRX75-16`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB34NRX75-16
 Manufacturer=SB Acoustics
@@ -28360,7 +28360,7 @@ Pe=120.0
 Vd=0.0005588
 Dd=0.254323748
 EBP=31.25
-`},{name:`SB_Acoustics_SB34NRX75-6`,content:`[Driver]
+`},{name:`SB_Acoustics_SB34NRX75-6`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB34NRX75-6
 Manufacturer=SB Acoustics
@@ -28385,7 +28385,7 @@ Pe=200.0
 Vd=0.0005588
 Dd=0.254323748
 EBP=44.19
-`},{name:`SB_Acoustics_SB34NRXL75-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB34NRXL75-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB34NRXL75-8
 Manufacturer=SB Acoustics
@@ -28410,7 +28410,7 @@ Pe=200.0
 Vd=0.000508
 Dd=0.254323748
 EBP=75.86
-`},{name:`SB_Acoustics_SB34SWPL76-3`,content:`[Driver]
+`},{name:`SB_Acoustics_SB34SWPL76-3`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB34SWPL76-3
 Manufacturer=SB Acoustics
@@ -28435,7 +28435,7 @@ Pe=300.0
 Vd=0.000687
 Dd=0.241483687
 EBP=52.88
-`},{name:`SB_Acoustics_SB34SWPL76-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB34SWPL76-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB34SWPL76-4
 Manufacturer=SB Acoustics
@@ -28460,7 +28460,7 @@ Pe=300.0
 Vd=0.000687
 Dd=0.241483687
 EBP=57.58
-`},{name:`SB_Acoustics_SB36WBAC21-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB36WBAC21-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB36WBAC21-4
 Manufacturer=SB Acoustics
@@ -28485,7 +28485,7 @@ Pe=5.0
 Vd=7.35e-07
 Dd=0.023124892
 EBP=190.48
-`},{name:`SB_Acoustics_SB36WBAC21-8`,content:`[Driver]
+`},{name:`SB_Acoustics_SB36WBAC21-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB36WBAC21-8
 Manufacturer=SB Acoustics
@@ -28510,7 +28510,7 @@ Pe=5.0
 Vd=7.35e-07
 Dd=0.023124892
 EBP=173.91
-`},{name:`SB_Acoustics_SB42FHCL75-6`,content:`[Driver]
+`},{name:`SB_Acoustics_SB42FHCL75-6`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB42FHCL75-6
 Manufacturer=SB Acoustics
@@ -28535,7 +28535,7 @@ Pe=300.0
 Vd=0.0009775
 Dd=0.328976232
 EBP=57.5
-`},{name:`SB_Acoustics_SB65WBAC25-4`,content:`[Driver]
+`},{name:`SB_Acoustics_SB65WBAC25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB65WBAC25-4
 Manufacturer=SB Acoustics
@@ -28560,7 +28560,7 @@ Pe=20.0
 Vd=5.3e-06
 Dd=0.05046265
 EBP=149.35
-`}]},{name:`Parts Express woofer guide`,files:[{name:`Aurum Cantus AC-130F1 5-1_4_ Woofer`,content:`[Driver]
+`}]},{name:`Parts Express woofer guide`,files:[{name:`Aurum Cantus AC-130F1 5-1_4_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC-130F1 5-1/4" Woofer
 Manufacturer=
@@ -28588,7 +28588,7 @@ Dd=0.109981
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Aurum Cantus AC-130F1`,content:`[Driver]
+`},{name:`Aurum Cantus AC-130F1`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC-130F1
 Manufacturer=
@@ -28616,7 +28616,7 @@ Dd=0.109981
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Aurum Cantus AC-130MK2`,content:`[Driver]
+`},{name:`Aurum Cantus AC-130MK2`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC-130MK2
 Manufacturer=
@@ -28644,7 +28644,7 @@ Dd=0.109981
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Aurum Cantus AC-130MKII 5-1_4_ Carbon Fiber_Kevlar Woofer`,content:`[Driver]
+`},{name:`Aurum Cantus AC-130MKII 5-1_4_ Carbon Fiber_Kevlar Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC-130MKII 5-1/4" Carbon Fiber/Kevlar Woofer
 Manufacturer=
@@ -28672,7 +28672,7 @@ Dd=0.109981
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Aurum Cantus AC-165 6-1_2_ Carbon Fiber_Kevlar Woofer`,content:`[Driver]
+`},{name:`Aurum Cantus AC-165 6-1_2_ Carbon Fiber_Kevlar Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC-165 6-1/2" Carbon Fiber/Kevlar Woofer
 Manufacturer=
@@ -28700,7 +28700,7 @@ Dd=0.130131
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Aurum Cantus AC-165`,content:`[Driver]
+`},{name:`Aurum Cantus AC-165`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC-165
 Manufacturer=
@@ -28728,7 +28728,7 @@ Dd=0.130131
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Aurum Cantus AC-180F1 7_ Woofer`,content:`[Driver]
+`},{name:`Aurum Cantus AC-180F1 7_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC-180F1 7" Woofer
 Manufacturer=
@@ -28756,7 +28756,7 @@ Dd=0.146255
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Aurum Cantus AC-180F1`,content:`[Driver]
+`},{name:`Aurum Cantus AC-180F1`,date:``,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC-180F1
 Manufacturer=
@@ -28784,7 +28784,7 @@ Dd=0.14625465582862904
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Aurum Cantus AC-180F1D 7_ DVC Woofer`,content:`[Driver]
+`},{name:`Aurum Cantus AC-180F1D 7_ DVC Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC-180F1D 7" DVC Woofer
 Manufacturer=
@@ -28812,7 +28812,7 @@ Dd=0.146255
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Aurum Cantus AC-200MK2`,content:`[Driver]
+`},{name:`Aurum Cantus AC-200MK2`,date:``,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC-200MK2
 Manufacturer=
@@ -28840,7 +28840,7 @@ Dd=0.16736567743768008
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Aurum Cantus AC-200MKII 8_ Carbon Fiber Sandwich Woofer`,content:`[Driver]
+`},{name:`Aurum Cantus AC-200MKII 8_ Carbon Fiber Sandwich Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC-200MKII 8" Carbon Fiber Sandwich Woofer
 Manufacturer=
@@ -28868,7 +28868,7 @@ Dd=0.167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Aurum Cantus AC120_50CK 5_ Midwoofer`,content:`[Driver]
+`},{name:`Aurum Cantus AC120_50CK 5_ Midwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC120/50CK 5" Midwoofer
 Manufacturer=
@@ -28896,7 +28896,7 @@ Dd=0.102179
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Aurum Cantus AC120_50CK`,content:`[Driver]
+`},{name:`Aurum Cantus AC120_50CK`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC120/50CK
 Manufacturer=
@@ -28924,7 +28924,7 @@ Dd=0.102179
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Aurum Cantus AC130_50CK 5-1_4_ Midwoofer`,content:`[Driver]
+`},{name:`Aurum Cantus AC130_50CK 5-1_4_ Midwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC130/50CK 5-1/4" Midwoofer
 Manufacturer=
@@ -28952,7 +28952,7 @@ Dd=0.109981
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Aurum Cantus AC130_50CK`,content:`[Driver]
+`},{name:`Aurum Cantus AC130_50CK`,date:``,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC130/50CK
 Manufacturer=
@@ -28980,7 +28980,7 @@ Dd=0.10998079684646792
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Aurum Cantus AC165_50C2C 6-1_2_ Midwoofer`,content:`[Driver]
+`},{name:`Aurum Cantus AC165_50C2C 6-1_2_ Midwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC165/50C2C 6-1/2" Midwoofer
 Manufacturer=
@@ -29008,7 +29008,7 @@ Dd=0.130131
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Aurum Cantus AC165_50C2C`,content:`[Driver]
+`},{name:`Aurum Cantus AC165_50C2C`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC165/50C2C
 Manufacturer=
@@ -29036,7 +29036,7 @@ Dd=0.130131
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Aurum Cantus AC165_50CK 6-1_2_ Midwoofer`,content:`[Driver]
+`},{name:`Aurum Cantus AC165_50CK 6-1_2_ Midwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC165/50CK 6-1/2" Midwoofer
 Manufacturer=
@@ -29064,7 +29064,7 @@ Dd=0.130131
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Aurum Cantus AC165_50CK`,content:`[Driver]
+`},{name:`Aurum Cantus AC165_50CK`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC165/50CK
 Manufacturer=
@@ -29092,7 +29092,7 @@ Dd=0.130131
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Aurum Cantus AC200_50C2C`,content:`[Driver]
+`},{name:`Aurum Cantus AC200_50C2C`,date:``,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC200/50C2C
 Manufacturer=
@@ -29120,7 +29120,7 @@ Dd=0.189992
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Aurum Cantus AC250_75C2C 10_ Woofer`,content:`[Driver]
+`},{name:`Aurum Cantus AC250_75C2C 10_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC250/75C2C 10" Woofer
 Manufacturer=
@@ -29148,7 +29148,7 @@ Dd=0.209891
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Aurum Cantus AC250_75C2C`,content:`[Driver]
+`},{name:`Aurum Cantus AC250_75C2C`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC250/75C2C
 Manufacturer=
@@ -29176,7 +29176,7 @@ Dd=0.209891
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Aurum Cantus AC300_75C2C 12_ Woofer`,content:`[Driver]
+`},{name:`Aurum Cantus AC300_75C2C 12_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC300/75C2C 12" Woofer
 Manufacturer=
@@ -29204,7 +29204,7 @@ Dd=0.252313
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Aurum Cantus AC500_75C2C`,content:`[Driver]
+`},{name:`Aurum Cantus AC500_75C2C`,date:``,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC500/75C2C
 Manufacturer=
@@ -29232,7 +29232,7 @@ Dd=0.252313252202016
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Aurum Cantus G2 Ribbon Tweeter`,content:`[Driver]
+`},{name:`Aurum Cantus G2 Ribbon Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
 Model=G2 Ribbon Tweeter
 Manufacturer=
@@ -29260,7 +29260,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 10BG76-8 10_ Neodymium Subwoofer`,content:`[Driver]
+`},{name:`B&C Speakers B&C 10BG76-8 10_ Neodymium Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 10BG76-8 10" Neodymium Subwoofer
 Manufacturer=
@@ -29288,7 +29288,7 @@ Dd=0.201851
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 10CL51 10_ Neodymium Woofer`,content:`[Driver]
+`},{name:`B&C Speakers B&C 10CL51 10_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 10CL51 10" Neodymium Woofer
 Manufacturer=
@@ -29316,7 +29316,7 @@ Dd=0.201851
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 10CXN64-8 10_ Professional Neodymium Coaxial Speaker 80 x 80 Degree 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 10CXN64-8 10_ Professional Neodymium Coaxial Speaker 80 x 80 Degree 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 10CXN64-8 10" Professional Neodymium Coaxial Speaker 80 x 80 Degree 8 Ohm
 Manufacturer=
@@ -29344,7 +29344,7 @@ Dd=0.201851
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 10FCX64 10_ Professional Coaxial Speaker 70 x 70 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 10FCX64 10_ Professional Coaxial Speaker 70 x 70 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 10FCX64 10" Professional Coaxial Speaker 70 x 70 8 Ohm
 Manufacturer=
@@ -29372,7 +29372,7 @@ Dd=0.201851
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 10HPL64 10_ Neodymium Woofer`,content:`[Driver]
+`},{name:`B&C Speakers B&C 10HPL64 10_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 10HPL64 10" Neodymium Woofer
 Manufacturer=
@@ -29400,7 +29400,7 @@ Dd=0.201851
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 10HPL64-16 10_ Professional Neodymium Woofer 16 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 10HPL64-16 10_ Professional Neodymium Woofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 10HPL64-16 10" Professional Neodymium Woofer 16 Ohm
 Manufacturer=
@@ -29428,7 +29428,7 @@ Dd=0.201851
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 10MBX64 10_ Professional Neodymium Woofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 10MBX64 10_ Professional Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 10MBX64 10" Professional Neodymium Woofer 8 Ohm
 Manufacturer=
@@ -29456,7 +29456,7 @@ Dd=0.082634
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 10MD26 10_ Midbass Speaker`,content:`[Driver]
+`},{name:`B&C Speakers B&C 10MD26 10_ Midbass Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 10MD26 10" Midbass Speaker
 Manufacturer=
@@ -29484,7 +29484,7 @@ Dd=0.201851
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 10NW64 10_ Neodymium Woofer`,content:`[Driver]
+`},{name:`B&C Speakers B&C 10NW64 10_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 10NW64 10" Neodymium Woofer
 Manufacturer=
@@ -29512,7 +29512,7 @@ Dd=0.201851
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 10NW76 10_ Neodymium Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 10NW76 10_ Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 10NW76 10" Neodymium Subwoofer 8 Ohm
 Manufacturer=
@@ -29540,7 +29540,7 @@ Dd=0.201851
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 10PLB76 10_ Woofer`,content:`[Driver]
+`},{name:`B&C Speakers B&C 10PLB76 10_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 10PLB76 10" Woofer
 Manufacturer=
@@ -29568,7 +29568,7 @@ Dd=0.201851
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 10PS26 10_ Woofer`,content:`[Driver]
+`},{name:`B&C Speakers B&C 10PS26 10_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 10PS26 10" Woofer
 Manufacturer=
@@ -29596,7 +29596,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 12BG100 12_ Neodymium Subwoofer`,content:`[Driver]
+`},{name:`B&C Speakers B&C 12BG100 12_ Neodymium Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 12BG100 12" Neodymium Subwoofer
 Manufacturer=
@@ -29624,7 +29624,7 @@ Dd=0.257804
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 12BG76 12_ 1000W Neodymium Subwoofer`,content:`[Driver]
+`},{name:`B&C Speakers B&C 12BG76 12_ 1000W Neodymium Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 12BG76 12" 1000W Neodymium Subwoofer
 Manufacturer=
@@ -29652,7 +29652,7 @@ Dd=0.257804
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 12CL64 12_ Neodymium Woofer`,content:`[Driver]
+`},{name:`B&C Speakers B&C 12CL64 12_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 12CL64 12" Neodymium Woofer
 Manufacturer=
@@ -29680,7 +29680,7 @@ Dd=0.257804
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 12CL76 12_ Neodymium Woofer`,content:`[Driver]
+`},{name:`B&C Speakers B&C 12CL76 12_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 12CL76 12" Neodymium Woofer
 Manufacturer=
@@ -29708,7 +29708,7 @@ Dd=0.257804
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 12CLX64 12_ Professional Coaxial Speaker 60 x 60 Degree 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 12CLX64 12_ Professional Coaxial Speaker 60 x 60 Degree 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 12CLX64 12" Professional Coaxial Speaker 60 x 60 Degree 8 Ohm
 Manufacturer=
@@ -29736,7 +29736,7 @@ Dd=0.257804
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 12CXN88 12_ Professional Coaxial Speaker 80 x 80 Degree 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 12CXN88 12_ Professional Coaxial Speaker 80 x 80 Degree 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 12CXN88 12" Professional Coaxial Speaker 80 x 80 Degree 8 Ohm
 Manufacturer=
@@ -29764,7 +29764,7 @@ Dd=0.257804
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 12FCX76 12_ Professional Coaxial Speaker 80 x 80 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 12FCX76 12_ Professional Coaxial Speaker 80 x 80 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 12FCX76 12" Professional Coaxial Speaker 80 x 80 8 Ohm
 Manufacturer=
@@ -29792,7 +29792,7 @@ Dd=0.257804
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 12FW76 12_ Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 12FW76 12_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 12FW76 12" Professional Woofer 8 Ohm
 Manufacturer=
@@ -29820,7 +29820,7 @@ Dd=0.257804
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 12HCX76 12_ Neodymium Coaxial Speaker 60 x 40 Degree`,content:`[Driver]
+`},{name:`B&C Speakers B&C 12HCX76 12_ Neodymium Coaxial Speaker 60 x 40 Degree`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 12HCX76 12" Neodymium Coaxial Speaker 60 x 40 Degree
 Manufacturer=
@@ -29848,7 +29848,7 @@ Dd=0.257804
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 12HPL76 12_ Neodymium Woofer`,content:`[Driver]
+`},{name:`B&C Speakers B&C 12HPL76 12_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 12HPL76 12" Neodymium Woofer
 Manufacturer=
@@ -29876,7 +29876,7 @@ Dd=0.257804
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 12MH32 12_ Professional Midbass 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 12MH32 12_ Professional Midbass 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 12MH32 12" Professional Midbass 8 Ohm
 Manufacturer=
@@ -29904,7 +29904,7 @@ Dd=0.257804
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 12NBX100 12_ Professional Neodymium Woofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 12NBX100 12_ Professional Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 12NBX100 12" Professional Neodymium Woofer 8 Ohm
 Manufacturer=
@@ -29932,7 +29932,7 @@ Dd=0.260017
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 12NDL76 12_ Neodymium Woofer`,content:`[Driver]
+`},{name:`B&C Speakers B&C 12NDL76 12_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 12NDL76 12" Neodymium Woofer
 Manufacturer=
@@ -29960,7 +29960,7 @@ Dd=0.257804
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 12NDL76-16 12_ Professional Neodymium Woofer 16 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 12NDL76-16 12_ Professional Neodymium Woofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 12NDL76-16 12" Professional Neodymium Woofer 16 Ohm
 Manufacturer=
@@ -29988,7 +29988,7 @@ Dd=0.257804
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 12NDL88 12_ Neodymium Woofer`,content:`[Driver]
+`},{name:`B&C Speakers B&C 12NDL88 12_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 12NDL88 12" Neodymium Woofer
 Manufacturer=
@@ -30016,7 +30016,7 @@ Dd=0.257804
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 12NW100 12_ Neodymium Subwoofer Speaker`,content:`[Driver]
+`},{name:`B&C Speakers B&C 12NW100 12_ Neodymium Subwoofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 12NW100 12" Neodymium Subwoofer Speaker
 Manufacturer=
@@ -30044,7 +30044,7 @@ Dd=0.260017
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 12NW76 12_ Neodymium Woofer`,content:`[Driver]
+`},{name:`B&C Speakers B&C 12NW76 12_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 12NW76 12" Neodymium Woofer
 Manufacturer=
@@ -30072,7 +30072,7 @@ Dd=0.257804
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 12PE32 12_ Midbass Speaker`,content:`[Driver]
+`},{name:`B&C Speakers B&C 12PE32 12_ Midbass Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 12PE32 12" Midbass Speaker
 Manufacturer=
@@ -30100,7 +30100,7 @@ Dd=0.257804
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 12PLB76 12_ Woofer`,content:`[Driver]
+`},{name:`B&C Speakers B&C 12PLB76 12_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 12PLB76 12" Woofer
 Manufacturer=
@@ -30128,7 +30128,7 @@ Dd=0.257804
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 12PS100 12_ Woofer`,content:`[Driver]
+`},{name:`B&C Speakers B&C 12PS100 12_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 12PS100 12" Woofer
 Manufacturer=
@@ -30156,7 +30156,7 @@ Dd=0.260017
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 12TBX100 12_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 12TBX100 12_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 12TBX100 12" Woofer 8 Ohm
 Manufacturer=
@@ -30184,7 +30184,7 @@ Dd=0.260017
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 14CXN88 13.5_ Professional Neodymium Coaxial Speaker 80 x 80 Degree 4_8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 14CXN88 13.5_ Professional Neodymium Coaxial Speaker 80 x 80 Degree 4_8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 14CXN88 13.5" Professional Neodymium Coaxial Speaker 80 x 80 Degree 4/8 Ohm
 Manufacturer=
@@ -30212,7 +30212,7 @@ Dd=0.30003
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 14NDL88 14_ Neodymium Woofer`,content:`[Driver]
+`},{name:`B&C Speakers B&C 14NDL88 14_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 14NDL88 14" Neodymium Woofer
 Manufacturer=
@@ -30240,7 +30240,7 @@ Dd=0.30003
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 15BG100 15_ Neodymium Subwoofer`,content:`[Driver]
+`},{name:`B&C Speakers B&C 15BG100 15_ Neodymium Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 15BG100 15" Neodymium Subwoofer
 Manufacturer=
@@ -30268,7 +30268,7 @@ Dd=0.329942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 15CL76 15_ Professional Neodymium Woofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 15CL76 15_ Professional Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 15CL76 15" Professional Neodymium Woofer 8 Ohm
 Manufacturer=
@@ -30296,7 +30296,7 @@ Dd=0.329942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 15CXN76 15_ Neodymium Coaxial Speaker 80 x 80 Degree`,content:`[Driver]
+`},{name:`B&C Speakers B&C 15CXN76 15_ Neodymium Coaxial Speaker 80 x 80 Degree`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 15CXN76 15" Neodymium Coaxial Speaker 80 x 80 Degree
 Manufacturer=
@@ -30324,7 +30324,7 @@ Dd=0.329942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 15CXN88 15_ Neodymium Coaxial Speaker 80 x 80 Degree`,content:`[Driver]
+`},{name:`B&C Speakers B&C 15CXN88 15_ Neodymium Coaxial Speaker 80 x 80 Degree`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 15CXN88 15" Neodymium Coaxial Speaker 80 x 80 Degree
 Manufacturer=
@@ -30352,7 +30352,7 @@ Dd=0.329942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 15DS100 DS Series 15_ High Energy Neodymium Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 15DS100 DS Series 15_ High Energy Neodymium Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 15DS100 DS Series 15" High Energy Neodymium Subwoofer 4 Ohm
 Manufacturer=
@@ -30380,7 +30380,7 @@ Dd=0.329942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 15DS100 DS Series 15_ High Energy Neodymium Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 15DS100 DS Series 15_ High Energy Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 15DS100 DS Series 15" High Energy Neodymium Subwoofer 8 Ohm
 Manufacturer=
@@ -30408,7 +30408,7 @@ Dd=0.329942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 15DS115 DS Series 15_ High Energy Neodymium Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 15DS115 DS Series 15_ High Energy Neodymium Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 15DS115 DS Series 15" High Energy Neodymium Subwoofer 4 Ohm
 Manufacturer=
@@ -30436,7 +30436,7 @@ Dd=0.329942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 15DS115 DS Series 15_ High Energy Neodymium Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 15DS115 DS Series 15_ High Energy Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 15DS115 DS Series 15" High Energy Neodymium Subwoofer 8 Ohm
 Manufacturer=
@@ -30464,7 +30464,7 @@ Dd=0.329942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 15FW76 15_ Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 15FW76 15_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 15FW76 15" Professional Woofer 8 Ohm
 Manufacturer=
@@ -30492,7 +30492,7 @@ Dd=0.329942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 15HCX76 15_ Neodymium Coaxial Speaker 60 x 40 Degree`,content:`[Driver]
+`},{name:`B&C Speakers B&C 15HCX76 15_ Neodymium Coaxial Speaker 60 x 40 Degree`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 15HCX76 15" Neodymium Coaxial Speaker 60 x 40 Degree
 Manufacturer=
@@ -30520,7 +30520,7 @@ Dd=0.329942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 15NDL76 15_ Neodymium Woofer`,content:`[Driver]
+`},{name:`B&C Speakers B&C 15NDL76 15_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 15NDL76 15" Neodymium Woofer
 Manufacturer=
@@ -30548,7 +30548,7 @@ Dd=0.329942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 15NDL88 15_ Neodymium Woofer`,content:`[Driver]
+`},{name:`B&C Speakers B&C 15NDL88 15_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 15NDL88 15" Neodymium Woofer
 Manufacturer=
@@ -30576,7 +30576,7 @@ Dd=0.329942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 15NW100 15_ Neodymium Subwoofer Speaker Driver`,content:`[Driver]
+`},{name:`B&C Speakers B&C 15NW100 15_ Neodymium Subwoofer Speaker Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 15NW100 15" Neodymium Subwoofer Speaker Driver
 Manufacturer=
@@ -30604,7 +30604,7 @@ Dd=0.329942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 15NW76 15_ Professional Neodymium Woofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 15NW76 15_ Professional Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 15NW76 15" Professional Neodymium Woofer 8 Ohm
 Manufacturer=
@@ -30632,7 +30632,7 @@ Dd=0.329942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 15PLB76 15_ Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 15PLB76 15_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 15PLB76 15" Professional Woofer 8 Ohm
 Manufacturer=
@@ -30660,7 +30660,7 @@ Dd=0.329942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 15PS100 15_ Woofer`,content:`[Driver]
+`},{name:`B&C Speakers B&C 15PS100 15_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 15PS100 15" Woofer
 Manufacturer=
@@ -30688,7 +30688,7 @@ Dd=0.329942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 15PS100-4 15_ Professional Woofer 4 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 15PS100-4 15_ Professional Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 15PS100-4 15" Professional Woofer 4 Ohm
 Manufacturer=
@@ -30716,7 +30716,7 @@ Dd=0.329942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 15PZB100 15_ Woofer`,content:`[Driver]
+`},{name:`B&C Speakers B&C 15PZB100 15_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 15PZB100 15" Woofer
 Manufacturer=
@@ -30744,7 +30744,7 @@ Dd=0.329942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 15SW100 15_ Professional Neodymium Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 15SW100 15_ Professional Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 15SW100 15" Professional Neodymium Subwoofer 8 Ohm
 Manufacturer=
@@ -30772,7 +30772,7 @@ Dd=0.329942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 15SW115 15_ Professional Neodymium Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 15SW115 15_ Professional Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 15SW115 15" Professional Neodymium Subwoofer 8 Ohm
 Manufacturer=
@@ -30800,7 +30800,7 @@ Dd=0.329942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 15SW115-4 15_ Professional Neodymium Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 15SW115-4 15_ Professional Neodymium Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 15SW115-4 15" Professional Neodymium Subwoofer 4 Ohm
 Manufacturer=
@@ -30828,7 +30828,7 @@ Dd=0.329942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 15TBW100 15_ Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 15TBW100 15_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 15TBW100 15" Professional Woofer 8 Ohm
 Manufacturer=
@@ -30856,7 +30856,7 @@ Dd=0.329942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 15TBW100-4 15_ Professional Woofer 4 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 15TBW100-4 15_ Professional Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 15TBW100-4 15" Professional Woofer 4 Ohm
 Manufacturer=
@@ -30884,7 +30884,7 @@ Dd=0.329942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 15TBX100 15_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 15TBX100 15_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 15TBX100 15" Woofer 8 Ohm
 Manufacturer=
@@ -30912,7 +30912,7 @@ Dd=0.329942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 15TBX100-4 15_ Woofer`,content:`[Driver]
+`},{name:`B&C Speakers B&C 15TBX100-4 15_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 15TBX100-4 15" Woofer
 Manufacturer=
@@ -30940,7 +30940,7 @@ Dd=0.329942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 18DS100 DS Series 18_ High Energy Neodymium Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 18DS100 DS Series 18_ High Energy Neodymium Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 18DS100 DS Series 18" High Energy Neodymium Subwoofer 4 Ohm
 Manufacturer=
@@ -30968,7 +30968,7 @@ Dd=0.392507
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 18DS100-8 18_ Professional Neodymium Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 18DS100-8 18_ Professional Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 18DS100-8 18" Professional Neodymium Subwoofer 8 Ohm
 Manufacturer=
@@ -30996,7 +30996,7 @@ Dd=0.392507
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 18DS115 DS Series 18_ High Energy Neodymium Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 18DS115 DS Series 18_ High Energy Neodymium Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 18DS115 DS Series 18" High Energy Neodymium Subwoofer 4 Ohm
 Manufacturer=
@@ -31024,7 +31024,7 @@ Dd=0.397503
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 18DS115 DS Series 18_ High Energy Neodymium Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 18DS115 DS Series 18_ High Energy Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 18DS115 DS Series 18" High Energy Neodymium Subwoofer 8 Ohm
 Manufacturer=
@@ -31052,7 +31052,7 @@ Dd=0.392507
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 18NBX100 18_ Professional Neodymium Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 18NBX100 18_ Professional Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 18NBX100 18" Professional Neodymium Subwoofer 8 Ohm
 Manufacturer=
@@ -31080,7 +31080,7 @@ Dd=0.392507
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 18NBX100-4 18_ Professional Neodymium Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 18NBX100-4 18_ Professional Neodymium Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 18NBX100-4 18" Professional Neodymium Subwoofer 4 Ohm
 Manufacturer=
@@ -31108,7 +31108,7 @@ Dd=0.392507
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 18NW100 18_ Neodymium Subwoofer Speaker Driver`,content:`[Driver]
+`},{name:`B&C Speakers B&C 18NW100 18_ Neodymium Subwoofer Speaker Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 18NW100 18" Neodymium Subwoofer Speaker Driver
 Manufacturer=
@@ -31136,7 +31136,7 @@ Dd=0.392507
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 18NW100-4 18_ Professional Neodymium Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 18NW100-4 18_ Professional Neodymium Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 18NW100-4 18" Professional Neodymium Subwoofer 4 Ohm
 Manufacturer=
@@ -31164,7 +31164,7 @@ Dd=0.392507
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 18PS100 18_ Professional Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 18PS100 18_ Professional Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 18PS100 18" Professional Subwoofer 8 Ohm
 Manufacturer=
@@ -31192,7 +31192,7 @@ Dd=0.392507
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 18PS76 18_ Woofer`,content:`[Driver]
+`},{name:`B&C Speakers B&C 18PS76 18_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 18PS76 18" Woofer
 Manufacturer=
@@ -31220,7 +31220,7 @@ Dd=0.392507
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 18PZB100 18_ Woofer`,content:`[Driver]
+`},{name:`B&C Speakers B&C 18PZB100 18_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 18PZB100 18" Woofer
 Manufacturer=
@@ -31248,7 +31248,7 @@ Dd=0.379981
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 18RBX100 18_ Professional Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 18RBX100 18_ Professional Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 18RBX100 18" Professional Subwoofer 8 Ohm
 Manufacturer=
@@ -31276,7 +31276,7 @@ Dd=0.155487
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 18RBX100-4 18_ Professional Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 18RBX100-4 18_ Professional Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 18RBX100-4 18" Professional Subwoofer 4 Ohm
 Manufacturer=
@@ -31304,7 +31304,7 @@ Dd=0.155487
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 18SW100 18_ Professional Neodymium Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 18SW100 18_ Professional Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 18SW100 18" Professional Neodymium Subwoofer 8 Ohm
 Manufacturer=
@@ -31332,7 +31332,7 @@ Dd=0.392507
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 18SW115 18_ Neodymium Subwoofer Speaker Driver`,content:`[Driver]
+`},{name:`B&C Speakers B&C 18SW115 18_ Neodymium Subwoofer Speaker Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 18SW115 18" Neodymium Subwoofer Speaker Driver
 Manufacturer=
@@ -31360,7 +31360,7 @@ Dd=0.392507
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 18SW115-4 18_ Professional Neodymium Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 18SW115-4 18_ Professional Neodymium Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 18SW115-4 18" Professional Neodymium Subwoofer 4 Ohm
 Manufacturer=
@@ -31388,7 +31388,7 @@ Dd=0.392507
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 18TBW100 18_ Professional Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 18TBW100 18_ Professional Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 18TBW100 18" Professional Subwoofer 8 Ohm
 Manufacturer=
@@ -31416,7 +31416,7 @@ Dd=0.392507
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 18TBW100-4 18_ Professional Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 18TBW100-4 18_ Professional Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 18TBW100-4 18" Professional Subwoofer 4 Ohm
 Manufacturer=
@@ -31444,7 +31444,7 @@ Dd=0.392507
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 18TBX100 18_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 18TBX100 18_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 18TBX100 18" Woofer 8 Ohm
 Manufacturer=
@@ -31472,7 +31472,7 @@ Dd=0.392507
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 18TBX100-4 18_ Woofer 4 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 18TBX100-4 18_ Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 18TBX100-4 18" Woofer 4 Ohm
 Manufacturer=
@@ -31500,7 +31500,7 @@ Dd=0.392832
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 21DS115 DS Series 21_ High Energy Neodymium Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 21DS115 DS Series 21_ High Energy Neodymium Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 21DS115 DS Series 21" High Energy Neodymium Subwoofer 4 Ohm
 Manufacturer=
@@ -31528,7 +31528,7 @@ Dd=0.462635
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 21DS115 DS Series 21_ High Energy Neodymium Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 21DS115 DS Series 21_ High Energy Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 21DS115 DS Series 21" High Energy Neodymium Subwoofer 8 Ohm
 Manufacturer=
@@ -31556,7 +31556,7 @@ Dd=0.462498
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 21SW152 21_ Professional Neodymium Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 21SW152 21_ Professional Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 21SW152 21" Professional Neodymium Subwoofer 8 Ohm
 Manufacturer=
@@ -31584,7 +31584,7 @@ Dd=0.462498
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 21SW152-4 21_ Professional Neodymium Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 21SW152-4 21_ Professional Neodymium Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 21SW152-4 21" Professional Neodymium Subwoofer 4 Ohm
 Manufacturer=
@@ -31612,7 +31612,7 @@ Dd=0.462498
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 4CXN36 4_ Professional Coaxial Speaker 70 x 70 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 4CXN36 4_ Professional Coaxial Speaker 70 x 70 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 4CXN36 4" Professional Coaxial Speaker 70 x 70 8 Ohm
 Manufacturer=
@@ -31640,7 +31640,7 @@ Dd=0.0844402
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 4NDF34-8 4_ Professional Neodymium Woofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 4NDF34-8 4_ Professional Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 4NDF34-8 4" Professional Neodymium Woofer 8 Ohm
 Manufacturer=
@@ -31668,7 +31668,7 @@ Dd=0.0851908
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 5CXN44 5_ Professional Coaxial Speaker 80 X 80 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 5CXN44 5_ Professional Coaxial Speaker 80 X 80 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 5CXN44 5" Professional Coaxial Speaker 80 X 80 8 Ohm
 Manufacturer=
@@ -31696,7 +31696,7 @@ Dd=0.109981
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 5MDN38 5_ Professional Neodymium Midrange Speaker 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 5MDN38 5_ Professional Neodymium Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 5MDN38 5" Professional Neodymium Midrange Speaker 8 Ohm
 Manufacturer=
@@ -31724,7 +31724,7 @@ Dd=0.109981
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 5NDL38 5_ Professional Neodymium Midrange Speaker 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 5NDL38 5_ Professional Neodymium Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 5NDL38 5" Professional Neodymium Midrange Speaker 8 Ohm
 Manufacturer=
@@ -31752,7 +31752,7 @@ Dd=0.109981
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 5NSM38-8 5_ Professional Neodymium Sealed Back Midrange 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 5NSM38-8 5_ Professional Neodymium Sealed Back Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 5NSM38-8 5" Professional Neodymium Sealed Back Midrange 8 Ohm
 Manufacturer=
@@ -31780,7 +31780,7 @@ Dd=0.109981
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 6FHX51 6.5_ Professional Coaxial Speaker 70 x 70 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 6FHX51 6.5_ Professional Coaxial Speaker 70 x 70 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 6FHX51 6.5" Professional Coaxial Speaker 70 x 70 8 Ohm
 Manufacturer=
@@ -31808,7 +31808,7 @@ Dd=0.129641
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 6HCX51 6.5_ Professional Neodymium Coaxial Speaker 70 x 70 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 6HCX51 6.5_ Professional Neodymium Coaxial Speaker 70 x 70 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 6HCX51 6.5" Professional Neodymium Coaxial Speaker 70 x 70 8 Ohm
 Manufacturer=
@@ -31836,7 +31836,7 @@ Dd=0.129641
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 6MBX44 6.5_ Professional Neodymium Woofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 6MBX44 6.5_ Professional Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 6MBX44 6.5" Professional Neodymium Woofer 8 Ohm
 Manufacturer=
@@ -31864,7 +31864,7 @@ Dd=0.129641
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 6MD38 6-1_2_ Midrange Speaker`,content:`[Driver]
+`},{name:`B&C Speakers B&C 6MD38 6-1_2_ Midrange Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 6MD38 6-1/2" Midrange Speaker
 Manufacturer=
@@ -31892,7 +31892,7 @@ Dd=0.129641
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 6MD38-16 6.5_ Professional Midrange Speaker 16 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 6MD38-16 6.5_ Professional Midrange Speaker 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 6MD38-16 6.5" Professional Midrange Speaker 16 Ohm
 Manufacturer=
@@ -31920,7 +31920,7 @@ Dd=0.129641
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 6MDN44 6-1_2_ Neodymium Midrange Speaker`,content:`[Driver]
+`},{name:`B&C Speakers B&C 6MDN44 6-1_2_ Neodymium Midrange Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 6MDN44 6-1/2" Neodymium Midrange Speaker
 Manufacturer=
@@ -31948,7 +31948,7 @@ Dd=0.129641
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 6MDN44-16 6.5_ Professional Neodymium Midrange Speaker 16 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 6MDN44-16 6.5_ Professional Neodymium Midrange Speaker 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 6MDN44-16 6.5" Professional Neodymium Midrange Speaker 16 Ohm
 Manufacturer=
@@ -31976,7 +31976,7 @@ Dd=0.129641
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 6NDL38 6-1_2_ Neodymium Woofer`,content:`[Driver]
+`},{name:`B&C Speakers B&C 6NDL38 6-1_2_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 6NDL38 6-1/2" Neodymium Woofer
 Manufacturer=
@@ -32004,7 +32004,7 @@ Dd=0.129641
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 6NDL44 6-1_2_ Professional Neodymium Woofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 6NDL44 6-1_2_ Professional Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 6NDL44 6-1/2" Professional Neodymium Woofer 8 Ohm
 Manufacturer=
@@ -32032,7 +32032,7 @@ Dd=0.129641
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 6NSM51-8 6_ Professional Neodymium Sealed Back Midrange 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 6NSM51-8 6_ Professional Neodymium Sealed Back Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 6NSM51-8 6" Professional Neodymium Sealed Back Midrange 8 Ohm
 Manufacturer=
@@ -32060,7 +32060,7 @@ Dd=0.134935
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 6PEV13 6-1_2_ Midrange Speaker`,content:`[Driver]
+`},{name:`B&C Speakers B&C 6PEV13 6-1_2_ Midrange Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 6PEV13 6-1/2" Midrange Speaker
 Manufacturer=
@@ -32088,7 +32088,7 @@ Dd=0.129641
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 8BG51 8_ Neodymium Woofer`,content:`[Driver]
+`},{name:`B&C Speakers B&C 8BG51 8_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 8BG51 8" Neodymium Woofer
 Manufacturer=
@@ -32116,7 +32116,7 @@ Dd=0.167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 8CX21 8_ Professional Coaxial Speaker 100 x 100 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 8CX21 8_ Professional Coaxial Speaker 100 x 100 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 8CX21 8" Professional Coaxial Speaker 100 x 100 8 Ohm
 Manufacturer=
@@ -32144,7 +32144,7 @@ Dd=0.167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 8CXN51 8_ Professional Neodymium Coaxial Speaker 100 x 100 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 8CXN51 8_ Professional Neodymium Coaxial Speaker 100 x 100 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 8CXN51 8" Professional Neodymium Coaxial Speaker 100 x 100 8 Ohm
 Manufacturer=
@@ -32172,7 +32172,7 @@ Dd=0.167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 8FCX51 8_ Professional Coaxial Speaker 100 x 100 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 8FCX51 8_ Professional Coaxial Speaker 100 x 100 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 8FCX51 8" Professional Coaxial Speaker 100 x 100 8 Ohm
 Manufacturer=
@@ -32200,7 +32200,7 @@ Dd=0.167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 8FG51 8_ Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 8FG51 8_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 8FG51 8" Professional Woofer 8 Ohm
 Manufacturer=
@@ -32228,7 +32228,7 @@ Dd=0.167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 8MBX51 8_ Professional Neodymium Woofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 8MBX51 8_ Professional Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 8MBX51 8" Professional Neodymium Woofer 8 Ohm
 Manufacturer=
@@ -32256,7 +32256,7 @@ Dd=0.167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 8MDN51 8_ Neodymium Woofer`,content:`[Driver]
+`},{name:`B&C Speakers B&C 8MDN51 8_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 8MDN51 8" Neodymium Woofer
 Manufacturer=
@@ -32284,7 +32284,7 @@ Dd=0.167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 8MDN51-16 8_ Professional Neodymium Woofer 16 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 8MDN51-16 8_ Professional Neodymium Woofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 8MDN51-16 8" Professional Neodymium Woofer 16 Ohm
 Manufacturer=
@@ -32312,7 +32312,7 @@ Dd=0.167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 8NDL51 8_ Neodymium Woofer`,content:`[Driver]
+`},{name:`B&C Speakers B&C 8NDL51 8_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 8NDL51 8" Neodymium Woofer
 Manufacturer=
@@ -32340,7 +32340,7 @@ Dd=0.167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 8NDL51-16 8_ Professional Neodymium Woofer 16 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 8NDL51-16 8_ Professional Neodymium Woofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 8NDL51-16 8" Professional Neodymium Woofer 16 Ohm
 Manufacturer=
@@ -32368,7 +32368,7 @@ Dd=0.167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 8NDL64 8_ Neodymium Woofer`,content:`[Driver]
+`},{name:`B&C Speakers B&C 8NDL64 8_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 8NDL64 8" Neodymium Woofer
 Manufacturer=
@@ -32396,7 +32396,7 @@ Dd=0.167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 8NDL64-16 8_ Neodymium Woofer 16 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 8NDL64-16 8_ Neodymium Woofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 8NDL64-16 8" Neodymium Woofer 16 Ohm
 Manufacturer=
@@ -32424,7 +32424,7 @@ Dd=0.167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 8NSM64-8 8_ Professional Neodymium Sealed Back Midrange 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 8NSM64-8 8_ Professional Neodymium Sealed Back Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 8NSM64-8 8" Professional Neodymium Sealed Back Midrange 8 Ohm
 Manufacturer=
@@ -32452,7 +32452,7 @@ Dd=0.167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 8PE21-8 8_ Midrange Speaker 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 8PE21-8 8_ Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 8PE21-8 8" Midrange Speaker 8 Ohm
 Manufacturer=
@@ -32480,7 +32480,7 @@ Dd=0.167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 8PS21-16 8_ Professional Woofer 16 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 8PS21-16 8_ Professional Woofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 8PS21-16 8" Professional Woofer 16 Ohm
 Manufacturer=
@@ -32508,7 +32508,7 @@ Dd=0.167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`B&C Speakers B&C 8PS21-8 8_ Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`B&C Speakers B&C 8PS21-8 8_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 8PS21-8 8" Professional Woofer 8 Ohm
 Manufacturer=
@@ -32536,7 +32536,7 @@ Dd=0.167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beston RT001A Ribbon Tweeter 6 Ohm`,content:`[Driver]
+`},{name:`Beston RT001A Ribbon Tweeter 6 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beston
 Model=RT001A Ribbon Tweeter 6 Ohm
 Manufacturer=
@@ -32564,7 +32564,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 10CMV2 10_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 10CMV2 10_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=10CMV2 10" Woofer 8 Ohm
 Manufacturer=
@@ -32592,7 +32592,7 @@ Dd=0.00219962
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 10G40 G40 Series 10_ Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 10G40 G40 Series 10_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=10G40 G40 Series 10" Subwoofer 8 Ohm
 Manufacturer=
@@ -32620,7 +32620,7 @@ Dd=0.00219962
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 10MC500 MC Series 10_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 10MC500 MC Series 10_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=10MC500 MC Series 10" Woofer 8 Ohm
 Manufacturer=
@@ -32648,7 +32648,7 @@ Dd=0.002111
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 10MC700Nd MC Series 10_ Neo Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 10MC700Nd MC Series 10_ Neo Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=10MC700Nd MC Series 10" Neo Woofer 8 Ohm
 Manufacturer=
@@ -32676,7 +32676,7 @@ Dd=0.002111
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 10MCB700 MCB Series 10_ Midbass Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 10MCB700 MCB Series 10_ Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=10MCB700 MCB Series 10" Midbass Woofer 8 Ohm
 Manufacturer=
@@ -32704,7 +32704,7 @@ Dd=0.002111
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 10MCS500 MCS Series 10_ Midbass Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 10MCS500 MCS Series 10_ Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=10MCS500 MCS Series 10" Midbass Woofer 8 Ohm
 Manufacturer=
@@ -32732,7 +32732,7 @@ Dd=0.002111
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 10MI100 MI100 Series 10_ Midrange Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 10MI100 MI100 Series 10_ Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=10MI100 MI100 Series 10" Midrange Speaker 8 Ohm
 Manufacturer=
@@ -32760,7 +32760,7 @@ Dd=0.00219962
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 10NMFS NMF Series 10_ Carbon Fiber Cone Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 10NMFS NMF Series 10_ Carbon Fiber Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=10NMFS NMF Series 10" Carbon Fiber Cone Woofer 8 Ohm
 Manufacturer=
@@ -32788,7 +32788,7 @@ Dd=0.00217048
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 10WR300 WR Series 10_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 10WR300 WR Series 10_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=10WR300 WR Series 10" Woofer 8 Ohm
 Manufacturer=
@@ -32816,7 +32816,7 @@ Dd=0.002111
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 12BR70 12_ Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 12BR70 12_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=12BR70 12" Subwoofer 8 Ohm
 Manufacturer=
@@ -32844,7 +32844,7 @@ Dd=0.262212
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 12G40 G40 Series 12_ Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 12G40 G40 Series 12_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=12G40 G40 Series 12" Subwoofer 8 Ohm
 Manufacturer=
@@ -32872,7 +32872,7 @@ Dd=0.00259772
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 12LEX1000Fe LEX Series 12_  Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 12LEX1000Fe LEX Series 12_  Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=12LEX1000Fe LEX Series 12"  Subwoofer 8 Ohm
 Manufacturer=
@@ -32900,7 +32900,7 @@ Dd=0.00264628
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 12LEX1300Nd LEX Series 12_ Neo Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 12LEX1300Nd LEX Series 12_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=12LEX1300Nd LEX Series 12" Neo Subwoofer 8 Ohm
 Manufacturer=
@@ -32928,7 +32928,7 @@ Dd=0.00264628
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 12MC500 MC Series 12_ Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 12MC500 MC Series 12_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=12MC500 MC Series 12" Subwoofer 8 Ohm
 Manufacturer=
@@ -32956,7 +32956,7 @@ Dd=0.00264628
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 12MC700Nd MC Series 12_ Neo Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 12MC700Nd MC Series 12_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=12MC700Nd MC Series 12" Neo Subwoofer 8 Ohm
 Manufacturer=
@@ -32984,7 +32984,7 @@ Dd=0.00264628
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 12MCB700 MCB Series 12_ Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 12MCB700 MCB Series 12_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=12MCB700 MCB Series 12" Subwoofer 8 Ohm
 Manufacturer=
@@ -33012,7 +33012,7 @@ Dd=0.00264628
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 12MCS500 MCS Series 12_ Midbass Driver 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 12MCS500 MCS Series 12_ Midbass Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=12MCS500 MCS Series 12" Midbass Driver 8 Ohm
 Manufacturer=
@@ -33040,7 +33040,7 @@ Dd=0.00264628
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 12MI100 MI100 Series 12_ Midrange Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 12MI100 MI100 Series 12_ Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=12MI100 MI100 Series 12" Midrange Speaker 8 Ohm
 Manufacturer=
@@ -33068,7 +33068,7 @@ Dd=0.00259772
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 12P80Fe_V2 P80 Series 12_ Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 12P80Fe_V2 P80 Series 12_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=12P80Fe/V2 P80 Series 12" Subwoofer 8 Ohm
 Manufacturer=
@@ -33096,7 +33096,7 @@ Dd=0.00264628
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 12P80Nd_V2 P80 Series 12_ Neo Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 12P80Nd_V2 P80 Series 12_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=12P80Nd/V2 P80 Series 12" Neo Subwoofer 8 Ohm
 Manufacturer=
@@ -33124,7 +33124,7 @@ Dd=0.00264628
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 12WR400 WR Series 12_ Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 12WR400 WR Series 12_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=12WR400 WR Series 12" Subwoofer 8 Ohm
 Manufacturer=
@@ -33152,7 +33152,7 @@ Dd=0.00259772
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 14MC700Nd 14_ Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 14MC700Nd 14_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=14MC700Nd 14" Subwoofer 8 Ohm
 Manufacturer=
@@ -33180,7 +33180,7 @@ Dd=0.00298541
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 15CMV2 15_ Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 15CMV2 15_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=15CMV2 15" Subwoofer 8 Ohm
 Manufacturer=
@@ -33208,7 +33208,7 @@ Dd=0.00334731
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 15LEX1000Fe LEX Series 15_  Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 15LEX1000Fe LEX Series 15_  Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=15LEX1000Fe LEX Series 15"  Subwoofer 8 Ohm
 Manufacturer=
@@ -33236,7 +33236,7 @@ Dd=0.00334731
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 15LEX1000Nd LEX Series 15_ Neo Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 15LEX1000Nd LEX Series 15_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=15LEX1000Nd LEX Series 15" Neo Subwoofer 8 Ohm
 Manufacturer=
@@ -33264,7 +33264,7 @@ Dd=0.00334731
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 15LEX1600Fe LEX Series 15_  Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 15LEX1600Fe LEX Series 15_  Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=15LEX1600Fe LEX Series 15"  Subwoofer 8 Ohm
 Manufacturer=
@@ -33292,7 +33292,7 @@ Dd=0.00334731
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 15LEX1600Nd LEX Series 15_ Neo Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 15LEX1600Nd LEX Series 15_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=15LEX1600Nd LEX Series 15" Neo Subwoofer 8 Ohm
 Manufacturer=
@@ -33320,7 +33320,7 @@ Dd=0.00334731
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 15MC500 MC Series 15_ Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 15MC500 MC Series 15_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=15MC500 MC Series 15" Subwoofer 8 Ohm
 Manufacturer=
@@ -33348,7 +33348,7 @@ Dd=0.00334731
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 15MC700Nd MC Series 15_ Neo Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 15MC700Nd MC Series 15_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=15MC700Nd MC Series 15" Neo Subwoofer 8 Ohm
 Manufacturer=
@@ -33376,7 +33376,7 @@ Dd=0.00334731
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 15MCB700 MCB Series 15_ Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 15MCB700 MCB Series 15_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=15MCB700 MCB Series 15" Subwoofer 8 Ohm
 Manufacturer=
@@ -33404,7 +33404,7 @@ Dd=0.00334731
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 15MCS500 MCS Series 15_ Midbass Driver 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 15MCS500 MCS Series 15_ Midbass Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=15MCS500 MCS Series 15" Midbass Driver 8 Ohm
 Manufacturer=
@@ -33432,7 +33432,7 @@ Dd=0.00334731
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 15P80Fe_N P80 Series 15_ Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 15P80Fe_N P80 Series 15_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=15P80Fe/N P80 Series 15" Subwoofer 8 Ohm
 Manufacturer=
@@ -33460,7 +33460,7 @@ Dd=0.00334731
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 15P80Nd P80 Series 15_ Neo Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 15P80Nd P80 Series 15_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=15P80Nd P80 Series 15" Neo Subwoofer 8 Ohm
 Manufacturer=
@@ -33488,7 +33488,7 @@ Dd=0.00334731
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 15QLEX1600Fe QLEX Series 15_ Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 15QLEX1600Fe QLEX Series 15_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=15QLEX1600Fe QLEX Series 15" Subwoofer 8 Ohm
 Manufacturer=
@@ -33516,7 +33516,7 @@ Dd=0.00334731
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 15WR400 WR Series 15_ Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 15WR400 WR Series 15_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=15WR400 WR Series 15" Subwoofer 8 Ohm
 Manufacturer=
@@ -33544,7 +33544,7 @@ Dd=0.00334731
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 18LEX1000Fe LEX Series 18_  Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 18LEX1000Fe LEX Series 18_  Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=18LEX1000Fe LEX Series 18"  Subwoofer 8 Ohm
 Manufacturer=
@@ -33572,7 +33572,7 @@ Dd=0.00399739
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 18LEX1000Nd LEX Series 18_ Neo Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 18LEX1000Nd LEX Series 18_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=18LEX1000Nd LEX Series 18" Neo Subwoofer 8 Ohm
 Manufacturer=
@@ -33600,7 +33600,7 @@ Dd=0.00399739
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 18LEX1200Fe LEX Series 18_  Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 18LEX1200Fe LEX Series 18_  Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=18LEX1200Fe LEX Series 18"  Subwoofer 8 Ohm
 Manufacturer=
@@ -33628,7 +33628,7 @@ Dd=0.399739
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 18LEX1200Nd LEX Series 18_ Neo Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 18LEX1200Nd LEX Series 18_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=18LEX1200Nd LEX Series 18" Neo Subwoofer 8 Ohm
 Manufacturer=
@@ -33656,7 +33656,7 @@ Dd=0.399739
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 18LEX1600Fe LEX Series 18_  Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 18LEX1600Fe LEX Series 18_  Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=18LEX1600Fe LEX Series 18"  Subwoofer 8 Ohm
 Manufacturer=
@@ -33684,7 +33684,7 @@ Dd=0.00399739
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 18LEX1600Nd LEX Series 18_ Neo Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 18LEX1600Nd LEX Series 18_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=18LEX1600Nd LEX Series 18" Neo Subwoofer 8 Ohm
 Manufacturer=
@@ -33712,7 +33712,7 @@ Dd=0.00399739
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 18QLEX1600Fe QLEX Series 18_ Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Beyma 18QLEX1600Fe QLEX Series 18_ Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=18QLEX1600Fe QLEX Series 18" Subwoofer 4 Ohm
 Manufacturer=
@@ -33740,7 +33740,7 @@ Dd=0.00399739
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 18QLEX1600Fe QLEX Series 18_ Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 18QLEX1600Fe QLEX Series 18_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=18QLEX1600Fe QLEX Series 18" Subwoofer 8 Ohm
 Manufacturer=
@@ -33768,7 +33768,7 @@ Dd=0.00399739
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 21LEX1600Nd LEX Series 21_ Neo Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 21LEX1600Nd LEX Series 21_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=21LEX1600Nd LEX Series 21" Neo Subwoofer 8 Ohm
 Manufacturer=
@@ -33796,7 +33796,7 @@ Dd=0.00469872
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 21QLEX1600Fe QLEX Series 21_ Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 21QLEX1600Fe QLEX Series 21_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=21QLEX1600Fe QLEX Series 21" Subwoofer 8 Ohm
 Manufacturer=
@@ -33824,7 +33824,7 @@ Dd=0.00469872
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 3FR30V2 3_ Full-Range Loudspeaker 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 3FR30V2 3_ Full-Range Loudspeaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=3FR30V2 3" Full-Range Loudspeaker 8 Ohm
 Manufacturer=
@@ -33852,7 +33852,7 @@ Dd=0.000618039
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 4FR40 4_ Full-Range Loudspeaker 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 4FR40 4_ Full-Range Loudspeaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=4FR40 4" Full-Range Loudspeaker 8 Ohm
 Manufacturer=
@@ -33880,7 +33880,7 @@ Dd=0.000836828
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 5G40Nd_N G40 Series 5_ Midbass Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 5G40Nd_N G40 Series 5_ Midbass Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=5G40Nd/N G40 Series 5" Midbass Speaker 8 Ohm
 Manufacturer=
@@ -33908,7 +33908,7 @@ Dd=0.00104031
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 5P200Fe P200 Series 5_ Midbass Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 5P200Fe P200 Series 5_ Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=5P200Fe P200 Series 5" Midbass Woofer 8 Ohm
 Manufacturer=
@@ -33936,7 +33936,7 @@ Dd=0.00109981
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 5P200Nd P200 Series 5_ Midbass Neo Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 5P200Nd P200 Series 5_ Midbass Neo Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=5P200Nd P200 Series 5" Midbass Neo Woofer 8 Ohm
 Manufacturer=
@@ -33964,7 +33964,7 @@ Dd=0.00109981
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 6CMV2 6.5_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 6CMV2 6.5_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=6CMV2 6.5" Woofer 8 Ohm
 Manufacturer=
@@ -33992,7 +33992,7 @@ Dd=0.00133512
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 6G40Nd G40 Series 6.5_ Midbass Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 6G40Nd G40 Series 6.5_ Midbass Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=6G40Nd G40 Series 6.5" Midbass Speaker 8 Ohm
 Manufacturer=
@@ -34020,7 +34020,7 @@ Dd=0.00133512
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 6MCF200Nd 6.5_ Midbass Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 6MCF200Nd 6.5_ Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=6MCF200Nd 6.5" Midbass Woofer 8 Ohm
 Manufacturer=
@@ -34048,7 +34048,7 @@ Dd=0.00133512
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 6MI100 MI100 Series 6.5_ Midrange 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 6MI100 MI100 Series 6.5_ Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=6MI100 MI100 Series 6.5" Midrange 8 Ohm
 Manufacturer=
@@ -34076,7 +34076,7 @@ Dd=0.00133512
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 6NMFW NMF Series 6.5_ Carbon Fiber Cone Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 6NMFW NMF Series 6.5_ Carbon Fiber Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=6NMFW NMF Series 6.5" Carbon Fiber Cone Woofer 8 Ohm
 Manufacturer=
@@ -34104,7 +34104,7 @@ Dd=0.00140028
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 6P200Fe P200 Series 6.5_ Midbass Woofer 16 Ohm`,content:`[Driver]
+`},{name:`Beyma 6P200Fe P200 Series 6.5_ Midbass Woofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=6P200Fe P200 Series 6.5" Midbass Woofer 16 Ohm
 Manufacturer=
@@ -34132,7 +34132,7 @@ Dd=0.00131106
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 6P200Fe P200 Series 6.5_ Midbass Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 6P200Fe P200 Series 6.5_ Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=6P200Fe P200 Series 6.5" Midbass Woofer 8 Ohm
 Manufacturer=
@@ -34160,7 +34160,7 @@ Dd=0.00131106
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 6P200Nd P200 Series 6.5_ Midbass Neo Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 6P200Nd P200 Series 6.5_ Midbass Neo Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=6P200Nd P200 Series 6.5" Midbass Neo Woofer 8 Ohm
 Manufacturer=
@@ -34188,7 +34188,7 @@ Dd=0.00131106
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 8CFX260Nd 8_ Coaxial Neo Loudspeaker 8+8 Ohm`,content:`[Driver]
+`},{name:`Beyma 8CFX260Nd 8_ Coaxial Neo Loudspeaker 8+8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=8CFX260Nd 8" Coaxial Neo Loudspeaker 8+8 Ohm
 Manufacturer=
@@ -34216,7 +34216,7 @@ Dd=0.00167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 8CMV2 8_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 8CMV2 8_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=8CMV2 8" Woofer 8 Ohm
 Manufacturer=
@@ -34244,7 +34244,7 @@ Dd=0.00167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 8CX300Fe 8_ Coaxial Loudspeaker 8+16 Ohm`,content:`[Driver]
+`},{name:`Beyma 8CX300Fe 8_ Coaxial Loudspeaker 8+16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=8CX300Fe 8" Coaxial Loudspeaker 8+16 Ohm
 Manufacturer=
@@ -34272,7 +34272,7 @@ Dd=0.00167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 8CX300Nd_N 8_ Coaxial Neo Loudspeaker 8+8 Ohm`,content:`[Driver]
+`},{name:`Beyma 8CX300Nd_N 8_ Coaxial Neo Loudspeaker 8+8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=8CX300Nd/N 8" Coaxial Neo Loudspeaker 8+8 Ohm
 Manufacturer=
@@ -34300,7 +34300,7 @@ Dd=0.00167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 8G40 G40 Series 8_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 8G40 G40 Series 8_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=8G40 G40 Series 8" Woofer 8 Ohm
 Manufacturer=
@@ -34328,7 +34328,7 @@ Dd=0.00167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 8MC300Nd MC Series 8_ Neo Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 8MC300Nd MC Series 8_ Neo Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=8MC300Nd MC Series 8" Neo Woofer 8 Ohm
 Manufacturer=
@@ -34356,7 +34356,7 @@ Dd=0.00167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 8MC500Nd MC Series 8_ Neo Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 8MC500Nd MC Series 8_ Neo Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=8MC500Nd MC Series 8" Neo Woofer 8 Ohm
 Manufacturer=
@@ -34384,7 +34384,7 @@ Dd=0.00167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 8MI100 MI100 Series 8_ Midrange 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 8MI100 MI100 Series 8_ Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=8MI100 MI100 Series 8" Midrange 8 Ohm
 Manufacturer=
@@ -34412,7 +34412,7 @@ Dd=0.00167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 8NMFW NMF Series 8_ Carbon Fiber Cone Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 8NMFW NMF Series 8_ Carbon Fiber Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=8NMFW NMF Series 8" Carbon Fiber Cone Woofer 8 Ohm
 Manufacturer=
@@ -34440,7 +34440,7 @@ Dd=0.00170007
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma 8P300Fe_N P200 Series 8_ Midbass Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Beyma 8P300Fe_N P200 Series 8_ Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=8P300Fe/N P200 Series 8" Midbass Woofer 8 Ohm
 Manufacturer=
@@ -34468,7 +34468,7 @@ Dd=0.00167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma T25M NMF Series 1_ Aluminum Dome Tweeter`,content:`[Driver]
+`},{name:`Beyma T25M NMF Series 1_ Aluminum Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=T25M NMF Series 1" Aluminum Dome Tweeter
 Manufacturer=
@@ -34496,7 +34496,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Beyma T25S NMF Series 1_ Fabric Dome Tweeter`,content:`[Driver]
+`},{name:`Beyma T25S NMF Series 1_ Fabric Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
 Model=T25S NMF Series 1" Fabric Dome Tweeter
 Manufacturer=
@@ -34524,7 +34524,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`CSS LD25X 25mm Silk Dome XBL2 Tweeter`,content:`[Driver]
+`},{name:`CSS LD25X 25mm Silk Dome XBL2 Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=CSS
 Model=LD25X 25mm Silk Dome XBL2 Tweeter
 Manufacturer=
@@ -34552,7 +34552,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`CSS LDW7 7_ Midwoofer`,content:`[Driver]
+`},{name:`CSS LDW7 7_ Midwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=CSS
 Model=LDW7 7" Midwoofer
 Manufacturer=
@@ -34580,7 +34580,7 @@ Dd=0.129149
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`CSS LDW7`,content:`[Driver]
+`},{name:`CSS LDW7`,date:``,content:`[Driver]
 Brand=CSS
 Model=LDW7
 Manufacturer=
@@ -34608,7 +34608,7 @@ Dd=0.129148898702353
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`CSS SDX12 XBL2 12_ Subwoofer`,content:`[Driver]
+`},{name:`CSS SDX12 XBL2 12_ Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=CSS
 Model=SDX12 XBL2 12" Subwoofer
 Manufacturer=
@@ -34636,7 +34636,7 @@ Dd=0.250032
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion AN2075 2_ Full-Range Compact Array Driver`,content:`[Driver]
+`},{name:`Celestion AN2075 2_ Full-Range Compact Array Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=AN2075 2" Full-Range Compact Array Driver
 Manufacturer=
@@ -34664,7 +34664,7 @@ Dd=0.0398783
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion AN2775 2-3_4_ Full-Range Compact Array Driver`,content:`[Driver]
+`},{name:`Celestion AN2775 2-3_4_ Full-Range Compact Array Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=AN2775 2-3/4" Full-Range Compact Array Driver
 Manufacturer=
@@ -34692,7 +34692,7 @@ Dd=0.0599423
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion AN3510 3_ Full-Range Compact Array Driver`,content:`[Driver]
+`},{name:`Celestion AN3510 3_ Full-Range Compact Array Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=AN3510 3" Full-Range Compact Array Driver
 Manufacturer=
@@ -34720,7 +34720,7 @@ Dd=0.0699959
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion CF0820BMB 8_ Extended Excursion Midbass Driver 8 Ohm`,content:`[Driver]
+`},{name:`Celestion CF0820BMB 8_ Extended Excursion Midbass Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=CF0820BMB 8" Extended Excursion Midbass Driver 8 Ohm
 Manufacturer=
@@ -34748,7 +34748,7 @@ Dd=0.17
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion CF0820M 8_ Professional Midrange Driver 8 Ohm`,content:`[Driver]
+`},{name:`Celestion CF0820M 8_ Professional Midrange Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=CF0820M 8" Professional Midrange Driver 8 Ohm
 Manufacturer=
@@ -34776,7 +34776,7 @@ Dd=0.17
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion CF1025BMB 10_ Extended Excursion Midbass Driver 8 Ohm`,content:`[Driver]
+`},{name:`Celestion CF1025BMB 10_ Extended Excursion Midbass Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=CF1025BMB 10" Extended Excursion Midbass Driver 8 Ohm
 Manufacturer=
@@ -34804,7 +34804,7 @@ Dd=0.21
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion CF1230BMB 12_ Extended Excursion Midbass Driver 8 Ohm`,content:`[Driver]
+`},{name:`Celestion CF1230BMB 12_ Extended Excursion Midbass Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=CF1230BMB 12" Extended Excursion Midbass Driver 8 Ohm
 Manufacturer=
@@ -34832,7 +34832,7 @@ Dd=0.26
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion CF1840JD 18_ 1200 Watt Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Celestion CF1840JD 18_ 1200 Watt Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=CF1840JD 18" 1200 Watt Professional Woofer 8 Ohm
 Manufacturer=
@@ -34860,7 +34860,7 @@ Dd=0.379981
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion FTR12-3070C 12_ Professional Cast Frame Speaker 350W`,content:`[Driver]
+`},{name:`Celestion FTR12-3070C 12_ Professional Cast Frame Speaker 350W`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=FTR12-3070C 12" Professional Cast Frame Speaker 350W
 Manufacturer=
@@ -34888,7 +34888,7 @@ Dd=0.260091
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion FTR12-4080DL 12_ Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Celestion FTR12-4080DL 12_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=FTR12-4080DL 12" Subwoofer 8 Ohm
 Manufacturer=
@@ -34916,7 +34916,7 @@ Dd=0.26
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion FTR18-4080FD 18_ Professional Cast Frame Speaker 1,000W`,content:`[Driver]
+`},{name:`Celestion FTR18-4080FD 18_ Professional Cast Frame Speaker 1,000W`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=FTR18-4080FD 18" Professional Cast Frame Speaker 1,000W
 Manufacturer=
@@ -34944,7 +34944,7 @@ Dd=0.380001
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion FTX0820 8_ Coaxial Full-Range Professional Driver`,content:`[Driver]
+`},{name:`Celestion FTX0820 8_ Coaxial Full-Range Professional Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=FTX0820 8" Coaxial Full-Range Professional Driver
 Manufacturer=
@@ -34972,7 +34972,7 @@ Dd=0.170045
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion FTX1025 10_ Coaxial Full-Range Professional Driver`,content:`[Driver]
+`},{name:`Celestion FTX1025 10_ Coaxial Full-Range Professional Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=FTX1025 10" Coaxial Full-Range Professional Driver
 Manufacturer=
@@ -35000,7 +35000,7 @@ Dd=0.21
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion FTX1225 12_ Coaxial Full-Range Professional Driver`,content:`[Driver]
+`},{name:`Celestion FTX1225 12_ Coaxial Full-Range Professional Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=FTX1225 12" Coaxial Full-Range Professional Driver
 Manufacturer=
@@ -35028,7 +35028,7 @@ Dd=0.146733
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion K12H-200TC 12_ 200 Watt Full-Range Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Celestion K12H-200TC 12_ 200 Watt Full-Range Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=K12H-200TC 12" 200 Watt Full-Range Professional Woofer 8 Ohm
 Manufacturer=
@@ -35056,7 +35056,7 @@ Dd=0.259846
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion Midnight 60 12_ 60W Guitar Speaker 16 Ohm`,content:`[Driver]
+`},{name:`Celestion Midnight 60 12_ 60W Guitar Speaker 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=Midnight 60 12" 60W Guitar Speaker 16 Ohm
 Manufacturer=
@@ -35084,7 +35084,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion Midnight 60 12_ 60W Guitar Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Celestion Midnight 60 12_ 60W Guitar Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=Midnight 60 12" 60W Guitar Speaker 8 Ohm
 Manufacturer=
@@ -35112,7 +35112,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion Neo V-Type 12_ Guitar Speaker 70W 16 Ohm`,content:`[Driver]
+`},{name:`Celestion Neo V-Type 12_ Guitar Speaker 70W 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=Neo V-Type 12" Guitar Speaker 70W 16 Ohm
 Manufacturer=
@@ -35140,7 +35140,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion PULSE XL 10.20 10_ 200 Watt Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Celestion PULSE XL 10.20 10_ 200 Watt Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=PULSE XL 10.20 10" 200 Watt Professional Woofer 8 Ohm
 Manufacturer=
@@ -35168,7 +35168,7 @@ Dd=0.210012
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion PULSE XL 12.20 12_ 500 Watt Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Celestion PULSE XL 12.20 12_ 500 Watt Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=PULSE XL 12.20 12" 500 Watt Professional Woofer 8 Ohm
 Manufacturer=
@@ -35196,7 +35196,7 @@ Dd=0.259993
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion PULSE XL 15.25 15_ 700 Watt Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Celestion PULSE XL 15.25 15_ 700 Watt Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=PULSE XL 15.25 15" 700 Watt Professional Woofer 8 Ohm
 Manufacturer=
@@ -35224,7 +35224,7 @@ Dd=0.33
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion PowerProX18 18_ Professional Subwoofer`,content:`[Driver]
+`},{name:`Celestion PowerProX18 18_ Professional Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=PowerProX18 18" Professional Subwoofer
 Manufacturer=
@@ -35252,7 +35252,7 @@ Dd=0.154551
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion TF0510 5_ Professional Midrange Speaker 30W`,content:`[Driver]
+`},{name:`Celestion TF0510 5_ Professional Midrange Speaker 30W`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=TF0510 5" Professional Midrange Speaker 30W
 Manufacturer=
@@ -35280,7 +35280,7 @@ Dd=0.100076
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion TF0615 6_ 100 Watt Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Celestion TF0615 6_ 100 Watt Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=TF0615 6" 100 Watt Professional Woofer 8 Ohm
 Manufacturer=
@@ -35308,7 +35308,7 @@ Dd=0.139937
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion TF0615MR 6_ Professional Midrange Speaker 50W`,content:`[Driver]
+`},{name:`Celestion TF0615MR 6_ Professional Midrange Speaker 50W`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=TF0615MR 6" Professional Midrange Speaker 50W
 Manufacturer=
@@ -35336,7 +35336,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion TF0818 8_ Professional Speaker 150W`,content:`[Driver]
+`},{name:`Celestion TF0818 8_ Professional Speaker 150W`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=TF0818 8" Professional Speaker 150W
 Manufacturer=
@@ -35364,7 +35364,7 @@ Dd=0.169933
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion TF1020 10_ Professional Speaker 150W`,content:`[Driver]
+`},{name:`Celestion TF1020 10_ Professional Speaker 150W`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=TF1020 10" Professional Speaker 150W
 Manufacturer=
@@ -35392,7 +35392,7 @@ Dd=0.210073
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion TF1220 12_ Professional Speaker 150W`,content:`[Driver]
+`},{name:`Celestion TF1220 12_ Professional Speaker 150W`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=TF1220 12" Professional Speaker 150W
 Manufacturer=
@@ -35420,7 +35420,7 @@ Dd=0.260091
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion TF1225 12_ Professional Speaker 250W`,content:`[Driver]
+`},{name:`Celestion TF1225 12_ Professional Speaker 250W`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=TF1225 12" Professional Speaker 250W
 Manufacturer=
@@ -35448,7 +35448,7 @@ Dd=0.260091
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion TF1225e 12_ Professional Speaker 300W`,content:`[Driver]
+`},{name:`Celestion TF1225e 12_ Professional Speaker 300W`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=TF1225e 12" Professional Speaker 300W
 Manufacturer=
@@ -35476,7 +35476,7 @@ Dd=0.260091
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion TF1525e 15_ Professional Speaker 300W`,content:`[Driver]
+`},{name:`Celestion TF1525e 15_ Professional Speaker 300W`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=TF1525e 15" Professional Speaker 300W
 Manufacturer=
@@ -35504,7 +35504,7 @@ Dd=0.329942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion TF1530 15_ Professional Speaker 400W`,content:`[Driver]
+`},{name:`Celestion TF1530 15_ Professional Speaker 400W`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=TF1530 15" Professional Speaker 400W
 Manufacturer=
@@ -35532,7 +35532,7 @@ Dd=0.329942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion TFX0515 5_ Coaxial Full-Range Professional Driver`,content:`[Driver]
+`},{name:`Celestion TFX0515 5_ Coaxial Full-Range Professional Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=TFX0515 5" Coaxial Full-Range Professional Driver
 Manufacturer=
@@ -35560,7 +35560,7 @@ Dd=0.1
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion TN1230 12_ Professional Neodymium Woofer 350W`,content:`[Driver]
+`},{name:`Celestion TN1230 12_ Professional Neodymium Woofer 350W`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=TN1230 12" Professional Neodymium Woofer 350W
 Manufacturer=
@@ -35588,7 +35588,7 @@ Dd=0.26
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion TSQ1845 Ten Squared Series 18_ Neodymium Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Celestion TSQ1845 Ten Squared Series 18_ Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=TSQ1845 Ten Squared Series 18" Neodymium Subwoofer 8 Ohm
 Manufacturer=
@@ -35616,7 +35616,7 @@ Dd=0.379981
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion TSQ2145 Ten Squared Series 21_ Neodymium Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Celestion TSQ2145 Ten Squared Series 21_ Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=TSQ2145 Ten Squared Series 21" Neodymium Subwoofer 8 Ohm
 Manufacturer=
@@ -35644,7 +35644,7 @@ Dd=0.46
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion TSQ2460 Ten Squared Series 24_ Neodymium Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Celestion TSQ2460 Ten Squared Series 24_ Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=TSQ2460 Ten Squared Series 24" Neodymium Subwoofer 8 Ohm
 Manufacturer=
@@ -35672,7 +35672,7 @@ Dd=0.533927
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion Truvox 0615 6.5_ Midbass Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Celestion Truvox 0615 6.5_ Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=Truvox 0615 6.5" Midbass Woofer 8 Ohm
 Manufacturer=
@@ -35700,7 +35700,7 @@ Dd=0.140273
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion Truvox 0820 8_ Midbass Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Celestion Truvox 0820 8_ Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=Truvox 0820 8" Midbass Woofer 8 Ohm
 Manufacturer=
@@ -35728,7 +35728,7 @@ Dd=0.17
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion Truvox 1225 12_ Midbass Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Celestion Truvox 1225 12_ Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=Truvox 1225 12" Midbass Woofer 8 Ohm
 Manufacturer=
@@ -35756,7 +35756,7 @@ Dd=0.26
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Celestion Truvox 1525 15_ Midbass Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Celestion Truvox 1525 15_ Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
 Model=Truvox 1525 15" Midbass Woofer 8 Ohm
 Manufacturer=
@@ -35784,7 +35784,7 @@ Dd=0.33
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare 10A500W-4 Americano Series 10_ Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Ciare 10A500W-4 Americano Series 10_ Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=10A500W-4 Americano Series 10" Woofer 4 Ohm
 Manufacturer=
@@ -35812,7 +35812,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare 10A500W-8 Americano Series 10_ Woofer 8 OhmCiare 10A500W-8 Americano Series 10_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Ciare 10A500W-8 Americano Series 10_ Woofer 8 OhmCiare 10A500W-8 Americano Series 10_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=10A500W-8 Americano Series 10" Woofer 8 OhmCiare 10A500W-8 Americano Series 10" Woofer 8 Ohm
 Manufacturer=
@@ -35840,7 +35840,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare 12.00SW-4 12_ High Power Subwoofer`,content:`[Driver]
+`},{name:`Ciare 12.00SW-4 12_ High Power Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=12.00SW-4 12" High Power Subwoofer
 Manufacturer=
@@ -35868,7 +35868,7 @@ Dd=0.258051
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare 12.00SW-8 12_ High Power Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Ciare 12.00SW-8 12_ High Power Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=12.00SW-8 12" High Power Subwoofer 8 Ohm
 Manufacturer=
@@ -35896,7 +35896,7 @@ Dd=0.258051
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare 12A500W-4 Americano Series 12_ Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Ciare 12A500W-4 Americano Series 12_ Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=12A500W-4 Americano Series 12" Woofer 4 Ohm
 Manufacturer=
@@ -35924,7 +35924,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare 12A500W-8 Americano Series 12_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Ciare 12A500W-8 Americano Series 12_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=12A500W-8 Americano Series 12" Woofer 8 Ohm
 Manufacturer=
@@ -35952,7 +35952,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare 15.00SW-8 15_ High Power Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Ciare 15.00SW-8 15_ High Power Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=15.00SW-8 15" High Power Subwoofer 8 Ohm
 Manufacturer=
@@ -35980,7 +35980,7 @@ Dd=0.315139
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare 18.00SW-8 18_ High Power Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Ciare 18.00SW-8 18_ High Power Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=18.00SW-8 18" High Power Subwoofer 8 Ohm
 Manufacturer=
@@ -36008,7 +36008,7 @@ Dd=0.379981
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare 6A200M-4 Americano Series 6.5_ Midrange 4 Ohm`,content:`[Driver]
+`},{name:`Ciare 6A200M-4 Americano Series 6.5_ Midrange 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=6A200M-4 Americano Series 6.5" Midrange 4 Ohm
 Manufacturer=
@@ -36036,7 +36036,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare 6A200M-8 Americano Series 6.5_ Midrange 8 Ohm`,content:`[Driver]
+`},{name:`Ciare 6A200M-8 Americano Series 6.5_ Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=6A200M-8 Americano Series 6.5" Midrange 8 Ohm
 Manufacturer=
@@ -36064,7 +36064,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare 6A200MS-4 Americano Series 6.5_ Sealed-Back Midrange 4 Ohm`,content:`[Driver]
+`},{name:`Ciare 6A200MS-4 Americano Series 6.5_ Sealed-Back Midrange 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=6A200MS-4 Americano Series 6.5" Sealed-Back Midrange 4 Ohm
 Manufacturer=
@@ -36092,7 +36092,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare 6A200MS-8 Americano Series 6.5_ Sealed-Back Midrange 8 Ohm`,content:`[Driver]
+`},{name:`Ciare 6A200MS-8 Americano Series 6.5_ Sealed-Back Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=6A200MS-8 Americano Series 6.5" Sealed-Back Midrange 8 Ohm
 Manufacturer=
@@ -36120,7 +36120,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare 8A250M-4 Americano Series 8_ Midrange 4 Ohm`,content:`[Driver]
+`},{name:`Ciare 8A250M-4 Americano Series 8_ Midrange 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=8A250M-4 Americano Series 8" Midrange 4 Ohm
 Manufacturer=
@@ -36148,7 +36148,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare 8A250M-8 Americano Series 8_ Midrange 8 Ohm`,content:`[Driver]
+`},{name:`Ciare 8A250M-8 Americano Series 8_ Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=8A250M-8 Americano Series 8" Midrange 8 Ohm
 Manufacturer=
@@ -36176,7 +36176,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare 8A250MS-4 Americano Series 8_ Sealed-Back Midrange 4 Ohm`,content:`[Driver]
+`},{name:`Ciare 8A250MS-4 Americano Series 8_ Sealed-Back Midrange 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=8A250MS-4 Americano Series 8" Sealed-Back Midrange 4 Ohm
 Manufacturer=
@@ -36204,7 +36204,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare 8A250MS-8 Americano Series 8_ Sealed-Back Midrange 8 Ohm`,content:`[Driver]
+`},{name:`Ciare 8A250MS-8 Americano Series 8_ Sealed-Back Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=8A250MS-8 Americano Series 8" Sealed-Back Midrange 8 Ohm
 Manufacturer=
@@ -36232,7 +36232,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare CM100 4_ Midrange 4 Ohm`,content:`[Driver]
+`},{name:`Ciare CM100 4_ Midrange 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=CM100 4" Midrange 4 Ohm
 Manufacturer=
@@ -36260,7 +36260,7 @@ Dd=0.0781764
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare CME160 6.5_ Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Ciare CME160 6.5_ Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=CME160 6.5" Woofer 4 Ohm
 Manufacturer=
@@ -36288,7 +36288,7 @@ Dd=0.132073
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare CME200 8_ Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Ciare CME200 8_ Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=CME200 8" Woofer 4 Ohm
 Manufacturer=
@@ -36316,7 +36316,7 @@ Dd=0.161953
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare CME250 10_ Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Ciare CME250 10_ Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=CME250 10" Woofer 4 Ohm
 Manufacturer=
@@ -36344,7 +36344,7 @@ Dd=0.219962
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare CMI160ND 6.5_ Neodymium Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Ciare CMI160ND 6.5_ Neodymium Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=CMI160ND 6.5" Neodymium Woofer 4 Ohm
 Manufacturer=
@@ -36372,7 +36372,7 @@ Dd=0.132073
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare CMI320ND 12_ Neodymium Midbass 4 Ohm`,content:`[Driver]
+`},{name:`Ciare CMI320ND 12_ Neodymium Midbass 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=CMI320ND 12" Neodymium Midbass 4 Ohm
 Manufacturer=
@@ -36400,7 +36400,7 @@ Dd=0.263906
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare CMR160 6.5_ Full-Range Driver 4 Ohm`,content:`[Driver]
+`},{name:`Ciare CMR160 6.5_ Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=CMR160 6.5" Full-Range Driver 4 Ohm
 Manufacturer=
@@ -36428,7 +36428,7 @@ Dd=0.131106
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare CMR200 8_ Full-Range Driver 4 Ohm`,content:`[Driver]
+`},{name:`Ciare CMR200 8_ Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=CMR200 8" Full-Range Driver 4 Ohm
 Manufacturer=
@@ -36456,7 +36456,7 @@ Dd=0.165837
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare CSD124-22 12_ High Power Subwoofer Dual 2 Ohm`,content:`[Driver]
+`},{name:`Ciare CSD124-22 12_ High Power Subwoofer Dual 2 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=CSD124-22 12" High Power Subwoofer Dual 2 Ohm
 Manufacturer=
@@ -36484,7 +36484,7 @@ Dd=0.250032
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare CSD154-22 15_ High Power Subwoofer Dual 2 Ohm`,content:`[Driver]
+`},{name:`Ciare CSD154-22 15_ High Power Subwoofer Dual 2 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=CSD154-22 15" High Power Subwoofer Dual 2 Ohm
 Manufacturer=
@@ -36512,7 +36512,7 @@ Dd=0.309019
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare CSD184-22 18_ High Power Subwoofer Dual 2 Ohm`,content:`[Driver]
+`},{name:`Ciare CSD184-22 18_ High Power Subwoofer Dual 2 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=CSD184-22 18" High Power Subwoofer Dual 2 Ohm
 Manufacturer=
@@ -36540,7 +36540,7 @@ Dd=0.374921
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare CT250 1_ Neodymium Dome Tweeter Pair`,content:`[Driver]
+`},{name:`Ciare CT250 1_ Neodymium Dome Tweeter Pair`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=CT250 1" Neodymium Dome Tweeter Pair
 Manufacturer=
@@ -36568,7 +36568,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare CT440 1.25_ Neodymium Horn Tweeter`,content:`[Driver]
+`},{name:`Ciare CT440 1.25_ Neodymium Horn Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=CT440 1.25" Neodymium Horn Tweeter
 Manufacturer=
@@ -36596,7 +36596,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare CW261SPL 10_ High-Output Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Ciare CW261SPL 10_ High-Output Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=CW261SPL 10" High-Output Woofer 8 Ohm
 Manufacturer=
@@ -36624,7 +36624,7 @@ Dd=0.212902
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare CXPA-4 4_ Neodymium Coaxial Driver`,content:`[Driver]
+`},{name:`Ciare CXPA-4 4_ Neodymium Coaxial Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=CXPA-4 4" Neodymium Coaxial Driver
 Manufacturer=
@@ -36652,7 +36652,7 @@ Dd=0.081
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare HM500 2_ Dome Midrange 8 Ohm`,content:`[Driver]
+`},{name:`Ciare HM500 2_ Dome Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=HM500 2" Dome Midrange 8 Ohm
 Manufacturer=
@@ -36680,7 +36680,7 @@ Dd=0.0575363
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare HSG200-4 8_ Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Ciare HSG200-4 8_ Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=HSG200-4 8" Subwoofer 4 Ohm
 Manufacturer=
@@ -36708,7 +36708,7 @@ Dd=0.166985
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare HT200 3_4_ Dome Tweeter 8 Ohm`,content:`[Driver]
+`},{name:`Ciare HT200 3_4_ Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=HT200 3/4" Dome Tweeter 8 Ohm
 Manufacturer=
@@ -36736,7 +36736,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare HW210 8_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Ciare HW210 8_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=HW210 8" Woofer 8 Ohm
 Manufacturer=
@@ -36764,7 +36764,7 @@ Dd=0.168125
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare HW251N 10_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Ciare HW251N 10_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=HW251N 10" Woofer 8 Ohm
 Manufacturer=
@@ -36792,7 +36792,7 @@ Dd=0.209891
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare HWG130 5_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Ciare HWG130 5_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=HWG130 5" Woofer 8 Ohm
 Manufacturer=
@@ -36820,7 +36820,7 @@ Dd=0.105248
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare HWG160-4 6.5_ Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Ciare HWG160-4 6.5_ Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=HWG160-4 6.5" Woofer 4 Ohm
 Manufacturer=
@@ -36848,7 +36848,7 @@ Dd=0.133988
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare PCXPA-6 6.5_ Neodymium Coaxial Driver`,content:`[Driver]
+`},{name:`Ciare PCXPA-6 6.5_ Neodymium Coaxial Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=PCXPA-6 6.5" Neodymium Coaxial Driver
 Manufacturer=
@@ -36876,7 +36876,7 @@ Dd=0.131009
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare PWA10.50 10_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Ciare PWA10.50 10_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=PWA10.50 10" Woofer 8 Ohm
 Manufacturer=
@@ -36904,7 +36904,7 @@ Dd=0.210012
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare PWA10.64 10_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Ciare PWA10.64 10_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=PWA10.64 10" Woofer 8 Ohm
 Manufacturer=
@@ -36932,7 +36932,7 @@ Dd=0.210012
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare PWA12.64 12_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Ciare PWA12.64 12_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=PWA12.64 12" Woofer 8 Ohm
 Manufacturer=
@@ -36960,7 +36960,7 @@ Dd=0.260017
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare PWA12.75 12_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Ciare PWA12.75 12_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=PWA12.75 12" Woofer 8 Ohm
 Manufacturer=
@@ -36988,7 +36988,7 @@ Dd=0.260017
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare PWA15.75 15_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Ciare PWA15.75 15_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=PWA15.75 15" Woofer 8 Ohm
 Manufacturer=
@@ -37016,7 +37016,7 @@ Dd=0.334921
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare PWA5.38 5_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Ciare PWA5.38 5_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=PWA5.38 5" Woofer 8 Ohm
 Manufacturer=
@@ -37044,7 +37044,7 @@ Dd=0.109981
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare PWA6.38 6_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Ciare PWA6.38 6_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=PWA6.38 6" Woofer 8 Ohm
 Manufacturer=
@@ -37072,7 +37072,7 @@ Dd=0.129984
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Ciare PWA8.50 8_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Ciare PWA8.50 8_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
 Model=PWA8.50 8" Woofer 8 Ohm
 Manufacturer=
@@ -37100,7 +37100,7 @@ Dd=0.170007
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`DS18 PRO-M6.2NEO 6-1_2_ Professional Water Resistant Neodymium Full-Range Speaker 2 Ohm`,content:`[Driver]
+`},{name:`DS18 PRO-M6.2NEO 6-1_2_ Professional Water Resistant Neodymium Full-Range Speaker 2 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=DS18
 Model=PRO-M6.2NEO 6-1/2" Professional Water Resistant Neodymium Full-Range Speaker 2 Ohm
 Manufacturer=
@@ -37128,7 +37128,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`DS18 PRO-M8.2NEO 8_ Professional Water Resistant Neodymium Full-Range Speaker 2 Ohm`,content:`[Driver]
+`},{name:`DS18 PRO-M8.2NEO 8_ Professional Water Resistant Neodymium Full-Range Speaker 2 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=DS18
 Model=PRO-M8.2NEO 8" Professional Water Resistant Neodymium Full-Range Speaker 2 Ohm
 Manufacturer=
@@ -37156,7 +37156,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`DS18 PRO-SM8.2 8_ Professional Water Resistant Slim Midrange Speaker 2 Ohm`,content:`[Driver]
+`},{name:`DS18 PRO-SM8.2 8_ Professional Water Resistant Slim Midrange Speaker 2 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=DS18
 Model=PRO-SM8.2 8" Professional Water Resistant Slim Midrange Speaker 2 Ohm
 Manufacturer=
@@ -37184,7 +37184,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio AMT2-4 Air Motion Transformer Tweeter 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio AMT2-4 Air Motion Transformer Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=AMT2-4 Air Motion Transformer Tweeter 4 Ohm
 Manufacturer=
@@ -37212,7 +37212,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio AMT3-4 Hi-Res Air Motion Transformer Tweeter 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio AMT3-4 Hi-Res Air Motion Transformer Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=AMT3-4 Hi-Res Air Motion Transformer Tweeter 4 Ohm
 Manufacturer=
@@ -37240,7 +37240,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio AMTPRO-4 Air Motion Transformer Tweeter 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio AMTPRO-4 Air Motion Transformer Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=AMTPRO-4 Air Motion Transformer Tweeter 4 Ohm
 Manufacturer=
@@ -37268,7 +37268,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio CE Series CE140-30S-8 1_ x 5_ Extended Range Speaker Driver 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio CE Series CE140-30S-8 1_ x 5_ Extended Range Speaker Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=CE Series CE140-30S-8 1" x 5" Extended Range Speaker Driver 8 Ohm
 Manufacturer=
@@ -37296,7 +37296,7 @@ Dd=0.0565317
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio CE Series CE28MB-8 1.1_ Polyimide Full-Range Speaker Driver 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio CE Series CE28MB-8 1.1_ Polyimide Full-Range Speaker Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=CE Series CE28MB-8 1.1" Polyimide Full-Range Speaker Driver 8 Ohm
 Manufacturer=
@@ -37324,7 +37324,7 @@ Dd=0.0239897
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio CE Series CE30MB-16B 1-1_4_ Mini Speaker Driver Black 16 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio CE Series CE30MB-16B 1-1_4_ Mini Speaker Driver Black 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=CE Series CE30MB-16B 1-1/4" Mini Speaker Driver Black 16 Ohm
 Manufacturer=
@@ -37352,7 +37352,7 @@ Dd=0.0198672
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio CE Series CE30P-4 1-1_4_ Mini Speaker Driver 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio CE Series CE30P-4 1-1_4_ Mini Speaker Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=CE Series CE30P-4 1-1/4" Mini Speaker Driver 4 Ohm
 Manufacturer=
@@ -37380,7 +37380,7 @@ Dd=0.0228479
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio CE Series CE32A-4 1-1_4_ Mini Speaker Driver 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio CE Series CE32A-4 1-1_4_ Mini Speaker Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=CE Series CE32A-4 1-1/4" Mini Speaker Driver 4 Ohm
 Manufacturer=
@@ -37408,7 +37408,7 @@ Dd=0.0223408
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio CE Series CE32A-8 1-1_4_ Mini Speaker Driver 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio CE Series CE32A-8 1-1_4_ Mini Speaker Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=CE Series CE32A-8 1-1/4" Mini Speaker Driver 8 Ohm
 Manufacturer=
@@ -37436,7 +37436,7 @@ Dd=0.0223408
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio CE Series CE38M-8 1-1_2_ Mini Speaker Driver 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio CE Series CE38M-8 1-1_2_ Mini Speaker Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=CE Series CE38M-8 1-1/2" Mini Speaker Driver 8 Ohm
 Manufacturer=
@@ -37464,7 +37464,7 @@ Dd=0.0249777
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio CE Series CE38MB-32 1-1_2_ Mini Speaker Driver Black 32 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio CE Series CE38MB-32 1-1_2_ Mini Speaker Driver Black 32 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=CE Series CE38MB-32 1-1/2" Mini Speaker Driver Black 32 Ohm
 Manufacturer=
@@ -37492,7 +37492,7 @@ Dd=0.0249777
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio CE Series CE40-28P-8 1-1_8_ x 1-1_2_ Mini Speaker Driver 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio CE Series CE40-28P-8 1-1_8_ x 1-1_2_ Mini Speaker Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=CE Series CE40-28P-8 1-1/8" x 1-1/2" Mini Speaker Driver 8 Ohm
 Manufacturer=
@@ -37520,7 +37520,7 @@ Dd=0.0259282
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio CE Series CE40P-8 1-1_2_ Mini Speaker Driver`,content:`[Driver]
+`},{name:`Dayton Audio CE Series CE40P-8 1-1_2_ Mini Speaker Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=CE Series CE40P-8 1-1/2" Mini Speaker Driver
 Manufacturer=
@@ -37548,7 +37548,7 @@ Dd=0.0293379
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio CE Series CE53N-4 2_ Dual Neo Full-Range Speaker Driver 10W 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio CE Series CE53N-4 2_ Dual Neo Full-Range Speaker Driver 10W 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=CE Series CE53N-4 2" Dual Neo Full-Range Speaker Driver 10W 4 Ohm
 Manufacturer=
@@ -37576,7 +37576,7 @@ Dd=0.0329942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio CE Series CE65W-8 2-1_2_ Shielded Extended Range Speaker Driver 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio CE Series CE65W-8 2-1_2_ Shielded Extended Range Speaker Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=CE Series CE65W-8 2-1/2" Shielded Extended Range Speaker Driver 8 Ohm
 Manufacturer=
@@ -37604,7 +37604,7 @@ Dd=0.0505886
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio CE Series CE70-30P-8 1-1_4_ x 2-3_4_ Full-Range Speaker Driver 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio CE Series CE70-30P-8 1-1_4_ x 2-3_4_ Full-Range Speaker Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=CE Series CE70-30P-8 1-1/4" x 2-3/4" Full-Range Speaker Driver 8 Ohm
 Manufacturer=
@@ -37632,7 +37632,7 @@ Dd=0.0374921
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio CF120-4 4-1_2_ Woven Carbon Fiber Midwoofer 4 Ohms`,content:`[Driver]
+`},{name:`Dayton Audio CF120-4 4-1_2_ Woven Carbon Fiber Midwoofer 4 Ohms`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=CF120-4 4-1/2" Woven Carbon Fiber Midwoofer 4 Ohms
 Manufacturer=
@@ -37660,7 +37660,7 @@ Dd=0.0807797
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio CF18N-4 3_4_ Carbon Fiber Dome Neodymium Tweeter 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio CF18N-4 3_4_ Carbon Fiber Dome Neodymium Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=CF18N-4 3/4" Carbon Fiber Dome Neodymium Tweeter 4 Ohm
 Manufacturer=
@@ -37688,7 +37688,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio CF18N-4MP 3_4_ Carbon Fiber Dome Neodymium Tweeter Matched Pair 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio CF18N-4MP 3_4_ Carbon Fiber Dome Neodymium Tweeter Matched Pair 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=CF18N-4MP 3/4" Carbon Fiber Dome Neodymium Tweeter Matched Pair 4 Ohm
 Manufacturer=
@@ -37716,7 +37716,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio CF50N-4 2_ Carbon Fiber Dome Midrange 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio CF50N-4 2_ Carbon Fiber Dome Midrange 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=CF50N-4 2" Carbon Fiber Dome Midrange 4 Ohm
 Manufacturer=
@@ -37744,7 +37744,7 @@ Dd=0.0499555
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio CF50N-4MP 2_ Carbon Fiber Dome Midrange Matched Pair 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio CF50N-4MP 2_ Carbon Fiber Dome Midrange Matched Pair 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=CF50N-4MP 2" Carbon Fiber Dome Midrange Matched Pair 4 Ohm
 Manufacturer=
@@ -37772,7 +37772,7 @@ Dd=0.0499555
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio CX120-8 4_ Coaxial Driver with 3_4_ Silk Dome Tweeter 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio CX120-8 4_ Coaxial Driver with 3_4_ Silk Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=CX120-8 4" Coaxial Driver with 3/4" Silk Dome Tweeter 8 Ohm
 Manufacturer=
@@ -37800,7 +37800,7 @@ Dd=0.0817666
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DA115-8 4_ Aluminum Cone Woofer`,content:`[Driver]
+`},{name:`Dayton Audio DA115-8 4_ Aluminum Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DA115-8 4" Aluminum Cone Woofer
 Manufacturer=
@@ -37828,7 +37828,7 @@ Dd=0.0822247
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DA115-8`,content:`[Driver]
+`},{name:`Dayton Audio DA115-8`,date:``,content:`[Driver]
 Brand=Dayton Audio
 Model=DA115-8
 Manufacturer=
@@ -37856,7 +37856,7 @@ Dd=0.08222470421074018
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DA135-8 5-1_4_ Aluminum Cone Woofer`,content:`[Driver]
+`},{name:`Dayton Audio DA135-8 5-1_4_ Aluminum Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DA135-8 5-1/4" Aluminum Cone Woofer
 Manufacturer=
@@ -37884,7 +37884,7 @@ Dd=0.0979807
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DA135-8`,content:`[Driver]
+`},{name:`Dayton Audio DA135-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DA135-8
 Manufacturer=
@@ -37912,7 +37912,7 @@ Dd=0.0979807
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DA175-8 7_ Aluminum Cone Woofer`,content:`[Driver]
+`},{name:`Dayton Audio DA175-8 7_ Aluminum Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DA175-8 7" Aluminum Cone Woofer
 Manufacturer=
@@ -37940,7 +37940,7 @@ Dd=0.129984
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DA175-8`,content:`[Driver]
+`},{name:`Dayton Audio DA175-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DA175-8
 Manufacturer=
@@ -37968,7 +37968,7 @@ Dd=0.129984
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DA215-8 8_ Aluminum Cone Woofer`,content:`[Driver]
+`},{name:`Dayton Audio DA215-8 8_ Aluminum Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DA215-8 8" Aluminum Cone Woofer
 Manufacturer=
@@ -37996,7 +37996,7 @@ Dd=0.163984
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DA215-8`,content:`[Driver]
+`},{name:`Dayton Audio DA215-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DA215-8
 Manufacturer=
@@ -38024,7 +38024,7 @@ Dd=0.163984
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DA270-8`,content:`[Driver]
+`},{name:`Dayton Audio DA270-8`,date:``,content:`[Driver]
 Brand=Dayton Audio
 Model=DA270-8
 Manufacturer=
@@ -38052,7 +38052,7 @@ Dd=0.227076
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC130A-8 5-1_4_ Classic Woofer Speaker`,content:`[Driver]
+`},{name:`Dayton Audio DC130A-8 5-1_4_ Classic Woofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC130A-8 5-1/4" Classic Woofer Speaker
 Manufacturer=
@@ -38080,7 +38080,7 @@ Dd=0.107995
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC130A-8`,content:`[Driver]
+`},{name:`Dayton Audio DC130A-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC130A-8
 Manufacturer=
@@ -38108,7 +38108,7 @@ Dd=0.107995
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC130AS-8 5-1_4_ Classic Shielded Woofer`,content:`[Driver]
+`},{name:`Dayton Audio DC130AS-8 5-1_4_ Classic Shielded Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC130AS-8 5-1/4" Classic Shielded Woofer
 Manufacturer=
@@ -38136,7 +38136,7 @@ Dd=0.107995
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC130AS-8`,content:`[Driver]
+`},{name:`Dayton Audio DC130AS-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC130AS-8
 Manufacturer=
@@ -38164,7 +38164,7 @@ Dd=0.107995
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC130B-4 5-1_4_ Classic Woofer Speaker`,content:`[Driver]
+`},{name:`Dayton Audio DC130B-4 5-1_4_ Classic Woofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC130B-4 5-1/4" Classic Woofer Speaker
 Manufacturer=
@@ -38192,7 +38192,7 @@ Dd=0.107995
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC130B-4`,content:`[Driver]
+`},{name:`Dayton Audio DC130B-4`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC130B-4
 Manufacturer=
@@ -38220,7 +38220,7 @@ Dd=0.107995
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC130B-8 5-1_4_ Classic Woofer Speaker`,content:`[Driver]
+`},{name:`Dayton Audio DC130B-8 5-1_4_ Classic Woofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC130B-8 5-1/4" Classic Woofer Speaker
 Manufacturer=
@@ -38248,7 +38248,7 @@ Dd=0.107995
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC130B-8`,content:`[Driver]
+`},{name:`Dayton Audio DC130B-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC130B-8
 Manufacturer=
@@ -38276,7 +38276,7 @@ Dd=0.107995
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC130BS-4 5-1_4_ Classic Shielded Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio DC130BS-4 5-1_4_ Classic Shielded Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC130BS-4 5-1/4" Classic Shielded Woofer 4 Ohm
 Manufacturer=
@@ -38304,7 +38304,7 @@ Dd=0.108992
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC130BS-4`,content:`[Driver]
+`},{name:`Dayton Audio DC130BS-4`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC130BS-4
 Manufacturer=
@@ -38332,7 +38332,7 @@ Dd=0.108992
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC130BS-8 5-1_4_ Classic Shielded Woofer`,content:`[Driver]
+`},{name:`Dayton Audio DC130BS-8 5-1_4_ Classic Shielded Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC130BS-8 5-1/4" Classic Shielded Woofer
 Manufacturer=
@@ -38360,7 +38360,7 @@ Dd=0.107995
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC130BS-8`,content:`[Driver]
+`},{name:`Dayton Audio DC130BS-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC130BS-8
 Manufacturer=
@@ -38388,7 +38388,7 @@ Dd=0.107995
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC160-4 6-1_2_ Classic Woofer Speaker`,content:`[Driver]
+`},{name:`Dayton Audio DC160-4 6-1_2_ Classic Woofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC160-4 6-1/2" Classic Woofer Speaker
 Manufacturer=
@@ -38416,7 +38416,7 @@ Dd=0.131977
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC160-4`,content:`[Driver]
+`},{name:`Dayton Audio DC160-4`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC160-4
 Manufacturer=
@@ -38444,7 +38444,7 @@ Dd=0.131977
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC160-8 6-1_2_ Classic Woofer`,content:`[Driver]
+`},{name:`Dayton Audio DC160-8 6-1_2_ Classic Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC160-8 6-1/2" Classic Woofer
 Manufacturer=
@@ -38472,7 +38472,7 @@ Dd=0.131009
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC160-8`,content:`[Driver]
+`},{name:`Dayton Audio DC160-8`,date:``,content:`[Driver]
 Brand=Dayton Audio
 Model=DC160-8
 Manufacturer=
@@ -38500,7 +38500,7 @@ Dd=0.1310086602596561
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC160S-4`,content:`[Driver]
+`},{name:`Dayton Audio DC160S-4`,date:``,content:`[Driver]
 Brand=Dayton Audio
 Model=DC160S-4
 Manufacturer=
@@ -38528,7 +38528,7 @@ Dd=0.144526
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC160S-8`,content:`[Driver]
+`},{name:`Dayton Audio DC160S-8`,date:``,content:`[Driver]
 Brand=Dayton Audio
 Model=DC160S-8
 Manufacturer=
@@ -38556,7 +38556,7 @@ Dd=0.144526
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC200-8 8_ Classic Woofer`,content:`[Driver]
+`},{name:`Dayton Audio DC200-8 8_ Classic Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC200-8 8" Classic Woofer
 Manufacturer=
@@ -38584,7 +38584,7 @@ Dd=0.163984
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC200-8`,content:`[Driver]
+`},{name:`Dayton Audio DC200-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC200-8
 Manufacturer=
@@ -38612,7 +38612,7 @@ Dd=0.163984
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC250-8 10_ Classic Woofer`,content:`[Driver]
+`},{name:`Dayton Audio DC250-8 10_ Classic Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC250-8 10" Classic Woofer
 Manufacturer=
@@ -38640,7 +38640,7 @@ Dd=0.209009
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC250-8`,content:`[Driver]
+`},{name:`Dayton Audio DC250-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC250-8
 Manufacturer=
@@ -38668,7 +38668,7 @@ Dd=0.209009
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC25T-8 1_ Titanium Dome Tweeter`,content:`[Driver]
+`},{name:`Dayton Audio DC25T-8 1_ Titanium Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC25T-8 1" Titanium Dome Tweeter
 Manufacturer=
@@ -38696,7 +38696,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC28F-8 1-1_8_ Silk Dome Tweeter`,content:`[Driver]
+`},{name:`Dayton Audio DC28F-8 1-1_8_ Silk Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC28F-8 1-1/8" Silk Dome Tweeter
 Manufacturer=
@@ -38724,7 +38724,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC28FS-8 1-1_8_ Silk Dome Shielded Tweeter`,content:`[Driver]
+`},{name:`Dayton Audio DC28FS-8 1-1_8_ Silk Dome Shielded Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC28FS-8 1-1/8" Silk Dome Shielded Tweeter
 Manufacturer=
@@ -38752,7 +38752,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC28FT-8 1-1_8_ Silk Dome Truncated Tweeter`,content:`[Driver]
+`},{name:`Dayton Audio DC28FT-8 1-1_8_ Silk Dome Truncated Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC28FT-8 1-1/8" Silk Dome Truncated Tweeter
 Manufacturer=
@@ -38780,7 +38780,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC300-8 12_ Classic Woofer`,content:`[Driver]
+`},{name:`Dayton Audio DC300-8 12_ Classic Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC300-8 12" Classic Woofer
 Manufacturer=
@@ -38808,7 +38808,7 @@ Dd=0.25201
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC300-8`,content:`[Driver]
+`},{name:`Dayton Audio DC300-8`,date:``,content:`[Driver]
 Brand=Dayton Audio
 Model=DC300-8
 Manufacturer=
@@ -38836,7 +38836,7 @@ Dd=0.2520102944155058
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC380-8 15_ Classic Woofer`,content:`[Driver]
+`},{name:`Dayton Audio DC380-8 15_ Classic Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC380-8 15" Classic Woofer
 Manufacturer=
@@ -38864,7 +38864,7 @@ Dd=0.326002
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DC380-8`,content:`[Driver]
+`},{name:`Dayton Audio DC380-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC380-8
 Manufacturer=
@@ -38892,7 +38892,7 @@ Dd=0.326002
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DCS165-4 6-1_2_ Classic Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio DCS165-4 6-1_2_ Classic Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DCS165-4 6-1/2" Classic Subwoofer 4 Ohm
 Manufacturer=
@@ -38920,7 +38920,7 @@ Dd=0.126005
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DCS205-4 8_ Classic Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio DCS205-4 8_ Classic Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DCS205-4 8" Classic Subwoofer 4 Ohm
 Manufacturer=
@@ -38948,7 +38948,7 @@ Dd=0.16499
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DCS255-4 10_ Classic Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio DCS255-4 10_ Classic Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DCS255-4 10" Classic Subwoofer 4 Ohm
 Manufacturer=
@@ -38976,7 +38976,7 @@ Dd=0.210012
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DCS305-4 12_ Classic Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio DCS305-4 12_ Classic Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DCS305-4 12" Classic Subwoofer 4 Ohm
 Manufacturer=
@@ -39004,7 +39004,7 @@ Dd=0.25201
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DCS385-4 15_ Classic Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio DCS385-4 15_ Classic Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DCS385-4 15" Classic Subwoofer 4 Ohm
 Manufacturer=
@@ -39032,7 +39032,7 @@ Dd=0.328996
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DMA105-4 4_ Dual Magnet Aluminum Cone Full-Range Driver 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio DMA105-4 4_ Dual Magnet Aluminum Cone Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DMA105-4 4" Dual Magnet Aluminum Cone Full-Range Driver 4 Ohm
 Manufacturer=
@@ -39060,7 +39060,7 @@ Dd=0.0829953
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DMA105-8 4_ Dual Magnet Aluminum Cone Full-Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio DMA105-8 4_ Dual Magnet Aluminum Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DMA105-8 4" Dual Magnet Aluminum Cone Full-Range Driver 8 Ohm
 Manufacturer=
@@ -39088,7 +39088,7 @@ Dd=0.0829953
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DMA105-PR 4_ DMA Series Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio DMA105-PR 4_ DMA Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DMA105-PR 4" DMA Series Passive Radiator
 Manufacturer=
@@ -39116,7 +39116,7 @@ Dd=0.0829953
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DMA45-4 1-1_2_ Dual Magnet Aluminum Cone Full-Range Driver 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio DMA45-4 1-1_2_ Dual Magnet Aluminum Cone Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DMA45-4 1-1/2" Dual Magnet Aluminum Cone Full-Range Driver 4 Ohm
 Manufacturer=
@@ -39144,7 +39144,7 @@ Dd=0.0330906
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DMA45-8 1-1_2_ Dual Magnet Aluminum Cone Full-Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio DMA45-8 1-1_2_ Dual Magnet Aluminum Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DMA45-8 1-1/2" Dual Magnet Aluminum Cone Full-Range Driver 8 Ohm
 Manufacturer=
@@ -39172,7 +39172,7 @@ Dd=0.0330906
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DMA45-PR 1-1_2_ DMA Series Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio DMA45-PR 1-1_2_ DMA Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DMA45-PR 1-1/2" DMA Series Passive Radiator
 Manufacturer=
@@ -39200,7 +39200,7 @@ Dd=0.0330906
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DMA58-4 2_ Dual Magnet Aluminum Cone Full-Range Driver 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio DMA58-4 2_ Dual Magnet Aluminum Cone Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DMA58-4 2" Dual Magnet Aluminum Cone Full-Range Driver 4 Ohm
 Manufacturer=
@@ -39228,7 +39228,7 @@ Dd=0.0429674
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DMA58-8 2_ Dual Magnet Aluminum Cone Full-Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio DMA58-8 2_ Dual Magnet Aluminum Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DMA58-8 2" Dual Magnet Aluminum Cone Full-Range Driver 8 Ohm
 Manufacturer=
@@ -39256,7 +39256,7 @@ Dd=0.0429674
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DMA58-PR 2_ DMA Series Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio DMA58-PR 2_ DMA Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DMA58-PR 2" DMA Series Passive Radiator
 Manufacturer=
@@ -39284,7 +39284,7 @@ Dd=0.0429674
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DMA70-4 2-1_2_ Dual Magnet Aluminum Cone Full-Range Driver 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio DMA70-4 2-1_2_ Dual Magnet Aluminum Cone Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DMA70-4 2-1/2" Dual Magnet Aluminum Cone Full-Range Driver 4 Ohm
 Manufacturer=
@@ -39312,7 +39312,7 @@ Dd=0.0539974
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DMA70-8 2-1_2_ Dual Magnet Aluminum Cone Full-Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio DMA70-8 2-1_2_ Dual Magnet Aluminum Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DMA70-8 2-1/2" Dual Magnet Aluminum Cone Full-Range Driver 8 Ohm
 Manufacturer=
@@ -39340,7 +39340,7 @@ Dd=0.0539974
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DMA70-PR 2-1_2_ DMA Series Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio DMA70-PR 2-1_2_ DMA Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DMA70-PR 2-1/2" DMA Series Passive Radiator
 Manufacturer=
@@ -39368,7 +39368,7 @@ Dd=0.0539974
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DMA80-4 3_ Dual Magnet Aluminum Cone Full-Range Driver 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio DMA80-4 3_ Dual Magnet Aluminum Cone Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DMA80-4 3" Dual Magnet Aluminum Cone Full-Range Driver 4 Ohm
 Manufacturer=
@@ -39396,7 +39396,7 @@ Dd=0.0630278
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DMA80-8 3_ Dual Magnet Aluminum Cone Full-Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio DMA80-8 3_ Dual Magnet Aluminum Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DMA80-8 3" Dual Magnet Aluminum Cone Full-Range Driver 8 Ohm
 Manufacturer=
@@ -39424,7 +39424,7 @@ Dd=0.0630278
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DMA80-PR 3_ DMA Series Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio DMA80-PR 3_ DMA Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DMA80-PR 3" DMA Series Passive Radiator
 Manufacturer=
@@ -39452,7 +39452,7 @@ Dd=0.0630278
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DS115-8 4_ Designer Series Woofer Speaker`,content:`[Driver]
+`},{name:`Dayton Audio DS115-8 4_ Designer Series Woofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS115-8 4" Designer Series Woofer Speaker
 Manufacturer=
@@ -39480,7 +39480,7 @@ Dd=0.0829953
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DS115-8`,content:`[Driver]
+`},{name:`Dayton Audio DS115-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS115-8
 Manufacturer=
@@ -39508,7 +39508,7 @@ Dd=0.0829953
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DS115-PR 4_ Designer Series Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio DS115-PR 4_ Designer Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS115-PR 4" Designer Series Passive Radiator
 Manufacturer=
@@ -39536,7 +39536,7 @@ Dd=0.0829953
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DS135-8 5_ Designer Series Woofer Speaker`,content:`[Driver]
+`},{name:`Dayton Audio DS135-8 5_ Designer Series Woofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS135-8 5" Designer Series Woofer Speaker
 Manufacturer=
@@ -39564,7 +39564,7 @@ Dd=0.0979807
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DS135-8`,content:`[Driver]
+`},{name:`Dayton Audio DS135-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS135-8
 Manufacturer=
@@ -39592,7 +39592,7 @@ Dd=0.0979807
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DS135-PR 5_ Designer Series Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio DS135-PR 5_ Designer Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS135-PR 5" Designer Series Passive Radiator
 Manufacturer=
@@ -39620,7 +39620,7 @@ Dd=0.0979807
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DS175-8 6-1_2_ Designer Series Woofer Speaker`,content:`[Driver]
+`},{name:`Dayton Audio DS175-8 6-1_2_ Designer Series Woofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS175-8 6-1/2" Designer Series Woofer Speaker
 Manufacturer=
@@ -39648,7 +39648,7 @@ Dd=0.12801
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DS175-8`,content:`[Driver]
+`},{name:`Dayton Audio DS175-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS175-8
 Manufacturer=
@@ -39676,7 +39676,7 @@ Dd=0.12801
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DS175-PR 6-1_2_ Designer Series Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio DS175-PR 6-1_2_ Designer Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS175-PR 6-1/2" Designer Series Passive Radiator
 Manufacturer=
@@ -39704,7 +39704,7 @@ Dd=0.12801
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DS215-8 8_ Designer Series Woofer Speaker`,content:`[Driver]
+`},{name:`Dayton Audio DS215-8 8_ Designer Series Woofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS215-8 8" Designer Series Woofer Speaker
 Manufacturer=
@@ -39732,7 +39732,7 @@ Dd=0.163984
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DS215-8`,content:`[Driver]
+`},{name:`Dayton Audio DS215-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS215-8
 Manufacturer=
@@ -39760,7 +39760,7 @@ Dd=0.163984
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DS215-PR 8_ Designer Series Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio DS215-PR 8_ Designer Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS215-PR 8" Designer Series Passive Radiator
 Manufacturer=
@@ -39788,7 +39788,7 @@ Dd=0.163984
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DS270-8 10_ Designer Series Woofer Speaker`,content:`[Driver]
+`},{name:`Dayton Audio DS270-8 10_ Designer Series Woofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS270-8 10" Designer Series Woofer Speaker
 Manufacturer=
@@ -39816,7 +39816,7 @@ Dd=0.212003
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DS270-8`,content:`[Driver]
+`},{name:`Dayton Audio DS270-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS270-8
 Manufacturer=
@@ -39844,7 +39844,7 @@ Dd=0.212003
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DS270-PR 10_ Designer Series Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio DS270-PR 10_ Designer Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS270-PR 10" Designer Series Passive Radiator
 Manufacturer=
@@ -39872,7 +39872,7 @@ Dd=0.212003
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DS315-8 12_ Designer Series Woofer Speaker`,content:`[Driver]
+`},{name:`Dayton Audio DS315-8 12_ Designer Series Woofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS315-8 12" Designer Series Woofer Speaker
 Manufacturer=
@@ -39900,7 +39900,7 @@ Dd=0.253998
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DS315-8`,content:`[Driver]
+`},{name:`Dayton Audio DS315-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS315-8
 Manufacturer=
@@ -39928,7 +39928,7 @@ Dd=0.253998
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DS315-PR 12_ Designer Series Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio DS315-PR 12_ Designer Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS315-PR 12" Designer Series Passive Radiator
 Manufacturer=
@@ -39956,7 +39956,7 @@ Dd=0.247215
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DS90-8 3_ Designer Series Full-Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio DS90-8 3_ Designer Series Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS90-8 3" Designer Series Full-Range Driver 8 Ohm
 Manufacturer=
@@ -39984,7 +39984,7 @@ Dd=0.0630278
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DS90-PR 3_ Designer Series Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio DS90-PR 3_ Designer Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS90-PR 3" Designer Series Passive Radiator
 Manufacturer=
@@ -40012,7 +40012,7 @@ Dd=0.0630278
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DSA115-8 4_ Designer Series Aluminum Cone Woofer`,content:`[Driver]
+`},{name:`Dayton Audio DSA115-8 4_ Designer Series Aluminum Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DSA115-8 4" Designer Series Aluminum Cone Woofer
 Manufacturer=
@@ -40040,7 +40040,7 @@ Dd=0.0829953
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DSA115-8`,content:`[Driver]
+`},{name:`Dayton Audio DSA115-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DSA115-8
 Manufacturer=
@@ -40068,7 +40068,7 @@ Dd=0.0829953
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DSA115-PR 4_ Designer Series Aluminum Cone Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio DSA115-PR 4_ Designer Series Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DSA115-PR 4" Designer Series Aluminum Cone Passive Radiator
 Manufacturer=
@@ -40096,7 +40096,7 @@ Dd=0.0829953
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DSA135-8 5_ Designer Series Aluminum Cone Woofer`,content:`[Driver]
+`},{name:`Dayton Audio DSA135-8 5_ Designer Series Aluminum Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DSA135-8 5" Designer Series Aluminum Cone Woofer
 Manufacturer=
@@ -40124,7 +40124,7 @@ Dd=0.0979807
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DSA135-8`,content:`[Driver]
+`},{name:`Dayton Audio DSA135-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DSA135-8
 Manufacturer=
@@ -40152,7 +40152,7 @@ Dd=0.0979807
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DSA135-PR 5_ Designer Series Aluminum Cone Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio DSA135-PR 5_ Designer Series Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DSA135-PR 5" Designer Series Aluminum Cone Passive Radiator
 Manufacturer=
@@ -40180,7 +40180,7 @@ Dd=0.0979807
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DSA175-8 6-1_2_ Designer Series Aluminum Cone Woofer`,content:`[Driver]
+`},{name:`Dayton Audio DSA175-8 6-1_2_ Designer Series Aluminum Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DSA175-8 6-1/2" Designer Series Aluminum Cone Woofer
 Manufacturer=
@@ -40208,7 +40208,7 @@ Dd=0.12801
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DSA175-8`,content:`[Driver]
+`},{name:`Dayton Audio DSA175-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DSA175-8
 Manufacturer=
@@ -40236,7 +40236,7 @@ Dd=0.12801
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DSA175-PR 6-1_2_ Designer Series Aluminum Cone Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio DSA175-PR 6-1_2_ Designer Series Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DSA175-PR 6-1/2" Designer Series Aluminum Cone Passive Radiator
 Manufacturer=
@@ -40264,7 +40264,7 @@ Dd=0.12801
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DSA215-8 8_ Designer Series Aluminum Cone Woofer`,content:`[Driver]
+`},{name:`Dayton Audio DSA215-8 8_ Designer Series Aluminum Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DSA215-8 8" Designer Series Aluminum Cone Woofer
 Manufacturer=
@@ -40292,7 +40292,7 @@ Dd=0.163984
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DSA215-8`,content:`[Driver]
+`},{name:`Dayton Audio DSA215-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DSA215-8
 Manufacturer=
@@ -40320,7 +40320,7 @@ Dd=0.163984
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DSA215-PR 8_ Designer Series Aluminum Cone Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio DSA215-PR 8_ Designer Series Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DSA215-PR 8" Designer Series Aluminum Cone Passive Radiator
 Manufacturer=
@@ -40348,7 +40348,7 @@ Dd=0.163984
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DSA270-8 10_ Designer Series Aluminum Cone Woofer`,content:`[Driver]
+`},{name:`Dayton Audio DSA270-8 10_ Designer Series Aluminum Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DSA270-8 10" Designer Series Aluminum Cone Woofer
 Manufacturer=
@@ -40376,7 +40376,7 @@ Dd=0.212003
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DSA270-8`,content:`[Driver]
+`},{name:`Dayton Audio DSA270-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DSA270-8
 Manufacturer=
@@ -40404,7 +40404,7 @@ Dd=0.212003
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DSA270-PR 10_ Designer Series Aluminum Cone Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio DSA270-PR 10_ Designer Series Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DSA270-PR 10" Designer Series Aluminum Cone Passive Radiator
 Manufacturer=
@@ -40432,7 +40432,7 @@ Dd=0.212003
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DSA315-8 12_ Designer Series Aluminum Cone Woofer`,content:`[Driver]
+`},{name:`Dayton Audio DSA315-8 12_ Designer Series Aluminum Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DSA315-8 12" Designer Series Aluminum Cone Woofer
 Manufacturer=
@@ -40460,7 +40460,7 @@ Dd=0.253998
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DSA315-8`,content:`[Driver]
+`},{name:`Dayton Audio DSA315-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DSA315-8
 Manufacturer=
@@ -40488,7 +40488,7 @@ Dd=0.253998
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DSA315-PR 12_ Designer Series Aluminum Cone Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio DSA315-PR 12_ Designer Series Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DSA315-PR 12" Designer Series Aluminum Cone Passive Radiator
 Manufacturer=
@@ -40516,7 +40516,7 @@ Dd=0.247215
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DSA90-8 3_ Designer Series Aluminum Cone Full-Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio DSA90-8 3_ Designer Series Aluminum Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DSA90-8 3" Designer Series Aluminum Cone Full-Range Driver 8 Ohm
 Manufacturer=
@@ -40544,7 +40544,7 @@ Dd=0.0630278
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DSA90-PR 3_ Designer Series Aluminum Cone Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio DSA90-PR 3_ Designer Series Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DSA90-PR 3" Designer Series Aluminum Cone Passive Radiator
 Manufacturer=
@@ -40572,7 +40572,7 @@ Dd=0.0630278
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio DW3-1053SC 3_ Full Range Driver`,content:`[Driver]
+`},{name:`Dayton Audio DW3-1053SC 3_ Full Range Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DW3-1053SC 3" Full Range Driver
 Manufacturer=
@@ -40600,7 +40600,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ES140TiA-8`,content:`[Driver]
+`},{name:`Dayton Audio ES140TiA-8`,date:``,content:`[Driver]
 Brand=Dayton Audio
 Model=ES140TiA-8
 Manufacturer=
@@ -40628,7 +40628,7 @@ Dd=0.125476
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ES180TiA-8`,content:`[Driver]
+`},{name:`Dayton Audio ES180TiA-8`,date:``,content:`[Driver]
 Brand=Dayton Audio
 Model=ES180TiA-8
 Manufacturer=
@@ -40656,7 +40656,7 @@ Dd=0.148336
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio GF180-4 6-1_2_ Glass Fiber Cone Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio GF180-4 6-1_2_ Glass Fiber Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=GF180-4 6-1/2" Glass Fiber Cone Woofer 4 Ohm
 Manufacturer=
@@ -40684,7 +40684,7 @@ Dd=0.128754
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio GF180-4`,content:`[Driver]
+`},{name:`Dayton Audio GF180-4`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=GF180-4
 Manufacturer=
@@ -40712,7 +40712,7 @@ Dd=0.128754
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio GF180-8 6-1_2_ Glass Fiber Cone Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio GF180-8 6-1_2_ Glass Fiber Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=GF180-8 6-1/2" Glass Fiber Cone Woofer 8 Ohm
 Manufacturer=
@@ -40740,7 +40740,7 @@ Dd=0.128754
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio GF180-8`,content:`[Driver]
+`},{name:`Dayton Audio GF180-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=GF180-8
 Manufacturer=
@@ -40768,7 +40768,7 @@ Dd=0.128754
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio HARB252-8 1_ x 5_ Dual Motor High Aspect Ratio Speaker Driver 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio HARB252-8 1_ x 5_ Dual Motor High Aspect Ratio Speaker Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=HARB252-8 1" x 5" Dual Motor High Aspect Ratio Speaker Driver 8 Ohm
 Manufacturer=
@@ -40796,7 +40796,7 @@ Dd=0.0517458
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio HTS545HE-4 Kraken 21_ High Excursion Subwoofer with 5_ Voice Coil 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio HTS545HE-4 Kraken 21_ High Excursion Subwoofer with 5_ Voice Coil 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=HTS545HE-4 Kraken 21" High Excursion Subwoofer with 5" Voice Coil 4 Ohm
 Manufacturer=
@@ -40824,7 +40824,7 @@ Dd=0.440646
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio LS10-44 10_ Low Profile Subwoofer Dual 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio LS10-44 10_ Low Profile Subwoofer Dual 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=LS10-44 10" Low Profile Subwoofer Dual 4 Ohm
 Manufacturer=
@@ -40852,7 +40852,7 @@ Dd=0.21599
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio LW150-4 6_ Low Profile Woofer 4 Ohms`,content:`[Driver]
+`},{name:`Dayton Audio LW150-4 6_ Low Profile Woofer 4 Ohms`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=LW150-4 6" Low Profile Woofer 4 Ohms
 Manufacturer=
@@ -40880,7 +40880,7 @@ Dd=0.107641
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio MB1025-8 10_ Professional High Power Midbass Driver 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio MB1025-8 10_ Professional High Power Midbass Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=MB1025-8 10" Professional High Power Midbass Driver 8 Ohm
 Manufacturer=
@@ -40908,7 +40908,7 @@ Dd=0.208826
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio MB620-8 6-1_2_ Professional High Power Midbass Driver 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio MB620-8 6-1_2_ Professional High Power Midbass Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=MB620-8 6-1/2" Professional High Power Midbass Driver 8 Ohm
 Manufacturer=
@@ -40936,7 +40936,7 @@ Dd=0.129739
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio MB820-8 8_ Professional High Power Midbass Driver 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio MB820-8 8_ Professional High Power Midbass Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=MB820-8 8" Professional High Power Midbass Driver 8 Ohm
 Manufacturer=
@@ -40964,7 +40964,7 @@ Dd=0.163089
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio MX10-22 10_ Max-X High Excursion DVC Subwoofer 2 Ohms Per Coil`,content:`[Driver]
+`},{name:`Dayton Audio MX10-22 10_ Max-X High Excursion DVC Subwoofer 2 Ohms Per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=MX10-22 10" Max-X High Excursion DVC Subwoofer 2 Ohms Per Coil
 Manufacturer=
@@ -40992,7 +40992,7 @@ Dd=0.213111
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio MX12-22 12_ Max-X High Excursion DVC Subwoofer 2 Ohms Per Coil`,content:`[Driver]
+`},{name:`Dayton Audio MX12-22 12_ Max-X High Excursion DVC Subwoofer 2 Ohms Per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=MX12-22 12" Max-X High Excursion DVC Subwoofer 2 Ohms Per Coil
 Manufacturer=
@@ -41020,7 +41020,7 @@ Dd=0.255995
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio MX15-22 15_ Max-X High Excursion DVC Subwoofer 2 Ohms Per Coil`,content:`[Driver]
+`},{name:`Dayton Audio MX15-22 15_ Max-X High Excursion DVC Subwoofer 2 Ohms Per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=MX15-22 15" Max-X High Excursion DVC Subwoofer 2 Ohms Per Coil
 Manufacturer=
@@ -41048,7 +41048,7 @@ Dd=0.323079
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio MX5-22 5-1_4_ Max-X High Excursion DVC Subwoofer Driver 2 Ohms Per Coil`,content:`[Driver]
+`},{name:`Dayton Audio MX5-22 5-1_4_ Max-X High Excursion DVC Subwoofer Driver 2 Ohms Per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=MX5-22 5-1/4" Max-X High Excursion DVC Subwoofer Driver 2 Ohms Per Coil
 Manufacturer=
@@ -41076,7 +41076,7 @@ Dd=0.103664
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio MX6-22 6-1_2_ Max-X High Excursion DVC Subwoofer Driver 2 Ohms Per Coil`,content:`[Driver]
+`},{name:`Dayton Audio MX6-22 6-1_2_ Max-X High Excursion DVC Subwoofer Driver 2 Ohms Per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=MX6-22 6-1/2" Max-X High Excursion DVC Subwoofer Driver 2 Ohms Per Coil
 Manufacturer=
@@ -41104,7 +41104,7 @@ Dd=0.126811
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ND105-4 4_ Aluminum Cone Midbass Neo Driver 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio ND105-4 4_ Aluminum Cone Midbass Neo Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND105-4 4" Aluminum Cone Midbass Neo Driver 4 Ohm
 Manufacturer=
@@ -41132,7 +41132,7 @@ Dd=0.0809764
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ND105-8 4_ Aluminum Cone Midbass Neo Driver 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio ND105-8 4_ Aluminum Cone Midbass Neo Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND105-8 4" Aluminum Cone Midbass Neo Driver 8 Ohm
 Manufacturer=
@@ -41160,7 +41160,7 @@ Dd=0.0809764
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ND105-PR 4_ Aluminum Cone Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio ND105-PR 4_ Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND105-PR 4" Aluminum Cone Passive Radiator
 Manufacturer=
@@ -41188,7 +41188,7 @@ Dd=0.0809764
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ND13FA-4 1_2_ Soft Dome Neodymium Tweeter 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio ND13FA-4 1_2_ Soft Dome Neodymium Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND13FA-4 1/2" Soft Dome Neodymium Tweeter 4 Ohm
 Manufacturer=
@@ -41216,7 +41216,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ND140-4 5-1_4_ Aluminum Cone Midbass Neo Driver 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio ND140-4 5-1_4_ Aluminum Cone Midbass Neo Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND140-4 5-1/4" Aluminum Cone Midbass Neo Driver 4 Ohm
 Manufacturer=
@@ -41244,7 +41244,7 @@ Dd=0.105006
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ND140-8 5-1_4_ Aluminum Cone Midbass Neo Driver 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio ND140-8 5-1_4_ Aluminum Cone Midbass Neo Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND140-8 5-1/4" Aluminum Cone Midbass Neo Driver 8 Ohm
 Manufacturer=
@@ -41272,7 +41272,7 @@ Dd=0.105006
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ND140-PR 5-1_4_ Aluminum Cone Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio ND140-PR 5-1_4_ Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND140-PR 5-1/4" Aluminum Cone Passive Radiator
 Manufacturer=
@@ -41300,7 +41300,7 @@ Dd=0.105006
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ND16FA-4 5_8_ Soft Dome Neodymium Tweeter 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio ND16FA-4 5_8_ Soft Dome Neodymium Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND16FA-4 5/8" Soft Dome Neodymium Tweeter 4 Ohm
 Manufacturer=
@@ -41328,7 +41328,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ND16FA-6 5_8_ Soft Dome Neodymium Tweeter`,content:`[Driver]
+`},{name:`Dayton Audio ND16FA-6 5_8_ Soft Dome Neodymium Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND16FA-6 5/8" Soft Dome Neodymium Tweeter
 Manufacturer=
@@ -41356,7 +41356,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ND20FA-6 3_4_ Soft Dome Neodymium Tweeter`,content:`[Driver]
+`},{name:`Dayton Audio ND20FA-6 3_4_ Soft Dome Neodymium Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND20FA-6 3/4" Soft Dome Neodymium Tweeter
 Manufacturer=
@@ -41384,7 +41384,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ND20FB-4 Rear-Mount 3_4_ Soft Dome Neodymium Tweeter`,content:`[Driver]
+`},{name:`Dayton Audio ND20FB-4 Rear-Mount 3_4_ Soft Dome Neodymium Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND20FB-4 Rear-Mount 3/4" Soft Dome Neodymium Tweeter
 Manufacturer=
@@ -41412,7 +41412,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ND25FA-4 1_ Soft Dome Neodymium Tweeter`,content:`[Driver]
+`},{name:`Dayton Audio ND25FA-4 1_ Soft Dome Neodymium Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND25FA-4 1" Soft Dome Neodymium Tweeter
 Manufacturer=
@@ -41440,7 +41440,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ND25FN-4 1_ Silk Dome Neodymium Tweeter Element 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio ND25FN-4 1_ Silk Dome Neodymium Tweeter Element 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND25FN-4 1" Silk Dome Neodymium Tweeter Element 4 Ohm
 Manufacturer=
@@ -41468,7 +41468,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ND25FW-4 1_ Soft Dome Neodymium Tweeter with Waveguide 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio ND25FW-4 1_ Soft Dome Neodymium Tweeter with Waveguide 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND25FW-4 1" Soft Dome Neodymium Tweeter with Waveguide 4 Ohm
 Manufacturer=
@@ -41496,7 +41496,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ND25TA-4 1_ Titanium Dome Neodymium Tweeter with Grill`,content:`[Driver]
+`},{name:`Dayton Audio ND25TA-4 1_ Titanium Dome Neodymium Tweeter with Grill`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND25TA-4 1" Titanium Dome Neodymium Tweeter with Grill
 Manufacturer=
@@ -41524,7 +41524,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ND28F-6 1-1_8_ Soft Dome Neodymium Tweeter`,content:`[Driver]
+`},{name:`Dayton Audio ND28F-6 1-1_8_ Soft Dome Neodymium Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND28F-6 1-1/8" Soft Dome Neodymium Tweeter
 Manufacturer=
@@ -41552,7 +41552,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ND64-16 2-1_2_ Aluminum Magnesium Cone Full-Range Neo Driver 16 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio ND64-16 2-1_2_ Aluminum Magnesium Cone Full-Range Neo Driver 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND64-16 2-1/2" Aluminum Magnesium Cone Full-Range Neo Driver 16 Ohm
 Manufacturer=
@@ -41580,7 +41580,7 @@ Dd=0.0445674
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ND64-4 2-1_2_ Aluminum Magnesium Cone Full-Range Neo Driver 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio ND64-4 2-1_2_ Aluminum Magnesium Cone Full-Range Neo Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND64-4 2-1/2" Aluminum Magnesium Cone Full-Range Neo Driver 4 Ohm
 Manufacturer=
@@ -41608,7 +41608,7 @@ Dd=0.0445674
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ND65-4 2-1_2_ Aluminum Cone Full-Range Neo Driver 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio ND65-4 2-1_2_ Aluminum Cone Full-Range Neo Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND65-4 2-1/2" Aluminum Cone Full-Range Neo Driver 4 Ohm
 Manufacturer=
@@ -41636,7 +41636,7 @@ Dd=0.0445674
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ND65-8 2-1_2_ Aluminum Cone Full-Range Neo Driver 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio ND65-8 2-1_2_ Aluminum Cone Full-Range Neo Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND65-8 2-1/2" Aluminum Cone Full-Range Neo Driver 8 Ohm
 Manufacturer=
@@ -41664,7 +41664,7 @@ Dd=0.045835
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ND65-PR 2-1_2_ Aluminum Cone Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio ND65-PR 2-1_2_ Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND65-PR 2-1/2" Aluminum Cone Passive Radiator
 Manufacturer=
@@ -41692,7 +41692,7 @@ Dd=0.0445674
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ND90-4 3-1_2_ Aluminum Cone Full-Range Neo Driver 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio ND90-4 3-1_2_ Aluminum Cone Full-Range Neo Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND90-4 3-1/2" Aluminum Cone Full-Range Neo Driver 4 Ohm
 Manufacturer=
@@ -41720,7 +41720,7 @@ Dd=0.0630278
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ND90-8 3-1_2_ Aluminum Cone Full-Range Neo Driver 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio ND90-8 3-1_2_ Aluminum Cone Full-Range Neo Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND90-8 3-1/2" Aluminum Cone Full-Range Neo Driver 8 Ohm
 Manufacturer=
@@ -41748,7 +41748,7 @@ Dd=0.0630278
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ND90-PR 3-1_2_ Aluminum Cone Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio ND90-PR 3-1_2_ Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND90-PR 3-1/2" Aluminum Cone Passive Radiator
 Manufacturer=
@@ -41776,7 +41776,7 @@ Dd=0.0630278
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ND91-4 3-1_2_ Aluminum Cone Full-Range Neo Driver 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio ND91-4 3-1_2_ Aluminum Cone Full-Range Neo Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND91-4 3-1/2" Aluminum Cone Full-Range Neo Driver 4 Ohm
 Manufacturer=
@@ -41804,7 +41804,7 @@ Dd=0.0622145
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ND91-8 3-1_2_ Aluminum Cone Full-Range Neo Driver 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio ND91-8 3-1_2_ Aluminum Cone Full-Range Neo Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND91-8 3-1/2" Aluminum Cone Full-Range Neo Driver 8 Ohm
 Manufacturer=
@@ -41832,7 +41832,7 @@ Dd=0.0622145
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio PA130-8 5_ Full Range PA Driver`,content:`[Driver]
+`},{name:`Dayton Audio PA130-8 5_ Full Range PA Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA130-8 5" Full Range PA Driver
 Manufacturer=
@@ -41860,7 +41860,7 @@ Dd=0.0970012
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio PA165-8 6_ PA Driver Speaker`,content:`[Driver]
+`},{name:`Dayton Audio PA165-8 6_ PA Driver Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA165-8 6" PA Driver Speaker
 Manufacturer=
@@ -41888,7 +41888,7 @@ Dd=0.124019
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio PA200-8 8_ Pro Woofer Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio PA200-8 8_ Pro Woofer Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA200-8 8" Pro Woofer Speaker 8 Ohm
 Manufacturer=
@@ -41916,7 +41916,7 @@ Dd=0.163673
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio PA255-8 10_ Pro Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio PA255-8 10_ Pro Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA255-8 10" Pro Woofer 8 Ohm
 Manufacturer=
@@ -41944,7 +41944,7 @@ Dd=0.210012
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio PA310-8 12_ Pro Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio PA310-8 12_ Pro Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA310-8 12" Pro Woofer 8 Ohm
 Manufacturer=
@@ -41972,7 +41972,7 @@ Dd=0.259993
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio PA380-8 15_ Pro Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio PA380-8 15_ Pro Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA380-8 15" Pro Woofer 8 Ohm
 Manufacturer=
@@ -42000,7 +42000,7 @@ Dd=0.328007
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio PA460-8 18_ Pro Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio PA460-8 18_ Pro Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA460-8 18" Pro Woofer 8 Ohm
 Manufacturer=
@@ -42028,7 +42028,7 @@ Dd=0.39752
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio PC105-4 4_ Full-Range Poly Cone Driver`,content:`[Driver]
+`},{name:`Dayton Audio PC105-4 4_ Full-Range Poly Cone Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=PC105-4 4" Full-Range Poly Cone Driver
 Manufacturer=
@@ -42056,7 +42056,7 @@ Dd=0.0819921
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio PC105-8 4_ Full-Range Poly Cone Driver`,content:`[Driver]
+`},{name:`Dayton Audio PC105-8 4_ Full-Range Poly Cone Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=PC105-8 4" Full-Range Poly Cone Driver
 Manufacturer=
@@ -42084,7 +42084,7 @@ Dd=0.0819921
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio PC68-4 2-1_2_ Full-Range Poly Cone Driver`,content:`[Driver]
+`},{name:`Dayton Audio PC68-4 2-1_2_ Full-Range Poly Cone Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=PC68-4 2-1/2" Full-Range Poly Cone Driver
 Manufacturer=
@@ -42112,7 +42112,7 @@ Dd=0.0519545
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio PC68-8 2-1_2_ Full-Range Poly Cone Driver`,content:`[Driver]
+`},{name:`Dayton Audio PC68-8 2-1_2_ Full-Range Poly Cone Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=PC68-8 2-1/2" Full-Range Poly Cone Driver
 Manufacturer=
@@ -42140,7 +42140,7 @@ Dd=0.0519545
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio PC83-4 3_ Full-Range Poly Cone Driver`,content:`[Driver]
+`},{name:`Dayton Audio PC83-4 3_ Full-Range Poly Cone Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=PC83-4 3" Full-Range Poly Cone Driver
 Manufacturer=
@@ -42168,7 +42168,7 @@ Dd=0.0620095
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio PC83-8 3_ Full-Range Poly Cone Driver`,content:`[Driver]
+`},{name:`Dayton Audio PC83-8 3_ Full-Range Poly Cone Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=PC83-8 3" Full-Range Poly Cone Driver
 Manufacturer=
@@ -42196,7 +42196,7 @@ Dd=0.0620095
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio PCS115-4 4_ Poly Cone Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio PCS115-4 4_ Poly Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=PCS115-4 4" Poly Cone Woofer 4 Ohm
 Manufacturer=
@@ -42224,7 +42224,7 @@ Dd=0.0809764
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio PCS115-8 4_ Poly Cone Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio PCS115-8 4_ Poly Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=PCS115-8 4" Poly Cone Woofer 8 Ohm
 Manufacturer=
@@ -42252,7 +42252,7 @@ Dd=0.0809764
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio PCS175-4 6-1_2_ Poly Cone Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio PCS175-4 6-1_2_ Poly Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=PCS175-4 6-1/2" Poly Cone Woofer 4 Ohm
 Manufacturer=
@@ -42280,7 +42280,7 @@ Dd=0.134935
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio PCS175-8 6-1_2_ Poly Cone Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio PCS175-8 6-1_2_ Poly Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=PCS175-8 6-1/2" Poly Cone Woofer 8 Ohm
 Manufacturer=
@@ -42308,7 +42308,7 @@ Dd=0.134935
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio PCX12-8 12_ Pro Coaxial Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio PCX12-8 12_ Pro Coaxial Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=PCX12-8 12" Pro Coaxial Woofer 8 Ohm
 Manufacturer=
@@ -42336,7 +42336,7 @@ Dd=0.255001
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio PM220-8 8_ Wideband Midbass Neo Driver`,content:`[Driver]
+`},{name:`Dayton Audio PM220-8 8_ Wideband Midbass Neo Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=PM220-8 8" Wideband Midbass Neo Driver
 Manufacturer=
@@ -42364,7 +42364,7 @@ Dd=0.161677
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio PS180-8 6-1_2_ Point Source Full-Range Neo Driver`,content:`[Driver]
+`},{name:`Dayton Audio PS180-8 6-1_2_ Point Source Full-Range Neo Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=PS180-8 6-1/2" Point Source Full-Range Neo Driver
 Manufacturer=
@@ -42392,7 +42392,7 @@ Dd=0.129984
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio PS220-8 8_ Point Source Full-Range Neo Driver`,content:`[Driver]
+`},{name:`Dayton Audio PS220-8 8_ Point Source Full-Range Neo Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=PS220-8 8" Point Source Full-Range Neo Driver
 Manufacturer=
@@ -42420,7 +42420,7 @@ Dd=0.165991
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio PS95-8 3-1_2_ Point Source Full Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio PS95-8 3-1_2_ Point Source Full Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=PS95-8 3-1/2" Point Source Full Range Driver 8 Ohm
 Manufacturer=
@@ -42448,7 +42448,7 @@ Dd=0.0600272
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio PSS555-8 21_ 1000 Watt RMS Pro Subwoofer with 4.5_ Voice Coil 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio PSS555-8 21_ 1000 Watt RMS Pro Subwoofer with 4.5_ Voice Coil 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=PSS555-8 21" 1000 Watt RMS Pro Subwoofer with 4.5" Voice Coil 8 Ohm
 Manufacturer=
@@ -42476,7 +42476,7 @@ Dd=0.470008
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio PT2C-8 Planar Tweeter`,content:`[Driver]
+`},{name:`Dayton Audio PT2C-8 Planar Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=PT2C-8 Planar Tweeter
 Manufacturer=
@@ -42504,7 +42504,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio PTMini-6 Planar Tweeter 6 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio PTMini-6 Planar Tweeter 6 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=PTMini-6 Planar Tweeter 6 Ohm
 Manufacturer=
@@ -42532,7 +42532,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio Pro 10 in. 8 Ohm Neodymium Midbass Woofer Odeum 10N`,content:`[Driver]
+`},{name:`Dayton Audio Pro 10 in. 8 Ohm Neodymium Midbass Woofer Odeum 10N`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=Pro 10 in. 8 Ohm Neodymium Midbass Woofer Odeum 10N
 Manufacturer=
@@ -42560,7 +42560,7 @@ Dd=0.205947
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio Pro 12 in. 8 Ohm Neodymium Midbass Woofer Odeum 12N`,content:`[Driver]
+`},{name:`Dayton Audio Pro 12 in. 8 Ohm Neodymium Midbass Woofer Odeum 12N`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=Pro 12 in. 8 Ohm Neodymium Midbass Woofer Odeum 12N
 Manufacturer=
@@ -42588,7 +42588,7 @@ Dd=0.250937
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio Pro 12_ 8 Ohm Subwoofer Odeum 12LF`,content:`[Driver]
+`},{name:`Dayton Audio Pro 12_ 8 Ohm Subwoofer Odeum 12LF`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=Pro 12" 8 Ohm Subwoofer Odeum 12LF
 Manufacturer=
@@ -42616,7 +42616,7 @@ Dd=0.260507
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio Pro 15 in. 8 Ohm Neodymium Midbass Woofer Odeum 15N`,content:`[Driver]
+`},{name:`Dayton Audio Pro 15 in. 8 Ohm Neodymium Midbass Woofer Odeum 15N`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=Pro 15 in. 8 Ohm Neodymium Midbass Woofer Odeum 15N
 Manufacturer=
@@ -42644,7 +42644,7 @@ Dd=0.327916
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio Pro 15 in. 8 Ohm Subwoofer Odeum 15LF`,content:`[Driver]
+`},{name:`Dayton Audio Pro 15 in. 8 Ohm Subwoofer Odeum 15LF`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=Pro 15 in. 8 Ohm Subwoofer Odeum 15LF
 Manufacturer=
@@ -42672,7 +42672,7 @@ Dd=0.326529
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio Pro 18 in. 8 Ohm Neodymium Subwoofer Odeum 18N`,content:`[Driver]
+`},{name:`Dayton Audio Pro 18 in. 8 Ohm Neodymium Subwoofer Odeum 18N`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=Pro 18 in. 8 Ohm Neodymium Subwoofer Odeum 18N
 Manufacturer=
@@ -42700,7 +42700,7 @@ Dd=0.390882
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio Pro 18 in. 8 Ohm Subwoofer Odeum 18F`,content:`[Driver]
+`},{name:`Dayton Audio Pro 18 in. 8 Ohm Subwoofer Odeum 18F`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=Pro 18 in. 8 Ohm Subwoofer Odeum 18F
 Manufacturer=
@@ -42728,7 +42728,7 @@ Dd=0.390882
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio Pro 6.5 in. 8 Ohm Neodymium Midbass Woofer Odeum 6.5N`,content:`[Driver]
+`},{name:`Dayton Audio Pro 6.5 in. 8 Ohm Neodymium Midbass Woofer Odeum 6.5N`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=Pro 6.5 in. 8 Ohm Neodymium Midbass Woofer Odeum 6.5N
 Manufacturer=
@@ -42756,7 +42756,7 @@ Dd=0.129969
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio Pro 8 in. 8 Ohm Neodymium Midbass Woofer Odeum 8N`,content:`[Driver]
+`},{name:`Dayton Audio Pro 8 in. 8 Ohm Neodymium Midbass Woofer Odeum 8N`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=Pro 8 in. 8 Ohm Neodymium Midbass Woofer Odeum 8N
 Manufacturer=
@@ -42784,7 +42784,7 @@ Dd=0.159959
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RC180-55 2_ x 7_ Res-Core™ Neodymium Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RC180-55 2_ x 7_ Res-Core™ Neodymium Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RC180-55 2" x 7" Res-Core™ Neodymium Woofer 4 Ohm
 Manufacturer=
@@ -42812,7 +42812,7 @@ Dd=0.0847412
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS100-4 4_ Reference Full-Range Driver 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RS100-4 4_ Reference Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS100-4 4" Reference Full-Range Driver 4 Ohm
 Manufacturer=
@@ -42840,7 +42840,7 @@ Dd=0.0670413
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS100-8 4_ Reference Full-Range Driver`,content:`[Driver]
+`},{name:`Dayton Audio RS100-8 4_ Reference Full-Range Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS100-8 4" Reference Full-Range Driver
 Manufacturer=
@@ -42868,7 +42868,7 @@ Dd=0.0670413
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS100P-4 4_ Reference Paper Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RS100P-4 4_ Reference Paper Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS100P-4 4" Reference Paper Woofer 4 Ohm
 Manufacturer=
@@ -42896,7 +42896,7 @@ Dd=0.0679843
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS100P-4`,content:`[Driver]
+`},{name:`Dayton Audio RS100P-4`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS100P-4
 Manufacturer=
@@ -42924,7 +42924,7 @@ Dd=0.0679843
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS100P-8 4_ Reference Paper Midwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RS100P-8 4_ Reference Paper Midwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS100P-8 4" Reference Paper Midwoofer 8 Ohm
 Manufacturer=
@@ -42952,7 +42952,7 @@ Dd=0.0690066
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS100P-8`,content:`[Driver]
+`},{name:`Dayton Audio RS100P-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS100P-8
 Manufacturer=
@@ -42980,7 +42980,7 @@ Dd=0.0690066
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS100T-8`,content:`[Driver]
+`},{name:`Dayton Audio RS100T-8`,date:``,content:`[Driver]
 Brand=Dayton Audio
 Model=RS100T-8
 Manufacturer=
@@ -43008,7 +43008,7 @@ Dd=0.076962
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS125-4 5_ Reference Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RS125-4 5_ Reference Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS125-4 5" Reference Woofer 4 Ohm
 Manufacturer=
@@ -43036,7 +43036,7 @@ Dd=0.0819921
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS125-4`,content:`[Driver]
+`},{name:`Dayton Audio RS125-4`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS125-4
 Manufacturer=
@@ -43064,7 +43064,7 @@ Dd=0.0819921
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS125-8 5_ Reference Woofer`,content:`[Driver]
+`},{name:`Dayton Audio RS125-8 5_ Reference Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS125-8 5" Reference Woofer
 Manufacturer=
@@ -43092,7 +43092,7 @@ Dd=0.0819921
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS125-8`,content:`[Driver]
+`},{name:`Dayton Audio RS125-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS125-8
 Manufacturer=
@@ -43120,7 +43120,7 @@ Dd=0.0819921
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS125P-4 5_ Reference Paper Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RS125P-4 5_ Reference Paper Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS125P-4 5" Reference Paper Woofer 4 Ohm
 Manufacturer=
@@ -43148,7 +43148,7 @@ Dd=0.083003
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS125P-4`,content:`[Driver]
+`},{name:`Dayton Audio RS125P-4`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS125P-4
 Manufacturer=
@@ -43176,7 +43176,7 @@ Dd=0.083003
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS125P-8 5_ Reference Paper Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RS125P-8 5_ Reference Paper Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS125P-8 5" Reference Paper Woofer 8 Ohm
 Manufacturer=
@@ -43204,7 +43204,7 @@ Dd=0.0819921
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS125P-8`,content:`[Driver]
+`},{name:`Dayton Audio RS125P-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS125P-8
 Manufacturer=
@@ -43232,7 +43232,7 @@ Dd=0.0819921
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS125T-8`,content:`[Driver]
+`},{name:`Dayton Audio RS125T-8`,date:``,content:`[Driver]
 Brand=Dayton Audio
 Model=RS125T-8
 Manufacturer=
@@ -43260,7 +43260,7 @@ Dd=0.09398
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS150-4 6_ Reference Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RS150-4 6_ Reference Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS150-4 6" Reference Woofer 4 Ohm
 Manufacturer=
@@ -43288,7 +43288,7 @@ Dd=0.104031
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS150-4`,content:`[Driver]
+`},{name:`Dayton Audio RS150-4`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS150-4
 Manufacturer=
@@ -43316,7 +43316,7 @@ Dd=0.104031
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS150-8 6_ Reference Woofer`,content:`[Driver]
+`},{name:`Dayton Audio RS150-8 6_ Reference Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS150-8 6" Reference Woofer
 Manufacturer=
@@ -43344,7 +43344,7 @@ Dd=0.104031
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS150-8`,content:`[Driver]
+`},{name:`Dayton Audio RS150-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS150-8
 Manufacturer=
@@ -43372,7 +43372,7 @@ Dd=0.104031
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS150P-4A 6_ Reference Paper Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RS150P-4A 6_ Reference Paper Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS150P-4A 6" Reference Paper Woofer 4 Ohm
 Manufacturer=
@@ -43400,7 +43400,7 @@ Dd=0.104031
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS150P-4A`,content:`[Driver]
+`},{name:`Dayton Audio RS150P-4A`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS150P-4A
 Manufacturer=
@@ -43428,7 +43428,7 @@ Dd=0.104031
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS150P-8`,content:`[Driver]
+`},{name:`Dayton Audio RS150P-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS150P-8
 Manufacturer=
@@ -43456,7 +43456,7 @@ Dd=0.104031
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS150P-8A 6_ Reference Paper Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RS150P-8A 6_ Reference Paper Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS150P-8A 6" Reference Paper Woofer 8 Ohm
 Manufacturer=
@@ -43484,7 +43484,7 @@ Dd=0.104031
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS150P-8A`,content:`[Driver]
+`},{name:`Dayton Audio RS150P-8A`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS150P-8A
 Manufacturer=
@@ -43512,7 +43512,7 @@ Dd=0.104031
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS150T-8`,content:`[Driver]
+`},{name:`Dayton Audio RS150T-8`,date:``,content:`[Driver]
 Brand=Dayton Audio
 Model=RS150T-8
 Manufacturer=
@@ -43540,7 +43540,7 @@ Dd=0.121412
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS180-4 7_ Reference Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RS180-4 7_ Reference Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS180-4 7" Reference Woofer 4 Ohm
 Manufacturer=
@@ -43568,7 +43568,7 @@ Dd=0.126005
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS180-4`,content:`[Driver]
+`},{name:`Dayton Audio RS180-4`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS180-4
 Manufacturer=
@@ -43596,7 +43596,7 @@ Dd=0.126005
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS180-8 7_ Reference Woofer`,content:`[Driver]
+`},{name:`Dayton Audio RS180-8 7_ Reference Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS180-8 7" Reference Woofer
 Manufacturer=
@@ -43624,7 +43624,7 @@ Dd=0.126005
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS180-8`,content:`[Driver]
+`},{name:`Dayton Audio RS180-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS180-8
 Manufacturer=
@@ -43652,7 +43652,7 @@ Dd=0.126005
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS180P-4 7_ Reference Paper Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RS180P-4 7_ Reference Paper Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS180P-4 7" Reference Paper Woofer 4 Ohm
 Manufacturer=
@@ -43680,7 +43680,7 @@ Dd=0.127012
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS180P-4`,content:`[Driver]
+`},{name:`Dayton Audio RS180P-4`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS180P-4
 Manufacturer=
@@ -43708,7 +43708,7 @@ Dd=0.127012
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS180P-8 7_ Reference Paper Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RS180P-8 7_ Reference Paper Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS180P-8 7" Reference Paper Woofer 8 Ohm
 Manufacturer=
@@ -43736,7 +43736,7 @@ Dd=0.127012
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS180P-8`,content:`[Driver]
+`},{name:`Dayton Audio RS180P-8`,date:``,content:`[Driver]
 Brand=Dayton Audio
 Model=RS180P-8
 Manufacturer=
@@ -43764,7 +43764,7 @@ Dd=0.12701159408414064
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS180S-8 7_ Reference Shielded Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RS180S-8 7_ Reference Shielded Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS180S-8 7" Reference Shielded Woofer 8 Ohm
 Manufacturer=
@@ -43792,7 +43792,7 @@ Dd=0.126005
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS180S-8`,content:`[Driver]
+`},{name:`Dayton Audio RS180S-8`,date:``,content:`[Driver]
 Brand=Dayton Audio
 Model=RS180S-8
 Manufacturer=
@@ -43820,7 +43820,7 @@ Dd=0.1260051472077529
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS225-4 8_ Reference Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RS225-4 8_ Reference Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS225-4 8" Reference Woofer 4 Ohm
 Manufacturer=
@@ -43848,7 +43848,7 @@ Dd=0.16499
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS225-4`,content:`[Driver]
+`},{name:`Dayton Audio RS225-4`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS225-4
 Manufacturer=
@@ -43876,7 +43876,7 @@ Dd=0.16499
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS225-8 8_ Reference Woofer`,content:`[Driver]
+`},{name:`Dayton Audio RS225-8 8_ Reference Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS225-8 8" Reference Woofer
 Manufacturer=
@@ -43904,7 +43904,7 @@ Dd=0.16499
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS225-8`,content:`[Driver]
+`},{name:`Dayton Audio RS225-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS225-8
 Manufacturer=
@@ -43932,7 +43932,7 @@ Dd=0.16499
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS225P-4A 8_ Reference Paper Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RS225P-4A 8_ Reference Paper Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS225P-4A 8" Reference Paper Woofer 4 Ohm
 Manufacturer=
@@ -43960,7 +43960,7 @@ Dd=0.16499
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS225P-4A`,content:`[Driver]
+`},{name:`Dayton Audio RS225P-4A`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS225P-4A
 Manufacturer=
@@ -43988,7 +43988,7 @@ Dd=0.16499
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS225P-8A 8_ Reference Paper Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RS225P-8A 8_ Reference Paper Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS225P-8A 8" Reference Paper Woofer 8 Ohm
 Manufacturer=
@@ -44016,7 +44016,7 @@ Dd=0.16499
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS225P-8A`,content:`[Driver]
+`},{name:`Dayton Audio RS225P-8A`,date:``,content:`[Driver]
 Brand=Dayton Audio
 Model=RS225P-8A
 Manufacturer=
@@ -44044,7 +44044,7 @@ Dd=0.1649904890181182
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS270-4`,content:`[Driver]
+`},{name:`Dayton Audio RS270-4`,date:``,content:`[Driver]
 Brand=Dayton Audio
 Model=RS270-4
 Manufacturer=
@@ -44072,7 +44072,7 @@ Dd=0.235966
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS270-8 10_ Reference Woofer`,content:`[Driver]
+`},{name:`Dayton Audio RS270-8 10_ Reference Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS270-8 10" Reference Woofer
 Manufacturer=
@@ -44100,7 +44100,7 @@ Dd=0.210012
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS270-8`,content:`[Driver]
+`},{name:`Dayton Audio RS270-8`,date:``,content:`[Driver]
 Brand=Dayton Audio
 Model=RS270-8
 Manufacturer=
@@ -44128,7 +44128,7 @@ Dd=0.21001194687356725
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS270P-4A`,content:`[Driver]
+`},{name:`Dayton Audio RS270P-4A`,date:``,content:`[Driver]
 Brand=Dayton Audio
 Model=RS270P-4A
 Manufacturer=
@@ -44156,7 +44156,7 @@ Dd=0.235966
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS270P-8A`,content:`[Driver]
+`},{name:`Dayton Audio RS270P-8A`,date:``,content:`[Driver]
 Brand=Dayton Audio
 Model=RS270P-8A
 Manufacturer=
@@ -44184,7 +44184,7 @@ Dd=0.235966
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS52AN-8 2_ Reference Aluminum Dome Midrange`,content:`[Driver]
+`},{name:`Dayton Audio RS52AN-8 2_ Reference Aluminum Dome Midrange`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS52AN-8 2" Reference Aluminum Dome Midrange
 Manufacturer=
@@ -44212,7 +44212,7 @@ Dd=0.0579772
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS52FN-8 2_ Reference Fabric Dome Midrange 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RS52FN-8 2_ Reference Fabric Dome Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS52FN-8 2" Reference Fabric Dome Midrange 8 Ohm
 Manufacturer=
@@ -44240,7 +44240,7 @@ Dd=0.0579772
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS75-4 3_ Reference Full-Range Driver 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RS75-4 3_ Reference Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS75-4 3" Reference Full-Range Driver 4 Ohm
 Manufacturer=
@@ -44268,7 +44268,7 @@ Dd=0.0390882
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS75-8 3_ Reference Full-Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RS75-8 3_ Reference Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS75-8 3" Reference Full-Range Driver 8 Ohm
 Manufacturer=
@@ -44296,7 +44296,7 @@ Dd=0.0448522
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RS75T-8 3_ Reference Full-Range Driver Truncated Frame`,content:`[Driver]
+`},{name:`Dayton Audio RS75T-8 3_ Reference Full-Range Driver Truncated Frame`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS75T-8 3" Reference Full-Range Driver Truncated Frame
 Manufacturer=
@@ -44324,7 +44324,7 @@ Dd=0.0390882
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RSS210HF-4 8_ Reference Series HF Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RSS210HF-4 8_ Reference Series HF Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS210HF-4 8" Reference Series HF Subwoofer 4 Ohm
 Manufacturer=
@@ -44352,7 +44352,7 @@ Dd=0.166985
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RSS210HO-4 8_ Reference Series HO Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RSS210HO-4 8_ Reference Series HO Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS210HO-4 8" Reference Series HO Subwoofer 4 Ohm
 Manufacturer=
@@ -44380,7 +44380,7 @@ Dd=0.16499
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RSS210HO-8 8_ Reference Series HO Subwoofer 8 ohm`,content:`[Driver]
+`},{name:`Dayton Audio RSS210HO-8 8_ Reference Series HO Subwoofer 8 ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS210HO-8 8" Reference Series HO Subwoofer 8 ohm
 Manufacturer=
@@ -44408,7 +44408,7 @@ Dd=0.16499
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RSS265-PR 10_ Reference Series Aluminum Cone Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio RSS265-PR 10_ Reference Series Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS265-PR 10" Reference Series Aluminum Cone Passive Radiator
 Manufacturer=
@@ -44436,7 +44436,7 @@ Dd=0.212992
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RSS265HF-4 10_ Reference Series HF Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RSS265HF-4 10_ Reference Series HF Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS265HF-4 10" Reference Series HF Subwoofer 4 Ohm
 Manufacturer=
@@ -44464,7 +44464,7 @@ Dd=0.212992
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RSS265HF-8 10_ Reference Series HF Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RSS265HF-8 10_ Reference Series HF Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS265HF-8 10" Reference Series HF Subwoofer 8 Ohm
 Manufacturer=
@@ -44492,7 +44492,7 @@ Dd=0.210012
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RSS265HO-4 10_ Reference Series HO Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RSS265HO-4 10_ Reference Series HO Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS265HO-4 10" Reference Series HO Subwoofer 4 Ohm
 Manufacturer=
@@ -44520,7 +44520,7 @@ Dd=0.21101
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RSS265HO-44 10_ Reference Series HO DVC Subwoofer`,content:`[Driver]
+`},{name:`Dayton Audio RSS265HO-44 10_ Reference Series HO DVC Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS265HO-44 10" Reference Series HO DVC Subwoofer
 Manufacturer=
@@ -44548,7 +44548,7 @@ Dd=0.211793
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RSS315-PR 12_ Reference Series Aluminum Cone Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio RSS315-PR 12_ Reference Series Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS315-PR 12" Reference Series Aluminum Cone Passive Radiator
 Manufacturer=
@@ -44576,7 +44576,7 @@ Dd=0.253998
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RSS315HF-4 12_ Reference Series HF Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RSS315HF-4 12_ Reference Series HF Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS315HF-4 12" Reference Series HF Subwoofer 4 Ohm
 Manufacturer=
@@ -44604,7 +44604,7 @@ Dd=0.255995
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RSS315HFA-8 12_ Reference Series HF Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RSS315HFA-8 12_ Reference Series HF Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS315HFA-8 12" Reference Series HF Subwoofer 8 Ohm
 Manufacturer=
@@ -44632,7 +44632,7 @@ Dd=0.253998
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RSS315HO-4 12_ Reference Series HO Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RSS315HO-4 12_ Reference Series HO Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS315HO-4 12" Reference Series HO Subwoofer 4 Ohm
 Manufacturer=
@@ -44660,7 +44660,7 @@ Dd=0.255995
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RSS315HO-44 12_ Reference Series HO DVC Subwoofer`,content:`[Driver]
+`},{name:`Dayton Audio RSS315HO-44 12_ Reference Series HO DVC Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS315HO-44 12" Reference Series HO DVC Subwoofer
 Manufacturer=
@@ -44688,7 +44688,7 @@ Dd=0.254098
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RSS390-PR 15_ Reference Series Aluminum Cone Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio RSS390-PR 15_ Reference Series Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS390-PR 15" Reference Series Aluminum Cone Passive Radiator
 Manufacturer=
@@ -44716,7 +44716,7 @@ Dd=0.325005
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RSS390HF-4 15_ Reference Series HF Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RSS390HF-4 15_ Reference Series HF Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS390HF-4 15" Reference Series HF Subwoofer 4 Ohm
 Manufacturer=
@@ -44744,7 +44744,7 @@ Dd=0.325005
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RSS390HO-4 15_ Reference Series HO Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RSS390HO-4 15_ Reference Series HO Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS390HO-4 15" Reference Series HO Subwoofer 4 Ohm
 Manufacturer=
@@ -44772,7 +44772,7 @@ Dd=0.325005
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RSS460-PR 18_ Reference Series Aluminum Cone Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio RSS460-PR 18_ Reference Series Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS460-PR 18" Reference Series Aluminum Cone Passive Radiator
 Manufacturer=
@@ -44800,7 +44800,7 @@ Dd=0.384974
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RSS460HO-4 18_ Reference Series HO Subwoofer 4 ohm`,content:`[Driver]
+`},{name:`Dayton Audio RSS460HO-4 18_ Reference Series HO Subwoofer 4 ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS460HO-4 18" Reference Series HO Subwoofer 4 ohm
 Manufacturer=
@@ -44828,7 +44828,7 @@ Dd=0.384974
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RST28A-4 1-1_8_ Reference Series Aluminum Dome Tweeter 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RST28A-4 1-1_8_ Reference Series Aluminum Dome Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RST28A-4 1-1/8" Reference Series Aluminum Dome Tweeter 4 Ohm
 Manufacturer=
@@ -44856,7 +44856,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RST28A-4 1-1_8_ Reference Series Aluminum Dome Tweeter with Truncated Faceplate`,content:`[Driver]
+`},{name:`Dayton Audio RST28A-4 1-1_8_ Reference Series Aluminum Dome Tweeter with Truncated Faceplate`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RST28A-4 1-1/8" Reference Series Aluminum Dome Tweeter with Truncated Faceplate
 Manufacturer=
@@ -44884,7 +44884,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RST28F-4 1-1_8_ Reference Series Fabric Dome Tweeter 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio RST28F-4 1-1_8_ Reference Series Fabric Dome Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RST28F-4 1-1/8" Reference Series Fabric Dome Tweeter 4 Ohm
 Manufacturer=
@@ -44912,7 +44912,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio RST28F-4 1-1_8_ Reference Series Fabric Dome Tweeter with Truncated Faceplate`,content:`[Driver]
+`},{name:`Dayton Audio RST28F-4 1-1_8_ Reference Series Fabric Dome Tweeter with Truncated Faceplate`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=RST28F-4 1-1/8" Reference Series Fabric Dome Tweeter with Truncated Faceplate
 Manufacturer=
@@ -44940,7 +44940,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio SD215A-88 8_ DVC Subwoofer`,content:`[Driver]
+`},{name:`Dayton Audio SD215A-88 8_ DVC Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=SD215A-88 8" DVC Subwoofer
 Manufacturer=
@@ -44968,7 +44968,7 @@ Dd=0.163011
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio SD270A-88 10_ DVC Subwoofer`,content:`[Driver]
+`},{name:`Dayton Audio SD270A-88 10_ DVC Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=SD270A-88 10" DVC Subwoofer
 Manufacturer=
@@ -44996,7 +44996,7 @@ Dd=0.210012
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio SD315A-88 12_ DVC Subwoofer`,content:`[Driver]
+`},{name:`Dayton Audio SD315A-88 12_ DVC Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=SD315A-88 12" DVC Subwoofer
 Manufacturer=
@@ -45024,7 +45024,7 @@ Dd=0.258002
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio SIG120-4 4” Signature Series Extended Range 40W Driver 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio SIG120-4 4” Signature Series Extended Range 40W Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=SIG120-4 4” Signature Series Extended Range 40W Driver 4 Ohm
 Manufacturer=
@@ -45052,7 +45052,7 @@ Dd=0.0847412
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio SIG150-4 5.25” Signature Series Woofer 60W Driver 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio SIG150-4 5.25” Signature Series Woofer 60W Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=SIG150-4 5.25” Signature Series Woofer 60W Driver 4 Ohm
 Manufacturer=
@@ -45080,7 +45080,7 @@ Dd=0.110558
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio SIG180-4 6.5” Signature Series Woofer 80W Driver 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio SIG180-4 6.5” Signature Series Woofer 80W Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=SIG180-4 6.5” Signature Series Woofer 80W Driver 4 Ohm
 Manufacturer=
@@ -45108,7 +45108,7 @@ Dd=0.134935
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio SIG225-4 8_ Signature Series Woofer 100W Driver 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio SIG225-4 8_ Signature Series Woofer 100W Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=SIG225-4 8" Signature Series Woofer 100W Driver 4 Ohm
 Manufacturer=
@@ -45136,7 +45136,7 @@ Dd=0.16997
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio SIG270-4 10_ Signature Series Woofer 120W Driver 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio SIG270-4 10_ Signature Series Woofer 120W Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=SIG270-4 10" Signature Series Woofer 120W Driver 4 Ohm
 Manufacturer=
@@ -45164,7 +45164,7 @@ Dd=0.21454
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio SS10-22 10_ Signature Series DVC Subwoofer 2 Ohm per Coil`,content:`[Driver]
+`},{name:`Dayton Audio SS10-22 10_ Signature Series DVC Subwoofer 2 Ohm per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=SS10-22 10" Signature Series DVC Subwoofer 2 Ohm per Coil
 Manufacturer=
@@ -45192,7 +45192,7 @@ Dd=0.209435
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio SS10-PR 10_ Signature Series Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio SS10-PR 10_ Signature Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=SS10-PR 10" Signature Series Passive Radiator
 Manufacturer=
@@ -45220,7 +45220,7 @@ Dd=0.210012
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio SS12-22 12_ Signature Series DVC Subwoofer 2 Ohm per Coil`,content:`[Driver]
+`},{name:`Dayton Audio SS12-22 12_ Signature Series DVC Subwoofer 2 Ohm per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=SS12-22 12" Signature Series DVC Subwoofer 2 Ohm per Coil
 Manufacturer=
@@ -45248,7 +45248,7 @@ Dd=0.259282
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio SS12-PR 12_ Signature Series Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio SS12-PR 12_ Signature Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=SS12-PR 12" Signature Series Passive Radiator
 Manufacturer=
@@ -45276,7 +45276,7 @@ Dd=0.258002
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio SS15-22 15_ Signature Series DVC Subwoofer 2 Ohm per Coil`,content:`[Driver]
+`},{name:`Dayton Audio SS15-22 15_ Signature Series DVC Subwoofer 2 Ohm per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=SS15-22 15" Signature Series DVC Subwoofer 2 Ohm per Coil
 Manufacturer=
@@ -45304,7 +45304,7 @@ Dd=0.319154
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio SS15-PR 15_ Signature Series Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio SS15-PR 15_ Signature Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=SS15-PR 15" Signature Series Passive Radiator
 Manufacturer=
@@ -45332,7 +45332,7 @@ Dd=0.32001
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio SS18-22 18_ Signature Series DVC Subwoofer 2 Ohm per Coil`,content:`[Driver]
+`},{name:`Dayton Audio SS18-22 18_ Signature Series DVC Subwoofer 2 Ohm per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=SS18-22 18" Signature Series DVC Subwoofer 2 Ohm per Coil
 Manufacturer=
@@ -45360,7 +45360,7 @@ Dd=0.388923
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio SS18-PR 18_ Signature Series Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio SS18-PR 18_ Signature Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=SS18-PR 18" Signature Series Passive Radiator
 Manufacturer=
@@ -45388,7 +45388,7 @@ Dd=0.390002
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio SS8-22 8_ Signature Series DVC Subwoofer 2 Ohm per Coil`,content:`[Driver]
+`},{name:`Dayton Audio SS8-22 8_ Signature Series DVC Subwoofer 2 Ohm per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=SS8-22 8" Signature Series DVC Subwoofer 2 Ohm per Coil
 Manufacturer=
@@ -45416,7 +45416,7 @@ Dd=0.159577
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio SS8-PR 8_ Signature Series Passive Radiator`,content:`[Driver]
+`},{name:`Dayton Audio SS8-PR 8_ Signature Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=SS8-PR 8" Signature Series Passive Radiator
 Manufacturer=
@@ -45444,7 +45444,7 @@ Dd=0.159017
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ST210-8`,content:`[Driver]
+`},{name:`Dayton Audio ST210-8`,date:``,content:`[Driver]
 Brand=Dayton Audio
 Model=ST210-8
 Manufacturer=
@@ -45472,7 +45472,7 @@ Dd=0.17653
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ST255-8`,content:`[Driver]
+`},{name:`Dayton Audio ST255-8`,date:``,content:`[Driver]
 Brand=Dayton Audio
 Model=ST255-8
 Manufacturer=
@@ -45500,7 +45500,7 @@ Dd=0.229616
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ST305-8`,content:`[Driver]
+`},{name:`Dayton Audio ST305-8`,date:``,content:`[Driver]
 Brand=Dayton Audio
 Model=ST305-8
 Manufacturer=
@@ -45528,7 +45528,7 @@ Dd=0.27813
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio ST385-8`,content:`[Driver]
+`},{name:`Dayton Audio ST385-8`,date:``,content:`[Driver]
 Brand=Dayton Audio
 Model=ST385-8
 Manufacturer=
@@ -45556,7 +45556,7 @@ Dd=0.349758
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio TCP115-4 4_ Treated Paper Midbass Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio TCP115-4 4_ Treated Paper Midbass Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=TCP115-4 4" Treated Paper Midbass Woofer 4 Ohm
 Manufacturer=
@@ -45584,7 +45584,7 @@ Dd=0.0800275
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio TCP115-4`,content:`[Driver]
+`},{name:`Dayton Audio TCP115-4`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=TCP115-4
 Manufacturer=
@@ -45612,7 +45612,7 @@ Dd=0.0800275
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio TCP115-8 4_ Treated Paper Cone Midbass Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio TCP115-8 4_ Treated Paper Cone Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=TCP115-8 4" Treated Paper Cone Midbass Woofer 8 Ohm
 Manufacturer=
@@ -45640,7 +45640,7 @@ Dd=0.0797885
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio TCP115-8`,content:`[Driver]
+`},{name:`Dayton Audio TCP115-8`,date:``,content:`[Driver]
 Brand=Dayton Audio
 Model=TCP115-8
 Manufacturer=
@@ -45668,7 +45668,7 @@ Dd=0.07978845608028654
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio TD20F-4 3_4_ Soft Dome Neodymium Tweeter 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio TD20F-4 3_4_ Soft Dome Neodymium Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=TD20F-4 3/4" Soft Dome Neodymium Tweeter 4 Ohm
 Manufacturer=
@@ -45696,7 +45696,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio TD24F-4 1_ Soft Dome Neodymium Tweeter 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio TD24F-4 1_ Soft Dome Neodymium Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=TD24F-4 1" Soft Dome Neodymium Tweeter 4 Ohm
 Manufacturer=
@@ -45724,7 +45724,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio TD25F-4 1_ Soft Dome Tweeter 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio TD25F-4 1_ Soft Dome Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=TD25F-4 1" Soft Dome Tweeter 4 Ohm
 Manufacturer=
@@ -45752,7 +45752,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio TIT400C-4 15'' Titanic Mk III Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Dayton Audio TIT400C-4 15'' Titanic Mk III Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=TIT400C-4 15'' Titanic Mk III Subwoofer 4 Ohm
 Manufacturer=
@@ -45780,7 +45780,7 @@ Dd=0.319991
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio UM10-22 10_ Ultimax DVC Subwoofer 2 ohms Per Coil`,content:`[Driver]
+`},{name:`Dayton Audio UM10-22 10_ Ultimax DVC Subwoofer 2 ohms Per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=UM10-22 10" Ultimax DVC Subwoofer 2 ohms Per Coil
 Manufacturer=
@@ -45808,7 +45808,7 @@ Dd=0.204296
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio UM15-22 15_ Ultimax DVC Subwoofer 2 ohms Per Coil`,content:`[Driver]
+`},{name:`Dayton Audio UM15-22 15_ Ultimax DVC Subwoofer 2 ohms Per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=UM15-22 15" Ultimax DVC Subwoofer 2 ohms Per Coil
 Manufacturer=
@@ -45836,7 +45836,7 @@ Dd=0.322053
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio UMII10-22 Ultimax II 10_ DVC Subwoofer 2 Ohm Per Coil`,content:`[Driver]
+`},{name:`Dayton Audio UMII10-22 Ultimax II 10_ DVC Subwoofer 2 Ohm Per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=UMII10-22 Ultimax II 10" DVC Subwoofer 2 Ohm Per Coil
 Manufacturer=
@@ -45864,7 +45864,7 @@ Dd=0.209587
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio UMII12-22 Ultimax II 12_ DVC Subwoofer 2 Ohm Per Coil`,content:`[Driver]
+`},{name:`Dayton Audio UMII12-22 Ultimax II 12_ DVC Subwoofer 2 Ohm Per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=UMII12-22 Ultimax II 12" DVC Subwoofer 2 Ohm Per Coil
 Manufacturer=
@@ -45892,7 +45892,7 @@ Dd=0.259282
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio UMII15-22 Ultimax II 15_ DVC Subwoofer 2 Ohm Per Coil`,content:`[Driver]
+`},{name:`Dayton Audio UMII15-22 Ultimax II 15_ DVC Subwoofer 2 Ohm Per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=UMII15-22 Ultimax II 15" DVC Subwoofer 2 Ohm Per Coil
 Manufacturer=
@@ -45920,7 +45920,7 @@ Dd=0.317354
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio UMII18-22 Ultimax II 18_ DVC Subwoofer 2 Ohm Per Coil`,content:`[Driver]
+`},{name:`Dayton Audio UMII18-22 Ultimax II 18_ DVC Subwoofer 2 Ohm Per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=UMII18-22 Ultimax II 18" DVC Subwoofer 2 Ohm Per Coil
 Manufacturer=
@@ -45948,7 +45948,7 @@ Dd=0.388267
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dayton Audio UMII8-22 Ultimax II 8_ DVC Subwoofer 2 Ohm Per Coil`,content:`[Driver]
+`},{name:`Dayton Audio UMII8-22 Ultimax II 8_ DVC Subwoofer 2 Ohm Per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=UMII8-22 Ultimax II 8" DVC Subwoofer 2 Ohm Per Coil
 Manufacturer=
@@ -45976,7 +45976,7 @@ Dd=0.159577
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dynavox LW5002PPR-S`,content:`[Driver]
+`},{name:`Dynavox LW5002PPR-S`,date:``,content:`[Driver]
 Brand=Dynavox
 Model=LW5002PPR-S
 Manufacturer=
@@ -46004,7 +46004,7 @@ Dd=0.12192
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dynavox LW5004HR-N`,content:`[Driver]
+`},{name:`Dynavox LW5004HR-N`,date:``,content:`[Driver]
 Brand=Dynavox
 Model=LW5004HR-N
 Manufacturer=
@@ -46032,7 +46032,7 @@ Dd=0.123952
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dynavox LW5004PMR-N`,content:`[Driver]
+`},{name:`Dynavox LW5004PMR-N`,date:``,content:`[Driver]
 Brand=Dynavox
 Model=LW5004PMR-N
 Manufacturer=
@@ -46060,7 +46060,7 @@ Dd=0.123952
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dynavox LW5004PMR`,content:`[Driver]
+`},{name:`Dynavox LW5004PMR`,date:``,content:`[Driver]
 Brand=Dynavox
 Model=LW5004PMR
 Manufacturer=
@@ -46088,7 +46088,7 @@ Dd=0.123952
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dynavox LW6004HR-N`,content:`[Driver]
+`},{name:`Dynavox LW6004HR-N`,date:``,content:`[Driver]
 Brand=Dynavox
 Model=LW6004HR-N
 Manufacturer=
@@ -46116,7 +46116,7 @@ Dd=0.135636
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dynavox LW6004PMR-N`,content:`[Driver]
+`},{name:`Dynavox LW6004PMR-N`,date:``,content:`[Driver]
 Brand=Dynavox
 Model=LW6004PMR-N
 Manufacturer=
@@ -46144,7 +46144,7 @@ Dd=0.135636
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dynavox LW6004PMR-NC`,content:`[Driver]
+`},{name:`Dynavox LW6004PMR-NC`,date:``,content:`[Driver]
 Brand=Dynavox
 Model=LW6004PMR-NC
 Manufacturer=
@@ -46172,7 +46172,7 @@ Dd=0.135636
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dynavox LW6004PMR`,content:`[Driver]
+`},{name:`Dynavox LW6004PMR`,date:``,content:`[Driver]
 Brand=Dynavox
 Model=LW6004PMR
 Manufacturer=
@@ -46200,7 +46200,7 @@ Dd=0.13589
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Dynavox LW8004PMR`,content:`[Driver]
+`},{name:`Dynavox LW8004PMR`,date:``,content:`[Driver]
 Brand=Dynavox
 Model=LW8004PMR
 Manufacturer=
@@ -46228,7 +46228,7 @@ Dd=0.196088
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`EPIQUE by Dayton Audio E150HE-4`,content:`[Driver]
+`},{name:`EPIQUE by Dayton Audio E150HE-4`,date:`2026-06-24`,content:`[Driver]
 Brand=EPIQUE by Dayton Audio
 Model=E150HE-4
 Manufacturer=
@@ -46256,7 +46256,7 @@ Dd=0.109981
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`EPIQUE by Dayton Audio E160CF-8`,content:`[Driver]
+`},{name:`EPIQUE by Dayton Audio E160CF-8`,date:``,content:`[Driver]
 Brand=EPIQUE by Dayton Audio
 Model=E160CF-8
 Manufacturer=
@@ -46284,7 +46284,7 @@ Dd=0.134874
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`EPIQUE by Dayton Audio E180HE-4`,content:`[Driver]
+`},{name:`EPIQUE by Dayton Audio E180HE-4`,date:`2026-06-24`,content:`[Driver]
 Brand=EPIQUE by Dayton Audio
 Model=E180HE-4
 Manufacturer=
@@ -46312,7 +46312,7 @@ Dd=0.131639
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`EPIQUE by Dayton Audio E220CF-8`,content:`[Driver]
+`},{name:`EPIQUE by Dayton Audio E220CF-8`,date:``,content:`[Driver]
 Brand=EPIQUE by Dayton Audio
 Model=E220CF-8
 Manufacturer=
@@ -46340,7 +46340,7 @@ Dd=0.191008
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`EPIQUE by Dayton Audio Epique E150MR-4 5-1_2_ Wide-Band Carbon Fiber Midrange Driver 4 Ohm`,content:`[Driver]
+`},{name:`EPIQUE by Dayton Audio Epique E150MR-4 5-1_2_ Wide-Band Carbon Fiber Midrange Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=EPIQUE by Dayton Audio
 Model=Epique E150MR-4 5-1/2" Wide-Band Carbon Fiber Midrange Driver 4 Ohm
 Manufacturer=
@@ -46368,7 +46368,7 @@ Dd=0.113007
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`EPIQUE by Dayton Audio Epique E150MR-8 5-1_2_ Wide-Band Carbon Fiber Midrange Driver 8 Ohm`,content:`[Driver]
+`},{name:`EPIQUE by Dayton Audio Epique E150MR-8 5-1_2_ Wide-Band Carbon Fiber Midrange Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=EPIQUE by Dayton Audio
 Model=Epique E150MR-8 5-1/2" Wide-Band Carbon Fiber Midrange Driver 8 Ohm
 Manufacturer=
@@ -46396,7 +46396,7 @@ Dd=0.113007
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`EPIQUE by Dayton Audio Epique High Resolution Ceramic Dome Tweeter 30mm 4 Ohm EC30-4`,content:`[Driver]
+`},{name:`EPIQUE by Dayton Audio Epique High Resolution Ceramic Dome Tweeter 30mm 4 Ohm EC30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=EPIQUE by Dayton Audio
 Model=Epique High Resolution Ceramic Dome Tweeter 30mm 4 Ohm EC30-4
 Manufacturer=
@@ -46424,7 +46424,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`EPIQUE by Dayton Audio Epique High Resolution Ceramic Dome Tweeter 30mm 4 Ohm Matched Pair`,content:`[Driver]
+`},{name:`EPIQUE by Dayton Audio Epique High Resolution Ceramic Dome Tweeter 30mm 4 Ohm Matched Pair`,date:`2026-06-24`,content:`[Driver]
 Brand=EPIQUE by Dayton Audio
 Model=Epique High Resolution Ceramic Dome Tweeter 30mm 4 Ohm Matched Pair
 Manufacturer=
@@ -46452,7 +46452,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Eminence Speaker 8 Paper Cone High Output Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Eminence Speaker 8 Paper Cone High Output Woofer 4 Ohm`,date:``,content:`[Driver]
 Brand=Eminence Speaker
 Model=8 Paper Cone High Output Woofer 4 Ohm
 Manufacturer=
@@ -46480,7 +46480,7 @@ Dd=0.181102
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Eminence Speaker 8 Paper Cone Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Eminence Speaker 8 Paper Cone Professional Woofer 8 Ohm`,date:``,content:`[Driver]
 Brand=Eminence Speaker
 Model=8 Paper Cone Professional Woofer 8 Ohm
 Manufacturer=
@@ -46508,7 +46508,7 @@ Dd=0.181102
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Eminence Speaker Eminence Alpha 3-32 3_ Full-Range Speaker 32 Ohm`,content:`[Driver]
+`},{name:`Eminence Speaker Eminence Alpha 3-32 3_ Full-Range Speaker 32 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
 Model=Eminence Alpha 3-32 3" Full-Range Speaker 32 Ohm
 Manufacturer=
@@ -46536,7 +46536,7 @@ Dd=0.0603446
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Eminence Speaker Eminence Alpha 4-4 4_ Full-Range Pair 4 Ohm`,content:`[Driver]
+`},{name:`Eminence Speaker Eminence Alpha 4-4 4_ Full-Range Pair 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
 Model=Eminence Alpha 4-4 4" Full-Range Pair 4 Ohm
 Manufacturer=
@@ -46564,7 +46564,7 @@ Dd=0.0857123
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Eminence Speaker Eminence Alpha 4-8 4_ Full-Range Pair 8 Ohm`,content:`[Driver]
+`},{name:`Eminence Speaker Eminence Alpha 4-8 4_ Full-Range Pair 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
 Model=Eminence Alpha 4-8 4" Full-Range Pair 8 Ohm
 Manufacturer=
@@ -46592,7 +46592,7 @@ Dd=0.0857123
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Eminence Speaker Eminence Alpha-6CBMRA 6-1_2_ Ferrite Sealed Back Midrange Speaker Driver`,content:`[Driver]
+`},{name:`Eminence Speaker Eminence Alpha-6CBMRA 6-1_2_ Ferrite Sealed Back Midrange Speaker Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
 Model=Eminence Alpha-6CBMRA 6-1/2" Ferrite Sealed Back Midrange Speaker Driver
 Manufacturer=
@@ -46620,7 +46620,7 @@ Dd=0.0321736
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Eminence Speaker Eminence Beta-6A 6-1_2_ High Power Midbass Midrange Woofer Speaker`,content:`[Driver]
+`},{name:`Eminence Speaker Eminence Beta-6A 6-1_2_ High Power Midbass Midrange Woofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
 Model=Eminence Beta-6A 6-1/2" High Power Midbass Midrange Woofer Speaker
 Manufacturer=
@@ -46648,7 +46648,7 @@ Dd=0.128606
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Eminence Speaker Eminence CannaBass CB3010N-8 10_ Bass Guitar Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Eminence Speaker Eminence CannaBass CB3010N-8 10_ Bass Guitar Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
 Model=Eminence CannaBass CB3010N-8 10" Bass Guitar Speaker 8 Ohm
 Manufacturer=
@@ -46676,7 +46676,7 @@ Dd=0.219063
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Eminence Speaker Eminence CannaBass CB3015N-8 15_ Bass Guitar Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Eminence Speaker Eminence CannaBass CB3015N-8 15_ Bass Guitar Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
 Model=Eminence CannaBass CB3015N-8 15" Bass Guitar Speaker 8 Ohm
 Manufacturer=
@@ -46704,7 +46704,7 @@ Dd=0.330193
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Eminence Speaker Eminence Deltalite II 2510 Neo 10_ Speaker Driver`,content:`[Driver]
+`},{name:`Eminence Speaker Eminence Deltalite II 2510 Neo 10_ Speaker Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
 Model=Eminence Deltalite II 2510 Neo 10" Speaker Driver
 Manufacturer=
@@ -46732,7 +46732,7 @@ Dd=0.211131
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Eminence Speaker Eminence Deltalite II 2512 Neo 12_ Speaker Driver`,content:`[Driver]
+`},{name:`Eminence Speaker Eminence Deltalite II 2512 Neo 12_ Speaker Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
 Model=Eminence Deltalite II 2512 Neo 12" Speaker Driver
 Manufacturer=
@@ -46760,7 +46760,7 @@ Dd=0.257186
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Eminence Speaker Eminence Kappalite 3012HO Neo 12_ Speaker Driver`,content:`[Driver]
+`},{name:`Eminence Speaker Eminence Kappalite 3012HO Neo 12_ Speaker Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
 Model=Eminence Kappalite 3012HO Neo 12" Speaker Driver
 Manufacturer=
@@ -46788,7 +46788,7 @@ Dd=0.26036
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Eminence Speaker Eminence Kappalite 3012LF Neo 12_ Speaker Driver`,content:`[Driver]
+`},{name:`Eminence Speaker Eminence Kappalite 3012LF Neo 12_ Speaker Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
 Model=Eminence Kappalite 3012LF Neo 12" Speaker Driver
 Manufacturer=
@@ -46816,7 +46816,7 @@ Dd=0.263519
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Eminence Speaker Eminence Kappalite 3015 Neo 15_ Speaker Driver`,content:`[Driver]
+`},{name:`Eminence Speaker Eminence Kappalite 3015 Neo 15_ Speaker Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
 Model=Eminence Kappalite 3015 Neo 15" Speaker Driver
 Manufacturer=
@@ -46844,7 +46844,7 @@ Dd=0.330135
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Eminence Speaker Eminence Kappalite 3015LF Neo 15_ Speaker Driver`,content:`[Driver]
+`},{name:`Eminence Speaker Eminence Kappalite 3015LF Neo 15_ Speaker Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
 Model=Eminence Kappalite 3015LF Neo 15" Speaker Driver
 Manufacturer=
@@ -46872,7 +46872,7 @@ Dd=0.33494
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Eminence Speaker Eminence LA6-CBMR 6-1_2_ Line Array Series Sealed Back Midrange Speaker`,content:`[Driver]
+`},{name:`Eminence Speaker Eminence LA6-CBMR 6-1_2_ Line Array Series Sealed Back Midrange Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
 Model=Eminence LA6-CBMR 6-1/2" Line Array Series Sealed Back Midrange Speaker
 Manufacturer=
@@ -46900,7 +46900,7 @@ Dd=0.13018
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Eminence Speaker Eminence LAB 12 Professional 12_ Subwoofer Speaker 6 Ohm`,content:`[Driver]
+`},{name:`Eminence Speaker Eminence LAB 12 Professional 12_ Subwoofer Speaker 6 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
 Model=Eminence LAB 12 Professional 12" Subwoofer Speaker 6 Ohm
 Manufacturer=
@@ -46928,7 +46928,7 @@ Dd=0.253998
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Eminence Speaker Eminence LAB15 15_ Pro Audio Subwoofer Speaker`,content:`[Driver]
+`},{name:`Eminence Speaker Eminence LAB15 15_ Pro Audio Subwoofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
 Model=Eminence LAB15 15" Pro Audio Subwoofer Speaker
 Manufacturer=
@@ -46956,7 +46956,7 @@ Dd=0.323847
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Eminence Speaker Eminence Lab 12C High Power 12_ Subwoofer Speaker Driver 4 Ohm`,content:`[Driver]
+`},{name:`Eminence Speaker Eminence Lab 12C High Power 12_ Subwoofer Speaker Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
 Model=Eminence Lab 12C High Power 12" Subwoofer Speaker Driver 4 Ohm
 Manufacturer=
@@ -46984,7 +46984,7 @@ Dd=0.253998
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Eminence Speaker Eminence Omega Pro 12-2KW-8 12_ Professional Series Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Eminence Speaker Eminence Omega Pro 12-2KW-8 12_ Professional Series Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
 Model=Eminence Omega Pro 12-2KW-8 12" Professional Series Speaker 8 Ohm
 Manufacturer=
@@ -47012,7 +47012,7 @@ Dd=0.263519
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Eminence Speaker Eminence Omega Pro 15-2KW-8 15_ Professional Series Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Eminence Speaker Eminence Omega Pro 15-2KW-8 15_ Professional Series Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
 Model=Eminence Omega Pro 15-2KW-8 15" Professional Series Speaker 8 Ohm
 Manufacturer=
@@ -47040,7 +47040,7 @@ Dd=0.330193
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Eminence Speaker Eminence SD28 1_ Soft Dome Tweeter 4 Ohm`,content:`[Driver]
+`},{name:`Eminence Speaker Eminence SD28 1_ Soft Dome Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
 Model=Eminence SD28 1" Soft Dome Tweeter 4 Ohm
 Manufacturer=
@@ -47068,7 +47068,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Eminence Speaker KL3010CX-8`,content:`[Driver]
+`},{name:`Eminence Speaker KL3010CX-8`,date:``,content:`[Driver]
 Brand=Eminence Speaker
 Model=KL3010CX-8
 Manufacturer=
@@ -47096,7 +47096,7 @@ Dd=0.231648
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Factory Buyouts 269`,content:`[Driver]
+`},{name:`Factory Buyouts 269`,date:``,content:`[Driver]
 Brand=Factory Buyouts
 Model=269
 Manufacturer=
@@ -47124,7 +47124,7 @@ Dd=0.238125
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Factory Buyouts 4 Treated Paper Cone Woofer 16 Ohm`,content:`[Driver]
+`},{name:`Factory Buyouts 4 Treated Paper Cone Woofer 16 Ohm`,date:``,content:`[Driver]
 Brand=Factory Buyouts
 Model=4 Treated Paper Cone Woofer 16 Ohm
 Manufacturer=
@@ -47152,7 +47152,7 @@ Dd=0.092075
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Factory Buyouts 6 1 2 Poly Cone Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Factory Buyouts 6 1 2 Poly Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Factory Buyouts
 Model=6 1 2 Poly Cone Woofer 4 Ohm
 Manufacturer=
@@ -47180,7 +47180,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Factory Buyouts AR 1210163 1 6 1 2 Poly Cone Woofer`,content:`[Driver]
+`},{name:`Factory Buyouts AR 1210163 1 6 1 2 Poly Cone Woofer`,date:``,content:`[Driver]
 Brand=Factory Buyouts
 Model=AR 1210163 1 6 1 2 Poly Cone Woofer
 Manufacturer=
@@ -47208,7 +47208,7 @@ Dd=0.155702
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Factory Buyouts Advent D 2K05047 65w 6 1 2 Poly Shielded Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Factory Buyouts Advent D 2K05047 65w 6 1 2 Poly Shielded Woofer 8 Ohm`,date:``,content:`[Driver]
 Brand=Factory Buyouts
 Model=Advent D 2K05047 65w 6 1 2 Poly Shielded Woofer 8 Ohm
 Manufacturer=
@@ -47236,7 +47236,7 @@ Dd=0.14605
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Factory Buyouts BS28-6P`,content:`[Driver]
+`},{name:`Factory Buyouts BS28-6P`,date:``,content:`[Driver]
 Brand=Factory Buyouts
 Model=BS28-6P
 Manufacturer=
@@ -47264,7 +47264,7 @@ Dd=0.14605
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Factory Buyouts DL 1250 4 12 Coated Paper Cone Woofer with Foam Surround 4`,content:`[Driver]
+`},{name:`Factory Buyouts DL 1250 4 12 Coated Paper Cone Woofer with Foam Surround 4`,date:``,content:`[Driver]
 Brand=Factory Buyouts
 Model=DL 1250 4 12 Coated Paper Cone Woofer with Foam Surround 4
 Manufacturer=
@@ -47292,7 +47292,7 @@ Dd=0.2794
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Factory Buyouts DL840 4 8 Heavy Duty Treated Paper Cone Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Factory Buyouts DL840 4 8 Heavy Duty Treated Paper Cone Woofer 4 Ohm`,date:``,content:`[Driver]
 Brand=Factory Buyouts
 Model=DL840 4 8 Heavy Duty Treated Paper Cone Woofer 4 Ohm
 Manufacturer=
@@ -47320,7 +47320,7 @@ Dd=0.187325
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Factory Buyouts Digital Audio 12 Silver Poly Cone Rubber Surround Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Factory Buyouts Digital Audio 12 Silver Poly Cone Rubber Surround Woofer 8 Ohm`,date:``,content:`[Driver]
 Brand=Factory Buyouts
 Model=Digital Audio 12 Silver Poly Cone Rubber Surround Woofer 8 Ohm
 Manufacturer=
@@ -47348,7 +47348,7 @@ Dd=0.282575
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Factory Buyouts Eminence 6-1_2_ Line Array Series Sealed Back Midrange Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Factory Buyouts Eminence 6-1_2_ Line Array Series Sealed Back Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Factory Buyouts
 Model=Eminence 6-1/2" Line Array Series Sealed Back Midrange Speaker 8 Ohm
 Manufacturer=
@@ -47376,7 +47376,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Factory Buyouts HP 5210 5 1 4 Poly Cone Rubber Surround Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Factory Buyouts HP 5210 5 1 4 Poly Cone Rubber Surround Woofer 8 Ohm`,date:``,content:`[Driver]
 Brand=Factory Buyouts
 Model=HP 5210 5 1 4 Poly Cone Rubber Surround Woofer 8 Ohm
 Manufacturer=
@@ -47404,7 +47404,7 @@ Dd=0.123825
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Factory Buyouts Jensen C7 6 1 2 Paper Cone Shielded Woofer 10 Ohm`,content:`[Driver]
+`},{name:`Factory Buyouts Jensen C7 6 1 2 Paper Cone Shielded Woofer 10 Ohm`,date:``,content:`[Driver]
 Brand=Factory Buyouts
 Model=Jensen C7 6 1 2 Paper Cone Shielded Woofer 10 Ohm
 Manufacturer=
@@ -47432,7 +47432,7 @@ Dd=0.14605
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Factory Buyouts M22WSR-45`,content:`[Driver]
+`},{name:`Factory Buyouts M22WSR-45`,date:``,content:`[Driver]
 Brand=Factory Buyouts
 Model=M22WSR-45
 Manufacturer=
@@ -47460,7 +47460,7 @@ Dd=0.185737
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Factory Buyouts M22WSR-46`,content:`[Driver]
+`},{name:`Factory Buyouts M22WSR-46`,date:``,content:`[Driver]
 Brand=Factory Buyouts
 Model=M22WSR-46
 Manufacturer=
@@ -47488,7 +47488,7 @@ Dd=0.185966
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Factory Buyouts NHT 1 11 084 2 8 Poly Cone Woofer`,content:`[Driver]
+`},{name:`Factory Buyouts NHT 1 11 084 2 8 Poly Cone Woofer`,date:``,content:`[Driver]
 Brand=Factory Buyouts
 Model=NHT 1 11 084 2 8 Poly Cone Woofer
 Manufacturer=
@@ -47516,7 +47516,7 @@ Dd=0.187325
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Factory Buyouts NS6-255-8A`,content:`[Driver]
+`},{name:`Factory Buyouts NS6-255-8A`,date:``,content:`[Driver]
 Brand=Factory Buyouts
 Model=NS6-255-8A
 Manufacturer=
@@ -47544,7 +47544,7 @@ Dd=0.13589
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Factory Buyouts RoadMaster MSW150 15 Poly Cone Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Factory Buyouts RoadMaster MSW150 15 Poly Cone Subwoofer 4 Ohm`,date:``,content:`[Driver]
 Brand=Factory Buyouts
 Model=RoadMaster MSW150 15 Poly Cone Subwoofer 4 Ohm
 Manufacturer=
@@ -47572,7 +47572,7 @@ Dd=0.352425
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Factory Buyouts SDS-135F25CP08-08`,content:`[Driver]
+`},{name:`Factory Buyouts SDS-135F25CP08-08`,date:``,content:`[Driver]
 Brand=Factory Buyouts
 Model=SDS-135F25CP08-08
 Manufacturer=
@@ -47600,7 +47600,7 @@ Dd=0.12065
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Factory Buyouts TC 8034 8 Treated Paper Cone Woofer with Foam Surround 4 Oh`,content:`[Driver]
+`},{name:`Factory Buyouts TC 8034 8 Treated Paper Cone Woofer with Foam Surround 4 Oh`,date:``,content:`[Driver]
 Brand=Factory Buyouts
 Model=TC 8034 8 Treated Paper Cone Woofer with Foam Surround 4 Oh
 Manufacturer=
@@ -47628,7 +47628,7 @@ Dd=0.18415
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Factory Buyouts Tang Band W3-2052SC 3_ RBM Neodymium Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Factory Buyouts Tang Band W3-2052SC 3_ RBM Neodymium Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Factory Buyouts
 Model=Tang Band W3-2052SC 3" RBM Neodymium Subwoofer 4 Ohm
 Manufacturer=
@@ -47656,7 +47656,7 @@ Dd=0.0605552
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Factory Buyouts Titan 10 Paper Cone Blue Surround Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Factory Buyouts Titan 10 Paper Cone Blue Surround Woofer 4 Ohm`,date:``,content:`[Driver]
 Brand=Factory Buyouts
 Model=Titan 10 Paper Cone Blue Surround Woofer 4 Ohm
 Manufacturer=
@@ -47684,7 +47684,7 @@ Dd=0.231775
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Factory Buyouts Titan 15 Paper Cone Red Surround Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Factory Buyouts Titan 15 Paper Cone Red Surround Woofer 4 Ohm`,date:``,content:`[Driver]
 Brand=Factory Buyouts
 Model=Titan 15 Paper Cone Red Surround Woofer 4 Ohm
 Manufacturer=
@@ -47712,7 +47712,7 @@ Dd=0.3556
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Factory Buyouts Titan 15 Purple Glitter Cone Yellow Surround Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Factory Buyouts Titan 15 Purple Glitter Cone Yellow Surround Woofer 4 Ohm`,date:``,content:`[Driver]
 Brand=Factory Buyouts
 Model=Titan 15 Purple Glitter Cone Yellow Surround Woofer 4 Ohm
 Manufacturer=
@@ -47740,7 +47740,7 @@ Dd=0.3556
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Factory Buyouts Titan 15 Treated Paper Cone Foam Surround Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Factory Buyouts Titan 15 Treated Paper Cone Foam Surround Woofer 4 Ohm`,date:``,content:`[Driver]
 Brand=Factory Buyouts
 Model=Titan 15 Treated Paper Cone Foam Surround Woofer 4 Ohm
 Manufacturer=
@@ -47768,7 +47768,7 @@ Dd=0.3556
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Factory Buyouts V-22DR-0003`,content:`[Driver]
+`},{name:`Factory Buyouts V-22DR-0003`,date:``,content:`[Driver]
 Brand=Factory Buyouts
 Model=V-22DR-0003
 Manufacturer=
@@ -47796,7 +47796,7 @@ Dd=0.18415
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Factory Buyouts WP 5211 5 1 4 Pair Poly Cone Foam Surround Woofer 8 Ohms`,content:`[Driver]
+`},{name:`Factory Buyouts WP 5211 5 1 4 Pair Poly Cone Foam Surround Woofer 8 Ohms`,date:``,content:`[Driver]
 Brand=Factory Buyouts
 Model=WP 5211 5 1 4 Pair Poly Cone Foam Surround Woofer 8 Ohms
 Manufacturer=
@@ -47824,7 +47824,7 @@ Dd=0.12192
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 10FE200 10_ Professional Woofer 4 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 10FE200 10_ Professional Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=10FE200 10" Professional Woofer 4 Ohm
 Manufacturer=
@@ -47852,7 +47852,7 @@ Dd=0.2056
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 10FE200 10_ Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 10FE200 10_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=10FE200 10" Professional Woofer 8 Ohm
 Manufacturer=
@@ -47880,7 +47880,7 @@ Dd=0.2056
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 10FE300 10_ Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 10FE300 10_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=10FE300 10" Professional Woofer 8 Ohm
 Manufacturer=
@@ -47908,7 +47908,7 @@ Dd=0.213499
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 10FE330 10_ Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 10FE330 10_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=10FE330 10" Professional Woofer 8 Ohm
 Manufacturer=
@@ -47936,7 +47936,7 @@ Dd=0.22054
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 10FE400 10_ Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 10FE400 10_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=10FE400 10" Professional Woofer 8 Ohm
 Manufacturer=
@@ -47964,7 +47964,7 @@ Dd=0.214689
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 10HX240 10_ Neodymium Professional Coaxial Driver 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 10HX240 10_ Neodymium Professional Coaxial Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=10HX240 10" Neodymium Professional Coaxial Driver 8 Ohm
 Manufacturer=
@@ -47992,7 +47992,7 @@ Dd=0.210194
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 10PR300 10_ Neodymium Professional Woofer 4 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 10PR300 10_ Neodymium Professional Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=10PR300 10" Neodymium Professional Woofer 4 Ohm
 Manufacturer=
@@ -48020,7 +48020,7 @@ Dd=0.20248
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 10PR300 10_ Neodymium Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 10PR300 10_ Neodymium Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=10PR300 10" Neodymium Professional Woofer 8 Ohm
 Manufacturer=
@@ -48048,7 +48048,7 @@ Dd=0.20248
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 10PR320-16 10_ Professional Neodymium Woofer 16 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 10PR320-16 10_ Professional Neodymium Woofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=10PR320-16 10" Professional Neodymium Woofer 16 Ohm
 Manufacturer=
@@ -48076,7 +48076,7 @@ Dd=0.202166
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 10RS350-4 10_ Professional Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 10RS350-4 10_ Professional Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=10RS350-4 10" Professional Subwoofer 4 Ohm
 Manufacturer=
@@ -48104,7 +48104,7 @@ Dd=0.20248
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 10RS350-8 10_ Professional Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 10RS350-8 10_ Professional Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=10RS350-8 10" Professional Subwoofer 8 Ohm
 Manufacturer=
@@ -48132,7 +48132,7 @@ Dd=0.20248
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 10RS430 10_ Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 10RS430 10_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=10RS430 10" Professional Woofer 8 Ohm
 Manufacturer=
@@ -48160,7 +48160,7 @@ Dd=0.209283
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 12FE300 12_ Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 12FE300 12_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=12FE300 12" Professional Woofer 8 Ohm
 Manufacturer=
@@ -48188,7 +48188,7 @@ Dd=0.262939
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 12FE330 12_ Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 12FE330 12_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=12FE330 12" Professional Woofer 8 Ohm
 Manufacturer=
@@ -48216,7 +48216,7 @@ Dd=0.271515
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 12FE400 12_ Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 12FE400 12_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=12FE400 12" Professional Woofer 8 Ohm
 Manufacturer=
@@ -48244,7 +48244,7 @@ Dd=0.264388
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 12FH520 12_ Neodymium Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 12FH520 12_ Neodymium Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=12FH520 12" Neodymium Professional Woofer 8 Ohm
 Manufacturer=
@@ -48272,7 +48272,7 @@ Dd=0.252313
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 12HX500 12_ Neodymium Professional Coaxial Driver 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 12HX500 12_ Neodymium Professional Coaxial Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=12HX500 12" Neodymium Professional Coaxial Driver 8 Ohm
 Manufacturer=
@@ -48300,7 +48300,7 @@ Dd=0.262212
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 12PR300 12_ Neodymium Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 12PR300 12_ Neodymium Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=12PR300 12" Neodymium Professional Woofer 8 Ohm
 Manufacturer=
@@ -48328,7 +48328,7 @@ Dd=0.249522
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 12PR310 12_ Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 12PR310 12_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=12PR310 12" Professional Woofer 8 Ohm
 Manufacturer=
@@ -48356,7 +48356,7 @@ Dd=0.249522
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 12PR320 12_ Professional Neodymium Woofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 12PR320 12_ Professional Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=12PR320 12" Professional Neodymium Woofer 8 Ohm
 Manufacturer=
@@ -48384,7 +48384,7 @@ Dd=0.261969
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 12RS1066 12_ Neodymium Professional Subwoofer 16 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 12RS1066 12_ Neodymium Professional Subwoofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=12RS1066 12" Neodymium Professional Subwoofer 16 Ohm
 Manufacturer=
@@ -48412,7 +48412,7 @@ Dd=0.251302
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 12RS1066 12_ Neodymium Professional Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 12RS1066 12_ Neodymium Professional Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=12RS1066 12" Neodymium Professional Subwoofer 8 Ohm
 Manufacturer=
@@ -48440,7 +48440,7 @@ Dd=0.251302
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 12RS430 12_ Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 12RS430 12_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=12RS430 12" Professional Woofer 8 Ohm
 Manufacturer=
@@ -48468,7 +48468,7 @@ Dd=0.265109
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 15FH500 15_ Neodymium Professional Subwoofer 16 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 15FH500 15_ Neodymium Professional Subwoofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=15FH500 15" Neodymium Professional Subwoofer 16 Ohm
 Manufacturer=
@@ -48496,7 +48496,7 @@ Dd=0.328395
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 15FH500 15_ Neodymium Professional Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 15FH500 15_ Neodymium Professional Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=15FH500 15" Neodymium Professional Subwoofer 4 Ohm
 Manufacturer=
@@ -48524,7 +48524,7 @@ Dd=0.328395
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 15FH500 15_ Neodymium Professional Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 15FH500 15_ Neodymium Professional Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=15FH500 15" Neodymium Professional Subwoofer 8 Ohm
 Manufacturer=
@@ -48552,7 +48552,7 @@ Dd=0.328395
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 15FH510 15_ Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 15FH510 15_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=15FH510 15" Professional Woofer 8 Ohm
 Manufacturer=
@@ -48580,7 +48580,7 @@ Dd=0.319154
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 15FH520 15_ Neodymium Professional Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 15FH520 15_ Neodymium Professional Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=15FH520 15" Neodymium Professional Subwoofer 4 Ohm
 Manufacturer=
@@ -48608,7 +48608,7 @@ Dd=0.328395
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 15FH520 15_ Neodymium Professional Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 15FH520 15_ Neodymium Professional Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=15FH520 15" Neodymium Professional Subwoofer 8 Ohm
 Manufacturer=
@@ -48636,7 +48636,7 @@ Dd=0.328395
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 15HP1010 15_ Professional Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 15HP1010 15_ Professional Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=15HP1010 15" Professional Subwoofer 8 Ohm
 Manufacturer=
@@ -48664,7 +48664,7 @@ Dd=0.323512
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 15HX500 15_ Neodymium Professional Coaxial Driver 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 15HX500 15_ Neodymium Professional Coaxial Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=15HX500 15" Neodymium Professional Coaxial Driver 8 Ohm
 Manufacturer=
@@ -48692,7 +48692,7 @@ Dd=0.331674
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 15PR300 15_ Professional Neodymium Woofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 15PR300 15_ Professional Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=15PR300 15" Professional Neodymium Woofer 8 Ohm
 Manufacturer=
@@ -48720,7 +48720,7 @@ Dd=0.332824
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 15PR400 15_ Neodymium Professional Woofer 4 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 15PR400 15_ Neodymium Professional Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=15PR400 15" Neodymium Professional Woofer 4 Ohm
 Manufacturer=
@@ -48748,7 +48748,7 @@ Dd=0.32015
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 15PR400 15_ Neodymium Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 15PR400 15_ Neodymium Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=15PR400 15" Neodymium Professional Woofer 8 Ohm
 Manufacturer=
@@ -48776,7 +48776,7 @@ Dd=0.32015
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 15PR450 15_ Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 15PR450 15_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=15PR450 15" Professional Woofer 8 Ohm
 Manufacturer=
@@ -48804,7 +48804,7 @@ Dd=0.330328
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 18FH500 18_ Neodymium Professional Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 18FH500 18_ Neodymium Professional Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=18FH500 18" Neodymium Professional Subwoofer 8 Ohm
 Manufacturer=
@@ -48832,7 +48832,7 @@ Dd=0.379981
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 18FX800 18_ Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 18FX800 18_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=18FX800 18" Subwoofer 8 Ohm
 Manufacturer=
@@ -48860,7 +48860,7 @@ Dd=0.392994
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 18HP1010 18_ Professional Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 18HP1010 18_ Professional Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=18HP1010 18" Professional Subwoofer 4 Ohm
 Manufacturer=
@@ -48888,7 +48888,7 @@ Dd=0.39202
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 18HP1010 18_ Professional Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 18HP1010 18_ Professional Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=18HP1010 18" Professional Subwoofer 8 Ohm
 Manufacturer=
@@ -48916,7 +48916,7 @@ Dd=0.39202
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 18HP1022 18_ Neodymium Professional Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 18HP1022 18_ Neodymium Professional Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=18HP1022 18" Neodymium Professional Subwoofer 8 Ohm
 Manufacturer=
@@ -48944,7 +48944,7 @@ Dd=0.392832
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 18HP1030 18_ Professional Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 18HP1030 18_ Professional Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=18HP1030 18" Professional Subwoofer 4 Ohm
 Manufacturer=
@@ -48972,7 +48972,7 @@ Dd=0.378302
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 18HW1070 18_ Professional Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 18HW1070 18_ Professional Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=18HW1070 18" Professional Subwoofer 4 Ohm
 Manufacturer=
@@ -49000,7 +49000,7 @@ Dd=0.392832
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 18HW1070 18_ Professional Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 18HW1070 18_ Professional Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=18HW1070 18" Professional Subwoofer 8 Ohm
 Manufacturer=
@@ -49028,7 +49028,7 @@ Dd=0.392832
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 18XL1600 18_ Neodymium Professional Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 18XL1600 18_ Neodymium Professional Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=18XL1600 18" Neodymium Professional Subwoofer 8 Ohm
 Manufacturer=
@@ -49056,7 +49056,7 @@ Dd=0.378302
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 21XL3000 21_ Neodymium Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 21XL3000 21_ Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=21XL3000 21" Neodymium Subwoofer 8 Ohm
 Manufacturer=
@@ -49084,7 +49084,7 @@ Dd=0.471225
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 3FE22 3_ Neodymium Professional Full-Range Woofer 16 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 3FE22 3_ Neodymium Professional Full-Range Woofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=3FE22 3" Neodymium Professional Full-Range Woofer 16 Ohm
 Manufacturer=
@@ -49112,7 +49112,7 @@ Dd=0.0620095
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 3FE22 3_ Neodymium Professional Full-Range Woofer 4 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 3FE22 3_ Neodymium Professional Full-Range Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=3FE22 3" Neodymium Professional Full-Range Woofer 4 Ohm
 Manufacturer=
@@ -49140,7 +49140,7 @@ Dd=0.0620095
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 3FE22 3_ Neodymium Professional Full-Range Woofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 3FE22 3_ Neodymium Professional Full-Range Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=3FE22 3" Neodymium Professional Full-Range Woofer 8 Ohm
 Manufacturer=
@@ -49168,7 +49168,7 @@ Dd=0.0620095
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 3FE25 3_ Professional Full-Range Woofer 16 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 3FE25 3_ Professional Full-Range Woofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=3FE25 3" Professional Full-Range Woofer 16 Ohm
 Manufacturer=
@@ -49196,7 +49196,7 @@ Dd=0.0648204
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 3FE25 3_ Professional Full-Range Woofer 4 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 3FE25 3_ Professional Full-Range Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=3FE25 3" Professional Full-Range Woofer 4 Ohm
 Manufacturer=
@@ -49224,7 +49224,7 @@ Dd=0.0620095
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 3FE25 3_ Professional Full-Range Woofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 3FE25 3_ Professional Full-Range Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=3FE25 3" Professional Full-Range Woofer 8 Ohm
 Manufacturer=
@@ -49252,7 +49252,7 @@ Dd=0.0620095
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 4FE32 4_ Neodymium Professional Full-Range Woofer 16 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 4FE32 4_ Neodymium Professional Full-Range Woofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=4FE32 4" Neodymium Professional Full-Range Woofer 16 Ohm
 Manufacturer=
@@ -49280,7 +49280,7 @@ Dd=0.0781764
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 4FE32 4_ Neodymium Professional Full-Range Woofer 4 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 4FE32 4_ Neodymium Professional Full-Range Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=4FE32 4" Neodymium Professional Full-Range Woofer 4 Ohm
 Manufacturer=
@@ -49308,7 +49308,7 @@ Dd=0.0781764
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 4FE32 4_ Neodymium Professional Full-Range Woofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 4FE32 4_ Neodymium Professional Full-Range Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=4FE32 4" Neodymium Professional Full-Range Woofer 8 Ohm
 Manufacturer=
@@ -49336,7 +49336,7 @@ Dd=0.0781764
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 4FE35 4_ Professional Full-Range Woofer 16 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 4FE35 4_ Professional Full-Range Woofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=4FE35 4" Professional Full-Range Woofer 16 Ohm
 Manufacturer=
@@ -49364,7 +49364,7 @@ Dd=0.0781764
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 4FE35 4_ Professional Full-Range Woofer 4 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 4FE35 4_ Professional Full-Range Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=4FE35 4" Professional Full-Range Woofer 4 Ohm
 Manufacturer=
@@ -49392,7 +49392,7 @@ Dd=0.0781764
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 4FE35 4_ Professional Full-Range Woofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 4FE35 4_ Professional Full-Range Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=4FE35 4" Professional Full-Range Woofer 8 Ohm
 Manufacturer=
@@ -49420,7 +49420,7 @@ Dd=0.0781764
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 4FE42 4_ Neodymium Full-Range Speaker 4 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 4FE42 4_ Neodymium Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=4FE42 4" Neodymium Full-Range Speaker 4 Ohm
 Manufacturer=
@@ -49448,7 +49448,7 @@ Dd=0.0805033
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 4FE42 4_ Neodymium Full-Range Speaker 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 4FE42 4_ Neodymium Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=4FE42 4" Neodymium Full-Range Speaker 8 Ohm
 Manufacturer=
@@ -49476,7 +49476,7 @@ Dd=0.0805033
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 4FE44 4_ Neodymium Professional Midrange 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 4FE44 4_ Neodymium Professional Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=4FE44 4" Neodymium Professional Midrange 8 Ohm
 Manufacturer=
@@ -49504,7 +49504,7 @@ Dd=0.0809764
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 5FE100 5_ Professional Midbass Midrange Woofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 5FE100 5_ Professional Midbass Midrange Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=5FE100 5" Professional Midbass Midrange Woofer 8 Ohm
 Manufacturer=
@@ -49532,7 +49532,7 @@ Dd=0.100799
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 5FE120 5_ Professional Midbass Midrange Woofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 5FE120 5_ Professional Midbass Midrange Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=5FE120 5" Professional Midbass Midrange Woofer 8 Ohm
 Manufacturer=
@@ -49560,7 +49560,7 @@ Dd=0.100799
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 5FE125 5_ Professional Midrange 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 5FE125 5_ Professional Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=5FE125 5" Professional Midrange 8 Ohm
 Manufacturer=
@@ -49588,7 +49588,7 @@ Dd=0.103418
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 5HX140 5_ Neodymium Professional Coaxial Driver 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 5HX140 5_ Neodymium Professional Coaxial Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=5HX140 5" Neodymium Professional Coaxial Driver 8 Ohm
 Manufacturer=
@@ -49616,7 +49616,7 @@ Dd=0.104031
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 5PR120 5_ Professional Neodymium Midrange 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 5PR120 5_ Professional Neodymium Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=5PR120 5" Professional Neodymium Midrange 8 Ohm
 Manufacturer=
@@ -49644,7 +49644,7 @@ Dd=0.114072
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 6FE100 6_ Professional Midrange Midbass Woofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 6FE100 6_ Professional Midrange Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=6FE100 6" Professional Midrange Midbass Woofer 8 Ohm
 Manufacturer=
@@ -49672,7 +49672,7 @@ Dd=0.134935
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 6FE200 6_ Professional Midrange Speaker 4 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 6FE200 6_ Professional Midrange Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=6FE200 6" Professional Midrange Speaker 4 Ohm
 Manufacturer=
@@ -49700,7 +49700,7 @@ Dd=0.122573
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 6FE200 6_ Professional Midrange Speaker 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 6FE200 6_ Professional Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=6FE200 6" Professional Midrange Speaker 8 Ohm
 Manufacturer=
@@ -49728,7 +49728,7 @@ Dd=0.122573
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 6FE300 6_ Professional Midrange 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 6FE300 6_ Professional Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=6FE300 6" Professional Midrange 8 Ohm
 Manufacturer=
@@ -49756,7 +49756,7 @@ Dd=0.132555
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 6FE400 6_ Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 6FE400 6_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=6FE400 6" Professional Woofer 8 Ohm
 Manufacturer=
@@ -49784,7 +49784,7 @@ Dd=0.133988
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 6HX150 6_ Neodymium Coaxial Driver 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 6HX150 6_ Neodymium Coaxial Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=6HX150 6" Neodymium Coaxial Driver 8 Ohm
 Manufacturer=
@@ -49812,7 +49812,7 @@ Dd=0.128655
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 6PR160 6_ Professional Neodymium Midbass 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 6PR160 6_ Professional Neodymium Midbass 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=6PR160 6" Professional Neodymium Midbass 8 Ohm
 Manufacturer=
@@ -49840,7 +49840,7 @@ Dd=0.122053
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 6RS140 6_ Professional Neodymium Midbass 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 6RS140 6_ Professional Neodymium Midbass 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=6RS140 6" Professional Neodymium Midbass 8 Ohm
 Manufacturer=
@@ -49868,7 +49868,7 @@ Dd=0.12494
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 8FE200 8_ Professional Midbass 4 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 8FE200 8_ Professional Midbass 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=8FE200 8" Professional Midbass 4 Ohm
 Manufacturer=
@@ -49896,7 +49896,7 @@ Dd=0.155945
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 8FE200 8_ Professional Midbass 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 8FE200 8_ Professional Midbass 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=8FE200 8" Professional Midbass 8 Ohm
 Manufacturer=
@@ -49924,7 +49924,7 @@ Dd=0.155945
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 8FE300 8_ Professional Midbass 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 8FE300 8_ Professional Midbass 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=8FE300 8" Professional Midbass 8 Ohm
 Manufacturer=
@@ -49952,7 +49952,7 @@ Dd=0.168503
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 8FE400 8_ Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 8FE400 8_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=8FE400 8" Professional Woofer 8 Ohm
 Manufacturer=
@@ -49980,7 +49980,7 @@ Dd=0.17224
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 8HX150 8_ Ferrite and Neodymium Professional Coaxial Driver 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 8HX150 8_ Ferrite and Neodymium Professional Coaxial Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=8HX150 8" Ferrite and Neodymium Professional Coaxial Driver 8 Ohm
 Manufacturer=
@@ -50008,7 +50008,7 @@ Dd=0.166297
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 8HX210 8_ Coaxial Speaker 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 8HX210 8_ Coaxial Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=8HX210 8" Coaxial Speaker 8 Ohm
 Manufacturer=
@@ -50036,7 +50036,7 @@ Dd=0.392994
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 8HX240 8_ Neodymium Professional Coaxial Driver 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 8HX240 8_ Neodymium Professional Coaxial Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=8HX240 8" Neodymium Professional Coaxial Driver 8 Ohm
 Manufacturer=
@@ -50064,7 +50064,7 @@ Dd=0.168503
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 8PR200 8_ Neodymium Professional Midbass 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 8PR200 8_ Neodymium Professional Midbass 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=8PR200 8" Neodymium Professional Midbass 8 Ohm
 Manufacturer=
@@ -50092,7 +50092,7 @@ Dd=0.157973
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 8PR320 8_ Neodymium Professional Midbass 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 8PR320 8_ Neodymium Professional Midbass 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=8PR320 8" Neodymium Professional Midbass 8 Ohm
 Manufacturer=
@@ -50120,7 +50120,7 @@ Dd=0.168503
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO 8RS340 8_ Neodymium Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO 8RS340 8_ Neodymium Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=8RS340 8" Neodymium Professional Woofer 8 Ohm
 Manufacturer=
@@ -50148,7 +50148,7 @@ Dd=0.170307
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO M5N8-80 5_ Neodymium Professional Midrange 12 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO M5N8-80 5_ Neodymium Professional Midrange 12 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=M5N8-80 5" Neodymium Professional Midrange 12 Ohm
 Manufacturer=
@@ -50176,7 +50176,7 @@ Dd=0.109517
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO W8N8-150 8_ Neodymium Professional Woofer 16 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO W8N8-150 8_ Neodymium Professional Woofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=W8N8-150 8" Neodymium Professional Woofer 16 Ohm
 Manufacturer=
@@ -50204,7 +50204,7 @@ Dd=0.168125
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`FaitalPRO W8N8-150 8_ Neodymium Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`FaitalPRO W8N8-150 8_ Neodymium Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
 Model=W8N8-150 8" Neodymium Professional Woofer 8 Ohm
 Manufacturer=
@@ -50232,7 +50232,7 @@ Dd=0.168125
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Fountek FW100B`,content:`[Driver]
+`},{name:`Fountek FW100B`,date:``,content:`[Driver]
 Brand=Fountek
 Model=FW100B
 Manufacturer=
@@ -50260,7 +50260,7 @@ Dd=0.101092
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Fountek FW200`,content:`[Driver]
+`},{name:`Fountek FW200`,date:``,content:`[Driver]
 Brand=Fountek
 Model=FW200
 Manufacturer=
@@ -50288,7 +50288,7 @@ Dd=0.184912
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Fountek FW222`,content:`[Driver]
+`},{name:`Fountek FW222`,date:``,content:`[Driver]
 Brand=Fountek
 Model=FW222
 Manufacturer=
@@ -50316,7 +50316,7 @@ Dd=0.188976
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 10PF-8 10_ Paper Cone Foam Surround Woofer`,content:`[Driver]
+`},{name:`GRS 10PF-8 10_ Paper Cone Foam Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=10PF-8 10" Paper Cone Foam Surround Woofer
 Manufacturer=
@@ -50344,7 +50344,7 @@ Dd=0.209496
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 10PF-8`,content:`[Driver]
+`},{name:`GRS 10PF-8`,date:``,content:`[Driver]
 Brand=GRS
 Model=10PF-8
 Manufacturer=
@@ -50372,7 +50372,7 @@ Dd=0.20949598351047463
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 10PR-8 10_ Poly Cone Rubber Surround Woofer`,content:`[Driver]
+`},{name:`GRS 10PR-8 10_ Poly Cone Rubber Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=10PR-8 10" Poly Cone Rubber Surround Woofer
 Manufacturer=
@@ -50400,7 +50400,7 @@ Dd=0.209618
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 10PR-8`,content:`[Driver]
+`},{name:`GRS 10PR-8`,date:``,content:`[Driver]
 Brand=GRS
 Model=10PR-8
 Manufacturer=
@@ -50428,7 +50428,7 @@ Dd=0.20961750091252032
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 10PT-8 10_ Paper Cone Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`GRS 10PT-8 10_ Paper Cone Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=10PT-8 10" Paper Cone Professional Woofer 8 Ohm
 Manufacturer=
@@ -50456,7 +50456,7 @@ Dd=0.210496
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 10S-8 4_ Full-Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`GRS 10S-8 4_ Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=10S-8 4" Full-Range Driver 8 Ohm
 Manufacturer=
@@ -50484,7 +50484,7 @@ Dd=0.0817588
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 10SFPC-B 10_ Square Frame Paper Cone Woofer Black`,content:`[Driver]
+`},{name:`GRS 10SFPC-B 10_ Square Frame Paper Cone Woofer Black`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=10SFPC-B 10" Square Frame Paper Cone Woofer Black
 Manufacturer=
@@ -50512,7 +50512,7 @@ Dd=0.212123
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 10SFPC-B`,content:`[Driver]
+`},{name:`GRS 10SFPC-B`,date:``,content:`[Driver]
 Brand=GRS
 Model=10SFPC-B
 Manufacturer=
@@ -50540,7 +50540,7 @@ Dd=0.21212327904061037
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 10SFPC-W 10_ Square Frame Paper Cone Woofer White`,content:`[Driver]
+`},{name:`GRS 10SFPC-W 10_ Square Frame Paper Cone Woofer White`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=10SFPC-W 10" Square Frame Paper Cone Woofer White
 Manufacturer=
@@ -50568,7 +50568,7 @@ Dd=0.212273
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 10SW-4 10_ Poly Cone Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`GRS 10SW-4 10_ Poly Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=10SW-4 10" Poly Cone Subwoofer 4 Ohm
 Manufacturer=
@@ -50596,7 +50596,7 @@ Dd=0.209405
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 10SW-4HE 10_ High Excursion Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`GRS 10SW-4HE 10_ High Excursion Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=10SW-4HE 10" High Excursion Subwoofer 4 Ohm
 Manufacturer=
@@ -50624,7 +50624,7 @@ Dd=0.210012
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 10_ Woofer Surface Mount Poly Cone 4 Ohm 10SMP-4`,content:`[Driver]
+`},{name:`GRS 10_ Woofer Surface Mount Poly Cone 4 Ohm 10SMP-4`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=10" Woofer Surface Mount Poly Cone 4 Ohm 10SMP-4
 Manufacturer=
@@ -50652,7 +50652,7 @@ Dd=0.208063
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 10_ Woofer Surface Mount Poly Cone 8 Ohm 10SMP-8`,content:`[Driver]
+`},{name:`GRS 10_ Woofer Surface Mount Poly Cone 8 Ohm 10SMP-8`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=10" Woofer Surface Mount Poly Cone 8 Ohm 10SMP-8
 Manufacturer=
@@ -50680,7 +50680,7 @@ Dd=0.208063
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 12PF-8 12_ Paper Cone Foam Surround Woofer`,content:`[Driver]
+`},{name:`GRS 12PF-8 12_ Paper Cone Foam Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=12PF-8 12" Paper Cone Foam Surround Woofer
 Manufacturer=
@@ -50708,7 +50708,7 @@ Dd=0.258372
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 12PF-8`,content:`[Driver]
+`},{name:`GRS 12PF-8`,date:``,content:`[Driver]
 Brand=GRS
 Model=12PF-8
 Manufacturer=
@@ -50736,7 +50736,7 @@ Dd=0.2583717270338699
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 12PR-8 12_ Poly Cone Rubber Surround Woofer`,content:`[Driver]
+`},{name:`GRS 12PR-8 12_ Poly Cone Rubber Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=12PR-8 12" Poly Cone Rubber Surround Woofer
 Manufacturer=
@@ -50764,7 +50764,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 12PR-8`,content:`[Driver]
+`},{name:`GRS 12PR-8`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=12PR-8
 Manufacturer=
@@ -50792,7 +50792,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 12PT-8 12_ Paper Cone Professional Woofer with 3_ Voice Coil 8 Ohm`,content:`[Driver]
+`},{name:`GRS 12PT-8 12_ Paper Cone Professional Woofer with 3_ Voice Coil 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=12PT-8 12" Paper Cone Professional Woofer with 3" Voice Coil 8 Ohm
 Manufacturer=
@@ -50820,7 +50820,7 @@ Dd=0.259993
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 12SFPC-B 12_ Square Frame Paper Cone Woofer Black`,content:`[Driver]
+`},{name:`GRS 12SFPC-B 12_ Square Frame Paper Cone Woofer Black`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=12SFPC-B 12" Square Frame Paper Cone Woofer Black
 Manufacturer=
@@ -50848,7 +50848,7 @@ Dd=0.252313
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 12SFPC-B`,content:`[Driver]
+`},{name:`GRS 12SFPC-B`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=12SFPC-B
 Manufacturer=
@@ -50876,7 +50876,7 @@ Dd=0.252313
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 12SFPC-W 12_ Square Frame Paper Cone Woofer White`,content:`[Driver]
+`},{name:`GRS 12SFPC-W 12_ Square Frame Paper Cone Woofer White`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=12SFPC-W 12" Square Frame Paper Cone Woofer White
 Manufacturer=
@@ -50904,7 +50904,7 @@ Dd=0.249242
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 12SW-4 12_ Poly Cone Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`GRS 12SW-4 12_ Poly Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=12SW-4 12" Poly Cone Subwoofer 4 Ohm
 Manufacturer=
@@ -50932,7 +50932,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 12SW-4HE 12_ Paper Cone Rubber Surround High Excursion Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`GRS 12SW-4HE 12_ Paper Cone Rubber Surround High Excursion Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=12SW-4HE 12" Paper Cone Rubber Surround High Excursion Subwoofer 4 Ohm
 Manufacturer=
@@ -50960,7 +50960,7 @@ Dd=0.254148
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 12_ Woofer Surface Mount Poly Cone 4 Ohm 12SMP-4`,content:`[Driver]
+`},{name:`GRS 12_ Woofer Surface Mount Poly Cone 4 Ohm 12SMP-4`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=12" Woofer Surface Mount Poly Cone 4 Ohm 12SMP-4
 Manufacturer=
@@ -50988,7 +50988,7 @@ Dd=0.256318
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 12_ Woofer Surface Mount Poly Cone 8 Ohm 12SMP-8`,content:`[Driver]
+`},{name:`GRS 12_ Woofer Surface Mount Poly Cone 8 Ohm 12SMP-8`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=12" Woofer Surface Mount Poly Cone 8 Ohm 12SMP-8
 Manufacturer=
@@ -51016,7 +51016,7 @@ Dd=0.256318
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 15PF-8 15_ Paper Cone Foam Surround Woofer`,content:`[Driver]
+`},{name:`GRS 15PF-8 15_ Paper Cone Foam Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=15PF-8 15" Paper Cone Foam Surround Woofer
 Manufacturer=
@@ -51044,7 +51044,7 @@ Dd=0.32422
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 15PF-8`,content:`[Driver]
+`},{name:`GRS 15PF-8`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=15PF-8
 Manufacturer=
@@ -51072,7 +51072,7 @@ Dd=0.32422
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 15PT-8 15_ Paper Cone Professional Woofer with 3_ Voice Coil 8 Ohm`,content:`[Driver]
+`},{name:`GRS 15PT-8 15_ Paper Cone Professional Woofer with 3_ Voice Coil 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=15PT-8 15" Paper Cone Professional Woofer with 3" Voice Coil 8 Ohm
 Manufacturer=
@@ -51100,7 +51100,7 @@ Dd=0.325005
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 15SSW-4HE 15_ High Excursion Super Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`GRS 15SSW-4HE 15_ High Excursion Super Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=15SSW-4HE 15" High Excursion Super Subwoofer 4 Ohm
 Manufacturer=
@@ -51128,7 +51128,7 @@ Dd=0.323
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 18PT-8 18_ Paper Cone Professional Woofer with 3_ Voice Coil 8 Ohm`,content:`[Driver]
+`},{name:`GRS 18PT-8 18_ Paper Cone Professional Woofer with 3_ Voice Coil 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=18PT-8 18" Paper Cone Professional Woofer with 3" Voice Coil 8 Ohm
 Manufacturer=
@@ -51156,7 +51156,7 @@ Dd=0.396381
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 1TD1-8 1_ Dome Tweeter 8 Ohm`,content:`[Driver]
+`},{name:`GRS 1TD1-8 1_ Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=1TD1-8 1" Dome Tweeter 8 Ohm
 Manufacturer=
@@ -51184,7 +51184,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 1TD2-8 1_ Designer Dome Tweeter 8 Ohm`,content:`[Driver]
+`},{name:`GRS 1TD2-8 1_ Designer Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=1TD2-8 1" Designer Dome Tweeter 8 Ohm
 Manufacturer=
@@ -51212,7 +51212,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 1TM-4 1_ Mylar Tweeter 4 Ohm`,content:`[Driver]
+`},{name:`GRS 1TM-4 1_ Mylar Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=1TM-4 1" Mylar Tweeter 4 Ohm
 Manufacturer=
@@ -51240,7 +51240,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 3FR-4 Full-Range 3_ Speaker Driver 4 Ohm`,content:`[Driver]
+`},{name:`GRS 3FR-4 Full-Range 3_ Speaker Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=3FR-4 Full-Range 3" Speaker Driver 4 Ohm
 Manufacturer=
@@ -51268,7 +51268,7 @@ Dd=0.0630278
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 4FR-8 Full-Range 4-1_2_ Speaker Pioneer Type A11EC80-02F`,content:`[Driver]
+`},{name:`GRS 4FR-8 Full-Range 4-1_2_ Speaker Pioneer Type A11EC80-02F`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=4FR-8 Full-Range 4-1/2" Speaker Pioneer Type A11EC80-02F
 Manufacturer=
@@ -51296,7 +51296,7 @@ Dd=0.0917394
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 4PF-8 4_ Paper Cone Foam Surround Woofer`,content:`[Driver]
+`},{name:`GRS 4PF-8 4_ Paper Cone Foam Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=4PF-8 4" Paper Cone Foam Surround Woofer
 Manufacturer=
@@ -51324,7 +51324,7 @@ Dd=0.0838349
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 4PF-8`,content:`[Driver]
+`},{name:`GRS 4PF-8`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=4PF-8
 Manufacturer=
@@ -51352,7 +51352,7 @@ Dd=0.0838349
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 4_ Woofer Surface Mount Poly Cone 4 Ohm 4SMP-4`,content:`[Driver]
+`},{name:`GRS 4_ Woofer Surface Mount Poly Cone 4 Ohm 4SMP-4`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=4" Woofer Surface Mount Poly Cone 4 Ohm 4SMP-4
 Manufacturer=
@@ -51380,7 +51380,7 @@ Dd=0.0829186
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 4_ Woofer Surface Mount Poly Cone 8 Ohm 4SMP-8`,content:`[Driver]
+`},{name:`GRS 4_ Woofer Surface Mount Poly Cone 8 Ohm 4SMP-8`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=4" Woofer Surface Mount Poly Cone 8 Ohm 4SMP-8
 Manufacturer=
@@ -51408,7 +51408,7 @@ Dd=0.0829186
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 5-1_4_ Woofer Surface Mount Poly Cone 4 Ohm 5SMP-4`,content:`[Driver]
+`},{name:`GRS 5-1_4_ Woofer Surface Mount Poly Cone 4 Ohm 5SMP-4`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=5-1/4" Woofer Surface Mount Poly Cone 4 Ohm 5SMP-4
 Manufacturer=
@@ -51436,7 +51436,7 @@ Dd=0.0319154
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 5-1_4_ Woofer Surface Mount Poly Cone 8 Ohm 5SMP-8`,content:`[Driver]
+`},{name:`GRS 5-1_4_ Woofer Surface Mount Poly Cone 8 Ohm 5SMP-8`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=5-1/4" Woofer Surface Mount Poly Cone 8 Ohm 5SMP-8
 Manufacturer=
@@ -51464,7 +51464,7 @@ Dd=0.100925
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 5PF-8 5-1_4_ Paper Cone Foam Surround Woofer`,content:`[Driver]
+`},{name:`GRS 5PF-8 5-1_4_ Paper Cone Foam Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=5PF-8 5-1/4" Paper Cone Foam Surround Woofer
 Manufacturer=
@@ -51492,7 +51492,7 @@ Dd=0.0978507
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 5PF-8`,content:`[Driver]
+`},{name:`GRS 5PF-8`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=5PF-8
 Manufacturer=
@@ -51520,7 +51520,7 @@ Dd=0.0978507
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 5SBM-8 5_ Sealed Back Midrange`,content:`[Driver]
+`},{name:`GRS 5SBM-8 5_ Sealed Back Midrange`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=5SBM-8 5" Sealed Back Midrange
 Manufacturer=
@@ -51548,7 +51548,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 5SBM1-8 5-1_4_ Sealed Back Midrange with 1_ Voice Coil 8 Ohm`,content:`[Driver]
+`},{name:`GRS 5SBM1-8 5-1_4_ Sealed Back Midrange with 1_ Voice Coil 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=5SBM1-8 5-1/4" Sealed Back Midrange with 1" Voice Coil 8 Ohm
 Manufacturer=
@@ -51576,7 +51576,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 6-1_2_ Woofer Surface Mount Poly Cone 4 Ohm 6SMP-4`,content:`[Driver]
+`},{name:`GRS 6-1_2_ Woofer Surface Mount Poly Cone 4 Ohm 6SMP-4`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=6-1/2" Woofer Surface Mount Poly Cone 4 Ohm 6SMP-4
 Manufacturer=
@@ -51604,7 +51604,7 @@ Dd=0.13159
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 6-1_2_ Woofer Surface Mount Poly Cone 8 Ohm 6SMP-8`,content:`[Driver]
+`},{name:`GRS 6-1_2_ Woofer Surface Mount Poly Cone 8 Ohm 6SMP-8`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=6-1/2" Woofer Surface Mount Poly Cone 8 Ohm 6SMP-8
 Manufacturer=
@@ -51632,7 +51632,7 @@ Dd=0.13159
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 6LPSW-4 6-1_2_ Low Profile Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`GRS 6LPSW-4 6-1_2_ Low Profile Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=6LPSW-4 6-1/2" Low Profile Subwoofer 4 Ohm
 Manufacturer=
@@ -51660,7 +51660,7 @@ Dd=0.129149
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 6PF-8 6-1_2_ Paper Cone Foam Surround Woofer`,content:`[Driver]
+`},{name:`GRS 6PF-8 6-1_2_ Paper Cone Foam Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=6PF-8 6-1/2" Paper Cone Foam Surround Woofer
 Manufacturer=
@@ -51688,7 +51688,7 @@ Dd=0.133655
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 6PF-8`,content:`[Driver]
+`},{name:`GRS 6PF-8`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=6PF-8
 Manufacturer=
@@ -51716,7 +51716,7 @@ Dd=0.133655
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 6PR-8 6-1_2_ Poly Cone Rubber Surround Woofer`,content:`[Driver]
+`},{name:`GRS 6PR-8 6-1_2_ Poly Cone Rubber Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=6PR-8 6-1/2" Poly Cone Rubber Surround Woofer
 Manufacturer=
@@ -51744,7 +51744,7 @@ Dd=0.133512
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 6PR-8`,content:`[Driver]
+`},{name:`GRS 6PR-8`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=6PR-8
 Manufacturer=
@@ -51772,7 +51772,7 @@ Dd=0.133512
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 6PT-8 6-1_2_ Paper Cone Professional Midbass 8 Ohm`,content:`[Driver]
+`},{name:`GRS 6PT-8 6-1_2_ Paper Cone Professional Midbass 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=6PT-8 6-1/2" Paper Cone Professional Midbass 8 Ohm
 Manufacturer=
@@ -51800,7 +51800,7 @@ Dd=0.13188
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 8FR-8 Full-Range 8_ Replacement Speaker Pioneer Type B20FU20-51FW`,content:`[Driver]
+`},{name:`GRS 8FR-8 Full-Range 8_ Replacement Speaker Pioneer Type B20FU20-51FW`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=8FR-8 Full-Range 8" Replacement Speaker Pioneer Type B20FU20-51FW
 Manufacturer=
@@ -51828,7 +51828,7 @@ Dd=0.165453
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 8PF-8 8_ Paper Cone Foam Surround Woofer`,content:`[Driver]
+`},{name:`GRS 8PF-8 8_ Paper Cone Foam Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=8PF-8 8" Paper Cone Foam Surround Woofer
 Manufacturer=
@@ -51856,7 +51856,7 @@ Dd=0.165607
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 8PF-8`,content:`[Driver]
+`},{name:`GRS 8PF-8`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=8PF-8
 Manufacturer=
@@ -51884,7 +51884,7 @@ Dd=0.165607
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 8PR-8 8_ Poly Cone Rubber Surround Woofer`,content:`[Driver]
+`},{name:`GRS 8PR-8 8_ Poly Cone Rubber Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=8PR-8 8" Poly Cone Rubber Surround Woofer
 Manufacturer=
@@ -51912,7 +51912,7 @@ Dd=0.16344
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 8PR-8`,content:`[Driver]
+`},{name:`GRS 8PR-8`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=8PR-8
 Manufacturer=
@@ -51940,7 +51940,7 @@ Dd=0.16344
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 8PT-8 8_ Paper Cone Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`GRS 8PT-8 8_ Paper Cone Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=8PT-8 8" Paper Cone Professional Woofer 8 Ohm
 Manufacturer=
@@ -51968,7 +51968,7 @@ Dd=0.164527
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 8SW-4 8_ Poly Cone Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`GRS 8SW-4 8_ Poly Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=8SW-4 8" Poly Cone Subwoofer 4 Ohm
 Manufacturer=
@@ -51996,7 +51996,7 @@ Dd=0.166144
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 8SW-4HE 8_ High Excursion Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`GRS 8SW-4HE 8_ High Excursion Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=8SW-4HE 8" High Excursion Subwoofer 4 Ohm
 Manufacturer=
@@ -52024,7 +52024,7 @@ Dd=0.170007
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 8_ Woofer Surface Mount Poly Cone 4 Ohm 8SMP-4`,content:`[Driver]
+`},{name:`GRS 8_ Woofer Surface Mount Poly Cone 4 Ohm 8SMP-4`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=8" Woofer Surface Mount Poly Cone 4 Ohm 8SMP-4
 Manufacturer=
@@ -52052,7 +52052,7 @@ Dd=0.163907
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS 8_ Woofer Surface Mount Poly Cone 8 Ohm 8SMP-8`,content:`[Driver]
+`},{name:`GRS 8_ Woofer Surface Mount Poly Cone 8 Ohm 8SMP-8`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=8" Woofer Surface Mount Poly Cone 8 Ohm 8SMP-8
 Manufacturer=
@@ -52080,7 +52080,7 @@ Dd=0.163907
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS A25-10 Replacement 10_ Woofer for Dynaco A25 6 Ohm`,content:`[Driver]
+`},{name:`GRS A25-10 Replacement 10_ Woofer for Dynaco A25 6 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=A25-10 Replacement 10" Woofer for Dynaco A25 6 Ohm
 Manufacturer=
@@ -52108,7 +52108,7 @@ Dd=0.209891
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS K-33-4 Replacement 15_ Woofer for Klipsch Klipschorn, Belle Klipsch, Cornwall, and Lascala Speakers`,content:`[Driver]
+`},{name:`GRS K-33-4 Replacement 15_ Woofer for Klipsch Klipschorn, Belle Klipsch, Cornwall, and Lascala Speakers`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=K-33-4 Replacement 15" Woofer for Klipsch Klipschorn, Belle Klipsch, Cornwall, and Lascala Speakers
 Manufacturer=
@@ -52136,7 +52136,7 @@ Dd=0.33
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS NRT25-8 1_ Extended Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`GRS NRT25-8 1_ Extended Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=NRT25-8 1" Extended Range Driver 8 Ohm
 Manufacturer=
@@ -52164,7 +52164,7 @@ Dd=0.0218801
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS NRT50-8 2_ Extended Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`GRS NRT50-8 2_ Extended Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=NRT50-8 2" Extended Range Driver 8 Ohm
 Manufacturer=
@@ -52192,7 +52192,7 @@ Dd=0.0336628
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS RSRMO-8`,content:`[Driver]
+`},{name:`GRS RSRMO-8`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=RSRMO-8
 Manufacturer=
@@ -52220,7 +52220,7 @@ Dd=0.314735
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`GRS S115V-LF-8 Replacement 15_ Woofer for Yamaha Club Series S115V Speakers GRS`,content:`[Driver]
+`},{name:`GRS S115V-LF-8 Replacement 15_ Woofer for Yamaha Club Series S115V Speakers GRS`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=S115V-LF-8 Replacement 15" Woofer for Yamaha Club Series S115V Speakers GRS
 Manufacturer=
@@ -52248,7 +52248,7 @@ Dd=0.325005
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GM-35 5_ Cone Midrange`,content:`[Driver]
+`},{name:`Goldwood GM-35 5_ Cone Midrange`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GM-35 5" Cone Midrange
 Manufacturer=
@@ -52276,7 +52276,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GM-65_4 Sealed Back 5-1_4_ Midrange 4 Ohm`,content:`[Driver]
+`},{name:`Goldwood GM-65_4 Sealed Back 5-1_4_ Midrange 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GM-65/4 Sealed Back 5-1/4" Midrange 4 Ohm
 Manufacturer=
@@ -52304,7 +52304,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GM-65_8 Sealed Back 5-1_4_ Midrange 8 Ohm`,content:`[Driver]
+`},{name:`Goldwood GM-65_8 Sealed Back 5-1_4_ Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GM-65/8 Sealed Back 5-1/4" Midrange 8 Ohm
 Manufacturer=
@@ -52332,7 +52332,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GM-85_4 Heavy Duty 5_ Sealed Back Midrange 4 Ohm`,content:`[Driver]
+`},{name:`Goldwood GM-85_4 Heavy Duty 5_ Sealed Back Midrange 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GM-85/4 Heavy Duty 5" Sealed Back Midrange 4 Ohm
 Manufacturer=
@@ -52360,7 +52360,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GM-85_8 Heavy-Duty 5-1_4_ Sealed Back Midrange 8 Ohm`,content:`[Driver]
+`},{name:`Goldwood GM-85_8 Heavy-Duty 5-1_4_ Sealed Back Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GM-85/8 Heavy-Duty 5-1/4" Sealed Back Midrange 8 Ohm
 Manufacturer=
@@ -52388,7 +52388,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GT-25 3_ Cone Tweeter`,content:`[Driver]
+`},{name:`Goldwood GT-25 3_ Cone Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GT-25 3" Cone Tweeter
 Manufacturer=
@@ -52416,7 +52416,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GT-302 1_2_ Mylar Dome Tweeter`,content:`[Driver]
+`},{name:`Goldwood GT-302 1_2_ Mylar Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GT-302 1/2" Mylar Dome Tweeter
 Manufacturer=
@@ -52444,7 +52444,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GT-302_S 1_2_ Mylar Dome Tweeter Shielded`,content:`[Driver]
+`},{name:`Goldwood GT-302_S 1_2_ Mylar Dome Tweeter Shielded`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GT-302/S 1/2" Mylar Dome Tweeter Shielded
 Manufacturer=
@@ -52472,7 +52472,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GT-322 1_ Titanium Dome Tweeter 3-3_4_ Square`,content:`[Driver]
+`},{name:`Goldwood GT-322 1_ Titanium Dome Tweeter 3-3_4_ Square`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GT-322 1" Titanium Dome Tweeter 3-3/4" Square
 Manufacturer=
@@ -52500,7 +52500,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GT-324 1_ Titanium Dome Tweeter 3-7_8_ Round`,content:`[Driver]
+`},{name:`Goldwood GT-324 1_ Titanium Dome Tweeter 3-7_8_ Round`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GT-324 1" Titanium Dome Tweeter 3-7/8" Round
 Manufacturer=
@@ -52528,7 +52528,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GT-336 1_ Titanium Dome Tweeter 4-1_2_ x 3-1_2_`,content:`[Driver]
+`},{name:`Goldwood GT-336 1_ Titanium Dome Tweeter 4-1_2_ x 3-1_2_`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GT-336 1" Titanium Dome Tweeter 4-1/2" x 3-1/2"
 Manufacturer=
@@ -52556,7 +52556,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GT-510 1_ Soft Dome Tweeter`,content:`[Driver]
+`},{name:`Goldwood GT-510 1_ Soft Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GT-510 1" Soft Dome Tweeter
 Manufacturer=
@@ -52584,7 +52584,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GT-520 1_ Soft Dome Horn Tweeter`,content:`[Driver]
+`},{name:`Goldwood GT-520 1_ Soft Dome Horn Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GT-520 1" Soft Dome Horn Tweeter
 Manufacturer=
@@ -52612,7 +52612,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GT-525 1_ Soft Dome Tweeter`,content:`[Driver]
+`},{name:`Goldwood GT-525 1_ Soft Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GT-525 1" Soft Dome Tweeter
 Manufacturer=
@@ -52640,7 +52640,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-1034`,content:`[Driver]
+`},{name:`Goldwood GW-1034`,date:``,content:`[Driver]
 Brand=Goldwood
 Model=GW-1034
 Manufacturer=
@@ -52668,7 +52668,7 @@ Dd=0.231775
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-1038 10_ Butyl Surround Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-1038 10_ Butyl Surround Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-1038 10" Butyl Surround Woofer 8 Ohm
 Manufacturer=
@@ -52696,7 +52696,7 @@ Dd=0.212723
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-1038`,content:`[Driver]
+`},{name:`Goldwood GW-1038`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-1038
 Manufacturer=
@@ -52724,7 +52724,7 @@ Dd=0.212723
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-1038_PA 10_ PA _ Musical Instrument Speaker`,content:`[Driver]
+`},{name:`Goldwood GW-1038_PA 10_ PA _ Musical Instrument Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-1038/PA 10" PA / Musical Instrument Speaker
 Manufacturer=
@@ -52752,7 +52752,7 @@ Dd=0.214303
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-10PC-4 10_ Heavy Duty Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-10PC-4 10_ Heavy Duty Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-10PC-4 10" Heavy Duty Woofer 4 Ohm
 Manufacturer=
@@ -52780,7 +52780,7 @@ Dd=0.209557
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-10PC-4`,content:`[Driver]
+`},{name:`Goldwood GW-10PC-4`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-10PC-4
 Manufacturer=
@@ -52808,7 +52808,7 @@ Dd=0.209557
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-10PC-8 10_ Heavy Duty Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-10PC-8 10_ Heavy Duty Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-10PC-8 10" Heavy Duty Woofer 8 Ohm
 Manufacturer=
@@ -52836,7 +52836,7 @@ Dd=0.209557
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-10PC-8`,content:`[Driver]
+`},{name:`Goldwood GW-10PC-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-10PC-8
 Manufacturer=
@@ -52864,7 +52864,7 @@ Dd=0.209557
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-1244 12_ Butyl Surround Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-1244 12_ Butyl Surround Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-1244 12" Butyl Surround Woofer 4 Ohm
 Manufacturer=
@@ -52892,7 +52892,7 @@ Dd=0.258766
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-1244`,content:`[Driver]
+`},{name:`Goldwood GW-1244`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-1244
 Manufacturer=
@@ -52920,7 +52920,7 @@ Dd=0.258766
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-1248 12_ Butyl Surround Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-1248 12_ Butyl Surround Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-1248 12" Butyl Surround Woofer 8 Ohm
 Manufacturer=
@@ -52948,7 +52948,7 @@ Dd=0.258766
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-1248`,content:`[Driver]
+`},{name:`Goldwood GW-1248`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-1248
 Manufacturer=
@@ -52976,7 +52976,7 @@ Dd=0.258766
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-12PC-4 12_ Heavy Duty Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-12PC-4 12_ Heavy Duty Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-12PC-4 12" Heavy Duty Woofer 4 Ohm
 Manufacturer=
@@ -53004,7 +53004,7 @@ Dd=0.249239
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-12PC-4`,content:`[Driver]
+`},{name:`Goldwood GW-12PC-4`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-12PC-4
 Manufacturer=
@@ -53032,7 +53032,7 @@ Dd=0.249239
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-12PC-8 12_ Heavy Duty Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-12PC-8 12_ Heavy Duty Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-12PC-8 12" Heavy Duty Woofer 8 Ohm
 Manufacturer=
@@ -53060,7 +53060,7 @@ Dd=0.2508
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-12PC-8`,content:`[Driver]
+`},{name:`Goldwood GW-12PC-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-12PC-8
 Manufacturer=
@@ -53088,7 +53088,7 @@ Dd=0.2508
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-15PC-4`,content:`[Driver]
+`},{name:`Goldwood GW-15PC-4`,date:``,content:`[Driver]
 Brand=Goldwood
 Model=GW-15PC-4
 Manufacturer=
@@ -53116,7 +53116,7 @@ Dd=0.34925
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-15PC-8 15_ Heavy Duty Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-15PC-8 15_ Heavy Duty Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-15PC-8 15" Heavy Duty Woofer 8 Ohm
 Manufacturer=
@@ -53144,7 +53144,7 @@ Dd=0.323851
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-15PC-8`,content:`[Driver]
+`},{name:`Goldwood GW-15PC-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-15PC-8
 Manufacturer=
@@ -53172,7 +53172,7 @@ Dd=0.323851
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-204_4S 4_ Shielded Poly Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-204_4S 4_ Shielded Poly Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-204/4S 4" Shielded Poly Woofer 4 Ohm
 Manufacturer=
@@ -53200,7 +53200,7 @@ Dd=0.0825492
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-204_4S`,content:`[Driver]
+`},{name:`Goldwood GW-204_4S`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-204/4S
 Manufacturer=
@@ -53228,7 +53228,7 @@ Dd=0.0825492
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-204_8S 4_ Shielded Poly Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-204_8S 4_ Shielded Poly Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-204/8S 4" Shielded Poly Woofer 8 Ohm
 Manufacturer=
@@ -53256,7 +53256,7 @@ Dd=0.0825492
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-204_8S`,content:`[Driver]
+`},{name:`Goldwood GW-204_8S`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-204/8S
 Manufacturer=
@@ -53284,7 +53284,7 @@ Dd=0.0825492
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-205_4S 5-1_4_ Shielded Poly Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-205_4S 5-1_4_ Shielded Poly Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-205/4S 5-1/4" Shielded Poly Woofer 4 Ohm
 Manufacturer=
@@ -53312,7 +53312,7 @@ Dd=0.111001
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-205_4S`,content:`[Driver]
+`},{name:`Goldwood GW-205_4S`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-205/4S
 Manufacturer=
@@ -53340,7 +53340,7 @@ Dd=0.111001
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-205_8S 5-1_4_ Shielded Poly Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-205_8S 5-1_4_ Shielded Poly Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-205/8S 5-1/4" Shielded Poly Woofer 8 Ohm
 Manufacturer=
@@ -53368,7 +53368,7 @@ Dd=0.111001
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-205_8S`,content:`[Driver]
+`},{name:`Goldwood GW-205_8S`,date:``,content:`[Driver]
 Brand=Goldwood
 Model=GW-205/8S
 Manufacturer=
@@ -53396,7 +53396,7 @@ Dd=0.11100062645950323
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-206_4 6-1_2_ OEM Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-206_4 6-1_2_ OEM Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-206/4 6-1/2" OEM Woofer 4 Ohm
 Manufacturer=
@@ -53424,7 +53424,7 @@ Dd=0.13176
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-206_4`,content:`[Driver]
+`},{name:`Goldwood GW-206_4`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-206/4
 Manufacturer=
@@ -53452,7 +53452,7 @@ Dd=0.13176
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-206_8 6-1_2_ OEM Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-206_8 6-1_2_ OEM Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-206/8 6-1/2" OEM Woofer 8 Ohm
 Manufacturer=
@@ -53480,7 +53480,7 @@ Dd=0.13176
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-206_8`,content:`[Driver]
+`},{name:`Goldwood GW-206_8`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-206/8
 Manufacturer=
@@ -53508,7 +53508,7 @@ Dd=0.13176
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-208_4 8_ OEM Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-208_4 8_ OEM Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-208/4 8" OEM Woofer 4 Ohm
 Manufacturer=
@@ -53536,7 +53536,7 @@ Dd=0.161914
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-208_4`,content:`[Driver]
+`},{name:`Goldwood GW-208_4`,date:``,content:`[Driver]
 Brand=Goldwood
 Model=GW-208/4
 Manufacturer=
@@ -53564,7 +53564,7 @@ Dd=0.1619135640584105
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-208_8 8_ OEM Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-208_8 8_ OEM Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-208/8 8" OEM Woofer 8 Ohm
 Manufacturer=
@@ -53592,7 +53592,7 @@ Dd=0.161914
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-208_8`,content:`[Driver]
+`},{name:`Goldwood GW-208_8`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-208/8
 Manufacturer=
@@ -53620,7 +53620,7 @@ Dd=0.161914
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-210_4 10_ OEM Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-210_4 10_ OEM Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-210/4 10" OEM Woofer 4 Ohm
 Manufacturer=
@@ -53648,7 +53648,7 @@ Dd=0.209557
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-210_4`,content:`[Driver]
+`},{name:`Goldwood GW-210_4`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-210/4
 Manufacturer=
@@ -53676,7 +53676,7 @@ Dd=0.209557
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-210_8 10_ OEM Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-210_8 10_ OEM Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-210/8 10" OEM Woofer 8 Ohm
 Manufacturer=
@@ -53704,7 +53704,7 @@ Dd=0.209557
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-210_8`,content:`[Driver]
+`},{name:`Goldwood GW-210_8`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-210/8
 Manufacturer=
@@ -53732,7 +53732,7 @@ Dd=0.209557
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-212_4 12_ OEM Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-212_4 12_ OEM Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-212/4 12" OEM Woofer 4 Ohm
 Manufacturer=
@@ -53760,7 +53760,7 @@ Dd=0.257179
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-212_4`,content:`[Driver]
+`},{name:`Goldwood GW-212_4`,date:``,content:`[Driver]
 Brand=Goldwood
 Model=GW-212/4
 Manufacturer=
@@ -53788,7 +53788,7 @@ Dd=0.2571788767188268
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-212_8 12_ OEM Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-212_8 12_ OEM Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-212/8 12" OEM Woofer 8 Ohm
 Manufacturer=
@@ -53816,7 +53816,7 @@ Dd=0.258766
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-212_8`,content:`[Driver]
+`},{name:`Goldwood GW-212_8`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-212/8
 Manufacturer=
@@ -53844,7 +53844,7 @@ Dd=0.258766
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-215_4`,content:`[Driver]
+`},{name:`Goldwood GW-215_4`,date:``,content:`[Driver]
 Brand=Goldwood
 Model=GW-215/4
 Manufacturer=
@@ -53872,7 +53872,7 @@ Dd=0.34925
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-215_40_8 15_ OEM Woofer 40 oz.`,content:`[Driver]
+`},{name:`Goldwood GW-215_40_8 15_ OEM Woofer 40 oz.`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-215/40/8 15" OEM Woofer 40 oz.
 Manufacturer=
@@ -53900,7 +53900,7 @@ Dd=0.323788
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-215_40_8`,content:`[Driver]
+`},{name:`Goldwood GW-215_40_8`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-215/40/8
 Manufacturer=
@@ -53928,7 +53928,7 @@ Dd=0.323788
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-215_8 15_ OEM Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-215_8 15_ OEM Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-215/8 15" OEM Woofer 8 Ohm
 Manufacturer=
@@ -53956,7 +53956,7 @@ Dd=0.323792
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-215_8`,content:`[Driver]
+`},{name:`Goldwood GW-215_8`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-215/8
 Manufacturer=
@@ -53984,7 +53984,7 @@ Dd=0.323792
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-4028_S 4_ Woofer Shielded`,content:`[Driver]
+`},{name:`Goldwood GW-4028_S 4_ Woofer Shielded`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-4028/S 4" Woofer Shielded
 Manufacturer=
@@ -54012,7 +54012,7 @@ Dd=0.0793885
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-4028_S`,content:`[Driver]
+`},{name:`Goldwood GW-4028_S`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-4028/S
 Manufacturer=
@@ -54040,7 +54040,7 @@ Dd=0.0793885
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-406D 6-1_2_ Poly DVC Subwoofer Shielded`,content:`[Driver]
+`},{name:`Goldwood GW-406D 6-1_2_ Poly DVC Subwoofer Shielded`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-406D 6-1/2" Poly DVC Subwoofer Shielded
 Manufacturer=
@@ -54068,7 +54068,7 @@ Dd=0.13176
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-5028_S 5-1_4_ Shielded Woofer`,content:`[Driver]
+`},{name:`Goldwood GW-5028_S 5-1_4_ Shielded Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-5028/S 5-1/4" Shielded Woofer
 Manufacturer=
@@ -54096,7 +54096,7 @@ Dd=0.103202
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-5028_S`,content:`[Driver]
+`},{name:`Goldwood GW-5028_S`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-5028/S
 Manufacturer=
@@ -54124,7 +54124,7 @@ Dd=0.103202
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-6024 6-1_2_ Butyl Surround Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-6024 6-1_2_ Butyl Surround Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-6024 6-1/2" Butyl Surround Woofer 4 Ohm
 Manufacturer=
@@ -54152,7 +54152,7 @@ Dd=0.13176
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-6024`,content:`[Driver]
+`},{name:`Goldwood GW-6024`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-6024
 Manufacturer=
@@ -54180,7 +54180,7 @@ Dd=0.13176
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-6028 6-1_2_ Butyl Surround Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-6028 6-1_2_ Butyl Surround Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-6028 6-1/2" Butyl Surround Woofer 8 Ohm
 Manufacturer=
@@ -54208,7 +54208,7 @@ Dd=0.13176
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-6028`,content:`[Driver]
+`},{name:`Goldwood GW-6028`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-6028
 Manufacturer=
@@ -54236,7 +54236,7 @@ Dd=0.13176
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-6PC-4 6-1_2_ Heavy Duty Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-6PC-4 6-1_2_ Heavy Duty Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-6PC-4 6-1/2" Heavy Duty Woofer 4 Ohm
 Manufacturer=
@@ -54264,7 +54264,7 @@ Dd=0.131798
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-6PC-4`,content:`[Driver]
+`},{name:`Goldwood GW-6PC-4`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-6PC-4
 Manufacturer=
@@ -54292,7 +54292,7 @@ Dd=0.131798
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-6PC-8`,content:`[Driver]
+`},{name:`Goldwood GW-6PC-8`,date:``,content:`[Driver]
 Brand=Goldwood
 Model=GW-6PC-8
 Manufacturer=
@@ -54320,7 +54320,7 @@ Dd=0.155575
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-8003_8 8_ Full Range Driver w_Whizzer`,content:`[Driver]
+`},{name:`Goldwood GW-8003_8 8_ Full Range Driver w_Whizzer`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-8003/8 8" Full Range Driver w/Whizzer
 Manufacturer=
@@ -54348,7 +54348,7 @@ Dd=0.165098
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-8004 8_ Coaxial Speaker`,content:`[Driver]
+`},{name:`Goldwood GW-8004 8_ Coaxial Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-8004 8" Coaxial Speaker
 Manufacturer=
@@ -54376,7 +54376,7 @@ Dd=0.165098
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-8024 8_ Butyl Surround Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-8024 8_ Butyl Surround Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-8024 8" Butyl Surround Woofer 4 Ohm
 Manufacturer=
@@ -54404,7 +54404,7 @@ Dd=0.16668
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-8024`,content:`[Driver]
+`},{name:`Goldwood GW-8024`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-8024
 Manufacturer=
@@ -54432,7 +54432,7 @@ Dd=0.16668
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-8028 8_ Butyl Surround Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-8028 8_ Butyl Surround Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-8028 8" Butyl Surround Woofer 8 Ohm
 Manufacturer=
@@ -54460,7 +54460,7 @@ Dd=0.16668
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-8028`,content:`[Driver]
+`},{name:`Goldwood GW-8028`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-8028
 Manufacturer=
@@ -54488,7 +54488,7 @@ Dd=0.16668
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-8PC-30-4`,content:`[Driver]
+`},{name:`Goldwood GW-8PC-30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-8PC-30-4
 Manufacturer=
@@ -54516,7 +54516,7 @@ Dd=0.161914
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-8PC-30-8`,content:`[Driver]
+`},{name:`Goldwood GW-8PC-30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-8PC-30-8
 Manufacturer=
@@ -54544,7 +54544,7 @@ Dd=0.161914
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-8PC-4 8_ Heavy Duty Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-8PC-4 8_ Heavy Duty Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-8PC-4 8" Heavy Duty Woofer 4 Ohm
 Manufacturer=
@@ -54572,7 +54572,7 @@ Dd=0.161914
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-8PC-8 8_ Delmar Series Heavy Duty Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-8PC-8 8_ Delmar Series Heavy Duty Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-8PC-8 8" Delmar Series Heavy Duty Woofer 8 Ohm
 Manufacturer=
@@ -54600,7 +54600,7 @@ Dd=0.161914
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-S525_4 5-1_4_ Poly Cone Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-S525_4 5-1_4_ Poly Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-S525/4 5-1/4" Poly Cone Woofer 4 Ohm
 Manufacturer=
@@ -54628,7 +54628,7 @@ Dd=0.10236
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-S525_4`,content:`[Driver]
+`},{name:`Goldwood GW-S525_4`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-S525/4
 Manufacturer=
@@ -54656,7 +54656,7 @@ Dd=0.10236
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-S525_8 5-1_4_ Poly Cone Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-S525_8 5-1_4_ Poly Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-S525/8 5-1/4" Poly Cone Woofer 8 Ohm
 Manufacturer=
@@ -54684,7 +54684,7 @@ Dd=0.10236
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-S525_8`,content:`[Driver]
+`},{name:`Goldwood GW-S525_8`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-S525/8
 Manufacturer=
@@ -54712,7 +54712,7 @@ Dd=0.10236
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-S650_4 6-1_2_ Poly Cone Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-S650_4 6-1_2_ Poly Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-S650/4 6-1/2" Poly Cone Woofer 4 Ohm
 Manufacturer=
@@ -54740,7 +54740,7 @@ Dd=0.133368
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-S650_4`,content:`[Driver]
+`},{name:`Goldwood GW-S650_4`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-S650/4
 Manufacturer=
@@ -54768,7 +54768,7 @@ Dd=0.133368
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-S650_8 6-1_2_ Poly Cone Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Goldwood GW-S650_8 6-1_2_ Poly Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-S650/8 6-1/2" Poly Cone Woofer 8 Ohm
 Manufacturer=
@@ -54796,7 +54796,7 @@ Dd=0.133368
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Goldwood GW-S650_8`,content:`[Driver]
+`},{name:`Goldwood GW-S650_8`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GW-S650/8
 Manufacturer=
@@ -54824,7 +54824,7 @@ Dd=0.133368
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi B1S 1_ Shielded Aluminum Alloy Mid_Tweeter`,content:`[Driver]
+`},{name:`HiVi B1S 1_ Shielded Aluminum Alloy Mid_Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=B1S 1" Shielded Aluminum Alloy Mid/Tweeter
 Manufacturer=
@@ -54852,7 +54852,7 @@ Dd=0.0252313
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi B2S 2_ Shielded Aluminum Alloy Full-Range Driver`,content:`[Driver]
+`},{name:`HiVi B2S 2_ Shielded Aluminum Alloy Full-Range Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=B2S 2" Shielded Aluminum Alloy Full-Range Driver
 Manufacturer=
@@ -54880,7 +54880,7 @@ Dd=0.0406843
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi B3N 3_ Aluminum Alloy Full-Range Driver Round Frame`,content:`[Driver]
+`},{name:`HiVi B3N 3_ Aluminum Alloy Full-Range Driver Round Frame`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=B3N 3" Aluminum Alloy Full-Range Driver Round Frame
 Manufacturer=
@@ -54908,7 +54908,7 @@ Dd=0.0618039
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi B3S 3_ Shielded Aluminum Alloy Full-Range Driver Square Frame`,content:`[Driver]
+`},{name:`HiVi B3S 3_ Shielded Aluminum Alloy Full-Range Driver Square Frame`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=B3S 3" Shielded Aluminum Alloy Full-Range Driver Square Frame
 Manufacturer=
@@ -54936,7 +54936,7 @@ Dd=0.0618039
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi B4N 4_ Aluminum Round Frame Midbass`,content:`[Driver]
+`},{name:`HiVi B4N 4_ Aluminum Round Frame Midbass`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=B4N 4" Aluminum Round Frame Midbass
 Manufacturer=
@@ -54964,7 +54964,7 @@ Dd=0.0821472
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi C3N-III 3_ Paper Cone Full-Range Driver`,content:`[Driver]
+`},{name:`HiVi C3N-III 3_ Paper Cone Full-Range Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=C3N-III 3" Paper Cone Full-Range Driver
 Manufacturer=
@@ -54992,7 +54992,7 @@ Dd=0.000618039
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi C6.5 6-1_2_ Reinforced Paper Cone Woofer`,content:`[Driver]
+`},{name:`HiVi C6.5 6-1_2_ Reinforced Paper Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=C6.5 6-1/2" Reinforced Paper Cone Woofer
 Manufacturer=
@@ -55020,7 +55020,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi D10.8`,content:`[Driver]
+`},{name:`HiVi D10.8`,date:``,content:`[Driver]
 Brand=HiVi
 Model=D10.8
 Manufacturer=
@@ -55048,7 +55048,7 @@ Dd=0.254
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi D5.4-II 5_ Poly Cone Neodymium Woofer 4 Ohm`,content:`[Driver]
+`},{name:`HiVi D5.4-II 5_ Poly Cone Neodymium Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=D5.4-II 5" Poly Cone Neodymium Woofer 4 Ohm
 Manufacturer=
@@ -55076,7 +55076,7 @@ Dd=0.0993486
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi D6.8B 6_ Poly Bass_Midrange Shielded`,content:`[Driver]
+`},{name:`HiVi D6.8B 6_ Poly Bass_Midrange Shielded`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=D6.8B 6" Poly Bass/Midrange Shielded
 Manufacturer=
@@ -55104,7 +55104,7 @@ Dd=0.124224
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi D6.8B`,content:`[Driver]
+`},{name:`HiVi D6.8B`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=D6.8B
 Manufacturer=
@@ -55132,7 +55132,7 @@ Dd=0.124224
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi D6G`,content:`[Driver]
+`},{name:`HiVi D6G`,date:``,content:`[Driver]
 Brand=HiVi
 Model=D6G
 Manufacturer=
@@ -55160,7 +55160,7 @@ Dd=0.135128
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi DM-7500 3_ Soft Dome Midrange Driver 6 Ohm`,content:`[Driver]
+`},{name:`HiVi DM-7500 3_ Soft Dome Midrange Driver 6 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=DM-7500 3" Soft Dome Midrange Driver 6 Ohm
 Manufacturer=
@@ -55188,7 +55188,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi DMB-A 2_ Fabric Dome Midrange`,content:`[Driver]
+`},{name:`HiVi DMB-A 2_ Fabric Dome Midrange`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=DMB-A 2" Fabric Dome Midrange
 Manufacturer=
@@ -55216,7 +55216,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi DMN-A Soft Dome Fabric Midrange`,content:`[Driver]
+`},{name:`HiVi DMN-A Soft Dome Fabric Midrange`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=DMN-A Soft Dome Fabric Midrange
 Manufacturer=
@@ -55244,7 +55244,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi E6.5 6-1_2_ Treated Paper Cone Woofer`,content:`[Driver]
+`},{name:`HiVi E6.5 6-1_2_ Treated Paper Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=E6.5 6-1/2" Treated Paper Cone Woofer
 Manufacturer=
@@ -55272,7 +55272,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi E8 8_ Treated Paper Cone Woofer`,content:`[Driver]
+`},{name:`HiVi E8 8_ Treated Paper Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=E8 8" Treated Paper Cone Woofer
 Manufacturer=
@@ -55300,7 +55300,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi F10 10_ Woofer`,content:`[Driver]
+`},{name:`HiVi F10 10_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=F10 10" Woofer
 Manufacturer=
@@ -55328,7 +55328,7 @@ Dd=0.214985
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi F10`,content:`[Driver]
+`},{name:`HiVi F10`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=F10
 Manufacturer=
@@ -55356,7 +55356,7 @@ Dd=0.214985
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi F5 5_ Bass_Midrange`,content:`[Driver]
+`},{name:`HiVi F5 5_ Bass_Midrange`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=F5 5" Bass/Midrange
 Manufacturer=
@@ -55384,7 +55384,7 @@ Dd=0.100293
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi F6 6-1_2_ Bass_Midrange`,content:`[Driver]
+`},{name:`HiVi F6 6-1_2_ Bass_Midrange`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=F6 6-1/2" Bass/Midrange
 Manufacturer=
@@ -55412,7 +55412,7 @@ Dd=0.133034
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi F6`,content:`[Driver]
+`},{name:`HiVi F6`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=F6
 Manufacturer=
@@ -55440,7 +55440,7 @@ Dd=0.133034
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi F8 8_ Bass_Midrange`,content:`[Driver]
+`},{name:`HiVi F8 8_ Bass_Midrange`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=F8 8" Bass/Midrange
 Manufacturer=
@@ -55468,7 +55468,7 @@ Dd=0.165068
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi F8`,content:`[Driver]
+`},{name:`HiVi F8`,date:``,content:`[Driver]
 Brand=HiVi
 Model=F8
 Manufacturer=
@@ -55496,7 +55496,7 @@ Dd=0.1650676414605009
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi HIVI C8 8_ Reinforced Paper Cone Woofer`,content:`[Driver]
+`},{name:`HiVi HIVI C8 8_ Reinforced Paper Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=HIVI C8 8" Reinforced Paper Cone Woofer
 Manufacturer=
@@ -55524,7 +55524,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi LK8A`,content:`[Driver]
+`},{name:`HiVi LK8A`,date:``,content:`[Driver]
 Brand=HiVi
 Model=LK8A
 Manufacturer=
@@ -55552,7 +55552,7 @@ Dd=0.1905
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi M3N 3_ Aluminum _ Magnesium Midbass`,content:`[Driver]
+`},{name:`HiVi M3N 3_ Aluminum _ Magnesium Midbass`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=M3N 3" Aluminum / Magnesium Midbass
 Manufacturer=
@@ -55580,7 +55580,7 @@ Dd=0.0618039
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi M3N-B 3_ Damped Aluminum_Magnesium Cone Full-Range Driver`,content:`[Driver]
+`},{name:`HiVi M3N-B 3_ Damped Aluminum_Magnesium Cone Full-Range Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=M3N-B 3" Damped Aluminum/Magnesium Cone Full-Range Driver
 Manufacturer=
@@ -55608,7 +55608,7 @@ Dd=0.0618039
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi M4N 4_ Aluminum _ Magnesium Midbass`,content:`[Driver]
+`},{name:`HiVi M4N 4_ Aluminum _ Magnesium Midbass`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=M4N 4" Aluminum / Magnesium Midbass
 Manufacturer=
@@ -55636,7 +55636,7 @@ Dd=0.0821472
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi M4N-B 4_ Damped Aluminum_Magnesium Cone Full-Range Driver`,content:`[Driver]
+`},{name:`HiVi M4N-B 4_ Damped Aluminum_Magnesium Cone Full-Range Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=M4N-B 4" Damped Aluminum/Magnesium Cone Full-Range Driver
 Manufacturer=
@@ -55664,7 +55664,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi M5N 5_ Aluminum _ Magnesium Midbass`,content:`[Driver]
+`},{name:`HiVi M5N 5_ Aluminum _ Magnesium Midbass`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=M5N 5" Aluminum / Magnesium Midbass
 Manufacturer=
@@ -55692,7 +55692,7 @@ Dd=0.105248
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi M5N-B 5_ Damped Aluminum_Magnesium Cone Woofer`,content:`[Driver]
+`},{name:`HiVi M5N-B 5_ Damped Aluminum_Magnesium Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=M5N-B 5" Damped Aluminum/Magnesium Cone Woofer
 Manufacturer=
@@ -55720,7 +55720,7 @@ Dd=0.105248
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi M6N 6_ Aluminum_Magnesium Midbass`,content:`[Driver]
+`},{name:`HiVi M6N 6_ Aluminum_Magnesium Midbass`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=M6N 6" Aluminum/Magnesium Midbass
 Manufacturer=
@@ -55748,7 +55748,7 @@ Dd=0.130131
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi M6N-B 6_ Damped Aluminum_Magnesium Cone Woofer`,content:`[Driver]
+`},{name:`HiVi M6N-B 6_ Damped Aluminum_Magnesium Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=M6N-B 6" Damped Aluminum/Magnesium Cone Woofer
 Manufacturer=
@@ -55776,7 +55776,7 @@ Dd=0.130131
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi M8N-1 8_ Aluminum _ Magnesium Woofer`,content:`[Driver]
+`},{name:`HiVi M8N-1 8_ Aluminum _ Magnesium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=M8N-1 8" Aluminum / Magnesium Woofer
 Manufacturer=
@@ -55804,7 +55804,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi M8N-1B 8_ Damped Aluminum_Magnesium Cone Woofer`,content:`[Driver]
+`},{name:`HiVi M8N-1B 8_ Damped Aluminum_Magnesium Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=M8N-1B 8" Damped Aluminum/Magnesium Cone Woofer
 Manufacturer=
@@ -55832,7 +55832,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi M8N`,content:`[Driver]
+`},{name:`HiVi M8N`,date:``,content:`[Driver]
 Brand=HiVi
 Model=M8N
 Manufacturer=
@@ -55860,7 +55860,7 @@ Dd=0.17805415662669077
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi M8a`,content:`[Driver]
+`},{name:`HiVi M8a`,date:``,content:`[Driver]
 Brand=HiVi
 Model=M8a
 Manufacturer=
@@ -55888,7 +55888,7 @@ Dd=0.186944
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi Q2R 1-1_8_ Textile Dome Tweeter`,content:`[Driver]
+`},{name:`HiVi Q2R 1-1_8_ Textile Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=Q2R 1-1/8" Textile Dome Tweeter
 Manufacturer=
@@ -55916,7 +55916,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi SD1.1-A 1_ Textile Dome Tweeter`,content:`[Driver]
+`},{name:`HiVi SD1.1-A 1_ Textile Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=SD1.1-A 1" Textile Dome Tweeter
 Manufacturer=
@@ -55944,7 +55944,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi T20-8 3_4_ (20mm) Textile Dome Tweeter 8 Ohm`,content:`[Driver]
+`},{name:`HiVi T20-8 3_4_ (20mm) Textile Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=T20-8 3/4" (20mm) Textile Dome Tweeter 8 Ohm
 Manufacturer=
@@ -55972,7 +55972,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi TN25 Fabric Dome Tweeter`,content:`[Driver]
+`},{name:`HiVi TN25 Fabric Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=TN25 Fabric Dome Tweeter
 Manufacturer=
@@ -56000,7 +56000,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`HiVi TN28-B 1_ Top Mount Soft Dome Tweeter with Mounting Plate`,content:`[Driver]
+`},{name:`HiVi TN28-B 1_ Top Mount Soft Dome Tweeter with Mounting Plate`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
 Model=TN28-B 1" Top Mount Soft Dome Tweeter with Mounting Plate
 Manufacturer=
@@ -56028,7 +56028,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce CSF051.21 5_ Coaxial Woofer`,content:`[Driver]
+`},{name:`Lavoce LaVoce CSF051.21 5_ Coaxial Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce CSF051.21 5" Coaxial Woofer
 Manufacturer=
@@ -56056,7 +56056,7 @@ Dd=0.111132
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce CSF061.21 6.5_ Coaxial Woofer`,content:`[Driver]
+`},{name:`Lavoce LaVoce CSF061.21 6.5_ Coaxial Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce CSF061.21 6.5" Coaxial Woofer
 Manufacturer=
@@ -56084,7 +56084,7 @@ Dd=0.131106
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce CSF082.00K 8_ Coaxial Woofer`,content:`[Driver]
+`},{name:`Lavoce LaVoce CSF082.00K 8_ Coaxial Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce CSF082.00K 8" Coaxial Woofer
 Manufacturer=
@@ -56112,7 +56112,7 @@ Dd=0.166221
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce FSF030.70 3_ Ferrite Full-Range Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce FSF030.70 3_ Ferrite Full-Range Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce FSF030.70 3" Ferrite Full-Range Woofer 8 Ohm
 Manufacturer=
@@ -56140,7 +56140,7 @@ Dd=0.0650166
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce FSF041.00 4_ Ferrite Full-Range Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce FSF041.00 4_ Ferrite Full-Range Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce FSF041.00 4" Ferrite Full-Range Woofer 8 Ohm
 Manufacturer=
@@ -56168,7 +56168,7 @@ Dd=0.0829186
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce FSN020.72 2_ Neodymium Full-Range Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce FSN020.72 2_ Neodymium Full-Range Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce FSN020.72 2" Neodymium Full-Range Woofer 8 Ohm
 Manufacturer=
@@ -56196,7 +56196,7 @@ Dd=0.0470684
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce FSN021.00 2_ Neodymium Full-Range Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce FSN021.00 2_ Neodymium Full-Range Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce FSN021.00 2" Neodymium Full-Range Woofer 8 Ohm
 Manufacturer=
@@ -56224,7 +56224,7 @@ Dd=0.0491849
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce FSN030.71 3_ Neodymium Full-Range Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce FSN030.71 3_ Neodymium Full-Range Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce FSN030.71 3" Neodymium Full-Range Woofer 8 Ohm
 Manufacturer=
@@ -56252,7 +56252,7 @@ Dd=0.0650166
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce FSN030.72 3_ Neodymium Full-Range Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce FSN030.72 3_ Neodymium Full-Range Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce FSN030.72 3" Neodymium Full-Range Woofer 8 Ohm
 Manufacturer=
@@ -56280,7 +56280,7 @@ Dd=0.0650166
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce FSN041.00 4_ Neodymium Full-Range Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce FSN041.00 4_ Neodymium Full-Range Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce FSN041.00 4" Neodymium Full-Range Woofer 8 Ohm
 Manufacturer=
@@ -56308,7 +56308,7 @@ Dd=0.0829186
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce MAF061.50 6-1_2_ Professional Midrange Driver 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce MAF061.50 6-1_2_ Professional Midrange Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce MAF061.50 6-1/2" Professional Midrange Driver 8 Ohm
 Manufacturer=
@@ -56336,7 +56336,7 @@ Dd=0.134935
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce MAF082.00 8_ Professional Midrange Driver 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce MAF082.00 8_ Professional Midrange Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce MAF082.00 8" Professional Midrange Driver 8 Ohm
 Manufacturer=
@@ -56364,7 +56364,7 @@ Dd=0.165068
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce MAN061.80 6-1_2_ Neodymium Midrange Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce MAN061.80 6-1_2_ Neodymium Midrange Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce MAN061.80 6-1/2" Neodymium Midrange Woofer 8 Ohm
 Manufacturer=
@@ -56392,7 +56392,7 @@ Dd=0.132073
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce SAF184.01 18_ Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce SAF184.01 18_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce SAF184.01 18" Subwoofer 8 Ohm
 Manufacturer=
@@ -56420,7 +56420,7 @@ Dd=0.384312
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce SAF184.02 18_ Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce SAF184.02 18_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce SAF184.02 18" Subwoofer 8 Ohm
 Manufacturer=
@@ -56448,7 +56448,7 @@ Dd=0.394933
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce SAF184.03 18_ Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce SAF184.03 18_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce SAF184.03 18" Subwoofer 8 Ohm
 Manufacturer=
@@ -56476,7 +56476,7 @@ Dd=0.394933
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce SAF184.50 18_ Professional Subwoofer Driver 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce SAF184.50 18_ Professional Subwoofer Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce SAF184.50 18" Professional Subwoofer Driver 8 Ohm
 Manufacturer=
@@ -56504,7 +56504,7 @@ Dd=0.394933
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce SAF214.50 21_ Subwoofer`,content:`[Driver]
+`},{name:`Lavoce LaVoce SAF214.50 21_ Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce SAF214.50 21" Subwoofer
 Manufacturer=
@@ -56532,7 +56532,7 @@ Dd=0.460013
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce SAN184.03 18_ Neodymium Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce SAN184.03 18_ Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce SAN184.03 18" Neodymium Subwoofer 8 Ohm
 Manufacturer=
@@ -56560,7 +56560,7 @@ Dd=0.394933
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce SAN184.50 18_ Professional Neodymium Subwoofer Driver 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce SAN184.50 18_ Professional Neodymium Subwoofer Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce SAN184.50 18" Professional Neodymium Subwoofer Driver 8 Ohm
 Manufacturer=
@@ -56588,7 +56588,7 @@ Dd=0.394933
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce SAN214.50 21_ Neodymium Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce SAN214.50 21_ Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce SAN214.50 21" Neodymium Subwoofer 8 Ohm
 Manufacturer=
@@ -56616,7 +56616,7 @@ Dd=0.459875
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce SAN214.50-4 21_ Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce SAN214.50-4 21_ Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce SAN214.50-4 21" Subwoofer 4 Ohm
 Manufacturer=
@@ -56644,7 +56644,7 @@ Dd=0.46
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce SSF082.00L 8_ Paper Cone Subwoofer`,content:`[Driver]
+`},{name:`Lavoce LaVoce SSF082.00L 8_ Paper Cone Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce SSF082.00L 8" Paper Cone Subwoofer
 Manufacturer=
@@ -56672,7 +56672,7 @@ Dd=0.165998
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce SSF102.50L 10_ Paper Cone Subwoofer`,content:`[Driver]
+`},{name:`Lavoce LaVoce SSF102.50L 10_ Paper Cone Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce SSF102.50L 10" Paper Cone Subwoofer
 Manufacturer=
@@ -56700,7 +56700,7 @@ Dd=0.215
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce SSF122.50L 12_ Paper Cone Subwoofer`,content:`[Driver]
+`},{name:`Lavoce LaVoce SSF122.50L 12_ Paper Cone Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce SSF122.50L 12" Paper Cone Subwoofer
 Manufacturer=
@@ -56728,7 +56728,7 @@ Dd=0.259993
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce TN100.70 1_ Soft Dome Neodymium Tweeter 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce TN100.70 1_ Soft Dome Neodymium Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce TN100.70 1" Soft Dome Neodymium Tweeter 8 Ohm
 Manufacturer=
@@ -56756,7 +56756,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce TN131.00 1.3_ Soft Dome Neodymium Tweeter 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce TN131.00 1.3_ Soft Dome Neodymium Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce TN131.00 1.3" Soft Dome Neodymium Tweeter 8 Ohm
 Manufacturer=
@@ -56784,7 +56784,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce WAF061.80 6-1_2_ Ferrite Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce WAF061.80 6-1_2_ Ferrite Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce WAF061.80 6-1/2" Ferrite Woofer 8 Ohm
 Manufacturer=
@@ -56812,7 +56812,7 @@ Dd=0.131106
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce WAF082.00 8_ Ferrite Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce WAF082.00 8_ Ferrite Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce WAF082.00 8" Ferrite Woofer 8 Ohm
 Manufacturer=
@@ -56840,7 +56840,7 @@ Dd=0.170007
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce WAF102.50 10_ Ferrite Woofer`,content:`[Driver]
+`},{name:`Lavoce LaVoce WAF102.50 10_ Ferrite Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce WAF102.50 10" Ferrite Woofer
 Manufacturer=
@@ -56868,7 +56868,7 @@ Dd=0.210194
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce WAF123.01 12_ Ferrite Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce WAF123.01 12_ Ferrite Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce WAF123.01 12" Ferrite Woofer 8 Ohm
 Manufacturer=
@@ -56896,7 +56896,7 @@ Dd=0.260017
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce WAF124.01 12_ Woofer`,content:`[Driver]
+`},{name:`Lavoce LaVoce WAF124.01 12_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce WAF124.01 12" Woofer
 Manufacturer=
@@ -56924,7 +56924,7 @@ Dd=0.262212
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce WAF153.00 15_ Ferrite Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce WAF153.00 15_ Ferrite Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce WAF153.00 15" Ferrite Woofer 8 Ohm
 Manufacturer=
@@ -56952,7 +56952,7 @@ Dd=0.329942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce WAF154.00 15_ Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce WAF154.00 15_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce WAF154.00 15" Subwoofer 8 Ohm
 Manufacturer=
@@ -56980,7 +56980,7 @@ Dd=0.325083
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce WAF154.02 15_ Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce WAF154.02 15_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce WAF154.02 15" Subwoofer 8 Ohm
 Manufacturer=
@@ -57008,7 +57008,7 @@ Dd=0.325083
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce WAN082.50 8_ Neodymium Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce WAN082.50 8_ Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce WAN082.50 8" Neodymium Woofer 8 Ohm
 Manufacturer=
@@ -57036,7 +57036,7 @@ Dd=0.170007
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce WAN102.50 10_ Neodymium Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce WAN102.50 10_ Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce WAN102.50 10" Neodymium Woofer 8 Ohm
 Manufacturer=
@@ -57064,7 +57064,7 @@ Dd=0.208979
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce WAN123.00 12_ Neodymium Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce WAN123.00 12_ Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce WAN123.00 12" Neodymium Woofer 8 Ohm
 Manufacturer=
@@ -57092,7 +57092,7 @@ Dd=0.260017
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce WAN153.00 15_ Neodymium Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce WAN153.00 15_ Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce WAN153.00 15" Neodymium Woofer 8 Ohm
 Manufacturer=
@@ -57120,7 +57120,7 @@ Dd=0.328976
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce WAN153.01 15_ Professional Neodymium Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce WAN153.01 15_ Professional Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce WAN153.01 15" Professional Neodymium Woofer 8 Ohm
 Manufacturer=
@@ -57148,7 +57148,7 @@ Dd=0.334998
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce WAN154.01 15_ Neodymium Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce WAN154.01 15_ Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce WAN154.01 15" Neodymium Subwoofer 8 Ohm
 Manufacturer=
@@ -57176,7 +57176,7 @@ Dd=0.325083
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce WSF030.70 3_ Woofer`,content:`[Driver]
+`},{name:`Lavoce LaVoce WSF030.70 3_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce WSF030.70 3" Woofer
 Manufacturer=
@@ -57204,7 +57204,7 @@ Dd=0.0648204
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce WSF041.00 4_ Ferrite Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Lavoce LaVoce WSF041.00 4_ Ferrite Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce WSF041.00 4" Ferrite Woofer 8 Ohm
 Manufacturer=
@@ -57232,7 +57232,7 @@ Dd=0.0820697
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce WSF051.02 5_ Woofer`,content:`[Driver]
+`},{name:`Lavoce LaVoce WSF051.02 5_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce WSF051.02 5" Woofer
 Manufacturer=
@@ -57260,7 +57260,7 @@ Dd=0.106002
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce WSF081.82 8_ Woofer`,content:`[Driver]
+`},{name:`Lavoce LaVoce WSF081.82 8_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce WSF081.82 8" Woofer
 Manufacturer=
@@ -57288,7 +57288,7 @@ Dd=0.173014
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce WSF102.00 10_ Woofer`,content:`[Driver]
+`},{name:`Lavoce LaVoce WSF102.00 10_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce WSF102.00 10" Woofer
 Manufacturer=
@@ -57316,7 +57316,7 @@ Dd=0.212003
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce WSN041.00 4_ Neodymium Woofer`,content:`[Driver]
+`},{name:`Lavoce LaVoce WSN041.00 4_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce WSN041.00 4" Neodymium Woofer
 Manufacturer=
@@ -57344,7 +57344,7 @@ Dd=0.0829186
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Lavoce LaVoce WXF15.400 15_ Woofer`,content:`[Driver]
+`},{name:`Lavoce LaVoce WXF15.400 15_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
 Model=LaVoce WXF15.400 15" Woofer
 Manufacturer=
@@ -57372,7 +57372,7 @@ Dd=0.33
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel CAM 558 2-1_8_ Soft Dome Midrange`,content:`[Driver]
+`},{name:`Morel CAM 558 2-1_8_ Soft Dome Midrange`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=CAM 558 2-1/8" Soft Dome Midrange
 Manufacturer=
@@ -57400,7 +57400,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel CAT 298 1-1_8_ Soft Dome Tweeter`,content:`[Driver]
+`},{name:`Morel CAT 298 1-1_8_ Soft Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=CAT 298 1-1/8" Soft Dome Tweeter
 Manufacturer=
@@ -57428,7 +57428,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel CAT 308 1-1_8_ Soft Dome Tweeter`,content:`[Driver]
+`},{name:`Morel CAT 308 1-1_8_ Soft Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=CAT 308 1-1/8" Soft Dome Tweeter
 Manufacturer=
@@ -57456,7 +57456,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel CAT 378 1-1_8_ Soft Dome Horn Tweeter`,content:`[Driver]
+`},{name:`Morel CAT 378 1-1_8_ Soft Dome Horn Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=CAT 378 1-1/8" Soft Dome Horn Tweeter
 Manufacturer=
@@ -57484,7 +57484,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel CAT 408 1-1_8_ Compact Soft Dome Tweeter`,content:`[Driver]
+`},{name:`Morel CAT 408 1-1_8_ Compact Soft Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=CAT 408 1-1/8" Compact Soft Dome Tweeter
 Manufacturer=
@@ -57512,7 +57512,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel CAW 428`,content:`[Driver]
+`},{name:`Morel CAW 428`,date:``,content:`[Driver]
 Brand=Morel
 Model=CAW 428
 Manufacturer=
@@ -57540,7 +57540,7 @@ Dd=0.09398
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel CAW 538 5_ Cast Frame Woofer`,content:`[Driver]
+`},{name:`Morel CAW 538 5_ Cast Frame Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=CAW 538 5" Cast Frame Woofer
 Manufacturer=
@@ -57568,7 +57568,7 @@ Dd=0.107047
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel CAW 538`,content:`[Driver]
+`},{name:`Morel CAW 538`,date:``,content:`[Driver]
 Brand=Morel
 Model=CAW 538
 Manufacturer=
@@ -57596,7 +57596,7 @@ Dd=0.10704744696916627
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel CAW 638 6_ Cast Frame Woofer`,content:`[Driver]
+`},{name:`Morel CAW 638 6_ Cast Frame Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=CAW 638 6" Cast Frame Woofer
 Manufacturer=
@@ -57624,7 +57624,7 @@ Dd=0.123092
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel CAW 638`,content:`[Driver]
+`},{name:`Morel CAW 638`,date:``,content:`[Driver]
 Brand=Morel
 Model=CAW 638
 Manufacturer=
@@ -57652,7 +57652,7 @@ Dd=0.12309163489997377
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel CAW 938 9_ Cast Frame Woofer`,content:`[Driver]
+`},{name:`Morel CAW 938 9_ Cast Frame Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=CAW 938 9" Cast Frame Woofer
 Manufacturer=
@@ -57680,7 +57680,7 @@ Dd=0.166985
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel CAW 938`,content:`[Driver]
+`},{name:`Morel CAW 938`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=CAW 938
 Manufacturer=
@@ -57708,7 +57708,7 @@ Dd=0.166985
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel EM 1308 2-1_8_ Dome Midrange`,content:`[Driver]
+`},{name:`Morel EM 1308 2-1_8_ Dome Midrange`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=EM 1308 2-1/8" Dome Midrange
 Manufacturer=
@@ -57736,7 +57736,7 @@ Dd=0.0597082
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel ET 338 1-1_8_ Soft Dome Tweeter Matched Pair`,content:`[Driver]
+`},{name:`Morel ET 338 1-1_8_ Soft Dome Tweeter Matched Pair`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=ET 338 1-1/8" Soft Dome Tweeter Matched Pair
 Manufacturer=
@@ -57764,7 +57764,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel ET 338-104 1-1_8_ Soft Dome Tweeter Matched Pair`,content:`[Driver]
+`},{name:`Morel ET 338-104 1-1_8_ Soft Dome Tweeter Matched Pair`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=ET 338-104 1-1/8" Soft Dome Tweeter Matched Pair
 Manufacturer=
@@ -57792,7 +57792,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel ET 448 1-1_8_ Soft Dome Tweeter`,content:`[Driver]
+`},{name:`Morel ET 448 1-1_8_ Soft Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=ET 448 1-1/8" Soft Dome Tweeter
 Manufacturer=
@@ -57820,7 +57820,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel EW 428`,content:`[Driver]
+`},{name:`Morel EW 428`,date:``,content:`[Driver]
 Brand=Morel
 Model=EW 428
 Manufacturer=
@@ -57848,7 +57848,7 @@ Dd=0.09398
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel EW 536`,content:`[Driver]
+`},{name:`Morel EW 536`,date:``,content:`[Driver]
 Brand=Morel
 Model=EW 536
 Manufacturer=
@@ -57876,7 +57876,7 @@ Dd=0.120904
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel EW 638`,content:`[Driver]
+`},{name:`Morel EW 638`,date:``,content:`[Driver]
 Brand=Morel
 Model=EW 638
 Manufacturer=
@@ -57904,7 +57904,7 @@ Dd=0.140005
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel H8.1`,content:`[Driver]
+`},{name:`Morel H8.1`,date:``,content:`[Driver]
 Brand=Morel
 Model=H8.1
 Manufacturer=
@@ -57932,7 +57932,7 @@ Dd=0.19685
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel Integra 424 Hybrid Series 4_ Point Source Coaxial Full-Range`,content:`[Driver]
+`},{name:`Morel Integra 424 Hybrid Series 4_ Point Source Coaxial Full-Range`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=Integra 424 Hybrid Series 4" Point Source Coaxial Full-Range
 Manufacturer=
@@ -57960,7 +57960,7 @@ Dd=0.0895623
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel Integra 524 Hybrid Series 5_ Point Source Coaxial Full-Range`,content:`[Driver]
+`},{name:`Morel Integra 524 Hybrid Series 5_ Point Source Coaxial Full-Range`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=Integra 524 Hybrid Series 5" Point Source Coaxial Full-Range
 Manufacturer=
@@ -57988,7 +57988,7 @@ Dd=0.111132
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel Integra 624 Hybrid Series 6_ Point Source Coaxial Full-Range`,content:`[Driver]
+`},{name:`Morel Integra 624 Hybrid Series 6_ Point Source Coaxial Full-Range`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=Integra 624 Hybrid Series 6" Point Source Coaxial Full-Range
 Manufacturer=
@@ -58016,7 +58016,7 @@ Dd=0.123092
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel KW-1`,content:`[Driver]
+`},{name:`Morel KW-1`,date:``,content:`[Driver]
 Brand=Morel
 Model=KW-1
 Manufacturer=
@@ -58044,7 +58044,7 @@ Dd=0.13716
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel MDM 55 2-1_8_ Soft Dome Midrange`,content:`[Driver]
+`},{name:`Morel MDM 55 2-1_8_ Soft Dome Midrange`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=MDM 55 2-1/8" Soft Dome Midrange
 Manufacturer=
@@ -58072,7 +58072,7 @@ Dd=0.0597082
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel MDT 12 1-1_8_ Neodymium Tweeter`,content:`[Driver]
+`},{name:`Morel MDT 12 1-1_8_ Neodymium Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=MDT 12 1-1/8" Neodymium Tweeter
 Manufacturer=
@@ -58100,7 +58100,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel MDT 22T 1-1_8_ Soft Dome Neodymium Tweeter`,content:`[Driver]
+`},{name:`Morel MDT 22T 1-1_8_ Soft Dome Neodymium Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=MDT 22T 1-1/8" Soft Dome Neodymium Tweeter
 Manufacturer=
@@ -58128,7 +58128,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel MDT 29 1-1_8_ Soft Dome Tweeter`,content:`[Driver]
+`},{name:`Morel MDT 29 1-1_8_ Soft Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=MDT 29 1-1/8" Soft Dome Tweeter
 Manufacturer=
@@ -58156,7 +58156,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel MDT 39 1-1_8_ Compact Dome Tweeter`,content:`[Driver]
+`},{name:`Morel MDT 39 1-1_8_ Compact Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=MDT 39 1-1/8" Compact Dome Tweeter
 Manufacturer=
@@ -58184,7 +58184,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel MSW 114`,content:`[Driver]
+`},{name:`Morel MSW 114`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=MSW 114
 Manufacturer=
@@ -58212,7 +58212,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel MSW 144`,content:`[Driver]
+`},{name:`Morel MSW 144`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=MSW 144
 Manufacturer=
@@ -58240,7 +58240,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel MSW 168`,content:`[Driver]
+`},{name:`Morel MSW 168`,date:``,content:`[Driver]
 Brand=Morel
 Model=MSW 168
 Manufacturer=
@@ -58268,7 +58268,7 @@ Dd=0.134874
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel MSW 265`,content:`[Driver]
+`},{name:`Morel MSW 265`,date:``,content:`[Driver]
 Brand=Morel
 Model=MSW 265
 Manufacturer=
@@ -58296,7 +58296,7 @@ Dd=0.19685
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel MSW 424D Shallow Classic Series 4_ DPC Cone Woofer_Midrange 4 Ohms`,content:`[Driver]
+`},{name:`Morel MSW 424D Shallow Classic Series 4_ DPC Cone Woofer_Midrange 4 Ohms`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=MSW 424D Shallow Classic Series 4" DPC Cone Woofer/Midrange 4 Ohms
 Manufacturer=
@@ -58324,7 +58324,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel MSW 538 Shallow Classic Series 5_ DPC Cone Woofer 8 Ohms`,content:`[Driver]
+`},{name:`Morel MSW 538 Shallow Classic Series 5_ DPC Cone Woofer 8 Ohms`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=MSW 538 Shallow Classic Series 5" DPC Cone Woofer 8 Ohms
 Manufacturer=
@@ -58352,7 +58352,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel MW 1058 Classic Series 10_ Paper _ Carbon Fiber Cone Subwoofer`,content:`[Driver]
+`},{name:`Morel MW 1058 Classic Series 10_ Paper _ Carbon Fiber Cone Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=MW 1058 Classic Series 10" Paper / Carbon Fiber Cone Subwoofer
 Manufacturer=
@@ -58380,7 +58380,7 @@ Dd=0.207174
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel MW 1075`,content:`[Driver]
+`},{name:`Morel MW 1075`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=MW 1075
 Manufacturer=
@@ -58408,7 +58408,7 @@ Dd=0.203108
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel MW 1258 Classic Series 12_ Paper _ Carbon Fiber Cone Subwoofer`,content:`[Driver]
+`},{name:`Morel MW 1258 Classic Series 12_ Paper _ Carbon Fiber Cone Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=MW 1258 Classic Series 12" Paper / Carbon Fiber Cone Subwoofer
 Manufacturer=
@@ -58436,7 +58436,7 @@ Dd=0.241352
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel MW 164`,content:`[Driver]
+`},{name:`Morel MW 164`,date:``,content:`[Driver]
 Brand=Morel
 Model=MW 164
 Manufacturer=
@@ -58464,7 +58464,7 @@ Dd=0.136525
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel MW-1075 10_ Woofer`,content:`[Driver]
+`},{name:`Morel MW-1075 10_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=MW-1075 10" Woofer
 Manufacturer=
@@ -58492,7 +58492,7 @@ Dd=0.203108
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel MW-266 8_ Poly Woofer`,content:`[Driver]
+`},{name:`Morel MW-266 8_ Poly Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=MW-266 8" Poly Woofer
 Manufacturer=
@@ -58520,7 +58520,7 @@ Dd=0.166985
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel MW-266`,content:`[Driver]
+`},{name:`Morel MW-266`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=MW-266
 Manufacturer=
@@ -58548,7 +58548,7 @@ Dd=0.166985
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel PowerSlim 6`,content:`[Driver]
+`},{name:`Morel PowerSlim 6`,date:``,content:`[Driver]
 Brand=Morel
 Model=PowerSlim 6
 Manufacturer=
@@ -58576,7 +58576,7 @@ Dd=0.134112
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel ST 1108 Supreme 1-1_8_ Soft Dome Tweeter Pair - Black Faceplate`,content:`[Driver]
+`},{name:`Morel ST 1108 Supreme 1-1_8_ Soft Dome Tweeter Pair - Black Faceplate`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=ST 1108 Supreme 1-1/8" Soft Dome Tweeter Pair - Black Faceplate
 Manufacturer=
@@ -58604,7 +58604,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel Supreme SCW 636 6_ Woofer`,content:`[Driver]
+`},{name:`Morel Supreme SCW 636 6_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=Supreme SCW 636 6" Woofer
 Manufacturer=
@@ -58632,7 +58632,7 @@ Dd=0.123092
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel Supreme SCW 636`,content:`[Driver]
+`},{name:`Morel Supreme SCW 636`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=Supreme SCW 636
 Manufacturer=
@@ -58660,7 +58660,7 @@ Dd=0.123092
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel TM4055-8 2_ Midrange and 1-1_8_ Tweeter Speaker Plate`,content:`[Driver]
+`},{name:`Morel TM4055-8 2_ Midrange and 1-1_8_ Tweeter Speaker Plate`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=TM4055-8 2" Midrange and 1-1/8" Tweeter Speaker Plate
 Manufacturer=
@@ -58688,7 +58688,7 @@ Dd=0.0597082
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel TSCM 634 Titanium Supreme Series 6_ Midrange 4 Ohm`,content:`[Driver]
+`},{name:`Morel TSCM 634 Titanium Supreme Series 6_ Midrange 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=TSCM 634 Titanium Supreme Series 6" Midrange 4 Ohm
 Manufacturer=
@@ -58716,7 +58716,7 @@ Dd=0.123092
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel TSCT1044 Supreme 1_ Silk Dome Neodymium Tweeters - Matched Pair`,content:`[Driver]
+`},{name:`Morel TSCT1044 Supreme 1_ Silk Dome Neodymium Tweeters - Matched Pair`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=TSCT1044 Supreme 1" Silk Dome Neodymium Tweeters - Matched Pair
 Manufacturer=
@@ -58744,7 +58744,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel TSCW 636 Titanium Supreme Series 6_ Woofer 6 Ohm`,content:`[Driver]
+`},{name:`Morel TSCW 636 Titanium Supreme Series 6_ Woofer 6 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=TSCW 636 Titanium Supreme Series 6" Woofer 6 Ohm
 Manufacturer=
@@ -58772,7 +58772,7 @@ Dd=0.123092
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel TSCW 636`,content:`[Driver]
+`},{name:`Morel TSCW 636`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=TSCW 636
 Manufacturer=
@@ -58800,7 +58800,7 @@ Dd=0.123092
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel TSCW 938 9_ Rohacell Cone Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Morel TSCW 938 9_ Rohacell Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=TSCW 938 9" Rohacell Cone Woofer 8 Ohm
 Manufacturer=
@@ -58828,7 +58828,7 @@ Dd=0.178055
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel TSCW938`,content:`[Driver]
+`},{name:`Morel TSCW938`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=TSCW938
 Manufacturer=
@@ -58856,7 +58856,7 @@ Dd=0.178055
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel TiCW 1258Ft Titanium Series 12_ Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Morel TiCW 1258Ft Titanium Series 12_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=TiCW 1258Ft Titanium Series 12" Subwoofer 8 Ohm
 Manufacturer=
@@ -58884,7 +58884,7 @@ Dd=0.235883
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel TiCW 634Nd`,content:`[Driver]
+`},{name:`Morel TiCW 634Nd`,date:``,content:`[Driver]
 Brand=Morel
 Model=TiCW 634Nd
 Manufacturer=
@@ -58912,7 +58912,7 @@ Dd=0.139954
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel TiCW 638Nd Titanium Series Hybrid Cu 6_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Morel TiCW 638Nd Titanium Series Hybrid Cu 6_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=TiCW 638Nd Titanium Series Hybrid Cu 6" Woofer 8 Ohm
 Manufacturer=
@@ -58940,7 +58940,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel TiCW 638Nd`,content:`[Driver]
+`},{name:`Morel TiCW 638Nd`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=TiCW 638Nd
 Manufacturer=
@@ -58968,7 +58968,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel TiCW 958Ft`,content:`[Driver]
+`},{name:`Morel TiCW 958Ft`,date:``,content:`[Driver]
 Brand=Morel
 Model=TiCW 958Ft
 Manufacturer=
@@ -58996,7 +58996,7 @@ Dd=0.199898
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel TiW 634Ft Titanium Series Ferrite 6_ Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Morel TiW 634Ft Titanium Series Ferrite 6_ Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=TiW 634Ft Titanium Series Ferrite 6" Woofer 4 Ohm
 Manufacturer=
@@ -59024,7 +59024,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel TiW 634Ft`,content:`[Driver]
+`},{name:`Morel TiW 634Ft`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=TiW 634Ft
 Manufacturer=
@@ -59052,7 +59052,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel TiW 634Nd`,content:`[Driver]
+`},{name:`Morel TiW 634Nd`,date:``,content:`[Driver]
 Brand=Morel
 Model=TiW 634Nd
 Manufacturer=
@@ -59080,7 +59080,7 @@ Dd=0.139954
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel TiW 638Ft Titanium Series Ferrite 6_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Morel TiW 638Ft Titanium Series Ferrite 6_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=TiW 638Ft Titanium Series Ferrite 6" Woofer 8 Ohm
 Manufacturer=
@@ -59108,7 +59108,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel TiW 638Ft`,content:`[Driver]
+`},{name:`Morel TiW 638Ft`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=TiW 638Ft
 Manufacturer=
@@ -59136,7 +59136,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel TiW 638Nd Titanium Series Hybrid 6_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Morel TiW 638Nd Titanium Series Hybrid 6_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=TiW 638Nd Titanium Series Hybrid 6" Woofer 8 Ohm
 Manufacturer=
@@ -59164,7 +59164,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel TiW 638Nd`,content:`[Driver]
+`},{name:`Morel TiW 638Nd`,date:``,content:`[Driver]
 Brand=Morel
 Model=TiW 638Nd
 Manufacturer=
@@ -59192,7 +59192,7 @@ Dd=0.13995404668798372
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Morel Ultimate UW 1058 10_ Subwoofer`,content:`[Driver]
+`},{name:`Morel Ultimate UW 1058 10_ Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
 Model=Ultimate UW 1058 10" Subwoofer
 Manufacturer=
@@ -59220,7 +59220,7 @@ Dd=0.209891
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 10FR300PR 10_ Professional Full-Range Speaker 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 10FR300PR 10_ Professional Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=10FR300PR 10" Professional Full-Range Speaker 8 Ohm
 Manufacturer=
@@ -59248,7 +59248,7 @@ Dd=0.223977
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 10MB1000FT Forte Series 10_ Midbass Speaker 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 10MB1000FT Forte Series 10_ Midbass Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=10MB1000FT Forte Series 10" Midbass Speaker 8 Ohm
 Manufacturer=
@@ -59276,7 +59276,7 @@ Dd=0.219962
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 10MB800FT Forte Series 10_ Midbass Speaker 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 10MB800FT Forte Series 10_ Midbass Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=10MB800FT Forte Series 10" Midbass Speaker 8 Ohm
 Manufacturer=
@@ -59304,7 +59304,7 @@ Dd=0.219962
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 10MR1200X X Series 10_ Midrange Speaker 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 10MR1200X X Series 10_ Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=10MR1200X X Series 10" Midrange Speaker 8 Ohm
 Manufacturer=
@@ -59332,7 +59332,7 @@ Dd=0.223977
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 10MR2000-NDY 10_ Neodymium Pro Audio Woofer`,content:`[Driver]
+`},{name:`PRV Audio 10MR2000-NDY 10_ Neodymium Pro Audio Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=10MR2000-NDY 10" Neodymium Pro Audio Woofer
 Manufacturer=
@@ -59360,7 +59360,7 @@ Dd=0.217926
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 10MR650A Alto Series 10_ Midrange Driver 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 10MR650A Alto Series 10_ Midrange Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=10MR650A Alto Series 10" Midrange Driver 8 Ohm
 Manufacturer=
@@ -59388,7 +59388,7 @@ Dd=0.224034
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 10MR650A-4 Alto Series 10_ Midrange Driver 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 10MR650A-4 Alto Series 10_ Midrange Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=10MR650A-4 Alto Series 10" Midrange Driver 4 Ohm
 Manufacturer=
@@ -59416,7 +59416,7 @@ Dd=0.225111
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 10MR650A-NDY Alto Series 10_ Shallow Midrange Speaker 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 10MR650A-NDY Alto Series 10_ Shallow Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=10MR650A-NDY Alto Series 10" Shallow Midrange Speaker 8 Ohm
 Manufacturer=
@@ -59444,7 +59444,7 @@ Dd=0.219962
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 10W1000-NDY 10_  Neodymium  Woofer`,content:`[Driver]
+`},{name:`PRV Audio 10W1000-NDY 10_  Neodymium  Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=10W1000-NDY 10"  Neodymium  Woofer
 Manufacturer=
@@ -59472,7 +59472,7 @@ Dd=0.219962
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 10W1000-NDY-4 10_ Neodymium Pro Audio Woofer 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 10W1000-NDY-4 10_ Neodymium Pro Audio Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=10W1000-NDY-4 10" Neodymium Pro Audio Woofer 4 Ohm
 Manufacturer=
@@ -59500,7 +59500,7 @@ Dd=0.219962
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 10W650A Alto Series 10_ Pro Woofer 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 10W650A Alto Series 10_ Pro Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=10W650A Alto Series 10" Pro Woofer 8 Ohm
 Manufacturer=
@@ -59528,7 +59528,7 @@ Dd=0.229868
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 10W650A-4 Alto Series 10_ Pro Woofer 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 10W650A-4 Alto Series 10_ Pro Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=10W650A-4 Alto Series 10" Pro Woofer 4 Ohm
 Manufacturer=
@@ -59556,7 +59556,7 @@ Dd=0.229868
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 12MB1000FT Forte Series 12_ Midbass Speaker 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 12MB1000FT Forte Series 12_ Midbass Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=12MB1000FT Forte Series 12" Midbass Speaker 8 Ohm
 Manufacturer=
@@ -59584,7 +59584,7 @@ Dd=0.270105
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 12MB1000FT-4 Forte Series 12_ Midbass Speaker 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 12MB1000FT-4 Forte Series 12_ Midbass Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=12MB1000FT-4 Forte Series 12" Midbass Speaker 4 Ohm
 Manufacturer=
@@ -59612,7 +59612,7 @@ Dd=0.270105
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 12MB2000FT-NDY Forte Series 12_ Neodymium Midbass Speaker 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 12MB2000FT-NDY Forte Series 12_ Neodymium Midbass Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=12MB2000FT-NDY Forte Series 12" Neodymium Midbass Speaker 8 Ohm
 Manufacturer=
@@ -59640,7 +59640,7 @@ Dd=0.272919
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 12MR1000 PRO Pro Series 12_ Midrange Speaker 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 12MR1000 PRO Pro Series 12_ Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=12MR1000 PRO Pro Series 12" Midrange Speaker 8 Ohm
 Manufacturer=
@@ -59668,7 +59668,7 @@ Dd=0.271046
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 12MR1200X X Series 12_ Midrange Speaker 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 12MR1200X X Series 12_ Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=12MR1200X X Series 12" Midrange Speaker 8 Ohm
 Manufacturer=
@@ -59696,7 +59696,7 @@ Dd=0.265109
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 12MR2000 12_ Pro Audio Midrange Woofer 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 12MR2000 12_ Pro Audio Midrange Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=12MR2000 12" Pro Audio Midrange Woofer 8 Ohm
 Manufacturer=
@@ -59724,7 +59724,7 @@ Dd=0.270105
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 12MR2000-NDY 12_ Neodymium Professional Midrange 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 12MR2000-NDY 12_ Neodymium Professional Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=12MR2000-NDY 12" Neodymium Professional Midrange 8 Ohm
 Manufacturer=
@@ -59752,7 +59752,7 @@ Dd=0.270105
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 12MR2000X v2 X Series 12_ Midrange Speaker 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 12MR2000X v2 X Series 12_ Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=12MR2000X v2 X Series 12" Midrange Speaker 8 Ohm
 Manufacturer=
@@ -59780,7 +59780,7 @@ Dd=0.270105
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 12MR2000X-NDY X Series 12_ Neodymium Midrange Speaker 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 12MR2000X-NDY X Series 12_ Neodymium Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=12MR2000X-NDY X Series 12" Neodymium Midrange Speaker 8 Ohm
 Manufacturer=
@@ -59808,7 +59808,7 @@ Dd=0.270105
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 12W1600 12_ Professional Woofer  8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 12W1600 12_ Professional Woofer  8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=12W1600 12" Professional Woofer  8 Ohm
 Manufacturer=
@@ -59836,7 +59836,7 @@ Dd=0.27501
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 12W750A Alto Series 12_ Pro Woofer 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 12W750A Alto Series 12_ Pro Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=12W750A Alto Series 12" Pro Woofer 8 Ohm
 Manufacturer=
@@ -59864,7 +59864,7 @@ Dd=0.272919
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 12W800A Alto Series 12_ Pro Woofer 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 12W800A Alto Series 12_ Pro Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=12W800A Alto Series 12" Pro Woofer 8 Ohm
 Manufacturer=
@@ -59892,7 +59892,7 @@ Dd=0.265109
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 15SW2000 15_ Pro Audio Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 15SW2000 15_ Pro Audio Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=15SW2000 15" Pro Audio Subwoofer 8 Ohm
 Manufacturer=
@@ -59920,7 +59920,7 @@ Dd=0.340015
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 15SW2000-4 15_ Cast Frame Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 15SW2000-4 15_ Cast Frame Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=15SW2000-4 15" Cast Frame Subwoofer 4 Ohm
 Manufacturer=
@@ -59948,7 +59948,7 @@ Dd=0.345033
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 15W1000v2 15_ Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 15W1000v2 15_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=15W1000v2 15" Professional Woofer 8 Ohm
 Manufacturer=
@@ -59976,7 +59976,7 @@ Dd=0.355036
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 15W1600 15_ High Power PA Woofer 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 15W1600 15_ High Power PA Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=15W1600 15" High Power PA Woofer 8 Ohm
 Manufacturer=
@@ -60004,7 +60004,7 @@ Dd=0.353959
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 15W700 15_ High Power PA Woofer 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 15W700 15_ High Power PA Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=15W700 15" High Power PA Woofer 8 Ohm
 Manufacturer=
@@ -60032,7 +60032,7 @@ Dd=0.345033
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 18SW2400 18_ Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 18SW2400 18_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=18SW2400 18" Subwoofer 8 Ohm
 Manufacturer=
@@ -60060,7 +60060,7 @@ Dd=0.405275
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 18SW3600 18_ Professional Subwoofer Driver 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 18SW3600 18_ Professional Subwoofer Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=18SW3600 18" Professional Subwoofer Driver 8 Ohm
 Manufacturer=
@@ -60088,7 +60088,7 @@ Dd=0.413055
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 21SW4000-NDY-2 21_ Professional Subwoofer 2 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 21SW4000-NDY-2 21_ Professional Subwoofer 2 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=21SW4000-NDY-2 21" Professional Subwoofer 2 Ohm
 Manufacturer=
@@ -60116,7 +60116,7 @@ Dd=0.494946
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 3MR40-NDY-4 3_ Neodymium Midrange Speaker 4 Ohms`,content:`[Driver]
+`},{name:`PRV Audio 3MR40-NDY-4 3_ Neodymium Midrange Speaker 4 Ohms`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=3MR40-NDY-4 3" Neodymium Midrange Speaker 4 Ohms
 Manufacturer=
@@ -60144,7 +60144,7 @@ Dd=0.0650166
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 4MR60-4 4_ Full-Range 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 4MR60-4 4_ Full-Range 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=4MR60-4 4" Full-Range 4 Ohm
 Manufacturer=
@@ -60172,7 +60172,7 @@ Dd=0.0851908
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 4MR60-NDY-4 4_ Neodymium Midrange Speaker 4 Ohms`,content:`[Driver]
+`},{name:`PRV Audio 4MR60-NDY-4 4_ Neodymium Midrange Speaker 4 Ohms`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=4MR60-NDY-4 4" Neodymium Midrange Speaker 4 Ohms
 Manufacturer=
@@ -60200,7 +60200,7 @@ Dd=0.0839866
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 5MR450-NDY 5_ Midrange Neodymium Woofer 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 5MR450-NDY 5_ Midrange Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=5MR450-NDY 5" Midrange Neodymium Woofer 8 Ohm
 Manufacturer=
@@ -60228,7 +60228,7 @@ Dd=0.109981
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 5MR450-NDY-4 5_ Midrange Neodymium Woofer 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 5MR450-NDY-4 5_ Midrange Neodymium Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=5MR450-NDY-4 5" Midrange Neodymium Woofer 4 Ohm
 Manufacturer=
@@ -60256,7 +60256,7 @@ Dd=0.109981
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 69FR250-4 6_x 9_ Full-Range Speaker 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 69FR250-4 6_x 9_ Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=69FR250-4 6"x 9" Full-Range Speaker 4 Ohm
 Manufacturer=
@@ -60284,7 +60284,7 @@ Dd=0.159577
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 69MR500-4 BULLET 6_ x 9_ Midrange Speaker 4 Ohms`,content:`[Driver]
+`},{name:`PRV Audio 69MR500-4 BULLET 6_ x 9_ Midrange Speaker 4 Ohms`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=69MR500-4 BULLET 6" x 9" Midrange Speaker 4 Ohms
 Manufacturer=
@@ -60312,7 +60312,7 @@ Dd=0.165837
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 69MR500CF-NDY-4 6_x9_ Neodymium Midrange Speaker Pair`,content:`[Driver]
+`},{name:`PRV Audio 69MR500CF-NDY-4 6_x9_ Neodymium Midrange Speaker Pair`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=69MR500CF-NDY-4 6"x9" Neodymium Midrange Speaker Pair
 Manufacturer=
@@ -60340,7 +60340,7 @@ Dd=0.165837
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 69MR500PhP-4 6_ x 9_ Midrange Loudspeaker 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 69MR500PhP-4 6_ x 9_ Midrange Loudspeaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=69MR500PhP-4 6" x 9" Midrange Loudspeaker 4 Ohm
 Manufacturer=
@@ -60368,7 +60368,7 @@ Dd=0.171499
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 6CX380-4 SLIM 6.5_ Professional 2-Way Full-Range Coaxial Speaker`,content:`[Driver]
+`},{name:`PRV Audio 6CX380-4 SLIM 6.5_ Professional 2-Way Full-Range Coaxial Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=6CX380-4 SLIM 6.5" Professional 2-Way Full-Range Coaxial Speaker
 Manufacturer=
@@ -60396,7 +60396,7 @@ Dd=0.134935
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 6MB100-4 6_ Midbass Woofer Pair 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 6MB100-4 6_ Midbass Woofer Pair 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=6MB100-4 6" Midbass Woofer Pair 4 Ohm
 Manufacturer=
@@ -60424,7 +60424,7 @@ Dd=0.134935
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 6MB200 V2 6_ Midbass Woofer 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 6MB200 V2 6_ Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=6MB200 V2 6" Midbass Woofer 8 Ohm
 Manufacturer=
@@ -60452,7 +60452,7 @@ Dd=0.140028
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 6MB200-4 V2 6_ Midbass Woofer 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 6MB200-4 V2 6_ Midbass Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=6MB200-4 V2 6" Midbass Woofer 4 Ohm
 Manufacturer=
@@ -60480,7 +60480,7 @@ Dd=0.140028
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 6MB400 6.5_ Midbass Woofer`,content:`[Driver]
+`},{name:`PRV Audio 6MB400 6.5_ Midbass Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=6MB400 6.5" Midbass Woofer
 Manufacturer=
@@ -60508,7 +60508,7 @@ Dd=0.136809
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 6MB550FT Forte Series 6_ Midbass Speaker 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 6MB550FT Forte Series 6_ Midbass Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=6MB550FT Forte Series 6" Midbass Speaker 8 Ohm
 Manufacturer=
@@ -60536,7 +60536,7 @@ Dd=0.134935
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 6MB550FT-4 Forte Series 6_ Midbass Speaker 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 6MB550FT-4 Forte Series 6_ Midbass Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=6MB550FT-4 Forte Series 6" Midbass Speaker 4 Ohm
 Manufacturer=
@@ -60564,7 +60564,7 @@ Dd=0.134935
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 6MR200A Alto Series 6.5_ Midrange Driver 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 6MR200A Alto Series 6.5_ Midrange Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=6MR200A Alto Series 6.5" Midrange Driver 8 Ohm
 Manufacturer=
@@ -60592,7 +60592,7 @@ Dd=0.132073
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 6MR200A-4 6.5_ Alto Series Midrange Driver 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 6MR200A-4 6.5_ Alto Series Midrange Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=6MR200A-4 6.5" Alto Series Midrange Driver 4 Ohm
 Manufacturer=
@@ -60620,7 +60620,7 @@ Dd=0.117102
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 6MR250B-4 SLIM 6_ Midrange Slim Speaker 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 6MR250B-4 SLIM 6_ Midrange Slim Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=6MR250B-4 SLIM 6" Midrange Slim Speaker 4 Ohm
 Manufacturer=
@@ -60648,7 +60648,7 @@ Dd=0.134935
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 6MR250SEAL 6_ Sealed Back Midrange 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 6MR250SEAL 6_ Sealed Back Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=6MR250SEAL 6" Sealed Back Midrange 8 Ohm
 Manufacturer=
@@ -60676,7 +60676,7 @@ Dd=0.133034
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 6MR400-4 BULLET 6_ Midrange Speaker 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 6MR400-4 BULLET 6_ Midrange Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=6MR400-4 BULLET 6" Midrange Speaker 4 Ohm
 Manufacturer=
@@ -60704,7 +60704,7 @@ Dd=0.134935
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 6MR400CF-4 Moto Series 6.5_ Carbon Fiber Neodymium Midrange Loudspeaker 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 6MR400CF-4 Moto Series 6.5_ Carbon Fiber Neodymium Midrange Loudspeaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=6MR400CF-4 Moto Series 6.5" Carbon Fiber Neodymium Midrange Loudspeaker 4 Ohm
 Manufacturer=
@@ -60732,7 +60732,7 @@ Dd=0.138198
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 6MR400SEAL PRO Pro Series 6.5_ Sealed Basket Midrange Speaker 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 6MR400SEAL PRO Pro Series 6.5_ Sealed Basket Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=6MR400SEAL PRO Pro Series 6.5" Sealed Basket Midrange Speaker 8 Ohm
 Manufacturer=
@@ -60760,7 +60760,7 @@ Dd=0.137736
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 6MR500-NDY 6-1_2_ Neodymium Midrange Woofer 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 6MR500-NDY 6-1_2_ Neodymium Midrange Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=6MR500-NDY 6-1/2" Neodymium Midrange Woofer 8 Ohm
 Manufacturer=
@@ -60788,7 +60788,7 @@ Dd=0.134935
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 6MR500-NDY-4 6-1_2_ Neodymium Midrange Woofer 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 6MR500-NDY-4 6-1_2_ Neodymium Midrange Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=6MR500-NDY-4 6-1/2" Neodymium Midrange Woofer 4 Ohm
 Manufacturer=
@@ -60816,7 +60816,7 @@ Dd=0.134935
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 6MR500CF-NDY-4 6_ Midrange Neodymium Speaker Pair 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 6MR500CF-NDY-4 6_ Midrange Neodymium Speaker Pair 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=6MR500CF-NDY-4 6" Midrange Neodymium Speaker Pair 4 Ohm
 Manufacturer=
@@ -60844,7 +60844,7 @@ Dd=0.134935
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 6MR600X-NDY X Series 6.5_ Neodymium Midrange Speaker 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 6MR600X-NDY X Series 6.5_ Neodymium Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=6MR600X-NDY X Series 6.5" Neodymium Midrange Speaker 8 Ohm
 Manufacturer=
@@ -60872,7 +60872,7 @@ Dd=0.134935
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 6MR600X-NDY-4 X Series 6.5_ Neodymium Midrange Speaker 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 6MR600X-NDY-4 X Series 6.5_ Neodymium Midrange Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=6MR600X-NDY-4 X Series 6.5" Neodymium Midrange Speaker 4 Ohm
 Manufacturer=
@@ -60900,7 +60900,7 @@ Dd=0.134935
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 8CX380-4 SLIM 8_ Full-Range Slim Coaxial Speaker`,content:`[Driver]
+`},{name:`PRV Audio 8CX380-4 SLIM 8_ Full-Range Slim Coaxial Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=8CX380-4 SLIM 8" Full-Range Slim Coaxial Speaker
 Manufacturer=
@@ -60928,7 +60928,7 @@ Dd=0.172977
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 8FR250 8_ Full-Range Speaker`,content:`[Driver]
+`},{name:`PRV Audio 8FR250 8_ Full-Range Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=8FR250 8" Full-Range Speaker
 Manufacturer=
@@ -60956,7 +60956,7 @@ Dd=0.170007
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 8MB450 v2 8_ Pro Audio Midbass Speaker 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 8MB450 v2 8_ Pro Audio Midbass Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=8MB450 v2 8" Pro Audio Midbass Speaker 8 Ohm
 Manufacturer=
@@ -60984,7 +60984,7 @@ Dd=0.175172
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 8MB450-4 v2 8_ Pro Audio Midbass Speaker 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 8MB450-4 v2 8_ Pro Audio Midbass Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=8MB450-4 v2 8" Pro Audio Midbass Speaker 4 Ohm
 Manufacturer=
@@ -61012,7 +61012,7 @@ Dd=0.175172
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 8MB500 - 8_ Midbass Woofer`,content:`[Driver]
+`},{name:`PRV Audio 8MB500 - 8_ Midbass Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=8MB500 - 8" Midbass Woofer
 Manufacturer=
@@ -61040,7 +61040,7 @@ Dd=0.175172
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 8MB700FT Forte Series 8_ Midbass Speaker 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 8MB700FT Forte Series 8_ Midbass Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=8MB700FT Forte Series 8" Midbass Speaker 8 Ohm
 Manufacturer=
@@ -61068,7 +61068,7 @@ Dd=0.178055
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 8MB700FT-NDY Forte Series 8_ Neodymium Midbass Speaker 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 8MB700FT-NDY Forte Series 8_ Neodymium Midbass Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=8MB700FT-NDY Forte Series 8" Neodymium Midbass Speaker 8 Ohm
 Manufacturer=
@@ -61096,7 +61096,7 @@ Dd=0.178055
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 8MB700FT-NDY-4 Forte Series 8_ Neodymium Midbass Speaker 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 8MB700FT-NDY-4 Forte Series 8_ Neodymium Midbass Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=8MB700FT-NDY-4 Forte Series 8" Neodymium Midbass Speaker 4 Ohm
 Manufacturer=
@@ -61124,7 +61124,7 @@ Dd=0.178055
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 8MR400 8_ Midrange Woofer`,content:`[Driver]
+`},{name:`PRV Audio 8MR400 8_ Midrange Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=8MR400 8" Midrange Woofer
 Manufacturer=
@@ -61152,7 +61152,7 @@ Dd=0.168125
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 8MR400B-4 SLIM 8_ Midrange Speaker 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 8MR400B-4 SLIM 8_ Midrange Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=8MR400B-4 SLIM 8" Midrange Speaker 4 Ohm
 Manufacturer=
@@ -61180,7 +61180,7 @@ Dd=0.171127
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 8MR450A Alto Series 8_ Midrange Driver 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 8MR450A Alto Series 8_ Midrange Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=8MR450A Alto Series 8" Midrange Driver 8 Ohm
 Manufacturer=
@@ -61208,7 +61208,7 @@ Dd=0.175172
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 8MR450CF-4 Moto Series 8” Carbon Fiber Midrange Loudspeaker 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 8MR450CF-4 Moto Series 8” Carbon Fiber Midrange Loudspeaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=8MR450CF-4 Moto Series 8” Carbon Fiber Midrange Loudspeaker 4 Ohm
 Manufacturer=
@@ -61236,7 +61236,7 @@ Dd=0.170007
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 8MR500-4 BULLET 8_ Midrange Speaker 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 8MR500-4 BULLET 8_ Midrange Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=8MR500-4 BULLET 8" Midrange Speaker 4 Ohm
 Manufacturer=
@@ -61264,7 +61264,7 @@ Dd=0.175172
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 8MR500CF-NDY-4 8_ Midrange Neodymium Speaker Pair 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 8MR500CF-NDY-4 8_ Midrange Neodymium Speaker Pair 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=8MR500CF-NDY-4 8" Midrange Neodymium Speaker Pair 4 Ohm
 Manufacturer=
@@ -61292,7 +61292,7 @@ Dd=0.170007
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 8MR500SEAL PRO Pro Series 8_ Sealed Basket Midrange Speaker 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 8MR500SEAL PRO Pro Series 8_ Sealed Basket Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=8MR500SEAL PRO Pro Series 8" Sealed Basket Midrange Speaker 8 Ohm
 Manufacturer=
@@ -61320,7 +61320,7 @@ Dd=0.175172
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 8MR600X X Series 8_ Midrange Speaker 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 8MR600X X Series 8_ Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=8MR600X X Series 8" Midrange Speaker 8 Ohm
 Manufacturer=
@@ -61348,7 +61348,7 @@ Dd=0.175172
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 8MR600X-4 X Series 8_ Midrange Speaker 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 8MR600X-4 X Series 8_ Midrange Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=8MR600X-4 X Series 8" Midrange Speaker 4 Ohm
 Manufacturer=
@@ -61376,7 +61376,7 @@ Dd=0.175172
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio 8MR600X-NDY X Series 8_ Neodymium Midrange Speaker 8 Ohm`,content:`[Driver]
+`},{name:`PRV Audio 8MR600X-NDY X Series 8_ Neodymium Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=8MR600X-NDY X Series 8" Neodymium Midrange Speaker 8 Ohm
 Manufacturer=
@@ -61404,7 +61404,7 @@ Dd=0.17187
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio MT10SW1000 D4 Moto Series 10_ Shallow Subwoofer DVC 4x4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio MT10SW1000 D4 Moto Series 10_ Shallow Subwoofer DVC 4x4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=MT10SW1000 D4 Moto Series 10" Shallow Subwoofer DVC 4x4 Ohm
 Manufacturer=
@@ -61432,7 +61432,7 @@ Dd=0.223123
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio MT10W1200-NDY-4 Moto Series 10_ Pro Low Frequency Woofer 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio MT10W1200-NDY-4 Moto Series 10_ Pro Low Frequency Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=MT10W1200-NDY-4 Moto Series 10" Pro Low Frequency Woofer 4 Ohm
 Manufacturer=
@@ -61460,7 +61460,7 @@ Dd=0.217926
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio MT2.2TWB-4 Moto Series 2.25_ Short Horn Black Tweeter 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio MT2.2TWB-4 Moto Series 2.25_ Short Horn Black Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=MT2.2TWB-4 Moto Series 2.25" Short Horn Black Tweeter 4 Ohm
 Manufacturer=
@@ -61488,7 +61488,7 @@ Dd=0.223123
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio MT2.2TWC-4 Moto Series 2.25_ Short Horn Chrome Tweeter 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio MT2.2TWC-4 Moto Series 2.25_ Short Horn Chrome Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=MT2.2TWC-4 Moto Series 2.25" Short Horn Chrome Tweeter 4 Ohm
 Manufacturer=
@@ -61516,7 +61516,7 @@ Dd=0.223123
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio MT2.7TWB-4 Moto Series 2.75_ Short Horn Chrome Tweeter 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio MT2.7TWB-4 Moto Series 2.75_ Short Horn Chrome Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=MT2.7TWB-4 Moto Series 2.75" Short Horn Chrome Tweeter 4 Ohm
 Manufacturer=
@@ -61544,7 +61544,7 @@ Dd=0.223123
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio MT6CX580-NDY-4 Moto Series 6.5_ Coaxial Loudspeaker`,content:`[Driver]
+`},{name:`PRV Audio MT6CX580-NDY-4 Moto Series 6.5_ Coaxial Loudspeaker`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=MT6CX580-NDY-4 Moto Series 6.5" Coaxial Loudspeaker
 Manufacturer=
@@ -61572,7 +61572,7 @@ Dd=0.134935
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio MT6MR400CF-NDY-4 SLIM Moto Series 6.5_ Carbon Fiber Neodymium Midrange Loudspeaker 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio MT6MR400CF-NDY-4 SLIM Moto Series 6.5_ Carbon Fiber Neodymium Midrange Loudspeaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=MT6MR400CF-NDY-4 SLIM Moto Series 6.5" Carbon Fiber Neodymium Midrange Loudspeaker 4 Ohm
 Manufacturer=
@@ -61600,7 +61600,7 @@ Dd=0.133034
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio MT6MR600CF-NDY-2 Moto Series 6.5_ Neodymium Midrange Loudspeaker 2 Ohm`,content:`[Driver]
+`},{name:`PRV Audio MT6MR600CF-NDY-2 Moto Series 6.5_ Neodymium Midrange Loudspeaker 2 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=MT6MR600CF-NDY-2 Moto Series 6.5" Neodymium Midrange Loudspeaker 2 Ohm
 Manufacturer=
@@ -61628,7 +61628,7 @@ Dd=0.134935
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio MT8MR400CF-NDY-4 SLIM Moto Series 8_ Carbon Fiber Neodymium Midrange Loudspeaker 4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio MT8MR400CF-NDY-4 SLIM Moto Series 8_ Carbon Fiber Neodymium Midrange Loudspeaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=MT8MR400CF-NDY-4 SLIM Moto Series 8" Carbon Fiber Neodymium Midrange Loudspeaker 4 Ohm
 Manufacturer=
@@ -61656,7 +61656,7 @@ Dd=0.170007
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio MT8SW800 D4 Moto Series 8_ Shallow Subwoofer DVC 4x4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio MT8SW800 D4 Moto Series 8_ Shallow Subwoofer DVC 4x4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=MT8SW800 D4 Moto Series 8" Shallow Subwoofer DVC 4x4 Ohm
 Manufacturer=
@@ -61684,7 +61684,7 @@ Dd=0.164682
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio RS10-SUBD4 RS Series 10_ Subwoofer DVC 4x4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio RS10-SUBD4 RS Series 10_ Subwoofer DVC 4x4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=RS10-SUBD4 RS Series 10" Subwoofer DVC 4x4 Ohm
 Manufacturer=
@@ -61712,7 +61712,7 @@ Dd=0.20498
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`PRV Audio RS8-SUBD4 RS Series 8_ Subwoofer DVC 4x4 Ohm`,content:`[Driver]
+`},{name:`PRV Audio RS8-SUBD4 RS Series 8_ Subwoofer DVC 4x4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
 Model=RS8-SUBD4 RS Series 8" Subwoofer DVC 4x4 Ohm
 Manufacturer=
@@ -61740,7 +61740,7 @@ Dd=0.159975
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Parts Express 15 Square Frame Paper Cone Woofer White`,content:`[Driver]
+`},{name:`Parts Express 15 Square Frame Paper Cone Woofer White`,date:``,content:`[Driver]
 Brand=Parts Express
 Model=15 Square Frame Paper Cone Woofer White
 Manufacturer=
@@ -61768,7 +61768,7 @@ Dd=0.3556
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless India W8-12T`,content:`[Driver]
+`},{name:`Peerless India W8-12T`,date:``,content:`[Driver]
 Brand=Peerless India
 Model=W8-12T
 Manufacturer=
@@ -61796,7 +61796,7 @@ Dd=0.1905
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany ANC-50N25AL04-04 2_ Full-Range Speaker 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany ANC-50N25AL04-04 2_ Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=ANC-50N25AL04-04 2" Full-Range Speaker 4 Ohm
 Manufacturer=
@@ -61824,7 +61824,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany BC18WG59-04`,content:`[Driver]
+`},{name:`Peerless by Tymphany BC18WG59-04`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=BC18WG59-04
 Manufacturer=
@@ -61852,7 +61852,7 @@ Dd=0.168148
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany BC18WK05-08`,content:`[Driver]
+`},{name:`Peerless by Tymphany BC18WK05-08`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=BC18WK05-08
 Manufacturer=
@@ -61880,7 +61880,7 @@ Dd=0.144526
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany BC25SC06-04 1_ Textile Dome Tweeter`,content:`[Driver]
+`},{name:`Peerless by Tymphany BC25SC06-04 1_ Textile Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=BC25SC06-04 1" Textile Dome Tweeter
 Manufacturer=
@@ -61908,7 +61908,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany BC25SC08-04 1_ Silk Dome Neodymium Tweeter with Waveguide 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany BC25SC08-04 1_ Silk Dome Neodymium Tweeter with Waveguide 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=BC25SC08-04 1" Silk Dome Neodymium Tweeter with Waveguide 4 Ohm
 Manufacturer=
@@ -61936,7 +61936,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany BC25SC08-08 1_ Fabric Dome Tweeter 8 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany BC25SC08-08 1_ Fabric Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=BC25SC08-08 1" Fabric Dome Tweeter 8 Ohm
 Manufacturer=
@@ -61964,7 +61964,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany BC25SC55-04 1_ Square Frame Tweeter`,content:`[Driver]
+`},{name:`Peerless by Tymphany BC25SC55-04 1_ Square Frame Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=BC25SC55-04 1" Square Frame Tweeter
 Manufacturer=
@@ -61992,7 +61992,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany BC25TG15-04 1_ Fabric Dome Tweeter`,content:`[Driver]
+`},{name:`Peerless by Tymphany BC25TG15-04 1_ Fabric Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=BC25TG15-04 1" Fabric Dome Tweeter
 Manufacturer=
@@ -62020,7 +62020,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany BC25TG15-08 1_ Fabric Dome Tweeter 8 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany BC25TG15-08 1_ Fabric Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=BC25TG15-08 1" Fabric Dome Tweeter 8 Ohm
 Manufacturer=
@@ -62048,7 +62048,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany D19TD-05 3_4_ Poly Dome Tweeter`,content:`[Driver]
+`},{name:`Peerless by Tymphany D19TD-05 3_4_ Poly Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=D19TD-05 3/4" Poly Dome Tweeter
 Manufacturer=
@@ -62076,7 +62076,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany D26NC56-06 1_ Fabric Dome Tweeter 6 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany D26NC56-06 1_ Fabric Dome Tweeter 6 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=D26NC56-06 1" Fabric Dome Tweeter 6 Ohm
 Manufacturer=
@@ -62104,7 +62104,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany D27TG35-06 1_ Silk Dome Tweeter`,content:`[Driver]
+`},{name:`Peerless by Tymphany D27TG35-06 1_ Silk Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=D27TG35-06 1" Silk Dome Tweeter
 Manufacturer=
@@ -62132,7 +62132,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany DA25BG08-06 1_ Aluminum Dome Tweeter 6 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany DA25BG08-06 1_ Aluminum Dome Tweeter 6 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=DA25BG08-06 1" Aluminum Dome Tweeter 6 Ohm
 Manufacturer=
@@ -62160,7 +62160,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany DA25TX00-08 1_ Corundum Dome Tweeter`,content:`[Driver]
+`},{name:`Peerless by Tymphany DA25TX00-08 1_ Corundum Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=DA25TX00-08 1" Corundum Dome Tweeter
 Manufacturer=
@@ -62188,7 +62188,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany DA32TX00-08 1-1_4_ Corundum Dome Tweeter`,content:`[Driver]
+`},{name:`Peerless by Tymphany DA32TX00-08 1-1_4_ Corundum Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=DA32TX00-08 1-1/4" Corundum Dome Tweeter
 Manufacturer=
@@ -62216,7 +62216,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany DX20BF00-04 3_4_ Silk Dome Tweeter 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany DX20BF00-04 3_4_ Silk Dome Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=DX20BF00-04 3/4" Silk Dome Tweeter 4 Ohm
 Manufacturer=
@@ -62244,7 +62244,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany DX20BF00-08 3_4_ Silk Dome Tweeter 8 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany DX20BF00-08 3_4_ Silk Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=DX20BF00-08 3/4" Silk Dome Tweeter 8 Ohm
 Manufacturer=
@@ -62272,7 +62272,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany DX25BG60-04 1_ Silk Dome Tweeter 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany DX25BG60-04 1_ Silk Dome Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=DX25BG60-04 1" Silk Dome Tweeter 4 Ohm
 Manufacturer=
@@ -62300,7 +62300,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany DX25TG59-04 1_ Fabric Dome Tweeter`,content:`[Driver]
+`},{name:`Peerless by Tymphany DX25TG59-04 1_ Fabric Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=DX25TG59-04 1" Fabric Dome Tweeter
 Manufacturer=
@@ -62328,7 +62328,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany FSL-0818R01-08 FSL Series 8_ Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany FSL-0818R01-08 FSL Series 8_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=FSL-0818R01-08 FSL Series 8" Professional Woofer 8 Ohm
 Manufacturer=
@@ -62356,7 +62356,7 @@ Dd=0.166489
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany FSL-1220R02-08 FSL Series 12_ Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany FSL-1220R02-08 FSL Series 12_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=FSL-1220R02-08 FSL Series 12" Professional Woofer 8 Ohm
 Manufacturer=
@@ -62384,7 +62384,7 @@ Dd=0.263012
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany FSL-1230PR01-08 FSL Series 12_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany FSL-1230PR01-08 FSL Series 12_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=FSL-1230PR01-08 FSL Series 12" Woofer 8 Ohm
 Manufacturer=
@@ -62412,7 +62412,7 @@ Dd=0.260995
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany GBS-115N25AL01-04 4-1_2_ Aluminum Dome Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany GBS-115N25AL01-04 4-1_2_ Aluminum Dome Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=GBS-115N25AL01-04 4-1/2" Aluminum Dome Woofer 4 Ohm
 Manufacturer=
@@ -62440,7 +62440,7 @@ Dd=0.0835305
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany GBS-115N25AL01-04`,content:`[Driver]
+`},{name:`Peerless by Tymphany GBS-115N25AL01-04`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=GBS-115N25AL01-04
 Manufacturer=
@@ -62468,7 +62468,7 @@ Dd=0.08353054953218428
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany GBS-135F25AL02-04 5-1_4_ Aluminum Cone Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany GBS-135F25AL02-04 5-1_4_ Aluminum Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=GBS-135F25AL02-04 5-1/4" Aluminum Cone Woofer 4 Ohm
 Manufacturer=
@@ -62496,7 +62496,7 @@ Dd=0.104166
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany GBS-135F25AL02-04`,content:`[Driver]
+`},{name:`Peerless by Tymphany GBS-135F25AL02-04`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=GBS-135F25AL02-04
 Manufacturer=
@@ -62524,7 +62524,7 @@ Dd=0.104166
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany GBS-200F35CP02-04 8_ Paper Cone Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany GBS-200F35CP02-04 8_ Paper Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=GBS-200F35CP02-04 8" Paper Cone Woofer 4 Ohm
 Manufacturer=
@@ -62552,7 +62552,7 @@ Dd=0.168011
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany GBS-85N25PR03-04`,content:`[Driver]
+`},{name:`Peerless by Tymphany GBS-85N25PR03-04`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=GBS-85N25PR03-04
 Manufacturer=
@@ -62580,7 +62580,7 @@ Dd=0.077724
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany GBS-85N25PR07-04 3-1_2_ Paper Dome Low Profile Woofer`,content:`[Driver]
+`},{name:`Peerless by Tymphany GBS-85N25PR07-04 3-1_2_ Paper Dome Low Profile Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=GBS-85N25PR07-04 3-1/2" Paper Dome Low Profile Woofer
 Manufacturer=
@@ -62608,7 +62608,7 @@ Dd=0.0670033
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany GBS-85N25PR07-04`,content:`[Driver]
+`},{name:`Peerless by Tymphany GBS-85N25PR07-04`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=GBS-85N25PR07-04
 Manufacturer=
@@ -62636,7 +62636,7 @@ Dd=0.0670033
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany H25TG05-08 1_ Titanium Dome Tweeter with Waveguide 8 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany H25TG05-08 1_ Titanium Dome Tweeter with Waveguide 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=H25TG05-08 1" Titanium Dome Tweeter with Waveguide 8 Ohm
 Manufacturer=
@@ -62664,7 +62664,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany H26TG45-06 1_ Silk Dome Tweeter with Waveguide 6 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany H26TG45-06 1_ Silk Dome Tweeter with Waveguide 6 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=H26TG45-06 1" Silk Dome Tweeter with Waveguide 6 Ohm
 Manufacturer=
@@ -62692,7 +62692,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany HDS-P830860 5-1_4_ PPB Cone HDS Woofer`,content:`[Driver]
+`},{name:`Peerless by Tymphany HDS-P830860 5-1_4_ PPB Cone HDS Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=HDS-P830860 5-1/4" PPB Cone HDS Woofer
 Manufacturer=
@@ -62720,7 +62720,7 @@ Dd=0.106988
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany HDS-P830860`,content:`[Driver]
+`},{name:`Peerless by Tymphany HDS-P830860`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=HDS-P830860
 Manufacturer=
@@ -62748,7 +62748,7 @@ Dd=0.106988
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany HDS-P830869 HDS Series 8_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany HDS-P830869 HDS Series 8_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=HDS-P830869 HDS Series 8" Woofer 8 Ohm
 Manufacturer=
@@ -62776,7 +62776,7 @@ Dd=0.170007
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany HDS-P830869`,content:`[Driver]
+`},{name:`Peerless by Tymphany HDS-P830869`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=HDS-P830869
 Manufacturer=
@@ -62804,7 +62804,7 @@ Dd=0.170007
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany HDS-P830870`,content:`[Driver]
+`},{name:`Peerless by Tymphany HDS-P830870`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=HDS-P830870
 Manufacturer=
@@ -62832,7 +62832,7 @@ Dd=0.094996
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany HDS-P830874 6-1_2_ PPB Cone HDS Woofer`,content:`[Driver]
+`},{name:`Peerless by Tymphany HDS-P830874 6-1_2_ PPB Cone HDS Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=HDS-P830874 6-1/2" PPB Cone HDS Woofer
 Manufacturer=
@@ -62860,7 +62860,7 @@ Dd=0.134935
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany HDS-P830874`,content:`[Driver]
+`},{name:`Peerless by Tymphany HDS-P830874`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=HDS-P830874
 Manufacturer=
@@ -62888,7 +62888,7 @@ Dd=0.134935
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany HDS-P830875 6-1_2_ Nomex Cone HDS Woofer`,content:`[Driver]
+`},{name:`Peerless by Tymphany HDS-P830875 6-1_2_ Nomex Cone HDS Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=HDS-P830875 6-1/2" Nomex Cone HDS Woofer
 Manufacturer=
@@ -62916,7 +62916,7 @@ Dd=0.134982
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany HDS-P830883 6-1_2_ Nomex Cone HDS Woofer`,content:`[Driver]
+`},{name:`Peerless by Tymphany HDS-P830883 6-1_2_ Nomex Cone HDS Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=HDS-P830883 6-1/2" Nomex Cone HDS Woofer
 Manufacturer=
@@ -62944,7 +62944,7 @@ Dd=0.134982
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany HDS-P830883`,content:`[Driver]
+`},{name:`Peerless by Tymphany HDS-P830883`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=HDS-P830883
 Manufacturer=
@@ -62972,7 +62972,7 @@ Dd=0.134982
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany HDS-P830990 6-1_2_ GFC Cone HDS Woofer`,content:`[Driver]
+`},{name:`Peerless by Tymphany HDS-P830990 6-1_2_ GFC Cone HDS Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=HDS-P830990 6-1/2" GFC Cone HDS Woofer
 Manufacturer=
@@ -63000,7 +63000,7 @@ Dd=0.134982
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany HDS-P830990`,content:`[Driver]
+`},{name:`Peerless by Tymphany HDS-P830990`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=HDS-P830990
 Manufacturer=
@@ -63028,7 +63028,7 @@ Dd=0.134982
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany HDS-P830991 5-1_4_ GFC Cone HDS Woofer`,content:`[Driver]
+`},{name:`Peerless by Tymphany HDS-P830991 5-1_4_ GFC Cone HDS Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=HDS-P830991 5-1/4" GFC Cone HDS Woofer
 Manufacturer=
@@ -63056,7 +63056,7 @@ Dd=0.106988
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany HDS-P830991`,content:`[Driver]
+`},{name:`Peerless by Tymphany HDS-P830991`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=HDS-P830991
 Manufacturer=
@@ -63084,7 +63084,7 @@ Dd=0.106988
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany HDS-P830992 4_ GFC Cone HDS Woofer`,content:`[Driver]
+`},{name:`Peerless by Tymphany HDS-P830992 4_ GFC Cone HDS Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=HDS-P830992 4" GFC Cone HDS Woofer
 Manufacturer=
@@ -63112,7 +63112,7 @@ Dd=0.0845155
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany HDS-P830992`,content:`[Driver]
+`},{name:`Peerless by Tymphany HDS-P830992`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=HDS-P830992
 Manufacturer=
@@ -63140,7 +63140,7 @@ Dd=0.0845155
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany HDS-P835024`,content:`[Driver]
+`},{name:`Peerless by Tymphany HDS-P835024`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=HDS-P835024
 Manufacturer=
@@ -63168,7 +63168,7 @@ Dd=0.12065
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany HDS-P835025 6-1_2_ Aluminum Cone HDS Woofer`,content:`[Driver]
+`},{name:`Peerless by Tymphany HDS-P835025 6-1_2_ Aluminum Cone HDS Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=HDS-P835025 6-1/2" Aluminum Cone HDS Woofer
 Manufacturer=
@@ -63196,7 +63196,7 @@ Dd=0.134982
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany HDS-P835025`,content:`[Driver]
+`},{name:`Peerless by Tymphany HDS-P835025`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=HDS-P835025
 Manufacturer=
@@ -63224,7 +63224,7 @@ Dd=0.13498169462990223
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany HDS-P835026`,content:`[Driver]
+`},{name:`Peerless by Tymphany HDS-P835026`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=HDS-P835026
 Manufacturer=
@@ -63252,7 +63252,7 @@ Dd=0.1905
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany NE123W-04 4_ Paper Cone NE Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany NE123W-04 4_ Paper Cone NE Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=NE123W-04 4" Paper Cone NE Woofer 4 Ohm
 Manufacturer=
@@ -63280,7 +63280,7 @@ Dd=0.0829953
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany NE123W-04`,content:`[Driver]
+`},{name:`Peerless by Tymphany NE123W-04`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=NE123W-04
 Manufacturer=
@@ -63308,7 +63308,7 @@ Dd=0.0829953
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany NE123W-08 4_ Full Range Woofer Speaker`,content:`[Driver]
+`},{name:`Peerless by Tymphany NE123W-08 4_ Full Range Woofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=NE123W-08 4" Full Range Woofer Speaker
 Manufacturer=
@@ -63336,7 +63336,7 @@ Dd=0.0829953
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany NE149W-08 5-1_4_ Fiber Cone Woofer Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany NE149W-08 5-1_4_ Fiber Cone Woofer Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=NE149W-08 5-1/4" Fiber Cone Woofer Speaker 8 Ohm
 Manufacturer=
@@ -63364,7 +63364,7 @@ Dd=0.104031
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany NE149W-08`,content:`[Driver]
+`},{name:`Peerless by Tymphany NE149W-08`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=NE149W-08
 Manufacturer=
@@ -63392,7 +63392,7 @@ Dd=0.104031
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany NE180W-08 6-1_2_ Fiber Cone Woofer Speaker`,content:`[Driver]
+`},{name:`Peerless by Tymphany NE180W-08 6-1_2_ Fiber Cone Woofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=NE180W-08 6-1/2" Fiber Cone Woofer Speaker
 Manufacturer=
@@ -63420,7 +63420,7 @@ Dd=0.132025
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany NE180W-08`,content:`[Driver]
+`},{name:`Peerless by Tymphany NE180W-08`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=NE180W-08
 Manufacturer=
@@ -63448,7 +63448,7 @@ Dd=0.132025
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany NE19VTS-04 3_4_ Silk Dome Tweeter`,content:`[Driver]
+`},{name:`Peerless by Tymphany NE19VTS-04 3_4_ Silk Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=NE19VTS-04 3/4" Silk Dome Tweeter
 Manufacturer=
@@ -63476,7 +63476,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany NE25VTS-04 1_ Silk Dome Tweeter`,content:`[Driver]
+`},{name:`Peerless by Tymphany NE25VTS-04 1_ Silk Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=NE25VTS-04 1" Silk Dome Tweeter
 Manufacturer=
@@ -63504,7 +63504,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany NE265W-08 10_ Paper Cone NE Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany NE265W-08 10_ Paper Cone NE Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=NE265W-08 10" Paper Cone NE Woofer 8 Ohm
 Manufacturer=
@@ -63532,7 +63532,7 @@ Dd=0.204015
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany NE315W-04`,content:`[Driver]
+`},{name:`Peerless by Tymphany NE315W-04`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=NE315W-04
 Manufacturer=
@@ -63560,7 +63560,7 @@ Dd=0.287782
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany NE65W-04 2_ Full Range Woofer`,content:`[Driver]
+`},{name:`Peerless by Tymphany NE65W-04 2_ Full Range Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=NE65W-04 2" Full Range Woofer
 Manufacturer=
@@ -63588,7 +63588,7 @@ Dd=0.0432627
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany NE85W-04 2-1_2_ Full Range Woofer`,content:`[Driver]
+`},{name:`Peerless by Tymphany NE85W-04 2-1_2_ Full Range Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=NE85W-04 2-1/2" Full Range Woofer
 Manufacturer=
@@ -63616,7 +63616,7 @@ Dd=0.0530458
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany NE95W-04 3_ Full-Range Woofer`,content:`[Driver]
+`},{name:`Peerless by Tymphany NE95W-04 3_ Full-Range Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=NE95W-04 3" Full-Range Woofer
 Manufacturer=
@@ -63644,7 +63644,7 @@ Dd=0.0603446
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany OC16SC00-04 16mm Fabric Dome OC Tweeter 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany OC16SC00-04 16mm Fabric Dome OC Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=OC16SC00-04 16mm Fabric Dome OC Tweeter 4 Ohm
 Manufacturer=
@@ -63672,7 +63672,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany OC16SC04-04 16mm Fabric Dome Tweeter 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany OC16SC04-04 16mm Fabric Dome Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=OC16SC04-04 16mm Fabric Dome Tweeter 4 Ohm
 Manufacturer=
@@ -63700,7 +63700,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany OT19NC00-04 3_4_ Fabric Dome Tweeter 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany OT19NC00-04 3_4_ Fabric Dome Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=OT19NC00-04 3/4" Fabric Dome Tweeter 4 Ohm
 Manufacturer=
@@ -63728,7 +63728,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany OX20SC00-04 3_4_ Fabric Dome Tweeter`,content:`[Driver]
+`},{name:`Peerless by Tymphany OX20SC00-04 3_4_ Fabric Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=OX20SC00-04 3/4" Fabric Dome Tweeter
 Manufacturer=
@@ -63756,7 +63756,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany OX32SC00-08 1.25_ Teteron Dome Neo Compact Tweeter`,content:`[Driver]
+`},{name:`Peerless by Tymphany OX32SC00-08 1.25_ Teteron Dome Neo Compact Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=OX32SC00-08 1.25" Teteron Dome Neo Compact Tweeter
 Manufacturer=
@@ -63784,7 +63784,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany P22WO03-08`,content:`[Driver]
+`},{name:`Peerless by Tymphany P22WO03-08`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=P22WO03-08
 Manufacturer=
@@ -63812,7 +63812,7 @@ Dd=0.184658
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany PLS Series 65F25AL02 2-1_2_ Aluminum Full-Range Speaker`,content:`[Driver]
+`},{name:`Peerless by Tymphany PLS Series 65F25AL02 2-1_2_ Aluminum Full-Range Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=PLS Series 65F25AL02 2-1/2" Aluminum Full-Range Speaker
 Manufacturer=
@@ -63840,7 +63840,7 @@ Dd=0.0530458
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany PLS-65F25AL01-04 2-1_2_ Full-Range Driver 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany PLS-65F25AL01-04 2-1_2_ Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=PLS-65F25AL01-04 2-1/2" Full-Range Driver 4 Ohm
 Manufacturer=
@@ -63868,7 +63868,7 @@ Dd=0.0519545
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany PLS-75F25AL05-08 3_ Full-Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany PLS-75F25AL05-08 3_ Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=PLS-75F25AL05-08 3" Full-Range Driver 8 Ohm
 Manufacturer=
@@ -63896,7 +63896,7 @@ Dd=0.0606602
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany PLS-P830970 2_ Full Range Woofer`,content:`[Driver]
+`},{name:`Peerless by Tymphany PLS-P830970 2_ Full Range Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=PLS-P830970 2" Full Range Woofer
 Manufacturer=
@@ -63924,7 +63924,7 @@ Dd=0.0406843
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany PLS-P830970`,content:`[Driver]
+`},{name:`Peerless by Tymphany PLS-P830970`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=PLS-P830970
 Manufacturer=
@@ -63952,7 +63952,7 @@ Dd=0.0406843
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany PLS-P830983 2_ Full Range Woofer`,content:`[Driver]
+`},{name:`Peerless by Tymphany PLS-P830983 2_ Full Range Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=PLS-P830983 2" Full Range Woofer
 Manufacturer=
@@ -63980,7 +63980,7 @@ Dd=0.0439923
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany PLS-P830984 2-1_2_ Full Range Woofer`,content:`[Driver]
+`},{name:`Peerless by Tymphany PLS-P830984 2-1_2_ Full Range Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=PLS-P830984 2-1/2" Full Range Woofer
 Manufacturer=
@@ -64008,7 +64008,7 @@ Dd=0.0531657
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany PLS-P830985 2-1_2_ Full Range Woofer`,content:`[Driver]
+`},{name:`Peerless by Tymphany PLS-P830985 2-1_2_ Full Range Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=PLS-P830985 2-1/2" Full Range Woofer
 Manufacturer=
@@ -64036,7 +64036,7 @@ Dd=0.0529257
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany PLS-P830986 3_ Full Range Woofer`,content:`[Driver]
+`},{name:`Peerless by Tymphany PLS-P830986 3_ Full Range Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=PLS-P830986 3" Full Range Woofer
 Manufacturer=
@@ -64064,7 +64064,7 @@ Dd=0.0589571
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany PLS-P830987 3_ Full-Range Woofer`,content:`[Driver]
+`},{name:`Peerless by Tymphany PLS-P830987 3_ Full-Range Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=PLS-P830987 3" Full-Range Woofer
 Manufacturer=
@@ -64092,7 +64092,7 @@ Dd=0.0589571
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany PMT-37N28AL01-04 37mm Aluminum Cone Transducer 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany PMT-37N28AL01-04 37mm Aluminum Cone Transducer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=PMT-37N28AL01-04 37mm Aluminum Cone Transducer 4 Ohm
 Manufacturer=
@@ -64120,7 +64120,7 @@ Dd=0.0319094
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany PMT-40N25AL01-04 1_ Aluminum Dome Micro Full Range Speaker 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany PMT-40N25AL01-04 1_ Aluminum Dome Micro Full Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=PMT-40N25AL01-04 1" Aluminum Dome Micro Full Range Speaker 4 Ohm
 Manufacturer=
@@ -64148,7 +64148,7 @@ Dd=0.0319154
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany SBS-160F35AL01-04`,content:`[Driver]
+`},{name:`Peerless by Tymphany SBS-160F35AL01-04`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SBS-160F35AL01-04
 Manufacturer=
@@ -64176,7 +64176,7 @@ Dd=0.139954
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany SDF-250F75PR01-06 10_ Paper Cone Subwoofer`,content:`[Driver]
+`},{name:`Peerless by Tymphany SDF-250F75PR01-06 10_ Paper Cone Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SDF-250F75PR01-06 10" Paper Cone Subwoofer
 Manufacturer=
@@ -64204,7 +64204,7 @@ Dd=0.211883
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany SDS-100F25CP09-04 SDS Series 4_ Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany SDS-100F25CP09-04 SDS Series 4_ Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SDS-100F25CP09-04 SDS Series 4" Woofer 4 Ohm
 Manufacturer=
@@ -64232,7 +64232,7 @@ Dd=0.0800275
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany SDS-135F25CP02-04`,content:`[Driver]
+`},{name:`Peerless by Tymphany SDS-135F25CP02-04`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SDS-135F25CP02-04
 Manufacturer=
@@ -64260,7 +64260,7 @@ Dd=0.123825
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany SDS-135F25CP02-06`,content:`[Driver]
+`},{name:`Peerless by Tymphany SDS-135F25CP02-06`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SDS-135F25CP02-06
 Manufacturer=
@@ -64288,7 +64288,7 @@ Dd=0.116586
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany SDS-135F25CP05-04`,content:`[Driver]
+`},{name:`Peerless by Tymphany SDS-135F25CP05-04`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SDS-135F25CP05-04
 Manufacturer=
@@ -64316,7 +64316,7 @@ Dd=0.116078
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany SDS-160F25CP01-08 6-1_2_ Paper Cone Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany SDS-160F25CP01-08 6-1_2_ Paper Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SDS-160F25CP01-08 6-1/2" Paper Cone Woofer 8 Ohm
 Manufacturer=
@@ -64344,7 +64344,7 @@ Dd=0.133988
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany SDS-160F25CP01-08`,content:`[Driver]
+`},{name:`Peerless by Tymphany SDS-160F25CP01-08`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SDS-160F25CP01-08
 Manufacturer=
@@ -64372,7 +64372,7 @@ Dd=0.133988
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany SDS-160F25PR01-08`,content:`[Driver]
+`},{name:`Peerless by Tymphany SDS-160F25PR01-08`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SDS-160F25PR01-08
 Manufacturer=
@@ -64400,7 +64400,7 @@ Dd=0.143764
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany SDS-P830656 5-1_4_ Paper Cone SDS Woofer`,content:`[Driver]
+`},{name:`Peerless by Tymphany SDS-P830656 5-1_4_ Paper Cone SDS Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SDS-P830656 5-1/4" Paper Cone SDS Woofer
 Manufacturer=
@@ -64428,7 +64428,7 @@ Dd=0.105006
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany SDS-P830656`,content:`[Driver]
+`},{name:`Peerless by Tymphany SDS-P830656`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SDS-P830656
 Manufacturer=
@@ -64456,7 +64456,7 @@ Dd=0.10500597343678363
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany SDS-P830657 6-1_2_ Paper Cone SDS Woofer`,content:`[Driver]
+`},{name:`Peerless by Tymphany SDS-P830657 6-1_2_ Paper Cone SDS Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SDS-P830657 6-1/2" Paper Cone SDS Woofer
 Manufacturer=
@@ -64484,7 +64484,7 @@ Dd=0.133988
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany SDS-P830657`,content:`[Driver]
+`},{name:`Peerless by Tymphany SDS-P830657`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SDS-P830657
 Manufacturer=
@@ -64512,7 +64512,7 @@ Dd=0.133988
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany SDS-P830855 4_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany SDS-P830855 4_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SDS-P830855 4" Woofer 8 Ohm
 Manufacturer=
@@ -64540,7 +64540,7 @@ Dd=0.0800275
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany SDS-P830855`,content:`[Driver]
+`},{name:`Peerless by Tymphany SDS-P830855`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SDS-P830855
 Manufacturer=
@@ -64568,7 +64568,7 @@ Dd=0.0800275
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany SDS-P830878 3-1_2_ Passive Radiator`,content:`[Driver]
+`},{name:`Peerless by Tymphany SDS-P830878 3-1_2_ Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SDS-P830878 3-1/2" Passive Radiator
 Manufacturer=
@@ -64596,7 +64596,7 @@ Dd=0.0799479
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany SLS-135F32CP01-04 5-1_4_ Paper Cone Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany SLS-135F32CP01-04 5-1_4_ Paper Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SLS-135F32CP01-04 5-1/4" Paper Cone Woofer 4 Ohm
 Manufacturer=
@@ -64624,7 +64624,7 @@ Dd=0.109981
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany SLS-135F32CP01-04`,content:`[Driver]
+`},{name:`Peerless by Tymphany SLS-135F32CP01-04`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SLS-135F32CP01-04
 Manufacturer=
@@ -64652,7 +64652,7 @@ Dd=0.109981
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany SLS-250S38CP00-04`,content:`[Driver]
+`},{name:`Peerless by Tymphany SLS-250S38CP00-04`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SLS-250S38CP00-04
 Manufacturer=
@@ -64680,7 +64680,7 @@ Dd=0.224028
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany SLS-65S25PR03-04 SLS Series 2.5_ Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany SLS-65S25PR03-04 SLS Series 2.5_ Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SLS-65S25PR03-04 SLS Series 2.5" Woofer 4 Ohm
 Manufacturer=
@@ -64708,7 +64708,7 @@ Dd=0.0530458
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany SLS-85S25CP04-04 3-1_2_ Paper Cone Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany SLS-85S25CP04-04 3-1_2_ Paper Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SLS-85S25CP04-04 3-1/2" Paper Cone Woofer 4 Ohm
 Manufacturer=
@@ -64736,7 +64736,7 @@ Dd=0.0626225
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany SLS-85S25CP04-04`,content:`[Driver]
+`},{name:`Peerless by Tymphany SLS-85S25CP04-04`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SLS-85S25CP04-04
 Manufacturer=
@@ -64764,7 +64764,7 @@ Dd=0.0626225
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany SLS-P830667 8_ Paper Cone SLS Subwoofer`,content:`[Driver]
+`},{name:`Peerless by Tymphany SLS-P830667 8_ Paper Cone SLS Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SLS-P830667 8" Paper Cone SLS Subwoofer
 Manufacturer=
@@ -64792,7 +64792,7 @@ Dd=0.16499
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany SLS-P830668 10_ Paper Cone SLS Subwoofer`,content:`[Driver]
+`},{name:`Peerless by Tymphany SLS-P830668 10_ Paper Cone SLS Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SLS-P830668 10" Paper Cone SLS Subwoofer
 Manufacturer=
@@ -64820,7 +64820,7 @@ Dd=0.210012
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany SLS-P830669 12_ Paper Cone SLS Subwoofer`,content:`[Driver]
+`},{name:`Peerless by Tymphany SLS-P830669 12_ Paper Cone SLS Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SLS-P830669 12" Paper Cone SLS Subwoofer
 Manufacturer=
@@ -64848,7 +64848,7 @@ Dd=0.258002
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany SLS-P830945 5-1_4_ Paper Cone Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany SLS-P830945 5-1_4_ Paper Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SLS-P830945 5-1/4" Paper Cone Woofer 4 Ohm
 Manufacturer=
@@ -64876,7 +64876,7 @@ Dd=0.102986
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany SLS-P830945`,content:`[Driver]
+`},{name:`Peerless by Tymphany SLS-P830945`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SLS-P830945
 Manufacturer=
@@ -64904,7 +64904,7 @@ Dd=0.102986
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany SLS-P830946 6-1_2_ Paper Cone Woofer Speaker 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany SLS-P830946 6-1_2_ Paper Cone Woofer Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SLS-P830946 6-1/2" Paper Cone Woofer Speaker 4 Ohm
 Manufacturer=
@@ -64932,7 +64932,7 @@ Dd=0.125397
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany SLS-P830946`,content:`[Driver]
+`},{name:`Peerless by Tymphany SLS-P830946`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SLS-P830946
 Manufacturer=
@@ -64960,7 +64960,7 @@ Dd=0.125397
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany TA6FD00-04 2_ Aluminum Cone Full-Range Driver 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany TA6FD00-04 2_ Aluminum Cone Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=TA6FD00-04 2" Aluminum Cone Full-Range Driver 4 Ohm
 Manufacturer=
@@ -64988,7 +64988,7 @@ Dd=0.0439923
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany TA6FD00-08 2_ Aluminum Cone Full-Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany TA6FD00-08 2_ Aluminum Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=TA6FD00-08 2" Aluminum Cone Full-Range Driver 8 Ohm
 Manufacturer=
@@ -65016,7 +65016,7 @@ Dd=0.0439923
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany TC Series TC8FD00-04 3_ Full Range Speaker 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany TC Series TC8FD00-04 3_ Full Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=TC Series TC8FD00-04 3" Full Range Speaker 4 Ohm
 Manufacturer=
@@ -65044,7 +65044,7 @@ Dd=0.0650166
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany TC55FD00-08 1-3_4_ Paper Cone Full-Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany TC55FD00-08 1-3_4_ Paper Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=TC55FD00-08 1-3/4" Paper Cone Full-Range Driver 8 Ohm
 Manufacturer=
@@ -65072,7 +65072,7 @@ Dd=0.0374241
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany TC5FB00-08 1-1_2_ Paper Cone Full-Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany TC5FB00-08 1-1_2_ Paper Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=TC5FB00-08 1-1/2" Paper Cone Full-Range Driver 8 Ohm
 Manufacturer=
@@ -65100,7 +65100,7 @@ Dd=0.0311073
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany TC5FC00-04 1-1_2_ Paper Cone Full-Range Driver 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany TC5FC00-04 1-1_2_ Paper Cone Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=TC5FC00-04 1-1/2" Paper Cone Full-Range Driver 4 Ohm
 Manufacturer=
@@ -65128,7 +65128,7 @@ Dd=0.0315139
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany TC5FC07-04 1-1_2_ Paper Cone Full-Range Driver 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany TC5FC07-04 1-1_2_ Paper Cone Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=TC5FC07-04 1-1/2" Paper Cone Full-Range Driver 4 Ohm
 Manufacturer=
@@ -65156,7 +65156,7 @@ Dd=0.0315139
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany TC6FD00-04 2_ Full Range Paper Cone Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany TC6FD00-04 2_ Full Range Paper Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=TC6FD00-04 2" Full Range Paper Cone Woofer 4 Ohm
 Manufacturer=
@@ -65184,7 +65184,7 @@ Dd=0.0439923
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany TC7FD00-04 2-1_2_ Full Range Paper Cone Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany TC7FD00-04 2-1_2_ Full Range Paper Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=TC7FD00-04 2-1/2" Full Range Paper Cone Woofer 4 Ohm
 Manufacturer=
@@ -65212,7 +65212,7 @@ Dd=0.0530458
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany TC7FD04-04 2-1_2_ Full-Range Line Array Driver 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany TC7FD04-04 2-1_2_ Full-Range Line Array Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=TC7FD04-04 2-1/2" Full-Range Line Array Driver 4 Ohm
 Manufacturer=
@@ -65240,7 +65240,7 @@ Dd=0.0530458
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany TC7FD24-04 2.5_ Compact Full-Range Speaker`,content:`[Driver]
+`},{name:`Peerless by Tymphany TC7FD24-04 2.5_ Compact Full-Range Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=TC7FD24-04 2.5" Compact Full-Range Speaker
 Manufacturer=
@@ -65268,7 +65268,7 @@ Dd=0.0550483
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany TC8FD05-04 3_ Paper Cone Full-Range Speaker`,content:`[Driver]
+`},{name:`Peerless by Tymphany TC8FD05-04 3_ Paper Cone Full-Range Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=TC8FD05-04 3" Paper Cone Full-Range Speaker
 Manufacturer=
@@ -65296,7 +65296,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany TC9FD00-04 3-1_2_ Full-Range Line Array Driver 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany TC9FD00-04 3-1_2_ Full-Range Line Array Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=TC9FD00-04 3-1/2" Full-Range Line Array Driver 4 Ohm
 Manufacturer=
@@ -65324,7 +65324,7 @@ Dd=0.0679843
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany TC9FD18-08 3-1_2_ Full Range Paper Cone Woofer`,content:`[Driver]
+`},{name:`Peerless by Tymphany TC9FD18-08 3-1_2_ Full Range Paper Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=TC9FD18-08 3-1/2" Full Range Paper Cone Woofer
 Manufacturer=
@@ -65352,7 +65352,7 @@ Dd=0.0679843
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany TG9FD10-04 3-1_2_ Glass Fiber Cone Full Range`,content:`[Driver]
+`},{name:`Peerless by Tymphany TG9FD10-04 3-1_2_ Glass Fiber Cone Full Range`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=TG9FD10-04 3-1/2" Glass Fiber Cone Full Range
 Manufacturer=
@@ -65380,7 +65380,7 @@ Dd=0.0679843
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany TG9FD10-08 3-1_2_ Glass Fiber Cone Full-Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany TG9FD10-08 3-1_2_ Glass Fiber Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=TG9FD10-08 3-1/2" Glass Fiber Cone Full-Range Driver 8 Ohm
 Manufacturer=
@@ -65408,7 +65408,7 @@ Dd=0.0679843
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany TPY05W04O0089`,content:`[Driver]
+`},{name:`Peerless by Tymphany TPY05W04O0089`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=TPY05W04O0089
 Manufacturer=
@@ -65436,7 +65436,7 @@ Dd=0.120904
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany TPY05W08O0088`,content:`[Driver]
+`},{name:`Peerless by Tymphany TPY05W08O0088`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=TPY05W08O0088
 Manufacturer=
@@ -65464,7 +65464,7 @@ Dd=0.120904
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany XLS-P830452 10_ XLS Subwoofer`,content:`[Driver]
+`},{name:`Peerless by Tymphany XLS-P830452 10_ XLS Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=XLS-P830452 10" XLS Subwoofer
 Manufacturer=
@@ -65492,7 +65492,7 @@ Dd=0.21101
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany XT25BG60-04 1_ Dual Ring Radiator Tweeter`,content:`[Driver]
+`},{name:`Peerless by Tymphany XT25BG60-04 1_ Dual Ring Radiator Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=XT25BG60-04 1" Dual Ring Radiator Tweeter
 Manufacturer=
@@ -65520,7 +65520,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany XT25SC40-04 1_ Ring Radiator XT Tweeter 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany XT25SC40-04 1_ Ring Radiator XT Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=XT25SC40-04 1" Ring Radiator XT Tweeter 4 Ohm
 Manufacturer=
@@ -65548,7 +65548,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany XT25SC50-04 1_ Silk Diaphragm Neo Ring Radiator Tweeter`,content:`[Driver]
+`},{name:`Peerless by Tymphany XT25SC50-04 1_ Silk Diaphragm Neo Ring Radiator Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=XT25SC50-04 1" Silk Diaphragm Neo Ring Radiator Tweeter
 Manufacturer=
@@ -65576,7 +65576,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany XT25SC90-04 1_ Dual Ring Radiator Tweeter`,content:`[Driver]
+`},{name:`Peerless by Tymphany XT25SC90-04 1_ Dual Ring Radiator Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=XT25SC90-04 1" Dual Ring Radiator Tweeter
 Manufacturer=
@@ -65604,7 +65604,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany XT25TG30-04 1_ Dual Ring Radiator Tweeter`,content:`[Driver]
+`},{name:`Peerless by Tymphany XT25TG30-04 1_ Dual Ring Radiator Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=XT25TG30-04 1" Dual Ring Radiator Tweeter
 Manufacturer=
@@ -65632,7 +65632,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany XXLS-300F50AL01-04 12_ Black Aluminum Cone Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany XXLS-300F50AL01-04 12_ Black Aluminum Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=XXLS-300F50AL01-04 12" Black Aluminum Cone Subwoofer 4 Ohm
 Manufacturer=
@@ -65660,7 +65660,7 @@ Dd=0.244001
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany XXLS-P830845 12_ Nomex Cone Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany XXLS-P830845 12_ Nomex Cone Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=XXLS-P830845 12" Nomex Cone Subwoofer 8 Ohm
 Manufacturer=
@@ -65688,7 +65688,7 @@ Dd=0.250007
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany XXLS-P835016 10_ Black Aluminum Cone Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany XXLS-P835016 10_ Black Aluminum Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=XXLS-P835016 10" Black Aluminum Cone Subwoofer 4 Ohm
 Manufacturer=
@@ -65716,7 +65716,7 @@ Dd=0.212992
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Peerless by Tymphany XXLS-P835037 10_ Paper Cone Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Peerless by Tymphany XXLS-P835037 10_ Paper Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=XXLS-P835037 10" Paper Cone Subwoofer 4 Ohm
 Manufacturer=
@@ -65744,7 +65744,7 @@ Dd=0.210012
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Pyramid WX102X`,content:`[Driver]
+`},{name:`Pyramid WX102X`,date:``,content:`[Driver]
 Brand=Pyramid
 Model=WX102X
 Manufacturer=
@@ -65772,7 +65772,7 @@ Dd=0.230886
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Pyramid WX65X 6-1_2_ White Poly Woofer`,content:`[Driver]
+`},{name:`Pyramid WX65X 6-1_2_ White Poly Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Pyramid
 Model=WX65X 6-1/2" White Poly Woofer
 Manufacturer=
@@ -65800,7 +65800,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Pyramid WX65X`,content:`[Driver]
+`},{name:`Pyramid WX65X`,date:`2026-06-24`,content:`[Driver]
 Brand=Pyramid
 Model=WX65X
 Manufacturer=
@@ -65828,7 +65828,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Selenium JBL Selenium 10M PRO 10_ 350 Watt Professional Mid-Bass 8 Ohm`,content:`[Driver]
+`},{name:`Selenium JBL Selenium 10M PRO 10_ 350 Watt Professional Mid-Bass 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
 Model=JBL Selenium 10M PRO 10" 350 Watt Professional Mid-Bass 8 Ohm
 Manufacturer=
@@ -65856,7 +65856,7 @@ Dd=0.214985
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Selenium JBL Selenium 10PWX-8R 10_ Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Selenium JBL Selenium 10PWX-8R 10_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
 Model=JBL Selenium 10PWX-8R 10" Professional Woofer 8 Ohm
 Manufacturer=
@@ -65884,7 +65884,7 @@ Dd=0.002111
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Selenium JBL Selenium 10WP 350 10_ 350 Watt Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Selenium JBL Selenium 10WP 350 10_ 350 Watt Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
 Model=JBL Selenium 10WP 350 10" 350 Watt Woofer 8 Ohm
 Manufacturer=
@@ -65912,7 +65912,7 @@ Dd=0.2111
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Selenium JBL Selenium 12M PRO 12_ 700 Watt Professional Mid-Bass 8 Ohm`,content:`[Driver]
+`},{name:`Selenium JBL Selenium 12M PRO 12_ 700 Watt Professional Mid-Bass 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
 Model=JBL Selenium 12M PRO 12" 700 Watt Professional Mid-Bass 8 Ohm
 Manufacturer=
@@ -65940,7 +65940,7 @@ Dd=0.26
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Selenium JBL Selenium 12PWX-8R 12_ Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Selenium JBL Selenium 12PWX-8R 12_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
 Model=JBL Selenium 12PWX-8R 12" Professional Woofer 8 Ohm
 Manufacturer=
@@ -65968,7 +65968,7 @@ Dd=0.00262212
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Selenium JBL Selenium 12WP 500 12_ 500 Watt Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Selenium JBL Selenium 12WP 500 12_ 500 Watt Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
 Model=JBL Selenium 12WP 500 12" 500 Watt Woofer 8 Ohm
 Manufacturer=
@@ -65996,7 +65996,7 @@ Dd=0.259772
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Selenium JBL Selenium 15PWX-8R 15_ Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Selenium JBL Selenium 15PWX-8R 15_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
 Model=JBL Selenium 15PWX-8R 15" Professional Woofer 8 Ohm
 Manufacturer=
@@ -66024,7 +66024,7 @@ Dd=0.00342254
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Selenium JBL Selenium 15WP 550 15_ 550 Watt Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Selenium JBL Selenium 15WP 550 15_ 550 Watt Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
 Model=JBL Selenium 15WP 550 15" 550 Watt Woofer 8 Ohm
 Manufacturer=
@@ -66052,7 +66052,7 @@ Dd=0.321934
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Selenium JBL Selenium 18SW3P 18_ 800 Watt Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Selenium JBL Selenium 18SW3P 18_ 800 Watt Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
 Model=JBL Selenium 18SW3P 18" 800 Watt Subwoofer 8 Ohm
 Manufacturer=
@@ -66080,7 +66080,7 @@ Dd=0.389904
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Selenium JBL Selenium 18WP 600 18_ 600 Watt Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Selenium JBL Selenium 18WP 600 18_ 600 Watt Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
 Model=JBL Selenium 18WP 600 18" 600 Watt Woofer 8 Ohm
 Manufacturer=
@@ -66108,7 +66108,7 @@ Dd=0.389904
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Selenium JBL Selenium 6W4P 6_ Woofer`,content:`[Driver]
+`},{name:`Selenium JBL Selenium 6W4P 6_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
 Model=JBL Selenium 6W4P 6" Woofer
 Manufacturer=
@@ -66136,7 +66136,7 @@ Dd=0.174078
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Selenium JBL Selenium 8PW-PRO 8_ 175 Watt Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Selenium JBL Selenium 8PW-PRO 8_ 175 Watt Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
 Model=JBL Selenium 8PW-PRO 8" 175 Watt Professional Woofer 8 Ohm
 Manufacturer=
@@ -66164,7 +66164,7 @@ Dd=0.178412
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Selenium JBL Selenium 8PWX-8R 8_ Professional Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Selenium JBL Selenium 8PWX-8R 8_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
 Model=JBL Selenium 8PWX-8R 8" Professional Woofer 8 Ohm
 Manufacturer=
@@ -66192,7 +66192,7 @@ Dd=0.00178412
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Selenium JBL Selenium 8WP 300 8_ 300 Watt Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Selenium JBL Selenium 8WP 300 8_ 300 Watt Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
 Model=JBL Selenium 8WP 300 8" 300 Watt Woofer 8 Ohm
 Manufacturer=
@@ -66220,7 +66220,7 @@ Dd=0.171999
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band 13-1761S 1_2_ Silk Dome Tweeter Pair`,content:`[Driver]
+`},{name:`Tang Band 13-1761S 1_2_ Silk Dome Tweeter Pair`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=13-1761S 1/2" Silk Dome Tweeter Pair
 Manufacturer=
@@ -66248,7 +66248,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band 20-2240S 20mm Hi-Res Neodymium Tweeter`,content:`[Driver]
+`},{name:`Tang Band 20-2240S 20mm Hi-Res Neodymium Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=20-2240S 20mm Hi-Res Neodymium Tweeter
 Manufacturer=
@@ -66276,7 +66276,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band 25-1719S 1_ Ceramic Dome Tweeter`,content:`[Driver]
+`},{name:`Tang Band 25-1719S 1_ Ceramic Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=25-1719S 1" Ceramic Dome Tweeter
 Manufacturer=
@@ -66304,7 +66304,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band 25-2234S 1_ Hi-Resolution 40k Aluminum _ Magnesium Dome Neodymium Tweeter 4 Ohm`,content:`[Driver]
+`},{name:`Tang Band 25-2234S 1_ Hi-Resolution 40k Aluminum _ Magnesium Dome Neodymium Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=25-2234S 1" Hi-Resolution 40k Aluminum / Magnesium Dome Neodymium Tweeter 4 Ohm
 Manufacturer=
@@ -66332,7 +66332,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band 25-2234SD 1_ Hi-Resolution 40k Aluminum _ Magnesium Dome Neo Tweeter Black Grill 4 Ohm`,content:`[Driver]
+`},{name:`Tang Band 25-2234SD 1_ Hi-Resolution 40k Aluminum _ Magnesium Dome Neo Tweeter Black Grill 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=25-2234SD 1" Hi-Resolution 40k Aluminum / Magnesium Dome Neo Tweeter Black Grill 4 Ohm
 Manufacturer=
@@ -66360,7 +66360,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band 25-2234SE 1_ Hi-Resolution 40k Aluminum_Magnesium Dome Neo Tweeter Stainless Grill 4 Ohm`,content:`[Driver]
+`},{name:`Tang Band 25-2234SE 1_ Hi-Resolution 40k Aluminum_Magnesium Dome Neo Tweeter Stainless Grill 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=25-2234SE 1" Hi-Resolution 40k Aluminum/Magnesium Dome Neo Tweeter Stainless Grill 4 Ohm
 Manufacturer=
@@ -66388,7 +66388,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band 50-1426SE 2_ Fabric Dome Midrange`,content:`[Driver]
+`},{name:`Tang Band 50-1426SE 2_ Fabric Dome Midrange`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=50-1426SE 2" Fabric Dome Midrange
 Manufacturer=
@@ -66416,7 +66416,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W0-2008S 1_ Neodymium Full-Range Driver Pair`,content:`[Driver]
+`},{name:`Tang Band W0-2008S 1_ Neodymium Full-Range Driver Pair`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W0-2008S 1" Neodymium Full-Range Driver Pair
 Manufacturer=
@@ -66444,7 +66444,7 @@ Dd=0.0133512
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W1-1815SA 1_ Neodymium Full Range Driver`,content:`[Driver]
+`},{name:`Tang Band W1-1815SA 1_ Neodymium Full Range Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W1-1815SA 1" Neodymium Full Range Driver
 Manufacturer=
@@ -66472,7 +66472,7 @@ Dd=0.0977205
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W1-1931S 1_ Neodymium Full Range Driver`,content:`[Driver]
+`},{name:`Tang Band W1-1931S 1_ Neodymium Full Range Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W1-1931S 1" Neodymium Full Range Driver
 Manufacturer=
@@ -66500,7 +66500,7 @@ Dd=0.0239365
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W1-1942S 1_ Full-Range Neodymium Driver`,content:`[Driver]
+`},{name:`Tang Band W1-1942S 1_ Full-Range Neodymium Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W1-1942S 1" Full-Range Neodymium Driver
 Manufacturer=
@@ -66528,7 +66528,7 @@ Dd=0.0338514
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W1-2025SA 1_ Neodymium Full Range Driver`,content:`[Driver]
+`},{name:`Tang Band W1-2025SA 1_ Neodymium Full Range Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W1-2025SA 1" Neodymium Full Range Driver
 Manufacturer=
@@ -66556,7 +66556,7 @@ Dd=0.0276395
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W1-2121S 1-3_4_ Aluminum Full Range Neodymium Driver`,content:`[Driver]
+`},{name:`Tang Band W1-2121S 1-3_4_ Aluminum Full Range Neodymium Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W1-2121S 1-3/4" Aluminum Full Range Neodymium Driver
 Manufacturer=
@@ -66584,7 +66584,7 @@ Dd=0.0337289
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W1-2361S 1_ Low Profile Aluminum Cone Full-Range Neodymium Driver 4 Ohm`,content:`[Driver]
+`},{name:`Tang Band W1-2361S 1_ Low Profile Aluminum Cone Full-Range Neodymium Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W1-2361S 1" Low Profile Aluminum Cone Full-Range Neodymium Driver 4 Ohm
 Manufacturer=
@@ -66612,7 +66612,7 @@ Dd=0.0214095
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W1-2396S Extremely Slim 1_ Full-Range 4 Ohm`,content:`[Driver]
+`},{name:`Tang Band W1-2396S Extremely Slim 1_ Full-Range 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W1-2396S Extremely Slim 1" Full-Range 4 Ohm
 Manufacturer=
@@ -66640,7 +66640,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W2-1803S 2_ Neodymium Poly Full-Range Driver`,content:`[Driver]
+`},{name:`Tang Band W2-1803S 2_ Neodymium Poly Full-Range Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W2-1803S 2" Neodymium Poly Full-Range Driver
 Manufacturer=
@@ -66668,7 +66668,7 @@ Dd=0.0406843
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W2-2136S 2_ Aluminum Full Range Neodymium Driver`,content:`[Driver]
+`},{name:`Tang Band W2-2136S 2_ Aluminum Full Range Neodymium Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W2-2136S 2" Aluminum Full Range Neodymium Driver
 Manufacturer=
@@ -66696,7 +66696,7 @@ Dd=0.0437019
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W2-2243S 2_ Aluminum_Magnesium Full-Range Driver`,content:`[Driver]
+`},{name:`Tang Band W2-2243S 2_ Aluminum_Magnesium Full-Range Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W2-2243S 2" Aluminum/Magnesium Full-Range Driver
 Manufacturer=
@@ -66724,7 +66724,7 @@ Dd=0.0406843
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W2-803SM 2_ Extended Range Speaker Driver`,content:`[Driver]
+`},{name:`Tang Band W2-803SM 2_ Extended Range Speaker Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W2-803SM 2" Extended Range Speaker Driver
 Manufacturer=
@@ -66752,7 +66752,7 @@ Dd=0.0406843
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W2-852SH 2_ Shielded Speaker Driver`,content:`[Driver]
+`},{name:`Tang Band W2-852SH 2_ Shielded Speaker Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W2-852SH 2" Shielded Speaker Driver
 Manufacturer=
@@ -66780,7 +66780,7 @@ Dd=0.0406843
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W3-1364SA 3_ Bamboo Cone Driver`,content:`[Driver]
+`},{name:`Tang Band W3-1364SA 3_ Bamboo Cone Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W3-1364SA 3" Bamboo Cone Driver
 Manufacturer=
@@ -66808,7 +66808,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W3-1797S 3_ Neodymium Midrange Driver`,content:`[Driver]
+`},{name:`Tang Band W3-1797S 3_ Neodymium Midrange Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W3-1797S 3" Neodymium Midrange Driver
 Manufacturer=
@@ -66836,7 +66836,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W3-1876S 3_ Mini Subwoofer`,content:`[Driver]
+`},{name:`Tang Band W3-1876S 3_ Mini Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W3-1876S 3" Mini Subwoofer
 Manufacturer=
@@ -66864,7 +66864,7 @@ Dd=0.0586323
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W3-1878 3_ Full-Range Driver`,content:`[Driver]
+`},{name:`Tang Band W3-1878 3_ Full-Range Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W3-1878 3" Full-Range Driver
 Manufacturer=
@@ -66892,7 +66892,7 @@ Dd=0.0638308
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W3-2108 3-1_2_ RBM Micro Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Tang Band W3-2108 3-1_2_ RBM Micro Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W3-2108 3-1/2" RBM Micro Subwoofer 4 Ohm
 Manufacturer=
@@ -66920,7 +66920,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W3-2141 3_ Paper Cone Full-Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Tang Band W3-2141 3_ Paper Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W3-2141 3" Paper Cone Full-Range Driver 8 Ohm
 Manufacturer=
@@ -66948,7 +66948,7 @@ Dd=0.0639205
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W3-881SJ 3_ Cast Frame Neodymium Driver`,content:`[Driver]
+`},{name:`Tang Band W3-881SJ 3_ Cast Frame Neodymium Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W3-881SJ 3" Cast Frame Neodymium Driver
 Manufacturer=
@@ -66976,7 +66976,7 @@ Dd=0.0638308
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W3-881SJF 3_ Full Range Speaker`,content:`[Driver]
+`},{name:`Tang Band W3-881SJF 3_ Full Range Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W3-881SJF 3" Full Range Speaker
 Manufacturer=
@@ -67004,7 +67004,7 @@ Dd=0.0638308
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W4-1052SD 4_ Driver 4 Ohm`,content:`[Driver]
+`},{name:`Tang Band W4-1052SD 4_ Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W4-1052SD 4" Driver 4 Ohm
 Manufacturer=
@@ -67032,7 +67032,7 @@ Dd=0.0851908
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W4-1337SDF 4_ Titanium Full Range Speaker`,content:`[Driver]
+`},{name:`Tang Band W4-1337SDF 4_ Titanium Full Range Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W4-1337SDF 4" Titanium Full Range Speaker
 Manufacturer=
@@ -67060,7 +67060,7 @@ Dd=0.0851908
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W4-1720 4_ Underhung Midbass Driver`,content:`[Driver]
+`},{name:`Tang Band W4-1720 4_ Underhung Midbass Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W4-1720 4" Underhung Midbass Driver
 Manufacturer=
@@ -67088,7 +67088,7 @@ Dd=0.0851908
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W4-1757SB 4_ Aluminum Cone Driver`,content:`[Driver]
+`},{name:`Tang Band W4-1757SB 4_ Aluminum Cone Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W4-1757SB 4" Aluminum Cone Driver
 Manufacturer=
@@ -67116,7 +67116,7 @@ Dd=0.0851908
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W4-1879 4_ Full-Range Driver`,content:`[Driver]
+`},{name:`Tang Band W4-1879 4_ Full-Range Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W4-1879 4" Full-Range Driver
 Manufacturer=
@@ -67144,7 +67144,7 @@ Dd=0.0851908
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W4-2089 4.5_ RBM Mini Flat Panel Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Tang Band W4-2089 4.5_ RBM Mini Flat Panel Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W4-2089 4.5" RBM Mini Flat Panel Subwoofer 4 Ohm
 Manufacturer=
@@ -67172,7 +67172,7 @@ Dd=0.0977205
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W4-2142 4_ Paper Cone Full Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Tang Band W4-2142 4_ Paper Cone Full Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W4-2142 4" Paper Cone Full Range Driver 8 Ohm
 Manufacturer=
@@ -67200,7 +67200,7 @@ Dd=0.0831486
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W4-2356 4_ Off-Axis Poly Cone Full-Range`,content:`[Driver]
+`},{name:`Tang Band W4-2356 4_ Off-Axis Poly Cone Full-Range`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W4-2356 4" Off-Axis Poly Cone Full-Range
 Manufacturer=
@@ -67228,7 +67228,7 @@ Dd=0.0797885
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W4-2414 F Series 4_ Full-Range with Phase Plug 8 Ohm`,content:`[Driver]
+`},{name:`Tang Band W4-2414 F Series 4_ Full-Range with Phase Plug 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W4-2414 F Series 4" Full-Range with Phase Plug 8 Ohm
 Manufacturer=
@@ -67256,7 +67256,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W4-2417 F Series 4_ Full-Range with Dust Cap 8 Ohm`,content:`[Driver]
+`},{name:`Tang Band W4-2417 F Series 4_ Full-Range with Dust Cap 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W4-2417 F Series 4" Full-Range with Dust Cap 8 Ohm
 Manufacturer=
@@ -67284,7 +67284,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W4-656SC 4_ Shielded Driver`,content:`[Driver]
+`},{name:`Tang Band W4-656SC 4_ Shielded Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W4-656SC 4" Shielded Driver
 Manufacturer=
@@ -67312,7 +67312,7 @@ Dd=0.269397
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W5-1138SM 5-1_4_ Neodymium Subwoofer`,content:`[Driver]
+`},{name:`Tang Band W5-1138SM 5-1_4_ Neodymium Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W5-1138SM 5-1/4" Neodymium Subwoofer
 Manufacturer=
@@ -67340,7 +67340,7 @@ Dd=0.1094
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W5-1138SMF 5-1_4_ Paper Cone Subwoofer Speaker`,content:`[Driver]
+`},{name:`Tang Band W5-1138SMF 5-1_4_ Paper Cone Subwoofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W5-1138SMF 5-1/4" Paper Cone Subwoofer Speaker
 Manufacturer=
@@ -67368,7 +67368,7 @@ Dd=0.1094
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W5-1611SAF 5_ Full Range Speaker`,content:`[Driver]
+`},{name:`Tang Band W5-1611SAF 5_ Full Range Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W5-1611SAF 5" Full Range Speaker
 Manufacturer=
@@ -67396,7 +67396,7 @@ Dd=0.1094
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W5-2053 5_ RBM Flat Panel Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Tang Band W5-2053 5_ RBM Flat Panel Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W5-2053 5" RBM Flat Panel Subwoofer 4 Ohm
 Manufacturer=
@@ -67424,7 +67424,7 @@ Dd=0.0977205
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W5-2143 5_ Paper Cone Full Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Tang Band W5-2143 5_ Paper Cone Full Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W5-2143 5" Paper Cone Full Range Driver 8 Ohm
 Manufacturer=
@@ -67452,7 +67452,7 @@ Dd=0.111607
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W5-704D 5-1_4_ Woofer`,content:`[Driver]
+`},{name:`Tang Band W5-704D 5-1_4_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W5-704D 5-1/4" Woofer
 Manufacturer=
@@ -67480,7 +67480,7 @@ Dd=0.1094
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W5-704D`,content:`[Driver]
+`},{name:`Tang Band W5-704D`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W5-704D
 Manufacturer=
@@ -67508,7 +67508,7 @@ Dd=0.1094
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W57-1781`,content:`[Driver]
+`},{name:`Tang Band W57-1781`,date:``,content:`[Driver]
 Brand=Tang Band
 Model=W57-1781
 Manufacturer=
@@ -67536,7 +67536,7 @@ Dd=0.13208
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W6-1139SI 6-1_2_ Subwoofer`,content:`[Driver]
+`},{name:`Tang Band W6-1139SI 6-1_2_ Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W6-1139SI 6-1/2" Subwoofer
 Manufacturer=
@@ -67564,7 +67564,7 @@ Dd=0.133512
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W6-1139SIF 6-1_2_ Paper Cone Subwoofer Speaker`,content:`[Driver]
+`},{name:`Tang Band W6-1139SIF 6-1_2_ Paper Cone Subwoofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W6-1139SIF 6-1/2" Paper Cone Subwoofer Speaker
 Manufacturer=
@@ -67592,7 +67592,7 @@ Dd=0.133512
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W6-2090 6-1_2_ Extreme Conditions Woofer 2 Ohm`,content:`[Driver]
+`},{name:`Tang Band W6-2090 6-1_2_ Extreme Conditions Woofer 2 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W6-2090 6-1/2" Extreme Conditions Woofer 2 Ohm
 Manufacturer=
@@ -67620,7 +67620,7 @@ Dd=0.125904
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W6-2100 6-1_2_ RBM Flat Panel Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Tang Band W6-2100 6-1_2_ RBM Flat Panel Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W6-2100 6-1/2" RBM Flat Panel Subwoofer 4 Ohm
 Manufacturer=
@@ -67648,7 +67648,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W6-2253S 6-1_2_ Low Profile Subwoofer`,content:`[Driver]
+`},{name:`Tang Band W6-2253S 6-1_2_ Low Profile Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W6-2253S 6-1/2" Low Profile Subwoofer
 Manufacturer=
@@ -67676,7 +67676,7 @@ Dd=0.118345
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W6-2313 6-1_2_ Coaxial Full-Range Woofer`,content:`[Driver]
+`},{name:`Tang Band W6-2313 6-1_2_ Coaxial Full-Range Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W6-2313 6-1/2" Coaxial Full-Range Woofer
 Manufacturer=
@@ -67704,7 +67704,7 @@ Dd=0.05717
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W6-789E`,content:`[Driver]
+`},{name:`Tang Band W6-789E`,date:``,content:`[Driver]
 Brand=Tang Band
 Model=W6-789E
 Manufacturer=
@@ -67732,7 +67732,7 @@ Dd=0.146812
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W8-1363SB 8_ Subwoofer`,content:`[Driver]
+`},{name:`Tang Band W8-1363SB 8_ Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W8-1363SB 8" Subwoofer
 Manufacturer=
@@ -67760,7 +67760,7 @@ Dd=0.167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W8-1772 8_ Neodymium Full Range Driver`,content:`[Driver]
+`},{name:`Tang Band W8-1772 8_ Neodymium Full Range Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W8-1772 8" Neodymium Full Range Driver
 Manufacturer=
@@ -67788,7 +67788,7 @@ Dd=0.0338514
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W8-1808 8_ Neodymium Full Range Driver`,content:`[Driver]
+`},{name:`Tang Band W8-1808 8_ Neodymium Full Range Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W8-1808 8" Neodymium Full Range Driver
 Manufacturer=
@@ -67816,7 +67816,7 @@ Dd=0.167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W8-2096B 8_ Underhung Midbass Driver 4 Ohm`,content:`[Driver]
+`},{name:`Tang Band W8-2096B 8_ Underhung Midbass Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W8-2096B 8" Underhung Midbass Driver 4 Ohm
 Manufacturer=
@@ -67844,7 +67844,7 @@ Dd=0.167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W8-2145 8_ Paper Cone Full Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Tang Band W8-2145 8_ Paper Cone Full Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W8-2145 8" Paper Cone Full Range Driver 8 Ohm
 Manufacturer=
@@ -67872,7 +67872,7 @@ Dd=0.164411
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W8-2282 8_ Low Profile Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Tang Band W8-2282 8_ Low Profile Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W8-2282 8" Low Profile Subwoofer 4 Ohm
 Manufacturer=
@@ -67900,7 +67900,7 @@ Dd=0.167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W8-2314 8_ Coaxial Full-Range Woofer`,content:`[Driver]
+`},{name:`Tang Band W8-2314 8_ Coaxial Full-Range Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W8-2314 8" Coaxial Full-Range Woofer
 Manufacturer=
@@ -67928,7 +67928,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tang Band W8-740P 8_ Subwoofer`,content:`[Driver]
+`},{name:`Tang Band W8-740P 8_ Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
 Model=W8-740P 8" Subwoofer
 Manufacturer=
@@ -67956,7 +67956,7 @@ Dd=0.167366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tectonic TEBM35C02-6B 1-3_4_ BMR Full-Range Headphone Driver 6 Ohms`,content:`[Driver]
+`},{name:`Tectonic TEBM35C02-6B 1-3_4_ BMR Full-Range Headphone Driver 6 Ohms`,date:`2026-06-24`,content:`[Driver]
 Brand=Tectonic
 Model=TEBM35C02-6B 1-3/4" BMR Full-Range Headphone Driver 6 Ohms
 Manufacturer=
@@ -67984,7 +67984,7 @@ Dd=0.0374921
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tectonic TEBM35C10-4 BMR 2_ Full-Range Speaker 4 Ohm`,content:`[Driver]
+`},{name:`Tectonic TEBM35C10-4 BMR 2_ Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tectonic
 Model=TEBM35C10-4 BMR 2" Full-Range Speaker 4 Ohm
 Manufacturer=
@@ -68012,7 +68012,7 @@ Dd=0.0374921
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tectonic TEBM36S05-4 1-1_2_ Square BMR Full-Range Speaker 4 Ohm`,content:`[Driver]
+`},{name:`Tectonic TEBM36S05-4 1-1_2_ Square BMR Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tectonic
 Model=TEBM36S05-4 1-1/2" Square BMR Full-Range Speaker 4 Ohm
 Manufacturer=
@@ -68040,7 +68040,7 @@ Dd=0.0473382
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tectonic TEBM65C20F-4 3-1_2_ BMR Full-Range Speaker 4 Ohm`,content:`[Driver]
+`},{name:`Tectonic TEBM65C20F-4 3-1_2_ BMR Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tectonic
 Model=TEBM65C20F-4 3-1/2" BMR Full-Range Speaker 4 Ohm
 Manufacturer=
@@ -68068,7 +68068,7 @@ Dd=0.0688219
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Tectonic TEBM65C20F-8 3-1_2_ BMR Full-Range Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Tectonic TEBM65C20F-8 3-1_2_ BMR Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tectonic
 Model=TEBM65C20F-8 3-1/2" BMR Full-Range Speaker 8 Ohm
 Manufacturer=
@@ -68096,7 +68096,7 @@ Dd=0.0744901
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Timpano Audio TPT-MD12 12_ Midbass Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Timpano Audio TPT-MD12 12_ Midbass Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Timpano Audio
 Model=TPT-MD12 12" Midbass Speaker 8 Ohm
 Manufacturer=
@@ -68124,7 +68124,7 @@ Dd=0.265109
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Timpano Audio TPT-MD12 PRO 12_ Midrange Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Timpano Audio TPT-MD12 PRO 12_ Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Timpano Audio
 Model=TPT-MD12 PRO 12" Midrange Speaker 8 Ohm
 Manufacturer=
@@ -68152,7 +68152,7 @@ Dd=0.270105
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Timpano Audio TPT-MD8 8_ Midrange Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Timpano Audio TPT-MD8 8_ Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Timpano Audio
 Model=TPT-MD8 8" Midrange Speaker 8 Ohm
 Manufacturer=
@@ -68180,7 +68180,7 @@ Dd=0.00175172
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Timpano Audio TPT-T2500-12 D2  12_ Cast Frame DVC Subwoofer 2 Ohms Per Coil`,content:`[Driver]
+`},{name:`Timpano Audio TPT-T2500-12 D2  12_ Cast Frame DVC Subwoofer 2 Ohms Per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Timpano Audio
 Model=TPT-T2500-12 D2  12" Cast Frame DVC Subwoofer 2 Ohms Per Coil
 Manufacturer=
@@ -68208,7 +68208,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Usher 1001B`,content:`[Driver]
+`},{name:`Usher 1001B`,date:``,content:`[Driver]
 Brand=Usher
 Model=1001B
 Manufacturer=
@@ -68236,7 +68236,7 @@ Dd=0.231775
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton AL130M8 5_ Aluminum Cone Midrange Driver 8 Ohm`,content:`[Driver]
+`},{name:`Visaton AL130M8 5_ Aluminum Cone Midrange Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=AL130M8 5" Aluminum Cone Midrange Driver 8 Ohm
 Manufacturer=
@@ -68264,7 +68264,7 @@ Dd=0.100293
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton AL170-8 6.5_ Aluminum Cone Midrange Driver 8 Ohm`,content:`[Driver]
+`},{name:`Visaton AL170-8 6.5_ Aluminum Cone Midrange Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=AL170-8 6.5" Aluminum Cone Midrange Driver 8 Ohm
 Manufacturer=
@@ -68292,7 +68292,7 @@ Dd=0.130131
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton AL200-8 8_ Aluminum Cone Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Visaton AL200-8 8_ Aluminum Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=AL200-8 8" Aluminum Cone Woofer 8 Ohm
 Manufacturer=
@@ -68320,7 +68320,7 @@ Dd=0.165837
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton B 100 4_ Full-Range Driver 6 Ohm`,content:`[Driver]
+`},{name:`Visaton B 100 4_ Full-Range Driver 6 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=B 100 4" Full-Range Driver 6 Ohm
 Manufacturer=
@@ -68348,7 +68348,7 @@ Dd=0.0829953
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton B 200 8_ Full-Range Driver 6 Ohm`,content:`[Driver]
+`},{name:`Visaton B 200 8_ Full-Range Driver 6 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=B 200 8" Full-Range Driver 6 Ohm
 Manufacturer=
@@ -68376,7 +68376,7 @@ Dd=0.165068
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton B 80 3.3_ Full-Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Visaton B 80 3.3_ Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=B 80 3.3" Full-Range Driver 8 Ohm
 Manufacturer=
@@ -68404,7 +68404,7 @@ Dd=0.0724012
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton BF32-8 Ohm 1.3_ Full-Range Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Visaton BF32-8 Ohm 1.3_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=BF32-8 Ohm 1.3" Full-Range Speaker 8 Ohm
 Manufacturer=
@@ -68432,7 +68432,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton BF37 1.5_ Full-Range Speaker 4 ohm`,content:`[Driver]
+`},{name:`Visaton BF37 1.5_ Full-Range Speaker 4 ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=BF37 1.5" Full-Range Speaker 4 ohm
 Manufacturer=
@@ -68460,7 +68460,7 @@ Dd=0.0280964
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton BF37-8 1.5_ Full-Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Visaton BF37-8 1.5_ Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=BF37-8 1.5" Full-Range Driver 8 Ohm
 Manufacturer=
@@ -68488,7 +68488,7 @@ Dd=0.0280964
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton BF45-4 Ohm 1.8_ Full-Range Speaker 4 Ohm`,content:`[Driver]
+`},{name:`Visaton BF45-4 Ohm 1.8_ Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=BF45-4 Ohm 1.8" Full-Range Speaker 4 Ohm
 Manufacturer=
@@ -68516,7 +68516,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton BG13P 5_ Full Range Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Visaton BG13P 5_ Full Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=BG13P 5" Full Range Speaker 8 Ohm
 Manufacturer=
@@ -68544,7 +68544,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton BG17-8 6.5_ Full-Range Speaker with Whizzer Cone 8 Ohm`,content:`[Driver]
+`},{name:`Visaton BG17-8 6.5_ Full-Range Speaker with Whizzer Cone 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=BG17-8 6.5" Full-Range Speaker with Whizzer Cone 8 Ohm
 Manufacturer=
@@ -68572,7 +68572,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton BG20-8 8_ Full-Range Speaker with Whizzer Cone 8 Ohm`,content:`[Driver]
+`},{name:`Visaton BG20-8 8_ Full-Range Speaker with Whizzer Cone 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=BG20-8 8" Full-Range Speaker with Whizzer Cone 8 Ohm
 Manufacturer=
@@ -68600,7 +68600,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton DSM25FFL 1_ Titanium Dome Tweeter 8 Ohm`,content:`[Driver]
+`},{name:`Visaton DSM25FFL 1_ Titanium Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=DSM25FFL 1" Titanium Dome Tweeter 8 Ohm
 Manufacturer=
@@ -68628,7 +68628,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton DSM50FFL8 2_ Titanium Dome Driver 8 Ohm`,content:`[Driver]
+`},{name:`Visaton DSM50FFL8 2_ Titanium Dome Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=DSM50FFL8 2" Titanium Dome Driver 8 Ohm
 Manufacturer=
@@ -68656,7 +68656,7 @@ Dd=0.0504627
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton DT94-4 0.8_ Polycarbonate Dome Tweeter 4 Ohm`,content:`[Driver]
+`},{name:`Visaton DT94-4 0.8_ Polycarbonate Dome Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=DT94-4 0.8" Polycarbonate Dome Tweeter 4 Ohm
 Manufacturer=
@@ -68684,7 +68684,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton DT94-8 0.8_ Polycarbonate Dome Tweeter 8 Ohm`,content:`[Driver]
+`},{name:`Visaton DT94-8 0.8_ Polycarbonate Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=DT94-8 0.8" Polycarbonate Dome Tweeter 8 Ohm
 Manufacturer=
@@ -68712,7 +68712,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton DTW72 1_2_ Polycarbonate Dome Tweeter 8 Ohm`,content:`[Driver]
+`},{name:`Visaton DTW72 1_2_ Polycarbonate Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=DTW72 1/2" Polycarbonate Dome Tweeter 8 Ohm
 Manufacturer=
@@ -68740,7 +68740,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton F8SC8 3.3_ Magnetically Shielded Full-Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Visaton F8SC8 3.3_ Magnetically Shielded Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=F8SC8 3.3" Magnetically Shielded Full-Range Driver 8 Ohm
 Manufacturer=
@@ -68768,7 +68768,7 @@ Dd=0.0618039
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FR 10-8 4_ Full-Range Speaker`,content:`[Driver]
+`},{name:`Visaton FR 10-8 4_ Full-Range Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FR 10-8 4" Full-Range Speaker
 Manufacturer=
@@ -68796,7 +68796,7 @@ Dd=0.0797885
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FR 131.30 5.1_ x 1.2_ Fullrange Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Visaton FR 131.30 5.1_ x 1.2_ Fullrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FR 131.30 5.1" x 1.2" Fullrange Speaker 8 Ohm
 Manufacturer=
@@ -68824,7 +68824,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FR 58-4 2.3_ Full Range Speaker 4 Ohm`,content:`[Driver]
+`},{name:`Visaton FR 58-4 2.3_ Full Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FR 58-4 2.3" Full Range Speaker 4 Ohm
 Manufacturer=
@@ -68852,7 +68852,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FR 7-4 2-1_2_ Full-Range Driver 4 Ohm`,content:`[Driver]
+`},{name:`Visaton FR 7-4 2-1_2_ Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FR 7-4 2-1/2" Full-Range Driver 4 Ohm
 Manufacturer=
@@ -68880,7 +68880,7 @@ Dd=0.0529257
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FR10-4 4_ Paper Cone Full-Range Driver 4 Ohm`,content:`[Driver]
+`},{name:`Visaton FR10-4 4_ Paper Cone Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FR10-4 4" Paper Cone Full-Range Driver 4 Ohm
 Manufacturer=
@@ -68908,7 +68908,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FR10HM-4 4_ Full-Range Driver 4 Ohm`,content:`[Driver]
+`},{name:`Visaton FR10HM-4 4_ Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FR10HM-4 4" Full-Range Driver 4 Ohm
 Manufacturer=
@@ -68936,7 +68936,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FR10HM-8 4_ Full-Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Visaton FR10HM-8 4_ Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FR10HM-8 4" Full-Range Driver 8 Ohm
 Manufacturer=
@@ -68964,7 +68964,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FR10HMP-4 4_ Full-Range Waterproof Driver 4 Ohm`,content:`[Driver]
+`},{name:`Visaton FR10HMP-4 4_ Full-Range Waterproof Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FR10HMP-4 4" Full-Range Waterproof Driver 4 Ohm
 Manufacturer=
@@ -68992,7 +68992,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FR12-4 5_ Paper Cone Low Profile Full-Range Driver 4 Ohm`,content:`[Driver]
+`},{name:`Visaton FR12-4 5_ Paper Cone Low Profile Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FR12-4 5" Paper Cone Low Profile Full-Range Driver 4 Ohm
 Manufacturer=
@@ -69020,7 +69020,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FR12-8 5_ Paper Cone Low Profile Full-Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Visaton FR12-8 5_ Paper Cone Low Profile Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FR12-8 5" Paper Cone Low Profile Full-Range Driver 8 Ohm
 Manufacturer=
@@ -69048,7 +69048,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FR13-4 5_ Full-Range Speaker 4 Ohm`,content:`[Driver]
+`},{name:`Visaton FR13-4 5_ Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FR13-4 5" Full-Range Speaker 4 Ohm
 Manufacturer=
@@ -69076,7 +69076,7 @@ Dd=0.105248
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FR58-8 2-1_4_ Full-Range Paper Cone Driver 8 Ohm`,content:`[Driver]
+`},{name:`Visaton FR58-8 2-1_4_ Full-Range Paper Cone Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FR58-8 2-1/4" Full-Range Paper Cone Driver 8 Ohm
 Manufacturer=
@@ -69104,7 +69104,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FR6.5-8 6.5_ Full-Range Driver with Tweeter Cone 8 Ohm`,content:`[Driver]
+`},{name:`Visaton FR6.5-8 6.5_ Full-Range Driver with Tweeter Cone 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FR6.5-8 6.5" Full-Range Driver with Tweeter Cone 8 Ohm
 Manufacturer=
@@ -69132,7 +69132,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FR77-8 3_ Full-Range Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Visaton FR77-8 3_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FR77-8 3" Full-Range Speaker 8 Ohm
 Manufacturer=
@@ -69160,7 +69160,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FR8-8 3.3_ Paper Cone Full-Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Visaton FR8-8 3.3_ Paper Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FR8-8 3.3" Paper Cone Full-Range Driver 8 Ohm
 Manufacturer=
@@ -69188,7 +69188,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FR87-4 3.4_ Full-Range Speaker 4 Ohm`,content:`[Driver]
+`},{name:`Visaton FR87-4 3.4_ Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FR87-4 3.4" Full-Range Speaker 4 Ohm
 Manufacturer=
@@ -69216,7 +69216,7 @@ Dd=0.0686366
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FR8JS 3.3_ Poly Cone Full-Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Visaton FR8JS 3.3_ Poly Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FR8JS 3.3" Poly Cone Full-Range Driver 8 Ohm
 Manufacturer=
@@ -69244,7 +69244,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FR8TA 3.3_ Full-Range Speaker 4 ohm`,content:`[Driver]
+`},{name:`Visaton FR8TA 3.3_ Full-Range Speaker 4 ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FR8TA 3.3" Full-Range Speaker 4 ohm
 Manufacturer=
@@ -69272,7 +69272,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FR8WP 3.3_ Full-Range Driver 8 Ohm Black`,content:`[Driver]
+`},{name:`Visaton FR8WP 3.3_ Full-Range Driver 8 Ohm Black`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FR8WP 3.3" Full-Range Driver 8 Ohm Black
 Manufacturer=
@@ -69300,7 +69300,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FR8WP-4 3.3_ Full-Range Driver 4 Ohm Black`,content:`[Driver]
+`},{name:`Visaton FR8WP-4 3.3_ Full-Range Driver 4 Ohm Black`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FR8WP-4 3.3" Full-Range Driver 4 Ohm Black
 Manufacturer=
@@ -69328,7 +69328,7 @@ Dd=0.0618039
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FR8WP-4 3.3_ Full-Range Driver 4 Ohm White`,content:`[Driver]
+`},{name:`Visaton FR8WP-4 3.3_ Full-Range Driver 4 Ohm White`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FR8WP-4 3.3" Full-Range Driver 4 Ohm White
 Manufacturer=
@@ -69356,7 +69356,7 @@ Dd=0.0618039
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FR8WP-8 3.3_ Full-Range Driver 8 Ohm White`,content:`[Driver]
+`},{name:`Visaton FR8WP-8 3.3_ Full-Range Driver 8 Ohm White`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FR8WP-8 3.3" Full-Range Driver 8 Ohm White
 Manufacturer=
@@ -69384,7 +69384,7 @@ Dd=0.0618039
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FRS 5X-8 2_ Full Range Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Visaton FRS 5X-8 2_ Full Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FRS 5X-8 2" Full Range Speaker 8 Ohm
 Manufacturer=
@@ -69412,7 +69412,7 @@ Dd=0.0398942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FRS10WP-4 4_ Full-Range Saltwater Resistant Driver 4 Ohm Black`,content:`[Driver]
+`},{name:`Visaton FRS10WP-4 4_ Full-Range Saltwater Resistant Driver 4 Ohm Black`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FRS10WP-4 4" Full-Range Saltwater Resistant Driver 4 Ohm Black
 Manufacturer=
@@ -69440,7 +69440,7 @@ Dd=0.0851908
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FRS10WP-4 4_ Full-Range Saltwater Resistant Driver 4 Ohm White`,content:`[Driver]
+`},{name:`Visaton FRS10WP-4 4_ Full-Range Saltwater Resistant Driver 4 Ohm White`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FRS10WP-4 4" Full-Range Saltwater Resistant Driver 4 Ohm White
 Manufacturer=
@@ -69468,7 +69468,7 @@ Dd=0.0851908
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FRS10WP-8 4_ Full Range Saltwater Resistant Driver 8 Ohm Black`,content:`[Driver]
+`},{name:`Visaton FRS10WP-8 4_ Full Range Saltwater Resistant Driver 8 Ohm Black`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FRS10WP-8 4" Full Range Saltwater Resistant Driver 8 Ohm Black
 Manufacturer=
@@ -69496,7 +69496,7 @@ Dd=0.0981106
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FRS10WP-8 4_ Full-Range Saltwater Resistant Driver 8 Ohm White`,content:`[Driver]
+`},{name:`Visaton FRS10WP-8 4_ Full-Range Saltwater Resistant Driver 8 Ohm White`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FRS10WP-8 4" Full-Range Saltwater Resistant Driver 8 Ohm White
 Manufacturer=
@@ -69524,7 +69524,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FRS5-8 2_ Full-Range Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Visaton FRS5-8 2_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FRS5-8 2" Full-Range Speaker 8 Ohm
 Manufacturer=
@@ -69552,7 +69552,7 @@ Dd=0.0390882
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FRS7-4 2.5_ Full-Range Speaker 4 Ohm`,content:`[Driver]
+`},{name:`Visaton FRS7-4 2.5_ Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FRS7-4 2.5" Full-Range Speaker 4 Ohm
 Manufacturer=
@@ -69580,7 +69580,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FRS7-8 2.5_ Full-Range Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Visaton FRS7-8 2.5_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FRS7-8 2.5" Full-Range Speaker 8 Ohm
 Manufacturer=
@@ -69608,7 +69608,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FRS7A8 2.5_ Full-Range Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Visaton FRS7A8 2.5_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FRS7A8 2.5" Full-Range Speaker 8 Ohm
 Manufacturer=
@@ -69636,7 +69636,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FRS7S-8 2-1_2_ Waterproof Paper Cone Full-Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Visaton FRS7S-8 2-1_2_ Waterproof Paper Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FRS7S-8 2-1/2" Waterproof Paper Cone Full-Range Driver 8 Ohm
 Manufacturer=
@@ -69664,7 +69664,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FRS7W-8 2-1_2_ Paper Cone Full-Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Visaton FRS7W-8 2-1_2_ Paper Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FRS7W-8 2-1/2" Paper Cone Full-Range Driver 8 Ohm
 Manufacturer=
@@ -69692,7 +69692,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FRS7XWP8 2.5_ Full-Range Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Visaton FRS7XWP8 2.5_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FRS7XWP8 2.5" Full-Range Speaker 8 Ohm
 Manufacturer=
@@ -69720,7 +69720,7 @@ Dd=0.0548165
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FRS8-4 3.3_ Full-Range Speaker 4 Ohm`,content:`[Driver]
+`},{name:`Visaton FRS8-4 3.3_ Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FRS8-4 3.3" Full-Range Speaker 4 Ohm
 Manufacturer=
@@ -69748,7 +69748,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FRS8-8 3.3_ Full-Range Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Visaton FRS8-8 3.3_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FRS8-8 3.3" Full-Range Speaker 8 Ohm
 Manufacturer=
@@ -69776,7 +69776,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FRS8M 3.3_ Paper Cone Full-Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Visaton FRS8M 3.3_ Paper Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FRS8M 3.3" Paper Cone Full-Range Driver 8 Ohm
 Manufacturer=
@@ -69804,7 +69804,7 @@ Dd=0.0607651
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FRW10N8 4_ Full-Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Visaton FRW10N8 4_ Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FRW10N8 4" Full-Range Driver 8 Ohm
 Manufacturer=
@@ -69832,7 +69832,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FRWS 5 R 2_ Full-Range Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Visaton FRWS 5 R 2_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FRWS 5 R 2" Full-Range Speaker 8 Ohm
 Manufacturer=
@@ -69860,7 +69860,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FRWS4ND8 1.6_ Full-Range Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Visaton FRWS4ND8 1.6_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FRWS4ND8 1.6" Full-Range Speaker 8 Ohm
 Manufacturer=
@@ -69888,7 +69888,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FRWS5-4 2_ Full-Range Speaker 4 Ohm`,content:`[Driver]
+`},{name:`Visaton FRWS5-4 2_ Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FRWS5-4 2" Full-Range Speaker 4 Ohm
 Manufacturer=
@@ -69916,7 +69916,7 @@ Dd=0.0390882
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton FRWS5-8 2_ Full-Range Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Visaton FRWS5-8 2_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=FRWS5-8 2" Full-Range Speaker 8 Ohm
 Manufacturer=
@@ -69944,7 +69944,7 @@ Dd=0.0390882
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton G 25 NDWG 1_ Fabric Dome Tweeter 8 Ohm`,content:`[Driver]
+`},{name:`Visaton G 25 NDWG 1_ Fabric Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=G 25 NDWG 1" Fabric Dome Tweeter 8 Ohm
 Manufacturer=
@@ -69972,7 +69972,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton G20SC8 0.8_ Magnetically Shielded Textile Dome Tweeter 8 Ohm`,content:`[Driver]
+`},{name:`Visaton G20SC8 0.8_ Magnetically Shielded Textile Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=G20SC8 0.8" Magnetically Shielded Textile Dome Tweeter 8 Ohm
 Manufacturer=
@@ -70000,7 +70000,7 @@ Dd=0.0225676
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton G25FFL8 1_ Fabric Dome Tweeter 8 Ohm`,content:`[Driver]
+`},{name:`Visaton G25FFL8 1_ Fabric Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=G25FFL8 1" Fabric Dome Tweeter 8 Ohm
 Manufacturer=
@@ -70028,7 +70028,7 @@ Dd=0.0249777
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton G50FFL8 2_ Fabric Dome Driver 8 Ohm`,content:`[Driver]
+`},{name:`Visaton G50FFL8 2_ Fabric Dome Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=G50FFL8 2" Fabric Dome Driver 8 Ohm
 Manufacturer=
@@ -70056,7 +70056,7 @@ Dd=0.0504627
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton GF200-2x4 8_ DVC Woofer 2x4 Ohm`,content:`[Driver]
+`},{name:`Visaton GF200-2x4 8_ DVC Woofer 2x4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=GF200-2x4 8" DVC Woofer 2x4 Ohm
 Manufacturer=
@@ -70084,7 +70084,7 @@ Dd=0.165068
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton HX10-4 4_ 2-way Aluminum Cone Coaxial Driver 4 Ohm`,content:`[Driver]
+`},{name:`Visaton HX10-4 4_ 2-way Aluminum Cone Coaxial Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=HX10-4 4" 2-way Aluminum Cone Coaxial Driver 4 Ohm
 Manufacturer=
@@ -70112,7 +70112,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton K 28 WP 1.1_ Miniature Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Visaton K 28 WP 1.1_ Miniature Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=K 28 WP 1.1" Miniature Speaker 8 Ohm
 Manufacturer=
@@ -70140,7 +70140,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton K23SQ8 0.9_ Miniature Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Visaton K23SQ8 0.9_ Miniature Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=K23SQ8 0.9" Miniature Speaker 8 Ohm
 Manufacturer=
@@ -70168,7 +70168,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton K28GI8 1.1_ Miniature Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Visaton K28GI8 1.1_ Miniature Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=K28GI8 1.1" Miniature Speaker 8 Ohm
 Manufacturer=
@@ -70196,7 +70196,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton K50 SQ 2_ Speaker 8 ohm`,content:`[Driver]
+`},{name:`Visaton K50 SQ 2_ Speaker 8 ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=K50 SQ 2" Speaker 8 ohm
 Manufacturer=
@@ -70224,7 +70224,7 @@ Dd=0.0398942
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton K50WP-16 2_ Full-Range Water Resistant Speaker 16 Ohm`,content:`[Driver]
+`},{name:`Visaton K50WP-16 2_ Full-Range Water Resistant Speaker 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=K50WP-16 2" Full-Range Water Resistant Speaker 16 Ohm
 Manufacturer=
@@ -70252,7 +70252,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton K50WP-8 2_ Full-Range Water Resistant Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Visaton K50WP-8 2_ Full-Range Water Resistant Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=K50WP-8 2" Full-Range Water Resistant Speaker 8 Ohm
 Manufacturer=
@@ -70280,7 +70280,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton K64WP-50 2-1_2_ Waterproof Full-Range Driver with Plastic Diaphragm 50 Ohm`,content:`[Driver]
+`},{name:`Visaton K64WP-50 2-1_2_ Waterproof Full-Range Driver with Plastic Diaphragm 50 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=K64WP-50 2-1/2" Waterproof Full-Range Driver with Plastic Diaphragm 50 Ohm
 Manufacturer=
@@ -70308,7 +70308,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton K64WP-8 2.5_ Full-Range Water Resistant Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Visaton K64WP-8 2.5_ Full-Range Water Resistant Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=K64WP-8 2.5" Full-Range Water Resistant Speaker 8 Ohm
 Manufacturer=
@@ -70336,7 +70336,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton KT100V4 4_ Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Visaton KT100V4 4_ Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=KT100V4 4" Woofer 4 Ohm
 Manufacturer=
@@ -70364,7 +70364,7 @@ Dd=0.0820697
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton M 10 4_ Sealed Back Cone Midrange Driver 8 Ohm`,content:`[Driver]
+`},{name:`Visaton M 10 4_ Sealed Back Cone Midrange Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=M 10 4" Sealed Back Cone Midrange Driver 8 Ohm
 Manufacturer=
@@ -70392,7 +70392,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton MR130-8 5_ Midrange Driver 8 Ohm`,content:`[Driver]
+`},{name:`Visaton MR130-8 5_ Midrange Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=MR130-8 5" Midrange Driver 8 Ohm
 Manufacturer=
@@ -70420,7 +70420,7 @@ Dd=0.094407
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton PAM13-8 5_ Midrange Driver 8 Ohm`,content:`[Driver]
+`},{name:`Visaton PAM13-8 5_ Midrange Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=PAM13-8 5" Midrange Driver 8 Ohm
 Manufacturer=
@@ -70448,7 +70448,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton PAW25-8 10_ Midrange Driver 8 Ohm`,content:`[Driver]
+`},{name:`Visaton PAW25-8 10_ Midrange Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=PAW25-8 10" Midrange Driver 8 Ohm
 Manufacturer=
@@ -70476,7 +70476,7 @@ Dd=0.212003
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton PAW30ND8 12_ Bass Midrange Driver 8 Ohm`,content:`[Driver]
+`},{name:`Visaton PAW30ND8 12_ Bass Midrange Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=PAW30ND8 12" Bass Midrange Driver 8 Ohm
 Manufacturer=
@@ -70504,7 +70504,7 @@ Dd=0.261969
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton PAW38-8 15_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Visaton PAW38-8 15_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=PAW38-8 15" Woofer 8 Ohm
 Manufacturer=
@@ -70532,7 +70532,7 @@ Dd=0.338137
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton PAW46-8 18_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Visaton PAW46-8 18_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=PAW46-8 18" Woofer 8 Ohm
 Manufacturer=
@@ -70560,7 +70560,7 @@ Dd=0.392507
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton PL 5 RV 1-5_8_ Full Range Speaker 4 Ohm`,content:`[Driver]
+`},{name:`Visaton PL 5 RV 1-5_8_ Full Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=PL 5 RV 1-5/8" Full Range Speaker 4 Ohm
 Manufacturer=
@@ -70588,7 +70588,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton R10ND8 4_ Full-Range Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Visaton R10ND8 4_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=R10ND8 4" Full-Range Speaker 8 Ohm
 Manufacturer=
@@ -70616,7 +70616,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton R10S 4_ Full-Range Speaker 4 Ohm`,content:`[Driver]
+`},{name:`Visaton R10S 4_ Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=R10S 4" Full-Range Speaker 4 Ohm
 Manufacturer=
@@ -70644,7 +70644,7 @@ Dd=0.0844402
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton R10S 4_ Full-Range Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Visaton R10S 4_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=R10S 4" Full-Range Speaker 8 Ohm
 Manufacturer=
@@ -70672,7 +70672,7 @@ Dd=0.0844402
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton R10SC 4_ Full-Range Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Visaton R10SC 4_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=R10SC 4" Full-Range Speaker 8 Ohm
 Manufacturer=
@@ -70700,7 +70700,7 @@ Dd=0.0844402
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton R10SC-4 4_ Full-Range Speaker 4 Ohm`,content:`[Driver]
+`},{name:`Visaton R10SC-4 4_ Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=R10SC-4 4" Full-Range Speaker 4 Ohm
 Manufacturer=
@@ -70728,7 +70728,7 @@ Dd=0.0844402
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton R10SCSpezial8 4_ Magnetically Shielded Full-Range Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Visaton R10SCSpezial8 4_ Magnetically Shielded Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=R10SCSpezial8 4" Magnetically Shielded Full-Range Speaker 8 Ohm
 Manufacturer=
@@ -70756,7 +70756,7 @@ Dd=0.0844402
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton R10STE4 4_ Full-Range Speaker 4 Ohm`,content:`[Driver]
+`},{name:`Visaton R10STE4 4_ Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=R10STE4 4" Full-Range Speaker 4 Ohm
 Manufacturer=
@@ -70784,7 +70784,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton R10STE4 4_ Full-Range Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Visaton R10STE4 4_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=R10STE4 4" Full-Range Speaker 8 Ohm
 Manufacturer=
@@ -70812,7 +70812,7 @@ Dd=0.0844402
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton SC 4.7 ND Full-Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Visaton SC 4.7 ND Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=SC 4.7 ND Full-Range Driver 8 Ohm
 Manufacturer=
@@ -70840,7 +70840,7 @@ Dd=0.0451352
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton SC 5.9 2_ x 3.5_ Shielded Full-Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Visaton SC 5.9 2_ x 3.5_ Shielded Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=SC 5.9 2" x 3.5" Shielded Full-Range Driver 8 Ohm
 Manufacturer=
@@ -70868,7 +70868,7 @@ Dd=0.056306
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton SC 5.9 OM-4 2_ x 3-1_2_ Full-Range Driver 4 Ohm`,content:`[Driver]
+`},{name:`Visaton SC 5.9 OM-4 2_ x 3-1_2_ Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=SC 5.9 OM-4 2" x 3-1/2" Full-Range Driver 4 Ohm
 Manufacturer=
@@ -70896,7 +70896,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton SC10N-8 1_ Soft Dome Tweeter Shielded 8 Ohm`,content:`[Driver]
+`},{name:`Visaton SC10N-8 1_ Soft Dome Tweeter Shielded 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=SC10N-8 1" Soft Dome Tweeter Shielded 8 Ohm
 Manufacturer=
@@ -70924,7 +70924,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton SC13-8 5_ Paper Cone Full-Range Driver Shielded 8 Ohm`,content:`[Driver]
+`},{name:`Visaton SC13-8 5_ Paper Cone Full-Range Driver Shielded 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=SC13-8 5" Paper Cone Full-Range Driver Shielded 8 Ohm
 Manufacturer=
@@ -70952,7 +70952,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton SC4.9FL8 1.6_ x 3.5_ Full-Range Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Visaton SC4.9FL8 1.6_ x 3.5_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=SC4.9FL8 1.6" x 3.5" Full-Range Speaker 8 Ohm
 Manufacturer=
@@ -70980,7 +70980,7 @@ Dd=0.0547002
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton SC5-8 Shielded 1_2_ Polycarbonate Tweeter 8 Ohm`,content:`[Driver]
+`},{name:`Visaton SC5-8 Shielded 1_2_ Polycarbonate Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=SC5-8 Shielded 1/2" Polycarbonate Tweeter 8 Ohm
 Manufacturer=
@@ -71008,7 +71008,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton SC5.9ND4 Magnetically Shielded 2_ x 3.5_ Full-Range Driver 4 Ohm`,content:`[Driver]
+`},{name:`Visaton SC5.9ND4 Magnetically Shielded 2_ x 3.5_ Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=SC5.9ND4 Magnetically Shielded 2" x 3.5" Full-Range Driver 4 Ohm
 Manufacturer=
@@ -71036,7 +71036,7 @@ Dd=0.0580869
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton SL70NDV4 2.5_ Full-Range Speaker 4 Ohm`,content:`[Driver]
+`},{name:`Visaton SL70NDV4 2.5_ Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=SL70NDV4 2.5" Full-Range Speaker 4 Ohm
 Manufacturer=
@@ -71064,7 +71064,7 @@ Dd=0.0524423
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton SL713-4 2-3_4_ x 5_ Paper Cone Full-Range Driver 4 Ohm`,content:`[Driver]
+`},{name:`Visaton SL713-4 2-3_4_ x 5_ Paper Cone Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=SL713-4 2-3/4" x 5" Paper Cone Full-Range Driver 4 Ohm
 Manufacturer=
@@ -71092,7 +71092,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton SL87 FE-8 Ohm 3.4_ Full Range Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Visaton SL87 FE-8 Ohm 3.4_ Full Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=SL87 FE-8 Ohm 3.4" Full Range Speaker 8 Ohm
 Manufacturer=
@@ -71120,7 +71120,7 @@ Dd=0.0689143
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton SL87ND 3.4_ Full-Range Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Visaton SL87ND 3.4_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=SL87ND 3.4" Full-Range Speaker 8 Ohm
 Manufacturer=
@@ -71148,7 +71148,7 @@ Dd=0.0689143
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton SL87WPM-4 3.3_ Full-Range Speaker 4 Ohm`,content:`[Driver]
+`},{name:`Visaton SL87WPM-4 3.3_ Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=SL87WPM-4 3.3" Full-Range Speaker 4 Ohm
 Manufacturer=
@@ -71176,7 +71176,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton SL87WPM-8 3.3_ Full-Range Speaker 8 Ohm`,content:`[Driver]
+`},{name:`Visaton SL87WPM-8 3.3_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=SL87WPM-8 3.3" Full-Range Speaker 8 Ohm
 Manufacturer=
@@ -71204,7 +71204,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton SL87XA-4 3-1_4_ Waterproof Poly Cone Full-Range Driver 4 Ohm`,content:`[Driver]
+`},{name:`Visaton SL87XA-4 3-1_4_ Waterproof Poly Cone Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=SL87XA-4 3-1/4" Waterproof Poly Cone Full-Range Driver 4 Ohm
 Manufacturer=
@@ -71232,7 +71232,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton SL87XA-8 3-1_4_ Waterproof Poly Cone Full-Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Visaton SL87XA-8 3-1_4_ Waterproof Poly Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=SL87XA-8 3-1/4" Waterproof Poly Cone Full-Range Driver 8 Ohm
 Manufacturer=
@@ -71260,7 +71260,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton TIW200XS8 8_ High-End Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Visaton TIW200XS8 8_ High-End Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=TIW200XS8 8" High-End Woofer 8 Ohm
 Manufacturer=
@@ -71288,7 +71288,7 @@ Dd=0.161953
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton TIW250XS8 10_ High-End Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Visaton TIW250XS8 10_ High-End Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=TIW250XS8 10" High-End Woofer 8 Ohm
 Manufacturer=
@@ -71316,7 +71316,7 @@ Dd=0.199949
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton TIW300-8 12_ High-End Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Visaton TIW300-8 12_ High-End Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=TIW300-8 12" High-End Woofer 8 Ohm
 Manufacturer=
@@ -71344,7 +71344,7 @@ Dd=0.254824
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton TW6NG8 2_ Cone Tweeter 8 Ohm`,content:`[Driver]
+`},{name:`Visaton TW6NG8 2_ Cone Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=TW6NG8 2" Cone Tweeter 8 Ohm
 Manufacturer=
@@ -71372,7 +71372,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton TW70-8 2.5_ Cone Tweeter 8 Ohm`,content:`[Driver]
+`},{name:`Visaton TW70-8 2.5_ Cone Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=TW70-8 2.5" Cone Tweeter 8 Ohm
 Manufacturer=
@@ -71400,7 +71400,7 @@ Dd=0.0504627
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W 100 C 4_ Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Visaton W 100 C 4_ Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=W 100 C 4" Woofer 4 Ohm
 Manufacturer=
@@ -71428,7 +71428,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W 100 C 4_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Visaton W 100 C 4_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=W 100 C 4" Woofer 8 Ohm
 Manufacturer=
@@ -71456,7 +71456,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W 150 X 5.9_ Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Visaton W 150 X 5.9_ Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=W 150 X 5.9" Woofer 4 Ohm
 Manufacturer=
@@ -71484,7 +71484,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W100S - 8`,content:`[Driver]
+`},{name:`Visaton W100S - 8`,date:``,content:`[Driver]
 Brand=Visaton
 Model=W100S - 8
 Manufacturer=
@@ -71512,7 +71512,7 @@ Dd=0.09398003123592383
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W100S-4`,content:`[Driver]
+`},{name:`Visaton W100S-4`,date:``,content:`[Driver]
 Brand=Visaton
 Model=W100S-4
 Manufacturer=
@@ -71540,7 +71540,7 @@ Dd=0.09398
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W100S-8 4_ Woofer with Treated Paper Cone 8 Ohm`,content:`[Driver]
+`},{name:`Visaton W100S-8 4_ Woofer with Treated Paper Cone 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=W100S-8 4" Woofer with Treated Paper Cone 8 Ohm
 Manufacturer=
@@ -71568,7 +71568,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W130S - 4`,content:`[Driver]
+`},{name:`Visaton W130S - 4`,date:``,content:`[Driver]
 Brand=Visaton
 Model=W130S - 4
 Manufacturer=
@@ -71596,7 +71596,7 @@ Dd=0.1069339760062178
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W130S - 8`,content:`[Driver]
+`},{name:`Visaton W130S - 8`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=W130S - 8
 Manufacturer=
@@ -71624,7 +71624,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W130S-4 5_ Woofer with Treated Paper Cone 4 Ohm`,content:`[Driver]
+`},{name:`Visaton W130S-4 5_ Woofer with Treated Paper Cone 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=W130S-4 5" Woofer with Treated Paper Cone 4 Ohm
 Manufacturer=
@@ -71652,7 +71652,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W130S-8 5_ Woofer with Treated Paper Cone 8 Ohm`,content:`[Driver]
+`},{name:`Visaton W130S-8 5_ Woofer with Treated Paper Cone 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=W130S-8 5" Woofer with Treated Paper Cone 8 Ohm
 Manufacturer=
@@ -71680,7 +71680,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W150X4 5.9_ Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Visaton W150X4 5.9_ Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=W150X4 5.9" Woofer 4 Ohm
 Manufacturer=
@@ -71708,7 +71708,7 @@ Dd=0.102998
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W170 - 8`,content:`[Driver]
+`},{name:`Visaton W170 - 8`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=W170 - 8
 Manufacturer=
@@ -71736,7 +71736,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W170-8 6.5_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Visaton W170-8 6.5_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=W170-8 6.5" Woofer 8 Ohm
 Manufacturer=
@@ -71764,7 +71764,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W170S - 4`,content:`[Driver]
+`},{name:`Visaton W170S - 4`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=W170S - 4
 Manufacturer=
@@ -71792,7 +71792,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W170S - 8`,content:`[Driver]
+`},{name:`Visaton W170S - 8`,date:``,content:`[Driver]
 Brand=Visaton
 Model=W170S - 8
 Manufacturer=
@@ -71820,7 +71820,7 @@ Dd=0.14808187173063037
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W170S-4 6.5_ Woofer with Treated Paper Cone 4 Ohm`,content:`[Driver]
+`},{name:`Visaton W170S-4 6.5_ Woofer with Treated Paper Cone 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=W170S-4 6.5" Woofer with Treated Paper Cone 4 Ohm
 Manufacturer=
@@ -71848,7 +71848,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W170S-8 6.5_ Woofer with Treated Paper Cone 8 Ohm`,content:`[Driver]
+`},{name:`Visaton W170S-8 6.5_ Woofer with Treated Paper Cone 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=W170S-8 6.5" Woofer with Treated Paper Cone 8 Ohm
 Manufacturer=
@@ -71876,7 +71876,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W200 - 8`,content:`[Driver]
+`},{name:`Visaton W200 - 8`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=W200 - 8
 Manufacturer=
@@ -71904,7 +71904,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W200-8 8_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Visaton W200-8 8_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=W200-8 8" Woofer 8 Ohm
 Manufacturer=
@@ -71932,7 +71932,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W200S - 4`,content:`[Driver]
+`},{name:`Visaton W200S - 4`,date:``,content:`[Driver]
 Brand=Visaton
 Model=W200S - 4
 Manufacturer=
@@ -71960,7 +71960,7 @@ Dd=0.184149958964338
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W200S - 8`,content:`[Driver]
+`},{name:`Visaton W200S - 8`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=W200S - 8
 Manufacturer=
@@ -71988,7 +71988,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W200S-4 8_ Woofer with Treated Paper Cone 4 Ohm`,content:`[Driver]
+`},{name:`Visaton W200S-4 8_ Woofer with Treated Paper Cone 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=W200S-4 8" Woofer with Treated Paper Cone 4 Ohm
 Manufacturer=
@@ -72016,7 +72016,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W200S-8 8_ Woofer with Treated Paper Cone 8 Ohm`,content:`[Driver]
+`},{name:`Visaton W200S-8 8_ Woofer with Treated Paper Cone 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=W200S-8 8" Woofer with Treated Paper Cone 8 Ohm
 Manufacturer=
@@ -72044,7 +72044,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W250 - 8`,content:`[Driver]
+`},{name:`Visaton W250 - 8`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=W250 - 8
 Manufacturer=
@@ -72072,7 +72072,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W250-8 10_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Visaton W250-8 10_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=W250-8 10" Woofer 8 Ohm
 Manufacturer=
@@ -72100,7 +72100,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W250S - 4`,content:`[Driver]
+`},{name:`Visaton W250S - 4`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=W250S - 4
 Manufacturer=
@@ -72128,7 +72128,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W250S - 8`,content:`[Driver]
+`},{name:`Visaton W250S - 8`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=W250S - 8
 Manufacturer=
@@ -72156,7 +72156,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W250S-4 10_ Woofer with Treated Paper Cone 4 Ohm`,content:`[Driver]
+`},{name:`Visaton W250S-4 10_ Woofer with Treated Paper Cone 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=W250S-4 10" Woofer with Treated Paper Cone 4 Ohm
 Manufacturer=
@@ -72184,7 +72184,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W250S-8 10_ Woofer with Treated Paper Cone 8 Ohm`,content:`[Driver]
+`},{name:`Visaton W250S-8 10_ Woofer with Treated Paper Cone 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=W250S-8 10" Woofer with Treated Paper Cone 8 Ohm
 Manufacturer=
@@ -72212,7 +72212,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W300 - 8`,content:`[Driver]
+`},{name:`Visaton W300 - 8`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=W300 - 8
 Manufacturer=
@@ -72240,7 +72240,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton W300-8 12_ Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Visaton W300-8 12_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=W300-8 12" Woofer 8 Ohm
 Manufacturer=
@@ -72268,7 +72268,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton WS-17E 6.5_ HiFi Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Visaton WS-17E 6.5_ HiFi Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=WS-17E 6.5" HiFi Woofer 8 Ohm
 Manufacturer=
@@ -72296,7 +72296,7 @@ Dd=0.134935
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton WS13E 5_ Paper Cone Full-Range Driver 8 Ohm`,content:`[Driver]
+`},{name:`Visaton WS13E 5_ Paper Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=WS13E 5" Paper Cone Full-Range Driver 8 Ohm
 Manufacturer=
@@ -72324,7 +72324,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton WS17E-4 6-1_2_ Treated Paper Cone Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Visaton WS17E-4 6-1_2_ Treated Paper Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=WS17E-4 6-1/2" Treated Paper Cone Woofer 4 Ohm
 Manufacturer=
@@ -72352,7 +72352,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton WS20E-4 8_ Poly Cone Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Visaton WS20E-4 8_ Poly Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=WS20E-4 8" Poly Cone Woofer 4 Ohm
 Manufacturer=
@@ -72380,7 +72380,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton WS20E-8 8_ Poly Cone Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Visaton WS20E-8 8_ Poly Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=WS20E-8 8" Poly Cone Woofer 8 Ohm
 Manufacturer=
@@ -72408,7 +72408,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton WS25 E 10_ Paper Cone Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Visaton WS25 E 10_ Paper Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=WS25 E 10" Paper Cone Woofer 8 Ohm
 Manufacturer=
@@ -72436,7 +72436,7 @@ Dd=0.209891
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Visaton WS25`,content:`[Driver]
+`},{name:`Visaton WS25`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
 Model=WS25
 Manufacturer=
@@ -72464,7 +72464,7 @@ Dd=0.209891
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor FR040WA02 1-1_2_ Neodymium Aluminum Cone Full-Range 8 Ohm`,content:`[Driver]
+`},{name:`Wavecor FR040WA02 1-1_2_ Neodymium Aluminum Cone Full-Range 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=FR040WA02 1-1/2" Neodymium Aluminum Cone Full-Range 8 Ohm
 Manufacturer=
@@ -72492,7 +72492,7 @@ Dd=0.0315139
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor SW118WA01 4-1_2_ Balanced Drive Paper Cone Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Wavecor SW118WA01 4-1_2_ Balanced Drive Paper Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=SW118WA01 4-1/2" Balanced Drive Paper Cone Subwoofer 4 Ohm
 Manufacturer=
@@ -72520,7 +72520,7 @@ Dd=0.0789865
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor SW146WA01 5-3_4_ Balanced Drive Paper Cone Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Wavecor SW146WA01 5-3_4_ Balanced Drive Paper Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=SW146WA01 5-3/4" Balanced Drive Paper Cone Subwoofer 4 Ohm
 Manufacturer=
@@ -72548,7 +72548,7 @@ Dd=0.104031
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor SW168WA01 6-1_2_ Balanced Drive Paper Cone Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Wavecor SW168WA01 6-1_2_ Balanced Drive Paper Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=SW168WA01 6-1/2" Balanced Drive Paper Cone Subwoofer 4 Ohm
 Manufacturer=
@@ -72576,7 +72576,7 @@ Dd=0.127162
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor SW178WA01 7_ Aluminum Cone Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Wavecor SW178WA01 7_ Aluminum Cone Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=SW178WA01 7" Aluminum Cone Subwoofer 8 Ohm
 Manufacturer=
@@ -72604,7 +72604,7 @@ Dd=0.129149
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor SW182BD03 7_ Balanced Drive Black Aluminum Cone Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Wavecor SW182BD03 7_ Balanced Drive Black Aluminum Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=SW182BD03 7" Balanced Drive Black Aluminum Cone Subwoofer 4 Ohm
 Manufacturer=
@@ -72632,7 +72632,7 @@ Dd=0.129149
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor SW182BD04 7_ Balanced Drive Black Aluminum Cone Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Wavecor SW182BD04 7_ Balanced Drive Black Aluminum Cone Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=SW182BD04 7" Balanced Drive Black Aluminum Cone Subwoofer 8 Ohm
 Manufacturer=
@@ -72660,7 +72660,7 @@ Dd=0.129149
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor SW215WA01 8-1_2_ Balanced Drive Paper Cone Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Wavecor SW215WA01 8-1_2_ Balanced Drive Paper Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=SW215WA01 8-1/2" Balanced Drive Paper Cone Subwoofer 4 Ohm
 Manufacturer=
@@ -72688,7 +72688,7 @@ Dd=0.161953
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor SW215WA02 8-1_2_ Balanced Drive Paper Cone Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Wavecor SW215WA02 8-1_2_ Balanced Drive Paper Cone Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=SW215WA02 8-1/2" Balanced Drive Paper Cone Subwoofer 8 Ohm
 Manufacturer=
@@ -72716,7 +72716,7 @@ Dd=0.161953
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor SW223BD02 8-3_4_ Black Aluminum Cone Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Wavecor SW223BD02 8-3_4_ Black Aluminum Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=SW223BD02 8-3/4" Black Aluminum Cone Subwoofer 4 Ohm
 Manufacturer=
@@ -72744,7 +72744,7 @@ Dd=0.161953
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor SW259WA02 10-1_4_ Aluminum Cone Subwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Wavecor SW259WA02 10-1_4_ Aluminum Cone Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=SW259WA02 10-1/4" Aluminum Cone Subwoofer 8 Ohm
 Manufacturer=
@@ -72772,7 +72772,7 @@ Dd=0.199311
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor SW270WA01 10-1_2_ Balanced Drive Paper Cone Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Wavecor SW270WA01 10-1_2_ Balanced Drive Paper Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=SW270WA01 10-1/2" Balanced Drive Paper Cone Subwoofer 4 Ohm
 Manufacturer=
@@ -72800,7 +72800,7 @@ Dd=0.199311
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor SW280WA01 11_ Shallow Glass Fiber_PMI Foam Sandwich Cone Subwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Wavecor SW280WA01 11_ Shallow Glass Fiber_PMI Foam Sandwich Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=SW280WA01 11" Shallow Glass Fiber/PMI Foam Sandwich Cone Subwoofer 4 Ohm
 Manufacturer=
@@ -72828,7 +72828,7 @@ Dd=0.206527
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor TW022WA09 22mm Chambered Neo Textile Tweeter 4 Ohm`,content:`[Driver]
+`},{name:`Wavecor TW022WA09 22mm Chambered Neo Textile Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=TW022WA09 22mm Chambered Neo Textile Tweeter 4 Ohm
 Manufacturer=
@@ -72856,7 +72856,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor TW022WA10 22mm Chambered Neo Textile Tweeter 8 Ohm`,content:`[Driver]
+`},{name:`Wavecor TW022WA10 22mm Chambered Neo Textile Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=TW022WA10 22mm Chambered Neo Textile Tweeter 8 Ohm
 Manufacturer=
@@ -72884,7 +72884,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor TW030WA02 30mm Textile Dome Neodymium Tweeter with Heat Sink and Ferrofluid`,content:`[Driver]
+`},{name:`Wavecor TW030WA02 30mm Textile Dome Neodymium Tweeter with Heat Sink and Ferrofluid`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=TW030WA02 30mm Textile Dome Neodymium Tweeter with Heat Sink and Ferrofluid
 Manufacturer=
@@ -72912,7 +72912,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor TW030WA06 30mm Textile Dome Tweeter with Rear Chamber with Ferrofluid 4 Ohm`,content:`[Driver]
+`},{name:`Wavecor TW030WA06 30mm Textile Dome Tweeter with Rear Chamber with Ferrofluid 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=TW030WA06 30mm Textile Dome Tweeter with Rear Chamber with Ferrofluid 4 Ohm
 Manufacturer=
@@ -72940,7 +72940,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor TW030WA07 30mm Textile Dome Tweeter with Rear Chamber 8 Ohm`,content:`[Driver]
+`},{name:`Wavecor TW030WA07 30mm Textile Dome Tweeter with Rear Chamber 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=TW030WA07 30mm Textile Dome Tweeter with Rear Chamber 8 Ohm
 Manufacturer=
@@ -72968,7 +72968,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor TW030WA11 30mm Semi Horn Loaded Textile Dome Tweeter with Rear Chamber 4 Ohm`,content:`[Driver]
+`},{name:`Wavecor TW030WA11 30mm Semi Horn Loaded Textile Dome Tweeter with Rear Chamber 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=TW030WA11 30mm Semi Horn Loaded Textile Dome Tweeter with Rear Chamber 4 Ohm
 Manufacturer=
@@ -72996,7 +72996,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor TW030WA12 30mm Semi Horn Loaded Textile Dome Tweeter with Rear Chamber 8 Ohm`,content:`[Driver]
+`},{name:`Wavecor TW030WA12 30mm Semi Horn Loaded Textile Dome Tweeter with Rear Chamber 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=TW030WA12 30mm Semi Horn Loaded Textile Dome Tweeter with Rear Chamber 8 Ohm
 Manufacturer=
@@ -73024,7 +73024,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor TW030WA13 30mm Textile Dome Neodymium Tweeter with Heat Sink and Rear Chamber 4 Ohm`,content:`[Driver]
+`},{name:`Wavecor TW030WA13 30mm Textile Dome Neodymium Tweeter with Heat Sink and Rear Chamber 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=TW030WA13 30mm Textile Dome Neodymium Tweeter with Heat Sink and Rear Chamber 4 Ohm
 Manufacturer=
@@ -73052,7 +73052,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor TW030WA14 30mm Textile Dome Neodymium Tweeter with Heat Sink and Rear Chamber 8 Ohm`,content:`[Driver]
+`},{name:`Wavecor TW030WA14 30mm Textile Dome Neodymium Tweeter with Heat Sink and Rear Chamber 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=TW030WA14 30mm Textile Dome Neodymium Tweeter with Heat Sink and Rear Chamber 8 Ohm
 Manufacturer=
@@ -73080,7 +73080,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor TW030WA21 30mm Graphene Dome Tweeter 4 Ohm`,content:`[Driver]
+`},{name:`Wavecor TW030WA21 30mm Graphene Dome Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=TW030WA21 30mm Graphene Dome Tweeter 4 Ohm
 Manufacturer=
@@ -73108,7 +73108,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor TW030WA22 30mm Graphene Dome Tweeter 8 Ohm`,content:`[Driver]
+`},{name:`Wavecor TW030WA22 30mm Graphene Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=TW030WA22 30mm Graphene Dome Tweeter 8 Ohm
 Manufacturer=
@@ -73136,7 +73136,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor TW030WA23 30mm Chambered Graphene Dome Neo Tweeter 4 Ohm`,content:`[Driver]
+`},{name:`Wavecor TW030WA23 30mm Chambered Graphene Dome Neo Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=TW030WA23 30mm Chambered Graphene Dome Neo Tweeter 4 Ohm
 Manufacturer=
@@ -73164,7 +73164,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor TW030WA24 30mm Chambered Graphene Dome Neo Tweeter 8 Ohm`,content:`[Driver]
+`},{name:`Wavecor TW030WA24 30mm Chambered Graphene Dome Neo Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=TW030WA24 30mm Chambered Graphene Dome Neo Tweeter 8 Ohm
 Manufacturer=
@@ -73192,7 +73192,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor TW045WA01 45mm Coaxial Neo Tweeter 4 Ohm White`,content:`[Driver]
+`},{name:`Wavecor TW045WA01 45mm Coaxial Neo Tweeter 4 Ohm White`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=TW045WA01 45mm Coaxial Neo Tweeter 4 Ohm White
 Manufacturer=
@@ -73220,7 +73220,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor TW045WA02 45mm Coaxial Neo Tweeter 4 Ohm Black`,content:`[Driver]
+`},{name:`Wavecor TW045WA02 45mm Coaxial Neo Tweeter 4 Ohm Black`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=TW045WA02 45mm Coaxial Neo Tweeter 4 Ohm Black
 Manufacturer=
@@ -73248,7 +73248,7 @@ Dd=
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF090WA01 3-1_2_ Paper Cone Mid-Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF090WA01 3-1_2_ Paper Cone Mid-Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF090WA01 3-1/2" Paper Cone Mid-Woofer 4 Ohm
 Manufacturer=
@@ -73276,7 +73276,7 @@ Dd=0.0677028
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF090WA01`,content:`[Driver]
+`},{name:`Wavecor WF090WA01`,date:``,content:`[Driver]
 Brand=Wavecor
 Model=WF090WA01
 Manufacturer=
@@ -73304,7 +73304,7 @@ Dd=0.06770275002573076
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF090WA02`,content:`[Driver]
+`},{name:`Wavecor WF090WA02`,date:``,content:`[Driver]
 Brand=Wavecor
 Model=WF090WA02
 Manufacturer=
@@ -73332,7 +73332,7 @@ Dd=0.075946
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF095WA01 3-3_4_ Paper Cone Midwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF095WA01 3-3_4_ Paper Cone Midwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF095WA01 3-3/4" Paper Cone Midwoofer 4 Ohm
 Manufacturer=
@@ -73360,7 +73360,7 @@ Dd=0.0667558
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF095WA02 3-3_4_ Paper Cone Midwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF095WA02 3-3_4_ Paper Cone Midwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF095WA02 3-3/4" Paper Cone Midwoofer 8 Ohm
 Manufacturer=
@@ -73388,7 +73388,7 @@ Dd=0.0677028
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF118WA01`,content:`[Driver]
+`},{name:`Wavecor WF118WA01`,date:``,content:`[Driver]
 Brand=Wavecor
 Model=WF118WA01
 Manufacturer=
@@ -73416,7 +73416,7 @@ Dd=0.092456
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF118WA02 4-1_2_ Paper Cone Mid-Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF118WA02 4-1_2_ Paper Cone Mid-Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF118WA02 4-1/2" Paper Cone Mid-Woofer 8 Ohm
 Manufacturer=
@@ -73444,7 +73444,7 @@ Dd=0.0836828
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF118WA02`,content:`[Driver]
+`},{name:`Wavecor WF118WA02`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF118WA02
 Manufacturer=
@@ -73472,7 +73472,7 @@ Dd=0.0836828
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF118WA05`,content:`[Driver]
+`},{name:`Wavecor WF118WA05`,date:``,content:`[Driver]
 Brand=Wavecor
 Model=WF118WA05
 Manufacturer=
@@ -73500,7 +73500,7 @@ Dd=0.092964
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF118WA06`,content:`[Driver]
+`},{name:`Wavecor WF118WA06`,date:``,content:`[Driver]
 Brand=Wavecor
 Model=WF118WA06
 Manufacturer=
@@ -73528,7 +73528,7 @@ Dd=0.092964
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF118WA07 4-1_2_ Balanced Drive Paper Cone Mid-Woofer with Truncated Frame 4 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF118WA07 4-1_2_ Balanced Drive Paper Cone Mid-Woofer with Truncated Frame 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF118WA07 4-1/2" Balanced Drive Paper Cone Mid-Woofer with Truncated Frame 4 Ohm
 Manufacturer=
@@ -73556,7 +73556,7 @@ Dd=0.0829186
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF118WA07`,content:`[Driver]
+`},{name:`Wavecor WF118WA07`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF118WA07
 Manufacturer=
@@ -73584,7 +73584,7 @@ Dd=0.0829186
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF118WA08 4-1_2_ Balanced Drive Paper Cone Mid-Woofer with Truncated Frame 8 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF118WA08 4-1_2_ Balanced Drive Paper Cone Mid-Woofer with Truncated Frame 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF118WA08 4-1/2" Balanced Drive Paper Cone Mid-Woofer with Truncated Frame 8 Ohm
 Manufacturer=
@@ -73612,7 +73612,7 @@ Dd=0.0829186
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF118WA08`,content:`[Driver]
+`},{name:`Wavecor WF118WA08`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF118WA08
 Manufacturer=
@@ -73640,7 +73640,7 @@ Dd=0.0829186
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF120BD03`,content:`[Driver]
+`},{name:`Wavecor WF120BD03`,date:``,content:`[Driver]
 Brand=Wavecor
 Model=WF120BD03
 Manufacturer=
@@ -73668,7 +73668,7 @@ Dd=0.100076
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF120BD04`,content:`[Driver]
+`},{name:`Wavecor WF120BD04`,date:``,content:`[Driver]
 Brand=Wavecor
 Model=WF120BD04
 Manufacturer=
@@ -73696,7 +73696,7 @@ Dd=0.100076
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF120BD05 4-3_4_ Balanced Drive Paper_Glass Fiber Cone Mid-Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF120BD05 4-3_4_ Balanced Drive Paper_Glass Fiber Cone Mid-Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF120BD05 4-3/4" Balanced Drive Paper/Glass Fiber Cone Mid-Woofer 4 Ohm
 Manufacturer=
@@ -73724,7 +73724,7 @@ Dd=0.0829186
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF120BD05`,content:`[Driver]
+`},{name:`Wavecor WF120BD05`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF120BD05
 Manufacturer=
@@ -73752,7 +73752,7 @@ Dd=0.0829186
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF120BD06`,content:`[Driver]
+`},{name:`Wavecor WF120BD06`,date:``,content:`[Driver]
 Brand=Wavecor
 Model=WF120BD06
 Manufacturer=
@@ -73780,7 +73780,7 @@ Dd=0.100076
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF120BD07`,content:`[Driver]
+`},{name:`Wavecor WF120BD07`,date:``,content:`[Driver]
 Brand=Wavecor
 Model=WF120BD07
 Manufacturer=
@@ -73808,7 +73808,7 @@ Dd=0.100076
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF120BD08`,content:`[Driver]
+`},{name:`Wavecor WF120BD08`,date:``,content:`[Driver]
 Brand=Wavecor
 Model=WF120BD08
 Manufacturer=
@@ -73836,7 +73836,7 @@ Dd=0.100076
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF120BD09`,content:`[Driver]
+`},{name:`Wavecor WF120BD09`,date:``,content:`[Driver]
 Brand=Wavecor
 Model=WF120BD09
 Manufacturer=
@@ -73864,7 +73864,7 @@ Dd=0.100076
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF120BD10`,content:`[Driver]
+`},{name:`Wavecor WF120BD10`,date:``,content:`[Driver]
 Brand=Wavecor
 Model=WF120BD10
 Manufacturer=
@@ -73892,7 +73892,7 @@ Dd=0.100076
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF120BD11 4-3_4_ Kevlar_Carbon Fiber Cone Midwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF120BD11 4-3_4_ Kevlar_Carbon Fiber Cone Midwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF120BD11 4-3/4" Kevlar/Carbon Fiber Cone Midwoofer 4 Ohm
 Manufacturer=
@@ -73920,7 +73920,7 @@ Dd=0.0781764
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF120BD12 4-3_4_ Kevlar_Carbon Fiber Cone Midwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF120BD12 4-3_4_ Kevlar_Carbon Fiber Cone Midwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF120BD12 4-3/4" Kevlar/Carbon Fiber Cone Midwoofer 8 Ohm
 Manufacturer=
@@ -73948,7 +73948,7 @@ Dd=0.0781764
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF132TU01`,content:`[Driver]
+`},{name:`Wavecor WF132TU01`,date:``,content:`[Driver]
 Brand=Wavecor
 Model=WF132TU01
 Manufacturer=
@@ -73976,7 +73976,7 @@ Dd=0.119888
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF132TU02 5-1_4_ Paper Cone Mid-Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF132TU02 5-1_4_ Paper Cone Mid-Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF132TU02 5-1/4" Paper Cone Mid-Woofer 4 Ohm
 Manufacturer=
@@ -74004,7 +74004,7 @@ Dd=0.109981
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF132TU02`,content:`[Driver]
+`},{name:`Wavecor WF132TU02`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF132TU02
 Manufacturer=
@@ -74032,7 +74032,7 @@ Dd=0.109981
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF146WA01 5-3_4_ Paper Cone Mid-Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF146WA01 5-3_4_ Paper Cone Mid-Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF146WA01 5-3/4" Paper Cone Mid-Woofer 4 Ohm
 Manufacturer=
@@ -74060,7 +74060,7 @@ Dd=0.109981
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF146WA01`,content:`[Driver]
+`},{name:`Wavecor WF146WA01`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF146WA01
 Manufacturer=
@@ -74088,7 +74088,7 @@ Dd=0.109981
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF146WA02 5-3_4_ Paper Cone Mid-Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF146WA02 5-3_4_ Paper Cone Mid-Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF146WA02 5-3/4" Paper Cone Mid-Woofer 8 Ohm
 Manufacturer=
@@ -74116,7 +74116,7 @@ Dd=0.109981
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF146WA02`,content:`[Driver]
+`},{name:`Wavecor WF146WA02`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF146WA02
 Manufacturer=
@@ -74144,7 +74144,7 @@ Dd=0.109981
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF146WA05 5-3_4_ Glass Fiber Cone Mid-Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF146WA05 5-3_4_ Glass Fiber Cone Mid-Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF146WA05 5-3/4" Glass Fiber Cone Mid-Woofer 4 Ohm
 Manufacturer=
@@ -74172,7 +74172,7 @@ Dd=0.108817
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF146WA05`,content:`[Driver]
+`},{name:`Wavecor WF146WA05`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF146WA05
 Manufacturer=
@@ -74200,7 +74200,7 @@ Dd=0.108817
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF146WA06 5-3_4_ Glass Fiber Cone Mid-Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF146WA06 5-3_4_ Glass Fiber Cone Mid-Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF146WA06 5-3/4" Glass Fiber Cone Mid-Woofer 8 Ohm
 Manufacturer=
@@ -74228,7 +74228,7 @@ Dd=0.108817
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF146WA06`,content:`[Driver]
+`},{name:`Wavecor WF146WA06`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF146WA06
 Manufacturer=
@@ -74256,7 +74256,7 @@ Dd=0.108817
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF152BD03`,content:`[Driver]
+`},{name:`Wavecor WF152BD03`,date:``,content:`[Driver]
 Brand=Wavecor
 Model=WF152BD03
 Manufacturer=
@@ -74284,7 +74284,7 @@ Dd=0.128016
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF152BD04`,content:`[Driver]
+`},{name:`Wavecor WF152BD04`,date:``,content:`[Driver]
 Brand=Wavecor
 Model=WF152BD04
 Manufacturer=
@@ -74312,7 +74312,7 @@ Dd=0.128016
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF152BD05`,content:`[Driver]
+`},{name:`Wavecor WF152BD05`,date:``,content:`[Driver]
 Brand=Wavecor
 Model=WF152BD05
 Manufacturer=
@@ -74340,7 +74340,7 @@ Dd=0.128016
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF152BD06`,content:`[Driver]
+`},{name:`Wavecor WF152BD06`,date:``,content:`[Driver]
 Brand=Wavecor
 Model=WF152BD06
 Manufacturer=
@@ -74368,7 +74368,7 @@ Dd=0.128016
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF152BD07`,content:`[Driver]
+`},{name:`Wavecor WF152BD07`,date:``,content:`[Driver]
 Brand=Wavecor
 Model=WF152BD07
 Manufacturer=
@@ -74396,7 +74396,7 @@ Dd=0.128016
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF152BD08`,content:`[Driver]
+`},{name:`Wavecor WF152BD08`,date:``,content:`[Driver]
 Brand=Wavecor
 Model=WF152BD08
 Manufacturer=
@@ -74424,7 +74424,7 @@ Dd=0.128016
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF152BD09 6_ Kevlar_Carbon Fiber Cone Midwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF152BD09 6_ Kevlar_Carbon Fiber Cone Midwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF152BD09 6" Kevlar/Carbon Fiber Cone Midwoofer 4 Ohm
 Manufacturer=
@@ -74452,7 +74452,7 @@ Dd=0.104031
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF152BD10 6_ Kevlar_Carbon Fiber Cone Midwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF152BD10 6_ Kevlar_Carbon Fiber Cone Midwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF152BD10 6" Kevlar/Carbon Fiber Cone Midwoofer 8 Ohm
 Manufacturer=
@@ -74480,7 +74480,7 @@ Dd=0.104031
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF152BD13 6_ Black Coated Paper_Glass Fiber Cone Midwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF152BD13 6_ Black Coated Paper_Glass Fiber Cone Midwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF152BD13 6" Black Coated Paper/Glass Fiber Cone Midwoofer 4 Ohm
 Manufacturer=
@@ -74508,7 +74508,7 @@ Dd=0.108817
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF152BD14 6_ Black Coated Paper_Glass Fiber Cone Midwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF152BD14 6_ Black Coated Paper_Glass Fiber Cone Midwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF152BD14 6" Black Coated Paper/Glass Fiber Cone Midwoofer 8 Ohm
 Manufacturer=
@@ -74536,7 +74536,7 @@ Dd=0.108817
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF166TU01`,content:`[Driver]
+`},{name:`Wavecor WF166TU01`,date:``,content:`[Driver]
 Brand=Wavecor
 Model=WF166TU01
 Manufacturer=
@@ -74564,7 +74564,7 @@ Dd=0.149098
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF166TU02 6-1_2_ Paper Cone Mid-Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF166TU02 6-1_2_ Paper Cone Mid-Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF166TU02 6-1/2" Paper Cone Mid-Woofer 4 Ohm
 Manufacturer=
@@ -74592,7 +74592,7 @@ Dd=0.133034
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF166TU02`,content:`[Driver]
+`},{name:`Wavecor WF166TU02`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF166TU02
 Manufacturer=
@@ -74620,7 +74620,7 @@ Dd=0.133034
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF168WA01`,content:`[Driver]
+`},{name:`Wavecor WF168WA01`,date:``,content:`[Driver]
 Brand=Wavecor
 Model=WF168WA01
 Manufacturer=
@@ -74648,7 +74648,7 @@ Dd=0.143002
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF168WA02 6-1_2_ Paper Cone Mid-Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF168WA02 6-1_2_ Paper Cone Mid-Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF168WA02 6-1/2" Paper Cone Mid-Woofer 8 Ohm
 Manufacturer=
@@ -74676,7 +74676,7 @@ Dd=0.133034
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF168WA02`,content:`[Driver]
+`},{name:`Wavecor WF168WA02`,date:``,content:`[Driver]
 Brand=Wavecor
 Model=WF168WA02
 Manufacturer=
@@ -74704,7 +74704,7 @@ Dd=0.13303394180365685
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF168WA05`,content:`[Driver]
+`},{name:`Wavecor WF168WA05`,date:``,content:`[Driver]
 Brand=Wavecor
 Model=WF168WA05
 Manufacturer=
@@ -74732,7 +74732,7 @@ Dd=0.143002
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF168WA06 6-1_2_ Glass Fiber Cone Mid-Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF168WA06 6-1_2_ Glass Fiber Cone Mid-Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF168WA06 6-1/2" Glass Fiber Cone Mid-Woofer 8 Ohm
 Manufacturer=
@@ -74760,7 +74760,7 @@ Dd=0.129149
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF168WA06`,content:`[Driver]
+`},{name:`Wavecor WF168WA06`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF168WA06
 Manufacturer=
@@ -74788,7 +74788,7 @@ Dd=0.129149
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF182BD03`,content:`[Driver]
+`},{name:`Wavecor WF182BD03`,date:``,content:`[Driver]
 Brand=Wavecor
 Model=WF182BD03
 Manufacturer=
@@ -74816,7 +74816,7 @@ Dd=0.152908
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF182BD04`,content:`[Driver]
+`},{name:`Wavecor WF182BD04`,date:``,content:`[Driver]
 Brand=Wavecor
 Model=WF182BD04
 Manufacturer=
@@ -74844,7 +74844,7 @@ Dd=0.152908
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF182BD07`,content:`[Driver]
+`},{name:`Wavecor WF182BD07`,date:``,content:`[Driver]
 Brand=Wavecor
 Model=WF182BD07
 Manufacturer=
@@ -74872,7 +74872,7 @@ Dd=0.152908
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF182BD08`,content:`[Driver]
+`},{name:`Wavecor WF182BD08`,date:``,content:`[Driver]
 Brand=Wavecor
 Model=WF182BD08
 Manufacturer=
@@ -74900,7 +74900,7 @@ Dd=0.152908
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF182BD09`,content:`[Driver]
+`},{name:`Wavecor WF182BD09`,date:``,content:`[Driver]
 Brand=Wavecor
 Model=WF182BD09
 Manufacturer=
@@ -74928,7 +74928,7 @@ Dd=0.152908
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF182BD10 7_ Balanced Drive Paper_Glass Fiber Cone Mid-Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF182BD10 7_ Balanced Drive Paper_Glass Fiber Cone Mid-Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF182BD10 7" Balanced Drive Paper/Glass Fiber Cone Mid-Woofer 8 Ohm
 Manufacturer=
@@ -74956,7 +74956,7 @@ Dd=0.129149
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF182BD10`,content:`[Driver]
+`},{name:`Wavecor WF182BD10`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF182BD10
 Manufacturer=
@@ -74984,7 +74984,7 @@ Dd=0.129149
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF182BD11`,content:`[Driver]
+`},{name:`Wavecor WF182BD11`,date:``,content:`[Driver]
 Brand=Wavecor
 Model=WF182BD11
 Manufacturer=
@@ -75012,7 +75012,7 @@ Dd=0.152908
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF182BD12 7_ Balanced Drive Paper_Glass Fiber Cone Mid-Woofer with Truncated Frame 8 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF182BD12 7_ Balanced Drive Paper_Glass Fiber Cone Mid-Woofer with Truncated Frame 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF182BD12 7" Balanced Drive Paper/Glass Fiber Cone Mid-Woofer with Truncated Frame 8 Ohm
 Manufacturer=
@@ -75040,7 +75040,7 @@ Dd=0.129149
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF182BD12`,content:`[Driver]
+`},{name:`Wavecor WF182BD12`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF182BD12
 Manufacturer=
@@ -75068,7 +75068,7 @@ Dd=0.129149
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF182BD13 7_ Kevlar_Carbon Fiber Cone Midwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF182BD13 7_ Kevlar_Carbon Fiber Cone Midwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF182BD13 7" Kevlar/Carbon Fiber Cone Midwoofer 4 Ohm
 Manufacturer=
@@ -75096,7 +75096,7 @@ Dd=0.122053
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF182BD14 7_ Kevlar_Carbon Fiber Cone Midwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF182BD14 7_ Kevlar_Carbon Fiber Cone Midwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF182BD14 7" Kevlar/Carbon Fiber Cone Midwoofer 8 Ohm
 Manufacturer=
@@ -75124,7 +75124,7 @@ Dd=0.122053
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF182BD17 7_ Black Coated Paper_Glass Fiber Cone Midwoofer 4 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF182BD17 7_ Black Coated Paper_Glass Fiber Cone Midwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF182BD17 7" Black Coated Paper/Glass Fiber Cone Midwoofer 4 Ohm
 Manufacturer=
@@ -75152,7 +75152,7 @@ Dd=0.129149
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF182BD18 7_ Black Coated Paper_Glass Fiber Cone Midwoofer 8 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF182BD18 7_ Black Coated Paper_Glass Fiber Cone Midwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF182BD18 7" Black Coated Paper/Glass Fiber Cone Midwoofer 8 Ohm
 Manufacturer=
@@ -75180,7 +75180,7 @@ Dd=0.129149
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF211PA01 8-1_4_ Paper Cone Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF211PA01 8-1_4_ Paper Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF211PA01 8-1/4" Paper Cone Woofer 4 Ohm
 Manufacturer=
@@ -75208,7 +75208,7 @@ Dd=0.165068
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF211PA02 8-1_4_ Paper Cone Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF211PA02 8-1_4_ Paper Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF211PA02 8-1/4" Paper Cone Woofer 8 Ohm
 Manufacturer=
@@ -75236,7 +75236,7 @@ Dd=0.165068
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF223BD01 8-3_4_ Balanced Drive Paper_Glass Fiber Cone Mid-Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF223BD01 8-3_4_ Balanced Drive Paper_Glass Fiber Cone Mid-Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF223BD01 8-3/4" Balanced Drive Paper/Glass Fiber Cone Mid-Woofer 4 Ohm
 Manufacturer=
@@ -75264,7 +75264,7 @@ Dd=0.164682
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF223BD01`,content:`[Driver]
+`},{name:`Wavecor WF223BD01`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF223BD01
 Manufacturer=
@@ -75292,7 +75292,7 @@ Dd=0.164682
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF223BD02 8-3_4_ Balanced Drive Paper_Glass Fiber Cone Mid-Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF223BD02 8-3_4_ Balanced Drive Paper_Glass Fiber Cone Mid-Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF223BD02 8-3/4" Balanced Drive Paper/Glass Fiber Cone Mid-Woofer 8 Ohm
 Manufacturer=
@@ -75320,7 +75320,7 @@ Dd=0.164682
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF223BD02`,content:`[Driver]
+`},{name:`Wavecor WF223BD02`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF223BD02
 Manufacturer=
@@ -75348,7 +75348,7 @@ Dd=0.164682
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF275BD01 10-3_4_ Paper Cone Woofer 4 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF275BD01 10-3_4_ Paper Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF275BD01 10-3/4" Paper Cone Woofer 4 Ohm
 Manufacturer=
@@ -75376,7 +75376,7 @@ Dd=0.199311
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`Wavecor WF275BD02 10-3_4_ Paper Cone Woofer 8 Ohm`,content:`[Driver]
+`},{name:`Wavecor WF275BD02 10-3_4_ Paper Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
 Model=WF275BD02 10-3/4" Paper Cone Woofer 8 Ohm
 Manufacturer=
@@ -75404,4 +75404,4 @@ Dd=0.199311
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`}]}]},Mu={key:0,class:`modal`},Nu={class:`body`},Pu={class:`statusrow`},Fu=[`disabled`],Iu={class:`dlist`},Lu=[`onClick`],Ru=[`title`,`onClick`],zu={key:1,class:`stag`},Bu={key:0,class:`status loading`},Vu={class:`addrow`},Hu=rl({__name:`DriverBrowser`,setup(e){let t=Au.sources||[],n=F([]),r=F(``),i=F(``),a=F(!1),o=F(``),s=F(!1),c=F(!1),l=F(!1),u=q(()=>{let e=r.value.toLowerCase().trim().split(/\s+/).filter(Boolean);return e.length?n.value.filter(t=>{let n=t.name.toLowerCase();return e.every(e=>n.includes(e))}):n.value});async function d(e){let t=await fetch(`https://api.github.com/repos/${e}`);if(!t.ok)throw Error(`repo not found (`+t.status+`)`);return(await t.json()).default_branch||`main`}async function f(e){try{let t=e.branch||await d(e.repo),r=await fetch(`https://api.github.com/repos/${e.repo}/git/trees/${t}?recursive=1`);if(!r.ok)return;let a=(await r.json()).tree||[],o=(e.path||``).replace(/^\/|\/$/g,``),s=a.filter(e=>e.type===`blob`&&e.path.toLowerCase().endsWith(`.wdr`)&&(!o||e.path.toLowerCase().startsWith(o.toLowerCase()+`/`))).map(n=>({path:n.path,branch:t,repo:e.repo,name:n.path.split(`/`).pop().replace(/\.wdr$/i,``),sourceName:e.name,sourceUrl:e.url||``,sourceDesc:e.description||``}));n.value=[...n.value.filter(t=>t.sourceName!==e.name),...s],i.value=`${n.value.length} drivers`}catch{}}function p(e){if(e=e.trim(),!e)return null;let t=e.match(/github\.com\/([^/]+)\/([^/]+?)(?:\.git)?(?:\/tree\/([^/]+)(?:\/(.*))?)?$/i);return t?{name:t[1]+`/`+t[2],type:`github`,repo:t[1]+`/`+t[2],branch:t[3]||``,path:t[4]||``}:(t=e.match(/^([\w.-]+)\/([\w.-]+)$/),t?{name:e,type:`github`,repo:e,branch:``,path:``}:null)}let m=Object.fromEntries((ju.sources||[]).map(e=>[e.name,e.files]));async function h(){if(s.value)return;s.value=!0,a.value=!1;for(let e of t){let t=m[e.name];if(!t)continue;let r=t.map(t=>({name:t.name,content:t.content,path:null,repo:null,branch:null,sourceName:e.name,sourceUrl:e.url||``,sourceDesc:e.description||``}));n.value=[...n.value,...r]}i.value=`${n.value.length} drivers`;let e=t.filter(e=>!m[e.name]).map(e=>{let t=e.url?.match(/github\.com\/([^/]+\/[^/]+?)(?:\/tree\/([^/]+)(?:\/(.*?))?)?(?:\.git)?$/i);return t?{...e,repo:t[1],branch:t[2]||``,path:t[3]||``}:e}).filter(e=>e.repo);e.length&&await Promise.all(e.map(f)),i.value=n.value.length?`${n.value.length} drivers`:`No drivers loaded — check network`}async function g(){if(c.value||l.value)return;l.value=!0,a.value=!1;let e;try{e=await fetch(`https://speakerboxlite.com/api/v1/speakers/count`)}catch{a.value=!0,i.value=`speakerboxlite.com CORS error — their API returns Access-Control-Allow-Origin on HEAD requests but not GET requests, so browsers block it. This is a bug on their server; nothing can be done client-side.`,l.value=!1;return}if(!e.ok){a.value=!0,i.value=`SpeakerBoxLite: server returned ${e.status}`,l.value=!1;return}try{let{count:t}=await e.json(),r=Math.ceil(t/500),a=[];for(let e=0;e<r;e++){i.value=`SpeakerBoxLite: loading ${Math.min((e+1)*500,t)} / ${t}…`;let n=await(await fetch(`https://speakerboxlite.com/api/v1/speakers?offset=${e*500}&limit=500`)).json();for(let e of n)a.push({path:null,branch:null,repo:null,name:[e.brand,e.model].filter(Boolean).join(` `)||e.name||`Unknown`,sourceName:`SpeakerBoxLite`,sourceUrl:`https://www.speakerboxlite.com/`,sourceDesc:`speakerboxlite.com community database`,sblData:e})}n.value=[...n.value.filter(e=>e.sourceName!==`SpeakerBoxLite`),...a],c.value=!0,i.value=`${n.value.length} drivers total`}catch(e){a.value=!0,i.value=`SpeakerBoxLite load failed mid-stream: `+e.message}l.value=!1}async function _(){let e=p(o.value);if(!e){a.value=!0,i.value=`Enter owner/repo or a github.com URL`;return}a.value=!1,i.value=`Loading ${e.name}…`,await f(e),o.value=``}async function v(e){if(e.sblData){let t=e.sblData,n={name:e.name,brand:t.brand||``,model:t.model||``,Fs:t.fs,Qts:t.qts,Qes:t.qes,Qms:t.qms,Vas:t.vas_l==null?void 0:t.vas_l/1e3,Sd:t.sd_cm2==null?void 0:t.sd_cm2/1e4,Re:t.re,Le:t.le_mh==null?void 0:t.le_mh/1e3,Bl:t.bl,Xmax:t.xmax_mm==null?void 0:t.xmax_mm/1e3,Mms:t.mms_g==null?void 0:t.mms_g/1e3,Cms:t.cms_mm_n==null?void 0:1/(t.cms_mm_n*1e3),Rms:t.rms,Pe:t.pe};Object.keys(n).forEach(e=>n[e]===void 0&&delete n[e]),Z.driverRaw=n,Z.browseOpen=!1;return}if(e.content){Z.driverRaw=Fo(e.content),Z.browseOpen=!1;return}a.value=!1,i.value=`Loading `+e.name+`…`;try{let t=`https://raw.githubusercontent.com/${e.repo}/${e.branch}/${e.path.split(`/`).map(encodeURIComponent).join(`/`)}`,n=await fetch(t);if(!n.ok)throw Error(`fetch failed (`+n.status+`)`);Z.driverRaw=Fo(await n.text()),Z.browseOpen=!1}catch(e){a.value=!0,i.value=`Could not load: `+e.message}}function y(e){e&&window.open(e,`_blank`,`noopener`)}Nn(()=>Z.browseOpen,e=>{e&&h()});function b(){Z.browseOpen=!1}function x(e){e.target===e.currentTarget&&b()}return(e,t)=>(V(),H(`div`,{class:he([`overlay`,{on:I(Z).browseOpen}]),onClick:x},[I(Z).browseOpen?(V(),H(`div`,Mu,[U(`h2`,null,[t[2]||=G(` Browse driver library `,-1),U(`span`,{class:`x`,onClick:b,title:`Close the driver library browser`},`×`)]),U(`div`,Nu,[Dn(U(`input`,{class:`filter`,"onUpdate:modelValue":t[0]||=e=>r.value=e,placeholder:`Search drivers…`,autofocus:``},null,512),[[ho,r.value]]),U(`div`,Pu,[U(`span`,{class:he([`status`,{err:a.value}])},k(i.value),3),c.value?K(``,!0):(V(),H(`button`,{key:0,class:`sblbtn`,disabled:l.value,title:`Load ~6000 drivers from the speakerboxlite.com community database (fetched live)`,onClick:g},k(l.value?`Loading…`:`+ SpeakerBoxLite`),9,Fu))]),U(`div`,Iu,[(V(!0),H(B,null,Cr(u.value.slice(0,500),e=>(V(),H(`div`,{key:(e.path||``)+e.name,class:`ditem`,onClick:t=>v(e)},[U(`b`,null,k(e.name),1),e.sourceUrl?(V(),H(`a`,{key:0,class:`stag`,title:e.sourceUrl+(e.sourceDesc?` — `+e.sourceDesc:``),onClick:wo(t=>y(e.sourceUrl),[`stop`,`prevent`])},k(e.sourceName),9,Ru)):(V(),H(`span`,zu,k(e.sourceName),1))],8,Lu))),128)),!u.value.length&&!a.value?(V(),H(`div`,Bu,k(r.value?`No matching drivers.`:`Loading…`),1)):K(``,!0)]),U(`div`,Vu,[Dn(U(`input`,{"onUpdate:modelValue":t[1]||=e=>o.value=e,placeholder:`Add GitHub source: owner/repo or full URL`,onKeydown:Eo(_,[`enter`]),title:`Load .wdr files from any public GitHub repository and add them to the pool`},null,544),[[ho,o.value]]),U(`button`,{onClick:_,title:`Fetch .wdr files from the specified GitHub repository`},`Add`)])])])):K(``,!0)],2))}},[[`__scopeId`,`data-v-1b35a232`]]),Uu={key:0,class:`flash`},Wu={__name:`Flash`,setup(e){return(e,t)=>I(Ts)?(V(),H(`div`,Uu,k(I(Ts)),1)):K(``,!0)}},Gu={Fs:37,Qts:.38,Qes:.4,Qms:7,Vas:.03,Sd:.0133,Re:5.6,Le:7e-4,Xmax:.005,Pe:60,Z:8},Ku=.1,qu=.5,Ju=3,Yu=.02,Xu=1e6,Zu=2.83,Qu=10,$u=1e3,ed=300,td=300,nd=12,rd=15,id=30,ad=.025,od=7,sd=2,cd=1.5,ld=24,ud=112.1;function dd(){let e=Po(Gu),t={...e,Le:0},n=e.Fs*Math.sqrt(1+e.Vas/Yu),r=e.Qts*Math.sqrt(1+e.Vas/Yu),i={Vb:Yu,Ql:Xu,nDrivers:1,wiring:`parallel`,eg:Zu,fmin:Qu,fmax:$u,N:ed},a=ts(t,`sealed`,i),o=a.spl[a.spl.length-1],s=0;for(let e=0;e<a.fs.length;e++){let t=a.fs[e]/n,i=t**4/((1-t*t)**2+t*t/(r*r));s=Math.max(s,Math.abs(a.spl[e]-(o+10*Math.log10(i))))}let c=4*Math.PI**2/345**3*(e.Fs**3*e.Vas)/e.Qes,l=ud+10*Math.log10(c)+10*Math.log10(Zu**2/e.Re),u=a.fs.findIndex(e=>e>=td),d=a.spl[u],f=Yu/(J*345*345),p=2*Math.PI*id,m=1/(p*p*f),h=Math.PI*ad**2,g=ts(e,`vented`,{...i,Ql:od,Sp:h,Leff:m*h/J}),_=g.fs.findIndex(e=>e>=nd),v=g.fs.findIndex(e=>e>=rd),y=(g.spl[v]-g.spl[_])/Math.log2(g.fs[v]/g.fs[_]),b=[];for(let t=1;t<g.zmag.length-1;t++)g.zmag[t]>g.zmag[t-1]&&g.zmag[t]>g.zmag[t+1]&&g.zmag[t]>e.Re*cd&&b.push(+g.fs[t].toFixed(1));let x=s<Ku,S=Math.abs(d-l)<qu,C=Math.abs(y-ld)<Ju&&b.length===sd,w=x&&S&&C;return console.log(`[Resonate self-test]`,`GATE1 sealed≡closed-form: max err ${s.toFixed(4)} dB → ${x?`PASS`:`FAIL`}`,`GATE2 sensitivity: circuit ${d.toFixed(2)} vs predicted ${l.toFixed(2)} dB → ${S?`PASS`:`FAIL`}`,`GATE3 vented slope ${y.toFixed(1)} dB/oct, peaks ${JSON.stringify(b)} → ${C?`PASS`:`FAIL`}`,`OVERALL: ${w?`ALL PASS`:`FAIL`}`),w||Es(`⚠ Physics self-test FAILED (${[!x&&`GATE1`,!S&&`GATE2`,!C&&`GATE3`].filter(Boolean).join(`, `)}) — open console for details`),window._selfTestDone=!0,{p1:x,p2:S,p3:C}}var fd={class:`layout`},pd={id:`side`,class:`side`},md={class:`main`};Ao({__name:`App`,setup(e){function t(){let e=Ss();e&&n(e)}function n(e){e.driver&&(Z.driverRaw=e.driver),e.box&&(Z.box=e.box),e.P&&Object.assign(Z.P,e.P),Array.isArray(e.graphs)&&e.graphs.length&&(Z.graphs=e.graphs)}let r=!1;return Nn(()=>bs(Z,Q.value,Z.compare),e=>{r&&Cs(e)},{deep:!0}),pr(()=>{let e=Ss();if(e)n(e);else{let e=ws();e&&n(e)}r=!0,dd(),window.addEventListener(`hashchange`,t)}),_r(()=>{window.removeEventListener(`hashchange`,t)}),(e,t)=>(V(),H(B,null,[W(Ps),U(`div`,fd,[U(`div`,pd,[W(tu)]),U(`div`,md,[W(xu),W(ku)])]),W(Hu),W(Wu)],64))}}).mount(`#app`);
+`}]}]},Mu={key:0,class:`modal`},Nu={class:`body`},Pu={class:`statusrow`},Fu=[`disabled`],Iu={class:`dlist`},Lu=[`onClick`],Ru={class:`dmeta`},zu={key:0,class:`ddate`},Bu=[`title`,`onClick`],Vu={key:2,class:`stag`},Hu={key:0,class:`status loading`},Uu={class:`addrow`},Wu=rl({__name:`DriverBrowser`,setup(e){let t=Au.sources||[],n=F([]),r=F(``),i=F(``),a=F(!1),o=F(``),s=F(!1),c=F(!1),l=F(!1),u=q(()=>{let e=r.value.toLowerCase().trim().split(/\s+/).filter(Boolean);return[...e.length?n.value.filter(t=>{let n=t.name.toLowerCase();return e.every(e=>n.includes(e))}):n.value].sort((e,t)=>{let n=e.name.localeCompare(t.name,void 0,{sensitivity:`base`});return n===0?(t.date||``).localeCompare(e.date||``):n})});async function d(e){let t=await fetch(`https://api.github.com/repos/${e}`);if(!t.ok)throw Error(`repo not found (`+t.status+`)`);return(await t.json()).default_branch||`main`}async function f(e){try{let t=e.branch||await d(e.repo),r=await fetch(`https://api.github.com/repos/${e.repo}/git/trees/${t}?recursive=1`);if(!r.ok)return;let a=(await r.json()).tree||[],o=(e.path||``).replace(/^\/|\/$/g,``),s=a.filter(e=>e.type===`blob`&&e.path.toLowerCase().endsWith(`.wdr`)&&(!o||e.path.toLowerCase().startsWith(o.toLowerCase()+`/`))).map(n=>({path:n.path,branch:t,repo:e.repo,name:n.path.split(`/`).pop().replace(/\.wdr$/i,``),sourceName:e.name,sourceUrl:e.url||``,sourceDesc:e.description||``}));n.value=[...n.value.filter(t=>t.sourceName!==e.name),...s],i.value=`${n.value.length} drivers`}catch{}}function p(e){if(e=e.trim(),!e)return null;let t=e.match(/github\.com\/([^/]+)\/([^/]+?)(?:\.git)?(?:\/tree\/([^/]+)(?:\/(.*))?)?$/i);return t?{name:t[1]+`/`+t[2],type:`github`,repo:t[1]+`/`+t[2],branch:t[3]||``,path:t[4]||``}:(t=e.match(/^([\w.-]+)\/([\w.-]+)$/),t?{name:e,type:`github`,repo:e,branch:``,path:``}:null)}let m=Object.fromEntries((ju.sources||[]).map(e=>[e.name,e.files]));async function h(){if(s.value)return;s.value=!0,a.value=!1;for(let e of t){let t=m[e.name];if(!t)continue;let r=t.map(t=>({name:t.name,content:t.content,date:t.date||``,path:null,repo:null,branch:null,sourceName:e.name,sourceUrl:e.url||``,sourceDesc:e.description||``}));n.value=[...n.value,...r]}i.value=`${n.value.length} drivers`;let e=t.filter(e=>!m[e.name]).map(e=>{let t=e.url?.match(/github\.com\/([^/]+\/[^/]+?)(?:\/tree\/([^/]+)(?:\/(.*?))?)?(?:\.git)?$/i);return t?{...e,repo:t[1],branch:t[2]||``,path:t[3]||``}:e}).filter(e=>e.repo);e.length&&await Promise.all(e.map(f)),i.value=n.value.length?`${n.value.length} drivers`:`No drivers loaded — check network`}async function g(){if(c.value||l.value)return;l.value=!0,a.value=!1;let e;try{e=await fetch(`https://speakerboxlite.com/api/v1/speakers/count`)}catch{a.value=!0,i.value=`speakerboxlite.com CORS error — their API returns Access-Control-Allow-Origin on HEAD requests but not GET requests, so browsers block it. This is a bug on their server; nothing can be done client-side.`,l.value=!1;return}if(!e.ok){a.value=!0,i.value=`SpeakerBoxLite: server returned ${e.status}`,l.value=!1;return}try{let{count:t}=await e.json(),r=Math.ceil(t/500),a=[];for(let e=0;e<r;e++){i.value=`SpeakerBoxLite: loading ${Math.min((e+1)*500,t)} / ${t}…`;let n=await(await fetch(`https://speakerboxlite.com/api/v1/speakers?offset=${e*500}&limit=500`)).json();for(let e of n)a.push({path:null,branch:null,repo:null,name:[e.brand,e.model].filter(Boolean).join(` `)||e.name||`Unknown`,sourceName:`SpeakerBoxLite`,sourceUrl:`https://www.speakerboxlite.com/`,sourceDesc:`speakerboxlite.com community database`,sblData:e})}n.value=[...n.value.filter(e=>e.sourceName!==`SpeakerBoxLite`),...a],c.value=!0,i.value=`${n.value.length} drivers total`}catch(e){a.value=!0,i.value=`SpeakerBoxLite load failed mid-stream: `+e.message}l.value=!1}async function _(){let e=p(o.value);if(!e){a.value=!0,i.value=`Enter owner/repo or a github.com URL`;return}a.value=!1,i.value=`Loading ${e.name}…`,await f(e),o.value=``}async function v(e){if(e.sblData){let t=e.sblData,n={name:e.name,brand:t.brand||``,model:t.model||``,Fs:t.fs,Qts:t.qts,Qes:t.qes,Qms:t.qms,Vas:t.vas_l==null?void 0:t.vas_l/1e3,Sd:t.sd_cm2==null?void 0:t.sd_cm2/1e4,Re:t.re,Le:t.le_mh==null?void 0:t.le_mh/1e3,Bl:t.bl,Xmax:t.xmax_mm==null?void 0:t.xmax_mm/1e3,Mms:t.mms_g==null?void 0:t.mms_g/1e3,Cms:t.cms_mm_n==null?void 0:1/(t.cms_mm_n*1e3),Rms:t.rms,Pe:t.pe};Object.keys(n).forEach(e=>n[e]===void 0&&delete n[e]),Z.driverRaw=n,Z.browseOpen=!1;return}if(e.content){Z.driverRaw=Fo(e.content),Z.browseOpen=!1;return}a.value=!1,i.value=`Loading `+e.name+`…`;try{let t=`https://raw.githubusercontent.com/${e.repo}/${e.branch}/${e.path.split(`/`).map(encodeURIComponent).join(`/`)}`,n=await fetch(t);if(!n.ok)throw Error(`fetch failed (`+n.status+`)`);Z.driverRaw=Fo(await n.text()),Z.browseOpen=!1}catch(e){a.value=!0,i.value=`Could not load: `+e.message}}function y(e){e&&window.open(e,`_blank`,`noopener`)}Nn(()=>Z.browseOpen,e=>{e&&h()});function b(){Z.browseOpen=!1}function x(e){e.target===e.currentTarget&&b()}return(e,t)=>(V(),H(`div`,{class:he([`overlay`,{on:I(Z).browseOpen}]),onClick:x},[I(Z).browseOpen?(V(),H(`div`,Mu,[U(`h2`,null,[t[2]||=G(` Browse driver library `,-1),U(`span`,{class:`x`,onClick:b,title:`Close the driver library browser`},`×`)]),U(`div`,Nu,[Dn(U(`input`,{class:`filter`,"onUpdate:modelValue":t[0]||=e=>r.value=e,placeholder:`Search drivers…`,autofocus:``},null,512),[[ho,r.value]]),U(`div`,Pu,[U(`span`,{class:he([`status`,{err:a.value}])},k(i.value),3),c.value?K(``,!0):(V(),H(`button`,{key:0,class:`sblbtn`,disabled:l.value,title:`Load ~6000 drivers from the speakerboxlite.com community database (fetched live)`,onClick:g},k(l.value?`Loading…`:`+ SpeakerBoxLite`),9,Fu))]),U(`div`,Iu,[(V(!0),H(B,null,Cr(u.value.slice(0,500),e=>(V(),H(`div`,{key:(e.sourceName||``)+(e.path||``)+e.name,class:`ditem`,onClick:t=>v(e)},[U(`b`,null,k(e.name),1),U(`span`,Ru,[e.date?(V(),H(`span`,zu,k(e.date),1)):K(``,!0),e.sourceUrl?(V(),H(`a`,{key:1,class:`stag`,title:e.sourceUrl+(e.sourceDesc?` — `+e.sourceDesc:``),onClick:wo(t=>y(e.sourceUrl),[`stop`,`prevent`])},k(e.sourceName),9,Bu)):(V(),H(`span`,Vu,k(e.sourceName),1))])],8,Lu))),128)),!u.value.length&&!a.value?(V(),H(`div`,Hu,k(r.value?`No matching drivers.`:`Loading…`),1)):K(``,!0)]),U(`div`,Uu,[Dn(U(`input`,{"onUpdate:modelValue":t[1]||=e=>o.value=e,placeholder:`Add GitHub source: owner/repo or full URL`,onKeydown:Eo(_,[`enter`]),title:`Load .wdr files from any public GitHub repository and add them to the pool`},null,544),[[ho,o.value]]),U(`button`,{onClick:_,title:`Fetch .wdr files from the specified GitHub repository`},`Add`)])])])):K(``,!0)],2))}},[[`__scopeId`,`data-v-0999ac64`]]),Gu={key:0,class:`flash`},Ku={__name:`Flash`,setup(e){return(e,t)=>I(Ts)?(V(),H(`div`,Gu,k(I(Ts)),1)):K(``,!0)}},qu={Fs:37,Qts:.38,Qes:.4,Qms:7,Vas:.03,Sd:.0133,Re:5.6,Le:7e-4,Xmax:.005,Pe:60,Z:8},Ju=.1,Yu=.5,Xu=3,Zu=.02,Qu=1e6,$u=2.83,ed=10,td=1e3,nd=300,rd=300,id=12,ad=15,od=30,sd=.025,cd=7,ld=2,ud=1.5,dd=24,fd=112.1;function pd(){let e=Po(qu),t={...e,Le:0},n=e.Fs*Math.sqrt(1+e.Vas/Zu),r=e.Qts*Math.sqrt(1+e.Vas/Zu),i={Vb:Zu,Ql:Qu,nDrivers:1,wiring:`parallel`,eg:$u,fmin:ed,fmax:td,N:nd},a=ts(t,`sealed`,i),o=a.spl[a.spl.length-1],s=0;for(let e=0;e<a.fs.length;e++){let t=a.fs[e]/n,i=t**4/((1-t*t)**2+t*t/(r*r));s=Math.max(s,Math.abs(a.spl[e]-(o+10*Math.log10(i))))}let c=4*Math.PI**2/345**3*(e.Fs**3*e.Vas)/e.Qes,l=fd+10*Math.log10(c)+10*Math.log10($u**2/e.Re),u=a.fs.findIndex(e=>e>=rd),d=a.spl[u],f=Zu/(J*345*345),p=2*Math.PI*od,m=1/(p*p*f),h=Math.PI*sd**2,g=ts(e,`vented`,{...i,Ql:cd,Sp:h,Leff:m*h/J}),_=g.fs.findIndex(e=>e>=id),v=g.fs.findIndex(e=>e>=ad),y=(g.spl[v]-g.spl[_])/Math.log2(g.fs[v]/g.fs[_]),b=[];for(let t=1;t<g.zmag.length-1;t++)g.zmag[t]>g.zmag[t-1]&&g.zmag[t]>g.zmag[t+1]&&g.zmag[t]>e.Re*ud&&b.push(+g.fs[t].toFixed(1));let x=s<Ju,S=Math.abs(d-l)<Yu,C=Math.abs(y-dd)<Xu&&b.length===ld,w=x&&S&&C;return console.log(`[Resonate self-test]`,`GATE1 sealed≡closed-form: max err ${s.toFixed(4)} dB → ${x?`PASS`:`FAIL`}`,`GATE2 sensitivity: circuit ${d.toFixed(2)} vs predicted ${l.toFixed(2)} dB → ${S?`PASS`:`FAIL`}`,`GATE3 vented slope ${y.toFixed(1)} dB/oct, peaks ${JSON.stringify(b)} → ${C?`PASS`:`FAIL`}`,`OVERALL: ${w?`ALL PASS`:`FAIL`}`),w||Es(`⚠ Physics self-test FAILED (${[!x&&`GATE1`,!S&&`GATE2`,!C&&`GATE3`].filter(Boolean).join(`, `)}) — open console for details`),window._selfTestDone=!0,{p1:x,p2:S,p3:C}}var md={class:`layout`},hd={id:`side`,class:`side`},gd={class:`main`};Ao({__name:`App`,setup(e){function t(){let e=Ss();e&&n(e)}function n(e){e.driver&&(Z.driverRaw=e.driver),e.box&&(Z.box=e.box),e.P&&Object.assign(Z.P,e.P),Array.isArray(e.graphs)&&e.graphs.length&&(Z.graphs=e.graphs)}let r=!1;return Nn(()=>bs(Z,Q.value,Z.compare),e=>{r&&Cs(e)},{deep:!0}),pr(()=>{let e=Ss();if(e)n(e);else{let e=ws();e&&n(e)}r=!0,pd(),window.addEventListener(`hashchange`,t)}),_r(()=>{window.removeEventListener(`hashchange`,t)}),(e,t)=>(V(),H(B,null,[W(Ps),U(`div`,md,[U(`div`,hd,[W(tu)]),U(`div`,gd,[W(xu),W(ku)])]),W(Wu),W(Ku)],64))}}).mount(`#app`);
