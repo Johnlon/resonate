@@ -100,3 +100,30 @@ clean module boundaries. It does not rewrite the physics from scratch.
   a rewrite is not.
 
 **Status:** Adopted.
+
+---
+
+## UI-1: Every button and interactive control must have a tooltip
+
+**Rule:** Every `<button>` and every nav-like interactive element (toggle chips,
+icon-only controls, collapsible section headers) **must** carry a `title`
+attribute. No exceptions.
+
+**Rationale:**
+- Users discover features by hovering. A button with no tooltip is a black box —
+  it may be ignored entirely or clicked by accident without understanding the effect.
+- Tooltips are especially important for abbreviated labels (e.g. `+ HP`, `2.83V`,
+  `▸`) where the label alone is ambiguous.
+- Screen-reader accessibility falls back on `title` when no `aria-label` is set.
+
+**Format:**
+- Describe the *effect*, not just the label: `"Set to 2.83V — IEC 60268-5
+  sensitivity standard"` not `"2.83V button"`.
+- For collapsible sections: `"Expand [section name] — [one-line summary of what's inside]"`.
+- For destructive or irreversible actions: include the consequence,
+  e.g. `"Remove this filter from the chain"`.
+
+**Enforcement:** Any PR that adds a `<button>` without a `title` must be flagged
+in review. Claude Code agent instructions (CLAUDE.md) enforce this at authoring time.
+
+**Status:** Adopted 2026-06-24.

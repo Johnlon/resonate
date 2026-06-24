@@ -22,7 +22,7 @@ function numInput(key, scale, val) {
   <fieldset>
     <legend>Driver</legend>
     <div class="row" style="margin-bottom:6px">
-      <button style="flex:1" @click="state.browseOpen = true">Browse driver library…</button>
+      <button style="flex:1" @click="state.browseOpen = true" title="Open the driver library to search and load a driver from the community database">Browse driver library…</button>
     </div>
     <template v-if="!state.editDriver">
       <div class="drvsum" @click="state.editDriver = true">
@@ -83,7 +83,7 @@ function numInput(key, scale, val) {
         Cms={{ (drv.Cms*1000).toFixed(3) }} mm/N
       </div>
       <div class="btns">
-        <button @click="state.editDriver = false">Done editing</button>
+        <button @click="state.editDriver = false" title="Collapse the driver parameter editor and return to the summary view">Done editing</button>
       </div>
     </template>
   </fieldset>

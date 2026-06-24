@@ -102,10 +102,10 @@ function num(v, dec) { return isFinite(v) ? +v.toFixed(dec) : v; }
     </div>
 
     <div class="btns" style="margin-top:6px">
-      <button @click="addFilter('highpass')">+ HP</button>
-      <button @click="addFilter('lowpass')">+ LP</button>
-      <button @click="addFilter('linkwitz')">+ Linkwitz</button>
-      <button @click="addFilter('peaking')">+ Peaking EQ</button>
+      <button @click="addFilter('highpass')" title="Add a high-pass filter — rolls off frequencies below the cutoff at 12 dB/oct (2nd order Butterworth)">+ HP</button>
+      <button @click="addFilter('lowpass')" title="Add a low-pass filter — rolls off frequencies above the cutoff at 12 dB/oct (2nd order Butterworth)">+ LP</button>
+      <button @click="addFilter('linkwitz')" title="Add a Linkwitz transform — shifts the sealed box resonance from Fc/Qtc to a new Fp/Qp for active bass extension">+ Linkwitz</button>
+      <button @click="addFilter('peaking')" title="Add a parametric EQ band — boost or cut a specific frequency range with adjustable centre frequency, Q, and gain">+ Peaking EQ</button>
     </div>
   </fieldset>
 </template>

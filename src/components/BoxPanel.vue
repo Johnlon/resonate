@@ -294,7 +294,8 @@ function removePR(id) {
         title="Calculates and sets the added mass so Fp matches the B4 alignment's optimal tuning for this driver. B4 = 4th-order Butterworth — flat response to Fp, then steep rolloff.">
         Tune added mass to B4 Fp
       </button>
-      <button class="losses-toggle" @click="showLosses = !showLosses">
+      <button class="losses-toggle" @click="showLosses = !showLosses"
+        title="Expand box loss parameters: Ql (leakage) and Qa (absorption). WinISD defaults: Ql=10, Qa=100.">
         Box losses {{ showLosses ? '▾' : '▸' }}
       </button>
     </div>

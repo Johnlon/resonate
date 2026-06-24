@@ -67,11 +67,11 @@ function showAbout() {
       <small>open loudspeaker enclosure simulator · community-owned · runs anywhere</small>
     </h1>
     <div class="sp"></div>
-    <button @click="importClick">Import .wdr / project</button>
-    <button @click="exportWdr">Export driver .wdr</button>
-    <button id="btnShare" @click="shareLink">Share link</button>
-    <button @click="exportDesign">Export design</button>
-    <button @click="showAbout">About</button>
+    <button @click="importClick" title="Import a WinISD .wdr driver file or a Resonate .json project file">Import .wdr / project</button>
+    <button @click="exportWdr" title="Export the current driver parameters as a WinISD-compatible .wdr file">Export driver .wdr</button>
+    <button id="btnShare" @click="shareLink" title="Copy a shareable URL that encodes the current design — paste into a forum or send to a colleague">Share link</button>
+    <button @click="exportDesign" title="Export the full design (driver + box + settings) as a Resonate .json project file">Export design</button>
+    <button @click="showAbout" title="About Resonate — version, licence, and contributors">About</button>
     <input ref="fileInput" type="file" accept=".wdr,.json" style="display:none" @change="onFileChange">
   </header>
 </template>

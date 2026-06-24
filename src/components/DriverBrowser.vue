@@ -188,7 +188,7 @@ function onBackdrop(e) { if (e.target === e.currentTarget) close(); }
             <option v-for="(s, i) in sources" :key="i" :value="i">{{ s.name }}</option>
           </select>
           <input v-model="customUrl" placeholder="…or paste: owner/repo or github.com URL" @keydown.enter="loadCustom">
-          <button @click="loadCustom">Load</button>
+          <button @click="loadCustom" title="Load drivers from the specified GitHub repository URL">Load</button>
         </div>
         <div v-if="currentSrc" class="srcmeta">
           <a v-if="currentSrc.url" :href="currentSrc.url" target="_blank" rel="noopener">{{ currentSrc.url }}</a>

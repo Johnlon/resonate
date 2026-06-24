@@ -42,13 +42,13 @@ function toggleLock() {
           class="gchip" :class="{ on: state.graphs.includes(t.id) }"
           @click="toggleGraph(t.id)">{{ t.name }}</span>
     <span class="sep"></span>
-    <button @click="pinCompare">+ Compare current</button>
+    <button @click="pinCompare" title="Snapshot the current design and overlay its curves on all graphs for comparison">+ Compare current</button>
     <template v-if="state.compare.length">
       <span class="lab">vs</span>
       <span v-for="(d, i) in state.compare" :key="i"
             class="gchip on" :style="{ borderColor: d.color, color: d.color }"
             @click="removeCompare(i)">{{ d.name }} ✕</span>
-      <button @click="clearCompare">clear</button>
+      <button @click="clearCompare" title="Remove all comparison overlays from graphs">clear</button>
     </template>
     <span class="sep"></span>
     <span class="lab" title="Right-click any graph to snap &amp; lock cursor to nearest peak or trough">Cursor:</span>
