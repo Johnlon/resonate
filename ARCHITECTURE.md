@@ -78,12 +78,95 @@ UI layer calls the core; the core never calls the UI.
 **Layers:**
 
 ```
-src/main.js          Vue app entry point
-src/components/*.vue DOM, canvas drawing, event wiring (Vue SFCs)
-src/core/*.js        physics, alignments, .wdr I/O, state — pure functions, no DOM
+src/main.js          Vue app entry point — mounts the root component
+src/App.vue          Root layout: header, side panel, graph area, overlays
+src/components/*.vue UI components — DOM, event wiring, canvas; no physics
+src/store.js         Shared reactive state (Vue reactive/computed); no DOM, no physics
+src/utils/*.js       Browser-side utilities — canvas drawing, plot data, persist,
+                       flash messages, PR library CRUD, self-test; no physics
+src/presets.js       Static presets (colour palettes, graph tab definitions)
+src/core/*.js        Physics — T/S engine, alignments, .wdr I/O; pure functions, no DOM
 ```
 
+**Component inventory** (`src/components/`):
+
+| Component | Responsibility |
+|---|---|
+| `AppHeader.vue` | Import / export / share / about actions |
+| `SidePanel.vue` | Stacks the four side-panel fieldsets |
+| `DriverPanel.vue` | Driver T/S parameter editor |
+| `DriverBrowser.vue` | Driver library search modal |
+| `BoxPanel.vue` | Enclosure type, Vb, box losses, vented vent controls, alignment buttons |
+| `PRPanel.vue` | Passive radiator library, T/S editor, tuning controls |
+| `SignalPanel.vue` | Circuit model, drive voltage, multi-driver wiring |
+| `FiltersPanel.vue` | Filter chain (HP, LP, Linkwitz transform, parametric EQ) |
+| `GraphArea.vue` | Composes toolbar + grid |
+| `GraphToolbar.vue` | Graph tab selection and compare-design controls |
+| `GraphGrid.vue` | Responsive N-column grid of graph panels |
+| `GraphPanel.vue` | Single canvas graph with crosshair and context menu |
+| `StatBar.vue` | Key derived stats (F3, Qtc, Fb/Fp, peak Z, etc.) |
+| `NumInput.vue` | Shared numeric input with unit scaling and precision |
+| `Flash.vue` | Transient notification overlay |
+
+**Utility inventory** (`src/utils/`):
+
+| File | Responsibility |
+|---|---|
+| `canvas.js` | Canvas drawing — axes, curves, crosshair, readout |
+| `series.js` | Plot data builder — maps sweep output to series arrays; owns `TABS` definition |
+| `persist.js` | Serialise/deserialise full state to JSON; URL hash encode/decode |
+| `flash.js` | Reactive flash-message state (shared singleton) |
+| `prLibrary.js` | PR library CRUD backed by `localStorage` |
+| `selftest.js` | Runtime self-test run once at startup |
+
 **Status:** Adopted. Extraction is in progress — see [PLAN.md](PLAN.md).
+
+---
+
+## AD-5: Runtime self-test — bundle verification distinct from build-time tests
+
+**Decision:** A lightweight physics smoke-test (`src/utils/selftest.js`) runs
+once on every page load, in the user's browser, against the live deployed bundle.
+Its results are written to the browser console under `[Resonate self-test]`.
+
+**Why this exists alongside the Node.js test suite:**
+
+The build-time tests (`node --test test/*.test.mjs`) prove that the **source
+code** is correct, running against source files in a Node.js V8 environment on
+the developer's machine or in CI.
+
+The self-test proves that the **deployed bundle** is correct, running in the
+**exact environment** the end user experiences. They catch different failure
+modes:
+
+| Failure mode | Build tests | Self-test |
+|---|---|---|
+| Logic bug in source code | ✓ | ✓ |
+| Bundler/minifier corrupts code | ✗ | ✓ |
+| Tree-shaking drops a needed export | ✗ | ✓ |
+| Browser JS engine edge case | ✗ | ✓ |
+| Wrong constants after a config change | ✗ | ✓ |
+
+**What it checks:** Three physics gates (same invariants as the first three
+engine tests):
+1. Sealed-box SPL matches the closed-form Thiele/Small transfer function to < 0.1 dB
+2. Passband sensitivity matches the T/S radiation efficiency formula to < 0.5 dB
+3. Vented box rolls off at ~24 dB/oct with two impedance peaks straddling Fb
+
+**`window._selfTestDone` flag:** Set to `true` when the self-test completes.
+Playwright (`test/app.browser.spec.js`) waits on this flag before running
+browser-based integration tests — it is a synchronisation signal, not a result.
+
+**Known limitations / future work:**
+- Currently duplicates logic from `engine.test.mjs` — the three gates should
+  share a single implementation imported by both.
+- Results are console-only; a user who has a broken build has no visible
+  indication. A future improvement would surface failures via the Flash
+  notification system.
+- Magic numbers in the current implementation violate the no-magic-numbers rule
+  and should be replaced with named constants shared with the test suite.
+
+**Status:** Adopted. Improvement to share constants with test suite is pending.
 
 ---
 

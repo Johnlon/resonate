@@ -10,9 +10,9 @@
       "license": "community / factual T/S measurements"
     },
     {
-      "name": "loudspeakerdatabase.com",
+      "name": "loudspeakerdatabase cached",
       "url": "https://github.com/Johnlon/resonate/tree/main/drivers/loudspeakerdatabase",
-      "description": "10 drivers sourced from loudspeakerdatabase.com.",
+      "description": "Drivers sourced from loudspeakerdatabase.com.",
       "license": "see loudspeakerdatabase.com"
     },
     {
@@ -23,16 +23,15 @@
     },
     {
       "name": "MWisBest / WinISDDrivers",
-      "url": "https://github.com/MWisBest/WinISDDrivers",
+      "url": "https://github.com/Johnlon/resonate/tree/main/drivers/MWisBest",
       "description": "~108 subwoofer driver files for WinISD.",
       "license": "see repository"
     },
     {
-      "name": "speakerboxlite.com",
-      "type": "speakerboxlite",
-      "url": "https://www.speakerboxlite.com/",
-      "description": "~6000 drivers from the speakerboxlite.com community database. Loaded live via their open API.",
-      "license": "see speakerboxlite.com"
+      "name": "Parts Express woofer guide",
+      "url": "https://github.com/Johnlon/resonate/tree/main/drivers/parts-express",
+      "description": "319 drivers from the Parts Express woofer selection guide (https://www.parts-express.com/woofer-selection-guide). Brands: Aurum Cantus, CSS, Dayton Audio, Dynavox, EPIQUE, Eminence, GRS, Goldwood, HiVi, Morel, Peerless, Tang Band, Usher, Visaton, Wavecor and others. Note: Re estimated as 0.85×Znom; Sd from baffle cutout diameter; Qes/Qms/Le not available from guide table.",
+      "license": "public product data from parts-express.com"
     }
   ]
 }

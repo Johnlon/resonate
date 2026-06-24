@@ -25,7 +25,7 @@ function numInput(key, scale, val) {
       <button style="flex:1" @click="state.browseOpen = true" title="Open the driver library to search and load a driver from the community database">Browse driver library…</button>
     </div>
     <template v-if="!state.editDriver">
-      <div class="drvsum" @click="state.editDriver = true">
+      <div class="drvsum" @click="state.editDriver = true" title="Click to edit driver Thiele/Small parameters — opens the full T/S parameter editor">
         <span class="nm">{{ driverShort(d) }}</span>
         <span class="ed">Edit ✎</span>
       </div>

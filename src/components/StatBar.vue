@@ -7,16 +7,18 @@ const drv = driver;
 const P = syncedP;
 const sw = curvesData;
 
-function findF3(fs, spl) {
+function findRolloff(fs, spl, drop) {
   const ref = Math.max(...spl);
-  for (let i = 0; i < fs.length; i++) if (spl[i] >= ref - 3) return fs[i];
+  for (let i = 0; i < fs.length; i++) if (spl[i] >= ref - drop) return fs[i];
   return null;
 }
 
 const stats = computed(() => {
   const d = drv.value, p = P.value, s = sw.value;
   const box = state.box;
-  const f3 = findF3(s.fs, s.spl);
+  const f3  = findRolloff(s.fs, s.spl, 3);
+  const f6  = findRolloff(s.fs, s.spl, 6);
+  const f10 = findRolloff(s.fs, s.spl, 10);
   const peakZ = Math.max(...s.zmag);
   const fb = (box === 'vented') ? tuningFromLength(p.Vb, p.ventL, p.Sp || Math.PI*(p.ventD/2)**2) : null;
   const fp = (box === 'pr') ? prTuning(p) : null;
@@ -24,7 +26,7 @@ const stats = computed(() => {
   const fc  = (box === 'sealed') ? d.Fs * Math.sqrt(1 + d.Vas / p.Vb) : null;
   const maxPV = (box === 'vented' || box === 'bandpass4') ? Math.max(...s.pv) : null;
   const maxPRx = (box === 'pr') ? Math.max(...s.excPR) : null;
-  return { box, Vb: p.Vb, fc, Qtc, fb, fp, f3, peakZ, maxPV, maxPRx, ebpVal: ebp(d), prXmax: p.prXmax };
+  return { box, Vb: p.Vb, fc, Qtc, fb, fp, f3, f6, f10, peakZ, maxPV, maxPRx, ebpVal: ebp(d), prXmax: p.prXmax };
 });
 </script>
 
@@ -37,6 +39,8 @@ const stats = computed(() => {
     <span v-if="stats.fb">Fb: <b>{{ stats.fb.toFixed(1) }} Hz</b></span>
     <span v-if="stats.fp">Fp: <b>{{ stats.fp.toFixed(1) }} Hz</b></span>
     <span>F3: <b>{{ stats.f3 ? stats.f3.toFixed(1) + ' Hz' : '—' }}</b></span>
+    <span>F6: <b>{{ stats.f6 ? stats.f6.toFixed(1) + ' Hz' : '—' }}</b></span>
+    <span>F10: <b>{{ stats.f10 ? stats.f10.toFixed(1) + ' Hz' : '—' }}</b></span>
     <span>Z peak: <b>{{ stats.peakZ.toFixed(1) }} Ω</b></span>
     <span v-if="stats.maxPV != null">peak port: <b>{{ stats.maxPV.toFixed(1) }} m/s</b></span>
     <span v-if="stats.maxPRx != null">

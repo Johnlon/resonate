@@ -21,6 +21,13 @@ export function seriesFor(tabId, drv, box, P, sw, mx) {
   if (tabId === 'SPL') {
     series = [{ ...pick(sw.spl), color: meta.color, name: 'SPL' }];
     const mx2 = Math.max(...sw.spl); ymax = Math.ceil((mx2 + 3) / 5) * 5; ymin = ymax - 45;
+    // F3 / F6: first frequency (low→high) where SPL reaches within N dB of the passband peak.
+    // Same reference as StatBar.findF3 — max SPL across the sweep.
+    const rolloff = (drop) => { for (let i = 0; i < sw.fs.length; i++) if (sw.spl[i] >= mx2 - drop) return sw.fs[i]; return null; };
+    const f3 = rolloff(3), f6 = rolloff(6), f10 = rolloff(10);
+    if (f3  != null) series.push({ xs: sw.fs, ys: sw.fs.map(() => mx2 -  3), color: '#ffb454', name: `F3 = ${f3.toFixed(0)} Hz`,  dash: true });
+    if (f6  != null) series.push({ xs: sw.fs, ys: sw.fs.map(() => mx2 -  6), color: '#ff6b6b', name: `F6 = ${f6.toFixed(0)} Hz`,  dash: true });
+    if (f10 != null) series.push({ xs: sw.fs, ys: sw.fs.map(() => mx2 - 10), color: '#c08bff', name: `F10 = ${f10.toFixed(0)} Hz`, dash: true });
   } else if (tabId === 'Excursion') {
     series = [{ ...pick(sw.exc), color: meta.color, name: 'Cone' }];
     const xm = drv.Xmax * 1000;

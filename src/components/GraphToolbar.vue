@@ -40,6 +40,7 @@ function toggleLock() {
     <span class="lab">Graphs:</span>
     <span v-for="t in TABS" :key="t.id"
           class="gchip" :class="{ on: state.graphs.includes(t.id) }"
+          :title="state.graphs.includes(t.id) ? `Hide ${t.name} graph` : `Show ${t.name} graph`"
           @click="toggleGraph(t.id)">{{ t.name }}</span>
     <span class="sep"></span>
     <button @click="pinCompare" title="Snapshot the current design and overlay its curves on all graphs for comparison">+ Compare current</button>
@@ -47,6 +48,7 @@ function toggleLock() {
       <span class="lab">vs</span>
       <span v-for="(d, i) in state.compare" :key="i"
             class="gchip on" :style="{ borderColor: d.color, color: d.color }"
+            :title="`Remove '${d.name}' from comparison overlays`"
             @click="removeCompare(i)">{{ d.name }} ✕</span>
       <button @click="clearCompare" title="Remove all comparison overlays from graphs">clear</button>
     </template>

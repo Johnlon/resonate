@@ -18,7 +18,7 @@ export function logTicks(min, max) {
 }
 
 // Returns geo so the caller can map pixel → frequency for crosshair.
-export function drawOne(canvas, plotData, cursorF, readEl) {
+export function drawOne(canvas, plotData, cursorF, readEl, dragRange) {
   if (!canvas || !plotData) return null;
   const ctx = canvas.getContext('2d');
   const dpr = window.devicePixelRatio || 1;
@@ -86,6 +86,23 @@ export function drawOne(canvas, plotData, cursorF, readEl) {
   }
 
   const geo = { m, pw, ph, X, Y, f0, f1 };
+
+  // drag range — shaded band between two frequencies with measurement readout
+  if (dragRange) {
+    const x1 = X(Math.max(dragRange.fLo, f0)), x2 = X(Math.min(dragRange.fHi, f1));
+    ctx.fillStyle = 'rgba(255,255,255,0.07)';
+    ctx.fillRect(x1, m.t, x2 - x1, ph);
+    ctx.strokeStyle = 'rgba(255,255,255,0.35)'; ctx.lineWidth = 1; ctx.setLineDash([3, 3]);
+    ctx.beginPath(); ctx.moveTo(x1, m.t); ctx.lineTo(x1, m.t + ph); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(x2, m.t); ctx.lineTo(x2, m.t + ph); ctx.stroke();
+    ctx.setLineDash([]);
+    if (readEl) {
+      const ff = f => f >= 100 ? f.toFixed(0) : f.toFixed(1);
+      let html = `<b>${ff(dragRange.fLo)}–${ff(dragRange.fHi)} Hz</b>`;
+      if (dragRange.dy != null) html += `  Δ = <b>${Math.abs(dragRange.dy).toFixed(1)} ${plotData.unit}</b>`;
+      readEl.innerHTML = html; readEl.style.display = 'block';
+    }
+  }
 
   // crosshair
   if (cursorF && plotData.series[0]) {

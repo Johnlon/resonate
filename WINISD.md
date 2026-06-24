@@ -126,8 +126,9 @@ frequency Fp:
 Fs_loaded = 1 / (2π · sqrt((Mms + Madd) · Cms))
            = Fs · sqrt(Mms / (Mms + Madd))
 ```
-Resonate shows this as "Fs+mass" alongside the in-box Fp.  They differ because Fp is
-lowered further by the box compliance.
+Resonate shows this as "Fs+mass" alongside the in-box Fp.  They differ because the box
+compliance in series with the PR compliance reduces the total system compliance, raising
+the resonance: Fp > Fs+mass.
 
 ### ⚠ Assumption — NOT directly verified
 > **WinISD's Fs input is the unloaded free-air resonance of the PR (no added mass).**
@@ -205,10 +206,14 @@ Ql / Qa / Qp with their current values; clicking any entry opens a small float w
 an editable field and a drag-square. Confirmed with screenshots in `research/winisd/help/`.
 
 **Directly observed in WinISD 0.7.0.950 (2026-06-24):** Ql = 10.000, Qa = 100.000.
-**Qp is NOT shown in the popup** — port losses appear to be either removed or hardcoded internally in 0.7.
-The 0.50 alpha help file described Qp as a third entry; this no longer appears in the 0.7 UI.
+**Correction (2026-06-24):** Qp IS shown in WinISD 0.7 — it appears on the **ported (vented) box view**
+specifically, not in the general box losses popup. Default: **100**. Earlier observation that
+"Qp is not shown" was incorrect; it was observed in the sealed box view where the port loss
+field does not apply.
 
 Resonate exposes `Ql` (default 10), `Qa` (default 100), and `Qp` (default 100), matching WinISD.
+`Qp` is implemented in `circuit.js` (`portLoss()`) and applied for vented and bandpass4 boxes.
+It must be exposed in the UI for vented/bandpass4 — currently missing from BoxPanel.vue.
 
 **Practical Qa values (from DIYAudio community, thread 316996):**
 - 100 — no stuffing (WinISD default)
@@ -373,5 +378,31 @@ are significant, accepting that results will differ slightly from WinISD.
 | 2 | ~~Does WinISD include Le in its acoustic circuit model?~~ **RESOLVED: No. Le only for impedance. Source: aboutequivalentcircuits.html** | Closed |
 | 3 | ~~Does WinISD model box leakage (Ql)?~~ **RESOLVED: Ql=10, Qa=100, Qp=100; entry via "Advanced->" button in the Box tab panel (not the top-level Advanced tab). Confirmed by help file text + screenshots boxdes05/06.** | Closed |
 | 4 | ~~What radiation model does WinISD use?~~ **RESOLVED: half-space (infinite baffle). Formula `p(r) = ρ·ω·U0/(2π·r)` confirmed in `aboutequivalentcircuits.html`. Resonate uses identical formula.** | Closed |
-| 5 | Does WinISD account for air load (radiation mass) on the PR separately from Mms? | Low |
-| 6 | Does WinISD's Qms in PR mode mean the same as T/S Qms? | Low |
+| 5 | ~~Does WinISD account for air load (radiation mass) on the PR separately from Mms?~~ **RESOLVED: No separate term added. `thielesmall.html` defines Mms as "including air load" for all drivers. For PRs, WinISD derives Mms from Fs+Vas via `Mms = 1/((2π·Fs)²·Cms)` — the measured Fs already encodes air-load implicitly. Neither WinISD nor Resonate adds an extra radiation-mass term. Source: `research/winisd/help/thielesmall.html`** | Closed |
+| 6 | ~~Does WinISD's Qms in PR mode mean the same as T/S Qms?~~ **RESOLVED: Yes — standard T/S definition. `aboutequivalentcircuits.html` gives `Ram = 1/(2π·Fs·Qms·Ccas)` applied identically for drivers and PRs. Algebraically equivalent to Resonate's `Rms = sqrt(Mms/Cms)/Qms`. Source: `research/winisd/help/aboutequivalentcircuits.html`** | Closed |
+
+---
+
+## 11. SpeakerBoxLite API — CORS finding
+
+**Verified 2026-06-24** via curl.
+
+The speakerboxlite.com REST API (`https://speakerboxlite.com/api/v1/speakers`) returns
+`Access-Control-Allow-Origin: *` on **HEAD** requests but omits the CORS header entirely
+on **GET** requests. Because browsers always use GET for `fetch()`, every browser-side
+fetch to this API is blocked by the browser's CORS enforcement.
+
+| Request type | CORS header present? |
+|---|---|
+| `HEAD /api/v1/speakers/count` | ✅ `Access-Control-Allow-Origin: *` |
+| `GET /api/v1/speakers/count` | ❌ absent |
+| `OPTIONS /api/v1/speakers/count` | ❌ absent |
+
+This is a **server-side misconfiguration** on speakerboxlite.com — no client-side
+workaround is possible. The site itself remains reachable (direct browser navigation works)
+but JavaScript `fetch()` is blocked.
+
+**Resonate status:** SpeakerBoxLite is exposed as an opt-in button; clicking it immediately
+hits this error. To re-enable, speakerboxlite.com would need to include
+`Access-Control-Allow-Origin: *` on their GET responses, or Resonate would need a CORS
+proxy (introduces a server dependency).

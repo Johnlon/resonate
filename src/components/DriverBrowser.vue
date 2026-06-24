@@ -4,105 +4,25 @@ import { state } from '../store.js';
 import { parseWdr } from '../core/driver.js';
 import sourcesJson from '../../drivers/sources.json';
 
-const sources = ref(sourcesJson.sources || []);
-const files = ref([]);
-const allFiles = ref([]);
-const srcIdx = ref(0);
-const currentSrc = ref(null);
-const filterQ = ref('');
-const srcStatus = ref('');
-const srcErr = ref(false);
-const customUrl = ref('');
-const sblCache = ref(null);
+const sources     = sourcesJson.sources || [];
+const allFiles    = ref([]);   // unified pool across all sources
+const filterQ     = ref('');
+const statusMsg   = ref('');
+const statusErr   = ref(false);
+const customUrl   = ref('');
+const initialized = ref(false);
+
+// SpeakerBoxLite opt-in state
+const sblLoaded   = ref(false);
+const sblLoading  = ref(false);
 
 const filteredFiles = computed(() => {
-  const q = filterQ.value.toLowerCase();
-  if (!q) return files.value;
-  const pool = allFiles.value.length ? allFiles.value : files.value;
-  return pool.filter(f => f.name.toLowerCase().includes(q));
+  const q = filterQ.value.toLowerCase().trim();
+  if (!q) return allFiles.value;
+  return allFiles.value.filter(f => f.name.toLowerCase().includes(q));
 });
 
-function mergeIntoPool(srcName, fileList) {
-  allFiles.value = [
-    ...allFiles.value.filter(f => f.sourceName !== srcName),
-    ...fileList.map(f => ({ ...f, sourceName: srcName })),
-  ];
-}
-
-async function fetchSourceIntoPool(src) {
-  if (src.type === 'speakerboxlite') return;
-  try {
-    const resolved = src.repo ? src : parseRepoInput(src.url);
-    if (!resolved) return;
-    const branch = resolved.branch || await ghDefaultBranch(resolved.repo);
-    const r = await fetch(`https://api.github.com/repos/${resolved.repo}/git/trees/${branch}?recursive=1`);
-    if (!r.ok) return;
-    const tree = (await r.json()).tree || [];
-    const base = (resolved.path || '').replace(/^\/|\/$/g, '');
-    const srcFiles = tree
-      .filter(t => t.type === 'blob' && t.path.toLowerCase().endsWith('.wdr')
-                && (!base || t.path.toLowerCase().startsWith(base.toLowerCase() + '/')))
-      .map(t => ({
-        path: t.path, branch, repo: resolved.repo,
-        name: t.path.split('/').pop().replace(/\.wdr$/i, ''),
-        sourceName: src.name,
-      }));
-    mergeIntoPool(src.name, srcFiles);
-  } catch {}
-}
-
-async function init() {
-  if (srcIdx.value !== 0 || files.value.length) return;
-  if (sources.value.length) await selectSource(sources.value[0]);
-  for (const src of sources.value.slice(1)) fetchSourceIntoPool(src);
-}
-
-function fromSpeakerboxlite(s) {
-  const d = { brand: s.manufName || '', model: s.name || '' };
-  const name = [d.brand, d.model].filter(Boolean).join(' ');
-  if (name) d.name = name;
-  if (s.fs   > 0) d.Fs   = s.fs;
-  if (s.qts  > 0) d.Qts  = s.qts;
-  if (s.qes  > 0) d.Qes  = s.qes;
-  if (s.qms  > 0) d.Qms  = s.qms;
-  if (s.re   > 0) d.Re   = s.re;
-  if (s.sd   > 0) d.Sd   = s.sd   * 1e-6;  // mm² → m²
-  if (s.vas  > 0) d.Vas  = s.vas  * 1e-3;  // L → m³
-  if (s.xMax > 0) d.Xmax = s.xMax * 1e-3;  // mm → m
-  if (s.le   > 0) d.Le   = s.le   * 1e-3;  // mH → H
-  if (s.bl   > 0) d.Bl   = s.bl;
-  return d;
-}
-
-async function loadSpeakerboxlite(srcName) {
-  if (sblCache.value) {
-    files.value = sblCache.value;
-    srcStatus.value = `${files.value.length} drivers`;
-    return;
-  }
-  const PAGE = 500, base = 'https://speakerboxlite.com/api/v1/speakers';
-  try {
-    const { count } = await (await fetch(base + '/count')).json();
-    srcStatus.value = `Loading ${count} drivers from speakerboxlite…`;
-    let all = [];
-    for (let offset = 0; offset < count; offset += PAGE) {
-      const r = await fetch(`${base}?offset=${offset}&limit=${PAGE}`);
-      if (!r.ok) throw new Error('speakerboxlite API error (' + r.status + ')');
-      all = all.concat(await r.json());
-      srcStatus.value = `Loading… ${all.length} / ${count}`;
-    }
-    const usable = all
-      .filter(s => s.fs > 0 && s.sd > 0 && s.re > 0 && (s.vas > 0 || s.qts > 0))
-      .sort((a, b) => (a.manufName + a.name).localeCompare(b.manufName + b.name))
-      .map(s => ({ name: s.manufName + ' ' + s.name, sbl: s, sourceName: srcName }));
-    sblCache.value = usable;
-    files.value = usable;
-    mergeIntoPool(srcName, usable);
-    srcStatus.value = `${usable.length} drivers`;
-  } catch(err) {
-    srcErr.value = true; srcStatus.value = 'Error: ' + err.message;
-  }
-}
+// ── GitHub source helpers ────────────────────────────────────────────────────
 
 async function ghDefaultBranch(repo) {
   const r = await fetch(`https://api.github.com/repos/${repo}`);
@@ -110,64 +30,156 @@ async function ghDefaultBranch(repo) {
   return (await r.json()).default_branch || 'main';
 }
 
-async function selectSource(src) {
-  currentSrc.value = src; files.value = []; srcErr.value = false;
-  srcStatus.value = 'Loading…';
-  const srcName = src.name;
-  if (src.type === 'speakerboxlite') { await loadSpeakerboxlite(srcName); return; }
+async function fetchSource(src) {
   try {
-    const resolved = src.repo ? src : parseRepoInput(src.url);
-    if (!resolved) throw new Error('cannot parse source URL');
-    const branch = resolved.branch || await ghDefaultBranch(resolved.repo);
-    src = { ...src, ...resolved, branch };
+    const branch = src.branch || await ghDefaultBranch(src.repo);
     const r = await fetch(`https://api.github.com/repos/${src.repo}/git/trees/${branch}?recursive=1`);
-    if (!r.ok) throw new Error('cannot list files (' + r.status + (r.status === 403 ? ', rate limit' : '') + ')');
+    if (!r.ok) return;
     const tree = (await r.json()).tree || [];
-    const ext = '.wdr';
     const base = (src.path || '').replace(/^\/|\/$/g, '');
-    files.value = tree
-      .filter(t => t.type === 'blob' && t.path.toLowerCase().endsWith(ext)
+    const found = tree
+      .filter(t => t.type === 'blob' && t.path.toLowerCase().endsWith('.wdr')
                 && (!base || t.path.toLowerCase().startsWith(base.toLowerCase() + '/')))
-      .map(t => ({ path: t.path, branch, repo: src.repo,
-                   name: t.path.split('/').pop().replace(/\.wdr$/i, ''), sourceName: srcName }));
-    mergeIntoPool(srcName, files.value);
-    srcStatus.value = `${files.value.length} drivers`;
-  } catch(err) {
-    srcErr.value = true; srcStatus.value = 'Error: ' + err.message;
-  }
-}
-
-function rawUrl(f) {
-  return `https://raw.githubusercontent.com/${f.repo}/${f.branch}/${f.path.split('/').map(encodeURIComponent).join('/')}`;
-}
-
-async function pickFile(f) {
-  if (f.sbl) {
-    state.driverRaw = fromSpeakerboxlite(f.sbl);
-    state.browseOpen = false;
-    return;
-  }
-  srcErr.value = false; srcStatus.value = 'Loading ' + f.name + '…';
-  try {
-    const r = await fetch(rawUrl(f)); if (!r.ok) throw new Error('fetch failed (' + r.status + ')');
-    state.driverRaw = parseWdr(await r.text());
-    state.browseOpen = false;
-  } catch(err) { srcErr.value = true; srcStatus.value = 'Could not load: ' + err.message; }
+      .map(t => ({
+        path: t.path, branch, repo: src.repo,
+        name: t.path.split('/').pop().replace(/\.wdr$/i, ''),
+        sourceName: src.name,
+        sourceUrl:  src.url || '',
+        sourceDesc: src.description || '',
+      }));
+    allFiles.value = [
+      ...allFiles.value.filter(f => f.sourceName !== src.name),
+      ...found,
+    ];
+    statusMsg.value = `${allFiles.value.length} drivers`;
+  } catch {}
 }
 
 function parseRepoInput(s) {
   s = s.trim(); if (!s) return null;
   let m = s.match(/github\.com\/([^/]+)\/([^/]+?)(?:\.git)?(?:\/tree\/([^/]+)(?:\/(.*))?)?$/i);
-  if (m) return { name:m[1]+'/'+m[2], type:'github', repo:m[1]+'/'+m[2], branch:m[3]||'', path:m[4]||'', url:'https://github.com/'+m[1]+'/'+m[2] };
+  if (m) return { name: m[1]+'/'+m[2], type:'github', repo: m[1]+'/'+m[2], branch: m[3]||'', path: m[4]||'' };
   m = s.match(/^([\w.-]+)\/([\w.-]+)$/);
-  if (m) return { name:s, type:'github', repo:s, branch:'', path:'', url:'https://github.com/'+s };
+  if (m) return { name: s, type:'github', repo: s, branch: '', path: '' };
   return null;
 }
 
-function loadCustom() {
+// ── Initialise: load all bundled GitHub sources in parallel ─────────────────
+
+async function init() {
+  if (initialized.value) return;
+  initialized.value = true;
+  statusMsg.value = 'Loading…'; statusErr.value = false;
+  const githubSources = sources.map(src => {
+    const m = src.url?.match(/github\.com\/([^/]+\/[^/]+?)(?:\/tree\/([^/]+)(?:\/(.*?))?)?(?:\.git)?$/i);
+    return m ? { ...src, repo: m[1], branch: m[2] || '', path: m[3] || '' } : src;
+  }).filter(s => s.repo);
+  await Promise.all(githubSources.map(fetchSource));
+  statusMsg.value = allFiles.value.length
+    ? `${allFiles.value.length} drivers from ${githubSources.length} sources`
+    : 'No drivers loaded — check network';
+}
+
+// ── SpeakerBoxLite opt-in load ───────────────────────────────────────────────
+
+async function loadSpeakerBoxLite() {
+  if (sblLoaded.value || sblLoading.value) return;
+  sblLoading.value = true; statusErr.value = false;
+  const PAGE = 500, base = 'https://speakerboxlite.com/api/v1/speakers';
+
+  // Probe first so we can tell network-block from CORS from real errors.
+  // NOTE: speakerboxlite.com returns Access-Control-Allow-Origin: * on HEAD but NOT on GET.
+  // This is a server-side CORS misconfiguration — the browser blocks the GET response.
+  let countResp;
+  try { countResp = await fetch(base + '/count'); }
+  catch (err) {
+    statusErr.value = true;
+    statusMsg.value = 'speakerboxlite.com CORS error — their API returns Access-Control-Allow-Origin '
+      + 'on HEAD requests but not GET requests, so browsers block it. '
+      + 'This is a bug on their server; nothing can be done client-side.';
+    sblLoading.value = false; return;
+  }
+  if (!countResp.ok) {
+    statusErr.value = true;
+    statusMsg.value = `SpeakerBoxLite: server returned ${countResp.status}`;
+    sblLoading.value = false; return;
+  }
+
+  try {
+    const { count } = await countResp.json();
+    const batches = Math.ceil(count / PAGE);
+    const sblFiles = [];
+    for (let i = 0; i < batches; i++) {
+      statusMsg.value = `SpeakerBoxLite: loading ${Math.min((i+1)*PAGE, count)} / ${count}…`;
+      const rows = await (await fetch(`${base}?offset=${i*PAGE}&limit=${PAGE}`)).json();
+      for (const d of rows) {
+        sblFiles.push({
+          path: null, branch: null, repo: null,
+          name: [d.brand, d.model].filter(Boolean).join(' ') || d.name || 'Unknown',
+          sourceName: 'SpeakerBoxLite',
+          sourceUrl:  'https://www.speakerboxlite.com/',
+          sourceDesc: 'speakerboxlite.com community database',
+          sblData: d,
+        });
+      }
+    }
+    allFiles.value = [...allFiles.value.filter(f => f.sourceName !== 'SpeakerBoxLite'), ...sblFiles];
+    sblLoaded.value = true;
+    statusMsg.value = `${allFiles.value.length} drivers total`;
+  } catch (err) {
+    statusErr.value = true;
+    statusMsg.value = 'SpeakerBoxLite load failed mid-stream: ' + err.message;
+  }
+  sblLoading.value = false;
+}
+
+// ── Add custom source ────────────────────────────────────────────────────────
+
+async function loadCustom() {
   const src = parseRepoInput(customUrl.value);
-  if (!src) { srcErr.value = true; srcStatus.value = 'Enter owner/repo or a github.com URL'; return; }
-  selectSource(src);
+  if (!src) { statusErr.value = true; statusMsg.value = 'Enter owner/repo or a github.com URL'; return; }
+  statusErr.value = false; statusMsg.value = `Loading ${src.name}…`;
+  await fetchSource(src);
+  customUrl.value = '';
+}
+
+// ── Pick a driver ────────────────────────────────────────────────────────────
+
+async function pickFile(f) {
+  // SpeakerBoxLite drivers carry T/S data inline; convert to WDR format
+  if (f.sblData) {
+    const d = f.sblData;
+    const raw = {
+      name:  f.name,
+      brand: d.brand || '', model: d.model || '',
+      Fs: d.fs, Qts: d.qts, Qes: d.qes, Qms: d.qms,
+      Vas: d.vas_l != null ? d.vas_l / 1000 : undefined,  // L → m³
+      Sd: d.sd_cm2 != null ? d.sd_cm2 / 1e4 : undefined,  // cm² → m²
+      Re: d.re, Le: d.le_mh != null ? d.le_mh / 1000 : undefined, // mH → H
+      Bl: d.bl,
+      Xmax: d.xmax_mm != null ? d.xmax_mm / 1000 : undefined, // mm → m
+      Mms: d.mms_g  != null ? d.mms_g  / 1000 : undefined, // g → kg
+      Cms: d.cms_mm_n != null ? 1 / (d.cms_mm_n * 1000) : undefined, // mm/N → m/N
+      Rms: d.rms,
+      Pe:  d.pe,
+    };
+    // strip undefined fields so deriveDriver uses its own defaults
+    Object.keys(raw).forEach(k => raw[k] === undefined && delete raw[k]);
+    state.driverRaw = raw;
+    state.browseOpen = false;
+    return;
+  }
+  statusErr.value = false; statusMsg.value = 'Loading ' + f.name + '…';
+  try {
+    const url = `https://raw.githubusercontent.com/${f.repo}/${f.branch}/${f.path.split('/').map(encodeURIComponent).join('/')}`;
+    const r = await fetch(url); if (!r.ok) throw new Error('fetch failed (' + r.status + ')');
+    state.driverRaw = parseWdr(await r.text());
+    state.browseOpen = false;
+  } catch(err) { statusErr.value = true; statusMsg.value = 'Could not load: ' + err.message; }
+}
+
+function openSourceUrl(url) {
+  if (url) window.open(url, '_blank', 'noopener');
 }
 
 watch(() => state.browseOpen, val => { if (val) init(); });
@@ -180,32 +192,64 @@ function onBackdrop(e) { if (e.target === e.currentTarget) close(); }
     <div class="modal" v-if="state.browseOpen">
       <h2>
         Browse driver library
-        <span class="x" @click="close">&times;</span>
+        <span class="x" @click="close" title="Close the driver library browser">&times;</span>
       </h2>
       <div class="body">
-        <div class="srcrow">
-          <select @change="e => selectSource(sources[+e.target.value])">
-            <option v-for="(s, i) in sources" :key="i" :value="i">{{ s.name }}</option>
-          </select>
-          <input v-model="customUrl" placeholder="…or paste: owner/repo or github.com URL" @keydown.enter="loadCustom">
-          <button @click="loadCustom" title="Load drivers from the specified GitHub repository URL">Load</button>
+        <input class="filter" v-model="filterQ" placeholder="Search drivers…" autofocus>
+        <div class="statusrow">
+          <span class="status" :class="{ err: statusErr }">{{ statusMsg }}</span>
+          <button v-if="!sblLoaded" class="sblbtn" :disabled="sblLoading"
+                  title="Load ~6000 drivers from the speakerboxlite.com community database (fetched live)"
+                  @click="loadSpeakerBoxLite">
+            {{ sblLoading ? 'Loading…' : '+ SpeakerBoxLite' }}
+          </button>
         </div>
-        <div v-if="currentSrc" class="srcmeta">
-          <a v-if="currentSrc.url" :href="currentSrc.url" target="_blank" rel="noopener">{{ currentSrc.url }}</a>
-          <template v-if="currentSrc.description"> — {{ currentSrc.description }}</template>
-        </div>
-        <input class="filter" v-model="filterQ" placeholder="Filter drivers…">
         <div class="dlist">
-          <div v-for="f in filteredFiles.slice(0, 500)" :key="f.path || f.name"
+          <div v-for="f in filteredFiles.slice(0, 500)" :key="(f.path || '') + f.name"
                class="ditem" @click="pickFile(f)">
             <b>{{ f.name }}</b>
-            <span v-if="filterQ && f.sourceName" class="stag">{{ f.sourceName }}</span>
+            <a v-if="f.sourceUrl" class="stag"
+               :title="f.sourceUrl + (f.sourceDesc ? ' — ' + f.sourceDesc : '')"
+               @click.stop.prevent="openSourceUrl(f.sourceUrl)">{{ f.sourceName }}</a>
+            <span v-else class="stag">{{ f.sourceName }}</span>
           </div>
-          <div v-if="!filteredFiles.length && srcStatus && !srcErr" class="status loading">{{ srcStatus }}</div>
-          <div v-if="!filteredFiles.length && !srcStatus" class="status">No matching drivers.</div>
+          <div v-if="!filteredFiles.length && !statusErr" class="status loading">
+            {{ filterQ ? 'No matching drivers.' : 'Loading…' }}
+          </div>
         </div>
-        <div class="status" :class="{ err: srcErr }">{{ srcErr ? srcStatus : '' }}</div>
+        <div class="addrow">
+          <input v-model="customUrl" placeholder="Add GitHub source: owner/repo or full URL"
+                 @keydown.enter="loadCustom"
+                 title="Load .wdr files from any public GitHub repository and add them to the pool">
+          <button @click="loadCustom" title="Fetch .wdr files from the specified GitHub repository">Add</button>
+        </div>
       </div>
     </div>
   </div>
 </template>
+
+<style scoped>
+.overlay { display:none; position:fixed; inset:0; background:#0008; z-index:1000; align-items:center; justify-content:center; }
+.overlay.on { display:flex; }
+.modal { background:var(--bg2); border:1px solid var(--mut); border-radius:8px; width:420px; max-height:80vh; display:flex; flex-direction:column; }
+h2 { margin:0; padding:12px 16px; font-size:14px; font-weight:600; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--mut); }
+.x { cursor:pointer; font-size:18px; line-height:1; color:var(--mut); }
+.x:hover { color:var(--fg); }
+.body { display:flex; flex-direction:column; padding:10px; gap:6px; overflow:hidden; }
+.filter { width:100%; box-sizing:border-box; padding:5px 8px; font-size:12px; background:var(--bg); border:1px solid var(--mut); border-radius:4px; color:var(--fg); }
+.filter:focus { outline:none; border-color:var(--acc); }
+.statusrow { display:flex; align-items:center; gap:8px; }
+.status { font-size:11px; color:var(--mut); flex:1; }
+.status.err { color:#ff6b6b; }
+.sblbtn { font-size:11px; padding:2px 8px; white-space:nowrap; }
+.dlist { flex:1; overflow-y:auto; border:1px solid var(--mut); border-radius:4px; min-height:200px; }
+.ditem { padding:4px 10px; cursor:pointer; font-size:12px; display:flex; justify-content:space-between; align-items:center; }
+.ditem:hover { background:var(--bg3); }
+.stag { font-size:10px; color:var(--mut); margin-left:8px; white-space:nowrap; cursor:pointer; }
+.stag:hover { color:var(--acc); text-decoration:underline; }
+.status.loading { padding:8px 10px; }
+.addrow { display:flex; gap:6px; }
+.addrow input { flex:1; padding:4px 8px; font-size:11px; background:var(--bg); border:1px solid var(--mut); border-radius:4px; color:var(--fg); }
+.addrow input:focus { outline:none; border-color:var(--acc); }
+.addrow button { font-size:11px; padding:3px 10px; }
+</style>

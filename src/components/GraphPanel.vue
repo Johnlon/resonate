@@ -26,11 +26,48 @@ const effectiveF = computed(() =>
 );
 
 let geoRef = null;
+const dragRange = ref(null); // { fLo, fHi, dy } — set while dragging
+let dragOrigin = null;       // { clientX, f } — set on mousedown
+
+function freqAt(clientX) {
+  if (!geoRef) return null;
+  const { m, pw, f0, f1 } = geoRef;
+  const rect = canvasEl.value.getBoundingClientRect();
+  const frac = (clientX - rect.left - m.l) / pw;
+  if (frac < 0 || frac > 1) return null;
+  return Math.pow(10, Math.log10(f0) + frac * (Math.log10(f1) - Math.log10(f0)));
+}
+
+function splNear(f) {
+  const s = plotData.value?.series?.[0]; if (!s) return null;
+  let bi = 0, bd = 1e9;
+  for (let i = 0; i < s.xs.length; i++) { const d = Math.abs(Math.log10(s.xs[i]) - Math.log10(f)); if (d < bd) { bd = d; bi = i; } }
+  return s.ys[bi];
+}
+
 function redraw() {
-  geoRef = drawOne(canvasEl.value, plotData.value, effectiveF.value, readEl.value);
+  geoRef = drawOne(canvasEl.value, plotData.value, dragRange.value ? null : effectiveF.value, readEl.value, dragRange.value);
+}
+
+function onMouseDown(e) {
+  if (e.button !== 0 || !geoRef) return;
+  const f = freqAt(e.clientX);
+  if (f !== null) dragOrigin = { clientX: e.clientX, f };
 }
 
 function onMouseMove(e) {
+  if (dragOrigin && (e.buttons & 1)) {
+    if (Math.abs(e.clientX - dragOrigin.clientX) >= 5) {
+      const f2 = freqAt(e.clientX);
+      if (f2 !== null) {
+        const fLo = Math.min(dragOrigin.f, f2), fHi = Math.max(dragOrigin.f, f2);
+        const yLo = splNear(fLo), yHi = splNear(fHi);
+        dragRange.value = { fLo, fHi, dy: (yLo != null && yHi != null) ? yHi - yLo : null };
+        redraw();
+      }
+      return;
+    }
+  }
   if (state.cursorLocked || !geoRef) return;
   const { m, pw, f0, f1 } = geoRef;
   const rect = canvasEl.value.getBoundingClientRect();
@@ -39,7 +76,20 @@ function onMouseMove(e) {
   state.cursorF = Math.pow(10, Math.log10(f0) + frac * (Math.log10(f1) - Math.log10(f0)));
 }
 
-function onMouseLeave() { if (!state.cursorLocked) state.cursorF = null; }
+function onMouseUp(e) {
+  if (!dragOrigin || e.button !== 0) { dragOrigin = null; return; }
+  const wasDrag = Math.abs(e.clientX - dragOrigin.clientX) >= 5;
+  dragOrigin = null;
+  if (wasDrag) return; // leave dragRange visible; cleared on next mousedown or leave
+  dragRange.value = null;
+  const f = freqAt(e.clientX);
+  if (f !== null) { state.pinnedF = f; state.cursorLocked = true; }
+}
+
+function onMouseLeave() {
+  dragOrigin = null; dragRange.value = null;
+  if (!state.cursorLocked) state.cursorF = null;
+}
 
 // ── context menu ──────────────────────────────────────────────
 const ctxMenu = ref({ visible: false, x: 0, y: 0, f: null });
@@ -119,6 +169,8 @@ watch([plotData, effectiveF], redraw, { flush: 'post' });
 <template>
   <div class="gpanel">
     <canvas ref="canvasEl"
+            @mousedown="onMouseDown"
+            @mouseup="onMouseUp"
             @mousemove="onMouseMove"
             @mouseleave="onMouseLeave"
             @contextmenu="onContextMenu" />
@@ -131,12 +183,12 @@ watch([plotData, effectiveF], redraw, { flush: 'post' });
          class="ctx-menu"
          :style="{ left: ctxMenu.x + 'px', top: ctxMenu.y + 'px' }"
          @click.stop>
-      <div class="ctx-item" @click="lockHere">Lock cursor here</div>
+      <div class="ctx-item" @click="lockHere" title="Pin the cursor to this frequency — hover will no longer move it">Lock cursor here</div>
       <div class="ctx-sep"></div>
-      <div class="ctx-item" @click="snapAction('left',  'max')">◄ Max to left</div>
-      <div class="ctx-item" @click="snapAction('left',  'min')">◄ Min to left</div>
-      <div class="ctx-item" @click="snapAction('right', 'max')">Max to right ►</div>
-      <div class="ctx-item" @click="snapAction('right', 'min')">Min to right ►</div>
+      <div class="ctx-item" @click="snapAction('left',  'max')" title="Snap cursor left to the nearest peak (local maximum)">◄ Max to left</div>
+      <div class="ctx-item" @click="snapAction('left',  'min')" title="Snap cursor left to the nearest trough (local minimum)">◄ Min to left</div>
+      <div class="ctx-item" @click="snapAction('right', 'max')" title="Snap cursor right to the nearest peak (local maximum)">Max to right ►</div>
+      <div class="ctx-item" @click="snapAction('right', 'min')" title="Snap cursor right to the nearest trough (local minimum)">Min to right ►</div>
     </div>
   </Teleport>
 </template>

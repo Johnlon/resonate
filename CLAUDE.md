@@ -23,7 +23,9 @@
 - **No magic numbers in source code:** Every non-obvious numeric constant in `src/core/` must have a comment explaining its physical meaning and a source reference where applicable. Named constants are preferred over inline literals.
 - **Test framework:** Use `node:test` (`import { describe, it } from 'node:test'`) with `node:assert/strict`. Run with `node --test test/*.test.mjs`.
 
-## Third-party tool behaviour — require evidence
-- Never assert facts about how third-party tools (WinISD, LEAP, REW, etc.) behave internally without primary-source evidence: documentation, source code, or directly observed test output.
-- Inferred or assumed behaviour **must** be labelled as such in code comments, docs, and conversation. Record assumptions in `WINISD.md` (or the relevant tool's notes file) with an explicit "⚠ Assumption — NOT directly verified" marker and a verification procedure.
-- Example violation to avoid: stating "WinISD uses 2.83 V fixed" without citing where this was confirmed.
+## External claims — require evidence, label inline
+- Never assert facts about external systems — tools (WinISD, LEAP, REW, etc.), websites, services, APIs, or data sources — without primary-source evidence obtained in the current conversation: a tool call, a fetched URL, a read file, or directly observed output.
+- **The user must not have to verify my claims.** Any external claim that has not been verified in the current session must be flagged inline in the response with "⚠ unverified" before it reaches the user — not corrected after they catch it.
+- Inferred or assumed behaviour **must** be labelled as such in code comments, docs, and conversation. Record tool-behaviour assumptions in `WINISD.md` (or the relevant tool's notes file) with an explicit "⚠ Assumption — NOT directly verified" marker and a verification procedure.
+- Example violations to avoid: stating "WinISD uses 2.83 V fixed" without a source; stating "Eminence publishes machine-readable data files" without having fetched evidence of this.
+- **Hard gate:** Before making any comparative or causal claim about an external system ("X works because…", "unlike Y which…", "Y publishes…", "Z supports…"), call `advisor` to review the claim. Do not state it to the user until advisor has confirmed it is grounded.

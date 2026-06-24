@@ -89,7 +89,7 @@ proven by another tool.
 - ✅ Maximum power
 - ⬜ Amplifier load — current / VA draw vs frequency — *seen in 00 Simulator*
 - ⬜ Step response (impulse / time-domain)
-- ⬜ Overlay & compare multiple designs on one graph — *seen in 00 Simulator, SpeakerBoxLite*
+- ✅ Overlay & compare multiple designs on one graph
 - ⬜ Interactive schematic / lumped-model view — *seen in 00 Simulator*
 - ⬜ Configurable graph gridlines (3/5/10 dB) and contrast
 
@@ -114,13 +114,13 @@ proven by another tool.
 
 ## 4. Electronics & signal chain
 - ✅ Input drive voltage / power
-- ⬜ Series / source resistance (amp + cabling) — *seen in SpeakerDesign.dev, 00 Sim*
+- ✅ Series / source resistance (amp + cabling)
 - ⬜ Configurable listening distance (currently fixed 1 m) — *seen in SpeakerDesign.dev, 00 Sim*
 - ⬜ Frequency-range presets (sub / woofer / wide / custom) — *seen in SpeakerDesign.dev*
-- ⬜ EQ: parametric (peaking) — *WinISD core feature; 00 Simulator has on-graph editing*
-- ⬜ EQ: Linkwitz transform — *seen in 00 Simulator*
+- ✅ EQ: parametric (peaking)
+- ✅ EQ: Linkwitz transform
 - ⬜ EQ: high-shelf / low-shelf — *seen in 00 Simulator*
-- ⬜ High-pass / low-pass filters (Butterworth / Bessel / Linkwitz-Riley) — *seen in SpeakerBoxLite*
+- ✅ High-pass / low-pass filters
 - ⬜ Amplifier output impedance / damping factor effect
 - ⬜ Signal generator presets (sine / sweep reference levels)
 
@@ -155,7 +155,7 @@ proven by another tool.
 - ✅ JSON project save / load
 - ✅ **Federated driver data** — `drivers/sources.json` links external `.wdr`
   repos; add one via PR, no re-hosting
-- ⬜ **URL-encoded shareable designs** — paste a design as a link — *00 Simulator already ships this; table stakes, not a differentiator*
+- ✅ **URL-encoded shareable designs** — paste a design as a link
 - 🔨 Community driver-data contribution flow (PR a `.wdr`, or a source link)
 - ✅ Static hosting on GitHub Pages (<https://johnlon.github.io/resonate/>)
 
