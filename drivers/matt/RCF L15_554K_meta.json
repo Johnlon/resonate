@@ -1,0 +1,8 @@
+{
+  "file": "RCF L15_554K.wdr",
+  "quality": "H",
+  "issue": "filename_convention",
+  "detail": "Manufacturer name is L15-554K (hyphen). Internal model uses slash; filename uses underscore. See top-level meta.json for transformation note. Source: https://www.rcf.it/en/products/product-detail/l15-554k",
+  "reviewedBy": null,
+  "datasheet": "https://www.rcf.it/en/products/product-detail/l15-554k"
+}

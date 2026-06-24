@@ -4,26 +4,35 @@
   "description": "Federated driver-data sources. Resonate links to driver libraries wherever their owners maintain them, instead of copying the files. The in-app driver browser reads this list (and you can paste any GitHub repo ad hoc). Add a source by opening a PR that appends an entry here.",
   "sources": [
     {
-      "name": "Resonate built-in",
-      "type": "github",
-      "repo": "Johnlon/resonate",
-      "branch": "main",
-      "path": "drivers",
-      "fileExtension": ".wdr",
-      "url": "https://github.com/Johnlon/resonate/tree/main/drivers",
-      "description": "Drivers bundled with this repository.",
-      "license": "MIT"
+      "name": "Matt (mtg90) / AVS Forum",
+      "url": "https://github.com/Johnlon/resonate/tree/main/drivers/matt",
+      "description": "~430 drivers from the mtg90 AVS Forum collection. See drivers/matt/meta.json for provenance.",
+      "license": "community / factual T/S measurements"
+    },
+    {
+      "name": "loudspeakerdatabase.com",
+      "url": "https://github.com/Johnlon/resonate/tree/main/drivers/loudspeakerdatabase",
+      "description": "10 drivers sourced from loudspeakerdatabase.com.",
+      "license": "see loudspeakerdatabase.com"
+    },
+    {
+      "name": "Choong Keat Yian",
+      "url": "https://github.com/Johnlon/resonate/tree/main/drivers/Choong Keat Yian",
+      "description": "1 driver contributed by Choong Keat Yian.",
+      "license": "community contribution"
     },
     {
       "name": "MWisBest / WinISDDrivers",
-      "type": "github",
-      "repo": "MWisBest/WinISDDrivers",
-      "branch": "master",
-      "path": "",
-      "fileExtension": ".wdr",
       "url": "https://github.com/MWisBest/WinISDDrivers",
       "description": "~108 subwoofer driver files for WinISD.",
       "license": "see repository"
+    },
+    {
+      "name": "speakerboxlite.com",
+      "type": "speakerboxlite",
+      "url": "https://speakerboxlite.com/manufacturers/shared",
+      "description": "~6000 drivers from the speakerboxlite.com community database. Loaded live via their open API.",
+      "license": "see speakerboxlite.com"
     }
   ]
 }

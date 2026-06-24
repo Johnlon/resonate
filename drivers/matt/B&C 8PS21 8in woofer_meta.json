@@ -1,0 +1,7 @@
+{
+  "file": "B&C 8PS21 8in woofer.wdr",
+  "quality": "H",
+  "issue": "filename_convention",
+  "detail": "8in in filename represents 8in in Model inside — expected inch mark substitution",
+  "reviewedBy": null
+}

@@ -1,0 +1,8 @@
+{
+  "file": "GRS 8PR-8.wdr",
+  "quality": "H",
+  "issue": "model_corrected",
+  "detail": "Model corrected from 8PF-8 to 8PR-8. Re=7.58 ohm confirms 8-ohm driver; Fs/Vas consistent with 8PR-8 spec.",
+  "datasheet": "https://www.parts-express.com/pedocs/specs/GRS%20Spec%20Sheets/292-428--grs-8pr-8-spec-sheet.pdf",
+  "reviewedBy": null
+}

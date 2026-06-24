@@ -1,0 +1,7 @@
+{
+  "file": "Aurum Cantus  AC200_50C2C 8in Woofer.wdr",
+  "quality": "H",
+  "issue": "filename_convention",
+  "detail": "Underscore in filename replaces / in model name (AC200/50C2C) — expected, / not valid in filenames",
+  "reviewedBy": null
+}
