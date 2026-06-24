@@ -10,6 +10,7 @@ const DEFAULT_DRIVER = { name: 'Demo 6.5" Driver', Fs:37, Qts:0.38, Qes:0.40, Qm
 const P_DEFAULTS = {
   Vb:0.030, Vf:0.015, ventD:0.05, ventL:0.10, Ql:10, Qa:100, Qp:100,
   nDrivers:1, wiring:'parallel', Pin:1, Rs:0.1,
+  prName:'Custom PR',
   prSd:0.0133, prNum:1, prMmd:0.010, prMadd:0, prCms:0.0008, prRms:1.0, prXmax:0.012, prMode:'winisd',
   fmin:10, fmax:1000, N:400,
   circuitModel: 'winisd',

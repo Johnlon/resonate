@@ -181,3 +181,33 @@ must mention its WinISD equivalent wherever one exists. This includes:
 - Doc section heading: `"Box losses (WinISD: Advanced→ Ql / Qa)"`
 
 **Status:** Adopted 2026-06-24.
+
+---
+
+## UI-4: Intrinsic parameters are collapsible; tunable parameters are always visible
+
+**Rule:** Distinguish two classes of parameters in every panel:
+
+- **Intrinsic** — device datasheet specs that describe what a component *is* (PR: Sd, Mms, Cms, Rms, Xmax, Fs; Driver: Fs, Qts, Vas, Re, Le, Xmax). These go inside a collapsible edit section (hidden by default). Users rarely change these after initial setup.
+- **Tunable** — values the user actively adjusts during a design session (PR: added mass; Box: Vb, vent length, vent diameter, box losses). These must remain permanently visible outside any collapsible block so the user can tweak them without entering edit mode.
+
+**Structural pattern (PR example):**
+```
+[Browse PR library]                    ← always visible
+[PR name] [Edit ✎]                    ← always visible (summary)
+[Sd · Fs · Qms · Xmax]               ← always visible (summary specs)
+── edit section (collapsed by default) ──
+  [PR name input, Sd, Xmax, Mms, Cms, Rms, Fs, Qms, Vas inputs]
+  [Save]
+── end edit section ──
+[PR tuning] subsect                    ← always visible
+[Added mass _______ g]                 ← always visible (tunable)
+[Total Mms / Fp / Fs+mass readouts]   ← always visible
+```
+
+**Rationale:**
+- Users routinely iterate on tunable parameters (e.g. adjusting added mass to shift Fp) but rarely need to re-enter intrinsic specs after initial setup.
+- Hiding tunable controls inside an edit section forces an unnecessary modal interaction and hides the primary feedback loop.
+- Keeping intrinsic specs collapsible reduces panel height once a component is configured.
+
+**Status:** Adopted 2026-06-24.

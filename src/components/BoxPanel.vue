@@ -85,23 +85,25 @@ function autoPRMass() {
 
 // PR library
 const showLosses = ref(false);
+const editPR = ref(false);
 
 const prLib = ref(listPRs());
 const showPRLib = ref(false);
 
 function saveCurrentPR() {
-  const name = prompt('Save PR as:', '');
-  if (!name?.trim()) return;
-  prLib.value = savePR(name.trim(), state.P);
+  const name = (state.P.prName || '').trim() || 'Custom PR';
+  prLib.value = savePR(name, state.P);
 }
 
 function loadPR(entry) {
+  state.P.prName = entry.name;
   state.P.prSd   = entry.prSd;
   state.P.prMmd  = entry.prMmd;
   state.P.prCms  = entry.prCms;
   state.P.prRms  = entry.prRms;
   state.P.prXmax = entry.prXmax;
   showPRLib.value = false;
+  editPR.value = false;
 }
 
 function removePR(id) {
@@ -173,42 +175,58 @@ function removePR(id) {
     </template>
     <template v-if="state.box === 'pr'">
       <!-- PR library — browse at top, mirroring the driver section -->
-      <div class="row" style="margin-bottom:4px">
-        <button style="flex:1" @click="showPRLib = !showPRLib"
+      <div style="margin-bottom:4px">
+        <button style="width:100%" @click="showPRLib = !showPRLib"
           title="Browse your saved passive radiators and load one into the current design — like 'Browse driver library' for PRs">
           {{ showPRLib ? 'Hide PR library ▾' : 'Browse PR library… ▸' }}
         </button>
-        <button @click="saveCurrentPR" style="margin-left:4px"
-          title="Save the current PR parameters (Sd, Mms, Cms, Rms, Xmax) to your local library for reuse">
-          Save PR
-        </button>
       </div>
       <div v-if="showPRLib" class="pr-lib" style="margin-bottom:6px">
-        <div v-if="!prLib.length" style="color:var(--mut);font-size:11px;padding:4px 0">No saved PRs yet — enter specs below and click Save PR.</div>
+        <div v-if="!prLib.length" style="color:var(--mut);font-size:11px;padding:4px 0">No saved PRs yet — edit the PR below and click Save to add one.</div>
         <div v-for="e in prLib" :key="e.id" class="pr-lib-item">
           <span class="pr-lib-name" @click="loadPR(e)" :title="`Click to load — Sd=${(e.prSd*1e4).toFixed(0)}cm² Mms=${(e.prMmd*1000).toFixed(1)}g Cms=${(e.prCms*1000).toFixed(2)}mm/N`">{{ e.name }}</span>
           <button class="pr-lib-del" @click="removePR(e.id)" title="Remove this PR from the library">✕</button>
         </div>
       </div>
 
-      <div class="row" title="Number of passive radiators. Multiple PRs in parallel lower the effective acoustic impedance of the PR branch, increasing output without changing the tuning frequency Fp. WinISD: 'Number of radiators'.">
-        <label>PR count</label>
-        <NumInput v-model="state.P.prNum" :scale="1" :precision="2" step="1" :min="1" />
-        <span class="u"></span>
-      </div>
-      <div class="row" title="Effective piston area of the passive radiator cone (from datasheet).">
-        <label>Sd</label>
-        <NumInput v-model="state.P.prSd" :scale="1e4" :precision="4" />
-        <span class="u">cm²</span>
-      </div>
-      <div class="row" title="Maximum linear one-way cone excursion before distortion (from datasheet).">
-        <label>Xmax</label>
-        <NumInput v-model="state.P.prXmax" :scale="1000" :precision="3" />
-        <span class="u">mm</span>
-      </div>
+      <!-- PR name + summary (collapsed) or fields (expanded), mirroring DriverPanel -->
+      <template v-if="!editPR">
+        <div class="drvsum" @click="editPR = true" title="Click to edit passive radiator parameters">
+          <span class="nm">{{ state.P.prName || 'Custom PR' }}</span>
+          <span class="ed">Edit ✎</span>
+        </div>
+        <div class="drvspecs">
+          Sd <b>{{ (state.P.prSd*1e4).toFixed(0) }} cm²</b> ·
+          Fs <b>{{ prFsDisplay.toFixed(1) }} Hz</b> ·
+          Qms <b>{{ prQmsDisplay.toFixed(2) }}</b> ·
+          Vas <b>{{ prVas.toFixed(2) }} L</b> ·
+          Xmax <b>{{ (state.P.prXmax*1000).toFixed(1) }} mm</b>
+        </div>
+      </template>
+      <template v-else>
+        <div class="row" title="Name for this passive radiator — shown in the summary and saved with the PR library entry">
+          <label>PR name</label>
+          <input style="flex:1" type="text" :value="state.P.prName" @input="e => state.P.prName = e.target.value" placeholder="e.g. Dayton SD270A-88">
+        </div>
 
-      <div class="row">
-        <label>Input mode</label>
+        <div class="row" title="Number of passive radiators. Multiple PRs in parallel lower the effective acoustic impedance of the PR branch, increasing output without changing the tuning frequency Fp. WinISD: 'Number of radiators'.">
+          <label>PR count</label>
+          <NumInput v-model="state.P.prNum" :scale="1" :precision="2" step="1" :min="1" />
+          <span class="u"></span>
+        </div>
+        <div class="row" title="Effective piston area of the passive radiator cone (from datasheet). WinISD: Sd.">
+          <label>Sd</label>
+          <NumInput v-model="state.P.prSd" :scale="1e4" :precision="4" />
+          <span class="u">cm²</span>
+        </div>
+        <div class="row" title="Maximum linear one-way cone excursion before distortion (from datasheet). WinISD: Xmax.">
+          <label>Xmax</label>
+          <NumInput v-model="state.P.prXmax" :scale="1000" :precision="3" />
+          <span class="u">mm</span>
+        </div>
+
+        <div class="row" title="Choose between WinISD-style parameter entry (Fs, Qms, Vas) or raw T/S parameters (Mms, Cms, Rms). Both are equivalent — WinISD uses the same conversions internally.">
+          <label>Input mode</label>
         <select v-model="state.P.prMode" style="flex:1">
           <option value="winisd">WinISD</option>
           <option value="ts">T/S</option>
@@ -288,22 +306,28 @@ function removePR(id) {
         </div>
       </template>
 
+        <div class="btns" style="margin-top:4px">
+          <button @click="() => { saveCurrentPR(); editPR = false; }" title="Save these PR parameters to your library under the current PR name, then return to the summary view">Save</button>
+        </div>
+      </template>
+
+      <!-- PR tuning — always visible; not intrinsic to the device -->
       <div class="subsect">PR tuning</div>
-      <div class="row" title="Extra mass physically bolted to the PR cone (e.g. steel washer, lead shot). Shifts the tuning frequency down. Total = Mms + added mass.">
+      <div class="row" title="Extra mass physically bolted to the PR cone (e.g. steel washer, lead shot). Shifts the tuning frequency down without changing the PR's other parameters. WinISD: 'Added mass'.">
         <label>Added mass <span style="color:var(--mut);font-size:10px">(tunable)</span></label>
         <NumInput v-model="state.P.prMadd" :scale="1000" :precision="4" />
         <span class="u">g</span>
       </div>
-      <div class="row" title="Total moving mass = Mms (manufacture) + added mass. This is what the circuit uses.">
+      <div class="row" title="Total moving mass = Mms + added mass. This is what the acoustic circuit uses.">
         <label>Total Mms</label>
         <span style="font-size:11px;color:var(--mut);text-align:right;flex:0 0 96px">{{ ((P.prMmd + P.prMadd)*1000).toPrecision(4) }} g</span>
         <span class="u"></span>
       </div>
       <div class="row">
         <label></label>
-        <span style="font-size:11px;color:var(--acc2)" title="PR in-box tuning frequency — passive radiator resonance in this box. Analogous to Fb in a vented box.">Fp ≈ <b>{{ fp.toFixed(1) }} Hz</b></span>
+        <span style="font-size:11px;color:var(--acc2)" title="PR in-box tuning frequency — passive radiator resonance in this enclosure. Analogous to Fb in a vented box. WinISD: Fp.">Fp ≈ <b>{{ fp.toFixed(1) }} Hz</b></span>
       </div>
-      <div class="row" title="Free-air PR resonance with added mass, no box. WinISD calls this 'Fs with added mass'. In-box Fp is lower because box compliance shifts it down.">
+      <div class="row" title="Free-air PR resonance with added mass applied, no box. In-box Fp is lower because the box compliance shifts it down. WinISD calls this 'Fs with added mass'.">
         <label></label>
         <span style="font-size:11px;color:var(--mut)">Fs+mass ≈ {{ prFsLoaded.toFixed(1) }} Hz</span>
       </div>
