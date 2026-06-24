@@ -67,8 +67,8 @@ cause silent import failures or wrong values in Resonate.
 | `Manufacturer=` | string   | Full legal manufacturer name; often same as Brand; leave empty if unknown |
 | `ProvidedBy=`   | string   | Data source, e.g. `SB Acoustics website (scraped 2026-06-24)`             |
 | `Comment=`      | string   | Free text; include source URL and any caveats                             |
-| `DateAdded=`    | YYYYMMDD | Date first added; empty if unknown                                        |
-| `DateModified=` | YYYYMMDD | Date last changed; empty if unknown                                       |
+| `DateAdded=`    | YYYY-MM-DD | Date first added to this repo; empty if unknown                          |
+| `DateModified=` | YYYY-MM-DD | Date data was last refreshed from source; empty if unknown               |
 
 #### Core T/S parameters — SI units throughout
 
@@ -128,6 +128,25 @@ cause silent import failures or wrong values in Resonate.
 | `Vcd=`      | `0`                                                                                       |
 | `DVol=`     | `0`                                                                                       |
 | `ParState=` | WinISD bitmask string; use `EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC` as default |
+
+#### Date semantics and duplicate sorting
+
+`DateModified` is the key field for resolving duplicates. When the same driver appears in multiple
+collections, the UI sorts the **most recently dated entry first** — so a fresh vendor scrape
+automatically surfaces above an older community measurement.
+
+Rules for setting dates:
+- **Scrapers** must set both `DateAdded` (first scrape) and `DateModified` (each refresh) to the
+  scrape date in `YYYY-MM-DD` format. The scraper updates `DateModified` on every refresh so the UI
+  always shows the freshest data first.
+- **Historic collections** (Matt/mtg90, loudspeakerdatabase, etc.) have no scrape date — leave
+  `DateAdded` and `DateModified` empty. These will always sort below dated entries for the same
+  driver, which is correct: a fresh vendor scrape is more authoritative than an undated community
+  measurement.
+- **Hand-entered files**: set `DateAdded` to the date you added it; update `DateModified` if you
+  later correct the data.
+
+Never use a fake date to artificially boost a file's ranking.
 
 #### CRITICAL rule — never fabricate values
 

@@ -19,10 +19,19 @@ const sblLoading  = ref(false);
 
 const filteredFiles = computed(() => {
   const tokens = filterQ.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
-  if (!tokens.length) return allFiles.value;
-  return allFiles.value.filter(f => {
-    const hay = f.name.toLowerCase();
-    return tokens.every(t => hay.includes(t));
+  const filtered = tokens.length
+    ? allFiles.value.filter(f => {
+        const hay = f.name.toLowerCase();
+        return tokens.every(t => hay.includes(t));
+      })
+    : allFiles.value;
+
+  // Sort: name ascending; within same name, newer DateModified first
+  return [...filtered].sort((a, b) => {
+    const nc = a.name.localeCompare(b.name, undefined, { sensitivity: 'base' });
+    if (nc !== 0) return nc;
+    // Same name — newer date sorts higher (descending)
+    return (b.date || '').localeCompare(a.date || '');
   });
 });
 
@@ -86,7 +95,8 @@ async function init() {
     if (!files) continue;
     const entries = files.map(f => ({
       name: f.name,
-      content: f.content,        // inline — no fetch needed on pick
+      content: f.content,
+      date: f.date || '',
       path: null, repo: null, branch: null,
       sourceName: src.name,
       sourceUrl:  src.url || '',
@@ -246,13 +256,16 @@ function onBackdrop(e) { if (e.target === e.currentTarget) close(); }
           </button>
         </div>
         <div class="dlist">
-          <div v-for="f in filteredFiles.slice(0, 500)" :key="(f.path || '') + f.name"
+          <div v-for="f in filteredFiles.slice(0, 500)" :key="(f.sourceName || '') + (f.path || '') + f.name"
                class="ditem" @click="pickFile(f)">
             <b>{{ f.name }}</b>
-            <a v-if="f.sourceUrl" class="stag"
-               :title="f.sourceUrl + (f.sourceDesc ? ' — ' + f.sourceDesc : '')"
-               @click.stop.prevent="openSourceUrl(f.sourceUrl)">{{ f.sourceName }}</a>
-            <span v-else class="stag">{{ f.sourceName }}</span>
+            <span class="dmeta">
+              <span v-if="f.date" class="ddate">{{ f.date }}</span>
+              <a v-if="f.sourceUrl" class="stag"
+                 :title="f.sourceUrl + (f.sourceDesc ? ' — ' + f.sourceDesc : '')"
+                 @click.stop.prevent="openSourceUrl(f.sourceUrl)">{{ f.sourceName }}</a>
+              <span v-else class="stag">{{ f.sourceName }}</span>
+            </span>
           </div>
           <div v-if="!filteredFiles.length && !statusErr" class="status loading">
             {{ filterQ ? 'No matching drivers.' : 'Loading…' }}
@@ -286,7 +299,9 @@ h2 { margin:0; padding:12px 16px; font-size:14px; font-weight:600; display:flex;
 .dlist { flex:1; overflow-y:auto; border:1px solid var(--mut); border-radius:4px; min-height:200px; }
 .ditem { padding:4px 10px; cursor:pointer; font-size:12px; display:flex; justify-content:space-between; align-items:center; }
 .ditem:hover { background:var(--bg3); }
-.stag { font-size:10px; color:var(--mut); margin-left:8px; white-space:nowrap; cursor:pointer; }
+.dmeta { display:flex; align-items:center; gap:6px; flex-shrink:0; }
+.ddate { font-size:10px; color:var(--mut); white-space:nowrap; }
+.stag { font-size:10px; color:var(--mut); white-space:nowrap; cursor:pointer; }
 .stag:hover { color:var(--acc); text-decoration:underline; }
 .status.loading { padding:8px 10px; }
 .addrow { display:flex; gap:6px; }

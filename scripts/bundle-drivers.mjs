@@ -50,10 +50,18 @@ for (const src of sources) {
   try { wdrPaths = walkWdr(localPath); }
   catch { console.warn(`  SKIP ${src.name} — path not found: ${localPath}`); continue; }
 
-  const files = wdrPaths.map(p => ({
-    name: p.split(/[\\/]/).pop().replace(/\.wdr$/i, ''),
-    content: readFileSync(p, 'utf8'),
-  }));
+  const files = wdrPaths.map(p => {
+    const content = readFileSync(p, 'utf8');
+    // Extract DateModified or DateAdded for UI sorting (prefer Modified)
+    const dm = content.match(/^DateModified=(.+)$/m);
+    const da = content.match(/^DateAdded=(.+)$/m);
+    const date = (dm?.[1] || da?.[1] || '').trim();
+    return {
+      name: p.split(/[\\/]/).pop().replace(/\.wdr$/i, ''),
+      date,
+      content,
+    };
+  });
 
   bundle.sources.push({ name: src.name, files });
   console.log(`  ${src.name}: ${files.length} drivers`);
