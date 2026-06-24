@@ -221,9 +221,8 @@ automated ingestion pipelines and a human-review quality framework.
 
 Resonate’s defensible edges:
 
-- **Open source, now.** 00 Simulator pledges to open source “if it goes stale.”
-  Resonate is MIT, public, and forkable today — not contingent on a maintainer’s
-  goodwill.
+- **Open source, fully and permanently.** MIT-licensed, public, and forkable
+  today. The code belongs to everyone who uses it.
 - **Open *data*, growing.** 2,100+ drivers in a version-controlled commons, with
   vendor scraper pipelines adding new measurements automatically. The data carries
   quality grades, datasheet provenance, and scrape timestamps so you know exactly
