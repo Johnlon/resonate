@@ -150,7 +150,26 @@ function removePR(id) {
       </div>
     </template>
     <template v-if="state.box === 'pr'">
-      <div class="row" title="Number of passive radiators. Multiple PRs in parallel lower the effective acoustic impedance of the PR branch, increasing output without changing the tuning frequency Fp.">
+      <!-- PR library — browse at top, mirroring the driver section -->
+      <div class="row" style="margin-bottom:4px">
+        <button style="flex:1" @click="showPRLib = !showPRLib"
+          title="Browse your saved passive radiators and load one into the current design — like 'Browse driver library' for PRs">
+          {{ showPRLib ? 'Hide PR library ▾' : 'Browse PR library… ▸' }}
+        </button>
+        <button @click="saveCurrentPR" style="margin-left:4px"
+          title="Save the current PR parameters (Sd, Mms, Cms, Rms, Xmax) to your local library for reuse">
+          Save PR
+        </button>
+      </div>
+      <div v-if="showPRLib" class="pr-lib" style="margin-bottom:6px">
+        <div v-if="!prLib.length" style="color:var(--mut);font-size:11px;padding:4px 0">No saved PRs yet — enter specs below and click Save PR.</div>
+        <div v-for="e in prLib" :key="e.id" class="pr-lib-item">
+          <span class="pr-lib-name" @click="loadPR(e)" :title="`Click to load — Sd=${(e.prSd*1e4).toFixed(0)}cm² Mms=${(e.prMmd*1000).toFixed(1)}g Cms=${(e.prCms*1000).toFixed(2)}mm/N`">{{ e.name }}</span>
+          <button class="pr-lib-del" @click="removePR(e.id)" title="Remove this PR from the library">✕</button>
+        </div>
+      </div>
+
+      <div class="row" title="Number of passive radiators. Multiple PRs in parallel lower the effective acoustic impedance of the PR branch, increasing output without changing the tuning frequency Fp. WinISD: 'Number of radiators'.">
         <label>PR count</label>
         <NumInput v-model="state.P.prNum" :scale="1" :precision="2" step="1" :min="1" />
         <span class="u"></span>
@@ -267,19 +286,6 @@ function removePR(id) {
         <span style="font-size:11px;color:var(--mut)">Fs+mass ≈ {{ prFsLoaded.toFixed(1) }} Hz</span>
       </div>
 
-      <!-- PR library -->
-      <div class="subsect">PR library</div>
-      <div class="btns" style="margin-bottom:4px">
-        <button @click="saveCurrentPR" title="Save current PR specs (Sd, Mms, Cms, Rms, Xmax) to local library for reuse.">Save PR…</button>
-        <button @click="showPRLib = !showPRLib" title="Browse saved PRs and load into current design.">{{ showPRLib ? 'Hide library' : 'Browse PRs' }}</button>
-      </div>
-      <div v-if="showPRLib" class="pr-lib">
-        <div v-if="!prLib.length" style="color:var(--mut);font-size:11px;padding:4px 0">No saved PRs yet. Enter specs and click Save PR.</div>
-        <div v-for="e in prLib" :key="e.id" class="pr-lib-item">
-          <span class="pr-lib-name" @click="loadPR(e)" :title="`Sd=${(e.prSd*1e4).toFixed(0)}cm² Mms=${(e.prMmd*1000).toFixed(1)}g Cms=${(e.prCms*1000).toFixed(2)}mm/N`">{{ e.name }}</span>
-          <button class="pr-lib-del" @click="removePR(e.id)" title="Remove from library">✕</button>
-        </div>
-      </div>
     </template>
     <div class="btns">
       <button v-if="state.box === 'sealed'" @click="setVbForQtc"
