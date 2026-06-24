@@ -141,12 +141,17 @@ def is_new_url(url: str, manifest: dict) -> bool:
 
 
 def mark_scraped(url: str, manifest: dict, wdr_filename: str | None,
-                 status: str = "ok") -> None:
-    manifest.setdefault("scraped", {})[url] = {
+                 status: str = "ok", title: str = "", category: str = "") -> None:
+    entry = {
         "scraped_at": datetime.now(timezone.utc).isoformat(),
         "wdr": wdr_filename,
         "status": status,
     }
+    if title:
+        entry["title"] = title
+    if category:
+        entry["category"] = category
+    manifest.setdefault("scraped", {})[url] = entry
 
 
 # ---------------------------------------------------------------------------
@@ -284,9 +289,14 @@ def run_scraper(vendor_name: str,
 
     manifest = load_manifest(out)
 
-    print(f"[{vendor_name}] Fetching sitemap(s) ...")
-    all_urls = fetch_product_urls(sitemap_url, url_filter=url_filter, delay_s=delay_s)
-    print(f"[{vendor_name}] {len(all_urls)} product URLs in sitemap")
+    if callable(sitemap_url):
+        # Vendor supplies its own URL collector (e.g. category-page crawl instead of sitemap)
+        print(f"[{vendor_name}] Collecting product URLs ...")
+        all_urls = sitemap_url()
+    else:
+        print(f"[{vendor_name}] Fetching sitemap(s) ...")
+        all_urls = fetch_product_urls(sitemap_url, url_filter=url_filter, delay_s=delay_s)
+    print(f"[{vendor_name}] {len(all_urls)} product URLs")
 
     if args.refresh:
         to_scrape = all_urls
@@ -319,9 +329,16 @@ def run_scraper(vendor_name: str,
             time.sleep(delay_s)
             continue
 
-        if product is None:
-            print("(skipped — no T/S data)")
-            mark_scraped(url, manifest, None, status="skipped")
+        # parse_product returns None or {"skip": True, "category": "..."} for non-drivers
+        is_skip = product is None or (isinstance(product, dict) and product.get("skip"))
+        if is_skip:
+            cat = (product or {}).get("category", "") if isinstance(product, dict) else ""
+            title_m = re.search(r"<title[^>]*>(.*?)</title>", html, re.I | re.S)
+            page_title = re.sub(r"<[^>]+>", "", title_m.group(1)).strip() if title_m else ""
+            label = f"(skipped — {cat})" if cat else "(skipped — no T/S data)"
+            print(label)
+            mark_scraped(url, manifest, None, status="skipped",
+                         title=page_title, category=cat)
             skipped += 1
             time.sleep(delay_s)
             continue

@@ -22,12 +22,27 @@ with a speaker driver article number and Fs are written to WDR.
 """
 
 import html as html_module
+import json
+import pathlib
 import re
-from scraper_lib import run_scraper, parse_number
+import sys
+import time
+from scraper_lib import run_scraper, parse_number, fetch
 
 VENDOR      = "SoundImports"
 SITEMAP_URL = "https://www.soundimports.eu/en/sitemap.xml"
 OUT_DIR     = "drivers/soundimports"
+BASE        = "https://www.soundimports.eu"
+
+# Driver category pages (verified from /en/audio-components/ on 2026-06-24).
+# Each URL is the "View all" parent page that includes all subcategories.
+# Excluded: Exciters, Bass shakers, Plate amplifiers, Amplifier modules,
+#           Single board computers — these have no T/S parameters.
+DRIVER_CATEGORIES = [
+    f"{BASE}/en/audio-components/woofers/",   # full-range, sub, bass-mid, mid, coaxial, PR
+    f"{BASE}/en/audio-components/tweeters/",  # dome, ring-rad, AMT, horn, planar, ribbon, etc.
+]
+DELAY_S = 0.5
 
 # <dt> label substring (lowercase) → (wdr_key, SI conversion factor)
 # Verified against: SB Acoustics SB20FRPC30-8, Purifi PTT5.25X08-NFA-01,
@@ -55,6 +70,54 @@ FIELD_MAP = {
 
 
 
+def _collect_urls() -> list[str]:
+    """
+    Paginate through each driver category listing page and return all product URLs.
+    SI pagination: page 1 = /en/audio-components/woofers/
+                   page N = /en/audio-components/woofers/pageN.html
+    Product links are absolute: href="https://www.soundimports.eu/en/brand-model.html"
+    """
+    seen: set[str] = set()
+    urls: list[str] = []
+
+    for cat_url in DRIVER_CATEGORIES:
+        page = 1
+        while True:
+            url = cat_url if page == 1 else f"{cat_url.rstrip('/')}page{page}.html"
+            try:
+                html = fetch(url)
+            except Exception as e:
+                print(f"  [SI] WARN: could not fetch {url}: {e}")
+                break
+
+            # Product links: absolute URLs ending in .html that are not category/service pages
+            skip = ("/audio-components/", "/brands/", "/blogs/", "/service/",
+                    "/collections/", "/page", "/cart", "/checkout")
+            for m in re.finditer(
+                r'href="(https://www\.soundimports\.eu/en/[a-z0-9][a-z0-9._\-]+\.html)"',
+                html, re.I
+            ):
+                link = m.group(1)
+                if not any(s in link for s in skip) and link not in seen:
+                    seen.add(link)
+                    urls.append(link)
+
+            # Find last page number from pagination links
+            page_nums = [int(m) for m in re.findall(
+                r'soundimports\.eu/en/audio-components/[^"]+?page(\d+)\.html', html
+            )]
+            last_page = max(page_nums) if page_nums else 1
+
+            print(f"  [SI] {cat_url.split('/')[-2]}: page {page}/{last_page} "
+                  f"({len(urls)} total so far)")
+            if page >= last_page:
+                break
+            page += 1
+            time.sleep(DELAY_S * 0.5)
+
+    return urls
+
+
 def _extract_specs(html: str) -> dict[str, str]:
     """
     Extract <dt>Label</dt><dd>Value</dd> pairs.
@@ -77,7 +140,30 @@ def _extract_specs(html: str) -> dict[str, str]:
     return specs
 
 
+def _extract_category(html: str) -> str:
+    """
+    Extract product category from JSON-LD BreadcrumbList (position 3).
+    Example: position 3 = {"name": "Tweeters"} → "Tweeters".
+    Falls back to "Show all <Category>" link text if JSON-LD is absent.
+    Verified against SI tweeter page (2026-06-24): position 2 = Audio components,
+    position 3 = Tweeters.
+    """
+    # JSON-LD: "position": 3 , "item": { ... "name": "Tweeters" }
+    m = re.search(
+        r'"position"\s*:\s*3\s*,\s*"item"\s*:\s*\{[^}]*?"name"\s*:\s*"([^"]+)"',
+        html, re.S
+    )
+    if m:
+        return m.group(1)
+    # Fallback: <a ...>Show all Tweeters</a>
+    m = re.search(r"Show all ([A-Z][a-zA-Z &/\-]+)", html)
+    if m:
+        return m.group(1).strip()
+    return ""
+
+
 def parse_product(html: str, url: str) -> dict | None:
+    category = _extract_category(html)
     specs_raw = _extract_specs(html)
 
     # Article number is the manufacturer model code
@@ -86,7 +172,7 @@ def parse_product(html: str, url: str) -> dict | None:
              or specs_raw.get("Artikelnummer")
              or "").strip()
     if not model:
-        return None
+        return {"skip": True, "category": category} if category else None
 
     # Brand: H1 is "<span>Brand</span> ArticleNumber Description"
     # Strip all tags from H1, then take everything before the article number.
@@ -101,12 +187,11 @@ def parse_product(html: str, url: str) -> dict | None:
         # Fallback: derive from URL slug — "sb-acoustics-sb20frpc30-8" → "Sb Acoustics"
         slug = url.rstrip("/").split("/")[-1].replace(".html", "")
         model_slug = re.sub(r"[^a-z0-9]", "-", model.lower())
-        # Remove model slug from end of URL slug to get brand portion
         brand_slug = re.sub(re.escape(model_slug) + r".*$", "", slug).strip("-")
         brand = " ".join(w.capitalize() for w in brand_slug.split("-"))
 
     if not brand:
-        return None
+        return {"skip": True, "category": category}
 
     # Map labels → WDR fields with SI conversions
     fields: dict[str, float] = {}
@@ -120,7 +205,7 @@ def parse_product(html: str, url: str) -> dict | None:
                 break
 
     if not fields.get("Fs"):
-        return None  # skip pages with no resonant frequency
+        return {"skip": True, "category": category}  # product but not a driver
 
     # PDF / measurement file links
     pdf_matches = re.findall(r'"(https?://[^"]+\.pdf)"', html, re.I)
@@ -139,14 +224,43 @@ def parse_product(html: str, url: str) -> dict | None:
 
 
 def url_filter(url: str) -> bool:
-    """Keep product .html pages; drop categories, blogs, service, brand pages."""
+    """
+    Fast pre-filter applied before fetching any page.
+    Drops navigation/service pages (no HTTP fetch needed).
+    Brand-slug exclusions (e.g. 'audyn-', 'arylic-') are maintained in
+    drivers/soundimports/excluded_brands.json — generated by build_exclusions.py
+    after a full scan so future runs skip known-accessory brands instantly.
+    """
     if not url.endswith(".html"):
         return False
-    skip = ("/audio-components/", "/brands/", "/blogs/", "/service/",
-            "/collections/", "/page", "/sitemap", "/cart", "/checkout")
-    return not any(s in url for s in skip)
+    skip_paths = ("/audio-components/", "/brands/", "/blogs/", "/service/",
+                  "/collections/", "/page", "/sitemap", "/cart", "/checkout")
+    if any(s in url for s in skip_paths):
+        return False
+    slug = url.rstrip("/").split("/")[-1]
+    for prefix in _EXCLUDED_SLUG_PREFIXES:
+        if slug.startswith(prefix):
+            return False
+    return True
+
+
+# Learned brand-slug prefixes that are 100% non-driver pages.
+# Generated by build_exclusions.py after a full scan; empty on first run.
+_excl_path = pathlib.Path(__file__).parent.parent / "drivers" / "soundimports" / "excluded_brands.json"
+_EXCLUDED_SLUG_PREFIXES: list[str] = (
+    json.loads(_excl_path.read_text()) if _excl_path.exists() else []
+)
 
 
 if __name__ == "__main__":
-    run_scraper(VENDOR, SITEMAP_URL, parse_product, OUT_DIR,
-                url_filter=url_filter, delay_s=0.5)
+    # Default: full sitemap scan — exhaustive, builds the manifest.
+    # Subsequent runs are fast: manifested URLs skipped without fetching,
+    # known-accessory slug prefixes fast-failed before any HTTP request.
+    # Pass --categories-only to crawl only driver category pages (faster refresh).
+    if "--categories-only" in sys.argv:
+        sys.argv.remove("--categories-only")
+        url_source = _collect_urls
+    else:
+        url_source = SITEMAP_URL
+    run_scraper(VENDOR, url_source, parse_product, OUT_DIR,
+                url_filter=url_filter, delay_s=DELAY_S)
