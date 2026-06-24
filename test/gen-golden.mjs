@@ -40,7 +40,7 @@ const DESIGNS = [
     name: 'pr-single',
     driverRaw: BASE_DRIVER,
     box: 'pr',
-    P: { Vb:0.020, Ql:7, prSd:0.0133, prMmp:0.030, prCms:0.0008, prRms:1.0, prXmax:0.012,
+    P: { Vb:0.020, Ql:7, prSd:0.0133, prMmd:0.030, prMadd:0, prCms:0.0008, prRms:1.0, prXmax:0.012,
          eg:2.83, fmin:10, fmax:1000, N:200 },
   },
   {
