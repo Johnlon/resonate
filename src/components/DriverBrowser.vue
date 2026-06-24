@@ -17,6 +17,22 @@ const initialized = ref(false);
 const sblLoaded   = ref(false);
 const sblLoading  = ref(false);
 
+// Normalise any date string to YYYY-MM-DD for comparison and display.
+// Handles ISO (2026-06-24), DD/MM/YYYY, DD-MM-YYYY, "Jun 24 2026", etc.
+function normaliseDate(raw) {
+  if (!raw) return '';
+  const s = raw.trim();
+  // Already ISO
+  if (/^\d{4}-\d{2}-\d{2}$/.test(s)) return s;
+  // DD/MM/YYYY or DD-MM-YYYY
+  const dmy = s.match(/^(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})$/);
+  if (dmy) return `${dmy[3]}-${dmy[2].padStart(2,'0')}-${dmy[1].padStart(2,'0')}`;
+  // Try native parse as last resort
+  const d = new Date(s);
+  if (!isNaN(d)) return d.toISOString().slice(0, 10);
+  return s;
+}
+
 const filteredFiles = computed(() => {
   const tokens = filterQ.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
   const filtered = tokens.length
@@ -26,12 +42,25 @@ const filteredFiles = computed(() => {
       })
     : allFiles.value;
 
-  // Sort: name ascending; within same name, newer DateModified first
-  return [...filtered].sort((a, b) => {
-    const nc = a.name.localeCompare(b.name, undefined, { sensitivity: 'base' });
-    if (nc !== 0) return nc;
-    // Same name — newer date sorts higher (descending)
-    return (b.date || '').localeCompare(a.date || '');
+  // Pure alphabetical sort
+  const sorted = [...filtered].sort((a, b) =>
+    a.name.localeCompare(b.name, undefined, { sensitivity: 'base' })
+  );
+
+  // Find the latest normalised date for each name (to flag newer/older versions)
+  const latestDate = {};
+  const nameCount = {};
+  for (const f of sorted) {
+    nameCount[f.name] = (nameCount[f.name] || 0) + 1;
+    const nd = normaliseDate(f.date);
+    if (nd > (latestDate[f.name] || '')) latestDate[f.name] = nd;
+  }
+
+  return sorted.map(f => {
+    const nd = normaliseDate(f.date);
+    const hasDups = nameCount[f.name] > 1;
+    const isLatest = hasDups && nd !== '' && nd === latestDate[f.name];
+    return { ...f, _nd: nd, _isLatest: isLatest, _isOlder: hasDups && !isLatest };
   });
 });
 
@@ -257,10 +286,11 @@ function onBackdrop(e) { if (e.target === e.currentTarget) close(); }
         </div>
         <div class="dlist">
           <div v-for="f in filteredFiles.slice(0, 500)" :key="(f.sourceName || '') + (f.path || '') + f.name"
-               class="ditem" @click="pickFile(f)">
+               :class="['ditem', f._isLatest && 'ditem-latest', f._isOlder && 'ditem-older']"
+               @click="pickFile(f)">
             <b>{{ f.name }}</b>
             <span class="dmeta">
-              <span v-if="f.date" class="ddate">{{ f.date }}</span>
+              <span v-if="f._nd" :class="['ddate', f._isLatest && 'ddate-latest', f._isOlder && 'ddate-older']">{{ f._nd }}</span>
               <a v-if="f.sourceUrl" class="stag"
                  :title="f.sourceUrl + (f.sourceDesc ? ' — ' + f.sourceDesc : '')"
                  @click.stop.prevent="openSourceUrl(f.sourceUrl)">{{ f.sourceName }}</a>
@@ -301,6 +331,9 @@ h2 { margin:0; padding:12px 16px; font-size:14px; font-weight:600; display:flex;
 .ditem:hover { background:var(--bg3); }
 .dmeta { display:flex; align-items:center; gap:6px; flex-shrink:0; }
 .ddate { font-size:10px; color:var(--mut); white-space:nowrap; }
+.ditem-latest .ddate { color:var(--acc); font-weight:600; }
+.ditem-older { opacity:0.5; }
+.ditem-older .ddate { color:#c07000; }
 .stag { font-size:10px; color:var(--mut); white-space:nowrap; cursor:pointer; }
 .stag:hover { color:var(--acc); text-decoration:underline; }
 .status.loading { padding:8px 10px; }
