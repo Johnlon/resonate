@@ -28,7 +28,7 @@ function setIEC() {
     </div>
     <div class="row" title="Input power. Changing this updates the drive voltage below.">
       <label>Input power</label>
-      <input type="number" step="any" min="0" :value="state.P.Pin" @input="e => state.P.Pin = parseFloat(e.target.value)||1">
+      <input type="number" step="0.001" min="0" :value="(state.P.Pin ?? 1).toFixed(3)" @change="e => state.P.Pin = parseFloat(e.target.value)||1">
       <span class="u">W</span>
     </div>
     <div class="row" title="Drive voltage = √(Pin × Re). Edit directly to set an exact voltage — input power updates automatically. Use 2.83V for IEC 60268-5 sensitivity reference (1W into 8Ω).">
