@@ -62,7 +62,16 @@ IEC sensitivity curves.
 
 Test driver: **Morel UW 1258** (8Ω nominal). Measured on IEC baffle, Brüel & Kjær 3144 mic.
 Datasheet: **"Sensitivity 2.83V/1m 87 dB SPL"**
-Resonate 2.83V IEC mode: **87 dB** ✓ — exact match (confirmed directly in Resonate, not via WinISD).
+
+| Tool | Parameters | Voltage | SPL |
+|---|---|---|---|
+| Resonate 2.83V IEC mode | Resonate entry | 2.83V | **87.0 dB** ✓ |
+| WinISD | Built-in Morel DB entry | 2.83V | 86.59 dB (−0.41 dB) |
+| WinISD | .wdr exported from Resonate | 2.83V | **87.1 dB** ✓ |
+
+The 0.41 dB gap with WinISD's built-in entry was a **parameter difference** (different T/S values in
+WinISD's database vs the datasheet). With identical parameters (via .wdr export), both tools agree
+to within 0.1 dB — rounding noise.
 
 IEC baffle (1.2×1.2 m flat baffle) is half-space (2π sr) — identical to WinISD/Resonate radiation model.
 For 8Ω drivers with explicit "2.83V/1m" datasheet specs, the 2.83V IEC mode is correct.
