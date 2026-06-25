@@ -23,3 +23,7 @@ Pe=250.0
 Vd=0.0003744
 Dd=0.199311499
 EBP=67.24
+boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/09/10in-SW26DBAC76-8.pdf
+boxbench_quality=M
+boxbench_issue=scraped_not_human_verified
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.

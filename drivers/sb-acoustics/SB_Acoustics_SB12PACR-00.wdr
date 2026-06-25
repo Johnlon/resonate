@@ -14,3 +14,7 @@ Cms=0.00121
 Sd=0.005
 Vas=0.0043
 Dd=0.079788456
+boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/03/4in-SB12PACR-00.pdf
+boxbench_quality=M
+boxbench_issue=scraped_not_human_verified
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.

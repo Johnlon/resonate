@@ -14,3 +14,7 @@ Cms=0.00093
 Sd=0.0178
 Vas=0.0418
 Dd=0.150544558
+boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/11/5x8in-SB15SFCR-00.pdf
+boxbench_quality=M
+boxbench_issue=scraped_not_human_verified
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.

@@ -22,3 +22,7 @@ Pe=40.0
 Vd=2.3e-07
 Dd=0.024201037
 EBP=463.41
+boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/SB21RDC-C000-4.pdf
+boxbench_quality=M
+boxbench_issue=scraped_not_human_verified
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.

@@ -54,4 +54,7 @@ Basket=0
 Outer=0
 Vcd=0
 DVol=0
+boxbench_quality=L
+boxbench_issue=empty_fields
+boxbench_detail=Brand and Model are both empty inside the file
 ParState=CEECENNNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC

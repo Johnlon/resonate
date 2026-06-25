@@ -24,3 +24,7 @@ Pe=300.0
 Vd=0.0009775
 Dd=0.328976232
 EBP=57.5
+boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/03/15in-SB42FHCL75-6.pdf
+boxbench_quality=M
+boxbench_issue=scraped_not_human_verified
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.

@@ -24,3 +24,7 @@ Pe=150.0
 Vd=0.0002205
 Dd=0.163517676
 EBP=61.96
+boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2026/05/8-inch-SB23MFCL45-8.pdf
+boxbench_quality=M
+boxbench_issue=scraped_not_human_verified
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.

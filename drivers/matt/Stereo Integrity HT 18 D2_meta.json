@@ -1,9 +1,0 @@
-{
-  "file": "Stereo Integrity HT 18 D2.wdr",
-  "quality": "H",
-  "issue": "ts_community_measured",
-  "detail": "Confirmed HT-18 D2 (Dual 2 Ohm) — Re and Xmax consistent with manufacturer spec. T/S params diverge (Fs 17 vs 23 Hz, Qts 0.38 vs 0.59, Vas 412 vs 220 L) — likely community-measured. THIS DRIVER IS OBSOLETE AND OUT OF PRODUCTION. Manufacturer states: 'only available in Dual 2 Ohm configuration, power handling rated at 750 watts RMS'.",
-  "datasheet": "https://stereointegrity.com/product/ht-18/",
-  "obsolete": true,
-  "reviewedBy": null
-}

@@ -24,3 +24,7 @@ Pe=30.0
 Vd=2.1e-05
 Dd=0.094406974
 EBP=136.36
+boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/01/5in-SATORI-MR13P-8.pdf
+boxbench_quality=M
+boxbench_issue=scraped_not_human_verified
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.

@@ -24,3 +24,7 @@ Pe=80.0
 Vd=0.000119
 Dd=0.208062838
 EBP=90.0
+boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2023/06/10in-SW26SFC38-4.pdf
+boxbench_quality=M
+boxbench_issue=scraped_not_human_verified
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.

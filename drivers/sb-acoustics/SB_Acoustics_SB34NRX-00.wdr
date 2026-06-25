@@ -14,3 +14,7 @@ Cms=0.0005
 Sd=0.0508
 Vas=0.183
 Dd=0.254323748
+boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2022/04/12in-SB34NRX-00.pdf
+boxbench_quality=M
+boxbench_issue=scraped_not_human_verified
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.

@@ -1,9 +1,0 @@
-{
-  "file": "Dayton_Audio_PA460-8.wdr",
-  "quality": "M",
-  "issue": "scraped_not_human_verified",
-  "detail": "Automatically scraped from SoundImports (scraped via soundimports.eu). T/S parameters have not been verified by a human against the datasheet.",
-  "datasheet": "https://www.parts-express.com/pedocs/specs/295-472-dayton-audio-rss460ho-4-specifications.pdf",
-  "reviewedBy": null,
-  "corrections": "Pe corrected 1.0W->500W (parse_number comma bug: \"1,000 watts\"->1.0); Sd corrected 0.0001241->0.12411 m2 (\"1,241.1 cm2\" parsed as 1.241); both confirmed against Dayton Audio PA460-8 datasheet (user-provided)"
-}

@@ -40,10 +40,16 @@ function numInput(key, scale, val) {
         Bl {{ drv.Bl.toFixed(1) }} Tm ·
         Mms {{ (drv.Mms*1000).toFixed(1) }} g
       </div>
-      <div v-if="d.providedBy || d.comment" class="drvsource">
-        <span v-if="d.providedBy">Source: {{ d.providedBy }}</span>
+      <div v-if="d.providedBy || d.comment || d.datasheetUrl || d.sourceUrl" class="drvsource">
+        <span v-if="d.providedBy">{{ d.providedBy }}</span>
         <span v-if="d.providedBy && d.comment"> · </span>
         <span v-if="d.comment">{{ d.comment }}</span>
+        <span v-if="(d.providedBy || d.comment) && (d.datasheetUrl || d.sourceUrl)"> · </span>
+        <a v-if="d.datasheetUrl" :href="d.datasheetUrl" target="_blank" rel="noopener"
+           title="Open manufacturer datasheet (PDF) in a new window">Datasheet ↗</a>
+        <span v-if="d.datasheetUrl && d.sourceUrl"> · </span>
+        <a v-if="d.sourceUrl" :href="d.sourceUrl" target="_blank" rel="noopener"
+           :title="'Open product page: ' + d.sourceUrl">Source ↗</a>
       </div>
     </template>
     <template v-else>
@@ -81,6 +87,12 @@ function numInput(key, scale, val) {
         EBP = Fs/Qes = <b>{{ ebpVal.toFixed(0) }}</b> → suggests <b>{{ sug }}</b>.<br>
         Derived: Bl={{ drv.Bl.toFixed(2) }} Tm, Mms={{ (drv.Mms*1000).toFixed(1) }} g,
         Cms={{ (drv.Cms*1000).toFixed(3) }} mm/N
+      </div>
+      <div v-if="d.datasheetUrl || d.sourceUrl" class="drvsource" style="margin-top:4px">
+        <a v-if="d.datasheetUrl" :href="d.datasheetUrl" target="_blank" rel="noopener"
+           title="Open manufacturer datasheet (PDF) in a new window">Datasheet ↗</a>
+        <a v-if="d.sourceUrl" :href="d.sourceUrl" target="_blank" rel="noopener"
+           :title="'Open product page: ' + d.sourceUrl">Source ↗</a>
       </div>
       <div class="btns">
         <button @click="state.editDriver = false" title="Collapse the driver parameter editor and return to the summary view">Done editing</button>

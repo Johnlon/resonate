@@ -26,4 +26,7 @@ Vd=0.000034
 Dd=0.104031
 numVC=1
 VCCon=2
+boxbench_quality=M
+boxbench_fetched_sku=295-573
+boxbench_note=Original SKU 295-363 no longer returns API results. Data from RS150P-8A (295-573), a known Dayton Audio design revision of the same driver line. Parameter comparison: Fs 4% lower (49.1→47.1 Hz), Qts 6% higher (0.32→0.34), Xmax identical (4 mm), Vas 3% higher. Differences are within expected revision range.
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

@@ -26,4 +26,5 @@ Vd=0.0000373638
 Dd=0.116586
 numVC=1
 VCCon=2
+boxbench_dq_issue=Qts=97.33: Physically impossible — no real driver has Qts near this value. Likely a decimal-point data entry error. Correct value unknown; datasheet lookup required before use.
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

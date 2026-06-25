@@ -1,8 +1,0 @@
-{
-  "file": "Dayton Audio PA460-8 v2015.wdr",
-  "quality": "H",
-  "issue": "filename_version_marker",
-  "detail": "v2015 in filename indicates the 2015 revision of the PA460-8. Multiple versions of this driver exist with different T/S specs. This file contains the 2015 spec.",
-  "community": "v2015 in filename = 2015 revision",
-  "reviewedBy": null
-}

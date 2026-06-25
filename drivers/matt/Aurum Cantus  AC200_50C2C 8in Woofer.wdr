@@ -54,4 +54,7 @@ Basket=0
 Outer=0
 Vcd=0
 DVol=0
+boxbench_quality=H
+boxbench_issue=filename_convention
+boxbench_detail=Underscore in filename replaces / in model name (AC200/50C2C) — expected, / not valid in filenames
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC

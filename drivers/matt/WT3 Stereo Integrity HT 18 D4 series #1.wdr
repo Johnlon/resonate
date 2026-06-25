@@ -54,4 +54,7 @@ Basket=0
 Outer=0
 Vcd=0
 DVol=0
+boxbench_quality=H
+boxbench_issue=community_measured
+boxbench_detail=T/S parameters personally measured by mtg90 using WT3 or DATS v2. Test3/Test1 suffixes inside are mtg90's personal measurement run notes, not part of the model name.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC

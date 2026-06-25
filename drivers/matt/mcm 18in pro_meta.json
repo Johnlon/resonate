@@ -1,8 +1,0 @@
-{
-  "file": "mcm 18in pro.wdr",
-  "quality": "H",
-  "issue": "filename_convention",
-  "detail": "Filename uses size description (18in pro) instead of model number. Model corrected to 55-2984 based on exact T/S parameter match. Confirmed via speakerboxlite.",
-  "datasheet": "https://speakerboxlite.com/subwoofers/mcm-audio-select-55-2984/specifications",
-  "reviewedBy": null
-}

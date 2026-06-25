@@ -52,8 +52,10 @@ export function parseWdr(text) {
   if (f.Model)      d.model      = f.Model.trim();
   const name = [f.Brand, f.Model].filter(x => x && x.length).join(' ').trim();
   if (name) d.name = name;
-  if (f.ProvidedBy) d.providedBy = f.ProvidedBy.trim();
-  if (f.Comment)    d.comment    = f.Comment.trim();
+  if (f.ProvidedBy)              d.providedBy    = f.ProvidedBy.trim();
+  if (f.Comment)                 d.comment       = f.Comment.trim();
+  if (f.boxbench_datasheet)      d.datasheetUrl  = f.boxbench_datasheet.trim();
+  if (f.boxbench_source)         d.sourceUrl     = f.boxbench_source.trim();
   if (!(d.Fs && d.Sd && d.Re && (d.Vas || (d.Qts && d.Qes))))
     throw new Error('missing core T/S parameters');
   for (const k in d) if (d[k] === undefined) delete d[k];

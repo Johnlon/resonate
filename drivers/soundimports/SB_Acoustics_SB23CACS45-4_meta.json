@@ -1,9 +1,0 @@
-{
-  "file": "SB_Acoustics_SB23CACS45-4.wdr",
-  "quality": "M",
-  "issue": "scraped_not_human_verified",
-  "detail": "Automatically scraped from SoundImports (scraped via soundimports.eu). T/S parameters have not been verified by a human against the datasheet.",
-  "datasheet": "https://doc.soundimports.nl/pdf/brands/SB%20Acoustics/SB23CACS45-4/SB23CACS45-4-datasheet.pdf",
-  "reviewedBy": null,
-  "corrections": "Cms corrected 1.43->0.00143 m/N (SI published in um/N \"1430 um/N\", scraper applied mm/N factor); confirmed against sb-acoustics scraper reference values"
-}

@@ -24,3 +24,7 @@ Pe=300.0
 Vd=0.000687
 Dd=0.241483687
 EBP=52.88
+boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/03/12in-SB34SWPL76-3-DV.pdf
+boxbench_quality=M
+boxbench_issue=scraped_not_human_verified
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.

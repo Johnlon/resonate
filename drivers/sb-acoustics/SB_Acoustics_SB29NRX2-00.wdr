@@ -14,3 +14,7 @@ Cms=0.00043
 Sd=0.0312
 Vas=0.06
 Dd=0.199311499
+boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/10/10in-SB29NRX2-00.pdf
+boxbench_quality=M
+boxbench_issue=scraped_not_human_verified
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.

@@ -1,9 +1,0 @@
-{
-  "file": "SB_Acoustics_SB26STWGC-4.wdr",
-  "quality": "M",
-  "issue": "scraped_not_human_verified",
-  "detail": "Automatically scraped from SoundImports (scraped via soundimports.eu). T/S parameters have not been verified by a human against the datasheet.",
-  "datasheet": "https://sbacoustics.com/wp-content/uploads/2020/05/SB26STWGC-4.pdf",
-  "reviewedBy": null,
-  "corrections": "Added BL=1.6Tm, Mms=0.0003kg, Sd=0.00062m2 from SB26STWGC-4 datasheet PDF (SI HTML did not include these fields)"
-}
