@@ -49801,9 +49801,8 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Dayton-Audio-CE28MB-8-1.1-Mylar-Full-Range-Driver-285-147
 boxbench_vendor_page=https://www.daytonaudio.com/
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/285-147--dayton-audio-ce28mb-8-spec-sheet.pdf
-boxbench_frd=https://www.parts-express.com/pedocs/tech-docs/3D%20Files/CE28MB-8_3D_File.zip
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,datasheet:`https://www.parts-express.com/pedocs/specs/285-147--dayton-audio-ce28mb-8-spec-sheet.pdf`,frd:`https://www.parts-express.com/pedocs/tech-docs/3D%20Files/CE28MB-8_3D_File.zip`},{name:`Dayton Audio CE Series CE30MB-16B 1-1_4_ Mini Speaker Driver Black 16 Ohm`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://www.parts-express.com/pedocs/specs/285-147--dayton-audio-ce28mb-8-spec-sheet.pdf`},{name:`Dayton Audio CE Series CE30MB-16B 1-1_4_ Mini Speaker Driver Black 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=CE Series CE30MB-16B 1-1/4" Mini Speaker Driver Black 16 Ohm
 Manufacturer=
@@ -50646,9 +50645,8 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Dayton-Audio-DC130B-8-5-1-4-Classic-Woofer-Speaker-295-304
 boxbench_vendor_page=https://www.daytonaudio.com/
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/295-304-dayton-audio-dc130b-8-specifications-9385.pdf
-boxbench_frd=https://www.parts-express.com/pedocs/tech-docs/3D%20Files/dc130b-8.zip
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,datasheet:`https://www.parts-express.com/pedocs/specs/295-304-dayton-audio-dc130b-8-specifications-9385.pdf`,frd:`https://www.parts-express.com/pedocs/tech-docs/3D%20Files/dc130b-8.zip`},{name:`Dayton Audio DC130BS-4 5-1_4_ Classic Shielded Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://www.parts-express.com/pedocs/specs/295-304-dayton-audio-dc130b-8-specifications-9385.pdf`},{name:`Dayton Audio DC130BS-4 5-1_4_ Classic Shielded Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC130BS-4 5-1/4" Classic Shielded Woofer 4 Ohm
 Manufacturer=
@@ -51588,9 +51586,8 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Dayton-Audio-DMA70-4-2-1-2-Dual-Magnet-Aluminum-Cone-Full-Range-Driver-4-Ohm-295-584
 boxbench_vendor_page=https://www.daytonaudio.com/
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/295-584--dayton-audio-dma70-4-specification-sheet.pdf
-boxbench_frd=https://www.parts-express.com/pedocs/tech-docs/3D%20Files/DMA70-4.zip
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,datasheet:`https://www.parts-express.com/pedocs/specs/295-584--dayton-audio-dma70-4-specification-sheet.pdf`,frd:`https://www.parts-express.com/pedocs/tech-docs/3D%20Files/DMA70-4.zip`},{name:`Dayton Audio DMA70-8 2-1_2_ Dual Magnet Aluminum Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://www.parts-express.com/pedocs/specs/295-584--dayton-audio-dma70-4-specification-sheet.pdf`},{name:`Dayton Audio DMA70-8 2-1_2_ Dual Magnet Aluminum Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DMA70-8 2-1/2" Dual Magnet Aluminum Cone Full-Range Driver 8 Ohm
 Manufacturer=
@@ -52202,9 +52199,8 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Dayton-Audio-DS90-PR-3-Designer-Series-Passive-Radiator-295-491
 boxbench_vendor_page=https://www.daytonaudio.com/
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/295-491--dayton-audio-ds90-pr-spec-sheet.pdf
-boxbench_frd=https://www.parts-express.com/pedocs/tech-docs/3D%20Files/ds90-pr.zip
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,datasheet:`https://www.parts-express.com/pedocs/specs/295-491--dayton-audio-ds90-pr-spec-sheet.pdf`,frd:`https://www.parts-express.com/pedocs/tech-docs/3D%20Files/ds90-pr.zip`},{name:`Dayton Audio DSA115-8 4_ Designer Series Aluminum Cone Woofer`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://www.parts-express.com/pedocs/specs/295-491--dayton-audio-ds90-pr-spec-sheet.pdf`},{name:`Dayton Audio DSA115-8 4_ Designer Series Aluminum Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DSA115-8 4" Designer Series Aluminum Cone Woofer
 Manufacturer=
@@ -52363,9 +52359,8 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Dayton-Audio-DSA175-8-6-1-2-Designer-Series-Aluminum-Cone-Woofer-295-528
 boxbench_vendor_page=https://www.daytonaudio.com/
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/295-528--dayton-audio-DSA175-8-specifications.pdf
-boxbench_frd=https://www.parts-express.com/pedocs/tech-docs/3D%20Files/dsa175.zip
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,datasheet:`https://www.parts-express.com/pedocs/specs/295-528--dayton-audio-DSA175-8-specifications.pdf`,frd:`https://www.parts-express.com/pedocs/tech-docs/3D%20Files/dsa175.zip`},{name:`Dayton Audio DSA175-PR 6-1_2_ Designer Series Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://www.parts-express.com/pedocs/specs/295-528--dayton-audio-DSA175-8-specifications.pdf`},{name:`Dayton Audio DSA175-PR 6-1_2_ Designer Series Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DSA175-PR 6-1/2" Designer Series Aluminum Cone Passive Radiator
 Manufacturer=
@@ -52396,9 +52391,8 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Dayton-Audio-DSA175-PR-6-1-2-Designer-Series-Aluminum-Cone-Passive-Radiator-295-548
 boxbench_vendor_page=https://www.daytonaudio.com/
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/295-548--dayton-audio-dsa75-pr-spec-sheet.pdf
-boxbench_frd=https://www.parts-express.com/pedocs/tech-docs/3D%20Files/dsa175-pr.zip
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,datasheet:`https://www.parts-express.com/pedocs/specs/295-548--dayton-audio-dsa75-pr-spec-sheet.pdf`,frd:`https://www.parts-express.com/pedocs/tech-docs/3D%20Files/dsa175-pr.zip`},{name:`Dayton Audio DSA215-8 8_ Designer Series Aluminum Cone Woofer`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://www.parts-express.com/pedocs/specs/295-548--dayton-audio-dsa75-pr-spec-sheet.pdf`},{name:`Dayton Audio DSA215-8 8_ Designer Series Aluminum Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=DSA215-8 8" Designer Series Aluminum Cone Woofer
 Manufacturer=
@@ -53953,9 +53947,8 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Dayton-Audio-ND90-8-3-1-2-Aluminum-Cone-Full-Range-Driver-8-290-210
 boxbench_vendor_page=https://www.daytonaudio.com/
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/ND90-8%203-1_2_%20Aluminum%20Cone%20Full-Range%20Driver%208%20Ohm%20Specification%20Sheet.pdf
-boxbench_frd=https://www.parts-express.com/pedocs/tech-docs/3D%20Files/ND90-4_and_-8_3D_Files.zip
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,datasheet:`https://www.parts-express.com/pedocs/specs/ND90-8%203-1_2_%20Aluminum%20Cone%20Full-Range%20Driver%208%20Ohm%20Specification%20Sheet.pdf`,frd:`https://www.parts-express.com/pedocs/tech-docs/3D%20Files/ND90-4_and_-8_3D_Files.zip`},{name:`Dayton Audio ND90-PR 3-1_2_ Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://www.parts-express.com/pedocs/specs/ND90-8%203-1_2_%20Aluminum%20Cone%20Full-Range%20Driver%208%20Ohm%20Specification%20Sheet.pdf`},{name:`Dayton Audio ND90-PR 3-1_2_ Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND90-PR 3-1/2" Aluminum Cone Passive Radiator
 Manufacturer=
@@ -53986,9 +53979,8 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Dayton-Audio-ND90-PR-3-1-2-Aluminum-Cone-Passive-Radiator-290-209
 boxbench_vendor_page=https://www.daytonaudio.com/
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/290-209--dayton-audio-nd90-pr%203-1-2-inch-aluminum-cone-passive-radiator-specifications.pdf
-boxbench_frd=https://www.parts-express.com/pedocs/tech-docs/3D%20Files/ND90-PR_3D_Files.zip
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,datasheet:`https://www.parts-express.com/pedocs/specs/290-209--dayton-audio-nd90-pr%203-1-2-inch-aluminum-cone-passive-radiator-specifications.pdf`,frd:`https://www.parts-express.com/pedocs/tech-docs/3D%20Files/ND90-PR_3D_Files.zip`},{name:`Dayton Audio ND91-4 3-1_2_ Aluminum Cone Full-Range Neo Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://www.parts-express.com/pedocs/specs/290-209--dayton-audio-nd90-pr%203-1-2-inch-aluminum-cone-passive-radiator-specifications.pdf`},{name:`Dayton Audio ND91-4 3-1_2_ Aluminum Cone Full-Range Neo Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND91-4 3-1/2" Aluminum Cone Full-Range Neo Driver 4 Ohm
 Manufacturer=
@@ -54448,9 +54440,8 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Dayton-Audio-PC83-4-3-Full-Range-Poly-Cone-Driver-295-154
 boxbench_vendor_page=https://www.daytonaudio.com/
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/295-154--dayton-audio-pc83-4-specifications.pdf
-boxbench_frd=https://www.parts-express.com/pedocs/tech-docs/3D%20Files/PC83-4_3D_Files.zip
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,datasheet:`https://www.parts-express.com/pedocs/specs/295-154--dayton-audio-pc83-4-specifications.pdf`,frd:`https://www.parts-express.com/pedocs/tech-docs/3D%20Files/PC83-4_3D_Files.zip`},{name:`Dayton Audio PC83-8 3_ Full-Range Poly Cone Driver`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://www.parts-express.com/pedocs/specs/295-154--dayton-audio-pc83-4-specifications.pdf`},{name:`Dayton Audio PC83-8 3_ Full-Range Poly Cone Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=PC83-8 3" Full-Range Poly Cone Driver
 Manufacturer=
@@ -54481,9 +54472,8 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Dayton-Audio-PC83-8-3-Full-Range-Poly-Cone-Driver-295-156
 boxbench_vendor_page=https://www.daytonaudio.com/
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/295-156--dayton-audio-pc83-8-specifications.pdf
-boxbench_frd=https://www.parts-express.com/pedocs/tech-docs/3D%20Files/PC83-8_3D_Files.zip
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,datasheet:`https://www.parts-express.com/pedocs/specs/295-156--dayton-audio-pc83-8-specifications.pdf`,frd:`https://www.parts-express.com/pedocs/tech-docs/3D%20Files/PC83-8_3D_Files.zip`},{name:`Dayton Audio PCS115-4 4_ Poly Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://www.parts-express.com/pedocs/specs/295-156--dayton-audio-pc83-8-specifications.pdf`},{name:`Dayton Audio PCS115-4 4_ Poly Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=PCS115-4 4" Poly Cone Woofer 4 Ohm
 Manufacturer=
@@ -57813,9 +57803,8 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Dayton-Audio-TD20F-4-3-4-Soft-Dome-Neodymium-Tweeter-4-Ohm-275-020
 boxbench_vendor_page=https://www.daytonaudio.com/
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/275-020--dayton-audio-td20f-4-spec-sheet.pdf
-boxbench_frd=https://www.parts-express.com/pedocs/tech-docs/3D%20Files/TD20F-4_3D_Files.zip
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,datasheet:`https://www.parts-express.com/pedocs/specs/275-020--dayton-audio-td20f-4-spec-sheet.pdf`,frd:`https://www.parts-express.com/pedocs/tech-docs/3D%20Files/TD20F-4_3D_Files.zip`},{name:`Dayton Audio TD24F-4 1_ Soft Dome Neodymium Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://www.parts-express.com/pedocs/specs/275-020--dayton-audio-td20f-4-spec-sheet.pdf`},{name:`Dayton Audio TD24F-4 1_ Soft Dome Neodymium Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
 Model=TD24F-4 1" Soft Dome Neodymium Tweeter 4 Ohm
 Manufacturer=
@@ -58578,9 +58567,8 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Epique-E150MR-4-5-1-2-Wide-Band-Carbon-Fiber-Midrange-Driver-4-Ohm-285-500
 boxbench_vendor_page=https://www.daytonaudio.com/
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/285-500--epique-e150mr-4-specification-sheet.pdf
-boxbench_frd=https://www.parts-express.com/pedocs/tech-docs/3D%20Files/E150MR-4_3D_Files.zip
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,datasheet:`https://www.parts-express.com/pedocs/specs/285-500--epique-e150mr-4-specification-sheet.pdf`,frd:`https://www.parts-express.com/pedocs/tech-docs/3D%20Files/E150MR-4_3D_Files.zip`},{name:`EPIQUE by Dayton Audio Epique E150MR-8 5-1_2_ Wide-Band Carbon Fiber Midrange Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://www.parts-express.com/pedocs/specs/285-500--epique-e150mr-4-specification-sheet.pdf`},{name:`EPIQUE by Dayton Audio Epique E150MR-8 5-1_2_ Wide-Band Carbon Fiber Midrange Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=EPIQUE by Dayton Audio
 Model=Epique E150MR-8 5-1/2" Wide-Band Carbon Fiber Midrange Driver 8 Ohm
 Manufacturer=
