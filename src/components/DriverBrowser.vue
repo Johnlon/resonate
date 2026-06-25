@@ -30,12 +30,9 @@ const sdMax = ref('');   // cm²
 const selZ  = ref([]);   // '4', '8', '16'
 
 const DRIVER_TYPES = [
-  { id: 'sub',      label: 'Sub',      title: 'Subwoofer — Fs below ~35 Hz' },
-  { id: 'woofer',   label: 'Woofer',   title: 'Woofer — Fs 35–120 Hz, large Sd' },
-  { id: 'midbass',  label: 'Mid-bass', title: 'Mid-bass — Fs 80–350 Hz, medium Sd' },
-  { id: 'midrange', label: 'Midrange', title: 'Midrange — Fs 200–1500 Hz' },
-  { id: 'tweeter',  label: 'Tweeter',  title: 'Tweeter — small Sd (< ~12 cm²)' },
-  { id: 'other',    label: 'Other',    title: 'Unclassified / passive radiator / full-range' },
+  { id: 'tweet', label: 'Tweet', title: 'Tweeter — high-frequency driver (dome, ribbon, planar)' },
+  { id: 'mid',   label: 'Mid',   title: 'Mid / Woofer — bass and midrange cone drivers' },
+  { id: 'sub',   label: 'Sub',   title: 'Subwoofer — dedicated very-low-frequency driver (Fs < 40 Hz)' },
 ];
 
 function quickParse(content) {
@@ -43,18 +40,24 @@ function quickParse(content) {
   return { Fs: m('Fs'), Sd: m('Sd'), Re: m('Re'), Znom: m('Znom'), Pe: m('Pe') };
 }
 
-// Assign a type label from raw T/S params.
-// Priority: sub → tweeter → woofer → mid-bass → midrange → other
-// Sd in m² (WDR native), Re in Ω.
-function classifyType(Fs, Sd, Re) {
-  if (Re != null && Re < 0.1) return 'other';
+// 3-category classification: tweet / sub / mid (catch-all)
+// Priority: name beats params (resolves bad-Sd data in a few hundred WDRs)
+//   1. name contains tweet keywords → tweet
+//   2. name contains sub keywords   → sub
+//   3. Sd < 12 cm²                  → tweet  (catches unnamed tweeters with good Sd)
+//   4. Fs < 40 Hz                   → sub    (catches subs without "sub" in name)
+//   5. everything else              → mid    (safe: all 2312 WDRs have Fs)
+const TWEET_PAT = /tweet|tweeter|tw\d/i;
+const SUB_PAT   = /subwoof|sub[- _]|\bsub\b|\bsubwoofer\b/i;
+
+function classifyType(Fs, Sd, nameStr) {
+  const nm = nameStr || '';
+  if (TWEET_PAT.test(nm)) return 'tweet';
+  if (SUB_PAT.test(nm))   return 'sub';
   const SdCm2 = Sd != null ? Sd * 1e4 : null;
-  if (Fs != null && Fs < 35) return 'sub';
-  if (SdCm2 != null && SdCm2 < 12) return 'tweeter';
-  if (Fs != null && Fs < 120 && SdCm2 != null && SdCm2 >= 80) return 'woofer';
-  if (Fs != null && Fs < 350 && SdCm2 != null && SdCm2 >= 30) return 'midbass';
-  if (Fs != null) return 'midrange';
-  return 'other';
+  if (SdCm2 != null && SdCm2 < 12) return 'tweet';
+  if (Fs != null && Fs < 40)        return 'sub';
+  return 'mid';
 }
 
 function toggleType(id) {
@@ -161,13 +164,18 @@ async function fetchSource(src) {
     const found = tree
       .filter(t => t.type === 'blob' && t.path.toLowerCase().endsWith('.wdr')
                 && (!base || t.path.toLowerCase().startsWith(base.toLowerCase() + '/')))
-      .map(t => ({
-        path: t.path, branch, repo: src.repo,
-        name: t.path.split('/').pop().replace(/\.wdr$/i, ''),
-        sourceName: src.name,
-        sourceUrl:  src.url || '',
-        sourceDesc: src.description || '',
-      }));
+      .map(t => {
+        const nm = t.path.split('/').pop().replace(/\.wdr$/i, '');
+        return {
+          path: t.path, branch, repo: src.repo,
+          name: nm,
+          sourceName: src.name,
+          sourceUrl:  src.url || '',
+          sourceDesc: src.description || '',
+          _Fs: null, _Sd: null, _Re: null, _Znom: null, _Pe: null,
+          _type: classifyType(null, null, nm),  // name-only until content loads
+        };
+      });
     allFiles.value = [
       ...allFiles.value.filter(f => f.sourceName !== src.name),
       ...found,
@@ -203,6 +211,9 @@ async function init() {
     if (!files) continue;
     const entries = files.map(f => {
       const qp = quickParse(f.content);
+      const nameStr = f.name + ' ' +
+        ((f.content || '').match(/^Brand=(.+)$/m)?.[1] || '') + ' ' +
+        ((f.content || '').match(/^Model=(.+)$/m)?.[1] || '');
       return {
         name: f.name,
         content: f.content,
@@ -217,7 +228,7 @@ async function init() {
         sourceUrl:  src.url || '',
         sourceDesc: src.description || '',
         _Fs: qp.Fs, _Sd: qp.Sd, _Re: qp.Re, _Znom: qp.Znom, _Pe: qp.Pe,
-        _type: classifyType(qp.Fs, qp.Sd, qp.Re),
+        _type: classifyType(qp.Fs, qp.Sd, nameStr),
       };
     });
     allFiles.value = [...allFiles.value, ...entries];
@@ -277,15 +288,16 @@ async function loadSpeakerBoxLite() {
       const rows = await (await fetch(`${base}?offset=${i*PAGE}&limit=${PAGE}`)).json();
       for (const d of rows) {
         const SblSd = d.sd_cm2 != null ? d.sd_cm2 / 1e4 : null;
+        const sblName = [d.brand, d.model, d.name].filter(Boolean).join(' ') || 'Unknown';
         sblFiles.push({
           path: null, branch: null, repo: null,
-          name: [d.brand, d.model].filter(Boolean).join(' ') || d.name || 'Unknown',
+          name: sblName,
           sourceName: 'SpeakerBoxLite',
           sourceUrl:  'https://www.speakerboxlite.com/',
           sourceDesc: 'speakerboxlite.com community database',
           sblData: d,
           _Fs: d.fs || null, _Sd: SblSd, _Re: d.re || null, _Znom: null, _Pe: d.pe || null,
-          _type: classifyType(d.fs, SblSd, d.re),
+          _type: classifyType(d.fs, SblSd, sblName),
         });
       }
     }
