@@ -36430,6 +36430,8 @@ DateAdded=2026-06-25
 DateModified=2026-06-25
 portingle=Y
 boxbench_datasheet=https://www.wavecor.com/Driver%20specifications%20PDF/FR070WA05_specifications.pdf
+boxbench_frd=https://www.wavecor.com/Driver%20measurements%20TXT/SPL%20response/FR070WA05_SPL_response.txt
+boxbench_impedance=https://www.wavecor.com/Driver%20measurements%20TXT/Impedance%20response/FR070WA05_impedance_response.txt
 boxbench_vendorpage=http://www.wavecor.com/html/fr070wa05.html
 boxbench_source=http://www.wavecor.com/html/fr070wa05.html
 Fs=89.0
@@ -36469,7 +36471,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,datasheet:`https://www.wavecor.com/Driver%20specifications%20PDF/FR070WA05_specifications.pdf`,vendorpage:`http://www.wavecor.com/html/fr070wa05.html`},{name:`Wavecor_FR084OM01_02`,date:`2026-06-25`,content:`[Driver]
+`,datasheet:`https://www.wavecor.com/Driver%20specifications%20PDF/FR070WA05_specifications.pdf`,vendorpage:`http://www.wavecor.com/html/fr070wa05.html`,frd:`https://www.wavecor.com/Driver%20measurements%20TXT/SPL%20response/FR070WA05_SPL_response.txt`},{name:`Wavecor_FR084OM01_02`,date:`2026-06-25`,content:`[Driver]
 Brand=Wavecor
 Model=FR084OM01_02
 Manufacturer=Wavecor
@@ -37330,6 +37332,7 @@ DateAdded=2026-06-25
 DateModified=2026-06-25
 portingle=Y
 boxbench_datasheet=https://www.wavecor.com/Driver%20specifications%20PDF/SW178WA01_specifications.pdf
+boxbench_impedance=https://www.wavecor.com/Driver%20measurements%20TXT/Impedance%20response/SW178WA01_impedance_response.txt
 boxbench_vendorpage=http://www.wavecor.com/html/sw178wa01.html
 boxbench_source=http://www.wavecor.com/html/sw178wa01.html
 Fs=38.0
@@ -37840,6 +37843,7 @@ DateAdded=2026-06-25
 DateModified=2026-06-25
 portingle=Y
 boxbench_datasheet=https://www.wavecor.com/Driver%20specifications%20PDF/SW312TU02_specifications.pdf
+boxbench_impedance=https://www.wavecor.com/Driver%20measurements%20TXT/Impedance%20response/SW312TU02_impedance_response.txt
 boxbench_vendorpage=http://www.wavecor.com/html/sw312tu02.html
 boxbench_source=http://www.wavecor.com/html/sw312tu02.html
 Fs=27.5
@@ -37955,6 +37959,8 @@ DateAdded=2026-06-25
 DateModified=2026-06-25
 portingle=Y
 boxbench_datasheet=https://www.wavecor.com/Driver%20specifications%20PDF/TW022TU01_specifications.pdf
+boxbench_frd=https://www.wavecor.com/Driver%20measurements%20TXT/SPL%20response/TW022TU01_SPL_response.txt
+boxbench_impedance=https://www.wavecor.com/Driver%20measurements%20TXT/Impedance%20response/TW022TU01_impedance_response.txt
 boxbench_vendorpage=http://www.wavecor.com/html/tw022tu01.html
 boxbench_source=http://www.wavecor.com/html/tw022tu01.html
 Fs=825.0
@@ -38001,7 +38007,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,datasheet:`https://www.wavecor.com/Driver%20specifications%20PDF/TW022TU01_specifications.pdf`,vendorpage:`http://www.wavecor.com/html/tw022tu01.html`},{name:`Wavecor_TW022WA07_08_09_10`,date:`2026-06-25`,content:`[Driver]
+`,datasheet:`https://www.wavecor.com/Driver%20specifications%20PDF/TW022TU01_specifications.pdf`,vendorpage:`http://www.wavecor.com/html/tw022tu01.html`,frd:`https://www.wavecor.com/Driver%20measurements%20TXT/SPL%20response/TW022TU01_SPL_response.txt`},{name:`Wavecor_TW022WA07_08_09_10`,date:`2026-06-25`,content:`[Driver]
 Brand=Wavecor
 Model=TW022WA07_08_09_10
 Manufacturer=Wavecor
@@ -38070,6 +38076,8 @@ DateAdded=2026-06-25
 DateModified=2026-06-25
 portingle=Y
 boxbench_datasheet=https://www.wavecor.com/Driver%20specifications%20PDF/TW030TU03_specifications.pdf
+boxbench_frd=https://www.wavecor.com/Driver%20measurements%20TXT/SPL%20response/TW030TU03_SPL_response.txt
+boxbench_impedance=https://www.wavecor.com/Driver%20measurements%20TXT/Impedance%20response/TW030TU03_impedance_response.txt
 boxbench_vendorpage=http://www.wavecor.com/html/tw030tu03.html
 boxbench_source=http://www.wavecor.com/html/tw030tu03.html
 Fs=725.0
@@ -38116,7 +38124,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,datasheet:`https://www.wavecor.com/Driver%20specifications%20PDF/TW030TU03_specifications.pdf`,vendorpage:`http://www.wavecor.com/html/tw030tu03.html`},{name:`Wavecor_TW030WA11_12`,date:`2026-06-25`,content:`[Driver]
+`,datasheet:`https://www.wavecor.com/Driver%20specifications%20PDF/TW030TU03_specifications.pdf`,vendorpage:`http://www.wavecor.com/html/tw030tu03.html`,frd:`https://www.wavecor.com/Driver%20measurements%20TXT/SPL%20response/TW030TU03_SPL_response.txt`},{name:`Wavecor_TW030WA11_12`,date:`2026-06-25`,content:`[Driver]
 Brand=Wavecor
 Model=TW030WA11_12
 Manufacturer=Wavecor
@@ -38301,6 +38309,8 @@ DateAdded=2026-06-25
 DateModified=2026-06-25
 portingle=Y
 boxbench_datasheet=https://www.wavecor.com/Driver%20specifications%20PDF/TW045WA01_02_specifications.pdf
+boxbench_frd=https://www.wavecor.com/Driver%20measurements%20TXT/SPL%20response/TW045WA01_02_SPL_response.txt
+boxbench_impedance=https://www.wavecor.com/Driver%20measurements%20TXT/Impedance%20response/TW045WA01_02_impedance_response.txt
 boxbench_vendorpage=http://www.wavecor.com/html/tw045wa01_02.html
 boxbench_source=http://www.wavecor.com/html/tw045wa01_02.html
 Fs=840.0
@@ -38349,7 +38359,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,datasheet:`https://www.wavecor.com/Driver%20specifications%20PDF/TW045WA01_02_specifications.pdf`,vendorpage:`http://www.wavecor.com/html/tw045wa01_02.html`},{name:`Wavecor_WF090WA01_02`,date:`2026-06-25`,content:`[Driver]
+`,datasheet:`https://www.wavecor.com/Driver%20specifications%20PDF/TW045WA01_02_specifications.pdf`,vendorpage:`http://www.wavecor.com/html/tw045wa01_02.html`,frd:`https://www.wavecor.com/Driver%20measurements%20TXT/SPL%20response/TW045WA01_02_SPL_response.txt`},{name:`Wavecor_WF090WA01_02`,date:`2026-06-25`,content:`[Driver]
 Brand=Wavecor
 Model=WF090WA01_02
 Manufacturer=Wavecor
@@ -38827,6 +38837,8 @@ DateAdded=2026-06-25
 DateModified=2026-06-25
 portingle=Y
 boxbench_datasheet=https://www.wavecor.com/Driver%20specifications%20PDF/WF132TU01_specifications.pdf
+boxbench_frd=https://www.wavecor.com/Driver%20measurements%20TXT/SPL%20response/WF132TU01_SPL_response.txt
+boxbench_impedance=https://www.wavecor.com/Driver%20measurements%20TXT/Impedance%20response/WF132TU01_impedance_response.txt
 boxbench_vendorpage=http://www.wavecor.com/html/wf132tu01.html
 boxbench_source=http://www.wavecor.com/html/wf132tu01.html
 Fs=60.0
@@ -38873,7 +38885,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,datasheet:`https://www.wavecor.com/Driver%20specifications%20PDF/WF132TU01_specifications.pdf`,vendorpage:`http://www.wavecor.com/html/wf132tu01.html`},{name:`Wavecor_WF132TU02`,date:`2026-06-25`,content:`[Driver]
+`,datasheet:`https://www.wavecor.com/Driver%20specifications%20PDF/WF132TU01_specifications.pdf`,vendorpage:`http://www.wavecor.com/html/wf132tu01.html`,frd:`https://www.wavecor.com/Driver%20measurements%20TXT/SPL%20response/WF132TU01_SPL_response.txt`},{name:`Wavecor_WF132TU02`,date:`2026-06-25`,content:`[Driver]
 Brand=Wavecor
 Model=WF132TU02
 Manufacturer=Wavecor
@@ -38883,6 +38895,8 @@ DateAdded=2026-06-25
 DateModified=2026-06-25
 portingle=Y
 boxbench_datasheet=https://www.wavecor.com/Driver%20specifications%20PDF/WF132TU02_specifications.pdf
+boxbench_frd=https://www.wavecor.com/Driver%20measurements%20TXT/SPL%20response/WF132TU02_SPL_response.txt
+boxbench_impedance=https://www.wavecor.com/Driver%20measurements%20TXT/Impedance%20response/WF132TU02_impedance_response.txt
 boxbench_vendorpage=http://www.wavecor.com/html/wf132tu02.html
 boxbench_source=http://www.wavecor.com/html/wf132tu02.html
 Fs=62.0
@@ -38922,7 +38936,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,datasheet:`https://www.wavecor.com/Driver%20specifications%20PDF/WF132TU02_specifications.pdf`,vendorpage:`http://www.wavecor.com/html/wf132tu02.html`},{name:`Wavecor_WF146OM01_02`,date:`2026-06-25`,content:`[Driver]
+`,datasheet:`https://www.wavecor.com/Driver%20specifications%20PDF/WF132TU02_specifications.pdf`,vendorpage:`http://www.wavecor.com/html/wf132tu02.html`,frd:`https://www.wavecor.com/Driver%20measurements%20TXT/SPL%20response/WF132TU02_SPL_response.txt`},{name:`Wavecor_WF146OM01_02`,date:`2026-06-25`,content:`[Driver]
 Brand=Wavecor
 Model=WF146OM01_02
 Manufacturer=Wavecor
@@ -39396,6 +39410,8 @@ DateAdded=2026-06-25
 DateModified=2026-06-25
 portingle=Y
 boxbench_datasheet=https://www.wavecor.com/Driver%20specifications%20PDF/WF166TU02_specifications.pdf
+boxbench_frd=https://www.wavecor.com/Driver%20measurements%20TXT/SPL%20response/WF166TU02_SPL_response.txt
+boxbench_impedance=https://www.wavecor.com/Driver%20measurements%20TXT/Impedance%20response/WF166TU02_impedance_response.txt
 boxbench_vendorpage=http://www.wavecor.com/html/wf166tu02.html
 boxbench_source=http://www.wavecor.com/html/wf166tu02.html
 Fs=50.0
@@ -39435,7 +39451,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,datasheet:`https://www.wavecor.com/Driver%20specifications%20PDF/WF166TU02_specifications.pdf`,vendorpage:`http://www.wavecor.com/html/wf166tu02.html`},{name:`Wavecor_WF168OM01_02`,date:`2026-06-25`,content:`[Driver]
+`,datasheet:`https://www.wavecor.com/Driver%20specifications%20PDF/WF166TU02_specifications.pdf`,vendorpage:`http://www.wavecor.com/html/wf166tu02.html`,frd:`https://www.wavecor.com/Driver%20measurements%20TXT/SPL%20response/WF166TU02_SPL_response.txt`},{name:`Wavecor_WF168OM01_02`,date:`2026-06-25`,content:`[Driver]
 Brand=Wavecor
 Model=WF168OM01_02
 Manufacturer=Wavecor
