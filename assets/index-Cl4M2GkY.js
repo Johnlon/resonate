@@ -518,7 +518,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEEEENNNCENCCCECCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`AE TD15M`,date:`20130207`,content:`[Driver]
+`,datasheet:`https://aespeakers.com/shop/td/td12x/`},{name:`AE TD15M`,date:`20130207`,content:`[Driver]
 Brand=AE
 Model=TD15M
 Manufacturer=
@@ -3309,7 +3309,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENCEECCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 8PS21 8in woofer`,date:`20111113`,content:`[Driver]
+`,datasheet:`https://www.bcspeakers.com/en/products/lf-driver/8-0/8/8pe21`},{name:`B&C 8PS21 8in woofer`,date:`20111113`,content:`[Driver]
 Brand=B&C 
 Model=8PS21 8" woofer
 Manufacturer=
@@ -5874,7 +5874,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DCS205-4`,date:`20110524`,content:`[Driver]
+`,datasheet:`https://cdn.shopify.com/s/files/1/0809/2387/files/DAYTON_DC380-8.pdf?v=1746019383`},{name:`Dayton Audio DCS205-4`,date:`20110524`,content:`[Driver]
 Brand=Dayton Audio
 Model=DCS205-4
 Manufacturer=
@@ -6102,7 +6102,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DCS385-4`,date:`20120830`,content:`[Driver]
+`,datasheet:`https://www.daytonaudio.com/images/resources/295-470-dayton-audio-dcs380-4-specifications-46178.pdf`},{name:`Dayton Audio DCS385-4`,date:`20120830`,content:`[Driver]
 Brand=Dayton Audio
 Model=DCS385-4
 Manufacturer=
@@ -15222,7 +15222,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`GRS 8SW-4`,date:`20150110`,content:`[Driver]
+`,datasheet:`https://www.parts-express.com/pedocs/specs/GRS%20Spec%20Sheets/292-428--grs-8pr-8-spec-sheet.pdf`},{name:`GRS 8SW-4`,date:`20150110`,content:`[Driver]
 Brand=GRS
 Model=8SW-4
 Manufacturer=
@@ -15279,7 +15279,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Goldwood GW-212-8`,date:`20120415`,content:`[Driver]
+`,datasheet:`https://www.parts-express.com/pedocs/specs/GRS%20Spec%20Sheets/292-480--grs-8sw-4-spec-sheet.pdf`},{name:`Goldwood GW-212-8`,date:`20120415`,content:`[Driver]
 Brand=Goldwood
 Model=GW-212-8
 Manufacturer=
@@ -15849,7 +15849,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECCENNEEECEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`JBL CS1214`,date:`20160814`,content:`[Driver]
+`,datasheet:`https://jblpro.com/en-US/site_elements/2226h-j-specification-sheet`},{name:`JBL CS1214`,date:`20160814`,content:`[Driver]
 Brand=JBL
 Model=CS1214
 Manufacturer=
@@ -17046,7 +17046,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`RCF L15P530`,date:`20121020`,content:`[Driver]
+`,datasheet:`https://www.rcf.it/en/products/product-detail/l10-568h`},{name:`RCF L15P530`,date:`20121020`,content:`[Driver]
 Brand=RCF
 Model=L15P530
 Manufacturer=
@@ -17217,7 +17217,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEEECECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`RCF L8S800`,date:`20120726`,content:`[Driver]
+`,datasheet:`https://www.rcf.it/en/products/product-detail/l15-554k`},{name:`RCF L8S800`,date:`20120726`,content:`[Driver]
 Brand=RCF
 Model=L8S800
 Manufacturer=
@@ -18300,7 +18300,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEEEEENNCENCECCCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity HT 18 D4 series`,date:`20130125`,content:`[Driver]
+`,datasheet:`https://stereointegrity.com/product/ht-18/`},{name:`Stereo Integrity HT 18 D4 series`,date:`20130125`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HT 18 D4 series
 Manufacturer=
@@ -23316,7 +23316,7 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECENNNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`peerless india w8-12t 12p`,date:`20120123`,content:`[Driver]
+`,datasheet:`https://speakerboxlite.com/subwoofers/mcm-audio-select-55-2984/specifications`},{name:`peerless india w8-12t 12p`,date:`20120123`,content:`[Driver]
 Brand=00
 Model=peerless india w8-12t 12p
 Manufacturer=
@@ -24023,7 +24023,7 @@ Pe=200.0
 Vd=0.0003432
 Dd=0.199311499
 EBP=64.52
-`},{name:`SB_Acoustics_10__SW26DAC-00___Aluminum`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/10in-SB29SWNRX-S75-6.pdf`},{name:`SB_Acoustics_10__SW26DAC-00___Aluminum`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SW26DAC-00 / Aluminum
 Manufacturer=SB Acoustics
@@ -24039,7 +24039,7 @@ Cms=0.00039
 Sd=0.0312
 Vas=0.054
 Dd=0.199311499
-`},{name:`SB_Acoustics_10__SW26DAC76-3-DV___Aluminum`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/10in-SW26DAC-00-OEM-only.pdf`},{name:`SB_Acoustics_10__SW26DAC76-3-DV___Aluminum`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SW26DAC76-3-DV / Aluminum
 Manufacturer=SB Acoustics
@@ -24064,7 +24064,7 @@ Pe=300.0
 Vd=0.0003744
 Dd=0.199311499
 EBP=67.24
-`},{name:`SB_Acoustics_10__SW26DAC76-4___Aluminum`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/09/10in-SW26DAC76-3-DV-OEM-only.pdf`},{name:`SB_Acoustics_10__SW26DAC76-4___Aluminum`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SW26DAC76-4 / Aluminum
 Manufacturer=SB Acoustics
@@ -24089,7 +24089,7 @@ Pe=200.0
 Vd=0.0003744
 Dd=0.199311499
 EBP=43.14
-`},{name:`SB_Acoustics_10__SW26DAC76-8___Aluminum`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/09/10in-SW26DAC76-4-OEM-only.pdf`},{name:`SB_Acoustics_10__SW26DAC76-8___Aluminum`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SW26DAC76-8 / Aluminum
 Manufacturer=SB Acoustics
@@ -24114,7 +24114,7 @@ Pe=250.0
 Vd=0.0003744
 Dd=0.199311499
 EBP=67.24
-`},{name:`SB_Acoustics_10__SW26DBAC-00___Aluminum`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/09/10in-SW26DAC76-8-OEM-only.pdf`},{name:`SB_Acoustics_10__SW26DBAC-00___Aluminum`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SW26DBAC-00 / Aluminum
 Manufacturer=SB Acoustics
@@ -24130,7 +24130,7 @@ Cms=0.00039
 Sd=0.0312
 Vas=0.054
 Dd=0.199311499
-`},{name:`SB_Acoustics_10__SW26DBAC76-3-DV___Aluminum`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/09/10in-SW26DBAC-00.pdf`},{name:`SB_Acoustics_10__SW26DBAC76-3-DV___Aluminum`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SW26DBAC76-3-DV / Aluminum
 Manufacturer=SB Acoustics
@@ -24155,7 +24155,7 @@ Pe=300.0
 Vd=0.0003744
 Dd=0.199311499
 EBP=67.24
-`},{name:`SB_Acoustics_10__SW26DBAC76-4___Aluminum`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/09/10in-SW26DBAC76-3-DV.pdf`},{name:`SB_Acoustics_10__SW26DBAC76-4___Aluminum`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SW26DBAC76-4 / Aluminum
 Manufacturer=SB Acoustics
@@ -24180,7 +24180,7 @@ Pe=200.0
 Vd=0.0003744
 Dd=0.199311499
 EBP=43.14
-`},{name:`SB_Acoustics_10__SW26DBAC76-8___Aluminum`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/09/10in-SW26DBAC76-4.pdf`},{name:`SB_Acoustics_10__SW26DBAC76-8___Aluminum`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SW26DBAC76-8 / Aluminum
 Manufacturer=SB Acoustics
@@ -24205,7 +24205,7 @@ Pe=250.0
 Vd=0.0003744
 Dd=0.199311499
 EBP=67.24
-`},{name:`SB_Acoustics_10__SW26SFC38-4___Paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/09/10in-SW26DBAC76-8.pdf`},{name:`SB_Acoustics_10__SW26SFC38-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SW26SFC38-4 / Paper
 Manufacturer=SB Acoustics
@@ -24231,7 +24231,7 @@ Pe=80.0
 Vd=0.000119
 Dd=0.208062838
 EBP=90.0
-`},{name:`SB_Acoustics_10__SW26SFC38-8___Paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2023/06/10in-SW26SFC38-4.pdf`},{name:`SB_Acoustics_10__SW26SFC38-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SW26SFC38-8 / Paper
 Manufacturer=SB Acoustics
@@ -24257,7 +24257,7 @@ Pe=80.0
 Vd=0.000119
 Dd=0.208062838
 EBP=75.0
-`},{name:`SB_Acoustics_12__SB34SWNRX-S75-6___Norex`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2023/06/10in-SW26SFC38-8.pdf`},{name:`SB_Acoustics_12__SB34SWNRX-S75-6___Norex`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=12″ SB34SWNRX-S75-6 / Norex
 Manufacturer=SB Acoustics
@@ -24283,7 +24283,7 @@ Pe=200.0
 Vd=0.0005588
 Dd=0.254323748
 EBP=55.88
-`},{name:`SB_Acoustics_13½__SATORI_WO34HC-4___Honeycomb`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/12in-SB34SWNRX-S75-6.pdf`},{name:`SB_Acoustics_13½__SATORI_WO34HC-4___Honeycomb`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=13½″ SATORI WO34HC-4 / Honeycomb
 Manufacturer=SB Acoustics
@@ -24309,7 +24309,7 @@ Pe=200.0
 Vd=0.00048555
 Dd=0.27291851
 EBP=80.0
-`},{name:`SB_Acoustics_13½__SATORI_WO34HC-8___Honeycomb`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2026/03/13.5-inch-SATORI-WO34HC-4.pdf`},{name:`SB_Acoustics_13½__SATORI_WO34HC-8___Honeycomb`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=13½″ SATORI WO34HC-8 / Honeycomb
 Manufacturer=SB Acoustics
@@ -24335,7 +24335,7 @@ Pe=200.0
 Vd=0.00048555
 Dd=0.27291851
 EBP=67.33
-`},{name:`SB_Acoustics_2½__SATORI_MD60N-6___Fabric`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2026/03/13.5-inch-SATORI-WO34HC-8.pdf`},{name:`SB_Acoustics_2½__SATORI_MD60N-6___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=2½″ SATORI MD60N-6 / Fabric
 Manufacturer=SB Acoustics
@@ -24357,7 +24357,7 @@ Xmax=0.00025
 Pe=120.0
 Vd=8e-07
 Dd=0.063830765
-`},{name:`SB_Acoustics_5__8243__SATORI_MR13P-4___Paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2022/03/2.5in-SATORI-MD60N-6.pdf`},{name:`SB_Acoustics_5__8243__SATORI_MR13P-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5&#8243; SATORI MR13P-4 / Paper
 Manufacturer=SB Acoustics
@@ -24383,7 +24383,7 @@ Pe=30.0
 Vd=2.1e-05
 Dd=0.094406974
 EBP=164.0
-`},{name:`SB_Acoustics_5__8243__SATORI_MR13P-8___Paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/5in-SATORI-MR13P-4.pdf`},{name:`SB_Acoustics_5__8243__SATORI_MR13P-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5&#8243; SATORI MR13P-8 / Paper
 Manufacturer=SB Acoustics
@@ -24409,7 +24409,7 @@ Pe=30.0
 Vd=2.1e-05
 Dd=0.094406974
 EBP=136.36
-`},{name:`SB_Acoustics_5__8243__SATORI_MR13PNW-4___Paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/5in-SATORI-MR13P-8.pdf`},{name:`SB_Acoustics_5__8243__SATORI_MR13PNW-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5&#8243; SATORI MR13PNW-4 / Paper
 Manufacturer=SB Acoustics
@@ -24435,7 +24435,7 @@ Pe=30.0
 Vd=2.1e-05
 Dd=0.094406974
 EBP=164.0
-`},{name:`SB_Acoustics_5__8243__SATORI_MR13PNW-8___Paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/5in-SATORI-MR13PNW-4.pdf`},{name:`SB_Acoustics_5__8243__SATORI_MR13PNW-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5&#8243; SATORI MR13PNW-8 / Paper
 Manufacturer=SB Acoustics
@@ -24461,7 +24461,7 @@ Pe=30.0
 Vd=2.1e-05
 Dd=0.094406974
 EBP=146.88
-`},{name:`SB_Acoustics_5__8243__SATORI_MR13TX-4___TeXtreme`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/5in-SATORI-MR13PNW-8.pdf`},{name:`SB_Acoustics_5__8243__SATORI_MR13TX-4___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5&#8243; SATORI MR13TX-4 / TeXtreme
 Manufacturer=SB Acoustics
@@ -24487,7 +24487,7 @@ Pe=30.0
 Vd=2.07e-05
 Dd=0.093730213
 EBP=157.14
-`},{name:`SB_Acoustics_5__SATORI_MW13P-4___Paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/05/5in-SATORI-MR13TX-4.pdf`},{name:`SB_Acoustics_5__SATORI_MW13P-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5″ SATORI MW13P-4 / Paper
 Manufacturer=SB Acoustics
@@ -24513,7 +24513,7 @@ Pe=40.0
 Vd=3.5e-05
 Dd=0.094406974
 EBP=141.38
-`},{name:`SB_Acoustics_5__SATORI_MW13P-8___Paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/5in-SATORI-MW13P-4.pdf`},{name:`SB_Acoustics_5__SATORI_MW13P-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5″ SATORI MW13P-8 / Paper
 Manufacturer=SB Acoustics
@@ -24539,7 +24539,7 @@ Pe=40.0
 Vd=3.5e-05
 Dd=0.094406974
 EBP=125.76
-`},{name:`SB_Acoustics_5__SATORI_MW13PNW-4___Paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/5in-SATORI-MW13P-8.pdf`},{name:`SB_Acoustics_5__SATORI_MW13PNW-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5″ SATORI MW13PNW-4 / Paper
 Manufacturer=SB Acoustics
@@ -24565,7 +24565,7 @@ Pe=40.0
 Vd=3.5e-05
 Dd=0.094406974
 EBP=141.38
-`},{name:`SB_Acoustics_5__SATORI_MW13PNW-8___Paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/5in-SATORI-MW13PNW-4.pdf`},{name:`SB_Acoustics_5__SATORI_MW13PNW-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5″ SATORI MW13PNW-8 / Paper
 Manufacturer=SB Acoustics
@@ -24591,7 +24591,7 @@ Pe=40.0
 Vd=3.5e-05
 Dd=0.094406974
 EBP=124.24
-`},{name:`SB_Acoustics_5__SATORI_MW13TX-4___TeXtreme`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/5in-SATORI-MW13PNW-8.pdf`},{name:`SB_Acoustics_5__SATORI_MW13TX-4___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5″ SATORI MW13TX-4 / TeXtreme
 Manufacturer=SB Acoustics
@@ -24617,7 +24617,7 @@ Pe=40.0
 Vd=3.5e-05
 Dd=0.094406974
 EBP=140.74
-`},{name:`SB_Acoustics_5__SATORI_MW13TX-8___TeXtreme`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2025/12/5-inch-SATORI-MW13TX-4.pdf`},{name:`SB_Acoustics_5__SATORI_MW13TX-8___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5″ SATORI MW13TX-8 / TeXtreme
 Manufacturer=SB Acoustics
@@ -24643,7 +24643,7 @@ Pe=40.0
 Vd=3.5e-05
 Dd=0.094406974
 EBP=117.65
-`},{name:`SB_Acoustics_6½__SATORI_MR16P-4___Paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2025/12/5-inch-SATORI-MW13TX-8.pdf`},{name:`SB_Acoustics_6½__SATORI_MR16P-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MR16P-4 / Paper
 Manufacturer=SB Acoustics
@@ -24669,7 +24669,7 @@ Pe=40.0
 Vd=3.689e-05
 Dd=0.123091635
 EBP=119.23
-`},{name:`SB_Acoustics_6½__SATORI_MR16P-8___Paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/6½in-SATORI-MR16P-4.pdf`},{name:`SB_Acoustics_6½__SATORI_MR16P-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MR16P-8 / Paper
 Manufacturer=SB Acoustics
@@ -24695,7 +24695,7 @@ Pe=30.0
 Vd=3.689e-05
 Dd=0.123091635
 EBP=100.0
-`},{name:`SB_Acoustics_6½__SATORI_MR16PNW-4___Paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/6½in-SATORI-MR16P-8.pdf`},{name:`SB_Acoustics_6½__SATORI_MR16PNW-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MR16PNW-4 / Paper
 Manufacturer=SB Acoustics
@@ -24721,7 +24721,7 @@ Pe=40.0
 Vd=3.689e-05
 Dd=0.123091635
 EBP=119.23
-`},{name:`SB_Acoustics_6½__SATORI_MR16PNW-8___Paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/6½in-SATORI-MR16PNW-4.pdf`},{name:`SB_Acoustics_6½__SATORI_MR16PNW-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MR16PNW-8 / Paper
 Manufacturer=SB Acoustics
@@ -24747,7 +24747,7 @@ Pe=30.0
 Vd=3.689e-05
 Dd=0.123091635
 EBP=91.18
-`},{name:`SB_Acoustics_6½__SATORI_MR16TX-8___TeXtreme`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/6½in-SATORI-MR16PNW-8.pdf`},{name:`SB_Acoustics_6½__SATORI_MR16TX-8___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MR16TX-8 / TeXtreme
 Manufacturer=SB Acoustics
@@ -24773,7 +24773,7 @@ Pe=30.0
 Vd=3.3345e-05
 Dd=0.122052868
 EBP=109.38
-`},{name:`SB_Acoustics_6½__SATORI_MW16P-12___Paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/05/6½in-SATORI-MR16TX-8.pdf`},{name:`SB_Acoustics_6½__SATORI_MW16P-12___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MW16P-12 / Paper
 Manufacturer=SB Acoustics
@@ -24799,7 +24799,7 @@ Pe=60.0
 Vd=7.378e-05
 Dd=0.123091635
 EBP=76.5
-`},{name:`SB_Acoustics_6½__SATORI_MW16P-4___Paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2025/12/6.5-inch-SATORI-MW16P-12.pdf`},{name:`SB_Acoustics_6½__SATORI_MW16P-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MW16P-4 / Paper
 Manufacturer=SB Acoustics
@@ -24825,7 +24825,7 @@ Pe=60.0
 Vd=7.14e-05
 Dd=0.123091635
 EBP=100.0
-`},{name:`SB_Acoustics_6½__SATORI_MW16P-8___Paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/6.5in-SATORI-MW16P-4.pdf`},{name:`SB_Acoustics_6½__SATORI_MW16P-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MW16P-8 / Paper
 Manufacturer=SB Acoustics
@@ -24851,7 +24851,7 @@ Pe=60.0
 Vd=7.14e-05
 Dd=0.123091635
 EBP=82.86
-`},{name:`SB_Acoustics_6½__SATORI_MW16PF-4___Paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/6.5in-SATORI-MW16P-8.pdf`},{name:`SB_Acoustics_6½__SATORI_MW16PF-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MW16PF-4 / Paper
 Manufacturer=SB Acoustics
@@ -24877,7 +24877,7 @@ Pe=60.0
 Vd=6.545e-05
 Dd=0.123091635
 EBP=80.0
-`},{name:`SB_Acoustics_6½__SATORI_MW16PF-8___Paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/6.5in-SATORI-MW16PF-4-OEM-only.pdf`},{name:`SB_Acoustics_6½__SATORI_MW16PF-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MW16PF-8 / Paper
 Manufacturer=SB Acoustics
@@ -24903,7 +24903,7 @@ Pe=60.0
 Vd=6.545e-05
 Dd=0.123091635
 EBP=69.05
-`},{name:`SB_Acoustics_6½__SATORI_MW16PNW-4___Paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/6.5in-SATORI-MW16PF-8-OEM-only.pdf`},{name:`SB_Acoustics_6½__SATORI_MW16PNW-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MW16PNW-4 / Paper
 Manufacturer=SB Acoustics
@@ -24929,7 +24929,7 @@ Pe=60.0
 Vd=7.14e-05
 Dd=0.123091635
 EBP=96.55
-`},{name:`SB_Acoustics_6½__SATORI_MW16PNW-8___Paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/6.5in-SATORI-MW16PNW-4.pdf`},{name:`SB_Acoustics_6½__SATORI_MW16PNW-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MW16PNW-8 / Paper
 Manufacturer=SB Acoustics
@@ -24955,7 +24955,7 @@ Pe=60.0
 Vd=7.14e-05
 Dd=0.123091635
 EBP=85.29
-`},{name:`SB_Acoustics_6½__SATORI_MW16TX-4___TeXtreme`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/6.5in-SATORI-MW16PNW-8.pdf`},{name:`SB_Acoustics_6½__SATORI_MW16TX-4___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MW16TX-4 / TeXtreme
 Manufacturer=SB Acoustics
@@ -24981,7 +24981,7 @@ Pe=60.0
 Vd=7.14e-05
 Dd=0.123091635
 EBP=100.0
-`},{name:`SB_Acoustics_6½__SATORI_MW16TX-8___TeXtreme`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/04/6.5in-SATORI-MW16TX-4.pdf`},{name:`SB_Acoustics_6½__SATORI_MW16TX-8___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MW16TX-8 / TeXtreme
 Manufacturer=SB Acoustics
@@ -25007,7 +25007,7 @@ Pe=60.0
 Vd=7.14e-05
 Dd=0.123091635
 EBP=83.71
-`},{name:`SB_Acoustics_7½__SATORI_MT19CP-8___paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/04/6.5in-SATORI-MW16TX-8.pdf`},{name:`SB_Acoustics_7½__SATORI_MT19CP-8___paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=7½″ SATORI MT19CP-8 / paper
 Manufacturer=SB Acoustics
@@ -25033,7 +25033,7 @@ Pe=60.0
 Vd=5.472e-05
 Dd=0.139115927
 EBP=3636.36
-`},{name:`SB_Acoustics_7½__SATORI_MW19P-4___Paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/04/7.5in-SATORI-MT19CP-8.pdf`},{name:`SB_Acoustics_7½__SATORI_MW19P-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=7½″ SATORI MW19P-4 / Paper
 Manufacturer=SB Acoustics
@@ -25059,7 +25059,7 @@ Pe=70.0
 Vd=0.00010744
 Dd=0.141835062
 EBP=111.54
-`},{name:`SB_Acoustics_7½__SATORI_MW19P-8___Paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/7.5in-SATORI-MW19P-4-1.pdf`},{name:`SB_Acoustics_7½__SATORI_MW19P-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=7½″ SATORI MW19P-8 / Paper
 Manufacturer=SB Acoustics
@@ -25085,7 +25085,7 @@ Pe=70.0
 Vd=0.00010586
 Dd=0.141835062
 EBP=92.19
-`},{name:`SB_Acoustics_7½__SATORI_MW19PF-4___Paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/7.5in-SATORI-MW19P-8-1.pdf`},{name:`SB_Acoustics_7½__SATORI_MW19PF-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=7½″ SATORI MW19PF-4 / Paper
 Manufacturer=SB Acoustics
@@ -25111,7 +25111,7 @@ Pe=70.0
 Vd=0.0001027
 Dd=0.141835062
 EBP=103.57
-`},{name:`SB_Acoustics_7½__SATORI_MW19PF-8___Paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/7.5in-SATORI-MW19PF-4-OEM-only.pdf`},{name:`SB_Acoustics_7½__SATORI_MW19PF-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=7½″ SATORI MW19PF-8 / Paper
 Manufacturer=SB Acoustics
@@ -25137,7 +25137,7 @@ Pe=70.0
 Vd=0.0001027
 Dd=0.141835062
 EBP=81.08
-`},{name:`SB_Acoustics_7½__SATORI_MW19PNW-4___Paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/7.5in-SATORI-MW19PF-8-OEM-only.pdf`},{name:`SB_Acoustics_7½__SATORI_MW19PNW-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=7½″ SATORI MW19PNW-4 / Paper
 Manufacturer=SB Acoustics
@@ -25163,7 +25163,7 @@ Pe=70.0
 Vd=0.00010744
 Dd=0.141835062
 EBP=111.54
-`},{name:`SB_Acoustics_7½__SATORI_MW19PNW-8___Paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/10/7.5in-SATORI-MW19PNW-4.pdf`},{name:`SB_Acoustics_7½__SATORI_MW19PNW-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=7½″ SATORI MW19PNW-8 / Paper
 Manufacturer=SB Acoustics
@@ -25189,7 +25189,7 @@ Pe=70.0
 Vd=0.00010586
 Dd=0.141835062
 EBP=92.19
-`},{name:`SB_Acoustics_7½__SATORI_MW19TX-4___TeXtreme`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/10/7.5in-SATORI-MW19PNW-8.pdf`},{name:`SB_Acoustics_7½__SATORI_MW19TX-4___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=7½″ SATORI MW19TX-4 / TeXtreme
 Manufacturer=SB Acoustics
@@ -25215,7 +25215,7 @@ Pe=70.0
 Vd=0.00010744
 Dd=0.141835062
 EBP=114.29
-`},{name:`SB_Acoustics_7½__SATORI_MW19TX-8___TeXtreme`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/04/7.5in-SATORI-MW19TX-4.pdf`},{name:`SB_Acoustics_7½__SATORI_MW19TX-8___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=7½″ SATORI MW19TX-8 / TeXtreme
 Manufacturer=SB Acoustics
@@ -25241,7 +25241,7 @@ Pe=70.0
 Vd=0.00010586
 Dd=0.141835062
 EBP=94.29
-`},{name:`SB_Acoustics_9½__SATORI_WO24P-4___Paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/04/7.5in-SATORI-MW19TX-8.pdf`},{name:`SB_Acoustics_9½__SATORI_WO24P-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=9½″ SATORI WO24P-4 / Paper
 Manufacturer=SB Acoustics
@@ -25267,7 +25267,7 @@ Pe=90.0
 Vd=0.00021675
 Dd=0.180187703
 EBP=66.67
-`},{name:`SB_Acoustics_9½__SATORI_WO24P-8___Paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/04/9.5in-SATORI-WO24P-4.pdf`},{name:`SB_Acoustics_9½__SATORI_WO24P-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=9½″ SATORI WO24P-8 / Paper
 Manufacturer=SB Acoustics
@@ -25293,7 +25293,7 @@ Pe=90.0
 Vd=0.00021675
 Dd=0.180187703
 EBP=59.76
-`},{name:`SB_Acoustics_9½__SATORI_WO24TX-4___Textreme`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/04/9.5in-SATORI-WO24P-8.pdf`},{name:`SB_Acoustics_9½__SATORI_WO24TX-4___Textreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=9½″ SATORI WO24TX-4 / Textreme
 Manufacturer=SB Acoustics
@@ -25319,7 +25319,7 @@ Pe=90.0
 Vd=0.000223125
 Dd=0.180187703
 EBP=71.08
-`},{name:`SB_Acoustics_9½__SATORI_WO24TX-8___Textreme`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/11/9.5in-SATORI-WO24TX-4.pdf`},{name:`SB_Acoustics_9½__SATORI_WO24TX-8___Textreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=9½″ SATORI WO24TX-8 / Textreme
 Manufacturer=SB Acoustics
@@ -25345,7 +25345,7 @@ Pe=90.0
 Vd=0.000218025
 Dd=0.180187703
 EBP=68.06
-`},{name:`SB_Acoustics_SATORI_AT60NC-4___Kapton`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/11/9.5in-SATORI-WO24TX-8.pdf`},{name:`SB_Acoustics_SATORI_AT60NC-4___Kapton`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI AT60NC-4 / Kapton
 Manufacturer=SB Acoustics
@@ -25360,7 +25360,7 @@ Re=3.9
 Sd=0.00126
 Pe=100.0
 Dd=0.040053487
-`},{name:`SB_Acoustics_SATORI_TW29B-B___Beryllium`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2022/03/SATORI-AT60NC-4.pdf`},{name:`SB_Acoustics_SATORI_TW29B-B___Beryllium`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29B-B / Beryllium
 Manufacturer=SB Acoustics
@@ -25384,7 +25384,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=461.54
-`},{name:`SB_Acoustics_SATORI_TW29BN-8___Beryllium`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29B-B.pdf`},{name:`SB_Acoustics_SATORI_TW29BN-8___Beryllium`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29BN-8 / Beryllium
 Manufacturer=SB Acoustics
@@ -25408,7 +25408,7 @@ Pe=80.0
 Vd=1.92e-07
 Dd=0.03496155
 EBP=937.5
-`},{name:`SB_Acoustics_SATORI_TW29BN-B-8___Beryllium`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2026/04/SATORI-TW29BN-8.pdf`},{name:`SB_Acoustics_SATORI_TW29BN-B-8___Beryllium`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29BN-B-8 / Beryllium
 Manufacturer=SB Acoustics
@@ -25432,7 +25432,7 @@ Pe=80.0
 Vd=1.92e-07
 Dd=0.03496155
 EBP=937.5
-`},{name:`SB_Acoustics_SATORI_TW29BN-B___Beryllium`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2026/04/SATORI-TW29BN-B-8.pdf`},{name:`SB_Acoustics_SATORI_TW29BN-B___Beryllium`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29BN-B / Beryllium
 Manufacturer=SB Acoustics
@@ -25456,7 +25456,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=1166.67
-`},{name:`SB_Acoustics_SATORI_TW29BNWG-4___Beryllium`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/SATORI-TW29BN-B.pdf`},{name:`SB_Acoustics_SATORI_TW29BNWG-4___Beryllium`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29BNWG-4 / Beryllium
 Manufacturer=SB Acoustics
@@ -25480,7 +25480,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=1166.67
-`},{name:`SB_Acoustics_SATORI_TW29BNWG-8___Beryllium`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2022/09/SATORI-TW29BNWG-4.pdf`},{name:`SB_Acoustics_SATORI_TW29BNWG-8___Beryllium`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29BNWG-8 / Beryllium
 Manufacturer=SB Acoustics
@@ -25504,7 +25504,7 @@ Pe=80.0
 Vd=1.44e-07
 Dd=0.03496155
 EBP=937.5
-`},{name:`SB_Acoustics_SATORI_TW29BN___Beryllium`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2022/09/SATORI-TW29BNWG-8.pdf`},{name:`SB_Acoustics_SATORI_TW29BN___Beryllium`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29BN / Beryllium
 Manufacturer=SB Acoustics
@@ -25528,7 +25528,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=1166.67
-`},{name:`SB_Acoustics_SATORI_TW29B___Beryllium`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/SATORI-TW29BN.pdf`},{name:`SB_Acoustics_SATORI_TW29B___Beryllium`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29B / Beryllium
 Manufacturer=SB Acoustics
@@ -25552,7 +25552,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=461.54
-`},{name:`SB_Acoustics_SATORI_TW29D-B___Fabric`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29B.pdf`},{name:`SB_Acoustics_SATORI_TW29D-B___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29D-B / Fabric
 Manufacturer=SB Acoustics
@@ -25576,7 +25576,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=472.44
-`},{name:`SB_Acoustics_SATORI_TW29DN-8___Fabric`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/SATORI-TW29D-B.pdf`},{name:`SB_Acoustics_SATORI_TW29DN-8___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29DN-8 / Fabric
 Manufacturer=SB Acoustics
@@ -25600,7 +25600,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=1000.0
-`},{name:`SB_Acoustics_SATORI_TW29DN-B-8___Fabric`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29DN-8.pdf`},{name:`SB_Acoustics_SATORI_TW29DN-B-8___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29DN-B-8 / Fabric
 Manufacturer=SB Acoustics
@@ -25624,7 +25624,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=1000.0
-`},{name:`SB_Acoustics_SATORI_TW29DN-B___Fabric`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29DN-B-8.pdf`},{name:`SB_Acoustics_SATORI_TW29DN-B___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29DN-B / Fabric
 Manufacturer=SB Acoustics
@@ -25648,7 +25648,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=1140.35
-`},{name:`SB_Acoustics_SATORI_TW29DN___Fabric`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/SATORI-TW29DN-B.pdf`},{name:`SB_Acoustics_SATORI_TW29DN___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29DN / Fabric
 Manufacturer=SB Acoustics
@@ -25672,7 +25672,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=1140.35
-`},{name:`SB_Acoustics_SATORI_TW29D___Fabric`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29DN.pdf`},{name:`SB_Acoustics_SATORI_TW29D___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29D / Fabric
 Manufacturer=SB Acoustics
@@ -25696,7 +25696,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=472.44
-`},{name:`SB_Acoustics_SATORI_TW29R-B___Fabric`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29D.pdf`},{name:`SB_Acoustics_SATORI_TW29R-B___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29R-B / Fabric
 Manufacturer=SB Acoustics
@@ -25720,7 +25720,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=483.87
-`},{name:`SB_Acoustics_SATORI_TW29RN-8___Fabric`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29R-B.pdf`},{name:`SB_Acoustics_SATORI_TW29RN-8___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29RN-8 / Fabric
 Manufacturer=SB Acoustics
@@ -25744,7 +25744,7 @@ Pe=80.0
 Vd=1.92e-07
 Dd=0.03496155
 EBP=984.85
-`},{name:`SB_Acoustics_SATORI_TW29RN-B-8___Fabric`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29RN-8.pdf`},{name:`SB_Acoustics_SATORI_TW29RN-B-8___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29RN-B-8 / Fabric
 Manufacturer=SB Acoustics
@@ -25768,7 +25768,7 @@ Pe=80.0
 Vd=1.92e-07
 Dd=0.03496155
 EBP=984.85
-`},{name:`SB_Acoustics_SATORI_TW29RN-B___Fabric`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29RN-B-8.pdf`},{name:`SB_Acoustics_SATORI_TW29RN-B___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29RN-B / Fabric
 Manufacturer=SB Acoustics
@@ -25792,7 +25792,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=1076.92
-`},{name:`SB_Acoustics_SATORI_TW29RN___Fabric`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/SATORI-TW29RN-B.pdf`},{name:`SB_Acoustics_SATORI_TW29RN___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29RN / Fabric
 Manufacturer=SB Acoustics
@@ -25816,7 +25816,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=1076.92
-`},{name:`SB_Acoustics_SATORI_TW29R___Fabric`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29RN.pdf`},{name:`SB_Acoustics_SATORI_TW29R___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29R / Fabric
 Manufacturer=SB Acoustics
@@ -25840,7 +25840,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=483.87
-`},{name:`SB_Acoustics_SATORI_TW29TXN-B-8___TeXtreme`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29R.pdf`},{name:`SB_Acoustics_SATORI_TW29TXN-B-8___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29TXN-B-8 / TeXtreme
 Manufacturer=SB Acoustics
@@ -25864,7 +25864,7 @@ Pe=80.0
 Vd=1.92e-07
 Dd=0.03496155
 EBP=883.12
-`},{name:`SB_Acoustics_SATORI_TW29TXN-B___TeXtreme`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/SATORI-TW29TXN-B-8.pdf`},{name:`SB_Acoustics_SATORI_TW29TXN-B___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29TXN-B / TeXtreme
 Manufacturer=SB Acoustics
@@ -25888,7 +25888,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=1000.0
-`},{name:`SB_Acoustics_SATORI_TW29TXNWG-4___TeXtreme`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/SATORI-TW29TXN-B.pdf`},{name:`SB_Acoustics_SATORI_TW29TXNWG-4___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29TXNWG-4 / TeXtreme
 Manufacturer=SB Acoustics
@@ -25912,7 +25912,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=992.19
-`},{name:`SB_Acoustics_SB10PGC21-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/10/SATORI-TW29TXNWG-4.pdf`},{name:`SB_Acoustics_SB10PGC21-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB10PGC21-4
 Manufacturer=SB Acoustics
@@ -25938,7 +25938,7 @@ Pe=20.0
 Vd=6.075e-06
 Dd=0.058632301
 EBP=88.12
-`},{name:`SB_Acoustics_SB12CACS25-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/3in-SB10PGC21-4.pdf`},{name:`SB_Acoustics_SB12CACS25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12CACS25-4
 Manufacturer=SB Acoustics
@@ -25964,7 +25964,7 @@ Pe=30.0
 Vd=2.5e-05
 Dd=0.079788456
 EBP=154.55
-`},{name:`SB_Acoustics_SB12CACS25-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/4in-SB12CACS25-4.pdf`},{name:`SB_Acoustics_SB12CACS25-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12CACS25-8
 Manufacturer=SB Acoustics
@@ -25990,7 +25990,7 @@ Pe=30.0
 Vd=2.5e-05
 Dd=0.079788456
 EBP=127.5
-`},{name:`SB_Acoustics_SB12MNRX2-25`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/4in-SB12CACS25-8.pdf`},{name:`SB_Acoustics_SB12MNRX2-25`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12MNRX2-25
 Manufacturer=SB Acoustics
@@ -26016,7 +26016,7 @@ Pe=50.0
 Vd=1.1e-05
 Dd=0.079788456
 EBP=181.43
-`},{name:`SB_Acoustics_SB12MNRX25-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/03/4in-SB12MNRX2-25-4.pdf`},{name:`SB_Acoustics_SB12MNRX25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12MNRX25-4
 Manufacturer=SB Acoustics
@@ -26042,7 +26042,7 @@ Pe=50.0
 Vd=1.125e-05
 Dd=0.079788456
 EBP=138.1
-`},{name:`SB_Acoustics_SB12NRX25-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/03/4in-SB12MNRX25-4-OEM-only.pdf`},{name:`SB_Acoustics_SB12NRX25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12NRX25-4
 Manufacturer=SB Acoustics
@@ -26068,7 +26068,7 @@ Pe=30.0
 Vd=2.5e-05
 Dd=0.079788456
 EBP=119.57
-`},{name:`SB_Acoustics_SB12NRX25-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/03/4in-SB12NRX25-4.pdf`},{name:`SB_Acoustics_SB12NRX25-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12NRX25-8
 Manufacturer=SB Acoustics
@@ -26094,7 +26094,7 @@ Pe=30.0
 Vd=2.5e-05
 Dd=0.079788456
 EBP=139.02
-`},{name:`SB_Acoustics_SB12NRXF25-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/03/4in-SB12NRX25-8.pdf`},{name:`SB_Acoustics_SB12NRXF25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12NRXF25-4
 Manufacturer=SB Acoustics
@@ -26120,7 +26120,7 @@ Pe=30.0
 Vd=2.5e-05
 Dd=0.079788456
 EBP=115.09
-`},{name:`SB_Acoustics_SB12NRXF25-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2023/07/4in-SB12NRXF25-4-OEM-only.pdf`},{name:`SB_Acoustics_SB12NRXF25-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12NRXF25-8
 Manufacturer=SB Acoustics
@@ -26146,7 +26146,7 @@ Pe=30.0
 Vd=2.5e-05
 Dd=0.079788456
 EBP=136.96
-`},{name:`SB_Acoustics_SB12PAC-00`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2023/07/4in-SB12NRXF25-8-OEM-only.pdf`},{name:`SB_Acoustics_SB12PAC-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12PAC-00
 Manufacturer=SB Acoustics
@@ -26162,7 +26162,7 @@ Cms=0.00121
 Sd=0.005
 Vas=0.0043
 Dd=0.079788456
-`},{name:`SB_Acoustics_SB12PAC25-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/4in-SB12PAC-00-OEM-only.pdf`},{name:`SB_Acoustics_SB12PAC25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12PAC25-4
 Manufacturer=SB Acoustics
@@ -26188,7 +26188,7 @@ Pe=30.0
 Vd=2.5e-05
 Dd=0.079788456
 EBP=159.09
-`},{name:`SB_Acoustics_SB12PACR-00`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/03/4in-SB12PAC25-4.pdf`},{name:`SB_Acoustics_SB12PACR-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12PACR-00
 Manufacturer=SB Acoustics
@@ -26204,7 +26204,7 @@ Cms=0.00121
 Sd=0.005
 Vas=0.0043
 Dd=0.079788456
-`},{name:`SB_Acoustics_SB12PACR25-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/03/4in-SB12PACR-00.pdf`},{name:`SB_Acoustics_SB12PACR25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12PACR25-4
 Manufacturer=SB Acoustics
@@ -26230,7 +26230,7 @@ Pe=30.0
 Vd=2.5e-05
 Dd=0.079788456
 EBP=159.09
-`},{name:`SB_Acoustics_SB12PFC-00`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/04/4in-SB12PACR25-4.pdf`},{name:`SB_Acoustics_SB12PFC-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12PFC-00
 Manufacturer=SB Acoustics
@@ -26246,7 +26246,7 @@ Cms=0.0012
 Sd=0.005
 Vas=0.0042
 Dd=0.079788456
-`},{name:`SB_Acoustics_SB12PFC25-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/4in-SB12PFC-00-OEM-only.pdf`},{name:`SB_Acoustics_SB12PFC25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12PFC25-4
 Manufacturer=SB Acoustics
@@ -26272,7 +26272,7 @@ Pe=30.0
 Vd=2.5e-05
 Dd=0.079788456
 EBP=118.37
-`},{name:`SB_Acoustics_SB12PFC25-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/4in-SB12PFC25-4-OEM-only.pdf`},{name:`SB_Acoustics_SB12PFC25-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12PFC25-8
 Manufacturer=SB Acoustics
@@ -26298,7 +26298,7 @@ Pe=30.0
 Vd=2.5e-05
 Dd=0.079788456
 EBP=98.46
-`},{name:`SB_Acoustics_SB12PFCR-00`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/4in-SB12PFC25-8-OEM-only.pdf`},{name:`SB_Acoustics_SB12PFCR-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12PFCR-00
 Manufacturer=SB Acoustics
@@ -26314,7 +26314,7 @@ Cms=0.0012
 Sd=0.005
 Vas=0.0042
 Dd=0.079788456
-`},{name:`SB_Acoustics_SB12PFCR25-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/03/4in-SB12PFCR-00.pdf`},{name:`SB_Acoustics_SB12PFCR25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12PFCR25-4
 Manufacturer=SB Acoustics
@@ -26340,7 +26340,7 @@ Pe=10.0
 Vd=2.25e-05
 Dd=0.075693976
 EBP=3611.11
-`},{name:`SB_Acoustics_SB12PFCR25-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/03/4in-SB12PFCR25-4-COAX.pdf`},{name:`SB_Acoustics_SB12PFCR25-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12PFCR25-8
 Manufacturer=SB Acoustics
@@ -26366,7 +26366,7 @@ Pe=30.0
 Vd=2.5e-05
 Dd=0.079788456
 EBP=107.27
-`},{name:`SB_Acoustics_SB13PFC-00`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2025/01/4in-SB12PFCR25-8.pdf`},{name:`SB_Acoustics_SB13PFC-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB13PFC-00
 Manufacturer=SB Acoustics
@@ -26382,7 +26382,7 @@ Cms=0.00133
 Sd=0.0087
 Vas=0.0142
 Dd=0.105248202
-`},{name:`SB_Acoustics_SB13PFC25-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/5in-SB13PFC-00-OEM-only.pdf`},{name:`SB_Acoustics_SB13PFC25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB13PFC25-4
 Manufacturer=SB Acoustics
@@ -26408,7 +26408,7 @@ Pe=40.0
 Vd=3.915e-05
 Dd=0.105248202
 EBP=133.33
-`},{name:`SB_Acoustics_SB13PFC25-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/5in-SB13PFC25-4-OEM-only.pdf`},{name:`SB_Acoustics_SB13PFC25-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB13PFC25-8
 Manufacturer=SB Acoustics
@@ -26434,7 +26434,7 @@ Pe=40.0
 Vd=3.915e-05
 Dd=0.105248202
 EBP=115.38
-`},{name:`SB_Acoustics_SB13PFCR-00`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/5in-SB13PFC25-8-OEM-only.pdf`},{name:`SB_Acoustics_SB13PFCR-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB13PFCR-00
 Manufacturer=SB Acoustics
@@ -26450,7 +26450,7 @@ Cms=0.00133
 Sd=0.0087
 Vas=0.0142
 Dd=0.105248202
-`},{name:`SB_Acoustics_SB13PFCR25-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/03/5in-SB13PFCR-00.pdf`},{name:`SB_Acoustics_SB13PFCR25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB13PFCR25-4
 Manufacturer=SB Acoustics
@@ -26476,7 +26476,7 @@ Pe=40.0
 Vd=3.915e-05
 Dd=0.105248202
 EBP=133.33
-`},{name:`SB_Acoustics_SB13PFCR25-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2022/03/5in-SB13PFCR25-4.pdf`},{name:`SB_Acoustics_SB13PFCR25-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB13PFCR25-8
 Manufacturer=SB Acoustics
@@ -26502,7 +26502,7 @@ Pe=40.0
 Vd=3.915e-05
 Dd=0.105248202
 EBP=115.38
-`},{name:`SB_Acoustics_SB14ST-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2022/03/5in-SB13PFCR25-8.pdf`},{name:`SB_Acoustics_SB14ST-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB14ST-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -26526,7 +26526,7 @@ Pe=10.0
 Vd=3.3e-08
 Dd=0.016736568
 EBP=0.16
-`},{name:`SB_Acoustics_SB15BAC30-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2025/12/SB14ST-C000-4.pdf`},{name:`SB_Acoustics_SB15BAC30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15BAC30-8
 Manufacturer=SB Acoustics
@@ -26552,7 +26552,7 @@ Pe=25.0
 Vd=2.4e-05
 Dd=0.100925301
 EBP=2871.79
-`},{name:`SB_Acoustics_SB15CAC30-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2026/03/5-inch-SB15BAC30-8-COAX.pdf`},{name:`SB_Acoustics_SB15CAC30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15CAC30-4
 Manufacturer=SB Acoustics
@@ -26578,7 +26578,7 @@ Pe=50.0
 Vd=4.1e-05
 Dd=0.102179079
 EBP=95.59
-`},{name:`SB_Acoustics_SB15CAC30-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/5in-SB15CAC30-4.pdf`},{name:`SB_Acoustics_SB15CAC30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15CAC30-8
 Manufacturer=SB Acoustics
@@ -26604,7 +26604,7 @@ Pe=50.0
 Vd=4.1e-05
 Dd=0.102179079
 EBP=84.52
-`},{name:`SB_Acoustics_SB15CRC30-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/5in-SB15CAC30-8.pdf`},{name:`SB_Acoustics_SB15CRC30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15CRC30-4
 Manufacturer=SB Acoustics
@@ -26630,7 +26630,7 @@ Pe=50.0
 Vd=4.51e-05
 Dd=0.102179079
 EBP=102.78
-`},{name:`SB_Acoustics_SB15CRC30-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/03/5in-SB15CRC30-4.pdf`},{name:`SB_Acoustics_SB15CRC30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15CRC30-8
 Manufacturer=SB Acoustics
@@ -26656,7 +26656,7 @@ Pe=50.0
 Vd=4.51e-05
 Dd=0.102179079
 EBP=86.96
-`},{name:`SB_Acoustics_SB15MFC30-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/03/5in-SB15CRC30-8.pdf`},{name:`SB_Acoustics_SB15MFC30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15MFC30-4
 Manufacturer=SB Acoustics
@@ -26682,7 +26682,7 @@ Pe=50.0
 Vd=4.1e-05
 Dd=0.102179079
 EBP=118.33
-`},{name:`SB_Acoustics_SB15MFC30-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/5in-SB15MFC30-4.pdf`},{name:`SB_Acoustics_SB15MFC30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15MFC30-8
 Manufacturer=SB Acoustics
@@ -26708,7 +26708,7 @@ Pe=50.0
 Vd=4.1e-05
 Dd=0.102179079
 EBP=97.5
-`},{name:`SB_Acoustics_SB15NAC30-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/5in-SB15MFC30-8.pdf`},{name:`SB_Acoustics_SB15NAC30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15NAC30-4
 Manufacturer=SB Acoustics
@@ -26734,7 +26734,7 @@ Pe=50.0
 Vd=4.1e-05
 Dd=0.102179079
 EBP=109.38
-`},{name:`SB_Acoustics_SB15NAC30-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/5in-SB15NAC30-4-OEM-only.pdf`},{name:`SB_Acoustics_SB15NAC30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15NAC30-8
 Manufacturer=SB Acoustics
@@ -26760,7 +26760,7 @@ Pe=50.0
 Vd=4.1e-05
 Dd=0.102179079
 EBP=91.03
-`},{name:`SB_Acoustics_SB15NBAC30-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/5in-SB15NAC30-8-OEM-only.pdf`},{name:`SB_Acoustics_SB15NBAC30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15NBAC30-4
 Manufacturer=SB Acoustics
@@ -26786,7 +26786,7 @@ Pe=50.0
 Vd=4.1e-05
 Dd=0.102179079
 EBP=106.45
-`},{name:`SB_Acoustics_SB15NBAC30-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/5in-SB15NBAC30-4.pdf`},{name:`SB_Acoustics_SB15NBAC30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15NBAC30-8
 Manufacturer=SB Acoustics
@@ -26812,7 +26812,7 @@ Pe=50.0
 Vd=4.1e-05
 Dd=0.102179079
 EBP=86.59
-`},{name:`SB_Acoustics_SB15NRX2C30-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/5in-SB15NBAC30-8.pdf`},{name:`SB_Acoustics_SB15NRX2C30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15NRX2C30-4
 Manufacturer=SB Acoustics
@@ -26838,7 +26838,7 @@ Pe=50.0
 Vd=4.1e-05
 Dd=0.102179079
 EBP=115.0
-`},{name:`SB_Acoustics_SB15NRX2C30-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/5in-SB15NRX2C30-4.pdf`},{name:`SB_Acoustics_SB15NRX2C30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15NRX2C30-8
 Manufacturer=SB Acoustics
@@ -26864,7 +26864,7 @@ Pe=50.0
 Vd=4.1e-05
 Dd=0.102179079
 EBP=98.65
-`},{name:`SB_Acoustics_SB15NRXC30-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/5in-SB15NRX2C30-8.pdf`},{name:`SB_Acoustics_SB15NRXC30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15NRXC30-4
 Manufacturer=SB Acoustics
@@ -26890,7 +26890,7 @@ Pe=50.0
 Vd=4.1e-05
 Dd=0.102179079
 EBP=132.26
-`},{name:`SB_Acoustics_SB15NRXC30-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/5in-SB15NRXC30-4-OEM-only.pdf`},{name:`SB_Acoustics_SB15NRXC30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15NRXC30-8
 Manufacturer=SB Acoustics
@@ -26916,7 +26916,7 @@ Pe=50.0
 Vd=4.1e-05
 Dd=0.102179079
 EBP=108.57
-`},{name:`SB_Acoustics_SB15SFCR-00`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/5in-SB15NRXC30-8-OEM-only.pdf`},{name:`SB_Acoustics_SB15SFCR-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15SFCR-00
 Manufacturer=SB Acoustics
@@ -26932,7 +26932,7 @@ Cms=0.00093
 Sd=0.0178
 Vas=0.0418
 Dd=0.150544558
-`},{name:`SB_Acoustics_SB15SFCR39-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/5x8in-SB15SFCR-00.pdf`},{name:`SB_Acoustics_SB15SFCR39-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15SFCR39-4
 Manufacturer=SB Acoustics
@@ -26958,7 +26958,7 @@ Pe=80.0
 Vd=9.79e-05
 Dd=0.150544558
 EBP=91.18
-`},{name:`SB_Acoustics_SB15SFCR39-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/11/5inx8in-SB15SFCR39-4.pdf`},{name:`SB_Acoustics_SB15SFCR39-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15SFCR39-8
 Manufacturer=SB Acoustics
@@ -26984,7 +26984,7 @@ Pe=80.0
 Vd=8.9e-05
 Dd=0.150544558
 EBP=71.11
-`},{name:`SB_Acoustics_SB16FRPC25-7`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/5inx8in-SB15SFCR39-8.pdf`},{name:`SB_Acoustics_SB16FRPC25-7`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB16FRPC25-7
 Manufacturer=SB Acoustics
@@ -27010,7 +27010,7 @@ Pe=30.0
 Vd=3.904e-05
 Dd=0.12766153
 EBP=91.67
-`},{name:`SB_Acoustics_SB16PFC-00`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2025/12/6-inch-SB16FRPC25-7.pdf`},{name:`SB_Acoustics_SB16PFC-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB16PFC-00
 Manufacturer=SB Acoustics
@@ -27026,7 +27026,7 @@ Cms=0.0014
 Sd=0.0124
 Vas=0.03
 Dd=0.125650986
-`},{name:`SB_Acoustics_SB16PFC25-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/6in-SB16PFC-00-OEM-only.pdf`},{name:`SB_Acoustics_SB16PFC25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB16PFC25-4
 Manufacturer=SB Acoustics
@@ -27052,7 +27052,7 @@ Pe=40.0
 Vd=5.58e-05
 Dd=0.125650986
 EBP=89.74
-`},{name:`SB_Acoustics_SB16PFC25-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/6in-SB16PFC25-4-OEM-only.pdf`},{name:`SB_Acoustics_SB16PFC25-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB16PFC25-8
 Manufacturer=SB Acoustics
@@ -27078,7 +27078,7 @@ Pe=40.0
 Vd=5.58e-05
 Dd=0.125650986
 EBP=79.17
-`},{name:`SB_Acoustics_SB16PFCR-00`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/6in-SB16PFC25-8-OEM-only.pdf`},{name:`SB_Acoustics_SB16PFCR-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB16PFCR-00
 Manufacturer=SB Acoustics
@@ -27094,7 +27094,7 @@ Cms=0.0014
 Sd=0.0124
 Vas=0.03
 Dd=0.125650986
-`},{name:`SB_Acoustics_SB16PFCR25-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/03/6in-SB16PFCR-00.pdf`},{name:`SB_Acoustics_SB16PFCR25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB16PFCR25-4
 Manufacturer=SB Acoustics
@@ -27120,7 +27120,7 @@ Pe=40.0
 Vd=5.58e-05
 Dd=0.125650986
 EBP=89.74
-`},{name:`SB_Acoustics_SB16PFCR25-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/01/6in-SB16PFCR25-4.pdf`},{name:`SB_Acoustics_SB16PFCR25-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB16PFCR25-8
 Manufacturer=SB Acoustics
@@ -27146,7 +27146,7 @@ Pe=40.0
 Vd=5.58e-05
 Dd=0.125650986
 EBP=79.17
-`},{name:`SB_Acoustics_SB17CAC35-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/01/6in-SB16PFCR25-8.pdf`},{name:`SB_Acoustics_SB17CAC35-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17CAC35-4
 Manufacturer=SB Acoustics
@@ -27172,7 +27172,7 @@ Pe=60.0
 Vd=6.49e-05
 Dd=0.122573352
 EBP=95.16
-`},{name:`SB_Acoustics_SB17CAC35-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/6in-SB17CAC35-4.pdf`},{name:`SB_Acoustics_SB17CAC35-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17CAC35-8
 Manufacturer=SB Acoustics
@@ -27198,7 +27198,7 @@ Pe=60.0
 Vd=6.49e-05
 Dd=0.122573352
 EBP=70.0
-`},{name:`SB_Acoustics_SB17CRC35-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/6in-SB17CAC35-8.pdf`},{name:`SB_Acoustics_SB17CRC35-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17CRC35-4
 Manufacturer=SB Acoustics
@@ -27224,7 +27224,7 @@ Pe=60.0
 Vd=6.49e-05
 Dd=0.122573352
 EBP=90.0
-`},{name:`SB_Acoustics_SB17CRC35-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/6in-SB17CRC35-4.pdf`},{name:`SB_Acoustics_SB17CRC35-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17CRC35-8
 Manufacturer=SB Acoustics
@@ -27250,7 +27250,7 @@ Pe=60.0
 Vd=6.49e-05
 Dd=0.122573352
 EBP=75.68
-`},{name:`SB_Acoustics_SB17MFC35-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/6in-SB17CRC35-8.pdf`},{name:`SB_Acoustics_SB17MFC35-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17MFC35-4
 Manufacturer=SB Acoustics
@@ -27276,7 +27276,7 @@ Pe=60.0
 Vd=6.49e-05
 Dd=0.122573352
 EBP=100.0
-`},{name:`SB_Acoustics_SB17MFC35-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/6in-SB17MFC35-4.pdf`},{name:`SB_Acoustics_SB17MFC35-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17MFC35-8
 Manufacturer=SB Acoustics
@@ -27302,7 +27302,7 @@ Pe=60.0
 Vd=6.49e-05
 Dd=0.122573352
 EBP=82.5
-`},{name:`SB_Acoustics_SB17NAC35-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/6in-SB17MFC35-8.pdf`},{name:`SB_Acoustics_SB17NAC35-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17NAC35-4
 Manufacturer=SB Acoustics
@@ -27328,7 +27328,7 @@ Pe=60.0
 Vd=6.49e-05
 Dd=0.122573352
 EBP=94.12
-`},{name:`SB_Acoustics_SB17NAC35-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/6in-SB17NAC35-4-OEM-olny.pdf`},{name:`SB_Acoustics_SB17NAC35-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17NAC35-8
 Manufacturer=SB Acoustics
@@ -27354,7 +27354,7 @@ Pe=60.0
 Vd=6.49e-05
 Dd=0.122573352
 EBP=70.0
-`},{name:`SB_Acoustics_SB17NBAC35-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/6in-SB17NAC35-8-OEM-only.pdf`},{name:`SB_Acoustics_SB17NBAC35-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17NBAC35-4
 Manufacturer=SB Acoustics
@@ -27380,7 +27380,7 @@ Pe=60.0
 Vd=6.49e-05
 Dd=0.122573352
 EBP=96.77
-`},{name:`SB_Acoustics_SB17NBAC35-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2025/12/6-inch-SB17NBAC35-4.pdf`},{name:`SB_Acoustics_SB17NBAC35-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17NBAC35-8
 Manufacturer=SB Acoustics
@@ -27406,7 +27406,7 @@ Pe=60.0
 Vd=6.49e-05
 Dd=0.122573352
 EBP=82.89
-`},{name:`SB_Acoustics_SB17NRX2C35-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2025/12/6-inch-SB17NBAC35-8.pdf`},{name:`SB_Acoustics_SB17NRX2C35-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17NRX2C35-4
 Manufacturer=SB Acoustics
@@ -27432,7 +27432,7 @@ Pe=60.0
 Vd=6.49e-05
 Dd=0.122573352
 EBP=87.8
-`},{name:`SB_Acoustics_SB17NRX2C35-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/6in-SB17NRX2C35-4.pdf`},{name:`SB_Acoustics_SB17NRX2C35-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17NRX2C35-8
 Manufacturer=SB Acoustics
@@ -27458,7 +27458,7 @@ Pe=50.0
 Vd=6.49e-05
 Dd=0.122573352
 EBP=77.66
-`},{name:`SB_Acoustics_SB17NRX2L35-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/6in-SB17NRX2C35-8.pdf`},{name:`SB_Acoustics_SB17NRX2L35-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17NRX2L35-4
 Manufacturer=SB Acoustics
@@ -27484,7 +27484,7 @@ Pe=60.0
 Vd=5.664e-05
 Dd=0.122573352
 EBP=157.69
-`},{name:`SB_Acoustics_SB17NRX2L35-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2025/03/6in-SB17NRX2L35-4.pdf`},{name:`SB_Acoustics_SB17NRX2L35-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17NRX2L35-8
 Manufacturer=SB Acoustics
@@ -27510,7 +27510,7 @@ Pe=50.0
 Vd=5.664e-05
 Dd=0.122573352
 EBP=126.0
-`},{name:`SB_Acoustics_SB17NRXC35-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2025/03/6in-SB17NRX2L35-8.pdf`},{name:`SB_Acoustics_SB17NRXC35-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17NRXC35-4
 Manufacturer=SB Acoustics
@@ -27536,7 +27536,7 @@ Pe=60.0
 Vd=6.49e-05
 Dd=0.122573352
 EBP=102.94
-`},{name:`SB_Acoustics_SB17NRXC35-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/6in-SB17NRXC35-4-OEM-only.pdf`},{name:`SB_Acoustics_SB17NRXC35-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17NRXC35-8
 Manufacturer=SB Acoustics
@@ -27562,7 +27562,7 @@ Pe=60.0
 Vd=6.49e-05
 Dd=0.122573352
 EBP=88.89
-`},{name:`SB_Acoustics_SB19ST-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/6in-SB17NRXC35-8-OEM-only.pdf`},{name:`SB_Acoustics_SB19ST-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB19ST-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -27586,7 +27586,7 @@ Pe=30.0
 Vd=2.28e-07
 Dd=0.021996159
 EBP=653.33
-`},{name:`SB_Acoustics_SB20FRPC30-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SB19ST-C000-4.pdf`},{name:`SB_Acoustics_SB20FRPC30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB20FRPC30-8
 Manufacturer=SB Acoustics
@@ -27612,7 +27612,7 @@ Pe=40.0
 Vd=8.856e-05
 Dd=0.165837192
 EBP=83.83
-`},{name:`SB_Acoustics_SB20PFC-00`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2022/04/8in-SB20FRPC30-8.pdf`},{name:`SB_Acoustics_SB20PFC-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB20PFC-00
 Manufacturer=SB Acoustics
@@ -27628,7 +27628,7 @@ Cms=0.00083
 Sd=0.0216
 Vas=0.055
 Dd=0.165837192
-`},{name:`SB_Acoustics_SB20PFC30-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/8in-SB20PFC-00-OEM-only.pdf`},{name:`SB_Acoustics_SB20PFC30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB20PFC30-4
 Manufacturer=SB Acoustics
@@ -27654,7 +27654,7 @@ Pe=50.0
 Vd=0.0001242
 Dd=0.165837192
 EBP=91.08
-`},{name:`SB_Acoustics_SB20PFC30-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/8in-SB20PFC30-4-OEM-only.pdf`},{name:`SB_Acoustics_SB20PFC30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB20PFC30-8
 Manufacturer=SB Acoustics
@@ -27680,7 +27680,7 @@ Pe=50.0
 Vd=0.00012204
 Dd=0.165837192
 EBP=79.07
-`},{name:`SB_Acoustics_SB20PFCR-00`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/8in-SB20PFC30-8-OEM-only.pdf`},{name:`SB_Acoustics_SB20PFCR-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB20PFCR-00
 Manufacturer=SB Acoustics
@@ -27696,7 +27696,7 @@ Cms=0.00083
 Sd=0.0216
 Vas=0.055
 Dd=0.165837192
-`},{name:`SB_Acoustics_SB20PFCR30-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/03/8in-SB20PFCR-00.pdf`},{name:`SB_Acoustics_SB20PFCR30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB20PFCR30-4
 Manufacturer=SB Acoustics
@@ -27722,7 +27722,7 @@ Pe=50.0
 Vd=0.0001242
 Dd=0.165837192
 EBP=91.89
-`},{name:`SB_Acoustics_SB20PFCR30-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2022/03/8in-SB20PFCR30-4.pdf`},{name:`SB_Acoustics_SB20PFCR30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB20PFCR30-8
 Manufacturer=SB Acoustics
@@ -27748,7 +27748,7 @@ Pe=50.0
 Vd=0.0001242
 Dd=0.165837192
 EBP=79.07
-`},{name:`SB_Acoustics_SB20PFCS30-7`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2022/03/8in-SB20PFCR30-8.pdf`},{name:`SB_Acoustics_SB20PFCS30-7`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB20PFCS30-7
 Manufacturer=SB Acoustics
@@ -27774,7 +27774,7 @@ Pe=40.0
 Vd=0.0001221
 Dd=0.168124709
 EBP=50.65
-`},{name:`SB_Acoustics_SB21RDC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2025/03/8in-SB20PFCS30-7.pdf`},{name:`SB_Acoustics_SB21RDC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB21RDC-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -27798,7 +27798,7 @@ Pe=40.0
 Vd=2.3e-07
 Dd=0.024201037
 EBP=463.41
-`},{name:`SB_Acoustics_SB21RDCN-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/SB21RDC-C000-4.pdf`},{name:`SB_Acoustics_SB21RDCN-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB21RDCN-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -27822,7 +27822,7 @@ Pe=40.0
 Vd=1.15e-07
 Dd=0.024201037
 EBP=346.94
-`},{name:`SB_Acoustics_SB21SDC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/04/SB21RDCN-C000-4.pdf`},{name:`SB_Acoustics_SB21SDC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB21SDC-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -27846,7 +27846,7 @@ Pe=40.0
 Vd=2.45e-07
 Dd=0.024977738
 EBP=464.52
-`},{name:`SB_Acoustics_SB21SDCN-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SB21SDC-C000-4.pdf`},{name:`SB_Acoustics_SB21SDCN-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB21SDCN-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -27870,7 +27870,7 @@ Pe=40.0
 Vd=1.22e-07
 Dd=0.024977738
 EBP=346.94
-`},{name:`SB_Acoustics_SB23CACS45-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/04/SB21SDCN-C000-4.pdf`},{name:`SB_Acoustics_SB23CACS45-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB23CACS45-4
 Manufacturer=SB Acoustics
@@ -27896,7 +27896,7 @@ Pe=60.0
 Vd=0.0001404
 Dd=0.165837192
 EBP=65.71
-`},{name:`SB_Acoustics_SB23CACS45-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2026/05/8-inch-SB23CACS45-4.pdf`},{name:`SB_Acoustics_SB23CACS45-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB23CACS45-8
 Manufacturer=SB Acoustics
@@ -27922,7 +27922,7 @@ Pe=50.0
 Vd=0.0001404
 Dd=0.165837192
 EBP=56.82
-`},{name:`SB_Acoustics_SB23MFCL-00`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2026/05/8-inch-SB23CACS45-8.pdf`},{name:`SB_Acoustics_SB23MFCL-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB23MFCL-00
 Manufacturer=SB Acoustics
@@ -27938,7 +27938,7 @@ Cms=0.0005
 Sd=0.021
 Vas=0.0312
 Dd=0.163517676
-`},{name:`SB_Acoustics_SB23MFCL45-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2026/05/8-inch-SB23MFCL-00.pdf`},{name:`SB_Acoustics_SB23MFCL45-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB23MFCL45-4
 Manufacturer=SB Acoustics
@@ -27964,7 +27964,7 @@ Pe=150.0
 Vd=0.000252
 Dd=0.163517676
 EBP=75.0
-`},{name:`SB_Acoustics_SB23MFCL45-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2026/05/8-inch-SB23MFCL45-4.pdf`},{name:`SB_Acoustics_SB23MFCL45-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB23MFCL45-8
 Manufacturer=SB Acoustics
@@ -27990,7 +27990,7 @@ Pe=150.0
 Vd=0.0002205
 Dd=0.163517676
 EBP=61.96
-`},{name:`SB_Acoustics_SB23NACS45-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2026/05/8-inch-SB23MFCL45-8.pdf`},{name:`SB_Acoustics_SB23NACS45-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB23NACS45-4
 Manufacturer=SB Acoustics
@@ -28016,7 +28016,7 @@ Pe=60.0
 Vd=0.0001404
 Dd=0.165837192
 EBP=65.71
-`},{name:`SB_Acoustics_SB26ADC-C000-4___Aluminum`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2026/05/8-inch-SB23NACS45-4-OEM-only.pdf`},{name:`SB_Acoustics_SB26ADC-C000-4___Aluminum`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB26ADC-C000-4 / Aluminum
 Manufacturer=SB Acoustics
@@ -28040,7 +28040,7 @@ Pe=120.0
 Vd=3.72e-07
 Dd=0.028096415
 EBP=361.7
-`},{name:`SB_Acoustics_SB26CDC-C000-4___Ceramic`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/SB26ADC-C000-4.pdf`},{name:`SB_Acoustics_SB26CDC-C000-4___Ceramic`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB26CDC-C000-4 / Ceramic
 Manufacturer=SB Acoustics
@@ -28064,7 +28064,7 @@ Pe=100.0
 Vd=3.72e-07
 Dd=0.028096415
 EBP=345.0
-`},{name:`SB_Acoustics_SB26SFCL38-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SB26CDC-C000-4.pdf`},{name:`SB_Acoustics_SB26SFCL38-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB26SFCL38-4
 Manufacturer=SB Acoustics
@@ -28090,7 +28090,7 @@ Pe=80.0
 Vd=0.00027334
 Dd=0.209890658
 EBP=58.3
-`},{name:`SB_Acoustics_SB26SFCL38-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2023/02/10in-SB26SFCL38-4.pdf`},{name:`SB_Acoustics_SB26SFCL38-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB26SFCL38-8
 Manufacturer=SB Acoustics
@@ -28116,7 +28116,7 @@ Pe=80.0
 Vd=0.00028372
 Dd=0.209890658
 EBP=45.83
-`},{name:`SB_Acoustics_SB26ST-C000-5___Fabric`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2023/02/10in-SB26SFCL38-8.pdf`},{name:`SB_Acoustics_SB26ST-C000-5___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB26ST-C000-5 / Fabric
 Manufacturer=SB Acoustics
@@ -28140,7 +28140,7 @@ Pe=80.0
 Vd=3.72e-07
 Dd=0.028096415
 EBP=530.49
-`},{name:`SB_Acoustics_SB26STAC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/SB26ST-C000-5.pdf`},{name:`SB_Acoustics_SB26STAC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB26STAC-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -28164,7 +28164,7 @@ Pe=120.0
 Vd=3.72e-07
 Dd=0.028096415
 EBP=421.35
-`},{name:`SB_Acoustics_SB26STC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/SB26STAC-C000-4.pdf`},{name:`SB_Acoustics_SB26STC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB26STC-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -28188,7 +28188,7 @@ Pe=120.0
 Vd=3.72e-07
 Dd=0.028096415
 EBP=421.35
-`},{name:`SB_Acoustics_SB26STCN-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/SB26STC-C000-4-OEM-only.pdf`},{name:`SB_Acoustics_SB26STCN-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB26STCN-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -28212,7 +28212,7 @@ Pe=120.0
 Vd=3.72e-07
 Dd=0.028096415
 EBP=542.37
-`},{name:`SB_Acoustics_SB26STWGC-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/SB26STCN-C000-4.pdf`},{name:`SB_Acoustics_SB26STWGC-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB26STWGC-4
 Manufacturer=SB Acoustics
@@ -28236,7 +28236,7 @@ Pe=120.0
 Vd=0.00049266
 Dd=1.022475912
 EBP=0.09
-`},{name:`SB_Acoustics_SB29BAC-C000-4___Beryllium`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SB26STWGC-4.pdf`},{name:`SB_Acoustics_SB29BAC-C000-4___Beryllium`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29BAC-C000-4 / Beryllium
 Manufacturer=SB Acoustics
@@ -28260,7 +28260,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=532.79
-`},{name:`SB_Acoustics_SB29BNC-C000-4___Beryllium`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SB29BAC-C000-4.pdf`},{name:`SB_Acoustics_SB29BNC-C000-4___Beryllium`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29BNC-C000-4 / Beryllium
 Manufacturer=SB Acoustics
@@ -28284,7 +28284,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=678.57
-`},{name:`SB_Acoustics_SB29NRX-00`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SB29BNC-C000-4.pdf`},{name:`SB_Acoustics_SB29NRX-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29NRX-00
 Manufacturer=SB Acoustics
@@ -28300,7 +28300,7 @@ Cms=0.00048
 Sd=0.0312
 Vas=0.066
 Dd=0.199311499
-`},{name:`SB_Acoustics_SB29NRX2-00`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/09/10in-SB29NRX-00.pdf`},{name:`SB_Acoustics_SB29NRX2-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29NRX2-00
 Manufacturer=SB Acoustics
@@ -28316,7 +28316,7 @@ Cms=0.00043
 Sd=0.0312
 Vas=0.06
 Dd=0.199311499
-`},{name:`SB_Acoustics_SB29NRX75-6`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/10/10in-SB29NRX2-00.pdf`},{name:`SB_Acoustics_SB29NRX75-6`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29NRX75-6
 Manufacturer=SB Acoustics
@@ -28342,7 +28342,7 @@ Pe=200.0
 Vd=0.0003432
 Dd=0.199311499
 EBP=55.26
-`},{name:`SB_Acoustics_SB29NRX75-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/10in-SB29NRX75-6.pdf`},{name:`SB_Acoustics_SB29NRX75-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29NRX75-8
 Manufacturer=SB Acoustics
@@ -28368,7 +28368,7 @@ Pe=200.0
 Vd=0.0003432
 Dd=0.199311499
 EBP=66.67
-`},{name:`SB_Acoustics_SB29RDAC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2022/01/10in-SB29NRX75-8.pdf`},{name:`SB_Acoustics_SB29RDAC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29RDAC-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -28392,7 +28392,7 @@ Pe=100.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=666.67
-`},{name:`SB_Acoustics_SB29RDC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2025/03/SB29RDAC-C000-4.pdf`},{name:`SB_Acoustics_SB29RDC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29RDC-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -28416,7 +28416,7 @@ Pe=100.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=666.67
-`},{name:`SB_Acoustics_SB29RDNC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/SB29RDC-C000-4-OEM-only.pdf`},{name:`SB_Acoustics_SB29RDNC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29RDNC-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -28440,7 +28440,7 @@ Pe=100.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=944.44
-`},{name:`SB_Acoustics_SB29SDAC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/SB29RDNC-C000-4.pdf`},{name:`SB_Acoustics_SB29SDAC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29SDAC-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -28464,7 +28464,7 @@ Pe=60.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=550.46
-`},{name:`SB_Acoustics_SB29SDNC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/SB29SDAC-C000-4.pdf`},{name:`SB_Acoustics_SB29SDNC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29SDNC-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -28488,7 +28488,7 @@ Pe=80.0
 Vd=2.4e-07
 Dd=0.03496155
 EBP=797.47
-`},{name:`SB_Acoustics_SB34NRX-00`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2023/06/SB29SDNC-C000-4.pdf`},{name:`SB_Acoustics_SB34NRX-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB34NRX-00
 Manufacturer=SB Acoustics
@@ -28504,7 +28504,7 @@ Cms=0.0005
 Sd=0.0508
 Vas=0.183
 Dd=0.254323748
-`},{name:`SB_Acoustics_SB34NRX2-00`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2022/04/12in-SB34NRX-00.pdf`},{name:`SB_Acoustics_SB34NRX2-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB34NRX2-00
 Manufacturer=SB Acoustics
@@ -28520,7 +28520,7 @@ Cms=0.00044
 Sd=0.0506
 Vas=0.16
 Dd=0.253822617
-`},{name:`SB_Acoustics_SB34NRX75-16`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2022/04/12in-SB34NRX2-00.pdf`},{name:`SB_Acoustics_SB34NRX75-16`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB34NRX75-16
 Manufacturer=SB Acoustics
@@ -28546,7 +28546,7 @@ Pe=120.0
 Vd=0.0005588
 Dd=0.254323748
 EBP=31.25
-`},{name:`SB_Acoustics_SB34NRX75-6`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/12in-SB34NRX75-16.pdf`},{name:`SB_Acoustics_SB34NRX75-6`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB34NRX75-6
 Manufacturer=SB Acoustics
@@ -28572,7 +28572,7 @@ Pe=200.0
 Vd=0.0005588
 Dd=0.254323748
 EBP=44.19
-`},{name:`SB_Acoustics_SB34NRXL75-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/12in-SB34NRX75-6.pdf`},{name:`SB_Acoustics_SB34NRXL75-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB34NRXL75-8
 Manufacturer=SB Acoustics
@@ -28598,7 +28598,7 @@ Pe=200.0
 Vd=0.000508
 Dd=0.254323748
 EBP=75.86
-`},{name:`SB_Acoustics_SB34SWPL76-3`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/12in-SB34NRXL75-8.pdf`},{name:`SB_Acoustics_SB34SWPL76-3`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB34SWPL76-3
 Manufacturer=SB Acoustics
@@ -28624,7 +28624,7 @@ Pe=300.0
 Vd=0.000687
 Dd=0.241483687
 EBP=52.88
-`},{name:`SB_Acoustics_SB34SWPL76-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/03/12in-SB34SWPL76-3-DV.pdf`},{name:`SB_Acoustics_SB34SWPL76-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB34SWPL76-4
 Manufacturer=SB Acoustics
@@ -28650,7 +28650,7 @@ Pe=300.0
 Vd=0.000687
 Dd=0.241483687
 EBP=57.58
-`},{name:`SB_Acoustics_SB36WBAC21-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2022/03/12in-SB34SWPL76-4.pdf`},{name:`SB_Acoustics_SB36WBAC21-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB36WBAC21-4
 Manufacturer=SB Acoustics
@@ -28676,7 +28676,7 @@ Pe=5.0
 Vd=7.35e-07
 Dd=0.023124892
 EBP=190.48
-`},{name:`SB_Acoustics_SB36WBAC21-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/03/1in-SB36WBAC21-4.pdf`},{name:`SB_Acoustics_SB36WBAC21-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB36WBAC21-8
 Manufacturer=SB Acoustics
@@ -28702,7 +28702,7 @@ Pe=5.0
 Vd=7.35e-07
 Dd=0.023124892
 EBP=173.91
-`},{name:`SB_Acoustics_SB42FHCL75-6`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/1in-SB36WBAC21-8.pdf`},{name:`SB_Acoustics_SB42FHCL75-6`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB42FHCL75-6
 Manufacturer=SB Acoustics
@@ -28728,7 +28728,7 @@ Pe=300.0
 Vd=0.0009775
 Dd=0.328976232
 EBP=57.5
-`},{name:`SB_Acoustics_SB65WBAC25-4`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/03/15in-SB42FHCL75-6.pdf`},{name:`SB_Acoustics_SB65WBAC25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB65WBAC25-4
 Manufacturer=SB Acoustics
@@ -28754,7 +28754,7 @@ Pe=20.0
 Vd=5.3e-06
 Dd=0.05046265
 EBP=149.35
-`}]},{name:`Parts Express woofer guide`,files:[{name:`Aurum Cantus AC-130F1 5-1_4_ Woofer`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/2½in-SB65WBAC25-4.pdf`}]},{name:`Parts Express woofer guide`,files:[{name:`Aurum Cantus AC-130F1 5-1_4_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC-130F1 5-1/4" Woofer
 Manufacturer=
@@ -72515,4 +72515,4 @@ Dd=0.199311
 numVC=1
 VCCon=2
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`}]}]},Mu={key:0,class:`modal`},Nu={class:`body`},Pu={class:`statusrow`},Fu=[`disabled`],Iu={class:`dlist`},Lu=[`onClick`],Ru={class:`dmeta`},zu=[`title`,`onClick`],Bu={key:2,class:`stag`},Vu={key:0,class:`status loading`},Hu={class:`addrow`},Uu=rl({__name:`DriverBrowser`,setup(e){let t=Au.sources||[],n=I([]),r=I(``),i=I(``),a=I(!1),o=I(``),s=I(!1),c=I(!1),l=I(!1);function u(e){if(!e)return``;let t=e.trim();if(/^\d{4}-\d{2}-\d{2}$/.test(t))return t;let n=t.match(/^(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})$/);if(n)return`${n[3]}-${n[2].padStart(2,`0`)}-${n[1].padStart(2,`0`)}`;let r=new Date(t);return isNaN(r)?t:r.toISOString().slice(0,10)}let d=q(()=>{let e=r.value.toLowerCase().trim().split(/\s+/).filter(Boolean),t=[...e.length?n.value.filter(t=>{let n=t.name.toLowerCase();return e.every(e=>n.includes(e))}):n.value].sort((e,t)=>e.name.localeCompare(t.name,void 0,{sensitivity:`base`})),i={},a={};for(let e of t){a[e.name]=(a[e.name]||0)+1;let t=u(e.date);t>(i[e.name]||``)&&(i[e.name]=t)}return t.map(e=>{let t=u(e.date),n=a[e.name]>1,r=n&&t!==``&&t===i[e.name];return{...e,_nd:t,_isLatest:r,_isOlder:n&&!r}})});async function f(e){let t=await fetch(`https://api.github.com/repos/${e}`);if(!t.ok)throw Error(`repo not found (`+t.status+`)`);return(await t.json()).default_branch||`main`}async function p(e){try{let t=e.branch||await f(e.repo),r=await fetch(`https://api.github.com/repos/${e.repo}/git/trees/${t}?recursive=1`);if(!r.ok)return;let a=(await r.json()).tree||[],o=(e.path||``).replace(/^\/|\/$/g,``),s=a.filter(e=>e.type===`blob`&&e.path.toLowerCase().endsWith(`.wdr`)&&(!o||e.path.toLowerCase().startsWith(o.toLowerCase()+`/`))).map(n=>({path:n.path,branch:t,repo:e.repo,name:n.path.split(`/`).pop().replace(/\.wdr$/i,``),sourceName:e.name,sourceUrl:e.url||``,sourceDesc:e.description||``}));n.value=[...n.value.filter(t=>t.sourceName!==e.name),...s],i.value=`${n.value.length} drivers`}catch{}}function m(e){if(e=e.trim(),!e)return null;let t=e.match(/github\.com\/([^/]+)\/([^/]+?)(?:\.git)?(?:\/tree\/([^/]+)(?:\/(.*))?)?$/i);return t?{name:t[1]+`/`+t[2],type:`github`,repo:t[1]+`/`+t[2],branch:t[3]||``,path:t[4]||``}:(t=e.match(/^([\w.-]+)\/([\w.-]+)$/),t?{name:e,type:`github`,repo:e,branch:``,path:``}:null)}let h=Object.fromEntries((ju.sources||[]).map(e=>[e.name,e.files]));async function g(){if(s.value)return;s.value=!0,a.value=!1;for(let e of t){let t=h[e.name];if(!t)continue;let r=t.map(t=>({name:t.name,content:t.content,date:t.date||``,path:null,repo:null,branch:null,sourceName:e.name,sourceUrl:e.url||``,sourceDesc:e.description||``}));n.value=[...n.value,...r]}i.value=`${n.value.length} drivers`;let e=t.filter(e=>!h[e.name]).map(e=>{let t=e.url?.match(/github\.com\/([^/]+\/[^/]+?)(?:\/tree\/([^/]+)(?:\/(.*?))?)?(?:\.git)?$/i);return t?{...e,repo:t[1],branch:t[2]||``,path:t[3]||``}:e}).filter(e=>e.repo);e.length&&await Promise.all(e.map(p)),i.value=n.value.length?`${n.value.length} drivers`:`No drivers loaded — check network`}async function _(){if(c.value||l.value)return;l.value=!0,a.value=!1;let e;try{e=await fetch(`https://speakerboxlite.com/api/v1/speakers/count`)}catch{a.value=!0,i.value=`speakerboxlite.com CORS error — their API returns Access-Control-Allow-Origin on HEAD requests but not GET requests, so browsers block it. This is a bug on their server; nothing can be done client-side.`,l.value=!1;return}if(!e.ok){a.value=!0,i.value=`SpeakerBoxLite: server returned ${e.status}`,l.value=!1;return}try{let{count:t}=await e.json(),r=Math.ceil(t/500),a=[];for(let e=0;e<r;e++){i.value=`SpeakerBoxLite: loading ${Math.min((e+1)*500,t)} / ${t}…`;let n=await(await fetch(`https://speakerboxlite.com/api/v1/speakers?offset=${e*500}&limit=500`)).json();for(let e of n)a.push({path:null,branch:null,repo:null,name:[e.brand,e.model].filter(Boolean).join(` `)||e.name||`Unknown`,sourceName:`SpeakerBoxLite`,sourceUrl:`https://www.speakerboxlite.com/`,sourceDesc:`speakerboxlite.com community database`,sblData:e})}n.value=[...n.value.filter(e=>e.sourceName!==`SpeakerBoxLite`),...a],c.value=!0,i.value=`${n.value.length} drivers total`}catch(e){a.value=!0,i.value=`SpeakerBoxLite load failed mid-stream: `+e.message}l.value=!1}async function v(){let e=m(o.value);if(!e){a.value=!0,i.value=`Enter owner/repo or a github.com URL`;return}a.value=!1,i.value=`Loading ${e.name}…`,await p(e),o.value=``}async function y(e){if(e.sblData){let t=e.sblData,n={name:e.name,brand:t.brand||``,model:t.model||``,Fs:t.fs,Qts:t.qts,Qes:t.qes,Qms:t.qms,Vas:t.vas_l==null?void 0:t.vas_l/1e3,Sd:t.sd_cm2==null?void 0:t.sd_cm2/1e4,Re:t.re,Le:t.le_mh==null?void 0:t.le_mh/1e3,Bl:t.bl,Xmax:t.xmax_mm==null?void 0:t.xmax_mm/1e3,Mms:t.mms_g==null?void 0:t.mms_g/1e3,Cms:t.cms_mm_n==null?void 0:1/(t.cms_mm_n*1e3),Rms:t.rms,Pe:t.pe};Object.keys(n).forEach(e=>n[e]===void 0&&delete n[e]),Z.driverRaw=n,Z.browseOpen=!1;return}if(e.content){Z.driverRaw=Fo(e.content),Z.browseOpen=!1;return}a.value=!1,i.value=`Loading `+e.name+`…`;try{let t=`https://raw.githubusercontent.com/${e.repo}/${e.branch}/${e.path.split(`/`).map(encodeURIComponent).join(`/`)}`,n=await fetch(t);if(!n.ok)throw Error(`fetch failed (`+n.status+`)`);Z.driverRaw=Fo(await n.text()),Z.browseOpen=!1}catch(e){a.value=!0,i.value=`Could not load: `+e.message}}function b(e){e&&window.open(e,`_blank`,`noopener`)}Mn(()=>Z.browseOpen,e=>{e&&g()});function x(){Z.browseOpen=!1}function S(e){e.target===e.currentTarget&&x()}return(e,t)=>(V(),H(`div`,{class:k([`overlay`,{on:L(Z).browseOpen}]),onClick:S},[L(Z).browseOpen?(V(),H(`div`,Mu,[U(`h2`,null,[t[2]||=G(` Browse driver library `,-1),U(`span`,{class:`x`,onClick:x,title:`Close the driver library browser`},`×`)]),U(`div`,Nu,[En(U(`input`,{class:`filter`,"onUpdate:modelValue":t[0]||=e=>r.value=e,placeholder:`Search drivers…`,autofocus:``},null,512),[[ho,r.value]]),U(`div`,Pu,[U(`span`,{class:k([`status`,{err:a.value}])},A(i.value),3),c.value?K(``,!0):(V(),H(`button`,{key:0,class:`sblbtn`,disabled:l.value,title:`Load ~6000 drivers from the speakerboxlite.com community database (fetched live)`,onClick:_},A(l.value?`Loading…`:`+ SpeakerBoxLite`),9,Fu))]),U(`div`,Iu,[(V(!0),H(B,null,Sr(d.value.slice(0,500),e=>(V(),H(`div`,{key:(e.sourceName||``)+(e.path||``)+e.name,class:k([`ditem`,e._isLatest&&`ditem-latest`,e._isOlder&&`ditem-older`]),onClick:t=>y(e)},[U(`b`,null,A(e.name),1),U(`span`,Ru,[e._nd?(V(),H(`span`,{key:0,class:k([`ddate`,e._isLatest&&`ddate-latest`,e._isOlder&&`ddate-older`])},A(e._nd),3)):K(``,!0),e.sourceUrl?(V(),H(`a`,{key:1,class:`stag`,title:e.sourceUrl+(e.sourceDesc?` — `+e.sourceDesc:``),onClick:wo(t=>b(e.sourceUrl),[`stop`,`prevent`])},A(e.sourceName),9,zu)):(V(),H(`span`,Bu,A(e.sourceName),1))])],10,Lu))),128)),!d.value.length&&!a.value?(V(),H(`div`,Vu,A(r.value?`No matching drivers.`:`Loading…`),1)):K(``,!0)]),U(`div`,Hu,[En(U(`input`,{"onUpdate:modelValue":t[1]||=e=>o.value=e,placeholder:`Add GitHub source: owner/repo or full URL`,onKeydown:Eo(v,[`enter`]),title:`Load .wdr files from any public GitHub repository and add them to the pool`},null,544),[[ho,o.value]]),U(`button`,{onClick:v,title:`Fetch .wdr files from the specified GitHub repository`},`Add`)])])])):K(``,!0)],2))}},[[`__scopeId`,`data-v-ffa68626`]]),Wu={key:0,class:`flash`},Gu={__name:`Flash`,setup(e){return(e,t)=>L(Ts)?(V(),H(`div`,Wu,A(L(Ts)),1)):K(``,!0)}},Ku={Fs:37,Qts:.38,Qes:.4,Qms:7,Vas:.03,Sd:.0133,Re:5.6,Le:7e-4,Xmax:.005,Pe:60,Z:8},qu=.1,Ju=.5,Yu=3,Xu=.02,Zu=1e6,Qu=2.83,$u=10,ed=1e3,td=300,nd=300,rd=12,id=15,ad=30,od=.025,sd=7,cd=2,ld=1.5,ud=24,dd=112.1;function fd(){let e=Po(Ku),t={...e,Le:0},n=e.Fs*Math.sqrt(1+e.Vas/Xu),r=e.Qts*Math.sqrt(1+e.Vas/Xu),i={Vb:Xu,Ql:Zu,nDrivers:1,wiring:`parallel`,eg:Qu,fmin:$u,fmax:ed,N:td},a=ts(t,`sealed`,i),o=a.spl[a.spl.length-1],s=0;for(let e=0;e<a.fs.length;e++){let t=a.fs[e]/n,i=t**4/((1-t*t)**2+t*t/(r*r));s=Math.max(s,Math.abs(a.spl[e]-(o+10*Math.log10(i))))}let c=4*Math.PI**2/345**3*(e.Fs**3*e.Vas)/e.Qes,l=dd+10*Math.log10(c)+10*Math.log10(Qu**2/e.Re),u=a.fs.findIndex(e=>e>=nd),d=a.spl[u],f=Xu/(J*345*345),p=2*Math.PI*ad,m=1/(p*p*f),h=Math.PI*od**2,g=ts(e,`vented`,{...i,Ql:sd,Sp:h,Leff:m*h/J}),_=g.fs.findIndex(e=>e>=rd),v=g.fs.findIndex(e=>e>=id),y=(g.spl[v]-g.spl[_])/Math.log2(g.fs[v]/g.fs[_]),b=[];for(let t=1;t<g.zmag.length-1;t++)g.zmag[t]>g.zmag[t-1]&&g.zmag[t]>g.zmag[t+1]&&g.zmag[t]>e.Re*ld&&b.push(+g.fs[t].toFixed(1));let x=s<qu,S=Math.abs(d-l)<Ju,C=Math.abs(y-ud)<Yu&&b.length===cd,w=x&&S&&C;return console.log(`[Resonate self-test]`,`GATE1 sealed≡closed-form: max err ${s.toFixed(4)} dB → ${x?`PASS`:`FAIL`}`,`GATE2 sensitivity: circuit ${d.toFixed(2)} vs predicted ${l.toFixed(2)} dB → ${S?`PASS`:`FAIL`}`,`GATE3 vented slope ${y.toFixed(1)} dB/oct, peaks ${JSON.stringify(b)} → ${C?`PASS`:`FAIL`}`,`OVERALL: ${w?`ALL PASS`:`FAIL`}`),w||Es(`⚠ Physics self-test FAILED (${[!x&&`GATE1`,!S&&`GATE2`,!C&&`GATE3`].filter(Boolean).join(`, `)}) — open console for details`),window._selfTestDone=!0,{p1:x,p2:S,p3:C}}var pd={class:`layout`},md={id:`side`,class:`side`},hd={class:`main`};Ao({__name:`App`,setup(e){function t(){let e=Ss();e&&n(e)}function n(e){e.driver&&(Z.driverRaw=e.driver),e.box&&(Z.box=e.box),e.P&&Object.assign(Z.P,e.P),Array.isArray(e.graphs)&&e.graphs.length&&(Z.graphs=e.graphs)}let r=!1;return Mn(()=>bs(Z,Q.value,Z.compare),e=>{r&&Cs(e)},{deep:!0}),fr(()=>{let e=Ss();if(e)n(e);else{let e=ws();e&&n(e)}r=!0,fd(),window.addEventListener(`hashchange`,t)}),gr(()=>{window.removeEventListener(`hashchange`,t)}),(e,t)=>(V(),H(B,null,[W(Ps),U(`div`,pd,[U(`div`,md,[W(tu)]),U(`div`,hd,[W(xu),W(ku)])]),W(Uu),W(Gu)],64))}}).mount(`#app`);
+`}]}]},Mu={key:0,class:`modal`},Nu={class:`body`},Pu={class:`statusrow`},Fu=[`disabled`],Iu={class:`dlist`},Lu=[`onClick`],Ru={class:`dmeta`},zu=[`href`],Bu=[`title`,`onClick`],Vu={key:3,class:`stag`},Hu={key:0,class:`status loading`},Uu={class:`addrow`},Wu=rl({__name:`DriverBrowser`,setup(e){let t=Au.sources||[],n=I([]),r=I(``),i=I(``),a=I(!1),o=I(``),s=I(!1),c=I(!1),l=I(!1);function u(e){if(!e)return``;let t=e.trim();if(/^\d{4}-\d{2}-\d{2}$/.test(t))return t;let n=t.match(/^(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})$/);if(n)return`${n[3]}-${n[2].padStart(2,`0`)}-${n[1].padStart(2,`0`)}`;let r=new Date(t);return isNaN(r)?t:r.toISOString().slice(0,10)}let d=q(()=>{let e=r.value.toLowerCase().trim().split(/\s+/).filter(Boolean),t=[...e.length?n.value.filter(t=>{let n=t.name.toLowerCase();return e.every(e=>n.includes(e))}):n.value].sort((e,t)=>e.name.localeCompare(t.name,void 0,{sensitivity:`base`})),i={},a={};for(let e of t){a[e.name]=(a[e.name]||0)+1;let t=u(e.date);t>(i[e.name]||``)&&(i[e.name]=t)}return t.map(e=>{let t=u(e.date),n=a[e.name]>1,r=n&&t!==``&&t===i[e.name];return{...e,_nd:t,_isLatest:r,_isOlder:n&&!r}})});async function f(e){let t=await fetch(`https://api.github.com/repos/${e}`);if(!t.ok)throw Error(`repo not found (`+t.status+`)`);return(await t.json()).default_branch||`main`}async function p(e){try{let t=e.branch||await f(e.repo),r=await fetch(`https://api.github.com/repos/${e.repo}/git/trees/${t}?recursive=1`);if(!r.ok)return;let a=(await r.json()).tree||[],o=(e.path||``).replace(/^\/|\/$/g,``),s=a.filter(e=>e.type===`blob`&&e.path.toLowerCase().endsWith(`.wdr`)&&(!o||e.path.toLowerCase().startsWith(o.toLowerCase()+`/`))).map(n=>({path:n.path,branch:t,repo:e.repo,name:n.path.split(`/`).pop().replace(/\.wdr$/i,``),sourceName:e.name,sourceUrl:e.url||``,sourceDesc:e.description||``}));n.value=[...n.value.filter(t=>t.sourceName!==e.name),...s],i.value=`${n.value.length} drivers`}catch{}}function m(e){if(e=e.trim(),!e)return null;let t=e.match(/github\.com\/([^/]+)\/([^/]+?)(?:\.git)?(?:\/tree\/([^/]+)(?:\/(.*))?)?$/i);return t?{name:t[1]+`/`+t[2],type:`github`,repo:t[1]+`/`+t[2],branch:t[3]||``,path:t[4]||``}:(t=e.match(/^([\w.-]+)\/([\w.-]+)$/),t?{name:e,type:`github`,repo:e,branch:``,path:``}:null)}let h=Object.fromEntries((ju.sources||[]).map(e=>[e.name,e.files]));async function g(){if(s.value)return;s.value=!0,a.value=!1;for(let e of t){let t=h[e.name];if(!t)continue;let r=t.map(t=>({name:t.name,content:t.content,date:t.date||``,path:null,repo:null,branch:null,sourceName:e.name,sourceUrl:e.url||``,sourceDesc:e.description||``}));n.value=[...n.value,...r]}i.value=`${n.value.length} drivers`;let e=t.filter(e=>!h[e.name]).map(e=>{let t=e.url?.match(/github\.com\/([^/]+\/[^/]+?)(?:\/tree\/([^/]+)(?:\/(.*?))?)?(?:\.git)?$/i);return t?{...e,repo:t[1],branch:t[2]||``,path:t[3]||``}:e}).filter(e=>e.repo);e.length&&await Promise.all(e.map(p)),i.value=n.value.length?`${n.value.length} drivers`:`No drivers loaded — check network`}async function _(){if(c.value||l.value)return;l.value=!0,a.value=!1;let e;try{e=await fetch(`https://speakerboxlite.com/api/v1/speakers/count`)}catch{a.value=!0,i.value=`speakerboxlite.com CORS error — their API returns Access-Control-Allow-Origin on HEAD requests but not GET requests, so browsers block it. This is a bug on their server; nothing can be done client-side.`,l.value=!1;return}if(!e.ok){a.value=!0,i.value=`SpeakerBoxLite: server returned ${e.status}`,l.value=!1;return}try{let{count:t}=await e.json(),r=Math.ceil(t/500),a=[];for(let e=0;e<r;e++){i.value=`SpeakerBoxLite: loading ${Math.min((e+1)*500,t)} / ${t}…`;let n=await(await fetch(`https://speakerboxlite.com/api/v1/speakers?offset=${e*500}&limit=500`)).json();for(let e of n)a.push({path:null,branch:null,repo:null,name:[e.brand,e.model].filter(Boolean).join(` `)||e.name||`Unknown`,sourceName:`SpeakerBoxLite`,sourceUrl:`https://www.speakerboxlite.com/`,sourceDesc:`speakerboxlite.com community database`,sblData:e})}n.value=[...n.value.filter(e=>e.sourceName!==`SpeakerBoxLite`),...a],c.value=!0,i.value=`${n.value.length} drivers total`}catch(e){a.value=!0,i.value=`SpeakerBoxLite load failed mid-stream: `+e.message}l.value=!1}async function v(){let e=m(o.value);if(!e){a.value=!0,i.value=`Enter owner/repo or a github.com URL`;return}a.value=!1,i.value=`Loading ${e.name}…`,await p(e),o.value=``}async function y(e){if(e.sblData){let t=e.sblData,n={name:e.name,brand:t.brand||``,model:t.model||``,Fs:t.fs,Qts:t.qts,Qes:t.qes,Qms:t.qms,Vas:t.vas_l==null?void 0:t.vas_l/1e3,Sd:t.sd_cm2==null?void 0:t.sd_cm2/1e4,Re:t.re,Le:t.le_mh==null?void 0:t.le_mh/1e3,Bl:t.bl,Xmax:t.xmax_mm==null?void 0:t.xmax_mm/1e3,Mms:t.mms_g==null?void 0:t.mms_g/1e3,Cms:t.cms_mm_n==null?void 0:1/(t.cms_mm_n*1e3),Rms:t.rms,Pe:t.pe};Object.keys(n).forEach(e=>n[e]===void 0&&delete n[e]),Z.driverRaw=n,Z.browseOpen=!1;return}if(e.content){Z.driverRaw=Fo(e.content),Z.browseOpen=!1;return}a.value=!1,i.value=`Loading `+e.name+`…`;try{let t=`https://raw.githubusercontent.com/${e.repo}/${e.branch}/${e.path.split(`/`).map(encodeURIComponent).join(`/`)}`,n=await fetch(t);if(!n.ok)throw Error(`fetch failed (`+n.status+`)`);Z.driverRaw=Fo(await n.text()),Z.browseOpen=!1}catch(e){a.value=!0,i.value=`Could not load: `+e.message}}function b(e){e&&window.open(e,`_blank`,`noopener`)}Mn(()=>Z.browseOpen,e=>{e&&g()});function x(){Z.browseOpen=!1}function S(e){e.target===e.currentTarget&&x()}return(e,t)=>(V(),H(`div`,{class:k([`overlay`,{on:L(Z).browseOpen}]),onClick:S},[L(Z).browseOpen?(V(),H(`div`,Mu,[U(`h2`,null,[t[3]||=G(` Browse driver library `,-1),U(`span`,{class:`x`,onClick:x,title:`Close the driver library browser`},`×`)]),U(`div`,Nu,[En(U(`input`,{class:`filter`,"onUpdate:modelValue":t[0]||=e=>r.value=e,placeholder:`Search drivers…`,autofocus:``},null,512),[[ho,r.value]]),U(`div`,Pu,[U(`span`,{class:k([`status`,{err:a.value}])},A(i.value),3),c.value?K(``,!0):(V(),H(`button`,{key:0,class:`sblbtn`,disabled:l.value,title:`Load ~6000 drivers from the speakerboxlite.com community database (fetched live)`,onClick:_},A(l.value?`Loading…`:`+ SpeakerBoxLite`),9,Fu))]),U(`div`,Iu,[(V(!0),H(B,null,Sr(d.value.slice(0,500),e=>(V(),H(`div`,{key:(e.sourceName||``)+(e.path||``)+e.name,class:k([`ditem`,e._isLatest&&`ditem-latest`,e._isOlder&&`ditem-older`]),onClick:t=>y(e)},[U(`b`,null,A(e.name),1),U(`span`,Ru,[e._nd?(V(),H(`span`,{key:0,class:k([`ddate`,e._isLatest&&`ddate-latest`,e._isOlder&&`ddate-older`])},A(e._nd),3)):K(``,!0),e.datasheet?(V(),H(`a`,{key:1,class:`dpdf`,href:e.datasheet,target:`_blank`,rel:`noopener`,title:`Open datasheet PDF`,onClick:t[1]||=wo(()=>{},[`stop`])},`PDF`,8,zu)):K(``,!0),e.sourceUrl?(V(),H(`a`,{key:2,class:`stag`,title:e.sourceUrl+(e.sourceDesc?` — `+e.sourceDesc:``),onClick:wo(t=>b(e.sourceUrl),[`stop`,`prevent`])},A(e.sourceName),9,Bu)):(V(),H(`span`,Vu,A(e.sourceName),1))])],10,Lu))),128)),!d.value.length&&!a.value?(V(),H(`div`,Hu,A(r.value?`No matching drivers.`:`Loading…`),1)):K(``,!0)]),U(`div`,Uu,[En(U(`input`,{"onUpdate:modelValue":t[2]||=e=>o.value=e,placeholder:`Add GitHub source: owner/repo or full URL`,onKeydown:Eo(v,[`enter`]),title:`Load .wdr files from any public GitHub repository and add them to the pool`},null,544),[[ho,o.value]]),U(`button`,{onClick:v,title:`Fetch .wdr files from the specified GitHub repository`},`Add`)])])])):K(``,!0)],2))}},[[`__scopeId`,`data-v-401b38ae`]]),Gu={key:0,class:`flash`},Ku={__name:`Flash`,setup(e){return(e,t)=>L(Ts)?(V(),H(`div`,Gu,A(L(Ts)),1)):K(``,!0)}},qu={Fs:37,Qts:.38,Qes:.4,Qms:7,Vas:.03,Sd:.0133,Re:5.6,Le:7e-4,Xmax:.005,Pe:60,Z:8},Ju=.1,Yu=.5,Xu=3,Zu=.02,Qu=1e6,$u=2.83,ed=10,td=1e3,nd=300,rd=300,id=12,ad=15,od=30,sd=.025,cd=7,ld=2,ud=1.5,dd=24,fd=112.1;function pd(){let e=Po(qu),t={...e,Le:0},n=e.Fs*Math.sqrt(1+e.Vas/Zu),r=e.Qts*Math.sqrt(1+e.Vas/Zu),i={Vb:Zu,Ql:Qu,nDrivers:1,wiring:`parallel`,eg:$u,fmin:ed,fmax:td,N:nd},a=ts(t,`sealed`,i),o=a.spl[a.spl.length-1],s=0;for(let e=0;e<a.fs.length;e++){let t=a.fs[e]/n,i=t**4/((1-t*t)**2+t*t/(r*r));s=Math.max(s,Math.abs(a.spl[e]-(o+10*Math.log10(i))))}let c=4*Math.PI**2/345**3*(e.Fs**3*e.Vas)/e.Qes,l=fd+10*Math.log10(c)+10*Math.log10($u**2/e.Re),u=a.fs.findIndex(e=>e>=rd),d=a.spl[u],f=Zu/(J*345*345),p=2*Math.PI*od,m=1/(p*p*f),h=Math.PI*sd**2,g=ts(e,`vented`,{...i,Ql:cd,Sp:h,Leff:m*h/J}),_=g.fs.findIndex(e=>e>=id),v=g.fs.findIndex(e=>e>=ad),y=(g.spl[v]-g.spl[_])/Math.log2(g.fs[v]/g.fs[_]),b=[];for(let t=1;t<g.zmag.length-1;t++)g.zmag[t]>g.zmag[t-1]&&g.zmag[t]>g.zmag[t+1]&&g.zmag[t]>e.Re*ud&&b.push(+g.fs[t].toFixed(1));let x=s<Ju,S=Math.abs(d-l)<Yu,C=Math.abs(y-dd)<Xu&&b.length===ld,w=x&&S&&C;return console.log(`[Resonate self-test]`,`GATE1 sealed≡closed-form: max err ${s.toFixed(4)} dB → ${x?`PASS`:`FAIL`}`,`GATE2 sensitivity: circuit ${d.toFixed(2)} vs predicted ${l.toFixed(2)} dB → ${S?`PASS`:`FAIL`}`,`GATE3 vented slope ${y.toFixed(1)} dB/oct, peaks ${JSON.stringify(b)} → ${C?`PASS`:`FAIL`}`,`OVERALL: ${w?`ALL PASS`:`FAIL`}`),w||Es(`⚠ Physics self-test FAILED (${[!x&&`GATE1`,!S&&`GATE2`,!C&&`GATE3`].filter(Boolean).join(`, `)}) — open console for details`),window._selfTestDone=!0,{p1:x,p2:S,p3:C}}var md={class:`layout`},hd={id:`side`,class:`side`},gd={class:`main`};Ao({__name:`App`,setup(e){function t(){let e=Ss();e&&n(e)}function n(e){e.driver&&(Z.driverRaw=e.driver),e.box&&(Z.box=e.box),e.P&&Object.assign(Z.P,e.P),Array.isArray(e.graphs)&&e.graphs.length&&(Z.graphs=e.graphs)}let r=!1;return Mn(()=>bs(Z,Q.value,Z.compare),e=>{r&&Cs(e)},{deep:!0}),fr(()=>{let e=Ss();if(e)n(e);else{let e=ws();e&&n(e)}r=!0,pd(),window.addEventListener(`hashchange`,t)}),gr(()=>{window.removeEventListener(`hashchange`,t)}),(e,t)=>(V(),H(B,null,[W(Ps),U(`div`,md,[U(`div`,hd,[W(tu)]),U(`div`,gd,[W(xu),W(ku)])]),W(Wu),W(Ku)],64))}}).mount(`#app`);
