@@ -291,6 +291,8 @@ function onBackdrop(e) { if (e.target === e.currentTarget) close(); }
             <b>{{ f.name }}</b>
             <span class="dmeta">
               <span v-if="f._nd" :class="['ddate', f._isLatest && 'ddate-latest', f._isOlder && 'ddate-older']">{{ f._nd }}</span>
+              <a v-if="f.datasheet" class="dpdf" :href="f.datasheet" target="_blank" rel="noopener"
+                 title="Open datasheet PDF" @click.stop>PDF</a>
               <a v-if="f.sourceUrl" class="stag"
                  :title="f.sourceUrl + (f.sourceDesc ? ' — ' + f.sourceDesc : '')"
                  @click.stop.prevent="openSourceUrl(f.sourceUrl)">{{ f.sourceName }}</a>
@@ -334,6 +336,8 @@ h2 { margin:0; padding:12px 16px; font-size:14px; font-weight:600; display:flex;
 .ditem-latest .ddate { color:var(--acc); font-weight:600; }
 .ditem-older { opacity:0.5; }
 .ditem-older .ddate { color:#c07000; }
+.dpdf { font-size:9px; font-weight:600; color:var(--acc); white-space:nowrap; text-decoration:none; border:1px solid var(--acc); border-radius:2px; padding:0 3px; line-height:1.6; }
+.dpdf:hover { background:var(--acc); color:var(--bg); }
 .stag { font-size:10px; color:var(--mut); white-space:nowrap; cursor:pointer; }
 .stag:hover { color:var(--acc); text-decoration:underline; }
 .status.loading { padding:8px 10px; }

@@ -56,10 +56,18 @@ for (const src of sources) {
     const dm = content.match(/^DateModified=(.+)$/m);
     const da = content.match(/^DateAdded=(.+)$/m);
     const date = (dm?.[1] || da?.[1] || '').trim();
+    // Extract datasheet PDF URL from companion _meta.json if present
+    let datasheet = '';
+    try {
+      const metaPath = p.replace(/\.wdr$/i, '_meta.json');
+      const meta = JSON.parse(readFileSync(metaPath, 'utf8'));
+      datasheet = meta.datasheet || '';
+    } catch { /* no meta file — fine */ }
     return {
       name: p.split(/[\\/]/).pop().replace(/\.wdr$/i, ''),
       date,
       content,
+      ...(datasheet ? { datasheet } : {}),
     };
   });
 

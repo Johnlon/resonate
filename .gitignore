@@ -15,3 +15,11 @@ Thumbs.db
 *.swp
 .vscode/
 .idea/
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# Tool caches
+.playwright-mcp/
