@@ -207,7 +207,7 @@ def to_wdr(brand: str, model: str, fields: dict,
     if impedance_url:
         lines.append(f"boxbench_impedance={impedance_url}")
     if vendor_page_url:
-        lines.append(f"boxbench_vendorpage={vendor_page_url}")
+        lines.append(f"boxbench_vendor_page={vendor_page_url}")
     if source_url:
         lines.append(f"boxbench_source={source_url}")
 
