@@ -3452,14 +3452,12 @@ DateModified=20161228
 Qts=0.474165652882199
 Znom=8
 Fs=82.651410389153
-Pe=0
 SPL=95.1662947969595
 Re=6
 Le=0.001
 fLe=0
 KLe=0
 BL=8.2
-Xmax=0
 Cms=0.000309
 Qms=3.219
 Qes=0.556076995404303
@@ -3497,6 +3495,7 @@ Basket=0
 Outer=0
 Vcd=0
 DVol=0
+boxbench_corrections=Pe=0 deleted (scraper artifact); Xmax=0 deleted (scraper artifact)
 ParState=CCNCEENNENNEECCCEENCNCCENNNNCNNNCCCCNNNNNNNNNNNCC
 
 boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`BLG RXM8B`,date:`20161228`,content:`[Driver]
@@ -3510,14 +3509,12 @@ DateModified=20161228
 Qts=0.425592971478774
 Znom=8
 Fs=84.3993798433207
-Pe=0
 SPL=95.5913877813794
 Re=6
 Le=0.001
 fLe=0
 KLe=0
 BL=9.6
-Xmax=0
 Cms=0.000254
 Qms=3.562
 Qes=0.483343568172702
@@ -3555,6 +3552,7 @@ Basket=0
 Outer=0
 Vcd=0
 DVol=0
+boxbench_corrections=Pe=0 deleted (scraper artifact); Xmax=0 deleted (scraper artifact)
 ParState=CCNCEENNENNEECCCEENCNCCENNNNCNNNCCCCNNNNNNNNNNNCC
 
 boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`BMS 12N620`,date:`20130208`,content:`[Driver]
@@ -11162,14 +11160,12 @@ DateModified=20130202
 Qts=1.9283345898169
 Znom=8
 Fs=379.155342324029
-Pe=0
 SPL=97.5810988582088
 Re=5.68
 Le=0.00048
 fLe=0
 KLe=0
 BL=9.5
-Xmax=0
 Cms=1E-5
 Qms=7.14
 Qes=2.64182519169222
@@ -11207,6 +11203,7 @@ Basket=0
 Outer=0
 Vcd=0
 DVol=0
+boxbench_corrections=Pe=0 deleted (scraper artifact); Xmax=0 deleted (scraper artifact)
 ParState=CCNCEENNENNEECCCEENCNCCENNNNCNNNCCCCNNNNNNNNNNNCC
 
 boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Beta-10a`,date:`20130617`,content:`[Driver]
@@ -12152,14 +12149,12 @@ DateModified=20131015
 Qts=0.396662190512466
 Znom=8
 Fs=41.5958107181747
-Pe=0
 SPL=98.2133071182233
 Re=5.71
 Le=0.00083
 fLe=0
 KLe=0
 BL=14.5
-Xmax=0
 Cms=0.00024
 Qms=4.73
 Qes=0.432971589940699
@@ -12197,6 +12192,7 @@ Basket=0
 Outer=0
 Vcd=0
 DVol=0
+boxbench_corrections=Pe=0 deleted (scraper artifact); Xmax=0 deleted (scraper artifact)
 ParState=CCNCEENNENNEECCCEENCNCCENNNNCNNNCCCCNNNNNNNNNNNCC
 
 boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Eminator 1508`,date:`20150121`,content:`[Driver]
@@ -12790,7 +12786,6 @@ DateModified=20140404
 Qts=0.314912717070467
 Znom=10
 Fs=34.7304559021428
-Pe=0
 SPL=95.48434516813
 Re=6.21
 Le=0.001
@@ -12835,6 +12830,7 @@ Basket=0
 Outer=0
 Vcd=0
 DVol=0
+boxbench_corrections=Pe=0 deleted (scraper artifact)
 ParState=CCNCEENNEENEECCCEECCNCCENNNCCNNNCCCCNCNNNNNNNNNCC
 
 boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Kappalite 3012LF`,date:`20120914`,content:`[Driver]
@@ -13196,14 +13192,12 @@ DateModified=20130907
 Qts=0.378326221621541
 Znom=4
 Fs=34.4898659782539
-Pe=0
 SPL=92.4934451903483
 Re=2.7
 Le=0.00068
 fLe=0
 KLe=0
 BL=7.1
-Xmax=0
 Cms=0.00063
 Qms=10.61
 Qes=0.392315206519486
@@ -13241,6 +13235,7 @@ Basket=0
 Outer=0
 Vcd=0
 DVol=0
+boxbench_corrections=Pe=0 deleted (scraper artifact); Xmax=0 deleted (scraper artifact)
 ParState=CCNCEENNENNEECCCEENCNCCENNNNCNNNCCCCNNNNNNNNNNNCC
 
 boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Legend BP122`,date:`20170530`,content:`[Driver]
@@ -14994,14 +14989,12 @@ DateModified=20131021
 Qts=0.292639135444152
 Znom=8
 Fs=50.1290951604515
-Pe=0
 SPL=96.3072458239549
 Re=5.1
 Le=0.00074
 fLe=0
 KLe=0
 BL=17.3
-Xmax=0
 Cms=0.00018
 Qms=11.1
 Qes=0.300563148037676
@@ -15039,6 +15032,7 @@ Basket=0
 Outer=0
 Vcd=0
 DVol=0
+boxbench_corrections=Pe=0 deleted (scraper artifact); Xmax=0 deleted (scraper artifact)
 ParState=CCNCEENNENNEECCCEENCNCCENNNNCNNNCCCCNNNNNNNNNNNCC
 
 boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`GRS 10PF-8`,date:`20150209`,content:`[Driver]
@@ -16594,14 +16588,11 @@ Znom=0
 Fs=89
 Pe=30
 SPL=0
-Re=0
 Le=0
 fLe=0
 KLe=0
-BL=0
 Xmax=0.004
 Cms=1.13666604798021E-5
-Qms=0
 Qes=0
 Rms=0
 Mms=0.281337330380674
@@ -16637,6 +16628,7 @@ Basket=0
 Outer=0
 Vcd=0
 DVol=0
+boxbench_corrections=Re=0 deleted (scraper artifact); BL=0 deleted (scraper artifact); Qms=0 deleted (scraper artifact)
 ParState=NEENNNNNNENCNNENCCEENCNENNNCNNNNNNNNNCNNNNNNNNNCC
 
 boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Morel UW 1258`,date:`20130313`,content:`[Driver]
@@ -18169,14 +18161,12 @@ DateModified=20130701
 Qts=0.370876950126534
 Znom=4
 Fs=26.2359154298034
-Pe=0
 SPL=91.2329896112504
 Re=2.24
 Le=0.002475
 fLe=0
 KLe=0
 BL=14.75
-Xmax=0
 Cms=0.00016
 Qms=7.43
 Qes=0.39036233254066
@@ -18214,6 +18204,7 @@ Basket=0
 Outer=0
 Vcd=0
 DVol=0
+boxbench_corrections=Pe=0 deleted (scraper artifact); Xmax=0 deleted (scraper artifact)
 ParState=CCNCEENNENNEECCCEENCNCCENNNNCNNNCCCCNNNNNNNNNNNCC
 
 boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Stereo Integrity BM mkV D2`,date:`20171023`,content:`[Driver]
@@ -20394,14 +20385,12 @@ DateModified=20160906
 Qts=0.807959123736776
 Znom=8
 Fs=114.384927464035
-Pe=0
 SPL=89.7823339217785
 Re=5.578
 Le=0.000626
 fLe=0
 KLe=0
 BL=6.333
-Xmax=0
 Cms=0.000206
 Qms=5.775
 Qes=0.939385049532782
@@ -20442,6 +20431,7 @@ DVol=0
 boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
+boxbench_corrections=Pe=0 deleted (scraper artifact); Xmax=0 deleted (scraper artifact)
 ParState=CCNCEENNENNEECCCEENCNCCENNNNCNNNCCCCNNNNNNNNNNNCC
 
 boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Celestion FTX0820`,date:`20160816`,content:`[Driver]
@@ -22226,14 +22216,12 @@ DateModified=20120927
 Qts=0.483102980367149
 Znom=8
 Fs=61.1664066513524
-Pe=0
 SPL=90.5158577029773
 Re=5.52
 Le=0.00158
 fLe=0
 KLe=0
 BL=10.87
-Xmax=0
 Cms=0.00024
 Qms=10.46
 Qes=0.506495873887083
@@ -22274,6 +22262,7 @@ DVol=0
 boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
+boxbench_corrections=Pe=0 deleted (scraper artifact); Xmax=0 deleted (scraper artifact)
 ParState=CCNCEENNENNEECCCEENCNCCENNNNCNNNCCCCNNNNNNNNNNNCC
 
 boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Eminence Delta-12LFC`,date:`20170118`,content:`[Driver]
@@ -44803,7 +44792,6 @@ Qts=0.33
 Znom=16
 Fs=73
 Pe=400
-Re=0
 Le=0.0005
 BL=12.6
 Xmax=0.005
@@ -44821,6 +44809,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/B-C-8PS21-16-8-Professional-Woofer-16-Ohm-294-5917
 boxbench_vendor_page=https://www.parts-express.com/B-C-8PS21-16-8-Professional-Woofer-16-Ohm-294-5917
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/294-5917--bc-8ps21-16-spec-sheet.pdf
+boxbench_corrections=Re=0 deleted (scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/294-5917--bc-8ps21-16-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/B-C-8PS21-16-8-Professional-Woofer-16-Ohm-294-5917`},{name:`B&C Speakers B&C 8PS21-8 8_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -44908,7 +44897,6 @@ Qms=3.8
 Qes=0.47
 Rms=0.00361118
 Mms=0.000042
-Sd=0.0000038
 Vas=0.043891
 Vd=2.47e-8
 Dd=0.00219962
@@ -44917,6 +44905,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-10CMV2-10-Woofer-8-Ohm-253-028
 boxbench_vendor_page=https://www.parts-express.com/Beyma-10CMV2-10-Woofer-8-Ohm-253-028
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-028--10cmv2-spec-sheet.pdf
+boxbench_corrections=Sd=0.038 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-028--10cmv2-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-10CMV2-10-Woofer-8-Ohm-253-028`},{name:`Beyma 10G40 G40 Series 10_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -44940,7 +44929,6 @@ Qms=7.1
 Qes=0.32
 Rms=0.0020708
 Mms=0.000052
-Sd=0.0000038
 Vas=0.0489881
 Vd=2.66e-8
 Dd=0.00219962
@@ -44949,6 +44937,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-10G40-G40-Series-10-Subwoofer-8-Ohm-253-004
 boxbench_vendor_page=https://www.parts-express.com/Beyma-10G40-G40-Series-10-Subwoofer-8-Ohm-253-004
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-004--10g40-spec-sheet.pdf
+boxbench_corrections=Sd=0.038 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-004--10g40-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-10G40-G40-Series-10-Subwoofer-8-Ohm-253-004`},{name:`Beyma 10MC500 MC Series 10_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -44972,7 +44961,6 @@ Qms=7.5
 Qes=0.3
 Rms=0.00239599
 Mms=0.000044
-Sd=0.0000035
 Vas=0.0240693
 Vd=2.8e-8
 Dd=0.002111
@@ -44981,6 +44969,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-10MC500-MC-Series-10-Woofer-8-Ohm-253-012
 boxbench_vendor_page=https://www.parts-express.com/Beyma-10MC500-MC-Series-10-Woofer-8-Ohm-253-012
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-012--10mc500-spec-sheet.pdf
+boxbench_corrections=Sd=0.035 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-012--10mc500-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-10MC500-MC-Series-10-Woofer-8-Ohm-253-012`},{name:`Beyma 10MC700Nd MC Series 10_ Neo Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45004,7 +44993,6 @@ Qms=3.8
 Qes=0.24
 Rms=0.0056251
 Mms=0.000054
-Sd=0.0000035
 Vas=0.0201049
 Vd=2.45e-8
 Dd=0.002111
@@ -45013,6 +45001,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-10MC700Nd-MC-Series-10-Neo-Woofer-8-Ohm-253-013
 boxbench_vendor_page=https://www.parts-express.com/Beyma-10MC700Nd-MC-Series-10-Neo-Woofer-8-Ohm-253-013
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-013--10mc700nd-spec-sheet.pdf
+boxbench_corrections=Sd=0.035 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-013--10mc700nd-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-10MC700Nd-MC-Series-10-Neo-Woofer-8-Ohm-253-013`},{name:`Beyma 10MCB700 MCB Series 10_ Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45036,7 +45025,6 @@ Qms=4.9
 Qes=0.35
 Rms=0.00528942
 Mms=0.000055
-Sd=0.0000035
 Vas=0.0133089
 Vd=2.45e-8
 Dd=0.002111
@@ -45045,6 +45033,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-10MCB700-MCB-Series-10-Midbass-Woofer-8-Ohm-253-020
 boxbench_vendor_page=https://www.parts-express.com/Beyma-10MCB700-MCB-Series-10-Midbass-Woofer-8-Ohm-253-020
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-020--10mcb700-spec-sheet.pdf
+boxbench_corrections=Sd=0.035 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-020--10mcb700-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-10MCB700-MCB-Series-10-Midbass-Woofer-8-Ohm-253-020`},{name:`Beyma 10MCS500 MCS Series 10_ Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45068,7 +45057,6 @@ Qms=10.1
 Qes=0.33
 Rms=0.0017792
 Mms=0.000044
-Sd=0.0000035
 Vas=0.0240693
 Vd=2.8e-8
 Dd=0.002111
@@ -45077,6 +45065,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-10MCS500-MCS-Series-10-Subwoofer-8-Ohm-253-023
 boxbench_vendor_page=https://www.parts-express.com/Beyma-10MCS500-MCS-Series-10-Subwoofer-8-Ohm-253-023
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-023--10mcs500-spec-sheet.pdf
+boxbench_corrections=Sd=0.035 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-023--10mcs500-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-10MCS500-MCS-Series-10-Subwoofer-8-Ohm-253-023`},{name:`Beyma 10MI100 MI100 Series 10_ Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45100,7 +45089,6 @@ Qms=6.6
 Qes=0.22
 Rms=0.0018088
 Mms=0.000038
-Sd=0.0000038
 Vas=0.0540851
 Vd=1.71e-8
 Dd=0.00219962
@@ -45109,6 +45097,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-10MI100-MI100-Series-10-Midrange-Speaker-8-Ohm-253-039
 boxbench_vendor_page=https://www.parts-express.com/Beyma-10MI100-MI100-Series-10-Midrange-Speaker-8-Ohm-253-039
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-039--10mi100-spec-sheet.pdf
+boxbench_corrections=Sd=0.038 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-039--10mi100-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-10MI100-MI100-Series-10-Midrange-Speaker-8-Ohm-253-039`},{name:`Beyma 10NMFS NMF Series 10_ Carbon Fiber Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45132,7 +45121,6 @@ Qms=5.9
 Qes=0.45
 Rms=0.00331731
 Mms=0.000089
-Sd=0.0000037
 Vas=0.0450237
 Vd=5.365e-8
 Dd=0.00217048
@@ -45141,6 +45129,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-10NMFS-NMF-Series-10-Carbon-Fiber-Cone-Woofer-8-Ohm-253-087
 boxbench_vendor_page=https://www.parts-express.com/Beyma-10NMFS-NMF-Series-10-Carbon-Fiber-Cone-Woofer-8-Ohm-253-087
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-087--10nmfs-spec-sheet.pdf
+boxbench_corrections=Sd=0.037 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-087--10nmfs-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-10NMFS-NMF-Series-10-Carbon-Fiber-Cone-Woofer-8-Ohm-253-087`},{name:`Beyma 10WR300 WR Series 10_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45164,7 +45153,6 @@ Qms=3.9
 Qes=0.39
 Rms=0.00326726
 Mms=0.000039
-Sd=0.0000035
 Vas=0.0419089
 Vd=
 Dd=0.002111
@@ -45173,6 +45161,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-10WR300-WR-Series-10-Woofer-8-Ohm-253-059
 boxbench_vendor_page=https://www.parts-express.com/Beyma-10WR300-WR-Series-10-Woofer-8-Ohm-253-059
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-059--10wr300-spec-sheet.pdf
+boxbench_corrections=Sd=0.035 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-059--10wr300-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-10WR300-WR-Series-10-Woofer-8-Ohm-253-059`},{name:`Beyma 12BR70 12_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45228,7 +45217,6 @@ Qms=11.6
 Qes=0.3
 Rms=0.00147763
 Mms=0.000062
-Sd=0.0000053
 Vas=0.080986
 Vd=3.71e-8
 Dd=0.00259772
@@ -45237,6 +45225,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-12G40-G40-Series-12-Subwoofer-8-Ohm-253-005
 boxbench_vendor_page=https://www.parts-express.com/Beyma-12G40-G40-Series-12-Subwoofer-8-Ohm-253-005
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-005--12g40-spec-sheet.pdf
+boxbench_corrections=Sd=0.053 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-005--12g40-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-12G40-G40-Series-12-Subwoofer-8-Ohm-253-005`},{name:`Beyma 12LEX1000Fe LEX Series 12_  Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45260,7 +45249,6 @@ Qms=3.6
 Qes=0.32
 Rms=0.00100915
 Mms=0.0000118
-Sd=0.0000055
 Vas=0.0385108
 Vd=6.05e-8
 Dd=0.00264628
@@ -45269,6 +45257,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-12LEX1000Fe-LEX-Series-12-Subwoofer-8-Ohm-253-041
 boxbench_vendor_page=https://www.parts-express.com/Beyma-12LEX1000Fe-LEX-Series-12-Subwoofer-8-Ohm-253-041
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-041--12lex1000fe-spec-sheet.pdf
+boxbench_corrections=Sd=0.055 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-041--12lex1000fe-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-12LEX1000Fe-LEX-Series-12-Subwoofer-8-Ohm-253-041`},{name:`Beyma 12LEX1300Nd LEX Series 12_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45292,7 +45281,6 @@ Qms=4.2
 Qes=0.25
 Rms=0.00841498
 Mms=0.000125
-Sd=0.0000055
 Vas=0.0430415
 Vd=6.05e-8
 Dd=0.00264628
@@ -45301,6 +45289,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-12LEX1300Nd-LEX-Series-12-Neo-Subwoofer-8-Ohm-253-042
 boxbench_vendor_page=https://www.parts-express.com/Beyma-12LEX1300Nd-LEX-Series-12-Neo-Subwoofer-8-Ohm-253-042
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-042--12lex1000nd-spec-sheet.pdf
+boxbench_corrections=Sd=0.055 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-042--12lex1000nd-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-12LEX1300Nd-LEX-Series-12-Neo-Subwoofer-8-Ohm-253-042`},{name:`Beyma 12MC500 MC Series 12_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45324,7 +45313,6 @@ Qms=7.8
 Qes=0.35
 Rms=0.00270902
 Mms=0.000059
-Sd=0.0000055
 Vas=0.0569168
 Vd=4.4e-8
 Dd=0.00264628
@@ -45333,6 +45321,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-12MC500-MC-Series-12-Subwoofer-8-Ohm-253-014
 boxbench_vendor_page=https://www.parts-express.com/Beyma-12MC500-MC-Series-12-Subwoofer-8-Ohm-253-014
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-014--12mc500-spec-sheet.pdf
+boxbench_corrections=Sd=0.055 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-014--12mc500-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-12MC500-MC-Series-12-Subwoofer-8-Ohm-253-014`},{name:`Beyma 12MC700Nd MC Series 12_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45356,7 +45345,6 @@ Qms=4.1
 Qes=0.26
 Rms=0.00562728
 Mms=0.000072
-Sd=0.0000055
 Vas=0.0580494
 Vd=3.85e-8
 Dd=0.00264628
@@ -45365,6 +45353,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-12MC700Nd-MC-Series-12-Neo-Subwoofer-8-Ohm-253-015
 boxbench_vendor_page=https://www.parts-express.com/Beyma-12MC700Nd-MC-Series-12-Neo-Subwoofer-8-Ohm-253-015
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-015--12mc700nd-spec-sheet.pdf
+boxbench_corrections=Sd=0.055 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-015--12mc700nd-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-12MC700Nd-MC-Series-12-Neo-Subwoofer-8-Ohm-253-015`},{name:`Beyma 12MCB700 MCB Series 12_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45388,7 +45377,6 @@ Qms=3.9
 Qes=0.29
 Rms=0.00566937
 Mms=0.000069
-Sd=0.0000055
 Vas=0.0133089
 Vd=3.85e-8
 Dd=0.00264628
@@ -45397,6 +45385,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-12MCB700-MCB-Series-12-Subwoofer-8-Ohm-253-021
 boxbench_vendor_page=https://www.parts-express.com/Beyma-12MCB700-MCB-Series-12-Subwoofer-8-Ohm-253-021
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-021--12mcb700-spec-sheet.pdf
+boxbench_corrections=Sd=0.055 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-021--12mcb700-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-12MCB700-MCB-Series-12-Subwoofer-8-Ohm-253-021`},{name:`Beyma 12MCS500 MCS Series 12_ Midbass Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45420,7 +45409,6 @@ Qms=7.8
 Qes=0.38
 Rms=0.00270902
 Mms=0.000059
-Sd=0.0000055
 Vas=0.0569168
 Vd=4.4e-8
 Dd=0.00264628
@@ -45429,6 +45417,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-12MCS500-MCS-Series-12-Midbass-Driver-8-Ohm-253-024
 boxbench_vendor_page=https://www.parts-express.com/Beyma-12MCS500-MCS-Series-12-Midbass-Driver-8-Ohm-253-024
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-024--12mcs500-spec-sheet.pdf
+boxbench_corrections=Sd=0.055 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-024--12mcs500-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-12MCS500-MCS-Series-12-Midbass-Driver-8-Ohm-253-024`},{name:`Beyma 12MI100 MI100 Series 12_ Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45452,7 +45441,6 @@ Qms=5.5
 Qes=0.23
 Rms=0.00311418
 Mms=0.000047
-Sd=0.0000053
 Vas=0.063996
 Vd=1.59e-8
 Dd=0.00259772
@@ -45461,6 +45449,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-12MI100-MI100-Series-12-Midrange-Speaker-8-Ohm-253-040
 boxbench_vendor_page=https://www.parts-express.com/Beyma-12MI100-MI100-Series-12-Midrange-Speaker-8-Ohm-253-040
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-040--12mi100-spec-sheet.pdf
+boxbench_corrections=Sd=0.053 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-040--12mi100-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-12MI100-MI100-Series-12-Midrange-Speaker-8-Ohm-253-040`},{name:`Beyma 12P80Fe_V2 P80 Series 12_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45484,7 +45473,6 @@ Qms=6.5
 Qes=0.22
 Rms=0.00352632
 Mms=0.000076
-Sd=0.0000055
 Vas=0.0608811
 Vd=4.125e-8
 Dd=0.00264628
@@ -45493,6 +45481,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-12P80Fe-V2-P80-Series-12-Subwoofer-8-Ohm-253-006
 boxbench_vendor_page=https://www.parts-express.com/Beyma-12P80Fe-V2-P80-Series-12-Subwoofer-8-Ohm-253-006
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-006--12p80fev2-spec-sheet.pdf
+boxbench_corrections=Sd=0.055 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-006--12p80fev2-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-12P80Fe-V2-P80-Series-12-Subwoofer-8-Ohm-253-006`},{name:`Beyma 12P80Nd_V2 P80 Series 12_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45516,7 +45505,6 @@ Qms=5.2
 Qes=0.2
 Rms=0.00420248
 Mms=0.000074
-Sd=0.0000055
 Vas=0.0651286
 Vd=4.125e-8
 Dd=0.00264628
@@ -45525,6 +45513,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-12P80Nd-V2-P80-Series-12-Neo-Subwoofer-8-Ohm-253-007
 boxbench_vendor_page=https://www.parts-express.com/Beyma-12P80Nd-V2-P80-Series-12-Neo-Subwoofer-8-Ohm-253-007
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-007--12p80ndv2-spec-sheet.pdf
+boxbench_corrections=Sd=0.055 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-007--12p80ndv2-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-12P80Nd-V2-P80-Series-12-Neo-Subwoofer-8-Ohm-253-007`},{name:`Beyma 12WR400 WR Series 12_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45548,7 +45537,6 @@ Qms=5.6
 Qes=0.28
 Rms=0.00296881
 Mms=0.000063
-Sd=0.0000053
 Vas=0.0908969
 Vd=3.339e-8
 Dd=0.00259772
@@ -45557,6 +45545,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-12WR400-WR-Series-12-Subwoofer-8-Ohm-253-060
 boxbench_vendor_page=https://www.parts-express.com/Beyma-12WR400-WR-Series-12-Subwoofer-8-Ohm-253-060
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-060--12wr400-spec-sheet.pdf
+boxbench_corrections=Sd=0.053 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-060--12wr400-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-12WR400-WR-Series-12-Subwoofer-8-Ohm-253-060`},{name:`Beyma 14MC700Nd 14_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45580,7 +45569,6 @@ Qms=3.3
 Qes=0.3
 Rms=0.00835092
 Mms=0.000086
-Sd=0.000007
 Vas=0.0778712
 Vd=4.9e-8
 Dd=0.00298541
@@ -45589,6 +45577,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-14MC700Nd-14-Subwoofer-8-Ohm-253-019
 boxbench_vendor_page=https://www.parts-express.com/Beyma-14MC700Nd-14-Subwoofer-8-Ohm-253-019
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-019--14mc700nd-spec-sheet.pdf
+boxbench_corrections=Sd=0.070 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-019--14mc700nd-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-14MC700Nd-14-Subwoofer-8-Ohm-253-019`},{name:`Beyma 15CMV2 15_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45612,7 +45601,6 @@ Qms=4.1
 Qes=0.55
 Rms=0.00795972
 Mms=0.000106
-Sd=0.0000088
 Vas=0.103923
 Vd=6.16e-8
 Dd=0.00334731
@@ -45621,6 +45609,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-15CMV2-15-Subwoofer-8-Ohm-253-030
 boxbench_vendor_page=https://www.parts-express.com/Beyma-15CMV2-15-Subwoofer-8-Ohm-253-030
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-030--15cmv2-spec-sheet.pdf
+boxbench_corrections=Sd=0.088 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-030--15cmv2-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-15CMV2-15-Subwoofer-8-Ohm-253-030`},{name:`Beyma 15LEX1000Fe LEX Series 15_  Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45644,7 +45633,6 @@ Qms=5.1
 Qes=0.37
 Rms=0.00717269
 Mms=0.000142
-Sd=0.0000088
 Vas=0.116099
 Vd=9.68e-8
 Dd=0.00334731
@@ -45653,6 +45641,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-15LEX1000Fe-LEX-Series-15-Subwoofer-8-Ohm-253-043
 boxbench_vendor_page=https://www.parts-express.com/Beyma-15LEX1000Fe-LEX-Series-15-Subwoofer-8-Ohm-253-043
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-043--15lex1000fe-spec-sheet.pdf
+boxbench_corrections=Sd=0.088 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-043--15lex1000fe-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-15LEX1000Fe-LEX-Series-15-Subwoofer-8-Ohm-253-043`},{name:`Beyma 15LEX1000Nd LEX Series 15_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45676,7 +45665,6 @@ Qms=3.9
 Qes=0.41
 Rms=0.00970994
 Mms=0.000147
-Sd=0.0000088
 Vas=0.112984
 Vd=9.68e-8
 Dd=0.00334731
@@ -45685,6 +45673,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-15LEX1000Nd-LEX-Series-15-Neo-Subwoofer-8-Ohm-253-044
 boxbench_vendor_page=https://www.parts-express.com/Beyma-15LEX1000Nd-LEX-Series-15-Neo-Subwoofer-8-Ohm-253-044
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-044--15lex1000nd-spec-sheet.pdf
+boxbench_corrections=Sd=0.088 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-044--15lex1000nd-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-15LEX1000Nd-LEX-Series-15-Neo-Subwoofer-8-Ohm-253-044`},{name:`Beyma 15LEX1600Fe LEX Series 15_  Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45708,7 +45697,6 @@ Qms=6.9
 Qes=0.34
 Rms=0.00619395
 Mms=0.000179
-Sd=0.0000088
 Vas=0.107887
 Vd=1.144e-7
 Dd=0.00334731
@@ -45717,6 +45705,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-15LEX1600Fe-LEX-Series-15-Subwoofer-8-Ohm-253-045
 boxbench_vendor_page=https://www.parts-express.com/Beyma-15LEX1600Fe-LEX-Series-15-Subwoofer-8-Ohm-253-045
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-045--15lex1600fe-spec-sheet.pdf
+boxbench_corrections=Sd=0.088 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-045--15lex1600fe-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-15LEX1600Fe-LEX-Series-15-Subwoofer-8-Ohm-253-045`},{name:`Beyma 15LEX1600Nd LEX Series 15_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45740,7 +45729,6 @@ Qms=6.6
 Qes=0.38
 Rms=0.00683058
 Mms=0.000175
-Sd=0.0000088
 Vas=0.0908969
 Vd=1.276e-7
 Dd=0.00334731
@@ -45749,6 +45737,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-15LEX1600Nd-LEX-Series-15-Neo-Subwoofer-8-Ohm-253-046
 boxbench_vendor_page=https://www.parts-express.com/Beyma-15LEX1600Nd-LEX-Series-15-Neo-Subwoofer-8-Ohm-253-046
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-046--15lex1600nd-spec-sheet.pdf
+boxbench_corrections=Sd=0.088 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-046--15lex1600nd-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-15LEX1600Nd-LEX-Series-15-Neo-Subwoofer-8-Ohm-253-046`},{name:`Beyma 15MC500 MC Series 15_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45772,7 +45761,6 @@ Qms=7.8
 Qes=0.47
 Rms=0.00363136
 Mms=0.000098
-Sd=0.0000088
 Vas=0.133938
 Vd=7.04e-8
 Dd=0.00334731
@@ -45781,6 +45769,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-15MC500-MC-Series-15-Subwoofer-8-Ohm-253-016
 boxbench_vendor_page=https://www.parts-express.com/Beyma-15MC500-MC-Series-15-Subwoofer-8-Ohm-253-016
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-016--15mc500-spec-sheet.pdf
+boxbench_corrections=Sd=0.088 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-016--15mc500-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-15MC500-MC-Series-15-Subwoofer-8-Ohm-253-016`},{name:`Beyma 15MC700Nd MC Series 15_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45804,7 +45793,6 @@ Qms=3.6
 Qes=0.34
 Rms=0.00915076
 Mms=0.000107
-Sd=0.0000088
 Vas=0.105055
 Vd=6.16e-8
 Dd=0.00334731
@@ -45813,6 +45801,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-15MC700Nd-MC-Series-15-Neo-Subwoofer-8-Ohm-253-017
 boxbench_vendor_page=https://www.parts-express.com/Beyma-15MC700Nd-MC-Series-15-Neo-Subwoofer-8-Ohm-253-017
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-017--15mc700nd-spec-sheet.pdf
+boxbench_corrections=Sd=0.088 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-017--15mc700nd-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-15MC700Nd-MC-Series-15-Neo-Subwoofer-8-Ohm-253-017`},{name:`Beyma 15MCB700 MCB Series 15_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45836,7 +45825,6 @@ Qms=5.4
 Qes=0.36
 Rms=0.00491485
 Mms=0.000096
-Sd=0.0000088
 Vas=0.148097
 Vd=6.16e-8
 Dd=0.00334731
@@ -45845,6 +45833,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-15MCB700-MCB-Series-15-Subwoofer-8-Ohm-253-022
 boxbench_vendor_page=https://www.parts-express.com/Beyma-15MCB700-MCB-Series-15-Subwoofer-8-Ohm-253-022
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-022--15mcb700-spec-sheet.pdf
+boxbench_corrections=Sd=0.088 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-022--15mcb700-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-15MCB700-MCB-Series-15-Subwoofer-8-Ohm-253-022`},{name:`Beyma 15MCS500 MCS Series 15_ Midbass Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45868,7 +45857,6 @@ Qms=7.8
 Qes=0.51
 Rms=0.00363136
 Mms=0.000098
-Sd=0.0000088
 Vas=0.133938
 Vd=7.04e-8
 Dd=0.00334731
@@ -45877,6 +45865,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-15MCS500-MCS-Series-15-Midbass-Driver-8-Ohm-253-025
 boxbench_vendor_page=https://www.parts-express.com/Beyma-15MCS500-MCS-Series-15-Midbass-Driver-8-Ohm-253-025
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-025--15mcs500-spec-sheet.pdf
+boxbench_corrections=Sd=0.088 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-025--15mcs500-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-15MCS500-MCS-Series-15-Midbass-Driver-8-Ohm-253-025`},{name:`Beyma 15P80Fe_N P80 Series 15_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45900,7 +45889,6 @@ Qms=5.5
 Qes=0.19
 Rms=0.00321699
 Mms=0.000088
-Sd=0.0000088
 Vas=0.304972
 Vd=6.6e-8
 Dd=0.00334731
@@ -45909,6 +45897,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-15P80Fe-N-P80-Series-15-Subwoofer-8-Ohm-253-008
 boxbench_vendor_page=https://www.parts-express.com/Beyma-15P80Fe-N-P80-Series-15-Subwoofer-8-Ohm-253-008
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-008--15p80fen-spec-sheet.pdf
+boxbench_corrections=Sd=0.088 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-008--15p80fen-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-15P80Fe-N-P80-Series-15-Subwoofer-8-Ohm-253-008`},{name:`Beyma 15P80Nd P80 Series 15_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45932,7 +45921,6 @@ Qms=5.1
 Qes=0.22
 Rms=0.00470869
 Mms=0.000098
-Sd=0.0000088
 Vas=0.184059
 Vd=6.6e-8
 Dd=0.00334731
@@ -45941,6 +45929,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-15P80Nd-P80-Series-15-Neo-Subwoofer-8-Ohm-253-009
 boxbench_vendor_page=https://www.parts-express.com/Beyma-15P80Nd-P80-Series-15-Neo-Subwoofer-8-Ohm-253-009
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-009--15p80nd-spec-sheet.pdf
+boxbench_corrections=Sd=0.088 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-009--15p80nd-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-15P80Nd-P80-Series-15-Neo-Subwoofer-8-Ohm-253-009`},{name:`Beyma 15QLEX1600Fe QLEX Series 15_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45964,7 +45953,6 @@ Qms=6.3
 Qes=0.22
 Rms=0.00835963
 Mms=0.000254
-Sd=0.0000088
 Vas=0.10194
 Vd=1.144e-7
 Dd=0.00334731
@@ -45973,6 +45961,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-15QLEX1600Fe-QLEX-Series-15-Subwoofer-8-Ohm-253-054
 boxbench_vendor_page=https://www.parts-express.com/Beyma-15QLEX1600Fe-QLEX-Series-15-Subwoofer-8-Ohm-253-054
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-054--15qlex1600fe-spec-sheet.pdf
+boxbench_corrections=Sd=0.088 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-054--15qlex1600fe-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-15QLEX1600Fe-QLEX-Series-15-Subwoofer-8-Ohm-253-054`},{name:`Beyma 15WR400 WR Series 15_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -45996,7 +45985,6 @@ Qms=8.2
 Qes=0.31
 Rms=0.00251021
 Mms=0.000091
-Sd=0.0000088
 Vas=0.235879
 Vd=5.544e-8
 Dd=0.00334731
@@ -46005,6 +45993,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-15WR400-WR-Series-15-Subwoofer-8-Ohm-253-061
 boxbench_vendor_page=https://www.parts-express.com/Beyma-15WR400-WR-Series-15-Subwoofer-8-Ohm-253-061
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-061--15wr400-spec-sheet.pdf
+boxbench_corrections=Sd=0.088 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-061--15wr400-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-15WR400-WR-Series-15-Subwoofer-8-Ohm-253-061`},{name:`Beyma 18LEX1000Fe LEX Series 18_  Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -46028,7 +46017,6 @@ Qms=7.3
 Qes=0.39
 Rms=0.00573577
 Mms=0.000196
-Sd=0.00001255
 Vas=0.250037
 Vd=1.3805e-7
 Dd=0.00399739
@@ -46037,6 +46025,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-18LEX1000Fe-LEX-Series-18-Subwoofer-8-Ohm-253-047
 boxbench_vendor_page=https://www.parts-express.com/Beyma-18LEX1000Fe-LEX-Series-18-Subwoofer-8-Ohm-253-047
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-047--18lex1000fe-spec-sheet.pdf
+boxbench_corrections=Sd=0.126 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-047--18lex1000fe-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-18LEX1000Fe-LEX-Series-18-Subwoofer-8-Ohm-253-047`},{name:`Beyma 18LEX1000Nd LEX Series 18_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -46060,7 +46049,6 @@ Qms=5.6
 Qes=0.42
 Rms=0.00705736
 Mms=0.000185
-Sd=0.00001255
 Vas=0.259948
 Vd=1.3805e-7
 Dd=0.00399739
@@ -46069,6 +46057,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-18LEX1000Nd-LEX-Series-18-Neo-Subwoofer-8-Ohm-253-048
 boxbench_vendor_page=https://www.parts-express.com/Beyma-18LEX1000Nd-LEX-Series-18-Neo-Subwoofer-8-Ohm-253-048
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-048--18lex1000nd-spec-sheet.pdf
+boxbench_corrections=Sd=0.126 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-048--18lex1000nd-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-18LEX1000Nd-LEX-Series-18-Neo-Subwoofer-8-Ohm-253-048`},{name:`Beyma 18LEX1200Fe LEX Series 18_  Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -46156,7 +46145,6 @@ Qms=7.4
 Qes=0.4
 Rms=0.00727491
 Mms=0.000252
-Sd=0.00001255
 Vas=0.188024
 Vd=1.6315e-7
 Dd=0.00399739
@@ -46165,6 +46153,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-18LEX1600Fe-LEX-Series-18-Subwoofer-8-Ohm-253-051
 boxbench_vendor_page=https://www.parts-express.com/Beyma-18LEX1600Fe-LEX-Series-18-Subwoofer-8-Ohm-253-051
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-051--18lex1600fe-spec-sheet.pdf
+boxbench_corrections=Sd=0.126 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-051--18lex1600fe-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-18LEX1600Fe-LEX-Series-18-Subwoofer-8-Ohm-253-051`},{name:`Beyma 18LEX1600Nd LEX Series 18_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -46188,7 +46177,6 @@ Qms=11.4
 Qes=0.45
 Rms=0.00416509
 Mms=0.000229
-Sd=0.00001255
 Vas=0.231065
 Vd=1.81975e-7
 Dd=0.00399739
@@ -46197,6 +46185,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-18LEX1600Nd-LEX-Series-18-Neo-Subwoofer-8-Ohm-253-052
 boxbench_vendor_page=https://www.parts-express.com/Beyma-18LEX1600Nd-LEX-Series-18-Neo-Subwoofer-8-Ohm-253-052
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-052--18lex1600nd-spec-sheet.pdf
+boxbench_corrections=Sd=0.126 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-052--18lex1600nd-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-18LEX1600Nd-LEX-Series-18-Neo-Subwoofer-8-Ohm-253-052`},{name:`Beyma 18QLEX1600Fe QLEX Series 18_ Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -46220,7 +46209,6 @@ Qms=11.6
 Qes=0.25
 Rms=0.00564187
 Mms=0.000336
-Sd=0.00001255
 Vas=0.177263
 Vd=1.6315e-7
 Dd=0.00399739
@@ -46229,6 +46217,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-18QLEX1600Fe-QLEX-Series-18-Subwoofer-4-Ohm-253-056
 boxbench_vendor_page=https://www.parts-express.com/Beyma-18QLEX1600Fe-QLEX-Series-18-Subwoofer-4-Ohm-253-056
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-056--18qlex1600fe-spec-sheet.pdf
+boxbench_corrections=Sd=0.126 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-056--18qlex1600fe-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-18QLEX1600Fe-QLEX-Series-18-Subwoofer-4-Ohm-253-056`},{name:`Beyma 18QLEX1600Fe QLEX Series 18_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -46252,7 +46241,6 @@ Qms=6.5
 Qes=0.24
 Rms=0.00936678
 Mms=0.000323
-Sd=0.00001255
 Vas=0.195103
 Vd=1.6315e-7
 Dd=0.00399739
@@ -46261,6 +46249,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-18QLEX1600Fe-QLEX-Series-18-Subwoofer-8-Ohm-253-055
 boxbench_vendor_page=https://www.parts-express.com/Beyma-18QLEX1600Fe-QLEX-Series-18-Subwoofer-8-Ohm-253-055
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-055--18qlex1600fe-spec-sheet.pdf
+boxbench_corrections=Sd=0.126 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-055--18qlex1600fe-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-18QLEX1600Fe-QLEX-Series-18-Subwoofer-8-Ohm-253-055`},{name:`Beyma 21LEX1600Nd LEX Series 21_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -46284,7 +46273,6 @@ Qms=8.6
 Qes=0.3
 Rms=0.00861381
 Mms=0.000393
-Sd=0.00001734
 Vas=0.304972
 Vd=2.4276e-7
 Dd=0.00469872
@@ -46293,6 +46281,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-21LEX1600Nd-LEX-Series-21-Neo-Subwoofer-8-Ohm-253-053
 boxbench_vendor_page=https://www.parts-express.com/Beyma-21LEX1600Nd-LEX-Series-21-Neo-Subwoofer-8-Ohm-253-053
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-053--21lex1600nd-spec-sheet.pdf
+boxbench_corrections=Sd=0.173 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-053--21lex1600nd-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-21LEX1600Nd-LEX-Series-21-Neo-Subwoofer-8-Ohm-253-053`},{name:`Beyma 21QLEX1600Fe QLEX Series 21_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -46316,7 +46305,6 @@ Qms=4.5
 Qes=0.3
 Rms=0.0162525
 Mms=0.000388
-Sd=0.00001734
 Vas=0.308936
 Vd=2.2542e-7
 Dd=0.00469872
@@ -46325,6 +46313,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-21QLEX1600Fe-QLEX-Series-21-Subwoofer-8-Ohm-253-057
 boxbench_vendor_page=https://www.parts-express.com/Beyma-21QLEX1600Fe-QLEX-Series-21-Subwoofer-8-Ohm-253-057
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-057--21qlex1600fe-spec-sheet.pdf
+boxbench_corrections=Sd=0.173 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-057--21qlex1600fe-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-21QLEX1600Fe-QLEX-Series-21-Subwoofer-8-Ohm-253-057`},{name:`Beyma 3FR30V2 3_ Full-Range Loudspeaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -46348,7 +46337,6 @@ Qms=5.9
 Qes=0.56
 Rms=0.000325767
 Mms=0.0000023
-Sd=3e-7
 Vas=0.00113267
 Vd=6e-10
 Dd=0.000618039
@@ -46357,6 +46345,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-3FR30V2-3-Full-Range-Loudspeaker-8-Ohm-253-091
 boxbench_vendor_page=https://www.parts-express.com/Beyma-3FR30V2-3-Full-Range-Loudspeaker-8-Ohm-253-091
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-091--3fr30v2-spec-sheet.pdf
+boxbench_corrections=Sd=0.003 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-091--3fr30v2-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-3FR30V2-3-Full-Range-Loudspeaker-8-Ohm-253-091`},{name:`Beyma 4FR40 4_ Full-Range Loudspeaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -46380,7 +46369,6 @@ Qms=11.3
 Qes=0.96
 Rms=0.000225083
 Mms=0.0000044
-Sd=5.5e-7
 Vas=0.00277505
 Vd=1.65e-9
 Dd=0.000836828
@@ -46389,6 +46377,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-4FR40-4-Full-Range-Loudspeaker-8-Ohm-253-092
 boxbench_vendor_page=https://www.parts-express.com/Beyma-4FR40-4-Full-Range-Loudspeaker-8-Ohm-253-092
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-092--4fr40-spec-sheet.pdf
+boxbench_corrections=Sd=0.006 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-092--4fr40-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-4FR40-4-Full-Range-Loudspeaker-8-Ohm-253-092`},{name:`Beyma 5G40Nd_N G40 Series 5_ Midbass Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -46412,7 +46401,6 @@ Qms=2.8
 Qes=0.53
 Rms=2.82743
 Mms=0.009
-Sd=8.5e-7
 Vas=0.00141584
 Vd=2.55e-9
 Dd=0.00104031
@@ -46421,6 +46409,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-5G40Nd-N-G40-Series-5-Midbass-Speaker-8-Ohm-253-001
 boxbench_vendor_page=https://www.parts-express.com/Beyma-5G40Nd-N-G40-Series-5-Midbass-Speaker-8-Ohm-253-001
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-001--5g40ndn-spec-sheet.pdf
+boxbench_corrections=Sd=0.009 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-001--5g40ndn-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-5G40Nd-N-G40-Series-5-Midbass-Speaker-8-Ohm-253-001`},{name:`Beyma 5P200Fe P200 Series 5_ Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -46444,7 +46433,6 @@ Qms=7.5
 Qes=0.35
 Rms=0.603186
 Mms=0.01
-Sd=9.5e-7
 Vas=0.00566336
 Vd=5.415e-9
 Dd=0.00109981
@@ -46453,6 +46441,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-5P200Fe-P200-Series-5-Midbass-Woofer-8-Ohm-253-031
 boxbench_vendor_page=https://www.parts-express.com/Beyma-5P200Fe-P200-Series-5-Midbass-Woofer-8-Ohm-253-031
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-031--5p200fe-spec-sheet.pdf
+boxbench_corrections=Sd=0.009 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-031--5p200fe-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-5P200Fe-P200-Series-5-Midbass-Woofer-8-Ohm-253-031`},{name:`Beyma 5P200Nd P200 Series 5_ Midbass Neo Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -46476,7 +46465,6 @@ Qms=10.7
 Qes=0.31
 Rms=0.503829
 Mms=0.011
-Sd=9.5e-7
 Vas=0.00569168
 Vd=5.415e-9
 Dd=0.00109981
@@ -46485,6 +46473,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-5P200Nd-P200-Series-5-Midbass-Neo-Woofer-8-Ohm-253-032
 boxbench_vendor_page=https://www.parts-express.com/Beyma-5P200Nd-P200-Series-5-Midbass-Neo-Woofer-8-Ohm-253-032
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-032--5p200nd-spec-sheet.pdf
+boxbench_corrections=Sd=0.009 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-032--5p200nd-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-5P200Nd-P200-Series-5-Midbass-Neo-Woofer-8-Ohm-253-032`},{name:`Beyma 6CMV2 6.5_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -46508,7 +46497,6 @@ Qms=1.4
 Qes=0.45
 Rms=0.00525095
 Mms=0.000013
-Sd=0.0000014
 Vas=0.00648455
 Vd=7.98e-9
 Dd=0.00133512
@@ -46517,6 +46505,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-6CMV2-6.5-Woofer-8-Ohm-253-026
 boxbench_vendor_page=https://www.parts-express.com/Beyma-6CMV2-6.5-Woofer-8-Ohm-253-026
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-026--6cmv2-spec-sheet.pdf
+boxbench_corrections=Sd=0.014 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-026--6cmv2-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-6CMV2-6.5-Woofer-8-Ohm-253-026`},{name:`Beyma 6G40Nd G40 Series 6.5_ Midbass Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -46540,7 +46529,6 @@ Qms=3.7
 Qes=0.36
 Rms=0.00202081
 Mms=0.000014
-Sd=0.0000014
 Vas=0.00699425
 Vd=4.2e-9
 Dd=0.00133512
@@ -46549,6 +46537,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-6G40Nd-G40-Series-6.5-Midbass-Speaker-8-Ohm-253-002
 boxbench_vendor_page=https://www.parts-express.com/Beyma-6G40Nd-G40-Series-6.5-Midbass-Speaker-8-Ohm-253-002
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-002--6g40nd-spec-sheet.pdf
+boxbench_corrections=Sd=0.014 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-002--6g40nd-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-6G40Nd-G40-Series-6.5-Midbass-Speaker-8-Ohm-253-002`},{name:`Beyma 6MCF200Nd 6.5_ Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -46572,7 +46561,6 @@ Qms=10.3
 Qes=0.77
 Rms=0.00371501
 Mms=0.000015
-Sd=0.0000014
 Vas=0.000254851
 Vd=3.5e-9
 Dd=0.00133512
@@ -46581,6 +46569,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-6MCF200Nd-6.5-Midbass-Woofer-8-Ohm-253-018
 boxbench_vendor_page=https://www.parts-express.com/Beyma-6MCF200Nd-6.5-Midbass-Woofer-8-Ohm-253-018
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-018--6mcf200nd-spec-sheet.pdf
+boxbench_corrections=Sd=0.014 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-018--6mcf200nd-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-6MCF200Nd-6.5-Midbass-Woofer-8-Ohm-253-018`},{name:`Beyma 6MI100 MI100 Series 6.5_ Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -46604,7 +46593,6 @@ Qms=8.6
 Qes=0.55
 Rms=0.00130924
 Mms=0.000014
-Sd=0.0000014
 Vas=0.00308653
 Vd=4.2e-9
 Dd=0.00133512
@@ -46613,6 +46601,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-6MI100-MI100-Series-6.5-Midrange-8-Ohm-253-037
 boxbench_vendor_page=https://www.parts-express.com/Beyma-6MI100-MI100-Series-6.5-Midrange-8-Ohm-253-037
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-037--6mi100-spec-sheet.pdf
+boxbench_corrections=Sd=0.014 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-037--6mi100-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-6MI100-MI100-Series-6.5-Midrange-8-Ohm-253-037`},{name:`Beyma 6NMFW NMF Series 6.5_ Carbon Fiber Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -46636,7 +46625,6 @@ Qms=7.5
 Qes=0.35
 Rms=0.00150796
 Mms=0.000045
-Sd=0.00000154
 Vas=0.0110436
 Vd=1.386e-8
 Dd=0.00140028
@@ -46645,6 +46633,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-6NMFW-NMF-Series-6.5-Carbon-Fiber-Cone-Woofer-8-Ohm-253-085
 boxbench_vendor_page=https://www.parts-express.com/Beyma-6NMFW-NMF-Series-6.5-Carbon-Fiber-Cone-Woofer-8-Ohm-253-085
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-085--6nmfw-spec-sheet.pdf
+boxbench_corrections=Sd=0.015 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-085--6nmfw-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-6NMFW-NMF-Series-6.5-Carbon-Fiber-Cone-Woofer-8-Ohm-253-085`},{name:`Beyma 6P200Fe P200 Series 6.5_ Midbass Woofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -46668,7 +46657,6 @@ Qms=4.3
 Qes=0.38
 Rms=0.00154303
 Mms=0.000016
-Sd=0.00000135
 Vas=0.00877821
 Vd=5.4e-9
 Dd=0.00131106
@@ -46677,6 +46665,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-6P200Fe-P200-Series-6.5-Midbass-Woofer-16-Ohm-253-034
 boxbench_vendor_page=https://www.parts-express.com/Beyma-6P200Fe-P200-Series-6.5-Midbass-Woofer-16-Ohm-253-034
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-034--6p200fe-16-spec-sheet.pdf
+boxbench_corrections=Sd=0.013 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-034--6p200fe-16-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-6P200Fe-P200-Series-6.5-Midbass-Woofer-16-Ohm-253-034`},{name:`Beyma 6P200Fe P200 Series 6.5_ Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -46700,7 +46689,6 @@ Qms=4.6
 Qes=0.27
 Rms=0.00134679
 Mms=0.000017
-Sd=0.00000135
 Vas=0.0110436
 Vd=6.75e-9
 Dd=0.00131106
@@ -46709,6 +46697,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-6P200Fe-P200-Series-6.5-Midbass-Woofer-8-Ohm-253-033
 boxbench_vendor_page=https://www.parts-express.com/Beyma-6P200Fe-P200-Series-6.5-Midbass-Woofer-8-Ohm-253-033
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-033--6p200fe-spec-sheet.pdf
+boxbench_corrections=Sd=0.013 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-033--6p200fe-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-6P200Fe-P200-Series-6.5-Midbass-Woofer-8-Ohm-253-033`},{name:`Beyma 6P200Nd P200 Series 6.5_ Midbass Neo Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -46732,7 +46721,6 @@ Qms=3.7
 Qes=0.32
 Rms=0.00161665
 Mms=0.000017
-Sd=0.00000135
 Vas=0.0118931
 Vd=7.425e-9
 Dd=0.00131106
@@ -46741,6 +46729,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-6P200Nd-P200-Series-6.5-Midbass-Neo-Woofer-8-Ohm-253-035
 boxbench_vendor_page=https://www.parts-express.com/Beyma-6P200Nd-P200-Series-6.5-Midbass-Neo-Woofer-8-Ohm-253-035
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-035--6p200nd-spec-sheet.pdf
+boxbench_corrections=Sd=0.013 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-035--6p200nd-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-6P200Nd-P200-Series-6.5-Midbass-Neo-Woofer-8-Ohm-253-035`},{name:`Beyma 8CFX260Nd 8_ Coaxial Neo Loudspeaker 8+8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -46764,7 +46753,6 @@ Qms=4.8
 Qes=0.37
 Rms=0.00274889
 Mms=0.000021
-Sd=0.0000022
 Vas=0.0079287
 Vd=1.32e-8
 Dd=0.00167366
@@ -46773,6 +46761,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-8CFX260Nd-8-Coaxial-Neo-Loudspeaker-88-Ohm-253-098
 boxbench_vendor_page=https://www.parts-express.com/Beyma-8CFX260Nd-8-Coaxial-Neo-Loudspeaker-88-Ohm-253-098
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-098--8cfx260nd-spec-sheet.pdf
+boxbench_corrections=Sd=0.022 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-098--8cfx260nd-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-8CFX260Nd-8-Coaxial-Neo-Loudspeaker-88-Ohm-253-098`},{name:`Beyma 8CMV2 8_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -46796,7 +46785,6 @@ Qms=7.7
 Qes=0.55
 Rms=0.0012852
 Mms=0.000021
-Sd=0.0000022
 Vas=0.0147247
 Vd=1.254e-8
 Dd=0.00167366
@@ -46805,6 +46793,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-8CMV2-8-Woofer-8-Ohm-253-027
 boxbench_vendor_page=https://www.parts-express.com/Beyma-8CMV2-8-Woofer-8-Ohm-253-027
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-027--8cmv2-spec-sheet.pdf
+boxbench_corrections=Sd=0.022 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-027--8cmv2-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-8CMV2-8-Woofer-8-Ohm-253-027`},{name:`Beyma 8CX300Fe 8_ Coaxial Loudspeaker 8+16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -46828,7 +46817,6 @@ Qms=4.2
 Qes=0.63
 Rms=0.00266287
 Mms=0.00002
-Sd=0.0000022
 Vas=0.0107604
 Vd=1.32e-8
 Dd=0.00167366
@@ -46837,6 +46825,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-8CX300Fe-8-Coaxial-Loudspeaker-816-Ohm-253-099
 boxbench_vendor_page=https://www.parts-express.com/Beyma-8CX300Fe-8-Coaxial-Loudspeaker-816-Ohm-253-099
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-099--8cx300fe-spec-sheet.pdf
+boxbench_corrections=Sd=0.022 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-099--8cx300fe-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-8CX300Fe-8-Coaxial-Loudspeaker-816-Ohm-253-099`},{name:`Beyma 8CX300Nd_N 8_ Coaxial Neo Loudspeaker 8+8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -46860,7 +46849,6 @@ Qms=13
 Qes=0.3
 Rms=0.000589653
 Mms=0.00002
-Sd=0.0000022
 Vas=0.0229366
 Vd=1.32e-8
 Dd=0.00167366
@@ -46869,6 +46857,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-8CX300Nd-N-8-Coaxial-Neo-Loudspeaker-88-Ohm-253-100
 boxbench_vendor_page=https://www.parts-express.com/Beyma-8CX300Nd-N-8-Coaxial-Neo-Loudspeaker-88-Ohm-253-100
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-100--8cx300nd-n-spec-sheet.pdf
+boxbench_corrections=Sd=0.022 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-100--8cx300nd-n-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-8CX300Nd-N-8-Coaxial-Neo-Loudspeaker-88-Ohm-253-100`},{name:`Beyma 8G40 G40 Series 8_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -46892,7 +46881,6 @@ Qms=6.8
 Qes=0.38
 Rms=0.00135828
 Mms=0.000021
-Sd=0.0000022
 Vas=0.0169901
 Vd=1.43e-8
 Dd=0.00167366
@@ -46901,6 +46889,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-8G40-G40-Series-8-Woofer-8-Ohm-253-003
 boxbench_vendor_page=https://www.parts-express.com/Beyma-8G40-G40-Series-8-Woofer-8-Ohm-253-003
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-003--8g40-spec-sheet.pdf
+boxbench_corrections=Sd=0.022 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-003--8g40-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-8G40-G40-Series-8-Woofer-8-Ohm-253-003`},{name:`Beyma 8MC300Nd MC Series 8_ Neo Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -46924,7 +46913,6 @@ Qms=3.8
 Qes=0.24
 Rms=0.00256288
 Mms=0.000025
-Sd=0.0000022
 Vas=0.00181228
 Vd=1.32e-8
 Dd=0.00167366
@@ -46933,6 +46921,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-8MC300Nd-MC-Series-8-Neo-Woofer-8-Ohm-253-010
 boxbench_vendor_page=https://www.parts-express.com/Beyma-8MC300Nd-MC-Series-8-Neo-Woofer-8-Ohm-253-010
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-010--8mc300nd-spec-sheet.pdf
+boxbench_corrections=Sd=0.022 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-010--8mc300nd-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-8MC300Nd-MC-Series-8-Neo-Woofer-8-Ohm-253-010`},{name:`Beyma 8MC500Nd MC Series 8_ Neo Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -46956,7 +46945,6 @@ Qms=2.6
 Qes=0.19
 Rms=0.00383516
 Mms=0.000023
-Sd=0.0000022
 Vas=0.0158574
 Vd=1.1e-8
 Dd=0.00167366
@@ -46965,6 +46953,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-8MC500Nd-MC-Series-8-Neo-Woofer-8-ohm-253-011
 boxbench_vendor_page=https://www.parts-express.com/Beyma-8MC500Nd-MC-Series-8-Neo-Woofer-8-ohm-253-011
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-011--8mc500nd-spec-sheet.pdf
+boxbench_corrections=Sd=0.022 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-011--8mc500nd-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-8MC500Nd-MC-Series-8-Neo-Woofer-8-ohm-253-011`},{name:`Beyma 8MI100 MI100 Series 8_ Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -46988,7 +46977,6 @@ Qms=7.5
 Qes=0.48
 Rms=0.00143257
 Mms=0.000019
-Sd=0.0000022
 Vas=0.0118931
 Vd=6.6e-9
 Dd=0.00167366
@@ -46997,6 +46985,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-8MI100-MI100-Series-8-Midrange-8-Ohm-253-038
 boxbench_vendor_page=https://www.parts-express.com/Beyma-8MI100-MI100-Series-8-Midrange-8-Ohm-253-038
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-038--8mi100-spec-sheet.pdf
+boxbench_corrections=Sd=0.022 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-038--8mi100-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-8MI100-MI100-Series-8-Midrange-8-Ohm-253-038`},{name:`Beyma 8NMFW NMF Series 8_ Carbon Fiber Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -47020,7 +47009,6 @@ Qms=7.6
 Qes=0.36
 Rms=0.00146828
 Mms=0.000048
-Sd=0.00000227
 Vas=0.026901
 Vd=2.043e-8
 Dd=0.00170007
@@ -47029,6 +47017,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-8NMFW-NMF-Series-8-Carbon-Fiber-Cone-Woofer-8-Ohm-253-086
 boxbench_vendor_page=https://www.parts-express.com/Beyma-8NMFW-NMF-Series-8-Carbon-Fiber-Cone-Woofer-8-Ohm-253-086
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-086--8nmfw-spec-sheet.pdf
+boxbench_corrections=Sd=0.023 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-086--8nmfw-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-8NMFW-NMF-Series-8-Carbon-Fiber-Cone-Woofer-8-Ohm-253-086`},{name:`Beyma 8P300Fe_N P200 Series 8_ Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -47052,7 +47041,6 @@ Qms=14.3
 Qes=0.32
 Rms=0.000582183
 Mms=0.000025
-Sd=0.0000022
 Vas=0.0249188
 Vd=1.32e-8
 Dd=0.00167366
@@ -47061,6 +47049,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-8P300Fe-N-P200-Series-8-Midbass-Woofer-8-Ohm-253-036
 boxbench_vendor_page=https://www.parts-express.com/Beyma-8P300Fe-N-P200-Series-8-Midbass-Woofer-8-Ohm-253-036
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-036--8p300fen-spec-sheet.pdf
+boxbench_corrections=Sd=0.022 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/253-036--8p300fen-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/Beyma-8P300Fe-N-P200-Series-8-Midbass-Woofer-8-Ohm-253-036`},{name:`Beyma T25M NMF Series 1_ Aluminum Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -67387,7 +67376,6 @@ Qms=3.86
 Qes=1.27
 Rms=0.435281
 Mms=0.002057
-Sd=3e-7
 Vas=0.000849504
 Vd=7.65e-10
 Dd=0.000618039
@@ -67395,6 +67383,7 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/HiVi-C3N-III-3-Paper-Cone-Full-Range-Driver-297-714
 boxbench_vendor_page=https://www.parts-express.com/HiVi-C3N-III-3-Paper-Cone-Full-Range-Driver-297-714
+boxbench_corrections=Sd=0.003 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,vendorpage:`https://www.parts-express.com/HiVi-C3N-III-3-Paper-Cone-Full-Range-Driver-297-714`},{name:`HiVi C6.5 6-1_2_ Reinforced Paper Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -78566,7 +78555,6 @@ Qms=19.89
 Qes=2.1
 Rms=0.00218695
 Mms=0.00007
-Sd=0.0000035
 Vas=0.0283168
 Vd=1.89e-8
 Dd=0.002111
@@ -78575,6 +78563,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/JBL-Selenium-10PWX-8R-10-Professional-Woofer-8-Ohm-264-491
 boxbench_vendor_page=https://www.parts-express.com/JBL-Selenium-10PWX-8R-10-Professional-Woofer-8-Ohm-264-491
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/264-491--jbl-selenium-10pwx-8r-spec-sheet.pdf
+boxbench_corrections=Sd=0.035 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/264-491--jbl-selenium-10pwx-8r-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/JBL-Selenium-10PWX-8R-10-Professional-Woofer-8-Ohm-264-491`},{name:`Selenium JBL Selenium 10WP 350 10_ 350 Watt Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
@@ -78662,7 +78651,6 @@ Qms=123
 Qes=0.96
 Rms=0.000298732
 Mms=0.00008
-Sd=0.0000054
 Vas=0.0515366
 Vd=2.16e-8
 Dd=0.00262212
@@ -78671,6 +78659,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/JBL-Selenium-12PWX-8R-12-Professional-Woofer-8-ohm-264-492
 boxbench_vendor_page=https://www.parts-express.com/JBL-Selenium-12PWX-8R-12-Professional-Woofer-8-ohm-264-492
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/264-492--jbl-selenium-12pwx-8r-spec-sheet.pdf
+boxbench_corrections=Sd=0.054 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/264-492--jbl-selenium-12pwx-8r-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/JBL-Selenium-12PWX-8R-12-Professional-Woofer-8-ohm-264-492`},{name:`Selenium JBL Selenium 12WP 500 12_ 500 Watt Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
@@ -78726,7 +78715,6 @@ Qms=20.12
 Qes=1.11
 Rms=1.17725
 Mms=0.0732
-Sd=0.0000092
 Vas=0.157725
 Vd=4.6e-8
 Dd=0.00342254
@@ -78735,6 +78723,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/JBL-Selenium-15PWX-8R-15-Professional-Woofer-8-Ohm-294-493
 boxbench_vendor_page=https://www.parts-express.com/JBL-Selenium-15PWX-8R-15-Professional-Woofer-8-Ohm-294-493
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/294-493--jbl-15pwx-8r-spec-sheet.pdf
+boxbench_corrections=Sd=0.092 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/294-493--jbl-15pwx-8r-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/JBL-Selenium-15PWX-8R-15-Professional-Woofer-8-Ohm-294-493`},{name:`Selenium JBL Selenium 15WP 550 15_ 550 Watt Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
@@ -78917,7 +78906,6 @@ Qms=7.53
 Qes=1.18
 Rms=1.2228
 Mms=0.01654
-Sd=0.0000025
 Vas=0.0172732
 Vd=9.75e-9
 Dd=0.00178412
@@ -78926,6 +78914,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/JBL-Selenium-8PWX-8R-8-Professional-Woofer-8-Ohm-294-494
 boxbench_vendor_page=https://www.parts-express.com/JBL-Selenium-8PWX-8R-8-Professional-Woofer-8-Ohm-294-494
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/294-494--jbl-8pwx-8r-spec-sheet.pdf
+boxbench_corrections=Sd=0.025 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://www.parts-express.com/pedocs/specs/294-494--jbl-8pwx-8r-spec-sheet.pdf`,vendorpage:`https://www.parts-express.com/JBL-Selenium-8PWX-8R-8-Professional-Woofer-8-Ohm-294-494`},{name:`Selenium JBL Selenium 8WP 300 8_ 300 Watt Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
@@ -81155,7 +81144,6 @@ Qms=19.3
 Qes=0.69
 Rms=0.337983
 Mms=0.0143
-Sd=0.00000241
 Vas=0.0271841
 Vd=
 Dd=0.00175172
@@ -81164,6 +81152,7 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Timpano-Audio-TPT-MD8-8-Midrange-Speaker-294-3324
 boxbench_vendor_page=https://www.parts-express.com/Timpano-Audio-TPT-MD8-8-Midrange-Speaker-294-3324
 boxbench_datasheet=https://cdn.shopify.com/s/files/1/0840/9428/8174/files/Timpano-Flyer-2-Panel-spread-For-Website-1.pdf?v=1722888558
+boxbench_corrections=Sd=0.024 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `,datasheet:`https://cdn.shopify.com/s/files/1/0840/9428/8174/files/Timpano-Flyer-2-Panel-spread-For-Website-1.pdf?v=1722888558`,vendorpage:`https://www.parts-express.com/Timpano-Audio-TPT-MD8-8-Midrange-Speaker-294-3324`},{name:`Timpano Audio TPT-T2500-12 D2  12_ Cast Frame DVC Subwoofer 2 Ohms Per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Timpano Audio
