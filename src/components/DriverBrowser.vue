@@ -65,30 +65,41 @@ const FULLRANGE_PAT= /\bfull[-_ ]?range\b|\bfullrange\b/i;
 const BMR_PAT      = /\bBMR\b|balanced.mode/i;
 const PR_PAT       = /\bpassive.radiator\b|\bP\.?R\.?\b/i;
 
+// Returns { types: string[], canonical: string }
+// types  = functional chip IDs for filtering
+// canonical = the normalised product-type name for display (e.g. "Subwoofer", "Midrange")
 function classifyTypes(Fs, Sd, nameStr) {
   const nm = nameStr || '';
   const types = new Set();
+  const canonical = [];
 
-  // PR is orthogonal — check first and return immediately
-  if (PR_PAT.test(nm)) return ['pr'];
+  if (PR_PAT.test(nm)) return { types: ['pr'], canonical: 'Passive Radiator' };
 
-  // Name-based detection (most reliable — manufacturer's own label)
-  if (TWEET_PAT.test(nm))    types.add('tweet');
-  if (SUB_PAT.test(nm))      { types.add('sub'); types.add('woofer'); types.add('bass'); }
-  if (MIDBASS_PAT.test(nm))  { types.add('woofer'); types.add('mid'); types.add('bass'); }
-  if (WOOFER_PAT.test(nm) && !MIDBASS_PAT.test(nm)) { types.add('woofer'); types.add('bass'); }
-  if (MIDRANGE_PAT.test(nm)) { types.add('mid'); types.add('woofer'); }  // cone driver, not bass, not tweet
-  if (FULLRANGE_PAT.test(nm)){ types.add('woofer'); types.add('mid'); types.add('tweet'); types.add('bass'); types.add('fullrange'); }
-  if (BMR_PAT.test(nm))      { types.add('mid'); types.add('tweet'); }  // NOT bass
+  if (TWEET_PAT.test(nm))    { types.add('tweet');
+    if (/\bAMT\b|air.motion/i.test(nm))          canonical.push('AMT');
+    else if (/\bribbon\b/i.test(nm))              canonical.push('Ribbon Tweeter');
+    else if (/\bplanar\b/i.test(nm))              canonical.push('Planar Tweeter');
+    else                                          canonical.push('Tweeter');
+  }
+  if (SUB_PAT.test(nm))      { types.add('sub'); types.add('woofer'); types.add('bass');
+                               canonical.push('Subwoofer'); }
+  if (MIDBASS_PAT.test(nm))  { types.add('woofer'); types.add('mid'); types.add('bass');
+                               canonical.push('Mid-bass'); }
+  if (WOOFER_PAT.test(nm) && !MIDBASS_PAT.test(nm)) { types.add('woofer'); types.add('bass');
+                               canonical.push('Woofer'); }
+  if (MIDRANGE_PAT.test(nm)) { types.add('mid'); types.add('woofer');
+                               canonical.push('Midrange'); }
+  if (FULLRANGE_PAT.test(nm)){ types.add('woofer'); types.add('mid'); types.add('tweet'); types.add('bass'); types.add('fullrange');
+                               canonical.push('Full-range'); }
+  if (BMR_PAT.test(nm))      { types.add('mid'); types.add('tweet');
+                               canonical.push('BMR'); }
 
-  // If name gave us something, return it
-  if (types.size > 0) return [...types];
+  if (types.size > 0) return { types: [...types], canonical: canonical.join(' / ') };
 
-  // Parameter fallbacks (for drivers with non-descriptive model numbers)
   const SdCm2 = Sd != null ? Sd * 1e4 : null;
-  if (SdCm2 != null && SdCm2 < 12) return ['tweet'];
-  if (Fs != null && Fs < 40)        return ['sub', 'woofer', 'bass'];
-  return ['woofer', 'bass'];   // safe default — most unknown drivers are woofers
+  if (SdCm2 != null && SdCm2 < 12) return { types: ['tweet'],               canonical: 'Tweeter' };
+  if (Fs != null && Fs < 40)        return { types: ['sub','woofer','bass'], canonical: 'Subwoofer' };
+  return                                   { types: ['woofer','bass'],       canonical: 'Woofer' };
 }
 
 function toggleType(id) {
@@ -204,7 +215,7 @@ async function fetchSource(src) {
           sourceUrl:  src.url || '',
           sourceDesc: src.description || '',
           _Fs: null, _Sd: null, _Re: null, _Znom: null, _Pe: null,
-          _types: classifyTypes(null, null, nm),  // name-only until content loads
+          ...(({ types, canonical }) => ({ _types: types, _canonical: canonical }))(classifyTypes(null, null, nm)),
         };
       });
     allFiles.value = [
@@ -259,7 +270,7 @@ async function init() {
         sourceUrl:  src.url || '',
         sourceDesc: src.description || '',
         _Fs: qp.Fs, _Sd: qp.Sd, _Re: qp.Re, _Znom: qp.Znom, _Pe: qp.Pe,
-        _types: classifyTypes(qp.Fs, qp.Sd, nameStr),
+        ...(({ types, canonical }) => ({ _types: types, _canonical: canonical }))(classifyTypes(qp.Fs, qp.Sd, nameStr)),
       };
     });
     allFiles.value = [...allFiles.value, ...entries];
@@ -328,7 +339,7 @@ async function loadSpeakerBoxLite() {
           sourceDesc: 'speakerboxlite.com community database',
           sblData: d,
           _Fs: d.fs || null, _Sd: SblSd, _Re: d.re || null, _Znom: null, _Pe: d.pe || null,
-          _types: classifyTypes(d.fs, SblSd, sblName),
+          ...(({ types, canonical }) => ({ _types: types, _canonical: canonical }))(classifyTypes(d.fs, SblSd, sblName)),
         });
       }
     }
@@ -589,6 +600,7 @@ function onBackdrop(e) { if (e.target === e.currentTarget) close(); }
               <a v-if="f.frd" class="dpdf"
                  :href="f.frd" target="_blank" rel="noopener"
                  title="Download frequency response & impedance data (FRD/ZMA)" @click.stop>FRD ↗</a>
+              <span v-if="f._canonical" class="dtype">{{ f._canonical }}</span>
               <a v-if="f.sourceUrl" class="stag"
                  :title="f.sourceUrl + (f.sourceDesc ? ' — ' + f.sourceDesc : '')"
                  @click.stop.prevent="openSourceUrl(f.sourceUrl)">{{ f.sourceName }}</a>
@@ -635,6 +647,7 @@ h2 { margin:0; padding:12px 16px; font-size:14px; font-weight:600; display:flex;
 .ditem-older .ddate { color:#c07000; }
 .dpdf { font-size:9px; font-weight:600; color:var(--acc); white-space:nowrap; text-decoration:none; border:1px solid var(--acc); border-radius:2px; padding:0 3px; line-height:1.6; }
 .dpdf:hover { background:var(--acc); color:var(--bg); }
+.dtype { font-size:9px; color:var(--acc); white-space:nowrap; border:1px solid var(--acc); border-radius:2px; padding:0 3px; line-height:1.6; opacity:0.7; }
 .stag { font-size:10px; color:var(--mut); white-space:nowrap; cursor:pointer; }
 .stag:hover { color:var(--acc); text-decoration:underline; }
 .status.loading { padding:8px 10px; }

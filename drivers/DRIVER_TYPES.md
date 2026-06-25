@@ -17,16 +17,23 @@ driver that carries that label.
 
 ## Label assignment per product type
 
-| Vendor/manufacturer calls it | Labels assigned |
-|---|---|
-| Subwoofer | `sub` + `woofer` + `bass` |
-| Woofer | `woofer` + `bass` |
-| Mid-bass / mid-woofer / midbass | `woofer` + `mid` + `bass` |
-| Midrange / mid-range | `woofer` + `mid` (cone driver like a woofer, but no bass, no tweet) |
-| Full-range / fullrange | `woofer` + `mid` + `tweet` + `bass` + `fullrange` |
-| BMR / balanced mode radiator | `mid` + `tweet` (**not** bass — needs a separate woofer for LF) |
-| Tweeter / dome / ribbon / planar / AMT / air motion | `tweet` |
-| Passive radiator | `pr` |
+| Vendor/manufacturer calls it | Canonical name (displayed) | Labels assigned |
+|---|---|---|
+| Subwoofer | `Subwoofer` | `sub` + `woofer` + `bass` |
+| Woofer | `Woofer` | `woofer` + `bass` |
+| Mid-bass / mid-woofer / midbass | `Mid-bass` | `woofer` + `mid` + `bass` |
+| Midrange / mid-range | `Midrange` | `woofer` + `mid` (cone driver; no bass, no tweet) |
+| Full-range / fullrange | `Full-range` | `woofer` + `mid` + `tweet` + `bass` + `fullrange` |
+| BMR / balanced mode radiator | `BMR` | `mid` + `tweet` (NOT bass — needs separate woofer for LF) |
+| Tweeter | `Tweeter` | `tweet` |
+| Dome tweeter | `Tweeter` | `tweet` |
+| Ribbon tweeter | `Ribbon Tweeter` | `tweet` |
+| Planar | `Planar Tweeter` | `tweet` |
+| AMT / air motion transformer | `AMT` | `tweet` |
+| Passive radiator | `Passive Radiator` | `pr` |
+| Sd < 12 cm² (param fallback) | `Tweeter` | `tweet` |
+| Fs < 40 Hz (param fallback) | `Subwoofer` | `sub` + `woofer` + `bass` |
+| Everything else (fallback) | `Woofer` | `woofer` + `bass` |
 
 ## Classification priority
 
