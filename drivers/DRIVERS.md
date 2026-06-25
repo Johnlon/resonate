@@ -48,9 +48,9 @@ WinISD and other parsers ignore these lines.
 | Field | Type | What it MUST contain | What it must NOT contain |
 |---|---|---|---|
 | `boxbench_datasheet` | URL | Manufacturer PDF datasheet — the document that specifies the T/S parameters | A product web page, a retailer page, a ZIP, an image, or any non-PDF |
-| `boxbench_manu_page` | URL | The **manufacturer's** own product page for this specific model (e.g. `sbacoustics.com/product/…`, `scan-speak.dk/product/…`) | A retailer page, a brand homepage, a category page |
-| `boxbench_vendor_page` | URL | The page on **the site where this driver was discovered** — SoundImports, Parts Express, Dayton Audio's own site, etc. When the manufacturer's site was the discovery point, this equals `boxbench_manu_page` | A brand homepage, a category page |
-| `boxbench_source` | URL | The specific page or resource where the T/S parameter values were actually read from. Usually the same as `boxbench_vendor_page` | — |
+| `boxbench_manu_page` | URL | The manufacturer's own product page — set this when the **scraped site is the manufacturer** (SB Acoustics, Scan-Speak, Wavecor, Dayton Audio direct, etc.) | A retailer page, a brand homepage, a category page |
+| `boxbench_vendor_page` | URL | The vendor/retailer product listing — set this when the **scraped site is a reseller** (Parts Express, SoundImports, etc.) | A brand homepage, a category page |
+| `boxbench_source` | URL | The exact URL from which the T/S parameter values were read. Usually identical to whichever of `boxbench_manu_page` / `boxbench_vendor_page` applies | — |
 | `boxbench_frd` | URL | A file or archive that contains machine-readable **frequency response** data in FRD or tab-separated (freq / dB / phase) format. PEs `_data.zip` files qualify; they contain `.frd` and `.zma` files | A PDF graph, a CAD file, a 3D model, a spec sheet, an image, a general product ZIP that has not been inspected |
 | `boxbench_impedance` | URL | A file or archive that contains machine-readable **impedance vs frequency** data (freq / Ω / °) — **only when this data is in a separate file from `boxbench_frd`** | Anything already covered by `boxbench_frd`; do not duplicate if the same ZIP holds both |
 
@@ -94,37 +94,30 @@ them in order. **Do not skip the inspection steps.**
 4. **If no PDF is found** → leave `boxbench_datasheet` unset. Set
    `boxbench_manu_page` so a human reviewer can find the datasheet later.
 
-### `boxbench_manu_page`
+### `boxbench_manu_page` and `boxbench_vendor_page`
 
-1. Set to the manufacturer's own product page for **this specific model** — not a
-   brand homepage, not a category listing.
-2. For direct-manufacturer scrapers (SB Acoustics, Scan-Speak, Wavecor, etc.)
-   the scraped URL is the manufacturer page. Set both `boxbench_manu_page` and
-   `boxbench_vendor_page` to this URL (they are the same when the manufacturer
-   sells direct).
-3. For retailer scrapers (Parts Express, SoundImports) the manufacturer page is
-   often not known at scrape time — leave unset if unknown. Do not use the
-   retailer page here.
+The directory a WDR lives in tells you what kind of site was scraped. Use that
+to decide which field(s) to fill:
 
-### `boxbench_vendor_page`
+| Directory / scraped site | `boxbench_manu_page` | `boxbench_vendor_page` |
+|---|---|---|
+| `sb-acoustics/`, `scan-speak/`, `wavecor/` — manufacturer sells direct | ✓ set to scraped URL | leave unset |
+| `parts-express/`, `soundimports/` — third-party retailer | leave unset (manu page unknown at scrape time) | ✓ set to scraped URL |
+| `dayton-audio/` scraped from daytonaudio.com — manu who also sells direct | ✓ set to scraped URL | ✓ set to same URL |
 
-1. Set to the product page on **the site where this driver was discovered** —
-   the Parts Express listing, the SoundImports page, the Dayton Audio product
-   page, etc.
-2. When the discovery site is the manufacturer's own site (SB Acoustics, Scan-
-   Speak, Wavecor, Dayton Audio direct), set this to the same URL as
-   `boxbench_manu_page`.
-3. When discovered via a third-party retailer (PE, SI), this is the retailer
-   page. `boxbench_manu_page` may or may not be separately known.
-4. Leave unset only if neither a vendor page nor a manufacturer page is known.
+Rules:
+- Only set a field when the scraped site actually fulfils that role. Do not copy
+  the retailer URL into `boxbench_manu_page` or vice versa.
+- If a separate manufacturer page is discovered during a retailer scrape (e.g.
+  the PE listing links to a Dayton Audio product page), set `boxbench_manu_page`
+  to that URL as well.
+- Do not set either field to a brand homepage or a category listing.
 
 ### `boxbench_source`
 
-1. Set to the specific page or resource where the T/S parameter values were read.
-2. For retailer scrapers: same as `boxbench_vendor_page` (the PE or SoundImports
-   listing).
-3. For direct-manufacturer scrapers: same as `boxbench_manu_page`.
-4. Never leave empty for scraped files — it is the chain of custody for the data.
+1. Set to the exact URL from which the T/S parameter values were read.
+2. Usually identical to whichever of the above fields was set.
+3. Never leave empty for scraped files — it is the chain of custody for the data.
 
 ### `boxbench_frd`
 
