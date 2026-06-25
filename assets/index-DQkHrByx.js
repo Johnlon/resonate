@@ -823,7 +823,9 @@ boxbench_issue=filename_convention
 boxbench_detail=Underscore in filename replaces / in model name (AC200/50C2C) — expected, / not valid in filenames
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Aurum Cantus  AC300-75C2C`,date:`20120812`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_vendor_page=https://www.parts-express.com/Aurum-Cantus-AC200-50C2C-8-Woofer-296-452
+`,vendorpage:`https://www.parts-express.com/Aurum-Cantus-AC200-50C2C-8-Woofer-296-452`},{name:`Aurum Cantus  AC300-75C2C`,date:`20120812`,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC300-75C2C
 Manufacturer=
@@ -5353,7 +5355,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DA115-8`,date:`20120120`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/CX120-8/pdf_dayton%20audio_CX120-8_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/CX120-8/pdf_dayton%20audio_CX120-8_1.pdf`},{name:`Dayton Audio DA115-8`,date:`20120120`,content:`[Driver]
 Brand=Dayton Audio
 Model=DA115-8
 Manufacturer=
@@ -5411,7 +5415,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DA135-8`,date:`20170310`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DA115-8/pdf_dayton%20audio_DA115-8_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DA115-8/pdf_dayton%20audio_DA115-8_1.pdf`},{name:`Dayton Audio DA135-8`,date:`20170310`,content:`[Driver]
 Brand=Dayton Audio
 Model=DA135-8
 Manufacturer=
@@ -5469,7 +5475,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DA215-8`,date:`20120603`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DA135-8/pdf_Dayton%20Audio_DA135-8_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DA135-8/pdf_Dayton%20Audio_DA135-8_1.pdf`},{name:`Dayton Audio DA215-8`,date:`20120603`,content:`[Driver]
 Brand=Dayton Audio
 Model=DA215-8
 Manufacturer=
@@ -5527,7 +5535,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DA270-8`,date:`20120603`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DA215-8/pdf_dayton%20audio_DA215-8_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DA215-8/pdf_dayton%20audio_DA215-8_1.pdf`},{name:`Dayton Audio DA270-8`,date:`20120603`,content:`[Driver]
 Brand=Dayton Audio
 Model=DA270-8
 Manufacturer=
@@ -5585,7 +5595,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DC130B-4`,date:`20161203`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_vendor_page=https://www.parts-express.com/Dayton-Audio-DA270-8-10-Aluminum-Cone-Woofer-295-334
+`,vendorpage:`https://www.parts-express.com/Dayton-Audio-DA270-8-10-Aluminum-Cone-Woofer-295-334`},{name:`Dayton Audio DC130B-4`,date:`20161203`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC130B-4
 Manufacturer=
@@ -5643,7 +5655,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DC160-4`,date:`20130916`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DC130B-4/pdf_dayton%20audio_DC130B-4_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DC130B-4/pdf_dayton%20audio_DC130B-4_1.pdf`},{name:`Dayton Audio DC160-4`,date:`20130916`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC160-4
 Manufacturer=
@@ -5701,7 +5715,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DC160-8`,date:`20130916`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DC160-4/pdf_dayton%20audio_DC160-4_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DC160-4/pdf_dayton%20audio_DC160-4_1.pdf`},{name:`Dayton Audio DC160-8`,date:`20130916`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC160-8
 Manufacturer=
@@ -5759,7 +5775,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DC200-8`,date:`20120109`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DC160-8/pdf_dayton%20audio_DC160-8_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DC160-8/pdf_dayton%20audio_DC160-8_1.pdf`},{name:`Dayton Audio DC200-8`,date:`20120109`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC200-8
 Manufacturer=
@@ -5817,7 +5835,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DC250-8`,date:`20120720`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DC200-8/pdf_dayton%20audio_DC200-8_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DC200-8/pdf_dayton%20audio_DC200-8_1.pdf`},{name:`Dayton Audio DC250-8`,date:`20120720`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC250-8
 Manufacturer=
@@ -5875,7 +5895,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DC300-8`,date:`20110919`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DC250-8/pdf_dayton%20audio_DC250-8_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DC250-8/pdf_dayton%20audio_DC250-8_1.pdf`},{name:`Dayton Audio DC300-8`,date:`20110919`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC300-8
 Manufacturer=
@@ -5933,7 +5955,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DC380-8`,date:`20120120`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DC300-8/pdf_dayton%20audio_DC300-8_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DC300-8/pdf_dayton%20audio_DC300-8_1.pdf`},{name:`Dayton Audio DC380-8`,date:`20120120`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC380-8
 Manufacturer=
@@ -5994,7 +6018,9 @@ boxbench_issue=ts_community_measured
 boxbench_detail=Confirmed DC380-8 by exact Sd (834.7 cm²) and Xmax (4.35 mm) match — physical dimensions that do not vary. T/S params differ from datasheet (e.g. Fs 21.6 vs 18.8 Hz, Qms 3.52 vs 2.87, Qts 0.35 vs 0.30, Vas 306 vs 391 L) due to community measurement: break-in softens the suspension shifting Fs/Qms, and different measurement tools extract different values from the same impedance curve.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DCS205-4`,date:`20110524`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DC380-8/pdf_dayton%20audio_DC380-8_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DC380-8/pdf_dayton%20audio_DC380-8_1.pdf`},{name:`Dayton Audio DCS205-4`,date:`20110524`,content:`[Driver]
 Brand=Dayton Audio
 Model=DCS205-4
 Manufacturer=
@@ -6052,7 +6078,9 @@ Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DCS255-4`,date:`20110529`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DCS205-4/pdf_dayton%20audio_DCS205-4_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DCS205-4/pdf_dayton%20audio_DCS205-4_1.pdf`},{name:`Dayton Audio DCS255-4`,date:`20110529`,content:`[Driver]
 Brand=Dayton Audio
 Model=DCS255-4
 Manufacturer=
@@ -6110,7 +6138,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENCECCCEECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DCS305-4`,date:`20110530`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DCS255-4/pdf_dayton%20audio_DCS255-4_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DCS255-4/pdf_dayton%20audio_DCS255-4_1.pdf`},{name:`Dayton Audio DCS305-4`,date:`20110530`,content:`[Driver]
 Brand=Dayton Audio
 Model=DCS305-4
 Manufacturer=
@@ -6168,7 +6198,9 @@ Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DCS380-4`,date:`20081116`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DCS305-4/pdf_dayton%20audio_DCS305-4_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DCS305-4/pdf_dayton%20audio_DCS305-4_1.pdf`},{name:`Dayton Audio DCS380-4`,date:`20081116`,content:`[Driver]
 Brand=Dayton Audio
 Model=DCS380-4
 Manufacturer=Dayton Audio
@@ -6288,7 +6320,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DCS450-4`,date:`20090402`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DCS385-4/pdf_dayton%20audio_DCS385-4_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DCS385-4/pdf_dayton%20audio_DCS385-4_1.pdf`},{name:`Dayton Audio DCS450-4`,date:`20090402`,content:`[Driver]
 Brand=Dayton Audio
 Model=DCS450-4
 Manufacturer=Dayton Audio
@@ -6404,7 +6438,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DS135-8`,date:`20131019`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DS115-8/pdf_dayton%20audio_DS115-8_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DS115-8/pdf_dayton%20audio_DS115-8_1.pdf`},{name:`Dayton Audio DS135-8`,date:`20131019`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS135-8
 Manufacturer=
@@ -6462,7 +6498,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DS175-8`,date:`20120413`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DS135-8/pdf_dayton%20audio_DS135-8_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DS135-8/pdf_dayton%20audio_DS135-8_1.pdf`},{name:`Dayton Audio DS175-8`,date:`20120413`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS175-8
 Manufacturer=
@@ -6520,7 +6558,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DS215-8`,date:`20120417`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DS175-8/pdf_dayton%20audio_DS175-8_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DS175-8/pdf_dayton%20audio_DS175-8_1.pdf`},{name:`Dayton Audio DS215-8`,date:`20120417`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS215-8
 Manufacturer=
@@ -6578,7 +6618,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DS270-8`,date:`20120523`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DS215-8/pdf_dayton%20audio_DS215-8_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DS215-8/pdf_dayton%20audio_DS215-8_1.pdf`},{name:`Dayton Audio DS270-8`,date:`20120523`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS270-8
 Manufacturer=
@@ -6636,7 +6678,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DS315-8`,date:`20120622`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DS270-8/pdf_dayton%20audio_DS270-8_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DS270-8/pdf_dayton%20audio_DS270-8_1.pdf`},{name:`Dayton Audio DS315-8`,date:`20120622`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS315-8
 Manufacturer=
@@ -6694,7 +6738,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DSA315-8`,date:`20170106`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DS315-8/pdf_dayton%20audio_DS315-8_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DS315-8/pdf_dayton%20audio_DS315-8_1.pdf`},{name:`Dayton Audio DSA315-8`,date:`20170106`,content:`[Driver]
 Brand=Dayton Audio
 Model=DSA315-8
 Manufacturer=
@@ -6752,7 +6798,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DVC310-88`,date:`20120907`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DSA315-8/pdf_dayton%20audio_DSA315-8_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DSA315-8/pdf_dayton%20audio_DSA315-8_1.pdf`},{name:`Dayton Audio DVC310-88`,date:`20120907`,content:`[Driver]
 Brand=Dayton Audio
 Model=DVC310-88
 Manufacturer=
@@ -7042,7 +7090,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio LS12-44`,date:`20150322`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/LS10-44/pdf_dayton%20audio_LS10-44-_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/LS10-44/pdf_dayton%20audio_LS10-44-_1.pdf`},{name:`Dayton Audio LS12-44`,date:`20150322`,content:`[Driver]
 Brand=Dayton Audio
 Model=LS12-44
 Manufacturer=
@@ -7158,7 +7208,9 @@ Vcd=0
 DVol=0
 ParState=CEECEENNCEECEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio ND91-4`,date:`20161004`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/ND105-8/pdf_dayton%20audio_ND105-8_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/ND105-8/pdf_dayton%20audio_ND105-8_1.pdf`},{name:`Dayton Audio ND91-4`,date:`20161004`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND91-4
 Manufacturer=
@@ -7216,7 +7268,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio PA200-8`,date:`20150126`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/ND91-4/pdf_dayton%20audio_ND91-4_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/ND91-4/pdf_dayton%20audio_ND91-4_1.pdf`},{name:`Dayton Audio PA200-8`,date:`20150126`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA200-8
 Manufacturer=
@@ -7274,7 +7328,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio PA255-8`,date:`20110912`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/PA200-8/pdf_dayton%20audio_PA200-8_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/PA200-8/pdf_dayton%20audio_PA200-8_1.pdf`},{name:`Dayton Audio PA255-8`,date:`20110912`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA255-8
 Manufacturer=
@@ -7332,7 +7388,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio PA310-8`,date:`20120623`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/PA255-8/pdf_dayton%20audio_PA255-8_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/PA255-8/pdf_dayton%20audio_PA255-8_1.pdf`},{name:`Dayton Audio PA310-8`,date:`20120623`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA310-8
 Manufacturer=
@@ -7390,7 +7448,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio PA380-8`,date:`20121121`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/PA310-8/pdf_dayton%20audio_PA310-8_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/PA310-8/pdf_dayton%20audio_PA310-8_1.pdf`},{name:`Dayton Audio PA380-8`,date:`20121121`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA380-8
 Manufacturer=
@@ -7448,7 +7508,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio PA460-8 v2015`,date:`20110908`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/PA380-8/pdf_dayton%20audio_PA380-8_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/PA380-8/pdf_dayton%20audio_PA380-8_1.pdf`},{name:`Dayton Audio PA460-8 v2015`,date:`20110908`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA460-8
 Manufacturer=
@@ -7510,7 +7572,9 @@ boxbench_detail=v2015 in filename indicates the 2015 revision of the PA460-8. Mu
 boxbench_community=v2015 in filename = 2015 revision
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio PA460-8`,date:`20110908`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/295-472-dayton-audio-rss460ho-4-specifications.pdf
+`,datasheet:`https://www.parts-express.com/pedocs/specs/295-472-dayton-audio-rss460ho-4-specifications.pdf`},{name:`Dayton Audio PA460-8`,date:`20110908`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA460-8
 Manufacturer=
@@ -7568,7 +7632,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio PK165-8`,date:`20130713`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/295-472-dayton-audio-rss460ho-4-specifications.pdf
+`,datasheet:`https://www.parts-express.com/pedocs/specs/295-472-dayton-audio-rss460ho-4-specifications.pdf`},{name:`Dayton Audio PK165-8`,date:`20130713`,content:`[Driver]
 Brand=Dayton Audio
 Model=PK165-8
 Manufacturer=
@@ -7742,7 +7808,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RS125-4`,date:`20170410`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/RS100-8/pdf_dayton%20audio_RS100-8_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/RS100-8/pdf_dayton%20audio_RS100-8_1.pdf`},{name:`Dayton Audio RS125-4`,date:`20170410`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS125-4
 Manufacturer=
@@ -7800,7 +7868,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RS125-8`,date:`20170410`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/RS125-4/pdf_dayton%20audio_RS125-4_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/RS125-4/pdf_dayton%20audio_RS125-4_1.pdf`},{name:`Dayton Audio RS125-8`,date:`20170410`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS125-8
 Manufacturer=
@@ -7858,7 +7928,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RS150-4`,date:`20130324`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/RS125-8/pdf_dayton%20audio_RS125-8_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/RS125-8/pdf_dayton%20audio_RS125-8_1.pdf`},{name:`Dayton Audio RS150-4`,date:`20130324`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS150-4
 Manufacturer=
@@ -7916,7 +7988,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RS150-8`,date:`20130324`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/RS150-4/pdf_dayton%20audio_RS150-4_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/RS150-4/pdf_dayton%20audio_RS150-4_1.pdf`},{name:`Dayton Audio RS150-8`,date:`20130324`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS150-8
 Manufacturer=
@@ -7974,7 +8048,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RS180-4`,date:`20120725`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/RS150-8/pdf_dayton%20audio_RS150-8_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/RS150-8/pdf_dayton%20audio_RS150-8_1.pdf`},{name:`Dayton Audio RS180-4`,date:`20120725`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS180-4
 Manufacturer=
@@ -8032,7 +8108,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RS225-4`,date:`20130727`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/RS180-4/pdf_dayton%20audio_RS180-4_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/RS180-4/pdf_dayton%20audio_RS180-4_1.pdf`},{name:`Dayton Audio RS225-4`,date:`20130727`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS225-4
 Manufacturer=
@@ -8090,7 +8168,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RS225-8`,date:`20130727`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/RS225-4/pdf_dayton%20audio_RS225-4_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/RS225-4/pdf_dayton%20audio_RS225-4_1.pdf`},{name:`Dayton Audio RS225-8`,date:`20130727`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS225-8
 Manufacturer=
@@ -8148,7 +8228,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RS225P-4`,date:`20140413`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/RS225-8/pdf_dayton%20audio_RS225-8_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/RS225-8/pdf_dayton%20audio_RS225-8_1.pdf`},{name:`Dayton Audio RS225P-4`,date:`20140413`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS225P-4
 Manufacturer=
@@ -8322,7 +8404,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RSS210HF-4`,date:`20081207`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/RS270-8/pdf_dayton%20audio_RS270-8_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/RS270-8/pdf_dayton%20audio_RS270-8_1.pdf`},{name:`Dayton Audio RSS210HF-4`,date:`20081207`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS210HF-4
 Manufacturer=Dayton Audio
@@ -8960,7 +9044,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio SD215-88`,date:`20090123`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://www.daytonaudio.com/images/resources/295-472-dayton-audio-rss460ho-4-specifications.pdf
+`,datasheet:`https://www.daytonaudio.com/images/resources/295-472-dayton-audio-rss460ho-4-specifications.pdf`},{name:`Dayton Audio SD215-88`,date:`20090123`,content:`[Driver]
 Brand=Dayton Shielded DVC 
 Model=8in SD215-88
 Manufacturer=Dayton Audio
@@ -9192,7 +9278,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio SD315-88`,date:`20090717`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/SD270A-88/pdf_dayton%20audio_SD270A-88_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/SD270A-88/pdf_dayton%20audio_SD270A-88_1.pdf`},{name:`Dayton Audio SD315-88`,date:`20090717`,content:`[Driver]
 Brand=Dayton Audio
 Model=SD315-88
 Manufacturer=Dayton Audio
@@ -9308,7 +9396,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio ST210-8`,date:`20110718`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/SD315A-88/pdf_dayton%20audio_SD315A-88_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/SD315A-88/pdf_dayton%20audio_SD315A-88_1.pdf`},{name:`Dayton Audio ST210-8`,date:`20110718`,content:`[Driver]
 Brand=Dayton Audio
 Model=ST210-8
 Manufacturer=
@@ -9366,7 +9456,9 @@ Vcd=0
 DVol=0
 ParState=CCECCENNEENEEECCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio ST255-8`,date:`20130525`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_vendor_page=https://www.parts-express.com/Dayton-Audio-ST210-8-8-Series-II-Woofer-295-100
+`,vendorpage:`https://www.parts-express.com/Dayton-Audio-ST210-8-8-Series-II-Woofer-295-100`},{name:`Dayton Audio ST255-8`,date:`20130525`,content:`[Driver]
 Brand=Dayton Audio
 Model=ST255-8
 Manufacturer=
@@ -9424,7 +9516,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio ST305-8`,date:`20120123`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_vendor_page=https://www.parts-express.com/Dayton-Audio-ST255-8-10-Series-II-Woofer-295-110
+`,vendorpage:`https://www.parts-express.com/Dayton-Audio-ST255-8-10-Series-II-Woofer-295-110`},{name:`Dayton Audio ST305-8`,date:`20120123`,content:`[Driver]
 Brand=Dayton Audio
 Model=ST305-8
 Manufacturer=
@@ -9482,7 +9576,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio ST385-8`,date:`20130503`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_vendor_page=https://www.parts-express.com/Dayton-Audio-ST305-8-12-Series-II-Woofer-295-120
+`,vendorpage:`https://www.parts-express.com/Dayton-Audio-ST305-8-12-Series-II-Woofer-295-120`},{name:`Dayton Audio ST385-8`,date:`20130503`,content:`[Driver]
 Brand=Dayton Audio
 Model=ST385-8
 Manufacturer=
@@ -9540,7 +9636,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio TIT280C-4`,date:`20090208`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_vendor_page=https://www.parts-express.com/Dayton-Audio-ST385-8-15-Series-II-Woofer-295-130
+`,vendorpage:`https://www.parts-express.com/Dayton-Audio-ST385-8-15-Series-II-Woofer-295-130`},{name:`Dayton Audio TIT280C-4`,date:`20090208`,content:`[Driver]
 Brand=Dayton Audio
 Model=TIT280C-4
 Manufacturer=Dayton
@@ -14999,7 +15097,9 @@ Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`GRS 10PR-8`,date:`20150209`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/GRS/10PF-8/10PF-8-Datasheet.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/GRS/10PF-8/10PF-8-Datasheet.pdf`},{name:`GRS 10PR-8`,date:`20150209`,content:`[Driver]
 Brand=GRS
 Model=10PR-8
 Manufacturer=
@@ -15057,7 +15157,9 @@ Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`GRS 12PF-8`,date:`20150209`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/GRS/10PR-8/10PR-8-Datasheet.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/GRS/10PR-8/10PR-8-Datasheet.pdf`},{name:`GRS 12PF-8`,date:`20150209`,content:`[Driver]
 Brand=GRS
 Model=12PF-8
 Manufacturer=
@@ -15115,7 +15217,9 @@ Vcd=0
 DVol=0
 ParState=CEECENNNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`GRS 12PR-8`,date:`20150209`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/GRS/12PF-8/12PF-8-Datasheet.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/GRS/12PF-8/12PF-8-Datasheet.pdf`},{name:`GRS 12PR-8`,date:`20150209`,content:`[Driver]
 Brand=GRS
 Model=12PR-8
 Manufacturer=
@@ -15173,7 +15277,9 @@ Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`GRS 12SW-4`,date:`20150209`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/GRS/12PR-8/12PR-8-Datasheet.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/GRS/12PR-8/12PR-8-Datasheet.pdf`},{name:`GRS 12SW-4`,date:`20150209`,content:`[Driver]
 Brand=GRS
 Model=12SW-4
 Manufacturer=
@@ -15231,7 +15337,9 @@ Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`GRS 15PF-8`,date:`20150209`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/GRS/12SW-4/grs-12sw-4.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/GRS/12SW-4/grs-12sw-4.pdf`},{name:`GRS 15PF-8`,date:`20150209`,content:`[Driver]
 Brand=GRS
 Model=15PF-8
 Manufacturer=
@@ -15289,7 +15397,9 @@ Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`GRS 4FR-8`,date:`20150110`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/GRS/15PF-8/15PF-8-Datasheet.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/GRS/15PF-8/15PF-8-Datasheet.pdf`},{name:`GRS 4FR-8`,date:`20150110`,content:`[Driver]
 Brand=GRS
 Model=4FR-8
 Manufacturer=
@@ -15347,7 +15457,9 @@ Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`GRS 8FR-8`,date:`20150115`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/GRS/4FR-8/4FR-8-Datasheet.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/GRS/4FR-8/4FR-8-Datasheet.pdf`},{name:`GRS 8FR-8`,date:`20150115`,content:`[Driver]
 Brand=GRS
 Model=8FR-8
 Manufacturer=
@@ -15405,7 +15517,9 @@ Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`GRS 8PF-8`,date:`20150110`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/GRS/8FR-8/8fr-8-datasheet.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/GRS/8FR-8/8fr-8-datasheet.pdf`},{name:`GRS 8PF-8`,date:`20150110`,content:`[Driver]
 Brand=GRS
 Model=8PF-8
 Manufacturer=
@@ -15463,7 +15577,9 @@ Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`GRS 8PR-8`,date:`20150110`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/GRS/8PF-8/8PF-8-Datasheet.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/GRS/8PF-8/8PF-8-Datasheet.pdf`},{name:`GRS 8PR-8`,date:`20150110`,content:`[Driver]
 Brand=GRS
 Model=8PR-8
 Manufacturer=
@@ -16695,7 +16811,9 @@ Vcd=0
 DVol=0
 ParState=CCECENNNEENCEECCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`PRV Audio 21SW4000`,date:`20130904`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/PRV%20Audio/15W1600/15W1600-Datasheet.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/PRV%20Audio/15W1600/15W1600-Datasheet.pdf`},{name:`PRV Audio 21SW4000`,date:`20130904`,content:`[Driver]
 Brand=PRV Audio
 Model=21SW4000
 Manufacturer=
@@ -19550,7 +19668,9 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Tangband W6-1139SIF`,date:`20120223`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_vendor_page=https://www.parts-express.com/Tang-Band-W6-789E-6-1-2-Woofer-264-852
+`,vendorpage:`https://www.parts-express.com/Tang-Band-W6-789E-6-1-2-Woofer-264-852`},{name:`Tangband W6-1139SIF`,date:`20120223`,content:`[Driver]
 Brand=Tangband
 Model=W6-1139SIF
 Manufacturer=
@@ -20688,7 +20808,9 @@ boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Dayton PA255-8 #1`,date:`20130721`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DS315-8/pdf_dayton%20audio_DS315-8_1.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DS315-8/pdf_dayton%20audio_DS315-8_1.pdf`},{name:`WT3 Dayton PA255-8 #1`,date:`20130721`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA255-8 #1
 Manufacturer=
@@ -22457,7 +22579,9 @@ boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 GRS 4FR-8 #1`,date:`20150115`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/GRS/10SW-4/10SW-4-Datasheet.pdf
+`,datasheet:`https://doc.soundimports.nl/pdf/brands/GRS/10SW-4/10SW-4-Datasheet.pdf`},{name:`WT3 GRS 4FR-8 #1`,date:`20150115`,content:`[Driver]
 Brand=GRS
 Model=4FR-8 #1
 Manufacturer=
@@ -23790,7 +23914,10 @@ Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
-boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`mcm 12in pro 350w`,date:`20110523`,content:`[Driver]
+boxbench_source=https://www.avsforum.com/posts/55004700/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/290-314-goldwood-gw-8pc-30-8-specifications.pdf
+boxbench_vendor_page=https://www.parts-express.com/Goldwood-GW-8PC-30-8-8-Heavy-Duty-Woofer-8-Ohm-290-314
+`,datasheet:`https://www.parts-express.com/pedocs/specs/290-314-goldwood-gw-8pc-30-8-specifications.pdf`,vendorpage:`https://www.parts-express.com/Goldwood-GW-8PC-30-8-8-Heavy-Duty-Woofer-8-Ohm-290-314`},{name:`mcm 12in pro 350w`,date:`20110523`,content:`[Driver]
 Brand=
 Model=
 Manufacturer=
@@ -24601,61 +24728,6 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`}]},{name:`Choong Keat Yian`,files:[{name:`B&C 6PE13`,date:`20040406`,content:`[Driver]
-Brand=B&C
-Model=6 PE 13
-Manufacturer=B&C Speakers
-ProvidedBy=Choong Keat Yian
-Comment=MID-600Hz-5Khz
-DateAdded=20040406
-DateModified=20040406
-Qts=0.414
-Znom=8
-Fs=117
-Pe=120
-SPL=94.09
-Re=5.2
-Le=0.0006
-fLe=0
-KLe=0
-BL=8.69846
-Xmax=0.0006
-Cms=0.0001948
-Qms=3
-Qes=0.48
-Rms=2.3281
-Mms=0.0095
-Sd=0.0132
-Vas=0.0048138593843357
-Dia=0
-Vd=1E-5
-no=0.015621
-Dd=0.129540259080518
-EBP=243.75
-numVC=1
-Hc=0
-Hg=0
-SPLmax=111.88
-SPLmaxLF=58.54
-USPL=95.97
-alfaVC=0
-Rt=0
-Ct=0
-gamma=915.55765
-Rme=14.5506
-Mpow=3.81453
-Mcost=0
-Gloss=0.030244
-c=343.68
-roo=1.20095
-Thick=0
-Depth=0
-MagDepth=0
-Magnet=0
-Basket=0
-Outer=0.187
-Vcd=0
-DVol=0
 `}]},{name:`SB Acoustics`,files:[{name:`SB_Acoustics_10__SB29SWNRX-S75-6___Norex`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SB29SWNRX-S75-6 / Norex
