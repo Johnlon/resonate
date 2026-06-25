@@ -62,7 +62,7 @@ WinISD and other parsers ignore these lines.
 | `boxbench_issue` | string | Short snake_case tag for a known data issue (e.g. `scraped_not_human_verified`, `model_corrected`) |
 | `boxbench_detail` | string | Human-readable explanation of the issue or provenance |
 | `boxbench_dq_issue` | string | Data-quality problem flagged during automated DQ review (e.g. `Qts=97.33: physically impossible`). Files with this field must not be used without manual correction |
-| `boxbench_corrections` | string | Notes on automated corrections applied post-scrape |
+| `boxbench_corrections` | string | **AI-written.** Notes on automated corrections applied post-scrape. Written by the AI agent that performed the scrape or correction. Do not treat as human-verified — an AI agent can write a plausible-sounding verification note while simultaneously storing an incorrect URL. |
 | `boxbench_community` | string | Community-contributed notes (version markers, revision history, etc.) |
 | `boxbench_fetched_sku` | string | SKU actually used when the original SKU was discontinued and data was fetched from a successor |
 | `boxbench_obsolete` | `true` | Driver is confirmed discontinued. Omit otherwise |
@@ -105,11 +105,13 @@ them in order. **Do not skip the inspection steps.**
    > SoundImports. None were product-specific.
 5. **If the PDF URL is from a different domain than the scraped source**, apply
    extra scrutiny. Verify the filename matches the current product's model
-   before using it. A human manually entering a correction is especially prone
-   to copy-pasting a nearby URL that belongs to a different product.
-   > Real failure: the PA460-8 `boxbench_corrections` note said the data was
-   > "confirmed against Dayton Audio PA460-8 datasheet (user-provided)" yet the
-   > URL that was saved was for a different product on a different domain.
+   before setting the field.
+   > Real failure: the PA460-8 `boxbench_corrections` field (AI-written) stated
+   > "confirmed against Dayton Audio PA460-8 datasheet" while the URL it stored
+   > was for the RSS460HO-4 — a different product on a different domain. The AI
+   > agent asserted a verification step it did not actually perform. **A
+   > `boxbench_corrections` note claiming verification is not evidence of
+   > verification.** The filename check in step 3 is the real gate.
 6. **Duplicate URL check:** if the same PDF URL already exists in another WDR
    for a different model in the same collection, it is almost certainly a
    catalog or wrong product. Do not reuse it.
