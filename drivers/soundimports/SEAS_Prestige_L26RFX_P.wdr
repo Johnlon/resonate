@@ -53,6 +53,7 @@ Basket=0
 Outer=0
 Vcd=0
 DVol=0
+ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 boxbench_manu_page=https://www.seas.no/index.php?option=com_content&view=article&id=66:h1209-08-l26rfxp
 boxbench_datasheet=https://www.seas.no/images/stories/prestige/pdfdatasheet/h1209_l26rfx_p_datasheet.pdf
 boxbench_quality=M
@@ -60,4 +61,3 @@ boxbench_corrections=Vas corrected 0.00603->0.171 m3 (ft3-as-liters scraper bug:
 boxbench_issue=scraped_not_human_verified
 boxbench_detail=Automatically scraped from SoundImports (scraped via soundimports.eu). T/S parameters have not been verified by a human against the datasheet.
 boxbench_source=https://www.soundimports.eu/en/seas-l26rfx-p.html
-ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

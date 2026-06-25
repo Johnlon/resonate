@@ -49,12 +49,12 @@ def get_field(text, key):
     return m.group(1).strip() if m else ''
 
 def set_field(text, key, value):
-    """Insert key=value before ParState= if not already present."""
+    """Insert key=value after ParState= if not already present."""
     if re.search(rf'^{re.escape(key)}=', text, re.M):
         return text, False  # already set
     lines = text.split('\n')
-    idx = next((i for i, l in enumerate(lines) if l.startswith('ParState=')), len(lines))
-    lines.insert(idx, f'{key}={value}')
+    idx = next((i for i, l in enumerate(lines) if l.startswith('ParState=')), len(lines) - 1)
+    lines.insert(idx + 1, f'{key}={value}')
     return '\n'.join(lines), True
 
 files = sorted(f for f in os.listdir(PE_DIR) if f.endswith('.wdr'))

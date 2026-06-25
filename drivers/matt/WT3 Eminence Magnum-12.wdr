@@ -54,9 +54,9 @@ Basket=0
 Outer=0
 Vcd=0
 DVol=0
+ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=Model field corrected from informal description (12in beefy woofer) to Magnum-12 based on filename. T/S parameters personally measured by mtg90 using WT3 or DATS v2.
-ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
 boxbench_source=https://www.avsforum.com/posts/55004700/

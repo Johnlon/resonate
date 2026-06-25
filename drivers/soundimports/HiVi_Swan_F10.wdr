@@ -52,10 +52,10 @@ Basket=0
 Outer=0
 Vcd=0
 DVol=0
+ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/HiVi/F10/pdf_hiVi_F10_1.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
 boxbench_detail=Automatically scraped from SoundImports (scraped via soundimports.eu). T/S parameters have not been verified by a human against the datasheet.
 boxbench_corrections=Vas corrected 0.00278->0.0721 m³ (72.1L); confirmed via Parts Express spec sheet (hivi-f10-specifications.pdf, image-only) and speakerboxlite.com (Vas=72.1L). Soundimports page showed 2.78 ft³ but correct datasheet value is 72.1L — slight discrepancy vs ft³ conversion (78.7L) suggests source data difference.
 boxbench_source=https://www.soundimports.eu/en/hivi-f10.html
-ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

@@ -53,10 +53,9 @@ Basket=0
 Outer=0
 Vcd=0
 DVol=0
-boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Scan-Speak/18WU-4747T00/pdf_Scan-Speak_18WU-4747T00_1.pdf
+ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECCboxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Scan-Speak/18WU-4747T00/pdf_Scan-Speak_18WU-4747T00_1.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
 boxbench_detail=Automatically scraped from SoundImports (scraped via soundimports.eu). T/S parameters have not been verified by a human against the datasheet.
 boxbench_source=https://www.soundimports.eu/en/scan-speak-18wu-4747t00.html
 boxbench_corrections=Vas corrected 0.0017->0.036 m³ (36.0L); read from pdf_Scan-Speak_18WU-4747T00_1.pdf: 'Equivalent volume [Vas] 36 l'
-ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

@@ -45,10 +45,9 @@ Basket=0
 Outer=0
 Vcd=0
 DVol=0
-boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DSA270-PR/pdf_dayton%20audio_DSA270-PR_1.pdf
+ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECCboxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/DSA270-PR/pdf_dayton%20audio_DSA270-PR_1.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
 boxbench_detail=Automatically scraped from SoundImports (scraped via soundimports.eu). T/S parameters have not been verified by a human against the datasheet.
 boxbench_source=https://www.soundimports.eu/en/dayton-audio-dsa270-pr.html
 boxbench_corrections=Vas corrected 0.00374->0.1058 m³ (105.8L); read from pdf_dayton audio_DSA270-PR_1.pdf: '105.8 liters [GRS-style]'
-ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

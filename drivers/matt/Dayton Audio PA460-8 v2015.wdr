@@ -54,11 +54,11 @@ Basket=0
 Outer=0
 Vcd=0
 DVol=0
+ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 boxbench_quality=H
 boxbench_issue=filename_version_marker
 boxbench_detail=v2015 in filename indicates the 2015 revision of the PA460-8. Multiple versions of this driver exist with different T/S specs. This file contains the 2015 spec.
 boxbench_community=v2015 in filename = 2015 revision
-ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
 boxbench_source=https://www.avsforum.com/posts/55004700/
 boxbench_manu_page=https://www.daytonaudio.com/product/78/pa460-8-18-pro-woofer-8-ohm

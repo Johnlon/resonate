@@ -52,10 +52,10 @@ Basket=0
 Outer=0
 Vcd=0
 DVol=0
+ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/GRS/S115V-LF-8/GRS%20S115V-LF-8-data-sheet.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
 boxbench_detail=Automatically scraped from SoundImports (scraped via soundimports.eu). T/S parameters have not been verified by a human against the datasheet.
 boxbench_corrections=Vas_tiny_for_driver flagged. GRS S115V-LF-8 is an OEM replacement 15" woofer for the Yamaha Club Series S115V cabinet — only basic replacement specs are published (no full T/S datasheet). Cached PDF is the Yamaha S115V complete cabinet system spec, not the bare driver. Vas=8.59L is likely the ft³-as-litres scraper bug (8.59 ft³ × 28.317 = 243L would be plausible for a 15" pro woofer) but cannot confirm without a bare-driver spec. All T/S params unverified — this is an OEM/spec-less part.
 boxbench_source=https://www.soundimports.eu/en/grs-s115v-lf-8.html
-ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

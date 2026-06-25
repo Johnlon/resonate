@@ -81,10 +81,10 @@ for (const coll of fs.readdirSync(DRIVERS_DIR).sort()) {
     if (corrIdx >= 0) {
       lines[corrIdx] = lines[corrIdx] + '; ' + notes;
     } else {
-      // Insert after last boxbench_ line, or before ParState
+      // Insert after ParState= so boxbench fields don't pollute the WinISD-native block
       let insertAt = lines.findIndex(l => l && l.startsWith('ParState='));
-      if (insertAt < 0) insertAt = lines.length;
-      lines.splice(insertAt, 0, `boxbench_corrections=${notes}`);
+      if (insertAt < 0) insertAt = lines.length - 1;
+      lines.splice(insertAt + 1, 0, `boxbench_corrections=${notes}`);
     }
 
     const result = lines.filter(l => l !== null).join('\n');

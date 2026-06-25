@@ -46,10 +46,10 @@ Basket=0
 Outer=0
 Vcd=0
 DVol=0
+ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Markaudio/CHN%2040/CHN40-user%20manual.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
 boxbench_detail=Automatically scraped from SoundImports (scraped via soundimports.eu). T/S parameters have not been verified by a human against the datasheet.
 boxbench_source=https://www.soundimports.eu/en/markaudio-chn-40.html
 boxbench_corrections=Sd=0.230 cm² deleted (near-zero scraper artifact)
-ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

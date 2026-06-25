@@ -54,9 +54,9 @@ Basket=0
 Outer=0
 Vcd=0
 DVol=0
+ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 boxbench_quality=H
 boxbench_issue=filename_typo
 boxbench_detail=Filename has typo 'Eminece' (missing 'n'). Filename kept as original; Brand and Model corrected internally to Brand=Eminence, Model=Legend BP122.
-ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
 boxbench_source=https://www.avsforum.com/posts/55004700/

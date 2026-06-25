@@ -53,10 +53,9 @@ Basket=0
 Outer=0
 Vcd=0
 DVol=0
-boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/SB%20Acoustics/SB23CACS45-8/pdf_SB%20Acoustics_SB23CACS45-8_1.pdf
+ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECCboxbench_datasheet=https://doc.soundimports.nl/pdf/brands/SB%20Acoustics/SB23CACS45-8/pdf_SB%20Acoustics_SB23CACS45-8_1.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
 boxbench_detail=Automatically scraped from SoundImports (scraped via soundimports.eu). T/S parameters have not been verified by a human against the datasheet.
 boxbench_source=https://www.soundimports.eu/en/sb-acoustics-sb23cacs45-8.html
 boxbench_corrections=Vas corrected 0.00307->0.087 m³ (87.0L); read from pdf_SB Acoustics_SB23CACS45-8_1.pdf: 'Equivalent volume, Vas\nCompliance, Cms\nMechanical loss, Rms\nRated power handling'
-ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

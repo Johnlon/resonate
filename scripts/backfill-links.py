@@ -15,15 +15,14 @@ def get_field(text, key):
     return m.group(1).strip() if m else ''
 
 def set_field(text, key, value):
-    """Set or replace a key= line. Inserts before ParState= if new."""
+    """Set or replace a key= line. Inserts after ParState= if new."""
     pattern = r'^' + re.escape(key) + r'=.*$'
     if re.search(pattern, text, re.M):
         return re.sub(pattern, f'{key}={value}', text, flags=re.M)
-    # Insert before ParState=
     insert = f'{key}={value}\n'
-    m = re.search(r'^ParState=', text, re.M)
+    m = re.search(r'^ParState=.*\n?', text, re.M)
     if m:
-        return text[:m.start()] + insert + text[m.start():]
+        return text[:m.end()] + insert + text[m.end():]
     return text.rstrip('\n') + '\n' + insert
 
 def clear_field(text, key):

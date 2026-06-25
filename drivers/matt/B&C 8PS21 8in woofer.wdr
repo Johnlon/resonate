@@ -54,9 +54,9 @@ Basket=0
 Outer=0
 Vcd=0
 DVol=0
+ParState=CCECEENNEENCEECCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 boxbench_quality=H
 boxbench_issue=filename_convention
 boxbench_detail=8in in filename represents 8in in Model inside — expected inch mark substitution
-ParState=CCECEENNEENCEECCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
 boxbench_source=https://www.avsforum.com/posts/55004700/

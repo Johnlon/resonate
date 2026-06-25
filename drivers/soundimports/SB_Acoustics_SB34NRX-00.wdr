@@ -45,6 +45,7 @@ Basket=0
 Outer=0
 Vcd=0
 DVol=0
+ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/SB%20Acoustics/SB34NRX-00/pdf_SB%20Acoustics_SB34NRX-00_1.pdf
 boxbench_manu_page=https://sbacoustics.com/product/12in-sb34nrx-00-norex/
 boxbench_quality=M
@@ -52,4 +53,3 @@ boxbench_issue=scraped_not_human_verified
 boxbench_detail=Automatically scraped from SoundImports. SI page shows Vas=6.46 ft3; corrected to 183L. Datasheet only publishes mechanical params by design (no Re/BL/Le/Qts/Qes/Pe).
 boxbench_corrections=Vas corrected 0.00646->0.183 m3 (same ft3-as-liters bug: SI page shows 6.46 ft3; correct is 6.46*28.317=183L); no electrical T/S in any datasheet by design
 boxbench_source=https://www.soundimports.eu/en/sb-acoustics-sb34nrx-00.html
-ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

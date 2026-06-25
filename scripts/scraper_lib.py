@@ -214,16 +214,6 @@ def to_wdr(brand: str, model: str, fields: dict,
         f"DateModified={date_modified}",
         "portingle=Y",
     ]
-    if datasheet_url:
-        lines.append(f"boxbench_datasheet={datasheet_url}")
-    if frd_url:
-        lines.append(f"boxbench_frd={frd_url}")
-    if impedance_url:
-        lines.append(f"boxbench_impedance={impedance_url}")
-    if vendor_page_url:
-        lines.append(f"boxbench_vendor_page={vendor_page_url}")
-    if source_url:
-        lines.append(f"boxbench_source={source_url}")
 
     # T/S fields — only emit if value was sourced and non-zero
     _TS_KEYS = ["Fs", "Qts", "Qes", "Qms", "Znom", "Re", "Le", "BL",
@@ -274,6 +264,18 @@ def to_wdr(brand: str, model: str, fields: dict,
         f"DVol=0",
         f"ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC",
     ]
+
+    # boxbench_ metadata fields — always after ParState so WinISD-native block is uninterrupted
+    if datasheet_url:
+        lines.append(f"boxbench_datasheet={datasheet_url}")
+    if frd_url:
+        lines.append(f"boxbench_frd={frd_url}")
+    if impedance_url:
+        lines.append(f"boxbench_impedance={impedance_url}")
+    if vendor_page_url:
+        lines.append(f"boxbench_vendor_page={vendor_page_url}")
+    if source_url:
+        lines.append(f"boxbench_source={source_url}")
 
     return "\n".join(lines) + "\n"
 

@@ -41,8 +41,8 @@ def set_field(text, key, value):
     if re.search(pat, text, re.M):
         return re.sub(pat, f'{key}={value}', text, flags=re.M)
     insert = f'{key}={value}\n'
-    m = re.search(r'^ParState=', text, re.M)
-    return (text[:m.start()] + insert + text[m.start():]) if m else (text.rstrip('\n') + '\n' + insert)
+    m = re.search(r'^ParState=.*\n?', text, re.M)
+    return (text[:m.end()] + insert + text[m.end():]) if m else (text.rstrip('\n') + '\n' + insert)
 
 write_lock = threading.Lock()
 

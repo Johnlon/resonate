@@ -53,10 +53,9 @@ Basket=0
 Outer=0
 Vcd=0
 DVol=0
-boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/GRS/15PT-8/grs-15pt-8-spec-sheet.pdf
+ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECCboxbench_datasheet=https://doc.soundimports.nl/pdf/brands/GRS/15PT-8/grs-15pt-8-spec-sheet.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
 boxbench_detail=Automatically scraped from SoundImports (scraped via soundimports.eu). T/S parameters have not been verified by a human against the datasheet.
 boxbench_source=https://www.soundimports.eu/en/grs-15pt-8.html
 boxbench_corrections=Vas corrected 0.00855->0.242 m³ (242.0L); read from grs-15pt-8-spec-sheet.pdf: '242 liters [GRS-style]'
-ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

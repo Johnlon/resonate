@@ -140,6 +140,7 @@ def update_wdr(wdr_path: pathlib.Path, new_vas_m3: float, note: str, dry_run: bo
         else:
             out.append(line)
     if not found_vas:
+        # Vas is a WinISD-native field — insert before ParState in the native block
         out2 = []
         for line in out:
             if line.startswith("ParState="):
@@ -147,11 +148,12 @@ def update_wdr(wdr_path: pathlib.Path, new_vas_m3: float, note: str, dry_run: bo
             out2.append(line)
         out = out2
     if not found_corr:
+        # boxbench fields go after ParState
         out2 = []
         for line in out:
+            out2.append(line)
             if line.startswith("ParState="):
                 out2.append(f"boxbench_corrections={note}")
-            out2.append(line)
         out = out2
     if not dry_run:
         wdr_path.write_text("\n".join(out), encoding="utf-8")

@@ -53,10 +53,9 @@ Basket=0
 Outer=0
 Vcd=0
 DVol=0
-boxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/15MB500N-8/dayton-audio-apollo-15n.pdf
+ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECCboxbench_datasheet=https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/15MB500N-8/dayton-audio-apollo-15n.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
 boxbench_detail=Automatically scraped from SoundImports (scraped via soundimports.eu). T/S parameters have not been verified by a human against the datasheet.
 boxbench_source=https://www.soundimports.eu/en/dayton-audio-15mb500n-8.html
 boxbench_corrections=Vas corrected 0.00546->0.1547 m³ (154.7L); read from dayton-audio-apollo-15n.pdf: 'Vas 154.7 liters'
-ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
