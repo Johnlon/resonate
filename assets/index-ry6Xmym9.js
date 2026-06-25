@@ -522,7 +522,7 @@ boxbench_quality=H
 boxbench_issue=model_corrected
 boxbench_detail=Model corrected from TD12M to TD12X. T/S data confirmed as TD12X: Fs/Xmax/Vas match. AE = Acoustic Elegance.
 ParState=CEEEENNNCENCCCECCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`AE TD15M`,date:`20130207`,content:`[Driver]
+`,datasheet:`https://aespeakers.com/shop/td/td12x/`},{name:`AE TD15M`,date:`20130207`,content:`[Driver]
 Brand=AE
 Model=TD15M
 Manufacturer=
@@ -3320,7 +3320,7 @@ boxbench_quality=H
 boxbench_issue=model_corrected
 boxbench_detail=Brand set to B&C; Model corrected from 8PS21 to 8PE21 (PS21 was a typo in the original file). T/S confirmed: Fs=87Hz, Re=5.6, Qts=0.19, BL=16.6 all match 8PE21 spec.
 ParState=CCECEENNEENCEECCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 8PS21 8in woofer`,date:`20111113`,content:`[Driver]
+`,datasheet:`https://www.bcspeakers.com/en/products/lf-driver/8-0/8/8pe21`},{name:`B&C 8PS21 8in woofer`,date:`20111113`,content:`[Driver]
 Brand=B&C 
 Model=8PS21 8" woofer
 Manufacturer=
@@ -5892,7 +5892,7 @@ boxbench_quality=H
 boxbench_issue=ts_community_measured
 boxbench_detail=Confirmed DC380-8 by exact Sd (834.7 cm²) and Xmax (4.35 mm) match — physical dimensions that do not vary. T/S params differ from datasheet (e.g. Fs 21.6 vs 18.8 Hz, Qms 3.52 vs 2.87, Qts 0.35 vs 0.30, Vas 306 vs 391 L) due to community measurement: break-in softens the suspension shifting Fs/Qms, and different measurement tools extract different values from the same impedance curve.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DCS205-4`,date:`20110524`,content:`[Driver]
+`,datasheet:`https://cdn.shopify.com/s/files/1/0809/2387/files/DAYTON_DC380-8.pdf?v=1746019383`},{name:`Dayton Audio DCS205-4`,date:`20110524`,content:`[Driver]
 Brand=Dayton Audio
 Model=DCS205-4
 Manufacturer=
@@ -6124,7 +6124,7 @@ boxbench_quality=H
 boxbench_issue=ts_community_measured
 boxbench_detail=Confirmed DCS380-4 by exact Sd (819.4 cm²) and Xmax (8.4 mm) match — physical dimensions that do not vary. T/S params differ from datasheet (e.g. Fs 22.8 vs 21.5 Hz, Qms 3.46 vs 3.79, SPL 89.1 vs 93.6 dB) due to community measurement: break-in softens the suspension shifting Fs/Qms, and different measurement tools (DATS, Woofer Tester, LIMP) extract different values from the same impedance curve. Brand field was corrected from 'Dayton Classic 15"' to 'Dayton Audio'.
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DCS385-4`,date:`20120830`,content:`[Driver]
+`,datasheet:`https://www.daytonaudio.com/images/resources/295-470-dayton-audio-dcs380-4-specifications-46178.pdf`},{name:`Dayton Audio DCS385-4`,date:`20120830`,content:`[Driver]
 Brand=Dayton Audio
 Model=DCS385-4
 Manufacturer=
@@ -15259,7 +15259,7 @@ boxbench_quality=H
 boxbench_issue=model_corrected
 boxbench_detail=Model corrected from 8PF-8 to 8PR-8. Re=7.58 ohm confirms 8-ohm driver; Fs/Vas consistent with 8PR-8 spec.
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`GRS 8SW-4`,date:`20150110`,content:`[Driver]
+`,datasheet:`https://www.parts-express.com/pedocs/specs/GRS%20Spec%20Sheets/292-428--grs-8pr-8-spec-sheet.pdf`},{name:`GRS 8SW-4`,date:`20150110`,content:`[Driver]
 Brand=GRS
 Model=8SW-4
 Manufacturer=
@@ -15320,7 +15320,7 @@ boxbench_quality=H
 boxbench_issue=model_corrected
 boxbench_detail=Model corrected from 8PF-8 to 8SW-4. Re=3.86 ohm confirms 4-ohm driver; Pe=80W exact match to 8SW-4 spec.
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Goldwood GW-212-8`,date:`20120415`,content:`[Driver]
+`,datasheet:`https://www.parts-express.com/pedocs/specs/GRS%20Spec%20Sheets/292-480--grs-8sw-4-spec-sheet.pdf`},{name:`Goldwood GW-212-8`,date:`20120415`,content:`[Driver]
 Brand=Goldwood
 Model=GW-212-8
 Manufacturer=
@@ -15894,7 +15894,7 @@ boxbench_quality=H
 boxbench_issue=model_corrected
 boxbench_detail=Model corrected from 2226J to 2226H. Near-perfect T/S match: Fs=40Hz, Qts=0.31, Qms=5.0, Vas=175L, Xmax=7.6mm, Pe=600W, Sd=0.088m2 all confirmed.
 ParState=CEECCENNEEECEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`JBL CS1214`,date:`20160814`,content:`[Driver]
+`,datasheet:`https://jblpro.com/en-US/site_elements/2226h-j-specification-sheet`},{name:`JBL CS1214`,date:`20160814`,content:`[Driver]
 Brand=JBL
 Model=CS1214
 Manufacturer=
@@ -17101,7 +17101,7 @@ boxbench_quality=H
 boxbench_issue=filename_convention
 boxbench_detail=Manufacturer name is L10-568H (hyphen). Internal model uses slash; filename uses underscore. See top-level meta.json for transformation note. Source: https://www.rcf.it/en/products/product-detail/l10-568h
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`RCF L15P530`,date:`20121020`,content:`[Driver]
+`,datasheet:`https://www.rcf.it/en/products/product-detail/l10-568h`},{name:`RCF L15P530`,date:`20121020`,content:`[Driver]
 Brand=RCF
 Model=L15P530
 Manufacturer=
@@ -17276,7 +17276,7 @@ boxbench_quality=H
 boxbench_issue=filename_convention
 boxbench_detail=Manufacturer name is L15-554K (hyphen). Internal model uses slash; filename uses underscore. See top-level meta.json for transformation note. Source: https://www.rcf.it/en/products/product-detail/l15-554k
 ParState=CEECEENNEEECECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`RCF L8S800`,date:`20120726`,content:`[Driver]
+`,datasheet:`https://www.rcf.it/en/products/product-detail/l15-554k`},{name:`RCF L8S800`,date:`20120726`,content:`[Driver]
 Brand=RCF
 Model=L8S800
 Manufacturer=
@@ -18364,7 +18364,7 @@ boxbench_issue=ts_community_measured
 boxbench_detail=Confirmed HT-18 D2 (Dual 2 Ohm) — Re and Xmax consistent with manufacturer spec. T/S params diverge (Fs 17 vs 23 Hz, Qts 0.38 vs 0.59, Vas 412 vs 220 L) — likely community-measured. THIS DRIVER IS OBSOLETE AND OUT OF PRODUCTION. Manufacturer states: 'only available in Dual 2 Ohm configuration, power handling rated at 750 watts RMS'.
 boxbench_obsolete=true
 ParState=CEEEEENNCENCECCCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity HT 18 D4 series`,date:`20130125`,content:`[Driver]
+`,datasheet:`https://stereointegrity.com/product/ht-18/`},{name:`Stereo Integrity HT 18 D4 series`,date:`20130125`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HT 18 D4 series
 Manufacturer=
@@ -23570,7 +23570,7 @@ boxbench_quality=H
 boxbench_issue=filename_convention
 boxbench_detail=Filename uses size description (18in pro) instead of model number. Model corrected to 55-2984 based on exact T/S parameter match. Confirmed via speakerboxlite.
 ParState=CEECENNNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`peerless india w8-12t 12p`,date:`20120123`,content:`[Driver]
+`,datasheet:`https://speakerboxlite.com/subwoofers/mcm-audio-select-55-2984/specifications`},{name:`peerless india w8-12t 12p`,date:`20120123`,content:`[Driver]
 Brand=00
 Model=peerless india w8-12t 12p
 Manufacturer=
@@ -24280,7 +24280,7 @@ EBP=64.52
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/11/10in-SB29SWNRX-S75-6.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_10__SW26DAC-00___Aluminum`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/10in-SB29SWNRX-S75-6.pdf`},{name:`SB_Acoustics_10__SW26DAC-00___Aluminum`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SW26DAC-00 / Aluminum
 Manufacturer=SB Acoustics
@@ -24299,7 +24299,7 @@ Dd=0.199311499
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/02/10in-SW26DAC-00-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_10__SW26DAC76-3-DV___Aluminum`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/10in-SW26DAC-00-OEM-only.pdf`},{name:`SB_Acoustics_10__SW26DAC76-3-DV___Aluminum`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SW26DAC76-3-DV / Aluminum
 Manufacturer=SB Acoustics
@@ -24327,7 +24327,7 @@ EBP=67.24
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/09/10in-SW26DAC76-3-DV-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_10__SW26DAC76-4___Aluminum`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/09/10in-SW26DAC76-3-DV-OEM-only.pdf`},{name:`SB_Acoustics_10__SW26DAC76-4___Aluminum`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SW26DAC76-4 / Aluminum
 Manufacturer=SB Acoustics
@@ -24355,7 +24355,7 @@ EBP=43.14
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/09/10in-SW26DAC76-4-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_10__SW26DAC76-8___Aluminum`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/09/10in-SW26DAC76-4-OEM-only.pdf`},{name:`SB_Acoustics_10__SW26DAC76-8___Aluminum`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SW26DAC76-8 / Aluminum
 Manufacturer=SB Acoustics
@@ -24383,7 +24383,7 @@ EBP=67.24
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/09/10in-SW26DAC76-8-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_10__SW26DBAC-00___Aluminum`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/09/10in-SW26DAC76-8-OEM-only.pdf`},{name:`SB_Acoustics_10__SW26DBAC-00___Aluminum`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SW26DBAC-00 / Aluminum
 Manufacturer=SB Acoustics
@@ -24402,7 +24402,7 @@ Dd=0.199311499
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/09/10in-SW26DBAC-00.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_10__SW26DBAC76-3-DV___Aluminum`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/09/10in-SW26DBAC-00.pdf`},{name:`SB_Acoustics_10__SW26DBAC76-3-DV___Aluminum`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SW26DBAC76-3-DV / Aluminum
 Manufacturer=SB Acoustics
@@ -24430,7 +24430,7 @@ EBP=67.24
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/09/10in-SW26DBAC76-3-DV.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_10__SW26DBAC76-4___Aluminum`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/09/10in-SW26DBAC76-3-DV.pdf`},{name:`SB_Acoustics_10__SW26DBAC76-4___Aluminum`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SW26DBAC76-4 / Aluminum
 Manufacturer=SB Acoustics
@@ -24458,7 +24458,7 @@ EBP=43.14
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/09/10in-SW26DBAC76-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_10__SW26DBAC76-8___Aluminum`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/09/10in-SW26DBAC76-4.pdf`},{name:`SB_Acoustics_10__SW26DBAC76-8___Aluminum`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SW26DBAC76-8 / Aluminum
 Manufacturer=SB Acoustics
@@ -24486,7 +24486,7 @@ EBP=67.24
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/09/10in-SW26DBAC76-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_10__SW26SFC38-4___Paper`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/09/10in-SW26DBAC76-8.pdf`},{name:`SB_Acoustics_10__SW26SFC38-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SW26SFC38-4 / Paper
 Manufacturer=SB Acoustics
@@ -24515,7 +24515,7 @@ EBP=90.0
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2023/06/10in-SW26SFC38-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_10__SW26SFC38-8___Paper`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2023/06/10in-SW26SFC38-4.pdf`},{name:`SB_Acoustics_10__SW26SFC38-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=10″ SW26SFC38-8 / Paper
 Manufacturer=SB Acoustics
@@ -24544,7 +24544,7 @@ EBP=75.0
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2023/06/10in-SW26SFC38-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_12__SB34SWNRX-S75-6___Norex`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2023/06/10in-SW26SFC38-8.pdf`},{name:`SB_Acoustics_12__SB34SWNRX-S75-6___Norex`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=12″ SB34SWNRX-S75-6 / Norex
 Manufacturer=SB Acoustics
@@ -24573,7 +24573,7 @@ EBP=55.88
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/11/12in-SB34SWNRX-S75-6.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_13½__SATORI_WO34HC-4___Honeycomb`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/12in-SB34SWNRX-S75-6.pdf`},{name:`SB_Acoustics_13½__SATORI_WO34HC-4___Honeycomb`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=13½″ SATORI WO34HC-4 / Honeycomb
 Manufacturer=SB Acoustics
@@ -24602,7 +24602,7 @@ EBP=80.0
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2026/03/13.5-inch-SATORI-WO34HC-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_13½__SATORI_WO34HC-8___Honeycomb`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2026/03/13.5-inch-SATORI-WO34HC-4.pdf`},{name:`SB_Acoustics_13½__SATORI_WO34HC-8___Honeycomb`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=13½″ SATORI WO34HC-8 / Honeycomb
 Manufacturer=SB Acoustics
@@ -24631,7 +24631,7 @@ EBP=67.33
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2026/03/13.5-inch-SATORI-WO34HC-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_2½__SATORI_MD60N-6___Fabric`,date:`2026-06-25`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2026/03/13.5-inch-SATORI-WO34HC-8.pdf`},{name:`SB_Acoustics_2½__SATORI_MD60N-6___Fabric`,date:`2026-06-25`,content:`[Driver]
 Brand=SB Acoustics
 Model=2½″ SATORI MD60N-6 / Fabric
 Manufacturer=SB Acoustics
@@ -24686,7 +24686,7 @@ boxbench_issue=scraped_not_human_verified
 boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.
 boxbench_corrections=Re-scraped to fix HTML entity bug: &#8211; was not decoded before parse_number, causing 8211 to be parsed as field values (Qts=Qes=Qms=8211 or Cms=Vas=8.211). Fix applied 2026-06-25.
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`SB_Acoustics_5__8243__SATORI_MR13P-4___Paper`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2022/03/2.5in-SATORI-MD60N-6.pdf`},{name:`SB_Acoustics_5__8243__SATORI_MR13P-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5&#8243; SATORI MR13P-4 / Paper
 Manufacturer=SB Acoustics
@@ -24715,7 +24715,7 @@ EBP=164.0
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/01/5in-SATORI-MR13P-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_5__8243__SATORI_MR13P-8___Paper`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/5in-SATORI-MR13P-4.pdf`},{name:`SB_Acoustics_5__8243__SATORI_MR13P-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5&#8243; SATORI MR13P-8 / Paper
 Manufacturer=SB Acoustics
@@ -24744,7 +24744,7 @@ EBP=136.36
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/01/5in-SATORI-MR13P-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_5__8243__SATORI_MR13PNW-4___Paper`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/5in-SATORI-MR13P-8.pdf`},{name:`SB_Acoustics_5__8243__SATORI_MR13PNW-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5&#8243; SATORI MR13PNW-4 / Paper
 Manufacturer=SB Acoustics
@@ -24773,7 +24773,7 @@ EBP=164.0
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/01/5in-SATORI-MR13PNW-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_5__8243__SATORI_MR13PNW-8___Paper`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/5in-SATORI-MR13PNW-4.pdf`},{name:`SB_Acoustics_5__8243__SATORI_MR13PNW-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5&#8243; SATORI MR13PNW-8 / Paper
 Manufacturer=SB Acoustics
@@ -24802,7 +24802,7 @@ EBP=146.88
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/01/5in-SATORI-MR13PNW-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_5__8243__SATORI_MR13TX-4___TeXtreme`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/5in-SATORI-MR13PNW-8.pdf`},{name:`SB_Acoustics_5__8243__SATORI_MR13TX-4___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5&#8243; SATORI MR13TX-4 / TeXtreme
 Manufacturer=SB Acoustics
@@ -24831,7 +24831,7 @@ EBP=157.14
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2024/05/5in-SATORI-MR13TX-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_5__SATORI_MW13P-4___Paper`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/05/5in-SATORI-MR13TX-4.pdf`},{name:`SB_Acoustics_5__SATORI_MW13P-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5″ SATORI MW13P-4 / Paper
 Manufacturer=SB Acoustics
@@ -24860,7 +24860,7 @@ EBP=141.38
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/01/5in-SATORI-MW13P-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_5__SATORI_MW13P-8___Paper`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/5in-SATORI-MW13P-4.pdf`},{name:`SB_Acoustics_5__SATORI_MW13P-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5″ SATORI MW13P-8 / Paper
 Manufacturer=SB Acoustics
@@ -24889,7 +24889,7 @@ EBP=125.76
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/01/5in-SATORI-MW13P-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_5__SATORI_MW13PNW-4___Paper`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/5in-SATORI-MW13P-8.pdf`},{name:`SB_Acoustics_5__SATORI_MW13PNW-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5″ SATORI MW13PNW-4 / Paper
 Manufacturer=SB Acoustics
@@ -24918,7 +24918,7 @@ EBP=141.38
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/01/5in-SATORI-MW13PNW-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_5__SATORI_MW13PNW-8___Paper`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/5in-SATORI-MW13PNW-4.pdf`},{name:`SB_Acoustics_5__SATORI_MW13PNW-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5″ SATORI MW13PNW-8 / Paper
 Manufacturer=SB Acoustics
@@ -24947,7 +24947,7 @@ EBP=124.24
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/01/5in-SATORI-MW13PNW-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_5__SATORI_MW13TX-4___TeXtreme`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/5in-SATORI-MW13PNW-8.pdf`},{name:`SB_Acoustics_5__SATORI_MW13TX-4___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5″ SATORI MW13TX-4 / TeXtreme
 Manufacturer=SB Acoustics
@@ -24976,7 +24976,7 @@ EBP=140.74
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2025/12/5-inch-SATORI-MW13TX-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_5__SATORI_MW13TX-8___TeXtreme`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2025/12/5-inch-SATORI-MW13TX-4.pdf`},{name:`SB_Acoustics_5__SATORI_MW13TX-8___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=5″ SATORI MW13TX-8 / TeXtreme
 Manufacturer=SB Acoustics
@@ -25005,7 +25005,7 @@ EBP=117.65
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2025/12/5-inch-SATORI-MW13TX-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_6½__SATORI_MR16P-4___Paper`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2025/12/5-inch-SATORI-MW13TX-8.pdf`},{name:`SB_Acoustics_6½__SATORI_MR16P-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MR16P-4 / Paper
 Manufacturer=SB Acoustics
@@ -25034,7 +25034,7 @@ EBP=119.23
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/01/6½in-SATORI-MR16P-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_6½__SATORI_MR16P-8___Paper`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/6½in-SATORI-MR16P-4.pdf`},{name:`SB_Acoustics_6½__SATORI_MR16P-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MR16P-8 / Paper
 Manufacturer=SB Acoustics
@@ -25063,7 +25063,7 @@ EBP=100.0
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/01/6½in-SATORI-MR16P-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_6½__SATORI_MR16PNW-4___Paper`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/6½in-SATORI-MR16P-8.pdf`},{name:`SB_Acoustics_6½__SATORI_MR16PNW-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MR16PNW-4 / Paper
 Manufacturer=SB Acoustics
@@ -25092,7 +25092,7 @@ EBP=119.23
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/01/6½in-SATORI-MR16PNW-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_6½__SATORI_MR16PNW-8___Paper`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/6½in-SATORI-MR16PNW-4.pdf`},{name:`SB_Acoustics_6½__SATORI_MR16PNW-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MR16PNW-8 / Paper
 Manufacturer=SB Acoustics
@@ -25121,7 +25121,7 @@ EBP=91.18
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/01/6½in-SATORI-MR16PNW-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_6½__SATORI_MR16TX-8___TeXtreme`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/6½in-SATORI-MR16PNW-8.pdf`},{name:`SB_Acoustics_6½__SATORI_MR16TX-8___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MR16TX-8 / TeXtreme
 Manufacturer=SB Acoustics
@@ -25150,7 +25150,7 @@ EBP=109.38
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2024/05/6½in-SATORI-MR16TX-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_6½__SATORI_MW16P-12___Paper`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/05/6½in-SATORI-MR16TX-8.pdf`},{name:`SB_Acoustics_6½__SATORI_MW16P-12___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MW16P-12 / Paper
 Manufacturer=SB Acoustics
@@ -25179,7 +25179,7 @@ EBP=76.5
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2025/12/6.5-inch-SATORI-MW16P-12.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_6½__SATORI_MW16P-4___Paper`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2025/12/6.5-inch-SATORI-MW16P-12.pdf`},{name:`SB_Acoustics_6½__SATORI_MW16P-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MW16P-4 / Paper
 Manufacturer=SB Acoustics
@@ -25208,7 +25208,7 @@ EBP=100.0
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/01/6.5in-SATORI-MW16P-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_6½__SATORI_MW16P-8___Paper`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/6.5in-SATORI-MW16P-4.pdf`},{name:`SB_Acoustics_6½__SATORI_MW16P-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MW16P-8 / Paper
 Manufacturer=SB Acoustics
@@ -25237,7 +25237,7 @@ EBP=82.86
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/01/6.5in-SATORI-MW16P-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_6½__SATORI_MW16PF-4___Paper`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/6.5in-SATORI-MW16P-8.pdf`},{name:`SB_Acoustics_6½__SATORI_MW16PF-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MW16PF-4 / Paper
 Manufacturer=SB Acoustics
@@ -25266,7 +25266,7 @@ EBP=80.0
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/02/6.5in-SATORI-MW16PF-4-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_6½__SATORI_MW16PF-8___Paper`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/6.5in-SATORI-MW16PF-4-OEM-only.pdf`},{name:`SB_Acoustics_6½__SATORI_MW16PF-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MW16PF-8 / Paper
 Manufacturer=SB Acoustics
@@ -25295,7 +25295,7 @@ EBP=69.05
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/02/6.5in-SATORI-MW16PF-8-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_6½__SATORI_MW16PNW-4___Paper`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/6.5in-SATORI-MW16PF-8-OEM-only.pdf`},{name:`SB_Acoustics_6½__SATORI_MW16PNW-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MW16PNW-4 / Paper
 Manufacturer=SB Acoustics
@@ -25324,7 +25324,7 @@ EBP=96.55
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/01/6.5in-SATORI-MW16PNW-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_6½__SATORI_MW16PNW-8___Paper`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/6.5in-SATORI-MW16PNW-4.pdf`},{name:`SB_Acoustics_6½__SATORI_MW16PNW-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MW16PNW-8 / Paper
 Manufacturer=SB Acoustics
@@ -25353,7 +25353,7 @@ EBP=85.29
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/01/6.5in-SATORI-MW16PNW-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_6½__SATORI_MW16TX-4___TeXtreme`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/6.5in-SATORI-MW16PNW-8.pdf`},{name:`SB_Acoustics_6½__SATORI_MW16TX-4___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MW16TX-4 / TeXtreme
 Manufacturer=SB Acoustics
@@ -25382,7 +25382,7 @@ EBP=100.0
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2024/04/6.5in-SATORI-MW16TX-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_6½__SATORI_MW16TX-8___TeXtreme`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/04/6.5in-SATORI-MW16TX-4.pdf`},{name:`SB_Acoustics_6½__SATORI_MW16TX-8___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=6½″ SATORI MW16TX-8 / TeXtreme
 Manufacturer=SB Acoustics
@@ -25411,7 +25411,7 @@ EBP=83.71
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2024/04/6.5in-SATORI-MW16TX-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_7½__SATORI_MT19CP-8___paper`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/04/6.5in-SATORI-MW16TX-8.pdf`},{name:`SB_Acoustics_7½__SATORI_MT19CP-8___paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=7½″ SATORI MT19CP-8 / paper
 Manufacturer=SB Acoustics
@@ -25440,7 +25440,7 @@ EBP=3636.36
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2024/04/7.5in-SATORI-MT19CP-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_7½__SATORI_MW19P-4___Paper`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/04/7.5in-SATORI-MT19CP-8.pdf`},{name:`SB_Acoustics_7½__SATORI_MW19P-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=7½″ SATORI MW19P-4 / Paper
 Manufacturer=SB Acoustics
@@ -25469,7 +25469,7 @@ EBP=111.54
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/02/7.5in-SATORI-MW19P-4-1.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_7½__SATORI_MW19P-8___Paper`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/7.5in-SATORI-MW19P-4-1.pdf`},{name:`SB_Acoustics_7½__SATORI_MW19P-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=7½″ SATORI MW19P-8 / Paper
 Manufacturer=SB Acoustics
@@ -25498,7 +25498,7 @@ EBP=92.19
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/02/7.5in-SATORI-MW19P-8-1.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_7½__SATORI_MW19PF-4___Paper`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/7.5in-SATORI-MW19P-8-1.pdf`},{name:`SB_Acoustics_7½__SATORI_MW19PF-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=7½″ SATORI MW19PF-4 / Paper
 Manufacturer=SB Acoustics
@@ -25527,7 +25527,7 @@ EBP=103.57
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/02/7.5in-SATORI-MW19PF-4-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_7½__SATORI_MW19PF-8___Paper`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/7.5in-SATORI-MW19PF-4-OEM-only.pdf`},{name:`SB_Acoustics_7½__SATORI_MW19PF-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=7½″ SATORI MW19PF-8 / Paper
 Manufacturer=SB Acoustics
@@ -25556,7 +25556,7 @@ EBP=81.08
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/02/7.5in-SATORI-MW19PF-8-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_7½__SATORI_MW19PNW-4___Paper`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/7.5in-SATORI-MW19PF-8-OEM-only.pdf`},{name:`SB_Acoustics_7½__SATORI_MW19PNW-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=7½″ SATORI MW19PNW-4 / Paper
 Manufacturer=SB Acoustics
@@ -25585,7 +25585,7 @@ EBP=111.54
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2024/10/7.5in-SATORI-MW19PNW-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_7½__SATORI_MW19PNW-8___Paper`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/10/7.5in-SATORI-MW19PNW-4.pdf`},{name:`SB_Acoustics_7½__SATORI_MW19PNW-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=7½″ SATORI MW19PNW-8 / Paper
 Manufacturer=SB Acoustics
@@ -25614,7 +25614,7 @@ EBP=92.19
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2024/10/7.5in-SATORI-MW19PNW-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_7½__SATORI_MW19TX-4___TeXtreme`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/10/7.5in-SATORI-MW19PNW-8.pdf`},{name:`SB_Acoustics_7½__SATORI_MW19TX-4___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=7½″ SATORI MW19TX-4 / TeXtreme
 Manufacturer=SB Acoustics
@@ -25643,7 +25643,7 @@ EBP=114.29
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2024/04/7.5in-SATORI-MW19TX-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_7½__SATORI_MW19TX-8___TeXtreme`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/04/7.5in-SATORI-MW19TX-4.pdf`},{name:`SB_Acoustics_7½__SATORI_MW19TX-8___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=7½″ SATORI MW19TX-8 / TeXtreme
 Manufacturer=SB Acoustics
@@ -25672,7 +25672,7 @@ EBP=94.29
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2024/04/7.5in-SATORI-MW19TX-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_9½__SATORI_WO24P-4___Paper`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/04/7.5in-SATORI-MW19TX-8.pdf`},{name:`SB_Acoustics_9½__SATORI_WO24P-4___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=9½″ SATORI WO24P-4 / Paper
 Manufacturer=SB Acoustics
@@ -25701,7 +25701,7 @@ EBP=66.67
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2024/04/9.5in-SATORI-WO24P-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_9½__SATORI_WO24P-8___Paper`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/04/9.5in-SATORI-WO24P-4.pdf`},{name:`SB_Acoustics_9½__SATORI_WO24P-8___Paper`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=9½″ SATORI WO24P-8 / Paper
 Manufacturer=SB Acoustics
@@ -25730,7 +25730,7 @@ EBP=59.76
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2024/04/9.5in-SATORI-WO24P-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_9½__SATORI_WO24TX-4___Textreme`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/04/9.5in-SATORI-WO24P-8.pdf`},{name:`SB_Acoustics_9½__SATORI_WO24TX-4___Textreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=9½″ SATORI WO24TX-4 / Textreme
 Manufacturer=SB Acoustics
@@ -25759,7 +25759,7 @@ EBP=71.08
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2024/11/9.5in-SATORI-WO24TX-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_9½__SATORI_WO24TX-8___Textreme`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/11/9.5in-SATORI-WO24TX-4.pdf`},{name:`SB_Acoustics_9½__SATORI_WO24TX-8___Textreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=9½″ SATORI WO24TX-8 / Textreme
 Manufacturer=SB Acoustics
@@ -25788,7 +25788,7 @@ EBP=68.06
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2024/11/9.5in-SATORI-WO24TX-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SATORI_AT60NC-4___Kapton`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/11/9.5in-SATORI-WO24TX-8.pdf`},{name:`SB_Acoustics_SATORI_AT60NC-4___Kapton`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI AT60NC-4 / Kapton
 Manufacturer=SB Acoustics
@@ -25806,7 +25806,7 @@ Dd=0.040053487
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2022/03/SATORI-AT60NC-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SATORI_TW29B-B___Beryllium`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2022/03/SATORI-AT60NC-4.pdf`},{name:`SB_Acoustics_SATORI_TW29B-B___Beryllium`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29B-B / Beryllium
 Manufacturer=SB Acoustics
@@ -25833,7 +25833,7 @@ EBP=461.54
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29B-B.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SATORI_TW29BN-8___Beryllium`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29B-B.pdf`},{name:`SB_Acoustics_SATORI_TW29BN-8___Beryllium`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29BN-8 / Beryllium
 Manufacturer=SB Acoustics
@@ -25860,7 +25860,7 @@ EBP=937.5
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2026/04/SATORI-TW29BN-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SATORI_TW29BN-B-8___Beryllium`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2026/04/SATORI-TW29BN-8.pdf`},{name:`SB_Acoustics_SATORI_TW29BN-B-8___Beryllium`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29BN-B-8 / Beryllium
 Manufacturer=SB Acoustics
@@ -25887,7 +25887,7 @@ EBP=937.5
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2026/04/SATORI-TW29BN-B-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SATORI_TW29BN-B___Beryllium`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2026/04/SATORI-TW29BN-B-8.pdf`},{name:`SB_Acoustics_SATORI_TW29BN-B___Beryllium`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29BN-B / Beryllium
 Manufacturer=SB Acoustics
@@ -25914,7 +25914,7 @@ EBP=1166.67
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/SATORI-TW29BN-B.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SATORI_TW29BNWG-4___Beryllium`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/SATORI-TW29BN-B.pdf`},{name:`SB_Acoustics_SATORI_TW29BNWG-4___Beryllium`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29BNWG-4 / Beryllium
 Manufacturer=SB Acoustics
@@ -25941,7 +25941,7 @@ EBP=1166.67
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2022/09/SATORI-TW29BNWG-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SATORI_TW29BNWG-8___Beryllium`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2022/09/SATORI-TW29BNWG-4.pdf`},{name:`SB_Acoustics_SATORI_TW29BNWG-8___Beryllium`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29BNWG-8 / Beryllium
 Manufacturer=SB Acoustics
@@ -25968,7 +25968,7 @@ EBP=937.5
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2022/09/SATORI-TW29BNWG-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SATORI_TW29BN___Beryllium`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2022/09/SATORI-TW29BNWG-8.pdf`},{name:`SB_Acoustics_SATORI_TW29BN___Beryllium`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29BN / Beryllium
 Manufacturer=SB Acoustics
@@ -25995,7 +25995,7 @@ EBP=1166.67
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/SATORI-TW29BN.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SATORI_TW29B___Beryllium`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/SATORI-TW29BN.pdf`},{name:`SB_Acoustics_SATORI_TW29B___Beryllium`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29B / Beryllium
 Manufacturer=SB Acoustics
@@ -26022,7 +26022,7 @@ EBP=461.54
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29B.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SATORI_TW29D-B___Fabric`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29B.pdf`},{name:`SB_Acoustics_SATORI_TW29D-B___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29D-B / Fabric
 Manufacturer=SB Acoustics
@@ -26049,7 +26049,7 @@ EBP=472.44
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/SATORI-TW29D-B.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SATORI_TW29DN-8___Fabric`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/SATORI-TW29D-B.pdf`},{name:`SB_Acoustics_SATORI_TW29DN-8___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29DN-8 / Fabric
 Manufacturer=SB Acoustics
@@ -26076,7 +26076,7 @@ EBP=1000.0
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29DN-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SATORI_TW29DN-B-8___Fabric`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29DN-8.pdf`},{name:`SB_Acoustics_SATORI_TW29DN-B-8___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29DN-B-8 / Fabric
 Manufacturer=SB Acoustics
@@ -26103,7 +26103,7 @@ EBP=1000.0
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29DN-B-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SATORI_TW29DN-B___Fabric`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29DN-B-8.pdf`},{name:`SB_Acoustics_SATORI_TW29DN-B___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29DN-B / Fabric
 Manufacturer=SB Acoustics
@@ -26130,7 +26130,7 @@ EBP=1140.35
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/SATORI-TW29DN-B.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SATORI_TW29DN___Fabric`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/SATORI-TW29DN-B.pdf`},{name:`SB_Acoustics_SATORI_TW29DN___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29DN / Fabric
 Manufacturer=SB Acoustics
@@ -26157,7 +26157,7 @@ EBP=1140.35
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29DN.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SATORI_TW29D___Fabric`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29DN.pdf`},{name:`SB_Acoustics_SATORI_TW29D___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29D / Fabric
 Manufacturer=SB Acoustics
@@ -26184,7 +26184,7 @@ EBP=472.44
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29D.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SATORI_TW29R-B___Fabric`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29D.pdf`},{name:`SB_Acoustics_SATORI_TW29R-B___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29R-B / Fabric
 Manufacturer=SB Acoustics
@@ -26211,7 +26211,7 @@ EBP=483.87
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29R-B.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SATORI_TW29RN-8___Fabric`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29R-B.pdf`},{name:`SB_Acoustics_SATORI_TW29RN-8___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29RN-8 / Fabric
 Manufacturer=SB Acoustics
@@ -26238,7 +26238,7 @@ EBP=984.85
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29RN-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SATORI_TW29RN-B-8___Fabric`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29RN-8.pdf`},{name:`SB_Acoustics_SATORI_TW29RN-B-8___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29RN-B-8 / Fabric
 Manufacturer=SB Acoustics
@@ -26265,7 +26265,7 @@ EBP=984.85
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29RN-B-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SATORI_TW29RN-B___Fabric`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29RN-B-8.pdf`},{name:`SB_Acoustics_SATORI_TW29RN-B___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29RN-B / Fabric
 Manufacturer=SB Acoustics
@@ -26292,7 +26292,7 @@ EBP=1076.92
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/SATORI-TW29RN-B.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SATORI_TW29RN___Fabric`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/SATORI-TW29RN-B.pdf`},{name:`SB_Acoustics_SATORI_TW29RN___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29RN / Fabric
 Manufacturer=SB Acoustics
@@ -26319,7 +26319,7 @@ EBP=1076.92
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29RN.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SATORI_TW29R___Fabric`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29RN.pdf`},{name:`SB_Acoustics_SATORI_TW29R___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29R / Fabric
 Manufacturer=SB Acoustics
@@ -26346,7 +26346,7 @@ EBP=483.87
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29R.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SATORI_TW29TXN-B-8___TeXtreme`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29R.pdf`},{name:`SB_Acoustics_SATORI_TW29TXN-B-8___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29TXN-B-8 / TeXtreme
 Manufacturer=SB Acoustics
@@ -26373,7 +26373,7 @@ EBP=883.12
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/01/SATORI-TW29TXN-B-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SATORI_TW29TXN-B___TeXtreme`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/SATORI-TW29TXN-B-8.pdf`},{name:`SB_Acoustics_SATORI_TW29TXN-B___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29TXN-B / TeXtreme
 Manufacturer=SB Acoustics
@@ -26400,7 +26400,7 @@ EBP=1000.0
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/01/SATORI-TW29TXN-B.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SATORI_TW29TXNWG-4___TeXtreme`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/01/SATORI-TW29TXN-B.pdf`},{name:`SB_Acoustics_SATORI_TW29TXNWG-4___TeXtreme`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SATORI TW29TXNWG-4 / TeXtreme
 Manufacturer=SB Acoustics
@@ -26427,7 +26427,7 @@ EBP=992.19
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2024/10/SATORI-TW29TXNWG-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB10PGC21-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/10/SATORI-TW29TXNWG-4.pdf`},{name:`SB_Acoustics_SB10PGC21-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB10PGC21-4
 Manufacturer=SB Acoustics
@@ -26456,7 +26456,7 @@ EBP=88.12
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/3in-SB10PGC21-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB12CACS25-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/3in-SB10PGC21-4.pdf`},{name:`SB_Acoustics_SB12CACS25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12CACS25-4
 Manufacturer=SB Acoustics
@@ -26485,7 +26485,7 @@ EBP=154.55
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/4in-SB12CACS25-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB12CACS25-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/4in-SB12CACS25-4.pdf`},{name:`SB_Acoustics_SB12CACS25-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12CACS25-8
 Manufacturer=SB Acoustics
@@ -26514,7 +26514,7 @@ EBP=127.5
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/4in-SB12CACS25-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB12MNRX2-25`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/4in-SB12CACS25-8.pdf`},{name:`SB_Acoustics_SB12MNRX2-25`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12MNRX2-25
 Manufacturer=SB Acoustics
@@ -26543,7 +26543,7 @@ EBP=181.43
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/03/4in-SB12MNRX2-25-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB12MNRX25-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/03/4in-SB12MNRX2-25-4.pdf`},{name:`SB_Acoustics_SB12MNRX25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12MNRX25-4
 Manufacturer=SB Acoustics
@@ -26572,7 +26572,7 @@ EBP=138.1
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/03/4in-SB12MNRX25-4-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB12NRX25-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/03/4in-SB12MNRX25-4-OEM-only.pdf`},{name:`SB_Acoustics_SB12NRX25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12NRX25-4
 Manufacturer=SB Acoustics
@@ -26601,7 +26601,7 @@ EBP=119.57
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/03/4in-SB12NRX25-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB12NRX25-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/03/4in-SB12NRX25-4.pdf`},{name:`SB_Acoustics_SB12NRX25-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12NRX25-8
 Manufacturer=SB Acoustics
@@ -26630,7 +26630,7 @@ EBP=139.02
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/03/4in-SB12NRX25-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB12NRXF25-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/03/4in-SB12NRX25-8.pdf`},{name:`SB_Acoustics_SB12NRXF25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12NRXF25-4
 Manufacturer=SB Acoustics
@@ -26659,7 +26659,7 @@ EBP=115.09
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2023/07/4in-SB12NRXF25-4-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB12NRXF25-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2023/07/4in-SB12NRXF25-4-OEM-only.pdf`},{name:`SB_Acoustics_SB12NRXF25-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12NRXF25-8
 Manufacturer=SB Acoustics
@@ -26688,7 +26688,7 @@ EBP=136.96
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2023/07/4in-SB12NRXF25-8-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB12PAC-00`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2023/07/4in-SB12NRXF25-8-OEM-only.pdf`},{name:`SB_Acoustics_SB12PAC-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12PAC-00
 Manufacturer=SB Acoustics
@@ -26707,7 +26707,7 @@ Dd=0.079788456
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/02/4in-SB12PAC-00-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB12PAC25-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/4in-SB12PAC-00-OEM-only.pdf`},{name:`SB_Acoustics_SB12PAC25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12PAC25-4
 Manufacturer=SB Acoustics
@@ -26736,7 +26736,7 @@ EBP=159.09
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/03/4in-SB12PAC25-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB12PACR-00`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/03/4in-SB12PAC25-4.pdf`},{name:`SB_Acoustics_SB12PACR-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12PACR-00
 Manufacturer=SB Acoustics
@@ -26755,7 +26755,7 @@ Dd=0.079788456
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/03/4in-SB12PACR-00.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB12PACR25-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/03/4in-SB12PACR-00.pdf`},{name:`SB_Acoustics_SB12PACR25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12PACR25-4
 Manufacturer=SB Acoustics
@@ -26784,7 +26784,7 @@ EBP=159.09
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/04/4in-SB12PACR25-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB12PFC-00`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/04/4in-SB12PACR25-4.pdf`},{name:`SB_Acoustics_SB12PFC-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12PFC-00
 Manufacturer=SB Acoustics
@@ -26803,7 +26803,7 @@ Dd=0.079788456
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/02/4in-SB12PFC-00-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB12PFC25-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/4in-SB12PFC-00-OEM-only.pdf`},{name:`SB_Acoustics_SB12PFC25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12PFC25-4
 Manufacturer=SB Acoustics
@@ -26832,7 +26832,7 @@ EBP=118.37
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/11/4in-SB12PFC25-4-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB12PFC25-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/4in-SB12PFC25-4-OEM-only.pdf`},{name:`SB_Acoustics_SB12PFC25-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12PFC25-8
 Manufacturer=SB Acoustics
@@ -26861,7 +26861,7 @@ EBP=98.46
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/11/4in-SB12PFC25-8-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB12PFCR-00`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/4in-SB12PFC25-8-OEM-only.pdf`},{name:`SB_Acoustics_SB12PFCR-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12PFCR-00
 Manufacturer=SB Acoustics
@@ -26880,7 +26880,7 @@ Dd=0.079788456
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/03/4in-SB12PFCR-00.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB12PFCR25-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/03/4in-SB12PFCR-00.pdf`},{name:`SB_Acoustics_SB12PFCR25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12PFCR25-4
 Manufacturer=SB Acoustics
@@ -26909,7 +26909,7 @@ EBP=3611.11
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/03/4in-SB12PFCR25-4-COAX.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB12PFCR25-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/03/4in-SB12PFCR25-4-COAX.pdf`},{name:`SB_Acoustics_SB12PFCR25-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB12PFCR25-8
 Manufacturer=SB Acoustics
@@ -26938,7 +26938,7 @@ EBP=107.27
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2025/01/4in-SB12PFCR25-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB13PFC-00`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2025/01/4in-SB12PFCR25-8.pdf`},{name:`SB_Acoustics_SB13PFC-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB13PFC-00
 Manufacturer=SB Acoustics
@@ -26957,7 +26957,7 @@ Dd=0.105248202
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/02/5in-SB13PFC-00-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB13PFC25-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/5in-SB13PFC-00-OEM-only.pdf`},{name:`SB_Acoustics_SB13PFC25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB13PFC25-4
 Manufacturer=SB Acoustics
@@ -26986,7 +26986,7 @@ EBP=133.33
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/11/5in-SB13PFC25-4-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB13PFC25-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/5in-SB13PFC25-4-OEM-only.pdf`},{name:`SB_Acoustics_SB13PFC25-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB13PFC25-8
 Manufacturer=SB Acoustics
@@ -27015,7 +27015,7 @@ EBP=115.38
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/11/5in-SB13PFC25-8-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB13PFCR-00`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/5in-SB13PFC25-8-OEM-only.pdf`},{name:`SB_Acoustics_SB13PFCR-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB13PFCR-00
 Manufacturer=SB Acoustics
@@ -27034,7 +27034,7 @@ Dd=0.105248202
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/03/5in-SB13PFCR-00.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB13PFCR25-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/03/5in-SB13PFCR-00.pdf`},{name:`SB_Acoustics_SB13PFCR25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB13PFCR25-4
 Manufacturer=SB Acoustics
@@ -27063,7 +27063,7 @@ EBP=133.33
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2022/03/5in-SB13PFCR25-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB13PFCR25-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2022/03/5in-SB13PFCR25-4.pdf`},{name:`SB_Acoustics_SB13PFCR25-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB13PFCR25-8
 Manufacturer=SB Acoustics
@@ -27092,7 +27092,7 @@ EBP=115.38
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2022/03/5in-SB13PFCR25-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB14ST-C000-4___Fabric`,date:`2026-06-25`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2022/03/5in-SB13PFCR25-8.pdf`},{name:`SB_Acoustics_SB14ST-C000-4___Fabric`,date:`2026-06-25`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB14ST-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -27147,7 +27147,7 @@ boxbench_issue=scraped_not_human_verified
 boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.
 boxbench_corrections=Re-scraped to fix HTML entity bug: &#8211; was not decoded before parse_number, causing 8211 to be parsed as field values (Qts=Qes=Qms=8211 or Cms=Vas=8.211). Fix applied 2026-06-25.
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`SB_Acoustics_SB15BAC30-8`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2025/12/SB14ST-C000-4.pdf`},{name:`SB_Acoustics_SB15BAC30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15BAC30-8
 Manufacturer=SB Acoustics
@@ -27176,7 +27176,7 @@ EBP=2871.79
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2026/03/5-inch-SB15BAC30-8-COAX.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB15CAC30-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2026/03/5-inch-SB15BAC30-8-COAX.pdf`},{name:`SB_Acoustics_SB15CAC30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15CAC30-4
 Manufacturer=SB Acoustics
@@ -27205,7 +27205,7 @@ EBP=95.59
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/5in-SB15CAC30-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB15CAC30-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/5in-SB15CAC30-4.pdf`},{name:`SB_Acoustics_SB15CAC30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15CAC30-8
 Manufacturer=SB Acoustics
@@ -27234,7 +27234,7 @@ EBP=84.52
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/5in-SB15CAC30-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB15CRC30-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/5in-SB15CAC30-8.pdf`},{name:`SB_Acoustics_SB15CRC30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15CRC30-4
 Manufacturer=SB Acoustics
@@ -27263,7 +27263,7 @@ EBP=102.78
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/03/5in-SB15CRC30-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB15CRC30-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/03/5in-SB15CRC30-4.pdf`},{name:`SB_Acoustics_SB15CRC30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15CRC30-8
 Manufacturer=SB Acoustics
@@ -27292,7 +27292,7 @@ EBP=86.96
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/03/5in-SB15CRC30-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB15MFC30-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/03/5in-SB15CRC30-8.pdf`},{name:`SB_Acoustics_SB15MFC30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15MFC30-4
 Manufacturer=SB Acoustics
@@ -27321,7 +27321,7 @@ EBP=118.33
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/5in-SB15MFC30-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB15MFC30-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/5in-SB15MFC30-4.pdf`},{name:`SB_Acoustics_SB15MFC30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15MFC30-8
 Manufacturer=SB Acoustics
@@ -27350,7 +27350,7 @@ EBP=97.5
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/5in-SB15MFC30-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB15NAC30-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/5in-SB15MFC30-8.pdf`},{name:`SB_Acoustics_SB15NAC30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15NAC30-4
 Manufacturer=SB Acoustics
@@ -27379,7 +27379,7 @@ EBP=109.38
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/02/5in-SB15NAC30-4-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB15NAC30-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/5in-SB15NAC30-4-OEM-only.pdf`},{name:`SB_Acoustics_SB15NAC30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15NAC30-8
 Manufacturer=SB Acoustics
@@ -27408,7 +27408,7 @@ EBP=91.03
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/02/5in-SB15NAC30-8-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB15NBAC30-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/5in-SB15NAC30-8-OEM-only.pdf`},{name:`SB_Acoustics_SB15NBAC30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15NBAC30-4
 Manufacturer=SB Acoustics
@@ -27437,7 +27437,7 @@ EBP=106.45
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/5in-SB15NBAC30-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB15NBAC30-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/5in-SB15NBAC30-4.pdf`},{name:`SB_Acoustics_SB15NBAC30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15NBAC30-8
 Manufacturer=SB Acoustics
@@ -27466,7 +27466,7 @@ EBP=86.59
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/5in-SB15NBAC30-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB15NRX2C30-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/5in-SB15NBAC30-8.pdf`},{name:`SB_Acoustics_SB15NRX2C30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15NRX2C30-4
 Manufacturer=SB Acoustics
@@ -27495,7 +27495,7 @@ EBP=115.0
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/5in-SB15NRX2C30-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB15NRX2C30-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/5in-SB15NRX2C30-4.pdf`},{name:`SB_Acoustics_SB15NRX2C30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15NRX2C30-8
 Manufacturer=SB Acoustics
@@ -27524,7 +27524,7 @@ EBP=98.65
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/5in-SB15NRX2C30-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB15NRXC30-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/5in-SB15NRX2C30-8.pdf`},{name:`SB_Acoustics_SB15NRXC30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15NRXC30-4
 Manufacturer=SB Acoustics
@@ -27553,7 +27553,7 @@ EBP=132.26
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/11/5in-SB15NRXC30-4-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB15NRXC30-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/5in-SB15NRXC30-4-OEM-only.pdf`},{name:`SB_Acoustics_SB15NRXC30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15NRXC30-8
 Manufacturer=SB Acoustics
@@ -27582,7 +27582,7 @@ EBP=108.57
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/11/5in-SB15NRXC30-8-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB15SFCR-00`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/5in-SB15NRXC30-8-OEM-only.pdf`},{name:`SB_Acoustics_SB15SFCR-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15SFCR-00
 Manufacturer=SB Acoustics
@@ -27601,7 +27601,7 @@ Dd=0.150544558
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/11/5x8in-SB15SFCR-00.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB15SFCR39-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/5x8in-SB15SFCR-00.pdf`},{name:`SB_Acoustics_SB15SFCR39-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15SFCR39-4
 Manufacturer=SB Acoustics
@@ -27630,7 +27630,7 @@ EBP=91.18
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2024/11/5inx8in-SB15SFCR39-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB15SFCR39-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/11/5inx8in-SB15SFCR39-4.pdf`},{name:`SB_Acoustics_SB15SFCR39-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB15SFCR39-8
 Manufacturer=SB Acoustics
@@ -27659,7 +27659,7 @@ EBP=71.11
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/11/5inx8in-SB15SFCR39-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB16FRPC25-7`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/5inx8in-SB15SFCR39-8.pdf`},{name:`SB_Acoustics_SB16FRPC25-7`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB16FRPC25-7
 Manufacturer=SB Acoustics
@@ -27688,7 +27688,7 @@ EBP=91.67
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2025/12/6-inch-SB16FRPC25-7.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB16PFC-00`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2025/12/6-inch-SB16FRPC25-7.pdf`},{name:`SB_Acoustics_SB16PFC-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB16PFC-00
 Manufacturer=SB Acoustics
@@ -27707,7 +27707,7 @@ Dd=0.125650986
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/02/6in-SB16PFC-00-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB16PFC25-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/6in-SB16PFC-00-OEM-only.pdf`},{name:`SB_Acoustics_SB16PFC25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB16PFC25-4
 Manufacturer=SB Acoustics
@@ -27736,7 +27736,7 @@ EBP=89.74
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/11/6in-SB16PFC25-4-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB16PFC25-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/6in-SB16PFC25-4-OEM-only.pdf`},{name:`SB_Acoustics_SB16PFC25-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB16PFC25-8
 Manufacturer=SB Acoustics
@@ -27765,7 +27765,7 @@ EBP=79.17
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/11/6in-SB16PFC25-8-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB16PFCR-00`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/6in-SB16PFC25-8-OEM-only.pdf`},{name:`SB_Acoustics_SB16PFCR-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB16PFCR-00
 Manufacturer=SB Acoustics
@@ -27784,7 +27784,7 @@ Dd=0.125650986
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/03/6in-SB16PFCR-00.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB16PFCR25-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/03/6in-SB16PFCR-00.pdf`},{name:`SB_Acoustics_SB16PFCR25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB16PFCR25-4
 Manufacturer=SB Acoustics
@@ -27813,7 +27813,7 @@ EBP=89.74
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2024/01/6in-SB16PFCR25-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB16PFCR25-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/01/6in-SB16PFCR25-4.pdf`},{name:`SB_Acoustics_SB16PFCR25-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB16PFCR25-8
 Manufacturer=SB Acoustics
@@ -27842,7 +27842,7 @@ EBP=79.17
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2024/01/6in-SB16PFCR25-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB17CAC35-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2024/01/6in-SB16PFCR25-8.pdf`},{name:`SB_Acoustics_SB17CAC35-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17CAC35-4
 Manufacturer=SB Acoustics
@@ -27871,7 +27871,7 @@ EBP=95.16
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/6in-SB17CAC35-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB17CAC35-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/6in-SB17CAC35-4.pdf`},{name:`SB_Acoustics_SB17CAC35-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17CAC35-8
 Manufacturer=SB Acoustics
@@ -27900,7 +27900,7 @@ EBP=70.0
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/6in-SB17CAC35-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB17CRC35-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/6in-SB17CAC35-8.pdf`},{name:`SB_Acoustics_SB17CRC35-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17CRC35-4
 Manufacturer=SB Acoustics
@@ -27929,7 +27929,7 @@ EBP=90.0
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/6in-SB17CRC35-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB17CRC35-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/6in-SB17CRC35-4.pdf`},{name:`SB_Acoustics_SB17CRC35-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17CRC35-8
 Manufacturer=SB Acoustics
@@ -27958,7 +27958,7 @@ EBP=75.68
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/6in-SB17CRC35-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB17MFC35-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/6in-SB17CRC35-8.pdf`},{name:`SB_Acoustics_SB17MFC35-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17MFC35-4
 Manufacturer=SB Acoustics
@@ -27987,7 +27987,7 @@ EBP=100.0
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/6in-SB17MFC35-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB17MFC35-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/6in-SB17MFC35-4.pdf`},{name:`SB_Acoustics_SB17MFC35-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17MFC35-8
 Manufacturer=SB Acoustics
@@ -28016,7 +28016,7 @@ EBP=82.5
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/6in-SB17MFC35-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB17NAC35-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/6in-SB17MFC35-8.pdf`},{name:`SB_Acoustics_SB17NAC35-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17NAC35-4
 Manufacturer=SB Acoustics
@@ -28045,7 +28045,7 @@ EBP=94.12
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/02/6in-SB17NAC35-4-OEM-olny.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB17NAC35-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/6in-SB17NAC35-4-OEM-olny.pdf`},{name:`SB_Acoustics_SB17NAC35-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17NAC35-8
 Manufacturer=SB Acoustics
@@ -28074,7 +28074,7 @@ EBP=70.0
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/02/6in-SB17NAC35-8-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB17NBAC35-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/6in-SB17NAC35-8-OEM-only.pdf`},{name:`SB_Acoustics_SB17NBAC35-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17NBAC35-4
 Manufacturer=SB Acoustics
@@ -28103,7 +28103,7 @@ EBP=96.77
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2025/12/6-inch-SB17NBAC35-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB17NBAC35-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2025/12/6-inch-SB17NBAC35-4.pdf`},{name:`SB_Acoustics_SB17NBAC35-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17NBAC35-8
 Manufacturer=SB Acoustics
@@ -28132,7 +28132,7 @@ EBP=82.89
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2025/12/6-inch-SB17NBAC35-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB17NRX2C35-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2025/12/6-inch-SB17NBAC35-8.pdf`},{name:`SB_Acoustics_SB17NRX2C35-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17NRX2C35-4
 Manufacturer=SB Acoustics
@@ -28161,7 +28161,7 @@ EBP=87.8
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/6in-SB17NRX2C35-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB17NRX2C35-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/6in-SB17NRX2C35-4.pdf`},{name:`SB_Acoustics_SB17NRX2C35-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17NRX2C35-8
 Manufacturer=SB Acoustics
@@ -28190,7 +28190,7 @@ EBP=77.66
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/6in-SB17NRX2C35-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB17NRX2L35-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/6in-SB17NRX2C35-8.pdf`},{name:`SB_Acoustics_SB17NRX2L35-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17NRX2L35-4
 Manufacturer=SB Acoustics
@@ -28219,7 +28219,7 @@ EBP=157.69
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2025/03/6in-SB17NRX2L35-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB17NRX2L35-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2025/03/6in-SB17NRX2L35-4.pdf`},{name:`SB_Acoustics_SB17NRX2L35-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17NRX2L35-8
 Manufacturer=SB Acoustics
@@ -28248,7 +28248,7 @@ EBP=126.0
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2025/03/6in-SB17NRX2L35-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB17NRXC35-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2025/03/6in-SB17NRX2L35-8.pdf`},{name:`SB_Acoustics_SB17NRXC35-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17NRXC35-4
 Manufacturer=SB Acoustics
@@ -28277,7 +28277,7 @@ EBP=102.94
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/11/6in-SB17NRXC35-4-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB17NRXC35-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/6in-SB17NRXC35-4-OEM-only.pdf`},{name:`SB_Acoustics_SB17NRXC35-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB17NRXC35-8
 Manufacturer=SB Acoustics
@@ -28306,7 +28306,7 @@ EBP=88.89
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/11/6in-SB17NRXC35-8-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB19ST-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/6in-SB17NRXC35-8-OEM-only.pdf`},{name:`SB_Acoustics_SB19ST-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB19ST-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -28333,7 +28333,7 @@ EBP=653.33
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/05/SB19ST-C000-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB20FRPC30-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SB19ST-C000-4.pdf`},{name:`SB_Acoustics_SB20FRPC30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB20FRPC30-8
 Manufacturer=SB Acoustics
@@ -28362,7 +28362,7 @@ EBP=83.83
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2022/04/8in-SB20FRPC30-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB20PFC-00`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2022/04/8in-SB20FRPC30-8.pdf`},{name:`SB_Acoustics_SB20PFC-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB20PFC-00
 Manufacturer=SB Acoustics
@@ -28381,7 +28381,7 @@ Dd=0.165837192
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2021/02/8in-SB20PFC-00-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB20PFC30-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2021/02/8in-SB20PFC-00-OEM-only.pdf`},{name:`SB_Acoustics_SB20PFC30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB20PFC30-4
 Manufacturer=SB Acoustics
@@ -28410,7 +28410,7 @@ EBP=91.08
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/11/8in-SB20PFC30-4-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB20PFC30-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/8in-SB20PFC30-4-OEM-only.pdf`},{name:`SB_Acoustics_SB20PFC30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB20PFC30-8
 Manufacturer=SB Acoustics
@@ -28439,7 +28439,7 @@ EBP=79.07
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/11/8in-SB20PFC30-8-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB20PFCR-00`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/8in-SB20PFC30-8-OEM-only.pdf`},{name:`SB_Acoustics_SB20PFCR-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB20PFCR-00
 Manufacturer=SB Acoustics
@@ -28458,7 +28458,7 @@ Dd=0.165837192
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/03/8in-SB20PFCR-00.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB20PFCR30-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/03/8in-SB20PFCR-00.pdf`},{name:`SB_Acoustics_SB20PFCR30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB20PFCR30-4
 Manufacturer=SB Acoustics
@@ -28487,7 +28487,7 @@ EBP=91.89
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2022/03/8in-SB20PFCR30-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB20PFCR30-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2022/03/8in-SB20PFCR30-4.pdf`},{name:`SB_Acoustics_SB20PFCR30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB20PFCR30-8
 Manufacturer=SB Acoustics
@@ -28516,7 +28516,7 @@ EBP=79.07
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2022/03/8in-SB20PFCR30-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB20PFCS30-7`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2022/03/8in-SB20PFCR30-8.pdf`},{name:`SB_Acoustics_SB20PFCS30-7`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB20PFCS30-7
 Manufacturer=SB Acoustics
@@ -28545,7 +28545,7 @@ EBP=50.65
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2025/03/8in-SB20PFCS30-7.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB21RDC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2025/03/8in-SB20PFCS30-7.pdf`},{name:`SB_Acoustics_SB21RDC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB21RDC-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -28572,7 +28572,7 @@ EBP=463.41
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/SB21RDC-C000-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB21RDCN-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/SB21RDC-C000-4.pdf`},{name:`SB_Acoustics_SB21RDCN-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB21RDCN-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -28599,7 +28599,7 @@ EBP=346.94
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/04/SB21RDCN-C000-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB21SDC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/04/SB21RDCN-C000-4.pdf`},{name:`SB_Acoustics_SB21SDC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB21SDC-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -28626,7 +28626,7 @@ EBP=464.52
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/05/SB21SDC-C000-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB21SDCN-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SB21SDC-C000-4.pdf`},{name:`SB_Acoustics_SB21SDCN-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB21SDCN-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -28653,7 +28653,7 @@ EBP=346.94
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/04/SB21SDCN-C000-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB23CACS45-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/04/SB21SDCN-C000-4.pdf`},{name:`SB_Acoustics_SB23CACS45-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB23CACS45-4
 Manufacturer=SB Acoustics
@@ -28682,7 +28682,7 @@ EBP=65.71
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2026/05/8-inch-SB23CACS45-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB23CACS45-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2026/05/8-inch-SB23CACS45-4.pdf`},{name:`SB_Acoustics_SB23CACS45-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB23CACS45-8
 Manufacturer=SB Acoustics
@@ -28711,7 +28711,7 @@ EBP=56.82
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2026/05/8-inch-SB23CACS45-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB23MFCL-00`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2026/05/8-inch-SB23CACS45-8.pdf`},{name:`SB_Acoustics_SB23MFCL-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB23MFCL-00
 Manufacturer=SB Acoustics
@@ -28730,7 +28730,7 @@ Dd=0.163517676
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2026/05/8-inch-SB23MFCL-00.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB23MFCL45-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2026/05/8-inch-SB23MFCL-00.pdf`},{name:`SB_Acoustics_SB23MFCL45-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB23MFCL45-4
 Manufacturer=SB Acoustics
@@ -28759,7 +28759,7 @@ EBP=75.0
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2026/05/8-inch-SB23MFCL45-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB23MFCL45-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2026/05/8-inch-SB23MFCL45-4.pdf`},{name:`SB_Acoustics_SB23MFCL45-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB23MFCL45-8
 Manufacturer=SB Acoustics
@@ -28788,7 +28788,7 @@ EBP=61.96
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2026/05/8-inch-SB23MFCL45-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB23NACS45-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2026/05/8-inch-SB23MFCL45-8.pdf`},{name:`SB_Acoustics_SB23NACS45-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB23NACS45-4
 Manufacturer=SB Acoustics
@@ -28817,7 +28817,7 @@ EBP=65.71
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2026/05/8-inch-SB23NACS45-4-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB26ADC-C000-4___Aluminum`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2026/05/8-inch-SB23NACS45-4-OEM-only.pdf`},{name:`SB_Acoustics_SB26ADC-C000-4___Aluminum`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB26ADC-C000-4 / Aluminum
 Manufacturer=SB Acoustics
@@ -28844,7 +28844,7 @@ EBP=361.7
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/SB26ADC-C000-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB26CDC-C000-4___Ceramic`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/SB26ADC-C000-4.pdf`},{name:`SB_Acoustics_SB26CDC-C000-4___Ceramic`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB26CDC-C000-4 / Ceramic
 Manufacturer=SB Acoustics
@@ -28871,7 +28871,7 @@ EBP=345.0
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/05/SB26CDC-C000-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB26SFCL38-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SB26CDC-C000-4.pdf`},{name:`SB_Acoustics_SB26SFCL38-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB26SFCL38-4
 Manufacturer=SB Acoustics
@@ -28900,7 +28900,7 @@ EBP=58.3
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2023/02/10in-SB26SFCL38-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB26SFCL38-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2023/02/10in-SB26SFCL38-4.pdf`},{name:`SB_Acoustics_SB26SFCL38-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB26SFCL38-8
 Manufacturer=SB Acoustics
@@ -28929,7 +28929,7 @@ EBP=45.83
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2023/02/10in-SB26SFCL38-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB26ST-C000-5___Fabric`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2023/02/10in-SB26SFCL38-8.pdf`},{name:`SB_Acoustics_SB26ST-C000-5___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB26ST-C000-5 / Fabric
 Manufacturer=SB Acoustics
@@ -28956,7 +28956,7 @@ EBP=530.49
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/SB26ST-C000-5.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB26STAC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/SB26ST-C000-5.pdf`},{name:`SB_Acoustics_SB26STAC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB26STAC-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -28983,7 +28983,7 @@ EBP=421.35
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/SB26STAC-C000-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB26STC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/SB26STAC-C000-4.pdf`},{name:`SB_Acoustics_SB26STC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB26STC-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -29010,7 +29010,7 @@ EBP=421.35
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/11/SB26STC-C000-4-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB26STCN-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/SB26STC-C000-4-OEM-only.pdf`},{name:`SB_Acoustics_SB26STCN-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB26STCN-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -29037,7 +29037,7 @@ EBP=542.37
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/SB26STCN-C000-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB26STWGC-4`,date:`2026-06-25`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/SB26STCN-C000-4.pdf`},{name:`SB_Acoustics_SB26STWGC-4`,date:`2026-06-25`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB26STWGC-4
 Manufacturer=SB Acoustics
@@ -29096,7 +29096,7 @@ boxbench_issue=scraped_not_human_verified
 boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.
 boxbench_corrections=Corrected parser bug: HTML entity &#8211; (en-dash) was not decoded before parse_number, causing "8211" to be matched instead of actual Q values (Qts/Qes/Qms were all 8211, Le was 8.211H). Fix: html.unescape() applied to li text before parsing. Values now confirmed against SB26STWGC-4 datasheet PDF
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`},{name:`SB_Acoustics_SB29BAC-C000-4___Beryllium`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SB26STWGC-4.pdf`},{name:`SB_Acoustics_SB29BAC-C000-4___Beryllium`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29BAC-C000-4 / Beryllium
 Manufacturer=SB Acoustics
@@ -29123,7 +29123,7 @@ EBP=532.79
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/05/SB29BAC-C000-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB29BNC-C000-4___Beryllium`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SB29BAC-C000-4.pdf`},{name:`SB_Acoustics_SB29BNC-C000-4___Beryllium`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29BNC-C000-4 / Beryllium
 Manufacturer=SB Acoustics
@@ -29150,7 +29150,7 @@ EBP=678.57
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/05/SB29BNC-C000-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB29NRX-00`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/05/SB29BNC-C000-4.pdf`},{name:`SB_Acoustics_SB29NRX-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29NRX-00
 Manufacturer=SB Acoustics
@@ -29169,7 +29169,7 @@ Dd=0.199311499
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/09/10in-SB29NRX-00.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB29NRX2-00`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/09/10in-SB29NRX-00.pdf`},{name:`SB_Acoustics_SB29NRX2-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29NRX2-00
 Manufacturer=SB Acoustics
@@ -29188,7 +29188,7 @@ Dd=0.199311499
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/10/10in-SB29NRX2-00.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB29NRX75-6`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/10/10in-SB29NRX2-00.pdf`},{name:`SB_Acoustics_SB29NRX75-6`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29NRX75-6
 Manufacturer=SB Acoustics
@@ -29217,7 +29217,7 @@ EBP=55.26
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/10in-SB29NRX75-6.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB29NRX75-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/10in-SB29NRX75-6.pdf`},{name:`SB_Acoustics_SB29NRX75-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29NRX75-8
 Manufacturer=SB Acoustics
@@ -29246,7 +29246,7 @@ EBP=66.67
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2022/01/10in-SB29NRX75-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB29RDAC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2022/01/10in-SB29NRX75-8.pdf`},{name:`SB_Acoustics_SB29RDAC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29RDAC-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -29273,7 +29273,7 @@ EBP=666.67
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2025/03/SB29RDAC-C000-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB29RDC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2025/03/SB29RDAC-C000-4.pdf`},{name:`SB_Acoustics_SB29RDC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29RDC-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -29300,7 +29300,7 @@ EBP=666.67
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/11/SB29RDC-C000-4-OEM-only.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB29RDNC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/11/SB29RDC-C000-4-OEM-only.pdf`},{name:`SB_Acoustics_SB29RDNC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29RDNC-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -29327,7 +29327,7 @@ EBP=944.44
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/SB29RDNC-C000-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB29SDAC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/SB29RDNC-C000-4.pdf`},{name:`SB_Acoustics_SB29SDAC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29SDAC-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -29354,7 +29354,7 @@ EBP=550.46
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/SB29SDAC-C000-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB29SDNC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/SB29SDAC-C000-4.pdf`},{name:`SB_Acoustics_SB29SDNC-C000-4___Fabric`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB29SDNC-C000-4 / Fabric
 Manufacturer=SB Acoustics
@@ -29381,7 +29381,7 @@ EBP=797.47
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2023/06/SB29SDNC-C000-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB34NRX-00`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2023/06/SB29SDNC-C000-4.pdf`},{name:`SB_Acoustics_SB34NRX-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB34NRX-00
 Manufacturer=SB Acoustics
@@ -29400,7 +29400,7 @@ Dd=0.254323748
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2022/04/12in-SB34NRX-00.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB34NRX2-00`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2022/04/12in-SB34NRX-00.pdf`},{name:`SB_Acoustics_SB34NRX2-00`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB34NRX2-00
 Manufacturer=SB Acoustics
@@ -29419,7 +29419,7 @@ Dd=0.253822617
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2022/04/12in-SB34NRX2-00.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB34NRX75-16`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2022/04/12in-SB34NRX2-00.pdf`},{name:`SB_Acoustics_SB34NRX75-16`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB34NRX75-16
 Manufacturer=SB Acoustics
@@ -29448,7 +29448,7 @@ EBP=31.25
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/12in-SB34NRX75-16.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB34NRX75-6`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/12in-SB34NRX75-16.pdf`},{name:`SB_Acoustics_SB34NRX75-6`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB34NRX75-6
 Manufacturer=SB Acoustics
@@ -29477,7 +29477,7 @@ EBP=44.19
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/12in-SB34NRX75-6.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB34NRXL75-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/12in-SB34NRX75-6.pdf`},{name:`SB_Acoustics_SB34NRXL75-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB34NRXL75-8
 Manufacturer=SB Acoustics
@@ -29506,7 +29506,7 @@ EBP=75.86
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/12in-SB34NRXL75-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB34SWPL76-3`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/12in-SB34NRXL75-8.pdf`},{name:`SB_Acoustics_SB34SWPL76-3`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB34SWPL76-3
 Manufacturer=SB Acoustics
@@ -29535,7 +29535,7 @@ EBP=52.88
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/03/12in-SB34SWPL76-3-DV.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB34SWPL76-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/03/12in-SB34SWPL76-3-DV.pdf`},{name:`SB_Acoustics_SB34SWPL76-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB34SWPL76-4
 Manufacturer=SB Acoustics
@@ -29564,7 +29564,7 @@ EBP=57.58
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2022/03/12in-SB34SWPL76-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB36WBAC21-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2022/03/12in-SB34SWPL76-4.pdf`},{name:`SB_Acoustics_SB36WBAC21-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB36WBAC21-4
 Manufacturer=SB Acoustics
@@ -29593,7 +29593,7 @@ EBP=190.48
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/03/1in-SB36WBAC21-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB36WBAC21-8`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/03/1in-SB36WBAC21-4.pdf`},{name:`SB_Acoustics_SB36WBAC21-8`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB36WBAC21-8
 Manufacturer=SB Acoustics
@@ -29622,7 +29622,7 @@ EBP=173.91
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/1in-SB36WBAC21-8.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB42FHCL75-6`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/1in-SB36WBAC21-8.pdf`},{name:`SB_Acoustics_SB42FHCL75-6`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB42FHCL75-6
 Manufacturer=SB Acoustics
@@ -29651,7 +29651,7 @@ EBP=57.5
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/03/15in-SB42FHCL75-6.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`},{name:`SB_Acoustics_SB65WBAC25-4`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/03/15in-SB42FHCL75-6.pdf`},{name:`SB_Acoustics_SB65WBAC25-4`,date:`2026-06-24`,content:`[Driver]
 Brand=SB Acoustics
 Model=SB65WBAC25-4
 Manufacturer=SB Acoustics
@@ -29680,7 +29680,7 @@ EBP=149.35
 boxbench_datasheet=https://sbacoustics.com/wp-content/uploads/2020/02/2½in-SB65WBAC25-4.pdf
 boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
-boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`}]},{name:`Parts Express woofer guide`,files:[{name:`Aurum Cantus AC-130F1 5-1_4_ Woofer`,date:`2026-06-24`,content:`[Driver]
+boxbench_detail=Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.`,datasheet:`https://sbacoustics.com/wp-content/uploads/2020/02/2½in-SB65WBAC25-4.pdf`}]},{name:`Parts Express woofer guide`,files:[{name:`Aurum Cantus AC-130F1 5-1_4_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC-130F1 5-1/4" Woofer
 Manufacturer=
@@ -29708,6 +29708,7 @@ Vd=0.0000475
 Dd=0.109981
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Aurum-Cantus-AC-130F1-5-1-4-Woofer-296-400
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Aurum Cantus AC-130MK2`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
@@ -29737,6 +29738,7 @@ Vd=0.0000475
 Dd=0.109981
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Aurum-Cantus-AC-130MKII-5-1-4-Carbon-Fiber-Kevlar-Woofer-296-404
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Aurum Cantus AC-130MKII 5-1_4_ Carbon Fiber_Kevlar Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
@@ -29766,6 +29768,7 @@ Vd=0.0000475
 Dd=0.109981
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Aurum-Cantus-AC-130MKII-5-1-4-Carbon-Fiber-Kevlar-Woofer-296-404
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Aurum Cantus AC-165 6-1_2_ Carbon Fiber_Kevlar Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
@@ -29795,6 +29798,7 @@ Vd=0.0000665
 Dd=0.130131
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Aurum-Cantus-AC-165-6-1-2-Carbon-Fiber-Kevlar-Woofer-296-410
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Aurum Cantus AC-180F1 7_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
@@ -29824,6 +29828,7 @@ Vd=0.0001008
 Dd=0.146255
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Aurum-Cantus-AC-180F1-7-Woofer-296-412
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Aurum Cantus AC-180F1D 7_ DVC Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
@@ -29853,6 +29858,7 @@ Vd=0.0001008
 Dd=0.146255
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Aurum-Cantus-AC-180F1D-7-DVC-Woofer-296-414
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Aurum Cantus AC-200MK2`,date:``,content:`[Driver]
 Brand=Aurum Cantus
@@ -29882,6 +29888,7 @@ Vd=0.000176
 Dd=0.16736567743768008
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Aurum-Cantus-AC-200MKII-8-Carbon-Fiber-Sandwich-Woofer-296-420
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Aurum Cantus AC-200MKII 8_ Carbon Fiber Sandwich Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
@@ -29911,6 +29918,7 @@ Vd=0.000176
 Dd=0.167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Aurum-Cantus-AC-200MKII-8-Carbon-Fiber-Sandwich-Woofer-296-420
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Aurum Cantus AC120_50CK 5_ Midwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
@@ -29940,6 +29948,7 @@ Vd=0.0000492
 Dd=0.102179
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Aurum-Cantus-AC120-50CK-5-Midwoofer-296-440
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Aurum Cantus AC130_50CK 5-1_4_ Midwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
@@ -29969,6 +29978,7 @@ Vd=0.000057
 Dd=0.109981
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Aurum-Cantus-AC130-50CK-5-1-4-Midwoofer-296-442
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Aurum Cantus AC165_50C2C 6-1_2_ Midwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
@@ -29998,6 +30008,7 @@ Vd=0.0000798
 Dd=0.130131
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Aurum-Cantus-AC165-50C2C-6-1-2-Midwoofer-296-446
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Aurum Cantus AC165_50CK 6-1_2_ Midwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
@@ -30027,6 +30038,7 @@ Vd=0.0000798
 Dd=0.130131
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Aurum-Cantus-AC165-50CK-6-1-2-Midwoofer-296-444
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Aurum Cantus AC200_50C2C`,date:``,content:`[Driver]
 Brand=Aurum Cantus
@@ -30056,6 +30068,7 @@ Vd=0.000170103
 Dd=0.189992
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Aurum-Cantus-AC200-50C2C-8-Woofer-296-452
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Aurum Cantus AC250_75C2C 10_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
@@ -30085,6 +30098,7 @@ Vd=0.0002768
 Dd=0.209891
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Aurum-Cantus-AC250-75C2C-10-Woofer-296-454
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Aurum Cantus AC300_75C2C 12_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
@@ -30114,6 +30128,7 @@ Vd=0.000425
 Dd=0.252313
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Aurum-Cantus-AC300-75C2C-12-Woofer-296-458
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Aurum Cantus AC500_75C2C`,date:``,content:`[Driver]
 Brand=Aurum Cantus
@@ -30143,6 +30158,7 @@ Vd=0.00042500000000000003
 Dd=0.252313252202016
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Aurum-Cantus-AC300-75C2C-12-Woofer-296-458
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Aurum Cantus G2 Ribbon Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Aurum Cantus
@@ -30172,6 +30188,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Aurum-Cantus-G2-Ribbon-Tweeter-276-402
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 10BG76-8 10_ Neodymium Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -30201,6 +30218,7 @@ Vd=0.0003072
 Dd=0.201851
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-10BG76-4-10-Neodymium-Subwoofer-294-6471
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 10CL51 10_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -30230,6 +30248,7 @@ Vd=0.000176
 Dd=0.201851
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-10CL51-10-Neodymium-Woofer-294-693
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 10CXN64-8 10_ Professional Neodymium Coaxial Speaker 80 x 80 Degree 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -30259,6 +30278,7 @@ Vd=0.000176
 Dd=0.201851
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-10CXN64-8-10-Professional-Neodymium-Coaxial-Speaker-80-x-80-Degree-8-Ohm-294-5962
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 10FCX64 10_ Professional Coaxial Speaker 70 x 70 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -30288,6 +30308,7 @@ Vd=0.000176
 Dd=0.201851
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-10FCX64-10-Professional-Coaxial-Speaker-70-x-70-8-Ohm-294-5767
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 10HPL64 10_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -30317,6 +30338,7 @@ Vd=0.000128
 Dd=0.201851
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-10HPL64-10-Neodymium-Woofer-294-678
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 10HPL64-16 10_ Professional Neodymium Woofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -30346,6 +30368,7 @@ Vd=0.000128
 Dd=0.201851
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-10HPL64-16-10-Neodymium-Woofer-294-5931
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 10MBX64 10_ Professional Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -30375,6 +30398,7 @@ Vd=0.000021452
 Dd=0.082634
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-10MBX64-10-Professional-Neodymium-Woofer-8-Ohm-294-6016
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 10MD26 10_ Midbass Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -30404,6 +30428,7 @@ Vd=0.000048
 Dd=0.201851
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-10MD26-10-Midbass-Speaker-294-658
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 10NW64 10_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -30433,6 +30458,7 @@ Vd=0.000192
 Dd=0.201851
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-10NW64-10-Neodymium-Woofer-294-679
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 10NW76 10_ Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -30462,6 +30488,7 @@ Vd=0.0002176
 Dd=0.201851
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-10NW76-10-Neodymium-Subwoofer-8-Ohm-294-6050
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 10PLB76 10_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -30491,6 +30518,7 @@ Vd=0.000192
 Dd=0.201851
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-10PLB76-10-Woofer-294-659
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 10PS26 10_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -30520,6 +30548,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-10PS26-10-Woofer-294-656
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 12BG100 12_ Neodymium Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -30549,6 +30578,7 @@ Vd=0.0005481
 Dd=0.257804
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-12BG100-12-Neodymium-Subwoofer-294-697
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 12BG76 12_ 1000W Neodymium Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -30578,6 +30608,7 @@ Vd=0.0004959
 Dd=0.257804
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-12BG76-12-1000W-Neo-Subwoofer-294-692
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 12CL64 12_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -30607,6 +30638,7 @@ Vd=0.0002349
 Dd=0.257804
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-12CL64-12-Neodymium-Woofer-294-694
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 12CL76 12_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -30636,6 +30668,7 @@ Vd=0.0003132
 Dd=0.257804
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-12CL76-12-Neodymium-Woofer-294-695
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 12CLX64 12_ Professional Coaxial Speaker 60 x 60 Degree 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -30665,6 +30698,7 @@ Vd=0.0002871
 Dd=0.257804
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-12CLX64-12-Professional-Coaxial-Speaker-60-x-60-Degree-8-Ohm-294-5949
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 12CXN88 12_ Professional Coaxial Speaker 80 x 80 Degree 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -30694,6 +30728,7 @@ Vd=0.0004176
 Dd=0.257804
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-12CXN88-12-Professional-Coaxial-Speaker-8-Ohm-294-5791
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 12FCX76 12_ Professional Coaxial Speaker 80 x 80 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -30723,6 +30758,7 @@ Vd=0.0003393
 Dd=0.257804
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-12FCX76-12-Professional-Coaxial-Speaker-80-x-80-8-Ohm-294-5770
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 12FW76 12_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -30752,6 +30788,7 @@ Vd=0.0003654
 Dd=0.257804
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-12FW76-12-Professional-Woofer-8-Ohm-294-5951
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 12HCX76 12_ Neodymium Coaxial Speaker 60 x 40 Degree`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -30781,6 +30818,7 @@ Vd=0.0002088
 Dd=0.257804
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-12HCX76-12-Neodymium-Coaxial-Speaker-60-x-40-Degree-294-577
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 12HPL76 12_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -30810,6 +30848,7 @@ Vd=0.0002088
 Dd=0.257804
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-12HPL76-12-Neodymium-Woofer-294-680
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 12MH32 12_ Professional Midbass 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -30839,6 +30878,7 @@ Vd=0.000261
 Dd=0.257804
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-12MH32-12-Professional-Midbass-8-Ohm-294-5953
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 12NBX100 12_ Professional Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -30868,6 +30908,7 @@ Vd=0.000531
 Dd=0.260017
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-12NBX100-12-Professional-Neodymium-Woofer-8-Ohm-294-5954
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 12NDL76 12_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -30897,6 +30938,7 @@ Vd=0.0003393
 Dd=0.257804
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-12NDL76-12-Neodymium-Woofer-294-570
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 12NDL76-16 12_ Professional Neodymium Woofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -30926,6 +30968,7 @@ Vd=0.0003654
 Dd=0.257804
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-12NDL76-16-12-Neodymium-Woofer-16-Ohm-294-5956
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 12NDL88 12_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -30955,6 +30998,7 @@ Vd=0.0004176
 Dd=0.257804
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-12NDL88-12-Neodymium-Woofer-294-5994
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 12NW100 12_ Neodymium Subwoofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -30984,6 +31028,7 @@ Vd=0.0004779
 Dd=0.260017
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-12NW100-12-Neodymium-Subwoofer-Speaker-294-571
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 12NW76 12_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31013,6 +31058,7 @@ Vd=0.0004176
 Dd=0.257804
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-12NW76-12-Neodymium-Woofer-294-681
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 12PE32 12_ Midbass Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31042,6 +31088,7 @@ Vd=0.00014616
 Dd=0.257804
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-12PE32-12-Midbass-Speaker-294-660
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 12PLB76 12_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31071,6 +31118,7 @@ Vd=0.000261
 Dd=0.257804
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-12PLB76-WP-12-Woofer-294-663
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 12PS100 12_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31100,6 +31148,7 @@ Vd=0.0004248
 Dd=0.260017
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-12PS100-12-Woofer-294-665
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 12TBX100 12_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31129,6 +31178,7 @@ Vd=0.0004779
 Dd=0.260017
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-12TBX100-12-High-Power-Woofer-8-Ohm-294-569
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 14CXN88 13.5_ Professional Neodymium Coaxial Speaker 80 x 80 Degree 4_8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31158,6 +31208,7 @@ Vd=0.00060095
 Dd=0.30003
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-14CXN88-4-14-Professional-Neodymium-Coaxial-Speaker-80-x-80-Degree-4-Ohm-294-5964
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 14NDL88 14_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31187,6 +31238,7 @@ Vd=0.0005656
 Dd=0.30003
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-14NDL88-14-Neodymium-Woofer-294-5995
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 15BG100 15_ Neodymium Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31216,6 +31268,7 @@ Vd=0.00089775
 Dd=0.329942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-15BG100-15-Neodymium-Subwoofer-294-698
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 15CL76 15_ Professional Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31245,6 +31298,7 @@ Vd=0.0005985
 Dd=0.329942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-15CL76-15-Professional-Neodymium-Woofer-8-Ohm-294-5980
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 15CXN76 15_ Neodymium Coaxial Speaker 80 x 80 Degree`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31274,6 +31328,7 @@ Vd=0.00038475
 Dd=0.329942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-15CXN76-15-Neodymium-Coaxial-Speaker-80-x-80-Degree-294-578
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 15CXN88 15_ Neodymium Coaxial Speaker 80 x 80 Degree`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31303,6 +31358,7 @@ Vd=0.00072675
 Dd=0.329942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-15CXN88-15-Neodymium-Coaxial-Speaker-80-x-80-Degree-294-6038
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 15DS100 DS Series 15_ High Energy Neodymium Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31332,6 +31388,7 @@ Vd=0.0011115
 Dd=0.329942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-15DS100-DS-Series-15-High-Energy-Neodymium-Subwoofer-4-Ohm-294-6480
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 15DS100 DS Series 15_ High Energy Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31361,6 +31418,7 @@ Vd=0.00123975
 Dd=0.329942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-15DS100-DS-Series-15-High-Energy-Neodymium-Subwoofer-8-Ohm-294-6481
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 15DS115 DS Series 15_ High Energy Neodymium Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31390,6 +31448,7 @@ Vd=0.00141075
 Dd=0.329942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-15DS115-4-15-Neodymium-Subwoofer-4-Ohm-294-6058
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 15DS115 DS Series 15_ High Energy Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31419,6 +31478,7 @@ Vd=0.00141075
 Dd=0.329942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-15DS115-15-Neodymium-Subwoofer-8-Ohm-294-6056
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 15FW76 15_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31448,6 +31508,7 @@ Vd=0.0005985
 Dd=0.329942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-15FW76-8-15-Professional-Woofer-8-Ohm-294-5981
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 15HCX76 15_ Neodymium Coaxial Speaker 60 x 40 Degree`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31477,6 +31538,7 @@ Vd=0.00038475
 Dd=0.329942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-15HCX76-15-Neodymium-Coaxial-Speaker-60-x-40-Degree-294-579
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 15NDL76 15_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31506,6 +31568,7 @@ Vd=0.0005985
 Dd=0.329942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-15NDL76-15-Neodymium-Woofer-294-683
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 15NDL88 15_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31535,6 +31598,7 @@ Vd=0.000684
 Dd=0.329942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-15NDL88-15-Neodymium-Woofer-294-5996
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 15NW100 15_ Neodymium Subwoofer Speaker Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31564,6 +31628,7 @@ Vd=0.0007695
 Dd=0.329942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-15NW100-15-Neodymium-Subwoofer-Speaker-Driver-294-572
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 15NW76 15_ Professional Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31593,6 +31658,7 @@ Vd=0.000684
 Dd=0.329942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-15NW76-15-Professional-Neodymium-Woofer-8-Ohm-294-5985
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 15PLB76 15_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31622,6 +31688,7 @@ Vd=0.0004275
 Dd=0.329942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-15PLB76-15-Professional-Woofer-8-Ohm-294-5986
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 15PS100 15_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31651,6 +31718,7 @@ Vd=0.000684
 Dd=0.329942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-15PS100-15-Woofer-294-673
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 15PS100-4 15_ Professional Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31680,6 +31748,7 @@ Vd=0.000684
 Dd=0.329942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-15PS100-4-15-Professional-Woofer-4-Ohm-294-5987
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 15PZB100 15_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31709,6 +31778,7 @@ Vd=0.000684
 Dd=0.329942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-15PZB100-15-Woofer-294-671
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 15SW100 15_ Professional Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31738,6 +31808,7 @@ Vd=0.00106875
 Dd=0.329942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-15SW100-15-Professional-Neodymium-Subwoofer-8-Ohm-294-5988
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 15SW115 15_ Professional Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31767,6 +31838,7 @@ Vd=0.00115425
 Dd=0.329942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-15SW115-15-Professional-Neodymium-Subwoofer-8-Ohm-294-5989
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 15SW115-4 15_ Professional Neodymium Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31796,6 +31868,7 @@ Vd=0.00115425
 Dd=0.329942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-15SW115-4-15-Professional-Neodymium-Subwoofer-4-Ohm-294-5990
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 15TBW100 15_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31825,6 +31898,7 @@ Vd=0.001026
 Dd=0.329942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-15TBW100-15-Professional-Woofer-8-Ohm-294-5991
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 15TBW100-4 15_ Professional Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31854,6 +31928,7 @@ Vd=0.001026
 Dd=0.329942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-15TBW100-4-15-Professional-Woofer-4-Ohm-294-5992
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 15TBX100 15_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31883,6 +31958,7 @@ Vd=0.0007695
 Dd=0.329942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-15TBX100-15-Woofer-294-670
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 15TBX100-4 15_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31912,6 +31988,7 @@ Vd=0.0007695
 Dd=0.329942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-15TBX100-4-15-Professional-Woofer-4-Ohm-294-5993
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 18DS100 DS Series 18_ High Energy Neodymium Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31941,6 +32018,7 @@ Vd=0.001573
 Dd=0.392507
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-18DS100-4-18-Professional-Neodymium-Subwoofer-4-Ohm-294-5970
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 18DS100-8 18_ Professional Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31970,6 +32048,7 @@ Vd=0.0017545
 Dd=0.392507
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-18DS100-8-18-Professional-Neodymium-Subwoofer-8-Ohm-294-5972
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 18DS115 DS Series 18_ High Energy Neodymium Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -31999,6 +32078,7 @@ Vd=0.00204765
 Dd=0.397503
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-18DS115-4-18-Professional-Neodymium-Subwoofer-4-Ohm-294-6028
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 18DS115 DS Series 18_ High Energy Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32028,6 +32108,7 @@ Vd=0.0019965
 Dd=0.392507
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-18DS115-18-Professional-Neodymium-Subwoofer-8-Ohm-294-6026
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 18NBX100 18_ Professional Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32057,6 +32138,7 @@ Vd=0.00121
 Dd=0.392507
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-18NBX100-18-Professional-Neodymium-Subwoofer-8-Ohm-294-6000
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 18NBX100-4 18_ Professional Neodymium Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32086,6 +32168,7 @@ Vd=0.00121
 Dd=0.392507
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-18NBX100-4-18-Professional-Neodymium-Subwoofer-4-Ohm-294-6001
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 18NW100 18_ Neodymium Subwoofer Speaker Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32115,6 +32198,7 @@ Vd=0.001089
 Dd=0.392507
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-18NW100-18-Neodymium-Subwoofer-Speaker-Driver-294-574
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 18NW100-4 18_ Professional Neodymium Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32144,6 +32228,7 @@ Vd=0.001089
 Dd=0.392507
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-18NW100-4-18-Professional-Neodymium-Subwoofer-4-Ohm-294-6002
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 18PS100 18_ Professional Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32173,6 +32258,7 @@ Vd=0.000968
 Dd=0.392507
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-18PS100-18-Professional-Subwoofer-8-Ohm-294-6003
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 18PS76 18_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32202,6 +32288,7 @@ Vd=0.000847
 Dd=0.392507
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-18PS76-18-Woofer-294-675
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 18PZB100 18_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32231,6 +32318,7 @@ Vd=0.0009072
 Dd=0.379981
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-18PZB100-18-Woofer-294-677
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 18RBX100 18_ Professional Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32260,6 +32348,7 @@ Vd=0.00018988
 Dd=0.155487
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-18RBX100-18-Professional-Subwoofer-8-Ohm-294-6022
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 18RBX100-4 18_ Professional Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32289,6 +32378,7 @@ Vd=0.00018988
 Dd=0.155487
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-18RBX100-4-18-Professional-Subwoofer-4-Ohm-294-6024
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 18SW100 18_ Professional Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32318,6 +32408,7 @@ Vd=0.0015125
 Dd=0.392507
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-18SW100-18-Professional-Neodymium-Subwoofer-8-Ohm-294-6005
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 18SW115 18_ Neodymium Subwoofer Speaker Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32347,6 +32438,7 @@ Vd=0.001694
 Dd=0.392507
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-18SW115-8-18-Neodymium-Subwoofer-Speaker-Driver-294-575
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 18SW115-4 18_ Professional Neodymium Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32376,6 +32468,7 @@ Vd=0.001694
 Dd=0.392507
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-18SW115-4-18-Professional-Neodymium-Subwoofer-4-Ohm-294-6006
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 18TBW100 18_ Professional Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32405,6 +32498,7 @@ Vd=0.001452
 Dd=0.392507
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-18TBW100-18-Professional-Subwoofer-8-Ohm-294-6007
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 18TBW100-4 18_ Professional Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32434,6 +32528,7 @@ Vd=0.001452
 Dd=0.392507
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-18TBW100-4-18-Professional-Subwoofer-4-Ohm-294-6008
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 18TBX100 18_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32463,6 +32558,7 @@ Vd=0.001089
 Dd=0.392507
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-18TBX100-18-Woofer-294-676
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 18TBX100-4 18_ Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32492,6 +32588,7 @@ Vd=0.0010908
 Dd=0.392832
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-18TBX100-4-18-Professional-Subwoofer-4-Ohm-294-6009
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 21DS115 DS Series 21_ High Energy Neodymium Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32521,6 +32618,7 @@ Vd=0.0025215
 Dd=0.462635
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-21DS115-4-21-Professional-Neodymium-Subwoofer-4-Ohm-294-6032
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 21DS115 DS Series 21_ High Energy Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32550,6 +32648,7 @@ Vd=0.00252
 Dd=0.462498
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-21DS115-21-Professional-Neodymium-Subwoofer-8-Ohm-294-6030
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 21SW152 21_ Professional Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32579,6 +32678,7 @@ Vd=0.00252
 Dd=0.462498
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-21SW152-21-Professional-Neodymium-Subwoofer-8-Ohm-294-6020
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 21SW152-4 21_ Professional Neodymium Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32608,6 +32708,7 @@ Vd=0.00252
 Dd=0.462498
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-21SW152-4-21-Neodymium-Subwoofer-4-Ohm-294-689
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 4CXN36 4_ Professional Coaxial Speaker 70 x 70 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32637,6 +32738,7 @@ Vd=0.0000224
 Dd=0.0844402
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-4CXN36-4-Professional-Coaxial-Speaker-70-x-70-8-Ohm-294-6048
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 4NDF34-8 4_ Professional Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32666,6 +32768,7 @@ Vd=0.00002166
 Dd=0.0851908
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-4NDF34-8-4-Professional-Neodymium-Woofer-8-Ohm-294-5938
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 5CXN44 5_ Professional Coaxial Speaker 80 X 80 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32695,6 +32798,7 @@ Vd=0.00005225
 Dd=0.109981
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-5CXN44-5-Professional-Coaxial-Speaker-80-X-80-8-Ohm-294-6049
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 5MDN38 5_ Professional Neodymium Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32724,6 +32828,7 @@ Vd=0.00003325
 Dd=0.109981
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-5MDN38-5-Professional-Neodymium-Midrange-Speaker-8-Ohm-294-5900
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 5NDL38 5_ Professional Neodymium Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32753,6 +32858,7 @@ Vd=0.00003325
 Dd=0.109981
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-5NDL38-5-Professional-Neodymium-Midrange-Speaker-8-Ohm-294-5901
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 5NSM38-8 5_ Professional Neodymium Sealed Back Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32782,6 +32888,7 @@ Vd=0.0000209
 Dd=0.109981
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-5NSM38-8-5-Professional-Neodymium-Sealed-Back-Midrange-8-Ohm-294-5940
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 6FHX51 6.5_ Professional Coaxial Speaker 70 x 70 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32811,6 +32918,7 @@ Vd=0.000066
 Dd=0.129641
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-6FHX51-6.5-Professional-Coaxial-Speaker-70-x-70-8-Ohm-294-5761
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 6HCX51 6.5_ Professional Neodymium Coaxial Speaker 70 x 70 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32840,6 +32948,7 @@ Vd=0.000066
 Dd=0.129641
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-6HCX51-6.5-Neodymium-Coaxial-Speaker-70-x-70-8-Ohm-294-5762
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 6MBX44 6.5_ Professional Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32869,6 +32978,7 @@ Vd=0.0000462
 Dd=0.129641
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-6MBX44-6.5-Professional-Neodymium-Woofer-8-Ohm-294-6014
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 6MD38 6-1_2_ Midrange Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32898,6 +33008,7 @@ Vd=0.0000264
 Dd=0.129641
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-6MD38-6-1-2-Midrange-Speaker-294-651
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 6MD38-16 6.5_ Professional Midrange Speaker 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32927,6 +33038,7 @@ Vd=0.0000462
 Dd=0.129641
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-6MD38-16-6.5-Professional-Midrange-Speaker-16-Ohm-294-5902
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 6MDN44 6-1_2_ Neodymium Midrange Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32956,6 +33068,7 @@ Vd=0.000033
 Dd=0.129641
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-6MDN44-6-1-2-Neodymium-Midrange-Speaker-294-645
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 6MDN44-16 6.5_ Professional Neodymium Midrange Speaker 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -32985,6 +33098,7 @@ Vd=0.0000396
 Dd=0.129641
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-6MDN44-16-6.5-Professional-Neo-Midrange-Speaker-16-Ohm-294-5903
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 6NDL38 6-1_2_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -33014,6 +33128,7 @@ Vd=0.0000792
 Dd=0.129641
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-6NDL38-6-1-2-Neodymium-Woofer-294-646
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 6NDL44 6-1_2_ Professional Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -33043,6 +33158,7 @@ Vd=0.0000792
 Dd=0.129641
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-6NDL44-6-1-2-Neodymium-Woofer-294-647
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 6NSM51-8 6_ Professional Neodymium Sealed Back Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -33072,6 +33188,7 @@ Vd=0.00004004
 Dd=0.134935
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-6NSM51-8-6-Professional-Neodymium-Sealed-Back-Midrange-8-Ohm-294-5944
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 6PEV13 6-1_2_ Midrange Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -33101,6 +33218,7 @@ Vd=0.000033
 Dd=0.129641
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-6PEV13-6-1-2-Midrange-Speaker-294-650
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 8BG51 8_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -33130,6 +33248,7 @@ Vd=0.000143
 Dd=0.167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-8BG51-8-Neodymium-Woofer-294-696
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 8CX21 8_ Professional Coaxial Speaker 100 x 100 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -33159,6 +33278,7 @@ Vd=0.00011
 Dd=0.167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-8CX21-8-Professional-Coaxial-Speaker-100-x-100-8-Ohm-294-5763
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 8CXN51 8_ Professional Neodymium Coaxial Speaker 100 x 100 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -33188,6 +33308,7 @@ Vd=0.000132
 Dd=0.167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-8CXN51-8-Neodymium-Coaxial-Speaker-100-x-100-8-Ohm-294-5764
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 8FCX51 8_ Professional Coaxial Speaker 100 x 100 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -33217,6 +33338,7 @@ Vd=0.000143
 Dd=0.167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-8FCX51-8-Professional-Coaxial-Speaker-100-x-100-8-Ohm-294-5766
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 8FG51 8_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -33246,6 +33368,7 @@ Vd=0.000143
 Dd=0.167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-8FG51-8-Professional-Woofer-8-Ohm-294-5911
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 8MBX51 8_ Professional Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -33275,6 +33398,7 @@ Vd=0.000176
 Dd=0.167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-8MBX51-8-Professional-Neodymium-Woofer-8-Ohm-294-6015
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 8MDN51 8_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -33304,6 +33428,7 @@ Vd=0.000132
 Dd=0.167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-8MDN51-8-Neodymium-Woofer-294-648
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 8MDN51-16 8_ Professional Neodymium Woofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -33333,6 +33458,7 @@ Vd=0.000132
 Dd=0.167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-8MDN51-16-8-Professional-Neodymium-Woofer-16-Ohm-294-5913
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 8NDL51 8_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -33362,6 +33488,7 @@ Vd=0.000154
 Dd=0.167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-8NDL51-8-Neodymium-Woofer-294-649
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 8NDL51-16 8_ Professional Neodymium Woofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -33391,6 +33518,7 @@ Vd=0.000154
 Dd=0.167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-8NDL51-16-8-Professional-Neodymium-Woofer-16-Ohm-294-5914
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 8NDL64 8_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -33420,6 +33548,7 @@ Vd=0.000099
 Dd=0.167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-8NDL64-8-Neodymium-Woofer-294-6012
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 8NDL64-16 8_ Neodymium Woofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -33449,6 +33578,7 @@ Vd=0.000099
 Dd=0.167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-8NDL64-16-8-Neodymium-Woofer-16-Ohm-294-6013
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 8NSM64-8 8_ Professional Neodymium Sealed Back Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -33478,6 +33608,7 @@ Vd=0.000044
 Dd=0.167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-8NSM64-8-8-Professional-Neodymium-Sealed-Back-Midrange-8-Ohm-294-5946
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 8PE21-8 8_ Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -33507,6 +33638,7 @@ Vd=0.000055
 Dd=0.167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-8PE21-8-Midrange-Speaker-294-652
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 8PS21-16 8_ Professional Woofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -33536,6 +33668,7 @@ Vd=0.00011
 Dd=0.167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-8PS21-16-8-Professional-Woofer-16-Ohm-294-5917
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`B&C Speakers B&C 8PS21-8 8_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
@@ -33565,6 +33698,7 @@ Vd=0.00011
 Dd=0.167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/B-C-8PS21-WP-8-Woofer-294-654
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beston RT001A Ribbon Tweeter 6 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beston
@@ -33594,6 +33728,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beston-RT001A-Ribbon-Tweeter-277-110
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 10CMV2 10_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -33623,6 +33758,7 @@ Vd=2.47e-8
 Dd=0.00219962
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-10CMV2-10-Woofer-8-Ohm-253-028
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 10G40 G40 Series 10_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -33652,6 +33788,7 @@ Vd=2.66e-8
 Dd=0.00219962
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-10G40-G40-Series-10-Subwoofer-8-Ohm-253-004
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 10MC500 MC Series 10_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -33681,6 +33818,7 @@ Vd=2.8e-8
 Dd=0.002111
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-10MC500-MC-Series-10-Woofer-8-Ohm-253-012
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 10MC700Nd MC Series 10_ Neo Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -33710,6 +33848,7 @@ Vd=2.45e-8
 Dd=0.002111
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-10MC700Nd-MC-Series-10-Neo-Woofer-8-Ohm-253-013
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 10MCB700 MCB Series 10_ Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -33739,6 +33878,7 @@ Vd=2.45e-8
 Dd=0.002111
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-10MCB700-MCB-Series-10-Midbass-Woofer-8-Ohm-253-020
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 10MCS500 MCS Series 10_ Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -33768,6 +33908,7 @@ Vd=2.8e-8
 Dd=0.002111
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-10MCS500-MCS-Series-10-Subwoofer-8-Ohm-253-023
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 10MI100 MI100 Series 10_ Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -33797,6 +33938,7 @@ Vd=1.71e-8
 Dd=0.00219962
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-10MI100-MI100-Series-10-Midrange-Speaker-8-Ohm-253-039
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 10NMFS NMF Series 10_ Carbon Fiber Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -33826,6 +33968,7 @@ Vd=5.365e-8
 Dd=0.00217048
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-10NMFS-NMF-Series-10-Carbon-Fiber-Cone-Woofer-8-Ohm-253-087
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 10WR300 WR Series 10_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -33855,6 +33998,7 @@ Vd=
 Dd=0.002111
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-10WR300-WR-Series-10-Woofer-8-Ohm-253-059
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 12BR70 12_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -33884,6 +34028,7 @@ Vd=0.000432
 Dd=0.262212
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-12BR70-12-Subwoofer-8-Ohm-253-075
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 12G40 G40 Series 12_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -33913,6 +34058,7 @@ Vd=3.71e-8
 Dd=0.00259772
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-12G40-G40-Series-12-Subwoofer-8-Ohm-253-005
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 12LEX1000Fe LEX Series 12_  Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -33942,6 +34088,7 @@ Vd=6.05e-8
 Dd=0.00264628
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-12LEX1000Fe-LEX-Series-12-Subwoofer-8-Ohm-253-041
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 12LEX1300Nd LEX Series 12_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -33971,6 +34118,7 @@ Vd=6.05e-8
 Dd=0.00264628
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-12LEX1300Nd-LEX-Series-12-Neo-Subwoofer-8-Ohm-253-042
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 12MC500 MC Series 12_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34000,6 +34148,7 @@ Vd=4.4e-8
 Dd=0.00264628
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-12MC500-MC-Series-12-Subwoofer-8-Ohm-253-014
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 12MC700Nd MC Series 12_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34029,6 +34178,7 @@ Vd=3.85e-8
 Dd=0.00264628
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-12MC700Nd-MC-Series-12-Neo-Subwoofer-8-Ohm-253-015
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 12MCB700 MCB Series 12_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34058,6 +34208,7 @@ Vd=3.85e-8
 Dd=0.00264628
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-12MCB700-MCB-Series-12-Subwoofer-8-Ohm-253-021
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 12MCS500 MCS Series 12_ Midbass Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34087,6 +34238,7 @@ Vd=4.4e-8
 Dd=0.00264628
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-12MCS500-MCS-Series-12-Midbass-Driver-8-Ohm-253-024
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 12MI100 MI100 Series 12_ Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34116,6 +34268,7 @@ Vd=1.59e-8
 Dd=0.00259772
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-12MI100-MI100-Series-12-Midrange-Speaker-8-Ohm-253-040
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 12P80Fe_V2 P80 Series 12_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34145,6 +34298,7 @@ Vd=4.125e-8
 Dd=0.00264628
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-12P80Fe-V2-P80-Series-12-Subwoofer-8-Ohm-253-006
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 12P80Nd_V2 P80 Series 12_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34174,6 +34328,7 @@ Vd=4.125e-8
 Dd=0.00264628
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-12P80Nd-V2-P80-Series-12-Neo-Subwoofer-8-Ohm-253-007
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 12WR400 WR Series 12_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34203,6 +34358,7 @@ Vd=3.339e-8
 Dd=0.00259772
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-12WR400-WR-Series-12-Subwoofer-8-Ohm-253-060
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 14MC700Nd 14_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34232,6 +34388,7 @@ Vd=4.9e-8
 Dd=0.00298541
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-14MC700Nd-14-Subwoofer-8-Ohm-253-019
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 15CMV2 15_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34261,6 +34418,7 @@ Vd=6.16e-8
 Dd=0.00334731
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-15CMV2-15-Subwoofer-8-Ohm-253-030
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 15LEX1000Fe LEX Series 15_  Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34290,6 +34448,7 @@ Vd=9.68e-8
 Dd=0.00334731
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-15LEX1000Fe-LEX-Series-15-Subwoofer-8-Ohm-253-043
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 15LEX1000Nd LEX Series 15_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34319,6 +34478,7 @@ Vd=9.68e-8
 Dd=0.00334731
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-15LEX1000Nd-LEX-Series-15-Neo-Subwoofer-8-Ohm-253-044
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 15LEX1600Fe LEX Series 15_  Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34348,6 +34508,7 @@ Vd=1.144e-7
 Dd=0.00334731
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-15LEX1600Fe-LEX-Series-15-Subwoofer-8-Ohm-253-045
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 15LEX1600Nd LEX Series 15_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34377,6 +34538,7 @@ Vd=1.276e-7
 Dd=0.00334731
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-15LEX1600Nd-LEX-Series-15-Neo-Subwoofer-8-Ohm-253-046
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 15MC500 MC Series 15_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34406,6 +34568,7 @@ Vd=7.04e-8
 Dd=0.00334731
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-15MC500-MC-Series-15-Subwoofer-8-Ohm-253-016
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 15MC700Nd MC Series 15_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34435,6 +34598,7 @@ Vd=6.16e-8
 Dd=0.00334731
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-15MC700Nd-MC-Series-15-Neo-Subwoofer-8-Ohm-253-017
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 15MCB700 MCB Series 15_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34464,6 +34628,7 @@ Vd=6.16e-8
 Dd=0.00334731
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-15MCB700-MCB-Series-15-Subwoofer-8-Ohm-253-022
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 15MCS500 MCS Series 15_ Midbass Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34493,6 +34658,7 @@ Vd=7.04e-8
 Dd=0.00334731
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-15MCS500-MCS-Series-15-Midbass-Driver-8-Ohm-253-025
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 15P80Fe_N P80 Series 15_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34522,6 +34688,7 @@ Vd=6.6e-8
 Dd=0.00334731
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-15P80Fe-N-P80-Series-15-Subwoofer-8-Ohm-253-008
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 15P80Nd P80 Series 15_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34551,6 +34718,7 @@ Vd=6.6e-8
 Dd=0.00334731
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-15P80Nd-P80-Series-15-Neo-Subwoofer-8-Ohm-253-009
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 15QLEX1600Fe QLEX Series 15_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34580,6 +34748,7 @@ Vd=1.144e-7
 Dd=0.00334731
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-15QLEX1600Fe-QLEX-Series-15-Subwoofer-8-Ohm-253-054
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 15WR400 WR Series 15_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34609,6 +34778,7 @@ Vd=5.544e-8
 Dd=0.00334731
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-15WR400-WR-Series-15-Subwoofer-8-Ohm-253-061
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 18LEX1000Fe LEX Series 18_  Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34638,6 +34808,7 @@ Vd=1.3805e-7
 Dd=0.00399739
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-18LEX1000Fe-LEX-Series-18-Subwoofer-8-Ohm-253-047
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 18LEX1000Nd LEX Series 18_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34667,6 +34838,7 @@ Vd=1.3805e-7
 Dd=0.00399739
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-18LEX1000Nd-LEX-Series-18-Neo-Subwoofer-8-Ohm-253-048
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 18LEX1200Fe LEX Series 18_  Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34696,6 +34868,7 @@ Vd=0.0013805
 Dd=0.399739
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-18LEX1200Fe-LEX-Series-18-Subwoofer-8-Ohm-253-049
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 18LEX1200Nd LEX Series 18_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34725,6 +34898,7 @@ Vd=0.0013805
 Dd=0.399739
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-18LEX1200Nd-LEX-Series-18-Neo-Subwoofer-8-Ohm-253-050
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 18LEX1600Fe LEX Series 18_  Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34754,6 +34928,7 @@ Vd=1.6315e-7
 Dd=0.00399739
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-18LEX1600Fe-LEX-Series-18-Subwoofer-8-Ohm-253-051
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 18LEX1600Nd LEX Series 18_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34783,6 +34958,7 @@ Vd=1.81975e-7
 Dd=0.00399739
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-18LEX1600Nd-LEX-Series-18-Neo-Subwoofer-8-Ohm-253-052
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 18QLEX1600Fe QLEX Series 18_ Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34812,6 +34988,7 @@ Vd=1.6315e-7
 Dd=0.00399739
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-18QLEX1600Fe-QLEX-Series-18-Subwoofer-4-Ohm-253-056
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 18QLEX1600Fe QLEX Series 18_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34841,6 +35018,7 @@ Vd=1.6315e-7
 Dd=0.00399739
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-18QLEX1600Fe-QLEX-Series-18-Subwoofer-8-Ohm-253-055
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 21LEX1600Nd LEX Series 21_ Neo Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34870,6 +35048,7 @@ Vd=2.4276e-7
 Dd=0.00469872
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-21LEX1600Nd-LEX-Series-21-Neo-Subwoofer-8-Ohm-253-053
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 21QLEX1600Fe QLEX Series 21_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34899,6 +35078,7 @@ Vd=2.2542e-7
 Dd=0.00469872
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-21QLEX1600Fe-QLEX-Series-21-Subwoofer-8-Ohm-253-057
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 3FR30V2 3_ Full-Range Loudspeaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34928,6 +35108,7 @@ Vd=6e-10
 Dd=0.000618039
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-3FR30V2-3-Full-Range-Loudspeaker-8-Ohm-253-091
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 4FR40 4_ Full-Range Loudspeaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34957,6 +35138,7 @@ Vd=1.65e-9
 Dd=0.000836828
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-4FR40-4-Full-Range-Loudspeaker-8-Ohm-253-092
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 5G40Nd_N G40 Series 5_ Midbass Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -34986,6 +35168,7 @@ Vd=2.55e-9
 Dd=0.00104031
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-5G40Nd-N-G40-Series-5-Midbass-Speaker-8-Ohm-253-001
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 5P200Fe P200 Series 5_ Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -35015,6 +35198,7 @@ Vd=5.415e-9
 Dd=0.00109981
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-5P200Fe-P200-Series-5-Midbass-Woofer-8-Ohm-253-031
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 5P200Nd P200 Series 5_ Midbass Neo Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -35044,6 +35228,7 @@ Vd=5.415e-9
 Dd=0.00109981
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-5P200Nd-P200-Series-5-Midbass-Neo-Woofer-8-Ohm-253-032
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 6CMV2 6.5_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -35073,6 +35258,7 @@ Vd=7.98e-9
 Dd=0.00133512
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-6CMV2-6.5-Woofer-8-Ohm-253-026
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 6G40Nd G40 Series 6.5_ Midbass Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -35102,6 +35288,7 @@ Vd=4.2e-9
 Dd=0.00133512
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-6G40Nd-G40-Series-6.5-Midbass-Speaker-8-Ohm-253-002
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 6MCF200Nd 6.5_ Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -35131,6 +35318,7 @@ Vd=3.5e-9
 Dd=0.00133512
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-6MCF200Nd-6.5-Midbass-Woofer-8-Ohm-253-018
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 6MI100 MI100 Series 6.5_ Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -35160,6 +35348,7 @@ Vd=4.2e-9
 Dd=0.00133512
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-6MI100-MI100-Series-6.5-Midrange-8-Ohm-253-037
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 6NMFW NMF Series 6.5_ Carbon Fiber Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -35189,6 +35378,7 @@ Vd=1.386e-8
 Dd=0.00140028
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-6NMFW-NMF-Series-6.5-Carbon-Fiber-Cone-Woofer-8-Ohm-253-085
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 6P200Fe P200 Series 6.5_ Midbass Woofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -35218,6 +35408,7 @@ Vd=5.4e-9
 Dd=0.00131106
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-6P200Fe-P200-Series-6.5-Midbass-Woofer-16-Ohm-253-034
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 6P200Fe P200 Series 6.5_ Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -35247,6 +35438,7 @@ Vd=6.75e-9
 Dd=0.00131106
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-6P200Fe-P200-Series-6.5-Midbass-Woofer-8-Ohm-253-033
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 6P200Nd P200 Series 6.5_ Midbass Neo Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -35276,6 +35468,7 @@ Vd=7.425e-9
 Dd=0.00131106
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-6P200Nd-P200-Series-6.5-Midbass-Neo-Woofer-8-Ohm-253-035
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 8CFX260Nd 8_ Coaxial Neo Loudspeaker 8+8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -35305,6 +35498,7 @@ Vd=1.32e-8
 Dd=0.00167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-8CFX260Nd-8-Coaxial-Neo-Loudspeaker-88-Ohm-253-098
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 8CMV2 8_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -35334,6 +35528,7 @@ Vd=1.254e-8
 Dd=0.00167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-8CMV2-8-Woofer-8-Ohm-253-027
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 8CX300Fe 8_ Coaxial Loudspeaker 8+16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -35363,6 +35558,7 @@ Vd=1.32e-8
 Dd=0.00167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-8CX300Fe-8-Coaxial-Loudspeaker-816-Ohm-253-099
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 8CX300Nd_N 8_ Coaxial Neo Loudspeaker 8+8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -35392,6 +35588,7 @@ Vd=1.32e-8
 Dd=0.00167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-8CX300Nd-N-8-Coaxial-Neo-Loudspeaker-88-Ohm-253-100
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 8G40 G40 Series 8_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -35421,6 +35618,7 @@ Vd=1.43e-8
 Dd=0.00167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-8G40-G40-Series-8-Woofer-8-Ohm-253-003
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 8MC300Nd MC Series 8_ Neo Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -35450,6 +35648,7 @@ Vd=1.32e-8
 Dd=0.00167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-8MC300Nd-MC-Series-8-Neo-Woofer-8-Ohm-253-010
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 8MC500Nd MC Series 8_ Neo Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -35479,6 +35678,7 @@ Vd=1.1e-8
 Dd=0.00167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-8MC500Nd-MC-Series-8-Neo-Woofer-8-ohm-253-011
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 8MI100 MI100 Series 8_ Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -35508,6 +35708,7 @@ Vd=6.6e-9
 Dd=0.00167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-8MI100-MI100-Series-8-Midrange-8-Ohm-253-038
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 8NMFW NMF Series 8_ Carbon Fiber Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -35537,6 +35738,7 @@ Vd=2.043e-8
 Dd=0.00170007
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-8NMFW-NMF-Series-8-Carbon-Fiber-Cone-Woofer-8-Ohm-253-086
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma 8P300Fe_N P200 Series 8_ Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -35566,6 +35768,7 @@ Vd=1.32e-8
 Dd=0.00167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-8P300Fe-N-P200-Series-8-Midbass-Woofer-8-Ohm-253-036
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma T25M NMF Series 1_ Aluminum Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -35595,6 +35798,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-T25M-NMF-Series-1-Aluminum-Dome-Tweeter-253-088
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Beyma T25S NMF Series 1_ Fabric Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Beyma
@@ -35624,6 +35828,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Beyma-T25S-NMF-Series-1-Fabric-Dome-Tweeter-253-089
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`CSS LD25X 25mm Silk Dome XBL2 Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=CSS
@@ -35653,6 +35858,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/CSS-LD25X-25mm-Silk-Dome-XBL2-Tweeter-290-3007
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`CSS LDW7 7_ Midwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=CSS
@@ -35682,6 +35888,7 @@ Vd=0.00007205
 Dd=0.129149
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/CSS-LDW7-7-Midwoofer-290-3002
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`CSS SDX12 XBL2 12_ Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=CSS
@@ -35711,6 +35918,7 @@ Vd=0.0013748
 Dd=0.250032
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/CSS-SDX12-XBL2-12-Subwoofer-290-3006
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion AN2075 2_ Full-Range Compact Array Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -35740,6 +35948,7 @@ Vd=0.0000018735
 Dd=0.0398783
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-AN2075-2-Full-Range-Compact-Array-Driver-294-2044
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion AN2775 2-3_4_ Full-Range Compact Array Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -35769,6 +35978,7 @@ Vd=0.000004233
 Dd=0.0599423
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-AN2775-2-3-4-Full-Range-Compact-Array-Driver-294-2046
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion AN3510 3_ Full-Range Compact Array Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -35798,6 +36008,7 @@ Vd=0.00000481
 Dd=0.0699959
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-AN3510-3-Full-Range-Compact-Array-Driver-294-2048
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion CF0820BMB 8_ Extended Excursion Midbass Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -35827,6 +36038,7 @@ Vd=0.000119165
 Dd=0.17
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-CF0820BMB-8-Professional-Midrange-Driver-8-Ohm-294-1966
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion CF0820M 8_ Professional Midrange Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -35856,6 +36068,7 @@ Vd=0.000034047
 Dd=0.17
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-CF0820M-8-Professional-Midrange-Driver-8-Ohm-294-1968
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion CF1025BMB 10_ Extended Excursion Midbass Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -35885,6 +36098,7 @@ Vd=0.000161057
 Dd=0.21
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-CF1025BMB-8-Professional-Midrange-Driver-8-Ohm-294-1970
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion CF1230BMB 12_ Extended Excursion Midbass Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -35914,6 +36128,7 @@ Vd=0.000371651
 Dd=0.26
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-CF1230BMB-12-Extended-Excursion-Midbass-Driver-8-Ohm-294-1971
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion CF1840JD 18_ 1200 Watt Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -35943,6 +36158,7 @@ Vd=0.001134
 Dd=0.379981
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-CF1840JD-18-1200-Watt-Professional-Woofer-294-2102
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion FTR12-3070C 12_ Professional Cast Frame Speaker 350W`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -35972,6 +36188,7 @@ Vd=0.00015939
 Dd=0.260091
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-FTR12-3070C-12-Professional-Speaker-350W-294-2000
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion FTR12-4080DL 12_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36001,6 +36218,7 @@ Vd=0.000722065
 Dd=0.26
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-FTR12-4080DL-12-Subwoofer-4-Ohm-294-1973
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion FTR18-4080FD 18_ Professional Cast Frame Speaker 1,000W`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36030,6 +36248,7 @@ Vd=0.000680472
 Dd=0.380001
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-FTR18-4080FD-18-Professional-Speaker-1000W-294-2014
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion FTX0820 8_ Coaxial Full-Range Professional Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36059,6 +36278,7 @@ Vd=0.00004542
 Dd=0.170045
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-FTX0820-8-Coaxial-Full-Range-Professional-Driver-294-2096
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion FTX1025 10_ Coaxial Full-Range Professional Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36088,6 +36308,7 @@ Vd=0.00017318
 Dd=0.21
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-FTX1025-10-Coaxial-Full-Range-Professional-Driver-294-2510
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion FTX1225 12_ Coaxial Full-Range Professional Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36117,6 +36338,7 @@ Vd=0.00006764
 Dd=0.146733
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-FTX1225-12-Coaxial-Full-Range-Professional-Driver-294-2098
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion K12H-200TC 12_ 200 Watt Full-Range Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36146,6 +36368,7 @@ Vd=0.00010606
 Dd=0.259846
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-K12H-200TC-12-200-Watt-Full-Range-Professional-Wo-294-2082
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion Midnight 60 12_ 60W Guitar Speaker 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36175,6 +36398,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-Midnight-60-12-60W-Guitar-Speaker-16-Ohm-294-1986
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion Midnight 60 12_ 60W Guitar Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36204,6 +36428,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-Midnight-60-12-60W-Guitar-Speaker-8-Ohm-294-1984
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion Neo V-Type 12_ Guitar Speaker 70W 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36233,6 +36458,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-Neo-V-Type-12-Guitar-Speaker-70W-16-Ohm-294-1982
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion PULSE XL 10.20 10_ 200 Watt Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36262,6 +36488,7 @@ Vd=0.00028578
 Dd=0.210012
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-PULSE-XL-10.20-10-200-Watt-Professional-Woofer-8-Ohm-294-2506
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion PULSE XL 12.20 12_ 500 Watt Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36291,6 +36518,7 @@ Vd=0.000437993
 Dd=0.259993
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-PULSE-XL-12.20-12-500-Watt-Professional-Woofer-8-Ohm-294-2507
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion PULSE XL 15.25 15_ 700 Watt Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36320,6 +36548,7 @@ Vd=0.00068424
 Dd=0.33
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-PULSE-XL-15.25-15-700-Watt-Professional-Woofer-8-Ohm-294-2508
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion PowerProX18 18_ Professional Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36349,6 +36578,7 @@ Vd=0.000174468
 Dd=0.154551
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-PowerProX18-18-Professional-Subwoofer-294-1996
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion TF0510 5_ Professional Midrange Speaker 30W`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36378,6 +36608,7 @@ Vd=0.0000086526
 Dd=0.100076
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-TF0510-5-Professional-Speaker-30W-294-2050
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion TF0615 6_ 100 Watt Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36407,6 +36638,7 @@ Vd=0.00003845
 Dd=0.139937
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-TF0615-6-100-Watt-Professional-Woofer-8-Ohm-294-2052
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion TF0615MR 6_ Professional Midrange Speaker 50W`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36436,6 +36668,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-TF0615MR-6-Professional-Midrange-Speaker-50W-294-2054
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion TF0818 8_ Professional Speaker 150W`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36465,6 +36698,7 @@ Vd=0.00007938
 Dd=0.169933
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-TF0818-8-Professional-Speaker-150W-294-2060
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion TF1020 10_ Professional Speaker 150W`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36494,6 +36728,7 @@ Vd=0.00006932
 Dd=0.210073
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-TF1020-10-Professional-Speaker-150W-294-2070
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion TF1220 12_ Professional Speaker 150W`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36523,6 +36758,7 @@ Vd=0.00010626
 Dd=0.260091
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-TF1220-12-Professional-Speaker-150W-294-2074
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion TF1225 12_ Professional Speaker 250W`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36552,6 +36788,7 @@ Vd=0.000132825
 Dd=0.260091
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-TF1225-12-Professional-Speaker-250W-294-2078
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion TF1225e 12_ Professional Speaker 300W`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36581,6 +36818,7 @@ Vd=0.000185955
 Dd=0.260091
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-TF1225e-12-Professional-Speaker-300W-294-2080
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion TF1525e 15_ Professional Speaker 300W`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36610,6 +36848,7 @@ Vd=0.00029925
 Dd=0.329942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-TF1525e-15-Professional-Speaker-300W-294-2088
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion TF1530 15_ Professional Speaker 400W`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36639,6 +36878,7 @@ Vd=0.000171
 Dd=0.329942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-TF1530-15-Professional-Speaker-400W-294-2092
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion TFX0515 5_ Coaxial Full-Range Professional Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36668,6 +36908,7 @@ Vd=0.0000176715
 Dd=0.1
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-TFX0515-5-Coaxial-Full-Range-Professional-Driver-294-1974
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion TN1230 12_ Professional Neodymium Woofer 350W`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36697,6 +36938,7 @@ Vd=0.000199099
 Dd=0.26
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-TN1230-12-Professional-Neodymium-Woofer-350W-294-1976
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion TSQ1845 Ten Squared Series 18_ Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36726,6 +36968,7 @@ Vd=0.001701
 Dd=0.379981
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-TSQ1845-18-1-800-Watt-Neodymium-Subwoofer-8-Ohm-294-2504
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion TSQ2145 Ten Squared Series 21_ Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36755,6 +36998,7 @@ Vd=0.00249285
 Dd=0.46
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-TSQ21-21-Neodymium-Subwoofer-8-Ohm-294-2520
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion TSQ2460 Ten Squared Series 24_ Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36784,6 +37028,7 @@ Vd=0.00419812
 Dd=0.533927
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-TSQ2460-24-Neodymium-Subwoofer-8-Ohm-294-2521
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion Truvox 0615 6.5_ Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36813,6 +37058,7 @@ Vd=0.000054089
 Dd=0.140273
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-Truvox-0615-6.5-Midbass-Woofer-8-Ohm-294-2511
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion Truvox 0820 8_ Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36842,6 +37088,7 @@ Vd=0.00011349
 Dd=0.17
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-Truvox-0820-8-Midbass-Woofer-8-Ohm-294-2512
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion Truvox 1225 12_ Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36871,6 +37118,7 @@ Vd=0.000252192
 Dd=0.26
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-Truvox-1225-12-Midbass-Woofer-8-Ohm-294-2513
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Celestion Truvox 1525 15_ Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Celestion
@@ -36900,6 +37148,7 @@ Vd=0.000406267
 Dd=0.33
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Celestion-Truvox-1525-15-Midbass-Woofer-8-Ohm-294-2514
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare 10A500W-4 Americano Series 10_ Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -36929,6 +37178,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-10A500W-4-Americano-Series-10-Woofer-4-Ohm-293-208
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare 10A500W-8 Americano Series 10_ Woofer 8 OhmCiare 10A500W-8 Americano Series 10_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -36958,6 +37208,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-10A500W-8-Americano-Series-10-Woofer-8-Ohm-293-209
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare 12.00SW-4 12_ High Power Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -36987,6 +37238,7 @@ Vd=0.00070605
 Dd=0.258051
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-12.00SW-4-12-High-Power-Subwoofer-293-148
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare 12.00SW-8 12_ High Power Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37016,6 +37268,7 @@ Vd=0.0007322
 Dd=0.258051
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-12.00SW-8-12-High-Power-Subwoofer-8-Ohm-293-164
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare 12A500W-4 Americano Series 12_ Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37045,6 +37298,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-12A500W-4-Americano-Series-12-Woofer-4-Ohm-293-210
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare 12A500W-8 Americano Series 12_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37074,6 +37328,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-12A500W-8-Americano-Series-12-Wooer-8-Ohm-293-211
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare 15.00SW-8 15_ High Power Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37103,6 +37358,7 @@ Vd=0.001092
 Dd=0.315139
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-15.00SW-8-15-High-Power-Subwoofer-8-Ohm-293-166
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare 18.00SW-8 18_ High Power Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37132,6 +37388,7 @@ Vd=0.0015876
 Dd=0.379981
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-18.00SW-8-18-High-Power-Subwoofer-8-Ohm-293-168
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare 6A200M-4 Americano Series 6.5_ Midrange 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37161,6 +37418,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-6A200M-4-Americano-Series-6.5-Midrange-4-Ohm-293-200
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare 6A200M-8 Americano Series 6.5_ Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37190,6 +37448,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-6A200M-8-Americano-Series-6.5-Midrange-8-Ohm-293-201
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare 6A200MS-4 Americano Series 6.5_ Sealed-Back Midrange 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37219,6 +37478,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-6A200MS-4-Americano-Series-6.5-Sealed-Back-Midrange-4-Ohm-293-204
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare 6A200MS-8 Americano Series 6.5_ Sealed-Back Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37248,6 +37508,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-6A200MS-8-Americano-Series-6.5-Sealed-Back-Midrange-8-Ohm-293-205
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare 8A250M-4 Americano Series 8_ Midrange 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37277,6 +37538,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-8A250M-4-Americano-Series-8-Midrange-4-Ohm-293-202
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare 8A250M-8 Americano Series 8_ Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37306,6 +37568,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-8A250M-8-Americano-Series-8-Midrange-8-Ohm-293-203
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare 8A250MS-4 Americano Series 8_ Sealed-Back Midrange 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37335,6 +37598,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-8A250MS-4-Americano-Series-8-Sealed-Back-Midrange-4-Ohm-293-206
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare 8A250MS-8 Americano Series 8_ Sealed-Back Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37364,6 +37628,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-8A250MS-8-Americano-Series-8-Sealed-Back-Midrange-8-Ohm-293-207
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare CM100 4_ Midrange 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37393,6 +37658,7 @@ Vd=0.00000912
 Dd=0.0781764
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-CM100-4-Midrange-4-Ohm-293-132
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare CME160 6.5_ Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37422,6 +37688,7 @@ Vd=0.00004795
 Dd=0.132073
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-CME160-6.5-Woofer-293-112
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare CME200 8_ Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37451,6 +37718,7 @@ Vd=0.0000721
 Dd=0.161953
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-CME200-8-Woofer-293-114
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare CME250 10_ Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37480,6 +37748,7 @@ Vd=0.000171
 Dd=0.219962
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-CME250-10-Woofer-293-116
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare CMI160ND 6.5_ Neodymium Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37509,6 +37778,7 @@ Vd=0.00006165
 Dd=0.132073
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-CMI160ND-6.5-Neodymium-Woofer-293-118
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare CMI320ND 12_ Neodymium Midbass 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37538,6 +37808,7 @@ Vd=0.0002735
 Dd=0.263906
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-CMI320ND-12-Neodymium-Midbass-4-Ohm-293-134
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare CMR160 6.5_ Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37567,6 +37838,7 @@ Vd=0.00002025
 Dd=0.131106
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-CMR160-6.5-Full-Range-Driver-293-108
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare CMR200 8_ Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37596,6 +37868,7 @@ Vd=0.00008208
 Dd=0.165837
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-CMR200-8-Full-Range-Driver-293-110
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare CSD124-22 12_ High Power Subwoofer Dual 2 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37625,6 +37898,7 @@ Vd=0.0006383
 Dd=0.250032
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-CSD124-22-12-High-Power-Subwoofer-Dual-2-Ohm-293-170
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare CSD154-22 15_ High Power Subwoofer Dual 2 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37654,6 +37928,7 @@ Vd=0.000975
 Dd=0.309019
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-CSD154-22-15-High-Power-Subwoofer-Dual-2-Ohm-293-172
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare CSD184-22 18_ High Power Subwoofer Dual 2 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37683,6 +37958,7 @@ Vd=0.0014352
 Dd=0.374921
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-CSD184-22-18-High-Power-Subwoofer-Dual-2-Ohm-293-174
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare CT250 1_ Neodymium Dome Tweeter Pair`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37712,6 +37988,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-CT250-1-Neodymium-Dome-Tweeter-Pair-293-100
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare CT440 1.25_ Neodymium Horn Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37741,6 +38018,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-CT440-1.25-Neodymium-Horn-Tweeter-293-104
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare CW261SPL 10_ High-Output Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37770,6 +38048,7 @@ Vd=
 Dd=0.212902
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-CW261SPL-10-High-Output-Woofer-8-Ohm-293-144
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare CXPA-4 4_ Neodymium Coaxial Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37799,6 +38078,7 @@ Vd=0.0000141707
 Dd=0.081
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-PCXPA-4-4-Neodymium-Coaxial-Driver-293-107
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare HM500 2_ Dome Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37828,6 +38108,7 @@ Vd=0.0000026
 Dd=0.0575363
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-HM500-2-Dome-Midrange-8-Ohm-293-130
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare HSG200-4 8_ Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37857,6 +38138,7 @@ Vd=0.00016425
 Dd=0.166985
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-HSG200-4-8-Subwoofer-4-Ohm-293-162
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare HT200 3_4_ Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37886,6 +38168,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-HT200-.75-Dome-Tweeter-8-Ohm-293-192
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare HW210 8_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37915,6 +38198,7 @@ Vd=0.00011766
 Dd=0.168125
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-HW210-8-Woofer-8-Ohm-293-138
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare HW251N 10_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37944,6 +38228,7 @@ Vd=0.00019722
 Dd=0.209891
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-HW251N-10-Woofer-8-Ohm-293-140
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare HWG130 5_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -37973,6 +38258,7 @@ Vd=0.00005655
 Dd=0.105248
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-HWG130-5-Woofer-8-Ohm-293-135
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare HWG160-4 6.5_ Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -38002,6 +38288,7 @@ Vd=0.00009165
 Dd=0.133988
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-HWG160-4-6.5-Woofer-293-124
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare PCXPA-6 6.5_ Neodymium Coaxial Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -38031,6 +38318,7 @@ Vd=0.00007414
 Dd=0.131009
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-CXPA-6-6.5-Neodymium-Coaxial-Driver-293-106
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare PWA10.50 10_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -38060,6 +38348,7 @@ Vd=0.000200912
 Dd=0.210012
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-PWA10.50-10-Woofer-8-Ohm-293-182
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare PWA10.64 10_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -38089,6 +38378,7 @@ Vd=0.00015588
 Dd=0.210012
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-PWA10.64-10-Woofer-8-Ohm-293-184
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare PWA12.64 12_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -38118,6 +38408,7 @@ Vd=0.00023895
 Dd=0.260017
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-PWA12.64-12-Woofer-8-Ohm-293-186
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare PWA12.75 12_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -38147,6 +38438,7 @@ Vd=0.00030798
 Dd=0.260017
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-PWA12.75-12-Woofer-8-Ohm-293-188
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare PWA15.75 15_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -38176,6 +38468,7 @@ Vd=0.0006167
 Dd=0.334921
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-PWA15.75-15-Woofer-8-Ohm-293-190
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare PWA5.38 5_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -38205,6 +38498,7 @@ Vd=0.00003705
 Dd=0.109981
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-PWA5.38-5-Woofer-8-Ohm-293-176
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare PWA6.38 6_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -38234,6 +38528,7 @@ Vd=0.00005308
 Dd=0.129984
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-PWA6.38-6-Woofer-8-Ohm-293-178
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Ciare PWA8.50 8_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Ciare
@@ -38263,6 +38558,7 @@ Vd=0.00015436
 Dd=0.170007
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Ciare-PWA8.50-8-Woofer-8-Ohm-293-180
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`DS18 PRO-M6.2NEO 6-1_2_ Professional Water Resistant Neodymium Full-Range Speaker 2 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=DS18
@@ -38292,6 +38588,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/DS18-PRO-M6.2NEO-6.5-Professional-Water-Resistant-Neodymium-Full-Range-Speaker-2-Ohm-294-8052
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`DS18 PRO-M8.2NEO 8_ Professional Water Resistant Neodymium Full-Range Speaker 2 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=DS18
@@ -38321,6 +38618,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/DS18-PRO-M8.2NEO-8-Professional-Water-Resistant-Neodymium-Full-Range-Speaker-2-Ohm-294-8054
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`DS18 PRO-SM8.2 8_ Professional Water Resistant Slim Midrange Speaker 2 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=DS18
@@ -38350,6 +38648,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/DS18-PRO-SM8.2-8-Professional-Water-Resistant-Slim-Midrange-Speaker-2-Ohm-294-8050
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio AMT2-4 Air Motion Transformer Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -38379,6 +38678,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-AMT2-4-Air-Motion-Transformer-Tweeter-275-092
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio AMT3-4 Hi-Res Air Motion Transformer Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -38408,6 +38708,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-AMT3-4-Air-Motion-Transformer-Tweeter-275-093
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio AMTPRO-4 Air Motion Transformer Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -38437,6 +38738,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-AMTPRO-4-Air-Motion-Transformer-Tweeter-275-094
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio CE Series CE140-30S-8 1_ x 5_ Extended Range Speaker Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -38466,6 +38768,7 @@ Vd=0.00000502
 Dd=0.0565317
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-CE140-30S-8-1-x-5-Extended-Range-Driver-8-Ohm-285-145
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio CE Series CE28MB-8 1.1_ Polyimide Full-Range Speaker Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -38495,6 +38798,7 @@ Vd=4.52e-8
 Dd=0.0239897
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-CE28MB-8-1.1-Mylar-Full-Range-Driver-285-147
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio CE Series CE30MB-16B 1-1_4_ Mini Speaker Driver Black 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -38524,6 +38828,7 @@ Vd=3.1e-8
 Dd=0.0198672
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-CE30MB-16B-1-1-4-Mini-Speaker-Black-16-Ohm-285-135
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio CE Series CE30P-4 1-1_4_ Mini Speaker Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -38553,6 +38858,7 @@ Vd=1.23e-7
 Dd=0.0228479
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-CE30P-4-1-1-4-Mini-Speaker-285-113
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio CE Series CE32A-4 1-1_4_ Mini Speaker Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -38582,6 +38888,7 @@ Vd=1.96e-7
 Dd=0.0223408
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-CE32A-4-1-1-4-Mini-Speaker-4-Ohm-285-103
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio CE Series CE32A-8 1-1_4_ Mini Speaker Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -38611,6 +38918,7 @@ Vd=2.744e-7
 Dd=0.0223408
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-CE32A-8-1-1-4-Mini-Speaker-8-Ohm-285-101
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio CE Series CE38M-8 1-1_2_ Mini Speaker Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -38640,6 +38948,7 @@ Vd=4.9e-8
 Dd=0.0249777
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-CE38M-8-1-1-2-Mini-Speaker-8-Ohm-285-129
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio CE Series CE38MB-32 1-1_2_ Mini Speaker Driver Black 32 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -38669,6 +38978,7 @@ Vd=4.9e-8
 Dd=0.0249777
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-CE38MB-32-1-1-2-Mini-Speaker-Black-32-Ohm-285-131
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio CE Series CE40-28P-8 1-1_8_ x 1-1_2_ Mini Speaker Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -38698,6 +39008,7 @@ Vd=5.28e-8
 Dd=0.0259282
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-CE40-28P-8-1-1-8-x-1-1-2-Mini-Speaker-285-115
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio CE Series CE40P-8 1-1_2_ Mini Speaker Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -38727,6 +39038,7 @@ Vd=8.112e-7
 Dd=0.0293379
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-CE40P-8-1-1-2-Mini-Speaker-285-117
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio CE Series CE53N-4 2_ Dual Neo Full-Range Speaker Driver 10W 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -38756,6 +39068,7 @@ Vd=0.00000171
 Dd=0.0329942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-CE53N-4-2-Dual-Neo-Full-Range-10W-4-ohm-285-171
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio CE Series CE65W-8 2-1_2_ Shielded Extended Range Speaker Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -38785,6 +39098,7 @@ Vd=0.00000402
 Dd=0.0505886
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-CE65W-8-2-1-2-Shielded-Extended-Range-Driver-8-285-143
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio CE Series CE70-30P-8 1-1_4_ x 2-3_4_ Full-Range Speaker Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -38814,6 +39128,7 @@ Vd=8.832e-7
 Dd=0.0374921
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-CE70-30P-8-1-1-4-x-2-3-4-Full-Range-Driver-285-119
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio CF120-4 4-1_2_ Woven Carbon Fiber Midwoofer 4 Ohms`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -38843,6 +39158,7 @@ Vd=0.0000179375
 Dd=0.0807797
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-CF120-4-4-1-2-Woven-Carbon-Fiber-Midwoofer-4-O-295-298
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio CF18N-4 3_4_ Carbon Fiber Dome Neodymium Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -38872,6 +39188,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-CF18N-4-3-4-Carbon-Fiber-Dome-Neodymium-Tweeter-4-Ohm-275-411
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio CF18N-4MP 3_4_ Carbon Fiber Dome Neodymium Tweeter Matched Pair 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -38901,6 +39218,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-CF18N-4MP-3-4-Carbon-Fiber-Dome-Neodymium-Tweeter-Matched-Pair-4-Ohm-275-410
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio CF50N-4 2_ Carbon Fiber Dome Midrange 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -38930,6 +39248,7 @@ Vd=
 Dd=0.0499555
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-CF50N-4-2-Carbon-Fiber-Cone-Midrange-4-Ohm-285-411
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio CF50N-4MP 2_ Carbon Fiber Dome Midrange Matched Pair 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -38959,6 +39278,7 @@ Vd=
 Dd=0.0499555
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-CF50N-4MP-2-Carbon-Fiber-Cone-Midrange-Matched-Pair-4-Ohm-285-410
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio CX120-8 4_ Coaxial Driver with 3_4_ Silk Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -38988,6 +39308,7 @@ Vd=0.000015753
 Dd=0.0817666
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-CX120-8-4-Coaxial-Driver-with-3-4-Silk-Dome-Tweeter-8-Ohm-295-384
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DA115-8 4_ Aluminum Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39017,6 +39338,7 @@ Vd=0.000013275
 Dd=0.0822247
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DA115-8-4-Aluminum-Cone-Woofer-295-328
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DA135-8 5-1_4_ Aluminum Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39046,6 +39368,7 @@ Vd=0.00002262
 Dd=0.0979807
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DA135-8-5-1-4-Aluminum-Cone-Woofer-295-330
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DA175-8 7_ Aluminum Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39075,6 +39398,7 @@ Vd=0.0000563975
 Dd=0.129984
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DA175-8-7-Aluminum-Cone-Woofer-295-335
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DA215-8 8_ Aluminum Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39104,6 +39428,7 @@ Vd=0.000111936
 Dd=0.163984
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DA215-8-8-Aluminum-Cone-Woofer-295-332
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DA270-8`,date:``,content:`[Driver]
 Brand=Dayton Audio
@@ -39133,6 +39458,7 @@ Vd=0.000247037
 Dd=0.227076
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DA270-8-10-Aluminum-Cone-Woofer-295-334
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DC130A-8 5-1_4_ Classic Woofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39162,6 +39488,7 @@ Vd=0.0000229
 Dd=0.107995
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DC130A-8-5-1-4-Classic-Woofer-Speaker-295-303
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DC130AS-8 5-1_4_ Classic Shielded Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39191,6 +39518,7 @@ Vd=0.0000229
 Dd=0.107995
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DC130AS-8-5-1-4-Classic-Shielded-Woofer-295-300
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DC130B-4 5-1_4_ Classic Woofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39220,6 +39548,7 @@ Vd=0.0000229
 Dd=0.107995
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DC130B-4-5-1-4-Classic-Woofer-Speaker-295-307
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DC130B-8 5-1_4_ Classic Woofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39249,6 +39578,7 @@ Vd=0.0000229
 Dd=0.107995
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DC130B-8-5-1-4-Classic-Woofer-Speaker-295-304
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DC130BS-4 5-1_4_ Classic Shielded Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39278,6 +39608,7 @@ Vd=0.000023325
 Dd=0.108992
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DC130BS-4-5-1-4-Classic-Shielded-Woofer-4-Ohm-295-302
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DC130BS-8 5-1_4_ Classic Shielded Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39307,6 +39638,7 @@ Vd=0.0000229
 Dd=0.107995
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DC130BS-8-5-1-4-Classic-Shielded-Woofer-295-301
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DC160-4 6-1_2_ Classic Woofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39336,6 +39668,7 @@ Vd=0.000046512
 Dd=0.131977
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DC160-4-6-1-2-Classic-Woofer-Speaker-295-309
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DC160-8 6-1_2_ Classic Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39365,6 +39698,7 @@ Vd=0.000043136
 Dd=0.131009
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DC160-8-6-1-2-Classic-Woofer-295-305
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DC160S-4`,date:``,content:`[Driver]
 Brand=Dayton Audio
@@ -39394,6 +39728,7 @@ Vd=0.0000557777
 Dd=0.144526
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DC160S-4-6-1-2-Classic-Shielded-Woofer-4-Ohm-295-308
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DC160S-8`,date:``,content:`[Driver]
 Brand=Dayton Audio
@@ -39423,6 +39758,7 @@ Vd=0.0000516764
 Dd=0.144526
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DC160S-8-6-1-2-Classic-Shielded-Woofer-295-306
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DC200-8 8_ Classic Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39452,6 +39788,7 @@ Vd=0.00009504
 Dd=0.163984
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DC200-8-8-Classic-Woofer-295-310
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DC250-8 10_ Classic Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39481,6 +39818,7 @@ Vd=0.000154395
 Dd=0.209009
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DC250-8-10-Classic-Woofer-295-315
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DC25T-8 1_ Titanium Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39510,6 +39848,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DC25T-8-1-Titanium-Dome-Tweeter-275-045
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DC28F-8 1-1_8_ Silk Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39539,6 +39878,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DC28F-8-1-1-8-Silk-Dome-Tweeter-275-070
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DC28FS-8 1-1_8_ Silk Dome Shielded Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39568,6 +39908,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DC28FS-8-1-1-8-Silk-Dome-Shielded-Tweeter-275-075
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DC28FT-8 1-1_8_ Silk Dome Truncated Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39597,6 +39938,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DC28FT-8-1-1-8-Silk-Dome-Truncated-Tweeter-275-076
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DC300-8 12_ Classic Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39626,6 +39968,7 @@ Vd=0.000214484
 Dd=0.25201
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DC300-8-12-Classic-Woofer-295-320
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DC380-8 15_ Classic Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39655,6 +39998,7 @@ Vd=0.000363095
 Dd=0.326002
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DC380-8-15-Classic-Woofer-295-325
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DCS165-4 6-1_2_ Classic Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39684,6 +40028,7 @@ Vd=0.00007482
 Dd=0.126005
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DCS165-4-6-1-2-Classic-Subwoofer-4-Ohm-295-198
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DCS205-4 8_ Classic Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39713,6 +40058,7 @@ Vd=0.000188144
 Dd=0.16499
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DCS205-4-8-Classic-Subwoofer-4-Ohm-295-200
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DCS255-4 10_ Classic Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39742,6 +40088,7 @@ Vd=0.000287512
 Dd=0.210012
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DCS255-4-10-Classic-Subwoofer-4-Ohm-295-202
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DCS305-4 12_ Classic Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39771,6 +40118,7 @@ Vd=0.000463884
 Dd=0.25201
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DCS305-4-12-Classic-Subwoofer-4-Ohm-295-204
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DCS385-4 15_ Classic Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39800,6 +40148,7 @@ Vd=0.000790593
 Dd=0.328996
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DCS385-4-15-Classic-Subwoofer-4-Ohm-295-206
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DMA105-4 4_ Dual Magnet Aluminum Cone Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39829,6 +40178,7 @@ Vd=0.000013525
 Dd=0.0829953
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DMA105-4-4-Dual-Magnet-Aluminum-Cone-Full-Range-Driver-4-Ohm-295-590
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DMA105-8 4_ Dual Magnet Aluminum Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39858,6 +40208,7 @@ Vd=0.000013525
 Dd=0.0829953
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DMA105-8-4-Dual-Magnet-Aluminum-Cone-Full-Range-Driver-8-Ohm-295-591
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DMA105-PR 4_ DMA Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39887,6 +40238,7 @@ Vd=0.00004869
 Dd=0.0829953
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DMA105-PR-4-DMA-Series-Passive-Radiator-295-597
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DMA45-4 1-1_2_ Dual Magnet Aluminum Cone Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39916,6 +40268,7 @@ Vd=0.00000172
 Dd=0.0330906
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DMA45-4-1-1-2-Dual-Magnet-Aluminum-Cone-Full-Range-Driver-4-Ohm-295-580
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DMA45-8 1-1_2_ Dual Magnet Aluminum Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39945,6 +40298,7 @@ Vd=0.00000172
 Dd=0.0330906
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DMA45-8-1-1-2-Dual-Magnet-Aluminum-Cone-Full-Range-Driver-8-Ohm-295-581
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DMA45-PR 1-1_2_ DMA Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -39974,6 +40328,7 @@ Vd=0.0000043
 Dd=0.0330906
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DMA45-PR-1-1-2-DMA-Series-Passive-Radiator-295-592
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DMA58-4 2_ Dual Magnet Aluminum Cone Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40003,6 +40358,7 @@ Vd=0.0000029
 Dd=0.0429674
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DMA58-4-2-Dual-Magnet-Aluminum-Cone-Full-Range-Driver-4-Ohm-295-582
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DMA58-8 2_ Dual Magnet Aluminum Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40032,6 +40388,7 @@ Vd=0.0000029
 Dd=0.0429674
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DMA58-8-2-Dual-Magnet-Aluminum-Cone-Full-Range-Driver-8-Ohm-295-583
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DMA58-PR 2_ DMA Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40061,6 +40418,7 @@ Vd=0.00001015
 Dd=0.0429674
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DMA58-PR-2-DMA-Series-Passive-Radiator-295-593
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DMA70-4 2-1_2_ Dual Magnet Aluminum Cone Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40090,6 +40448,7 @@ Vd=0.00000458
 Dd=0.0539974
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DMA70-4-2-1-2-Dual-Magnet-Aluminum-Cone-Full-Range-Driver-4-Ohm-295-584
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DMA70-8 2-1_2_ Dual Magnet Aluminum Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40119,6 +40478,7 @@ Vd=0.00000458
 Dd=0.0539974
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DMA70-8-2-1-2-Dual-Magnet-Aluminum-Cone-Full-Range-Driver-8-Ohm-295-585
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DMA70-PR 2-1_2_ DMA Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40148,6 +40508,7 @@ Vd=0.00001603
 Dd=0.0539974
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DMA70-PR-2-1-2-DMA-Series-Passive-Radiator-295-594
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DMA80-4 3_ Dual Magnet Aluminum Cone Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40177,6 +40538,7 @@ Vd=0.0000078
 Dd=0.0630278
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DMA80-4-3-Dual-Magnet-Aluminum-Cone-Full-Range-Driver-4-Ohm-295-586
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DMA80-8 3_ Dual Magnet Aluminum Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40206,6 +40568,7 @@ Vd=0.0000078
 Dd=0.0630278
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DMA80-8-3-Dual-Magnet-Aluminum-Cone-Full-Range-Driver-8-Ohm-295-587
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DMA80-PR 3_ DMA Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40235,6 +40598,7 @@ Vd=0.00002184
 Dd=0.0630278
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DMA80-PR-3-DMA-Series-Passive-Radiator-295-595
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DS115-8 4_ Designer Series Woofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40264,6 +40628,7 @@ Vd=0.000022181
 Dd=0.0829953
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DS115-8-4-Designer-Series-Woofer-295-424
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DS115-PR 4_ Designer Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40293,6 +40658,7 @@ Vd=0.00003246
 Dd=0.0829953
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DS115-PR-4-Designer-Series-Passive-Radiator-295-493
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DS135-8 5_ Designer Series Woofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40322,6 +40688,7 @@ Vd=0.000036569
 Dd=0.0979807
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DS135-8-5-Designer-Series-Woofer-295-426
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DS135-PR 5_ Designer Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40351,6 +40718,7 @@ Vd=0.00006032
 Dd=0.0979807
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DS135-PR-5-Designer-Series-Passive-Radiator-295-495
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DS175-8 6-1_2_ Designer Series Woofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40380,6 +40748,7 @@ Vd=0.0000675675
 Dd=0.12801
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DS175-8-6-1-2-Designer-Series-Woofer-295-428
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DS175-PR 6-1_2_ Designer Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40409,6 +40778,7 @@ Vd=0.00010296
 Dd=0.12801
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DS175-PR-6-1-2-Designer-Series-Passive-Radiator-295-498
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DS215-8 8_ Designer Series Woofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40438,6 +40808,7 @@ Vd=0.00011616
 Dd=0.163984
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DS215-8-8-Designer-Series-Woofer-295-430
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DS215-PR 8_ Designer Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40467,6 +40838,7 @@ Vd=0.00023232
 Dd=0.163984
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DS215-PR-8-Designer-Series-Passive-Radiator-295-492
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DS270-8 10_ Designer Series Woofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40496,6 +40868,7 @@ Vd=0.00019415
 Dd=0.212003
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DS270-8-10-Designer-Series-Woofer-295-432
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DS270-PR 10_ Designer Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40525,6 +40898,7 @@ Vd=0.0003883
 Dd=0.212003
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DS270-PR-10-Designer-Series-Passive-Radiator-295-494
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DS315-8 12_ Designer Series Woofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40554,6 +40928,7 @@ Vd=0.000278685
 Dd=0.253998
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DS315-8-12-Designer-Series-Woofer-295-434
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DS315-PR 12_ Designer Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40583,6 +40958,7 @@ Vd=0.000624
 Dd=0.247215
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DS315-PR-12-Designer-Series-Passive-Radiator-295-496
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DS90-8 3_ Designer Series Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40612,6 +40988,7 @@ Vd=0.0000078
 Dd=0.0630278
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DS90-8-3-Designer-Series-Full-Range-Driver-8-Ohm-295-422
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DS90-PR 3_ Designer Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40641,6 +41018,7 @@ Vd=0.00001248
 Dd=0.0630278
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DS90-PR-3-Designer-Series-Passive-Radiator-295-491
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DSA115-8 4_ Designer Series Aluminum Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40670,6 +41048,7 @@ Vd=0.000022181
 Dd=0.0829953
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DSA115-8-4-Designer-Series-Aluminum-Cone-Woofer-295-524
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DSA115-PR 4_ Designer Series Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40699,6 +41078,7 @@ Vd=0.00003246
 Dd=0.0829953
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DSA115-PR-4-Designer-Series-Aluminum-Cone-Passive-Radiator-295-544
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DSA135-8 5_ Designer Series Aluminum Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40728,6 +41108,7 @@ Vd=0.000036946
 Dd=0.0979807
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DSA135-8-5-Designer-Series-Aluminum-Cone-Woofer-295-526
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DSA135-PR 5_ Designer Series Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40757,6 +41138,7 @@ Vd=0.00006032
 Dd=0.0979807
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DSA135-PR-5-Designer-Series-Aluminum-Cone-Passive-Radiator-295-546
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DSA175-8 6-1_2_ Designer Series Aluminum Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40786,6 +41168,7 @@ Vd=0.000068211
 Dd=0.12801
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DSA175-8-6-1-2-Designer-Series-Aluminum-Cone-Woofer-295-528
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DSA175-PR 6-1_2_ Designer Series Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40815,6 +41198,7 @@ Vd=0.00010296
 Dd=0.12801
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DSA175-PR-6-1-2-Designer-Series-Aluminum-Cone-Passive-Radiator-295-548
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DSA215-8 8_ Designer Series Aluminum Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40844,6 +41228,7 @@ Vd=0.00011616
 Dd=0.163984
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DSA215-8-8-Designer-Series-Aluminum-Cone-Woofer-295-530
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DSA215-PR 8_ Designer Series Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40873,6 +41258,7 @@ Vd=0.00023232
 Dd=0.163984
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DSA215-PR-8-Designer-Series-Aluminum-Cone-Passive-Radiator-295-549
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DSA270-8 10_ Designer Series Aluminum Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40902,6 +41288,7 @@ Vd=0.00019415
 Dd=0.212003
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DSA270-8-10-Designer-Series-Aluminum-Cone-Woofer-295-532
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DSA270-PR 10_ Designer Series Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40931,6 +41318,7 @@ Vd=0.0003883
 Dd=0.212003
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DSA270-PR-10-Designer-Series-Aluminum-Cone-Passive-Radiator-295-552
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DSA315-8 12_ Designer Series Aluminum Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40960,6 +41348,7 @@ Vd=0.000278685
 Dd=0.253998
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DSA315-8-12-Designer-Series-Aluminum-Cone-Woofer-295-534
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DSA315-PR 12_ Designer Series Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -40989,6 +41378,7 @@ Vd=0.000624
 Dd=0.247215
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DSA315-PR-12-Designer-Series-Aluminum-Cone-Passive-Radiator-295-554
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DSA90-8 3_ Designer Series Aluminum Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41018,6 +41408,7 @@ Vd=0.0000078
 Dd=0.0630278
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DSA90-8-3-Designer-Series-Aluminum-Cone-Full-Range-Driver-8-Ohm-295-522
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DSA90-PR 3_ Designer Series Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41047,6 +41438,7 @@ Vd=0.00001248
 Dd=0.0630278
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DSA90-PR-3-Designer-Series-Aluminum-Cone-Passive-Radiator-295-542
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio DW3-1053SC 3_ Full Range Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41076,6 +41468,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-DW3-1053SC-3-Full-Range-Driver-264-880
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ES140TiA-8`,date:``,content:`[Driver]
 Brand=Dayton Audio
@@ -41105,6 +41498,7 @@ Vd=0.0000618274
 Dd=0.125476
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ES140TiA-8-5-1-2-Esoteric-Series-Woofer-8-Ohm-295-396
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ES180TiA-8`,date:``,content:`[Driver]
 Brand=Dayton Audio
@@ -41134,6 +41528,7 @@ Vd=0.0000915923
 Dd=0.148336
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ES180TiA-8-7-Esoteric-Series-Woofer-8-Ohm-295-398
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio GF180-4 6-1_2_ Glass Fiber Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41163,6 +41558,7 @@ Vd=0.00005208
 Dd=0.128754
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-GF180-4-6-1-2-Glass-Fiber-Cone-Woofer-4-Ohm-295-417
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio GF180-8 6-1_2_ Glass Fiber Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41192,6 +41588,7 @@ Vd=0.00005208
 Dd=0.128754
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-GF180-8-6-1-2-Glass-Fiber-Cone-Woofer-8-Ohm-295-418
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio HARB252-8 1_ x 5_ Dual Motor High Aspect Ratio Speaker Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41221,6 +41618,7 @@ Vd=0.00000262875
 Dd=0.0517458
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-HARB252-8-1-x-5-Dual-Motor-High-Aspect-Ratio-295-246
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio HTS545HE-4 Kraken 21_ High Excursion Subwoofer with 5_ Voice Coil 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41250,6 +41648,7 @@ Vd=0.0032025
 Dd=0.440646
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-HTS545HE-4-21-Kraken-High-Excursion-Subwoofer-with-5-Voice-Coil-4-Ohm-295-054
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio LS10-44 10_ Low Profile Subwoofer Dual 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41279,6 +41678,7 @@ Vd=0.0003664
 Dd=0.21599
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-LS10-44-10-Low-Profile-Subwoofer-Dual-4-Ohm-295-251
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio LW150-4 6_ Low Profile Woofer 4 Ohms`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41308,6 +41708,7 @@ Vd=0.0000364
 Dd=0.107641
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-LW150-4-6-Low-Profile-Woofer-4-Ohms-295-255
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio MB1025-8 10_ Professional High Power Midbass Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41337,6 +41738,7 @@ Vd=0.00010275
 Dd=0.208826
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-MB1025-8-10-Professional-High-Power-Midbass-Driver-8-Ohm-295-637
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio MB620-8 6-1_2_ Professional High Power Midbass Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41366,6 +41768,7 @@ Vd=0.00002644
 Dd=0.129739
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-MB620-8-6.5-Professional-High-Power-Midbass-Driver-8-Ohm-295-635
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio MB820-8 8_ Professional High Power Midbass Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41395,6 +41798,7 @@ Vd=0.00008356
 Dd=0.163089
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-MB820-8-8-Professional-High-Power-Midbass-Driver-8-Ohm-295-636
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio MX10-22 10_ Max-X High Excursion DVC Subwoofer 2 Ohms Per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41424,6 +41828,7 @@ Vd=0.000413772
 Dd=0.213111
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-MX10-22-10-Max-X-High-Excursion-DVC-Subwoofer-2-Ohms-Per-Coil-295-164
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio MX12-22 12_ Max-X High Excursion DVC Subwoofer 2 Ohms Per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41453,6 +41858,7 @@ Vd=0.000797785
 Dd=0.255995
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-MX12-22-12-Max-X-High-Excursion-DVC-Subwoofer-2-Ohms-Per-Coil-295-166
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio MX15-22 15_ Max-X High Excursion DVC Subwoofer 2 Ohms Per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41482,6 +41888,7 @@ Vd=0.00155762
 Dd=0.323079
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-MX15-22-15-Max-X-High-Excursion-DVC-Subwoofer-2-Ohms-Per-Coil-295-168
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio MX5-22 5-1_4_ Max-X High Excursion DVC Subwoofer Driver 2 Ohms Per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41511,6 +41918,7 @@ Vd=0.000078492
 Dd=0.103664
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-MX5-22-5-1-4-Max-X-High-Excursion-DVC-Subwoofer-Driver-2-Ohms-Per-Coil-295-742
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio MX6-22 6-1_2_ Max-X High Excursion DVC Subwoofer Driver 2 Ohms Per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41540,6 +41948,7 @@ Vd=0.00015156
 Dd=0.126811
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-MX6-22-6-1-2-Max-X-High-Excursion-DVC-Subwoofer-Driver-2-Ohms-Per-Coil-295-744
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ND105-4 4_ Aluminum Cone Midbass Neo Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41569,6 +41978,7 @@ Vd=0.0000206
 Dd=0.0809764
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ND105-4-4-Aluminum-Cone-Midbass-Driver-4-Ohm-290-212
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ND105-8 4_ Aluminum Cone Midbass Neo Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41598,6 +42008,7 @@ Vd=0.0000206
 Dd=0.0809764
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ND105-8-4-Aluminum-Cone-Midbass-Driver-8-Ohm-290-214
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ND105-PR 4_ Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41627,6 +42038,7 @@ Vd=0.00005665
 Dd=0.0809764
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ND105-PR-4-Aluminum-Cone-Passive-Radiator-290-213
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ND13FA-4 1_2_ Soft Dome Neodymium Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41656,6 +42068,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ND13FA-4-1-2-Soft-Dome-Neodymium-Tweeter-4-Ohm-275-104
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ND140-4 5-1_4_ Aluminum Cone Midbass Neo Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41685,6 +42098,7 @@ Vd=0.00003464
 Dd=0.105006
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ND140-4-5-1-4-Aluminum-Cone-Midbass-Driver-290-216
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ND140-8 5-1_4_ Aluminum Cone Midbass Neo Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41714,6 +42128,7 @@ Vd=0.00003464
 Dd=0.105006
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ND140-8-5-1-4-Aluminum-Cone-Midbass-Driver-8-O-290-218
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ND140-PR 5-1_4_ Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41743,6 +42158,7 @@ Vd=0.00007794
 Dd=0.105006
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ND140-PR-5-1-4-Aluminum-Cone-Passive-Radiator-290-217
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ND16FA-4 5_8_ Soft Dome Neodymium Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41772,6 +42188,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ND16FA-4-5-8-Soft-Dome-Neodymium-Tweeter-4-Ohm-275-106
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ND16FA-6 5_8_ Soft Dome Neodymium Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41801,6 +42218,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ND16FA-6-5-8-Soft-Dome-Neodymium-Tweeter-275-025
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ND20FA-6 3_4_ Soft Dome Neodymium Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41830,6 +42248,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ND20FA-6-3-4-Soft-Dome-Neodymium-Tweeter-275-030
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ND20FB-4 Rear-Mount 3_4_ Soft Dome Neodymium Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41859,6 +42278,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ND20FB-4-Rear-Mount-3-4-Soft-Dome-Neodymium-Tweeter-275-035
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ND25FA-4 1_ Soft Dome Neodymium Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41888,6 +42308,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ND25FA-4-1-Soft-Dome-Neodymium-Tweeter-275-059
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ND25FN-4 1_ Silk Dome Neodymium Tweeter Element 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41917,6 +42338,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ND25FN-4-1-Silk-Dome-Neodymium-Tweeter-Element-4-Ohm-275-053
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ND25FW-4 1_ Soft Dome Neodymium Tweeter with Waveguide 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41946,6 +42368,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ND25FW-4-1-Soft-Dome-Neodymium-Tweeter-with-Wa-275-051
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ND25TA-4 1_ Titanium Dome Neodymium Tweeter with Grill`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -41975,6 +42398,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ND25TA-4-1-Titanium-Dome-Neodymium-Tweeter-275-057
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ND28F-6 1-1_8_ Soft Dome Neodymium Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42004,6 +42428,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ND28F-6-1-1-8-Soft-Dome-Neodymium-Tweeter-275-040
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ND64-16 2-1_2_ Aluminum Magnesium Cone Full-Range Neo Driver 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42033,6 +42458,7 @@ Vd=0.000002964
 Dd=0.0445674
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ND64-16-2-1-2-Aluminum-Magnesium-Cone-Full-Range-Driver-16-Ohm-295-519
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ND64-4 2-1_2_ Aluminum Magnesium Cone Full-Range Neo Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42062,6 +42488,7 @@ Vd=0.000002964
 Dd=0.0445674
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ND64-4-2-1-2-Aluminum-Magnesium-Cone-Full-Range-Driver-4-Ohm-295-520
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ND65-4 2-1_2_ Aluminum Cone Full-Range Neo Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42091,6 +42518,7 @@ Vd=0.00000546
 Dd=0.0445674
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ND65-4-2-1-2-Aluminum-Cone-Full-Range-Driver-290-204
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ND65-8 2-1_2_ Aluminum Cone Full-Range Neo Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42120,6 +42548,7 @@ Vd=0.000005775
 Dd=0.045835
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ND65-8-2-1-2-Aluminum-Cone-Full-Range-Driver-8-290-206
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ND65-PR 2-1_2_ Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42149,6 +42578,7 @@ Vd=0.0000078
 Dd=0.0445674
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ND65-PR-2-1-2-Aluminum-Cone-Passive-Radiator-290-205
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ND90-4 3-1_2_ Aluminum Cone Full-Range Neo Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42178,6 +42608,7 @@ Vd=0.00001248
 Dd=0.0630278
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ND90-4-3-1-2-Aluminum-Cone-Full-Range-Driver-4-290-208
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ND90-8 3-1_2_ Aluminum Cone Full-Range Neo Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42207,6 +42638,7 @@ Vd=0.00001248
 Dd=0.0630278
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ND90-8-3-1-2-Aluminum-Cone-Full-Range-Driver-8-290-210
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ND90-PR 3-1_2_ Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42236,6 +42668,7 @@ Vd=0.00002808
 Dd=0.0630278
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ND90-PR-3-1-2-Aluminum-Cone-Passive-Radiator-290-209
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ND91-4 3-1_2_ Aluminum Cone Full-Range Neo Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42265,6 +42698,7 @@ Vd=0.000013984
 Dd=0.0622145
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ND91-4-3-1-2-Aluminum-Cone-Full-Range-Driver-4-290-224
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ND91-8 3-1_2_ Aluminum Cone Full-Range Neo Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42294,6 +42728,7 @@ Vd=0.000015504
 Dd=0.0622145
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ND91-8-3-1-2-Aluminum-Cone-Full-Range-Driver-8-290-226
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio PA130-8 5_ Full Range PA Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42323,6 +42758,7 @@ Vd=0.00001478
 Dd=0.0970012
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-PA130-8-5-Full-Range-PA-Driver-295-010
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio PA165-8 6_ PA Driver Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42352,6 +42788,7 @@ Vd=
 Dd=0.124019
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-PA165-8-6-PA-Driver-Speaker-295-015
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio PA200-8 8_ Pro Woofer Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42381,6 +42818,7 @@ Vd=0.00006312
 Dd=0.163673
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-PA200-8-8-Pro-Woofer-Speaker-295-025
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio PA255-8 10_ Pro Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42410,6 +42848,7 @@ Vd=0.0001732
 Dd=0.210012
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-PA255-8-10-Pro-Woofer-295-030
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio PA310-8 12_ Pro Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42439,6 +42878,7 @@ Vd=0.00026545
 Dd=0.259993
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-PA310-8-12-Pro-Woofer-295-032
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio PA380-8 15_ Pro Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42468,6 +42908,7 @@ Vd=0.0004225
 Dd=0.328007
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-PA380-8-15-Pro-Woofer-295-034
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio PA460-8 18_ Pro Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42497,6 +42938,7 @@ Vd=0.00074466
 Dd=0.39752
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-PA460-8-18-Pro-Woofer-295-036
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio PC105-4 4_ Full-Range Poly Cone Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42526,6 +42968,7 @@ Vd=0.00001056
 Dd=0.0819921
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-PC105-4-4-Full-Range-Poly-Cone-Driver-295-158
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio PC105-8 4_ Full-Range Poly Cone Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42555,6 +42998,7 @@ Vd=0.00001056
 Dd=0.0819921
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-PC105-8-4-Full-Range-Poly-Cone-Driver-295-160
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio PC68-4 2-1_2_ Full-Range Poly Cone Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42584,6 +43028,7 @@ Vd=0.00000424
 Dd=0.0519545
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-PC68-4-2-1-2-Full-Range-Poly-Cone-Driver-295-150
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio PC68-8 2-1_2_ Full-Range Poly Cone Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42613,6 +43058,7 @@ Vd=0.00000424
 Dd=0.0519545
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-PC68-8-2-1-2-Full-Range-Poly-Cone-Driver-295-152
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio PC83-4 3_ Full-Range Poly Cone Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42642,6 +43088,7 @@ Vd=0.00000604
 Dd=0.0620095
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-PC83-4-3-Full-Range-Poly-Cone-Driver-295-154
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio PC83-8 3_ Full-Range Poly Cone Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42671,6 +43118,7 @@ Vd=0.00000604
 Dd=0.0620095
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-PC83-8-3-Full-Range-Poly-Cone-Driver-295-156
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio PCS115-4 4_ Poly Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42700,6 +43148,7 @@ Vd=0.0000141625
 Dd=0.0809764
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-PCS115-4-4-Poly-Cone-Woofer-4-Ohm-295-660
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio PCS115-8 4_ Poly Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42729,6 +43178,7 @@ Vd=0.000018025
 Dd=0.0809764
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-PCS115-8-4-Poly-Cone-Woofer-8-Ohm-295-662
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio PCS175-4 6-1_2_ Poly Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42758,6 +43208,7 @@ Vd=0.0000286
 Dd=0.134935
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-PCS175-4-6-1-2-Poly-Cone-Woofer-4-Ohm-295-664
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio PCS175-8 6-1_2_ Poly Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42787,6 +43238,7 @@ Vd=0.000032175
 Dd=0.134935
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-PCS175-8-6-1-2-Poly-Cone-Woofer-8-Ohm-295-668
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio PCX12-8 12_ Pro Coaxial Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42816,6 +43268,7 @@ Vd=0.000102142
 Dd=0.255001
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-PCX12-8-12-Pro-Coaxial-Woofer-295-022
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio PM220-8 8_ Wideband Midbass Neo Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42845,6 +43298,7 @@ Vd=0.000094438
 Dd=0.161677
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-PM220-8-8-Wideband-Midbass-Neo-Driver-295-345
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio PS180-8 6-1_2_ Point Source Full-Range Neo Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42874,6 +43328,7 @@ Vd=0.000061042
 Dd=0.129984
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-PS180-8-6-1-2-Point-Source-Full-Range-Neo-Driv-295-344
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio PS220-8 8_ Point Source Full-Range Neo Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42903,6 +43358,7 @@ Vd=0.000103872
 Dd=0.165991
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-PS220-8-8-Point-Source-Full-Range-Neo-Driver-295-346
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio PS95-8 3-1_2_ Point Source Full Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42932,6 +43388,7 @@ Vd=0.000007075
 Dd=0.0600272
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-PS95-8-3-1-2-Point-Source-Full-Range-Driver-8-295-349
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio PSS555-8 21_ 1000 Watt RMS Pro Subwoofer with 4.5_ Voice Coil 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42961,6 +43418,7 @@ Vd=0.0019085
 Dd=0.470008
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-PSS555-8-21-Pro-Subwoofer-with-4.5-Voice-Coil-8-Ohm-295-050
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio PT2C-8 Planar Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -42990,6 +43448,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-PT2C-8-Planar-Tweeter-275-085
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio PTMini-6 Planar Tweeter 6 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43019,6 +43478,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-PTMini-6-Planar-Tweeter-6-Ohm-275-083
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio Pro 10 in. 8 Ohm Neodymium Midbass Woofer Odeum 10N`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43048,6 +43508,7 @@ Vd=0.000192876
 Dd=0.205947
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-10MB250N-8-10-Professional-Neodymium-Mid-Bass-295-640
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio Pro 12 in. 8 Ohm Neodymium Midbass Woofer Odeum 12N`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43077,6 +43538,7 @@ Vd=0.000333828
 Dd=0.250937
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-12MB400N-8-12-Professional-Neodymium-Mid-Bass-295-642
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio Pro 12_ 8 Ohm Subwoofer Odeum 12LF`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43106,6 +43568,7 @@ Vd=0.000493025
 Dd=0.260507
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-Odeum-Apollo-12LF-12LF400-8-12-Professional-Woofer-8-Ohm-295-646
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio Pro 15 in. 8 Ohm Neodymium Midbass Woofer Odeum 15N`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43135,6 +43598,7 @@ Vd=0.000553167
 Dd=0.327916
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-15MB500N-8-15-Professional-Neodymium-Mid-Bass-295-643
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio Pro 15 in. 8 Ohm Subwoofer Odeum 15LF`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43164,6 +43628,7 @@ Vd=0.000774595
 Dd=0.326529
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-Odeum-Apollo-15LF-15LF500-8-15-Professional-Woofer-8-ohm-295-648
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio Pro 18 in. 8 Ohm Neodymium Subwoofer Odeum 18N`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43193,6 +43658,7 @@ Vd=0.001092
 Dd=0.390882
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-18SW1200N-8-18-Professional-Neodymium-295-644
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio Pro 18 in. 8 Ohm Subwoofer Odeum 18F`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43222,6 +43688,7 @@ Vd=0.001272
 Dd=0.390882
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-18SW1200F-8-18-Professional-Subwoofer-295-641
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio Pro 6.5 in. 8 Ohm Neodymium Midbass Woofer Odeum 6.5N`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43251,6 +43718,7 @@ Vd=0.0000500166
 Dd=0.129969
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-6MB200N-8-6.5-Professional-Neodymium-Mid-Bass-295-638
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio Pro 8 in. 8 Ohm Neodymium Midbass Woofer Odeum 8N`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43280,6 +43748,7 @@ Vd=0.0000785754
 Dd=0.159959
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-8MB200N-8-8-Professional-Neodymium-Mid-Bass-295-639
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RC180-55 2_ x 7_ Res-Core™ Neodymium Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43309,6 +43778,7 @@ Vd=0.000026508
 Dd=0.0847412
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RC180-55-2-x-7-Res-Core-Neodymium-Woofer-4-Ohm-295-248
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS100-4 4_ Reference Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43338,6 +43808,7 @@ Vd=0.00001412
 Dd=0.0670413
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS100-4-4-Reference-Full-Range-Driver-4-Ohm-295-378
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS100-8 4_ Reference Full-Range Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43367,6 +43838,7 @@ Vd=0.000012355
 Dd=0.0670413
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS100-8-4-Reference-Full-Range-Driver-295-352
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS100P-4 4_ Reference Paper Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43396,6 +43868,7 @@ Vd=0.00001452
 Dd=0.0679843
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS100P-4-4-Reference-Paper-Midwoofer-4-Ohm-295-369
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS100P-8 4_ Reference Paper Midwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43425,6 +43898,7 @@ Vd=0.000013838
 Dd=0.0690066
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS100P-8-4-Reference-Paper-Midwoofer-8-Ohm-295-359
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS100T-8`,date:``,content:`[Driver]
 Brand=Dayton Audio
@@ -43454,6 +43928,7 @@ Vd=0.0000172125
 Dd=0.076962
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS100T-8-4-Reference-Woofer-Truncated-Frame-295-338
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS125-4 5_ Reference Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43483,6 +43958,7 @@ Vd=0.00002112
 Dd=0.0819921
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS125-4-5-Reference-Woofer-4-Ohm-295-370
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS125-8 5_ Reference Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43512,6 +43988,7 @@ Vd=0.00002112
 Dd=0.0819921
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS125-8-5-Reference-Woofer-295-353
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS125P-4 5_ Reference Paper Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43541,6 +44018,7 @@ Vd=0.000021644
 Dd=0.083003
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS125P-4-5-Reference-Paper-Woofer-4-Ohm-295-371
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS125P-8 5_ Reference Paper Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43570,6 +44048,7 @@ Vd=0.00002112
 Dd=0.0819921
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS125P-8-5-Reference-Paper-Woofer-8-Ohm-295-361
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS125T-8`,date:``,content:`[Driver]
 Brand=Dayton Audio
@@ -43599,6 +44078,7 @@ Vd=0.0000194231
 Dd=0.09398
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS125T-8-5-Reference-Woofer-Truncated-Frame-295-340
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS150-4 6_ Reference Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43628,6 +44108,7 @@ Vd=0.0000374
 Dd=0.104031
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS150-4-6-Reference-Woofer-4-Ohm-295-372
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS150-8 6_ Reference Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43657,6 +44138,7 @@ Vd=0.000034
 Dd=0.104031
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS150-8-6-Reference-Woofer-295-354
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS150P-4A 6_ Reference Paper Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43686,6 +44168,7 @@ Vd=0.0000374
 Dd=0.104031
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS150P-4A-6-Reference-Paper-Woofer-4-Ohm-295-563
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS150P-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43718,6 +44201,7 @@ VCCon=2
 boxbench_quality=M
 boxbench_fetched_sku=295-573
 boxbench_note=Original SKU 295-363 no longer returns API results. Data from RS150P-8A (295-573), a known Dayton Audio design revision of the same driver line. Parameter comparison: Fs 4% lower (49.1→47.1 Hz), Qts 6% higher (0.32→0.34), Xmax identical (4 mm), Vas 3% higher. Differences are within expected revision range.
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS150P-8-6-Reference-Paper-Woofer-8-Ohm-295-363
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS150P-8A 6_ Reference Paper Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43747,6 +44231,7 @@ Vd=0.000034
 Dd=0.104031
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS150P-8A-6-Reference-Paper-Woofer-8-Ohm-295-573
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS150T-8`,date:``,content:`[Driver]
 Brand=Dayton Audio
@@ -43776,6 +44261,7 @@ Vd=0.0000463098
 Dd=0.121412
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS150T-8-6-Reference-Woofer-Truncated-Frame-295-342
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS180-4 7_ Reference Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43805,6 +44291,7 @@ Vd=0.00007482
 Dd=0.126005
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS180-4-7-Reference-Woofer-4-Ohm-295-374
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS180-8 7_ Reference Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43834,6 +44321,7 @@ Vd=0.00007482
 Dd=0.126005
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS180-8-7-Reference-Woofer-295-355
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS180P-4 7_ Reference Paper Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43863,6 +44351,7 @@ Vd=0.00007602
 Dd=0.127012
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS180P-4-7-Reference-Paper-Woofer-4-Ohm-295-375
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS180P-8 7_ Reference Paper Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43892,6 +44381,7 @@ Vd=0.00007602
 Dd=0.127012
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS180P-8-7-Reference-Paper-Woofer-8-Ohm-295-365
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS180S-8 7_ Reference Shielded Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43921,6 +44411,7 @@ Vd=0.00007482
 Dd=0.126005
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS180S-8-7-Reference-Shielded-Woofer-8-Ohm-295-364
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS225-4 8_ Reference Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43950,6 +44441,7 @@ Vd=0.00012828
 Dd=0.16499
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS225-4-8-Reference-Woofer-4-Ohm-295-376
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS225-8 8_ Reference Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -43979,6 +44471,7 @@ Vd=0.00014966
 Dd=0.16499
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS225-8-8-Reference-Woofer-295-356
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS225P-4A 8_ Reference Paper Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44008,6 +44501,7 @@ Vd=0.00012828
 Dd=0.16499
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS225P-4A-8-Reference-Paper-Woofer-4-Ohm-295-567
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS225P-8A 8_ Reference Paper Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44037,6 +44531,7 @@ Vd=0.00014966
 Dd=0.16499
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS225P-8A-8-Reference-Paper-Woofer-8-Ohm-295-577
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS270-4`,date:``,content:`[Driver]
 Brand=Dayton Audio
@@ -44066,6 +44561,7 @@ Vd=0.000262386
 Dd=0.235966
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS270-4-10-Reference-Woofer-4-Ohm-295-382
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS270-8 10_ Reference Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44095,6 +44591,7 @@ Vd=0.000228624
 Dd=0.210012
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS270-8-10-Reference-Woofer-295-357
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS270P-4A`,date:``,content:`[Driver]
 Brand=Dayton Audio
@@ -44124,6 +44621,7 @@ Vd=0.000262386
 Dd=0.235966
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS270P-4A-10-Reference-Paper-Woofer-4-Ohm-295-569
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS270P-8A`,date:``,content:`[Driver]
 Brand=Dayton Audio
@@ -44153,6 +44651,7 @@ Vd=0.000262386
 Dd=0.235966
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS270P-8A-10-Reference-Paper-Woofer-8-Ohm-295-579
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS52AN-8 2_ Reference Aluminum Dome Midrange`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44182,6 +44681,7 @@ Vd=0.00000264
 Dd=0.0579772
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS52AN-8-2-Reference-Aluminum-Dome-Midrange-285-020
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS52FN-8 2_ Reference Fabric Dome Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44211,6 +44711,7 @@ Vd=0.00000264
 Dd=0.0579772
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS52FN-8-2-Reference-Fabric-Dome-Midrange-8-Ohm-285-022
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS75-4 3_ Reference Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44240,6 +44741,7 @@ Vd=0.00000132
 Dd=0.0390882
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS75-4-3-Reference-Full-Range-Driver-4-Ohm-295-380
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS75-8 3_ Reference Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44269,6 +44771,7 @@ Vd=0.000002054
 Dd=0.0448522
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS75-8-3-Reference-Full-Range-Driver-8-Ohm-295-337
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RS75T-8 3_ Reference Full-Range Driver Truncated Frame`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44298,6 +44801,7 @@ Vd=0.00000156
 Dd=0.0390882
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RS75T-8-3-Reference-Full-Range-Driver-Truncate-295-336
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RSS210HF-4 8_ Reference Series HF Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44327,6 +44831,7 @@ Vd=0.0001971
 Dd=0.166985
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RSS210HF-4-8-Reference-Series-HF-Subwoofer-4-Ohm-295-456
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RSS210HO-4 8_ Reference Series HO Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44356,6 +44861,7 @@ Vd=0.00023518
 Dd=0.16499
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RSS210HO-4-8-Reference-Series-HO-Subwoofer-4-Ohm-295-458
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RSS210HO-8 8_ Reference Series HO Subwoofer 8 ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44385,6 +44891,7 @@ Vd=0.00025656
 Dd=0.16499
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RSS210HO-8-8-Reference-Series-HO-Subwoofer-8-ohm-295-459
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RSS265-PR 10_ Reference Series Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44414,6 +44921,7 @@ Vd=0.00085512
 Dd=0.212992
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RSS265-PR-10-Reference-Series-Aluminum-Cone-Passive-Radiator-295-500
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RSS265HF-4 10_ Reference Series HF Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44443,6 +44951,7 @@ Vd=0.000438249
 Dd=0.212992
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RSS265HF-4-10-Reference-Series-HF-Subwoofer-4-Ohm-295-460
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RSS265HF-8 10_ Reference Series HF Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44472,6 +44981,7 @@ Vd=0.000495352
 Dd=0.210012
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RSS265HF-8-10-Reference-Series-HF-Subwoofer-8-Ohm-295-442
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RSS265HO-4 10_ Reference Series HO Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44501,6 +45011,7 @@ Vd=0.000430131
 Dd=0.21101
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RSS265HO-4-10-Reference-Series-HO-Subwoofer-4-Ohm-295-462
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RSS265HO-44 10_ Reference Series HO DVC Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44530,6 +45041,7 @@ Vd=0.000466798
 Dd=0.211793
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RSS265HO-44-10-Reference-Series-HO-DVC-Subwoofer-295-463
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RSS315-PR 12_ Reference Series Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44559,6 +45071,7 @@ Vd=0.00131742
 Dd=0.253998
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RSS315-PR-12-Reference-Series-Aluminum-Cone-Passive-Radiator-295-502
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RSS315HF-4 12_ Reference Series HF Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44588,6 +45101,7 @@ Vd=0.000736021
 Dd=0.255995
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RSS315HF-4-12-Reference-Series-HF-Subwoofer-4-Ohm-295-464
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RSS315HFA-8 12_ Reference Series HF Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44617,6 +45131,7 @@ Vd=0.000724581
 Dd=0.253998
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RSS315HFA-8-12-Reference-Series-HF-Subwoofer-8-Ohm-295-445
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RSS315HO-4 12_ Reference Series HO Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44646,6 +45161,7 @@ Vd=0.000633081
 Dd=0.255995
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RSS315HO-4-12-Reference-Series-HO-Subwoofer-4-Ohm-295-466
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RSS315HO-44 12_ Reference Series HO DVC Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44675,6 +45191,7 @@ Vd=0.00070994
 Dd=0.254098
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RSS315HO-44-12-Reference-Series-HO-DVC-Subwoofer-295-467
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RSS390-PR 15_ Reference Series Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44704,6 +45221,7 @@ Vd=0.0024888
 Dd=0.325005
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RSS390-PR-15-Reference-Series-Aluminum-Cone-Passive-Radiator-295-504
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RSS390HF-4 15_ Reference Series HF Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44733,6 +45251,7 @@ Vd=0.00116144
 Dd=0.325005
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RSS390HF-4-15-Reference-Series-HF-Subwoofer-4-Ohm-295-468
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RSS390HO-4 15_ Reference Series HO Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44762,6 +45281,7 @@ Vd=0.00099552
 Dd=0.325005
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RSS390HO-4-15-Reference-Series-HO-Subwoofer-4-Ohm-295-469
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RSS460-PR 18_ Reference Series Aluminum Cone Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44791,6 +45311,7 @@ Vd=0.0039576
 Dd=0.384974
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RSS460-PR-18-Reference-Series-Aluminum-Cone-Passive-Radiator-295-506
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RSS460HO-4 18_ Reference Series HO Subwoofer 4 ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44820,6 +45341,7 @@ Vd=0.0014841
 Dd=0.384974
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RSS460HO-4-18-Reference-Series-HO-Subwoofer-4-ohm-295-472
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RST28A-4 1-1_8_ Reference Series Aluminum Dome Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44849,6 +45371,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RST28A-4-1-1-8-Reference-Series-Aluminum-Dome-Tweeter-4-Ohm-275-131
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RST28A-4 1-1_8_ Reference Series Aluminum Dome Tweeter with Truncated Faceplate`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44878,6 +45401,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RST28-4-1-1-8-Reference-Series-Aluminum-Dome-Tweeter-and-Truncated-Faceplate-275-134
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RST28F-4 1-1_8_ Reference Series Fabric Dome Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44907,6 +45431,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RST28F-4-1-1-8-Reference-Series-Fabric-Dome-Tweeter-4-Ohm-275-141
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio RST28F-4 1-1_8_ Reference Series Fabric Dome Tweeter with Truncated Faceplate`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44936,6 +45461,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-RST28-1-1-8-Reference-Series-Fabric-Done-Tweeter-and-Truncated-Faceplate-275-144
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio SD215A-88 8_ DVC Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44965,6 +45491,7 @@ Vd=0.00012522
 Dd=0.163011
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-SD215A-88-8-DVC-Subwoofer-295-484
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio SD270A-88 10_ DVC Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -44994,6 +45521,7 @@ Vd=0.00020784
 Dd=0.210012
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-SD270A-88-10-DVC-Subwoofer-295-486
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio SD315A-88 12_ DVC Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -45023,6 +45551,7 @@ Vd=0.00036596
 Dd=0.258002
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-SD315A-88-12-DVC-Subwoofer-295-488
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio SIG120-4 4” Signature Series Extended Range 40W Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -45052,6 +45581,7 @@ Vd=0.00002256
 Dd=0.0847412
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-SIG120-4-4-Signature-Series-Extended-Range-40W-Driver-4-Ohm
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio SIG150-4 5.25” Signature Series Woofer 60W Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -45081,6 +45611,7 @@ Vd=0.0000384
 Dd=0.110558
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-SIG150-4-5.25-Signature-Series-Woofer-60W-Driver-4-Ohm
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio SIG180-4 6.5” Signature Series Woofer 80W Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -45110,6 +45641,7 @@ Vd=0.0000715
 Dd=0.134935
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-SIG180-4-6.5-Signature-Series-Woofer-80W-Driver-4-Ohm
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio SIG225-4 8_ Signature Series Woofer 100W Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -45139,6 +45671,7 @@ Vd=0.00013614
 Dd=0.16997
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-SIG225-4-8-Signature-Series-Woofer-4-Ohm-295-656
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio SIG270-4 10_ Signature Series Woofer 120W Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -45168,6 +45701,7 @@ Vd=0.000234975
 Dd=0.21454
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-SIG270-4-10-Signature-Series-Woofer-4-Ohm-295-658
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio SS10-22 10_ Signature Series DVC Subwoofer 2 Ohm per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -45197,6 +45731,7 @@ Vd=0.00072345
 Dd=0.209435
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-SS10-22-10-Signature-Series-DVC-Subwoofer-2-Ohm-per-Coil-295-730
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio SS10-PR 10_ Signature Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -45226,6 +45761,7 @@ Vd=0.0010392
 Dd=0.210012
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-SS10-PR-10-Signature-Series-Passive-Radiator-295-731
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio SS12-22 12_ Signature Series DVC Subwoofer 2 Ohm per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -45255,6 +45791,7 @@ Vd=0.0012144
 Dd=0.259282
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-SS12-22-12-Signature-Series-DVC-Subwoofer-2-Ohm-per-Coil-295-732
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio SS12-PR 12_ Signature Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -45284,6 +45821,7 @@ Vd=0.0015684
 Dd=0.258002
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-SS12-PR-12-Signature-Series-Passive-Radiator-295-733
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio SS15-22 15_ Signature Series DVC Subwoofer 2 Ohm per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -45313,6 +45851,7 @@ Vd=0.00176
 Dd=0.319154
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-SS15-22-15-Signature-Series-DVC-Subwoofer-2-Ohm-per-Coil-295-734
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio SS15-PR 15_ Signature Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -45342,6 +45881,7 @@ Vd=0.00281505
 Dd=0.32001
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-SS15-PR-15-Signature-Series-Passive-Radiator-295-735
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio SS18-22 18_ Signature Series DVC Subwoofer 2 Ohm per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -45371,6 +45911,7 @@ Vd=0.0030888
 Dd=0.388923
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-SS18-22-18-Signature-Series-DVC-Subwoofer-2-Ohm-per-Coil-295-736
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio SS18-PR 18_ Signature Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -45400,6 +45941,7 @@ Vd=0.0053757
 Dd=0.390002
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-SS18-PR-18-Signature-Series-Passive-Radiator-295-737
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio SS8-22 8_ Signature Series DVC Subwoofer 2 Ohm per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -45429,6 +45971,7 @@ Vd=0.00034
 Dd=0.159577
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-SS8-22-8-Signature-Series-DVC-Subwoofer-2-Ohm-per-Coil-295-728
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio SS8-PR 8_ Signature Series Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -45458,6 +46001,7 @@ Vd=0.0004965
 Dd=0.159017
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-SS8-PR-8-Signature-Series-Passive-Radiator-295-729
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ST210-8`,date:``,content:`[Driver]
 Brand=Dayton Audio
@@ -45487,6 +46031,7 @@ Vd=0.000135838
 Dd=0.17653
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ST210-8-8-Series-II-Woofer-295-100
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ST255-8`,date:``,content:`[Driver]
 Brand=Dayton Audio
@@ -45516,6 +46061,7 @@ Vd=0.000227749
 Dd=0.229616
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ST255-8-10-Series-II-Woofer-295-110
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ST305-8`,date:``,content:`[Driver]
 Brand=Dayton Audio
@@ -45545,6 +46091,7 @@ Vd=0.000486044
 Dd=0.27813
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ST305-8-12-Series-II-Woofer-295-120
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio ST385-8`,date:``,content:`[Driver]
 Brand=Dayton Audio
@@ -45574,6 +46121,7 @@ Vd=0.000759018
 Dd=0.349758
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-ST385-8-15-Series-II-Woofer-295-130
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio TCP115-4 4_ Treated Paper Midbass Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -45603,6 +46151,7 @@ Vd=0.00002012
 Dd=0.0800275
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-TCP115-4-4-Treated-Paper-Cone-Midbass-Woofer-4-Ohm-295-415
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio TCP115-8 4_ Treated Paper Cone Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -45632,6 +46181,7 @@ Vd=0.00002
 Dd=0.0797885
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-TCP115-8-4-Treated-Paper-Cone-Midbass-Woofer-8-Ohm-295-416
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio TD20F-4 3_4_ Soft Dome Neodymium Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -45661,6 +46211,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-TD20F-4-3-4-Soft-Dome-Neodymium-Tweeter-4-Ohm-275-020
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio TD24F-4 1_ Soft Dome Neodymium Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -45690,6 +46241,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-TD24F-4-1-Soft-Dome-Neodymium-Tweeter-4-Ohm-275-021
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio TD25F-4 1_ Soft Dome Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -45719,6 +46271,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-TD25F-4-1-Soft-Dome-Tweeter-4-Ohm-275-022
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio TIT400C-4 15'' Titanic Mk III Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -45748,6 +46301,7 @@ Vd=0.00164861
 Dd=0.319991
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-TIT400C-4-15-Titanic-Mk-III-Subwoofer-4-Ohm-295-420
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio UM10-22 10_ Ultimax DVC Subwoofer 2 ohms Per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -45777,6 +46331,7 @@ Vd=0.00062282
 Dd=0.204296
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-UM10-22-10-Ultimax-DVC-Subwoofer-2-ohms-Per-Co-295-510
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio UM15-22 15_ Ultimax DVC Subwoofer 2 ohms Per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -45806,6 +46361,7 @@ Vd=0.00154774
 Dd=0.322053
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-UM15-22-15-Ultimax-DVC-Subwoofer-2-ohms-Per-Co-295-514
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio UMII10-22 Ultimax II 10_ DVC Subwoofer 2 Ohm Per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -45835,6 +46391,7 @@ Vd=0.00069
 Dd=0.209587
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-UMII10-22-ULTIMAX-II-10-600W-RMS-DVC-Subwoofer-2-Ohm-Per-Coil-295-710
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio UMII12-22 Ultimax II 12_ DVC Subwoofer 2 Ohm Per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -45864,6 +46421,7 @@ Vd=0.0011616
 Dd=0.259282
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-UMII12-22-ULTIMAX-II-12-700W-RMS-DVC-Subwoofer-2-Ohm-Per-Coil-295-712
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio UMII15-22 Ultimax II 15_ DVC Subwoofer 2 Ohm Per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -45893,6 +46451,7 @@ Vd=0.0018984
 Dd=0.317354
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-UMII15-22-ULTIMAX-II-15-800W-RMS-DVC-Subwoofer-2-Ohm-Per-Coil-295-714
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio UMII18-22 Ultimax II 18_ DVC Subwoofer 2 Ohm Per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -45922,6 +46481,7 @@ Vd=0.0033152
 Dd=0.388267
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-UMII18-22-ULTIMAX-II-18-1100W-RMS-DVC-Subwoofer-2-Ohm-Per-Coil-295-718
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dayton Audio UMII8-22 Ultimax II 8_ DVC Subwoofer 2 Ohm Per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Dayton Audio
@@ -45951,6 +46511,7 @@ Vd=0.00036
 Dd=0.159577
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dayton-Audio-UMII8-22-ULTIMAX-II-8-400W-RMS-DVC-Subwoofer-2-Ohm-Per-Coil-295-708
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dynavox LW5002PPR-S`,date:``,content:`[Driver]
 Brand=Dynavox
@@ -45980,6 +46541,7 @@ Vd=0.0000245165
 Dd=0.12192
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dynavox-LW5002PPR-S-5-1-4-Square-Frame-Woofer-295-616
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dynavox LW5004HR-N`,date:``,content:`[Driver]
 Brand=Dynavox
@@ -46009,6 +46571,7 @@ Vd=0.000029564
 Dd=0.123952
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dynavox-LW5004HR-N-5-1-4-Honeycomb-Cone-Woofer-295-624
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dynavox LW5004PMR-N`,date:``,content:`[Driver]
 Brand=Dynavox
@@ -46038,6 +46601,7 @@ Vd=0.000029564
 Dd=0.123952
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dynavox-LW5004PMR-N-5-1-4-Poly-Cone-Woofer-295-618
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dynavox LW5004PMR`,date:``,content:`[Driver]
 Brand=Dynavox
@@ -46067,6 +46631,7 @@ Vd=0.000029564
 Dd=0.123952
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dynavox-LW5004PMR-5-1-4-Woofer-295-600
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dynavox LW6004HR-N`,date:``,content:`[Driver]
 Brand=Dynavox
@@ -46096,6 +46661,7 @@ Vd=0.0000354002
 Dd=0.135636
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dynavox-LW6004HR-N-6-1-2-Honeycomb-Cone-Woofer-295-626
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dynavox LW6004PMR-N`,date:``,content:`[Driver]
 Brand=Dynavox
@@ -46125,6 +46691,7 @@ Vd=0.0000354002
 Dd=0.135636
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dynavox-LW6004PMR-N-6-1-2-Poly-Cone-Woofer-295-620
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dynavox LW6004PMR-NC`,date:``,content:`[Driver]
 Brand=Dynavox
@@ -46154,6 +46721,7 @@ Vd=0.0000354002
 Dd=0.135636
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dynavox-LW6004PMR-NC-6-1-2-Truncated-Frame-Woofer-295-622
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dynavox LW6004PMR`,date:``,content:`[Driver]
 Brand=Dynavox
@@ -46183,6 +46751,7 @@ Vd=0.0000355329
 Dd=0.13589
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dynavox-LW6004PMR-6-1-2-Woofer-295-605
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Dynavox LW8004PMR`,date:``,content:`[Driver]
 Brand=Dynavox
@@ -46212,6 +46781,7 @@ Vd=0.000102676
 Dd=0.196088
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Dynavox-LW8004PMR-8-Woofer-295-610
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`EPIQUE by Dayton Audio E150HE-4`,date:`2026-06-24`,content:`[Driver]
 Brand=EPIQUE by Dayton Audio
@@ -46241,6 +46811,7 @@ Vd=0.00013965
 Dd=0.109981
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Epique-E150HE-44-5-1-2-DVC-MMAG-Subwoofer-4-Ohm-per-Coil-295-102
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`EPIQUE by Dayton Audio E160CF-8`,date:``,content:`[Driver]
 Brand=EPIQUE by Dayton Audio
@@ -46270,6 +46841,7 @@ Vd=0.0000571487
 Dd=0.134874
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Epique-E160CF-8-5-1-4-Carbon-Fiber-Cone-Neodymium-Driver-8-Ohm-295-630
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`EPIQUE by Dayton Audio E180HE-4`,date:`2026-06-24`,content:`[Driver]
 Brand=EPIQUE by Dayton Audio
@@ -46299,6 +46871,7 @@ Vd=0.000200067
 Dd=0.131639
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Epique-E180HE-44-7-DVC-MMAG-Subwoofer-4-Ohm-per-Coil-295-104
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`EPIQUE by Dayton Audio E220CF-8`,date:``,content:`[Driver]
 Brand=EPIQUE by Dayton Audio
@@ -46328,6 +46901,7 @@ Vd=0.000143273
 Dd=0.191008
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Epique-E220CF-8-8-Carbon-Fiber-Cone-Neodymium-Driver-8-Ohm-295-634
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`EPIQUE by Dayton Audio Epique E150MR-4 5-1_2_ Wide-Band Carbon Fiber Midrange Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=EPIQUE by Dayton Audio
@@ -46357,6 +46931,7 @@ Vd=0.0000325975
 Dd=0.113007
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Epique-E150MR-4-5-1-2-Wide-Band-Carbon-Fiber-Midrange-Driver-4-Ohm-285-500
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`EPIQUE by Dayton Audio Epique E150MR-8 5-1_2_ Wide-Band Carbon Fiber Midrange Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=EPIQUE by Dayton Audio
@@ -46386,6 +46961,7 @@ Vd=0.000027081
 Dd=0.113007
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Epique-E150MR-8-5-1-2-Wide-Band-Carbon-Fiber-Midrange-Driver-8-Ohm-285-502
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`EPIQUE by Dayton Audio Epique High Resolution Ceramic Dome Tweeter 30mm 4 Ohm EC30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=EPIQUE by Dayton Audio
@@ -46415,6 +46991,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Epique-High-Resolution-Tweeter-Ceramic-Dome-30mm-4-Ohm-EC30-4-275-500
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`EPIQUE by Dayton Audio Epique High Resolution Ceramic Dome Tweeter 30mm 4 Ohm Matched Pair`,date:`2026-06-24`,content:`[Driver]
 Brand=EPIQUE by Dayton Audio
@@ -46444,6 +47021,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Epique-High-Resolution-Tweeter-Ceramic-Dome-30mm-4-Ohm-Matched-Pair-EC30MP-4-275-502
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Eminence Speaker 8 Paper Cone High Output Woofer 4 Ohm`,date:``,content:`[Driver]
 Brand=Eminence Speaker
@@ -46473,6 +47051,7 @@ Vd=0.000102007
 Dd=0.181102
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Eminence-8-Paper-Cone-High-Output-Woofer-4-Ohm-290-4006
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Eminence Speaker 8 Paper Cone Professional Woofer 8 Ohm`,date:``,content:`[Driver]
 Brand=Eminence Speaker
@@ -46502,6 +47081,7 @@ Vd=0.000131631
 Dd=0.181102
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Eminence-8-Paper-Cone-Professional-Woofer-8-Ohm-290-4007
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Eminence Speaker Eminence Alpha 3-32 3_ Full-Range Speaker 32 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
@@ -46531,6 +47111,7 @@ Vd=0.000007436
 Dd=0.0603446
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Eminence-ALPHA-3-32-3-Full-Range-Speaker-32-Ohm-290-4018
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Eminence Speaker Eminence Alpha 4-4 4_ Full-Range Pair 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
@@ -46560,6 +47141,7 @@ Vd=0.000015002
 Dd=0.0857123
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Eminence-Alpha-4-4-4-Full-Range-Pair-4-Ohm-290-4010
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Eminence Speaker Eminence Alpha 4-8 4_ Full-Range Pair 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
@@ -46589,6 +47171,7 @@ Vd=0.000015002
 Dd=0.0857123
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Eminence-Alpha-4-8-4-Full-Range-Pair-8-Ohm-290-4012
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Eminence Speaker Eminence Alpha-6CBMRA 6-1_2_ Ferrite Sealed Back Midrange Speaker Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
@@ -46618,6 +47201,7 @@ Vd=0.0000012195
 Dd=0.0321736
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Eminence-Alpha-6CBMRA-6-1-2-Ferrite-Sealed-Back-Midrange-Sp-290-661
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Eminence Speaker Eminence Beta-6A 6-1_2_ High Power Midbass Midrange Woofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
@@ -46647,6 +47231,7 @@ Vd=0.000058455
 Dd=0.128606
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Eminence-Beta-6A-6-1-2-High-Power-Midbass-Woofer-290-662
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Eminence Speaker Eminence CannaBass CB3010N-8 10_ Bass Guitar Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
@@ -46676,6 +47261,7 @@ Vd=0.000244231
 Dd=0.219063
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Eminence-CannaBass-CB3010N-8-10-Bass-Guitar-Speaker-8-Ohm-290-5186
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Eminence Speaker Eminence CannaBass CB3015N-8 15_ Bass Guitar Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
@@ -46705,6 +47291,7 @@ Vd=0.000618249
 Dd=0.330193
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Eminence-CannaBass-CB3015N-8-15-Bass-Guitar-Speaker-8-Ohm-290-5188
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Eminence Speaker Eminence Deltalite II 2510 Neo 10_ Speaker Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
@@ -46734,6 +47321,7 @@ Vd=0.000147042
 Dd=0.211131
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Eminence-Deltalite-II-2510-Neo-10-Driver-290-591
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Eminence Speaker Eminence Deltalite II 2512 Neo 12_ Speaker Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
@@ -46763,6 +47351,7 @@ Vd=0.000254555
 Dd=0.257186
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Eminence-Deltalite-II-2512-Neo-12-Driver-290-593
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Eminence Speaker Eminence Kappalite 3012HO Neo 12_ Speaker Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
@@ -46792,6 +47381,7 @@ Vd=0.000330088
 Dd=0.26036
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Eminence-KAPPALITE-3012HO-Neo-12-Driver-290-589
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Eminence Speaker Eminence Kappalite 3012LF Neo 12_ Speaker Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
@@ -46821,6 +47411,7 @@ Vd=0.000496314
 Dd=0.263519
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Eminence-KAPPALITE-3012LF-Neo-12-Driver-290-590
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Eminence Speaker Eminence Kappalite 3015 Neo 15_ Speaker Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
@@ -46850,6 +47441,7 @@ Vd=0.00050504
 Dd=0.330135
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Eminence-KAPPALITE-3015-Neo-15-Driver-290-597
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Eminence Speaker Eminence Kappalite 3015LF Neo 15_ Speaker Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
@@ -46879,6 +47471,7 @@ Vd=0.000845856
 Dd=0.33494
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Eminence-KAPPALITE-3015LF-Neo-15-Driver-290-598
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Eminence Speaker Eminence LA6-CBMR 6-1_2_ Line Array Series Sealed Back Midrange Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
@@ -46908,6 +47501,7 @@ Vd=0.000002662
 Dd=0.13018
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Eminence-LA6-CBMR-6-1-2-Sealed-Back-Mid-Line-Array-Series-290-542
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Eminence Speaker Eminence LAB 12 Professional 12_ Subwoofer Speaker 6 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
@@ -46937,6 +47531,7 @@ Vd=0.00065871
 Dd=0.253998
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Eminence-LAB-12-Professional-12-Subwoofer-Speaker-290-570
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Eminence Speaker Eminence LAB15 15_ Pro Audio Subwoofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
@@ -46966,6 +47561,7 @@ Vd=0.000971966
 Dd=0.323847
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Eminence-LAB-15-15-Pro-Subwoofer-290-575
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Eminence Speaker Eminence Lab 12C High Power 12_ Subwoofer Speaker Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
@@ -46995,6 +47591,7 @@ Vd=0.00065871
 Dd=0.253998
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Eminence-LAB-12C-High-Power-12-Subwoofer-4-Ohm-290-668
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Eminence Speaker Eminence Omega Pro 12-2KW-8 12_ Professional Series Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
@@ -47024,6 +47621,7 @@ Vd=0.000387234
 Dd=0.263519
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Eminence-Omega-Pro-12-2KW-8-12-Professional-Series-Speaker-8-Ohm-290-4300
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Eminence Speaker Eminence Omega Pro 15-2KW-8 15_ Professional Series Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
@@ -47053,6 +47651,7 @@ Vd=0.000633662
 Dd=0.330193
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Eminence-Omega-Pro-15-2KW-8-15-Professional-Series-Speaker-8-Ohm-290-4302
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Eminence Speaker Eminence SD28 1_ Soft Dome Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Eminence Speaker
@@ -47082,6 +47681,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Eminence-SD28-1-Soft-Dome-Tweeter-4-Ohm-290-4024
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Eminence Speaker KL3010CX-8`,date:``,content:`[Driver]
 Brand=Eminence Speaker
@@ -47111,6 +47711,7 @@ Vd=0.000277315
 Dd=0.231648
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Eminence-KL3010CX-8-10-High-Power-Coaxial-Woofer-8-Ohm-290-5638
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Factory Buyouts 269`,date:``,content:`[Driver]
 Brand=Factory Buyouts
@@ -47140,6 +47741,7 @@ Vd=0.000578953
 Dd=0.238125
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Scanspeak-269-10-Paper-Cone-Subwoofer-8-Ohm-299-729
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Factory Buyouts 4 Treated Paper Cone Woofer 16 Ohm`,date:``,content:`[Driver]
 Brand=Factory Buyouts
@@ -47169,6 +47771,7 @@ Vd=0.00000665845
 Dd=0.092075
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/4-Treated-Paper-Cone-Woofer-16-Ohm-299-320
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Factory Buyouts 6 1 2 Poly Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Factory Buyouts
@@ -47198,6 +47801,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/6-1-2-Poly-Cone-Woofer-4-Ohm-299-609
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Factory Buyouts AR 1210163 1 6 1 2 Poly Cone Woofer`,date:``,content:`[Driver]
 Brand=Factory Buyouts
@@ -47227,6 +47831,7 @@ Vd=0.000076162
 Dd=0.155702
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/AR-1210163-1-6-1-2-Poly-Cone-Woofer-299-2056
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Factory Buyouts Advent D 2K05047 65w 6 1 2 Poly Shielded Woofer 8 Ohm`,date:``,content:`[Driver]
 Brand=Factory Buyouts
@@ -47256,6 +47861,7 @@ Vd=0.0000418825
 Dd=0.14605
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Advent-D-2K05047-65w-6-1-2-Poly-Shielded-Woofer-8-Ohm-299-2020
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Factory Buyouts BS28-6P`,date:``,content:`[Driver]
 Brand=Factory Buyouts
@@ -47285,6 +47891,7 @@ Vd=0.0000670121
 Dd=0.14605
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/BS28-6P-6-Aluminum-Cone-Woofer-8-Ohm-Shielded-299-349
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Factory Buyouts DL 1250 4 12 Coated Paper Cone Woofer with Foam Surround 4`,date:``,content:`[Driver]
 Brand=Factory Buyouts
@@ -47314,6 +47921,7 @@ Vd=0.000306558
 Dd=0.2794
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/DL-1250-4-12-Coated-Paper-Cone-Woofer-with-Foam-Surround-4-299-2132
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Factory Buyouts DL840 4 8 Heavy Duty Treated Paper Cone Woofer 4 Ohm`,date:``,content:`[Driver]
 Brand=Factory Buyouts
@@ -47343,6 +47951,7 @@ Vd=0.000110241
 Dd=0.187325
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/DL840-4-8-Heavy-Duty-Treated-Paper-Cone-Woofer-4-Ohm-299-2174
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Factory Buyouts Digital Audio 12 Silver Poly Cone Rubber Surround Woofer 8 Ohm`,date:``,content:`[Driver]
 Brand=Factory Buyouts
@@ -47372,6 +47981,7 @@ Vd=0.00026653
 Dd=0.282575
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Digital-Audio-12-Silver-Poly-Cone-Rubber-Surround-Woofer-8-Ohm-299-1034
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Factory Buyouts Eminence 6-1_2_ Line Array Series Sealed Back Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Factory Buyouts
@@ -47401,6 +48011,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Eminence-6-1-2-Sealed-Back-Midrange-Speaker-8-Ohm-299-2255
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Factory Buyouts HP 5210 5 1 4 Poly Cone Rubber Surround Woofer 8 Ohm`,date:``,content:`[Driver]
 Brand=Factory Buyouts
@@ -47430,6 +48041,7 @@ Vd=0.0000421478
 Dd=0.123825
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HP-5210-5-1-4-Poly-Cone-Rubber-Surround-Woofer-8-Ohm-299-2164
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Factory Buyouts Jensen C7 6 1 2 Paper Cone Shielded Woofer 10 Ohm`,date:``,content:`[Driver]
 Brand=Factory Buyouts
@@ -47459,6 +48071,7 @@ Vd=0.0000376943
 Dd=0.14605
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Jensen-C7-6-1-2-Paper-Cone-Shielded-Woofer-10-Ohm-299-2092
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Factory Buyouts M22WSR-45`,date:``,content:`[Driver]
 Brand=Factory Buyouts
@@ -47488,6 +48101,7 @@ Vd=0.000205922
 Dd=0.185737
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Scanspeak-M22WSR-45-8-Paper-Cone-Shielded-Woofer-8-Ohm-299-723
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Factory Buyouts M22WSR-46`,date:``,content:`[Driver]
 Brand=Factory Buyouts
@@ -47517,6 +48131,7 @@ Vd=0.000206429
 Dd=0.185966
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Scanspeak-M22WSR-46-8-Paper-Cone-Shielded-Woofer-8-Ohm-299-725
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Factory Buyouts NHT 1 11 084 2 8 Poly Cone Woofer`,date:``,content:`[Driver]
 Brand=Factory Buyouts
@@ -47546,6 +48161,7 @@ Vd=0.000179141
 Dd=0.187325
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/NHT-1-11-084-2-8-Poly-Cone-Woofer-299-2118
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Factory Buyouts NS6-255-8A`,date:``,content:`[Driver]
 Brand=Factory Buyouts
@@ -47575,6 +48191,7 @@ Vd=0.0000565626
 Dd=0.13589
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Aura-NS6-255-8A-6-Paper-Cone-Neodymium-Magnet-Woofer-299-030
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Factory Buyouts RoadMaster MSW150 15 Poly Cone Subwoofer 4 Ohm`,date:``,content:`[Driver]
 Brand=Factory Buyouts
@@ -47604,6 +48221,7 @@ Vd=0.000512133
 Dd=0.352425
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/RoadMaster-MSW150-15-Poly-Cone-Subwoofer-4-Ohm-299-1000
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Factory Buyouts SDS-135F25CP08-08`,date:``,content:`[Driver]
 Brand=Factory Buyouts
@@ -47633,6 +48251,7 @@ Vd=0.0000685955
 Dd=0.12065
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-SDS-135F25CP08-08-Gold-SDS-Series-5-1-4-Subwoofer-299-125
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Factory Buyouts TC 8034 8 Treated Paper Cone Woofer with Foam Surround 4 Oh`,date:``,content:`[Driver]
 Brand=Factory Buyouts
@@ -47662,6 +48281,7 @@ Vd=0.000106535
 Dd=0.18415
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/TC-8034-8-Treated-Paper-Cone-Woofer-with-Foam-Surround-4-Oh-299-2200
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Factory Buyouts Tang Band W3-2052SC 3_ RBM Neodymium Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Factory Buyouts
@@ -47691,6 +48311,7 @@ Vd=0.0000144
 Dd=0.0605552
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W3-2052SC-3-RBM-Neodymium-Subwoofer-4-Ohm-299-572
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Factory Buyouts Titan 10 Paper Cone Blue Surround Woofer 4 Ohm`,date:``,content:`[Driver]
 Brand=Factory Buyouts
@@ -47720,6 +48341,7 @@ Vd=0.000189861
 Dd=0.231775
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Titan-10-Paper-Cone-Blue-Surround-Woofer-4-Ohm-299-1028
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Factory Buyouts Titan 15 Paper Cone Red Surround Woofer 4 Ohm`,date:``,content:`[Driver]
 Brand=Factory Buyouts
@@ -47749,6 +48371,7 @@ Vd=0.00037243
 Dd=0.3556
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Titan-15-Paper-Cone-Red-Surround-Woofer-4-Ohm-299-1040
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Factory Buyouts Titan 15 Purple Glitter Cone Yellow Surround Woofer 4 Ohm`,date:``,content:`[Driver]
 Brand=Factory Buyouts
@@ -47778,6 +48401,7 @@ Vd=0.000347601
 Dd=0.3556
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Titan-15-Purple-Glitter-Cone-Yellow-Surround-Woofer-4-Ohm-299-1054
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Factory Buyouts Titan 15 Treated Paper Cone Foam Surround Woofer 4 Ohm`,date:``,content:`[Driver]
 Brand=Factory Buyouts
@@ -47807,6 +48431,7 @@ Vd=0.00037243
 Dd=0.3556
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Titan-15-Treated-Paper-Cone-Foam-Surround-Woofer-4-Ohm-299-1042
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Factory Buyouts V-22DR-0003`,date:``,content:`[Driver]
 Brand=Factory Buyouts
@@ -47836,6 +48461,7 @@ Vd=0.000133169
 Dd=0.18415
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/DynaLab-V22-DR-0003-8-Poly-Woofer-4-Ohm-299-4004
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Factory Buyouts WP 5211 5 1 4 Pair Poly Cone Foam Surround Woofer 8 Ohms`,date:``,content:`[Driver]
 Brand=Factory Buyouts
@@ -47865,6 +48491,7 @@ Vd=0.0000291864
 Dd=0.12192
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/WP-5211-5-1-4-Pair-Poly-Cone-Foam-Surround-Woofer-8-Ohms-299-2238
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 10FE200 10_ Professional Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -47894,6 +48521,7 @@ Vd=0.000153384
 Dd=0.2056
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-10FE200-10-Professional-Woofer-4-Ohm-294-1200
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 10FE200 10_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -47923,6 +48551,7 @@ Vd=0.000155044
 Dd=0.2056
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-10FE200-10-Professional-Woofer-8-Ohm-294-1201
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 10FE300 10_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -47952,6 +48581,7 @@ Vd=0.000197616
 Dd=0.213499
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-10FE300-10-Professional-Woofer-8-Ohm-294-1162
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 10FE330 10_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -47981,6 +48611,7 @@ Vd=0.000317824
 Dd=0.22054
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-10FE330-10-Professional-Woofer-8-Ohm-294-1340
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 10FE400 10_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48010,6 +48641,7 @@ Vd=0.000196204
 Dd=0.214689
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-10FE400-10-Professional-Woofer-8-Ohm-294-1342
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 10HX240 10_ Neodymium Professional Coaxial Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48039,6 +48671,7 @@ Vd=0.000255739
 Dd=0.210194
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-10HX240-10-Neodymium-Professional-Coaxial-Driver-8-Ohm-294-1085
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 10PR300 10_ Neodymium Professional Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48068,6 +48701,7 @@ Vd=0.000158424
 Dd=0.20248
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-10PR300-10-Neodymium-Professional-Woofer-4-Ohm-294-1202
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 10PR300 10_ Neodymium Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48097,6 +48731,7 @@ Vd=0.000158424
 Dd=0.20248
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-10PR300-10-Neodymium-Professional-Woofer-8-Ohm-294-1203
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 10PR320-16 10_ Professional Neodymium Woofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48126,6 +48761,7 @@ Vd=0.000233367
 Dd=0.202166
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-10PR320-10-Professional-Neodymium-Woofer-16-Ohm-294-1324
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 10RS350-4 10_ Professional Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48155,6 +48791,7 @@ Vd=0.000230874
 Dd=0.20248
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-10RS350-10-Professional-Woofer-4-Ohm-294-1322
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 10RS350-8 10_ Professional Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48184,6 +48821,7 @@ Vd=0.000237314
 Dd=0.20248
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-10RS350-10-Professional-Woofer-8-Ohm-294-1323
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 10RS430 10_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48213,6 +48851,7 @@ Vd=0.000466808
 Dd=0.209283
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-10RS430-10-Professional-Woofer-8-Ohm-294-1338
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 12FE300 12_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48242,6 +48881,7 @@ Vd=0.000275301
 Dd=0.262939
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-12FE300-12-Professional-Woofer-8-Ohm-264-1164
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 12FE330 12_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48271,6 +48911,7 @@ Vd=0.000481728
 Dd=0.271515
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-12FE330-12-Professional-Woofer-8-Ohm-294-1334
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 12FE400 12_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48300,6 +48941,7 @@ Vd=0.000297558
 Dd=0.264388
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-12FE400-12-Professional-Woofer-8-Ohm-294-1336
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 12FH520 12_ Neodymium Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48329,6 +48971,7 @@ Vd=0.0003625
 Dd=0.252313
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-12FH520-12-Neodymium-Professional-Woofer-8-Ohm-294-1250
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 12HX500 12_ Neodymium Professional Coaxial Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48358,6 +49001,7 @@ Vd=0.0004995
 Dd=0.262212
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-12HX500-12-Neodymium-Professional-Coaxial-Driver-8-Ohm-294-1086
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 12PR300 12_ Neodymium Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48387,6 +49031,7 @@ Vd=0.000240588
 Dd=0.249522
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-12PR300-12-Neodymium-Professional-Woofer-8-Ohm-294-1241
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 12PR310 12_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48416,6 +49061,7 @@ Vd=0.000240588
 Dd=0.249522
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-12PR310-12-Professional-Woofer-8-Ohm-294-1244
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 12PR320 12_ Professional Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48445,6 +49091,7 @@ Vd=0.000397243
 Dd=0.261969
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-12PR320-12-Professional-Neodymium-Woofer-8-Ohm-294-1326
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 12RS1066 12_ Neodymium Professional Subwoofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48474,6 +49121,7 @@ Vd=0.00061752
 Dd=0.251302
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-12RS1066-12-Neodymium-Professional-Subwoofer-16-Ohm-294-1058
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 12RS1066 12_ Neodymium Professional Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48503,6 +49151,7 @@ Vd=0.00061752
 Dd=0.251302
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-12RS1066-12-Neodymium-Professional-Subwoofer-8-Ohm-294-1057
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 12RS430 12_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48532,6 +49181,7 @@ Vd=0.000749064
 Dd=0.265109
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-12RS430-12-Professional-Woofer-8-Ohm-294-1332
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 15FH500 15_ Neodymium Professional Subwoofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48561,6 +49211,7 @@ Vd=0.000783475
 Dd=0.328395
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-15FH500-15-Neodymium-Professional-Subwoofer-16-Ohm-294-1061
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 15FH500 15_ Neodymium Professional Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48590,6 +49241,7 @@ Vd=0.000800415
 Dd=0.328395
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-15FH500-15-Neodymium-Professional-Subwoofer-4-Ohm-294-1059
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 15FH500 15_ Neodymium Professional Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48619,6 +49271,7 @@ Vd=0.000783475
 Dd=0.328395
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-15FH500-15-Neodymium-Professional-Subwoofer-8-Ohm-294-1060
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 15FH510 15_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48648,6 +49301,7 @@ Vd=0.00074
 Dd=0.319154
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-15FH510-15-Professional-Woofer-8-Ohm-294-1274
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 15FH520 15_ Neodymium Professional Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48677,6 +49331,7 @@ Vd=0.000775005
 Dd=0.328395
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-15FH520-15-Neodymium-Professional-Subwoofer-4-Ohm-294-1062
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 15FH520 15_ Neodymium Professional Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48706,6 +49361,7 @@ Vd=0.000741125
 Dd=0.328395
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-15FH520-15-Neodymium-Professional-Subwoofer-8-Ohm-294-1063
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 15HP1010 15_ Professional Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48735,6 +49391,7 @@ Vd=0.00080145
 Dd=0.323512
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-15HP1010-15-Professional-Subwoofer-8-Ohm-294-1064
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 15HX500 15_ Neodymium Professional Coaxial Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48764,6 +49421,7 @@ Vd=0.00081216
 Dd=0.331674
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-15HX500-15-Neodymium-Professional-Coaxial-Driver-8-Ohm-294-1087
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 15PR300 15_ Professional Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48793,6 +49451,7 @@ Vd=0.00045501
 Dd=0.332824
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-15PR300-15-Professional-Neodymium-Woofer-8-Ohm-294-1376
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 15PR400 15_ Neodymium Professional Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48822,6 +49481,7 @@ Vd=0.000462875
 Dd=0.32015
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-15PR400-15-Neodymium-Professional-Woofer-4-Ohm-294-1270
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 15PR400 15_ Neodymium Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48851,6 +49511,7 @@ Vd=0.000462875
 Dd=0.32015
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-15PR400-15-Neodymium-Professional-Woofer-8-Ohm-294-1271
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 15PR450 15_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48880,6 +49541,7 @@ Vd=0.0005142
 Dd=0.330328
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-15PR450-15-Professional-Woofer-8-Ohm-294-1330
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 18FH500 18_ Neodymium Professional Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48909,6 +49571,7 @@ Vd=0.00104895
 Dd=0.379981
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-18FH500-18-Neodymium-Professional-Subwoofer-8-Ohm-294-1300
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 18FX800 18_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48938,6 +49601,7 @@ Vd=0.00167394
 Dd=0.392994
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-18FX800-18-Subwoofer-8-Ohm-294-1089
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 18HP1010 18_ Professional Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48967,6 +49631,7 @@ Vd=0.00117683
 Dd=0.39202
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-18HP1010-18-Professional-Subwoofer-4-Ohm-294-1065
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 18HP1010 18_ Professional Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -48996,6 +49661,7 @@ Vd=0.00117683
 Dd=0.39202
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-18HP1010-18-Professional-Subwoofer-8-Ohm-294-1066
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 18HP1022 18_ Neodymium Professional Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49025,6 +49691,7 @@ Vd=0.0011514
 Dd=0.392832
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-18HP1022-18-Neodymium-Professional-Subwoofer-8-Ohm-294-1067
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 18HP1030 18_ Professional Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49054,6 +49721,7 @@ Vd=0.00139938
 Dd=0.378302
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-18HP1030-18-Professional-Subwoofer-4-Ohm-294-1306
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 18HW1070 18_ Professional Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49083,6 +49751,7 @@ Vd=0.0015756
 Dd=0.392832
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-18HW1070-18-Professional-Subwoofer-4-Ohm-294-1068
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 18HW1070 18_ Professional Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49112,6 +49781,7 @@ Vd=0.0015756
 Dd=0.392832
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-18HW1070-18-Professional-Subwoofer-8-Ohm-294-1069
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 18XL1600 18_ Neodymium Professional Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49141,6 +49811,7 @@ Vd=0.00144996
 Dd=0.378302
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-18XL1600-18-Neodymium-Professional-Subwoofer-8-Oh-294-1313
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 21XL3000 21_ Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49170,6 +49841,7 @@ Vd=0.00308165
 Dd=0.471225
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-21XL3000-21-Neodymium-Subwoofer-8-Ohm-294-1090
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 3FE22 3_ Neodymium Professional Full-Range Woofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49199,6 +49871,7 @@ Vd=0.0000055266
 Dd=0.0620095
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-3FE22-3-Neodymium-Professional-Woofer-16-Ohm-294-1102
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 3FE22 3_ Neodymium Professional Full-Range Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49228,6 +49901,7 @@ Vd=0.0000052246
 Dd=0.0620095
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-3FE22-3-Neodymium-Professional-Woofer-4-Ohm-294-1100
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 3FE22 3_ Neodymium Professional Full-Range Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49257,6 +49931,7 @@ Vd=0.0000055266
 Dd=0.0620095
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-3FE22-3-Neodymium-Professional-Woofer-8-Ohm-294-1101
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 3FE25 3_ Professional Full-Range Woofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49286,6 +49961,7 @@ Vd=0.000006039
 Dd=0.0648204
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-3FE25-3-Professional-Woofer-16-Ohm-294-1105
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 3FE25 3_ Professional Full-Range Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49315,6 +49991,7 @@ Vd=0.0000052246
 Dd=0.0620095
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-3FE25-3-Professional-Woofer-4-Ohm-294-1103
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 3FE25 3_ Professional Full-Range Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49344,6 +50021,7 @@ Vd=0.0000055266
 Dd=0.0620095
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-3FE25-3-Professional-Woofer-8-Ohm-294-1104
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 4FE32 4_ Neodymium Professional Full-Range Woofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49373,6 +50051,7 @@ Vd=0.000008784
 Dd=0.0781764
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-4FE32-4-Neodymium-Professional-Woofer-16-Ohm-294-1122
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 4FE32 4_ Neodymium Professional Full-Range Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49402,6 +50081,7 @@ Vd=0.000008304
 Dd=0.0781764
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-4FE32-4-Neodymium-Professional-Woofer-4-Ohm-294-1120
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 4FE32 4_ Neodymium Professional Full-Range Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49431,6 +50111,7 @@ Vd=0.000013104
 Dd=0.0781764
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-4FE32-4-Neodymium-Professional-Woofer-8-Ohm-294-1121
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 4FE35 4_ Professional Full-Range Woofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49460,6 +50141,7 @@ Vd=0.000008784
 Dd=0.0781764
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-4FE35-4-Professional-Woofer-16-Ohm-294-1125
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 4FE35 4_ Professional Full-Range Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49489,6 +50171,7 @@ Vd=0.000008304
 Dd=0.0781764
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-4FE35-4-Professional-Woofer-4-Ohm-294-1123
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 4FE35 4_ Professional Full-Range Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49518,6 +50201,7 @@ Vd=0.000013104
 Dd=0.0781764
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-4FE35-4-Professional-Woofer-8-Ohm-294-1124
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 4FE42 4_ Neodymium Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49547,6 +50231,7 @@ Vd=0.0000144047
 Dd=0.0805033
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-4FE42-4-Neodymium-Full-Range-Speaker-4-Ohm-294-1354
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 4FE42 4_ Neodymium Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49576,6 +50261,7 @@ Vd=0.0000144047
 Dd=0.0805033
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-4FE42-4-Neodymium-Full-Range-Speaker-8-Ohm-294-1356
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 4FE44 4_ Neodymium Professional Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49605,6 +50291,7 @@ Vd=0.0000086005
 Dd=0.0809764
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-4FE44-4-Neodymium-Professional-Midrange-8-Ohm-294-1070
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 5FE100 5_ Professional Midbass Midrange Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49634,6 +50321,7 @@ Vd=0.000041895
 Dd=0.100799
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-5FE100-5-Professional-Woofer-8-Ohm-294-1140
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 5FE120 5_ Professional Midbass Midrange Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49663,6 +50351,7 @@ Vd=0.000041895
 Dd=0.100799
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-5FE120-5-Professional-Woofer-8-Ohm-294-1141
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 5FE125 5_ Professional Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49692,6 +50381,7 @@ Vd=0.0000441
 Dd=0.103418
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-5FE125-5-Professional-Midrange-8-Ohm-294-1071
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 5HX140 5_ Neodymium Professional Coaxial Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49721,6 +50411,7 @@ Vd=0.00004335
 Dd=0.104031
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-5HX140-5-Neodymium-Professional-Coaxial-Driver-8-Ohm-294-1082
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 5PR120 5_ Professional Neodymium Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49750,6 +50441,7 @@ Vd=0.000031682
 Dd=0.114072
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-5PR120-5-Professional-Neodymium-Midrange-8-Ohm-294-1380
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 6FE100 6_ Professional Midrange Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49779,6 +50471,7 @@ Vd=0.000075075
 Dd=0.134935
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-6FE100-6-Professional-Woofer-8-Ohm-294-1150
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 6FE200 6_ Professional Midrange Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49808,6 +50501,7 @@ Vd=0.000054516
 Dd=0.122573
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-6FE200-6-Professional-Woofer-4-Ohm-294-1151
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 6FE200 6_ Professional Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49837,6 +50531,7 @@ Vd=0.000055106
 Dd=0.122573
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-6FE200-6-Professional-Woofer-8-Ohm-294-1152
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 6FE300 6_ Professional Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49866,6 +50561,7 @@ Vd=0.00005382
 Dd=0.132555
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-6FE300-6-Professional-Midrange-8-Ohm-294-1158
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 6FE400 6_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49895,6 +50591,7 @@ Vd=0.000067257
 Dd=0.133988
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-6FE400-8-Professional-Woofer-8-Ohm-294-1352
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 6HX150 6_ Neodymium Coaxial Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49924,6 +50621,7 @@ Vd=0.00005655
 Dd=0.128655
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-6HX150-6-Neodymium-Coaxial-Driver-8-Ohm-294-1192
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 6PR160 6_ Professional Neodymium Midbass 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49953,6 +50651,7 @@ Vd=0.0000585
 Dd=0.122053
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-6PR160-6-Professional-Neodymium-Midbass-8-Ohm-294-1320
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 6RS140 6_ Professional Neodymium Midbass 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -49982,6 +50681,7 @@ Vd=0.000068656
 Dd=0.12494
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-6RS140-6-Professional-Neodymium-Midbass-8-Ohm-294-1321
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 8FE200 8_ Professional Midbass 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -50011,6 +50711,7 @@ Vd=0.000088242
 Dd=0.155945
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-8FE200-8-Professional-Woofer-4-Ohm-294-1170
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 8FE200 8_ Professional Midbass 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -50040,6 +50741,7 @@ Vd=0.000089197
 Dd=0.155945
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-8FE200-8-Professional-Woofer-8-Ohm-294-1171
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 8FE300 8_ Professional Midbass 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -50069,6 +50771,7 @@ Vd=0.000123096
 Dd=0.168503
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-8FE300-8-Professional-Midbass-8-Ohm-294-1160
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 8FE400 8_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -50098,6 +50801,7 @@ Vd=0.000111141
 Dd=0.17224
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-8FE400-8-Professional-Woofer-8-Ohm-294-1072
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 8HX150 8_ Ferrite and Neodymium Professional Coaxial Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -50127,6 +50831,7 @@ Vd=0.000106862
 Dd=0.166297
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-8HX150-8-Ferrite-and-Neodymium-Professional-Coaxial-Driver-8-Ohm-294-1083
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 8HX210 8_ Coaxial Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -50156,6 +50861,7 @@ Vd=0.00167394
 Dd=0.392994
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-8HX210-8-Coaxial-Speaker-8-Ohm-294-1088
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 8HX240 8_ Neodymium Professional Coaxial Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -50185,6 +50891,7 @@ Vd=0.000137591
 Dd=0.168503
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-8HX240-8-Neodymium-Professional-Coaxial-Driver-8-Ohm-294-1084
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 8PR200 8_ Neodymium Professional Midbass 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -50214,6 +50921,7 @@ Vd=0.00015974
 Dd=0.157973
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-8PR200-8-Neodymium-Professional-Woofer-8-Ohm-294-1175
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 8PR320 8_ Neodymium Professional Midbass 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -50243,6 +50951,7 @@ Vd=0.000163459
 Dd=0.168503
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-8PR320-8-Neodymium-Professional-Midbass-8-Ohms-294-1166
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO 8RS340 8_ Neodymium Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -50272,6 +50981,7 @@ Vd=0.000166977
 Dd=0.170307
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-8RS340-8-Neodymium-Professional-Woofer-8-Ohm-294-1344
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO M5N8-80 5_ Neodymium Professional Midrange 12 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -50301,6 +51011,7 @@ Vd=0.000025905
 Dd=0.109517
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-M5N12-80-5-Neodymium-Professional-Woofer-12-Ohm-294-1143
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO W8N8-150 8_ Neodymium Professional Woofer 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -50330,6 +51041,7 @@ Vd=0.000122544
 Dd=0.168125
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-W8N8-150-8-Neodymium-Professional-Woofer-16-Ohm-294-1074
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`FaitalPRO W8N8-150 8_ Neodymium Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=FaitalPRO
@@ -50359,6 +51071,7 @@ Vd=0.000122544
 Dd=0.168125
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/FaitalPRO-W8N8-150-8-Neodymium-Professional-Woofer-8-Ohm-294-1073
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Fountek FW100B`,date:``,content:`[Driver]
 Brand=Fountek
@@ -50388,6 +51101,7 @@ Vd=0.0000321058
 Dd=0.101092
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Fountek-FW100B-4-Aluminum-Cone-Midwoofer-296-733
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Fountek FW200`,date:``,content:`[Driver]
 Brand=Fountek
@@ -50417,6 +51131,7 @@ Vd=0.000116818
 Dd=0.184912
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Fountek-FW200-8-Aluminum-Midwoofer-296-731
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Fountek FW222`,date:``,content:`[Driver]
 Brand=Fountek
@@ -50446,6 +51161,7 @@ Vd=0.000196337
 Dd=0.188976
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Fountek-FW222-8-Aluminum-Cone-Midwoofer-296-754
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 10PF-8 10_ Paper Cone Foam Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -50475,6 +51191,7 @@ Vd=0.00010341
 Dd=0.209496
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-10PF-8-10-Paper-Cone-Foam-Surround-Woofer-292-410
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 10PR-8 10_ Poly Cone Rubber Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -50504,6 +51221,7 @@ Vd=0.00010353
 Dd=0.209618
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-10PR-8-10-Poly-Cone-Rubber-Surround-Woofer-292-421
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 10PT-8 10_ Paper Cone Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -50533,6 +51251,7 @@ Vd=0.00023664
 Dd=0.210496
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-10PT-8-10-Paper-Cone-Prosound-Woofer-8-Ohm-292-804
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 10S-8 4_ Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -50562,6 +51281,7 @@ Vd=0.000007875
 Dd=0.0817588
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-10S-8-4-Full-Range-Driver-8-Ohm-292-569
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 10SFPC-B 10_ Square Frame Paper Cone Woofer Black`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -50591,6 +51311,7 @@ Vd=0.000151962
 Dd=0.212123
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-10SFPC-B-10-Square-Frame-Paper-Cone-Woofer-Black-290-912
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 10SFPC-W 10_ Square Frame Paper Cone Woofer White`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -50620,6 +51341,7 @@ Vd=0.000152177
 Dd=0.212273
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-10SFPC-W-10-Square-Frame-Paper-Cone-Woofer-White-290-910
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 10SW-4 10_ Poly Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -50649,6 +51371,7 @@ Vd=0.00029274
 Dd=0.209405
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-10SW-4-10-Poly-Cone-Subwoofer-4-Ohm-292-482
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 10SW-4HE 10_ High Excursion Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -50678,6 +51401,7 @@ Vd=0.00038104
 Dd=0.210012
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-10SW-4HE-10-Paper-Cone-Rubber-Surround-High-Excursion-Subwoofer-4-Ohm-292-818
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 10_ Woofer Surface Mount Poly Cone 4 Ohm 10SMP-4`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -50707,6 +51431,7 @@ Vd=0.00017
 Dd=0.208063
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-10-Woofer-Surface-Mount-Poly-Cone-4-Ohm-10SMP-4-292-870
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 10_ Woofer Surface Mount Poly Cone 8 Ohm 10SMP-8`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -50736,6 +51461,7 @@ Vd=0.00017
 Dd=0.208063
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-10-Woofer-Surface-Mount-Poly-Cone-8-Ohm-10SMP-8-292-872
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 12PF-8 12_ Paper Cone Foam Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -50765,6 +51491,7 @@ Vd=0.000183505
 Dd=0.258372
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-12PF-8-12-Paper-Cone-Foam-Surround-Woofer-292-412
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 12PR-8 12_ Poly Cone Rubber Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -50794,6 +51521,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-12PR-8-12-Poly-Cone-Rubber-Surround-Woofer-292-422
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 12PT-8 12_ Paper Cone Professional Woofer with 3_ Voice Coil 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -50823,6 +51551,7 @@ Vd=0.000361012
 Dd=0.259993
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-12PT-8-12-Paper-Cone-Prosound-Woofer-3-Voice-Coil-8-Ohm-292-806
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 12SFPC-B 12_ Square Frame Paper Cone Woofer Black`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -50852,6 +51581,7 @@ Vd=0.000215
 Dd=0.252313
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-12SFPC-B-12-Square-Frame-Paper-Cone-Woofer-Black-290-916
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 12SFPC-W 12_ Square Frame Paper Cone Woofer White`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -50881,6 +51611,7 @@ Vd=0.000209797
 Dd=0.249242
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-12SFPC-W-12-Square-Frame-Paper-Cone-Woofer-White-290-914
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 12SW-4 12_ Poly Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -50910,6 +51641,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-12SW-4-12-Poly-Cone-Subwoofer-4-Ohm-292-484
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 12SW-4HE 12_ Paper Cone Rubber Surround High Excursion Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -50939,6 +51671,7 @@ Vd=0.000634125
 Dd=0.254148
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-12PR-4-12-Paper-Cone-Rubber-Surround-Subwoofer-4-Ohm-292-820
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 12_ Woofer Surface Mount Poly Cone 4 Ohm 12SMP-4`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -50968,6 +51701,7 @@ Vd=0.0002838
 Dd=0.256318
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-12-Woofer-Surface-Mount-Poly-Cone-4-Ohm-12SMP-4-292-874
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 12_ Woofer Surface Mount Poly Cone 8 Ohm 12SMP-8`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -50997,6 +51731,7 @@ Vd=0.0002838
 Dd=0.256318
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-12-Woofer-Surface-Mount-Poly-Cone-8-Ohm-12SMP-8-292-876
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 15PF-8 15_ Paper Cone Foam Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51026,6 +51761,7 @@ Vd=0.00033024
 Dd=0.32422
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-15PF-8-15-Paper-Cone-Foam-Surround-Woofer-292-415
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 15PT-8 15_ Paper Cone Professional Woofer with 3_ Voice Coil 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51055,6 +51791,7 @@ Vd=0.000564128
 Dd=0.325005
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-15PT-8-15-Paper-Cone-Prosound-Woofer-3-Voice-Coil-8-Ohm-292-808
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 15SSW-4HE 15_ High Excursion Super Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51084,6 +51821,7 @@ Vd=0.00100786
 Dd=0.323
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-15SSW-4HE-15-Paper-Cone-Rubber-Surround-High-Excursion-Super-Subwoofer-4-Ohm-292-822
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 18PT-8 18_ Paper Cone Professional Woofer with 3_ Voice Coil 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51113,6 +51851,7 @@ Vd=0.00083912
 Dd=0.396381
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-18PT-8-18-Paper-Cone-Pro-Sound-Woofer-with-3-Voice-Coil-8-Ohm-292-810
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 1TD1-8 1_ Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51142,6 +51881,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-1TD1-8-1-Dome-Tweeter-8-Ohm-292-462
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 1TD2-8 1_ Designer Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51171,6 +51911,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-1TD2-8-1-Designer-Dome-Tweeter-8-Ohm-292-464
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 1TM-4 1_ Mylar Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51200,6 +51941,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-1TM-4-1-Mylar-Tweeter-with-1-2-Voice-Coil-4-Ohm-292-438
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 3FR-4 Full-Range 3_ Speaker Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51229,6 +51971,7 @@ Vd=0.00000624
 Dd=0.0630278
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-3FR-4-Full-Range-3-Speaker-4-Ohm-292-436
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 4FR-8 Full-Range 4-1_2_ Speaker Pioneer Type A11EC80-02F`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51258,6 +52001,7 @@ Vd=0.00000661
 Dd=0.0917394
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-4FR-8-Full-Range-4-1-2-Speaker-Pioneer-Type-A11EC80-02F-292-434
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 4PF-8 4_ Paper Cone Foam Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51287,6 +52031,7 @@ Vd=0.00000828
 Dd=0.0838349
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-4PF-8-4-Paper-Cone-Foam-Surround-Woofer-292-404
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 4_ Woofer Surface Mount Poly Cone 4 Ohm 4SMP-4`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51316,6 +52061,7 @@ Vd=0.0000216
 Dd=0.0829186
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-4-Woofer-Surface-Mount-Poly-Cone-4-Ohm-4SMP-4-292-854
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 4_ Woofer Surface Mount Poly Cone 8 Ohm 4SMP-8`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51345,6 +52091,7 @@ Vd=0.0000216
 Dd=0.0829186
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-4-Woofer-Surface-Mount-Poly-Cone-8-Ohm-4SMP-8-292-856
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 5-1_4_ Woofer Surface Mount Poly Cone 4 Ohm 5SMP-4`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51374,6 +52121,7 @@ Vd=0.0000016
 Dd=0.0319154
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-5-1-4-Woofer-Surface-Mount-Poly-Cone-4-Ohm-5SMP-4-292-858
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 5-1_4_ Woofer Surface Mount Poly Cone 8 Ohm 5SMP-8`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51403,6 +52151,7 @@ Vd=0.000016
 Dd=0.100925
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-5-1-4-Woofer-Surface-Mount-Poly-Cone-8-Ohm-5SMP-8-292-860
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 5PF-8 5-1_4_ Paper Cone Foam Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51432,6 +52181,7 @@ Vd=0.0000188
 Dd=0.0978507
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-5PF-8-5-1-4-Paper-Cone-Foam-Surround-Woofer-292-405
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 5SBM-8 5_ Sealed Back Midrange`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51461,6 +52211,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-5SBM-8-5-Sealed-Back-Midrange-292-432
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 5SBM1-8 5-1_4_ Sealed Back Midrange with 1_ Voice Coil 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51490,6 +52241,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-5SBM1-8-5-1-4-Sealed-Back-Midrange-with-1-Voice-Coil-8-Ohm-292-431
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 6-1_2_ Woofer Surface Mount Poly Cone 4 Ohm 6SMP-4`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51519,6 +52271,7 @@ Vd=0.000068
 Dd=0.13159
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-6-1-2-Woofer-Surface-Mount-Poly-Cone-4-Ohm-6SMP-4-292-862
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 6-1_2_ Woofer Surface Mount Poly Cone 8 Ohm 6SMP-8`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51548,6 +52301,7 @@ Vd=0.000068
 Dd=0.13159
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-6-1-2-Woofer-Surface-Mount-Poly-Cone-8-Ohm-6SMP-8-292-864
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 6LPSW-4 6-1_2_ Low Profile Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51577,6 +52331,7 @@ Vd=0.0000524
 Dd=0.129149
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-6LPSW-4-6-1-2-Low-Profile-Subwoofer-4-Ohm-292-461
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 6PF-8 6-1_2_ Paper Cone Foam Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51606,6 +52361,7 @@ Vd=0.00004209
 Dd=0.133655
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-6PF-8-6-1-2-Paper-Cone-Foam-Surround-Woofer-292-406
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 6PR-8 6-1_2_ Poly Cone Rubber Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51635,6 +52391,7 @@ Vd=0.000042
 Dd=0.133512
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-6PR-8-6-1-2-Poly-Cone-Rubber-Surround-Woofer-292-426
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 6PT-8 6-1_2_ Paper Cone Professional Midbass 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51664,6 +52421,7 @@ Vd=0.000057372
 Dd=0.13188
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-6PT-8-6-1-2-Paper-Cone-Prosound-Woofer-8-Ohm-292-800
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 8FR-8 Full-Range 8_ Replacement Speaker Pioneer Type B20FU20-51FW`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51693,6 +52451,7 @@ Vd=0.0000645
 Dd=0.165453
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-8FR-8-Full-Range-8-Speaker-Pioneer-Type-B20FU20-51FW-292-430
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 8PF-8 8_ Paper Cone Foam Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51722,6 +52481,7 @@ Vd=0.00006462
 Dd=0.165607
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-8PF-8-8-Paper-Cone-Foam-Surround-Woofer-292-408
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 8PR-8 8_ Poly Cone Rubber Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51751,6 +52511,7 @@ Vd=0.00006294
 Dd=0.16344
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-8PR-8-8-Poly-Cone-Rubber-Surround-Woofer-292-428
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 8PT-8 8_ Paper Cone Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51780,6 +52541,7 @@ Vd=0.00014882
 Dd=0.164527
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-8PT-8-8-Paper-Cone-Prosound-Woofer-8-Ohm-292-802
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 8SW-4 8_ Poly Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51809,6 +52571,7 @@ Vd=0.00013008
 Dd=0.166144
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-8SW-4-8-Poly-Cone-Subwoofer-4-Ohm-292-480
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 8SW-4HE 8_ High Excursion Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51838,6 +52601,7 @@ Vd=0.00024516
 Dd=0.170007
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-8SW-4HE-8-Paper-Cone-Rubber-Surround-High-Excursion-Subwoofer-4-Ohm-292-816
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 8_ Woofer Surface Mount Poly Cone 4 Ohm 8SMP-4`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51867,6 +52631,7 @@ Vd=0.00011605
 Dd=0.163907
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-8-Woofer-Surface-Mount-Poly-Cone-4-Ohm-8SMP-4-292-866
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS 8_ Woofer Surface Mount Poly Cone 8 Ohm 8SMP-8`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51896,6 +52661,7 @@ Vd=0.00011605
 Dd=0.163907
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-8-Woofer-Surface-Mount-Poly-Cone-8-Ohm-8SMP-8-292-868
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS A25-10 Replacement 10_ Woofer for Dynaco A25 6 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51925,6 +52691,7 @@ Vd=0.0001557
 Dd=0.209891
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-A25-10-10-Paper-Cone-Replacement-for-Dynaco-A25-292-468
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS K-33-4 Replacement 15_ Woofer for Klipsch Klipschorn, Belle Klipsch, Cornwall, and Lascala Speakers`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51954,6 +52721,7 @@ Vd=0.000705622
 Dd=0.33
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-K-33-4-Replacement-15-Woofer-for-Klipsch-Speakers-292-830
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS NRT25-8 1_ Extended Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -51983,6 +52751,7 @@ Vd=9.4e-7
 Dd=0.0218801
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-NRT25-8-1-Extended-Range-Driver-8-Ohm-272-250
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS NRT50-8 2_ Extended Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -52012,6 +52781,7 @@ Vd=0.000002225
 Dd=0.0336628
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-NRT50-8-2-Extended-Range-Driver-8-Ohm-272-252
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS RSRMO-8`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -52041,6 +52811,7 @@ Vd=0.00017505
 Dd=0.314735
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-RSRMO-8-Replacement-Woofer-for-15-Realistic-Mach-One-8-Ohm-290-184
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`GRS S115V-LF-8 Replacement 15_ Woofer for Yamaha Club Series S115V Speakers GRS`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
@@ -52070,6 +52841,7 @@ Vd=0.00026962
 Dd=0.325005
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/GRS-S115V-LF-8-Replacement-15-Woofer-for-Yamaha-Club-Series-S115V-Speakers-292-850
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GM-35 5_ Cone Midrange`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -52099,6 +52871,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GM-35-5-Cone-Midrange-280-012
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GM-65_4 Sealed Back 5-1_4_ Midrange 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -52128,6 +52901,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GM-65-4-Sealed-Back-5-1-4-Midrange-4-Ohm-280-100
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GM-65_8 Sealed Back 5-1_4_ Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -52157,6 +52931,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GM-65-8-Sealed-Back-5-1-4-Midrange-8-Ohm-280-105
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GM-85_4 Heavy Duty 5_ Sealed Back Midrange 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -52186,6 +52961,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GM-85-4-Heavy-Duty-5-Sealed-Back-Midrange-4-Ohm-280-110
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GM-85_8 Heavy-Duty 5-1_4_ Sealed Back Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -52215,6 +52991,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GM-85-8-Heavy-Duty-5-1-4-Sealed-Back-Midrange-8-Ohm-280-115
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GT-25 3_ Cone Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -52244,6 +53021,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GT-25-3-Cone-Tweeter-270-018
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GT-302 1_2_ Mylar Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -52273,6 +53051,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GT-302-1-2-Mylar-Dome-Tweeter-270-170
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GT-302_S 1_2_ Mylar Dome Tweeter Shielded`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -52302,6 +53081,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GT-302-S-1-2-Mylar-Dome-Tweeter-Shielded-270-175
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GT-322 1_ Titanium Dome Tweeter 3-3_4_ Square`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -52331,6 +53111,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GT-322-1-Titanium-Dome-Tweeter-3-3-4-Square-270-150
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GT-324 1_ Titanium Dome Tweeter 3-7_8_ Round`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -52360,6 +53141,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GT-324-1-Titanium-Dome-Tweeter-3-7-8-Round-270-155
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GT-336 1_ Titanium Dome Tweeter 4-1_2_ x 3-1_2_`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -52389,6 +53171,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GT-336-1-Titanium-Dome-Tweeter-4-1-2-x-3-1-2-270-160
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GT-510 1_ Soft Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -52418,6 +53201,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GT-510-1-Soft-Dome-Tweeter-270-176
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GT-520 1_ Soft Dome Horn Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -52447,6 +53231,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GT-520-1-Soft-Dome-Horn-Tweeter-270-180
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GT-525 1_ Soft Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -52476,6 +53261,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GT-525-1-Soft-Dome-Tweeter-270-182
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-1034`,date:``,content:`[Driver]
 Brand=Goldwood
@@ -52505,6 +53291,7 @@ Vd=0.000105478
 Dd=0.231775
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-1034-10-Butyl-Surround-Woofer-4-Ohm-290-361
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-1038 10_ Butyl Surround Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -52534,6 +53321,7 @@ Vd=0.00008885
 Dd=0.212723
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-1038-10-Butyl-Surround-Woofer-8-Ohm-290-360
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-1038_PA 10_ PA _ Musical Instrument Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -52563,6 +53351,7 @@ Vd=0.000090175
 Dd=0.214303
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-1038-PA-10-Guitar-Speaker-290-390
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-10PC-4 10_ Heavy Duty Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -52592,6 +53381,7 @@ Vd=0.00017245
 Dd=0.209557
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-10PC-4-10-Heavy-Duty-Woofer-4-Ohm-290-322
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-10PC-8 10_ Heavy Duty Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -52621,6 +53411,7 @@ Vd=0.00017245
 Dd=0.209557
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-10PC-8-10-Heavy-Duty-Woofer-8-Ohm-290-324
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-1244 12_ Butyl Surround Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -52650,6 +53441,7 @@ Vd=0.00015777
 Dd=0.258766
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-1244-12-Butyl-Surround-Woofer-4-Ohm-290-366
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-1248 12_ Butyl Surround Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -52679,6 +53471,7 @@ Vd=0.00015777
 Dd=0.258766
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-1248-12-Butyl-Surround-Woofer-8-Ohm-290-365
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-12PC-4 12_ Heavy Duty Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -52708,6 +53501,7 @@ Vd=0.000243945
 Dd=0.249239
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-12PC-4-12-Heavy-Duty-Woofer-4-Ohm-290-332
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-12PC-8 12_ Heavy Duty Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -52737,6 +53531,7 @@ Vd=0.00024701
 Dd=0.2508
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-12PC-8-12-Heavy-Duty-Woofer-8-Ohm-290-334
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-15PC-4`,date:``,content:`[Driver]
 Brand=Goldwood
@@ -52766,6 +53561,7 @@ Vd=0.000574796
 Dd=0.34925
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-15PC-4-15-Heavy-Duty-Woofer-4-Ohm-290-336
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-15PC-8 15_ Heavy Duty Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -52795,6 +53591,7 @@ Vd=0.000494232
 Dd=0.323851
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-15PC-8-15-Heavy-Duty-Woofer-8-Ohm-290-338
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-204_4S 4_ Shielded Poly Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -52824,6 +53621,7 @@ Vd=0.000008028
 Dd=0.0825492
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-204-4S-4-Shielded-Poly-Woofer-4-Ohm-290-370
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-204_8S 4_ Shielded Poly Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -52853,6 +53651,7 @@ Vd=0.000008028
 Dd=0.0825492
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-204-8S-4-Shielded-Poly-Woofer-8-Ohm-290-372
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-205_4S 5-1_4_ Shielded Poly Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -52882,6 +53681,7 @@ Vd=0.000019354
 Dd=0.111001
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-205-4S-5-1-4-Shielded-Poly-Woofer-4-Ohm-290-374
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-205_8S 5-1_4_ Shielded Poly Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -52911,6 +53711,7 @@ Vd=0.000019354
 Dd=0.111001
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-205-8S-5-1-4-Shielded-Poly-Woofer-8-Ohm-290-376
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-206_4 6-1_2_ OEM Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -52940,6 +53741,7 @@ Vd=0.0000477225
 Dd=0.13176
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-206-4-6-1-2-OEM-Woofer-4-Ohm-290-300
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-206_8 6-1_2_ OEM Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -52969,6 +53771,7 @@ Vd=0.0000340875
 Dd=0.13176
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-206-8-6-1-2-OEM-Woofer-8-Ohm-290-305
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-208_4 8_ OEM Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -52998,6 +53801,7 @@ Vd=0.000072065
 Dd=0.161914
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-208-4-8-OEM-Woofer-4-Ohm-290-310
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-208_8 8_ OEM Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -53027,6 +53831,7 @@ Vd=0.000072065
 Dd=0.161914
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-208-8-8-OEM-Woofer-8-Ohm-290-315
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-210_4 10_ OEM Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -53056,6 +53861,7 @@ Vd=0.000120715
 Dd=0.209557
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-210-4-10-OEM-Woofer-4-Ohm-290-320
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-210_8 10_ OEM Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -53085,6 +53891,7 @@ Vd=0.000120715
 Dd=0.209557
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-210-8-10-OEM-Woofer-8-Ohm-290-325
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-212_4 12_ OEM Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -53114,6 +53921,7 @@ Vd=0.000181815
 Dd=0.257179
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-212-4-12-OEM-Woofer-4-Ohm-290-330
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-212_8 12_ OEM Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -53143,6 +53951,7 @@ Vd=0.000131475
 Dd=0.258766
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-212-8-12-OEM-Woofer-8-Ohm-290-335
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-215_4`,date:``,content:`[Driver]
 Brand=Goldwood
@@ -53172,6 +53981,7 @@ Vd=0.000335298
 Dd=0.34925
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-215-4-15-OEM-Woofer-4-Ohm-290-340
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-215_40_8 15_ OEM Woofer 40 oz.`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -53201,6 +54011,7 @@ Vd=0.00028819
 Dd=0.323788
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-215-40-8-15-OEM-Woofer-40-oz.-290-346
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-215_8 15_ OEM Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -53230,6 +54041,7 @@ Vd=0.000288197
 Dd=0.323792
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-215-8-15-OEM-Woofer-8-Ohm-290-345
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-4028_S 4_ Woofer Shielded`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -53259,6 +54071,7 @@ Vd=0.000007425
 Dd=0.0793885
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-4028-S-4-Woofer-Shielded-290-373
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-406D 6-1_2_ Poly DVC Subwoofer Shielded`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -53288,6 +54101,7 @@ Vd=0.00002727
 Dd=0.13176
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-406D-6-1-2-Poly-DVC-Subwoofer-Shielded-290-352
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-5028_S 5-1_4_ Shielded Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -53317,6 +54131,7 @@ Vd=0.00001673
 Dd=0.103202
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-5028-S-5-1-4-Shielded-Woofer-290-377
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-6024 6-1_2_ Butyl Surround Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -53346,6 +54161,7 @@ Vd=0.0000340875
 Dd=0.13176
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-6024-6-1-2-Butyl-Surround-Woofer-4-Ohm-290-351
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-6028 6-1_2_ Butyl Surround Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -53375,6 +54191,7 @@ Vd=0.0000340875
 Dd=0.13176
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-6028-6-1-2-Butyl-Surround-Woofer-8-Ohm-290-350
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-6PC-4 6-1_2_ Heavy Duty Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -53404,6 +54221,7 @@ Vd=0.000054572
 Dd=0.131798
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-6PC-4-6-1-2-Heavy-Duty-Woofer-4-Ohm-290-307
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-6PC-8`,date:``,content:`[Driver]
 Brand=Goldwood
@@ -53433,6 +54251,7 @@ Vd=0.0000760378
 Dd=0.155575
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-6PC-8-6-1-2-Heavy-Duty-Woofer-8-Ohm-290-306
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-8003_8 8_ Full Range Driver w_Whizzer`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -53462,6 +54281,7 @@ Vd=0.000042816
 Dd=0.165098
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-8003-8-8-Full-Range-Driver-w-Whizzer-290-379
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-8004 8_ Coaxial Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -53491,6 +54311,7 @@ Vd=
 Dd=0.165098
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-8004-8-8-Coaxial-Speaker-290-378
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-8024 8_ Butyl Surround Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -53520,6 +54341,7 @@ Vd=0.00005455
 Dd=0.16668
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-8024-8-Butyl-Surround-Woofer-4-Ohm-290-356
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-8028 8_ Butyl Surround Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -53549,6 +54371,7 @@ Vd=0.00005455
 Dd=0.16668
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-8028-8-Butyl-Surround-Woofer-8-Ohm-290-355
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-8PC-30-4`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -53578,6 +54401,7 @@ Vd=0.000072065
 Dd=0.161914
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-8PC-30-4-8-Heavy-Duty-Woofer-4-Ohm-290-312
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-8PC-30-8`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -53607,6 +54431,7 @@ Vd=0.000092655
 Dd=0.161914
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-8PC-30-8-8-Heavy-Duty-Woofer-8-Ohm-290-314
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-8PC-4 8_ Heavy Duty Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -53636,6 +54461,7 @@ Vd=0.000072065
 Dd=0.161914
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-8PC-30-4-8-Heavy-Duty-Woofer-4-Ohm-290-312
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-8PC-8 8_ Delmar Series Heavy Duty Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -53665,6 +54491,7 @@ Vd=0.000092655
 Dd=0.161914
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-8PC-30-8-8-Heavy-Duty-Woofer-8-Ohm-290-314
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-S525_4 5-1_4_ Poly Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -53694,6 +54521,7 @@ Vd=0.000016458
 Dd=0.10236
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-S525-4-5-1-4-Poly-Cone-Woofer-4-Ohm-290-301
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-S525_8 5-1_4_ Poly Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -53723,6 +54551,7 @@ Vd=0.000016458
 Dd=0.10236
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-S525-8-5-1-4-Poly-Cone-Woofer-8-Ohm-290-302
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-S650_4 6-1_2_ Poly Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -53752,6 +54581,7 @@ Vd=0.000034925
 Dd=0.133368
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-S650-4-6-1-2-Poly-Cone-Woofer-4-Ohm-290-308
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Goldwood GW-S650_8 6-1_2_ Poly Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
@@ -53781,6 +54611,7 @@ Vd=0.000034925
 Dd=0.133368
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Goldwood-GW-S650-8-6-1-2-Poly-Cone-Woofer-8-Ohm-290-309
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi B1S 1_ Shielded Aluminum Alloy Mid_Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -53810,6 +54641,7 @@ Vd=4.75e-7
 Dd=0.0252313
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-B1S-1-Shielded-Aluminum-Mid-Tweeter-297-411
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi B2S 2_ Shielded Aluminum Alloy Full-Range Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -53839,6 +54671,7 @@ Vd=0.00000195
 Dd=0.0406843
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-B2S-2-Shielded-Aluminum-Driver-297-432
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi B3N 3_ Aluminum Alloy Full-Range Driver Round Frame`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -53868,6 +54701,7 @@ Vd=0.000009
 Dd=0.0618039
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-B3N-3-Aluminum-Driver-Round-Frame-297-428
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi B3S 3_ Shielded Aluminum Alloy Full-Range Driver Square Frame`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -53897,6 +54731,7 @@ Vd=0.000009
 Dd=0.0618039
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-B3S-3-Shielded-Aluminum-Driver-Square-Frame-297-427
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi B4N 4_ Aluminum Round Frame Midbass`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -53926,6 +54761,7 @@ Vd=0.00001696
 Dd=0.0821472
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-B4N-4-Aluminum-Midbass-Round-Frame-297-429
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi C3N-III 3_ Paper Cone Full-Range Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -53955,6 +54791,7 @@ Vd=7.65e-10
 Dd=0.000618039
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-C3N-III-3-Paper-Cone-Full-Range-Driver-297-714
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi C6.5 6-1_2_ Reinforced Paper Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -53984,6 +54821,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-C6.5-6-1-2-Reinforced-Paper-Cone-Woofer-8-Ohms-297-474
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi D10.8`,date:``,content:`[Driver]
 Brand=HiVi
@@ -54013,6 +54851,7 @@ Vd=0.000405366
 Dd=0.254
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-D10.8-10-Poly-Cone-Woofer-297-453
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi D5.4-II 5_ Poly Cone Neodymium Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -54042,6 +54881,7 @@ Vd=0.000027132
 Dd=0.0993486
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-D5.4-II-5-Poly-Cone-Neodymium-Woofer-4-Ohms-297-472
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi D6.8B 6_ Poly Bass_Midrange Shielded`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -54071,6 +54911,7 @@ Vd=0.000064236
 Dd=0.124224
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-D6.8B-6-Poly-Bass-Midrange-Shielded-297-444
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi D6G`,date:``,content:`[Driver]
 Brand=HiVi
@@ -54100,6 +54941,7 @@ Vd=0.0000760075
 Dd=0.135128
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-D6G-6-Kevlar-Paper-Woofer-297-420
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi DM-7500 3_ Soft Dome Midrange Driver 6 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -54129,6 +54971,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-DM-7500-3-Soft-Dome-Midrange-Driver-6-Ohms-297-470
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi DMB-A 2_ Fabric Dome Midrange`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -54158,6 +55001,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-DMB-A-2-Fabric-Dome-Midrange-297-716
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi DMN-A Soft Dome Fabric Midrange`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -54187,6 +55031,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-DMN-A-Soft-Dome-Fabric-Midrange-297-415
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi E6.5 6-1_2_ Treated Paper Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -54216,6 +55061,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-E6.5-6-1-2-Treated-Paper-Cone-Woofer-8-Ohms-297-478
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi E8 8_ Treated Paper Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -54245,6 +55091,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-E8-8-Treated-Paper-Cone-Woofer-8-Ohms-297-480
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi F10 10_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -54274,6 +55121,7 @@ Vd=0.0002178
 Dd=0.214985
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-F10-10-Woofer-297-450
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi F5 5_ Bass_Midrange`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -54303,6 +55151,7 @@ Vd=0.00002133
 Dd=0.100293
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-F5-5-Bass-Midrange-297-435
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi F6 6-1_2_ Bass_Midrange`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -54332,6 +55181,7 @@ Vd=0.00005977
 Dd=0.133034
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-F6-6-1-2-Bass-Midrange-297-440
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi F8 8_ Bass_Midrange`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -54361,6 +55211,7 @@ Vd=0.000107
 Dd=0.165068
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-F8-8-Bass-Midrange-297-445
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi HIVI C8 8_ Reinforced Paper Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -54390,6 +55241,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HIVI-C8-8-Reinforced-Paper-Cone-Woofer-8-Ohms-297-476
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi LK8A`,date:``,content:`[Driver]
 Brand=HiVi
@@ -54419,6 +55271,7 @@ Vd=0.000228018
 Dd=0.1905
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-LK8A-8-Sandwich-Cone-Woofer-297-712
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi M3N 3_ Aluminum _ Magnesium Midbass`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -54448,6 +55301,7 @@ Vd=0.000009
 Dd=0.0618039
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-M3N-3-Aluminum-Magnesium-Midbass-297-433
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi M3N-B 3_ Damped Aluminum_Magnesium Cone Full-Range Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -54477,6 +55331,7 @@ Vd=0.000009
 Dd=0.0618039
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-M3N-B-3-Damped-Aluminum-Magnesium-Cone-Full-Range-Driver-8-Ohms-297-482
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi M4N 4_ Aluminum _ Magnesium Midbass`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -54506,6 +55361,7 @@ Vd=0.0000159
 Dd=0.0821472
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-M4N-4-Aluminum-Magnesium-Midbass-297-434
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi M4N-B 4_ Damped Aluminum_Magnesium Cone Full-Range Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -54535,6 +55391,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-M4N-B-4-Damped-Aluminum-Magnesium-Cone-Full-Range-Driver-8-Ohms-297-484
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi M5N 5_ Aluminum _ Magnesium Midbass`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -54564,6 +55421,7 @@ Vd=0.00002349
 Dd=0.105248
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-M5N-5-Aluminum-Magnesium-Midbass-297-436
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi M5N-B 5_ Damped Aluminum_Magnesium Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -54593,6 +55451,7 @@ Vd=0.00002349
 Dd=0.105248
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-M5N-B-5-Damped-Aluminum-Magnesium-Cone-Woofer-297-486
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi M6N 6_ Aluminum_Magnesium Midbass`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -54622,6 +55481,7 @@ Vd=0.00005719
 Dd=0.130131
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-M6N-6-Aluminum-Magnesium-Midbass-297-441
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi M6N-B 6_ Damped Aluminum_Magnesium Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -54651,6 +55511,7 @@ Vd=0.00005719
 Dd=0.130131
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-M6N-B-6-Damped-Aluminum-Magnesium-Cone-Woofer-297-488
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi M8N-1 8_ Aluminum _ Magnesium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -54680,6 +55541,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-M8N-8-Aluminum-Magnesium-Woofer-297-446
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi M8N-1B 8_ Damped Aluminum_Magnesium Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -54709,6 +55571,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-M8N-1B-8-Damped-Aluminum-Magnesium-Cone-Woofer-297-490
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi M8N`,date:``,content:`[Driver]
 Brand=HiVi
@@ -54738,6 +55601,7 @@ Vd=0.00014441826
 Dd=0.17805415662669077
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-M8N-8-Aluminum-Magnesium-Woofer-297-446
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi M8a`,date:``,content:`[Driver]
 Brand=HiVi
@@ -54767,6 +55631,7 @@ Vd=0.000159199
 Dd=0.186944
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-M8a-8-Aluminum-Magnesium-Woofer-297-447
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi Q2R 1-1_8_ Textile Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -54796,6 +55661,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-Q2R-1-1-8-Textile-Dome-Tweeter-297-418
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi SD1.1-A 1_ Textile Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -54825,6 +55691,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-SD1.1-A-1-Textile-Dome-Tweeter-297-416
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi T20-8 3_4_ (20mm) Textile Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -54854,6 +55721,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-T20-8-3-4-20mm-Textile-Dome-Tweeter-8-Ohm-297-464
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi TN25 Fabric Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -54883,6 +55751,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-TN25-Fabric-Dome-Tweeter-297-408
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`HiVi TN28-B 1_ Top Mount Soft Dome Tweeter with Mounting Plate`,date:`2026-06-24`,content:`[Driver]
 Brand=HiVi
@@ -54912,6 +55781,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/HiVi-TN28-B-1-Soft-Dome-Top-Mount-Tweeter-with-Mounting-Plate-297-414
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce CSF051.21 5_ Coaxial Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -54941,6 +55811,7 @@ Vd=0.00003007
 Dd=0.111132
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Lavoce-CSF051.21-5-Coaxial-Woofer-293-790
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce CSF061.21 6.5_ Coaxial Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -54970,6 +55841,7 @@ Vd=0.0000405
 Dd=0.131106
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Lavoce-CSF061.21-6.5-Coaxial-Woofer-293-792
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce CSF082.00K 8_ Coaxial Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -54999,6 +55871,7 @@ Vd=0.00011501
 Dd=0.166221
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Lavoce-CSF082.00K-8-Coaxial-Woofer-293-794
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce FSF030.70 3_ Ferrite Full-Range Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55028,6 +55901,7 @@ Vd=0.000006972
 Dd=0.0650166
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-FSF030.70-3-Full-Range-Woofer-8-Ohm-293-705
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce FSF041.00 4_ Ferrite Full-Range Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55057,6 +55931,7 @@ Vd=0.00001188
 Dd=0.0829186
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-FSF041.00-4-Full-Range-Woofer-8-Ohm-293-709
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce FSN020.72 2_ Neodymium Full-Range Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55086,6 +55961,7 @@ Vd=0.000004176
 Dd=0.0470684
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-FSN020.72-2-Neodymium-Full-Range-Woofer-8-Ohm-293-703
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce FSN021.00 2_ Neodymium Full-Range Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55115,6 +55991,7 @@ Vd=0.00000342
 Dd=0.0491849
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-FSN021.00-2-Neodymium-Full-Range-Woofer-8-Ohm-293-704
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce FSN030.71 3_ Neodymium Full-Range Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55144,6 +56021,7 @@ Vd=0.000006972
 Dd=0.0650166
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-FSN030.71-3-Neodymium-Full-Range-Woofer-8-Ohm-293-706
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce FSN030.72 3_ Neodymium Full-Range Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55173,6 +56051,7 @@ Vd=0.000006972
 Dd=0.0650166
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-FSN030.72-3-Neodymium-Full-Range-Woofer-8-Ohm-293-707
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce FSN041.00 4_ Neodymium Full-Range Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55202,6 +56081,7 @@ Vd=0.00001188
 Dd=0.0829186
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-FSN041.00-4-Neodymium-Full-Range-Woofer-8-Ohm-293-711
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce MAF061.50 6-1_2_ Professional Midrange Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55231,6 +56111,7 @@ Vd=0.00005005
 Dd=0.134935
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-MAF061.50-6-1-2-Professional-Midrange-Driver-8-Ohm-293-746
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce MAF082.00 8_ Professional Midrange Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55260,6 +56141,7 @@ Vd=0.00005564
 Dd=0.165068
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-MAF082.00-8-Professional-Midrange-Driver-8-Ohm-293-748
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce MAN061.80 6-1_2_ Neodymium Midrange Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55289,6 +56171,7 @@ Vd=0.0000411
 Dd=0.132073
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-MAN061.80-6-1-2-Neodymium-Midrange-Woofer-8-Ohm-293-713
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce SAF184.01 18_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55318,6 +56201,7 @@ Vd=0.0007888
 Dd=0.384312
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-SAF184.01-18-Subwoofer-8-Ohm-293-727
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce SAF184.02 18_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55347,6 +56231,7 @@ Vd=0.001029
 Dd=0.394933
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-SAF184.02-18-Subwoofer-8-Ohm-293-728
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce SAF184.03 18_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55376,6 +56261,7 @@ Vd=0.0015925
 Dd=0.394933
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-SAF184.03-18-Subwoofer-8-Ohm-293-730
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce SAF184.50 18_ Professional Subwoofer Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55405,6 +56291,7 @@ Vd=0.00153125
 Dd=0.394933
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-SAF184.50-18-Professional-Subwoofer-Driver-8-Ohm-293-752
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce SAF214.50 21_ Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55434,6 +56321,7 @@ Vd=0.0019944
 Dd=0.460013
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Lavoce-SAF214.50-21-Subwoofer-293-816
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce SAN184.03 18_ Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55463,6 +56351,7 @@ Vd=0.0015925
 Dd=0.394933
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-SAN184.03-18-Subwoofer-8-Ohm-293-731
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce SAN184.50 18_ Professional Neodymium Subwoofer Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55492,6 +56381,7 @@ Vd=0.00147
 Dd=0.394933
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-SAN184.50-18-Professional-Neodymium-Subwoofer-Driver-8-Ohm-293-754
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce SAN214.50 21_ Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55521,6 +56411,7 @@ Vd=0.00257455
 Dd=0.459875
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-SAN214.50-21-Neodymium-Subwoofer-8-Ohm-293-732
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce SAN214.50-4 21_ Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55550,6 +56441,7 @@ Vd=0.00257595
 Dd=0.46
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Lavoce-SAN214.50-4-21-Subwoofer-293-818
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce SSF082.00L 8_ Paper Cone Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55579,6 +56471,7 @@ Vd=0.000194778
 Dd=0.165998
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-SSF082.00L-8-Paper-Cone-Subwoofer-293-784
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce SSF102.50L 10_ Paper Cone Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55608,6 +56501,7 @@ Vd=0.000417508
 Dd=0.215
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Lavoce-SSF102.50L-10-Paper-Cone-Subwoofer-293-786
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce SSF122.50L 12_ Paper Cone Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55637,6 +56531,7 @@ Vd=0.000610535
 Dd=0.259993
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-SSF122.50L-12-Paper-Cone-Subwoofer-293-788
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce TN100.70 1_ Soft Dome Neodymium Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55666,6 +56561,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-TN100.70-1-Soft-Dome-Neodymium-Tweeter-8-Ohm-293-738
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce TN131.00 1.3_ Soft Dome Neodymium Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55695,6 +56591,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-TN131.00-1.3-Soft-Dome-Neodymium-Tweeter-8-Ohm-293-739
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce WAF061.80 6-1_2_ Ferrite Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55724,6 +56621,7 @@ Vd=0.0000648
 Dd=0.131106
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-WAF061.80-6-1-2-Woofer-8-Ohm-293-712
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce WAF082.00 8_ Ferrite Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55753,6 +56651,7 @@ Vd=0.00014755
 Dd=0.170007
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-WAF082.00-8-Woofer-8-Ohm-293-714
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce WAF102.50 10_ Ferrite Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55782,6 +56681,7 @@ Vd=0.0001735
 Dd=0.210194
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-WAF102.50-10-Woofer-293-716
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce WAF123.01 12_ Ferrite Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55811,6 +56711,7 @@ Vd=0.00039825
 Dd=0.260017
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-WAF123.01-12-Woofer-8-Ohm-293-718
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce WAF124.01 12_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55840,6 +56741,7 @@ Vd=0.000486
 Dd=0.262212
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Lavoce-WAF124.01-12-Woofer-293-812
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce WAF153.00 15_ Ferrite Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55869,6 +56771,7 @@ Vd=0.0005985
 Dd=0.329942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-WAF153.00-15-Woofer-8-Ohm-293-720
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce WAF154.00 15_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55898,6 +56801,7 @@ Vd=0.0010043
 Dd=0.325083
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-WAF154.00-15-Subwoofer-8-Ohm-293-725
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce WAF154.02 15_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55927,6 +56831,7 @@ Vd=0.0006557
 Dd=0.325083
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-WAF154.02-15-Subwoofer-8-Ohm-293-722
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce WAN082.50 8_ Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55956,6 +56861,7 @@ Vd=0.00009307
 Dd=0.170007
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-WAN082.50-8-Neodymium-Woofer-8-Ohm-293-715
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce WAN102.50 10_ Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -55985,6 +56891,7 @@ Vd=0.00017493
 Dd=0.208979
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-WAN102.50-10-Neodymium-Woofer-8-Ohm-293-717
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce WAN123.00 12_ Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -56014,6 +56921,7 @@ Vd=0.0003717
 Dd=0.260017
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-WAN123.00-12-Neodymium-Woofer-8-Ohm-293-719
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce WAN153.00 15_ Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -56043,6 +56951,7 @@ Vd=0.000595
 Dd=0.328976
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-WAN153.00-15-Woofer-8-Ohm-293-721
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce WAN153.01 15_ Professional Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -56072,6 +56981,7 @@ Vd=0.000581724
 Dd=0.334998
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-WAN153.01-15-Professional-Neodymium-Woofer-8-Ohm-293-782
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce WAN154.01 15_ Neodymium Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -56101,6 +57011,7 @@ Vd=0.0007304
 Dd=0.325083
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-WAN154.01-15-Neodymium-Subwoofer-8-Ohm-293-724
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce WSF030.70 3_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -56130,6 +57041,7 @@ Vd=0.00001089
 Dd=0.0648204
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Lavoce-WSF030.70-3-Woofer-293-800
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce WSF041.00 4_ Ferrite Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -56159,6 +57071,7 @@ Vd=0.000014812
 Dd=0.0820697
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/LaVoce-WSF041.00-4-Woofer-8-Ohm-293-710
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce WSF051.02 5_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -56188,6 +57101,7 @@ Vd=0.0000273575
 Dd=0.106002
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Lavoce-WSF051.02-5-Woofer-293-802
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce WSF081.82 8_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -56217,6 +57131,7 @@ Vd=0.000108146
 Dd=0.173014
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Lavoce-WSF081.82-8-Woofer-293-806
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce WSF102.00 10_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -56246,6 +57161,7 @@ Vd=0.00018709
 Dd=0.212003
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Lavoce-WSF102.00-10-Woofer-293-808
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce WSN041.00 4_ Neodymium Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -56275,6 +57191,7 @@ Vd=0.0000216
 Dd=0.0829186
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Lavoce-WSN041.00-4-Neodymium-Woofer-293-796
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Lavoce LaVoce WXF15.400 15_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Lavoce
@@ -56304,6 +57221,7 @@ Vd=0.000521733
 Dd=0.33
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Lavoce-WXF15.400-15-Woofer-293-810
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel CAM 558 2-1_8_ Soft Dome Midrange`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -56333,6 +57251,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-CAM-558-2-1-8-Soft-Dome-Midrange-287-025
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel CAT 298 1-1_8_ Soft Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -56362,6 +57281,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-CAT-298-1-1-8-Soft-Dome-Tweeter-277-080
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel CAT 308 1-1_8_ Soft Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -56391,6 +57311,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-CAT-308-1-1-8-Soft-Dome-Tweeter-277-082
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel CAT 378 1-1_8_ Soft Dome Horn Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -56420,6 +57341,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-CAT-378-1-1-8-Soft-Dome-Horn-Tweeter-277-084
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel CAT 408 1-1_8_ Compact Soft Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -56449,6 +57371,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-CAT-408-1-1-8-Compact-Soft-Dome-Tweeter-277-086
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel CAW 428`,date:``,content:`[Driver]
 Brand=Morel
@@ -56478,6 +57401,7 @@ Vd=0.0000277473
 Dd=0.09398
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-CAW428-4-Classic-Woofer-297-080
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel CAW 538 5_ Cast Frame Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -56507,6 +57431,7 @@ Vd=0.000027
 Dd=0.107047
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-CAW538-5-Cast-Frame-Woofer-297-082
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel CAW 638 6_ Cast Frame Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -56536,6 +57461,7 @@ Vd=0.000050575
 Dd=0.123092
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-CAW638-6-Cast-Frame-Woofer-297-084
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel CAW 938 9_ Cast Frame Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -56565,6 +57491,7 @@ Vd=0.000093075
 Dd=0.166985
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-CAW938-9-Cast-Frame-Woofer-297-086
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel EM 1308 2-1_8_ Dome Midrange`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -56594,6 +57521,7 @@ Vd=
 Dd=0.0597082
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-EM-1308-2-1-8-Dome-Midrange-287-030
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel ET 338 1-1_8_ Soft Dome Tweeter Matched Pair`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -56623,6 +57551,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-ET-338-1-1-8-Soft-Dome-Tweeter-Matched-Pair-277-070
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel ET 338-104 1-1_8_ Soft Dome Tweeter Matched Pair`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -56652,6 +57581,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-ET-338-104-1-1-8-Soft-Dome-Tweeter-Matched-Pair-277-072
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel ET 448 1-1_8_ Soft Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -56681,6 +57611,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-ET-448-1-1-8-Soft-Dome-Tweeter-277-074
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel EW 428`,date:``,content:`[Driver]
 Brand=Morel
@@ -56710,6 +57641,7 @@ Vd=0.0000312157
 Dd=0.09398
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-EW-428-4-Woofer-297-120
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel EW 536`,date:``,content:`[Driver]
 Brand=Morel
@@ -56739,6 +57671,7 @@ Vd=0.0000631443
 Dd=0.120904
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-EW-536-5-Woofer-297-122
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel EW 638`,date:``,content:`[Driver]
 Brand=Morel
@@ -56768,6 +57701,7 @@ Vd=0.0000923692
 Dd=0.140005
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-EW-638-6-Woofer-297-124
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel H8.1`,date:``,content:`[Driver]
 Brand=Morel
@@ -56797,6 +57731,7 @@ Vd=0.000130867
 Dd=0.19685
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-H8.1-8-Hybrid-Series-Woofer-297-066
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel Integra 424 Hybrid Series 4_ Point Source Coaxial Full-Range`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -56826,6 +57761,7 @@ Vd=0.0000189
 Dd=0.0895623
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-Integra-424-Hybrid-Series-4-Point-Source-Coaxial-Full-Range-297-024
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel Integra 524 Hybrid Series 5_ Point Source Coaxial Full-Range`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -56855,6 +57791,7 @@ Vd=0.0000291
 Dd=0.111132
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-Integra-524-Hybrid-Series-5-Point-Source-Coaxial-Full-Range-297-026
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel Integra 624 Hybrid Series 6_ Point Source Coaxial Full-Range`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -56884,6 +57821,7 @@ Vd=0.0000357
 Dd=0.123092
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-Integra-624-Hybrid-Series-6-Point-Source-Coaxial-Full-Range-297-028
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel KW-1`,date:``,content:`[Driver]
 Brand=Morel
@@ -56913,6 +57851,7 @@ Vd=0.0000664902
 Dd=0.13716
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-KW-1-6-Damped-Poly-Cone-Woofer-4-Ohm-297-016
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel MDM 55 2-1_8_ Soft Dome Midrange`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -56942,6 +57881,7 @@ Vd=
 Dd=0.0597082
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-MDM-55-2-1-8-Soft-Dome-Midrange-287-020
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel MDT 12 1-1_8_ Neodymium Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -56971,6 +57911,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-MDT-12-1-1-8-Neodymium-Tweeter-277-060
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel MDT 22T 1-1_8_ Soft Dome Neodymium Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -57000,6 +57941,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-MDT-22-1-1-8-Neodymium-Tweeter-277-062
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel MDT 29 1-1_8_ Soft Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -57029,6 +57971,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-MDT-29-1-1-8-Soft-Dome-Tweeter-277-010
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel MDT 39 1-1_8_ Compact Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -57058,6 +58001,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-MDT-39-1-1-8-Compact-Dome-Tweeter-277-035
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel MSW 114`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -57087,6 +58031,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-MSW-114-Shallow-Classic-Series-4-DPC-Cone-Woofer-Midrange-4-Ohms-297-002
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel MSW 144`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -57116,6 +58061,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-MSW-144-Shallow-Classic-Series-5-DPC-Cone-Woofer-8-Ohms-297-004
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel MSW 168`,date:``,content:`[Driver]
 Brand=Morel
@@ -57145,6 +58091,7 @@ Vd=0.0000500051
 Dd=0.134874
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-MSW-168-Shallow-Classic-Series-6-DPC-Cone-Woofer-8-Ohms-297-006
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel MSW 265`,date:``,content:`[Driver]
 Brand=Morel
@@ -57174,6 +58121,7 @@ Vd=0.000106519
 Dd=0.19685
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-MSW-265-Shallow-Classic-Series-8-Paper-Cone-Woofer-4-Ohms-297-008
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel MSW 424D Shallow Classic Series 4_ DPC Cone Woofer_Midrange 4 Ohms`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -57203,6 +58151,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-MSW-114-Shallow-Classic-Series-4-DPC-Cone-Woofer-Midrange-4-Ohms-297-002
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel MSW 538 Shallow Classic Series 5_ DPC Cone Woofer 8 Ohms`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -57232,6 +58181,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-MSW-144-Shallow-Classic-Series-5-DPC-Cone-Woofer-8-Ohms-297-004
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel MW 1058 Classic Series 10_ Paper _ Carbon Fiber Cone Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -57261,6 +58211,7 @@ Vd=0.0003371
 Dd=0.207174
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-MW-1058-Classic-Series-10-Paper-Carbon-Fiber-Cone-Subwoofer-297-136
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel MW 1075`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -57290,6 +58241,7 @@ Vd=0.00013932
 Dd=0.203108
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-MW-1075-10-Woofer-297-045
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel MW 1258 Classic Series 12_ Paper _ Carbon Fiber Cone Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -57319,6 +58271,7 @@ Vd=0.0004575
 Dd=0.241352
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-MW-1258-Classic-Series-12-Paper-Carbon-Fiber-Cone-Subwoofer-297-140
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel MW 164`,date:``,content:`[Driver]
 Brand=Morel
@@ -57348,6 +58301,7 @@ Vd=0.0000629481
 Dd=0.136525
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-MW-164-8-6-Woofer-297-030
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel MW-1075 10_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -57377,6 +58331,7 @@ Vd=0.00013932
 Dd=0.203108
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-MW-1075-10-Woofer-297-045
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel MW-266 8_ Poly Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -57406,6 +58361,7 @@ Vd=0.00009417
 Dd=0.166985
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-MW-266-8-Poly-Woofer-297-040
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel PowerSlim 6`,date:``,content:`[Driver]
 Brand=Morel
@@ -57435,6 +58391,7 @@ Vd=0.0000353155
 Dd=0.134112
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-PowerSlim-6-Ultra-Slim-6-DPC-Dome-Shallow-Woofer-297-014
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel ST 1108 Supreme 1-1_8_ Soft Dome Tweeter Pair - Black Faceplate`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -57464,6 +58421,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-ST-1108-Supreme-1-1-8-Soft-Dome-Tweeter-Pair-Black-277-096
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel Supreme SCW 636 6_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -57493,6 +58451,7 @@ Vd=0.0000595
 Dd=0.123092
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-Supreme-SCW-636-6-Woofer-297-114
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel TM4055-8 2_ Midrange and 1-1_8_ Tweeter Speaker Plate`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -57522,6 +58481,7 @@ Vd=0.0000028
 Dd=0.0597082
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-TM4055-8-2-Midrange-and-1-1-8-Tweeter-Speaker-Plate-287-038
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel TSCM 634 Titanium Supreme Series 6_ Midrange 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -57551,6 +58511,7 @@ Vd=0.000062475
 Dd=0.123092
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-TSCM-634-Titanium-Supreme-Series-6-Midrange-4-Ohm-297-106
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel TSCT1044 Supreme 1_ Silk Dome Neodymium Tweeters - Matched Pair`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -57580,6 +58541,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-TSCT1044-Supreme-1-Silk-Dome-Neodymium-Tweeters-Matched-Pair-277-102
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel TSCW 636 Titanium Supreme Series 6_ Woofer 6 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -57609,6 +58571,7 @@ Vd=0.0000595
 Dd=0.123092
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-TSCW-636-Titanium-Supreme-Series-6-Woofer-6-Ohm-297-107
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel TSCW 938 9_ Rohacell Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -57638,6 +58601,7 @@ Vd=0.0001494
 Dd=0.178055
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-TSCW-938-9-Rohacell-Cone-Woofer-8-Ohm-297-112
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel TSCW938`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -57667,6 +58631,7 @@ Vd=0.0001494
 Dd=0.178055
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-TSCW-938-9-Rohacell-Cone-Woofer-8-Ohm-297-112
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel TiCW 1258Ft Titanium Series 12_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -57696,6 +58661,7 @@ Vd=0.00045885
 Dd=0.235883
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-TiCW-1258Ft-Titanium-Series-12-Subwoofer-8-Ohm-297-110
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel TiCW 634Nd`,date:``,content:`[Driver]
 Brand=Morel
@@ -57725,6 +58691,7 @@ Vd=0.0000846103
 Dd=0.139954
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-TiCW-634Nd-Titanium-Series-Hybrid-Cu-6-Woofer-4-Ohm-297-104
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel TiCW 638Nd Titanium Series Hybrid Cu 6_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -57754,6 +58721,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-TiCW-638Nd-Titanium-Series-Hybrid-Cu-6-Woofer-8-Ohm-297-105
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel TiCW 958Ft`,date:``,content:`[Driver]
 Brand=Morel
@@ -57783,6 +58751,7 @@ Vd=0.000329531
 Dd=0.199898
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-TiCW-958Ft-Titanium-Series-9-Subwoofer-8-Ohm-297-108
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel TiW 634Ft Titanium Series Ferrite 6_ Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -57812,6 +58781,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-TiW-634Ft-Titanium-Series-Ferrite-6-Woofer-4-Ohm-297-100
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel TiW 634Nd`,date:``,content:`[Driver]
 Brand=Morel
@@ -57841,6 +58811,7 @@ Vd=0.0000846103
 Dd=0.139954
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-TiW-634Nd-Titanium-Series-Hybrid-6-Woofer-4-Ohm-297-102
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel TiW 638Ft Titanium Series Ferrite 6_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -57870,6 +58841,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-TiW-638Ft-Titanium-Series-Ferrite-6-Woofer-8-Ohm-297-101
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel TiW 638Nd Titanium Series Hybrid 6_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -57899,6 +58871,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-TiW-638Nd-Titanium-Series-Hybrid-6-Woofer-8-Ohm-297-103
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Morel Ultimate UW 1058 10_ Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Morel
@@ -57928,6 +58901,7 @@ Vd=0.0004325
 Dd=0.209891
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Morel-Ultimate-UW-1058-10-Subwoofer-297-130
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 10FR300PR 10_ Professional Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -57957,6 +58931,7 @@ Vd=0.0001576
 Dd=0.223977
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-10FR300-10-Professional-Full-Range-Speaker-8-Ohm-294-2888
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 10MB1000FT Forte Series 10_ Midbass Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -57986,6 +58961,7 @@ Vd=0.00022306
 Dd=0.219962
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-10MB1000FT-10-Forte-Series-Speaker-8-Ohm-294-3412
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 10MB800FT Forte Series 10_ Midbass Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58015,6 +58991,7 @@ Vd=0.000133
 Dd=0.219962
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-10MB800FT-10-Professional-Midbass-Driver-8-Ohm-294-2988
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 10MR1200X X Series 10_ Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58044,6 +59021,7 @@ Vd=0.0000985
 Dd=0.223977
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-10MR1200X-X-Series-10-Midrange-Speaker-8-Ohm-294-3401
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 10MR2000-NDY 10_ Neodymium Pro Audio Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58073,6 +59051,7 @@ Vd=0.000266695
 Dd=0.217926
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-10MR2000-NDY-10-Neodymium-Pro-Audio-Woofer-294-2956
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 10MR650A Alto Series 10_ Midrange Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58102,6 +59081,7 @@ Vd=0.000225482
 Dd=0.224034
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-10MR650A-10-Alto-Series-Professional-Midrange-8-Ohm-294-3168
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 10MR650A-4 Alto Series 10_ Midrange Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58131,6 +59111,7 @@ Vd=0.000207756
 Dd=0.225111
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-10MR650A-4-10-Midrange-Woofer-4-Ohm-294-3542
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 10MR650A-NDY Alto Series 10_ Shallow Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58160,6 +59141,7 @@ Vd=0.000133
 Dd=0.219962
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-10MR650A-NDY-10-Shallow-Midrange-Speaker-8-Ohm-294-2768
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 10W1000-NDY 10_  Neodymium  Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58189,6 +59171,7 @@ Vd=0.000247
 Dd=0.219962
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-10W1000-NDY-10-Neodymium-Woofer-294-3414
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 10W1000-NDY-4 10_ Neodymium Pro Audio Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58218,6 +59201,7 @@ Vd=0.000247
 Dd=0.219962
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-10W1000-NDY-4-10-Neodymium-Pro-Audio-Woofer-4-Ohm-294-2955
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 10W650A Alto Series 10_ Pro Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58247,6 +59231,7 @@ Vd=0.00018675
 Dd=0.229868
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-10W650A-10-Alto-Series-Professional-Woofer-8-Ohm-294-2725
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 10W650A-4 Alto Series 10_ Pro Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58276,6 +59261,7 @@ Vd=0.000166
 Dd=0.229868
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-10W650A-4-10-Alto-Series-Professional-Woofer-4-Ohm-294-2894
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 12MB1000FT Forte Series 12_ Midbass Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58305,6 +59291,7 @@ Vd=0.000393651
 Dd=0.270105
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-12MB1000FT-12-Forte-Series-Professional-Woofer-294-2957
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 12MB1000FT-4 Forte Series 12_ Midbass Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58334,6 +59321,7 @@ Vd=0.000351249
 Dd=0.270105
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-12MB1000FT-4-12-Forte-Series-Speaker-4-Ohm-294-3416
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 12MB2000FT-NDY Forte Series 12_ Neodymium Midbass Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58363,6 +59351,7 @@ Vd=0.000351
 Dd=0.272919
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-12MB2000FT-NDY-Forte-Series-12-Neodymium-Midbass-Speaker-8-Ohm-294-2776
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 12MR1000 PRO Pro Series 12_ Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58392,6 +59381,7 @@ Vd=0.0001731
 Dd=0.271046
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-12MR1000-PRO-12-Professional-Midrange-Driver-294-3546
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 12MR1200X X Series 12_ Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58421,6 +59411,7 @@ Vd=0.0002484
 Dd=0.265109
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-12MR1200X-X-Series-12-Midrange-Speaker-8-Ohm-294-3403
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 12MR2000 12_ Pro Audio Midrange Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58450,6 +59441,7 @@ Vd=0.000379326
 Dd=0.270105
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-12MR2000-12-Pro-Audio-Midrange-Woofer-8-Ohm-294-2733
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 12MR2000-NDY 12_ Neodymium Professional Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58479,6 +59471,7 @@ Vd=0.000352395
 Dd=0.270105
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-12MR2000-NDY-12-Neodymium-Professional-Midrange-8-Ohm-294-2748
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 12MR2000X v2 X Series 12_ Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58508,6 +59501,7 @@ Vd=0.00037818
 Dd=0.270105
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-12MR2000X-v2-X-Series-12-Midrange-Speaker-8-Ohm-294-3405
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 12MR2000X-NDY X Series 12_ Neodymium Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58537,6 +59531,7 @@ Vd=0.00034953
 Dd=0.270105
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-12MR2000X-NDY-X-Series-12-Neodymium-Midrange-Speaker-8-Ohm-294-3407
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 12W1600 12_ Professional Woofer  8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58566,6 +59561,7 @@ Vd=0.0006237
 Dd=0.27501
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-12W1600-12-Professional-Woofer-8-Ohm-294-2990
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 12W750A Alto Series 12_ Pro Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58595,6 +59591,7 @@ Vd=0.00021177
 Dd=0.272919
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-12W750A-12-Alto-Series-Professional-Woofer-8-Ohm-294-2736
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 12W800A Alto Series 12_ Pro Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58624,6 +59621,7 @@ Vd=0.000315744
 Dd=0.265109
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-12W800A-12-Alto-Series-Professional-Midrange-8-Ohm-294-3169
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 15SW2000 15_ Pro Audio Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58653,6 +59651,7 @@ Vd=0.001135
 Dd=0.340015
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-15SW2000-15-Pro-Audio-Subwoofer-8-Ohm-294-3007
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 15SW2000-4 15_ Cast Frame Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58682,6 +59681,7 @@ Vd=0.00116875
 Dd=0.345033
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-15SW2000-4-15-Cast-Frame-Subwoofer-4-Ohm-294-3240
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 15W1000v2 15_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58711,6 +59711,7 @@ Vd=0.00063063
 Dd=0.355036
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-15W1000v2-15-Professional-Woofer-8-Ohm-294-2743
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 15W1600 15_ High Power PA Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58740,6 +59741,7 @@ Vd=0.0006888
 Dd=0.353959
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-15W1600-15-High-Power-PA-Woofer-8-Ohm-294-2742
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 15W700 15_ High Power PA Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58769,6 +59771,7 @@ Vd=0.00051425
 Dd=0.345033
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-15W700-15-High-Power-PA-Woofer-8-Ohm-294-2740
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 18SW2400 18_ Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58798,6 +59801,7 @@ Vd=0.0016125
 Dd=0.405275
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-18SW2400-18-Subwoofer-8-Ohm-294-3420
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 18SW3600 18_ Professional Subwoofer Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58827,6 +59831,7 @@ Vd=0.0017755
 Dd=0.413055
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-18SW3600-18-Professional-Subwoofer-Driver-8-Ohm-294-2982
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 21SW4000-NDY-2 21_ Professional Subwoofer 2 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58856,6 +59861,7 @@ Vd=0.002886
 Dd=0.494946
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-21SW4000-NDY-2-21-Professional-Subwoofer-2-Ohm-294-2765
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 3MR40-NDY-4 3_ Neodymium Midrange Speaker 4 Ohms`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58885,6 +59891,7 @@ Vd=0.000004648
 Dd=0.0650166
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-3MR40-NDY-4-3-Neodymium-Midrange-Speaker-4-Ohms-294-3400
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 4MR60-4 4_ Full-Range 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58914,6 +59921,7 @@ Vd=0.000016359
 Dd=0.0851908
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-4MR60-4-4-Full-Range-4-Ohm-294-2760
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 4MR60-NDY-4 4_ Neodymium Midrange Speaker 4 Ohms`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58943,6 +59951,7 @@ Vd=0.000007756
 Dd=0.0839866
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-4MR60-NDY-4-4-Neodymium-Midrange-Speaker-4-Ohms-294-3402
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 5MR450-NDY 5_ Midrange Neodymium Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -58972,6 +59981,7 @@ Vd=0.000032775
 Dd=0.109981
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-5MR450-NDY-5-Midrange-Neodymium-Woofer-8-Ohm-294-2705
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 5MR450-NDY-4 5_ Midrange Neodymium Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59001,6 +60011,7 @@ Vd=0.00003135
 Dd=0.109981
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-5MR450-NDY-4-5-Midrange-Neodymium-Woofer-4-Ohm-294-2704
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 69FR250-4 6_x 9_ Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59030,6 +60041,7 @@ Vd=0.00007
 Dd=0.159577
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-69FR250-4-6x-9-Full-Range-Speaker-4-Ohm-294-2897
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 69MR500-4 BULLET 6_ x 9_ Midrange Speaker 4 Ohms`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59059,6 +60071,7 @@ Vd=0.0000702
 Dd=0.165837
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-69MR500-4-BULLET-6-x-9-Midrange-Speaker-4-Ohms-294-3133
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 69MR500CF-NDY-4 6_x9_ Neodymium Midrange Speaker Pair`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59088,6 +60101,7 @@ Vd=0.0000702
 Dd=0.165837
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-69MR500CF-NDY-4-6x9-Neodymium-Midrange-Speaker-Pair-294-3504
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 69MR500PhP-4 6_ x 9_ Midrange Loudspeaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59117,6 +60131,7 @@ Vd=0.000066297
 Dd=0.171499
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-69MR500PhP-4-6-x-9-Midrange-Loudspeaker-4-Ohm-294-2761
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 6CX380-4 SLIM 6.5_ Professional 2-Way Full-Range Coaxial Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59146,6 +60161,7 @@ Vd=0.000039325
 Dd=0.134935
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-6CX380-4-SLIM-6.5-Professional-2-Way-Full-Range-Coaxial-Speaker-294-3500
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 6MB100-4 6_ Midbass Woofer Pair 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59175,6 +60191,7 @@ Vd=0.000039325
 Dd=0.134935
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-6MB100-4-6-Midbass-Woofer-Pair-4-Ohm-294-3404
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 6MB200 V2 6_ Midbass Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59204,6 +60221,7 @@ Vd=0.00007392
 Dd=0.140028
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-6MB200-V2-6-Midbass-Woofer-8-Ohm-294-3057
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 6MB200-4 V2 6_ Midbass Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59233,6 +60251,7 @@ Vd=0.00007392
 Dd=0.140028
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-6MB200-4-V2-6-Midbass-Woofer-4-Ohm-294-3055
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 6MB400 6.5_ Midbass Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59262,6 +60281,7 @@ Vd=0.0000588
 Dd=0.136809
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-6MB400-6-Midbass-Woofer-294-3524
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 6MB550FT Forte Series 6_ Midbass Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59291,6 +60311,7 @@ Vd=0.00007722
 Dd=0.134935
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-6MB550FT-6-Forte-Pro-Audio-Midrange-Speaker-294-2949
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 6MB550FT-4 Forte Series 6_ Midbass Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59320,6 +60341,7 @@ Vd=0.00007722
 Dd=0.134935
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-6MB550FT-4-6-Forte-Series-Professional-Audio-Midrange-Speaker-4-Ohm-294-3406
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 6MR200A Alto Series 6.5_ Midrange Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59349,6 +60371,7 @@ Vd=0.000035894
 Dd=0.132073
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-6MR200A-6-Alto-Series-Professional-Midrange-Driver-8-Ohm-294-2984
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 6MR200A-4 6.5_ Alto Series Midrange Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59378,6 +60401,7 @@ Vd=0.0000282174
 Dd=0.117102
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-6MR200A-4-6-Alto-Series-Full-Range-Speaker-294-3167
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 6MR250B-4 SLIM 6_ Midrange Slim Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59407,6 +60431,7 @@ Vd=0.000046475
 Dd=0.134935
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-6MR250B-4-SLIM-6-Midrange-Slim-Speaker-4-Ohm-294-3135
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 6MR250SEAL 6_ Sealed Back Midrange 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59436,6 +60461,7 @@ Vd=0.00003475
 Dd=0.133034
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-6MR250SEAL-6-Sealed-Back-Midrange-8-Ohm-294-3526
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 6MR400-4 BULLET 6_ Midrange Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59465,6 +60491,7 @@ Vd=0.000046475
 Dd=0.134935
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-6MR400-4-BULLET-6-Midrange-Speaker-4-Ohm-294-3137
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 6MR400CF-4 Moto Series 6.5_ Carbon Fiber Neodymium Midrange Loudspeaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59494,6 +60521,7 @@ Vd=0.0000525
 Dd=0.138198
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-6MR400CF-4-Moto-Series-6.5-Carbon-Fiber-Neodymium-Midrange-Loudspeaker-4-Ohm-294-3535
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 6MR400SEAL PRO Pro Series 6.5_ Sealed Basket Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59523,6 +60551,7 @@ Vd=0.00005215
 Dd=0.137736
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-6MR400SEAL-PRO-6-Sealed-Professional-Back-Midrange-Speaker-8-Ohm-294-3528
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 6MR500-NDY 6-1_2_ Neodymium Midrange Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59552,6 +60581,7 @@ Vd=0.000060346
 Dd=0.134935
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-6MR500-NDY-6-1-2-Neodymium-Midrange-Woofer-8-Ohm-294-2707
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 6MR500-NDY-4 6-1_2_ Neodymium Midrange Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59581,6 +60611,7 @@ Vd=0.000063206
 Dd=0.134935
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-6MR500-NDY-4-6-1-2-Neodymium-Midrange-Woofer-4-Oh-294-2706
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 6MR500CF-NDY-4 6_ Midrange Neodymium Speaker Pair 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59610,6 +60641,7 @@ Vd=0.000046475
 Dd=0.134935
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-6MR500CF-NDY-4-6-Midrange-Neodymium-Speaker-Pair-4-Ohm-294-3139
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 6MR600X-NDY X Series 6.5_ Neodymium Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59639,6 +60671,7 @@ Vd=0.00005005
 Dd=0.134935
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-6MR600X-NDY-6.5-Neodymium-Midrange-Speaker-294-3502
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 6MR600X-NDY-4 X Series 6.5_ Neodymium Midrange Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59668,6 +60701,7 @@ Vd=0.00005005
 Dd=0.134935
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-6MR600X-NDY-4-6-X-Series-Neodymium-Midrange-Speaker-4-Ohm-294-3408
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 8CX380-4 SLIM 8_ Full-Range Slim Coaxial Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59697,6 +60731,7 @@ Vd=0.000064625
 Dd=0.172977
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-8CX380-4-SLIM-8-Full-Range-Slim-Coaxial-Speaker-294-3506
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 8FR250 8_ Full-Range Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59726,6 +60761,7 @@ Vd=0.0000454
 Dd=0.170007
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-8FR250-8-Full-Range-Speaker-294-2898
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 8MB450 v2 8_ Pro Audio Midbass Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59755,6 +60791,7 @@ Vd=0.00010845
 Dd=0.175172
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-8MB450-v2-8-Pro-Audio-Midbass-Speaker-8-Ohm-294-2999
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 8MB450-4 v2 8_ Pro Audio Midbass Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59784,6 +60821,7 @@ Vd=0.00010845
 Dd=0.175172
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-8MB450-4-v2-8-Pro-Audio-Midbass-Speaker-4-Ohm-294-3001
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 8MB500 - 8_ Midbass Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59813,6 +60851,7 @@ Vd=0.00010845
 Dd=0.175172
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-8MB500-8-Midbass-Woofer-294-3534
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 8MB700FT Forte Series 8_ Midbass Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59842,6 +60881,7 @@ Vd=0.00008715
 Dd=0.178055
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-8MB700FT-8-Midbass-Speaker-294-3540
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 8MB700FT-NDY Forte Series 8_ Neodymium Midbass Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59871,6 +60911,7 @@ Vd=0.000090885
 Dd=0.178055
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-8MB700FT-NDY-8-Neodymium-Speaker-8-Ohms-294-2773
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 8MB700FT-NDY-4 Forte Series 8_ Neodymium Midbass Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59900,6 +60941,7 @@ Vd=0.000093375
 Dd=0.178055
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-8MB700FT-NDY-4-8-Forte-Series-Neodymium-Speaker-4-Ohm-294-3410
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 8MR400 8_ Midrange Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59929,6 +60971,7 @@ Vd=0.0000888
 Dd=0.168125
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-8MR400-8-Midrange-Woofer-294-3532
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 8MR400B-4 SLIM 8_ Midrange Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59958,6 +61001,7 @@ Vd=0.00007475
 Dd=0.171127
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-8MR400B-4-SLIM-8-Midrange-Speaker-4-Ohm-294-3141
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 8MR450A Alto Series 8_ Midrange Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -59987,6 +61031,7 @@ Vd=0.0000964
 Dd=0.175172
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-8MR450A-8-Alto-Series-Professional-Midrange-Speaker-294-2950
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 8MR450CF-4 Moto Series 8” Carbon Fiber Midrange Loudspeaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -60016,6 +61061,7 @@ Vd=0.00007945
 Dd=0.170007
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-8MR450CF-4-Moto-Series-8-Carbon-Fiber-Midrange-Loudspeaker-4-Ohm-294-3533
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 8MR500-4 BULLET 8_ Midrange Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -60045,6 +61091,7 @@ Vd=0.000078325
 Dd=0.175172
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-8MR500-4-BULLET-8-Midrange-Speaker-4-Ohm-294-3143
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 8MR500CF-NDY-4 8_ Midrange Neodymium Speaker Pair 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -60074,6 +61121,7 @@ Vd=0.000073775
 Dd=0.170007
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-8MR500CF-NDY-4-8-Midrange-Neodymium-Speaker-Pair-4-Ohm-294-3145
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 8MR500SEAL PRO Pro Series 8_ Sealed Basket Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -60103,6 +61151,7 @@ Vd=0.0000964
 Dd=0.175172
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-8MR500SEAL-PRO-8-Sealed-Professional-Midrange-Speaker-8-Ohm-294-3536
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 8MR600X X Series 8_ Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -60132,6 +61181,7 @@ Vd=0.000126525
 Dd=0.175172
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-8MR600X-8-Pro-Audio-Midrange-Speaker-8-Ohm-294-2997
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 8MR600X-4 X Series 8_ Midrange Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -60161,6 +61211,7 @@ Vd=0.00012291
 Dd=0.175172
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-8MR600X-4-8-Pro-Audio-Midrange-Speaker-4-Ohm-294-2953
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio 8MR600X-NDY X Series 8_ Neodymium Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -60190,6 +61241,7 @@ Vd=0.000087
 Dd=0.17187
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-8MR600X-NDY-8-Neodymium-Midrange-Speaker-8-Ohm-294-3538
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio MT10SW1000 D4 Moto Series 10_ Shallow Subwoofer DVC 4x4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -60219,6 +61271,7 @@ Vd=0.0005474
 Dd=0.223123
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-MT10SW1000-D4-Moto-Series-10-Shallow-Subwoofer-DVC-4x4-Ohm-267-8046
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio MT10W1200-NDY-4 Moto Series 10_ Pro Low Frequency Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -60248,6 +61301,7 @@ Vd=0.00024245
 Dd=0.217926
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-MT10W1200-NDY-4-Moto-Series-10-Pro-Low-Frequency-Woofer-4-Ohm-267-8042
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio MT2.2TWB-4 Moto Series 2.25_ Short Horn Black Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -60277,6 +61331,7 @@ Vd=0.0005474
 Dd=0.223123
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-MT2.2TWB-4-Moto-Series-2.25-Short-Horn-Black-Tweeter-4-Ohm-267-8048
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio MT2.2TWC-4 Moto Series 2.25_ Short Horn Chrome Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -60306,6 +61361,7 @@ Vd=0.0005474
 Dd=0.223123
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-MT2.2TWC-4-Moto-Series-2.25-Short-Horn-Chrome-Tweeter-4-Ohm-267-8050
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio MT2.7TWB-4 Moto Series 2.75_ Short Horn Chrome Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -60335,6 +61391,7 @@ Vd=0.0005474
 Dd=0.223123
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-MT2.7TWB-4-Moto-Series-2.75-Short-Horn-Chrome-Tweeter-4-Ohm-267-8052
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio MT6CX580-NDY-4 Moto Series 6.5_ Coaxial Loudspeaker`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -60364,6 +61421,7 @@ Vd=0.005005
 Dd=0.134935
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-MT6CX580-NDY-4-Moto-Series-6.5-Coaxial-Loudspeaker-267-8036
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio MT6MR400CF-NDY-4 SLIM Moto Series 6.5_ Carbon Fiber Neodymium Midrange Loudspeaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -60393,6 +61451,7 @@ Vd=0.000052125
 Dd=0.133034
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-MT6MR400CF-NDY-4-SLIM-Moto-Series-6.5-Carbon-Fiber-Neodymium-Midrange-Loudspeake-267-8030
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio MT6MR600CF-NDY-2 Moto Series 6.5_ Neodymium Midrange Loudspeaker 2 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -60422,6 +61481,7 @@ Vd=0.000046475
 Dd=0.134935
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-MT6MR600CF-NDY-2-Moto-Series-6.5-Neodymium-Midrange-Loudspeaker-2-Ohm-267-8034
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio MT8MR400CF-NDY-4 SLIM Moto Series 8_ Carbon Fiber Neodymium Midrange Loudspeaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -60451,6 +61511,7 @@ Vd=0.00007945
 Dd=0.170007
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-MT8MR400CF-NDY-4-SLIM-Moto-Series-8-Carbon-Fiber-Neodymium-Midrange-Loudspeaker-267-8032
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio MT8SW800 D4 Moto Series 8_ Shallow Subwoofer DVC 4x4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -60480,6 +61541,7 @@ Vd=0.0002982
 Dd=0.164682
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-MT8SW800-D4-Moto-Series-8-Shallow-Subwoofer-DVC-4x4-Ohm-267-8044
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio RS10-SUBD4 RS Series 10_ Subwoofer DVC 4x4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -60509,6 +61571,7 @@ Vd=0.0005775
 Dd=0.20498
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-RS10-SUBD4-RS-Series-10-Subwoofer-DVC-4x4-Ohm-294-3582
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`PRV Audio RS8-SUBD4 RS Series 8_ Subwoofer DVC 4x4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=PRV Audio
@@ -60538,6 +61601,7 @@ Vd=0.00029145
 Dd=0.159975
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/PRV-Audio-RS8-SUBD4-RS-Series-8-Subwoofer-DVC-4x4-Ohm-294-3581
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Parts Express 15 Square Frame Paper Cone Woofer White`,date:``,content:`[Driver]
 Brand=Parts Express
@@ -60567,6 +61631,7 @@ Vd=0.000427053
 Dd=0.3556
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/15-Square-Frame-Paper-Cone-Woofer-White-290-918
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless India W8-12T`,date:``,content:`[Driver]
 Brand=Peerless India
@@ -60596,6 +61661,7 @@ Vd=0.0000570046
 Dd=0.1905
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-India-W8-12T-12P-8-Paper-Cone-Woofer-12-Ohm-299-068
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany ANC-50N25AL04-04 2_ Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -60625,6 +61691,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-ANC-50N25AL04-04-2-Full-Range-Speaker-4-Ohm-264-1430
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany BC18WG59-04`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -60654,6 +61721,7 @@ Vd=0.0000843834
 Dd=0.168148
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-BC18WG59-04-6-1-2-Paper-Cone-Woofer-4-Ohm-264-1434
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany BC18WK05-08`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -60683,6 +61751,7 @@ Vd=0.0000557777
 Dd=0.144526
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-BC18WK05-08-6-1-2-Paper-Cone-Woofer-8-Ohm-264-1436
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany BC25SC06-04 1_ Textile Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -60712,6 +61781,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-BC25SC06-04-1-Textile-Dome-Tweeter-264-1028
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany BC25SC08-04 1_ Silk Dome Neodymium Tweeter with Waveguide 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -60741,6 +61811,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-BC25SC08-04-1-Silk-Dome-Neodymium-Tweeter-with-Wav-264-1390
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany BC25SC08-08 1_ Fabric Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -60770,6 +61841,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-BC25SC08-08-1-Fabric-Dome-Tweeter-8-Ohm-264-1440
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany BC25SC55-04 1_ Square Frame Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -60799,6 +61871,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-BC25SC55-04-1-Square-Frame-Tweeter-264-1024
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany BC25TG15-04 1_ Fabric Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -60828,6 +61901,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-BC25TG15-04-1-Silk-Dome-Tweeter-264-1040
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany BC25TG15-08 1_ Fabric Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -60857,6 +61931,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-BC25TG15-08-1-Fabric-Dome-Tweeter-8-Ohm-264-1442
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany D19TD-05 3_4_ Poly Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -60886,6 +61961,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-D19TD05-08-3-4-Poly-Dome-Tweeter-264-500
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany D26NC56-06 1_ Fabric Dome Tweeter 6 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -60915,6 +61991,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-D26NC56-06-1-Fabric-Dome-Tweeter-6-Ohm-264-1454
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany D27TG35-06 1_ Silk Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -60944,6 +62021,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-D27TG-35-06-1-Silk-Dome-Tweeter-264-1022
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany DA25BG08-06 1_ Aluminum Dome Tweeter 6 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -60973,6 +62051,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-DA25BG08-06-1-Aluminum-Dome-Tweeter-6-Ohm-264-1460
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany DA25TX00-08 1_ Corundum Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61002,6 +62081,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-DA25TX00-08-1-Corundum-Dome-Tweeter-264-1676
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany DA32TX00-08 1-1_4_ Corundum Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61031,6 +62111,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-DA32TX00-08-1-1-4-Corundum-Dome-Tweeter-264-1678
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany DX20BF00-04 3_4_ Silk Dome Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61060,6 +62141,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-DX20BF00-04-3-4-Silk-Dome-Tweeter-4-Ohm-264-1472
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany DX20BF00-08 3_4_ Silk Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61089,6 +62171,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-DX20BF00-08-3-4-Silk-Dome-Tweeter-8-Ohm-264-1474
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany DX25BG60-04 1_ Silk Dome Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61118,6 +62201,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-DX25BG60-04-1-Silk-Dome-Tweeter-4-Ohm-264-1478
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany DX25TG59-04 1_ Fabric Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61147,6 +62231,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-DX25TG59-04-1-Fabric-Dome-Tweeter-264-1020
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany FSL-0818R01-08 FSL Series 8_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61176,6 +62261,7 @@ Vd=0.000047894
 Dd=0.166489
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-FSL-0818R01-08-Professional-8-Midbass-Woofer-Drive-264-1404
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany FSL-1220R02-08 FSL Series 12_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61205,6 +62291,7 @@ Vd=0.000130392
 Dd=0.263012
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-FSL-1220R02-08-Professional-12-Woofer-8-Ohm-264-1410
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany FSL-1230PR01-08 FSL Series 12_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61234,6 +62321,7 @@ Vd=0.00064735
 Dd=0.260995
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-by-Tymphany-FSL-1230PR01-08-FSL-Series-12-Woofer-264-1005
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany GBS-115N25AL01-04 4-1_2_ Aluminum Dome Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61263,6 +62351,7 @@ Vd=0.000017536
 Dd=0.0835305
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-GBS-115N25AL01-04-4-1-2-Aluminum-Dome-Woofer-4-Ohm-264-1484
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany GBS-135F25AL02-04 5-1_4_ Aluminum Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61292,6 +62381,7 @@ Vd=0.0000281226
 Dd=0.104166
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-GBS-135F25AL02-04-5-1-4-Aluminum-Cone-Woofer-4-Ohm-264-1486
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany GBS-200F35CP02-04 8_ Paper Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61321,6 +62411,7 @@ Vd=0.000115284
 Dd=0.168011
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-GBS-200F35CP02-04-8-Paper-Cone-Woofer-4-Ohm-264-1490
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany GBS-85N25PR03-04`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61350,6 +62441,7 @@ Vd=0.00000996367
 Dd=0.077724
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-GBS-85N25PR03-04-3-1-2-Paper-Cone-Midrange-4-Ohm-264-1494
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany GBS-85N25PR07-04 3-1_2_ Paper Dome Low Profile Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61379,6 +62471,7 @@ Vd=0.0000059942
 Dd=0.0670033
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-GBS-85N25PR07-04-3-1-2-Paper-Dome-Low-Profile-Woofer-264-1684
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany H25TG05-08 1_ Titanium Dome Tweeter with Waveguide 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61408,6 +62501,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-H25TG05-08-1-Titanium-Dome-Tweeter-with-Waveguide-264-1381
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany H26TG45-06 1_ Silk Dome Tweeter with Waveguide 6 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61437,6 +62531,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-H26TG45-06-1-Silk-Dome-Tweeter-with-Waveguide-6-Oh-264-1386
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany HDS-P830860 5-1_4_ PPB Cone HDS Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61466,6 +62561,7 @@ Vd=0.000031465
 Dd=0.106988
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-830860-5-1-4-PPB-Cone-HDS-Woofer-264-1080
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany HDS-P830869 HDS Series 8_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61495,6 +62591,7 @@ Vd=0.00017025
 Dd=0.170007
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-by-Tymphany-HDS-P830869-HDS-Series-8-Woofer-8-Ohm-264-1007
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany HDS-P830870`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61524,6 +62621,7 @@ Vd=0.0000212629
 Dd=0.094996
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-830870-4-PPB-Cone-HDS-Woofer-264-1070
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany HDS-P830874 6-1_2_ PPB Cone HDS Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61553,6 +62651,7 @@ Vd=0.000076934
 Dd=0.134935
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-830874-6-1-2-PPB-Cone-HDS-Woofer-264-1090
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany HDS-P830875 6-1_2_ Nomex Cone HDS Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61582,6 +62681,7 @@ Vd=0.000075843
 Dd=0.134982
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-830875-6-1-2-Nomex-Cone-HDS-Woofer-264-1092
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany HDS-P830883 6-1_2_ Nomex Cone HDS Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61611,6 +62711,7 @@ Vd=0.0000804222
 Dd=0.134982
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-830883-6-1-2-Nomex-Cone-HDS-Woofer-264-1094
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany HDS-P830990 6-1_2_ GFC Cone HDS Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61640,6 +62741,7 @@ Vd=0.0000764154
 Dd=0.134982
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-830990-6-1-2-GFC-Cone-HDS-Woofer-264-1084
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany HDS-P830991 5-1_4_ GFC Cone HDS Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61669,6 +62771,7 @@ Vd=0.0000409045
 Dd=0.106988
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-830991-5-1-4-GFC-Cone-HDS-Woofer-264-1074
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany HDS-P830992 4_ GFC Cone HDS Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61698,6 +62801,7 @@ Vd=0.00001683
 Dd=0.0845155
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-830992-4-GFC-Cone-HDS-Woofer-264-1066
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany HDS-P835024`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61727,6 +62831,7 @@ Vd=0.0000400141
 Dd=0.12065
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-835024-5-1-4-Aluminum-Cone-HDS-Woofer-264-1076
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany HDS-P835025 6-1_2_ Aluminum Cone HDS Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61756,6 +62861,7 @@ Vd=0.0001431
 Dd=0.134982
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-835025-6-1-2-Aluminum-Cone-HDS-Woofer-264-1086
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany HDS-P835026`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61785,6 +62891,7 @@ Vd=0.000171584
 Dd=0.1905
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-835026-8-Aluminum-Cone-HDS-Woofer-264-1100
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany NE123W-04 4_ Paper Cone NE Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61814,6 +62921,7 @@ Vd=0.00001623
 Dd=0.0829953
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-NE123W-04-4-Paper-Cone-NE-Woofer-4-Ohm-264-1512
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany NE123W-08 4_ Full Range Woofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61843,6 +62951,7 @@ Vd=0.000016771
 Dd=0.0829953
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-NE123W-08-4-Full-Range-Woofer-Speaker-264-1128
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany NE149W-08 5-1_4_ Fiber Cone Woofer Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61872,6 +62981,7 @@ Vd=0.0000425
 Dd=0.104031
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-NE149W-08-5-1-4-Fiber-Cone-Woofer-Speaker-8-Ohm-264-1132
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany NE180W-08 6-1_2_ Fiber Cone Woofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61901,6 +63011,7 @@ Vd=0.00006845
 Dd=0.132025
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-NE180W-08-6-1-2-Fiber-Cone-Woofer-Speaker-264-1134
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany NE19VTS-04 3_4_ Silk Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61930,6 +63041,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-NE19VTS-04-3-4-Silk-Dome-Tweeter-264-1006
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany NE25VTS-04 1_ Silk Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61959,6 +63071,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-NE25VTS-04-1-Silk-Dome-Tweeter-264-1034
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany NE265W-08 10_ Paper Cone NE Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -61988,6 +63101,7 @@ Vd=0.000307286
 Dd=0.204015
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-NE265W-08-10-Paper-Cone-NE-Woofer-8-Ohm-264-1518
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany NE315W-04`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62017,6 +63131,7 @@ Vd=0.000585409
 Dd=0.287782
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-NE315W-04-12-Paper-Cone-NE-Woofer-4-Ohm-264-1520
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany NE65W-04 2_ Full Range Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62046,6 +63161,7 @@ Vd=0.0000024255
 Dd=0.0432627
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-NE65W-04-2-Full-Range-Woofer-264-1046
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany NE85W-04 2-1_2_ Full Range Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62075,6 +63191,7 @@ Vd=0.0000038675
 Dd=0.0530458
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-NE85W-04-2-1-2-Full-Range-Woofer-264-1052
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany NE95W-04 3_ Full-Range Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62104,6 +63221,7 @@ Vd=0.000005005
 Dd=0.0603446
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-NE95W-04-3-Full-Range-Woofer-264-1058
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany OC16SC00-04 16mm Fabric Dome OC Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62134,6 +63252,7 @@ Dd=
 numVC=1
 VCCon=2
 boxbench_dq_issue=Qts=1294.83: Physically impossible — no real driver has Qts near this value. Likely a data entry error. Correct value unknown; datasheet lookup required before use.
+boxbench_source=https://www.parts-express.com/Peerless-OC16SC00-04-16mm-Fabric-Dome-OC-Tweeter-4-Ohm-264-1522
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany OC16SC04-04 16mm Fabric Dome Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62163,6 +63282,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-OC16SC04-04-16mm-Fabric-Dome-OC-Tweeter-4-Ohm-264-1524
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany OT19NC00-04 3_4_ Fabric Dome Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62192,6 +63312,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-OT19NC00-04-3-4-Fabric-Dome-Tweeter-4-Ohm-264-1122
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany OX20SC00-04 3_4_ Fabric Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62221,6 +63342,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-OX20SC00-04-3-4-Fabric-Dome-Tweeter-264-1002
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany OX32SC00-08 1.25_ Teteron Dome Neo Compact Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62250,6 +63372,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-by-Tymphany-OX32SC00-08-1.25-Teteron-Dome-Neo-Compact-Tweeter-264-1009
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany P22WO03-08`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62279,6 +63402,7 @@ Vd=0.0000723086
 Dd=0.184658
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-P22WO03-08-8-Poly-Cone-Woofer-8-Ohm-264-1532
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany PLS Series 65F25AL02 2-1_2_ Aluminum Full-Range Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62308,6 +63432,7 @@ Vd=0.000005746
 Dd=0.0530458
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-65F25AL02-2-1-2-Aluminum-Full-Range-Speaker-264-1182
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany PLS-65F25AL01-04 2-1_2_ Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62337,6 +63462,7 @@ Vd=0.000003604
 Dd=0.0519545
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-PLS-65F25AL01-04-2-1-2-Full-Range-Driver-4-Ohm-264-1540
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany PLS-75F25AL05-08 3_ Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62366,6 +63492,7 @@ Vd=0.0000097682
 Dd=0.0606602
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-PLS-75F25AL05-08-3-Full-Range-Driver-8-Ohm-264-1548
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany PLS-P830970 2_ Full Range Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62395,6 +63522,7 @@ Vd=0.00000234
 Dd=0.0406843
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-830970-2-Full-Range-Woofer-264-1044
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany PLS-P830983 2_ Full Range Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62424,6 +63552,7 @@ Vd=0.000002508
 Dd=0.0439923
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-830983-2-Full-Range-Woofer-264-1042
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany PLS-P830984 2-1_2_ Full Range Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62453,6 +63582,7 @@ Vd=0.000004551
 Dd=0.0531657
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-830984-2-1-2-Full-Range-Woofer-264-1048
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany PLS-P830985 2-1_2_ Full Range Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62482,6 +63612,7 @@ Vd=0.0000044
 Dd=0.0529257
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-830985-2-1-2-Full-Range-Woofer-264-1050
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany PLS-P830986 3_ Full Range Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62511,6 +63642,7 @@ Vd=0.0000055965
 Dd=0.0589571
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-830986-3-Full-Range-Woofer-264-1056
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany PLS-P830987 3_ Full-Range Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62540,6 +63672,7 @@ Vd=0.0000055965
 Dd=0.0589571
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-830987-3-Full-Range-Woofer-264-1054
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany PMT-37N28AL01-04 37mm Aluminum Cone Transducer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62569,6 +63702,7 @@ Vd=7.997e-8
 Dd=0.0319094
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-PMT-37N28AL01-04-37mm-Aluminum-Cone-Transducer-4-Ohm-264-1560
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany PMT-40N25AL01-04 1_ Aluminum Dome Micro Full Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62598,6 +63732,7 @@ Vd=0.00000152
 Dd=0.0319154
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-40N25AL01-1-1-4-Aluminum-Dome-Micro-Full-Range-Speaker-264-1154
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany SBS-160F35AL01-04`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62627,6 +63762,7 @@ Vd=0.000130761
 Dd=0.139954
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-SBS-160F35AL01-04-6-1-2-Aluminum-Cone-Woofer-4-Ohm-264-1564
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany SDF-250F75PR01-06 10_ Paper Cone Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62656,6 +63792,7 @@ Vd=0.000444276
 Dd=0.211883
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-SDF-250F75PR01-06-10-Paper-Cone-Subwoofer-264-1654
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany SDS-100F25CP09-04 SDS Series 4_ Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62685,6 +63822,7 @@ Vd=0.0000254015
 Dd=0.0800275
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-by-Tymphany-SDS-100F25CP09-04-SDS-Series-4-Woofer-4-Ohm-264-1011
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany SDS-135F25CP02-04`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62714,6 +63852,7 @@ Vd=0.0000626195
 Dd=0.123825
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-SDS-135F25CP02-04-5-1-4-Paper-Cone-Woofer-264-1658
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany SDS-135F25CP02-06`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62744,6 +63883,7 @@ Dd=0.116586
 numVC=1
 VCCon=2
 boxbench_dq_issue=Qts=97.33: Physically impossible — no real driver has Qts near this value. Likely a decimal-point data entry error. Correct value unknown; datasheet lookup required before use.
+boxbench_source=https://www.parts-express.com/Peerless-SDS-135F25CP02-06-5-1-4-Paper-Cone-Woofer-6-Ohm-264-1588
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany SDS-135F25CP05-04`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62773,6 +63913,7 @@ Vd=0.0000359806
 Dd=0.116078
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-SDS-135F25CP05-04-5-1-4-Paper-Cone-SDS-Woofer-4-Ohm-264-1590
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany SDS-160F25CP01-08 6-1_2_ Paper Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62802,6 +63943,7 @@ Vd=0.00004935
 Dd=0.133988
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-SDS-160F25CP01-08-6-1-2-Paper-Cone-Woofer-8-Ohm-264-1592
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany SDS-160F25PR01-08`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62831,6 +63973,7 @@ Vd=0.0000982077
 Dd=0.143764
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-SDS-160F25PR01-08-6-1-2-Paper-Cone-Woofer-Speaker-264-1146
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany SDS-P830656 5-1_4_ Paper Cone SDS Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62860,6 +64003,7 @@ Vd=0.0000299636
 Dd=0.105006
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-830656-5-1-4-Paper-Cone-SDS-Woofer-264-1078
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany SDS-P830657 6-1_2_ Paper Cone SDS Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62889,6 +64033,7 @@ Vd=0.000048786
 Dd=0.133988
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-830657-6-1-2-Paper-Cone-SDS-Woofer-264-1088
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany SDS-P830855 4_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62918,6 +64063,7 @@ Vd=0.00001509
 Dd=0.0800275
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-SDS-Series-830855-4-Woofer-8-Ohm-264-1065
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany SDS-P830878 3-1_2_ Passive Radiator`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62947,6 +64093,7 @@ Vd=
 Dd=0.0799479
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-830878-3-1-2-Passive-Radiator-264-1060
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany SLS-135F32CP01-04 5-1_4_ Paper Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -62976,6 +64123,7 @@ Vd=0.0000475
 Dd=0.109981
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-SLS-135F32CP01-04-5-1-4-Paper-Cone-Woofer-4-Ohm-264-1596
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany SLS-250S38CP00-04`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63005,6 +64153,7 @@ Vd=0.000181323
 Dd=0.224028
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-SLS-250S38CP00-04-10-Paper-Cone-Woofer-4-Ohm-264-1598
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany SLS-65S25PR03-04 SLS Series 2.5_ Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63034,6 +64183,7 @@ Vd=0.0000095693
 Dd=0.0530458
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-by-Tymphany-SLS-65S25PR03-04-SLS-Series-2.5-Woofer-4-Ohm-264-1013
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany SLS-85S25CP04-04 3-1_2_ Paper Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63063,6 +64213,7 @@ Vd=0.00001386
 Dd=0.0626225
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-SLS-85S25CP04-04-3-1-4-Paper-Cone-Woofer-4-Ohm-264-1600
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany SLS-P830667 8_ Paper Cone SLS Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63092,6 +64243,7 @@ Vd=0.000179806
 Dd=0.16499
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-830667-8-Paper-Cone-SLS-Subwoofer-264-1102
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany SLS-P830668 10_ Paper Cone SLS Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63121,6 +64273,7 @@ Vd=0.000377576
 Dd=0.210012
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-830668-10-Paper-Cone-SLS-Subwoofer-264-1110
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany SLS-P830669 12_ Paper Cone SLS Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63150,6 +64303,7 @@ Vd=0.000433924
 Dd=0.258002
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-830669-12-Paper-Cone-SLS-Subwoofer-264-1118
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany SLS-P830945 5-1_4_ Paper Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63179,6 +64333,7 @@ Vd=0.00004165
 Dd=0.102986
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-SLS-P830945-5-1-4-Paper-Cone-Woofer-4-Ohm-264-1604
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany SLS-P830946 6-1_2_ Paper Cone Woofer Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63208,6 +64363,7 @@ Vd=0.00010127
 Dd=0.125397
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-830946-6-1-2-Paper-Cone-Woofer-Speaker-4-Ohm-264-1148
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany TA6FD00-04 2_ Aluminum Cone Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63237,6 +64393,7 @@ Vd=0.00000152
 Dd=0.0439923
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-TA6FD00-04-2-Aluminum-Cone-Full-Range-Driver-4-Ohm-264-1610
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany TA6FD00-08 2_ Aluminum Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63266,6 +64423,7 @@ Vd=0.00000152
 Dd=0.0439923
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-TA6FD00-08-2-Aluminum-Cone-Full-Range-Driver-8-Ohm-264-1612
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany TC Series TC8FD00-04 3_ Full Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63295,6 +64453,7 @@ Vd=0.000007968
 Dd=0.0650166
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-TC8FD00-3-Full-Range-Speaker-4-Ohm-264-1145
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany TC55FD00-08 1-3_4_ Paper Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63324,6 +64483,7 @@ Vd=0.00000154
 Dd=0.0374241
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-TC55FD00-08-1-3-4-Paper-Cone-Full-Range-Driver-8-Ohm-264-1616
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany TC5FB00-08 1-1_2_ Paper Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63353,6 +64513,7 @@ Vd=4.56e-7
 Dd=0.0311073
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-TC5FB00-08-1-1-2-Paper-Cone-Full-Range-Driver-8-Ohm-264-1620
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany TC5FC00-04 1-1_2_ Paper Cone Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63382,6 +64543,7 @@ Vd=4.68e-7
 Dd=0.0315139
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-TC5FC00-04-1-1-2-Paper-Cone-Full-Range-Driver-4-Ohm-264-1622
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany TC5FC07-04 1-1_2_ Paper Cone Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63411,6 +64573,7 @@ Vd=0.00000156
 Dd=0.0315139
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-TC5FC07-04-1-1-2-Paper-Cone-Full-Range-Driver-4-Ohm-264-1626
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany TC6FD00-04 2_ Full Range Paper Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63440,6 +64603,7 @@ Vd=0.00000152
 Dd=0.0439923
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-TC6FD00-04-2-Full-Range-Paper-Cone-Woofer-4-Ohm-264-1126
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany TC7FD00-04 2-1_2_ Full Range Paper Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63469,6 +64633,7 @@ Vd=0.00000221
 Dd=0.0530458
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-TC7FD00-04-2-1-2-Full-Range-Paper-Cone-Driver-4-O-264-1144
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany TC7FD04-04 2-1_2_ Full-Range Line Array Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63498,6 +64663,7 @@ Vd=0.00000221
 Dd=0.0530458
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-TC7FD04-04-2-1-2-Full-Range-Line-Array-Driver-4-Oh-264-1354
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany TC7FD24-04 2.5_ Compact Full-Range Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63527,6 +64693,7 @@ Vd=0.00000476
 Dd=0.0550483
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-by-Tymphany-TC7FD24-04-2.5-Compact-Full-Range-Speaker-264-1017
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany TC8FD05-04 3_ Paper Cone Full-Range Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63556,6 +64723,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-TC8FD05-04-3-Paper-Cone-Full-Range-Driver-264-1656
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany TC9FD00-04 3-1_2_ Full-Range Line Array Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63585,6 +64753,7 @@ Vd=0.000005808
 Dd=0.0679843
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-TC9FD00-04-3-1-2-Full-Range-Line-Array-Driver-4-Oh-264-1358
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany TC9FD18-08 3-1_2_ Full Range Paper Cone Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63614,6 +64783,7 @@ Vd=0.0000092565
 Dd=0.0679843
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-TC9FD18-08-3-1-2-Full-Range-Paper-Cone-Woofer-264-1062
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany TG9FD10-04 3-1_2_ Glass Fiber Cone Full Range`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63643,6 +64813,7 @@ Vd=0.000009438
 Dd=0.0679843
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-TG9FD10-04-3-1-2-Glass-Fiber-Cone-Full-Range-264-1064
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany TG9FD10-08 3-1_2_ Glass Fiber Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63672,6 +64843,7 @@ Vd=0.000009438
 Dd=0.0679843
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-TG9FD10-08-3-1-2-Glass-Fiber-Cone-Full-Range-Driver-8-Ohm-264-1632
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany TPY05W04O0089`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63701,6 +64873,7 @@ Vd=0.0000287019
 Dd=0.120904
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-TPY05W04O0089-5-1-4-Heritage-Family-Woofer-4-Ohm-264-1634
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany TPY05W08O0088`,date:``,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63730,6 +64903,7 @@ Vd=0.0000401827
 Dd=0.120904
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-TPY05W08O0088-5-1-4-Heritage-Family-Woofer-8-Ohm-264-1636
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany XLS-P830452 10_ XLS Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63759,6 +64933,7 @@ Vd=0.000437125
 Dd=0.21101
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-830452-10-XLS-Subwoofer-264-1108
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany XT25BG60-04 1_ Dual Ring Radiator Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63788,6 +64963,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-XT25BG60-04-1-Dual-Ring-Radiator-Tweeter-264-1012
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany XT25SC40-04 1_ Ring Radiator XT Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63817,6 +64993,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-XT25SC40-04-1-Ring-Radiator-XT-Tweeter-4-Ohm-264-1642
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany XT25SC50-04 1_ Silk Diaphragm Neo Ring Radiator Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63846,6 +65023,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-by-Tymphany-XT25SC50-04-1-Silk-Diaphragm-Neo-Ring-Radiator-Tweeter-264-1021
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany XT25SC90-04 1_ Dual Ring Radiator Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63875,6 +65053,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-XT25SC90-04-1-Dual-Ring-Radiator-Tweeter-264-1014
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany XT25TG30-04 1_ Dual Ring Radiator Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63904,6 +65083,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-XT25TG30-04-1-Dual-Ring-Radiator-Tweeter-264-1016
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany XXLS-300F50AL01-04 12_ Black Aluminum Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63933,6 +65113,7 @@ Vd=0.000575148
 Dd=0.244001
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-XXLS-300F50AL01-04-12-Black-Aluminum-Cone-Subwoofer-4-Ohm-264-1644
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany XXLS-P830845 12_ Nomex Cone Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63962,6 +65143,7 @@ Vd=0.000613625
 Dd=0.250007
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-XXLS-P830845-12-Nomex-Cone-Subwoofer-8-Ohm-264-1646
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany XXLS-P835016 10_ Black Aluminum Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -63991,6 +65173,7 @@ Vd=0.000438249
 Dd=0.212992
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-XXLS-P835016-10-Black-Aluminum-Cone-Subwoofer-4-Ohm-264-1648
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Peerless by Tymphany XXLS-P835037 10_ Paper Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Peerless by Tymphany
@@ -64020,6 +65203,7 @@ Vd=0.000426072
 Dd=0.210012
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Peerless-XXLS-P835037-10-Paper-Cone-Subwoofer-4-Ohm-264-1650
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Pyramid WX102X`,date:``,content:`[Driver]
 Brand=Pyramid
@@ -64049,6 +65233,7 @@ Vd=0.000150726
 Dd=0.230886
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Pyramid-WX102X-10-White-Poly-Woofer-290-274
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Pyramid WX65X 6-1_2_ White Poly Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Pyramid
@@ -64078,6 +65263,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Pyramid-WX65X-6-1-2-White-Poly-Woofer-290-270
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Selenium JBL Selenium 10M PRO 10_ 350 Watt Professional Mid-Bass 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
@@ -64107,6 +65293,7 @@ Vd=0.00009801
 Dd=0.214985
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/JBL-Selenium-10M-PRO-10-350-Watt-Professional-Mid-Bass-8-Ohm-264-478
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Selenium JBL Selenium 10PWX-8R 10_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
@@ -64136,6 +65323,7 @@ Vd=1.89e-8
 Dd=0.002111
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/JBL-Selenium-10PWX-8R-10-Professional-Woofer-8-Ohm-264-491
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Selenium JBL Selenium 10WP 350 10_ 350 Watt Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
@@ -64165,6 +65353,7 @@ Vd=0.00021
 Dd=0.2111
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/JBL-Selenium-10WP-350-10-350-Watt-Woofer-8-Ohm-264-471
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Selenium JBL Selenium 12M PRO 12_ 700 Watt Professional Mid-Bass 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
@@ -64194,6 +65383,7 @@ Vd=0.000127423
 Dd=0.26
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/JBL-Selenium-12M-PRO-12-700-Watt-Professional-Mid-Bass-8-Ohm-264-479
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Selenium JBL Selenium 12PWX-8R 12_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
@@ -64223,6 +65413,7 @@ Vd=2.16e-8
 Dd=0.00262212
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/JBL-Selenium-12PWX-8R-12-Professional-Woofer-8-ohm-264-492
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Selenium JBL Selenium 12WP 500 12_ 500 Watt Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
@@ -64252,6 +65443,7 @@ Vd=0.000318
 Dd=0.259772
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/JBL-Selenium-12WP-500-12-500-Watt-Woofer-8-Ohm-264-472
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Selenium JBL Selenium 15PWX-8R 15_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
@@ -64281,6 +65473,7 @@ Vd=4.6e-8
 Dd=0.00342254
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/JBL-Selenium-15PWX-8R-15-Professional-Woofer-8-Ohm-294-493
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Selenium JBL Selenium 15WP 550 15_ 550 Watt Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
@@ -64310,6 +65503,7 @@ Vd=0.0004884
 Dd=0.321934
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/JBL-Selenium-15WP-550-15-550-Watt-Woofer-8-Ohm-264-473
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Selenium JBL Selenium 18SW3P 18_ 800 Watt Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
@@ -64339,6 +65533,7 @@ Vd=0.00080595
 Dd=0.389904
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/JBL-Selenium-18SW3P-18-800-Watt-Subwoofer-8-Ohm-264-475
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Selenium JBL Selenium 18WP 600 18_ 600 Watt Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
@@ -64368,6 +65563,7 @@ Vd=0.0007164
 Dd=0.389904
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/JBL-Selenium-18WP-600-18-600-Watt-Woofer-8-Ohm-264-474
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Selenium JBL Selenium 6W4P 6_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
@@ -64397,6 +65593,7 @@ Vd=0.00005474
 Dd=0.174078
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Selenium-6W4P-6-Woofer-264-422
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Selenium JBL Selenium 8PW-PRO 8_ 175 Watt Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
@@ -64426,6 +65623,7 @@ Vd=0.00008
 Dd=0.178412
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/JBL-Selenium-8PW-PRO-8-125-Watt-Professional-Woofer-8-Ohm-264-480
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Selenium JBL Selenium 8PWX-8R 8_ Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
@@ -64455,6 +65653,7 @@ Vd=9.75e-9
 Dd=0.00178412
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/JBL-Selenium-8PWX-8R-8-Professional-Woofer-8-Ohm-294-494
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Selenium JBL Selenium 8WP 300 8_ 300 Watt Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Selenium
@@ -64484,6 +65683,7 @@ Vd=0.000069705
 Dd=0.171999
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/JBL-Selenium-8WP-300-8-300-Watt-Woofer-8-Ohm-264-470
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band 13-1761S 1_2_ Silk Dome Tweeter Pair`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -64513,6 +65713,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-13-1761S-1-2-Silk-Dome-Tweeter-Pair-264-841
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band 20-2240S 20mm Hi-Res Neodymium Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -64542,6 +65743,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-20-2240S-20mm-Hi-Res-Neodymium-Tweeter-264-8016
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band 25-1719S 1_ Ceramic Dome Tweeter`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -64571,6 +65773,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-25-1719S-1-Ceramic-Dome-Tweeter-264-865
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band 25-2234S 1_ Hi-Resolution 40k Aluminum _ Magnesium Dome Neodymium Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -64600,6 +65803,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-25-2234S-1-Hi-Resolution-Dome-Tweeter-4-Ohm-264-801
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band 25-2234SD 1_ Hi-Resolution 40k Aluminum _ Magnesium Dome Neo Tweeter Black Grill 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -64629,6 +65833,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-25-2234SD-1-Hi-Resolution-40k-Aluminum-Magnesium-Dome-Neo-Tweeter-Black-Grill-264-8012
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band 25-2234SE 1_ Hi-Resolution 40k Aluminum_Magnesium Dome Neo Tweeter Stainless Grill 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -64658,6 +65863,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-25-2234SE-1-Hi-Resolution-40k-Aluminum-Magnesium-Dome-Neo-Tweeter-Stainless-Gr-264-8014
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band 50-1426SE 2_ Fabric Dome Midrange`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -64687,6 +65893,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-50-1426SE-2-Fabric-Dome-Midrange-264-855
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W0-2008S 1_ Neodymium Full-Range Driver Pair`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -64716,6 +65923,7 @@ Vd=
 Dd=0.0133512
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W0-2008S-1-Neodymium-Full-Range-Driver-Pair-264-921
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W1-1815SA 1_ Neodymium Full Range Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -64745,6 +65953,7 @@ Vd=0.000009375
 Dd=0.0977205
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W1-1815SA-1-Neodymium-Full-Range-Driver-264-882
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W1-1931S 1_ Neodymium Full Range Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -64774,6 +65983,7 @@ Vd=5.4e-7
 Dd=0.0239365
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W1-1931S-1-Neodymium-Full-Range-Driver-264-923
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W1-1942S 1_ Full-Range Neodymium Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -64803,6 +66013,7 @@ Vd=0.00000117
 Dd=0.0338514
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W1-1942S-1-Neodymium-Full-Range-Driver-264-924
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W1-2025SA 1_ Neodymium Full Range Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -64832,6 +66043,7 @@ Vd=4.5e-7
 Dd=0.0276395
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W1-2025SA-1-Neodymium-Full-Range-Driver-264-925
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W1-2121S 1-3_4_ Aluminum Full Range Neodymium Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -64861,6 +66073,7 @@ Vd=0.00000205505
 Dd=0.0337289
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W1-2121S-1-3-4-Aluminum-Full-Range-Neodymium-Driv-264-825
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W1-2361S 1_ Low Profile Aluminum Cone Full-Range Neodymium Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -64890,6 +66103,7 @@ Vd=9e-8
 Dd=0.0214095
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W2-2360S-2-Low-Profile-Poly-Cone-Full-Range-Neodymium-Driver-4-Ohm-264-978
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W1-2396S Extremely Slim 1_ Full-Range 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -64919,6 +66133,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W1-2396S-Extremely-Slim-1-Full-Range-4-Ohm-264-818
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W2-1803S 2_ Neodymium Poly Full-Range Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -64948,6 +66163,7 @@ Vd=9.1e-7
 Dd=0.0406843
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W2-1803S-2-Neodymium-Poly-Full-Range-Driver-264-885
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W2-2136S 2_ Aluminum Full Range Neodymium Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -64977,6 +66193,7 @@ Vd=0.000003
 Dd=0.0437019
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W2-2136S-2-Aluminum-Full-Range-Neodymium-Driver-264-839
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W2-2243S 2_ Aluminum_Magnesium Full-Range Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65006,6 +66223,7 @@ Vd=0.0000013
 Dd=0.0406843
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W2-2243S-2-Aluminum-Magnesium-Full-Range-Driver-264-803
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W2-803SM 2_ Extended Range Speaker Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65035,6 +66253,7 @@ Vd=0.0000013
 Dd=0.0406843
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W2-803SM-2-Extended-Range-Speaker-Driver-264-805
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W2-852SH 2_ Shielded Speaker Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65064,6 +66283,7 @@ Vd=0.0000013
 Dd=0.0406843
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W2-852SH-2-Shielded-Speaker-Driver-264-808
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W3-1364SA 3_ Bamboo Cone Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65093,6 +66313,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W3-1364SA-3-Bamboo-Cone-Driver-264-844
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W3-1797S 3_ Neodymium Midrange Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65122,6 +66343,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W3-1797S-3-Neodymium-Midrange-Driver-264-888
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W3-1876S 3_ Mini Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65151,6 +66373,7 @@ Vd=0.0000135
 Dd=0.0586323
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W3-1876S-3-Mini-Subwoofer-264-909
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W3-1878 3_ Full-Range Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65180,6 +66403,7 @@ Vd=0.00001344
 Dd=0.0638308
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W3-1878-3-Full-Range-Driver-264-902
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W3-2108 3-1_2_ RBM Micro Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65209,6 +66433,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W3-2108-3-RBM-Micro-Subwoofer-4-Ohm-264-949
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W3-2141 3_ Paper Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65238,6 +66463,7 @@ Vd=0.0000051344
 Dd=0.0639205
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W3-2141-3-Paper-Cone-Full-Range-Driver-8-Ohm-264-956
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W3-881SJ 3_ Cast Frame Neodymium Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65267,6 +66493,7 @@ Vd=0.0000016
 Dd=0.0638308
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W3-881SJ-3-Cast-Frame-Neodymium-Driver-264-812
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W3-881SJF 3_ Full Range Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65296,6 +66523,7 @@ Vd=0.0000016
 Dd=0.0638308
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W3-881SJF-3-Full-Range-Speaker-264-911
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W4-1052SD 4_ Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65325,6 +66553,7 @@ Vd=0.00001938
 Dd=0.0851908
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W4-1052SD-4-Driver-4-Ohm-264-828
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W4-1337SDF 4_ Titanium Full Range Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65354,6 +66583,7 @@ Vd=0.00001425
 Dd=0.0851908
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W4-1337SDF-4-Titanium-Full-Range-Speaker-264-916
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W4-1720 4_ Underhung Midbass Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65383,6 +66613,7 @@ Vd=0.0000285
 Dd=0.0851908
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W4-1720-4-Underhung-Midbass-Driver-264-872
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W4-1757SB 4_ Aluminum Cone Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65412,6 +66643,7 @@ Vd=0.0000171
 Dd=0.0851908
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W4-1757SB-4-Aluminum-Cone-Driver-264-881
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W4-1879 4_ Full-Range Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65441,6 +66673,7 @@ Vd=0.0000285
 Dd=0.0851908
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W4-1879-4-Full-Range-Driver-264-903
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W4-2089 4.5_ RBM Mini Flat Panel Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65470,6 +66703,7 @@ Vd=0.00006
 Dd=0.0977205
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W4-2089-4.5-RBM-Mini-Subwoofer-264-952
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W4-2142 4_ Paper Cone Full Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65499,6 +66733,7 @@ Vd=0.000013032
 Dd=0.0831486
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W4-2142-4-Paper-Cone-Full-Range-Driver-8-Ohm-264-957
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W4-2356 4_ Off-Axis Poly Cone Full-Range`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65528,6 +66763,7 @@ Vd=0.000015
 Dd=0.0797885
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W4-2356-4-Off-Axis-Poly-Cone-Full-Range-264-982
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W4-2414 F Series 4_ Full-Range with Phase Plug 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65557,6 +66793,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W4-2414-F-Series-4-Full-Range-with-Phase-Plug-8-Ohm-264-816
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W4-2417 F Series 4_ Full-Range with Dust Cap 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65586,6 +66823,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W4-2417-F-Series-4-Full-Range-with-Dust-Cap-8-Ohm-264-817
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W4-656SC 4_ Shielded Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65615,6 +66853,7 @@ Vd=0.000171
 Dd=0.269397
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W4-656SC-4-Shielded-Driver-264-820
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W5-1138SM 5-1_4_ Neodymium Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65644,6 +66883,7 @@ Vd=0.00008695
 Dd=0.1094
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W5-1138SM-5-1-4-Neodymium-Subwoofer-264-831
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W5-1138SMF 5-1_4_ Paper Cone Subwoofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65673,6 +66913,7 @@ Vd=0.00008695
 Dd=0.1094
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W5-1138SMF-5-1-4-Paper-Cone-Subwoofer-Speaker-264-917
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W5-1611SAF 5_ Full Range Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65702,6 +66943,7 @@ Vd=0.0000282
 Dd=0.1094
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W5-1611SAF-5-Full-Range-Speaker-264-918
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W5-2053 5_ RBM Flat Panel Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65731,6 +66973,7 @@ Vd=0.00006
 Dd=0.0977205
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W5-2053-5-RBM-Subwoofer-264-953
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W5-2143 5_ Paper Cone Full Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65760,6 +67003,7 @@ Vd=0.0000244575
 Dd=0.111607
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W5-2143-5-Paper-Cone-Full-Range-Driver-8-Ohm-264-958
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W5-704D 5-1_4_ Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65789,6 +67033,7 @@ Vd=0.00003102
 Dd=0.1094
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W5-704D-5-1-4-Woofer-264-850
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W57-1781`,date:``,content:`[Driver]
 Brand=Tang Band
@@ -65818,6 +67063,7 @@ Vd=0.0000411041
 Dd=0.13208
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W57-1781-5-x-7-Poly-Woofer-264-891
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W6-1139SI 6-1_2_ Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65847,6 +67093,7 @@ Vd=0.000182
 Dd=0.133512
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W6-1139SI-6-1-2-Subwoofer-264-832
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W6-1139SIF 6-1_2_ Paper Cone Subwoofer Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65876,6 +67123,7 @@ Vd=0.000161
 Dd=0.133512
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W6-1139SIF-6-1-2-Paper-Cone-Subwoofer-Speaker-264-919
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W6-2090 6-1_2_ Extreme Conditions Woofer 2 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65905,6 +67153,7 @@ Vd=0.00005976
 Dd=0.125904
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W6-2090-6-1-2-Extreme-Conditions-Full-Range-Driver-2-Ohm-264-964
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W6-2100 6-1_2_ RBM Flat Panel Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65934,6 +67183,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W6-2100-6-1-2-RBM-Flat-Panel-Subwoofer-4-Ohm-264-954
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W6-2253S 6-1_2_ Low Profile Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65963,6 +67213,7 @@ Vd=0.000055
 Dd=0.118345
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W6-2253S-6-1-2-Low-Profile-Subwoofer-264-937
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W6-2313 6-1_2_ Coaxial Full-Range Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -65992,6 +67243,7 @@ Vd=0.000010268
 Dd=0.05717
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W6-2313-6-1-2-Coaxial-Full-Range-Woofer-264-9002
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W6-789E`,date:``,content:`[Driver]
 Brand=Tang Band
@@ -66021,6 +67273,7 @@ Vd=0.0000719452
 Dd=0.146812
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W6-789E-6-1-2-Woofer-264-852
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W8-1363SB 8_ Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -66050,6 +67303,7 @@ Vd=0.000264
 Dd=0.167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W8-1363SB-8-Subwoofer-264-833
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W8-1772 8_ Neodymium Full Range Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -66079,6 +67333,7 @@ Vd=0.0000027
 Dd=0.0338514
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W8-1772-8-Neodymium-Full-Range-Driver-264-893
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W8-1808 8_ Neodymium Full Range Driver`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -66108,6 +67363,7 @@ Vd=0.00011
 Dd=0.167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W8-1808-8-Neodymium-Full-Range-Driver-264-894
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W8-2096B 8_ Underhung Midbass Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -66137,6 +67393,7 @@ Vd=0.000187
 Dd=0.167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W8-2096B-8-Underhung-Midbass-Driver-4-Ohm-264-859
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W8-2145 8_ Paper Cone Full Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -66166,6 +67423,7 @@ Vd=0.00006369
 Dd=0.164411
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W8-2145-8-Paper-Cone-Full-Range-Driver-8-Ohm-264-960
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W8-2282 8_ Low Profile Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -66195,6 +67453,7 @@ Vd=0.00011
 Dd=0.167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W8-2282-8-Low-Profile-Subwoofer-4-Ohm-264-9006
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W8-2314 8_ Coaxial Full-Range Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -66224,6 +67483,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W8-2314-8-Coaxial-Full-Range-Woofer-264-9004
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tang Band W8-740P 8_ Subwoofer`,date:`2026-06-24`,content:`[Driver]
 Brand=Tang Band
@@ -66253,6 +67513,7 @@ Vd=0.0002662
 Dd=0.167366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tang-Band-W8-740P-8-Subwoofer-264-854
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tectonic TEBM35C02-6B 1-3_4_ BMR Full-Range Headphone Driver 6 Ohms`,date:`2026-06-24`,content:`[Driver]
 Brand=Tectonic
@@ -66282,6 +67543,7 @@ Vd=0.00000276
 Dd=0.0374921
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tectonic-TEBM35C02-6B-1-3-4-BMR-Full-Range-Headphone-Driver-6-Ohms-297-2174
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tectonic TEBM35C10-4 BMR 2_ Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tectonic
@@ -66311,6 +67573,7 @@ Vd=0.00000276
 Dd=0.0374921
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tectonic-TEBM35C10-4-BMR-2-Full-Range-Speaker-4-Ohm-297-216
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tectonic TEBM36S05-4 1-1_2_ Square BMR Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tectonic
@@ -66340,6 +67603,7 @@ Vd=
 Dd=0.0473382
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tectonic-TEBM36S05-4-1-1-2-Square-BMR-Full-Range-Speaker-4-Ohm-297-2166
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tectonic TEBM65C20F-4 3-1_2_ BMR Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tectonic
@@ -66369,6 +67633,7 @@ Vd=
 Dd=0.0688219
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tectonic-TEBM65C20F-4-3-1-2-BMR-Full-Range-Speaker-4-Ohm-297-2164
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Tectonic TEBM65C20F-8 3-1_2_ BMR Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Tectonic
@@ -66398,6 +67663,7 @@ Vd=0.00002179
 Dd=0.0744901
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Tectonic-TEBM65C20F-8-3-1-2-BMR-Full-Range-Speaker-297-2156
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Timpano Audio TPT-MD12 12_ Midbass Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Timpano Audio
@@ -66427,6 +67693,7 @@ Vd=
 Dd=0.265109
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Timpano-Audio-TPT-MD12-12-Midrange-Speaker-294-3328
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Timpano Audio TPT-MD12 PRO 12_ Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Timpano Audio
@@ -66456,6 +67723,7 @@ Vd=
 Dd=0.270105
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Timpano-Audio-TPT-MD12-PRO-12-Midrange-Speaker-294-3332
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Timpano Audio TPT-MD8 8_ Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Timpano Audio
@@ -66485,6 +67753,7 @@ Vd=
 Dd=0.00175172
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Timpano-Audio-TPT-MD8-8-Midrange-Speaker-294-3324
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Timpano Audio TPT-T2500-12 D2  12_ Cast Frame DVC Subwoofer 2 Ohms Per Coil`,date:`2026-06-24`,content:`[Driver]
 Brand=Timpano Audio
@@ -66514,6 +67783,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Timpano-Audio-TPT-T2500-12-D2-12-Cast-Frame-DVC-Subwoofer-2-Ohms-Per-Coil-294-4114
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Usher 1001B`,date:``,content:`[Driver]
 Brand=Usher
@@ -66543,6 +67813,7 @@ Vd=0.000210957
 Dd=0.231775
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Usher-1001B-10-Paper-Cone-Woofer-296-624
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton AL130M8 5_ Aluminum Cone Midrange Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -66572,6 +67843,7 @@ Vd=0.00004345
 Dd=0.100293
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-AL130M8-5-Aluminum-Cone-Midrange-Driver-8-Ohm-292-7807
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton AL170-8 6.5_ Aluminum Cone Midrange Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -66601,6 +67873,7 @@ Vd=0.0001463
 Dd=0.130131
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-AL170-8-6.5-Aluminum-Cone-Midrange-Driver-8-Ohm-292-7806
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton AL200-8 8_ Aluminum Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -66630,6 +67903,7 @@ Vd=0.000216
 Dd=0.165837
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-AL200-8-8-Aluminum-Cone-Woofer-8-Ohm-292-7805
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton B 100 4_ Full-Range Driver 6 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -66659,6 +67933,7 @@ Vd=0.000008656
 Dd=0.0829953
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-B100-4-HiFi-Full-Range-Driver-6-Ohm-292-662
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton B 200 8_ Full-Range Driver 6 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -66688,6 +67963,7 @@ Vd=0.0000749
 Dd=0.165068
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-B200-8-HiFi-Full-Range-Driver-6-Ohm-292-664
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton B 80 3.3_ Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -66717,6 +67993,7 @@ Vd=0.0000090574
 Dd=0.0724012
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-B80-3.3-HiFi-Full-Range-Driver-8-Ohm-292-660
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton BF32-8 Ohm 1.3_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -66746,6 +68023,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-BF32-8-Ohm-1.3-Full-Range-Speaker-8-Ohm-292-610
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton BF37 1.5_ Full-Range Speaker 4 ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -66775,6 +68053,7 @@ Vd=
 Dd=0.0280964
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-BF37-1.5-Full-Range-Speaker-4-ohm-292-655
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton BF37-8 1.5_ Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -66804,6 +68083,7 @@ Vd=0.000002108
 Dd=0.0280964
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-BF37-8-1.5-Full-Range-Driver-8-Ohm-292-7823
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton BF45-4 Ohm 1.8_ Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -66833,6 +68113,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-BF45-4-Ohm-1.8-Full-Range-Speaker-4-Ohm-292-612
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton BG13P 5_ Full Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -66862,6 +68143,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-BG13P-5-Full-Range-Speaker-8-Ohm-292-644
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton BG17-8 6.5_ Full-Range Speaker with Whizzer Cone 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -66891,6 +68173,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-BG17-8-6.5-Full-Range-Speaker-with-Whizzer-Cone-292-546
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton BG20-8 8_ Full-Range Speaker with Whizzer Cone 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -66920,6 +68203,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-BG20-8-8-Full-Range-Speaker-with-Whizzer-Cone-292-548
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton DSM25FFL 1_ Titanium Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -66949,6 +68233,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-DSM25FFL-1-Titanium-Dome-Tweeter-8-Ohm-292-692
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton DSM50FFL8 2_ Titanium Dome Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -66978,6 +68263,7 @@ Vd=
 Dd=0.0504627
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-DSM50FFL8-2-Titanium-Dome-Driver-8-Ohm-292-7801
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton DT94-4 0.8_ Polycarbonate Dome Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67007,6 +68293,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-DT94-4-0.8-Polycarbonate-Tweeter-4-Ohm-292-554
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton DT94-8 0.8_ Polycarbonate Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67036,6 +68323,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-DT94-8-0.8-Polycarbonate-Tweeter-8-Ohm-292-556
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton DTW72 1_2_ Polycarbonate Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67065,6 +68353,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-DTW72-1-2-Polycarbonate-Dome-Tweeter-8-Ohm-292-676
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton F8SC8 3.3_ Magnetically Shielded Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67094,6 +68383,7 @@ Vd=0.0000075
 Dd=0.0618039
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-F8SC8-3.3-Magnetically-Shielded-Full-Range-Driver-8-Ohm-292-7838
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FR 10-8 4_ Full-Range Speaker`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67123,6 +68413,7 @@ Vd=0.00002
 Dd=0.0797885
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FR10-8-4-Full-Range-Speaker-292-513
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FR 131.30 5.1_ x 1.2_ Fullrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67152,6 +68443,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FR-131.30-5.1-x-1.2-Fullrange-Speaker-8-Ohm-292-505
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FR 58-4 2.3_ Full Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67181,6 +68473,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FR58-4-2.3-Full-Range-Driver-4-Ohm-292-634
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FR 7-4 2-1_2_ Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67210,6 +68503,7 @@ Vd=0.0000022
 Dd=0.0529257
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FR7-4-2-1-2-Full-Range-Driver-4-Ohm-292-638
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FR10-4 4_ Paper Cone Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67239,6 +68533,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FR10-4-4-Paper-Cone-Full-Range-Driver-4-Ohm-292-730
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FR10HM-4 4_ Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67268,6 +68563,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FR10HM-4-4-Full-Range-Driver-4-Ohm-292-784
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FR10HM-8 4_ Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67297,6 +68593,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FR10HM-8-4-Full-Range-Driver-8-Ohm-292-786
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FR10HMP-4 4_ Full-Range Waterproof Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67326,6 +68623,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FR10HMP-4-4-Full-Range-Waterproof-Driver-4-Ohm-292-782
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FR12-4 5_ Paper Cone Low Profile Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67355,6 +68653,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FR12-4-5-Paper-Cone-Low-Profile-Full-Range-Driver-4-Ohm-292-734
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FR12-8 5_ Paper Cone Low Profile Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67384,6 +68683,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FR12-8-5-Paper-Cone-Low-Profile-Full-Range-Driver-8-Ohm-292-736
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FR13-4 5_ Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67413,6 +68713,7 @@ Vd=0.00002175
 Dd=0.105248
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FR13-4-5-Full-Range-Speaker-4-Ohm-292-518
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FR58-8 2-1_4_ Full-Range Paper Cone Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67442,6 +68743,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FR58-8-2-1-4-Full-Range-Paper-Cone-Driver-8-Ohm-292-744
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FR6.5-8 6.5_ Full-Range Driver with Tweeter Cone 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67471,6 +68773,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FR6.5-8-6.5-Full-Range-Driver-with-Tweeter-Cone-8-Ohm-292-7845
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FR77-8 3_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67500,6 +68803,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FR77-8-3-Full-Range-Speaker-8-Ohm-292-7836
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FR8-8 3.3_ Paper Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67529,6 +68833,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FR8-3.3-Paper-Cone-Full-Range-Driver-8-Ohm-292-724
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FR87-4 3.4_ Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67558,6 +68863,7 @@ Vd=0.0000074
 Dd=0.0686366
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FR87-4-3.4-Full-Range-Speaker-4-Ohm-292-7837
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FR8JS 3.3_ Poly Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67587,6 +68893,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FR8JS-3.3-Poly-Cone-Full-Range-Driver-8-Ohm-292-720
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FR8TA 3.3_ Full-Range Speaker 4 ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67616,6 +68923,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FR8TA-3.3-Full-Range-Speaker-4-ohm-292-656
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FR8WP 3.3_ Full-Range Driver 8 Ohm Black`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67645,6 +68953,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FR8WP-8-3.3-Full-Range-Driver-8-Ohm-Black-292-624
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FR8WP-4 3.3_ Full-Range Driver 4 Ohm Black`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67674,6 +68983,7 @@ Vd=0.000009
 Dd=0.0618039
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FR8WP-4-3.3-Full-Range-Driver-4-Ohm-Black-292-625
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FR8WP-4 3.3_ Full-Range Driver 4 Ohm White`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67703,6 +69013,7 @@ Vd=0.000009
 Dd=0.0618039
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FR8WP-4-3.3-Full-Range-Driver-4-Ohm-White-292-7846
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FR8WP-8 3.3_ Full-Range Driver 8 Ohm White`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67732,6 +69043,7 @@ Vd=0.000009
 Dd=0.0618039
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FR8WP-8-3.3-Full-Range-Driver-8-Ohm-White-292-7818
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FRS 5X-8 2_ Full Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67761,6 +69073,7 @@ Vd=
 Dd=0.0398942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FRS5X-8-2-Full-Range-Driver-8-Ohm-292-640
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FRS10WP-4 4_ Full-Range Saltwater Resistant Driver 4 Ohm Black`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67790,6 +69103,7 @@ Vd=0.0000171
 Dd=0.0851908
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FRS10WP-4-4-Full-Range-Saltwater-Resistant-Driver-4-Ohm-Black-292-617
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FRS10WP-4 4_ Full-Range Saltwater Resistant Driver 4 Ohm White`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67819,6 +69133,7 @@ Vd=0.0000171
 Dd=0.0851908
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FRS10WP-4-4-Full-Range-Saltwater-Resistant-Driver-4-Ohm-White-262-7817
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FRS10WP-8 4_ Full Range Saltwater Resistant Driver 8 Ohm Black`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67848,6 +69163,7 @@ Vd=0.00002268
 Dd=0.0981106
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FRS10WP-8-4-Full-Range-Saltwater-Resistant-Driver-8-Ohm-Black-292-616
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FRS10WP-8 4_ Full-Range Saltwater Resistant Driver 8 Ohm White`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67877,6 +69193,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FRS10WP-8-4-Full-Range-Saltwater-Resistant-Driver-8-Ohm-White-292-742
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FRS5-8 2_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67906,6 +69223,7 @@ Vd=7.2e-7
 Dd=0.0390882
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FRS5-8-2-Full-Range-Speaker-8-Ohm-292-536
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FRS7-4 2.5_ Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67935,6 +69253,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FRS7-4-2.5-Full-Range-Speaker-4-Ohm-292-528
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FRS7-8 2.5_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67964,6 +69283,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FRS7-8-2.5-Full-Range-Speaker-8-Ohm-292-530
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FRS7A8 2.5_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -67993,6 +69313,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FRS7A8-2.5-Full-Range-Speaker-8-Ohm-292-7827
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FRS7S-8 2-1_2_ Waterproof Paper Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68022,6 +69343,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FRS7S-8-2-1-2-Waterproof-Paper-Cone-Full-Range-Driver-8-Ohm-292-728
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FRS7W-8 2-1_2_ Paper Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68051,6 +69373,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FRS7W-8-2-1-2-Paper-Cone-Full-Range-Driver-8-Ohm-292-726
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FRS7XWP8 2.5_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68080,6 +69403,7 @@ Vd=0.0000118
 Dd=0.0548165
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FRS7XWP8-2.5-Full-Range-Speaker-8-Ohm-292-7812
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FRS8-4 3.3_ Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68109,6 +69433,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FRS8-4-3.3-Full-Range-Speaker-4-Ohm-292-522
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FRS8-8 3.3_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68138,6 +69463,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FRS8-8-3.3-Full-Range-Speaker-8-Ohm-292-524
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FRS8M 3.3_ Paper Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68167,6 +69493,7 @@ Vd=0.00000725
 Dd=0.0607651
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FRS8M-3.3-Paper-Cone-Full-Range-Driver-8-Ohm-292-722
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FRW10N8 4_ Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68196,6 +69523,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FRW10N8-4-Full-Range-Driver-8-Ohm-292-7814
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FRWS 5 R 2_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68225,6 +69553,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FRWS-5-R-2-Fullrange-Speaker-8-Ohm-292-650
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FRWS4ND8 1.6_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68254,6 +69583,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FRWS4ND8-1.6-Full-Range-Speaker-8-Ohm-292-7819
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FRWS5-4 2_ Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68283,6 +69613,7 @@ Vd=0.0000024
 Dd=0.0390882
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FRWS5-4-2-Full-Range-Speaker-4-Ohm-292-7820
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton FRWS5-8 2_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68312,6 +69643,7 @@ Vd=0.0000024
 Dd=0.0390882
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-FRWS5-8-2-Full-Range-Speaker-8-Ohm-292-7821
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton G 25 NDWG 1_ Fabric Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68341,6 +69673,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-G-25-NDWG-1-Fabric-Dome-Tweeter-8-Ohm-292-501
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton G20SC8 0.8_ Magnetically Shielded Textile Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68370,6 +69703,7 @@ Vd=
 Dd=0.0225676
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-G20SC8-0.8-Magnetically-Shielded-Textile-Dome-Tweeter-8-Ohm-292-7804
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton G25FFL8 1_ Fabric Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68399,6 +69733,7 @@ Vd=
 Dd=0.0249777
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-G25FFL8-1-Fabric-Dome-Tweeter-8-Ohm-292-7802
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton G50FFL8 2_ Fabric Dome Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68428,6 +69763,7 @@ Vd=
 Dd=0.0504627
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-G50FFL8-2-Fabric-Dome-Driver-8-Ohm-292-7803
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton GF200-2x4 8_ DVC Woofer 2x4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68457,6 +69793,7 @@ Vd=0.000214
 Dd=0.165068
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-GF200-2x4-8-DVC-Woofer-2x4-Ohm-292-7808
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton HX10-4 4_ 2-way Aluminum Cone Coaxial Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68486,6 +69823,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-HX10-4-4-2-way-Aluminum-Cone-Coaxial-Driver-4-Ohm-292-770
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton K 28 WP 1.1_ Miniature Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68515,6 +69853,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-K28WP-1.1-Miniature-Speaker-8-Ohm-292-618
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton K23SQ8 0.9_ Miniature Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68544,6 +69883,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-K23SQ8-0.9-Miniature-Speaker-8-Ohm-292-7828
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton K28GI8 1.1_ Miniature Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68573,6 +69913,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-K28GI8-1.1-Miniature-Speaker-8-Ohm-292-7829
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton K50 SQ 2_ Speaker 8 ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68602,6 +69943,7 @@ Vd=0.00000125
 Dd=0.0398942
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-K50-SQ-2-Speaker-8-ohm-292-543
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton K50WP-16 2_ Full-Range Water Resistant Speaker 16 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68631,6 +69973,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-K50WP-16-2-Full-Range-Speaker-16-Ohm-292-540
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton K50WP-8 2_ Full-Range Water Resistant Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68660,6 +70003,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-K50WP-8-2-Full-Range-Speaker-8-Ohm-292-538
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton K64WP-50 2-1_2_ Waterproof Full-Range Driver with Plastic Diaphragm 50 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68689,6 +70033,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-K64WP-50-2-1-2-Waterproof-Full-Range-Driver-with-Plastic-Diaphragm-50-Ohm-292-746
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton K64WP-8 2.5_ Full-Range Water Resistant Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68718,6 +70063,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-K64WP-8-2.5-Full-Range-Speaker-8-Ohm-292-534
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton KT100V4 4_ Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68747,6 +70093,7 @@ Vd=0.00003703
 Dd=0.0820697
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-KT100V4-4-Woofer-4-Ohm-292-7844
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton M 10 4_ Sealed Back Cone Midrange Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68776,6 +70123,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-M10-4-Cone-Midrange-Driver-8-Ohm-292-594
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton MR130-8 5_ Midrange Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68805,6 +70153,7 @@ Vd=0.000014
 Dd=0.094407
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-MR130-8-5-Midrange-Driver-8-Ohm-292-7842
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton PAM13-8 5_ Midrange Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68834,6 +70183,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-PAM13-8-5-Midrange-Driver-8-Ohm-292-7830
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton PAW25-8 10_ Midrange Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68863,6 +70213,7 @@ Vd=0.0002824
 Dd=0.212003
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-PAW25-8-10-Midrange-Driver-8-Ohm-292-7831
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton PAW30ND8 12_ Bass Midrange Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68892,6 +70243,7 @@ Vd=0.0004312
 Dd=0.261969
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-PAW30ND8-12-Bass-Midrange-Driver-8-Ohm-292-7832
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton PAW38-8 15_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68921,6 +70273,7 @@ Vd=0.0010776
 Dd=0.338137
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-PAW38-8-15-Woofer-8-Ohm-292-7833
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton PAW46-8 18_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68950,6 +70303,7 @@ Vd=0.00121
 Dd=0.392507
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-PAW46-8-18-Woofer-8-Ohm-292-7834
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton PL 5 RV 1-5_8_ Full Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -68979,6 +70333,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-PL5RV-1-5-8-Full-Range-Driver-4-Ohm-292-636
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton R10ND8 4_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69008,6 +70363,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-R10ND8-4-Full-Range-Speaker-8-Ohm-292-7826
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton R10S 4_ Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69037,6 +70393,7 @@ Vd=0.0000028
 Dd=0.0844402
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-R10S-4-Full-Range-Speaker-4-Ohm-292-595
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton R10S 4_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69066,6 +70423,7 @@ Vd=0.0000028
 Dd=0.0844402
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-R10S-4-Full-Range-Speaker-8-Ohm-292-596
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton R10SC 4_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69095,6 +70453,7 @@ Vd=0.0000028
 Dd=0.0844402
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-R10SC-4-Full-Range-Speaker-8-Ohm-292-597
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton R10SC-4 4_ Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69124,6 +70483,7 @@ Vd=0.0000084
 Dd=0.0844402
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-R10SC-4-4-Fullrange-Speaker-4-Ohm-292-602
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton R10SCSpezial8 4_ Magnetically Shielded Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69153,6 +70513,7 @@ Vd=0.0000084
 Dd=0.0844402
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-R10SCSpezial8-4-Magnetically-Shielded-Full-Range-Speaker-8-Ohm-292-7815
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton R10STE4 4_ Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69182,6 +70543,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-R10STE4-4-Full-Range-Speaker-4-Ohm-292-7825
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton R10STE4 4_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69211,6 +70573,7 @@ Vd=0.0000084
 Dd=0.0844402
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-R10STE8-4-Full-Range-Speaker-8-Ohm-292-7813
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton SC 4.7 ND Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69240,6 +70603,7 @@ Vd=1.6e-8
 Dd=0.0451352
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-SC4.7-ND-Full-Range-Driver-8-Ohm-292-592
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton SC 5.9 2_ x 3.5_ Shielded Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69269,6 +70633,7 @@ Vd=0.000003735
 Dd=0.056306
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-SC-5.9-2-x-3.5-Shielded-Fullrange-Driver-8-Ohm-292-551
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton SC 5.9 OM-4 2_ x 3-1_2_ Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69298,6 +70663,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-SC-5.9-OM-4-2-x-3.5-Fullrange-Driver-4-Ohm-292-653
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton SC10N-8 1_ Soft Dome Tweeter Shielded 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69327,6 +70693,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-SC10N-8-1-Soft-Dome-Tweeter-Shielded-8-Ohm-292-790
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton SC13-8 5_ Paper Cone Full-Range Driver Shielded 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69356,6 +70723,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-SC13-8-5-Paper-Cone-Full-Range-Driver-Shielded-8-Ohm-292-792
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton SC4.9FL8 1.6_ x 3.5_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69385,6 +70753,7 @@ Vd=0.00000235
 Dd=0.0547002
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-SC4.9FL8-1.6-x-3.5-Full-Range-Speaker-8-Ohm-292-7839
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton SC5-8 Shielded 1_2_ Polycarbonate Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69414,6 +70783,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-SC5-8-Shielded-1-2-Polycarbonate-Tweeter-8-Ohm-292-552
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton SC5.9ND4 Magnetically Shielded 2_ x 3.5_ Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69443,6 +70813,7 @@ Vd=0.00000265
 Dd=0.0580869
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-SC5.9ND4-Magnetically-Shielded-2-x-3.5-Full-Range-Driver-4-Ohm-292-7840
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton SL70NDV4 2.5_ Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69472,6 +70843,7 @@ Vd=0.00000648
 Dd=0.0524423
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-SL70NDV4-2.5-Full-Range-Speaker-4-Ohm-292-7824
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton SL713-4 2-3_4_ x 5_ Paper Cone Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69501,6 +70873,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-SL713-4-2-3-4-x-5-Paper-Cone-Full-Range-Driver-4-Ohm-292-732
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton SL87 FE-8 Ohm 3.4_ Full Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69530,6 +70903,7 @@ Vd=0.0000065275
 Dd=0.0689143
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-SL87-FE-8-Ohm-3.4-Full-Range-Speaker-8-Ohm-292-614
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton SL87ND 3.4_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69559,6 +70933,7 @@ Vd=0.000016039
 Dd=0.0689143
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-SL87ND-3.4-Full-Range-Speaker-8-Ohm-292-615
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton SL87WPM-4 3.3_ Full-Range Speaker 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69588,6 +70963,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-SL87WPM-4-3.3-Full-Range-Speaker-4-Ohm-292-591
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton SL87WPM-8 3.3_ Full-Range Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69617,6 +70993,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-SL87WPM-8-3.3-Full-Range-Speaker-8-Ohm-292-590
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton SL87XA-4 3-1_4_ Waterproof Poly Cone Full-Range Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69646,6 +71023,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-SL87XA-4-3-1-4-Waterproof-Poly-Cone-Full-Range-Driver-4-Ohm-292-738
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton SL87XA-8 3-1_4_ Waterproof Poly Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69675,6 +71053,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-SL87XA-8-3-1-4-Waterproof-Poly-Cone-Full-Range-Driver-8-Ohm-292-740
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton TIW200XS8 8_ High-End Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69704,6 +71083,7 @@ Vd=0.0002575
 Dd=0.161953
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-TIW200XS8-8-High-End-Woofer-8-Ohm-292-7809
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton TIW250XS8 10_ High-End Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69733,6 +71113,7 @@ Vd=0.0004396
 Dd=0.199949
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-TIW250XS8-10-High-End-Woofer-8-Ohm-292-7810
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton TIW300-8 12_ High-End Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69762,6 +71143,7 @@ Vd=0.000816
 Dd=0.254824
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-TIW300-8-12-High-End-Woofer-8-Ohm-292-7811
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton TW6NG8 2_ Cone Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69791,6 +71173,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-TW6NG8-2-Cone-Tweeter-8-Ohm-292-7800
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton TW70-8 2.5_ Cone Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69820,6 +71203,7 @@ Vd=0.000001
 Dd=0.0504627
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-TW70-8-2.5-Cone-Tweeter-8-Ohm-292-7841
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W 100 C 4_ Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69849,6 +71233,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W-100-C-4-Woofer-4-Ohm-292-515
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W 100 C 4_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69878,6 +71263,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W-100-C-4-Woofer-8-Ohm-292-517
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W 150 X 5.9_ Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69907,6 +71293,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W-150-X-5.9-Woofer-4-Ohm-292-519
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W100S - 8`,date:``,content:`[Driver]
 Brand=Visaton
@@ -69936,6 +71323,7 @@ Vd=0.00001387366
 Dd=0.09398003123592383
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W100S-8-4-Woofer-with-Treated-Paper-Cone-8-Ohm-292-560
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W100S-4`,date:``,content:`[Driver]
 Brand=Visaton
@@ -69965,6 +71353,7 @@ Vd=0.0000138737
 Dd=0.09398
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W100S-4-4-Woofer-with-Treated-Paper-Cone-4-Ohm-292-558
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W100S-8 4_ Woofer with Treated Paper Cone 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -69994,6 +71383,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W100S-8-4-Woofer-with-Treated-Paper-Cone-8-Ohm-292-560
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W130S - 4`,date:``,content:`[Driver]
 Brand=Visaton
@@ -70023,6 +71413,7 @@ Vd=0.000020207092499999998
 Dd=0.1069339760062178
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W130S-4-5-Woofer-with-Treated-Paper-Cone-4-Ohm-292-562
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W130S - 8`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -70052,6 +71443,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W130S-8-5-Woofer-with-Treated-Paper-Cone-8-Ohm-292-564
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W130S-4 5_ Woofer with Treated Paper Cone 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -70081,6 +71473,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W130S-4-5-Woofer-with-Treated-Paper-Cone-4-Ohm-292-562
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W130S-8 5_ Woofer with Treated Paper Cone 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -70110,6 +71503,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W130S-8-5-Woofer-with-Treated-Paper-Cone-8-Ohm-292-564
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W150X4 5.9_ Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -70139,6 +71533,7 @@ Vd=
 Dd=0.102998
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W150X4-5.9-Woofer-4-Ohm-292-7843
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W170 - 8`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -70168,6 +71563,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W170-8-6.5-Woofer-8-Ohm-292-582
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W170-8 6.5_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -70197,6 +71593,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W170-8-6.5-Woofer-8-Ohm-292-582
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W170S - 4`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -70226,6 +71623,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W170S-4-6.5-Woofer-with-Treated-Paper-Cone-4-Ohm-292-566
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W170S - 8`,date:``,content:`[Driver]
 Brand=Visaton
@@ -70255,6 +71653,7 @@ Vd=0.00007319520000000001
 Dd=0.14808187173063037
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W170S-8-6.5-Woofer-with-Treated-Paper-Cone-8-Ohm-292-568
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W170S-4 6.5_ Woofer with Treated Paper Cone 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -70284,6 +71683,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W170S-4-6.5-Woofer-with-Treated-Paper-Cone-4-Ohm-292-566
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W170S-8 6.5_ Woofer with Treated Paper Cone 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -70313,6 +71713,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W170S-8-6.5-Woofer-with-Treated-Paper-Cone-8-Ohm-292-568
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W200 - 8`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -70342,6 +71743,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W200-8-8-Woofer-8-Ohm-292-584
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W200-8 8_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -70371,6 +71773,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W200-8-8-Woofer-8-Ohm-292-584
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W200S - 4`,date:``,content:`[Driver]
 Brand=Visaton
@@ -70400,6 +71803,7 @@ Vd=0.0000932183
 Dd=0.184149958964338
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W200S-4-8-Woofer-with-Treated-Paper-Cone-4-Ohm-292-570
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W200S - 8`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -70429,6 +71833,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W200S-8-8-Woofer-with-Treated-Paper-Cone-8-Ohm-292-572
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W200S-4 8_ Woofer with Treated Paper Cone 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -70458,6 +71863,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W200S-4-8-Woofer-with-Treated-Paper-Cone-4-Ohm-292-570
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W200S-8 8_ Woofer with Treated Paper Cone 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -70487,6 +71893,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W200S-8-8-Woofer-with-Treated-Paper-Cone-8-Ohm-292-572
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W250 - 8`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -70516,6 +71923,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W250-8-10-Woofer-8-Ohm-292-586
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W250-8 10_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -70545,6 +71953,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W250-8-10-Woofer-8-Ohm-292-586
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W250S - 4`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -70574,6 +71983,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W250S-4-10-Woofer-with-Treated-Paper-Cone-4-Ohm-292-574
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W250S - 8`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -70603,6 +72013,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W250S-8-10-Woofer-with-Treated-Paper-Cone-8-Ohm-292-576
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W250S-4 10_ Woofer with Treated Paper Cone 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -70632,6 +72043,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W250S-4-10-Woofer-with-Treated-Paper-Cone-4-Ohm-292-574
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W250S-8 10_ Woofer with Treated Paper Cone 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -70661,6 +72073,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W250S-8-10-Woofer-with-Treated-Paper-Cone-8-Ohm-292-576
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W300 - 8`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -70690,6 +72103,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W300-8-12-Woofer-8-Ohm-292-588
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton W300-8 12_ Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -70719,6 +72133,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-W300-8-12-Woofer-8-Ohm-292-588
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton WS-17E 6.5_ HiFi Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -70748,6 +72163,7 @@ Vd=0.00006435
 Dd=0.134935
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-WS17E-6.5-HiFi-Woofer-8-Ohm-292-599
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton WS13E 5_ Paper Cone Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -70777,6 +72193,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-WS13E-5-Paper-Cone-Full-Range-Driver-8-Ohm-292-678
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton WS17E-4 6-1_2_ Treated Paper Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -70806,6 +72223,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-WS17E-6-1-2-Treated-Paper-Cone-Woofer-4-Ohm-292-680
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton WS20E-4 8_ Poly Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -70835,6 +72253,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-WS20E-8-Poly-Cone-Woofer-4-Ohm-292-686
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton WS20E-8 8_ Poly Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -70864,6 +72283,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-WS20E-8-Poly-Cone-Woofer-8-Ohm-292-684
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Visaton WS25 E 10_ Paper Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Visaton
@@ -70893,6 +72313,7 @@ Vd=0.0001903
 Dd=0.209891
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Visaton-WS25E-10-Paper-Cone-Woofer-8-Ohm-292-598
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor FR040WA02 1-1_2_ Neodymium Aluminum Cone Full-Range 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -70922,6 +72343,7 @@ Vd=3.9e-7
 Dd=0.0315139
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-FR040WA02-1-1-2-Neodymium-Aluminum-Cone-Full-Range-8-Ohm-298-2002
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor SW118WA01 4-1_2_ Balanced Drive Paper Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -70951,6 +72373,7 @@ Vd=0.0000196
 Dd=0.0789865
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-SW118WA01-4-1-2-Balanced-Drive-Paper-Cone-Subwoofer-4-Ohm-298-1044
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor SW146WA01 5-3_4_ Balanced Drive Paper Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -70980,6 +72403,7 @@ Vd=0.000051
 Dd=0.104031
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-SW146WA01-5-3-4-Balanced-Drive-Paper-Cone-Subwoofer-4-Ohm-298-1048
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor SW168WA01 6-1_2_ Balanced Drive Paper Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71009,6 +72433,7 @@ Vd=0.0000889
 Dd=0.127162
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-SW168WA01-6-1-2-Balanced-Drive-Paper-Cone-Subwoofer-4-Ohm-298-1052
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor SW178WA01 7_ Aluminum Cone Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71038,6 +72463,7 @@ Vd=0.0000655
 Dd=0.129149
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-SW178WA01-7-Aluminum-Cone-Subwoofer-8-Ohm-298-1054
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor SW182BD03 7_ Balanced Drive Black Aluminum Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71067,6 +72493,7 @@ Vd=0.0000917
 Dd=0.129149
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-SW182BD03-7-Balanced-Drive-Black-Aluminum-Cone-Subwoofer-4-Ohm-298-1056
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor SW182BD04 7_ Balanced Drive Black Aluminum Cone Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71096,6 +72523,7 @@ Vd=0.0000917
 Dd=0.129149
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-SW182BD04-7-Balanced-Drive-Black-Aluminum-Cone-Subwoofer-8-Ohm-298-1058
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor SW215WA01 8-1_2_ Balanced Drive Paper Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71125,6 +72553,7 @@ Vd=0.000206
 Dd=0.161953
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-SW215WA01-8-1-2-Balanced-Drive-Paper-Cone-Subwoofer-4-Ohm-298-1060
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor SW215WA02 8-1_2_ Balanced Drive Paper Cone Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71154,6 +72583,7 @@ Vd=0.000206
 Dd=0.161953
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-SW215WA02-8-1-2-Balanced-Drive-Paper-Cone-Subwoofer-8-Ohm-298-1062
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor SW223BD02 8-3_4_ Black Aluminum Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71183,6 +72613,7 @@ Vd=0.00022042
 Dd=0.161953
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-SW223BD02-8-3-4-Black-Aluminum-Cone-Subwoofer-4-Ohm-298-1064
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor SW259WA02 10-1_4_ Aluminum Cone Subwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71212,6 +72643,7 @@ Vd=0.0003588
 Dd=0.199311
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-SW259WA02-10-1-4-Aluminum-Cone-Subwoofer-8-Ohm-298-1070
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor SW270WA01 10-1_2_ Balanced Drive Paper Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71241,6 +72673,7 @@ Vd=0.0003432
 Dd=0.199311
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-SW270WA01-10-1-2-Balanced-Drive-Paper-Cone-Subwoofer-4-Ohm-298-1072
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor SW280WA01 11_ Shallow Glass Fiber_PMI Foam Sandwich Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71270,6 +72703,7 @@ Vd=0.000201
 Dd=0.206527
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-SW280WA01-11-Shallow-Glass-Fiber-PMI-Foam-Sandwich-Cone-Subwoofer-4-Ohm-298-1078
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor TW022WA09 22mm Chambered Neo Textile Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71299,6 +72733,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-TW022WA09-22mm-Chambered-Neo-Textile-Tweeter-4-Ohm-298-1217
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor TW022WA10 22mm Chambered Neo Textile Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71328,6 +72763,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-TW022WA09-22mm-Chambered-Neo-Textile-Tweeter-Pair-4-Ohm-298-1218
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor TW030WA02 30mm Textile Dome Neodymium Tweeter with Heat Sink and Ferrofluid`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71357,6 +72793,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-TW030WA02-30-mm-Textile-Dome-Neodymium-Tweeter-with-Heat-Sink-and-Ferrofluid-298-2106
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor TW030WA06 30mm Textile Dome Tweeter with Rear Chamber with Ferrofluid 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71386,6 +72823,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-TW030WA06-30mm-Textile-Dome-Tweeter-with-Rear-Chamber-with-Ferrofluid-4-Ohm-298-1110
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor TW030WA07 30mm Textile Dome Tweeter with Rear Chamber 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71415,6 +72853,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-TW030WA07-30mm-Textile-Dome-Tweeter-with-Rear-Chamber-8-Ohm-298-1112
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor TW030WA11 30mm Semi Horn Loaded Textile Dome Tweeter with Rear Chamber 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71444,6 +72883,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-TW030WA11-30mm-Semi-Horn-Loaded-Textile-Dome-Tweeter-with-Rear-Chamber-4-Ohm-298-1120
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor TW030WA12 30mm Semi Horn Loaded Textile Dome Tweeter with Rear Chamber 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71473,6 +72913,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-TW030WA12-30mm-Semi-Horn-Loaded-Textile-Dome-Tweeter-with-Rear-Chamber-8-Ohm-298-1122
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor TW030WA13 30mm Textile Dome Neodymium Tweeter with Heat Sink and Rear Chamber 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71502,6 +72943,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-TW030WA13-30mm-Textile-Dome-Neodymium-Tweeter-with-Heat-Sink-and-Rear-Chamber-4-Ohm-298-1124
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor TW030WA14 30mm Textile Dome Neodymium Tweeter with Heat Sink and Rear Chamber 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71531,6 +72973,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-TW030WA14-30mm-Textile-Dome-Neodymium-Tweeter-with-Heat-Sink-and-Rear-Chamber-8-Ohm-298-1126
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor TW030WA21 30mm Graphene Dome Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71561,6 +73004,7 @@ Dd=
 numVC=1
 VCCon=2
 boxbench_dq_issue=Qts=11.46: Implausible for a tweeter — tweeters normally have Qts 0.3–2. Likely a data entry error. Correct value unknown; datasheet lookup required before use.
+boxbench_source=https://www.parts-express.com/Wavecor-TW030WA21-30mm-Graphene-Dome-Tweeter-4-Ohm-298-1219
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor TW030WA22 30mm Graphene Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71590,6 +73034,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-TW030WA22-30mm-Graphene-Dome-Tweeter-8-Ohm-298-1220
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor TW030WA23 30mm Chambered Graphene Dome Neo Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71619,6 +73064,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-TW030WA23-30mm-Chambered-Graphene-Dome-Neo-Tweeter-4-Ohm-298-1221
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor TW030WA24 30mm Chambered Graphene Dome Neo Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71648,6 +73094,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-TW030WA24-30mm-Chambered-Graphene-Dome-Neo-Tweeter-8-Ohm-298-1222
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor TW045WA01 45mm Coaxial Neo Tweeter 4 Ohm White`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71677,6 +73124,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-TW045WA01-45mm-Coaxial-Neo-Tweeter-4-Ohm-White-298-1223
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor TW045WA02 45mm Coaxial Neo Tweeter 4 Ohm Black`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71706,6 +73154,7 @@ Vd=
 Dd=
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-TW045WA02-45mm-Coaxial-Neo-Tweeter-4-Ohm-Black-298-1224
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF090WA01 3-1_2_ Paper Cone Mid-Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71735,6 +73184,7 @@ Vd=0.0000099
 Dd=0.0677028
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF090WA01-3-1-2-Paper-Cone-Mid-Woofer-4-Ohm-298-1128
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF090WA02`,date:``,content:`[Driver]
 Brand=Wavecor
@@ -71764,6 +73214,7 @@ Vd=0.0000124575
 Dd=0.075946
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF090WA02-3-1-2-Paper-Cone-Mid-Woofer-8-Ohm-298-1130
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF095WA01 3-3_4_ Paper Cone Midwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71793,6 +73244,7 @@ Vd=0.00000945
 Dd=0.0667558
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF095WA01-3-3-4-Paper-Cone-Midwoofer-4-Ohm-298-1225
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF095WA02 3-3_4_ Paper Cone Midwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71822,6 +73274,7 @@ Vd=0.00000972
 Dd=0.0677028
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF095WA02-3-3-4-Paper-Cone-Midwoofer-8-Ohm-298-1226
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF118WA01`,date:``,content:`[Driver]
 Brand=Wavecor
@@ -71851,6 +73304,7 @@ Vd=0.000020141
 Dd=0.092456
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF118WA01-4-1-2-Paper-Cone-Mid-Woofer-4-Ohm-298-1132
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF118WA02 4-1_2_ Paper Cone Mid-Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71880,6 +73334,7 @@ Vd=0.0000165
 Dd=0.0836828
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF118WA02-4-1-2-Paper-Cone-Mid-Woofer-8-Ohm-298-1134
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF118WA05`,date:``,content:`[Driver]
 Brand=Wavecor
@@ -71909,6 +73364,7 @@ Vd=0.000020363
 Dd=0.092964
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF118WA05-4-1-2-Glass-Fiber-Cone-Mid-Woofer-4-Ohm-298-1136
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF118WA06`,date:``,content:`[Driver]
 Brand=Wavecor
@@ -71938,6 +73394,7 @@ Vd=0.000020363
 Dd=0.092964
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF118WA06-4-1-2-Glass-Fiber-Cone-Mid-Woofer-8-Ohm-298-1138
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF118WA07 4-1_2_ Balanced Drive Paper Cone Mid-Woofer with Truncated Frame 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71967,6 +73424,7 @@ Vd=0.0000216
 Dd=0.0829186
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF118WA07-4-1-2-Balanced-Drive-Paper-Cone-Mid-Woofer-with-Truncated-Frame-4-Ohm-298-1140
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF118WA08 4-1_2_ Balanced Drive Paper Cone Mid-Woofer with Truncated Frame 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -71996,6 +73454,7 @@ Vd=0.0000216
 Dd=0.0829186
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF118WA08-4-1-2-Balanced-Drive-Paper-Cone-Mid-Woofer-with-Truncated-Frame-8-Ohm-298-1142
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF120BD03`,date:``,content:`[Driver]
 Brand=Wavecor
@@ -72025,6 +73484,7 @@ Vd=0.0000314637
 Dd=0.100076
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF120BD03-4-3-4-Balanced-Drive-Paper-Cone-Mid-Woofer-4-Ohm-298-1144
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF120BD04`,date:``,content:`[Driver]
 Brand=Wavecor
@@ -72054,6 +73514,7 @@ Vd=0.0000314637
 Dd=0.100076
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF120BD04-4-3-4-Balanced-Drive-Paper-Cone-Mid-Woofer-8-Ohm-298-1146
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF120BD05 4-3_4_ Balanced Drive Paper_Glass Fiber Cone Mid-Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -72083,6 +73544,7 @@ Vd=0.0000216
 Dd=0.0829186
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF120BD05-4-3-4-Balanced-Drive-Paper-Glass-Fiber-Cone-Mid-Woofer-4-Ohm-298-1148
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF120BD06`,date:``,content:`[Driver]
 Brand=Wavecor
@@ -72112,6 +73574,7 @@ Vd=0.0000314637
 Dd=0.100076
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF120BD06-4-3-4-Balanced-Drive-Paper-Cone-Mid-Woofer-8-Ohm-298-1150
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF120BD07`,date:``,content:`[Driver]
 Brand=Wavecor
@@ -72141,6 +73604,7 @@ Vd=0.0000314637
 Dd=0.100076
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF120BD07-4-3-4-Balanced-Drive-Paper-Cone-Mid-Woofer-with-Truncated-Frame-4-Ohm-298-1152
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF120BD08`,date:``,content:`[Driver]
 Brand=Wavecor
@@ -72170,6 +73634,7 @@ Vd=0.0000314637
 Dd=0.100076
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF120BD08-4-3-4-Balanced-Drive-Paper-Cone-Mid-Woofer-with-Truncated-Frame-8-Ohm-298-1154
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF120BD09`,date:``,content:`[Driver]
 Brand=Wavecor
@@ -72199,6 +73664,7 @@ Vd=0.0000314637
 Dd=0.100076
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF120BD09-4-3-4-Balanced-Drive-Paper-Glass-Fiber-Cone-Mid-Woofer-with-Truncated-Fr-298-1156
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF120BD10`,date:``,content:`[Driver]
 Brand=Wavecor
@@ -72228,6 +73694,7 @@ Vd=0.0000314637
 Dd=0.100076
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF120BD10-4-3-4-Balanced-Drive-Paper-Glass-Fiber-Cone-Mid-Woofer-with-Truncated-Fr-298-1158
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF120BD11 4-3_4_ Kevlar_Carbon Fiber Cone Midwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -72257,6 +73724,7 @@ Vd=0.0000144
 Dd=0.0781764
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF120BD11-4-3-4-Kevlar-Carbon-Fiber-Cone-Midwoofer-4-Ohm-298-1227
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF120BD12 4-3_4_ Kevlar_Carbon Fiber Cone Midwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -72286,6 +73754,7 @@ Vd=0.0000144
 Dd=0.0781764
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF120BD12-4-3-4-Kevlar-Carbon-Fiber-Cone-Midwoofer-8-Ohm-298-1228
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF132TU01`,date:``,content:`[Driver]
 Brand=Wavecor
@@ -72315,6 +73784,7 @@ Vd=0
 Dd=0.119888
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF132TU01-5-1-4-Paper-Cone-Neodymium-Mid-Woofer-4-Ohm-298-1160
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF132TU02 5-1_4_ Paper Cone Mid-Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -72344,6 +73814,7 @@ Vd=
 Dd=0.109981
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF132TU02-5-1-4-Paper-Cone-Mid-Woofer-4-Ohm-298-1162
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF146WA01 5-3_4_ Paper Cone Mid-Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -72373,6 +73844,7 @@ Vd=0.0000285
 Dd=0.109981
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF146WA01-5-3-4-Paper-Cone-Mid-Woofer-4-Ohm-298-1164
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF146WA02 5-3_4_ Paper Cone Mid-Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -72402,6 +73874,7 @@ Vd=0.0000285
 Dd=0.109981
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF146WA02-5-3-4-Paper-Cone-Mid-Woofer-8-Ohm-298-1166
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF146WA05 5-3_4_ Glass Fiber Cone Mid-Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -72431,6 +73904,7 @@ Vd=0.0000279
 Dd=0.108817
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF146WA05-5-3-4-Glass-Fiber-Cone-Mid-Woofer-4-Ohm-298-1168
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF146WA06 5-3_4_ Glass Fiber Cone Mid-Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -72460,6 +73934,7 @@ Vd=0.0000279
 Dd=0.108817
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF146WA06-5-3-4-Glass-Fiber-Cone-Mid-Woofer-8-Ohm-298-1170
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF152BD03`,date:``,content:`[Driver]
 Brand=Wavecor
@@ -72489,6 +73964,7 @@ Vd=0.0000579203
 Dd=0.128016
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF152BD03-6-Balanced-Drive-Paper-Cone-Mid-Woofer-4-Ohm-298-1172
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF152BD04`,date:``,content:`[Driver]
 Brand=Wavecor
@@ -72518,6 +73994,7 @@ Vd=0.0000579203
 Dd=0.128016
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF152BD04-6-Balanced-Drive-Paper-Cone-Mid-Woofer-8-Ohm-298-1174
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF152BD05`,date:``,content:`[Driver]
 Brand=Wavecor
@@ -72547,6 +74024,7 @@ Vd=0.0000579203
 Dd=0.128016
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF152BD05-6-Balanced-Drive-Paper-Glass-Fiber-Cone-Mid-Woofer-4-Ohm-298-1176
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF152BD06`,date:``,content:`[Driver]
 Brand=Wavecor
@@ -72576,6 +74054,7 @@ Vd=0.0000579203
 Dd=0.128016
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF152BD06-6-Balanced-Drive-Paper-Glass-Fiber-Cone-Mid-Woofer-8-Ohm-298-1178
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF152BD07`,date:``,content:`[Driver]
 Brand=Wavecor
@@ -72605,6 +74084,7 @@ Vd=0.0000579203
 Dd=0.128016
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF152BD07-6-Balanced-Drive-Paper-Glass-Fiber-Cone-Mid-Woofer-with-Truncated-Frame-298-1180
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF152BD08`,date:``,content:`[Driver]
 Brand=Wavecor
@@ -72634,6 +74114,7 @@ Vd=0.0000579203
 Dd=0.128016
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF152BD08-6-Balanced-Drive-Paper-Glass-Fiber-Cone-Mid-Woofer-with-Truncated-Frame-298-1182
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF152BD09 6_ Kevlar_Carbon Fiber Cone Midwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -72663,6 +74144,7 @@ Vd=0.00003825
 Dd=0.104031
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF152BD09-6-Kevlar-Carbon-Fiber-Cone-Midwoofer-4-Ohm-298-1229
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF152BD10 6_ Kevlar_Carbon Fiber Cone Midwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -72692,6 +74174,7 @@ Vd=0.00003825
 Dd=0.104031
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF152BD10-6-Kevlar-Carbon-Fiber-Cone-Midwoofer-8-Ohm-298-1230
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF152BD13 6_ Black Coated Paper_Glass Fiber Cone Midwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -72721,6 +74204,7 @@ Vd=0.00004185
 Dd=0.108817
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF152BD13-6-Black-Coated-Paper-Glass-Fiber-Cone-Midwoofer-4-Ohm-298-1231
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF152BD14 6_ Black Coated Paper_Glass Fiber Cone Midwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -72750,6 +74234,7 @@ Vd=0.00004185
 Dd=0.108817
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF152BD14-6-Black-Coated-Paper-Glass-Fiber-Cone-Midwoofer-8-Ohm-298-1232
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF166TU01`,date:``,content:`[Driver]
 Brand=Wavecor
@@ -72779,6 +74264,7 @@ Vd=0
 Dd=0.149098
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF166TU01-6-1-2-Paper-Cone-Neodymium-Mid-Woofer-4-Ohm-298-1184
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF166TU02 6-1_2_ Paper Cone Mid-Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -72808,6 +74294,7 @@ Vd=0.0000417
 Dd=0.133034
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF166TU02-6-1-2-Paper-Cone-Mid-Woofer-4-Ohm-298-1186
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF168WA01`,date:``,content:`[Driver]
 Brand=Wavecor
@@ -72837,6 +74324,7 @@ Vd=0.0000481832
 Dd=0.143002
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF168WA01-6-1-2-Paper-Cone-Mid-Woofer-4-Ohm-298-1188
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF168WA02 6-1_2_ Paper Cone Mid-Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -72866,6 +74354,7 @@ Vd=0.0000417
 Dd=0.133034
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF168WA02-6-1-2-Paper-Cone-Mid-Woofer-8-Ohm-298-1190
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF168WA05`,date:``,content:`[Driver]
 Brand=Wavecor
@@ -72895,6 +74384,7 @@ Vd=0.0000481832
 Dd=0.143002
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF168WA05-6-1-2-Glass-Fiber-Cone-Mid-Woofer-4-Ohm-298-1192
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF168WA06 6-1_2_ Glass Fiber Cone Mid-Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -72924,6 +74414,7 @@ Vd=0.0000393
 Dd=0.129149
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF168WA06-6-1-2-Glass-Fiber-Cone-Mid-Woofer-8-Ohm-298-1194
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF182BD03`,date:``,content:`[Driver]
 Brand=Wavecor
@@ -72953,6 +74444,7 @@ Vd=0.000100998
 Dd=0.152908
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF182BD03-7-Balanced-Drive-Paper-Cone-Mid-Woofer-4-Ohm-298-1196
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF182BD04`,date:``,content:`[Driver]
 Brand=Wavecor
@@ -72982,6 +74474,7 @@ Vd=0.000100998
 Dd=0.152908
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF182BD04-7-Balanced-Drive-Paper-Cone-Mid-Woofer-8-Ohm-298-1198
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF182BD07`,date:``,content:`[Driver]
 Brand=Wavecor
@@ -73011,6 +74504,7 @@ Vd=0.000100998
 Dd=0.152908
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF182BD07-7-Balanced-Drive-Paper-Cone-Mid-Woofer-with-Truncated-Frame-4-Ohm-298-1200
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF182BD08`,date:``,content:`[Driver]
 Brand=Wavecor
@@ -73040,6 +74534,7 @@ Vd=0.000100998
 Dd=0.152908
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF182BD08-7-Balanced-Drive-Paper-Cone-Mid-Woofer-with-Truncated-Frame-8-Ohm-298-1202
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF182BD09`,date:``,content:`[Driver]
 Brand=Wavecor
@@ -73069,6 +74564,7 @@ Vd=0.000100998
 Dd=0.152908
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF182BD09-7-Balanced-Drive-Paper-Glass-Fiber-Cone-Mid-Woofer-4-Ohm-298-1204
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF182BD10 7_ Balanced Drive Paper_Glass Fiber Cone Mid-Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -73098,6 +74594,7 @@ Vd=0.00007205
 Dd=0.129149
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF182BD10-7-Balanced-Drive-Paper-Glass-Fiber-Cone-Mid-Woofer-8-Ohm-298-1206
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF182BD11`,date:``,content:`[Driver]
 Brand=Wavecor
@@ -73127,6 +74624,7 @@ Vd=0.000100998
 Dd=0.152908
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF182BD11-7-Balanced-Drive-Paper-Glass-Fiber-Cone-Mid-Woofer-with-Truncated-Frame-298-1208
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF182BD12 7_ Balanced Drive Paper_Glass Fiber Cone Mid-Woofer with Truncated Frame 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -73156,6 +74654,7 @@ Vd=0.00007205
 Dd=0.129149
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF182BD12-7-Balanced-Drive-Paper-Glass-Fiber-Cone-Mid-Woofer-with-Truncated-Frame-298-1210
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF182BD13 7_ Kevlar_Carbon Fiber Cone Midwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -73185,6 +74684,7 @@ Vd=0.00006435
 Dd=0.122053
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF182BD13-7-Kevlar-Carbon-Fiber-Cone-Midwoofer-4-Ohm-298-1233
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF182BD14 7_ Kevlar_Carbon Fiber Cone Midwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -73214,6 +74714,7 @@ Vd=0.00006435
 Dd=0.122053
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF182BD14-7-Kevlar-Carbon-Fiber-Cone-Midwoofer-8-Ohm-298-1234
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF182BD17 7_ Black Coated Paper_Glass Fiber Cone Midwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -73243,6 +74744,7 @@ Vd=0.00007205
 Dd=0.129149
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF182BD17-7-Black-Coated-Paper-Glass-Fiber-Cone-Midwoofer-4-Ohm-298-1235
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF182BD18 7_ Black Coated Paper_Glass Fiber Cone Midwoofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -73272,6 +74774,7 @@ Vd=0.00007205
 Dd=0.129149
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF182BD18-7-Black-Coated-Paper-Glass-Fiber-Cone-Midwoofer-8-Ohm-298-1236
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF211PA01 8-1_4_ Paper Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -73301,6 +74804,7 @@ Vd=0.0000428
 Dd=0.165068
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF211PA01-8-1-4-Paper-Cone-Woofer-4-Ohm-298-1237
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF211PA02 8-1_4_ Paper Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -73330,6 +74834,7 @@ Vd=0.0000428
 Dd=0.165068
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF211PA02-8-1-4-Paper-Cone-Woofer-8-Ohm-298-1238
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF223BD01 8-3_4_ Balanced Drive Paper_Glass Fiber Cone Mid-Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -73359,6 +74864,7 @@ Vd=0.00013845
 Dd=0.164682
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF223BD01-8-3-4-Balanced-Drive-Paper-Glass-Fiber-Cone-Mid-Woofer-4-Ohm-298-1212
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF223BD02 8-3_4_ Balanced Drive Paper_Glass Fiber Cone Mid-Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -73388,6 +74894,7 @@ Vd=0.00013845
 Dd=0.164682
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF223BD02-8-3-4-Balanced-Drive-Paper-Glass-Fiber-Cone-Mid-Woofer-8-Ohm-298-1214
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF275BD01 10-3_4_ Paper Cone Woofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -73417,6 +74924,7 @@ Vd=0.0002808
 Dd=0.199311
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF275BD01-10-3-4-Paper-Cone-Woofer-4-Ohm-298-1239
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `},{name:`Wavecor WF275BD02 10-3_4_ Paper Cone Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=Wavecor
@@ -73446,5 +74954,6 @@ Vd=0.0002808
 Dd=0.199311
 numVC=1
 VCCon=2
+boxbench_source=https://www.parts-express.com/Wavecor-WF275BD02-10-3-4-Paper-Cone-Woofer-8-Ohm-298-1240
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
 `}]}]},Vu={key:0,class:`modal`},Hu={class:`body`},Uu={class:`statusrow`},Wu=[`disabled`],Gu={class:`dlist`},Ku=[`onClick`],qu={class:`dmeta`},Ju=[`href`,`title`],Yu=[`title`,`onClick`],Xu={key:3,class:`stag`},Zu={key:0,class:`status loading`},Qu={class:`addrow`},$u=fl({__name:`DriverBrowser`,setup(e){let t=zu.sources||[],n=I([]),r=I(``),i=I(``),a=I(!1),o=I(``),s=I(!1),c=I(!1),l=I(!1);function u(e){if(!e)return``;let t=e.trim();if(/^\d{4}-\d{2}-\d{2}$/.test(t))return t;let n=t.match(/^(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})$/);if(n)return`${n[3]}-${n[2].padStart(2,`0`)}-${n[1].padStart(2,`0`)}`;let r=new Date(t);return isNaN(r)?t:r.toISOString().slice(0,10)}let d=q(()=>{let e=r.value.toLowerCase().trim().split(/\s+/).filter(Boolean),t=[...e.length?n.value.filter(t=>{let n=t.name.toLowerCase();return e.every(e=>n.includes(e))}):n.value].sort((e,t)=>e.name.localeCompare(t.name,void 0,{sensitivity:`base`})),i={},a={};for(let e of t){a[e.name]=(a[e.name]||0)+1;let t=u(e.date);t>(i[e.name]||``)&&(i[e.name]=t)}return t.map(e=>{let t=u(e.date),n=a[e.name]>1,r=n&&t!==``&&t===i[e.name];return{...e,_nd:t,_isLatest:r,_isOlder:n&&!r}})});async function f(e){let t=await fetch(`https://api.github.com/repos/${e}`);if(!t.ok)throw Error(`repo not found (`+t.status+`)`);return(await t.json()).default_branch||`main`}async function p(e){try{let t=e.branch||await f(e.repo),r=await fetch(`https://api.github.com/repos/${e.repo}/git/trees/${t}?recursive=1`);if(!r.ok)return;let a=(await r.json()).tree||[],o=(e.path||``).replace(/^\/|\/$/g,``),s=a.filter(e=>e.type===`blob`&&e.path.toLowerCase().endsWith(`.wdr`)&&(!o||e.path.toLowerCase().startsWith(o.toLowerCase()+`/`))).map(n=>({path:n.path,branch:t,repo:e.repo,name:n.path.split(`/`).pop().replace(/\.wdr$/i,``),sourceName:e.name,sourceUrl:e.url||``,sourceDesc:e.description||``}));n.value=[...n.value.filter(t=>t.sourceName!==e.name),...s],i.value=`${n.value.length} drivers`}catch{}}function m(e){if(e=e.trim(),!e)return null;let t=e.match(/github\.com\/([^/]+)\/([^/]+?)(?:\.git)?(?:\/tree\/([^/]+)(?:\/(.*))?)?$/i);return t?{name:t[1]+`/`+t[2],type:`github`,repo:t[1]+`/`+t[2],branch:t[3]||``,path:t[4]||``}:(t=e.match(/^([\w.-]+)\/([\w.-]+)$/),t?{name:e,type:`github`,repo:e,branch:``,path:``}:null)}let h=Object.fromEntries((Bu.sources||[]).map(e=>[e.name,e.files]));async function g(){if(s.value)return;s.value=!0,a.value=!1;for(let e of t){let t=h[e.name];if(!t)continue;let r=t.map(t=>({name:t.name,content:t.content,date:t.date||``,datasheet:t.datasheet||``,path:null,repo:null,branch:null,sourceName:e.name,sourceUrl:e.url||``,sourceDesc:e.description||``}));n.value=[...n.value,...r]}i.value=`${n.value.length} drivers`;let e=t.filter(e=>!h[e.name]).map(e=>{let t=e.url?.match(/github\.com\/([^/]+\/[^/]+?)(?:\/tree\/([^/]+)(?:\/(.*?))?)?(?:\.git)?$/i);return t?{...e,repo:t[1],branch:t[2]||``,path:t[3]||``}:e}).filter(e=>e.repo);e.length&&await Promise.all(e.map(p)),i.value=n.value.length?`${n.value.length} drivers`:`No drivers loaded — check network`}async function _(){if(c.value||l.value)return;l.value=!0,a.value=!1;let e;try{e=await fetch(`https://speakerboxlite.com/api/v1/speakers/count`)}catch{a.value=!0,i.value=`speakerboxlite.com CORS error — their API returns Access-Control-Allow-Origin on HEAD requests but not GET requests, so browsers block it. This is a bug on their server; nothing can be done client-side.`,l.value=!1;return}if(!e.ok){a.value=!0,i.value=`SpeakerBoxLite: server returned ${e.status}`,l.value=!1;return}try{let{count:t}=await e.json(),r=Math.ceil(t/500),a=[];for(let e=0;e<r;e++){i.value=`SpeakerBoxLite: loading ${Math.min((e+1)*500,t)} / ${t}…`;let n=await(await fetch(`https://speakerboxlite.com/api/v1/speakers?offset=${e*500}&limit=500`)).json();for(let e of n)a.push({path:null,branch:null,repo:null,name:[e.brand,e.model].filter(Boolean).join(` `)||e.name||`Unknown`,sourceName:`SpeakerBoxLite`,sourceUrl:`https://www.speakerboxlite.com/`,sourceDesc:`speakerboxlite.com community database`,sblData:e})}n.value=[...n.value.filter(e=>e.sourceName!==`SpeakerBoxLite`),...a],c.value=!0,i.value=`${n.value.length} drivers total`}catch(e){a.value=!0,i.value=`SpeakerBoxLite load failed mid-stream: `+e.message}l.value=!1}async function v(){let e=m(o.value);if(!e){a.value=!0,i.value=`Enter owner/repo or a github.com URL`;return}a.value=!1,i.value=`Loading ${e.name}…`,await p(e),o.value=``}async function y(e){if(e.sblData){let t=e.sblData,n={name:e.name,brand:t.brand||``,model:t.model||``,Fs:t.fs,Qts:t.qts,Qes:t.qes,Qms:t.qms,Vas:t.vas_l==null?void 0:t.vas_l/1e3,Sd:t.sd_cm2==null?void 0:t.sd_cm2/1e4,Re:t.re,Le:t.le_mh==null?void 0:t.le_mh/1e3,Bl:t.bl,Xmax:t.xmax_mm==null?void 0:t.xmax_mm/1e3,Mms:t.mms_g==null?void 0:t.mms_g/1e3,Cms:t.cms_mm_n==null?void 0:1/(t.cms_mm_n*1e3),Rms:t.rms,Pe:t.pe};Object.keys(n).forEach(e=>n[e]===void 0&&delete n[e]),Z.driverRaw=n,Z.browseOpen=!1;return}if(e.content){Z.driverRaw=Fo(e.content),Z.browseOpen=!1;return}a.value=!1,i.value=`Loading `+e.name+`…`;try{let t=`https://raw.githubusercontent.com/${e.repo}/${e.branch}/${e.path.split(`/`).map(encodeURIComponent).join(`/`)}`,n=await fetch(t);if(!n.ok)throw Error(`fetch failed (`+n.status+`)`);Z.driverRaw=Fo(await n.text()),Z.browseOpen=!1}catch(e){a.value=!0,i.value=`Could not load: `+e.message}}function b(e){e&&window.open(e,`_blank`,`noopener`)}Mn(()=>Z.browseOpen,e=>{e&&g()});function x(){Z.browseOpen=!1}function S(e){e.target===e.currentTarget&&x()}return(e,t)=>(B(),V(`div`,{class:k([`overlay`,{on:L(Z).browseOpen}]),onClick:S},[L(Z).browseOpen?(B(),V(`div`,Vu,[H(`h2`,null,[t[3]||=W(` Browse driver library `,-1),H(`span`,{class:`x`,onClick:x,title:`Close the driver library browser`},`×`)]),H(`div`,Hu,[En(H(`input`,{class:`filter`,"onUpdate:modelValue":t[0]||=e=>r.value=e,placeholder:`Search drivers…`,autofocus:``},null,512),[[ho,r.value]]),H(`div`,Uu,[H(`span`,{class:k([`status`,{err:a.value}])},A(i.value),3),c.value?G(``,!0):(B(),V(`button`,{key:0,class:`sblbtn`,disabled:l.value,title:`Load ~6000 drivers from the speakerboxlite.com community database (fetched live)`,onClick:_},A(l.value?`Loading…`:`+ SpeakerBoxLite`),9,Wu))]),H(`div`,Gu,[(B(!0),V(z,null,Sr(d.value.slice(0,500),e=>(B(),V(`div`,{key:(e.sourceName||``)+(e.path||``)+e.name,class:k([`ditem`,e._isLatest&&`ditem-latest`,e._isOlder&&`ditem-older`]),onClick:t=>y(e)},[H(`b`,null,A(e.name),1),H(`span`,qu,[e._nd?(B(),V(`span`,{key:0,class:k([`ddate`,e._isLatest&&`ddate-latest`,e._isOlder&&`ddate-older`])},A(e._nd),3)):G(``,!0),e.datasheet?(B(),V(`a`,{key:1,class:`dpdf`,href:e.datasheet,target:`_blank`,rel:`noopener`,title:e.datasheet,onClick:t[1]||=wo(()=>{},[`stop`])},A(e.datasheet.match(/\.pdf(\?|$)/i)?`PDF`:`↗`),9,Ju)):G(``,!0),e.sourceUrl?(B(),V(`a`,{key:2,class:`stag`,title:e.sourceUrl+(e.sourceDesc?` — `+e.sourceDesc:``),onClick:wo(t=>b(e.sourceUrl),[`stop`,`prevent`])},A(e.sourceName),9,Yu)):(B(),V(`span`,Xu,A(e.sourceName),1))])],10,Ku))),128)),!d.value.length&&!a.value?(B(),V(`div`,Zu,A(r.value?`No matching drivers.`:`Loading…`),1)):G(``,!0)]),H(`div`,Qu,[En(H(`input`,{"onUpdate:modelValue":t[2]||=e=>o.value=e,placeholder:`Add GitHub source: owner/repo or full URL`,onKeydown:Eo(v,[`enter`]),title:`Load .wdr files from any public GitHub repository and add them to the pool`},null,544),[[ho,o.value]]),H(`button`,{onClick:v,title:`Fetch .wdr files from the specified GitHub repository`},`Add`)])])])):G(``,!0)],2))}},[[`__scopeId`,`data-v-c0e15302`]]),ed={key:0,class:`flash`},td={__name:`Flash`,setup(e){return(e,t)=>L(Ts)?(B(),V(`div`,ed,A(L(Ts)),1)):G(``,!0)}},nd={Fs:37,Qts:.38,Qes:.4,Qms:7,Vas:.03,Sd:.0133,Re:5.6,Le:7e-4,Xmax:.005,Pe:60,Z:8},rd=.1,id=.5,ad=3,od=.02,sd=1e6,cd=2.83,ld=10,ud=1e3,dd=300,fd=300,pd=12,md=15,hd=30,gd=.025,_d=7,vd=2,yd=1.5,bd=24,xd=112.1;function Sd(){let e=Po(nd),t={...e,Le:0},n=e.Fs*Math.sqrt(1+e.Vas/od),r=e.Qts*Math.sqrt(1+e.Vas/od),i={Vb:od,Ql:sd,nDrivers:1,wiring:`parallel`,eg:cd,fmin:ld,fmax:ud,N:dd},a=ts(t,`sealed`,i),o=a.spl[a.spl.length-1],s=0;for(let e=0;e<a.fs.length;e++){let t=a.fs[e]/n,i=t**4/((1-t*t)**2+t*t/(r*r));s=Math.max(s,Math.abs(a.spl[e]-(o+10*Math.log10(i))))}let c=4*Math.PI**2/345**3*(e.Fs**3*e.Vas)/e.Qes,l=xd+10*Math.log10(c)+10*Math.log10(cd**2/e.Re),u=a.fs.findIndex(e=>e>=fd),d=a.spl[u],f=od/(J*345*345),p=2*Math.PI*hd,m=1/(p*p*f),h=Math.PI*gd**2,g=ts(e,`vented`,{...i,Ql:_d,Sp:h,Leff:m*h/J}),_=g.fs.findIndex(e=>e>=pd),v=g.fs.findIndex(e=>e>=md),y=(g.spl[v]-g.spl[_])/Math.log2(g.fs[v]/g.fs[_]),b=[];for(let t=1;t<g.zmag.length-1;t++)g.zmag[t]>g.zmag[t-1]&&g.zmag[t]>g.zmag[t+1]&&g.zmag[t]>e.Re*yd&&b.push(+g.fs[t].toFixed(1));let x=s<rd,S=Math.abs(d-l)<id,C=Math.abs(y-bd)<ad&&b.length===vd,w=x&&S&&C;return console.log(`[Resonate self-test]`,`GATE1 sealed≡closed-form: max err ${s.toFixed(4)} dB → ${x?`PASS`:`FAIL`}`,`GATE2 sensitivity: circuit ${d.toFixed(2)} vs predicted ${l.toFixed(2)} dB → ${S?`PASS`:`FAIL`}`,`GATE3 vented slope ${y.toFixed(1)} dB/oct, peaks ${JSON.stringify(b)} → ${C?`PASS`:`FAIL`}`,`OVERALL: ${w?`ALL PASS`:`FAIL`}`),w||Es(`⚠ Physics self-test FAILED (${[!x&&`GATE1`,!S&&`GATE2`,!C&&`GATE3`].filter(Boolean).join(`, `)}) — open console for details`),window._selfTestDone=!0,{p1:x,p2:S,p3:C}}var Cd={class:`layout`},wd={id:`side`,class:`side`},Td={class:`main`};Ao({__name:`App`,setup(e){function t(){let e=Ss();e&&n(e)}function n(e){e.driver&&(Z.driverRaw=e.driver),e.box&&(Z.box=e.box),e.P&&Object.assign(Z.P,e.P),Array.isArray(e.graphs)&&e.graphs.length&&(Z.graphs=e.graphs)}let r=!1;return Mn(()=>bs(Z,Q.value,Z.compare),e=>{r&&Cs(e)},{deep:!0}),fr(()=>{let e=Ss();if(e)n(e);else{let e=ws();e&&n(e)}r=!0,Sd(),window.addEventListener(`hashchange`,t)}),gr(()=>{window.removeEventListener(`hashchange`,t)}),(e,t)=>(B(),V(z,null,[U(Ps),H(`div`,Cd,[H(`div`,wd,[U(uu)]),H(`div`,Td,[U(Au),U(Ru)])]),U($u),U(td)],64))}}).mount(`#app`);
