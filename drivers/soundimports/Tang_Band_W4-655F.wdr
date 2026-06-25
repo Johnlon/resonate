@@ -16,7 +16,6 @@ Re=6.0
 Le=0.00043
 BL=5.73
 Cms=1.104
-Sd=5.7e-07
 Xmax=0.003
 Pe=50.0
 Vd=2e-09
@@ -56,4 +55,5 @@ boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
 boxbench_detail=Automatically scraped from SoundImports (scraped via soundimports.eu). T/S parameters have not been verified by a human against the datasheet.
 boxbench_source=https://www.soundimports.eu/en/tang-band-w4-655f.html
+boxbench_corrections=Sd=0.006 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

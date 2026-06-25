@@ -18,7 +18,6 @@ BL=11.1
 Mms=0.018
 Cms=0.00066
 Rms=0.52
-Sd=2.19e-06
 Vas=0.0443
 Dd=0.001669849
 EBP=176.92
@@ -56,4 +55,5 @@ boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
 boxbench_detail=Automatically scraped from SoundImports (scraped via soundimports.eu). T/S parameters have not been verified by a human against the datasheet.
 boxbench_source=https://www.soundimports.eu/en/jantzen-audio-ja-8008hmq.html
+boxbench_corrections=Sd=0.022 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

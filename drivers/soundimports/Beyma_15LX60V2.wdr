@@ -18,7 +18,6 @@ BL=21.1
 Mms=0.000147
 Cms=0.092
 Rms=1.9
-Sd=9.1e-06
 Vas=0.105
 Xmax=0.008
 Pe=700.0
@@ -59,4 +58,5 @@ boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
 boxbench_detail=Automatically scraped from SoundImports (scraped via soundimports.eu). T/S parameters have not been verified by a human against the datasheet.
 boxbench_source=https://www.soundimports.eu/en/beyma-15lx60v2.html
+boxbench_corrections=Sd=0.091 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

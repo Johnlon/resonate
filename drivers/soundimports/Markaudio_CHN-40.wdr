@@ -15,7 +15,6 @@ BL=3.1071
 Mms=0.0016942
 Cms=0.0015733
 Rms=0.2753
-Sd=2.3e-05
 Pe=7.0
 Dd=0.005411516
 fLe=0
@@ -52,4 +51,5 @@ boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
 boxbench_detail=Automatically scraped from SoundImports (scraped via soundimports.eu). T/S parameters have not been verified by a human against the datasheet.
 boxbench_source=https://www.soundimports.eu/en/markaudio-chn-40.html
+boxbench_corrections=Sd=0.230 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

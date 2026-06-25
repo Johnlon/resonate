@@ -18,7 +18,6 @@ BL=15.5
 Mms=2.8e-05
 Cms=0.192
 Rms=4.5
-Sd=2.2e-06
 Vas=0.0131
 Xmax=0.006
 Pe=600.0
@@ -59,4 +58,5 @@ boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
 boxbench_detail=Automatically scraped from SoundImports (scraped via soundimports.eu). T/S parameters have not been verified by a human against the datasheet.
 boxbench_source=https://www.soundimports.eu/en/beyma-8wrs300.html
+boxbench_corrections=Sd=0.022 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

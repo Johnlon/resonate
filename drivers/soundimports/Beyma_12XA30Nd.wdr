@@ -18,7 +18,6 @@ BL=18.2
 Mms=4.7e-05
 Cms=0.43
 Rms=1.4
-Sd=5.3e-06
 Vas=0.172
 Xmax=0.006
 Pe=700.0
@@ -59,4 +58,5 @@ boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
 boxbench_detail=Automatically scraped from SoundImports (scraped via soundimports.eu). T/S parameters have not been verified by a human against the datasheet.
 boxbench_source=https://www.soundimports.eu/en/beyma-12xa30nd.html
+boxbench_corrections=Sd=0.053 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

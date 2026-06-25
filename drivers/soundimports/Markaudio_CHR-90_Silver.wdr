@@ -16,7 +16,6 @@ Le=9.12e-05
 BL=4.726
 Mms=0.0049661
 Cms=0.0025942
-Sd=8.5e-07
 Vas=0.0261403
 Xmax=0.007
 Pe=40.0
@@ -57,4 +56,5 @@ boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
 boxbench_detail=Automatically scraped from SoundImports (scraped via soundimports.eu). T/S parameters have not been verified by a human against the datasheet.
 boxbench_source=https://www.soundimports.eu/en/markaudio-chr-90-silver.html
+boxbench_corrections=Sd=0.009 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

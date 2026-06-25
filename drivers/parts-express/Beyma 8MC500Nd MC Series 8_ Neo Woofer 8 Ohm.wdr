@@ -20,7 +20,6 @@ Qms=2.6
 Qes=0.19
 Rms=0.00383516
 Mms=0.000023
-Sd=0.0000022
 Vas=0.0158574
 Vd=1.1e-8
 Dd=0.00167366
@@ -29,4 +28,5 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-8MC500Nd-MC-Series-8-Neo-Woofer-8-ohm-253-011
 boxbench_vendor_page=https://www.parts-express.com/Beyma-8MC500Nd-MC-Series-8-Neo-Woofer-8-ohm-253-011
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-011--8mc500nd-spec-sheet.pdf
+boxbench_corrections=Sd=0.022 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

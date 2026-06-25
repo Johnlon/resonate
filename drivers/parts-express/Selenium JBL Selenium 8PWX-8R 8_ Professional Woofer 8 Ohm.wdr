@@ -20,7 +20,6 @@ Qms=7.53
 Qes=1.18
 Rms=1.2228
 Mms=0.01654
-Sd=0.0000025
 Vas=0.0172732
 Vd=9.75e-9
 Dd=0.00178412
@@ -29,4 +28,5 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/JBL-Selenium-8PWX-8R-8-Professional-Woofer-8-Ohm-294-494
 boxbench_vendor_page=https://www.parts-express.com/JBL-Selenium-8PWX-8R-8-Professional-Woofer-8-Ohm-294-494
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/294-494--jbl-8pwx-8r-spec-sheet.pdf
+boxbench_corrections=Sd=0.025 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

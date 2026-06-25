@@ -18,7 +18,6 @@ BL=17.6
 Mms=9.8e-05
 Cms=0.122
 Rms=3.6
-Sd=8.8e-06
 Vas=0.134
 Xmax=0.008
 Pe=1.0
@@ -59,4 +58,5 @@ boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
 boxbench_detail=Automatically scraped from SoundImports (scraped via soundimports.eu). T/S parameters have not been verified by a human against the datasheet.
 boxbench_source=https://www.soundimports.eu/en/beyma-15mcs500.html
+boxbench_corrections=Sd=0.088 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

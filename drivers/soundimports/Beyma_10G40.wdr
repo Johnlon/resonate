@@ -18,7 +18,6 @@ BL=17.0
 Mms=5.2e-05
 Cms=0.241
 Rms=2.1
-Sd=3.8e-06
 Vas=0.049
 Xmax=0.007
 Pe=400.0
@@ -59,4 +58,5 @@ boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
 boxbench_detail=Automatically scraped from SoundImports (scraped via soundimports.eu). T/S parameters have not been verified by a human against the datasheet.
 boxbench_source=https://www.soundimports.eu/en/beyma-10g40.html
+boxbench_corrections=Sd=0.038 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

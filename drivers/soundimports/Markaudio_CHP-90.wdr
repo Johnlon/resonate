@@ -15,7 +15,6 @@ Znom=8.0
 Re=6.2
 Mms=0.0054051
 Cms=0.0019898
-Sd=8.5e-07
 Vas=0.02005
 Xmax=0.007
 Pe=40.0
@@ -56,4 +55,5 @@ boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
 boxbench_detail=Automatically scraped from SoundImports (scraped via soundimports.eu). T/S parameters have not been verified by a human against the datasheet.
 boxbench_source=https://www.soundimports.eu/en/markaudio-chp-90.html
+boxbench_corrections=Sd=0.009 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

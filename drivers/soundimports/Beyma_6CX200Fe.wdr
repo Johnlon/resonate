@@ -18,7 +18,6 @@ BL=9.2
 Mms=1.4e-05
 Cms=0.408
 Rms=1.1
-Sd=1.35e-06
 Vas=0.0105
 Xmax=0.005
 Pe=400.0
@@ -59,4 +58,5 @@ boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
 boxbench_detail=Automatically scraped from SoundImports (scraped via soundimports.eu). T/S parameters have not been verified by a human against the datasheet.
 boxbench_source=https://www.soundimports.eu/en/beyma-6cx200fe.html
+boxbench_corrections=Sd=0.013 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

@@ -20,7 +20,6 @@ Qms=3.86
 Qes=1.27
 Rms=0.435281
 Mms=0.002057
-Sd=3e-7
 Vas=0.000849504
 Vd=7.65e-10
 Dd=0.000618039
@@ -28,4 +27,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/HiVi-C3N-III-3-Paper-Cone-Full-Range-Driver-297-714
 boxbench_vendor_page=https://www.parts-express.com/HiVi-C3N-III-3-Paper-Cone-Full-Range-Driver-297-714
+boxbench_corrections=Sd=0.003 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

@@ -20,7 +20,6 @@ Qms=5.1
 Qes=0.37
 Rms=0.00717269
 Mms=0.000142
-Sd=0.0000088
 Vas=0.116099
 Vd=9.68e-8
 Dd=0.00334731
@@ -29,4 +28,5 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-15LEX1000Fe-LEX-Series-15-Subwoofer-8-Ohm-253-043
 boxbench_vendor_page=https://www.parts-express.com/Beyma-15LEX1000Fe-LEX-Series-15-Subwoofer-8-Ohm-253-043
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-043--15lex1000fe-spec-sheet.pdf
+boxbench_corrections=Sd=0.088 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

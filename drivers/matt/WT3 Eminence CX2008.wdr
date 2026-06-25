@@ -9,14 +9,12 @@ DateModified=20120927
 Qts=0.483102980367149
 Znom=8
 Fs=61.1664066513524
-Pe=0
 SPL=90.5158577029773
 Re=5.52
 Le=0.00158
 fLe=0
 KLe=0
 BL=10.87
-Xmax=0
 Cms=0.00024
 Qms=10.46
 Qes=0.506495873887083
@@ -57,6 +55,7 @@ DVol=0
 boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
+boxbench_corrections=Pe=0 deleted (scraper artifact); Xmax=0 deleted (scraper artifact)
 ParState=CCNCEENNENNEECCCEENCNCCENNNNCNNNCCCCNNNNNNNNNNNCC
 
 boxbench_source=https://www.avsforum.com/posts/55004700/

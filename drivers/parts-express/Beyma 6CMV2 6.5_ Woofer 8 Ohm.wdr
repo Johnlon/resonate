@@ -20,7 +20,6 @@ Qms=1.4
 Qes=0.45
 Rms=0.00525095
 Mms=0.000013
-Sd=0.0000014
 Vas=0.00648455
 Vd=7.98e-9
 Dd=0.00133512
@@ -29,4 +28,5 @@ VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-6CMV2-6.5-Woofer-8-Ohm-253-026
 boxbench_vendor_page=https://www.parts-express.com/Beyma-6CMV2-6.5-Woofer-8-Ohm-253-026
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-026--6cmv2-spec-sheet.pdf
+boxbench_corrections=Sd=0.014 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

@@ -15,7 +15,6 @@ Re=7.2
 Mms=0.011131
 Cms=0.0019409
 Rms=1.0052
-Sd=1.47e-06
 Vas=0.0588923
 Xmax=0.009
 Pe=50.0
@@ -56,4 +55,5 @@ boxbench_quality=M
 boxbench_issue=scraped_not_human_verified
 boxbench_detail=Automatically scraped from SoundImports (scraped via soundimports.eu). T/S parameters have not been verified by a human against the datasheet.
 boxbench_source=https://www.soundimports.eu/en/markaudio-chr-120-gold.html
+boxbench_corrections=Sd=0.015 cm² deleted (near-zero scraper artifact)
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

@@ -9,14 +9,12 @@ DateModified=20130701
 Qts=0.370876950126534
 Znom=4
 Fs=26.2359154298034
-Pe=0
 SPL=91.2329896112504
 Re=2.24
 Le=0.002475
 fLe=0
 KLe=0
 BL=14.75
-Xmax=0
 Cms=0.00016
 Qms=7.43
 Qes=0.39036233254066
@@ -54,6 +52,7 @@ Basket=0
 Outer=0
 Vcd=0
 DVol=0
+boxbench_corrections=Pe=0 deleted (scraper artifact); Xmax=0 deleted (scraper artifact)
 ParState=CCNCEENNENNEECCCEENCNCCENNNNCNNNCCCCNNNNNNNNNNNCC
 
 boxbench_source=https://www.avsforum.com/posts/55004700/
