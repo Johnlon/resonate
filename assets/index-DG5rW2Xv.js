@@ -44738,16 +44738,18 @@ Qes=0.35
 Rms=3.14497
 Mms=0.019
 Sd=0.022
-Vas=0.00141584
+Vas=0.0015
 Vd=0.000044
 Dd=0.167366
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/B-C-8NSM64-8-8-Professional-Neodymium-Sealed-Back-Midrange-8-Ohm-294-5946
 boxbench_vendor_page=https://www.parts-express.com/B-C-8NSM64-8-8-Professional-Neodymium-Sealed-Back-Midrange-8-Ohm-294-5946
+boxbench_manu_page=https://www.bcspeakers.com/en/print/lf-driver/8-0/8/8NSM64
 boxbench_datasheet=https://www.parts-express.com/pedocs/specs/294-5946--bc-speakers-8nsm64-8-spec-sheet.PDF
+boxbench_corrections=Vas corrected 0.001416->0.0015 m³ (1.5L); B&C manu page confirms Vas=1.5 dm³ (0.05 ft³). Small Vas is correct by design — sealed-back pro midrange with intentionally stiff suspension.
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,datasheet:`https://www.parts-express.com/pedocs/specs/294-5946--bc-speakers-8nsm64-8-spec-sheet.PDF`,vendorpage:`https://www.parts-express.com/B-C-8NSM64-8-8-Professional-Neodymium-Sealed-Back-Midrange-8-Ohm-294-5946`},{name:`B&C Speakers B&C 8PE21-8 8_ Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
+`,datasheet:`https://www.parts-express.com/pedocs/specs/294-5946--bc-speakers-8nsm64-8-spec-sheet.PDF`,manupage:`https://www.bcspeakers.com/en/print/lf-driver/8-0/8/8NSM64`,vendorpage:`https://www.parts-express.com/B-C-8NSM64-8-8-Professional-Neodymium-Sealed-Back-Midrange-8-Ohm-294-5946`},{name:`B&C Speakers B&C 8PE21-8 8_ Midrange Speaker 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=B&C Speakers
 Model=B&C 8PE21-8 8" Midrange Speaker 8 Ohm
 Manufacturer=
