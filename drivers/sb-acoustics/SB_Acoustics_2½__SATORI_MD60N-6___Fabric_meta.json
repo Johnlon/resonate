@@ -4,5 +4,6 @@
   "issue": "scraped_not_human_verified",
   "detail": "Automatically scraped from SB Acoustics website (scraped 2026-06-24). T/S parameters have not been verified by a human against the datasheet.",
   "reviewedBy": null,
-  "datasheet": "https://sbacoustics.com/wp-content/uploads/2022/03/2.5in-SATORI-MD60N-6.pdf"
+  "datasheet": "https://sbacoustics.com/wp-content/uploads/2022/03/2.5in-SATORI-MD60N-6.pdf",
+  "corrections": "Re-scraped to fix HTML entity bug: &#8211; was not decoded before parse_number, causing 8211 to be parsed as field values (Qts=Qes=Qms=8211 or Cms=Vas=8.211). Fix applied 2026-06-25."
 }

@@ -7,9 +7,14 @@ Categories and page titles are populated from:
   1. manifest.json (stored at scrape time for runs after 2026-06-24)
   2. cached _html/ files (backfill for earlier runs)
 """
-import json, re
+import json, re, sys
 from collections import Counter
 from pathlib import Path
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
 out = Path(__file__).parent
 manifest_path = out / "manifest.json"
