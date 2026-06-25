@@ -58,3 +58,5 @@ boxbench_quality=H
 boxbench_issue=filename_convention
 boxbench_detail=Filename uses size description (18in pro) instead of model number. Model corrected to 55-2984 based on exact T/S parameter match. Confirmed via speakerboxlite.
 ParState=CEECENNNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
+
+boxbench_source=https://www.avsforum.com/posts/55004700/

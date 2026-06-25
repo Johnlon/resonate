@@ -58,3 +58,5 @@ boxbench_quality=H
 boxbench_issue=filename_convention
 boxbench_detail=Underscore in filename replaces / in model name (AC200/50C2C) — expected, / not valid in filenames
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
+
+boxbench_source=https://www.avsforum.com/posts/55004700/

@@ -58,3 +58,5 @@ boxbench_quality=H
 boxbench_issue=model_corrected
 boxbench_detail=Brand set to B&C; Model corrected from 8PS21 to 8PE21 (PS21 was a typo in the original file). T/S confirmed: Fs=87Hz, Re=5.6, Qts=0.19, BL=16.6 all match 8PE21 spec.
 ParState=CCECEENNEENCEECCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
+
+boxbench_source=https://www.avsforum.com/posts/55004700/

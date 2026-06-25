@@ -58,3 +58,5 @@ boxbench_quality=H
 boxbench_issue=filename_convention
 boxbench_detail=Model inside is '15in 500 watt' — minor description drift, T/S data unaffected
 ParState=CEECENNNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
+
+boxbench_source=https://www.avsforum.com/posts/55004700/

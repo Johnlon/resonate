@@ -58,3 +58,5 @@ boxbench_quality=L
 boxbench_issue=empty_fields
 boxbench_detail=Brand and Model are both empty inside the file
 ParState=EEECENNNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
+
+boxbench_source=https://www.avsforum.com/posts/55004700/

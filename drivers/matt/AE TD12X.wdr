@@ -58,3 +58,5 @@ boxbench_quality=H
 boxbench_issue=model_corrected
 boxbench_detail=Model corrected from TD12M to TD12X. T/S data confirmed as TD12X: Fs/Xmax/Vas match. AE = Acoustic Elegance.
 ParState=CEEEENNNCENCCCECCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
+
+boxbench_source=https://www.avsforum.com/posts/55004700/

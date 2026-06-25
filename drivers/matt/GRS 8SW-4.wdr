@@ -59,3 +59,5 @@ boxbench_quality=H
 boxbench_issue=model_corrected
 boxbench_detail=Model corrected from 8PF-8 to 8SW-4. Re=3.86 ohm confirms 4-ohm driver; Pe=80W exact match to 8SW-4 spec.
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
+
+boxbench_source=https://www.avsforum.com/posts/55004700/

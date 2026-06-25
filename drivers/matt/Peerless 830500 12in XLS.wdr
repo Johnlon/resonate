@@ -58,3 +58,5 @@ boxbench_quality=H
 boxbench_issue=filename_convention
 boxbench_detail=12in in filename represents 12in inside — expected inch mark substitution
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
+
+boxbench_source=https://www.avsforum.com/posts/55004700/

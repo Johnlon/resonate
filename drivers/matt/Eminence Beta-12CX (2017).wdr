@@ -59,3 +59,5 @@ boxbench_issue=filename_version_marker
 boxbench_detail=(2017) in filename indicates the 2017 revision of the Beta-12CX. Multiple versions of this driver exist with different T/S specs. This file contains the 2017 spec.
 boxbench_community=(2017) in filename = 2017 revision
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
+
+boxbench_source=https://www.avsforum.com/posts/55004700/

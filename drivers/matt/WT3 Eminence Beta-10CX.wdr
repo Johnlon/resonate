@@ -58,3 +58,5 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
+
+boxbench_source=https://www.avsforum.com/posts/55004700/
