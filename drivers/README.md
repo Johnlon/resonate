@@ -233,7 +233,7 @@ There are no separate `_meta.json` files — everything lives in one place.
 **Why the datasheet link is critical:** Without the datasheet URL a reviewer has no way to sanity-check values, catch a
 unit-conversion error, or confirm the model number. The datasheet link is the chain of custody for the data.
 
-See [`DRIVERS.md`](DRIVERS.md) for the complete `boxbench_` field schema, link-field population rules, data-quality
+See [`WDR_FILE_MODEL_AND_WORKFLOWS.md`](WDR_FILE_MODEL_AND_WORKFLOWS.md) for the complete `boxbench_` field schema, link-field population rules, data-quality
 checks, and exceptional paths.
 
 ### Minimum scraper obligation
@@ -250,7 +250,7 @@ boxbench_detail=Automatically scraped from <vendor> on <date>. Not human-verifie
 ```
 
 For measurement data links (`boxbench_frd`, `boxbench_impedance`) — follow the
-inspection workflow in `DRIVERS.md` before setting them. Never set `boxbench_frd`
+inspection workflow in `WDR_FILE_MODEL_AND_WORKFLOWS.md` before setting them. Never set `boxbench_frd`
 to a URL without verifying the content is frequency-response data.
 
 ### Quality scores
