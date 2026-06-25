@@ -27,6 +27,11 @@ function numInput(key, scale, val) {
     <template v-if="!state.editDriver">
       <div class="drvsum" @click="state.editDriver = true" title="Click to edit driver Thiele/Small parameters — opens the full T/S parameter editor">
         <span class="nm">{{ driverShort(d) }}</span>
+        <span class="drvlinks">
+          <a v-if="d.datasheetUrl" :href="d.datasheetUrl" target="_blank" rel="noopener"
+             :title="d.datasheetUrl.match(/\.pdf(\?|$)/i) ? 'Open datasheet PDF' : 'Open product page'"
+             @click.stop>{{ d.datasheetUrl.match(/\.pdf(\?|$)/i) ? 'PDF' : '↗' }}</a>
+        </span>
         <span class="ed">Edit ✎</span>
       </div>
       <div class="drvspecs">
