@@ -99,7 +99,7 @@ function classifyTypes(Fs, Sd, nameStr) {
   const SdCm2 = Sd != null ? Sd * 1e4 : null;
   if (SdCm2 != null && SdCm2 < 12) return { types: ['tweet'],               canonical: 'Tweeter' };
   if (Fs != null && Fs < 40)        return { types: ['sub','woofer','bass'], canonical: 'Subwoofer' };
-  return                                   { types: ['woofer','bass'],       canonical: 'Woofer' };
+  return                                   { types: [],                      canonical: 'Unclassified' };
 }
 
 function toggleType(id) {
@@ -156,7 +156,7 @@ const filteredFiles = computed(() => {
   if (srcFilter.length)
     filtered = filtered.filter(f => srcFilter.includes(f.sourceName));
   if (selectedTypes.value.length)
-    filtered = filtered.filter(f => selectedTypes.value.some(t => (f._types || []).includes(t)));
+    filtered = filtered.filter(f => !f._types?.length || selectedTypes.value.some(t => f._types.includes(t)));
   const fsMinV = parseFloat(fsMin.value), fsMaxV = parseFloat(fsMax.value);
   const sdMinV = parseFloat(sdMin.value), sdMaxV = parseFloat(sdMax.value);
   if (isFinite(fsMinV)) filtered = filtered.filter(f => f._Fs != null && f._Fs >= fsMinV);
@@ -600,7 +600,7 @@ function onBackdrop(e) { if (e.target === e.currentTarget) close(); }
               <a v-if="f.frd" class="dpdf"
                  :href="f.frd" target="_blank" rel="noopener"
                  title="Download frequency response & impedance data (FRD/ZMA)" @click.stop>FRD ↗</a>
-              <span v-if="f._canonical" class="dtype">{{ f._canonical }}</span>
+              <span v-if="f._canonical" :class="['dtype', f._canonical === 'Unclassified' && 'unk']">{{ f._canonical }}</span>
               <a v-if="f.sourceUrl" class="stag"
                  :title="f.sourceUrl + (f.sourceDesc ? ' — ' + f.sourceDesc : '')"
                  @click.stop.prevent="openSourceUrl(f.sourceUrl)">{{ f.sourceName }}</a>
@@ -648,6 +648,7 @@ h2 { margin:0; padding:12px 16px; font-size:14px; font-weight:600; display:flex;
 .dpdf { font-size:9px; font-weight:600; color:var(--acc); white-space:nowrap; text-decoration:none; border:1px solid var(--acc); border-radius:2px; padding:0 3px; line-height:1.6; }
 .dpdf:hover { background:var(--acc); color:var(--bg); }
 .dtype { font-size:9px; color:var(--acc); white-space:nowrap; border:1px solid var(--acc); border-radius:2px; padding:0 3px; line-height:1.6; opacity:0.7; }
+.dtype.unk { color:#c07000; border-color:#c07000; opacity:1; }
 .stag { font-size:10px; color:var(--mut); white-space:nowrap; cursor:pointer; }
 .stag:hover { color:var(--acc); text-decoration:underline; }
 .status.loading { padding:8px 10px; }

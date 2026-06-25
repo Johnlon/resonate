@@ -33,7 +33,7 @@ driver that carries that label.
 | Passive radiator | `Passive Radiator` | `pr` |
 | *(no type keyword — piston is tweeter-sized, Sd < 12 cm²)* | `Tweeter` | `tweet` |
 | *(no type keyword — resonance below 40 Hz, only subs go that low)* | `Subwoofer` | `sub` + `woofer` + `bass` |
-| *(no type keyword and no distinctive params — default)* | `Woofer` | `woofer` + `bass` |
+| *(no type keyword and no distinctive params)* | `Unclassified` | *(none — appears in all filtered queries so the user notices)* |
 
 ## Classification priority
 
