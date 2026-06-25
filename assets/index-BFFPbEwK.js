@@ -62,7 +62,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`AE SB10-4ohm`,date:`20130918`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`AE SB10-4ohm`,date:`20130918`,content:`[Driver]
 Brand=AE
 Model=SB10-4ohm
 Manufacturer=
@@ -119,7 +120,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`AE SB10-8ohm`,date:`20130918`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`AE SB10-8ohm`,date:`20130918`,content:`[Driver]
 Brand=AE
 Model=SB10-8ohm
 Manufacturer=
@@ -176,7 +178,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`AE SB12-4ohm`,date:`20130918`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`AE SB12-4ohm`,date:`20130918`,content:`[Driver]
 Brand=AE
 Model=SB12-4ohm
 Manufacturer=
@@ -233,7 +236,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`AE SB12-8ohm`,date:`20130918`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`AE SB12-8ohm`,date:`20130918`,content:`[Driver]
 Brand=AE
 Model=SB12-8ohm
 Manufacturer=
@@ -290,7 +294,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`AE SB15-4ohm`,date:`20130918`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`AE SB15-4ohm`,date:`20130918`,content:`[Driver]
 Brand=AE
 Model=SB15-4ohm
 Manufacturer=
@@ -347,7 +352,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`AE SB15-8ohm`,date:`20130918`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`AE SB15-8ohm`,date:`20130918`,content:`[Driver]
 Brand=AE
 Model=SB15-8ohm
 Manufacturer=
@@ -404,7 +410,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`AE TD12M`,date:`20121229`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`AE TD12M`,date:`20121229`,content:`[Driver]
 Brand=AE
 Model=TD12M
 Manufacturer=
@@ -461,7 +468,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`AE TD12X`,date:`20121229`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`AE TD12X`,date:`20121229`,content:`[Driver]
 Brand=AE
 Model=TD12X
 Manufacturer=
@@ -521,7 +529,8 @@ boxbench_quality=H
 boxbench_issue=model_corrected
 boxbench_detail=Model corrected from TD12M to TD12X. T/S data confirmed as TD12X: Fs/Xmax/Vas match. AE = Acoustic Elegance.
 ParState=CEEEENNNCENCCCECCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`AE TD15M`,date:`20130207`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`AE TD15M`,date:`20130207`,content:`[Driver]
 Brand=AE
 Model=TD15M
 Manufacturer=
@@ -578,7 +587,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`AE TD18H+`,date:`20130210`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`AE TD18H+`,date:`20130210`,content:`[Driver]
 Brand=AE
 Model=TD18H+
 Manufacturer=
@@ -635,7 +645,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Alpine SWS-15D4`,date:`20170804`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Alpine SWS-15D4`,date:`20170804`,content:`[Driver]
 Brand=Alpine
 Model=SWS-15D4
 Manufacturer=
@@ -692,7 +703,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCEECEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Aura NS6-255-8A`,date:`20110905`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Aura NS6-255-8A`,date:`20110905`,content:`[Driver]
 Brand=Aura
 Model=NS6-255-8A
 Manufacturer=
@@ -749,7 +761,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Aurum Cantus  AC200_50C2C 8in Woofer`,date:`20120318`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Aurum Cantus  AC200_50C2C 8in Woofer`,date:`20120318`,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC200/50C2C
 Manufacturer=
@@ -809,7 +822,8 @@ boxbench_quality=H
 boxbench_issue=filename_convention
 boxbench_detail=Underscore in filename replaces / in model name (AC200/50C2C) — expected, / not valid in filenames
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Aurum Cantus  AC300-75C2C`,date:`20120812`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Aurum Cantus  AC300-75C2C`,date:`20120812`,content:`[Driver]
 Brand=Aurum Cantus
 Model=AC300-75C2C
 Manufacturer=
@@ -866,7 +880,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C  12PE32`,date:`20130203`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C  12PE32`,date:`20130203`,content:`[Driver]
 Brand=B&C 
 Model=12PE32
 Manufacturer=
@@ -923,7 +938,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C  6PE13`,date:`20040406`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C  6PE13`,date:`20040406`,content:`[Driver]
 Brand=B&C
 Model=6PE13
 Manufacturer=B&C Speakers
@@ -978,7 +994,8 @@ Basket=0
 Outer=0.187
 Vcd=0
 DVol=0
-`},{name:`B&C 10CL51`,date:`20120805`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 10CL51`,date:`20120805`,content:`[Driver]
 Brand=B&C
 Model=10CL51
 Manufacturer=
@@ -1035,7 +1052,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 10FW64`,date:`20140225`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 10FW64`,date:`20140225`,content:`[Driver]
 Brand=B&C
 Model=10FW64
 Manufacturer=
@@ -1092,7 +1110,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 10HPL64`,date:`20121028`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 10HPL64`,date:`20121028`,content:`[Driver]
 Brand=B&C
 Model=10HPL64
 Manufacturer=
@@ -1149,7 +1168,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENCCCECEECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 10MD26`,date:`20130202`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 10MD26`,date:`20130202`,content:`[Driver]
 Brand=B&C
 Model=10MD26
 Manufacturer=
@@ -1206,7 +1226,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 10NW64`,date:`20121028`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 10NW64`,date:`20121028`,content:`[Driver]
 Brand=B&C
 Model=10NW64
 Manufacturer=
@@ -1263,7 +1284,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENCEECCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 10PLB76`,date:`20121102`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 10PLB76`,date:`20121102`,content:`[Driver]
 Brand=B&C
 Model=10PLB76
 Manufacturer=
@@ -1320,7 +1342,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENCECCCEECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 10PS26`,date:`20130710`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 10PS26`,date:`20130710`,content:`[Driver]
 Brand=B&C
 Model=10PS26
 Manufacturer=
@@ -1377,7 +1400,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 12CL64`,date:`20120814`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 12CL64`,date:`20120814`,content:`[Driver]
 Brand=B&C
 Model=12CL64
 Manufacturer=
@@ -1434,7 +1458,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 12CL76`,date:`20121103`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 12CL76`,date:`20121103`,content:`[Driver]
 Brand=B&C
 Model=12CL76
 Manufacturer=
@@ -1491,7 +1516,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENCECCCEECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 12FW76`,date:`20131021`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 12FW76`,date:`20131021`,content:`[Driver]
 Brand=B&C
 Model=12FW76
 Manufacturer=
@@ -1548,7 +1574,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 12HPL64`,date:`20150218`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 12HPL64`,date:`20150218`,content:`[Driver]
 Brand=B&C
 Model=12HPL64
 Manufacturer=
@@ -1605,7 +1632,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 12HPL76`,date:`20121028`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 12HPL76`,date:`20121028`,content:`[Driver]
 Brand=B&C
 Model=12HPL76
 Manufacturer=
@@ -1662,7 +1690,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 12PE32`,date:`20130203`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 12PE32`,date:`20130203`,content:`[Driver]
 Brand=B&C
 Model=12PE32
 Manufacturer=
@@ -1719,7 +1748,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 12PLB76`,date:`20121028`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 12PLB76`,date:`20121028`,content:`[Driver]
 Brand=B&C
 Model=12PLB76
 Manufacturer=
@@ -1776,7 +1806,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 12PS100`,date:`20121023`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 12PS100`,date:`20121023`,content:`[Driver]
 Brand=B&C
 Model=12PS100
 Manufacturer=
@@ -1833,7 +1864,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 12TBX100`,date:`20131021`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 12TBX100`,date:`20131021`,content:`[Driver]
 Brand=B&C
 Model=12TBX100
 Manufacturer=
@@ -1890,7 +1922,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 15FW76`,date:`20121229`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 15FW76`,date:`20121229`,content:`[Driver]
 Brand=B&C
 Model=15FW76
 Manufacturer=
@@ -1947,7 +1980,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENCEECCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 15HPL76W`,date:`20121029`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 15HPL76W`,date:`20121029`,content:`[Driver]
 Brand=B&C
 Model=15HPL76W
 Manufacturer=
@@ -2004,7 +2038,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 15NDL76`,date:`20130101`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 15NDL76`,date:`20130101`,content:`[Driver]
 Brand=B&C
 Model=15NDL76
 Manufacturer=
@@ -2061,7 +2096,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENCEECCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 15PL100`,date:`20121020`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 15PL100`,date:`20121020`,content:`[Driver]
 Brand=B&C
 Model=15PL100
 Manufacturer=
@@ -2118,7 +2154,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 15PLB76`,date:`20131024`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 15PLB76`,date:`20131024`,content:`[Driver]
 Brand=B&C
 Model=15PLB76
 Manufacturer=
@@ -2175,7 +2212,10 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 15PS100`,date:`20121103`,content:`[Driver]
+boxbench_manu_page=https://bcspeakers.com/en/products/lf-driver/15-0/8/15plb76-8
+boxbench_datasheet=https://bcspeakers.com/en/print/lf-driver/15-0/8/15plb76-8
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`,datasheet:`https://bcspeakers.com/en/print/lf-driver/15-0/8/15plb76-8`,manupage:`https://bcspeakers.com/en/products/lf-driver/15-0/8/15plb76-8`},{name:`B&C 15PS100`,date:`20121103`,content:`[Driver]
 Brand=B&C
 Model=15PS100
 Manufacturer=
@@ -2232,7 +2272,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENCECCCEECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 15TBX100`,date:`20121020`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 15TBX100`,date:`20121020`,content:`[Driver]
 Brand=B&C
 Model=15TBX100
 Manufacturer=
@@ -2289,7 +2330,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 18PS76`,date:`20130128`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 18PS76`,date:`20130128`,content:`[Driver]
 Brand=B&C
 Model=18PS76
 Manufacturer=
@@ -2346,7 +2388,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 18RBX100-4`,date:`20170601`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 18RBX100-4`,date:`20170601`,content:`[Driver]
 Brand=B&C
 Model=18RBX100-4
 Manufacturer=
@@ -2403,7 +2446,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 18SW115`,date:`20160609`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 18SW115`,date:`20160609`,content:`[Driver]
 Brand=B&C
 Model=18SW115
 Manufacturer=
@@ -2460,7 +2504,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 18TBW100-4`,date:`20160816`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 18TBW100-4`,date:`20160816`,content:`[Driver]
 Brand=B&C
 Model=18TBW100-4
 Manufacturer=
@@ -2517,7 +2562,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 18TBX100`,date:`20130129`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 18TBX100`,date:`20130129`,content:`[Driver]
 Brand=B&C
 Model=18TBX100
 Manufacturer=
@@ -2574,7 +2620,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 21DS115-4`,date:`20170221`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 21DS115-4`,date:`20170221`,content:`[Driver]
 Brand=B&C
 Model=21DS115-4
 Manufacturer=
@@ -2631,7 +2678,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 21DS115`,date:`20170210`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 21DS115`,date:`20170210`,content:`[Driver]
 Brand=B&C
 Model=21DS115
 Manufacturer=
@@ -2688,7 +2736,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 21IPAL`,date:`20170416`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 21IPAL`,date:`20170416`,content:`[Driver]
 Brand=B&C
 Model=21IPAL
 Manufacturer=
@@ -2745,7 +2794,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 21SW115-4`,date:`20160206`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 21SW115-4`,date:`20160206`,content:`[Driver]
 Brand=B&C
 Model=21SW115-4
 Manufacturer=
@@ -2802,7 +2852,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 21SW150`,date:`20090402`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 21SW150`,date:`20090402`,content:`[Driver]
 Brand=B&C
 Model=21SW150
 Manufacturer=
@@ -2859,7 +2910,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECENNNEEECECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 21SW152`,date:`20150331`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 21SW152`,date:`20150331`,content:`[Driver]
 Brand=B&C
 Model=21SW152
 Manufacturer=
@@ -2916,7 +2968,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENCEECCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 6NDL38`,date:`20120726`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 6NDL38`,date:`20120726`,content:`[Driver]
 Brand=B&C
 Model=6NDL38
 Manufacturer=
@@ -2973,7 +3026,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECENNNEENCECCCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 6NDL44 6in woofer`,date:`20120130`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 6NDL44 6in woofer`,date:`20120130`,content:`[Driver]
 Brand=B&C
 Model=6NDL44 6in woofer
 Manufacturer=
@@ -3030,7 +3084,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 8FG51`,date:`20130911`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 8FG51`,date:`20130911`,content:`[Driver]
 Brand=B&C
 Model=8FG51
 Manufacturer=
@@ -3087,7 +3142,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 8FW51`,date:`20130911`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 8FW51`,date:`20130911`,content:`[Driver]
 Brand=B&C
 Model=8FW51
 Manufacturer=
@@ -3144,7 +3200,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 8MDN51`,date:`20120225`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 8MDN51`,date:`20120225`,content:`[Driver]
 Brand=B&C
 Model=8MDN51
 Manufacturer=
@@ -3201,7 +3258,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 8NDL51`,date:`20130912`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 8NDL51`,date:`20130912`,content:`[Driver]
 Brand=B&C
 Model=8NDL51
 Manufacturer=
@@ -3258,7 +3316,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 8PE21 8in Woofer`,date:`20111113`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 8PE21 8in Woofer`,date:`20111113`,content:`[Driver]
 Brand=B&C
 Model=8PE21
 Manufacturer= 
@@ -3318,7 +3377,8 @@ boxbench_quality=H
 boxbench_issue=model_corrected
 boxbench_detail=Brand set to B&C; Model corrected from 8PS21 to 8PE21 (PS21 was a typo in the original file). T/S confirmed: Fs=87Hz, Re=5.6, Qts=0.19, BL=16.6 all match 8PE21 spec.
 ParState=CCECEENNEENCEECCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`B&C 8PS21 8in woofer`,date:`20111113`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`B&C 8PS21 8in woofer`,date:`20111113`,content:`[Driver]
 Brand=B&C 
 Model=8PS21 8" woofer
 Manufacturer=
@@ -3378,7 +3438,8 @@ boxbench_quality=H
 boxbench_issue=filename_convention
 boxbench_detail=8in in filename represents 8in in Model inside — expected inch mark substitution
 ParState=CCECEENNEENCEECCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`BLG RXM8A`,date:`20161228`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`BLG RXM8A`,date:`20161228`,content:`[Driver]
 Brand=BLG
 Model=RXM8A
 Manufacturer=
@@ -3435,7 +3496,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCNCEENNENNEECCCEENCNCCENNNNCNNNCCCCNNNNNNNNNNNCC
-`},{name:`BLG RXM8B`,date:`20161228`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`BLG RXM8B`,date:`20161228`,content:`[Driver]
 Brand=BLG
 Model=RXM8B
 Manufacturer=
@@ -3492,7 +3554,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCNCEENNENNEECCCEENCNCCENNNNCNNNCCCCNNNNNNNNNNNCC
-`},{name:`BMS 12N620`,date:`20130208`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`BMS 12N620`,date:`20130208`,content:`[Driver]
 Brand=BMS
 Model=12N620
 Manufacturer=
@@ -3549,7 +3612,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`BMS 12S320`,date:`20130207`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`BMS 12S320`,date:`20130207`,content:`[Driver]
 Brand=BMS
 Model=12S320
 Manufacturer=
@@ -3606,7 +3670,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`BMS 12S330`,date:`20130208`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`BMS 12S330`,date:`20130208`,content:`[Driver]
 Brand=BMS
 Model=12S330
 Manufacturer=
@@ -3663,7 +3728,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`BMS 15M830v2`,date:`20130207`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`BMS 15M830v2`,date:`20130207`,content:`[Driver]
 Brand=BMS
 Model=15M830v2
 Manufacturer=
@@ -3720,7 +3786,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`BMS 15N620`,date:`20130131`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`BMS 15N620`,date:`20130131`,content:`[Driver]
 Brand=BMS
 Model=15N620
 Manufacturer=
@@ -3777,7 +3844,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`BMS 15N630`,date:`20130207`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`BMS 15N630`,date:`20130207`,content:`[Driver]
 Brand=BMS
 Model=15N630
 Manufacturer=
@@ -3834,7 +3902,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`BMS 15N820`,date:`20130131`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`BMS 15N820`,date:`20130131`,content:`[Driver]
 Brand=BMS
 Model=15N820
 Manufacturer=
@@ -3891,7 +3960,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`BMS 15S320`,date:`20130131`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`BMS 15S320`,date:`20130131`,content:`[Driver]
 Brand=BMS
 Model=15S320
 Manufacturer=
@@ -3948,7 +4018,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`BMS 15S330`,date:`20130207`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`BMS 15S330`,date:`20130207`,content:`[Driver]
 Brand=BMS
 Model=15S330
 Manufacturer=
@@ -4005,7 +4076,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`BMS 15S430V2`,date:`20130207`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`BMS 15S430V2`,date:`20130207`,content:`[Driver]
 Brand=BMS
 Model=15S430V2
 Manufacturer=
@@ -4062,7 +4134,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`BMS 18N830v2`,date:`20130210`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`BMS 18N830v2`,date:`20130210`,content:`[Driver]
 Brand=BMS
 Model=18N830v2
 Manufacturer=
@@ -4119,7 +4192,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`BMS 18S430V`,date:`20130131`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`BMS 18S430V`,date:`20130131`,content:`[Driver]
 Brand=BMS
 Model=18S430V
 Manufacturer=
@@ -4176,7 +4250,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Celestion CF1025C`,date:`20140929`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Celestion CF1025C`,date:`20140929`,content:`[Driver]
 Brand=Celestion
 Model=CF1025C
 Manufacturer=
@@ -4233,7 +4308,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Celestion FTR08-2011D`,date:`20140929`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Celestion FTR08-2011D`,date:`20140929`,content:`[Driver]
 Brand=Celestion
 Model=FTR08-2011D
 Manufacturer=
@@ -4290,7 +4366,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Celestion FTR12-4080`,date:`20120807`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Celestion FTR12-4080`,date:`20120807`,content:`[Driver]
 Brand=Celestion
 Model=FTR12-4080
 Manufacturer=
@@ -4347,7 +4424,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Celestion FTR15-3070C`,date:`20140301`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Celestion FTR15-3070C`,date:`20140301`,content:`[Driver]
 Brand=Celestion
 Model=FTR15-3070C
 Manufacturer=
@@ -4404,7 +4482,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Celestion NTR06-1705B`,date:`20140929`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Celestion NTR06-1705B`,date:`20140929`,content:`[Driver]
 Brand=Celestion
 Model=NTR06-1705B
 Manufacturer=
@@ -4461,7 +4540,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Celestion NTR21-5010JD`,date:`20130826`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Celestion NTR21-5010JD`,date:`20130826`,content:`[Driver]
 Brand=Celestion
 Model=NTR21-5010JD
 Manufacturer=
@@ -4518,7 +4598,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Celestion TF0510`,date:`20120807`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Celestion TF0510`,date:`20120807`,content:`[Driver]
 Brand=Celestion
 Model=TF0510
 Manufacturer=
@@ -4575,7 +4656,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Celestion TF0615`,date:`20140929`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Celestion TF0615`,date:`20140929`,content:`[Driver]
 Brand=Celestion
 Model=TF0615
 Manufacturer=
@@ -4632,7 +4714,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECENNNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Celestion TF0820`,date:`20170713`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Celestion TF0820`,date:`20170713`,content:`[Driver]
 Brand=Celestion
 Model=TF0820
 Manufacturer=
@@ -4689,7 +4772,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Celestion TF1020`,date:`20120805`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Celestion TF1020`,date:`20120805`,content:`[Driver]
 Brand=00
 Model=Celestion TF1020
 Manufacturer=
@@ -4746,7 +4830,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Celestion TF1218`,date:`20121126`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Celestion TF1218`,date:`20121126`,content:`[Driver]
 Brand=Celestion
 Model=TF1218
 Manufacturer=
@@ -4803,7 +4888,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Celestion TF1220`,date:`20121123`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Celestion TF1220`,date:`20121123`,content:`[Driver]
 Brand=Celestion
 Model=TF1220
 Manufacturer=
@@ -4860,7 +4946,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Celestion TF1225CX`,date:`20140929`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Celestion TF1225CX`,date:`20140929`,content:`[Driver]
 Brand=Celestion
 Model=TF1225CX
 Manufacturer=
@@ -4917,7 +5004,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Celestion TF1225e`,date:`20120805`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Celestion TF1225e`,date:`20120805`,content:`[Driver]
 Brand=Celestion
 Model=TF1225e
 Manufacturer=
@@ -4974,7 +5062,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Celestion TF1525e`,date:`20130605`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Celestion TF1525e`,date:`20130605`,content:`[Driver]
 Brand=Celestion
 Model=TF1525e
 Manufacturer=
@@ -5031,7 +5120,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Ciare 18.00 SW`,date:`20160206`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Ciare 18.00 SW`,date:`20160206`,content:`[Driver]
 Brand=Ciare
 Model=18.00 SW
 Manufacturer=
@@ -5088,7 +5178,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Ciare 6.38NdW`,date:`20120726`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Ciare 6.38NdW`,date:`20120726`,content:`[Driver]
 Brand=Ciare
 Model=6.38NdW
 Manufacturer=
@@ -5145,7 +5236,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Ciare 8.5NdW-8`,date:`20120726`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Ciare 8.5NdW-8`,date:`20120726`,content:`[Driver]
 Brand=Ciare
 Model=8.5NdW-8
 Manufacturer=
@@ -5202,7 +5294,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio CX120-8`,date:`20170728`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio CX120-8`,date:`20170728`,content:`[Driver]
 Brand=Dayton Audio
 Model=CX120-8
 Manufacturer=
@@ -5259,7 +5352,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DA115-8`,date:`20120120`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DA115-8`,date:`20120120`,content:`[Driver]
 Brand=Dayton Audio
 Model=DA115-8
 Manufacturer=
@@ -5316,7 +5410,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DA135-8`,date:`20170310`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DA135-8`,date:`20170310`,content:`[Driver]
 Brand=Dayton Audio
 Model=DA135-8
 Manufacturer=
@@ -5373,7 +5468,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DA215-8`,date:`20120603`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DA215-8`,date:`20120603`,content:`[Driver]
 Brand=Dayton Audio
 Model=DA215-8
 Manufacturer=
@@ -5430,7 +5526,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DA270-8`,date:`20120603`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DA270-8`,date:`20120603`,content:`[Driver]
 Brand=Dayton Audio
 Model=DA270-8
 Manufacturer=
@@ -5487,7 +5584,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DC130B-4`,date:`20161203`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DC130B-4`,date:`20161203`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC130B-4
 Manufacturer=
@@ -5544,7 +5642,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DC160-4`,date:`20130916`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DC160-4`,date:`20130916`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC160-4
 Manufacturer=
@@ -5601,7 +5700,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DC160-8`,date:`20130916`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DC160-8`,date:`20130916`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC160-8
 Manufacturer=
@@ -5658,7 +5758,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DC200-8`,date:`20120109`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DC200-8`,date:`20120109`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC200-8
 Manufacturer=
@@ -5715,7 +5816,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DC250-8`,date:`20120720`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DC250-8`,date:`20120720`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC250-8
 Manufacturer=
@@ -5772,7 +5874,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DC300-8`,date:`20110919`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DC300-8`,date:`20110919`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC300-8
 Manufacturer=
@@ -5829,7 +5932,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DC380-8`,date:`20120120`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DC380-8`,date:`20120120`,content:`[Driver]
 Brand=Dayton Audio
 Model=DC380-8
 Manufacturer=
@@ -5889,7 +5993,8 @@ boxbench_quality=H
 boxbench_issue=ts_community_measured
 boxbench_detail=Confirmed DC380-8 by exact Sd (834.7 cm²) and Xmax (4.35 mm) match — physical dimensions that do not vary. T/S params differ from datasheet (e.g. Fs 21.6 vs 18.8 Hz, Qms 3.52 vs 2.87, Qts 0.35 vs 0.30, Vas 306 vs 391 L) due to community measurement: break-in softens the suspension shifting Fs/Qms, and different measurement tools extract different values from the same impedance curve.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DCS205-4`,date:`20110524`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DCS205-4`,date:`20110524`,content:`[Driver]
 Brand=Dayton Audio
 Model=DCS205-4
 Manufacturer=
@@ -5946,7 +6051,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DCS255-4`,date:`20110529`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DCS255-4`,date:`20110529`,content:`[Driver]
 Brand=Dayton Audio
 Model=DCS255-4
 Manufacturer=
@@ -6003,7 +6109,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENCECCCEECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DCS305-4`,date:`20110530`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DCS305-4`,date:`20110530`,content:`[Driver]
 Brand=Dayton Audio
 Model=DCS305-4
 Manufacturer=
@@ -6060,7 +6167,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DCS380-4`,date:`20081116`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DCS380-4`,date:`20081116`,content:`[Driver]
 Brand=Dayton Audio
 Model=DCS380-4
 Manufacturer=Dayton Audio
@@ -6121,7 +6229,8 @@ boxbench_quality=H
 boxbench_issue=ts_community_measured
 boxbench_detail=Confirmed DCS380-4 by exact Sd (819.4 cm²) and Xmax (8.4 mm) match — physical dimensions that do not vary. T/S params differ from datasheet (e.g. Fs 22.8 vs 21.5 Hz, Qms 3.46 vs 3.79, SPL 89.1 vs 93.6 dB) due to community measurement: break-in softens the suspension shifting Fs/Qms, and different measurement tools (DATS, Woofer Tester, LIMP) extract different values from the same impedance curve. Brand field was corrected from 'Dayton Classic 15"' to 'Dayton Audio'.
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`,datasheet:`https://www.daytonaudio.com/images/resources/295-470-dayton-audio-dcs380-4-specifications-46178.pdf`},{name:`Dayton Audio DCS385-4`,date:`20120830`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`,datasheet:`https://www.daytonaudio.com/images/resources/295-470-dayton-audio-dcs380-4-specifications-46178.pdf`},{name:`Dayton Audio DCS385-4`,date:`20120830`,content:`[Driver]
 Brand=Dayton Audio
 Model=DCS385-4
 Manufacturer=
@@ -6178,7 +6287,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DCS450-4`,date:`20090402`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DCS450-4`,date:`20090402`,content:`[Driver]
 Brand=Dayton Audio
 Model=DCS450-4
 Manufacturer=Dayton Audio
@@ -6235,7 +6345,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DS115-8`,date:`20120322`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DS115-8`,date:`20120322`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS115-8
 Manufacturer=
@@ -6292,7 +6403,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DS135-8`,date:`20131019`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DS135-8`,date:`20131019`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS135-8
 Manufacturer=
@@ -6349,7 +6461,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DS175-8`,date:`20120413`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DS175-8`,date:`20120413`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS175-8
 Manufacturer=
@@ -6406,7 +6519,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DS215-8`,date:`20120417`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DS215-8`,date:`20120417`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS215-8
 Manufacturer=
@@ -6463,7 +6577,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DS270-8`,date:`20120523`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DS270-8`,date:`20120523`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS270-8
 Manufacturer=
@@ -6520,7 +6635,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DS315-8`,date:`20120622`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DS315-8`,date:`20120622`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS315-8
 Manufacturer=
@@ -6577,7 +6693,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DSA315-8`,date:`20170106`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DSA315-8`,date:`20170106`,content:`[Driver]
 Brand=Dayton Audio
 Model=DSA315-8
 Manufacturer=
@@ -6634,7 +6751,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DVC310-88`,date:`20120907`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DVC310-88`,date:`20120907`,content:`[Driver]
 Brand=Dayton Audio
 Model=DVC310-88
 Manufacturer=
@@ -6691,7 +6809,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DVC385-88 V2015`,date:`20120326`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DVC385-88 V2015`,date:`20120326`,content:`[Driver]
 Brand=Dayton Audio
 Model=DVC385-88 V2015
 Manufacturer=
@@ -6748,7 +6867,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio DVC385-88`,date:`20120326`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio DVC385-88`,date:`20120326`,content:`[Driver]
 Brand=Dayton Audio
 Model=DVC385-88
 Manufacturer=
@@ -6805,7 +6925,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio IB385-8`,date:`20121110`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio IB385-8`,date:`20121110`,content:`[Driver]
 Brand=Dayton Audio
 Model=IB385-8
 Manufacturer=
@@ -6862,7 +6983,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio LS10-44`,date:`20150322`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio LS10-44`,date:`20150322`,content:`[Driver]
 Brand=Dayton Audio
 Model=LS10-44
 Manufacturer=
@@ -6919,7 +7041,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio LS12-44`,date:`20150322`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio LS12-44`,date:`20150322`,content:`[Driver]
 Brand=Dayton Audio
 Model=LS12-44
 Manufacturer=
@@ -6976,7 +7099,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio ND105-8`,date:`20120225`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio ND105-8`,date:`20120225`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND105-8
 Manufacturer=
@@ -7033,7 +7157,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCEECEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio ND91-4`,date:`20161004`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio ND91-4`,date:`20161004`,content:`[Driver]
 Brand=Dayton Audio
 Model=ND91-4
 Manufacturer=
@@ -7090,7 +7215,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio PA200-8`,date:`20150126`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio PA200-8`,date:`20150126`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA200-8
 Manufacturer=
@@ -7147,7 +7273,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio PA255-8`,date:`20110912`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio PA255-8`,date:`20110912`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA255-8
 Manufacturer=
@@ -7204,7 +7331,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio PA310-8`,date:`20120623`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio PA310-8`,date:`20120623`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA310-8
 Manufacturer=
@@ -7261,7 +7389,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio PA380-8`,date:`20121121`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio PA380-8`,date:`20121121`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA380-8
 Manufacturer=
@@ -7318,7 +7447,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio PA460-8 v2015`,date:`20110908`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio PA460-8 v2015`,date:`20110908`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA460-8
 Manufacturer=
@@ -7379,7 +7509,8 @@ boxbench_issue=filename_version_marker
 boxbench_detail=v2015 in filename indicates the 2015 revision of the PA460-8. Multiple versions of this driver exist with different T/S specs. This file contains the 2015 spec.
 boxbench_community=v2015 in filename = 2015 revision
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio PA460-8`,date:`20110908`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio PA460-8`,date:`20110908`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA460-8
 Manufacturer=
@@ -7436,7 +7567,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio PK165-8`,date:`20130713`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio PK165-8`,date:`20130713`,content:`[Driver]
 Brand=Dayton Audio
 Model=PK165-8
 Manufacturer=
@@ -7493,7 +7625,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio QT210-4`,date:`20090208`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio QT210-4`,date:`20090208`,content:`[Driver]
 Brand=Dayton Audio
 Model=QT210-4
 Manufacturer=Dayton Audio
@@ -7550,7 +7683,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECENNNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RS100-8`,date:`20120210`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RS100-8`,date:`20120210`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS100-8
 Manufacturer=
@@ -7607,7 +7741,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RS125-4`,date:`20170410`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RS125-4`,date:`20170410`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS125-4
 Manufacturer=
@@ -7664,7 +7799,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RS125-8`,date:`20170410`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RS125-8`,date:`20170410`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS125-8
 Manufacturer=
@@ -7721,7 +7857,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RS150-4`,date:`20130324`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RS150-4`,date:`20130324`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS150-4
 Manufacturer=
@@ -7778,7 +7915,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RS150-8`,date:`20130324`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RS150-8`,date:`20130324`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS150-8
 Manufacturer=
@@ -7835,7 +7973,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RS180-4`,date:`20120725`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RS180-4`,date:`20120725`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS180-4
 Manufacturer=
@@ -7892,7 +8031,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RS225-4`,date:`20130727`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RS225-4`,date:`20130727`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS225-4
 Manufacturer=
@@ -7949,7 +8089,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RS225-8`,date:`20130727`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RS225-8`,date:`20130727`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS225-8
 Manufacturer=
@@ -8006,7 +8147,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RS225P-4`,date:`20140413`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RS225P-4`,date:`20140413`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS225P-4
 Manufacturer=
@@ -8063,7 +8205,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RS225P-8`,date:`20140413`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RS225P-8`,date:`20140413`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS225P-8
 Manufacturer=
@@ -8120,7 +8263,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RS270-8`,date:`20130416`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RS270-8`,date:`20130416`,content:`[Driver]
 Brand=Dayton Audio
 Model=RS270-8
 Manufacturer=
@@ -8177,7 +8321,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RSS210HF-4`,date:`20081207`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RSS210HF-4`,date:`20081207`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS210HF-4
 Manufacturer=Dayton Audio
@@ -8234,7 +8379,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECENNNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RSS265HF-4`,date:`20090208`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RSS265HF-4`,date:`20090208`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS265HF-4
 Manufacturer=Dayton Audio
@@ -8291,7 +8437,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RSS265HO-4`,date:`20090208`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RSS265HO-4`,date:`20090208`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS265HO-4
 Manufacturer=Dayton Audio
@@ -8348,7 +8495,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RSS265HO-44`,date:`20140412`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RSS265HO-44`,date:`20140412`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS265HO-44
 Manufacturer=
@@ -8405,7 +8553,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RSS315HF-4`,date:`20090208`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RSS315HF-4`,date:`20090208`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS315HF-4
 Manufacturer=Dayton Audio
@@ -8462,7 +8611,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RSS315HFA-8`,date:`20140412`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RSS315HFA-8`,date:`20140412`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS315HFA-8
 Manufacturer=
@@ -8519,7 +8669,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RSS315HO-4`,date:`20090208`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RSS315HO-4`,date:`20090208`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS315HO-4
 Manufacturer=Dayton Audio
@@ -8576,7 +8727,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RSS315HO-44`,date:`20140412`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RSS315HO-44`,date:`20140412`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS315HO-44
 Manufacturer=
@@ -8633,7 +8785,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RSS390HF-4`,date:`20090102`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RSS390HF-4`,date:`20090102`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS390HF-4
 Manufacturer=Dayton Audio
@@ -8690,7 +8843,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RSS390HO-4`,date:`20090125`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RSS390HO-4`,date:`20090125`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS390HO-4
 Manufacturer=Dayton Audio
@@ -8747,7 +8901,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio RSS460HO-4`,date:`20121007`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio RSS460HO-4`,date:`20121007`,content:`[Driver]
 Brand=Dayton Audio
 Model=RSS460HO-4
 Manufacturer=
@@ -8804,7 +8959,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio SD215-88`,date:`20090123`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio SD215-88`,date:`20090123`,content:`[Driver]
 Brand=Dayton Shielded DVC 
 Model=8in SD215-88
 Manufacturer=Dayton Audio
@@ -8861,7 +9017,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECENNNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio SD215-88A`,date:`20110908`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio SD215-88A`,date:`20110908`,content:`[Driver]
 Brand=Dayton Audio
 Model=SD215-88A
 Manufacturer=
@@ -8918,7 +9075,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio SD270-88`,date:`20081004`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio SD270-88`,date:`20081004`,content:`[Driver]
 Brand=Dayton Audio
 Model=SD270-88
 Manufacturer=Dayton
@@ -8975,7 +9133,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECENNNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio SD270A-88`,date:`20110814`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio SD270A-88`,date:`20110814`,content:`[Driver]
 Brand=Dayton Audio
 Model=SD270A-88
 Manufacturer=
@@ -9032,7 +9191,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio SD315-88`,date:`20090717`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio SD315-88`,date:`20090717`,content:`[Driver]
 Brand=Dayton Audio
 Model=SD315-88
 Manufacturer=Dayton Audio
@@ -9089,7 +9249,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECENNNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio SD315A-88`,date:`20130131`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio SD315A-88`,date:`20130131`,content:`[Driver]
 Brand=Dayton Audio
 Model=SD315A-88
 Manufacturer=
@@ -9146,7 +9307,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio ST210-8`,date:`20110718`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio ST210-8`,date:`20110718`,content:`[Driver]
 Brand=Dayton Audio
 Model=ST210-8
 Manufacturer=
@@ -9203,7 +9365,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECCENNEENEEECCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio ST255-8`,date:`20130525`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio ST255-8`,date:`20130525`,content:`[Driver]
 Brand=Dayton Audio
 Model=ST255-8
 Manufacturer=
@@ -9260,7 +9423,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio ST305-8`,date:`20120123`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio ST305-8`,date:`20120123`,content:`[Driver]
 Brand=Dayton Audio
 Model=ST305-8
 Manufacturer=
@@ -9317,7 +9481,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio ST385-8`,date:`20130503`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio ST385-8`,date:`20130503`,content:`[Driver]
 Brand=Dayton Audio
 Model=ST385-8
 Manufacturer=
@@ -9374,7 +9539,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio TIT280C-4`,date:`20090208`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio TIT280C-4`,date:`20090208`,content:`[Driver]
 Brand=Dayton Audio
 Model=TIT280C-4
 Manufacturer=Dayton
@@ -9431,7 +9597,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio TIT320C-4`,date:`20090208`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio TIT320C-4`,date:`20090208`,content:`[Driver]
 Brand=Dayton Audio
 Model=TIT320C-4
 Manufacturer=Dayton Audio
@@ -9488,7 +9655,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio TIT400C-4`,date:`20120722`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio TIT400C-4`,date:`20120722`,content:`[Driver]
 Brand=Dayton Audio
 Model=TIT400C-4
 Manufacturer=
@@ -9545,7 +9713,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio UM10-22`,date:`20130920`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio UM10-22`,date:`20130920`,content:`[Driver]
 Brand=Dayton Audio
 Model=UM10-22
 Manufacturer=
@@ -9602,7 +9771,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio UM12-22`,date:`20130313`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio UM12-22`,date:`20130313`,content:`[Driver]
 Brand=Dayton Audio
 Model=UM12-22
 Manufacturer=
@@ -9659,7 +9829,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio UM15-22`,date:`20130131`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio UM15-22`,date:`20130131`,content:`[Driver]
 Brand=Dayton Audio
 Model=UM15-22
 Manufacturer=
@@ -9716,7 +9887,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio UM18-22 new`,date:`20170611`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio UM18-22 new`,date:`20170611`,content:`[Driver]
 Brand=Dayton Audio
 Model=UM18-22 new
 Manufacturer=
@@ -9773,7 +9945,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Dayton Audio UM18-22`,date:`20131117`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Dayton Audio UM18-22`,date:`20131117`,content:`[Driver]
 Brand=Dayton Audio
 Model=UM18-22
 Manufacturer=
@@ -9830,7 +10003,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`EAW LC10 Buyout`,date:`20121228`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`EAW LC10 Buyout`,date:`20121228`,content:`[Driver]
 Brand=EAW
 Model=LC10 Buyout
 Manufacturer=
@@ -9887,7 +10061,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminece Legend BP122`,date:`20170530`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminece Legend BP122`,date:`20170530`,content:`[Driver]
 Brand=Eminence
 Model=Legend BP122
 Manufacturer=
@@ -9947,7 +10122,8 @@ boxbench_quality=H
 boxbench_issue=filename_typo
 boxbench_detail=Filename has typo 'Eminece' (missing 'n'). Filename kept as original; Brand and Model corrected internally to Brand=Eminence, Model=Legend BP122.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence 2510-4`,date:`20150526`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence 2510-4`,date:`20150526`,content:`[Driver]
 Brand=Eminence
 Model=2510-4
 Manufacturer=
@@ -10004,7 +10180,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=ECECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence 2510`,date:`20121023`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence 2510`,date:`20121023`,content:`[Driver]
 Brand=Eminence
 Model=2510
 Manufacturer=
@@ -10061,7 +10238,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence 2512`,date:`20120828`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence 2512`,date:`20120828`,content:`[Driver]
 Brand=Eminence
 Model=2512
 Manufacturer=
@@ -10118,7 +10296,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence 2515`,date:`20121010`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence 2515`,date:`20121010`,content:`[Driver]
 Brand=Eminence
 Model=2515
 Manufacturer=
@@ -10175,7 +10354,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence 3010LF`,date:`20160711`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence 3010LF`,date:`20160711`,content:`[Driver]
 Brand=Eminence
 Model=3010LF
 Manufacturer=
@@ -10232,7 +10412,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence 3010MB`,date:`20130209`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence 3010MB`,date:`20130209`,content:`[Driver]
 Brand=Eminence
 Model=3010MB
 Manufacturer=
@@ -10289,7 +10470,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence 3012HO`,date:`20120912`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence 3012HO`,date:`20120912`,content:`[Driver]
 Brand=Eminence
 Model=3012HO
 Manufacturer=
@@ -10346,7 +10528,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence 3012LF-4`,date:`20160714`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence 3012LF-4`,date:`20160714`,content:`[Driver]
 Brand=Eminence
 Model=3012LF-4
 Manufacturer=
@@ -10403,7 +10586,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence 3015`,date:`20121020`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence 3015`,date:`20121020`,content:`[Driver]
 Brand=Eminence
 Model=3015
 Manufacturer=
@@ -10460,7 +10644,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence 3015LF`,date:`20130522`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence 3015LF`,date:`20130522`,content:`[Driver]
 Brand=Eminence
 Model=3015LF
 Manufacturer=
@@ -10517,7 +10702,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence 4012HO`,date:`20121206`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence 4012HO`,date:`20121206`,content:`[Driver]
 Brand=Eminence
 Model=4012HO
 Manufacturer=
@@ -10574,7 +10760,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Alpha 4`,date:`20161203`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Alpha 4`,date:`20161203`,content:`[Driver]
 Brand=Eminence
 Model=Alpha 4
 Manufacturer=
@@ -10631,7 +10818,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Alpha-6A`,date:`20121220`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Alpha-6A`,date:`20121220`,content:`[Driver]
 Brand=Eminence
 Model=Alpha-6A
 Manufacturer=
@@ -10688,7 +10876,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Alpha-6C 4ohm`,date:`20120724`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Alpha-6C 4ohm`,date:`20120724`,content:`[Driver]
 Brand=Eminence
 Model=Alpha-6C 4ohm
 Manufacturer=
@@ -10745,7 +10934,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Alpha-8A`,date:`20150111`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Alpha-8A`,date:`20150111`,content:`[Driver]
 Brand=Eminence
 Model=Alpha-8A
 Manufacturer=
@@ -10802,7 +10992,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Basslite S2012`,date:`20130227`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Basslite S2012`,date:`20130227`,content:`[Driver]
 Brand=Eminence
 Model=Basslite S2012
 Manufacturer=
@@ -10859,7 +11050,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Beta-10CBMRA`,date:`20130202`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Beta-10CBMRA`,date:`20130202`,content:`[Driver]
 Brand=Eminence
 Model=Beta-10CBMRA
 Manufacturer=
@@ -10916,7 +11108,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCNCEENNENNEECCCEENCNCCENNNNCNNNCCCCNNNNNNNNNNNCC
-`},{name:`Eminence Beta-10a`,date:`20130617`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Beta-10a`,date:`20130617`,content:`[Driver]
 Brand=Eminence
 Model=Beta-10a
 Manufacturer=
@@ -10973,7 +11166,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Beta-12CX (2017)`,date:`20170508`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Beta-12CX (2017)`,date:`20170508`,content:`[Driver]
 Brand=Eminence
 Model=Beta-12CX
 Manufacturer=
@@ -11034,7 +11228,8 @@ boxbench_issue=filename_version_marker
 boxbench_detail=(2017) in filename indicates the 2017 revision of the Beta-12CX. Multiple versions of this driver exist with different T/S specs. This file contains the 2017 spec.
 boxbench_community=(2017) in filename = 2017 revision
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Beta-6A`,date:`20120725`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Beta-6A`,date:`20120725`,content:`[Driver]
 Brand=Eminence
 Model=Beta-6A
 Manufacturer=
@@ -11091,7 +11286,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Beta-8CX`,date:`20130824`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Beta-8CX`,date:`20130824`,content:`[Driver]
 Brand=Eminence
 Model=Beta-8CX
 Manufacturer=
@@ -11148,7 +11344,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Beta-8a`,date:`20130102`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Beta-8a`,date:`20130102`,content:`[Driver]
 Brand=Eminence
 Model=Beta-8a
 Manufacturer=
@@ -11205,7 +11402,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence CA15-4`,date:`20130117`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence CA15-4`,date:`20130117`,content:`[Driver]
 Brand=Eminence
 Model=CA15-4
 Manufacturer=
@@ -11262,7 +11460,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Delta Pro 12-450-4`,date:`20150927`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Delta Pro 12-450-4`,date:`20150927`,content:`[Driver]
 Brand=Eminence
 Model=Delta Pro 12-450-4
 Manufacturer=
@@ -11319,7 +11518,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECENNNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Delta Pro-18C`,date:`20120824`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Delta Pro-18C`,date:`20120824`,content:`[Driver]
 Brand=Eminence
 Model=Delta Pro-18C
 Manufacturer=
@@ -11376,7 +11576,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Delta Pro-8A`,date:`20121225`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Delta Pro-8A`,date:`20121225`,content:`[Driver]
 Brand=Eminence
 Model=Delta Pro-8A
 Manufacturer=
@@ -11433,7 +11634,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Delta-10A`,date:`20120828`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Delta-10A`,date:`20120828`,content:`[Driver]
 Brand=Eminence
 Model=Delta-10A
 Manufacturer=
@@ -11490,7 +11692,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Delta-12A`,date:`20130708`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Delta-12A`,date:`20130708`,content:`[Driver]
 Brand=Eminence
 Model=Delta-12A
 Manufacturer=
@@ -11547,7 +11750,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Delta-12B`,date:`20151014`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Delta-12B`,date:`20151014`,content:`[Driver]
 Brand=Eminence
 Model=Delta-12B
 Manufacturer=
@@ -11604,7 +11808,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Delta-12LF (C 16 ohm)`,date:`20151014`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Delta-12LF (C 16 ohm)`,date:`20151014`,content:`[Driver]
 Brand=Eminence
 Model=Delta-12LF (C 16 ohm)
 Manufacturer=
@@ -11661,7 +11866,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=ECECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Delta-12LFA`,date:`20120814`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Delta-12LFA`,date:`20120814`,content:`[Driver]
 Brand=Eminence
 Model=Delta-12LFA
 Manufacturer=
@@ -11718,7 +11924,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Delta-15A`,date:`20120512`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Delta-15A`,date:`20120512`,content:`[Driver]
 Brand=Eminence
 Model=Delta-15A
 Manufacturer=
@@ -11775,7 +11982,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Delta-15LF-4`,date:`20160218`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Delta-15LF-4`,date:`20160218`,content:`[Driver]
 Brand=Eminence
 Model=Delta-15LF-4
 Manufacturer=
@@ -11832,7 +12040,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Delta-Pro 15A`,date:`20131015`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Delta-Pro 15A`,date:`20131015`,content:`[Driver]
 Brand=Eminence
 Model=Delta-Pro 15A
 Manufacturer=
@@ -11889,7 +12098,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCNCEENNENNEECCCEENCNCCENNNNCNNNCCCCNNNNNNNNNNNCC
-`},{name:`Eminence Eminator 1508`,date:`20150121`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Eminator 1508`,date:`20150121`,content:`[Driver]
 Brand=Eminence
 Model=Eminator 1508
 Manufacturer=
@@ -11946,7 +12156,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Eminator 2512`,date:`20170530`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Eminator 2512`,date:`20170530`,content:`[Driver]
 Brand=Eminence
 Model=Eminator 2512
 Manufacturer=
@@ -12003,7 +12214,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Eminator 2515`,date:`20170530`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Eminator 2515`,date:`20170530`,content:`[Driver]
 Brand=Eminence
 Model=Eminator 2515
 Manufacturer=
@@ -12060,7 +12272,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence HL-10C`,date:`20160823`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence HL-10C`,date:`20160823`,content:`[Driver]
 Brand=Eminence
 Model=HL-10C
 Manufacturer=
@@ -12117,7 +12330,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Impero 15A`,date:`20121020`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Impero 15A`,date:`20121020`,content:`[Driver]
 Brand=Eminence
 Model=Impero 15A
 Manufacturer=
@@ -12174,7 +12388,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Kappa Pro 18LF-8`,date:`20160527`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Kappa Pro 18LF-8`,date:`20160527`,content:`[Driver]
 Brand=Eminence
 Model=Kappa Pro 18LF-8
 Manufacturer=
@@ -12231,7 +12446,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Kappa Pro-10LF`,date:`20151001`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Kappa Pro-10LF`,date:`20151001`,content:`[Driver]
 Brand=Eminence
 Model=Kappa Pro-10LF
 Manufacturer=
@@ -12288,7 +12504,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Kappa Pro-12A`,date:`20120912`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Kappa Pro-12A`,date:`20120912`,content:`[Driver]
 Brand=Eminence
 Model=Kappa Pro-12A
 Manufacturer=
@@ -12345,7 +12562,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Kappa Pro-15LFC`,date:`20140509`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Kappa Pro-15LFC`,date:`20140509`,content:`[Driver]
 Brand=Eminence
 Model=Kappa Pro-15LFC
 Manufacturer=
@@ -12402,7 +12620,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Kappa-15LFA`,date:`20130907`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Kappa-15LFA`,date:`20130907`,content:`[Driver]
 Brand=Eminence
 Model=Kappa-15LFA
 Manufacturer=
@@ -12459,7 +12678,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Kappa-Pro-15LF-2`,date:`20140404`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Kappa-Pro-15LF-2`,date:`20140404`,content:`[Driver]
 Brand=Eminence
 Model=Kappa-Pro-15LF-2
 Manufacturer=
@@ -12516,7 +12736,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCNCEENNEENEECCCEECCNCCENNNCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Kappalite 3012LF`,date:`20120914`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Kappalite 3012LF`,date:`20120914`,content:`[Driver]
 Brand=Eminence
 Model=Kappalite 3012LF
 Manufacturer=
@@ -12573,7 +12794,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Kilomax Pro-18A`,date:`20120412`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Kilomax Pro-18A`,date:`20120412`,content:`[Driver]
 Brand=Eminence
 Model=Kilomax Pro-18A
 Manufacturer=
@@ -12630,7 +12852,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence LA8-CNMB`,date:`20150505`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence LA8-CNMB`,date:`20150505`,content:`[Driver]
 Brand=Eminence
 Model=LA8-CNMB
 Manufacturer=
@@ -12687,7 +12910,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence LAB15`,date:`20121002`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence LAB15`,date:`20121002`,content:`[Driver]
 Brand=Eminence
 Model=LAB15
 Manufacturer=
@@ -12744,7 +12968,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Lab 12C`,date:`20130313`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Lab 12C`,date:`20130313`,content:`[Driver]
 Brand=Eminence
 Model=Lab 12C
 Manufacturer=
@@ -12801,7 +13026,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Lab12`,date:`20121114`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Lab12`,date:`20121114`,content:`[Driver]
 Brand=Eminence
 Model=Lab12
 Manufacturer=
@@ -12858,7 +13084,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Legend BP102-4`,date:`20130907`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Legend BP102-4`,date:`20130907`,content:`[Driver]
 Brand=Eminence
 Model=Legend BP102-4
 Manufacturer=
@@ -12915,7 +13142,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCNCEENNENNEECCCEENCNCCENNNNCNNNCCCCNNNNNNNNNNNCC
-`},{name:`Eminence Legend BP122`,date:`20170530`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Legend BP122`,date:`20170530`,content:`[Driver]
 Brand=Eminence
 Model=Legend BP122
 Manufacturer=
@@ -12972,7 +13200,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Legend CB15`,date:`20120917`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Legend CB15`,date:`20120917`,content:`[Driver]
 Brand=Eminence
 Model=Legend CB15
 Manufacturer=
@@ -13029,7 +13258,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Omega Pro-15A`,date:`20140316`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Omega Pro-15A`,date:`20140316`,content:`[Driver]
 Brand=Eminence
 Model=Omega Pro-15A
 Manufacturer=
@@ -13086,7 +13316,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Omega Pro-18A`,date:`20120510`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Omega Pro-18A`,date:`20120510`,content:`[Driver]
 Brand=Eminence
 Model=Omega Pro-18A
 Manufacturer=
@@ -13143,7 +13374,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Sigma Pro 18-4`,date:`20161122`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Sigma Pro 18-4`,date:`20161122`,content:`[Driver]
 Brand=Eminence
 Model=Sigma Pro 18-4
 Manufacturer=
@@ -13200,7 +13432,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Sigma Pro 18A-2-subwoofer`,date:`20140131`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Sigma Pro 18A-2-subwoofer`,date:`20140131`,content:`[Driver]
 Brand=Eminence
 Model=Sigma Pro 18A-2
 Manufacturer=
@@ -13257,7 +13490,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Eminence Sigma Pro 18A-2`,date:`20140131`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Eminence Sigma Pro 18A-2`,date:`20140131`,content:`[Driver]
 Brand=Eminence
 Model=Sigma Pro 18A-2
 Manufacturer=
@@ -13314,7 +13548,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Exodus Anarchy`,date:`20131120`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Exodus Anarchy`,date:`20131120`,content:`[Driver]
 Brand=Exodus
 Model=Anarchy
 Manufacturer=
@@ -13371,7 +13606,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECENNNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 10FE200`,date:`20121014`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Faital Pro 10FE200`,date:`20121014`,content:`[Driver]
 Brand=Faital Pro
 Model=10FE200
 Manufacturer=
@@ -13428,7 +13664,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 10FH520`,date:`20140209`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Faital Pro 10FH520`,date:`20140209`,content:`[Driver]
 Brand=Faital Pro
 Model=10FH520
 Manufacturer=
@@ -13485,7 +13722,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 10PR310`,date:`20121023`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Faital Pro 10PR310`,date:`20121023`,content:`[Driver]
 Brand=Faital Pro
 Model=10PR310
 Manufacturer=
@@ -13542,7 +13780,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 12FH510`,date:`20131021`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Faital Pro 12FH510`,date:`20131021`,content:`[Driver]
 Brand=Faital Pro
 Model=12FH510
 Manufacturer=
@@ -13599,7 +13838,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 12FH520`,date:`20121001`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Faital Pro 12FH520`,date:`20121001`,content:`[Driver]
 Brand=Faital Pro
 Model=12FH520
 Manufacturer=
@@ -13656,7 +13896,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 12HP1010`,date:`20121025`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Faital Pro 12HP1010`,date:`20121025`,content:`[Driver]
 Brand=Faital Pro
 Model=12HP1010
 Manufacturer=
@@ -13713,7 +13954,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 12HP1060`,date:`20121025`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Faital Pro 12HP1060`,date:`20121025`,content:`[Driver]
 Brand=Faital Pro
 Model=12HP1060
 Manufacturer=
@@ -13770,7 +14012,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 12PR310`,date:`20120807`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Faital Pro 12PR310`,date:`20120807`,content:`[Driver]
 Brand=Faital Pro
 Model=12PR310
 Manufacturer=
@@ -13827,7 +14070,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 15FH510`,date:`20121010`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Faital Pro 15FH510`,date:`20121010`,content:`[Driver]
 Brand=Faital Pro
 Model=15FH510
 Manufacturer=
@@ -13884,7 +14128,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 15FH520`,date:`20121001`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Faital Pro 15FH520`,date:`20121001`,content:`[Driver]
 Brand=Faital Pro
 Model=15FH520
 Manufacturer=
@@ -13941,7 +14186,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 15HP1010`,date:`20121009`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Faital Pro 15HP1010`,date:`20121009`,content:`[Driver]
 Brand=Faital Pro
 Model=15HP1010
 Manufacturer=
@@ -13998,7 +14244,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 15PR400`,date:`20120923`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Faital Pro 15PR400`,date:`20120923`,content:`[Driver]
 Brand=Faital Pro
 Model=15PR400
 Manufacturer=
@@ -14055,7 +14302,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 4FE35`,date:`20130810`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Faital Pro 4FE35`,date:`20130810`,content:`[Driver]
 Brand=Faital Pro
 Model=4FE35
 Manufacturer=
@@ -14112,7 +14360,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEEEEECCCCECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 5FE120`,date:`20120807`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Faital Pro 5FE120`,date:`20120807`,content:`[Driver]
 Brand=Faital Pro
 Model=5FE120
 Manufacturer=
@@ -14169,7 +14418,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNCENEEECCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 6FE100`,date:`20121011`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Faital Pro 6FE100`,date:`20121011`,content:`[Driver]
 Brand=Faital Pro
 Model=6FE100
 Manufacturer=
@@ -14226,7 +14476,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 6FE200 4ohms`,date:`20131015`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Faital Pro 6FE200 4ohms`,date:`20131015`,content:`[Driver]
 Brand=Faital Pro
 Model=6FE200 4ohms
 Manufacturer=
@@ -14283,7 +14534,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 6FE200`,date:`20120725`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Faital Pro 6FE200`,date:`20120725`,content:`[Driver]
 Brand=Faital Pro
 Model=6FE200
 Manufacturer=
@@ -14340,7 +14592,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 6HX150`,date:`20131013`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Faital Pro 6HX150`,date:`20131013`,content:`[Driver]
 Brand=Faital Pro
 Model=6HX150
 Manufacturer=
@@ -14397,7 +14650,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 6PR110`,date:`20120808`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Faital Pro 6PR110`,date:`20120808`,content:`[Driver]
 Brand=Faital Pro
 Model=6PR110
 Manufacturer=
@@ -14454,7 +14708,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNCENEEECCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 8FE200`,date:`20130907`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Faital Pro 8FE200`,date:`20130907`,content:`[Driver]
 Brand=Faital Pro
 Model=8FE200
 Manufacturer=
@@ -14511,7 +14766,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro 8PR200`,date:`20120912`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Faital Pro 8PR200`,date:`20120912`,content:`[Driver]
 Brand=Faital Pro
 Model=8PR200
 Manufacturer=
@@ -14568,7 +14824,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Faital Pro W10N8-700`,date:`20150117`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Faital Pro W10N8-700`,date:`20150117`,content:`[Driver]
 Brand=Faital Pro
 Model=W10N8-700
 Manufacturer=
@@ -14625,7 +14882,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Fatial Pro 12FH520`,date:`20131021`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Fatial Pro 12FH520`,date:`20131021`,content:`[Driver]
 Brand=Fatial Pro
 Model=12FH520
 Manufacturer=
@@ -14682,7 +14940,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCNCEENNENNEECCCEENCNCCENNNNCNNNCCCCNNNNNNNNNNNCC
-`},{name:`GRS 10PF-8`,date:`20150209`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`GRS 10PF-8`,date:`20150209`,content:`[Driver]
 Brand=GRS
 Model=10PF-8
 Manufacturer=
@@ -14739,7 +14998,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`GRS 10PR-8`,date:`20150209`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`GRS 10PR-8`,date:`20150209`,content:`[Driver]
 Brand=GRS
 Model=10PR-8
 Manufacturer=
@@ -14796,7 +15056,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`GRS 12PF-8`,date:`20150209`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`GRS 12PF-8`,date:`20150209`,content:`[Driver]
 Brand=GRS
 Model=12PF-8
 Manufacturer=
@@ -14853,7 +15114,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECENNNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`GRS 12PR-8`,date:`20150209`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`GRS 12PR-8`,date:`20150209`,content:`[Driver]
 Brand=GRS
 Model=12PR-8
 Manufacturer=
@@ -14910,7 +15172,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`GRS 12SW-4`,date:`20150209`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`GRS 12SW-4`,date:`20150209`,content:`[Driver]
 Brand=GRS
 Model=12SW-4
 Manufacturer=
@@ -14967,7 +15230,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`GRS 15PF-8`,date:`20150209`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`GRS 15PF-8`,date:`20150209`,content:`[Driver]
 Brand=GRS
 Model=15PF-8
 Manufacturer=
@@ -15024,7 +15288,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`GRS 4FR-8`,date:`20150110`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`GRS 4FR-8`,date:`20150110`,content:`[Driver]
 Brand=GRS
 Model=4FR-8
 Manufacturer=
@@ -15081,7 +15346,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`GRS 8FR-8`,date:`20150115`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`GRS 8FR-8`,date:`20150115`,content:`[Driver]
 Brand=GRS
 Model=8FR-8
 Manufacturer=
@@ -15138,7 +15404,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`GRS 8PF-8`,date:`20150110`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`GRS 8PF-8`,date:`20150110`,content:`[Driver]
 Brand=GRS
 Model=8PF-8
 Manufacturer=
@@ -15195,7 +15462,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`GRS 8PR-8`,date:`20150110`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`GRS 8PR-8`,date:`20150110`,content:`[Driver]
 Brand=GRS
 Model=8PR-8
 Manufacturer=
@@ -15256,7 +15524,8 @@ boxbench_quality=H
 boxbench_issue=model_corrected
 boxbench_detail=Model corrected from 8PF-8 to 8PR-8. Re=7.58 ohm confirms 8-ohm driver; Fs/Vas consistent with 8PR-8 spec.
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`,datasheet:`https://www.parts-express.com/pedocs/specs/GRS%20Spec%20Sheets/292-428--grs-8pr-8-spec-sheet.pdf`},{name:`GRS 8SW-4`,date:`20150110`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`,datasheet:`https://www.parts-express.com/pedocs/specs/GRS%20Spec%20Sheets/292-428--grs-8pr-8-spec-sheet.pdf`},{name:`GRS 8SW-4`,date:`20150110`,content:`[Driver]
 Brand=GRS
 Model=8SW-4
 Manufacturer=
@@ -15317,7 +15586,8 @@ boxbench_quality=H
 boxbench_issue=model_corrected
 boxbench_detail=Model corrected from 8PF-8 to 8SW-4. Re=3.86 ohm confirms 4-ohm driver; Pe=80W exact match to 8SW-4 spec.
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`,datasheet:`https://www.parts-express.com/pedocs/specs/GRS%20Spec%20Sheets/292-480--grs-8sw-4-spec-sheet.pdf`},{name:`Goldwood GW-212-8`,date:`20120415`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`,datasheet:`https://www.parts-express.com/pedocs/specs/GRS%20Spec%20Sheets/292-480--grs-8sw-4-spec-sheet.pdf`},{name:`Goldwood GW-212-8`,date:`20120415`,content:`[Driver]
 Brand=Goldwood
 Model=GW-212-8
 Manufacturer=
@@ -15374,7 +15644,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Goldwood GW-8024 8in woofer`,date:`20120403`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Goldwood GW-8024 8in woofer`,date:`20120403`,content:`[Driver]
 Brand=Goldwood
 Model=GW-8024 8in woofer
 Manufacturer=
@@ -15431,7 +15702,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`HiVi B4N`,date:`20140105`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`HiVi B4N`,date:`20140105`,content:`[Driver]
 Brand=HiVi
 Model=B4N
 Manufacturer=
@@ -15488,7 +15760,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECENNNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`HiVi M6N 6in woofer`,date:`20120501`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`HiVi M6N 6in woofer`,date:`20120501`,content:`[Driver]
 Brand=HiVi
 Model=M6N 6in woofer
 Manufacturer=
@@ -15545,7 +15818,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECENNNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`HiVi M6a`,date:`20110925`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`HiVi M6a`,date:`20110925`,content:`[Driver]
 Brand=HiVi
 Model=M6a
 Manufacturer=
@@ -15602,7 +15876,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECENNNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Infinity 1060w`,date:`20140416`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Infinity 1060w`,date:`20140416`,content:`[Driver]
 Brand=Infinity
 Model=1060w
 Manufacturer=
@@ -15659,7 +15934,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Infinity 1260w`,date:`20140416`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Infinity 1260w`,date:`20140416`,content:`[Driver]
 Brand=Infinity
 Model=1260w
 Manufacturer=
@@ -15716,7 +15992,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Infinity 860w`,date:`20140526`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Infinity 860w`,date:`20140526`,content:`[Driver]
 Brand=Infinity
 Model=860w
 Manufacturer=
@@ -15773,7 +16050,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`JBL 2206H`,date:`20121025`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`JBL 2206H`,date:`20121025`,content:`[Driver]
 Brand=JBL
 Model=2206H
 Manufacturer=
@@ -15830,7 +16108,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`JBL 2226H`,date:`20121127`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`JBL 2226H`,date:`20121127`,content:`[Driver]
 Brand=JBL
 Model=2226H
 Manufacturer=
@@ -15890,7 +16169,8 @@ boxbench_quality=H
 boxbench_issue=model_corrected
 boxbench_detail=Model corrected from 2226J to 2226H. Near-perfect T/S match: Fs=40Hz, Qts=0.31, Qms=5.0, Vas=175L, Xmax=7.6mm, Pe=600W, Sd=0.088m2 all confirmed.
 ParState=CEECCENNEEECEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`JBL CS1214`,date:`20160814`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`JBL CS1214`,date:`20160814`,content:`[Driver]
 Brand=JBL
 Model=CS1214
 Manufacturer=
@@ -15947,7 +16227,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`MCM 21in 800w pro woofer`,date:`20110523`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`MCM 21in 800w pro woofer`,date:`20110523`,content:`[Driver]
 Brand=
 Model=
 Manufacturer=
@@ -16007,7 +16288,8 @@ boxbench_quality=L
 boxbench_issue=empty_fields
 boxbench_detail=Brand and Model are both empty inside the file
 ParState=EEECENNNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`MISCQ OOC10WF-4-4B`,date:`20131119`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`MISCQ OOC10WF-4-4B`,date:`20131119`,content:`[Driver]
 Brand=MISCQ
 Model=OOC10WF-4-4B
 Manufacturer=
@@ -16064,7 +16346,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`MISCQ OOC12WF-4-4B`,date:`20131119`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`MISCQ OOC12WF-4-4B`,date:`20131119`,content:`[Driver]
 Brand=MISCQ
 Model=OOC12WF-4-4B
 Manufacturer=
@@ -16121,7 +16404,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`MISCQ RRC15WF-4-4A`,date:`20131119`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`MISCQ RRC15WF-4-4A`,date:`20131119`,content:`[Driver]
 Brand=MISCQ
 Model=RRC15WF-4-4A
 Manufacturer=
@@ -16178,7 +16462,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECENNNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Max Fidelity 5.25in woofer AP130G8`,date:`20100722`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Max Fidelity 5.25in woofer AP130G8`,date:`20100722`,content:`[Driver]
 Brand=Max Fidelity
 Model=5.25in woofer AP130G8
 Manufacturer=
@@ -16235,7 +16520,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=NEENNNNNNENCNNENCCEENCNENNNCNNNNNNNNNCNNNNNNNNNCC
-`},{name:`Morel UW 1258`,date:`20130313`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Morel UW 1258`,date:`20130313`,content:`[Driver]
 Brand=Morel
 Model=UW 1258
 Manufacturer=
@@ -16292,7 +16578,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`NHT AR-12 Clone`,date:`20151104`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`NHT AR-12 Clone`,date:`20151104`,content:`[Driver]
 Brand=NHT
 Model=AR-12 Clone
 Manufacturer=
@@ -16349,7 +16636,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`PRV Audio 15W1600`,date:`20120824`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`PRV Audio 15W1600`,date:`20120824`,content:`[Driver]
 Brand=PRV Audio
 Model=15W1600
 Manufacturer=
@@ -16406,7 +16694,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECENNNEENCEECCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`PRV Audio 21SW4000`,date:`20130904`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`PRV Audio 21SW4000`,date:`20130904`,content:`[Driver]
 Brand=PRV Audio
 Model=21SW4000
 Manufacturer=
@@ -16463,7 +16752,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECENNNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Peeless HDS 6.5in 830875`,date:`20120328`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Peeless HDS 6.5in 830875`,date:`20120328`,content:`[Driver]
 Brand=Peeless
 Model=HDS 6.5in 830875
 Manufacturer=
@@ -16520,7 +16810,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Peerless 830500 12in XLS`,date:`20121114`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Peerless 830500 12in XLS`,date:`20121114`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=830500 12" XLS
 Manufacturer=
@@ -16580,7 +16871,8 @@ boxbench_quality=H
 boxbench_issue=filename_convention
 boxbench_detail=12in in filename represents 12in inside — expected inch mark substitution
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Peerless 830656 SDS 5.25in`,date:`20170109`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Peerless 830656 SDS 5.25in`,date:`20170109`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=830656 SDS 5.25in
 Manufacturer=
@@ -16637,7 +16929,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Peerless 830668 SLS 10in`,date:`20170811`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Peerless 830668 SLS 10in`,date:`20170811`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=830668 SLS 10in
 Manufacturer=
@@ -16694,7 +16987,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Peerless 830869 8in HDS Nomex`,date:`20130926`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Peerless 830869 8in HDS Nomex`,date:`20130926`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=830869 8in HDS Nomex
 Manufacturer=
@@ -16751,7 +17045,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Peerless 8in HDS 830869`,date:`20111110`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Peerless 8in HDS 830869`,date:`20111110`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=830869
 Manufacturer=
@@ -16808,7 +17103,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Peerless HDS 6.5in 831735`,date:`20110309`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Peerless HDS 6.5in 831735`,date:`20110309`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=HDS 831735
 Manufacturer=
@@ -16865,7 +17161,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECENNNCENCCEECCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Peerless SDS-160PR01-08`,date:`20111213`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Peerless SDS-160PR01-08`,date:`20111213`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SDS-160PR01-08
 Manufacturer=
@@ -16922,7 +17219,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Peerless SLS-P930669 12in sub`,date:`20130313`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Peerless SLS-P930669 12in sub`,date:`20130313`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SLS-P930669 12in sub
 Manufacturer=
@@ -16979,7 +17277,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Peerless XLS 12in 830500`,date:`20111020`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Peerless XLS 12in 830500`,date:`20111020`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=XLS 12" 830500
 Manufacturer=
@@ -17036,7 +17335,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`RCF L10_568H`,date:`20140209`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`RCF L10_568H`,date:`20140209`,content:`[Driver]
 Brand=RCF
 Model=L10/568H
 Manufacturer=
@@ -17096,7 +17396,8 @@ boxbench_quality=H
 boxbench_issue=filename_convention
 boxbench_detail=Manufacturer name is L10-568H (hyphen). Internal model uses slash; filename uses underscore. See top-level meta.json for transformation note. Source: https://www.rcf.it/en/products/product-detail/l10-568h
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`RCF L15P530`,date:`20121020`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`RCF L15P530`,date:`20121020`,content:`[Driver]
 Brand=RCF
 Model=L15P530
 Manufacturer=
@@ -17153,7 +17454,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEEECECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`RCF L15S801`,date:`20121020`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`RCF L15S801`,date:`20121020`,content:`[Driver]
 Brand=RCF
 Model=L15S801
 Manufacturer=
@@ -17210,7 +17512,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEEECECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`RCF L15_554K`,date:`20121020`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`RCF L15_554K`,date:`20121020`,content:`[Driver]
 Brand=RCF
 Model=L15/554K
 Manufacturer=
@@ -17270,7 +17573,8 @@ boxbench_quality=H
 boxbench_issue=filename_convention
 boxbench_detail=Manufacturer name is L15-554K (hyphen). Internal model uses slash; filename uses underscore. See top-level meta.json for transformation note. Source: https://www.rcf.it/en/products/product-detail/l15-554k
 ParState=CEECEENNEEECECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`RCF L8S800`,date:`20120726`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`RCF L8S800`,date:`20120726`,content:`[Driver]
 Brand=RCF
 Model=L8S800
 Manufacturer=
@@ -17327,7 +17631,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`RCF LF15X400`,date:`20130206`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`RCF LF15X400`,date:`20130206`,content:`[Driver]
 Brand=RCF
 Model=LF15X400
 Manufacturer=
@@ -17384,7 +17689,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`RCF MB12G301`,date:`20131021`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`RCF MB12G301`,date:`20131021`,content:`[Driver]
 Brand=RCF
 Model=MB12G301
 Manufacturer=
@@ -17441,7 +17747,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`RCF MB15H401`,date:`20121020`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`RCF MB15H401`,date:`20121020`,content:`[Driver]
 Brand=RCF
 Model=MB15H401
 Manufacturer=
@@ -17498,7 +17805,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEEECECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`SB acoustics SB17NRXC35-4 6.5in woofer`,date:`20120724`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`SB acoustics SB17NRXC35-4 6.5in woofer`,date:`20120724`,content:`[Driver]
 Brand=SB acoustics
 Model=SB17NRXC35-4 6.5in woofer
 Manufacturer=
@@ -17555,7 +17863,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Selenium 18SWS800`,date:`20120124`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Selenium 18SWS800`,date:`20120124`,content:`[Driver]
 Brand=Selenium
 Model=18SWS800
 Manufacturer=
@@ -17612,7 +17921,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Silver Flute W17RC38-04`,date:`20130324`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Silver Flute W17RC38-04`,date:`20130324`,content:`[Driver]
 Brand=Silver Flute
 Model=W17RC38-04
 Manufacturer=
@@ -17669,7 +17979,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Silver Flute W17RC38-08`,date:`20130324`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Silver Flute W17RC38-08`,date:`20130324`,content:`[Driver]
 Brand=Silver Flute
 Model=W17RC38-08
 Manufacturer=
@@ -17726,7 +18037,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`SoundStream SPL170`,date:`20130701`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`SoundStream SPL170`,date:`20130701`,content:`[Driver]
 Brand=SoundStream
 Model=SPL170
 Manufacturer=
@@ -17783,7 +18095,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCNCEENNENNEECCCEENCNCCENNNNCNNNCCCCNNNNNNNNNNNCC
-`},{name:`Stereo Integrity BM mkV D2`,date:`20171023`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Stereo Integrity BM mkV D2`,date:`20171023`,content:`[Driver]
 Brand=Stereo Integrity
 Model=BM mkV D2
 Manufacturer=
@@ -17840,7 +18153,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity DS4-d2`,date:`20160527`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Stereo Integrity DS4-d2`,date:`20160527`,content:`[Driver]
 Brand=Stereo Integrity
 Model=DS4-d2
 Manufacturer=
@@ -17897,7 +18211,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity HS24 MKII D2`,date:`20170728`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Stereo Integrity HS24 MKII D2`,date:`20170728`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HS24 MKII D2
 Manufacturer=
@@ -17954,7 +18269,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity HS24-D2`,date:`20150329`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Stereo Integrity HS24-D2`,date:`20150329`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HS24-D2
 Manufacturer=
@@ -18011,7 +18327,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity HST-11 MKII`,date:`20170725`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Stereo Integrity HST-11 MKII`,date:`20170725`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HST-11 MKII
 Manufacturer=
@@ -18068,7 +18385,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity HST-12 mkII D2`,date:`20171023`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Stereo Integrity HST-12 mkII D2`,date:`20171023`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HST-12 mkII D2
 Manufacturer=
@@ -18125,7 +18443,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEEECECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity HST-18 mkII D2`,date:`20171023`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Stereo Integrity HST-18 mkII D2`,date:`20171023`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HST-18 mkII D2
 Manufacturer=
@@ -18182,7 +18501,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity HST18 D1`,date:`20150917`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Stereo Integrity HST18 D1`,date:`20150917`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HST18 D1
 Manufacturer=
@@ -18239,7 +18559,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity HST18 D2`,date:`20150917`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Stereo Integrity HST18 D2`,date:`20150917`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HST18 D2
 Manufacturer=
@@ -18296,7 +18617,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity HT 18 D2`,date:`20130125`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Stereo Integrity HT 18 D2`,date:`20130125`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HT 18 D2
 Manufacturer=
@@ -18357,7 +18679,8 @@ boxbench_issue=ts_community_measured
 boxbench_detail=Confirmed HT-18 D2 (Dual 2 Ohm) — Re and Xmax consistent with manufacturer spec. T/S params diverge (Fs 17 vs 23 Hz, Qts 0.38 vs 0.59, Vas 412 vs 220 L) — likely community-measured. THIS DRIVER IS OBSOLETE AND OUT OF PRODUCTION. Manufacturer states: 'only available in Dual 2 Ohm configuration, power handling rated at 750 watts RMS'.
 boxbench_obsolete=true
 ParState=CEEEEENNCENCECCCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity HT 18 D4 series`,date:`20130125`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Stereo Integrity HT 18 D4 series`,date:`20130125`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HT 18 D4 series
 Manufacturer=
@@ -18414,7 +18737,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity HT 18 D4`,date:`20130125`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Stereo Integrity HT 18 D4`,date:`20130125`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HT 18 D4
 Manufacturer=
@@ -18471,7 +18795,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity HT-18 V2 D2`,date:`20171023`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Stereo Integrity HT-18 V2 D2`,date:`20171023`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HT-18 V2 D2
 Manufacturer=
@@ -18528,7 +18853,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity HT15 D2`,date:`20140429`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Stereo Integrity HT15 D2`,date:`20140429`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HT15 D2
 Manufacturer=
@@ -18585,7 +18911,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity HT15`,date:`20130314`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Stereo Integrity HT15`,date:`20130314`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HT15
 Manufacturer=
@@ -18642,7 +18969,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity IB-24`,date:`20171023`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Stereo Integrity IB-24`,date:`20171023`,content:`[Driver]
 Brand=Stereo Integrity
 Model=IB-24
 Manufacturer=
@@ -18699,7 +19027,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Stereo Integrity SHS-24`,date:`20171023`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Stereo Integrity SHS-24`,date:`20171023`,content:`[Driver]
 Brand=Stereo Integrity
 Model=SHS-24
 Manufacturer=
@@ -18756,7 +19085,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`TC Sounds Epic 12in`,date:`20120111`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`TC Sounds Epic 12in`,date:`20120111`,content:`[Driver]
 Brand=TC Sounds
 Model=Epic 12in
 Manufacturer=
@@ -18813,7 +19143,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`TC Sounds LMS Ultra 5400`,date:`20111020`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`TC Sounds LMS Ultra 5400`,date:`20111020`,content:`[Driver]
 Brand=TC Sounds
 Model=LMS Ultra 5400
 Manufacturer=
@@ -18870,7 +19201,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`TC Sounds LMS-R 12in`,date:`20130313`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`TC Sounds LMS-R 12in`,date:`20130313`,content:`[Driver]
 Brand=TC Sounds
 Model=LMS-R 12in
 Manufacturer=
@@ -18927,7 +19259,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Tand Band W5-704D`,date:`20130323`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Tand Band W5-704D`,date:`20130323`,content:`[Driver]
 Brand=Tand Band
 Model=W5-704D
 Manufacturer=
@@ -18984,7 +19317,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Tang Band W5-1138SM`,date:`20161127`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Tang Band W5-1138SM`,date:`20161127`,content:`[Driver]
 Brand=Tang Band
 Model=W5-1138SM
 Manufacturer=
@@ -19041,7 +19375,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Tang Band W5-1880 5in fullrange`,date:`20120219`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Tang Band W5-1880 5in fullrange`,date:`20120219`,content:`[Driver]
 Brand=Tang Band
 Model=W5-1880 5in fullrange
 Manufacturer=
@@ -19098,7 +19433,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Tang Band W6-1139SI`,date:`20131115`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Tang Band W6-1139SI`,date:`20131115`,content:`[Driver]
 Brand=Tang Band
 Model=W6-1139SI
 Manufacturer=
@@ -19155,7 +19491,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Tang Band W6-789E`,date:`20130507`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Tang Band W6-789E`,date:`20130507`,content:`[Driver]
 Brand=Tang Band
 Model=W6-789E
 Manufacturer=
@@ -19212,7 +19549,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Tangband W6-1139SIF`,date:`20120223`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Tangband W6-1139SIF`,date:`20120223`,content:`[Driver]
 Brand=Tangband
 Model=W6-1139SIF
 Manufacturer=
@@ -19269,7 +19607,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Tymphany FSL-0615R02-08`,date:`20161007`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Tymphany FSL-0615R02-08`,date:`20161007`,content:`[Driver]
 Brand=Tymphany
 Model=FSL-0615R02-08
 Manufacturer=
@@ -19326,7 +19665,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Tymphany FSL-0818R01-08`,date:`20141007`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Tymphany FSL-0818R01-08`,date:`20141007`,content:`[Driver]
 Brand=Tymphany
 Model=FSL-0818R01-08
 Manufacturer=
@@ -19383,7 +19723,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Vifa NE265W-04 10 in subwoofer`,date:`20110717`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Vifa NE265W-04 10 in subwoofer`,date:`20110717`,content:`[Driver]
 Brand=Vifa
 Model=NE265W-04 10 in subwoofer
 Manufacturer=
@@ -19440,7 +19781,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Vifa NE265W-08`,date:`20120413`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Vifa NE265W-08`,date:`20120413`,content:`[Driver]
 Brand=Vifa
 Model=NE265W-08
 Manufacturer=
@@ -19497,7 +19839,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Vifa NE315W-04`,date:`20110717`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Vifa NE315W-04`,date:`20110717`,content:`[Driver]
 Brand=Vifa
 Model=NE315W-04
 Manufacturer=
@@ -19554,7 +19897,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`Vifa NE316W-8`,date:`20130313`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`Vifa NE316W-8`,date:`20130313`,content:`[Driver]
 Brand=Vifa
 Model=NE316W-8
 Manufacturer=
@@ -19611,7 +19955,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 AE TD6M-8 #1`,date:`20130418`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 AE TD6M-8 #1`,date:`20130418`,content:`[Driver]
 Brand=AE
 Model=TD6M-8 #1
 Manufacturer=
@@ -19671,7 +20016,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Aura NS6-255-8A #1`,date:`20120614`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Aura NS6-255-8A #1`,date:`20120614`,content:`[Driver]
 Brand=Aura
 Model=NS6-255-8A #1
 Manufacturer=
@@ -19731,7 +20077,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 B&C 15PS76`,date:`20121119`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 B&C 15PS76`,date:`20121119`,content:`[Driver]
 Brand=B&C
 Model=15PS76
 Manufacturer=
@@ -19791,7 +20138,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 B&C 8PS21 8_ woofer`,date:`20111113`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 B&C 8PS21 8_ woofer`,date:`20111113`,content:`[Driver]
 Brand=B&C
 Model=8PS21 8" woofer
 Manufacturer=
@@ -19851,7 +20199,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Buyout Legacy 15in subwoofer`,date:`20160908`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Buyout Legacy 15in subwoofer`,date:`20160908`,content:`[Driver]
 Brand=Buyout Legacy
 Model=15in subwoofer
 Manufacturer=
@@ -19911,7 +20260,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Celestion FTX0617`,date:`20160906`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Celestion FTX0617`,date:`20160906`,content:`[Driver]
 Brand=Celestion
 Model=FTX0617
 Manufacturer=
@@ -19971,7 +20321,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCNCEENNENNEECCCEENCNCCENNNNCNNNCCCCNNNNNNNNNNNCC
-`},{name:`WT3 Celestion FTX0820`,date:`20160816`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Celestion FTX0820`,date:`20160816`,content:`[Driver]
 Brand=Celestion
 Model=FTX0820
 Manufacturer=
@@ -20031,7 +20382,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Celestion TF0818 8in woofer`,date:`20111231`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Celestion TF0818 8in woofer`,date:`20111231`,content:`[Driver]
 Brand=Celestion
 Model=TF0818 8in woofer
 Manufacturer=
@@ -20091,7 +20443,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Dayton DCS380-4 #2`,date:`20130721`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Dayton DCS380-4 #2`,date:`20130721`,content:`[Driver]
 Brand=Dayton Audio
 Model=DCS380-4 #2
 Manufacturer=
@@ -20151,7 +20504,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Dayton DS215-8 #1`,date:`20130721`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Dayton DS215-8 #1`,date:`20130721`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS215-8 #1
 Manufacturer=
@@ -20211,7 +20565,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Dayton DS215-8 #2`,date:`20130721`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Dayton DS215-8 #2`,date:`20130721`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS215-8 #2
 Manufacturer=
@@ -20271,7 +20626,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Dayton DS315-8`,date:`20170417`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Dayton DS315-8`,date:`20170417`,content:`[Driver]
 Brand=Dayton Audio
 Model=DS315-8
 Manufacturer=
@@ -20331,7 +20687,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Dayton PA255-8 #1`,date:`20130721`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Dayton PA255-8 #1`,date:`20130721`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA255-8 #1
 Manufacturer=
@@ -20391,7 +20748,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Dayton PA255-8 #2`,date:`20130721`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Dayton PA255-8 #2`,date:`20130721`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA255-8 #2
 Manufacturer=
@@ -20451,7 +20809,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Dayton PA310-8 #1`,date:`20130721`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Dayton PA310-8 #1`,date:`20130721`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA310-8 #1
 Manufacturer=
@@ -20511,7 +20870,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Dayton PA310-8 #2`,date:`20150712`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Dayton PA310-8 #2`,date:`20150712`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA310-8 #2
 Manufacturer=
@@ -20571,7 +20931,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Dayton PA460-8 #1`,date:`20150725`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Dayton PA460-8 #1`,date:`20150725`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA460-8 #1
 Manufacturer=
@@ -20631,7 +20992,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Dayton PA460-8 #2`,date:`20150807`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Dayton PA460-8 #2`,date:`20150807`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA460-8 #2
 Manufacturer=
@@ -20691,7 +21053,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Dayton PK165-8 #1`,date:`20130721`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Dayton PK165-8 #1`,date:`20130721`,content:`[Driver]
 Brand=Dayton Audio
 Model=PK165-8 #1
 Manufacturer=
@@ -20751,7 +21114,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Dayton PK165-8 #2`,date:`20130721`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Dayton PK165-8 #2`,date:`20130721`,content:`[Driver]
 Brand=Dayton Audio
 Model=PK165-8 #2
 Manufacturer=
@@ -20811,7 +21175,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Dayton ST255-8 (soft)`,date:`20140928`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Dayton ST255-8 (soft)`,date:`20140928`,content:`[Driver]
 Brand=Dayton Audio
 Model=ST255-8 (soft)
 Manufacturer=
@@ -20871,7 +21236,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Dayton ST255-8 (stiff)`,date:`20140928`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Dayton ST255-8 (stiff)`,date:`20140928`,content:`[Driver]
 Brand=Dayton Audio
 Model=ST255-8 (stiff)
 Manufacturer=
@@ -20931,7 +21297,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECENNNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence 2510-8`,date:`20160906`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Eminence 2510-8`,date:`20160906`,content:`[Driver]
 Brand=Eminence
 Model=2510-8
 Manufacturer=
@@ -20991,7 +21358,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence 2512-8`,date:`20160925`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Eminence 2512-8`,date:`20160925`,content:`[Driver]
 Brand=Eminence
 Model=2512-8
 Manufacturer=
@@ -21051,7 +21419,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence 2515-8`,date:`20160925`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Eminence 2515-8`,date:`20160925`,content:`[Driver]
 Brand=Eminence
 Model=2515-8
 Manufacturer=
@@ -21111,7 +21480,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence 3015LF-4`,date:`20160925`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Eminence 3015LF-4`,date:`20160925`,content:`[Driver]
 Brand=Eminence
 Model=3015LF-4
 Manufacturer=
@@ -21171,7 +21541,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence Alpha-6A DATS`,date:`20141019`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Eminence Alpha-6A DATS`,date:`20141019`,content:`[Driver]
 Brand=Eminence
 Model=Alpha-6A DATS
 Manufacturer=
@@ -21231,7 +21602,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence Alpha-6C #1`,date:`20130721`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Eminence Alpha-6C #1`,date:`20130721`,content:`[Driver]
 Brand=Eminence
 Model=Alpha-6C #1
 Manufacturer=
@@ -21291,7 +21663,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence Alpha-6C #2`,date:`20130721`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Eminence Alpha-6C #2`,date:`20130721`,content:`[Driver]
 Brand=Eminence
 Model=Alpha-6C #2
 Manufacturer=
@@ -21351,7 +21724,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence Alpha-6C DATS`,date:`20141019`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Eminence Alpha-6C DATS`,date:`20141019`,content:`[Driver]
 Brand=Eminence
 Model=Alpha-6C DATS
 Manufacturer=
@@ -21411,7 +21785,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence Alpha6-A #1`,date:`20130721`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Eminence Alpha6-A #1`,date:`20130721`,content:`[Driver]
 Brand=Eminence
 Model=Alpha6-A #1
 Manufacturer=
@@ -21471,7 +21846,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence Alphalite-6a`,date:`20170102`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Eminence Alphalite-6a`,date:`20170102`,content:`[Driver]
 Brand=Eminence
 Model=Alphalite-6a
 Manufacturer=
@@ -21531,7 +21907,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence Beta-10CX`,date:`20140928`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Eminence Beta-10CX`,date:`20140928`,content:`[Driver]
 Brand=Eminence
 Model=Beta-10CX
 Manufacturer=
@@ -21591,7 +21968,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEEEEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence Beta-12CX`,date:`20170523`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Eminence Beta-12CX`,date:`20170523`,content:`[Driver]
 Brand=Eminence
 Model=Beta-12CX
 Manufacturer=
@@ -21651,7 +22029,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence CA154`,date:`20160925`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Eminence CA154`,date:`20160925`,content:`[Driver]
 Brand=Eminence
 Model=CA154
 Manufacturer=
@@ -21711,7 +22090,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence CX2008`,date:`20120927`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Eminence CX2008`,date:`20120927`,content:`[Driver]
 Brand=Eminence
 Model=CX2008
 Manufacturer=
@@ -21771,7 +22151,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCNCEENNENNEECCCEENCNCCENNNNCNNNCCCCNNNNNNNNNNNCC
-`},{name:`WT3 Eminence Delta-12LFC`,date:`20170118`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Eminence Delta-12LFC`,date:`20170118`,content:`[Driver]
 Brand=Eminence
 Model=Delta-12LFC
 Manufacturer=
@@ -21831,7 +22212,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence Kappa-15LF`,date:`20160925`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Eminence Kappa-15LF`,date:`20160925`,content:`[Driver]
 Brand=Eminence
 Model=Kappa-15LF
 Manufacturer=
@@ -21891,7 +22273,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Eminence Magnum-12`,date:`20150712`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Eminence Magnum-12`,date:`20150712`,content:`[Driver]
 Brand=Eminence
 Model=Magnum-12
 Manufacturer=
@@ -21951,7 +22334,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=Model field corrected from informal description (12in beefy woofer) to Magnum-12 based on filename. T/S parameters personally measured by mtg90 using WT3 or DATS v2.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Faital Pro 12PR300`,date:`20121008`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Faital Pro 12PR300`,date:`20121008`,content:`[Driver]
 Brand=Faital Pro
 Model=12PR300
 Manufacturer=
@@ -22011,7 +22395,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 GRS 10SW-4`,date:`20160602`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 GRS 10SW-4`,date:`20160602`,content:`[Driver]
 Brand=GRS
 Model=10SW-4
 Manufacturer=
@@ -22071,7 +22456,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 GRS 4FR-8 #1`,date:`20150115`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 GRS 4FR-8 #1`,date:`20150115`,content:`[Driver]
 Brand=GRS
 Model=4FR-8 #1
 Manufacturer=
@@ -22131,7 +22517,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 GRS 4FR-8 #2`,date:`20150115`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 GRS 4FR-8 #2`,date:`20150115`,content:`[Driver]
 Brand=GRS
 Model=4FR-8 #2
 Manufacturer=
@@ -22191,7 +22578,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 GRS 8FR-8 #1`,date:`20150211`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 GRS 8FR-8 #1`,date:`20150211`,content:`[Driver]
 Brand=GRS
 Model=8FR-8 #1
 Manufacturer=
@@ -22251,7 +22639,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 GRS 8FR-8 #2`,date:`20150211`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 GRS 8FR-8 #2`,date:`20150211`,content:`[Driver]
 Brand=GRS
 Model=8FR-8 #2
 Manufacturer=
@@ -22311,7 +22700,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 GRS 8PF-8 #1`,date:`20150115`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 GRS 8PF-8 #1`,date:`20150115`,content:`[Driver]
 Brand=GRS
 Model=8PF-8 #1
 Manufacturer=
@@ -22371,7 +22761,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 GRS 8PF-8 #2`,date:`20150115`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 GRS 8PF-8 #2`,date:`20150115`,content:`[Driver]
 Brand=GRS
 Model=8PF-8 #2
 Manufacturer=
@@ -22431,7 +22822,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 HiVi M5N`,date:`20170406`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 HiVi M5N`,date:`20170406`,content:`[Driver]
 Brand=HiVi
 Model=M5N
 Manufacturer=
@@ -22491,7 +22883,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Infinity 1262W`,date:`20151127`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Infinity 1262W`,date:`20151127`,content:`[Driver]
 Brand=Infinity
 Model=1262W
 Manufacturer=
@@ -22551,7 +22944,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 JBL 2242HPL`,date:`20130721`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 JBL 2242HPL`,date:`20130721`,content:`[Driver]
 Brand=JBL
 Model=2242HPL
 Manufacturer=
@@ -22611,7 +23005,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 JBL CS1214 #1`,date:`20160817`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 JBL CS1214 #1`,date:`20160817`,content:`[Driver]
 Brand=JBL
 Model=CS1214 #1
 Manufacturer=
@@ -22671,7 +23066,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Peerless India W5-KA538A-SH #1`,date:`20150106`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Peerless India W5-KA538A-SH #1`,date:`20150106`,content:`[Driver]
 Brand=Peerless India
 Model=W5-KA538A-SH #1
 Manufacturer=
@@ -22731,7 +23127,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Peerless India W5-KA538A-SH #2`,date:`20150106`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Peerless India W5-KA538A-SH #2`,date:`20150106`,content:`[Driver]
 Brand=Peerless India
 Model=W5-KA538A-SH #2
 Manufacturer=
@@ -22791,7 +23188,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Peerless SDS 6.5in #1`,date:`20130321`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Peerless SDS 6.5in #1`,date:`20130321`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SDS 6.5in #1
 Manufacturer=
@@ -22851,7 +23249,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Peerless SDS 6.5in #2`,date:`20130321`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Peerless SDS 6.5in #2`,date:`20130321`,content:`[Driver]
 Brand=Peerless by Tymphany
 Model=SDS 6.5in #2
 Manufacturer=
@@ -22911,7 +23310,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Radian 5210 10in coaxial`,date:`20150409`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Radian 5210 10in coaxial`,date:`20150409`,content:`[Driver]
 Brand=Radian
 Model=5210 10in coaxial
 Manufacturer=
@@ -22971,7 +23371,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECENNNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Sony 5.25 Neo woofer buyout`,date:`20110810`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Sony 5.25 Neo woofer buyout`,date:`20110810`,content:`[Driver]
 Brand=Sony
 Model=5.25 Neo
 Manufacturer=
@@ -23031,7 +23432,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Stereo Integrity HT 18 D4 series #1`,date:`20130125`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Stereo Integrity HT 18 D4 series #1`,date:`20130125`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HT 18 D4 series #1 Test3
 Manufacturer=
@@ -23091,7 +23493,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using WT3 or DATS v2. Test3/Test1 suffixes inside are mtg90's personal measurement run notes, not part of the model name.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Stereo Integrity HT 18 D4 series #2`,date:`20130125`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Stereo Integrity HT 18 D4 series #2`,date:`20130125`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HT 18 D4 series #2 Test1
 Manufacturer=
@@ -23151,7 +23554,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using WT3 or DATS v2. Test3/Test1 suffixes inside are mtg90's personal measurement run notes, not part of the model name.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`WT3 Stereo Integrity HT-18 D2`,date:`20151127`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`WT3 Stereo Integrity HT-18 D2`,date:`20151127`,content:`[Driver]
 Brand=Stereo Integrity
 Model=HT-18 D2
 Manufacturer=
@@ -23211,7 +23615,8 @@ boxbench_quality=H
 boxbench_issue=community_measured
 boxbench_detail=T/S parameters personally measured by mtg90 using Woofer Tester 3 (WT3) or DATS v2. These are real measurements, not manufacturer spec-sheet data; variance from published specs is expected and normal.
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`eighteensound 6ND430-1`,date:`20120726`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`eighteensound 6ND430-1`,date:`20120726`,content:`[Driver]
 Brand=eighteensound
 Model=6ND430-1
 Manufacturer=
@@ -23268,7 +23673,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNEENCECCCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`goldwood GW-10120 10in PA woofer`,date:`20120103`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`goldwood GW-10120 10in PA woofer`,date:`20120103`,content:`[Driver]
 Brand=goldwood
 Model=GW-10120 10in PA woofer
 Manufacturer=
@@ -23325,7 +23731,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`goldwood GW-8PC-30-8`,date:`20120105`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`goldwood GW-8PC-30-8`,date:`20120105`,content:`[Driver]
 Brand=goldwood
 Model=GW-8PC-30-8
 Manufacturer=
@@ -23382,7 +23789,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`mcm 12in pro 350w`,date:`20110523`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`mcm 12in pro 350w`,date:`20110523`,content:`[Driver]
 Brand=
 Model=
 Manufacturer=
@@ -23442,7 +23850,8 @@ boxbench_quality=L
 boxbench_issue=empty_fields
 boxbench_detail=Brand and Model are both empty inside the file
 ParState=CEECENNNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`mcm 15in pro 500 watt`,date:`20111208`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`mcm 15in pro 500 watt`,date:`20111208`,content:`[Driver]
 Brand=mcm
 Model=15in 500 watt
 Manufacturer=
@@ -23502,7 +23911,8 @@ boxbench_quality=H
 boxbench_issue=filename_convention
 boxbench_detail=Model inside is '15in 500 watt' — minor description drift, T/S data unaffected
 ParState=CEECENNNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`mcm 18in pro`,date:`20110726`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`mcm 18in pro`,date:`20110726`,content:`[Driver]
 Brand=MCM
 Model=55-2984
 Manufacturer=
@@ -23562,7 +23972,8 @@ boxbench_quality=H
 boxbench_issue=filename_convention
 boxbench_detail=Filename uses size description (18in pro) instead of model number. Model corrected to 55-2984 based on exact T/S parameter match. Confirmed via speakerboxlite.
 ParState=CEECENNNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`peerless india w8-12t 12p`,date:`20120123`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`peerless india w8-12t 12p`,date:`20120123`,content:`[Driver]
 Brand=00
 Model=peerless india w8-12t 12p
 Manufacturer=
@@ -23619,7 +24030,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CEECEENNCENCEECCCECENCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`},{name:`vifa NE123W-08`,date:`20120202`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`},{name:`vifa NE123W-08`,date:`20120202`,content:`[Driver]
 Brand=vifa
 Model=NE123W-08
 Manufacturer=
@@ -23676,7 +24088,8 @@ Outer=0
 Vcd=0
 DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
-`}]},{name:`loudspeakerdatabase cached`,files:[{name:`Beyma 10BR60 V2`,date:`20251206`,content:`[Driver]
+
+boxbench_source=https://www.avsforum.com/posts/55004700/`}]},{name:`loudspeakerdatabase cached`,files:[{name:`Beyma 10BR60 V2`,date:`20251206`,content:`[Driver]
 Brand=Beyma
 Model=10BR60 V2
 Manufacturer=
