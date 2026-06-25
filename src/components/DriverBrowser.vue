@@ -332,7 +332,7 @@ function onBackdrop(e) { if (e.target === e.currentTarget) close(); }
 <style scoped>
 .overlay { display:none; position:fixed; inset:0; background:#0008; z-index:1000; align-items:center; justify-content:center; }
 .overlay.on { display:flex; }
-.modal { background:var(--bg2); border:1px solid var(--mut); border-radius:8px; width:420px; max-height:80vh; display:flex; flex-direction:column; }
+.modal { background:var(--bg2); border:1px solid var(--mut); border-radius:8px; width:620px; max-width:95vw; max-height:80vh; display:flex; flex-direction:column; }
 h2 { margin:0; padding:12px 16px; font-size:14px; font-weight:600; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--mut); }
 .x { cursor:pointer; font-size:18px; line-height:1; color:var(--mut); }
 .x:hover { color:var(--fg); }
@@ -344,7 +344,8 @@ h2 { margin:0; padding:12px 16px; font-size:14px; font-weight:600; display:flex;
 .status.err { color:#ff6b6b; }
 .sblbtn { font-size:11px; padding:2px 8px; white-space:nowrap; }
 .dlist { flex:1; overflow-y:auto; border:1px solid var(--mut); border-radius:4px; min-height:200px; }
-.ditem { padding:4px 10px; cursor:pointer; font-size:12px; display:flex; justify-content:space-between; align-items:center; }
+.ditem { padding:4px 10px; cursor:pointer; font-size:12px; display:flex; justify-content:space-between; align-items:center; gap:6px; }
+.ditem b { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; min-width:0; flex:1; }
 .ditem:hover { background:var(--bg3); }
 .dmeta { display:flex; align-items:center; gap:6px; flex-shrink:0; }
 .ddate { font-size:10px; color:var(--mut); white-space:nowrap; }
