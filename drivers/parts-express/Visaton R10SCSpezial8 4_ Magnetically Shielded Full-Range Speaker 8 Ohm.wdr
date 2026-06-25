@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Visaton-R10SCSpezial8-4-Magnetically-Shielded-Full-Range-Speaker-8-Ohm-292-7815
 boxbench_vendorpage=https://www.visaton.de/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/292-7815--visaton-r10scspezial-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

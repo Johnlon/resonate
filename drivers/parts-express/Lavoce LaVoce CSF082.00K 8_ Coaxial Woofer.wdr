@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Lavoce-CSF082.00K-8-Coaxial-Woofer-293-794
 boxbench_vendorpage=https://www.lavoce-usa.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/293-794--lavoce-csf082.00k-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

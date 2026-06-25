@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/B-C-15DS115-4-15-Neodymium-Subwoofer-4-Ohm-294-6058
 boxbench_vendorpage=https://www.bcspeakers.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/294-6058--bc-15ds115-4-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

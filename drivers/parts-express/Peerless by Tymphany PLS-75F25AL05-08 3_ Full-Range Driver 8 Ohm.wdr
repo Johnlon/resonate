@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Peerless-PLS-75F25AL05-08-3-Full-Range-Driver-8-Ohm-264-1548
 boxbench_vendorpage=https://www.tymphany.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/264-1548--tymphany-pls-75f25al05-08-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

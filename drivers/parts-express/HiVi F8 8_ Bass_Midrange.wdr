@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/HiVi-F8-8-Bass-Midrange-297-445
 boxbench_vendorpage=https://www.hiviusa.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/297-445-hi-vi-f8-specifications-45089.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

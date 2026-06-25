@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-5P200Nd-P200-Series-5-Midbass-Neo-Woofer-8-Ohm-253-032
 boxbench_vendorpage=https://www.beyma.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-032--5p200nd-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

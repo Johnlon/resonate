@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Aurum-Cantus-AC-130MKII-5-1-4-Carbon-Fiber-Kevlar-Woofer-296-404
 boxbench_vendorpage=https://www.aurumcantus.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/296-404-aurum-cantus-ac-130mk2-specifications-45625.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

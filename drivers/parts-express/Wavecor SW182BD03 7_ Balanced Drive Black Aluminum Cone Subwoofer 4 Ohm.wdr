@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Wavecor-SW182BD03-7-Balanced-Drive-Black-Aluminum-Cone-Subwoofer-4-Ohm-298-1056
 boxbench_vendorpage=https://www.wavecor.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/298-1056-1058--wavecor-sw182bd04-specifications.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

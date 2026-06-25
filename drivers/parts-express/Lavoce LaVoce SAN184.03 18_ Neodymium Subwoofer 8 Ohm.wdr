@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/LaVoce-SAN184.03-18-Subwoofer-8-Ohm-293-731
 boxbench_vendorpage=https://www.lavoce-usa.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/293-731--lavoce-san184.03-specifications.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

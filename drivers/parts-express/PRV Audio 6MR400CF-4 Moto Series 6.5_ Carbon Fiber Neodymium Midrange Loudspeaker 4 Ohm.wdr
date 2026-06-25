@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/PRV-Audio-6MR400CF-4-Moto-Series-6.5-Carbon-Fiber-Neodymium-Midrange-Loudspeaker-4-Ohm-294-3535
 boxbench_vendorpage=https://www.prvaudio.com/
+boxbench_datasheet=https://prvaudio.com/wp-content/uploads/2026/02/PRV-Catalog-2026.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

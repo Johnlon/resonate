@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Wavecor-TW030WA22-30mm-Graphene-Dome-Tweeter-8-Ohm-298-1220
 boxbench_vendorpage=https://www.wavecor.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/298-1220--tw030wa22-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

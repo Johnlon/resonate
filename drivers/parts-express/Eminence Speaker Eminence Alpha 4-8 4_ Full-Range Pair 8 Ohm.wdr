@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Eminence-Alpha-4-8-4-Full-Range-Pair-8-Ohm-290-4012
 boxbench_vendorpage=https://eminence.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/290-4012--eminence-alpha-4-8-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Dayton-Audio-CE38M-8-1-1-2-Mini-Speaker-8-Ohm-285-129
 boxbench_vendorpage=https://www.daytonaudio.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/285-129-dayton-audio-ce38m-8-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

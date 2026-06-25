@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/HiVi-E8-8-Treated-Paper-Cone-Woofer-8-Ohms-297-480
 boxbench_vendorpage=https://www.hiviusa.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/297-480--hi-vi-e8-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

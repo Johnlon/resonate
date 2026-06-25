@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-15CMV2-15-Subwoofer-8-Ohm-253-030
 boxbench_vendorpage=https://www.beyma.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-030--15cmv2-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

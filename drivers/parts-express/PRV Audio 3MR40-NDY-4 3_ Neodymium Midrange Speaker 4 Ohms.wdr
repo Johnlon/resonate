@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/PRV-Audio-3MR40-NDY-4-3-Neodymium-Midrange-Speaker-4-Ohms-294-3400
 boxbench_vendorpage=https://www.prvaudio.com/
+boxbench_datasheet=https://prvaudio.com/wp-content/uploads/2026/02/PRV-Catalog-2026.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

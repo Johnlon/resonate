@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Visaton-FRS10WP-8-4-Full-Range-Saltwater-Resistant-Driver-8-Ohm-Black-292-616
 boxbench_vendorpage=https://www.visaton.de/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/292-616--visaton-frs-10-wp-8-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

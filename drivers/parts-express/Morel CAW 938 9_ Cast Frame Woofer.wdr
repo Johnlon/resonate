@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Morel-CAW938-9-Cast-Frame-Woofer-297-086
 boxbench_vendorpage=https://www.morelhifi.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/297-086--morel-caw-938-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

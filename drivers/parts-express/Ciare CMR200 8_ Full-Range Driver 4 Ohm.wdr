@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Ciare-CMR200-8-Full-Range-Driver-293-110
 boxbench_vendorpage=https://www.ciare.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/293-110--ciare-cmr200-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

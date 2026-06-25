@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/LaVoce-WAN082.50-8-Neodymium-Woofer-8-Ohm-293-715
 boxbench_vendorpage=https://www.lavoce-usa.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/293-715--lavoce-wan082.50-specifications.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

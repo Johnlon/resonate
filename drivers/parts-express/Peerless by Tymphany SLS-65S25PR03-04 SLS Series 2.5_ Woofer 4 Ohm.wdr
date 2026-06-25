@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Peerless-by-Tymphany-SLS-65S25PR03-04-SLS-Series-2.5-Woofer-4-Ohm-264-1013
 boxbench_vendorpage=https://www.tymphany.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/264-1013--sls-65s25pr-03-04-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

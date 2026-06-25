@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Dayton-Audio-RST28-4-1-1-8-Reference-Series-Aluminum-Dome-Tweeter-and-Truncated-Faceplate-275-134
 boxbench_vendorpage=https://www.daytonaudio.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/275-131--dayton-audio-rst28a-4-specification-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

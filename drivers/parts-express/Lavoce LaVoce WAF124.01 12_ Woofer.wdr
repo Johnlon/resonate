@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Lavoce-WAF124.01-12-Woofer-293-812
 boxbench_vendorpage=https://www.lavoce-usa.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/293-812--lavoce-waf124.01-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

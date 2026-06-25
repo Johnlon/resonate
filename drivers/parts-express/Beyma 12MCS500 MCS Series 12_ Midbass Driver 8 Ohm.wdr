@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-12MCS500-MCS-Series-12-Midbass-Driver-8-Ohm-253-024
 boxbench_vendorpage=https://www.beyma.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-024--12mcs500-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Visaton-DSM25FFL-1-Titanium-Dome-Tweeter-8-Ohm-292-692
 boxbench_vendorpage=https://www.visaton.de/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/292-688--visaton-dsm25ffl-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

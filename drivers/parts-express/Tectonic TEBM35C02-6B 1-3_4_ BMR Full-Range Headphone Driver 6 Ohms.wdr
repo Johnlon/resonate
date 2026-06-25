@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Tectonic-TEBM35C02-6B-1-3-4-BMR-Full-Range-Headphone-Driver-6-Ohms-297-2174
 boxbench_vendorpage=https://www.tectonicelements.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/297-2174--tectonic-tebm35c02-6b-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

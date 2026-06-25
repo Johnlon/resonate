@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Peerless-830992-4-GFC-Cone-HDS-Woofer-264-1066
 boxbench_vendorpage=https://www.tymphany.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/264-1066--tymphany-hds-p830992-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

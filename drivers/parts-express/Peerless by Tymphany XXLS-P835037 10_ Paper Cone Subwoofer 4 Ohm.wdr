@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Peerless-XXLS-P835037-10-Paper-Cone-Subwoofer-4-Ohm-264-1650
 boxbench_vendorpage=https://www.tymphany.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/264-1650--tymphany-xxls-p835037-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

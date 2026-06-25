@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Peerless-BC25SC08-04-1-Silk-Dome-Neodymium-Tweeter-with-Wav-264-1390
 boxbench_vendorpage=https://www.tymphany.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/264-1390--tymphany-bc25sc08-04-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

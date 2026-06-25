@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Dayton-Audio-TCP115-8-4-Treated-Paper-Cone-Midbass-Woofer-8-Ohm-295-416
 boxbench_vendorpage=https://www.daytonaudio.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/295-416--dayton-audio-tcp115-8-specification-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

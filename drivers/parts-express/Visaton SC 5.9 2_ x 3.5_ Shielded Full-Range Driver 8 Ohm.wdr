@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Visaton-SC-5.9-2-x-3.5-Shielded-Fullrange-Driver-8-Ohm-292-551
 boxbench_vendorpage=https://www.visaton.de/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/292-551--visaton-sc-5-9-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

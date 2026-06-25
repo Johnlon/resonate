@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/PRV-Audio-MT2.2TWC-4-Moto-Series-2.25-Short-Horn-Chrome-Tweeter-4-Ohm-267-8050
 boxbench_vendorpage=https://www.prvaudio.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/267-8050--prv-audio-mt2.2twc-4-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

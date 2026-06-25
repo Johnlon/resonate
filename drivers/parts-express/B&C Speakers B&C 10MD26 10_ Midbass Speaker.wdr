@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/B-C-10MD26-10-Midbass-Speaker-294-658
 boxbench_vendorpage=https://www.bcspeakers.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/294-658--bc-10md26-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

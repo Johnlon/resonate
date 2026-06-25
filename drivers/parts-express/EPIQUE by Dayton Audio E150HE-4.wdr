@@ -28,4 +28,6 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Epique-E150HE-44-5-1-2-DVC-MMAG-Subwoofer-4-Ohm-per-Coil-295-102
 boxbench_vendorpage=https://www.daytonaudio.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/295-102--epique-e150he-44-spec-sheet.pdf
+boxbench_frd=https://www.parts-express.com/pedocs/tech-docs/E150HE-44_data.zip
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

@@ -59,14 +59,17 @@ for (const src of sources) {
     // Extract link fields from WDR boxbench_ fields
     const ds  = content.match(/^boxbench_datasheet=(.+)$/m);
     const vp  = content.match(/^boxbench_vendorpage=(.+)$/m);
+    const fr  = content.match(/^boxbench_frd=(.+)$/m);
     const datasheet  = ds ? ds[1].trim() : '';
     const vendorpage = vp ? vp[1].trim() : '';
+    const frd        = fr ? fr[1].trim() : '';
     return {
       name: p.split(/[\\/]/).pop().replace(/\.wdr$/i, ''),
       date,
       content,
       ...(datasheet  ? { datasheet }  : {}),
       ...(vendorpage ? { vendorpage } : {}),
+      ...(frd        ? { frd }        : {}),
     };
   });
 

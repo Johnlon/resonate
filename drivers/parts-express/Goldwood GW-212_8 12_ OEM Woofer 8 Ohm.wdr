@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Goldwood-GW-212-8-12-OEM-Woofer-8-Ohm-290-335
 boxbench_vendorpage=https://www.goldwoodsound.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/290-335-goldwood-gw-2128-specifications.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

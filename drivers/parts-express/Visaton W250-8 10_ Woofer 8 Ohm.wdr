@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Visaton-W250-8-10-Woofer-8-Ohm-292-586
 boxbench_vendorpage=https://www.visaton.de/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/292-586--visaton-w250-8-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

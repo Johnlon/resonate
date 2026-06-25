@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Tang-Band-W1-1815SA-1-Neodymium-Full-Range-Driver-264-882
 boxbench_vendorpage=https://www.tb-speaker.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/264-882-tang-band-w1-1815s-specifications-46385.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

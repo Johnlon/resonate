@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/FaitalPRO-3FE25-3-Professional-Woofer-4-Ohm-294-1103
 boxbench_vendorpage=https://www.faitalpro.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/294-1103-faitalpro-3fe25-4-specificarions.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

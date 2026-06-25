@@ -28,4 +28,6 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Dayton-Audio-RSS210HO-4-8-Reference-Series-HO-Subwoofer-4-Ohm-295-458
 boxbench_vendorpage=https://www.daytonaudio.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/295-458-dayton-audio-rss210ho-4-specifications.pdf
+boxbench_frd=https://www.parts-express.com/pedocs/tech-docs/295-458--Dayton-Audio-RSS210HO-4_data.zip
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

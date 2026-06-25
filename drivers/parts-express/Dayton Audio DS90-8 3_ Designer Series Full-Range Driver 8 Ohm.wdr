@@ -28,4 +28,6 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Dayton-Audio-DS90-8-3-Designer-Series-Full-Range-Driver-8-Ohm-295-422
 boxbench_vendorpage=https://www.daytonaudio.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/295-422--dayton-audio-ds90-8-specifications.pdf
+boxbench_frd=https://www.parts-express.com/pedocs/tech-docs/295-422--Dayton-Audio-DS90-8_data.zip
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

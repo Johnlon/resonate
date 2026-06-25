@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Tang-Band-W2-1803S-2-Neodymium-Poly-Full-Range-Driver-264-885
 boxbench_vendorpage=https://www.tb-speaker.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/264-885-tang-band-w2-1803s-specifications-46391.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

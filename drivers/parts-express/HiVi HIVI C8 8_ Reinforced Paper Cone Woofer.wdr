@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/HIVI-C8-8-Reinforced-Paper-Cone-Woofer-8-Ohms-297-476
 boxbench_vendorpage=https://www.hiviusa.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/297-476--hi-vi-c8-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

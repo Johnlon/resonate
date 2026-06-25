@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Goldwood-GW-10PC-4-10-Heavy-Duty-Woofer-4-Ohm-290-322
 boxbench_vendorpage=https://www.goldwoodsound.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/290-322-goldwood-gw-10pc-4-specifications.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

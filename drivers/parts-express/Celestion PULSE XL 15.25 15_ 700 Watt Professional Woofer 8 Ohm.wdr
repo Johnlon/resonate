@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Celestion-PULSE-XL-15.25-15-700-Watt-Professional-Woofer-8-Ohm-294-2508
 boxbench_vendorpage=https://celestion.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/294-2508--celestion%20-%20pulse-xl-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Morel-TM4055-8-2-Midrange-and-1-1-8-Tweeter-Speaker-Plate-287-038
 boxbench_vendorpage=https://www.morelhifi.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/287-038--Morel-TM4055-8-Speaker-Plate-Spec-Sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

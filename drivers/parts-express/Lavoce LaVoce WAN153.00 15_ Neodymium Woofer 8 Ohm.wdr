@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/LaVoce-WAN153.00-15-Woofer-8-Ohm-293-721
 boxbench_vendorpage=https://www.lavoce-usa.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/293-721--lavoce-wan153.00-specifications.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

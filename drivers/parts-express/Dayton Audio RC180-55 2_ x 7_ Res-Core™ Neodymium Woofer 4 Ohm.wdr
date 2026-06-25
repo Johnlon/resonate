@@ -28,4 +28,6 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Dayton-Audio-RC180-55-2-x-7-Res-Core-Neodymium-Woofer-4-Ohm-295-248
 boxbench_vendorpage=https://www.daytonaudio.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/295-248--dayton-audio-rc180-55-specification-sheet.pdf
+boxbench_frd=https://www.parts-express.com/pedocs/tech-docs/RC180-55_data.zip
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

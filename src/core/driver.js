@@ -57,6 +57,7 @@ export function parseWdr(text) {
   if (f.boxbench_datasheet)      d.datasheetUrl  = f.boxbench_datasheet.trim();
   if (f.boxbench_vendorpage)     d.vendorpageUrl = f.boxbench_vendorpage.trim();
   if (f.boxbench_source)         d.sourceUrl     = f.boxbench_source.trim();
+  if (f.boxbench_frd)            d.frdUrl        = f.boxbench_frd.trim();
   if (!(d.Fs && d.Sd && d.Re && (d.Vas || (d.Qts && d.Qes))))
     throw new Error('missing core T/S parameters');
   for (const k in d) if (d[k] === undefined) delete d[k];

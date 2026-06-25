@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/HiVi-M8N-1B-8-Damped-Aluminum-Magnesium-Cone-Woofer-297-490
 boxbench_vendorpage=https://www.hiviusa.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/297-490--hivi-m8n-1b-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/B-C-15PLB76-15-Professional-Woofer-8-Ohm-294-5986
 boxbench_vendorpage=https://www.bcspeakers.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/294-5986--bc-15plb76-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

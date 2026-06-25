@@ -28,4 +28,6 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Dayton-Audio-PA200-8-8-Pro-Woofer-Speaker-295-025
 boxbench_vendorpage=https://www.daytonaudio.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/295-025-dayton-audio-pa200-8-specifications.pdf
+boxbench_frd=https://www.parts-express.com/pedocs/tech-docs/295-025--Dayton-Audio-PA200-8_data.zip
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

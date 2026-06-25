@@ -27,4 +27,5 @@ Dd=0.212123
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-10SFPC-B-10-Square-Frame-Paper-Cone-Woofer-Black-290-912
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/290-912-grs-10sfpc-b-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

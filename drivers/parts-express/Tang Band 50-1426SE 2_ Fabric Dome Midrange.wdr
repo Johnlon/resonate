@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Tang-Band-50-1426SE-2-Fabric-Dome-Midrange-264-855
 boxbench_vendorpage=https://www.tb-speaker.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/264-855--tang-band-50-1426se-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

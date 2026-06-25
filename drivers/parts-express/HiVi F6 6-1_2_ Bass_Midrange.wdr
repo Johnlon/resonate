@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/HiVi-F6-6-1-2-Bass-Midrange-297-440
 boxbench_vendorpage=https://www.hiviusa.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/297-440--hi-vi-f6-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

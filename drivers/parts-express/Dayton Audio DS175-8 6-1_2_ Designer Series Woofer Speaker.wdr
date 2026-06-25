@@ -28,4 +28,6 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Dayton-Audio-DS175-8-6-1-2-Designer-Series-Woofer-295-428
 boxbench_vendorpage=https://www.daytonaudio.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/295-428--dayton-audio-ds175-8-specifications.pdf
+boxbench_frd=https://www.parts-express.com/pedocs/tech-docs/295-428--Dayton-Audio-DS175-8_data.zip
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

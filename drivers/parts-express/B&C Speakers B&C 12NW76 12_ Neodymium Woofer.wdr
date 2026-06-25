@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/B-C-12NW76-12-Neodymium-Woofer-294-681
 boxbench_vendorpage=https://www.bcspeakers.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/294-681--bc-12nw76-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

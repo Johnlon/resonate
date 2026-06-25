@@ -29,4 +29,5 @@ VCCon=2
 boxbench_dq_issue=Qts=11.46: Implausible for a tweeter — tweeters normally have Qts 0.3–2. Likely a data entry error. Correct value unknown; datasheet lookup required before use.
 boxbench_source=https://www.parts-express.com/Wavecor-TW030WA21-30mm-Graphene-Dome-Tweeter-4-Ohm-298-1219
 boxbench_vendorpage=https://www.wavecor.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/298-1219--tw030wa21-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

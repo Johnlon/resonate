@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Beyma-3FR30V2-3-Full-Range-Loudspeaker-8-Ohm-253-091
 boxbench_vendorpage=https://www.beyma.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/253-091--3fr30v2-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

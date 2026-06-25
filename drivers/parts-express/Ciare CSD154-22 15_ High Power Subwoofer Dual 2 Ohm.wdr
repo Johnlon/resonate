@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Ciare-CSD154-22-15-High-Power-Subwoofer-Dual-2-Ohm-293-172
 boxbench_vendorpage=https://www.ciare.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/293-172--ciare-csd154-22-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

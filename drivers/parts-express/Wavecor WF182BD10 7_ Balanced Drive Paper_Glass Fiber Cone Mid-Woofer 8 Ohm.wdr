@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Wavecor-WF182BD10-7-Balanced-Drive-Paper-Glass-Fiber-Cone-Mid-Woofer-8-Ohm-298-1206
 boxbench_vendorpage=https://www.wavecor.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/298-1204-1206-1208-1210--wavecor-wf182bd09-10-11-12-specifications.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

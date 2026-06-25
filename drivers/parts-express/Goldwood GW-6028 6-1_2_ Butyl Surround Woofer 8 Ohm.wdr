@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Goldwood-GW-6028-6-1-2-Butyl-Surround-Woofer-8-Ohm-290-350
 boxbench_vendorpage=https://www.goldwoodsound.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/290-350-goldwood-gw-6028-specifications.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

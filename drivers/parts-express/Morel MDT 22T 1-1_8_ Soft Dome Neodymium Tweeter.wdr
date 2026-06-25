@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Morel-MDT-22-1-1-8-Neodymium-Tweeter-277-062
 boxbench_vendorpage=https://www.morelhifi.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/277-062-morel-mdt-22-specifications.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

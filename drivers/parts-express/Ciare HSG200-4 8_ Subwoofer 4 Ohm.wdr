@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Ciare-HSG200-4-8-Subwoofer-4-Ohm-293-162
 boxbench_vendorpage=https://www.ciare.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/293-162--ciare-hsg200-4-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

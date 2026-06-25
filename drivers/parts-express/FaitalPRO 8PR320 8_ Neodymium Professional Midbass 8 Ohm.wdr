@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/FaitalPRO-8PR320-8-Neodymium-Professional-Midbass-8-Ohms-294-1166
 boxbench_vendorpage=https://www.faitalpro.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/294-1166--faitalpro-8pr320-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

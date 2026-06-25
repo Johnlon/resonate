@@ -28,4 +28,6 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Epique-E150MR-4-5-1-2-Wide-Band-Carbon-Fiber-Midrange-Driver-4-Ohm-285-500
 boxbench_vendorpage=https://www.daytonaudio.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/285-500--epique-e150mr-4-specification-sheet.pdf
+boxbench_frd=https://www.parts-express.com/pedocs/tech-docs/3D%20Files/E150MR-4_3D_Files.zip
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

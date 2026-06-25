@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/PRV-Audio-10W1000-NDY-4-10-Neodymium-Pro-Audio-Woofer-4-Ohm-294-2955
 boxbench_vendorpage=https://www.prvaudio.com/
+boxbench_datasheet=https://prvaudio.com/wp-content/uploads/2026/02/PRV-Catalog-2026.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

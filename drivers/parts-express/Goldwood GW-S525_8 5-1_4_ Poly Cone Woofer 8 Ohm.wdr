@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Goldwood-GW-S525-8-5-1-4-Poly-Cone-Woofer-8-Ohm-290-302
 boxbench_vendorpage=https://www.goldwoodsound.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/290-302-goldwood-gw-s5258-specifications.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

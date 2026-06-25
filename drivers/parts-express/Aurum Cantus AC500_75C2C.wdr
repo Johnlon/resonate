@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Aurum-Cantus-AC300-75C2C-12-Woofer-296-458
 boxbench_vendorpage=https://www.aurumcantus.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/296-458-aurum-cantus-ac50075c2c-specifications.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

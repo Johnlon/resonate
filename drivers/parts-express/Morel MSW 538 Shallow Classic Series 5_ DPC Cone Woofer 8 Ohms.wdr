@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Morel-MSW-144-Shallow-Classic-Series-5-DPC-Cone-Woofer-8-Ohms-297-004
 boxbench_vendorpage=https://www.morelhifi.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/morel-msw-shallow-classic-series-drivers-overview.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

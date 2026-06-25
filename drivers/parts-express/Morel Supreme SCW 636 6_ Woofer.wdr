@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Morel-Supreme-SCW-636-6-Woofer-297-114
 boxbench_vendorpage=https://www.morelhifi.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/297-114--morel-scw-636-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

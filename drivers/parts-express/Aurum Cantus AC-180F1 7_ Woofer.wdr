@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Aurum-Cantus-AC-180F1-7-Woofer-296-412
 boxbench_vendorpage=https://www.aurumcantus.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/296-412-aurum-cantus-ac-180f1-specifications-45626.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

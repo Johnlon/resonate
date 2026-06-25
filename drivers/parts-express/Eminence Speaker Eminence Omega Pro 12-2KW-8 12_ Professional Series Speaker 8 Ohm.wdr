@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Eminence-Omega-Pro-12-2KW-8-12-Professional-Series-Speaker-8-Ohm-290-4300
 boxbench_vendorpage=https://eminence.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/290-4300--eminence-12-2kw-8-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

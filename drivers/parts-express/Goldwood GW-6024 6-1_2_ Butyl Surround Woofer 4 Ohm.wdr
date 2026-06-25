@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Goldwood-GW-6024-6-1-2-Butyl-Surround-Woofer-4-Ohm-290-351
 boxbench_vendorpage=https://www.goldwoodsound.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/290-351-goldwood-gw-6024-specifications.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

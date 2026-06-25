@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Tang-Band-W3-1878-3-Full-Range-Driver-264-902
 boxbench_vendorpage=https://www.tb-speaker.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/264-902--tang-band-w3-1878-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

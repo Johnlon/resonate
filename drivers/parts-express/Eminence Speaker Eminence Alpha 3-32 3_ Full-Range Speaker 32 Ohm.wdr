@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Eminence-ALPHA-3-32-3-Full-Range-Speaker-32-Ohm-290-4018
 boxbench_vendorpage=https://eminence.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/290-4018--eminence-alpha-3-32-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

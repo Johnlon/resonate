@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/Beston-RT001A-Ribbon-Tweeter-277-110
 boxbench_vendorpage=https://www.bestonaudio.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/277-110--beston-rt001a-spec-sheet.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC

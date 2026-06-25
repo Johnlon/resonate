@@ -28,4 +28,5 @@ numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/FaitalPRO-18HP1030-18-Professional-Subwoofer-4-Ohm-294-1306
 boxbench_vendorpage=https://www.faitalpro.com/
+boxbench_datasheet=https://www.parts-express.com/pedocs/specs/294-1306--faitalpro-18hp1030-4-specifications.pdf
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
