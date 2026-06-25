@@ -7573,8 +7573,9 @@ boxbench_community=v2015 in filename = 2015 revision
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
 boxbench_source=https://www.avsforum.com/posts/55004700/
-boxbench_datasheet=https://www.parts-express.com/pedocs/specs/295-472-dayton-audio-rss460ho-4-specifications.pdf
-`,datasheet:`https://www.parts-express.com/pedocs/specs/295-472-dayton-audio-rss460ho-4-specifications.pdf`},{name:`Dayton Audio PA460-8`,date:`20110908`,content:`[Driver]
+boxbench_manu_page=https://www.daytonaudio.com/product/78/pa460-8-18-pro-woofer-8-ohm
+boxbench_datasheet=https://www.daytonaudio.com/images/resources/295-036-dayton-audio-pa460-8-specifications-46885.pdf
+`,datasheet:`https://www.daytonaudio.com/images/resources/295-036-dayton-audio-pa460-8-specifications-46885.pdf`,manupage:`https://www.daytonaudio.com/product/78/pa460-8-18-pro-woofer-8-ohm`},{name:`Dayton Audio PA460-8`,date:`20110908`,content:`[Driver]
 Brand=Dayton Audio
 Model=PA460-8
 Manufacturer=
@@ -7633,8 +7634,9 @@ DVol=0
 ParState=CCECEENNEENEECCCEECCNCCENNCCCNNNCCCCNCNNNNNNNNNCC
 
 boxbench_source=https://www.avsforum.com/posts/55004700/
-boxbench_datasheet=https://www.parts-express.com/pedocs/specs/295-472-dayton-audio-rss460ho-4-specifications.pdf
-`,datasheet:`https://www.parts-express.com/pedocs/specs/295-472-dayton-audio-rss460ho-4-specifications.pdf`},{name:`Dayton Audio PK165-8`,date:`20130713`,content:`[Driver]
+boxbench_manu_page=https://www.daytonaudio.com/product/78/pa460-8-18-pro-woofer-8-ohm
+boxbench_datasheet=https://www.daytonaudio.com/images/resources/295-036-dayton-audio-pa460-8-specifications-46885.pdf
+`,datasheet:`https://www.daytonaudio.com/images/resources/295-036-dayton-audio-pa460-8-specifications-46885.pdf`,manupage:`https://www.daytonaudio.com/product/78/pa460-8-18-pro-woofer-8-ohm`},{name:`Dayton Audio PK165-8`,date:`20130713`,content:`[Driver]
 Brand=Dayton Audio
 Model=PK165-8
 Manufacturer=
