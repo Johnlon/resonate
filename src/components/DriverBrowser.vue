@@ -21,6 +21,55 @@ const sblLoading  = ref(false);
 const selectedSources = ref([]);   // empty = all
 const sourcesOpen     = ref(false);
 
+// Type + param filters
+const selectedTypes = ref([]);
+const fsMin = ref('');
+const fsMax = ref('');
+const sdMin = ref('');   // cm²
+const sdMax = ref('');   // cm²
+const selZ  = ref([]);   // '4', '8', '16'
+
+const DRIVER_TYPES = [
+  { id: 'sub',      label: 'Sub',      title: 'Subwoofer — Fs below ~35 Hz' },
+  { id: 'woofer',   label: 'Woofer',   title: 'Woofer — Fs 35–120 Hz, large Sd' },
+  { id: 'midbass',  label: 'Mid-bass', title: 'Mid-bass — Fs 80–350 Hz, medium Sd' },
+  { id: 'midrange', label: 'Midrange', title: 'Midrange — Fs 200–1500 Hz' },
+  { id: 'tweeter',  label: 'Tweeter',  title: 'Tweeter — small Sd (< ~12 cm²)' },
+  { id: 'other',    label: 'Other',    title: 'Unclassified / passive radiator / full-range' },
+];
+
+function quickParse(content) {
+  const m = k => { const r = (content || '').match(new RegExp('^' + k + '=(.+)$', 'm')); return r ? parseFloat(r[1]) : null; };
+  return { Fs: m('Fs'), Sd: m('Sd'), Re: m('Re'), Znom: m('Znom'), Pe: m('Pe') };
+}
+
+// Assign a type label from raw T/S params.
+// Priority: sub → tweeter → woofer → mid-bass → midrange → other
+// Sd in m² (WDR native), Re in Ω.
+function classifyType(Fs, Sd, Re) {
+  if (Re != null && Re < 0.1) return 'other';
+  const SdCm2 = Sd != null ? Sd * 1e4 : null;
+  if (Fs != null && Fs < 35) return 'sub';
+  if (SdCm2 != null && SdCm2 < 12) return 'tweeter';
+  if (Fs != null && Fs < 120 && SdCm2 != null && SdCm2 >= 80) return 'woofer';
+  if (Fs != null && Fs < 350 && SdCm2 != null && SdCm2 >= 30) return 'midbass';
+  if (Fs != null) return 'midrange';
+  return 'other';
+}
+
+function toggleType(id) {
+  const idx = selectedTypes.value.indexOf(id);
+  if (idx >= 0) selectedTypes.value.splice(idx, 1); else selectedTypes.value.push(id);
+}
+function toggleZ(z) {
+  const idx = selZ.value.indexOf(z);
+  if (idx >= 0) selZ.value.splice(idx, 1); else selZ.value.push(z);
+}
+function clearParamFilters() {
+  selectedTypes.value = []; fsMin.value = ''; fsMax.value = '';
+  sdMin.value = ''; sdMax.value = ''; selZ.value = [];
+}
+
 const availableSources = computed(() => {
   const counts = {};
   for (const f of allFiles.value) {
@@ -61,6 +110,16 @@ const filteredFiles = computed(() => {
     filtered = filtered.filter(f => tokens.every(t => f.name.toLowerCase().includes(t)));
   if (srcFilter.length)
     filtered = filtered.filter(f => srcFilter.includes(f.sourceName));
+  if (selectedTypes.value.length)
+    filtered = filtered.filter(f => selectedTypes.value.includes(f._type));
+  const fsMinV = parseFloat(fsMin.value), fsMaxV = parseFloat(fsMax.value);
+  const sdMinV = parseFloat(sdMin.value), sdMaxV = parseFloat(sdMax.value);
+  if (isFinite(fsMinV)) filtered = filtered.filter(f => f._Fs != null && f._Fs >= fsMinV);
+  if (isFinite(fsMaxV)) filtered = filtered.filter(f => f._Fs != null && f._Fs <= fsMaxV);
+  if (isFinite(sdMinV)) filtered = filtered.filter(f => f._Sd != null && f._Sd * 1e4 >= sdMinV);
+  if (isFinite(sdMaxV)) filtered = filtered.filter(f => f._Sd != null && f._Sd * 1e4 <= sdMaxV);
+  if (selZ.value.length)
+    filtered = filtered.filter(f => selZ.value.some(oz => f._Znom != null && Math.abs(f._Znom - parseFloat(oz)) < 1.5));
 
   // Pure alphabetical sort
   const sorted = [...filtered].sort((a, b) =>
@@ -142,20 +201,25 @@ async function init() {
   for (const src of sources) {
     const files = bundledByName[src.name];
     if (!files) continue;
-    const entries = files.map(f => ({
-      name: f.name,
-      content: f.content,
-      date: f.date || '',
-      datasheet:   f.datasheet   || '',
-      manupage:    f.manupage    || '',
-      vendorpage:  f.vendorpage  || '',
-      frd:         f.frd         || '',
-      impedance:   f.impedance   || '',
-      path: null, repo: null, branch: null,
-      sourceName: src.name,
-      sourceUrl:  src.url || '',
-      sourceDesc: src.description || '',
-    }));
+    const entries = files.map(f => {
+      const qp = quickParse(f.content);
+      return {
+        name: f.name,
+        content: f.content,
+        date: f.date || '',
+        datasheet:   f.datasheet   || '',
+        manupage:    f.manupage    || '',
+        vendorpage:  f.vendorpage  || '',
+        frd:         f.frd         || '',
+        impedance:   f.impedance   || '',
+        path: null, repo: null, branch: null,
+        sourceName: src.name,
+        sourceUrl:  src.url || '',
+        sourceDesc: src.description || '',
+        _Fs: qp.Fs, _Sd: qp.Sd, _Re: qp.Re, _Znom: qp.Znom, _Pe: qp.Pe,
+        _type: classifyType(qp.Fs, qp.Sd, qp.Re),
+      };
+    });
     allFiles.value = [...allFiles.value, ...entries];
   }
 
@@ -212,6 +276,7 @@ async function loadSpeakerBoxLite() {
       statusMsg.value = `SpeakerBoxLite: loading ${Math.min((i+1)*PAGE, count)} / ${count}…`;
       const rows = await (await fetch(`${base}?offset=${i*PAGE}&limit=${PAGE}`)).json();
       for (const d of rows) {
+        const SblSd = d.sd_cm2 != null ? d.sd_cm2 / 1e4 : null;
         sblFiles.push({
           path: null, branch: null, repo: null,
           name: [d.brand, d.model].filter(Boolean).join(' ') || d.name || 'Unknown',
@@ -219,6 +284,8 @@ async function loadSpeakerBoxLite() {
           sourceUrl:  'https://www.speakerboxlite.com/',
           sourceDesc: 'speakerboxlite.com community database',
           sblData: d,
+          _Fs: d.fs || null, _Sd: SblSd, _Re: d.re || null, _Znom: null, _Pe: d.pe || null,
+          _type: classifyType(d.fs, SblSd, d.re),
         });
       }
     }
@@ -373,6 +440,37 @@ function onBackdrop(e) { if (e.target === e.currentTarget) close(); }
       <div class="body">
         <template v-if="!previewFile">
         <input class="filter" v-model="filterQ" placeholder="Search drivers…" autofocus>
+        <div class="type-row">
+          <button v-for="t in DRIVER_TYPES" :key="t.id"
+                  class="type-chip" :class="{ active: selectedTypes.includes(t.id) }"
+                  :title="t.title" @click="toggleType(t.id)">{{ t.label }}</button>
+          <button v-if="selectedTypes.length || fsMin || fsMax || sdMin || sdMax || selZ.length"
+                  class="type-chip type-clear" title="Clear all type and parameter filters"
+                  @click="clearParamFilters">✕ clear</button>
+        </div>
+        <div class="param-row">
+          <span class="plabel">Fs</span>
+          <input class="pnum" v-model="fsMin" type="number" min="1" placeholder="min"
+                 title="Minimum free-air resonance (Hz) — WinISD: Fs">
+          <span class="pmid">–</span>
+          <input class="pnum" v-model="fsMax" type="number" min="1" placeholder="max"
+                 title="Maximum free-air resonance (Hz) — WinISD: Fs">
+          <span class="plabel">Hz</span>
+          <span class="psep"></span>
+          <span class="plabel">Sd</span>
+          <input class="pnum" v-model="sdMin" type="number" min="0" placeholder="min"
+                 title="Minimum piston area in cm² — WinISD: Sd (converts from m²)">
+          <span class="pmid">–</span>
+          <input class="pnum" v-model="sdMax" type="number" min="0" placeholder="max"
+                 title="Maximum piston area in cm² — WinISD: Sd (converts from m²)">
+          <span class="plabel">cm²</span>
+          <span class="psep"></span>
+          <span class="plabel">Z</span>
+          <button v-for="z in ['4','8','16']" :key="z" class="zchip"
+                  :class="{ active: selZ.includes(z) }"
+                  :title="`Filter to nominal ${z}Ω impedance — WinISD: Znom`"
+                  @click="toggleZ(z)">{{ z }}Ω</button>
+        </div>
         <div class="src-row">
           <div class="src-wrap">
             <button class="src-btn" @click.stop="sourcesOpen = !sourcesOpen"
@@ -512,6 +610,20 @@ h2 { margin:0; padding:12px 16px; font-size:14px; font-weight:600; display:flex;
 .src-name { flex:1; }
 .src-count { font-size:10px; color:var(--mut); }
 .src-backdrop { position:fixed; inset:0; z-index:9; }
+.type-row { display:flex; gap:4px; flex-wrap:wrap; align-items:center; }
+.type-chip { font-size:11px; padding:2px 9px; border:1px solid var(--mut); border-radius:12px; background:none; color:var(--mut); cursor:pointer; white-space:nowrap; }
+.type-chip:hover { border-color:var(--fg); color:var(--fg); }
+.type-chip.active { border-color:var(--acc); color:var(--acc); background:color-mix(in srgb, var(--acc) 12%, transparent); }
+.type-clear { border-color:transparent; }
+.param-row { display:flex; align-items:center; gap:4px; flex-wrap:wrap; }
+.plabel { font-size:10px; color:var(--mut); white-space:nowrap; padding:0 1px; }
+.pnum { width:46px; padding:2px 3px; font-size:11px; background:var(--bg); border:1px solid var(--mut); border-radius:3px; color:var(--fg); text-align:right; }
+.pnum:focus { outline:none; border-color:var(--acc); }
+.pmid { font-size:11px; color:var(--mut); }
+.psep { width:8px; flex-shrink:0; }
+.zchip { font-size:10px; padding:1px 6px; border:1px solid var(--mut); border-radius:10px; background:none; color:var(--mut); cursor:pointer; white-space:nowrap; }
+.zchip:hover { border-color:var(--fg); color:var(--fg); }
+.zchip.active { border-color:var(--acc); color:var(--acc); background:color-mix(in srgb, var(--acc) 12%, transparent); }
 .preview { display:flex; flex-direction:column; flex:1; overflow:hidden; }
 .prev-nav { display:flex; justify-content:space-between; align-items:center; gap:8px; padding-bottom:6px; }
 .use-btn { font-size:11px; padding:3px 10px; background:var(--acc); color:#fff; border:none; border-radius:4px; cursor:pointer; font-weight:600; }
