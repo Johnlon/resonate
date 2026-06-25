@@ -13,11 +13,12 @@ NOTE: HTML structure not yet verified. Run with --limit 3 first, inspect
 """
 
 import re
+from pathlib import Path
 from scraper_lib import run_scraper, parse_number
 
 VENDOR      = "Scan-Speak"
 SITEMAP_URL = "https://www.scan-speak.dk/sitemap.xml"
-OUT_DIR     = "drivers/scan-speak"
+OUT_DIR     = str(Path(__file__).resolve().parent.parent / "drivers" / "scan-speak")
 
 # TODO: verify label text against actual page HTML in _html/ before relying on these
 FIELD_MAP = {

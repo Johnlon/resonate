@@ -25,9 +25,11 @@ import re
 import sys
 import time
 import argparse
+import threading
 import urllib.request
 import urllib.parse
 import xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -254,8 +256,23 @@ def safe_filename(name: str) -> str:
 
 
 def parse_number(text: str) -> float | None:
-    """Extract first number from a string like '5.6 Ω' or '27 Hz'."""
-    m = re.search(r"[-+]?\d+(?:\.\d+)?", text.replace(",", "."))
+    """Extract first number from a string, handling mixed US/European notation.
+
+    Rules:
+    - If both comma and period present (e.g. '1,241.1'): period=decimal, comma=thousand sep → strip commas
+    - If comma but no period AND digit,exactly-3-digits (e.g. '1,000'): thousand sep → strip comma
+    - Otherwise (e.g. '10,9' or '0,044'): European decimal comma → replace with period
+    """
+    if "," in text and "." in text:
+        # Period is decimal, comma is thousand sep: "1,241.1" → "1241.1"
+        cleaned = re.sub(r"(\d),(\d)", r"\1\2", text)
+    elif re.search(r"[1-9]\d*,\d{3}(?!\d)", text):
+        # Thousand sep only when integer part ≥ 1: "1,000" yes, "0,044" no
+        cleaned = re.sub(r"(\d),(\d)", r"\1\2", text)
+    else:
+        # European decimal comma: "10,9" → "10.9", "0,044" → "0.044"
+        cleaned = text.replace(",", ".")
+    m = re.search(r"[-+]?\d+(?:\.\d+)?", cleaned)
     return float(m.group()) if m else None
 
 
@@ -281,6 +298,8 @@ def run_scraper(vendor_name: str,
                         help="Max new products to scrape (0 = all new)")
     parser.add_argument("--refresh", action="store_true",
                         help="Re-scrape all URLs, not just new ones")
+    parser.add_argument("--workers", type=int, default=1,
+                        help="Parallel fetch workers (default 1; try 5-10 for speed)")
     args = parser.parse_args()
 
     out = Path(args.out_dir)
@@ -309,42 +328,47 @@ def run_scraper(vendor_name: str,
         to_scrape = to_scrape[:args.limit]
 
     ok = skipped = failed = 0
-
+    counters_lock = threading.Lock()
     html_dir = out / "_html"
     html_dir.mkdir(exist_ok=True)
+    total = len(to_scrape)
 
-    for i, url in enumerate(to_scrape, 1):
+    def process_one(idx_url):
+        nonlocal ok, skipped, failed
+        i, url = idx_url
         slug = url.rstrip("/").split("/")[-1]
-        print(f"  [{i}/{len(to_scrape)}] {slug}", end=" ", flush=True)
 
         try:
             html = fetch(url)
-            # Cache raw HTML for later analysis / re-parsing without re-fetching
             html_path = html_dir / (re.sub(r"[^\w\-.]", "_", slug) + ".html")
             html_path.write_text(html, encoding="utf-8")
             product = parse_product(html, url)
         except Exception as e:
-            print(f"ERROR: {e}")
-            mark_scraped(url, manifest, None, status=f"error: {e}")
-            failed += 1
+            print(f"  [{i}/{total}] {slug} ERROR: {e}", flush=True)
+            with counters_lock:
+                mark_scraped(url, manifest, None, status=f"error: {e}")
+                failed += 1
+                if (ok + skipped + failed) % 50 == 0:
+                    save_manifest(out, manifest)
             time.sleep(delay_s)
-            continue
+            return
 
-        # parse_product returns None or {"skip": True, "category": "..."} for non-drivers
         is_skip = product is None or (isinstance(product, dict) and product.get("skip"))
         if is_skip:
             cat = (product or {}).get("category", "") if isinstance(product, dict) else ""
             title_m = re.search(r"<title[^>]*>(.*?)</title>", html, re.I | re.S)
             page_title = re.sub(r"<[^>]+>", "", title_m.group(1)).strip() if title_m else ""
             label = f"(skipped — {cat})" if cat else "(skipped — no T/S data)"
-            print(label)
-            mark_scraped(url, manifest, None, status="skipped",
-                         title=page_title, category=cat)
-            skipped += 1
+            print(f"  [{i}/{total}] {slug} {label}", flush=True)
+            with counters_lock:
+                mark_scraped(url, manifest, None, status="skipped",
+                             title=page_title, category=cat)
+                skipped += 1
+                if (ok + skipped + failed) % 50 == 0:
+                    save_manifest(out, manifest)
             time.sleep(delay_s)
-            continue
+            return
 
-        # Build comment / provenance
         comment_parts = [f"Source: {url}"]
         if product.get("pdf_url"):
             comment_parts.append(f"Datasheet: {product['pdf_url']}")
@@ -353,60 +377,62 @@ def run_scraper(vendor_name: str,
         model = product.get("model", "")
         today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
         wdr_text = to_wdr(
-            brand=brand,
-            model=model,
-            fields=product["fields"],
+            brand=brand, model=model, fields=product["fields"],
             provided_by=product.get("provided_by", vendor_name),
             comment=" | ".join(comment_parts),
             manufacturer=product.get("manufacturer", ""),
-            date_added=today,
-            date_modified=today,
+            date_added=today, date_modified=today,
         )
         wdr_name = safe_filename(f"{brand} {model}".strip())
         (out / wdr_name).write_text(wdr_text, encoding="utf-8")
 
-        # Meta file — quality M until a human verifies the scraped data.
-        # datasheet is always set: PDF URL preferred, otherwise the scraped page URL.
         meta = {
-            "file": wdr_name,
-            "quality": "M",
+            "file": wdr_name, "quality": "M",
             "issue": "scraped_not_human_verified",
             "detail": (f"Automatically scraped from {product.get('provided_by', vendor_name)}. "
                        "T/S parameters have not been verified by a human against the datasheet."),
             "datasheet": product.get("pdf_url") or url,
             "reviewedBy": None,
         }
-        meta_name = wdr_name.replace(".wdr", "_meta.json")
-        (out / meta_name).write_text(
+        (out / wdr_name.replace(".wdr", "_meta.json")).write_text(
             json.dumps(meta, indent=2, ensure_ascii=False), encoding="utf-8"
         )
 
-        # Download PDF
+        extras = []
         if product.get("pdf_url"):
             pdf_name = urllib.parse.unquote(product["pdf_url"].split("/")[-1])
             pdf_path = pdf_dir / pdf_name
             if not pdf_path.exists():
                 try:
                     pdf_path.write_bytes(fetch_binary(product["pdf_url"]))
-                    print("+PDF", end=" ")
+                    extras.append("+PDF")
                 except Exception as e:
-                    print(f"(PDF err: {e})", end=" ")
+                    extras.append(f"(PDF err: {e})")
 
-        # Download extra files (FRD, ZMA, TXT, ZIP)
         for link in product.get("extra_links", []):
             fname = urllib.parse.unquote(link.split("/")[-1])
             fpath = out / fname
             if not fpath.exists():
                 try:
                     fpath.write_bytes(fetch_binary(link))
-                    print(f"+{fname}", end=" ")
+                    extras.append(f"+{fname}")
                 except Exception as e:
-                    print(f"({fname} err: {e})", end=" ")
+                    extras.append(f"({fname} err: {e})")
 
-        print("OK")
-        mark_scraped(url, manifest, wdr_name, status="ok")
-        ok += 1
+        suffix = " ".join(extras)
+        print(f"  [{i}/{total}] {slug} OK {suffix}".rstrip(), flush=True)
+        with counters_lock:
+            mark_scraped(url, manifest, wdr_name, status="ok")
+            ok += 1
+            if (ok + skipped + failed) % 50 == 0:
+                save_manifest(out, manifest)
         time.sleep(delay_s)
+
+    workers = args.workers
+    if workers > 1:
+        print(f"[{vendor_name}] Running with {workers} parallel workers")
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        list(executor.map(process_one, enumerate(to_scrape, 1)))
 
     save_manifest(out, manifest)
     print(f"\n[{vendor_name}] Done: {ok} new WDRs, {skipped} skipped, {failed} errors")

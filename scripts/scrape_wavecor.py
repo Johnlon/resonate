@@ -21,7 +21,7 @@ from pathlib import Path
 
 VENDOR      = "Wavecor"
 SITEMAP_URL = "http://www.wavecor.com/sitemap.xml"
-OUT_DIR     = "drivers/wavecor"
+OUT_DIR     = str(Path(__file__).resolve().parent.parent / "drivers" / "wavecor")
 
 # HTML table row label (lowercase) → (wdr_key, SI conversion factor)
 # Labels observed in Wavecor product HTML tables.

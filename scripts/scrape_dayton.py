@@ -13,11 +13,12 @@ NOTE: HTML structure not yet verified. Run with --limit 3 first, inspect
 """
 
 import re
+from pathlib import Path
 from scraper_lib import run_scraper, parse_number
 
 VENDOR      = "Dayton Audio"
 SITEMAP_URL = "https://www.dayton-audio.com/sitemap.xml"
-OUT_DIR     = "drivers/dayton-audio"
+OUT_DIR     = str(Path(__file__).resolve().parent.parent / "drivers" / "dayton-audio")
 
 # TODO: verify label text against actual Shopify product page HTML in _html/
 FIELD_MAP = {

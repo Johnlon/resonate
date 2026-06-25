@@ -8,12 +8,14 @@ Usage:
 --refresh   re-scrapes all URLs, not just new ones discovered since last run.
 """
 
+import html as html_module
 import re
+from pathlib import Path
 from scraper_lib import run_scraper, parse_number
 
 VENDOR      = "SB Acoustics"
 SITEMAP_URL = "https://sbacoustics.com/product-sitemap.xml"
-OUT_DIR     = "drivers/sb-acoustics"
+OUT_DIR     = str(Path(__file__).resolve().parent.parent / "drivers" / "sb-acoustics")
 
 # li label fragment (lowercase) → (wdr_key, SI conversion factor)
 FIELD_MAP = {
@@ -43,7 +45,7 @@ def parse_product(html: str, url: str) -> dict | None:
     li_items = re.findall(r"<li>(.*?)</li>", html, re.S | re.I)
     fields: dict[str, float] = {}
     for li_raw in li_items:
-        text = re.sub(r"<[^>]+>", "", li_raw).strip()
+        text = html_module.unescape(re.sub(r"<[^>]+>", "", li_raw)).strip()
         for fragment, (key, factor) in FIELD_MAP.items():
             if fragment in text.lower():
                 val = parse_number(text)
