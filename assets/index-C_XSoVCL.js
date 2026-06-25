@@ -52461,9 +52461,8 @@ Dd=0.209496
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-10PF-8-10-Paper-Cone-Foam-Surround-Woofer-292-410
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 10PR-8 10_ Poly Cone Rubber Surround Woofer`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 10PR-8 10_ Poly Cone Rubber Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=10PR-8 10" Poly Cone Rubber Surround Woofer
 Manufacturer=
@@ -52492,9 +52491,8 @@ Dd=0.209618
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-10PR-8-10-Poly-Cone-Rubber-Surround-Woofer-292-421
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 10PT-8 10_ Paper Cone Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 10PT-8 10_ Paper Cone Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=10PT-8 10" Paper Cone Professional Woofer 8 Ohm
 Manufacturer=
@@ -52523,9 +52521,8 @@ Dd=0.210496
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-10PT-8-10-Paper-Cone-Prosound-Woofer-8-Ohm-292-804
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 10S-8 4_ Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 10S-8 4_ Full-Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=10S-8 4" Full-Range Driver 8 Ohm
 Manufacturer=
@@ -52554,9 +52551,8 @@ Dd=0.0817588
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-10S-8-4-Full-Range-Driver-8-Ohm-292-569
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 10SFPC-B 10_ Square Frame Paper Cone Woofer Black`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 10SFPC-B 10_ Square Frame Paper Cone Woofer Black`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=10SFPC-B 10" Square Frame Paper Cone Woofer Black
 Manufacturer=
@@ -52585,9 +52581,8 @@ Dd=0.212123
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-10SFPC-B-10-Square-Frame-Paper-Cone-Woofer-Black-290-912
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 10SFPC-W 10_ Square Frame Paper Cone Woofer White`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 10SFPC-W 10_ Square Frame Paper Cone Woofer White`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=10SFPC-W 10" Square Frame Paper Cone Woofer White
 Manufacturer=
@@ -52616,9 +52611,8 @@ Dd=0.212273
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-10SFPC-W-10-Square-Frame-Paper-Cone-Woofer-White-290-910
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 10SW-4 10_ Poly Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 10SW-4 10_ Poly Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=10SW-4 10" Poly Cone Subwoofer 4 Ohm
 Manufacturer=
@@ -52647,9 +52641,8 @@ Dd=0.209405
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-10SW-4-10-Poly-Cone-Subwoofer-4-Ohm-292-482
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 10SW-4HE 10_ High Excursion Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 10SW-4HE 10_ High Excursion Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=10SW-4HE 10" High Excursion Subwoofer 4 Ohm
 Manufacturer=
@@ -52678,9 +52671,8 @@ Dd=0.210012
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-10SW-4HE-10-Paper-Cone-Rubber-Surround-High-Excursion-Subwoofer-4-Ohm-292-818
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 10_ Woofer Surface Mount Poly Cone 4 Ohm 10SMP-4`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 10_ Woofer Surface Mount Poly Cone 4 Ohm 10SMP-4`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=10" Woofer Surface Mount Poly Cone 4 Ohm 10SMP-4
 Manufacturer=
@@ -52709,9 +52701,8 @@ Dd=0.208063
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-10-Woofer-Surface-Mount-Poly-Cone-4-Ohm-10SMP-4-292-870
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 10_ Woofer Surface Mount Poly Cone 8 Ohm 10SMP-8`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 10_ Woofer Surface Mount Poly Cone 8 Ohm 10SMP-8`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=10" Woofer Surface Mount Poly Cone 8 Ohm 10SMP-8
 Manufacturer=
@@ -52740,9 +52731,8 @@ Dd=0.208063
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-10-Woofer-Surface-Mount-Poly-Cone-8-Ohm-10SMP-8-292-872
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 12PF-8 12_ Paper Cone Foam Surround Woofer`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 12PF-8 12_ Paper Cone Foam Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=12PF-8 12" Paper Cone Foam Surround Woofer
 Manufacturer=
@@ -52771,9 +52761,8 @@ Dd=0.258372
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-12PF-8-12-Paper-Cone-Foam-Surround-Woofer-292-412
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 12PR-8 12_ Poly Cone Rubber Surround Woofer`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 12PR-8 12_ Poly Cone Rubber Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=12PR-8 12" Poly Cone Rubber Surround Woofer
 Manufacturer=
@@ -52802,9 +52791,8 @@ Dd=
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-12PR-8-12-Poly-Cone-Rubber-Surround-Woofer-292-422
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 12PT-8 12_ Paper Cone Professional Woofer with 3_ Voice Coil 8 Ohm`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 12PT-8 12_ Paper Cone Professional Woofer with 3_ Voice Coil 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=12PT-8 12" Paper Cone Professional Woofer with 3" Voice Coil 8 Ohm
 Manufacturer=
@@ -52833,9 +52821,8 @@ Dd=0.259993
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-12PT-8-12-Paper-Cone-Prosound-Woofer-3-Voice-Coil-8-Ohm-292-806
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 12SFPC-B 12_ Square Frame Paper Cone Woofer Black`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 12SFPC-B 12_ Square Frame Paper Cone Woofer Black`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=12SFPC-B 12" Square Frame Paper Cone Woofer Black
 Manufacturer=
@@ -52864,9 +52851,8 @@ Dd=0.252313
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-12SFPC-B-12-Square-Frame-Paper-Cone-Woofer-Black-290-916
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 12SFPC-W 12_ Square Frame Paper Cone Woofer White`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 12SFPC-W 12_ Square Frame Paper Cone Woofer White`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=12SFPC-W 12" Square Frame Paper Cone Woofer White
 Manufacturer=
@@ -52895,9 +52881,8 @@ Dd=0.249242
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-12SFPC-W-12-Square-Frame-Paper-Cone-Woofer-White-290-914
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 12SW-4 12_ Poly Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 12SW-4 12_ Poly Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=12SW-4 12" Poly Cone Subwoofer 4 Ohm
 Manufacturer=
@@ -52926,9 +52911,8 @@ Dd=
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-12SW-4-12-Poly-Cone-Subwoofer-4-Ohm-292-484
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 12SW-4HE 12_ Paper Cone Rubber Surround High Excursion Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 12SW-4HE 12_ Paper Cone Rubber Surround High Excursion Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=12SW-4HE 12" Paper Cone Rubber Surround High Excursion Subwoofer 4 Ohm
 Manufacturer=
@@ -52957,9 +52941,8 @@ Dd=0.254148
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-12PR-4-12-Paper-Cone-Rubber-Surround-Subwoofer-4-Ohm-292-820
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 12_ Woofer Surface Mount Poly Cone 4 Ohm 12SMP-4`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 12_ Woofer Surface Mount Poly Cone 4 Ohm 12SMP-4`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=12" Woofer Surface Mount Poly Cone 4 Ohm 12SMP-4
 Manufacturer=
@@ -52988,9 +52971,8 @@ Dd=0.256318
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-12-Woofer-Surface-Mount-Poly-Cone-4-Ohm-12SMP-4-292-874
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 12_ Woofer Surface Mount Poly Cone 8 Ohm 12SMP-8`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 12_ Woofer Surface Mount Poly Cone 8 Ohm 12SMP-8`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=12" Woofer Surface Mount Poly Cone 8 Ohm 12SMP-8
 Manufacturer=
@@ -53019,9 +53001,8 @@ Dd=0.256318
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-12-Woofer-Surface-Mount-Poly-Cone-8-Ohm-12SMP-8-292-876
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 15PF-8 15_ Paper Cone Foam Surround Woofer`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 15PF-8 15_ Paper Cone Foam Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=15PF-8 15" Paper Cone Foam Surround Woofer
 Manufacturer=
@@ -53050,9 +53031,8 @@ Dd=0.32422
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-15PF-8-15-Paper-Cone-Foam-Surround-Woofer-292-415
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 15PT-8 15_ Paper Cone Professional Woofer with 3_ Voice Coil 8 Ohm`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 15PT-8 15_ Paper Cone Professional Woofer with 3_ Voice Coil 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=15PT-8 15" Paper Cone Professional Woofer with 3" Voice Coil 8 Ohm
 Manufacturer=
@@ -53081,9 +53061,8 @@ Dd=0.325005
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-15PT-8-15-Paper-Cone-Prosound-Woofer-3-Voice-Coil-8-Ohm-292-808
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 15SSW-4HE 15_ High Excursion Super Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 15SSW-4HE 15_ High Excursion Super Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=15SSW-4HE 15" High Excursion Super Subwoofer 4 Ohm
 Manufacturer=
@@ -53112,9 +53091,8 @@ Dd=0.323
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-15SSW-4HE-15-Paper-Cone-Rubber-Surround-High-Excursion-Super-Subwoofer-4-Ohm-292-822
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 18PT-8 18_ Paper Cone Professional Woofer with 3_ Voice Coil 8 Ohm`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 18PT-8 18_ Paper Cone Professional Woofer with 3_ Voice Coil 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=18PT-8 18" Paper Cone Professional Woofer with 3" Voice Coil 8 Ohm
 Manufacturer=
@@ -53143,9 +53121,8 @@ Dd=0.396381
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-18PT-8-18-Paper-Cone-Pro-Sound-Woofer-with-3-Voice-Coil-8-Ohm-292-810
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 1TD1-8 1_ Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 1TD1-8 1_ Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=1TD1-8 1" Dome Tweeter 8 Ohm
 Manufacturer=
@@ -53174,9 +53151,8 @@ Dd=
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-1TD1-8-1-Dome-Tweeter-8-Ohm-292-462
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 1TD2-8 1_ Designer Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 1TD2-8 1_ Designer Dome Tweeter 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=1TD2-8 1" Designer Dome Tweeter 8 Ohm
 Manufacturer=
@@ -53205,9 +53181,8 @@ Dd=
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-1TD2-8-1-Designer-Dome-Tweeter-8-Ohm-292-464
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 1TM-4 1_ Mylar Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 1TM-4 1_ Mylar Tweeter 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=1TM-4 1" Mylar Tweeter 4 Ohm
 Manufacturer=
@@ -53236,9 +53211,8 @@ Dd=
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-1TM-4-1-Mylar-Tweeter-with-1-2-Voice-Coil-4-Ohm-292-438
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 3FR-4 Full-Range 3_ Speaker Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 3FR-4 Full-Range 3_ Speaker Driver 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=3FR-4 Full-Range 3" Speaker Driver 4 Ohm
 Manufacturer=
@@ -53267,9 +53241,8 @@ Dd=0.0630278
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-3FR-4-Full-Range-3-Speaker-4-Ohm-292-436
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 4FR-8 Full-Range 4-1_2_ Speaker Pioneer Type A11EC80-02F`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 4FR-8 Full-Range 4-1_2_ Speaker Pioneer Type A11EC80-02F`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=4FR-8 Full-Range 4-1/2" Speaker Pioneer Type A11EC80-02F
 Manufacturer=
@@ -53298,9 +53271,8 @@ Dd=0.0917394
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-4FR-8-Full-Range-4-1-2-Speaker-Pioneer-Type-A11EC80-02F-292-434
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 4PF-8 4_ Paper Cone Foam Surround Woofer`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 4PF-8 4_ Paper Cone Foam Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=4PF-8 4" Paper Cone Foam Surround Woofer
 Manufacturer=
@@ -53329,9 +53301,8 @@ Dd=0.0838349
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-4PF-8-4-Paper-Cone-Foam-Surround-Woofer-292-404
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 4_ Woofer Surface Mount Poly Cone 4 Ohm 4SMP-4`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 4_ Woofer Surface Mount Poly Cone 4 Ohm 4SMP-4`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=4" Woofer Surface Mount Poly Cone 4 Ohm 4SMP-4
 Manufacturer=
@@ -53360,9 +53331,8 @@ Dd=0.0829186
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-4-Woofer-Surface-Mount-Poly-Cone-4-Ohm-4SMP-4-292-854
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 4_ Woofer Surface Mount Poly Cone 8 Ohm 4SMP-8`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 4_ Woofer Surface Mount Poly Cone 8 Ohm 4SMP-8`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=4" Woofer Surface Mount Poly Cone 8 Ohm 4SMP-8
 Manufacturer=
@@ -53391,9 +53361,8 @@ Dd=0.0829186
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-4-Woofer-Surface-Mount-Poly-Cone-8-Ohm-4SMP-8-292-856
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 5-1_4_ Woofer Surface Mount Poly Cone 4 Ohm 5SMP-4`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 5-1_4_ Woofer Surface Mount Poly Cone 4 Ohm 5SMP-4`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=5-1/4" Woofer Surface Mount Poly Cone 4 Ohm 5SMP-4
 Manufacturer=
@@ -53422,9 +53391,8 @@ Dd=0.0319154
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-5-1-4-Woofer-Surface-Mount-Poly-Cone-4-Ohm-5SMP-4-292-858
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 5-1_4_ Woofer Surface Mount Poly Cone 8 Ohm 5SMP-8`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 5-1_4_ Woofer Surface Mount Poly Cone 8 Ohm 5SMP-8`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=5-1/4" Woofer Surface Mount Poly Cone 8 Ohm 5SMP-8
 Manufacturer=
@@ -53453,9 +53421,8 @@ Dd=0.100925
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-5-1-4-Woofer-Surface-Mount-Poly-Cone-8-Ohm-5SMP-8-292-860
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 5PF-8 5-1_4_ Paper Cone Foam Surround Woofer`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 5PF-8 5-1_4_ Paper Cone Foam Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=5PF-8 5-1/4" Paper Cone Foam Surround Woofer
 Manufacturer=
@@ -53484,9 +53451,8 @@ Dd=0.0978507
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-5PF-8-5-1-4-Paper-Cone-Foam-Surround-Woofer-292-405
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 5SBM-8 5_ Sealed Back Midrange`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 5SBM-8 5_ Sealed Back Midrange`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=5SBM-8 5" Sealed Back Midrange
 Manufacturer=
@@ -53515,9 +53481,8 @@ Dd=
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-5SBM-8-5-Sealed-Back-Midrange-292-432
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 5SBM1-8 5-1_4_ Sealed Back Midrange with 1_ Voice Coil 8 Ohm`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 5SBM1-8 5-1_4_ Sealed Back Midrange with 1_ Voice Coil 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=5SBM1-8 5-1/4" Sealed Back Midrange with 1" Voice Coil 8 Ohm
 Manufacturer=
@@ -53546,9 +53511,8 @@ Dd=
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-5SBM1-8-5-1-4-Sealed-Back-Midrange-with-1-Voice-Coil-8-Ohm-292-431
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 6-1_2_ Woofer Surface Mount Poly Cone 4 Ohm 6SMP-4`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 6-1_2_ Woofer Surface Mount Poly Cone 4 Ohm 6SMP-4`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=6-1/2" Woofer Surface Mount Poly Cone 4 Ohm 6SMP-4
 Manufacturer=
@@ -53577,9 +53541,8 @@ Dd=0.13159
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-6-1-2-Woofer-Surface-Mount-Poly-Cone-4-Ohm-6SMP-4-292-862
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 6-1_2_ Woofer Surface Mount Poly Cone 8 Ohm 6SMP-8`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 6-1_2_ Woofer Surface Mount Poly Cone 8 Ohm 6SMP-8`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=6-1/2" Woofer Surface Mount Poly Cone 8 Ohm 6SMP-8
 Manufacturer=
@@ -53608,9 +53571,8 @@ Dd=0.13159
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-6-1-2-Woofer-Surface-Mount-Poly-Cone-8-Ohm-6SMP-8-292-864
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 6LPSW-4 6-1_2_ Low Profile Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 6LPSW-4 6-1_2_ Low Profile Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=6LPSW-4 6-1/2" Low Profile Subwoofer 4 Ohm
 Manufacturer=
@@ -53639,9 +53601,8 @@ Dd=0.129149
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-6LPSW-4-6-1-2-Low-Profile-Subwoofer-4-Ohm-292-461
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 6PF-8 6-1_2_ Paper Cone Foam Surround Woofer`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 6PF-8 6-1_2_ Paper Cone Foam Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=6PF-8 6-1/2" Paper Cone Foam Surround Woofer
 Manufacturer=
@@ -53670,9 +53631,8 @@ Dd=0.133655
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-6PF-8-6-1-2-Paper-Cone-Foam-Surround-Woofer-292-406
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 6PR-8 6-1_2_ Poly Cone Rubber Surround Woofer`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 6PR-8 6-1_2_ Poly Cone Rubber Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=6PR-8 6-1/2" Poly Cone Rubber Surround Woofer
 Manufacturer=
@@ -53701,9 +53661,8 @@ Dd=0.133512
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-6PR-8-6-1-2-Poly-Cone-Rubber-Surround-Woofer-292-426
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 6PT-8 6-1_2_ Paper Cone Professional Midbass 8 Ohm`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 6PT-8 6-1_2_ Paper Cone Professional Midbass 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=6PT-8 6-1/2" Paper Cone Professional Midbass 8 Ohm
 Manufacturer=
@@ -53732,9 +53691,8 @@ Dd=0.13188
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-6PT-8-6-1-2-Paper-Cone-Prosound-Woofer-8-Ohm-292-800
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 8FR-8 Full-Range 8_ Replacement Speaker Pioneer Type B20FU20-51FW`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 8FR-8 Full-Range 8_ Replacement Speaker Pioneer Type B20FU20-51FW`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=8FR-8 Full-Range 8" Replacement Speaker Pioneer Type B20FU20-51FW
 Manufacturer=
@@ -53763,9 +53721,8 @@ Dd=0.165453
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-8FR-8-Full-Range-8-Speaker-Pioneer-Type-B20FU20-51FW-292-430
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 8PF-8 8_ Paper Cone Foam Surround Woofer`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 8PF-8 8_ Paper Cone Foam Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=8PF-8 8" Paper Cone Foam Surround Woofer
 Manufacturer=
@@ -53794,9 +53751,8 @@ Dd=0.165607
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-8PF-8-8-Paper-Cone-Foam-Surround-Woofer-292-408
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 8PR-8 8_ Poly Cone Rubber Surround Woofer`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 8PR-8 8_ Poly Cone Rubber Surround Woofer`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=8PR-8 8" Poly Cone Rubber Surround Woofer
 Manufacturer=
@@ -53825,9 +53781,8 @@ Dd=0.16344
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-8PR-8-8-Poly-Cone-Rubber-Surround-Woofer-292-428
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 8PT-8 8_ Paper Cone Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 8PT-8 8_ Paper Cone Professional Woofer 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=8PT-8 8" Paper Cone Professional Woofer 8 Ohm
 Manufacturer=
@@ -53856,9 +53811,8 @@ Dd=0.164527
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-8PT-8-8-Paper-Cone-Prosound-Woofer-8-Ohm-292-802
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 8SW-4 8_ Poly Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 8SW-4 8_ Poly Cone Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=8SW-4 8" Poly Cone Subwoofer 4 Ohm
 Manufacturer=
@@ -53887,9 +53841,8 @@ Dd=0.166144
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-8SW-4-8-Poly-Cone-Subwoofer-4-Ohm-292-480
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 8SW-4HE 8_ High Excursion Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 8SW-4HE 8_ High Excursion Subwoofer 4 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=8SW-4HE 8" High Excursion Subwoofer 4 Ohm
 Manufacturer=
@@ -53918,9 +53871,8 @@ Dd=0.170007
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-8SW-4HE-8-Paper-Cone-Rubber-Surround-High-Excursion-Subwoofer-4-Ohm-292-816
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 8_ Woofer Surface Mount Poly Cone 4 Ohm 8SMP-4`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 8_ Woofer Surface Mount Poly Cone 4 Ohm 8SMP-4`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=8" Woofer Surface Mount Poly Cone 4 Ohm 8SMP-4
 Manufacturer=
@@ -53949,9 +53901,8 @@ Dd=0.163907
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-8-Woofer-Surface-Mount-Poly-Cone-4-Ohm-8SMP-4-292-866
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS 8_ Woofer Surface Mount Poly Cone 8 Ohm 8SMP-8`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS 8_ Woofer Surface Mount Poly Cone 8 Ohm 8SMP-8`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=8" Woofer Surface Mount Poly Cone 8 Ohm 8SMP-8
 Manufacturer=
@@ -53980,9 +53931,8 @@ Dd=0.163907
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-8-Woofer-Surface-Mount-Poly-Cone-8-Ohm-8SMP-8-292-868
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS A25-10 Replacement 10_ Woofer for Dynaco A25 6 Ohm`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS A25-10 Replacement 10_ Woofer for Dynaco A25 6 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=A25-10 Replacement 10" Woofer for Dynaco A25 6 Ohm
 Manufacturer=
@@ -54011,9 +53961,8 @@ Dd=0.209891
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-A25-10-10-Paper-Cone-Replacement-for-Dynaco-A25-292-468
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS K-33-4 Replacement 15_ Woofer for Klipsch Klipschorn, Belle Klipsch, Cornwall, and Lascala Speakers`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS K-33-4 Replacement 15_ Woofer for Klipsch Klipschorn, Belle Klipsch, Cornwall, and Lascala Speakers`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=K-33-4 Replacement 15" Woofer for Klipsch Klipschorn, Belle Klipsch, Cornwall, and Lascala Speakers
 Manufacturer=
@@ -54042,9 +53991,8 @@ Dd=0.33
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-K-33-4-Replacement-15-Woofer-for-Klipsch-Speakers-292-830
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS NRT25-8 1_ Extended Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS NRT25-8 1_ Extended Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=NRT25-8 1" Extended Range Driver 8 Ohm
 Manufacturer=
@@ -54073,9 +54021,8 @@ Dd=0.0218801
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-NRT25-8-1-Extended-Range-Driver-8-Ohm-272-250
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS NRT50-8 2_ Extended Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS NRT50-8 2_ Extended Range Driver 8 Ohm`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=NRT50-8 2" Extended Range Driver 8 Ohm
 Manufacturer=
@@ -54104,9 +54051,8 @@ Dd=0.0336628
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-NRT50-8-2-Extended-Range-Driver-8-Ohm-272-252
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS RSRMO-8`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS RSRMO-8`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=RSRMO-8
 Manufacturer=
@@ -54135,9 +54081,8 @@ Dd=0.314735
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-RSRMO-8-Replacement-Woofer-for-15-Realistic-Mach-One-8-Ohm-290-184
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`GRS S115V-LF-8 Replacement 15_ Woofer for Yamaha Club Series S115V Speakers GRS`,date:`2026-06-24`,content:`[Driver]
+`},{name:`GRS S115V-LF-8 Replacement 15_ Woofer for Yamaha Club Series S115V Speakers GRS`,date:`2026-06-24`,content:`[Driver]
 Brand=GRS
 Model=S115V-LF-8 Replacement 15" Woofer for Yamaha Club Series S115V Speakers GRS
 Manufacturer=
@@ -54166,9 +54111,8 @@ Dd=0.325005
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/GRS-S115V-LF-8-Replacement-15-Woofer-for-Yamaha-Club-Series-S115V-Speakers-292-850
-boxbench_vendorpage=https://www.parts-express.com/brands/grs
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/brands/grs`},{name:`Goldwood GM-35 5_ Cone Midrange`,date:`2026-06-24`,content:`[Driver]
+`},{name:`Goldwood GM-35 5_ Cone Midrange`,date:`2026-06-24`,content:`[Driver]
 Brand=Goldwood
 Model=GM-35 5" Cone Midrange
 Manufacturer=
@@ -63249,9 +63193,8 @@ Dd=0.3556
 numVC=1
 VCCon=2
 boxbench_source=https://www.parts-express.com/15-Square-Frame-Paper-Cone-Woofer-White-290-918
-boxbench_vendorpage=https://www.parts-express.com/
 ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC
-`,vendorpage:`https://www.parts-express.com/`},{name:`Peerless India W8-12T`,date:``,content:`[Driver]
+`},{name:`Peerless India W8-12T`,date:``,content:`[Driver]
 Brand=Peerless India
 Model=W8-12T
 Manufacturer=
