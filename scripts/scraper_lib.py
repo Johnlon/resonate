@@ -174,14 +174,26 @@ def to_wdr(brand: str, model: str, fields: dict,
     Cms(m/N), Sd(m²), Vas(m³), Xmax(m one-way). See drivers/README.md.
 
     CRITICAL: only write a T/S field if the source document contained a value.
-    If the source says 0, write 0. If the source didn't mention the field,
-    omit it entirely — never substitute 0, a computed guess, or a typical value.
+    NEVER write 0 for any T/S field — real datasheets never publish 0 for Sd,
+    Re, BL, Mms, Pe, Xmax, Qts, Qms, Vas, or Fs. A zero means the scraper
+    found a blank cell and defaulted to 0; the field should be omitted instead.
     Extended WinISD compatibility fields (fLe, KLe, etc.) must always be present,
-    set to 0 unless a value is known. See drivers/README.md § Extended WinISD fields.
+    set to 0. See drivers/README.md § Extended WinISD fields.
     """
     import math
 
-    f = fields
+    # Strip zeros from T/S fields before writing — a zero is always a scraper
+    # artifact (blank cell → 0), never a valid datasheet value.
+    _ZERO_NEVER_VALID = {"Fs","Qts","Qes","Qms","Znom","Re","BL","Mms","Cms",
+                         "Rms","Sd","Vas","Xmax","Pe"}
+    f = {k: v for k, v in fields.items()
+         if not (k in _ZERO_NEVER_VALID and v == 0)}
+
+    # Warn about dropped zeros so the caller knows data was suppressed
+    dropped = [k for k in fields if k in _ZERO_NEVER_VALID and fields[k] == 0]
+    if dropped:
+        print(f"  [to_wdr] WARNING: dropped zero-value T/S fields (scraper artifact): "
+              f"{', '.join(dropped)} — omit rather than write 0", file=sys.stderr)
 
     # Derive computed fields only when source data exists
     vd = round(f["Sd"] * f["Xmax"], 9) if f.get("Sd") and f.get("Xmax") else None
@@ -211,7 +223,7 @@ def to_wdr(brand: str, model: str, fields: dict,
     if source_url:
         lines.append(f"boxbench_source={source_url}")
 
-    # T/S fields — only emit if value was sourced
+    # T/S fields — only emit if value was sourced and non-zero
     _TS_KEYS = ["Fs", "Qts", "Qes", "Qms", "Znom", "Re", "Le", "BL",
                 "Mms", "Cms", "Rms", "Sd", "Vas", "Xmax", "Pe", "SPL"]
     for key in _TS_KEYS:
@@ -266,6 +278,70 @@ def to_wdr(brand: str, model: str, fields: dict,
 
 def safe_filename(name: str) -> str:
     return re.sub(r"[^\w\-.]", "_", name).strip("_") + ".wdr"
+
+
+def validate_ts_fields(fields: dict, label: str = "") -> list[str]:
+    """
+    Check T/S field values for physically impossible or highly suspicious values.
+    Returns a list of human-readable warning strings (empty = all OK).
+    Mirrors the rules in scripts/dq-check.mjs — keep both in sync.
+    Called by the scraper before writing a WDR so bad values are caught at
+    source, not discovered later by the DQ check.
+    """
+    warnings = []
+    tag = f"[{label}] " if label else ""
+
+    def v(key):
+        val = fields.get(key)
+        try:
+            return float(val) if val is not None else None
+        except (TypeError, ValueError):
+            return None
+
+    # Zero fields — scraper artifact
+    for key in ("Fs","Qts","Qes","Qms","Re","BL","Mms","Sd","Vas","Xmax","Pe"):
+        if key in fields and v(key) == 0:
+            warnings.append(f"{tag}{key}=0 — scraper artifact (blank cell → 0); field will be omitted")
+
+    # Fs
+    fs = v("Fs")
+    if fs is not None:
+        if 0 < fs < 5:
+            warnings.append(f"{tag}Fs={fs} < 5 Hz — dot-thousands scraper bug? e.g. '1.600 Hz' → 1.6; should be {fs*1000:.0f} Hz")
+        if fs > 5000:
+            warnings.append(f"{tag}Fs={fs} > 5000 Hz — implausible for a cone driver")
+
+    # Pe
+    pe = v("Pe")
+    if pe == 1:
+        warnings.append(f"{tag}Pe=1 W — dot/comma-thousands scraper bug; e.g. '1.000 W' → 1")
+
+    # Qts vs Qes
+    qts, qes = v("Qts"), v("Qes")
+    if qts and qes and qts >= qes:
+        warnings.append(f"{tag}Qts={qts} >= Qes={qes} — thermodynamically impossible")
+
+    # Xmax
+    xmax = v("Xmax")
+    if xmax and xmax * 1000 > 100:
+        warnings.append(f"{tag}Xmax={xmax*1000:.0f} mm — mm stored as m? divide by 1000")
+
+    # Sd
+    sd = v("Sd")
+    if sd and sd * 1e4 < 0.5:
+        warnings.append(f"{tag}Sd={sd*1e4:.3f} cm² — near-zero scraper artifact")
+    if sd and sd * 1e4 > 3000:
+        warnings.append(f"{tag}Sd={sd*1e4:.0f} cm² > 3000 — larger than any real driver")
+
+    # Vas vs Sd cross-check (ft³-as-liters bug)
+    vas = v("Vas")
+    if sd and vas and sd * 1e4 > 150 and vas * 1000 < sd * 1e4 / 60:
+        warnings.append(
+            f"{tag}Vas={vas*1000:.2f} L implausibly small for Sd={sd*1e4:.0f} cm² — "
+            f"ft³-as-liters scraper bug? (SI page may show ft³; divide raw value by 28.317, not 1000)"
+        )
+
+    return warnings
 
 
 def parse_number(text: str) -> float | None:
@@ -389,33 +465,13 @@ def run_scraper(vendor_name: str,
         brand = product.get("brand", "")
         model = product.get("model", "")
         today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-        wdr_text = to_wdr(
-            brand=brand, model=model, fields=product["fields"],
-            provided_by=product.get("provided_by", vendor_name),
-            comment=" | ".join(comment_parts),
-            manufacturer=product.get("manufacturer", ""),
-            date_added=today, date_modified=today,
-            datasheet_url=product.get("pdf_url") or "",
-            frd_url=frd_ok,
-            impedance_url=impedance_ok,
-            vendor_page_url=url,
-            source_url=url,
-        )
-        wdr_name = safe_filename(f"{brand} {model}".strip())
-        (out / wdr_name).write_text(wdr_text, encoding="utf-8")
 
-        meta = {
-            "file": wdr_name, "quality": "M",
-            "issue": "scraped_not_human_verified",
-            "detail": (f"Automatically scraped from {product.get('provided_by', vendor_name)}. "
-                       "T/S parameters have not been verified by a human against the datasheet."),
-            "datasheet": product.get("pdf_url") or url,
-            "reviewedBy": None,
-        }
-        (out / wdr_name.replace(".wdr", "_meta.json")).write_text(
-            json.dumps(meta, indent=2, ensure_ascii=False), encoding="utf-8"
-        )
+        # Validate fields before writing — warn on suspicious values so the
+        # DQ check doesn't need to catch what the scraper could have caught.
+        for warning in validate_ts_fields(product["fields"], f"{brand} {model}"):
+            print(f"  [{i}/{total}] {slug} DQ WARNING: {warning}", flush=True)
 
+        # Download FRD/impedance files first so the WDR can reference them.
         extras = []
         frd_ok = ""
         impedance_ok = ""
@@ -463,6 +519,34 @@ def run_scraper(vendor_name: str,
                     extras.append(f"+{fname}")
                 except Exception as e:
                     extras.append(f"({fname} err: {e})")
+
+        # Write WDR after downloads so frd_ok / impedance_ok are resolved.
+        wdr_text = to_wdr(
+            brand=brand, model=model, fields=product["fields"],
+            provided_by=product.get("provided_by", vendor_name),
+            comment=" | ".join(comment_parts),
+            manufacturer=product.get("manufacturer", ""),
+            date_added=today, date_modified=today,
+            datasheet_url=product.get("pdf_url") or "",
+            frd_url=frd_ok,
+            impedance_url=impedance_ok,
+            vendor_page_url=url,
+            source_url=url,
+        )
+        wdr_name = safe_filename(f"{brand} {model}".strip())
+        (out / wdr_name).write_text(wdr_text, encoding="utf-8")
+
+        meta = {
+            "file": wdr_name, "quality": "M",
+            "issue": "scraped_not_human_verified",
+            "detail": (f"Automatically scraped from {product.get('provided_by', vendor_name)}. "
+                       "T/S parameters have not been verified by a human against the datasheet."),
+            "datasheet": product.get("pdf_url") or url,
+            "reviewedBy": None,
+        }
+        (out / wdr_name.replace(".wdr", "_meta.json")).write_text(
+            json.dumps(meta, indent=2, ensure_ascii=False), encoding="utf-8"
+        )
 
         suffix = " ".join(extras)
         print(f"  [{i}/{total}] {slug} OK {suffix}".rstrip(), flush=True)

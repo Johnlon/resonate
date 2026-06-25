@@ -30,58 +30,97 @@ const n = (f, k) => { const v = parseFloat(f[k]); return isFinite(v) ? v : null;
 // ── DQ rules ─────────────────────────────────────────────────────────────────
 // Each rule: { id, desc, test(fields) → string|null }
 // test returns null (pass) or a short description of what's wrong.
+//
+// Zero-value policy: real datasheets never publish 0 for a T/S parameter.
+// A 0 in Sd, Re, BL, Mms, Pe, Xmax, Qts, Qms, Vas is ALWAYS a scraper
+// artifact (blank cell → 0). These are flagged as "zero = scraper artifact".
 const RULES = [
-  // Core params present
-  { id: 'missing_Fs',  desc: 'Fs missing or zero',
-    test: f => (!n(f,'Fs') || n(f,'Fs') <= 0) ? `Fs=${f.Fs}` : null },
-  { id: 'missing_Sd',  desc: 'Sd missing or zero',
-    test: f => (!n(f,'Sd') || n(f,'Sd') <= 0) ? `Sd=${f.Sd}` : null },
-  { id: 'missing_Re',  desc: 'Re missing or zero',
-    test: f => (!n(f,'Re') || n(f,'Re') <= 0) ? `Re=${f.Re}` : null },
+  // ── Absent-or-zero fields ─────────────────────────────────────────────────
+  // "absent" = field not in file; "zero" = field present but = 0.
+  // Both mean "scraper had no value". Zero is never a valid T/S parameter.
+  // absent = key not in file; zero/empty = key present but no valid positive value.
+  // Both are scraper artifacts — real datasheets never publish 0 for these fields.
+  { id: 'missing_Fs',  desc: 'Fs absent, zero, or invalid — scraper artifact',
+    test: f => { const v = n(f,'Fs');
+      if (!('Fs' in f))              return 'Fs absent';
+      if (v === 0)                   return 'Fs=0 (scraper artifact)';
+      if (v === null || v < 0)       return `Fs=${f.Fs} (invalid)`;
+      return null; } },
+  { id: 'missing_Sd',  desc: 'Sd absent, zero, or invalid — scraper artifact',
+    test: f => { const v = n(f,'Sd');
+      if (!('Sd' in f))              return 'Sd absent';
+      if (v === 0)                   return 'Sd=0 (scraper artifact)';
+      if (v === null || v < 0)       return `Sd=${f.Sd} (invalid)`;
+      return null; } },
+  { id: 'missing_Re',  desc: 'Re absent, zero, or invalid — scraper artifact',
+    test: f => { const v = n(f,'Re');
+      if (!('Re' in f))              return 'Re absent';
+      if (v === 0)                   return 'Re=0 (scraper artifact)';
+      if (v === null || v < 0)       return `Re=${f.Re} (invalid)`;
+      return null; } },
+  { id: 'zero_BL',  desc: 'BL = 0 — scraper artifact; no real motor has zero force factor',
+    test: f => ('BL'  in f && n(f,'BL')  === 0) ? 'BL=0'  : null },
+  { id: 'zero_Mms', desc: 'Mms = 0 — scraper artifact; no cone has zero moving mass',
+    test: f => ('Mms' in f && n(f,'Mms') === 0) ? 'Mms=0' : null },
+  { id: 'zero_Qts', desc: 'Qts = 0 — scraper artifact; Qts=0 is thermodynamically impossible',
+    test: f => ('Qts' in f && n(f,'Qts') === 0) ? 'Qts=0' : null },
+  { id: 'zero_Qms', desc: 'Qms = 0 — scraper artifact; no suspension has zero mechanical Q',
+    test: f => ('Qms' in f && n(f,'Qms') === 0) ? 'Qms=0' : null },
+  { id: 'zero_Vas', desc: 'Vas = 0 — scraper artifact; equivalent air volume cannot be zero',
+    test: f => ('Vas' in f && n(f,'Vas') === 0) ? 'Vas=0' : null },
 
-  // Fs range
-  { id: 'Fs_low',  desc: 'Fs < 5 Hz — below any physical driver',
-    test: f => { const v = n(f,'Fs'); return v && v < 5  ? `Fs=${v}` : null; } },
+  // ── Fs range ──────────────────────────────────────────────────────────────
+  // Fs_low also catches the European dot-thousands scraper bug:
+  // SI page shows "1.600 Hz" (dot = thousands sep) → parse_number sees 1.600 → 1.6.
+  // Same root cause as Pe=1 from "1.000 W". Fix: multiply Fs by 1000.
+  { id: 'Fs_low',  desc: 'Fs < 5 Hz — physically impossible; also catches dot-thousands bug ("1.600 Hz" → 1.6)',
+    test: f => { const v = n(f,'Fs'); return v && v > 0 && v < 5 ? `Fs=${v}` : null; } },
   { id: 'Fs_high', desc: 'Fs > 5000 Hz — implausible for a cone driver',
     test: f => { const v = n(f,'Fs'); return v && v > 5000 ? `Fs=${v}` : null; } },
 
-  // Sd range
+  // ── Sd range ──────────────────────────────────────────────────────────────
   { id: 'Sd_huge', desc: 'Sd > 3000 cm² — larger than any real driver (21" sub ≈ 1700 cm², 24" ≈ 2300 cm²)',
     test: f => { const v = n(f,'Sd'); return v && v*1e4 > 3000 ? `Sd=${(v*1e4).toFixed(0)} cm²` : null; } },
-  { id: 'Sd_tiny', desc: 'Sd < 0.5 cm² — smaller than any real driver',
-    test: f => { const v = n(f,'Sd'); return v && v*1e4 < 0.5 ? `Sd=${(v*1e4).toFixed(2)} cm²` : null; } },
+  // Sd_tiny also catches the Beyma Sd=0.0001 pattern: scraper wrote a near-zero
+  // instead of omitting the field. Treat same as Sd=0.
+  { id: 'Sd_tiny', desc: 'Sd < 0.5 cm² — scraper artifact (near-zero); no real driver has Sd this small',
+    test: f => { const v = n(f,'Sd'); return v && v*1e4 < 0.5 ? `Sd=${(v*1e4).toFixed(3)} cm²` : null; } },
 
-  // Re range
+  // ── Re range ──────────────────────────────────────────────────────────────
   { id: 'Re_low',  desc: 'Re < 1 Ω — below DC resistance of any voice coil',
     test: f => { const v = n(f,'Re'); return v && v < 1   ? `Re=${v}` : null; } },
   { id: 'Re_high', desc: 'Re > 64 Ω — implausibly high voice coil resistance',
     test: f => { const v = n(f,'Re'); return v && v > 64  ? `Re=${v}` : null; } },
 
-  // Q values
+  // ── Q values ──────────────────────────────────────────────────────────────
   { id: 'Qts_impossible', desc: 'Qts > Qes — thermodynamically impossible (Qts must be < Qes)',
     test: f => { const qts = n(f,'Qts'), qes = n(f,'Qes'); return qts && qes && qts >= qes ? `Qts=${qts} Qes=${qes}` : null; } },
   { id: 'Qts_impossible2', desc: 'Qts > Qms — thermodynamically impossible',
     test: f => { const qts = n(f,'Qts'), qms = n(f,'Qms'); return qts && qms && qts >= qms ? `Qts=${qts} Qms=${qms}` : null; } },
   { id: 'Qts_high', desc: 'Qts > 5 — physically unreasonable for any driver',
     test: f => { const v = n(f,'Qts'); return v && v > 5  ? `Qts=${v}` : null; } },
-  { id: 'Qes_zero', desc: 'Qes ≤ 0 — impossible',
+  { id: 'Qes_zero', desc: 'Qes ≤ 0 — impossible (zero electrical Q = infinite motor damping)',
     test: f => { const v = n(f,'Qes'); return v !== null && v <= 0 ? `Qes=${v}` : null; } },
-  { id: 'Qms_low', desc: 'Qms < 0.5 — extremely lossy suspension, unusual',
+  { id: 'Qms_low', desc: 'Qms < 0.5 — extremely lossy suspension, very unusual',
     test: f => { const v = n(f,'Qms'); return v && v < 0.5 ? `Qms=${v}` : null; } },
 
-  // Pe — the comma-bug trap
-  { id: 'Pe_one',  desc: 'Pe = 1 W — almost certainly a comma parse bug (e.g. "1,000" → 1)',
-    test: f => { const v = n(f,'Pe'); return v === 1 ? `Pe=${v}` : null; } },
-  { id: 'Pe_zero', desc: 'Pe = 0 — missing power handling',
-    test: f => { const v = n(f,'Pe'); return v !== null && v === 0 ? `Pe=${v}` : null; } },
+  // ── Pe ────────────────────────────────────────────────────────────────────
+  // Pe_one: "1,000 W" or "1.000 W" → scraper dot/comma bug → stored as 1.
+  // Pe_zero: blank cell → scraper stored 0 instead of omitting field.
+  { id: 'Pe_one',  desc: 'Pe = 1 W — dot/comma-thousands scraper bug (e.g. "1.000 W" or "1,000 W" → 1)',
+    test: f => { const v = n(f,'Pe'); return v === 1 ? 'Pe=1 (scraper artifact)' : null; } },
+  { id: 'Pe_zero', desc: 'Pe = 0 — scraper artifact; no datasheet publishes Pe=0',
+    test: f => { const v = n(f,'Pe'); return v !== null && v === 0 ? 'Pe=0 (scraper artifact)' : null; } },
 
-  // Xmax
-  { id: 'Xmax_zero', desc: 'Xmax = 0 — missing excursion data',
-    test: f => { const v = n(f,'Xmax'); return v !== null && v === 0 ? 'Xmax=0' : null; } },
-  { id: 'Xmax_huge', desc: 'Xmax > 100 mm — implausible',
+  // ── Xmax ──────────────────────────────────────────────────────────────────
+  // Xmax_zero: scraper artifact (blank cell → 0).
+  // Xmax_huge: mm stored as m by scraper (value should be divided by 1000).
+  { id: 'Xmax_zero', desc: 'Xmax = 0 — scraper artifact; no datasheet publishes Xmax=0',
+    test: f => { const v = n(f,'Xmax'); return v !== null && v === 0 ? 'Xmax=0 (scraper artifact)' : null; } },
+  { id: 'Xmax_huge', desc: 'Xmax > 100 mm — mm stored as m by scraper; divide by 1000',
     test: f => { const v = n(f,'Xmax'); return v && v*1000 > 100 ? `Xmax=${(v*1000).toFixed(0)} mm` : null; } },
 
-  // Vas
+  // ── Vas ───────────────────────────────────────────────────────────────────
   { id: 'Vas_huge', desc: 'Vas > 2000 L — implausible (would need a room-sized box)',
     test: f => { const v = n(f,'Vas'); return v && v*1000 > 2000 ? `Vas=${(v*1000).toFixed(0)} L` : null; } },
   // ft³-as-liters scraper bug: scraper encounters a value in ft³ on soundimports.eu,
