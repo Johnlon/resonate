@@ -2,6 +2,9 @@ node_modules/
 dist/
 test-results/
 
+# WinISD shipped driver database — historical reference only, not part of this project
+drivers/winisd/
+
 # Scraper cache — raw HTML and PDF datasheets, never commit (URLs kept in _meta.json)
 drivers/**/_html/
 drivers/**/datasheets/
