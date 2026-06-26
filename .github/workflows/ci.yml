@@ -17,7 +17,7 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps chromium
       - name: Unit + golden-master tests
-        run: node test/engine.test.mjs && node test/golden.test.mjs
+        run: node test/complex.test.mjs && node test/alignments.test.mjs && node test/config.test.mjs && node test/engine.test.mjs && node test/golden.test.mjs
       - name: Browser tests
         run: npx playwright test
       - name: Production build
