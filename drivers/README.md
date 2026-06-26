@@ -129,6 +129,14 @@ cause silent import failures or wrong values in Resonate.
 | `DVol=`     | `0`                                                                                       |
 | `ParState=` | WinISD bitmask string; use `EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC` as default |
 
+> **ParState is a fixed 49-character WinISD-internal state table** — always exactly 49 chars
+> regardless of how many fields are in the file. Each character is `E` (user-entered),
+> `C` (WinISD-calculated), or `N` (not active). It maps to WinISD's fixed internal parameter
+> list, not to file line positions. Scraped files use a template string; the characters carry
+> no information about which values were measured vs derived.
+> See [`drivers/sample/PARSTATE_FINDINGS.md`](sample/PARSTATE_FINDINGS.md) for the full
+> reverse-engineered spec (derived from real WinISD experiments).
+
 #### Date semantics and duplicate sorting
 
 `DateModified` is the key field for resolving duplicates. When the same driver appears in multiple

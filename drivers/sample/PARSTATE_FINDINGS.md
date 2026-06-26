@@ -66,11 +66,11 @@ Nearly all fields are N. The three exceptions:
 
 ### Permanently fixed slots (regardless of driver data)
 
-Two fields are **permanently N no matter what value is stored or typed**:
+Two fields are **permanently N no matter what value is entered** — WinISD accepts and stores values for both, but never promotes either to E or C:
 
 | Position | Field | Why always N |
 |----------|-------|--------------|
-| 21 | `no` | Reference efficiency η₀ in **% (percent)** per WinISD help — display-only output, never enterable |
+| 21 | `no` | Reference efficiency η₀ — **UI accepts input in %**, stored in WDR as a fraction (÷100): entering 123% stores 1.23. Despite this, ParState position 21 is **always N** even when explicitly entered — WinISD stores the value but never promotes it to E or C. It sits permanently outside the dependency graph. |
 | 47 | `Vcd` | Voice coil displacement volume — still N even when explicitly set to 77; display-only |
 
 **`c` and `roo` are conditionally N** — they remain N when only T/S parameters are entered,
