@@ -1,0 +1,1081 @@
+# WINISD_INFERRED_SCHEMA.yaml
+#
+# Schema inferred ENTIRELY from 13 real WDR files in:
+#   C:\Users\johnl\OneDrive\Documents\WinISD\drivers\
+#
+# WinISD Pro is closed-source; no public WDR format specification exists.
+# Every claim in this file is grounded in direct observation of those files.
+# Anything marked "⚠ Assumption" has not been directly verified.
+#
+# Files analysed (13 total, all sourced from loudspeakerdatabase.com):
+#   Beyma 10BR60 V2.wdr            Beyma 8BR40_N.wdr
+#   Dayton Audio DC160S-4.wdr      Dayton Audio DC250-8.wdr
+#   Dayton Audio DCS165-4.wdr      Dayton Audio DCS205-4.wdr
+#   Dayton Audio E150HE-44.wdr     Morel UW 1258.wdr
+#   SB Acoustics SB23MFCL45-4.wdr  SB Acoustics SB26SFCL38-4.wdr
+#   Tang Band W5-1138SMF.wdr        Tang Band W6-1139SIF.wdr
+#   VISATON W 200 S - 4 Ohm.wdr
+#
+# Key finding: ALL 56 key=value fields appear in EVERY file in the SAME fixed order.
+# The field order is rigid; WinISD likely reads fields by position/sequence.
+#
+# ─── PARAMETER ENTRY GUIDANCE ────────────────────────────────────────────────
+# Source: WinISD help — usingwinisd/newdriver.html (official recommended procedure)
+# Supplementary: Parts Express TechTalk forum thread #1318003
+#   (thekorvers, 5000+ alignments — https://techtalk.parts-express.com/forum/tech-talk-forum/1318003-winisd-pro-frustrations-help-please)
+#
+# PREREQUISITE: Enable "Auto calculate unknowns" before entering any parameters.
+#
+# Official recommended entry order (newdriver.html):
+#   1. Mms + Cms  → gives Fs. If unavailable, enter Fs and one of the two.
+#   2. Sd + Bl + Re  → gives most derived fields except Qms, Qts, Vas.
+#   3. Rms OR Qms  → either works; Qms preferred (measurable).
+#   4. Hc + Hg + Pe. If Hc/Hg unavailable, enter Xmax directly (and optionally one of Hc/Hg).
+#   5. Number of voice coils (numVC).
+#   6. Correct Znom if necessary.
+#
+# Minimum viable entry (gives only basic graphs): Qts, Vas, Fs.
+#
+# DO NOT enter Qts manually when Qms and Qes are entered — WinISD will
+# calculate Qts, and a manually entered Qts will cause a consistency check
+# error. (Source: forum thread #1318003, confirmed by alpha7 changelog and binary.)
+#
+# Parameter colour coding in the UI:
+#   Green = user-entered    Blue = WinISD-calculated    Black = not set
+
+$schema: WINISD_INFERRED_SCHEMA
+version: 1
+source:
+  directory: "C:\\Users\\johnl\\OneDrive\\Documents\\WinISD\\drivers"
+  files_analysed: 13
+  date_analysed: 2026-06-25
+  additional_sources:
+    - url: "https://www.linearteam.org/download/winisdpro/versions.txt"
+      description: >
+        Official WinISD Pro changelog. Used to confirm field provenance,
+        correct field descriptions, and establish version-introduced dates.
+        Fetched 2026-06-26. Covers versions up to 0.50alpha7 (11 Sep 2004).
+        NOTE: This changelog is incomplete — version.ini confirms the installed
+        binary is 0.7.0.950 (2016-10-29). A major version jump occurred between
+        2004 and 2016 with no public changelog available for that period.
+    - url: "https://techtalk.parts-express.com/forum/tech-talk-forum/1318003-winisd-pro-frustrations-help-please"
+      description: >
+        Parts Express TechTalk forum thread. Confirms parameter entry workflow:
+        do not enter Qts manually; enter Qms+Qes only. Contributor thekorvers
+        (5000+ alignments). Fetched 2026-06-26.
+    - path: "../winisd-dev/winisd.exe"
+      description: >
+        WinISD Pro version 0.7.0.950 binary (2473472 bytes, released 2016-10-29).
+        Version confirmed from C:/ProgramData/WinISD/version.ini — NOT 0.50alpha7
+        as previously stated. The versions.txt changelog only covers up to alpha7
+        (2004); a major version jump to 0.7.x occurred between 2004 and 2016 with
+        no public changelog for that gap. Development did NOT cease in 2004.
+        ASCII strings extracted with Python to infer: field names, UI control
+        names, the complete 15-group consistency-check relation table, exact
+        error dialog text, format strings, environment validation ranges, and
+        passive radiator project parameters. All binary-derived facts are
+        labelled "Source: winisd.exe strings". Analysed 2026-06-26.
+    - path: "C:/ProgramData/winisd/help/"
+      description: >
+        Official WinISD Pro HTML help files (installed with app). Key files:
+        articles/thielesmall.html — authoritative field definitions for all T/S,
+        electro-mechanical, large-signal, miscellaneous, thermal, figure-of-merit,
+        and dimension parameters; written by Claus Futtrup, JJ Richard, Janne Ahonen.
+        usingwinisd/newdriver.html — official recommended parameter entry procedure.
+        Used to replace inferred descriptions with authoritative ones. Read 2026-06-26.
+  note: >
+    All structural observations are from the 13 WDR files only. WinISD Pro is
+    closed-source. Do not extend this schema from other sources without clearly
+    marking them.
+
+# ─── SIMULATION NOTES ────────────────────────────────────────────────────────
+# Source: WinISD help — faq/faq.html and usingwinisd/plottypes.html
+#
+# Frequency range: Models are valid only in the pistonic range, approximately
+#   20–200 Hz (up to 300 Hz). Results beyond 200–300 Hz are unreliable.
+#   Source: faq.html — "They are valid only in pistonic range of driver, or
+#   about 200-300 Hz. Anything beyond that, is very inaccurate."
+#
+# SPL measurement convention: All SPL values assume 1m distance, half-space
+#   (2π sr, i.e. mounted in an infinite baffle). Subtract 6 dB for full space.
+#   SPL changes with ambient temperature/pressure (air density and c).
+#   Source: plottypes.html.
+#
+# Xmax convention: WinISD uses PEAK (one-way) excursion, not RMS or peak-to-peak.
+#   Source: plottypes.html — "Peak value is perhaps a most practical expression,
+#   because driver parameter Xmax indicates how much cone can be deflected from
+#   its rest position linearly."
+#
+# Box volume: WinISD shows NET volume. Bracing, driver, and port displacements
+#   must be added manually by the user.
+#   Source: faq.html — "WinISD doesn't do guessing, and therefore shows net
+#   volume for your box."
+#
+# Port length: Calculated assuming one flanged end (in box wall) + one free end
+#   inside box. Default end correction factor = 0.732.
+#   Source: faq.html.
+#
+# Port air velocity limit: Keep peak velocity below 5% of speed of sound
+#   (~17 m/s) to avoid chuffing noise. Source: plottypes.html.
+
+# ─── FILE FORMAT ─────────────────────────────────────────────────────────────
+format:
+  type: ini_like
+  section_header: "[Driver]"       # must be first line; no other sections
+  field_separator: "="             # key=value, no spaces around =
+  decimal_separator: "."           # period (not comma)
+  encoding: utf-8                  # ⚠ Assumption — not directly verified
+  line_ending: crlf                # ⚠ Assumption — Windows application
+  field_order: fixed               # ALL 56 fields must appear in canonical order
+  total_native_fields: 56          # including the 7 header metadata fields
+  unknown_fields: |
+    No evidence that WinISD supports unknown fields within the native block.
+    Custom metadata (e.g. boxbench_*) MUST be appended AFTER ParState.
+    The native WinISD block (Brand through ParState) must be uninterrupted.
+
+# ─── CONSISTENCY-CHECK RELATION GROUPS ──────────────────────────────────────
+# Source: winisd.exe strings — 15 Pascal string literals at binary offset ~8894,
+# immediately preceding the TfrmParErrors form definition. These are the groups
+# WinISD cross-checks when saving a driver. If any group is internally
+# inconsistent, the error dialog "Parameter error list" appears with caption:
+#   "Consistency check on following parameter groups failed."
+# (Exact text from binary string at offset 8951, pascal-length-prefixed.)
+#
+# Each line is one relation group — all members must satisfy the formula below.
+consistency_check_groups:
+  - fields: [Qms, Fs, Cms, Rms]
+    formula: "Rms = 2π·Fs·Mms/Qms  (Mms implicit via Cms = 1/(Mms·(2π·Fs)²))"
+  - fields: [Bl, Fs, Mms, Re, Qes]
+    formula: "Qes = 2π·Fs·Mms·Re / BL²"
+    note: "Binary uses 'Bl' (mixed case) internally; WDR field is 'BL'"
+  - fields: [Rme, Bl, Re]
+    formula: "Rme = BL² / Re"
+  - fields: [Rme, Fs, Mms, Qes]
+    formula: "Rme = 2π·Fs·Mms / Qes  (alternate route to same Rme)"
+  - fields: [Qts, Qms, Qes]
+    formula: "Qts = (Qms · Qes) / (Qms + Qes)"
+    note: "This is the group that triggers the error when Qts is entered manually"
+  - fields: [Sd, Dd]
+    formula: "Dd = 2 · sqrt(Sd / π)"
+  - fields: [Mcost, Rme, Hc, Hg, Xmax]
+    formula: "Mcost = f(Rme, Hc, Hg, Xmax)  — motor geometry cost figure of merit"
+    note: "Always 0 in observed files because Hc and Hg are never populated"
+  - fields: [Mpow, Bl, Re]
+    formula: "Mpow = BL / sqrt(Re)  i.e. sqrt(Rme)"
+  - fields: [Mpow, Rme]
+    formula: "Mpow = sqrt(Rme)  — confirms Mpow = BL/sqrt(Re)"
+  - fields: [Cms, Vas, Sd]
+    formula: "Vas = ρ₀ · c² · Sd² · Cms"
+  - fields: [fs, Mms, Cms]
+    formula: "Fs = 1 / (2π · sqrt(Mms · Cms))"
+    note: "Binary uses lowercase 'fs'; WDR field is 'Fs'"
+  - fields: [EBP, fs, Qes]
+    formula: "EBP = Fs / Qes"
+  - fields: [Gamma, Bl, Mms]
+    formula: "Gamma = BL / Mms  (motor force per unit moving mass)"
+    note: "Binary uses 'Gamma'; WDR field is 'gamma'. NOT the adiabatic index."
+  - fields: [no, c, Fs, Qes, Vas]
+    formula: "η₀ = (4π²/c³) · Fs³ · Vas / Qes"
+    note: "Classical Thiele efficiency formula. Binary uses 'no'; WDR field is 'no'."
+  - fields: [no, Sd, Bl, Mms, Re]
+    formula: "η₀ = (ρ₀ / (2π·c)) · BL² · Sd² / (Mms² · Re)"
+    note: "Alternate efficiency formula; same result as above when T/S are consistent"
+  - fields: [SPLmax, Pe, SPL]
+    formula: "SPLmax = SPL + 10·log10(Pe)"
+  - fields: [USPL, SPL, Re]
+    formula: "USPL = SPL + 10·log10(8/Re)  where 8 = 2.83² (the 2.83V reference squared)"
+    note: "Confirmed by WinISD help — articles/thielesmall.html (USPL is dB/2.83V)"
+  - fields: [no, SPL, rho, c]
+    formula: "SPL = 10·log10(η₀) + 10·log10(ρ₀·c²/(2π)) + 109  ⚠ inferred"
+    note: "Converts reference efficiency to sensitivity in dB"
+  - fields: [Xmax, Hc, Hg]
+    formula: "Xmax = (Hc - Hg) / 2  (linear excursion from coil overhang in gap)"
+    note: "Only applies when Hc and Hg are entered; Xmax is usually entered directly"
+  - fields: [Vd, Sd, Xmax]
+    formula: "Vd = Sd · Xmax"
+  - fields: [Gloss, fs, Xmax]
+    formula: "Gloss = f(Fs, Xmax)  — cone droop at resonance due to gravity"
+    note: "Exact formula unknown; Fs and Xmax bound the free-cone displacement range"
+  - fields: [SPLmaxLF, rho, Vd]
+    formula: "SPLmaxLF = f(ρ₀, Vd)  — displacement-limited SPL at low frequency"
+
+# ─── CANONICAL FIELD ORDER ───────────────────────────────────────────────────
+# This is the ONLY valid order. Do not reorder, add, or remove fields within
+# the native block. All 56 fields are present in every observed file.
+field_order_canonical:
+  # Metadata (positions 1-7)
+  - Brand
+  - Model
+  - Manufacturer
+  - ProvidedBy
+  - Comment
+  - DateAdded
+  - DateModified
+  # Primary T/S parameters (user-entered, positions 8-25)
+  - Qts
+  - Znom
+  - Fs
+  - Pe
+  - SPL
+  - Re
+  - Le
+  - fLe
+  - KLe
+  - BL
+  - Xmax
+  - Cms
+  - Qms
+  - Qes
+  - Rms
+  - Mms
+  - Sd
+  - Vas
+  # Geometry placeholder (position 26)
+  - Dia
+  # Derived / computed by WinISD (positions 27-44)
+  - Vd
+  - no
+  - Dd
+  - EBP
+  - numVC
+  - Hc
+  - Hg
+  - SPLmax
+  - SPLmaxLF
+  - USPL
+  - alfaVC
+  - Rt
+  - Ct
+  - gamma
+  - Rme
+  - Mpow
+  - Mcost
+  - Gloss
+  # Voice coil connection (position 45)
+  - VCCon
+  # Environmental physics constants (positions 46-47)
+  - c
+  - roo
+  # Physical dimensions — never populated by T/S entry (positions 48-55)
+  - Thick
+  - Depth
+  - MagDepth
+  - Magnet
+  - Basket
+  - Outer
+  - Vcd
+  - DVol
+  # Parameter state string — MUST be last native field (position 56)
+  - ParState
+
+# ─── FIELD DEFINITIONS ───────────────────────────────────────────────────────
+fields:
+
+  # ── METADATA ──────────────────────────────────────────────────────────────
+
+  Brand:
+    type: string
+    description: Manufacturer brand name
+    observed_examples: [Beyma, "Dayton Audio", Morel, "SB Acoustics", "Tang Band", VISATON]
+
+  Model:
+    type: string
+    description: Driver model designation
+
+  Manufacturer:
+    type: string
+    description: >
+      Name of the company who actually made the physical driver (e.g. OEM factory
+      name), as distinct from Brand (the marketing name).
+      Source: WinISD help — usingwinisd/newdriver.html.
+      Always empty string in all 13 observed files (loudspeakerdatabase.com does
+      not populate this field).
+    observed_values: [""]
+
+  ProvidedBy:
+    type: string
+    description: Data source attribution
+    observed_values: ["loudspeakerdatabase.com"]
+
+  Comment:
+    type: string
+    description: Free-text comment; loudspeakerdatabase.com uses this as a URL path to the driver page
+    observed_examples: ["loudspeakerdatabase.com/Beyma/10BR60_V2"]
+
+  DateAdded:
+    type: integer
+    format: YYYYMMDD
+    description: Date the driver was added to the WinISD library (no separators)
+    observed_examples: [20251203, 20251206, 20260621]
+
+  DateModified:
+    type: integer
+    format: YYYYMMDD
+    description: Date the driver record was last modified (no separators)
+
+  # ── PRIMARY T/S PARAMETERS (user-entered in WinISD UI) ────────────────────
+
+  Qts:
+    type: float
+    unit: dimensionless
+    description: >
+      Total damping (parallel coupling of Qms and Qes).
+      Source: WinISD help — articles/thielesmall.html.
+    constraint: >
+      Qts = (Qms * Qes) / (Qms + Qes). WinISD enforces this to 3 decimal places.
+      If all three are stored and the computed Qts rounded to 3dp does not match
+      the stored Qts rounded to 3dp, WinISD shows a 'consistency check failed'
+      error on file load. Store with full precision and do not round independently.
+    observed_range: [0.3, 0.53]
+
+  Znom:
+    type: float
+    unit: ohms
+    description: >
+      Nominal impedance of the driver. NOT used in simulation — descriptive only.
+      Source: WinISD help — "Nominal impedance of the driver (not used in simulation).
+      articles/thielesmall.html."
+      Always enter Znom explicitly; WinISD frequently assumes the wrong value
+      (forum thread #1318003).
+    observed_values: [4, 8]
+
+  Fs:
+    type: float
+    unit: Hz
+    description: Free-air resonance frequency
+    observed_range: [21.0, 87.0]
+
+  Pe:
+    type: float
+    unit: watts
+    description: >
+      Thermal limited max. continuous electric power handling. If driven
+      continuously above Pe, the driver will eventually fail.
+      Source: WinISD help — articles/thielesmall.html.
+    observed_range: [100, 700]
+
+  SPL:
+    type: float
+    unit: dB
+    description: >
+      Power sensitivity in dB/W/1m. WinISD assumes 1m distance, half-space
+      radiation (2π), voltage drive. Not an accurate application figure since
+      voltage amplifiers are typically used — use USPL for application matching.
+      Source: WinISD help — articles/thielesmall.html.
+      Interpretation:
+        0           = SPL was not explicitly entered by the user. WinISD may
+                      compute SPL internally from T/S efficiency, but stores 0
+                      in the field and marks ParState position 4 as C.
+        non-zero    = Either user explicitly entered sensitivity (ParState pos 4 = E)
+                      OR WinISD computed and stored it (ParState pos 4 = C).
+      Evidence: E150HE-44 has SPL=82.397 (WinISD-computed, pos4=C).
+                TB W5-1138SMF has SPL=82 (user-entered, pos4=E).
+    observed_values: [0, 82, 82.3970235965832]
+
+  Re:
+    type: float
+    unit: ohms
+    description: DC voice coil resistance (measured with ohmmeter)
+    observed_range: [1.65, 7.0]
+
+  Le:
+    type: float
+    unit: henries
+    description: >
+      Voice coil inductance.
+      Source: WinISD help — articles/thielesmall.html.
+    observed_range: [0.00034, 0.00192]
+
+  fLe:
+    type: float
+    unit: Hz
+    description: >
+      The frequency at which Le and KLe is to be determined.
+      0 = use the standard Le model only (KLe not active).
+      Source: WinISD help — articles/thielesmall.html.
+    observed_values: [0]
+
+  KLe:
+    type: float
+    unit: "H·sqrt(Hz)"
+    description: >
+      Voice coil semi-inductance, after Vanderkooy.
+      Source: WinISD help — "Voice coil semi-inductance in [H·sqrt(Hz)], after
+      Vanderkooy. articles/thielesmall.html."
+      0 = semi-inductance model not active (use standard Le).
+    observed_values: [0]
+
+  BL:
+    type: float
+    unit: "T*m"
+    description: >
+      Force factor: magnetic flux density (B) cross-multiplied by the wire length
+      in the airgap (L). Source: WinISD help — "Magnetic Induction crossed with
+      wire length in the airgap (crossing = cross product, a mathematical
+      vector-operation). articles/thielesmall.html."
+    observed_range: [4.9, 18.2]
+
+  Xmax:
+    type: float
+    unit: meters
+    description: >
+      One-way PEAK linear excursion (not RMS, not peak-to-peak).
+      CRITICAL UNIT: stored in METRES, not mm. Example: 6.5 mm = Xmax=0.0065.
+      WinISD does NOT apply correction factors (some references multiply by 1.15
+      or 0.87 depending on distortion tolerance — WinISD uses the raw value).
+      Manufacturer caution: some manufacturers give Xmax as the damage limit
+      (Xlim), not the linear limit — always use the linear limit for WinISD.
+      Source: WinISD help — "WinISD does not multiply with any of these factors.
+      Some manufacturers erroneously gives you Xmax as the damage limit, see Xlim.
+      WinISD needs this as peak value. articles/thielesmall.html."
+      Peak convention confirmed: plottypes.html — "Peak value is perhaps a most
+      practical expression, because driver parameter Xmax indicates how much cone
+      can be deflected from its rest position linearly, in either direction."
+      Can also be derived from voice coil geometry: Xmax = abs(Hc - Hg) / 2.
+      Source: winisd.exe strings relation group "Xmax, Hc, Hg". In practice
+      Hc and Hg are almost never entered, so Xmax is nearly always user-entered.
+    observed_range: [0.0034, 0.012]
+    data_quality_warning: >
+      Dayton Audio E150HE-44.wdr (one of the 13 reference files) has Xmax=14.7.
+      This is inconsistent with its stored Vd=0.0001397 (which equals Sd*0.0147,
+      not Sd*14.7). The correct value is 0.0147 m (14.7 mm). This appears to be
+      a data entry error in the loudspeakerdatabase.com source — mm was entered
+      instead of m. WinISD apparently accepted the incorrect value.
+      Do not use this file as evidence that Xmax can be stored in mm.
+
+  Cms:
+    type: float
+    unit: "m/N"
+    description: >
+      Compliance of driver (inverse of spring stiffness).
+      Source: WinISD help — articles/thielesmall.html.
+    observed_range: [0.00036872, 0.00153]
+
+  Qms:
+    type: float
+    unit: dimensionless
+    description: >
+      Mechanical Q (damping) — lower value means higher damping. Describes the
+      driver's ability to resonate at Fs based on mechanical means.
+      Source: WinISD help — articles/thielesmall.html.
+    observed_range: [1.88, 13.0]
+
+  Qes:
+    type: float
+    unit: dimensionless
+    description: >
+      Electrical Q (damping) — lower value means higher damping. Describes the
+      driver's ability to resonate at Fs based on electrical means.
+      Source: WinISD help — articles/thielesmall.html.
+    observed_range: [0.34, 0.59]
+
+  Rms:
+    type: float
+    unit: "kg/s"
+    description: >
+      Mechanical damping of the diaphragm arising from mechanical friction,
+      including the resistive part of the radiation load. Rms can be compared
+      to Rme; it is similarly related to Qms — larger Qms gives smaller Rms.
+      For woofers, small Rms is desired (suspension acts as a perfect spring).
+      Source: WinISD help — articles/thielesmall.html.
+    observed_range: [1.28, 5.0]
+
+  Mms:
+    type: float
+    unit: kg
+    description: >
+      Mechanical Mass of the vibrating part of the driver including air load.
+      Source: WinISD help — articles/thielesmall.html.
+    observed_range: [0.021, 0.078]
+
+  Sd:
+    type: float
+    unit: "m^2"
+    description: >
+      Surface-area of Diaphragm (effective piston radiating area).
+      Source: WinISD help — articles/thielesmall.html.
+    observed_range: [0.0094, 0.0829]
+
+  Vas:
+    type: float
+    unit: "m^3"
+    description: >
+      Equivalent Volume of air to Cms (acoustic compliance volume).
+      CRITICAL UNIT: stored in m³, not litres. Example: 4.85 litres = Vas=0.00485.
+      Source: WinISD help — articles/thielesmall.html.
+    entry_warning: >
+      AVOID entering Vas directly whenever possible. Vas depends on current air
+      properties (temperature, pressure) and has no single "correct" value.
+      Prefer entering Mms+Cms+Sd+BL+Re and letting WinISD compute Vas — the
+      computed value will be internally consistent with the environment settings
+      used during entry.
+      Source: WinISD help — faq/faq.html — "avoid entering Vas whenever possible.
+      I also have personally found out that manufacturer's specs are not always in
+      complete accordance with T/S model." (Janne Ahonen)
+    observed_range: [0.00485, 0.14]
+
+  Dia:
+    type: float
+    unit: meters
+    description: >
+      Legacy voice coil diameter field. Superseded by Dd (effective piston
+      diameter) in alpha2 (2001).
+      Source: versions.txt alpha2 fixes — "Tiny driver parameter window:
+      'dia' replaced by Dd."
+      Retained in the file format for backwards compatibility; always 0 in
+      all 13 observed files. Do not confuse with Dd.
+    observed_values: [0]
+
+  # ── DERIVED / COMPUTED FIELDS ─────────────────────────────────────────────
+  # These are computed by WinISD and stored for reference.
+  # They should be included in generated WDR files (all 13 reference files have them).
+
+  Vd:
+    type: float
+    unit: "m^3"
+    description: >
+      Volume Displacement — how much air the driver can move in its linear range.
+      Computed as Sd × Xmax.
+      Source: WinISD help — articles/thielesmall.html.
+    computed_from: "Sd * Xmax"
+    evidence: "All 12 files with correct Xmax have Vd = Sd * Xmax to full precision"
+
+  no:
+    type: float
+    unit: fraction
+    description: >
+      Reference efficiency η (eta). WinISD displays this as percent [%] in the UI,
+      but the WDR file stores the raw fraction — e.g. 0.000754 = 0.0754%.
+      Source: WinISD help — "Efficiency (n should be the greek letter 'eta') in
+      percent [%]. articles/thielesmall.html."
+      This is the limit efficiency η₀ — the theoretical efficiency the driver
+      approaches at infinite frequency. The Transfer function magnitude plot
+      shows gain in dB relative to η₀.
+      Source: plottypes.html — "This graph shows gain in dB related to driver's
+      limit efficiency n0. Which it theoretically reaches at infinite frequency."
+      0 when SPL is not entered and WinISD has not computed it.
+    observed_values: [0, 0.000754025024691492, 0.00105744317472953]
+
+  Dd:
+    type: float
+    unit: meters
+    description: >
+      Diameter of Diaphragm (effective piston diameter). Computed as 2·sqrt(Sd/π).
+      Source: WinISD help — articles/thielesmall.html.
+    computed_from: "2 * sqrt(Sd / pi)"
+
+  EBP:
+    type: float
+    unit: Hz
+    description: >
+      Efficiency Bandwidth Product = Fs / Qes.
+      0 when not computed. WinISD rule of thumb: EBP < 50 → sealed, > 100 → vented.
+    computed_from: "Fs / Qes"
+    observed_values: [0, 78.9473684210526, 88.8888888888889]
+
+  numVC:
+    type: integer
+    description: Number of voice coils
+    observed_values: [1, 2]
+    note: Only Dayton E150HE-44 has numVC=2 in the 13 observed files.
+
+  Hc:
+    type: float
+    unit: meters
+    description: >
+      Height of voice coil winding. Used with Hg to derive Xmax = abs(Hc - Hg) / 2.
+      Source: WinISD help — articles/thielesmall.html.
+      Always 0 in all 13 observed files — T/S entry does not populate this;
+      Xmax is typically entered directly instead.
+    observed_values: [0]
+
+  Hg:
+    type: float
+    unit: meters
+    description: >
+      Height of magnetic airgap. Used with Hc to derive Xmax = abs(Hc - Hg) / 2.
+      Source: WinISD help — articles/thielesmall.html.
+      Always 0 in all 13 observed files.
+    observed_values: [0]
+
+  SPLmax:
+    type: float
+    unit: dB
+    description: >
+      Maximum thermal limited SPL at rated power Pe, assuming 3 dB power
+      compression, into 2π (half-) space.
+      Source: WinISD help — articles/thielesmall.html.
+      Formula source: winisd.exe strings — relation group "SPLmax, Pe, SPL".
+      0 when SPL not entered.
+    computed_from: "SPL + 10·log10(Pe)"
+    observed_values: [0, 98.0308998699194, 105.417623509863]
+
+  SPLmaxLF:
+    type: float
+    unit: dB
+    description: >
+      Maximum excursion-limited SPL in a closed box or on an infinite baffle,
+      into half-space, at 20 Hz, at 1m distance. Gives a "feeling" for Vd.
+      Does NOT apply to vented or other assisted enclosures.
+      Source: WinISD help — articles/thielesmall.html.
+      Formula source: winisd.exe strings — relation group "SPLmaxLF, rho, Vd".
+      0 when SPL not entered.
+    computed_from: "f(ρ₀, Vd)  — exact formula unknown"
+    observed_values: [0, 79.3547966522133, 83.4683397221245]
+
+  USPL:
+    type: float
+    unit: "dB / 2.83V"
+    description: >
+      Voltage sensitivity: SPL at 2.83V/1m (equivalent to 1W into 8Ω).
+      Higher than SPL for drivers with Re < 8Ω; similar to SPL for 8Ω drivers.
+      More relevant than SPL for application with voltage amplifiers.
+      Source: WinISD help — "efficiency in deciBell in [dB/2.83V] dB per 2.83 Volt
+      (similar to 1W into an 8 ohm load). articles/thielesmall.html."
+      Formula source: winisd.exe strings — relation group "USPL, SPL, Re".
+      0 when SPL not entered.
+    computed_from: "SPL + 10·log10(8 / Re)  (8 = 2.83² — the 2.83V reference squared)"
+    observed_values: [0, 83.2373129516504, 85.7209395400633]
+
+  alfaVC:
+    type: float
+    unit: "1/K"
+    description: >
+      Resistance temperature coefficient of voice coil material, in 1/K.
+      Copper ≈ 0.0039 1/K at 20°C.
+      Source: WinISD help — articles/thielesmall.html.
+      Also confirmed by versions.txt alpha7 — "You can also specify resistance
+      temperature coefficient of voice coil material."
+      Always 0 in all 13 observed files — thermal simulation not used in practice.
+    observed_values: [0]
+
+  Rt:
+    type: float
+    unit: "K/W"
+    description: >
+      Thermal resistance from voice coil to ambient box air, in K/W.
+      Source: WinISD help — "R(t) is thermal resistance of driver from voice coil
+      to ambient box air in Kelvins/Watt (K/W). This is not used yet in simulations.
+      articles/thielesmall.html."
+      Always 0 in all 13 observed files — confirmed dormant.
+    observed_values: [0]
+
+  Ct:
+    type: float
+    unit: "J/K"
+    description: >
+      Thermal capacity of voice coil assembly, in J/K.
+      Source: WinISD help — "C(t) is thermal capacity of driver voice coil assembly
+      in Joules/Kelvin. This is not used yet in simulations. articles/thielesmall.html."
+      Always 0 in all 13 observed files — confirmed dormant.
+    observed_values: [0]
+
+  gamma:
+    type: float
+    unit: "m/(s²·A)"
+    description: >
+      Acceleration factor: acceleration per ampere = BL / Mms, in [m/(s²·A)].
+      Source: WinISD help — "The acceleration factor (acceleration per ampere)
+      in [m/(s²·A)]. articles/thielesmall.html."
+      Formula BL/Mms confirmed by winisd.exe relation group "Gamma, Bl, Mms".
+      0 when not computed; non-zero when WinISD has computed efficiency quantities.
+    computed_from: "BL / Mms"
+    observed_values: [0, 248.871919472405, 368.421052631579]
+    provenance: >
+      CORRECTED 2026-06-26.
+      Old description: "Adiabatic index-related parameter computed by WinISD
+      internally." Origin: AI inference from the field name alone — γ is the
+      standard symbol for the adiabatic index (ratio of specific heats) used
+      in the speed-of-sound formula, so the name seemed to fit. No evidence
+      supported this; it was a guess.
+      New description: sourced from winisd.exe binary strings (2026-06-26).
+      The string "Gamma, Bl, Mms" appears in the 15-entry consistency-check
+      relation block at binary string index 8906. WinISD only cross-checks
+      parameters that share a formula, so this string proves Gamma is computed
+      from BL and Mms. Observed values (248, 368) are consistent with BL/Mms
+      for typical woofers (e.g. BL=7, Mms=0.028 → 250).
+
+  Rme:
+    type: float
+    unit: "N·s/m  (= kg/s, same units as Rms)"
+    description: >
+      Electromagnetic Damping Factor in [N·s/m]. Gives the mechanical
+      control/damping of the diaphragm arising from the electro-magnetic motor
+      system. Rme is related to Qes in a way similar to how Rms is related to Qms.
+      Often used as a measure of motor power — see Mpow and Mcost.
+      Source: WinISD help — articles/thielesmall.html (written by Claus Futtrup).
+      Formula confirmed by winisd.exe relation groups "Rme, Bl, Re" and
+      "Rme, Fs, Mms, Qes". 0 when not computed.
+    computed_from: "BL² / Re"
+    observed_values: [0, 14.2909396341982, 14.8562425929757]
+    provenance: >
+      CORRECTED 2026-06-26.
+      Old description: "Motional mass ratio." Origin: AI inference from the
+      field name — "R" (ratio?), "m" (moving/mechanical?), "e" (electrical?).
+      No evidence; pure name decomposition guess.
+      New description: sourced from winisd.exe binary strings (2026-06-26).
+      Two relation groups at indices 8896 and 8897 both reference Rme:
+      "Rme, Bl, Re" (Rme = BL²/Re) and "Rme, Fs, Mms, Qes" (alternate path:
+      Rme = 2π·Fs·Mms/Qes). Two independent groups converging on the same
+      field is strong confirmation. Observed values (~14.3, ~14.9) are
+      consistent with BL²/Re for typical woofers.
+
+  Mpow:
+    type: float
+    unit: "N/sqrt(W)"
+    description: >
+      Motor power-factor in [N/sqrt(W)] = BL/sqrt(Re) = sqrt(Rme). Attributed
+      to Claus Futtrup. Preferred over Rme because it provides a linear measure
+      in Newtons and is independent of impedance level (does not favour high- or
+      low-impedance drivers). Mpow is a purely motor system power-factor.
+      Source: WinISD help — articles/thielesmall.html (written by Claus Futtrup).
+      Formula confirmed by winisd.exe relation groups "Mpow, Bl, Re" and "Mpow, Rme".
+      0 when not computed.
+    computed_from: "sqrt(BL² / Re)  =  sqrt(Rme)"
+    observed_values: [0, 3.81464482639146, 3.88847845639941]
+    provenance: >
+      CORRECTED 2026-06-26.
+      Old description: "Power-related parameter." Origin: AI inference from
+      the field name — "M" (magnitude? motor?) + "pow" (power). Too vague to
+      be useful; no evidence behind it.
+      New description: sourced from winisd.exe binary strings (2026-06-26).
+      Two relation groups nail this: "Mpow, Bl, Re" (index 8901) establishes
+      it depends on BL and Re; "Mpow, Rme" (index 8902) directly links it to
+      Rme, and since Rme = BL²/Re, the only function of Rme that also satisfies
+      the BL/Re group is Mpow = sqrt(Rme) = BL/sqrt(Re). Observed values
+      (~3.81, ~3.89) match sqrt(14.29)=3.78 and sqrt(14.86)=3.85 to within
+      rounding — confirmation.
+
+  Mcost:
+    type: float
+    unit: "N·s/m  (= kg/s)"
+    description: >
+      Motor cost-factor in [N·s/m]. Expresses how powerful the motor system is
+      based on Rme, Xmax, and either Hc or Hg (depending on whether the voice
+      coil is overhung or underhung). The Xmax value includes an indicator of
+      how much efficiency is "lost" in the design — so Mcost describes how
+      expensive the motor system is (correlates with driver price). Extension
+      suggested by T. L. Clarke.
+      Source: WinISD help — articles/thielesmall.html.
+      Formula source: winisd.exe strings — relation group "Mcost, Rme, Hc, Hg, Xmax".
+      Always 0 in all 13 observed files because Hc and Hg are never populated.
+    computed_from: "f(Rme, Hc, Hg, Xmax)  — exact formula unknown"
+    observed_values: [0]
+
+  Gloss:
+    type: float
+    unit: "fraction (display: % of Xmax)"
+    description: >
+      Cone sag fraction when driver is mounted horizontally (face up or down).
+      Stored as a fraction of Xmax; multiply by 100 for percent. E.g. 0.0133 =
+      1.33% of Xmax sag. Result is slightly over-pessimistic because surrounding
+      air shifts resonance to a somewhat lower value. Drivers with Gloss > 0.05
+      (5% of Xmax) should not be mounted horizontally. Gravity constant used:
+      9.80665 m/s².
+      Source: WinISD help — articles/thielesmall.html.
+      Formula source: winisd.exe strings — relation group "Gloss, fs, Xmax".
+      NOTE: Previously labelled "Loss factor" in this schema — that was incorrect.
+      Corrected from versions.txt alpha6 (2002) and confirmed by help file.
+    observed_values: [0, 0.0000105614518023611, 0.0132615466875693]
+
+  VCCon:
+    type: integer
+    description: >
+      Voice coil connection mode. Introduced in alpha7 (2004).
+      Source: versions.txt — "Added option to change and specify voice coil
+      connection mode, all VCs in parallel or in series."
+    values:
+      1: parallel
+      2: series
+    observed_values: [1, 2]
+    note: >
+      Default is 2 (series) in 12/13 files. Dayton E150HE-44 (numVC=2, dual VC)
+      uses VCCon=1 (parallel). For single-VC drivers (numVC=1), VCCon=2 is standard.
+
+  # ── ENVIRONMENTAL CONSTANTS ───────────────────────────────────────────────
+  # These are NOT spurious injections. They appear in EVERY one of the 13 real
+  # WinISD files with identical values. WinISD stores them for simulation
+  # reproducibility (different temperatures give different box tuning results).
+
+  c:
+    type: float
+    unit: "m/s"
+    description: >
+      Speed of sound in air at the time the driver was saved. WinISD stores this
+      for simulation reproducibility — SPL and efficiency calculations depend on c,
+      so the same driver file will produce the same simulation results regardless
+      of the user's current environment settings.
+      Source: plottypes.html — "Because driver's efficiency is related to ambient
+      conditions, changing for example the project's temperature, will change the
+      calculated SPL level."
+    observed_value: 343.684120962153
+    note: >
+      Identical in all 13 files. Corresponds to approximately 20°C, 1 atm.
+      Do NOT strip this field — it is a genuine WDR field written and read by
+      WinISD. Stripping it may cause WinISD to use a different default.
+
+  roo:
+    type: float
+    unit: "kg/m^3"
+    description: >
+      Air density at the time the driver was saved. Stored alongside c for
+      simulation reproducibility. Both c and roo are used in efficiency (η₀)
+      and SPL calculations, making simulation results sensitive to ambient
+      conditions. The stored values lock in the environment at save time.
+      Source: plottypes.html — same temperature-sensitivity note as c.
+    observed_value: 1.20095217714682
+    note: >
+      Identical in all 13 files. Corresponds to approximately 20°C, 1 atm.
+      Do NOT strip this field — same reasoning as c above.
+
+  # ── PHYSICAL DIMENSIONS (never populated by T/S entry) ────────────────────
+
+  Thick:
+    type: float
+    unit: meters
+    description: >
+      Thickness of the basket plate. Source: WinISD help — articles/thielesmall.html.
+      Always 0 in all 13 observed files.
+    observed_values: [0]
+
+  Depth:
+    type: float
+    unit: meters
+    description: >
+      Depth of the driver. Source: WinISD help — articles/thielesmall.html.
+      Always 0 in all 13 observed files.
+    observed_values: [0]
+
+  MagDepth:
+    type: float
+    unit: meters
+    description: >
+      Magnet depth/height/thickness (cylinder height).
+      Source: WinISD help — articles/thielesmall.html.
+      Always 0 in all 13 observed files.
+    observed_values: [0]
+
+  Magnet:
+    type: float
+    unit: meters
+    description: >
+      Magnet diameter. Source: WinISD help — articles/thielesmall.html.
+      Always 0 in all 13 observed files.
+    observed_values: [0]
+
+  Basket:
+    type: float
+    unit: meters
+    description: >
+      Basket diameter (the hole to cut in the baffle).
+      Source: WinISD help — articles/thielesmall.html.
+      Always 0 in all 13 observed files.
+    observed_values: [0]
+
+  Outer:
+    type: float
+    unit: meters
+    description: >
+      Outer diameter (space needed on the baffle for the driver).
+      Source: WinISD help — articles/thielesmall.html.
+      Always 0 in all 13 observed files.
+    observed_values: [0]
+
+  Vcd:
+    type: float
+    unit: meters
+    description: >
+      Voice coil diameter. Listed as "VCd" in WinISD help; stored as "Vcd" in WDR.
+      Source: WinISD help — articles/thielesmall.html.
+      Always 0 in all 13 observed files.
+    observed_values: [0]
+
+  DVol:
+    type: float
+    unit: "m^3"
+    description: >
+      Driver displacement volume — approximately the box volume occupied by the
+      driver when mounted with magnet pointing into the box.
+      Source: WinISD help — articles/thielesmall.html.
+      Always 0 in all 13 observed files.
+    observed_values: [0]
+
+  # ── PARAMETER STATE STRING ────────────────────────────────────────────────
+
+  ParState:
+    type: string
+    length: 49
+    character_set: [E, C, N]
+    description: >
+      49-character string encoding WinISD's internal view of how each parameter
+      was set. Introduced in alpha7 (2004) as the serialised form of the
+      parameter tracking feature.
+      Source: versions.txt alpha7 — "Added parameter tracking to the driver
+      editor. Now driver editor tracks which parameters were entered and which
+      were calculated." and "Driver editor now checks all parameters by
+      calculating through all relations between parameters."
+      E = user Entered the value in the WinISD UI
+      C = WinISD Calculated from other entered parameters
+      N = Not set (parameter not applicable or never entered/calculated)
+      The consistency-check error (Qts/Qms/Qes) is enforced by the same
+      alpha7 feature: "Driver editor now internally recalculates all calculated
+      parameters, when user enters new value for already entered parameter."
+      Exact error dialog text (from winisd.exe binary):
+        Title:   "Parameter error list"
+        Message: "Consistency check on following parameter groups failed."
+      The dialog then lists which groups failed (e.g. "Qts, Qms, Qes").
+      See consistency_check_groups section for the full set of 22 groups.
+    placement: >
+      MUST be the last native WinISD field. No WinISD-native fields appear after
+      ParState in any of the 13 observed files. Custom fields (boxbench_*) must
+      be placed after ParState.
+
+    canonical_values:
+      standard_ts_entry:
+        value: "EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC"
+        condition: >
+          T/S parameters entered normally; SPL not explicitly entered by the user
+          (SPL=0 in file, or WinISD computed SPL and stored the computed value but
+          marks it as C). Use this value for WDR files generated from datasheet data
+          where the sensitivity is not explicitly set.
+        observed_in: 12 of 13 files
+
+      user_entered_spl:
+        value: "EEEEEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC"
+        condition: >
+          Same as standard_ts_entry except the user explicitly entered an SPL value
+          directly in the WinISD 'Sensitivity' field.
+        difference: "Position 4 changes from C to E"
+        observed_in: "Tang Band W5-1138SMF.wdr only (SPL=82 explicitly entered)"
+
+    position_4:
+      meaning: SPL parameter state
+      C: SPL not explicitly entered by user (WinISD computes it, or it is 0)
+      E: SPL explicitly entered by user
+      evidence: >
+        Tang Band W5-1138SMF has SPL=82 (user-entered) and ParState pos4=E.
+        All other 12 files have SPL=0 or SPL=WinISD-computed and ParState pos4=C.
+        This is the ONLY position difference between the two observed ParState values.
+        This is the only ParState position whose meaning is confirmed.
+
+    position_mapping:
+      status: MOSTLY UNKNOWN
+      note: >
+        The exact mapping of all 49 positions to WinISD internal parameters is not
+        publicly documented (WinISD is closed-source). The ParState position ordering
+        does NOT necessarily match the WDR file field order — it follows WinISD's
+        internal parameter list which is not accessible without the source code.
+        Position 4 = SPL is the only confirmed mapping (see above).
+        The analysis below is INFERRED from the pattern of E/C/N values and the
+        known properties of the parameters; each position marked "⚠ inferred"
+        has not been independently verified.
+      best_effort_inferred_map:
+        #  Pos  State(std)  State(W5)  Field(inferred)            Basis
+        "1":   { state: E, field: "Qts",    basis: "User always enters Qts; first T/S param" }
+        "2":   { state: E, field: "Znom",   basis: "User always enters Znom" }
+        "3":   { state: E, field: "Fs",     basis: "User always enters Fs" }
+        "4":   { state: "C or E", field: "SPL", basis: "CONFIRMED: only diff between TB W5 (E, SPL=82 entered) and all others (C)" }
+        "5":   { state: E, field: "Pe",     basis: "⚠ inferred: user-entered T/S param" }
+        "6":   { state: E, field: "Re",     basis: "⚠ inferred: user-entered T/S param" }
+        "7":   { state: N, field: "fLe",    basis: "⚠ inferred: always 0, never entered — likely fLe" }
+        "8":   { state: N, field: "KLe",    basis: "⚠ inferred: always 0, never entered — likely KLe" }
+        "9":   { state: E, field: "Le",     basis: "⚠ inferred: user-entered T/S param" }
+        "10":  { state: E, field: "BL",     basis: "⚠ inferred: user-entered T/S param" }
+        "11":  { state: N, field: "Dia",    basis: "⚠ inferred: always 0, never entered — likely Dia" }
+        "12":  { state: E, field: "Xmax",   basis: "⚠ inferred: user-entered T/S param" }
+        "13":  { state: E, field: "Cms",    basis: "⚠ inferred: user-entered T/S param" }
+        "14":  { state: E, field: "Qms",    basis: "⚠ inferred: user-entered T/S param" }
+        "15":  { state: E, field: "Qes",    basis: "⚠ inferred: user-entered T/S param" }
+        "16":  { state: E, field: "Rms",    basis: "⚠ inferred: user-entered T/S param" }
+        "17":  { state: E, field: "Mms",    basis: "⚠ inferred: user-entered T/S param" }
+        "18":  { state: E, field: "Sd",     basis: "⚠ inferred: user-entered T/S param" }
+        "19":  { state: E, field: "Vas",    basis: "⚠ inferred: user-entered T/S param" }
+        "20":  { state: E, field: "unknown", basis: "⚠ unknown: possibly Vd (computed) or another param" }
+        "21":  { state: E, field: "unknown", basis: "⚠ unknown: possibly no or a user-settable param" }
+        "22":  { state: E, field: "unknown", basis: "⚠ unknown" }
+        "23":  { state: C, field: "EBP",    basis: "⚠ inferred: EBP is computed (Fs/Qes), always C" }
+        "24":  { state: E, field: "numVC",  basis: "⚠ inferred: user sets number of voice coils" }
+        "25":  { state: N, field: "Hc",     basis: "⚠ inferred: always 0, never set" }
+        "26":  { state: N, field: "Hg",     basis: "⚠ inferred: always 0, never set" }
+        "27":  { state: C, field: "SPLmax",  basis: "⚠ inferred: computed from Pe and SPL" }
+        "28":  { state: C, field: "SPLmaxLF", basis: "⚠ inferred: computed" }
+        "29":  { state: C, field: "USPL",   basis: "⚠ inferred: computed" }
+        "30":  { state: N, field: "alfaVC", basis: "⚠ inferred: always 0, never set" }
+        "31":  { state: N, field: "Rt",     basis: "⚠ inferred: always 0, never set" }
+        "32":  { state: N, field: "Ct",     basis: "⚠ inferred: always 0, never set" }
+        "33":  { state: C, field: "gamma",  basis: "⚠ inferred: computed; non-zero in E150 and TB W5" }
+        "34":  { state: C, field: "Rme",    basis: "⚠ inferred: computed; non-zero in E150 and TB W5" }
+        "35":  { state: C, field: "Mpow",   basis: "⚠ inferred: computed; non-zero in E150 and TB W5" }
+        "36":  { state: C, field: "Gloss",  basis: "⚠ inferred: computed; non-zero in E150 and TB W5" }
+        "37":  { state: E, field: "VCCon",  basis: "⚠ inferred: user sets VC connection (1=parallel, 2=series)" }
+        "38":  { state: C, field: "c",      basis: "⚠ inferred: WinISD computes air speed from temperature" }
+        "39-46": { state: N, field: "Thick,Depth,MagDepth,Magnet,Basket,Outer,Vcd,DVol", basis: "⚠ inferred: always 0, never set (8 positions, 8 fields)" }
+        "47":  { state: E, field: "unknown", basis: "⚠ unknown: E state with no obvious remaining entered field" }
+        "48":  { state: C, field: "roo",    basis: "⚠ inferred: WinISD computes air density from temperature" }
+        "49":  { state: C, field: "unknown", basis: "⚠ unknown: 49 ParState positions vs 48 numeric fields — one position is unaccounted for; may be a WinISD-internal parameter not stored in the WDR file" }
+      position_count: 49
+      confirmed_positions: 1   # only position 4 (SPL) is confirmed
+      unexplained_positions: 3  # positions 20, 21, 22, 47 don't map cleanly to known fields
+
+# ─── CONSTRAINTS AND RULES ────────────────────────────────────────────────────
+constraints:
+
+  qts_consistency:
+    rule: "round(Qts, 3) must equal round((Qms * Qes) / (Qms + Qes), 3)"
+    consequence: >
+      WinISD shows 'consistency check failed' error on file load if all three
+      (Qts, Qms, Qes) are stored and the Qts value does not match the computed
+      formula when rounded to 3 decimal places.
+    recommendation: >
+      Store all three with full floating-point precision from the source data.
+      When generating Qts from Qms and Qes, compute it as (Qms*Qes)/(Qms+Qes)
+      and do not independently round Qts. Avoid separate rounding of each value.
+    source: "https://techtalk.parts-express.com/forum/tech-talk-forum/1318003-winisd-pro-frustrations-help-please"
+
+  xmax_unit:
+    rule: Xmax must be stored in METRES (not millimetres)
+    example: "14.7 mm → Xmax=0.0147"
+    evidence: >
+      12 of 13 files have Xmax in range 0.0034–0.012 m (3.4–12 mm), consistent
+      with metres. The 13th file (E150HE-44 Xmax=14.7) is a loudspeakerdatabase.com
+      data entry error confirmed by its inconsistent Vd value.
+
+  vas_unit:
+    rule: Vas must be stored in m³ (not litres)
+    example: "4.85 L → Vas=0.00485"
+
+  date_format:
+    rule: DateAdded and DateModified must be 8-digit integers in YYYYMMDD format with no separators
+    example: "2025-12-03 → DateAdded=20251203"
+
+  decimal_separator:
+    rule: All floating-point values use period (.) as decimal separator
+    note: Some WinISD forum reports mention comma-separated variants from older versions — not observed in these 13 files
+
+  field_order:
+    rule: >
+      All 56 native fields must appear in the canonical order defined above.
+      WinISD likely depends on field position for parsing. Reordering fields
+      may cause WinISD to misinterpret or reject the file.
+
+  parstate_placement:
+    rule: >
+      ParState must be the last native WinISD field. In all 13 observed files,
+      no native WinISD fields appear after ParState. The field is the 56th
+      key=value entry (after [Driver] header).
+
+  c_and_roo:
+    rule: >
+      Do NOT omit c and roo fields. They appear in every one of the 13 real
+      WinISD files with identical values (343.684120962153 and 1.20095217714682).
+      These are genuine WinISD-written fields, not scraper artefacts.
+    correct_values:
+      c: 343.684120962153
+      roo: 1.20095217714682
+
+  custom_fields:
+    rule: >
+      Custom / non-WinISD fields (e.g. boxbench_datasheet, boxbench_corrections)
+      must be placed AFTER the ParState line. No evidence exists that WinISD
+      supports or ignores unknown fields within the native block. Inserting custom
+      fields before ParState corrupts the file for WinISD use.
