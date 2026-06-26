@@ -12,51 +12,60 @@ Companion documents: [PLAN.md](PLAN.md) (re-architecture phases and gates) ·
 **P0** = foundation, gates everything below · **P1** = high value, tractable on
 today's engine · **P2** = larger but well-defined · **P3** = big rocks (design first).
 
+**Test status tags** — `[unit]` = logic lives in `src/core/` as an independent module
+with tests in `test/`; `[ui]` = covered by Playwright browser automation in
+`test/app.browser.spec.js`. No tag = untested or not yet extracted from the UI.
+⚠ CI (`ci.yml`) runs only `engine.test.mjs` + `golden.test.mjs` + Playwright —
+`alignments.test.mjs` and `complex.test.mjs` exist but are not yet wired into CI.
+
 ---
 
 ## Shipped ✓
 
-- Validated engine: sealed, vented, 4th-order bandpass, passive radiator
-- Curves: SPL, driver + PR excursion, port velocity, group delay, impedance (mag + phase), transfer phase, max SPL, max power
-- EBP gauge, Qtc / QB3-B4 alignment helpers, vent ↔ tuning solver
-- Passive-radiator Fp tuning + mass auto-tune
-- Multiple drivers (series / parallel)
-- WinISD `.wdr` import **and** export; JSON project save/load
-- In-browser self-test + CI engine test
-- Published to GitHub Pages with automated CI deploy
-- Vue 3 + Vite + PWA — installable, works offline via service worker
-- Persist design across reloads (Ctrl-R keeps the driver) — localStorage
-- Power input convention: primary input is **power (W)**, voltage derived
-- URL-encoded designs — full design lives in a shareable link; no server needed
-- Export / import the complete design as a JSON file
+- [x] Validated engine: sealed, vented, 4th-order bandpass, passive radiator `[unit,ui]`
+- [x] Curves: SPL, driver + PR excursion, port velocity, group delay, impedance (mag + phase), transfer phase, max SPL, max power `[unit]`
+- [x] EBP gauge, Qtc / QB3-B4 alignment helpers, vent ↔ tuning solver `[unit]`
+- [x] Passive-radiator Fp tuning + mass auto-tune `[unit]`
+- [x] Multiple drivers (series / parallel) `[unit]`
+- [x] WinISD `.wdr` import **and** export; JSON project save/load `[unit]`
+- [x] In-browser self-test + CI engine test `[ui]`
+- [x] Published to GitHub Pages with automated CI deploy
+- [x] Vue 3 + Vite + PWA — installable, works offline via service worker
+- [x] Persist design across reloads (Ctrl-R keeps the driver) — localStorage
+- [x] Power input convention: primary input is **power (W)**, voltage derived
+- [x] URL-encoded designs — full design lives in a shareable link; no server needed `[ui]`
+- [x] Export / import the complete design as a JSON file
 
 ---
 
-## P0 — Test & architecture foundation  *(do this before more features)*
+## P0 — Test & architecture foundation
 
-Resonate is a spike: logic is one inline script in `index.html`, "verified" by a
-self-test that string-slices the engine out and `eval`s it, with no real UI tests.
-The aim: a decoupled, fully-tested core library that any UI (web, mobile,
-third-party) can build on. **Full plan: [PLAN.md](PLAN.md)** ·
+**Status: complete.** `src/core/` is fully extracted (7 modules), golden-master
+fixtures cover all box types, CONTRACT.md is written and versioned, per-module unit
+tests exist, the Vue UI consumes only the public contract, and Playwright + CI are
+both live. The description below is preserved for history.
+
+> ~~Resonate is a spike: logic is one inline script in `index.html`, "verified" by a
+> self-test that string-slices the engine out and `eval`s it, with no real UI tests.~~
+> Completed — see [PLAN.md](PLAN.md).
+
+Full plan: [PLAN.md](PLAN.md) ·
 practices: [DEVELOPMENT.md](DEVELOPMENT.md) · oracles:
-[references.md](references.md). **Feature work is gated on this.**
+[references.md](references.md).
 
-- [ ] **P0 · Phase 0** Golden-master fixtures: freeze current sweep outputs for
+- [x] **P0 · Phase 0** Golden-master fixtures: freeze current sweep outputs for
       every box type, assert equality — the net that proves extraction preserves
-      behaviour, before any code moves.
-- [ ] **P0 · Phase 1** Extract the core (`complex`, `driver`, `wdr`, `circuit`,
-      `sweep`, `alignments`, `state`) into `src/core/*.js` — no DOM — one module
-      at a time, **extracting not rewriting**, with the dual export (classic
-      `<script src>` + `module.exports`). Go/no-go after each: opens from
-      `file://` **and** `node --test` requires it.
-- [ ] **P0 · Phase 2** Define & version the `Design → Curves` contract
-      (`docs/CONTRACT.md`) — the documented API third-party UIs depend on.
-- [ ] **P0 · Phase 3** Per-module functional tests vs tiered oracles (closed
-      forms > datasheets > alignment tables > cross-tool); retire the string-slice
-      hack. Verify alignment-table numbers against a primary source first.
-- [ ] **P0 · Phase 4** Rebuild the Resonate UI on the core contract only.
-- [ ] **P0 · Phase 5** Playwright functional tests + CI runs unit + golden +
-      functional on every push / PR.
+      behaviour, before any code moves. `[unit]`
+- [x] **P0 · Phase 1** Extract the core (`complex`, `driver`, `wdr`, `circuit`,
+      `sweep`, `alignments`, `filters`) into `src/core/*.js` — no DOM — one module
+      at a time, **extracting not rewriting**. `[unit]`
+- [x] **P0 · Phase 2** Define & version the `Design → Curves` contract
+      (`CONTRACT.md`) — the documented API third-party UIs depend on. `[unit]`
+- [x] **P0 · Phase 3** Per-module functional tests vs tiered oracles (closed
+      forms > datasheets > alignment tables > cross-tool). `[unit]`
+- [x] **P0 · Phase 4** Rebuild the Resonate UI on the core contract only. `[ui]`
+- [x] **P0 · Phase 5** Playwright functional tests + CI runs unit + golden +
+      functional on every push / PR. `[ui]`
 - [ ] **Research** Chrome's MCP server as a functional-test driver — evaluate vs
       Playwright for driving the real app and checking rendered canvases.
 - [ ] **P1 · Phase 6** Mobile / responsive (PWA) UI as a second consumer of the
@@ -69,18 +78,18 @@ practices: [DEVELOPMENT.md](DEVELOPMENT.md) · oracles:
 ---
 
 ## Signal chain & EQ  *(the curves are already complex — filters slot in cleanly)*
-- [ ] **P1** Parametric (peaking) EQ — fc, Q, gain; multiple bands; applied to the transfer function
+- [x] **P1** Parametric (peaking) EQ — fc, Q, gain; multiple bands; applied to the transfer function `[unit]`
 - [ ] **P1** High-shelf / low-shelf filters
-- [ ] **P1** High-pass / low-pass filters (Butterworth, Bessel, Linkwitz-Riley; selectable order)
-- [ ] **P1** Linkwitz transform (target Fs/Qtc)
-- [ ] **P1** Series / source resistance (amp output + cabling) in the drive model
+- [x] **P1** High-pass / low-pass filters (Butterworth; selectable Q; Bessel/LR orders not yet exposed) `[unit]`
+- [x] **P1** Linkwitz transform (target Fs/Qtc) `[unit]`
+- [x] **P1** Series / source resistance (amp output + cabling) in the drive model
 - [ ] **P1** Configurable listening distance (replace the fixed 1 m)
 - [ ] **P1** Frequency-range presets (sub / woofer / wide / custom) for the plot range
 - [ ] **P2** Amplifier-load graph — current and VA draw vs frequency
 - [ ] **P2** Amplifier output impedance / damping-factor effect on response
 
 ## Enclosure types & box model
-- [ ] **P1** Absorption / fill loss `Qa` (complete the Ql / Qa / Qp loss set)
+- [x] **P1** Absorption / fill loss `Qa` (complete the Ql / Qa / Qp loss set)
 - [ ] **P2** 6th-order bandpass (both chambers ported) — extend the 4th-order branch
 - [ ] **P2** Isobaric / compound loading
 - [ ] **P2** Aperiodic (resistive vent) loading
@@ -95,7 +104,7 @@ practices: [DEVELOPMENT.md](DEVELOPMENT.md) · oracles:
 
 ## Driver data & T/S
 - [ ] **P1** Paste raw datasheet text → infer T/S parameters
-- [ ] **P1** In-app driver database search / filter (by size, brand, parameters)
+- [x] **P1** In-app driver database search / filter (by size, brand, parameters)
 - [ ] **P1** "Duplicate / copy from" an existing driver to speed manual entry
 - [ ] **P2** WinISD `.wpr` project import — format is decoded (INI sections:
       ProjectInfo, Driver, Box, Vent*, PassiveRadiator, SignalSource, Filters)
@@ -123,7 +132,7 @@ practices: [DEVELOPMENT.md](DEVELOPMENT.md) · oracles:
 
 ## Storage & sharing
 - [x] **P1** URL-encoded designs — the full design (driver, box, params, graph
-      selection, comparisons) lives in a shareable link; no server needed
+      selection, comparisons) lives in a shareable link; no server needed `[ui]`
 - [x] **P1** Export / import the complete design as a JSON file
 - [ ] **P2** Optional Google Drive storage — let users save and open designs in
       their *own* Google Drive. Keeps personal storage entirely on the user's
@@ -132,7 +141,7 @@ practices: [DEVELOPMENT.md](DEVELOPMENT.md) · oracles:
 - [ ] **P3** Optional Dropbox / generic cloud storage on the same opt-in basis
 
 ## UX & platform
-- [ ] **P1** Save / restore graph layout (which graphs, sizes, positions)
+- [x] **P1** Save / restore graph layout (which graphs, sizes, positions) — graph selection persisted in localStorage
 - [ ] **P2** Draggable / resizable graph panels
 - [ ] **P2** Interactive schematic / lumped-model view of the signal path
 - [ ] **P2** Configurable graph gridlines (3 / 5 / 10 dB) and contrast
@@ -140,10 +149,10 @@ practices: [DEVELOPMENT.md](DEVELOPMENT.md) · oracles:
 - [ ] **P2** Mobile / small-screen layout pass
 
 ## Learning & docs
-- [ ] **P2** In-app parameter explanations / tooltips on inputs and curves
+- [x] **P2** In-app parameter explanations / tooltips on inputs and curves — `title=` attributes on all controls
 - [ ] **P3** Open, community-editable knowledge base (T/S, box types, tuning, losses)
 - [ ] **P3** Worked-example tutorial
 
 ## Quality / infrastructure
 - [ ] **P1** `scripts/` utility (+ CI step) to detect duplicate / same-model drivers as the library grows
-- [ ] **P2** Per-feature engine tests added alongside each new box type / curve
+- [x] **P2** Per-feature engine tests added alongside each new box type / curve `[unit]`
