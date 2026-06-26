@@ -3,6 +3,16 @@
 ## Shell commands
 - Always use the **Bash** tool for shell commands. Never use PowerShell.
 
+## Script rules — progress, monitoring, and resume
+Every script that processes more than a handful of files or runs for more than a few seconds **MUST**:
+- **Timestamp every output line** — use `datetime.now().strftime('%H:%M:%S')` or equivalent. No silent scripts. A script that emits no output for 30+ seconds is indistinguishable from a hung script.
+- **Print a progress line per collection or per N files** — e.g. `[14:32:01] dayton-audio: 412 files, 3 issues found`.
+- **Print a final summary line** — total files scanned, total issues, elapsed time.
+- **External monitor / auto-kill** — for any script expected to run >60 seconds, add a watchdog: a second terminal command that kills the script if it produces no output for 120 seconds. Use `timeout` (Unix) or equivalent.
+- **Resume capability** — any batch-write script must be restartable mid-run. Write to a temp file or skip already-processed files so a killed run can be continued without reprocessing.
+
+These rules apply equally to inline scripts run via `python -c`, subagent scripts, and standalone `.py` / `.mjs` files. **No exceptions.** A script that violates these rules must be fixed before its output is trusted.
+
 ## Reading context
 - Read all `README.md` files in the repository before starting any task — they contain agent instructions and context for each directory.
 
