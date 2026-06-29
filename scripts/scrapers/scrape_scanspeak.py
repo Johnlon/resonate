@@ -19,7 +19,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from scraper_lib import run_scraper, parse_number
+from scraper_lib import run_scraper, parse_number, parse_field_value
 
 VENDOR      = "Scan-Speak"
 SITEMAP_URL = "https://www.scan-speak.dk/sitemap.xml"
@@ -78,9 +78,9 @@ def parse_product(html: str, url: str) -> dict | None:
 
         for fragment, (key, factor) in _HTML_FIELD_MAP.items():
             if fragment in label and key not in fields:
-                val = parse_number(value_text)
-                if val is not None:
-                    fields[key] = round(val * factor, 9)
+                si_val = parse_field_value(key, value_text, factor)
+                if si_val is not None:
+                    fields[key] = si_val
                 break
 
     # Require at minimum Fs from HTML (confirms this is a driver page)

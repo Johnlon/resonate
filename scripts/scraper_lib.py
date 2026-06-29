@@ -394,6 +394,80 @@ def parse_number(text: str) -> float | None:
     return float(m.group()) if m else None
 
 
+def parse_field_value(key: str, value_text: str, nominal_factor: float,
+                      unit_text: str = "") -> float | None:
+    """
+    Parse a T/S field value and return its SI equivalent.
+
+    Detects the actual unit from value_text and/or unit_text (dedicated unit column,
+    e.g. Wavecor three-column tables), overriding nominal_factor when a known unit
+    indicator is present.  All scrapers should call this instead of rolling their own
+    inline unit-detection blocks — rules live here once.
+
+    key           : WDR field name (Fs, Mms, Cms, Le, Sd, Vas, Xmax, …)
+    value_text    : raw scraped string, e.g. "0.84 ft³" or "2.5"
+    nominal_factor: default SI conversion factor from the scraper's FIELD_MAP
+    unit_text     : separate unit-column string if available; combined with value_text
+                    for detection (pass "" when unit is embedded in value_text)
+    """
+    val = parse_number(value_text)
+    if val is None:
+        return None
+
+    both = (value_text + " " + unit_text).lower()
+    factor = nominal_factor
+
+    if key == "Fs":
+        if "khz" in both:
+            factor = 1000.0                    # kHz → Hz
+
+    elif key == "Mms":
+        if "kg" in both:
+            factor = 1.0                       # already kg
+        # else: g → kg (nominal 1e-3)
+
+    elif key == "Le":
+        if "µh" in both or "uh" in both:
+            factor = 1e-6                      # µH → H
+        # else: mH → H (nominal 1e-3)
+
+    elif key == "Cms":
+        if any(s in both for s in ("µm", "μm", "um/n")):
+            factor = 1e-6                      # µm/N → m/N
+        elif re.search(r"\bmn\b|mn-1|mn⁻", both):
+            factor = 1e-6                      # MN⁻¹ → m/N (same scaling: 1 MN⁻¹ = 1e-6 m/N)
+        # else: mm/N → m/N (nominal 1e-3)
+
+    elif key == "Sd":
+        has_m2 = "m²" in both or "m2" in both
+        has_cm = "cm" in both
+        has_in = bool(re.search(r"\bin\b|in[²2]|sq.?in", both)) and "min" not in both
+        if has_m2 and not has_cm:
+            factor = 1.0                       # already m²
+        elif has_in:
+            factor = 6.4516e-4                 # in² → m²
+        # else: cm² → m² (nominal 1e-4)
+
+    elif key == "Vas":
+        if "ft" in both:
+            factor = 28.3168e-3                # ft³ → m³
+        elif re.search(r"\bml\b|mlit|m\.?l\.", both):
+            factor = 1e-6                      # mL → m³
+        elif "m³" in both or "m3" in both:
+            factor = 1.0                       # already m³
+        # else: litres → m³ (nominal 1e-3)
+
+    elif key == "Xmax":
+        if re.search(r'(?<!\w)in(?!\w)|"', both) and "min" not in both:
+            factor = 25.4e-3                   # inch one-way → m
+        # else: nominal (mm one-way = 1e-3, or p-p encoded in FIELD_MAP as 0.5e-3)
+
+    result = val * factor
+    if key == "Xmax":
+        result = abs(result)                   # handles "+/-X mm" notation
+    return round(result, 9)
+
+
 # ---------------------------------------------------------------------------
 # Main runner — called by each vendor script
 # ---------------------------------------------------------------------------

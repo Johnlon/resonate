@@ -60,6 +60,7 @@ mark_scraped        = _plib.mark_scraped        # noqa: F401
 to_wdr              = _plib.to_wdr              # noqa: F401
 safe_filename       = _plib.safe_filename       # noqa: F401
 parse_number        = _plib.parse_number        # noqa: F401
+parse_field_value   = _plib.parse_field_value   # noqa: F401
 DEFAULT_DELAY_S     = _plib.DEFAULT_DELAY_S     # noqa: F401
 HEADERS             = _plib.HEADERS             # noqa: F401
 check_fields        = _dqlib.check_fields       # noqa: F401

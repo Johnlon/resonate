@@ -61,7 +61,7 @@ from pathlib import Path
 # ── Import new scraper_lib from this directory ────────────────────────────────
 sys.path.insert(0, str(Path(__file__).parent))
 from scraper_lib import (
-    run_scraper, parse_number, fetch, to_wdr, safe_filename, validate_driver,
+    run_scraper, parse_number, parse_field_value, fetch, to_wdr, safe_filename, validate_driver,
     check_fields,
 )
 
@@ -201,19 +201,9 @@ def _parse_html_fields(html: str, col_idx: int = 0) -> dict[str, float]:
 
         for fragment, (key, factor) in FIELD_MAP.items():
             if fragment in label and key not in fields:
-                val = parse_number(value_text)
-                if val is not None:
-                    # Some tweeter pages publish Fs in kHz, not Hz.
-                    if key == "Fs" and "khz" in unit_text:
-                        factor = 1000.0
-                    # Tweeter Vas published in mL or mlit. (not litres).
-                    # Non-tweeter pages always use [lit.] — so unit_text is authoritative.
-                    elif key == "Vas" and "ml" in unit_text:
-                        factor = 1e-6   # mL → m³
-                    # Tweeter Cms sometimes published in μm/N (not mm/N).
-                    elif key == "Cms" and ("μm" in unit_text or "um/n" in unit_text):
-                        factor = 1e-6   # μm/N → m/N
-                    fields[key] = abs(round(val * factor, 9))  # abs handles "+/-X" Xmax
+                si_val = parse_field_value(key, value_text, factor, unit_text=unit_text)
+                if si_val is not None:
+                    fields[key] = si_val
                 break
 
     return fields

@@ -17,7 +17,7 @@ import re
 import time
 from datetime import datetime
 from pathlib import Path
-from scraper_lib import run_scraper, parse_number, fetch
+from scraper_lib import run_scraper, parse_field_value, fetch
 
 VENDOR  = "Dayton Audio"
 BASE    = "https://www.daytonaudio.com"
@@ -130,12 +130,9 @@ def parse_product(html: str, url: str) -> dict | None:
         value_text = re.sub(r"<[^>]+>", "", cells[1]).strip()
         for fragment, (key, factor) in FIELD_MAP.items():
             if fragment in label and key not in fields:
-                val = parse_number(value_text)
-                if val is not None:
-                    v = value_text.lower()
-                    if key == "Vas" and "ft" in v:
-                        factor = 28.3168e-3     # ft³ → m³
-                    fields[key] = round(val * factor, 9)
+                si_val = parse_field_value(key, value_text, factor)
+                if si_val is not None:
+                    fields[key] = si_val
                 break
 
     if not fields.get("Fs"):

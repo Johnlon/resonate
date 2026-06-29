@@ -27,7 +27,7 @@ from pathlib import Path
 import re
 import sys
 import time
-from scraper_lib import run_scraper, parse_number, fetch
+from scraper_lib import run_scraper, parse_field_value, fetch
 
 VENDOR      = "SoundImports"
 SITEMAP_URL = "https://www.soundimports.eu/en/sitemap.xml"
@@ -202,35 +202,11 @@ def parse_product(html: str, url: str) -> dict | None:
         label_l = label.lower()
         for fragment, (key, default_factor) in FIELD_MAP.items():
             if fragment in label_l:
-                val = parse_number(value_str)
-                if val is None or key in fields:  # first match wins (RMS before max)
+                if key in fields:  # first match wins (RMS before max)
                     break
-                v = value_str.lower()
-                if key == "Mms":
-                    factor = 1.0 if "kg" in v else 1e-3        # kg already SI; else g→kg
-                elif key == "Cms":
-                    if "µm" in value_str or "um/" in v or "μm" in v:
-                        factor = 1e-6                           # µm/N → m/N
-                    elif "mm" in v:
-                        factor = 1e-3                           # mm/N → m/N
-                    else:
-                        factor = default_factor
-                elif key == "Sd":
-                    # "0,038 m²" → already m²; "216 cm2" → need ×1e-4
-                    if "cm" not in v:
-                        factor = 1.0                            # published in m²
-                    else:
-                        factor = 1e-4                           # cm² → m²
-                elif key == "Vas":
-                    # SI publishes Vas in litres (default), but some US-market
-                    # Dayton/Markaudio pages show ft³ — e.g. "0.33 ft.³"
-                    if "ft" in v:
-                        factor = 28.3168e-3                     # ft³ → m³
-                    else:
-                        factor = 1e-3                           # litres → m³
-                else:
-                    factor = default_factor
-                fields[key] = round(val * factor, 9)
+                si_val = parse_field_value(key, value_str, default_factor)
+                if si_val is not None:
+                    fields[key] = si_val
                 break
 
     if not fields.get("Fs"):

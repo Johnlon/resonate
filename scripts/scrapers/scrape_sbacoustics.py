@@ -22,7 +22,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from scraper_lib import run_scraper, parse_number
+from scraper_lib import run_scraper, parse_number, parse_field_value
 
 VENDOR      = "SB Acoustics"
 SITEMAP_URL = "https://sbacoustics.com/product-sitemap.xml"
@@ -70,9 +70,9 @@ def parse_product(html: str, url: str) -> dict | None:
         # T/S fields
         for fragment, (key, factor) in _HTML_FIELD_MAP.items():
             if fragment in tl:
-                val = parse_number(parse_text)
-                if val is not None:
-                    fields[key] = round(val * factor, 9)
+                si_val = parse_field_value(key, parse_text, factor)
+                if si_val is not None:
+                    fields[key] = si_val
                 break
         # Non-T/S extra specs
         for fragment, spec_key in _EXTRA_SPEC_MAP.items():

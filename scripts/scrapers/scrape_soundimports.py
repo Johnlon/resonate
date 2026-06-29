@@ -29,7 +29,7 @@ import time
 
 # ── Import new scraper_lib from this directory ────────────────────────────────
 sys.path.insert(0, str(Path(__file__).parent))
-from scraper_lib import run_scraper, parse_number, fetch
+from scraper_lib import run_scraper, parse_number, parse_field_value, fetch
 
 VENDOR      = "SoundImports"
 SITEMAP_URL = "https://www.soundimports.eu/en/sitemap.xml"
@@ -195,30 +195,11 @@ def parse_product(html: str, url: str) -> dict | None:
         label_l = label.lower()
         for fragment, (key, default_factor) in FIELD_MAP.items():
             if fragment in label_l:
-                val = parse_number(value_str)
-                if val is None or key in fields:  # first match wins
+                if key in fields:  # first match wins
                     break
-                v = value_str.lower()
-                if key == "Mms":
-                    factor = 1.0 if "kg" in v else 1e-3         # kg already SI; else g→kg
-                elif key == "Cms":
-                    # SI sometimes uses MN⁻¹ notation ("1104 Mn-1") which equals µm/N
-                    if "µm" in value_str or "um/" in v or "μm" in v:
-                        factor = 1e-6                            # µm/N → m/N
-                    elif "mn" in v:
-                        factor = 1e-6                            # MN⁻¹ = 10⁻⁶ m/N
-                    elif "mm" in v:
-                        factor = 1e-3                            # mm/N → m/N
-                    else:
-                        factor = default_factor
-                elif key == "Sd":
-                    factor = 1.0 if "cm" not in v else 1e-4     # m² already SI; cm²→m²
-                elif key == "Vas":
-                    # SI sometimes publishes Vas in ft³ ("0.27 ft³", "2.84ft³", "0.09 ft.³")
-                    factor = 0.0283168 if "ft" in v else 1e-3   # ft³→m³ or litres→m³
-                else:
-                    factor = default_factor
-                fields[key] = round(val * factor, 9)
+                si_val = parse_field_value(key, value_str, default_factor)
+                if si_val is not None:
+                    fields[key] = si_val
                 break
 
     if not fields.get("Fs"):
