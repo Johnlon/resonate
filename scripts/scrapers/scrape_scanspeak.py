@@ -101,7 +101,7 @@ def parse_product(html: str, url: str) -> dict | None:
     # Advanced parameters PDF (/datasheet/adv/) — extended motor model params
     # (Le, Re, Leb, Ke, Rss, Bl, Mms, Cms, Ams, Rms). Collected for completeness;
     # extraction of Leb/Ke/Rss/Ams requires WDR schema additions before use.
-    adv_pdf_url = next((p for p in ss_pdfs if "/datasheet/adv/" in p.lower()), None)
+    adv_datasheet_url = next((p for p in ss_pdfs if "/datasheet/adv/" in p.lower()), None)
 
     # Dimensional drawing PNG (/datasheet/drw/) — mechanical outline with physical dimensions.
     all_links = re.findall(r'"(https://[^"]+)"', html, re.I)
@@ -134,8 +134,8 @@ def parse_product(html: str, url: str) -> dict | None:
         "driver_type":      driver_type,       # "tweeter" / "midrange" / "woofer" / ""
         "series":           series,            # "Discovery" / "Revelator" / "Ellipticor" / ""
         "nominal_size_cm":  nominal_size_cm,   # cone diameter in cm per manufacturer label
-        "pdf_url":          pdf_url,
-        "adv_pdf_url":      adv_pdf_url,
+        "datasheet_url":      pdf_url,
+        "adv_datasheet_url":  adv_datasheet_url,
         "drawing_url":      drawing_url,
         "cad_url":          cad_url,
         "extra_links":      extra_links,

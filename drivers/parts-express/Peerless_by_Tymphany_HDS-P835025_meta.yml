@@ -6,70 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-1086--hds-p835025-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Peerless-835025-6-1-2-Aluminum-Cone-HDS-Woofer-264-1086
 source: https://www.parts-express.com/Peerless-835025-6-1-2-Aluminum-Cone-HDS-Woofer-264-1086
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 264-1086
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.2
-    winner: vendor_page
-    sources:
-      vendor_page: 6.2
-  Sd:  # effective piston area (m²)
-    value: 0.0143
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0143
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00066
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00066
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00739
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00739
-  Qes:  # electrical Q factor
-    value: 0.47
-    winner: vendor_page
-    sources:
-      vendor_page: 0.47
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.50340409729047
-    winner: vendor_page
-    sources:
-      vendor_page: 1.50340409729047
-  BL:  # force factor (T·m)
-    value: 8.61
-    winner: vendor_page
-    sources:
-      vendor_page: 8.61
-  Qts:  # total Q factor
-    value: 0.42
-    winner: vendor_page
-    sources:
-      vendor_page: 0.42
-  Qms:  # mechanical Q factor
-    value: 3.72
-    winner: vendor_page
-    sources:
-      vendor_page: 3.72
   Le:  # voice coil inductance (H)
     value: 0.000519
     winner: vendor_page
     sources:
       vendor_page: 0.000519
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.019
+    winner: vendor_page
+    sources:
+      vendor_page: 0.019
+  Qes:  # electrical Q factor
+    value: 0.47
+    winner: vendor_page
+    sources:
+      vendor_page: 0.47
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0207
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0207
+  BL:  # force factor (T·m)
+    value: 8.61
+    winner: vendor_page
+    sources:
+      vendor_page: 8.61
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.2
+    winner: vendor_page
+    sources:
+      vendor_page: 6.2
   Pe:  # rated power input (W)
     value: 50.0
     winner: vendor_page
@@ -80,31 +52,49 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 43.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.019
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.50340409729047
     winner: vendor_page
     sources:
-      vendor_page: 0.019
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0207
+      vendor_page: 1.50340409729047
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00739
     winner: vendor_page
     sources:
-      vendor_page: 0.0207
+      vendor_page: 0.00739
+  Qts:  # total Q factor
+    value: 0.42
+    winner: vendor_page
+    sources:
+      vendor_page: 0.42
+  Qms:  # mechanical Q factor
+    value: 3.72
+    winner: vendor_page
+    sources:
+      vendor_page: 3.72
+  Sd:  # effective piston area (m²)
+    value: 0.0143
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0143
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 100.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00066
     winner: vendor_page
     sources:
-      vendor_page: 100.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 3500.0
-    winner: vendor_page
-    sources:
-      vendor_page: 3500.0
+      vendor_page: 0.00066
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-1086--hds-p835025-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Peerless-835025-6-1-2-Aluminum-Cone-HDS-Woofer-264-1086
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-1086--hds-p835025-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Peerless-835025-6-1-2-Aluminum-Cone-HDS-Woofer-264-1086
+frd_url: null
+zma_url: null

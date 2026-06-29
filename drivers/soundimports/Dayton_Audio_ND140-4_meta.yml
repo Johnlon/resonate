@@ -4,62 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/dayton-audio-nd140-4.html
 source: https://www.soundimports.eu/en/dayton-audio-nd140-4.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.7
-    winner: vendor_page
-    sources:
-      vendor_page: 3.7
-  Sd:  # effective piston area (m²)
-    value: 0.00866
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00866
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00071
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00071
-  Xmax:  # one-way linear excursion (m)
-    value: 0.004
-    winner: vendor_page
-    sources:
-      vendor_page: 0.004
-  Qes:  # electrical Q factor
-    value: 0.72
-    winner: vendor_page
-    sources:
-      vendor_page: 0.72
-  BL:  # force factor (T·m)
-    value: 3.9
-    winner: vendor_page
-    sources:
-      vendor_page: 3.9
-  Qts:  # total Q factor
-    value: 0.63
-    winner: vendor_page
-    sources:
-      vendor_page: 0.63
-  Qms:  # mechanical Q factor
-    value: 5.35
-    winner: vendor_page
-    sources:
-      vendor_page: 5.35
   Le:  # voice coil inductance (H)
     value: 0.00079
     winner: vendor_page
     sources:
       vendor_page: 0.00079
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00722
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00722
+  Qes:  # electrical Q factor
+    value: 0.72
+    winner: vendor_page
+    sources:
+      vendor_page: 0.72
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0101
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0101
+  BL:  # force factor (T·m)
+    value: 3.9
+    winner: vendor_page
+    sources:
+      vendor_page: 3.9
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.7
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7
   Pe:  # rated power input (W)
     value: 40.0
     winner: vendor_page
@@ -70,21 +50,36 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 59.2
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.00722
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
     winner: vendor_page
     sources:
-      vendor_page: 0.00722
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0101
+      vendor_page: 0.004
+  Qts:  # total Q factor
+    value: 0.63
     winner: vendor_page
     sources:
-      vendor_page: 0.0101
+      vendor_page: 0.63
+  Qms:  # mechanical Q factor
+    value: 5.35
+    winner: vendor_page
+    sources:
+      vendor_page: 5.35
+  Sd:  # effective piston area (m²)
+    value: 0.00866
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00866
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00071
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00071
   power_peak_W:  # peak power handling (W)
     value: 80.0
     winner: vendor_page
@@ -107,3 +102,8 @@ specs:
       vendor_page: 8.0
 _sources:
   vendor_page: https://www.soundimports.eu/en/dayton-audio-nd140-4.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/dayton-audio-nd140-4.html
+frd_url: null
+zma_url: null

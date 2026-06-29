@@ -4,43 +4,18 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.parts-express.com/JBL-Selenium-18SW3P-18-800-Watt-Subwoofer-8-Ohm-264-475
 source: https://www.parts-express.com/JBL-Selenium-18SW3P-18-800-Watt-Subwoofer-8-Ohm-264-475
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Sd:  # effective piston area (m²)
-    value: 0.1194
-    winner: vendor_page
-    sources:
-      vendor_page: 0.1194
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00675
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00675
   Qes:  # electrical Q factor
     value: 0.425
     winner: vendor_page
     sources:
       vendor_page: 0.425
-  Qts:  # total Q factor
-    value: 0.41
-    winner: vendor_page
-    sources:
-      vendor_page: 0.41
-  Qms:  # mechanical Q factor
-    value: 11.51
-    winner: vendor_page
-    sources:
-      vendor_page: 11.51
   Pe:  # rated power input (W)
     value: 800.0
     winner: vendor_page
@@ -51,6 +26,26 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 37.0
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00675
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00675
+  Qts:  # total Q factor
+    value: 0.41
+    winner: vendor_page
+    sources:
+      vendor_page: 0.41
+  Qms:  # mechanical Q factor
+    value: 11.51
+    winner: vendor_page
+    sources:
+      vendor_page: 11.51
+  Sd:  # effective piston area (m²)
+    value: 0.1194
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1194
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -68,3 +63,8 @@ specs:
       vendor_page: 18.0
 _sources:
   vendor_page: https://www.parts-express.com/JBL-Selenium-18SW3P-18-800-Watt-Subwoofer-8-Ohm-264-475
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/JBL-Selenium-18SW3P-18-800-Watt-Subwoofer-8-Ohm-264-475
+frd_url: null
+zma_url: null

@@ -4,62 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/visaton-w-250-s-4.html
 source: https://www.soundimports.eu/en/visaton-w-250-s-4.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.6
-    winner: vendor_page
-    sources:
-      vendor_page: 3.6
-  Sd:  # effective piston area (m²)
-    value: 0.0346
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0346
-  Cms:  # mechanical compliance (m/N)
-    value: 0.000795
-    winner: vendor_page
-    sources:
-      vendor_page: 0.000795
-  Xmax:  # one-way linear excursion (m)
-    value: 0.005
-    winner: vendor_page
-    sources:
-      vendor_page: 0.005
-  Qes:  # electrical Q factor
-    value: 0.43
-    winner: vendor_page
-    sources:
-      vendor_page: 0.43
-  BL:  # force factor (T·m)
-    value: 8.9
-    winner: vendor_page
-    sources:
-      vendor_page: 8.9
-  Qts:  # total Q factor
-    value: 0.35
-    winner: vendor_page
-    sources:
-      vendor_page: 0.35
-  Qms:  # mechanical Q factor
-    value: 2.01
-    winner: vendor_page
-    sources:
-      vendor_page: 2.01
   Le:  # voice coil inductance (H)
     value: 0.0009
     winner: vendor_page
     sources:
       vendor_page: 0.0009
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.135
+    winner: vendor_page
+    sources:
+      vendor_page: 0.135
+  Qes:  # electrical Q factor
+    value: 0.43
+    winner: vendor_page
+    sources:
+      vendor_page: 0.43
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.032
+    winner: vendor_page
+    sources:
+      vendor_page: 0.032
+  BL:  # force factor (T·m)
+    value: 8.9
+    winner: vendor_page
+    sources:
+      vendor_page: 8.9
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.6
+    winner: vendor_page
+    sources:
+      vendor_page: 3.6
   Pe:  # rated power input (W)
     value: 100.0
     winner: vendor_page
@@ -70,20 +50,40 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 33.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.135
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005
     winner: vendor_page
     sources:
-      vendor_page: 0.135
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.032
+      vendor_page: 0.005
+  Qts:  # total Q factor
+    value: 0.35
     winner: vendor_page
     sources:
-      vendor_page: 0.032
+      vendor_page: 0.35
+  Qms:  # mechanical Q factor
+    value: 2.01
+    winner: vendor_page
+    sources:
+      vendor_page: 2.01
+  Sd:  # effective piston area (m²)
+    value: 0.0346
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0346
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000795
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000795
 _sources:
   vendor_page: https://www.soundimports.eu/en/visaton-w-250-s-4.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/visaton-w-250-s-4.html
+frd_url: null
+zma_url: null

@@ -4,57 +4,37 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/morel-mdm-55.html
 source: https://www.soundimports.eu/en/morel-mdm-55.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.3
-    winner: vendor_page
-    sources:
-      vendor_page: 6.3
-  Sd:  # effective piston area (m²)
-    value: 0.0028
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0028
-  Xmax:  # one-way linear excursion (m)
-    value: 0.001
-    winner: vendor_page
-    sources:
-      vendor_page: 0.001
-  Qes:  # electrical Q factor
-    value: 1.75
-    winner: vendor_page
-    sources:
-      vendor_page: 1.75
-  BL:  # force factor (T·m)
-    value: 5.2
-    winner: vendor_page
-    sources:
-      vendor_page: 5.2
-  Qts:  # total Q factor
-    value: 0.68
-    winner: vendor_page
-    sources:
-      vendor_page: 0.68
-  Qms:  # mechanical Q factor
-    value: 1.13
-    winner: vendor_page
-    sources:
-      vendor_page: 1.13
   Le:  # voice coil inductance (H)
     value: 0.00019
     winner: vendor_page
     sources:
       vendor_page: 0.00019
+  Qes:  # electrical Q factor
+    value: 1.75
+    winner: vendor_page
+    sources:
+      vendor_page: 1.75
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0028
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0028
+  BL:  # force factor (T·m)
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.3
+    winner: vendor_page
+    sources:
+      vendor_page: 6.3
   Pe:  # rated power input (W)
     value: 200.0
     winner: vendor_page
@@ -65,7 +45,22 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 380.0
-  Mms:  # moving mass incl. air load (kg)
+  Xmax:  # one-way linear excursion (m)
+    value: 0.001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001
+  Qts:  # total Q factor
+    value: 0.68
+    winner: vendor_page
+    sources:
+      vendor_page: 0.68
+  Qms:  # mechanical Q factor
+    value: 1.13
+    winner: vendor_page
+    sources:
+      vendor_page: 1.13
+  Sd:  # effective piston area (m²)
     value: 0.0028
     winner: vendor_page
     sources:
@@ -77,3 +72,8 @@ specs:
       vendor_page: 8.0
 _sources:
   vendor_page: https://www.soundimports.eu/en/morel-mdm-55.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/morel-mdm-55.html
+frd_url: null
+zma_url: null

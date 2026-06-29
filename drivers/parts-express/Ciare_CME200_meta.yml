@@ -6,70 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/293-114--ciare-cme200-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Ciare-CME200-8-Woofer-293-114
 source: https://www.parts-express.com/Ciare-CME200-8-Woofer-293-114
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 293-114
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.0
-    winner: vendor_page
-    sources:
-      vendor_page: 3.0
-  Sd:  # effective piston area (m²)
-    value: 0.0206
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0206
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0035
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0035
-  Qes:  # electrical Q factor
-    value: 0.39
-    winner: vendor_page
-    sources:
-      vendor_page: 0.39
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.9686876547868869
-    winner: vendor_page
-    sources:
-      vendor_page: 0.9686876547868869
-  BL:  # force factor (T·m)
-    value: 7.3
-    winner: vendor_page
-    sources:
-      vendor_page: 7.3
-  Qts:  # total Q factor
-    value: 0.37
-    winner: vendor_page
-    sources:
-      vendor_page: 0.37
-  Qms:  # mechanical Q factor
-    value: 7.0
-    winner: vendor_page
-    sources:
-      vendor_page: 7.0
-  SPL:  # sensitivity (dB, 2.83 V/1 m)
-    value: 99.5
-    winner: vendor_page
-    sources:
-      vendor_page: 99.5
   Le:  # voice coil inductance (H)
     value: 0.00045
     winner: vendor_page
     sources:
       vendor_page: 0.00045
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.018
+    winner: vendor_page
+    sources:
+      vendor_page: 0.018
+  Qes:  # electrical Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0142
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0142
+  BL:  # force factor (T·m)
+    value: 7.3
+    winner: vendor_page
+    sources:
+      vendor_page: 7.3
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0
   Pe:  # rated power input (W)
     value: 130.0
     winner: vendor_page
@@ -80,31 +52,49 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 76.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.018
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.9686876547868869
     winner: vendor_page
     sources:
-      vendor_page: 0.018
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0142
+      vendor_page: 0.9686876547868869
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0035
     winner: vendor_page
     sources:
-      vendor_page: 0.0142
+      vendor_page: 0.0035
+  Qts:  # total Q factor
+    value: 0.37
+    winner: vendor_page
+    sources:
+      vendor_page: 0.37
+  Qms:  # mechanical Q factor
+    value: 7.0
+    winner: vendor_page
+    sources:
+      vendor_page: 7.0
+  Sd:  # effective piston area (m²)
+    value: 0.0206
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0206
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 50.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 99.5
     winner: vendor_page
     sources:
-      vendor_page: 50.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 4000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 4000.0
+      vendor_page: 99.5
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/293-114--ciare-cme200-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Ciare-CME200-8-Woofer-293-114
+datasheet_url: https://www.parts-express.com/pedocs/specs/293-114--ciare-cme200-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Ciare-CME200-8-Woofer-293-114
+frd_url: null
+zma_url: null

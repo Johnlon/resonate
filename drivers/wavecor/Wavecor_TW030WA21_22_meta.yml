@@ -6,125 +6,90 @@ corrections: null
 reviewed_by: null
 driver_type: tweeter
 nominal_size_cm: null
-datasheet: http://www.wavecor.com/Driver%20specifications%20PDF/TW030WA21_22_specifications.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: http://www.wavecor.com/html/tw030wa21_22.html
-vendor_page: null
 source: http://www.wavecor.com/html/tw030wa21_22.html
-frd: http://www.wavecor.com/Driver%20measurements%20TXT/SPL%20response/TW030WA22_SPL_response.txt
-impedance: http://www.wavecor.com/Driver%20measurements%20TXT/Impedance%20response/TW030WA22_impedance_response.txt
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 specs:
+  Vas:  # equivalent acoustic volume (m³)
+    value: 1.9e-05
+    winner: manu_page
+    sources:
+      manu_page: 1.9e-05
+  Qes:  # electrical Q factor
+    value: 1.78
+    winner: manu_page
+    sources:
+      manu_page: 1.78
   Mms:  # moving mass incl. air load (kg)
     value: 0.00045
     winner: manu_page
     sources:
-      datasheet: 0.00045
       manu_page: 0.00045
-    note: Not in datasheet; value from manu_page
-  Znom:  # nominal impedance (Ω)
-    value: 4.0
-    winner: manu_page
-    sources:
-      datasheet: 8.0
-      manu_page: 4.0
-    note: Not in datasheet; value from manu_page
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.6
-    winner: manu_page
-    sources:
-      manu_page: 3.6
-    note: Not in datasheet; value from manu_page
-  Sd:  # effective piston area (m²)
-    value: 0.00115
-    winner: manu_page
-    sources:
-      datasheet: 0.00115
-      manu_page: 0.00115
-    note: Not in datasheet; value from manu_page
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0001
-    winner: manu_page
-    sources:
-      datasheet: 0.0001
-      manu_page: 0.0001
-    note: Not in datasheet; value from manu_page
-  Fs:  # free air resonance (Hz)
-    value: 750.0
-    winner: manu_page
-    sources:
-      datasheet: 750.0
-      manu_page: 750.0
-    note: Not in datasheet; value from manu_page
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0004
-    winner: manu_page
-    sources:
-      datasheet: 0.0004
-      manu_page: 0.0004
-    note: Not in datasheet; value from manu_page
-  Qts:  # total Q factor
-    value: 1.46
-    winner: manu_page
-    sources:
-      datasheet: 1.46
-      manu_page: 1.46
-    note: Not in datasheet; value from manu_page
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.26
-    winner: manu_page
-    sources:
-      datasheet: 0.26
-      manu_page: 0.26
-    note: Not in datasheet; value from manu_page
   BL:  # force factor (T·m)
     value: 2.05
     winner: manu_page
     sources:
       manu_page: 2.05
-    note: Not in datasheet; value from manu_page
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.6
+    winner: manu_page
+    sources:
+      manu_page: 3.6
   Pe:  # rated power input (W)
     value: 800.0
     winner: manu_page
     sources:
       manu_page: 800.0
-    note: Not in datasheet; value from manu_page
+  Fs:  # free air resonance (Hz)
+    value: 750.0
+    winner: manu_page
+    sources:
+      manu_page: 750.0
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.26
+    winner: manu_page
+    sources:
+      manu_page: 0.26
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0004
+    winner: manu_page
+    sources:
+      manu_page: 0.0004
+  Qts:  # total Q factor
+    value: 1.46
+    winner: manu_page
+    sources:
+      manu_page: 1.46
   Qms:  # mechanical Q factor
     value: 8.2
     winner: manu_page
     sources:
-      datasheet: 8.2
       manu_page: 8.2
-    note: Not in datasheet; value from manu_page
-  Vas:  # equivalent acoustic volume (m³)
-    value: 1.9e-05
+  Sd:  # effective piston area (m²)
+    value: 0.00115
     winner: manu_page
     sources:
-      datasheet: 0.019
-      manu_page: 1.9e-05
-    note: Not in datasheet; value from manu_page
-  Qes:  # electrical Q factor
-    value: 1.78
+      manu_page: 0.00115
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
     winner: manu_page
     sources:
-      datasheet: 1.78
-      manu_page: 1.78
-    note: Not in datasheet; value from manu_page
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 2000.0
+      manu_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0001
     winner: manu_page
     sources:
-      manu_page: 2000.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 25000.0
-    winner: manu_page
-    sources:
-      manu_page: 25000.0
+      manu_page: 0.0001
 _sources:
   datasheet: http://www.wavecor.com/Driver%20specifications%20PDF/TW030WA21_22_specifications.pdf
   manu_page: http://www.wavecor.com/html/tw030wa21_22.html
+datasheet_url: http://www.wavecor.com/Driver%20specifications%20PDF/TW030WA21_22_specifications.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: http://www.wavecor.com/html/tw030wa21_22.html
+vendor_page_url: null
+frd_url: http://www.wavecor.com/Driver%20measurements%20TXT/SPL%20response/TW030WA22_SPL_response.txt
+zma_url: http://www.wavecor.com/Driver%20measurements%20TXT/Impedance%20response/TW030WA22_impedance_response.txt

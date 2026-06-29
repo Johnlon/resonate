@@ -4,43 +4,28 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/275-045-dayton-audio-dc25t-8-specifications-46190.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-DC25T-8-1-Titanium-Dome-Tweeter-275-045
 source: https://www.parts-express.com/Dayton-Audio-DC25T-8-1-Titanium-Dome-Tweeter-275-045
-frd: https://www.parts-express.com/pedocs/tech-docs/275-045--Dayton-Audio-DC25T-8_data.zip
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 7.7
-    winner: vendor_page
-    sources:
-      vendor_page: 7.7
-  Qes:  # electrical Q factor
-    value: 2.55
-    winner: vendor_page
-    sources:
-      vendor_page: 2.55
-  Qts:  # total Q factor
-    value: 0.47
-    winner: vendor_page
-    sources:
-      vendor_page: 0.47
-  Qms:  # mechanical Q factor
-    value: 0.58
-    winner: vendor_page
-    sources:
-      vendor_page: 0.58
   Le:  # voice coil inductance (H)
     value: 0.0005899999999999999
     winner: vendor_page
     sources:
       vendor_page: 0.0005899999999999999
+  Qes:  # electrical Q factor
+    value: 2.55
+    winner: vendor_page
+    sources:
+      vendor_page: 2.55
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.7
+    winner: vendor_page
+    sources:
+      vendor_page: 7.7
   Pe:  # rated power input (W)
     value: 50.0
     winner: vendor_page
@@ -51,21 +36,26 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 1468.0
+  Qts:  # total Q factor
+    value: 0.47
+    winner: vendor_page
+    sources:
+      vendor_page: 0.47
+  Qms:  # mechanical Q factor
+    value: 0.58
+    winner: vendor_page
+    sources:
+      vendor_page: 0.58
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 3000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 3000.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 20000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 20000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/275-045-dayton-audio-dc25t-8-specifications-46190.pdf
   vendor_page: https://www.parts-express.com/Dayton-Audio-DC25T-8-1-Titanium-Dome-Tweeter-275-045
+datasheet_url: https://www.parts-express.com/pedocs/specs/275-045-dayton-audio-dc25t-8-specifications-46190.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-DC25T-8-1-Titanium-Dome-Tweeter-275-045
+frd_url: https://www.parts-express.com/pedocs/tech-docs/275-045--Dayton-Audio-DC25T-8_data.zip
+zma_url: null

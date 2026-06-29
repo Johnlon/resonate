@@ -5,62 +5,42 @@ detail: Automatically scraped from SB Acoustics website (scraped 2026-06-29). T/
 corrections: null
 reviewed_by: null
 driver_type: null
-datasheet: https://sbacoustics.com/wp-content/uploads/2020/02/6in-SB17CRC35-8.pdf
-manu_page: https://sbacoustics.com/product/6in-sb17crc35-8/
-vendor_page: null
 source: https://sbacoustics.com/product/6in-sb17crc35-8/
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.7
-    winner: manu_page
-    sources:
-      manu_page: 5.7
-  Sd:  # effective piston area (m²)
-    value: 0.0118
-    winner: manu_page
-    sources:
-      manu_page: 0.0118
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00243
-    winner: manu_page
-    sources:
-      manu_page: 0.00243
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0055
-    winner: manu_page
-    sources:
-      manu_page: 0.0055
-  Qes:  # electrical Q factor
-    value: 0.37
-    winner: manu_page
-    sources:
-      manu_page: 0.37
-  BL:  # force factor (T·m)
-    value: 6.0
-    winner: manu_page
-    sources:
-      manu_page: 6.0
-  Qts:  # total Q factor
-    value: 0.34
-    winner: manu_page
-    sources:
-      manu_page: 0.34
-  Qms:  # mechanical Q factor
-    value: 3.9
-    winner: manu_page
-    sources:
-      manu_page: 3.9
   Le:  # voice coil inductance (H)
     value: 0.00015
     winner: manu_page
     sources:
       manu_page: 0.00015
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.048
+    winner: manu_page
+    sources:
+      manu_page: 0.048
+  Qes:  # electrical Q factor
+    value: 0.37
+    winner: manu_page
+    sources:
+      manu_page: 0.37
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0133
+    winner: manu_page
+    sources:
+      manu_page: 0.0133
+  BL:  # force factor (T·m)
+    value: 6.0
+    winner: manu_page
+    sources:
+      manu_page: 6.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.7
+    winner: manu_page
+    sources:
+      manu_page: 5.7
   Pe:  # rated power input (W)
     value: 60.0
     winner: manu_page
@@ -71,21 +51,36 @@ specs:
     winner: manu_page
     sources:
       manu_page: 28.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.048
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0055
     winner: manu_page
     sources:
-      manu_page: 0.048
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0133
+      manu_page: 0.0055
+  Qts:  # total Q factor
+    value: 0.34
     winner: manu_page
     sources:
-      manu_page: 0.0133
+      manu_page: 0.34
+  Qms:  # mechanical Q factor
+    value: 3.9
+    winner: manu_page
+    sources:
+      manu_page: 3.9
+  Sd:  # effective piston area (m²)
+    value: 0.0118
+    winner: manu_page
+    sources:
+      manu_page: 0.0118
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: manu_page
     sources:
       manu_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00243
+    winner: manu_page
+    sources:
+      manu_page: 0.00243
   voice_coil_dia_mm:  # voice coil diameter (mm)
     value: 35.5
     winner: manu_page
@@ -104,3 +99,8 @@ specs:
 _sources:
   datasheet: https://sbacoustics.com/wp-content/uploads/2020/02/6in-SB17CRC35-8.pdf
   manu_page: https://sbacoustics.com/product/6in-sb17crc35-8/
+datasheet_url: https://sbacoustics.com/wp-content/uploads/2020/02/6in-SB17CRC35-8.pdf
+manu_page_url: https://sbacoustics.com/product/6in-sb17crc35-8/
+vendor_page_url: null
+frd_url: null
+zma_url: null

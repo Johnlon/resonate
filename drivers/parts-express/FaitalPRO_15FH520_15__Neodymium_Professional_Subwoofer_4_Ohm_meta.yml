@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/294-1062--faitalpro-15fh520-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/FaitalPRO-15FH520-15-Neodymium-Professional-Subwoofer-4-Ohm-294-1062
 source: https://www.parts-express.com/FaitalPRO-15FH520-15-Neodymium-Professional-Subwoofer-4-Ohm-294-1062
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 2.7
-    winner: vendor_page
-    sources:
-      vendor_page: 2.7
-  Sd:  # effective piston area (m²)
-    value: 0.0847
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0847
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00015
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00015
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00915
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00915
-  Qes:  # electrical Q factor
-    value: 0.35
-    winner: vendor_page
-    sources:
-      vendor_page: 0.35
-  Rms:  # mechanical resistance (kg/s)
-    value: 3.0428768310969936
-    winner: vendor_page
-    sources:
-      vendor_page: 3.0428768310969936
-  BL:  # force factor (T·m)
-    value: 14.3
-    winner: vendor_page
-    sources:
-      vendor_page: 14.3
-  Qts:  # total Q factor
-    value: 0.34
-    winner: vendor_page
-    sources:
-      vendor_page: 0.34
-  Qms:  # mechanical Q factor
-    value: 9.0
-    winner: vendor_page
-    sources:
-      vendor_page: 9.0
   Le:  # voice coil inductance (H)
     value: 0.00068
     winner: vendor_page
     sources:
       vendor_page: 0.00068
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.153193888
+    winner: vendor_page
+    sources:
+      vendor_page: 0.153193888
+  Qes:  # electrical Q factor
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.1147
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1147
+  BL:  # force factor (T·m)
+    value: 14.3
+    winner: vendor_page
+    sources:
+      vendor_page: 14.3
+  Re:  # DC voice coil resistance (Ω)
+    value: 2.7
+    winner: vendor_page
+    sources:
+      vendor_page: 2.7
   Pe:  # rated power input (W)
     value: 600.0
     winner: vendor_page
@@ -76,31 +51,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 38.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.153193888
+  Rms:  # mechanical resistance (kg/s)
+    value: 3.0428768310969936
     winner: vendor_page
     sources:
-      vendor_page: 0.153193888
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.1147
+      vendor_page: 3.0428768310969936
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00915
     winner: vendor_page
     sources:
-      vendor_page: 0.1147
+      vendor_page: 0.00915
+  Qts:  # total Q factor
+    value: 0.34
+    winner: vendor_page
+    sources:
+      vendor_page: 0.34
+  Qms:  # mechanical Q factor
+    value: 9.0
+    winner: vendor_page
+    sources:
+      vendor_page: 9.0
+  Sd:  # effective piston area (m²)
+    value: 0.0847
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0847
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 40.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00015
     winner: vendor_page
     sources:
-      vendor_page: 40.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 3150.0
-    winner: vendor_page
-    sources:
-      vendor_page: 3150.0
+      vendor_page: 0.00015
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/294-1062--faitalpro-15fh520-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/FaitalPRO-15FH520-15-Neodymium-Professional-Subwoofer-4-Ohm-294-1062
+datasheet_url: https://www.parts-express.com/pedocs/specs/294-1062--faitalpro-15fh520-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/FaitalPRO-15FH520-15-Neodymium-Professional-Subwoofer-4-Ohm-294-1062
+frd_url: null
+zma_url: null

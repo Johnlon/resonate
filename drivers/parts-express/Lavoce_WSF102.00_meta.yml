@@ -7,40 +7,22 @@ corrections: '''Qts'' stored=0.45 differs from calculated=0.442899 (deps: Qms=5.
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/293-808--lavoce-wsf102.00-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Lavoce-WSF102.00-10-Woofer-293-808
 source: https://www.parts-express.com/Lavoce-WSF102.00-10-Woofer-293-808
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 293-808
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.2
+  Le:  # voice coil inductance (H)
+    value: 0.0005
     winner: vendor_page
     sources:
-      vendor_page: 5.2
-  Sd:  # effective piston area (m²)
-    value: 0.0353
+      vendor_page: 0.0005
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.034546495999999996
     winner: vendor_page
     sources:
-      vendor_page: 0.0353
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00019600000000000002
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00019600000000000002
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0053
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0053
+      vendor_page: 0.034546495999999996
   Qes:  # electrical Q factor
     value: 0.48
     winner: vendor_page
@@ -51,21 +33,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 11.62
-  Qts:  # total Q factor
-    value: 0.45
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.2
     winner: vendor_page
     sources:
-      vendor_page: 0.45
-  Qms:  # mechanical Q factor
-    value: 5.73
-    winner: vendor_page
-    sources:
-      vendor_page: 5.73
-  Le:  # voice coil inductance (H)
-    value: 0.0005
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0005
+      vendor_page: 5.2
   Pe:  # rated power input (W)
     value: 175.0
     winner: vendor_page
@@ -76,16 +48,36 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 65.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.034546495999999996
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0053
     winner: vendor_page
     sources:
-      vendor_page: 0.034546495999999996
+      vendor_page: 0.0053
+  Qts:  # total Q factor
+    value: 0.45
+    winner: vendor_page
+    sources:
+      vendor_page: 0.45
+  Qms:  # mechanical Q factor
+    value: 5.73
+    winner: vendor_page
+    sources:
+      vendor_page: 5.73
+  Sd:  # effective piston area (m²)
+    value: 0.0353
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0353
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00019600000000000002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00019600000000000002
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 96.0
     winner: vendor_page
@@ -94,3 +86,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/293-808--lavoce-wsf102.00-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Lavoce-WSF102.00-10-Woofer-293-808
+datasheet_url: https://www.parts-express.com/pedocs/specs/293-808--lavoce-wsf102.00-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Lavoce-WSF102.00-10-Woofer-293-808
+frd_url: null
+zma_url: null

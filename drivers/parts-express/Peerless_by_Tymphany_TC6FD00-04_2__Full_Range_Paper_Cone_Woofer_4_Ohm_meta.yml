@@ -4,38 +4,23 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-1126--tymphany-tc6fd00-04-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Peerless-TC6FD00-04-2-Full-Range-Paper-Cone-Woofer-4-Ohm-264-1126
 source: https://www.parts-express.com/Peerless-TC6FD00-04-2-Full-Range-Paper-Cone-Woofer-4-Ohm-264-1126
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.5
+  Le:  # voice coil inductance (H)
+    value: 2.0e-05
     winner: vendor_page
     sources:
-      vendor_page: 3.5
-  Sd:  # effective piston area (m²)
-    value: 0.0015199999999999999
+      vendor_page: 2.0e-05
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0002265344
     winner: vendor_page
     sources:
-      vendor_page: 0.0015199999999999999
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00068
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00068
-  Xmax:  # one-way linear excursion (m)
-    value: 0.001
-    winner: vendor_page
-    sources:
-      vendor_page: 0.001
+      vendor_page: 0.0002265344
   Qes:  # electrical Q factor
     value: 1.29
     winner: vendor_page
@@ -46,21 +31,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 1.92
-  Qts:  # total Q factor
-    value: 0.98
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.5
     winner: vendor_page
     sources:
-      vendor_page: 0.98
-  Qms:  # mechanical Q factor
-    value: 4.1
-    winner: vendor_page
-    sources:
-      vendor_page: 4.1
-  Le:  # voice coil inductance (H)
-    value: 2.0e-05
-    winner: vendor_page
-    sources:
-      vendor_page: 2.0e-05
+      vendor_page: 3.5
   Pe:  # rated power input (W)
     value: 15.0
     winner: vendor_page
@@ -71,26 +46,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 175.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0002265344
+  Xmax:  # one-way linear excursion (m)
+    value: 0.001
     winner: vendor_page
     sources:
-      vendor_page: 0.0002265344
+      vendor_page: 0.001
+  Qts:  # total Q factor
+    value: 0.98
+    winner: vendor_page
+    sources:
+      vendor_page: 0.98
+  Qms:  # mechanical Q factor
+    value: 4.1
+    winner: vendor_page
+    sources:
+      vendor_page: 4.1
+  Sd:  # effective piston area (m²)
+    value: 0.0015199999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0015199999999999999
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 150.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00068
     winner: vendor_page
     sources:
-      vendor_page: 150.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 20000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 20000.0
+      vendor_page: 0.00068
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-1126--tymphany-tc6fd00-04-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Peerless-TC6FD00-04-2-Full-Range-Paper-Cone-Woofer-4-Ohm-264-1126
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-1126--tymphany-tc6fd00-04-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Peerless-TC6FD00-04-2-Full-Range-Paper-Cone-Woofer-4-Ohm-264-1126
+frd_url: null
+zma_url: null

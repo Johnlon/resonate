@@ -6,66 +6,55 @@ corrections: null
 reviewed_by: null
 driver_type: passive_radiator
 nominal_size_cm: null
-datasheet: http://www.wavecor.com/Driver%20specifications%20PDF/PR223BD02_specifications.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: http://www.wavecor.com/html/pr223bd02.html
-vendor_page: null
 source: http://www.wavecor.com/html/pr223bd02.html
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 specs:
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0416
+    winner: manu_page
+    sources:
+      manu_page: 0.0416
   Mms:  # moving mass incl. air load (kg)
     value: 0.162
     winner: manu_page
     sources:
       manu_page: 0.162
-    note: Not in datasheet; value from manu_page
-  Sd:  # effective piston area (m²)
-    value: 0.0206
-    winner: manu_page
-    sources:
-      datasheet: 0.0206
-      manu_page: 0.0206
-    note: Not in datasheet; value from manu_page
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00069
-    winner: manu_page
-    sources:
-      datasheet: 0.00069
-      manu_page: 0.00069
-    note: Not in datasheet; value from manu_page
   Fs:  # free air resonance (Hz)
     value: 15.0
     winner: manu_page
     sources:
       manu_page: 15.0
-    note: Not in datasheet; value from manu_page
   Xmax:  # one-way linear excursion (m)
     value: 0.017
     winner: manu_page
     sources:
-      datasheet: 0.017
       manu_page: 0.017
-    note: Not in datasheet; value from manu_page
   Qms:  # mechanical Q factor
     value: 19.0
     winner: manu_page
     sources:
       manu_page: 19.0
-    note: Not in datasheet; value from manu_page
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0416
+  Sd:  # effective piston area (m²)
+    value: 0.0206
     winner: manu_page
     sources:
-      datasheet: 0.0416
-      manu_page: 0.0416
-    note: Not in datasheet; value from manu_page
+      manu_page: 0.0206
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00069
+    winner: manu_page
+    sources:
+      manu_page: 0.00069
 _sources:
   datasheet: http://www.wavecor.com/Driver%20specifications%20PDF/PR223BD02_specifications.pdf
   manu_page: http://www.wavecor.com/html/pr223bd02.html
+datasheet_url: http://www.wavecor.com/Driver%20specifications%20PDF/PR223BD02_specifications.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: http://www.wavecor.com/html/pr223bd02.html
+vendor_page_url: null
+frd_url: null
+zma_url: null

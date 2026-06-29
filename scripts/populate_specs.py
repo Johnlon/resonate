@@ -42,6 +42,37 @@ sys.path.insert(0, str(Path(__file__).parent))
 DRIVERS_DIR = Path(__file__).resolve().parent.parent / "drivers"
 SKIP_COLLECTIONS = {"matt", "loudspeakerdatabase", "sample"}
 
+# Fields renamed with _url suffix (Option A). Maps old key → new key.
+# Used by _normalise_meta_fields() to migrate existing files.
+_URL_RENAMES: dict[str, str] = {
+    "datasheet":      "datasheet_url",
+    "adv_datasheet":  "adv_datasheet_url",
+    "drawing":        "drawing_url",
+    "cad":            "cad_url",
+    "manu_page":      "manu_page_url",
+    "vendor_page":    "vendor_page_url",
+    "frd":            "frd_url",
+    "frd_plot":       "frd_url",
+    "impedance":      "zma_url",
+    "impedance_plot": "zma_url",
+}
+# Keys to strip: superseded by specs block or no longer in schema.
+_STRIP_KEYS = frozenset({"series", "datasheet_fields", "adv_datasheet_fields",
+                          "manu_page_fields", "field_provenance", "freq_low_hz", "freq_high_hz"})
+
+
+def _normalise_meta_fields(meta: dict) -> None:
+    """Apply URL renames and strip orphaned extra fields in-place."""
+    for old_key, new_key in _URL_RENAMES.items():
+        if old_key in meta:
+            if new_key not in meta:
+                meta[new_key] = meta.pop(old_key)
+            else:
+                del meta[old_key]
+    for k in list(meta.keys()):
+        if k in _STRIP_KEYS:
+            del meta[k]
+
 SPEC_FIELD_COMMENTS: dict[str, str] = {
     "Fs":                "free air resonance (Hz)",
     "Re":                "DC voice coil resistance (Ω)",
@@ -290,7 +321,7 @@ def _find_html(coll_dir: Path, meta: dict) -> str | None:
     html_dir = coll_dir / "_html"
     if not html_dir.exists():
         return None
-    source = meta.get("source") or meta.get("vendor_page") or meta.get("manu_page") or ""
+    source = meta.get("source") or meta.get("vendor_page_url") or meta.get("manu_page_url") or ""
     if source:
         slug = source.rstrip("/").split("/")[-1]
         slug = re.sub(r"[^\w\-.]", "_", slug)
@@ -315,18 +346,18 @@ def _build_specs_provenance(
     new_specs: unified provenance format {field: {value, winner, sources, note?}}
     sources_index: {source_key: url}
     """
-    html_src = "manu_page" if meta.get("manu_page") else "vendor_page"
+    html_src = "manu_page" if meta.get("manu_page_url") else "vendor_page"
 
-    # Build _sources index from existing URL fields
+    # Build _sources index from URL fields (new _url names after normalisation)
     sources_index: dict[str, str | None] = {}
-    if meta.get("datasheet"):
-        sources_index["datasheet"] = meta["datasheet"]
-    if meta.get("adv_datasheet"):
-        sources_index["adv_datasheet"] = meta["adv_datasheet"]
-    if meta.get("manu_page"):
-        sources_index["manu_page"] = meta["manu_page"]
-    if meta.get("vendor_page"):
-        sources_index["vendor_page"] = meta["vendor_page"]
+    if meta.get("datasheet_url"):
+        sources_index["datasheet"] = meta["datasheet_url"]
+    if meta.get("adv_datasheet_url"):
+        sources_index["adv_datasheet"] = meta["adv_datasheet_url"]
+    if meta.get("manu_page_url"):
+        sources_index["manu_page"] = meta["manu_page_url"]
+    if meta.get("vendor_page_url"):
+        sources_index["vendor_page"] = meta["vendor_page_url"]
 
     # Old source key → new source key mapping
     old_to_new: dict[str, str] = {
@@ -441,7 +472,10 @@ def process_collection(coll_dir: Path, force: bool) -> tuple[int, int, int]:
             errors += 1
             continue
 
-        html_src = "manu_page" if meta.get("manu_page") else "vendor_page"
+        # Apply URL renames and strip orphaned fields before any processing
+        _normalise_meta_fields(meta)
+
+        html_src = "manu_page" if meta.get("manu_page_url") else "vendor_page"
         existing_specs = meta.get("specs")
 
         # Coaxial with flat woofer/tweeter structure — wrap in provenance
@@ -452,10 +486,6 @@ def process_collection(coll_dir: Path, force: bool) -> tuple[int, int, int]:
                 skipped += 1
                 continue
             meta["specs"] = _wrap_coaxial(existing_specs, html_src)
-            # Remove legacy fields
-            meta.pop("field_provenance", None)
-            meta.pop("freq_low_hz", None)
-            meta.pop("freq_high_hz", None)
             try:
                 meta_path.write_text(
                     annotate_specs_yaml(yaml.dump(meta, allow_unicode=True, sort_keys=False)),
@@ -503,10 +533,6 @@ def process_collection(coll_dir: Path, force: bool) -> tuple[int, int, int]:
 
         meta["_sources"] = sources_index if sources_index else None
         meta["specs"] = new_specs
-        # Remove legacy keys
-        meta.pop("field_provenance", None)
-        meta.pop("freq_low_hz", None)
-        meta.pop("freq_high_hz", None)
 
         try:
             meta_path.write_text(

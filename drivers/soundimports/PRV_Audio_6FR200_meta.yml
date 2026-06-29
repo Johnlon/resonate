@@ -4,57 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/prv-audio-6fr200.html
 source: https://www.soundimports.eu/en/prv-audio-6fr200.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.4
-    winner: vendor_page
-    sources:
-      vendor_page: 6.4
-  Sd:  # effective piston area (m²)
-    value: 0.0143
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0143
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0035
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0035
-  Qes:  # electrical Q factor
-    value: 1.4
-    winner: vendor_page
-    sources:
-      vendor_page: 1.4
-  BL:  # force factor (T·m)
-    value: 5.17
-    winner: vendor_page
-    sources:
-      vendor_page: 5.17
-  Qts:  # total Q factor
-    value: 1.29
-    winner: vendor_page
-    sources:
-      vendor_page: 1.29
-  Qms:  # mechanical Q factor
-    value: 15.69
-    winner: vendor_page
-    sources:
-      vendor_page: 15.69
   Le:  # voice coil inductance (H)
     value: 0.000264
     winner: vendor_page
     sources:
       vendor_page: 0.000264
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00693
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00693
+  Qes:  # electrical Q factor
+    value: 1.4
+    winner: vendor_page
+    sources:
+      vendor_page: 1.4
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00837
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00837
+  BL:  # force factor (T·m)
+    value: 5.17
+    winner: vendor_page
+    sources:
+      vendor_page: 5.17
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.4
+    winner: vendor_page
+    sources:
+      vendor_page: 6.4
   Pe:  # rated power input (W)
     value: 200.0
     winner: vendor_page
@@ -65,15 +50,30 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 111.7
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.00693
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0035
     winner: vendor_page
     sources:
-      vendor_page: 0.00693
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.00837
+      vendor_page: 0.0035
+  Qts:  # total Q factor
+    value: 1.29
     winner: vendor_page
     sources:
-      vendor_page: 0.00837
+      vendor_page: 1.29
+  Qms:  # mechanical Q factor
+    value: 15.69
+    winner: vendor_page
+    sources:
+      vendor_page: 15.69
+  Sd:  # effective piston area (m²)
+    value: 0.0143
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0143
 _sources:
   vendor_page: https://www.soundimports.eu/en/prv-audio-6fr200.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/prv-audio-6fr200.html
+frd_url: null
+zma_url: null

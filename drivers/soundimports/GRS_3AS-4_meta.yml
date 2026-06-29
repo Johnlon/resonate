@@ -4,22 +4,12 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/grs-3as-4.html
 source: https://www.soundimports.eu/en/grs-3as-4.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: mid-bass
 specs:
-  Qts:  # total Q factor
-    value: 0.95
-    winner: vendor_page
-    sources:
-      vendor_page: 0.95
   Pe:  # rated power input (W)
     value: 15.0
     winner: vendor_page
@@ -30,6 +20,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 124.0
+  Qts:  # total Q factor
+    value: 0.95
+    winner: vendor_page
+    sources:
+      vendor_page: 0.95
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
@@ -57,3 +52,8 @@ specs:
       vendor_page: 15.0
 _sources:
   vendor_page: https://www.soundimports.eu/en/grs-3as-4.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/grs-3as-4.html
+frd_url: null
+zma_url: null

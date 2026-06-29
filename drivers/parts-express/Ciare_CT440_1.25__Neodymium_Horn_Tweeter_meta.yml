@@ -4,12 +4,7 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/293-104--ciare-ct440-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Ciare-CT440-1.25-Neodymium-Horn-Tweeter-293-104
 source: https://www.parts-express.com/Ciare-CT440-1.25-Neodymium-Horn-Tweeter-293-104
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
@@ -49,3 +44,8 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/293-104--ciare-ct440-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Ciare-CT440-1.25-Neodymium-Horn-Tweeter-293-104
+datasheet_url: https://www.parts-express.com/pedocs/specs/293-104--ciare-ct440-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Ciare-CT440-1.25-Neodymium-Horn-Tweeter-293-104
+frd_url: null
+zma_url: null

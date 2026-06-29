@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/297-130--morel-uw-1058-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Morel-Ultimate-UW-1058-10-Subwoofer-297-130
 source: https://www.parts-express.com/Morel-Ultimate-UW-1058-10-Subwoofer-297-130
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.8
-    winner: vendor_page
-    sources:
-      vendor_page: 6.8
-  Sd:  # effective piston area (m²)
-    value: 0.0346
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0346
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00023999999999999998
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00023999999999999998
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0125
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0125
-  Qes:  # electrical Q factor
-    value: 0.58
-    winner: vendor_page
-    sources:
-      vendor_page: 0.58
-  Rms:  # mechanical resistance (kg/s)
-    value: 9.431353387253639
-    winner: vendor_page
-    sources:
-      vendor_page: 9.431353387253639
-  BL:  # force factor (T·m)
-    value: 15.3
-    winner: vendor_page
-    sources:
-      vendor_page: 15.3
-  Qts:  # total Q factor
-    value: 0.43
-    winner: vendor_page
-    sources:
-      vendor_page: 0.43
-  Qms:  # mechanical Q factor
-    value: 1.72
-    winner: vendor_page
-    sources:
-      vendor_page: 1.72
   Le:  # voice coil inductance (H)
     value: 0.00133
     winner: vendor_page
     sources:
       vendor_page: 0.00133
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.040776191999999996
+    winner: vendor_page
+    sources:
+      vendor_page: 0.040776191999999996
+  Qes:  # electrical Q factor
+    value: 0.58
+    winner: vendor_page
+    sources:
+      vendor_page: 0.58
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0993
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0993
+  BL:  # force factor (T·m)
+    value: 15.3
+    winner: vendor_page
+    sources:
+      vendor_page: 15.3
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.8
+    winner: vendor_page
+    sources:
+      vendor_page: 6.8
   Pe:  # rated power input (W)
     value: 500.0
     winner: vendor_page
@@ -76,31 +51,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 26.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.040776191999999996
+  Rms:  # mechanical resistance (kg/s)
+    value: 9.431353387253639
     winner: vendor_page
     sources:
-      vendor_page: 0.040776191999999996
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0993
+      vendor_page: 9.431353387253639
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0125
     winner: vendor_page
     sources:
-      vendor_page: 0.0993
+      vendor_page: 0.0125
+  Qts:  # total Q factor
+    value: 0.43
+    winner: vendor_page
+    sources:
+      vendor_page: 0.43
+  Qms:  # mechanical Q factor
+    value: 1.72
+    winner: vendor_page
+    sources:
+      vendor_page: 1.72
+  Sd:  # effective piston area (m²)
+    value: 0.0346
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0346
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 20.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00023999999999999998
     winner: vendor_page
     sources:
-      vendor_page: 20.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 1000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 1000.0
+      vendor_page: 0.00023999999999999998
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/297-130--morel-uw-1058-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Morel-Ultimate-UW-1058-10-Subwoofer-297-130
+datasheet_url: https://www.parts-express.com/pedocs/specs/297-130--morel-uw-1058-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Morel-Ultimate-UW-1058-10-Subwoofer-297-130
+frd_url: null
+zma_url: null

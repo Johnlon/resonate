@@ -6,45 +6,27 @@ corrections: null
 reviewed_by: null
 driver_type: tweeter
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/GRS-1TD2-8-1-Designer-Dome-Tweeter-8-Ohm-292-464
 source: https://www.parts-express.com/GRS-1TD2-8-1-Designer-Dome-Tweeter-8-Ohm-292-464
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd
 community: null
 fetched_sku: 292-464
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 7.32
-    winner: vendor_page
-    sources:
-      vendor_page: 7.32
-  Qes:  # electrical Q factor
-    value: 1.91
-    winner: vendor_page
-    sources:
-      vendor_page: 1.91
-  Qts:  # total Q factor
-    value: 1.45
-    winner: vendor_page
-    sources:
-      vendor_page: 1.45
-  Qms:  # mechanical Q factor
-    value: 5.94
-    winner: vendor_page
-    sources:
-      vendor_page: 5.94
   Le:  # voice coil inductance (H)
     value: 0.00025
     winner: vendor_page
     sources:
       vendor_page: 0.00025
+  Qes:  # electrical Q factor
+    value: 1.91
+    winner: vendor_page
+    sources:
+      vendor_page: 1.91
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.32
+    winner: vendor_page
+    sources:
+      vendor_page: 7.32
   Pe:  # rated power input (W)
     value: 50.0
     winner: vendor_page
@@ -55,6 +37,16 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 2531.0
+  Qts:  # total Q factor
+    value: 1.45
+    winner: vendor_page
+    sources:
+      vendor_page: 1.45
+  Qms:  # mechanical Q factor
+    value: 5.94
+    winner: vendor_page
+    sources:
+      vendor_page: 5.94
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -62,3 +54,11 @@ specs:
       vendor_page: 8.0
 _sources:
   vendor_page: https://www.parts-express.com/GRS-1TD2-8-1-Designer-Dome-Tweeter-8-Ohm-292-464
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/GRS-1TD2-8-1-Designer-Dome-Tweeter-8-Ohm-292-464
+frd_url: null
+zma_url: null

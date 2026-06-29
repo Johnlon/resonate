@@ -4,67 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/beyma-10nmfs.html
 source: https://www.soundimports.eu/en/beyma-10nmfs.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.9
-    winner: vendor_page
-    sources:
-      vendor_page: 5.9
-  Sd:  # effective piston area (m²)
-    value: 0.037
-    winner: vendor_page
-    sources:
-      vendor_page: 0.037
-  Cms:  # mechanical compliance (m/N)
-    value: 0.000233
-    winner: vendor_page
-    sources:
-      vendor_page: 0.000233
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0145
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0145
-  Qes:  # electrical Q factor
-    value: 0.45
-    winner: vendor_page
-    sources:
-      vendor_page: 0.45
-  Rms:  # mechanical resistance (kg/s)
-    value: 3.3
-    winner: vendor_page
-    sources:
-      vendor_page: 3.3
-  BL:  # force factor (T·m)
-    value: 16.0
-    winner: vendor_page
-    sources:
-      vendor_page: 16.0
-  Qts:  # total Q factor
-    value: 0.42
-    winner: vendor_page
-    sources:
-      vendor_page: 0.42
-  Qms:  # mechanical Q factor
-    value: 5.9
-    winner: vendor_page
-    sources:
-      vendor_page: 5.9
   Le:  # voice coil inductance (H)
     value: 0.00149
     winner: vendor_page
     sources:
       vendor_page: 0.00149
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.045
+    winner: vendor_page
+    sources:
+      vendor_page: 0.045
+  Qes:  # electrical Q factor
+    value: 0.45
+    winner: vendor_page
+    sources:
+      vendor_page: 0.45
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.089
+    winner: vendor_page
+    sources:
+      vendor_page: 0.089
+  BL:  # force factor (T·m)
+    value: 16.0
+    winner: vendor_page
+    sources:
+      vendor_page: 16.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.9
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9
   Pe:  # rated power input (W)
     value: 350.0
     winner: vendor_page
@@ -75,21 +50,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 35.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.045
+  Rms:  # mechanical resistance (kg/s)
+    value: 3.3
     winner: vendor_page
     sources:
-      vendor_page: 0.045
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.089
+      vendor_page: 3.3
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0145
     winner: vendor_page
     sources:
-      vendor_page: 0.089
+      vendor_page: 0.0145
+  Qts:  # total Q factor
+    value: 0.42
+    winner: vendor_page
+    sources:
+      vendor_page: 0.42
+  Qms:  # mechanical Q factor
+    value: 5.9
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9
+  Sd:  # effective piston area (m²)
+    value: 0.037
+    winner: vendor_page
+    sources:
+      vendor_page: 0.037
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000233
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000233
   power_peak_W:  # peak power handling (W)
     value: 700.0
     winner: vendor_page
@@ -112,3 +107,8 @@ specs:
       vendor_page: 2.0
 _sources:
   vendor_page: https://www.soundimports.eu/en/beyma-10nmfs.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/beyma-10nmfs.html
+frd_url: null
+zma_url: null

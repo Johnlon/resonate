@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/294-3500--prv-audio-6cx380-4-slim-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/PRV-Audio-6CX380-4-SLIM-6.5-Professional-2-Way-Full-Range-Coaxial-Speaker-294-3500
 source: https://www.parts-express.com/PRV-Audio-6CX380-4-SLIM-6.5-Professional-2-Way-Full-Range-Coaxial-Speaker-294-3500
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: coaxial
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.6
-    winner: vendor_page
-    sources:
-      vendor_page: 3.6
-  Sd:  # effective piston area (m²)
-    value: 0.0143
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0143
-  Cms:  # mechanical compliance (m/N)
-    value: 0.000231
-    winner: vendor_page
-    sources:
-      vendor_page: 0.000231
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00275
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00275
-  Qes:  # electrical Q factor
-    value: 0.84
-    winner: vendor_page
-    sources:
-      vendor_page: 0.84
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.715705218090801
-    winner: vendor_page
-    sources:
-      vendor_page: 0.715705218090801
-  BL:  # force factor (T·m)
-    value: 5.11
-    winner: vendor_page
-    sources:
-      vendor_page: 5.11
-  Qts:  # total Q factor
-    value: 0.77
-    winner: vendor_page
-    sources:
-      vendor_page: 0.77
-  Qms:  # mechanical Q factor
-    value: 8.6
-    winner: vendor_page
-    sources:
-      vendor_page: 8.6
   Le:  # voice coil inductance (H)
     value: 0.00011300000000000001
     winner: vendor_page
     sources:
       vendor_page: 0.00011300000000000001
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.006597814400000001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.006597814400000001
+  Qes:  # electrical Q factor
+    value: 0.84
+    winner: vendor_page
+    sources:
+      vendor_page: 0.84
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00877
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00877
+  BL:  # force factor (T·m)
+    value: 5.11
+    winner: vendor_page
+    sources:
+      vendor_page: 5.11
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.6
+    winner: vendor_page
+    sources:
+      vendor_page: 3.6
   Pe:  # rated power input (W)
     value: 380.0
     winner: vendor_page
@@ -76,36 +51,51 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 111.7
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.006597814400000001
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.715705218090801
     winner: vendor_page
     sources:
-      vendor_page: 0.006597814400000001
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.00877
+      vendor_page: 0.715705218090801
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00275
     winner: vendor_page
     sources:
-      vendor_page: 0.00877
+      vendor_page: 0.00275
+  Qts:  # total Q factor
+    value: 0.77
+    winner: vendor_page
+    sources:
+      vendor_page: 0.77
+  Qms:  # mechanical Q factor
+    value: 8.6
+    winner: vendor_page
+    sources:
+      vendor_page: 8.6
+  Sd:  # effective piston area (m²)
+    value: 0.0143
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0143
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000231
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000231
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 96.0
     winner: vendor_page
     sources:
       vendor_page: 96.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 100.0
-    winner: vendor_page
-    sources:
-      vendor_page: 100.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 20000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 20000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/294-3500--prv-audio-6cx380-4-slim-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/PRV-Audio-6CX380-4-SLIM-6.5-Professional-2-Way-Full-Range-Coaxial-Speaker-294-3500
+datasheet_url: https://www.parts-express.com/pedocs/specs/294-3500--prv-audio-6cx380-4-slim-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/PRV-Audio-6CX380-4-SLIM-6.5-Professional-2-Way-Full-Range-Coaxial-Speaker-294-3500
+frd_url: null
+zma_url: null

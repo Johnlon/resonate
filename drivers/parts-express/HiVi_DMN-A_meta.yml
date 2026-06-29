@@ -6,15 +6,7 @@ corrections: null
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/297-415-hi-vi-dmn-a-specifications.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/HiVi-DMN-A-Soft-Dome-Fabric-Midrange-297-415
 source: https://www.parts-express.com/HiVi-DMN-A-Soft-Dome-Fabric-Midrange-297-415
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd; Fs_no_Q
 community: null
@@ -43,3 +35,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/297-415-hi-vi-dmn-a-specifications.pdf
   vendor_page: https://www.parts-express.com/HiVi-DMN-A-Soft-Dome-Fabric-Midrange-297-415
+datasheet_url: https://www.parts-express.com/pedocs/specs/297-415-hi-vi-dmn-a-specifications.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/HiVi-DMN-A-Soft-Dome-Fabric-Midrange-297-415
+frd_url: null
+zma_url: null

@@ -8,70 +8,42 @@ corrections: '''Qts'' stored=0.35 differs from calculated=0.355826 (deps: Qms=1.
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/295-302-dayton-audio-dc130bs-4-specifications.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-DC130BS-4-5-1-4-Classic-Shielded-Woofer-4-Ohm-295-302
 source: https://www.parts-express.com/Dayton-Audio-DC130BS-4-5-1-4-Classic-Shielded-Woofer-4-Ohm-295-302
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 295-302
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.55
-    winner: vendor_page
-    sources:
-      vendor_page: 3.55
-  Sd:  # effective piston area (m²)
-    value: 0.00933
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00933
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00108
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00108
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0025
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0025
-  Qes:  # electrical Q factor
-    value: 0.44
-    winner: vendor_page
-    sources:
-      vendor_page: 0.44
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.5398533281853453
-    winner: vendor_page
-    sources:
-      vendor_page: 1.5398533281853453
-  BL:  # force factor (T·m)
-    value: 4.8
-    winner: vendor_page
-    sources:
-      vendor_page: 4.8
-  Qts:  # total Q factor
-    value: 0.35
-    winner: vendor_page
-    sources:
-      vendor_page: 0.35
-  Qms:  # mechanical Q factor
-    value: 1.86
-    winner: vendor_page
-    sources:
-      vendor_page: 1.86
   Le:  # voice coil inductance (H)
     value: 0.0005
     winner: vendor_page
     sources:
       vendor_page: 0.0005
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.013025728
+    winner: vendor_page
+    sources:
+      vendor_page: 0.013025728
+  Qes:  # electrical Q factor
+    value: 0.44
+    winner: vendor_page
+    sources:
+      vendor_page: 0.44
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0088
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0088
+  BL:  # force factor (T·m)
+    value: 4.8
+    winner: vendor_page
+    sources:
+      vendor_page: 4.8
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.55
+    winner: vendor_page
+    sources:
+      vendor_page: 3.55
   Pe:  # rated power input (W)
     value: 30.0
     winner: vendor_page
@@ -82,21 +54,49 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 51.8
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.013025728
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.5398533281853453
     winner: vendor_page
     sources:
-      vendor_page: 0.013025728
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0088
+      vendor_page: 1.5398533281853453
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0025
     winner: vendor_page
     sources:
-      vendor_page: 0.0088
+      vendor_page: 0.0025
+  Qts:  # total Q factor
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
+  Qms:  # mechanical Q factor
+    value: 1.86
+    winner: vendor_page
+    sources:
+      vendor_page: 1.86
+  Sd:  # effective piston area (m²)
+    value: 0.00933
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00933
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00108
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00108
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/295-302-dayton-audio-dc130bs-4-specifications.pdf
   vendor_page: https://www.parts-express.com/Dayton-Audio-DC130BS-4-5-1-4-Classic-Shielded-Woofer-4-Ohm-295-302
+datasheet_url: https://www.parts-express.com/pedocs/specs/295-302-dayton-audio-dc130bs-4-specifications.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-DC130BS-4-5-1-4-Classic-Shielded-Woofer-4-Ohm-295-302
+frd_url: null
+zma_url: null

@@ -4,38 +4,23 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-839--tang-band-w2-2136s-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Tang-Band-W2-2136S-2-Aluminum-Full-Range-Neodymium-Driver-264-839
 source: https://www.parts-express.com/Tang-Band-W2-2136S-2-Aluminum-Full-Range-Neodymium-Driver-264-839
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.4
+  Le:  # voice coil inductance (H)
+    value: 2.9999999999999997e-05
     winner: vendor_page
     sources:
-      vendor_page: 3.4
-  Sd:  # effective piston area (m²)
-    value: 0.0015
+      vendor_page: 2.9999999999999997e-05
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00025768288
     winner: vendor_page
     sources:
-      vendor_page: 0.0015
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0008010000000000001
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0008010000000000001
-  Xmax:  # one-way linear excursion (m)
-    value: 0.002
-    winner: vendor_page
-    sources:
-      vendor_page: 0.002
+      vendor_page: 0.00025768288
   Qes:  # electrical Q factor
     value: 0.39
     winner: vendor_page
@@ -46,21 +31,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 3.71
-  Qts:  # total Q factor
-    value: 0.31
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.4
     winner: vendor_page
     sources:
-      vendor_page: 0.31
-  Qms:  # mechanical Q factor
-    value: 1.59
-    winner: vendor_page
-    sources:
-      vendor_page: 1.59
-  Le:  # voice coil inductance (H)
-    value: 2.9999999999999997e-05
-    winner: vendor_page
-    sources:
-      vendor_page: 2.9999999999999997e-05
+      vendor_page: 3.4
   Pe:  # rated power input (W)
     value: 10.0
     winner: vendor_page
@@ -71,26 +46,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 120.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.00025768288
+  Xmax:  # one-way linear excursion (m)
+    value: 0.002
     winner: vendor_page
     sources:
-      vendor_page: 0.00025768288
+      vendor_page: 0.002
+  Qts:  # total Q factor
+    value: 0.31
+    winner: vendor_page
+    sources:
+      vendor_page: 0.31
+  Qms:  # mechanical Q factor
+    value: 1.59
+    winner: vendor_page
+    sources:
+      vendor_page: 1.59
+  Sd:  # effective piston area (m²)
+    value: 0.0015
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0015
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 120.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0008010000000000001
     winner: vendor_page
     sources:
-      vendor_page: 120.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 15000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 15000.0
+      vendor_page: 0.0008010000000000001
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-839--tang-band-w2-2136s-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Tang-Band-W2-2136S-2-Aluminum-Full-Range-Neodymium-Driver-264-839
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-839--tang-band-w2-2136s-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Tang-Band-W2-2136S-2-Aluminum-Full-Range-Neodymium-Driver-264-839
+frd_url: null
+zma_url: null

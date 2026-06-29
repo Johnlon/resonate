@@ -4,43 +4,28 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/290-270-pyramid-wx65x-specifications.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Pyramid-WX65X-6-1-2-White-Poly-Woofer-290-270
 source: https://www.parts-express.com/Pyramid-WX65X-6-1-2-White-Poly-Woofer-290-270
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: woofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.3
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.008495039999999999
     winner: vendor_page
     sources:
-      vendor_page: 3.3
-  Xmax:  # one-way linear excursion (m)
-    value: 0.002
-    winner: vendor_page
-    sources:
-      vendor_page: 0.002
+      vendor_page: 0.008495039999999999
   Qes:  # electrical Q factor
     value: 0.82
     winner: vendor_page
     sources:
       vendor_page: 0.82
-  Qts:  # total Q factor
-    value: 0.58
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.3
     winner: vendor_page
     sources:
-      vendor_page: 0.58
-  Qms:  # mechanical Q factor
-    value: 2.03
-    winner: vendor_page
-    sources:
-      vendor_page: 2.03
+      vendor_page: 3.3
   Pe:  # rated power input (W)
     value: 150.0
     winner: vendor_page
@@ -51,26 +36,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 69.5
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.008495039999999999
+  Xmax:  # one-way linear excursion (m)
+    value: 0.002
     winner: vendor_page
     sources:
-      vendor_page: 0.008495039999999999
+      vendor_page: 0.002
+  Qts:  # total Q factor
+    value: 0.58
+    winner: vendor_page
+    sources:
+      vendor_page: 0.58
+  Qms:  # mechanical Q factor
+    value: 2.03
+    winner: vendor_page
+    sources:
+      vendor_page: 2.03
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 70.0
-    winner: vendor_page
-    sources:
-      vendor_page: 70.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 3500.0
-    winner: vendor_page
-    sources:
-      vendor_page: 3500.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/290-270-pyramid-wx65x-specifications.pdf
   vendor_page: https://www.parts-express.com/Pyramid-WX65X-6-1-2-White-Poly-Woofer-290-270
+datasheet_url: https://www.parts-express.com/pedocs/specs/290-270-pyramid-wx65x-specifications.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Pyramid-WX65X-6-1-2-White-Poly-Woofer-290-270
+frd_url: null
+zma_url: null

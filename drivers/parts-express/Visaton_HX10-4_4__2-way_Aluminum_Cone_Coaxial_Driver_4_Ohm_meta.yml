@@ -4,12 +4,7 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/292-742--visaton-hx10-4-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Visaton-HX10-4-4-2-way-Aluminum-Cone-Coaxial-Driver-4-Ohm-292-770
 source: https://www.parts-express.com/Visaton-HX10-4-4-2-way-Aluminum-Cone-Coaxial-Driver-4-Ohm-292-770
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
@@ -31,16 +26,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 50.0
-    winner: vendor_page
-    sources:
-      vendor_page: 50.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 22000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 22000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/292-742--visaton-hx10-4-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Visaton-HX10-4-4-2-way-Aluminum-Cone-Coaxial-Driver-4-Ohm-292-770
+datasheet_url: https://www.parts-express.com/pedocs/specs/292-742--visaton-hx10-4-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Visaton-HX10-4-4-2-way-Aluminum-Cone-Coaxial-Driver-4-Ohm-292-770
+frd_url: null
+zma_url: null

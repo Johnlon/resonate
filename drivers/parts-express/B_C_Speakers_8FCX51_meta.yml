@@ -6,65 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: fullrange
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/294-5766--bc-8fcx51-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/B-C-8FCX51-8-Professional-Coaxial-Speaker-100-x-100-8-Ohm-294-5766
 source: https://www.parts-express.com/B-C-8FCX51-8-Professional-Coaxial-Speaker-100-x-100-8-Ohm-294-5766
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-5766
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.0
-    winner: vendor_page
-    sources:
-      vendor_page: 5.0
-  Sd:  # effective piston area (m²)
-    value: 0.022
-    winner: vendor_page
-    sources:
-      vendor_page: 0.022
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0065
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0065
-  Qes:  # electrical Q factor
-    value: 0.36
-    winner: vendor_page
-    sources:
-      vendor_page: 0.36
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.5139484597299384
-    winner: vendor_page
-    sources:
-      vendor_page: 1.5139484597299384
-  BL:  # force factor (T·m)
-    value: 11.5
-    winner: vendor_page
-    sources:
-      vendor_page: 11.5
-  Qts:  # total Q factor
-    value: 0.34
-    winner: vendor_page
-    sources:
-      vendor_page: 0.34
-  Qms:  # mechanical Q factor
-    value: 6.3
-    winner: vendor_page
-    sources:
-      vendor_page: 6.3
   Le:  # voice coil inductance (H)
     value: 9.0
     winner: vendor_page
     sources:
       vendor_page: 9.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.015857408
+    winner: vendor_page
+    sources:
+      vendor_page: 0.015857408
+  Qes:  # electrical Q factor
+    value: 0.36
+    winner: vendor_page
+    sources:
+      vendor_page: 0.36
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.022
+    winner: vendor_page
+    sources:
+      vendor_page: 0.022
+  BL:  # force factor (T·m)
+    value: 11.5
+    winner: vendor_page
+    sources:
+      vendor_page: 11.5
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
   Pe:  # rated power input (W)
     value: 500.0
     winner: vendor_page
@@ -75,12 +52,27 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 69.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.015857408
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.5139484597299384
     winner: vendor_page
     sources:
-      vendor_page: 0.015857408
-  Mms:  # moving mass incl. air load (kg)
+      vendor_page: 1.5139484597299384
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0065
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0065
+  Qts:  # total Q factor
+    value: 0.34
+    winner: vendor_page
+    sources:
+      vendor_page: 0.34
+  Qms:  # mechanical Q factor
+    value: 6.3
+    winner: vendor_page
+    sources:
+      vendor_page: 6.3
+  Sd:  # effective piston area (m²)
     value: 0.022
     winner: vendor_page
     sources:
@@ -93,3 +85,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/294-5766--bc-8fcx51-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/B-C-8FCX51-8-Professional-Coaxial-Speaker-100-x-100-8-Ohm-294-5766
+datasheet_url: https://www.parts-express.com/pedocs/specs/294-5766--bc-8fcx51-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/B-C-8FCX51-8-Professional-Coaxial-Speaker-100-x-100-8-Ohm-294-5766
+frd_url: null
+zma_url: null

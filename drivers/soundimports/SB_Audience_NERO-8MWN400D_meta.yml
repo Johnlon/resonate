@@ -4,67 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/sb-audience-nero-8mwn400d.html
 source: https://www.soundimports.eu/en/sb-audience-nero-8mwn400d.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.2
-    winner: vendor_page
-    sources:
-      vendor_page: 5.2
-  Sd:  # effective piston area (m²)
-    value: 0.02087
-    winner: vendor_page
-    sources:
-      vendor_page: 0.02087
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00023
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00023
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0067
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0067
-  Qes:  # electrical Q factor
-    value: 0.41
-    winner: vendor_page
-    sources:
-      vendor_page: 0.41
-  Rms:  # mechanical resistance (kg/s)
-    value: 2.75
-    winner: vendor_page
-    sources:
-      vendor_page: 2.75
-  BL:  # force factor (T·m)
-    value: 11.9
-    winner: vendor_page
-    sources:
-      vendor_page: 11.9
-  Qts:  # total Q factor
-    value: 0.38
-    winner: vendor_page
-    sources:
-      vendor_page: 0.38
-  Qms:  # mechanical Q factor
-    value: 4.07
-    winner: vendor_page
-    sources:
-      vendor_page: 4.07
   Le:  # voice coil inductance (H)
     value: 0.00025
     winner: vendor_page
     sources:
       vendor_page: 0.00025
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0139
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0139
+  Qes:  # electrical Q factor
+    value: 0.41
+    winner: vendor_page
+    sources:
+      vendor_page: 0.41
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0284
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0284
+  BL:  # force factor (T·m)
+    value: 11.9
+    winner: vendor_page
+    sources:
+      vendor_page: 11.9
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
   Pe:  # rated power input (W)
     value: 400.0
     winner: vendor_page
@@ -75,20 +50,45 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 63.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0139
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.75
     winner: vendor_page
     sources:
-      vendor_page: 0.0139
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0284
+      vendor_page: 2.75
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0067
     winner: vendor_page
     sources:
-      vendor_page: 0.0284
+      vendor_page: 0.0067
+  Qts:  # total Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  Qms:  # mechanical Q factor
+    value: 4.07
+    winner: vendor_page
+    sources:
+      vendor_page: 4.07
+  Sd:  # effective piston area (m²)
+    value: 0.02087
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02087
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00023
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00023
 _sources:
   vendor_page: https://www.soundimports.eu/en/sb-audience-nero-8mwn400d.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/sb-audience-nero-8mwn400d.html
+frd_url: null
+zma_url: null

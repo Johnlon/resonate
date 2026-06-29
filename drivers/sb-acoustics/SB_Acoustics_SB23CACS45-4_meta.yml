@@ -5,62 +5,42 @@ detail: Automatically scraped from SB Acoustics website (scraped 2026-06-29). T/
 corrections: null
 reviewed_by: null
 driver_type: null
-datasheet: https://sbacoustics.com/wp-content/uploads/2026/05/8-inch-SB23CACS45-4.pdf
-manu_page: https://sbacoustics.com/product/8in-sb23cacs45-4/
-vendor_page: null
 source: https://sbacoustics.com/product/8in-sb23cacs45-4/
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.3
-    winner: manu_page
-    sources:
-      manu_page: 3.3
-  Sd:  # effective piston area (m²)
-    value: 0.0216
-    winner: manu_page
-    sources:
-      manu_page: 0.0216
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00143
-    winner: manu_page
-    sources:
-      manu_page: 0.00143
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0065
-    winner: manu_page
-    sources:
-      manu_page: 0.0065
-  Qes:  # electrical Q factor
-    value: 0.35
-    winner: manu_page
-    sources:
-      manu_page: 0.35
-  BL:  # force factor (T·m)
-    value: 6.7
-    winner: manu_page
-    sources:
-      manu_page: 6.7
-  Qts:  # total Q factor
-    value: 0.33
-    winner: manu_page
-    sources:
-      manu_page: 0.33
-  Qms:  # mechanical Q factor
-    value: 6.0
-    winner: manu_page
-    sources:
-      manu_page: 6.0
   Le:  # voice coil inductance (H)
     value: 0.00027
     winner: manu_page
     sources:
       manu_page: 0.00027
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.095
+    winner: manu_page
+    sources:
+      manu_page: 0.095
+  Qes:  # electrical Q factor
+    value: 0.35
+    winner: manu_page
+    sources:
+      manu_page: 0.35
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.033
+    winner: manu_page
+    sources:
+      manu_page: 0.033
+  BL:  # force factor (T·m)
+    value: 6.7
+    winner: manu_page
+    sources:
+      manu_page: 6.7
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.3
+    winner: manu_page
+    sources:
+      manu_page: 3.3
   Pe:  # rated power input (W)
     value: 60.0
     winner: manu_page
@@ -71,21 +51,36 @@ specs:
     winner: manu_page
     sources:
       manu_page: 23.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.095
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0065
     winner: manu_page
     sources:
-      manu_page: 0.095
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.033
+      manu_page: 0.0065
+  Qts:  # total Q factor
+    value: 0.33
     winner: manu_page
     sources:
-      manu_page: 0.033
+      manu_page: 0.33
+  Qms:  # mechanical Q factor
+    value: 6.0
+    winner: manu_page
+    sources:
+      manu_page: 6.0
+  Sd:  # effective piston area (m²)
+    value: 0.0216
+    winner: manu_page
+    sources:
+      manu_page: 0.0216
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: manu_page
     sources:
       manu_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00143
+    winner: manu_page
+    sources:
+      manu_page: 0.00143
   voice_coil_dia_mm:  # voice coil diameter (mm)
     value: 45.5
     winner: manu_page
@@ -104,3 +99,8 @@ specs:
 _sources:
   datasheet: https://sbacoustics.com/wp-content/uploads/2026/05/8-inch-SB23CACS45-4.pdf
   manu_page: https://sbacoustics.com/product/8in-sb23cacs45-4/
+datasheet_url: https://sbacoustics.com/wp-content/uploads/2026/05/8-inch-SB23CACS45-4.pdf
+manu_page_url: https://sbacoustics.com/product/8in-sb23cacs45-4/
+vendor_page_url: null
+frd_url: null
+zma_url: null

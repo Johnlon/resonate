@@ -6,65 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: fullrange
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/294-6048--bc-4cxn36-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/B-C-4CXN36-4-Professional-Coaxial-Speaker-70-x-70-8-Ohm-294-6048
 source: https://www.parts-express.com/B-C-4CXN36-4-Professional-Coaxial-Speaker-70-x-70-8-Ohm-294-6048
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-6048
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.4
-    winner: vendor_page
-    sources:
-      vendor_page: 5.4
-  Sd:  # effective piston area (m²)
-    value: 0.0056
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0056
-  Xmax:  # one-way linear excursion (m)
-    value: 0.004
-    winner: vendor_page
-    sources:
-      vendor_page: 0.004
-  Qes:  # electrical Q factor
-    value: 0.8
-    winner: vendor_page
-    sources:
-      vendor_page: 0.8
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.25499759037137726
-    winner: vendor_page
-    sources:
-      vendor_page: 0.25499759037137726
-  BL:  # force factor (T·m)
-    value: 5.25
-    winner: vendor_page
-    sources:
-      vendor_page: 5.25
-  Qts:  # total Q factor
-    value: 0.76
-    winner: vendor_page
-    sources:
-      vendor_page: 0.76
-  Qms:  # mechanical Q factor
-    value: 15.75
-    winner: vendor_page
-    sources:
-      vendor_page: 15.75
   Le:  # voice coil inductance (H)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.001982176
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001982176
+  Qes:  # electrical Q factor
+    value: 0.8
+    winner: vendor_page
+    sources:
+      vendor_page: 0.8
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0068
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0068
+  BL:  # force factor (T·m)
+    value: 5.25
+    winner: vendor_page
+    sources:
+      vendor_page: 5.25
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.4
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4
   Pe:  # rated power input (W)
     value: 4.0
     winner: vendor_page
@@ -75,16 +52,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 94.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.001982176
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.25499759037137726
     winner: vendor_page
     sources:
-      vendor_page: 0.001982176
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0068
+      vendor_page: 0.25499759037137726
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
     winner: vendor_page
     sources:
-      vendor_page: 0.0068
+      vendor_page: 0.004
+  Qts:  # total Q factor
+    value: 0.76
+    winner: vendor_page
+    sources:
+      vendor_page: 0.76
+  Qms:  # mechanical Q factor
+    value: 15.75
+    winner: vendor_page
+    sources:
+      vendor_page: 15.75
+  Sd:  # effective piston area (m²)
+    value: 0.0056
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0056
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -93,3 +85,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/294-6048--bc-4cxn36-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/B-C-4CXN36-4-Professional-Coaxial-Speaker-70-x-70-8-Ohm-294-6048
+datasheet_url: https://www.parts-express.com/pedocs/specs/294-6048--bc-4cxn36-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/B-C-4CXN36-4-Professional-Coaxial-Speaker-70-x-70-8-Ohm-294-6048
+frd_url: null
+zma_url: null

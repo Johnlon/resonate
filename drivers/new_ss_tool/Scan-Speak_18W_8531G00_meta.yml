@@ -5,75 +5,53 @@ detail: 'Automatically scraped from Scan-Speak website. T/S parameters not human
 corrections: null
 reviewed_by: null
 driver_type: midwoofer
-series: Revelator
 nominal_size_cm: 18.0
-datasheet: https://www.scan-speak.dk/datasheet/pdf/18w-8531g00.pdf
-adv_datasheet: https://www.scan-speak.dk/datasheet/adv/18w-8531g00.pdf
-drawing: https://www.scan-speak.dk/datasheet/drw/18w-8531g00.png
-cad: https://www.scan-speak.dk/datasheet/3d/18w-8531g00.ZIP
-manu_page: https://www.scan-speak.dk/product/18w-8531g00/
-vendor_page: null
 source: https://www.scan-speak.dk/product/18w-8531g00/
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
-datasheet_fields:
-- BL
-- Cms
-- Fs
-- Le
-- Mms
-- Qes
-- Qms
-- Qts
-- Re
-- Sd
-- Vas
-- Xmax
-- Znom
-adv_datasheet_fields: null
-manu_page_fields:
-- BL
-- Fs
-- Qts
-- Re
-- SPL
-- Sd
-- Vas
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.8
+  Le:  # voice coil inductance (H)
+    value: 0.00035
     winner: manu_page
     sources:
-      manu_page: 5.8
-  Sd:  # effective piston area (m²)
-    value: 0.015
+      manu_page: 0.00035
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0582
     winner: manu_page
     sources:
-      manu_page: 0.015
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00185
-    winner: manu_page
-    sources:
-      manu_page: 0.00185
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0065
-    winner: manu_page
-    sources:
-      manu_page: 0.0065
+      manu_page: 0.0582
   Qes:  # electrical Q factor
     value: 0.39
     winner: manu_page
     sources:
       manu_page: 0.39
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.01759
+    winner: manu_page
+    sources:
+      manu_page: 0.01759
   BL:  # force factor (T·m)
     value: 6.8
     winner: manu_page
     sources:
       manu_page: 6.8
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.8
+    winner: manu_page
+    sources:
+      manu_page: 5.8
+  Fs:  # free air resonance (Hz)
+    value: 28.0
+    winner: manu_page
+    sources:
+      manu_page: 28.0
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0065
+    winner: manu_page
+    sources:
+      manu_page: 0.0065
   Qts:  # total Q factor
     value: 0.36
     winner: manu_page
@@ -84,47 +62,35 @@ specs:
     winner: manu_page
     sources:
       manu_page: 5.1
-  SPL:  # sensitivity (dB, 2.83 V/1 m)
-    value: 87.0
+  Sd:  # effective piston area (m²)
+    value: 0.015
     winner: manu_page
     sources:
-      manu_page: 87.0
-  Le:  # voice coil inductance (H)
-    value: 0.00035
-    winner: manu_page
-    sources:
-      manu_page: 0.00035
-  Fs:  # free air resonance (Hz)
-    value: 28.0
-    winner: manu_page
-    sources:
-      manu_page: 28.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0582
-    winner: manu_page
-    sources:
-      manu_page: 0.0582
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.01759
-    winner: manu_page
-    sources:
-      manu_page: 0.01759
+      manu_page: 0.015
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: manu_page
     sources:
       manu_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 3.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 87.0
     winner: manu_page
     sources:
-      manu_page: 3.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 52.0
+      manu_page: 87.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00185
     winner: manu_page
     sources:
-      manu_page: 52.0
+      manu_page: 0.00185
 _sources:
   datasheet: https://www.scan-speak.dk/datasheet/pdf/18w-8531g00.pdf
   adv_datasheet: https://www.scan-speak.dk/datasheet/adv/18w-8531g00.pdf
   manu_page: https://www.scan-speak.dk/product/18w-8531g00/
+datasheet_url: https://www.scan-speak.dk/datasheet/pdf/18w-8531g00.pdf
+adv_datasheet_url: https://www.scan-speak.dk/datasheet/adv/18w-8531g00.pdf
+drawing_url: https://www.scan-speak.dk/datasheet/drw/18w-8531g00.png
+cad_url: https://www.scan-speak.dk/datasheet/3d/18w-8531g00.ZIP
+manu_page_url: https://www.scan-speak.dk/product/18w-8531g00/
+vendor_page_url: null
+frd_url: null
+zma_url: null

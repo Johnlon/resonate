@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-9002--tang-band-w6-2313-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Tang-Band-W6-2313-6-1-2-Coaxial-Full-Range-Woofer-264-9002
 source: https://www.parts-express.com/Tang-Band-W6-2313-6-1-2-Coaxial-Full-Range-Woofer-264-9002
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.6
-    winner: vendor_page
-    sources:
-      vendor_page: 3.6
-  Sd:  # effective piston area (m²)
-    value: 0.0025670000000000003
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0025670000000000003
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00038
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00038
-  Xmax:  # one-way linear excursion (m)
-    value: 0.004
-    winner: vendor_page
-    sources:
-      vendor_page: 0.004
-  Qes:  # electrical Q factor
-    value: 0.41
-    winner: vendor_page
-    sources:
-      vendor_page: 0.41
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.3020388157319824
-    winner: vendor_page
-    sources:
-      vendor_page: 1.3020388157319824
-  BL:  # force factor (T·m)
-    value: 8.41
-    winner: vendor_page
-    sources:
-      vendor_page: 8.41
-  Qts:  # total Q factor
-    value: 0.38
-    winner: vendor_page
-    sources:
-      vendor_page: 0.38
-  Qms:  # mechanical Q factor
-    value: 6.02
-    winner: vendor_page
-    sources:
-      vendor_page: 6.02
   Le:  # voice coil inductance (H)
     value: 2.0e-05
     winner: vendor_page
     sources:
       vendor_page: 2.0e-05
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.010760384
+    winner: vendor_page
+    sources:
+      vendor_page: 0.010760384
+  Qes:  # electrical Q factor
+    value: 0.41
+    winner: vendor_page
+    sources:
+      vendor_page: 0.41
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.02495
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02495
+  BL:  # force factor (T·m)
+    value: 8.41
+    winner: vendor_page
+    sources:
+      vendor_page: 8.41
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.6
+    winner: vendor_page
+    sources:
+      vendor_page: 3.6
   Pe:  # rated power input (W)
     value: 45.0
     winner: vendor_page
@@ -76,31 +51,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 50.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.010760384
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.3020388157319824
     winner: vendor_page
     sources:
-      vendor_page: 0.010760384
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.02495
+      vendor_page: 1.3020388157319824
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
     winner: vendor_page
     sources:
-      vendor_page: 0.02495
+      vendor_page: 0.004
+  Qts:  # total Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  Qms:  # mechanical Q factor
+    value: 6.02
+    winner: vendor_page
+    sources:
+      vendor_page: 6.02
+  Sd:  # effective piston area (m²)
+    value: 0.0025670000000000003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0025670000000000003
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 50.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00038
     winner: vendor_page
     sources:
-      vendor_page: 50.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 40000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 40000.0
+      vendor_page: 0.00038
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-9002--tang-band-w6-2313-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Tang-Band-W6-2313-6-1-2-Coaxial-Full-Range-Woofer-264-9002
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-9002--tang-band-w6-2313-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Tang-Band-W6-2313-6-1-2-Coaxial-Full-Range-Woofer-264-9002
+frd_url: null
+zma_url: null

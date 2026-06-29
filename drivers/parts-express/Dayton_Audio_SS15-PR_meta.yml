@@ -6,55 +6,12 @@ corrections: null
 reviewed_by: null
 driver_type: passive_radiator
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-SS15-PR-15-Signature-Series-Passive-Radiator-295-735
 source: https://www.parts-express.com/Dayton-Audio-SS15-PR-15-Signature-Series-Passive-Radiator-295-735
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Re
 community: null
 fetched_sku: 295-735
 specs:
-  Sd:  # effective piston area (m²)
-    value: 0.08043
-    winner: vendor_page
-    sources:
-      vendor_page: 0.08043
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00016900000000000002
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00016900000000000002
-  Xmax:  # one-way linear excursion (m)
-    value: 0.035
-    winner: vendor_page
-    sources:
-      vendor_page: 0.035
-  Rms:  # mechanical resistance (kg/s)
-    value: 6.264540840392702
-    winner: vendor_page
-    sources:
-      vendor_page: 6.264540840392702
-  BL:  # force factor (T·m)
-    value: 8.0
-    winner: vendor_page
-    sources:
-      vendor_page: 8.0
-  Qms:  # mechanical Q factor
-    value: 6.74
-    winner: vendor_page
-    sources:
-      vendor_page: 6.74
-  Fs:  # free air resonance (Hz)
-    value: 22.4
-    winner: vendor_page
-    sources:
-      vendor_page: 22.4
   Vas:  # equivalent acoustic volume (m³)
     value: 0.155176064
     winner: vendor_page
@@ -65,5 +22,48 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 0.3
+  BL:  # force factor (T·m)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  Fs:  # free air resonance (Hz)
+    value: 22.4
+    winner: vendor_page
+    sources:
+      vendor_page: 22.4
+  Rms:  # mechanical resistance (kg/s)
+    value: 6.264540840392702
+    winner: vendor_page
+    sources:
+      vendor_page: 6.264540840392702
+  Xmax:  # one-way linear excursion (m)
+    value: 0.035
+    winner: vendor_page
+    sources:
+      vendor_page: 0.035
+  Qms:  # mechanical Q factor
+    value: 6.74
+    winner: vendor_page
+    sources:
+      vendor_page: 6.74
+  Sd:  # effective piston area (m²)
+    value: 0.08043
+    winner: vendor_page
+    sources:
+      vendor_page: 0.08043
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00016900000000000002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00016900000000000002
 _sources:
   vendor_page: https://www.parts-express.com/Dayton-Audio-SS15-PR-15-Signature-Series-Passive-Radiator-295-735
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-SS15-PR-15-Signature-Series-Passive-Radiator-295-735
+frd_url: null
+zma_url: null

@@ -7,65 +7,42 @@ corrections: '''Qts'' stored=0.31 differs from calculated=0.31751 (deps: Qms=4.8
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/294-5988--bc-15sw100-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/B-C-15SW100-15-Professional-Neodymium-Subwoofer-8-Ohm-294-5988
 source: https://www.parts-express.com/B-C-15SW100-15-Professional-Neodymium-Subwoofer-8-Ohm-294-5988
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-5988
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.0
-    winner: vendor_page
-    sources:
-      vendor_page: 5.0
-  Sd:  # effective piston area (m²)
-    value: 0.0855
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0855
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0125
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0125
-  Qes:  # electrical Q factor
-    value: 0.34
-    winner: vendor_page
-    sources:
-      vendor_page: 0.34
-  Rms:  # mechanical resistance (kg/s)
-    value: 8.524188066740306
-    winner: vendor_page
-    sources:
-      vendor_page: 8.524188066740306
-  BL:  # force factor (T·m)
-    value: 25.6
-    winner: vendor_page
-    sources:
-      vendor_page: 25.6
-  Qts:  # total Q factor
-    value: 0.31
-    winner: vendor_page
-    sources:
-      vendor_page: 0.31
-  Qms:  # mechanical Q factor
-    value: 4.8
-    winner: vendor_page
-    sources:
-      vendor_page: 4.8
   Le:  # voice coil inductance (H)
     value: 0.0022
     winner: vendor_page
     sources:
       vendor_page: 0.0022
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.11043552
+    winner: vendor_page
+    sources:
+      vendor_page: 0.11043552
+  Qes:  # electrical Q factor
+    value: 0.34
+    winner: vendor_page
+    sources:
+      vendor_page: 0.34
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.176
+    winner: vendor_page
+    sources:
+      vendor_page: 0.176
+  BL:  # force factor (T·m)
+    value: 25.6
+    winner: vendor_page
+    sources:
+      vendor_page: 25.6
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
   Pe:  # rated power input (W)
     value: 3000.0
     winner: vendor_page
@@ -76,16 +53,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 37.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.11043552
+  Rms:  # mechanical resistance (kg/s)
+    value: 8.524188066740306
     winner: vendor_page
     sources:
-      vendor_page: 0.11043552
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.176
+      vendor_page: 8.524188066740306
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0125
     winner: vendor_page
     sources:
-      vendor_page: 0.176
+      vendor_page: 0.0125
+  Qts:  # total Q factor
+    value: 0.31
+    winner: vendor_page
+    sources:
+      vendor_page: 0.31
+  Qms:  # mechanical Q factor
+    value: 4.8
+    winner: vendor_page
+    sources:
+      vendor_page: 4.8
+  Sd:  # effective piston area (m²)
+    value: 0.0855
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0855
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -94,3 +86,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/294-5988--bc-15sw100-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/B-C-15SW100-15-Professional-Neodymium-Subwoofer-8-Ohm-294-5988
+datasheet_url: https://www.parts-express.com/pedocs/specs/294-5988--bc-15sw100-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/B-C-15SW100-15-Professional-Neodymium-Subwoofer-8-Ohm-294-5988
+frd_url: null
+zma_url: null

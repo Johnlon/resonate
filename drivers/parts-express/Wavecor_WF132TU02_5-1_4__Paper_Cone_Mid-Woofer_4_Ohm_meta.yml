@@ -4,63 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/298-1162--wavecor-wf132tu02-specifications.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Wavecor-WF132TU02-5-1-4-Paper-Cone-Mid-Woofer-4-Ohm-298-1162
 source: https://www.parts-express.com/Wavecor-WF132TU02-5-1-4-Paper-Cone-Mid-Woofer-4-Ohm-298-1162
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: woofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.2
-    winner: vendor_page
-    sources:
-      vendor_page: 3.2
-  Sd:  # effective piston area (m²)
-    value: 0.0095
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0095
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00066
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00066
-  Qes:  # electrical Q factor
-    value: 0.46
-    winner: vendor_page
-    sources:
-      vendor_page: 0.46
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.4869468613064179
-    winner: vendor_page
-    sources:
-      vendor_page: 0.4869468613064179
-  BL:  # force factor (T·m)
-    value: 5.2
-    winner: vendor_page
-    sources:
-      vendor_page: 5.2
-  Qts:  # total Q factor
-    value: 0.44
-    winner: vendor_page
-    sources:
-      vendor_page: 0.44
-  Qms:  # mechanical Q factor
-    value: 8.0
-    winner: vendor_page
-    sources:
-      vendor_page: 8.0
   Le:  # voice coil inductance (H)
     value: 0.00023
     winner: vendor_page
     sources:
       vendor_page: 0.00023
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.009061376
+    winner: vendor_page
+    sources:
+      vendor_page: 0.009061376
+  Qes:  # electrical Q factor
+    value: 0.46
+    winner: vendor_page
+    sources:
+      vendor_page: 0.46
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.01
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01
+  BL:  # force factor (T·m)
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.2
+    winner: vendor_page
+    sources:
+      vendor_page: 3.2
   Pe:  # rated power input (W)
     value: 55.0
     winner: vendor_page
@@ -71,31 +51,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 62.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.009061376
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.4869468613064179
     winner: vendor_page
     sources:
-      vendor_page: 0.009061376
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.01
+      vendor_page: 0.4869468613064179
+  Qts:  # total Q factor
+    value: 0.44
     winner: vendor_page
     sources:
-      vendor_page: 0.01
+      vendor_page: 0.44
+  Qms:  # mechanical Q factor
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  Sd:  # effective piston area (m²)
+    value: 0.0095
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0095
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 62.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00066
     winner: vendor_page
     sources:
-      vendor_page: 62.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 4000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 4000.0
+      vendor_page: 0.00066
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/298-1162--wavecor-wf132tu02-specifications.pdf
   vendor_page: https://www.parts-express.com/Wavecor-WF132TU02-5-1-4-Paper-Cone-Mid-Woofer-4-Ohm-298-1162
+datasheet_url: https://www.parts-express.com/pedocs/specs/298-1162--wavecor-wf132tu02-specifications.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Wavecor-WF132TU02-5-1-4-Paper-Cone-Mid-Woofer-4-Ohm-298-1162
+frd_url: null
+zma_url: null

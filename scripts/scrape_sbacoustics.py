@@ -119,7 +119,7 @@ def parse_product(html: str, url: str) -> dict | None:
         "provided_by":   f"SB Acoustics website (scraped {__import__('datetime').date.today()})",
         "fields":        woofer_fields,
         "extra_specs":   extra_specs or None,
-        "pdf_url":       pdf_url,
+        "datasheet_url":   pdf_url,
         "extra_links":   [l[0] for l in extra],
     }
 

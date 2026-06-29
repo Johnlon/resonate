@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/290-662--eminence-beta-6a-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Eminence-Beta-6A-6-1-2-High-Power-Midbass-Woofer-290-662
 source: https://www.parts-express.com/Eminence-Beta-6A-6-1-2-High-Power-Midbass-Woofer-290-662
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.18
-    winner: vendor_page
-    sources:
-      vendor_page: 5.18
-  Sd:  # effective piston area (m²)
-    value: 0.01299
-    winner: vendor_page
-    sources:
-      vendor_page: 0.01299
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00015
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00015
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0045
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0045
-  Qes:  # electrical Q factor
-    value: 0.66
-    winner: vendor_page
-    sources:
-      vendor_page: 0.66
-  Rms:  # mechanical resistance (kg/s)
-    value: 2.4569796880387225
-    winner: vendor_page
-    sources:
-      vendor_page: 2.4569796880387225
-  BL:  # force factor (T·m)
-    value: 8.13
-    winner: vendor_page
-    sources:
-      vendor_page: 8.13
-  Qts:  # total Q factor
-    value: 0.56
-    winner: vendor_page
-    sources:
-      vendor_page: 0.56
-  Qms:  # mechanical Q factor
-    value: 3.46
-    winner: vendor_page
-    sources:
-      vendor_page: 3.46
   Le:  # voice coil inductance (H)
     value: 0.00043
     winner: vendor_page
     sources:
       vendor_page: 0.00043
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.003398016
+    winner: vendor_page
+    sources:
+      vendor_page: 0.003398016
+  Qes:  # electrical Q factor
+    value: 0.66
+    winner: vendor_page
+    sources:
+      vendor_page: 0.66
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.011
+    winner: vendor_page
+    sources:
+      vendor_page: 0.011
+  BL:  # force factor (T·m)
+    value: 8.13
+    winner: vendor_page
+    sources:
+      vendor_page: 8.13
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.18
+    winner: vendor_page
+    sources:
+      vendor_page: 5.18
   Pe:  # rated power input (W)
     value: 175.0
     winner: vendor_page
@@ -76,31 +51,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 123.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.003398016
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.4569796880387225
     winner: vendor_page
     sources:
-      vendor_page: 0.003398016
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.011
+      vendor_page: 2.4569796880387225
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0045
     winner: vendor_page
     sources:
-      vendor_page: 0.011
+      vendor_page: 0.0045
+  Qts:  # total Q factor
+    value: 0.56
+    winner: vendor_page
+    sources:
+      vendor_page: 0.56
+  Qms:  # mechanical Q factor
+    value: 3.46
+    winner: vendor_page
+    sources:
+      vendor_page: 3.46
+  Sd:  # effective piston area (m²)
+    value: 0.01299
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01299
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 95.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00015
     winner: vendor_page
     sources:
-      vendor_page: 95.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 4000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 4000.0
+      vendor_page: 0.00015
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/290-662--eminence-beta-6a-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Eminence-Beta-6A-6-1-2-High-Power-Midbass-Woofer-290-662
+datasheet_url: https://www.parts-express.com/pedocs/specs/290-662--eminence-beta-6a-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Eminence-Beta-6A-6-1-2-High-Power-Midbass-Woofer-290-662
+frd_url: null
+zma_url: null

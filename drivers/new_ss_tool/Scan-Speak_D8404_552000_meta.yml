@@ -5,76 +5,53 @@ detail: 'Automatically scraped from Scan-Speak website. T/S parameters not human
 corrections: null
 reviewed_by: null
 driver_type: midrange
-series: Ellipticor
 nominal_size_cm: 8.4
-datasheet: https://www.scan-speak.dk/datasheet/pdf/d8404-552000.pdf
-adv_datasheet: https://www.scan-speak.dk/datasheet/adv/d8404-552000.pdf
-drawing: https://www.scan-speak.dk/datasheet/drw/d8404-552000.png
-cad: https://www.scan-speak.dk/datasheet/3d/d8404-552000.zip
-manu_page: https://www.scan-speak.dk/product/d8404-552000/
-vendor_page: null
 source: https://www.scan-speak.dk/product/d8404-552000/
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
-datasheet_fields:
-- BL
-- Cms
-- Fs
-- Le
-- Mms
-- Qes
-- Qms
-- Qts
-- Re
-- SPL
-- Sd
-- Vas
-- Xmax
-- Znom
-adv_datasheet_fields: null
-manu_page_fields:
-- BL
-- Fs
-- Qts
-- Re
-- SPL
-- Sd
-- Vas
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.0
+  Le:  # voice coil inductance (H)
+    value: 4.0e-05
     winner: manu_page
     sources:
-      manu_page: 3.0
-  Sd:  # effective piston area (m²)
-    value: 0.0058
+      manu_page: 4.0e-05
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00027
     winner: manu_page
     sources:
-      manu_page: 0.0058
-  Cms:  # mechanical compliance (m/N)
-    value: 6.0e-05
-    winner: manu_page
-    sources:
-      manu_page: 6.0e-05
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0024
-    winner: manu_page
-    sources:
-      manu_page: 0.0024
+      manu_page: 0.00027
   Qes:  # electrical Q factor
     value: 0.83
     winner: manu_page
     sources:
       manu_page: 0.83
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00575
+    winner: manu_page
+    sources:
+      manu_page: 0.00575
   BL:  # force factor (T·m)
     value: 6.1
     winner: manu_page
     sources:
       manu_page: 6.1
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.0
+    winner: manu_page
+    sources:
+      manu_page: 3.0
+  Fs:  # free air resonance (Hz)
+    value: 280.0
+    winner: manu_page
+    sources:
+      manu_page: 280.0
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0024
+    winner: manu_page
+    sources:
+      manu_page: 0.0024
   Qts:  # total Q factor
     value: 0.69
     winner: manu_page
@@ -85,47 +62,35 @@ specs:
     winner: manu_page
     sources:
       manu_page: 3.89
-  SPL:  # sensitivity (dB, 2.83 V/1 m)
-    value: 92.0
+  Sd:  # effective piston area (m²)
+    value: 0.0058
     winner: manu_page
     sources:
-      manu_page: 92.0
-  Le:  # voice coil inductance (H)
-    value: 4.0e-05
-    winner: manu_page
-    sources:
-      manu_page: 4.0e-05
-  Fs:  # free air resonance (Hz)
-    value: 280.0
-    winner: manu_page
-    sources:
-      manu_page: 280.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.00027
-    winner: manu_page
-    sources:
-      manu_page: 0.00027
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.00575
-    winner: manu_page
-    sources:
-      manu_page: 0.00575
+      manu_page: 0.0058
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: manu_page
     sources:
       manu_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 300.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 92.0
     winner: manu_page
     sources:
-      manu_page: 300.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 5000.0
+      manu_page: 92.0
+  Cms:  # mechanical compliance (m/N)
+    value: 6.0e-05
     winner: manu_page
     sources:
-      manu_page: 5000.0
+      manu_page: 6.0e-05
 _sources:
   datasheet: https://www.scan-speak.dk/datasheet/pdf/d8404-552000.pdf
   adv_datasheet: https://www.scan-speak.dk/datasheet/adv/d8404-552000.pdf
   manu_page: https://www.scan-speak.dk/product/d8404-552000/
+datasheet_url: https://www.scan-speak.dk/datasheet/pdf/d8404-552000.pdf
+adv_datasheet_url: https://www.scan-speak.dk/datasheet/adv/d8404-552000.pdf
+drawing_url: https://www.scan-speak.dk/datasheet/drw/d8404-552000.png
+cad_url: https://www.scan-speak.dk/datasheet/3d/d8404-552000.zip
+manu_page_url: https://www.scan-speak.dk/product/d8404-552000/
+vendor_page_url: null
+frd_url: null
+zma_url: null

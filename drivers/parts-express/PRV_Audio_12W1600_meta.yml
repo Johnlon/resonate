@@ -7,70 +7,42 @@ corrections: '''Vas'' stored=0.0470059 differs from calculated=0.047549 (deps: r
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/PRV-Audio-12W1600-12-Professional-Woofer-8-Ohm-294-2990
 source: https://www.parts-express.com/PRV-Audio-12W1600-12-Professional-Woofer-8-Ohm-294-2990
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-2990
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.1
-    winner: vendor_page
-    sources:
-      vendor_page: 5.1
-  Sd:  # effective piston area (m²)
-    value: 0.0594
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0594
-  Cms:  # mechanical compliance (m/N)
-    value: 9.5e-05
-    winner: vendor_page
-    sources:
-      vendor_page: 9.5e-05
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0105
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0105
-  Qes:  # electrical Q factor
-    value: 0.4
-    winner: vendor_page
-    sources:
-      vendor_page: 0.4
-  Rms:  # mechanical resistance (kg/s)
-    value: 2.1724352279388177
-    winner: vendor_page
-    sources:
-      vendor_page: 2.1724352279388177
-  BL:  # force factor (T·m)
-    value: 20.35
-    winner: vendor_page
-    sources:
-      vendor_page: 20.35
-  Qts:  # total Q factor
-    value: 0.39
-    winner: vendor_page
-    sources:
-      vendor_page: 0.39
-  Qms:  # mechanical Q factor
-    value: 14.98
-    winner: vendor_page
-    sources:
-      vendor_page: 14.98
   Le:  # voice coil inductance (H)
     value: 0.00126
     winner: vendor_page
     sources:
       vendor_page: 0.00126
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.047005887999999996
+    winner: vendor_page
+    sources:
+      vendor_page: 0.047005887999999996
+  Qes:  # electrical Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.10116
+    winner: vendor_page
+    sources:
+      vendor_page: 0.10116
+  BL:  # force factor (T·m)
+    value: 20.35
+    winner: vendor_page
+    sources:
+      vendor_page: 20.35
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.1
+    winner: vendor_page
+    sources:
+      vendor_page: 5.1
   Pe:  # rated power input (W)
     value: 800.0
     winner: vendor_page
@@ -81,21 +53,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 51.2
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.047005887999999996
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.1724352279388177
     winner: vendor_page
     sources:
-      vendor_page: 0.047005887999999996
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.10116
+      vendor_page: 2.1724352279388177
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0105
     winner: vendor_page
     sources:
-      vendor_page: 0.10116
+      vendor_page: 0.0105
+  Qts:  # total Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Qms:  # mechanical Q factor
+    value: 14.98
+    winner: vendor_page
+    sources:
+      vendor_page: 14.98
+  Sd:  # effective piston area (m²)
+    value: 0.0594
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0594
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 9.5e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 9.5e-05
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 800.0
     winner: vendor_page
@@ -113,3 +105,11 @@ specs:
       vendor_page: 2.0
 _sources:
   vendor_page: https://www.parts-express.com/PRV-Audio-12W1600-12-Professional-Woofer-8-Ohm-294-2990
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/PRV-Audio-12W1600-12-Professional-Woofer-8-Ohm-294-2990
+frd_url: null
+zma_url: null

@@ -4,67 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/seas-l26ro4y.html
 source: https://www.soundimports.eu/en/seas-l26ro4y.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.5
-    winner: vendor_page
-    sources:
-      vendor_page: 3.5
-  Sd:  # effective piston area (m²)
-    value: 0.0342
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0342
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00024
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00024
-  Xmax:  # one-way linear excursion (m)
-    value: 0.015
-    winner: vendor_page
-    sources:
-      vendor_page: 0.015
-  Qes:  # electrical Q factor
-    value: 0.29
-    winner: vendor_page
-    sources:
-      vendor_page: 0.29
-  Rms:  # mechanical resistance (kg/s)
-    value: 6.53
-    winner: vendor_page
-    sources:
-      vendor_page: 6.53
-  BL:  # force factor (T·m)
-    value: 17.7
-    winner: vendor_page
-    sources:
-      vendor_page: 17.7
-  Qts:  # total Q factor
-    value: 0.27
-    winner: vendor_page
-    sources:
-      vendor_page: 0.27
-  Qms:  # mechanical Q factor
-    value: 3.94
-    winner: vendor_page
-    sources:
-      vendor_page: 3.94
   Le:  # voice coil inductance (H)
     value: 0.00233
     winner: vendor_page
     sources:
       vendor_page: 0.00233
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.04
+    winner: vendor_page
+    sources:
+      vendor_page: 0.04
+  Qes:  # electrical Q factor
+    value: 0.29
+    winner: vendor_page
+    sources:
+      vendor_page: 0.29
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.16
+    winner: vendor_page
+    sources:
+      vendor_page: 0.16
+  BL:  # force factor (T·m)
+    value: 17.7
+    winner: vendor_page
+    sources:
+      vendor_page: 17.7
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.5
+    winner: vendor_page
+    sources:
+      vendor_page: 3.5
   Pe:  # rated power input (W)
     value: 250.0
     winner: vendor_page
@@ -75,20 +50,45 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 26.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.04
+  Rms:  # mechanical resistance (kg/s)
+    value: 6.53
     winner: vendor_page
     sources:
-      vendor_page: 0.04
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.16
+      vendor_page: 6.53
+  Xmax:  # one-way linear excursion (m)
+    value: 0.015
     winner: vendor_page
     sources:
-      vendor_page: 0.16
+      vendor_page: 0.015
+  Qts:  # total Q factor
+    value: 0.27
+    winner: vendor_page
+    sources:
+      vendor_page: 0.27
+  Qms:  # mechanical Q factor
+    value: 3.94
+    winner: vendor_page
+    sources:
+      vendor_page: 3.94
+  Sd:  # effective piston area (m²)
+    value: 0.0342
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0342
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00024
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00024
 _sources:
   vendor_page: https://www.soundimports.eu/en/seas-l26ro4y.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/seas-l26ro4y.html
+frd_url: null
+zma_url: null

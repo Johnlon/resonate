@@ -6,25 +6,12 @@ corrections: null
 reviewed_by: null
 driver_type: tweeter
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/276-402-aurum-cantus-g2-specifications.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Aurum-Cantus-G2-Ribbon-Tweeter-276-402
 source: https://www.parts-express.com/Aurum-Cantus-G2-Ribbon-Tweeter-276-402
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 276-402
 specs:
-  Sd:  # effective piston area (m²)
-    value: 0.000595
-    winner: vendor_page
-    sources:
-      vendor_page: 0.000595
   Pe:  # rated power input (W)
     value: 40.0
     winner: vendor_page
@@ -35,6 +22,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 96.0
+  Sd:  # effective piston area (m²)
+    value: 0.000595
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000595
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -43,3 +35,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/276-402-aurum-cantus-g2-specifications.pdf
   vendor_page: https://www.parts-express.com/Aurum-Cantus-G2-Ribbon-Tweeter-276-402
+datasheet_url: https://www.parts-express.com/pedocs/specs/276-402-aurum-cantus-g2-specifications.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Aurum-Cantus-G2-Ribbon-Tweeter-276-402
+frd_url: null
+zma_url: null

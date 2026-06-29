@@ -4,57 +4,37 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://doc.soundimports.nl/pdf/brands/Markaudio/CHN-110/CHN110.pdf
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/markaudio-chn-110.html
 source: https://www.soundimports.eu/en/markaudio-chn-110.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.8
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0247335
     winner: vendor_page
     sources:
-      vendor_page: 6.8
-  Sd:  # effective piston area (m²)
-    value: 0.0109
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0109
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0014811
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0014811
-  Xmax:  # one-way linear excursion (m)
-    value: 0.008
-    winner: vendor_page
-    sources:
-      vendor_page: 0.008
+      vendor_page: 0.0247335
   Qes:  # electrical Q factor
     value: 0.4884
     winner: vendor_page
     sources:
       vendor_page: 0.4884
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00877
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00877
   BL:  # force factor (T·m)
     value: 5.8206
     winner: vendor_page
     sources:
       vendor_page: 5.8206
-  Qts:  # total Q factor
-    value: 0.4172
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.8
     winner: vendor_page
     sources:
-      vendor_page: 0.4172
-  Qms:  # mechanical Q factor
-    value: 2.86
-    winner: vendor_page
-    sources:
-      vendor_page: 2.86
+      vendor_page: 6.8
   Pe:  # rated power input (W)
     value: 45.0
     winner: vendor_page
@@ -65,21 +45,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 44.2
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0247335
+  Xmax:  # one-way linear excursion (m)
+    value: 0.008
     winner: vendor_page
     sources:
-      vendor_page: 0.0247335
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.00877
+      vendor_page: 0.008
+  Qts:  # total Q factor
+    value: 0.4172
     winner: vendor_page
     sources:
-      vendor_page: 0.00877
+      vendor_page: 0.4172
+  Qms:  # mechanical Q factor
+    value: 2.86
+    winner: vendor_page
+    sources:
+      vendor_page: 2.86
+  Sd:  # effective piston area (m²)
+    value: 0.0109
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0109
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0014811
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0014811
 _sources:
   datasheet: https://doc.soundimports.nl/pdf/brands/Markaudio/CHN-110/CHN110.pdf
   vendor_page: https://www.soundimports.eu/en/markaudio-chn-110.html
+datasheet_url: https://doc.soundimports.nl/pdf/brands/Markaudio/CHN-110/CHN110.pdf
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/markaudio-chn-110.html
+frd_url: null
+zma_url: null

@@ -5,76 +5,53 @@ detail: 'Automatically scraped from Scan-Speak website. T/S parameters not human
 corrections: null
 reviewed_by: null
 driver_type: midwoofer
-series: Revelator
 nominal_size_cm: 15.0
-datasheet: https://www.scan-speak.dk/datasheet/pdf/15w-4531g00.pdf
-adv_datasheet: https://www.scan-speak.dk/datasheet/adv/15w-4531g00.pdf
-drawing: https://www.scan-speak.dk/datasheet/drw/15w-4531g00.png
-cad: https://www.scan-speak.dk/datasheet/3d/15w-4531g00.ZIP
-manu_page: https://www.scan-speak.dk/product/15w-4531g00/
-vendor_page: null
 source: https://www.scan-speak.dk/product/15w-4531g00/
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
-datasheet_fields:
-- BL
-- Cms
-- Fs
-- Le
-- Mms
-- Qes
-- Qms
-- Qts
-- Re
-- SPL
-- Sd
-- Vas
-- Xmax
-- Znom
-adv_datasheet_fields: null
-manu_page_fields:
-- BL
-- Fs
-- Qts
-- Re
-- SPL
-- Sd
-- Vas
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.4
+  Le:  # voice coil inductance (H)
+    value: 0.00025
     winner: manu_page
     sources:
-      manu_page: 3.4
-  Sd:  # effective piston area (m²)
-    value: 0.0095
+      manu_page: 0.00025
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0158
     winner: manu_page
     sources:
-      manu_page: 0.0095
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00125
-    winner: manu_page
-    sources:
-      manu_page: 0.00125
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0065
-    winner: manu_page
-    sources:
-      manu_page: 0.0065
+      manu_page: 0.0158
   Qes:  # electrical Q factor
     value: 0.34
     winner: manu_page
     sources:
       manu_page: 0.34
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.013
+    winner: manu_page
+    sources:
+      manu_page: 0.013
   BL:  # force factor (T·m)
     value: 5.7
     winner: manu_page
     sources:
       manu_page: 5.7
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.4
+    winner: manu_page
+    sources:
+      manu_page: 3.4
+  Fs:  # free air resonance (Hz)
+    value: 40.0
+    winner: manu_page
+    sources:
+      manu_page: 40.0
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0065
+    winner: manu_page
+    sources:
+      manu_page: 0.0065
   Qts:  # total Q factor
     value: 0.32
     winner: manu_page
@@ -85,37 +62,35 @@ specs:
     winner: manu_page
     sources:
       manu_page: 4.6
-  SPL:  # sensitivity (dB, 2.83 V/1 m)
-    value: 87.0
+  Sd:  # effective piston area (m²)
+    value: 0.0095
     winner: manu_page
     sources:
-      manu_page: 87.0
-  Le:  # voice coil inductance (H)
-    value: 0.00025
-    winner: manu_page
-    sources:
-      manu_page: 0.00025
-  Fs:  # free air resonance (Hz)
-    value: 40.0
-    winner: manu_page
-    sources:
-      manu_page: 40.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0158
-    winner: manu_page
-    sources:
-      manu_page: 0.0158
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.013
-    winner: manu_page
-    sources:
-      manu_page: 0.013
+      manu_page: 0.0095
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: manu_page
     sources:
       manu_page: 4.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 87.0
+    winner: manu_page
+    sources:
+      manu_page: 87.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00125
+    winner: manu_page
+    sources:
+      manu_page: 0.00125
 _sources:
   datasheet: https://www.scan-speak.dk/datasheet/pdf/15w-4531g00.pdf
   adv_datasheet: https://www.scan-speak.dk/datasheet/adv/15w-4531g00.pdf
   manu_page: https://www.scan-speak.dk/product/15w-4531g00/
+datasheet_url: https://www.scan-speak.dk/datasheet/pdf/15w-4531g00.pdf
+adv_datasheet_url: https://www.scan-speak.dk/datasheet/adv/15w-4531g00.pdf
+drawing_url: https://www.scan-speak.dk/datasheet/drw/15w-4531g00.png
+cad_url: https://www.scan-speak.dk/datasheet/3d/15w-4531g00.ZIP
+manu_page_url: https://www.scan-speak.dk/product/15w-4531g00/
+vendor_page_url: null
+frd_url: null
+zma_url: null

@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Goldwood-GW-4028-S-4-Woofer-Shielded-290-373
 source: https://www.parts-express.com/Goldwood-GW-4028-S-4-Woofer-Shielded-290-373
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: woofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 7.1
-    winner: vendor_page
-    sources:
-      vendor_page: 7.1
-  Sd:  # effective piston area (m²)
-    value: 0.00495
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00495
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00061
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00061
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0015
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0015
-  Qes:  # electrical Q factor
-    value: 1.0
-    winner: vendor_page
-    sources:
-      vendor_page: 1.0
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.305331747566559
-    winner: vendor_page
-    sources:
-      vendor_page: 1.305331747566559
-  BL:  # force factor (T·m)
-    value: 4.8
-    winner: vendor_page
-    sources:
-      vendor_page: 4.8
-  Qts:  # total Q factor
-    value: 0.7
-    winner: vendor_page
-    sources:
-      vendor_page: 0.7
-  Qms:  # mechanical Q factor
-    value: 2.4
-    winner: vendor_page
-    sources:
-      vendor_page: 2.4
   Le:  # voice coil inductance (H)
     value: 0.0004
     winner: vendor_page
     sources:
       vendor_page: 0.0004
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.001982176
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001982176
+  Qes:  # electrical Q factor
+    value: 1.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.006
+    winner: vendor_page
+    sources:
+      vendor_page: 0.006
+  BL:  # force factor (T·m)
+    value: 4.8
+    winner: vendor_page
+    sources:
+      vendor_page: 4.8
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.1
+    winner: vendor_page
+    sources:
+      vendor_page: 7.1
   Pe:  # rated power input (W)
     value: 40.0
     winner: vendor_page
@@ -76,30 +51,45 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 83.1
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.001982176
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.305331747566559
     winner: vendor_page
     sources:
-      vendor_page: 0.001982176
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.006
+      vendor_page: 1.305331747566559
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0015
     winner: vendor_page
     sources:
-      vendor_page: 0.006
+      vendor_page: 0.0015
+  Qts:  # total Q factor
+    value: 0.7
+    winner: vendor_page
+    sources:
+      vendor_page: 0.7
+  Qms:  # mechanical Q factor
+    value: 2.4
+    winner: vendor_page
+    sources:
+      vendor_page: 2.4
+  Sd:  # effective piston area (m²)
+    value: 0.00495
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00495
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 70.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00061
     winner: vendor_page
     sources:
-      vendor_page: 70.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 10000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 10000.0
+      vendor_page: 0.00061
 _sources:
   vendor_page: https://www.parts-express.com/Goldwood-GW-4028-S-4-Woofer-Shielded-290-373
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Goldwood-GW-4028-S-4-Woofer-Shielded-290-373
+frd_url: null
+zma_url: null

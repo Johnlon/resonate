@@ -4,48 +4,33 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-816--tang-band-w4-2414-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Tang-Band-W4-2414-F-Series-4-Full-Range-with-Phase-Plug-8-Ohm-264-816
 source: https://www.parts-express.com/Tang-Band-W4-2414-F-Series-4-Full-Range-with-Phase-Plug-8-Ohm-264-816
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0025
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.003964352
     winner: vendor_page
     sources:
-      vendor_page: 0.0025
+      vendor_page: 0.003964352
   Qes:  # electrical Q factor
     value: 0.47
     winner: vendor_page
     sources:
       vendor_page: 0.47
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.7460431940546446
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.005059999999999999
     winner: vendor_page
     sources:
-      vendor_page: 0.7460431940546446
+      vendor_page: 0.005059999999999999
   BL:  # force factor (T·m)
     value: 5.49
     winner: vendor_page
     sources:
       vendor_page: 5.49
-  Qts:  # total Q factor
-    value: 0.4
-    winner: vendor_page
-    sources:
-      vendor_page: 0.4
-  Qms:  # mechanical Q factor
-    value: 2.77
-    winner: vendor_page
-    sources:
-      vendor_page: 2.77
   Pe:  # rated power input (W)
     value: 25.0
     winner: vendor_page
@@ -56,16 +41,26 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 65.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.003964352
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.7460431940546446
     winner: vendor_page
     sources:
-      vendor_page: 0.003964352
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.005059999999999999
+      vendor_page: 0.7460431940546446
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0025
     winner: vendor_page
     sources:
-      vendor_page: 0.005059999999999999
+      vendor_page: 0.0025
+  Qts:  # total Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Qms:  # mechanical Q factor
+    value: 2.77
+    winner: vendor_page
+    sources:
+      vendor_page: 2.77
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -84,3 +79,8 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-816--tang-band-w4-2414-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Tang-Band-W4-2414-F-Series-4-Full-Range-with-Phase-Plug-8-Ohm-264-816
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-816--tang-band-w4-2414-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Tang-Band-W4-2414-F-Series-4-Full-Range-with-Phase-Plug-8-Ohm-264-816
+frd_url: null
+zma_url: null

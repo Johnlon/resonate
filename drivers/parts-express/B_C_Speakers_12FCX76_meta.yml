@@ -6,65 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: fullrange
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/B-C-12FCX76-12-Professional-Coaxial-Speaker-80-x-80-8-Ohm-294-5770
 source: https://www.parts-express.com/B-C-12FCX76-12-Professional-Coaxial-Speaker-80-x-80-8-Ohm-294-5770
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-5770
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.0
-    winner: vendor_page
-    sources:
-      vendor_page: 5.0
-  Sd:  # effective piston area (m²)
-    value: 0.0522
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0522
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0065
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0065
-  Qes:  # electrical Q factor
-    value: 0.35
-    winner: vendor_page
-    sources:
-      vendor_page: 0.35
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.4497022099656174
-    winner: vendor_page
-    sources:
-      vendor_page: 1.4497022099656174
-  BL:  # force factor (T·m)
-    value: 15.6
-    winner: vendor_page
-    sources:
-      vendor_page: 15.6
-  Qts:  # total Q factor
-    value: 0.34
-    winner: vendor_page
-    sources:
-      vendor_page: 0.34
-  Qms:  # mechanical Q factor
-    value: 11.0
-    winner: vendor_page
-    sources:
-      vendor_page: 11.0
   Le:  # voice coil inductance (H)
     value: 0.0013
     winner: vendor_page
     sources:
       vendor_page: 0.0013
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.084384064
+    winner: vendor_page
+    sources:
+      vendor_page: 0.084384064
+  Qes:  # electrical Q factor
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.054
+    winner: vendor_page
+    sources:
+      vendor_page: 0.054
+  BL:  # force factor (T·m)
+    value: 15.6
+    winner: vendor_page
+    sources:
+      vendor_page: 15.6
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
   Pe:  # rated power input (W)
     value: 700.0
     winner: vendor_page
@@ -75,16 +52,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 47.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.084384064
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.4497022099656174
     winner: vendor_page
     sources:
-      vendor_page: 0.084384064
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.054
+      vendor_page: 1.4497022099656174
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0065
     winner: vendor_page
     sources:
-      vendor_page: 0.054
+      vendor_page: 0.0065
+  Qts:  # total Q factor
+    value: 0.34
+    winner: vendor_page
+    sources:
+      vendor_page: 0.34
+  Qms:  # mechanical Q factor
+    value: 11.0
+    winner: vendor_page
+    sources:
+      vendor_page: 11.0
+  Sd:  # effective piston area (m²)
+    value: 0.0522
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0522
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -92,3 +84,11 @@ specs:
       vendor_page: 8.0
 _sources:
   vendor_page: https://www.parts-express.com/B-C-12FCX76-12-Professional-Coaxial-Speaker-80-x-80-8-Ohm-294-5770
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/B-C-12FCX76-12-Professional-Coaxial-Speaker-80-x-80-8-Ohm-294-5770
+frd_url: null
+zma_url: null

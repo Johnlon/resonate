@@ -163,19 +163,19 @@ If the brand is not in this list, split on the first space as a fallback and set
 
 Mechanical, deterministic corrections. Apply silently.
 
-| Problem                                                       | Fix                                                                                                                            |
-| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| `Brand=` or `Model=` has leading/trailing whitespace          | Trim it                                                                                                                        |
-| `Brand=` or `Model=` has spurious leading numeric (e.g. `00`) | Trim it                                                                                                                        |
-| `Brand=` empty, full name in `Model=`                         | Check multi-word brands list; split on first space as fallback; set `quality: M`                                               |
-| Both empty, filename unambiguously contains both              | Derive from filename using multi-word brands list; if ambiguous set `quality: M`                                               |
-| `Model=` contains extra description after model number        | Strip the extra description                                                                                                    |
-| Inch mark `"` in `Model=` or `Brand=`                         | Use manufacturer's verbatim form — check manufacturer website. In filenames only: replace `"` with `in`                        |
-| Filename separator mismatch (`_`, `-`, `/`)                   | Use manufacturer's own separator — check manufacturer website. If unconfirmed: set `quality: M`                                |
-| `Brand=` unrecoverable from fields                            | Attempt to derive from filename. If derivable: set correctly, set `quality: M`. If not: set `quality: L`                       |
-| Source consulted to verify/correct data                       | Record `datasheet: <url>` in `_meta.yml`. Prefer manufacturer's own site over aggregators                                      |
-| `Model=` is a size/type description rather than a part number | Search manufacturer's site; if confirmed update `Model=` and set `datasheet`; if not: set `quality: M` with `corrections` note |
-| Filename contains year or version marker                      | Set `quality: M`, add `community` note e.g. `"v2015 in filename = 2015 revision"`                                              |
+| Problem                                                       | Fix                                                                                                                                |
+| ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| `Brand=` or `Model=` has leading/trailing whitespace          | Trim it                                                                                                                            |
+| `Brand=` or `Model=` has spurious leading numeric (e.g. `00`) | Trim it                                                                                                                            |
+| `Brand=` empty, full name in `Model=`                         | Check multi-word brands list; split on first space as fallback; set `quality: M`                                                   |
+| Both empty, filename unambiguously contains both              | Derive from filename using multi-word brands list; if ambiguous set `quality: M`                                                   |
+| `Model=` contains extra description after model number        | Strip the extra description                                                                                                        |
+| Inch mark `"` in `Model=` or `Brand=`                         | Use manufacturer's verbatim form — check manufacturer website. In filenames only: replace `"` with `in`                            |
+| Filename separator mismatch (`_`, `-`, `/`)                   | Use manufacturer's own separator — check manufacturer website. If unconfirmed: set `quality: M`                                    |
+| `Brand=` unrecoverable from fields                            | Attempt to derive from filename. If derivable: set correctly, set `quality: M`. If not: set `quality: L`                           |
+| Source consulted to verify/correct data                       | Record `datasheet_url: <url>` in `_meta.yml`. Prefer manufacturer's own site over aggregators                                      |
+| `Model=` is a size/type description rather than a part number | Search manufacturer's site; if confirmed update `Model=` and set `datasheet_url`; if not: set `quality: M` with `corrections` note |
+| Filename contains year or version marker                      | Set `quality: M`, add `community` note e.g. `"v2015 in filename = 2015 revision"`                                                  |
 
 ## Schema discipline — hard rule
 
@@ -229,16 +229,16 @@ Every scraper must write at minimum these fields into every `_meta.yml` it creat
 
 ```yaml
 source: <URL where T/S data was read from>
-vendor_page: <vendor product page URL>
-datasheet: <manufacturer PDF URL — omit if not found>
+vendor_page_url: <vendor product page URL>
+datasheet_url: <manufacturer PDF URL — omit if not found>
 quality: M
 issue: scraped_not_human_verified
 detail: Automatically scraped from <vendor> on <date>. Not human-verified.
 ```
 
-For `frd` and `impedance` — follow the inspection workflow in
-`drivers/WDR_FILE_MODEL_AND_WORKFLOWS.md` before setting them. Never set `frd` to a
-URL without verifying the content is frequency-response data.
+For `frd_url` and `zma_url` — follow the inspection workflow in
+`drivers/WDR_FILE_MODEL_AND_WORKFLOWS.md` before setting them. Never set `frd_url` to a
+URL without verifying the content is Frequency Response Data.
 
 ## Quality scores
 

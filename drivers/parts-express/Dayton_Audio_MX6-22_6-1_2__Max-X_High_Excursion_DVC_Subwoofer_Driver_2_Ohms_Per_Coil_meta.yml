@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/295-744--dayton-audio-mx6-22-spec-sheet(2).pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-MX6-22-6-1-2-Max-X-High-Excursion-DVC-Subwoofer-Driver-2-Ohms-Per-Coil-295-744
 source: https://www.parts-express.com/Dayton-Audio-MX6-22-6-1-2-Max-X-High-Excursion-DVC-Subwoofer-Driver-2-Ohms-Per-Coil-295-744
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 4.7
-    winner: vendor_page
-    sources:
-      vendor_page: 4.7
-  Sd:  # effective piston area (m²)
-    value: 0.012629999999999999
-    winner: vendor_page
-    sources:
-      vendor_page: 0.012629999999999999
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00044
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00044
-  Xmax:  # one-way linear excursion (m)
-    value: 0.012
-    winner: vendor_page
-    sources:
-      vendor_page: 0.012
-  Qes:  # electrical Q factor
-    value: 0.37
-    winner: vendor_page
-    sources:
-      vendor_page: 0.37
-  Rms:  # mechanical resistance (kg/s)
-    value: 4.022079156502249
-    winner: vendor_page
-    sources:
-      vendor_page: 4.022079156502249
-  BL:  # force factor (T·m)
-    value: 12.3
-    winner: vendor_page
-    sources:
-      vendor_page: 12.3
-  Qts:  # total Q factor
-    value: 0.33
-    winner: vendor_page
-    sources:
-      vendor_page: 0.33
-  Qms:  # mechanical Q factor
-    value: 2.99
-    winner: vendor_page
-    sources:
-      vendor_page: 2.99
   Le:  # voice coil inductance (H)
     value: 0.0015
     winner: vendor_page
     sources:
       vendor_page: 0.0015
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.009995830399999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.009995830399999999
+  Qes:  # electrical Q factor
+    value: 0.37
+    winner: vendor_page
+    sources:
+      vendor_page: 0.37
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0638
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0638
+  BL:  # force factor (T·m)
+    value: 12.3
+    winner: vendor_page
+    sources:
+      vendor_page: 12.3
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.7
+    winner: vendor_page
+    sources:
+      vendor_page: 4.7
   Pe:  # rated power input (W)
     value: 70.0
     winner: vendor_page
@@ -76,21 +51,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 30.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.009995830399999999
+  Rms:  # mechanical resistance (kg/s)
+    value: 4.022079156502249
     winner: vendor_page
     sources:
-      vendor_page: 0.009995830399999999
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0638
+      vendor_page: 4.022079156502249
+  Xmax:  # one-way linear excursion (m)
+    value: 0.012
     winner: vendor_page
     sources:
-      vendor_page: 0.0638
+      vendor_page: 0.012
+  Qts:  # total Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Qms:  # mechanical Q factor
+    value: 2.99
+    winner: vendor_page
+    sources:
+      vendor_page: 2.99
+  Sd:  # effective piston area (m²)
+    value: 0.012629999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.012629999999999999
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00044
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00044
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 70.0
     winner: vendor_page
@@ -109,3 +104,8 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/295-744--dayton-audio-mx6-22-spec-sheet(2).pdf
   vendor_page: https://www.parts-express.com/Dayton-Audio-MX6-22-6-1-2-Max-X-High-Excursion-DVC-Subwoofer-Driver-2-Ohms-Per-Coil-295-744
+datasheet_url: https://www.parts-express.com/pedocs/specs/295-744--dayton-audio-mx6-22-spec-sheet(2).pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-MX6-22-6-1-2-Max-X-High-Excursion-DVC-Subwoofer-Driver-2-Ohms-Per-Coil-295-744
+frd_url: null
+zma_url: null

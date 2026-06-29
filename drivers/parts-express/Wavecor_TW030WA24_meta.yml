@@ -6,55 +6,27 @@ corrections: null
 reviewed_by: null
 driver_type: tweeter
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/298-1222--tw030wa24-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Wavecor-TW030WA24-30mm-Chambered-Graphene-Dome-Neo-Tweeter-8-Ohm-298-1222
 source: https://www.parts-express.com/Wavecor-TW030WA24-30mm-Chambered-Graphene-Dome-Neo-Tweeter-8-Ohm-298-1222
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 298-1222
 specs:
-  Sd:  # effective piston area (m²)
-    value: 0.00115
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.02
     winner: vendor_page
     sources:
-      vendor_page: 0.00115
-  Cms:  # mechanical compliance (m/N)
-    value: 0.000106
-    winner: vendor_page
-    sources:
-      vendor_page: 0.000106
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00065
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00065
+      vendor_page: 0.02
   Qes:  # electrical Q factor
     value: 1.82
     winner: vendor_page
     sources:
       vendor_page: 1.82
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.72
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00043
     winner: vendor_page
     sources:
-      vendor_page: 0.72
-  Qts:  # total Q factor
-    value: 1.1
-    winner: vendor_page
-    sources:
-      vendor_page: 1.1
-  Qms:  # mechanical Q factor
-    value: 2.8
-    winner: vendor_page
-    sources:
-      vendor_page: 2.8
+      vendor_page: 0.00043
   Pe:  # rated power input (W)
     value: 50.0
     winner: vendor_page
@@ -65,21 +37,49 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 750.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.02
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.72
     winner: vendor_page
     sources:
-      vendor_page: 0.02
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.00043
+      vendor_page: 0.72
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00065
     winner: vendor_page
     sources:
-      vendor_page: 0.00043
+      vendor_page: 0.00065
+  Qts:  # total Q factor
+    value: 1.1
+    winner: vendor_page
+    sources:
+      vendor_page: 1.1
+  Qms:  # mechanical Q factor
+    value: 2.8
+    winner: vendor_page
+    sources:
+      vendor_page: 2.8
+  Sd:  # effective piston area (m²)
+    value: 0.00115
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00115
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000106
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000106
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/298-1222--tw030wa24-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Wavecor-TW030WA24-30mm-Chambered-Graphene-Dome-Neo-Tweeter-8-Ohm-298-1222
+datasheet_url: https://www.parts-express.com/pedocs/specs/298-1222--tw030wa24-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Wavecor-TW030WA24-30mm-Chambered-Graphene-Dome-Neo-Tweeter-8-Ohm-298-1222
+frd_url: null
+zma_url: null

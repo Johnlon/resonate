@@ -4,67 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/seas-u18rnx-p.html
 source: https://www.soundimports.eu/en/seas-u18rnx-p.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.9
-    winner: vendor_page
-    sources:
-      vendor_page: 5.9
-  Sd:  # effective piston area (m²)
-    value: 0.0126
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0126
-  Cms:  # mechanical compliance (m/N)
-    value: 0.001
-    winner: vendor_page
-    sources:
-      vendor_page: 0.001
-  Xmax:  # one-way linear excursion (m)
-    value: 0.006
-    winner: vendor_page
-    sources:
-      vendor_page: 0.006
-  Qes:  # electrical Q factor
-    value: 0.45
-    winner: vendor_page
-    sources:
-      vendor_page: 0.45
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.78
-    winner: vendor_page
-    sources:
-      vendor_page: 1.78
-  BL:  # force factor (T·m)
-    value: 6.9
-    winner: vendor_page
-    sources:
-      vendor_page: 6.9
-  Qts:  # total Q factor
-    value: 0.37
-    winner: vendor_page
-    sources:
-      vendor_page: 0.37
-  Qms:  # mechanical Q factor
-    value: 2.05
-    winner: vendor_page
-    sources:
-      vendor_page: 2.05
   Le:  # voice coil inductance (H)
     value: 0.00025
     winner: vendor_page
     sources:
       vendor_page: 0.00025
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.022
+    winner: vendor_page
+    sources:
+      vendor_page: 0.022
+  Qes:  # electrical Q factor
+    value: 0.45
+    winner: vendor_page
+    sources:
+      vendor_page: 0.45
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0135
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0135
+  BL:  # force factor (T·m)
+    value: 6.9
+    winner: vendor_page
+    sources:
+      vendor_page: 6.9
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.9
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9
   Pe:  # rated power input (W)
     value: 80.0
     winner: vendor_page
@@ -75,20 +50,45 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 43.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.022
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.78
     winner: vendor_page
     sources:
-      vendor_page: 0.022
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0135
+      vendor_page: 1.78
+  Xmax:  # one-way linear excursion (m)
+    value: 0.006
     winner: vendor_page
     sources:
-      vendor_page: 0.0135
+      vendor_page: 0.006
+  Qts:  # total Q factor
+    value: 0.37
+    winner: vendor_page
+    sources:
+      vendor_page: 0.37
+  Qms:  # mechanical Q factor
+    value: 2.05
+    winner: vendor_page
+    sources:
+      vendor_page: 2.05
+  Sd:  # effective piston area (m²)
+    value: 0.0126
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0126
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001
 _sources:
   vendor_page: https://www.soundimports.eu/en/seas-u18rnx-p.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/seas-u18rnx-p.html
+frd_url: null
+zma_url: null

@@ -6,30 +6,22 @@ corrections: null
 reviewed_by: null
 driver_type: tweeter
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-CF18N-4-3-4-Carbon-Fiber-Dome-Neodymium-Tweeter-4-Ohm-275-411
 source: https://www.parts-express.com/Dayton-Audio-CF18N-4-3-4-Carbon-Fiber-Dome-Neodymium-Tweeter-4-Ohm-275-411
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd; Fs_no_Q
 community: null
 fetched_sku: 275-411
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.5
-    winner: vendor_page
-    sources:
-      vendor_page: 3.5
   Le:  # voice coil inductance (H)
     value: 1.0e-05
     winner: vendor_page
     sources:
       vendor_page: 1.0e-05
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.5
+    winner: vendor_page
+    sources:
+      vendor_page: 3.5
   Pe:  # rated power input (W)
     value: 40.0
     winner: vendor_page
@@ -47,3 +39,11 @@ specs:
       vendor_page: 4.0
 _sources:
   vendor_page: https://www.parts-express.com/Dayton-Audio-CF18N-4-3-4-Carbon-Fiber-Dome-Neodymium-Tweeter-4-Ohm-275-411
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-CF18N-4-3-4-Carbon-Fiber-Dome-Neodymium-Tweeter-4-Ohm-275-411
+frd_url: null
+zma_url: null

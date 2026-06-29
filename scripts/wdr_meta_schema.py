@@ -64,25 +64,25 @@ class MetaModel(BaseModel):
         description="Nominal driver diameter in cm — 10 cm ≈ 4\", 30 cm ≈ 12\". From manufacturer page.")
 
     # ── source URLs ───────────────────────────────────────────────────────────
-    datasheet: Optional[str] = Field(None,
+    datasheet_url: Optional[str] = Field(None,
         description="URL of the primary datasheet PDF")
-    adv_datasheet: Optional[str] = Field(None,
+    adv_datasheet_url: Optional[str] = Field(None,
         description="URL of an advanced-parameters datasheet PDF (e.g. Scan-Speak publishes a separate sheet)")
-    drawing: Optional[str] = Field(None,
+    drawing_url: Optional[str] = Field(None,
         description="URL of a dimensional drawing file")
-    cad: Optional[str] = Field(None,
+    cad_url: Optional[str] = Field(None,
         description="URL of a CAD zip or DXF file")
-    manu_page: Optional[str] = Field(None,
+    manu_page_url: Optional[str] = Field(None,
         description="URL of the manufacturer's product page for this driver")
-    vendor_page: Optional[str] = Field(None,
+    vendor_page_url: Optional[str] = Field(None,
         description="URL of a vendor product page (e.g. Parts Express, Mouser)")
 
     # ── measurement file URLs ─────────────────────────────────────────────────
-    frd: Optional[str] = Field(None,
-        description="URL of a frequency response data file (.frd or equivalent). "
+    frd_url: Optional[str] = Field(None,
+        description="URL of a Frequency Response Data (FRD) file. "
                     "Verify content is FRD data before setting — see SCRAPING_RULES.md.")
-    impedance: Optional[str] = Field(None,
-        description="URL of an impedance data file")
+    zma_url: Optional[str] = Field(None,
+        description="URL of an impedance sweep data file (ZMA format)")
 
     # ── status flags ──────────────────────────────────────────────────────────
     obsolete: Optional[bool] = Field(None,

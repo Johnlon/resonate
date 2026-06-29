@@ -6,15 +6,7 @@ corrections: null
 reviewed_by: null
 driver_type: tweeter
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/275-020--dayton-audio-td20f-4-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-TD20F-4-3-4-Soft-Dome-Neodymium-Tweeter-4-Ohm-275-020
 source: https://www.parts-express.com/Dayton-Audio-TD20F-4-3-4-Soft-Dome-Neodymium-Tweeter-4-Ohm-275-020
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd; Fs_no_Q
 community: null
@@ -43,3 +35,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/275-020--dayton-audio-td20f-4-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Dayton-Audio-TD20F-4-3-4-Soft-Dome-Neodymium-Tweeter-4-Ohm-275-020
+datasheet_url: https://www.parts-express.com/pedocs/specs/275-020--dayton-audio-td20f-4-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-TD20F-4-3-4-Soft-Dome-Neodymium-Tweeter-4-Ohm-275-020
+frd_url: null
+zma_url: null

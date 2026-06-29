@@ -7,35 +7,22 @@ corrections: '''Qts'' stored=0.32 differs from calculated=0.316556 (deps: Qms=7.
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/DS18-PRO-M8.2NEO-8-Professional-Water-Resistant-Neodymium-Full-Range-Speaker-2-Ohm-294-8054
 source: https://www.parts-express.com/DS18-PRO-M8.2NEO-8-Professional-Water-Resistant-Neodymium-Full-Range-Speaker-2-Ohm-294-8054
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd
 community: null
 fetched_sku: 294-8054
 specs:
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.030865312000000002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.030865312000000002
   Qes:  # electrical Q factor
     value: 0.33
     winner: vendor_page
     sources:
       vendor_page: 0.33
-  Qts:  # total Q factor
-    value: 0.32
-    winner: vendor_page
-    sources:
-      vendor_page: 0.32
-  Qms:  # mechanical Q factor
-    value: 7.77
-    winner: vendor_page
-    sources:
-      vendor_page: 7.77
   Pe:  # rated power input (W)
     value: 250.0
     winner: vendor_page
@@ -46,11 +33,16 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 62.8
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.030865312000000002
+  Qts:  # total Q factor
+    value: 0.32
     winner: vendor_page
     sources:
-      vendor_page: 0.030865312000000002
+      vendor_page: 0.32
+  Qms:  # mechanical Q factor
+    value: 7.77
+    winner: vendor_page
+    sources:
+      vendor_page: 7.77
   Znom:  # nominal impedance (Ω)
     value: 2.0
     winner: vendor_page
@@ -58,3 +50,11 @@ specs:
       vendor_page: 2.0
 _sources:
   vendor_page: https://www.parts-express.com/DS18-PRO-M8.2NEO-8-Professional-Water-Resistant-Neodymium-Full-Range-Speaker-2-Ohm-294-8054
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/DS18-PRO-M8.2NEO-8-Professional-Water-Resistant-Neodymium-Full-Range-Speaker-2-Ohm-294-8054
+frd_url: null
+zma_url: null

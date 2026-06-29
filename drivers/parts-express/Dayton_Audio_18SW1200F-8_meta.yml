@@ -6,70 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-18SW1200F-8-18-Professional-Subwoofer-295-641
 source: https://www.parts-express.com/Dayton-Audio-18SW1200F-8-18-Professional-Subwoofer-295-641
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 295-641
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.5
-    winner: vendor_page
-    sources:
-      vendor_page: 6.5
-  Sd:  # effective piston area (m²)
-    value: 0.12
-    winner: vendor_page
-    sources:
-      vendor_page: 0.12
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00013000000000000002
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00013000000000000002
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0106
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0106
-  Qes:  # electrical Q factor
-    value: 0.42
-    winner: vendor_page
-    sources:
-      vendor_page: 0.42
-  Rms:  # mechanical resistance (kg/s)
-    value: 4.337113049029412
-    winner: vendor_page
-    sources:
-      vendor_page: 4.337113049029412
-  BL:  # force factor (T·m)
-    value: 24.4
-    winner: vendor_page
-    sources:
-      vendor_page: 24.4
-  Qts:  # total Q factor
-    value: 0.4
-    winner: vendor_page
-    sources:
-      vendor_page: 0.4
-  Qms:  # mechanical Q factor
-    value: 8.975
-    winner: vendor_page
-    sources:
-      vendor_page: 8.975
   Le:  # voice coil inductance (H)
     value: 0.00225
     winner: vendor_page
     sources:
       vendor_page: 0.00225
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.287698688
+    winner: vendor_page
+    sources:
+      vendor_page: 0.287698688
+  Qes:  # electrical Q factor
+    value: 0.42
+    winner: vendor_page
+    sources:
+      vendor_page: 0.42
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.1936
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1936
+  BL:  # force factor (T·m)
+    value: 24.4
+    winner: vendor_page
+    sources:
+      vendor_page: 24.4
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.5
+    winner: vendor_page
+    sources:
+      vendor_page: 6.5
   Pe:  # rated power input (W)
     value: 1200.0
     winner: vendor_page
@@ -80,21 +52,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 32.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.287698688
+  Rms:  # mechanical resistance (kg/s)
+    value: 4.337113049029412
     winner: vendor_page
     sources:
-      vendor_page: 0.287698688
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.1936
+      vendor_page: 4.337113049029412
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0106
     winner: vendor_page
     sources:
-      vendor_page: 0.1936
+      vendor_page: 0.0106
+  Qts:  # total Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Qms:  # mechanical Q factor
+    value: 8.975
+    winner: vendor_page
+    sources:
+      vendor_page: 8.975
+  Sd:  # effective piston area (m²)
+    value: 0.12
+    winner: vendor_page
+    sources:
+      vendor_page: 0.12
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00013000000000000002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00013000000000000002
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 1200.0
     winner: vendor_page
@@ -112,3 +104,11 @@ specs:
       vendor_page: 18.0
 _sources:
   vendor_page: https://www.parts-express.com/Dayton-Audio-18SW1200F-8-18-Professional-Subwoofer-295-641
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-18SW1200F-8-18-Professional-Subwoofer-295-641
+frd_url: null
+zma_url: null

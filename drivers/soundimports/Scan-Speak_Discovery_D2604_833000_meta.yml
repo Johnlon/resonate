@@ -4,42 +4,27 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/scan-speak-d2604-833000.html
 source: https://www.soundimports.eu/en/scan-speak-d2604-833000.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 2.8
-    winner: vendor_page
-    sources:
-      vendor_page: 2.8
-  Qes:  # electrical Q factor
-    value: 0.71
-    winner: vendor_page
-    sources:
-      vendor_page: 0.71
-  Qts:  # total Q factor
-    value: 0.55
-    winner: vendor_page
-    sources:
-      vendor_page: 0.55
-  Qms:  # mechanical Q factor
-    value: 2.55
-    winner: vendor_page
-    sources:
-      vendor_page: 2.55
   Le:  # voice coil inductance (H)
     value: 4.0e-05
     winner: vendor_page
     sources:
       vendor_page: 4.0e-05
+  Qes:  # electrical Q factor
+    value: 0.71
+    winner: vendor_page
+    sources:
+      vendor_page: 0.71
+  Re:  # DC voice coil resistance (Ω)
+    value: 2.8
+    winner: vendor_page
+    sources:
+      vendor_page: 2.8
   Pe:  # rated power input (W)
     value: 100.0
     winner: vendor_page
@@ -50,6 +35,16 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 475.0
+  Qts:  # total Q factor
+    value: 0.55
+    winner: vendor_page
+    sources:
+      vendor_page: 0.55
+  Qms:  # mechanical Q factor
+    value: 2.55
+    winner: vendor_page
+    sources:
+      vendor_page: 2.55
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
@@ -57,3 +52,8 @@ specs:
       vendor_page: 4.0
 _sources:
   vendor_page: https://www.soundimports.eu/en/scan-speak-d2604-833000.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/scan-speak-d2604-833000.html
+frd_url: null
+zma_url: null

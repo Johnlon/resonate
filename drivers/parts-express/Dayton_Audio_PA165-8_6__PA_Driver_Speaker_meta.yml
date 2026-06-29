@@ -4,63 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/295-015--dayton-audio-pa165-8--pa-driver-specifications.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-PA165-8-6-PA-Driver-Speaker-295-015
 source: https://www.parts-express.com/Dayton-Audio-PA165-8-6-PA-Driver-Speaker-295-015
-frd: https://www.parts-express.com/pedocs/tech-docs/295-015--Dayton-Audio-PA165-8_data.zip
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.15
-    winner: vendor_page
-    sources:
-      vendor_page: 5.15
-  Sd:  # effective piston area (m²)
-    value: 0.01208
-    winner: vendor_page
-    sources:
-      vendor_page: 0.01208
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00041999999999999996
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00041999999999999996
-  Qes:  # electrical Q factor
-    value: 0.6
-    winner: vendor_page
-    sources:
-      vendor_page: 0.6
-  Rms:  # mechanical resistance (kg/s)
-    value: 2.1327254018013777
-    winner: vendor_page
-    sources:
-      vendor_page: 2.1327254018013777
-  BL:  # force factor (T·m)
-    value: 6.33
-    winner: vendor_page
-    sources:
-      vendor_page: 6.33
-  Qts:  # total Q factor
-    value: 0.47
-    winner: vendor_page
-    sources:
-      vendor_page: 0.47
-  Qms:  # mechanical Q factor
-    value: 2.19
-    winner: vendor_page
-    sources:
-      vendor_page: 2.19
   Le:  # voice coil inductance (H)
     value: 0.00054
     winner: vendor_page
     sources:
       vendor_page: 0.00054
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.009061376
+    winner: vendor_page
+    sources:
+      vendor_page: 0.009061376
+  Qes:  # electrical Q factor
+    value: 0.6
+    winner: vendor_page
+    sources:
+      vendor_page: 0.6
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0092
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0092
+  BL:  # force factor (T·m)
+    value: 6.33
+    winner: vendor_page
+    sources:
+      vendor_page: 6.33
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.15
+    winner: vendor_page
+    sources:
+      vendor_page: 5.15
   Pe:  # rated power input (W)
     value: 75.0
     winner: vendor_page
@@ -71,31 +51,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 80.8
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.009061376
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.1327254018013777
     winner: vendor_page
     sources:
-      vendor_page: 0.009061376
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0092
+      vendor_page: 2.1327254018013777
+  Qts:  # total Q factor
+    value: 0.47
     winner: vendor_page
     sources:
-      vendor_page: 0.0092
+      vendor_page: 0.47
+  Qms:  # mechanical Q factor
+    value: 2.19
+    winner: vendor_page
+    sources:
+      vendor_page: 2.19
+  Sd:  # effective piston area (m²)
+    value: 0.01208
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01208
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 80.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00041999999999999996
     winner: vendor_page
     sources:
-      vendor_page: 80.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 5000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 5000.0
+      vendor_page: 0.00041999999999999996
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/295-015--dayton-audio-pa165-8--pa-driver-specifications.pdf
   vendor_page: https://www.parts-express.com/Dayton-Audio-PA165-8-6-PA-Driver-Speaker-295-015
+datasheet_url: https://www.parts-express.com/pedocs/specs/295-015--dayton-audio-pa165-8--pa-driver-specifications.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-PA165-8-6-PA-Driver-Speaker-295-015
+frd_url: https://www.parts-express.com/pedocs/tech-docs/295-015--Dayton-Audio-PA165-8_data.zip
+zma_url: null

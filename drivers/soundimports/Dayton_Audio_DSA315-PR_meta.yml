@@ -4,42 +4,12 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/dayton-audio-dsa315-pr.html
 source: https://www.soundimports.eu/en/dayton-audio-dsa315-pr.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: pr
 specs:
-  Sd:  # effective piston area (m²)
-    value: 0.048
-    winner: vendor_page
-    sources:
-      vendor_page: 0.048
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00058
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00058
-  Xmax:  # one-way linear excursion (m)
-    value: 0.013
-    winner: vendor_page
-    sources:
-      vendor_page: 0.013
-  Qms:  # mechanical Q factor
-    value: 6.23
-    winner: vendor_page
-    sources:
-      vendor_page: 6.23
-  Fs:  # free air resonance (Hz)
-    value: 17.5
-    winner: vendor_page
-    sources:
-      vendor_page: 17.5
   Vas:  # equivalent acoustic volume (m³)
     value: 0.00674
     winner: vendor_page
@@ -50,5 +20,35 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 0.1426
+  Fs:  # free air resonance (Hz)
+    value: 17.5
+    winner: vendor_page
+    sources:
+      vendor_page: 17.5
+  Xmax:  # one-way linear excursion (m)
+    value: 0.013
+    winner: vendor_page
+    sources:
+      vendor_page: 0.013
+  Qms:  # mechanical Q factor
+    value: 6.23
+    winner: vendor_page
+    sources:
+      vendor_page: 6.23
+  Sd:  # effective piston area (m²)
+    value: 0.048
+    winner: vendor_page
+    sources:
+      vendor_page: 0.048
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00058
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00058
 _sources:
   vendor_page: https://www.soundimports.eu/en/dayton-audio-dsa315-pr.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/dayton-audio-dsa315-pr.html
+frd_url: null
+zma_url: null

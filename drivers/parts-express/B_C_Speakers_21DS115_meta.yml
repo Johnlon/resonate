@@ -8,70 +8,42 @@ corrections: '''Qts'' stored=0.23 differs from calculated=0.234375 (deps: Qms=10
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/294-6030--bc-21ds115-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/B-C-21DS115-21-Professional-Neodymium-Subwoofer-8-Ohm-294-6030
 source: https://www.parts-express.com/B-C-21DS115-21-Professional-Neodymium-Subwoofer-8-Ohm-294-6030
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-6030
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.1
-    winner: vendor_page
-    sources:
-      vendor_page: 5.1
-  Sd:  # effective piston area (m²)
-    value: 0.168
-    winner: vendor_page
-    sources:
-      vendor_page: 0.168
-  Cms:  # mechanical compliance (m/N)
-    value: 6.92e-05
-    winner: vendor_page
-    sources:
-      vendor_page: 6.92e-05
-  Xmax:  # one-way linear excursion (m)
-    value: 0.015
-    winner: vendor_page
-    sources:
-      vendor_page: 0.015
-  Qes:  # electrical Q factor
-    value: 0.24
-    winner: vendor_page
-    sources:
-      vendor_page: 0.24
-  Rms:  # mechanical resistance (kg/s)
-    value: 7.671769260066275
-    winner: vendor_page
-    sources:
-      vendor_page: 7.671769260066275
-  BL:  # force factor (T·m)
-    value: 40.8
-    winner: vendor_page
-    sources:
-      vendor_page: 40.8
-  Qts:  # total Q factor
-    value: 0.23
-    winner: vendor_page
-    sources:
-      vendor_page: 0.23
-  Qms:  # mechanical Q factor
-    value: 10.0
-    winner: vendor_page
-    sources:
-      vendor_page: 10.0
   Le:  # voice coil inductance (H)
     value: 0.0046
     winner: vendor_page
     sources:
       vendor_page: 0.0046
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.2690096
+    winner: vendor_page
+    sources:
+      vendor_page: 0.2690096
+  Qes:  # electrical Q factor
+    value: 0.24
+    winner: vendor_page
+    sources:
+      vendor_page: 0.24
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.407
+    winner: vendor_page
+    sources:
+      vendor_page: 0.407
+  BL:  # force factor (T·m)
+    value: 40.8
+    winner: vendor_page
+    sources:
+      vendor_page: 40.8
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.1
+    winner: vendor_page
+    sources:
+      vendor_page: 5.1
   Pe:  # rated power input (W)
     value: 3400.0
     winner: vendor_page
@@ -82,21 +54,49 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 30.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.2690096
+  Rms:  # mechanical resistance (kg/s)
+    value: 7.671769260066275
     winner: vendor_page
     sources:
-      vendor_page: 0.2690096
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.407
+      vendor_page: 7.671769260066275
+  Xmax:  # one-way linear excursion (m)
+    value: 0.015
     winner: vendor_page
     sources:
-      vendor_page: 0.407
+      vendor_page: 0.015
+  Qts:  # total Q factor
+    value: 0.23
+    winner: vendor_page
+    sources:
+      vendor_page: 0.23
+  Qms:  # mechanical Q factor
+    value: 10.0
+    winner: vendor_page
+    sources:
+      vendor_page: 10.0
+  Sd:  # effective piston area (m²)
+    value: 0.168
+    winner: vendor_page
+    sources:
+      vendor_page: 0.168
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 6.92e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 6.92e-05
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/294-6030--bc-21ds115-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/B-C-21DS115-21-Professional-Neodymium-Subwoofer-8-Ohm-294-6030
+datasheet_url: https://www.parts-express.com/pedocs/specs/294-6030--bc-21ds115-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/B-C-21DS115-21-Professional-Neodymium-Subwoofer-8-Ohm-294-6030
+frd_url: null
+zma_url: null

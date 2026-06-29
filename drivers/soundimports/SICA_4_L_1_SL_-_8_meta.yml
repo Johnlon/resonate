@@ -4,62 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/sica-4-l-1-sl-8.html
 source: https://www.soundimports.eu/en/sica-4-l-1-sl-8.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.0
-    winner: vendor_page
-    sources:
-      vendor_page: 6.0
-  Sd:  # effective piston area (m²)
-    value: 0.00442
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00442
-  Cms:  # mechanical compliance (m/N)
-    value: 0.000432
-    winner: vendor_page
-    sources:
-      vendor_page: 0.000432
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0024
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0024
-  Qes:  # electrical Q factor
-    value: 0.78
-    winner: vendor_page
-    sources:
-      vendor_page: 0.78
-  BL:  # force factor (T·m)
-    value: 5.1
-    winner: vendor_page
-    sources:
-      vendor_page: 5.1
-  Qts:  # total Q factor
-    value: 0.63
-    winner: vendor_page
-    sources:
-      vendor_page: 0.63
-  Qms:  # mechanical Q factor
-    value: 3.15
-    winner: vendor_page
-    sources:
-      vendor_page: 3.15
   Le:  # voice coil inductance (H)
     value: 0.00037
     winner: vendor_page
     sources:
       vendor_page: 0.00037
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0012
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0012
+  Qes:  # electrical Q factor
+    value: 0.78
+    winner: vendor_page
+    sources:
+      vendor_page: 0.78
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005
+  BL:  # force factor (T·m)
+    value: 5.1
+    winner: vendor_page
+    sources:
+      vendor_page: 5.1
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
   Pe:  # rated power input (W)
     value: 60.0
     winner: vendor_page
@@ -70,20 +50,40 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 108.3
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0012
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0024
     winner: vendor_page
     sources:
-      vendor_page: 0.0012
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.005
+      vendor_page: 0.0024
+  Qts:  # total Q factor
+    value: 0.63
     winner: vendor_page
     sources:
-      vendor_page: 0.005
+      vendor_page: 0.63
+  Qms:  # mechanical Q factor
+    value: 3.15
+    winner: vendor_page
+    sources:
+      vendor_page: 3.15
+  Sd:  # effective piston area (m²)
+    value: 0.00442
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00442
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000432
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000432
 _sources:
   vendor_page: https://www.soundimports.eu/en/sica-4-l-1-sl-8.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/sica-4-l-1-sl-8.html
+frd_url: null
+zma_url: null

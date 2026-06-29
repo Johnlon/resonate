@@ -4,53 +4,28 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/298-1228--wf120bd13-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Wavecor-WF120BD12-4-3-4-Kevlar-Carbon-Fiber-Cone-Midwoofer-8-Ohm-298-1228
 source: https://www.parts-express.com/Wavecor-WF120BD12-4-3-4-Kevlar-Carbon-Fiber-Cone-Midwoofer-8-Ohm-298-1228
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  Sd:  # effective piston area (m²)
-    value: 0.0048
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.003964352
     winner: vendor_page
     sources:
-      vendor_page: 0.0048
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0012
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0012
-  Xmax:  # one-way linear excursion (m)
-    value: 0.003
-    winner: vendor_page
-    sources:
-      vendor_page: 0.003
+      vendor_page: 0.003964352
   Qes:  # electrical Q factor
     value: 0.49
     winner: vendor_page
     sources:
       vendor_page: 0.49
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.24862496699377287
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0064
     winner: vendor_page
     sources:
-      vendor_page: 0.24862496699377287
-  Qts:  # total Q factor
-    value: 0.46
-    winner: vendor_page
-    sources:
-      vendor_page: 0.46
-  Qms:  # mechanical Q factor
-    value: 9.3
-    winner: vendor_page
-    sources:
-      vendor_page: 9.3
+      vendor_page: 0.0064
   Pe:  # rated power input (W)
     value: 40.0
     winner: vendor_page
@@ -61,21 +36,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 57.5
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.003964352
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.24862496699377287
     winner: vendor_page
     sources:
-      vendor_page: 0.003964352
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0064
+      vendor_page: 0.24862496699377287
+  Xmax:  # one-way linear excursion (m)
+    value: 0.003
     winner: vendor_page
     sources:
-      vendor_page: 0.0064
+      vendor_page: 0.003
+  Qts:  # total Q factor
+    value: 0.46
+    winner: vendor_page
+    sources:
+      vendor_page: 0.46
+  Qms:  # mechanical Q factor
+    value: 9.3
+    winner: vendor_page
+    sources:
+      vendor_page: 9.3
+  Sd:  # effective piston area (m²)
+    value: 0.0048
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0048
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0012
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0012
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/298-1228--wf120bd13-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Wavecor-WF120BD12-4-3-4-Kevlar-Carbon-Fiber-Cone-Midwoofer-8-Ohm-298-1228
+datasheet_url: https://www.parts-express.com/pedocs/specs/298-1228--wf120bd13-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Wavecor-WF120BD12-4-3-4-Kevlar-Carbon-Fiber-Cone-Midwoofer-8-Ohm-298-1228
+frd_url: null
+zma_url: null

@@ -6,40 +6,17 @@ corrections: null
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/HiVi-B2S-2-Shielded-Aluminum-Driver-297-432
 source: https://www.parts-express.com/HiVi-B2S-2-Shielded-Aluminum-Driver-297-432
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 297-432
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.5
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0001982176
     winner: vendor_page
     sources:
-      vendor_page: 6.5
-  Sd:  # effective piston area (m²)
-    value: 0.0013
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0013
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0006889999999999999
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0006889999999999999
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0015
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0015
+      vendor_page: 0.0001982176
   Qes:  # electrical Q factor
     value: 1.53
     winner: vendor_page
@@ -50,16 +27,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 2.5
-  Qts:  # total Q factor
-    value: 1.2
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.5
     winner: vendor_page
     sources:
-      vendor_page: 1.2
-  Qms:  # mechanical Q factor
-    value: 5.69
-    winner: vendor_page
-    sources:
-      vendor_page: 5.69
+      vendor_page: 6.5
   Pe:  # rated power input (W)
     value: 10.0
     winner: vendor_page
@@ -70,15 +42,43 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 152.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0001982176
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0015
     winner: vendor_page
     sources:
-      vendor_page: 0.0001982176
+      vendor_page: 0.0015
+  Qts:  # total Q factor
+    value: 1.2
+    winner: vendor_page
+    sources:
+      vendor_page: 1.2
+  Qms:  # mechanical Q factor
+    value: 5.69
+    winner: vendor_page
+    sources:
+      vendor_page: 5.69
+  Sd:  # effective piston area (m²)
+    value: 0.0013
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0013
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0006889999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0006889999999999999
 _sources:
   vendor_page: https://www.parts-express.com/HiVi-B2S-2-Shielded-Aluminum-Driver-297-432
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/HiVi-B2S-2-Shielded-Aluminum-Driver-297-432
+frd_url: null
+zma_url: null

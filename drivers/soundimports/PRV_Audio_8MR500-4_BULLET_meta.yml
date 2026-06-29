@@ -4,57 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/prv-audio-8mr500-4-bullet.html
 source: https://www.soundimports.eu/en/prv-audio-8mr500-4-bullet.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.5
-    winner: vendor_page
-    sources:
-      vendor_page: 3.5
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00036
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00036
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00325
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00325
-  Qes:  # electrical Q factor
-    value: 0.48
-    winner: vendor_page
-    sources:
-      vendor_page: 0.48
-  BL:  # force factor (T·m)
-    value: 6.45
-    winner: vendor_page
-    sources:
-      vendor_page: 6.45
-  Qts:  # total Q factor
-    value: 0.46
-    winner: vendor_page
-    sources:
-      vendor_page: 0.46
-  Qms:  # mechanical Q factor
-    value: 20.8
-    winner: vendor_page
-    sources:
-      vendor_page: 20.8
   Le:  # voice coil inductance (H)
     value: 0.000132
     winner: vendor_page
     sources:
       vendor_page: 0.000132
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0208
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0208
+  Qes:  # electrical Q factor
+    value: 0.48
+    winner: vendor_page
+    sources:
+      vendor_page: 0.48
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0115
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0115
+  BL:  # force factor (T·m)
+    value: 6.45
+    winner: vendor_page
+    sources:
+      vendor_page: 6.45
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.5
+    winner: vendor_page
+    sources:
+      vendor_page: 3.5
   Pe:  # rated power input (W)
     value: 250.0
     winner: vendor_page
@@ -65,20 +50,35 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 78.2
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0208
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00325
     winner: vendor_page
     sources:
-      vendor_page: 0.0208
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0115
+      vendor_page: 0.00325
+  Qts:  # total Q factor
+    value: 0.46
     winner: vendor_page
     sources:
-      vendor_page: 0.0115
+      vendor_page: 0.46
+  Qms:  # mechanical Q factor
+    value: 20.8
+    winner: vendor_page
+    sources:
+      vendor_page: 20.8
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00036
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00036
 _sources:
   vendor_page: https://www.soundimports.eu/en/prv-audio-8mr500-4-bullet.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/prv-audio-8mr500-4-bullet.html
+frd_url: null
+zma_url: null

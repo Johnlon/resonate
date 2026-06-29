@@ -4,42 +4,27 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/dayton-audio-nd16fa-4.html
 source: https://www.soundimports.eu/en/dayton-audio-nd16fa-4.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: tweeter
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.17
-    winner: vendor_page
-    sources:
-      vendor_page: 3.17
-  Qes:  # electrical Q factor
-    value: 3.46
-    winner: vendor_page
-    sources:
-      vendor_page: 3.46
-  Qts:  # total Q factor
-    value: 1.79
-    winner: vendor_page
-    sources:
-      vendor_page: 1.79
-  Qms:  # mechanical Q factor
-    value: 3.71
-    winner: vendor_page
-    sources:
-      vendor_page: 3.71
   Le:  # voice coil inductance (H)
     value: 3.0e-05
     winner: vendor_page
     sources:
       vendor_page: 3.0e-05
+  Qes:  # electrical Q factor
+    value: 3.46
+    winner: vendor_page
+    sources:
+      vendor_page: 3.46
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.17
+    winner: vendor_page
+    sources:
+      vendor_page: 3.17
   Pe:  # rated power input (W)
     value: 30.0
     winner: vendor_page
@@ -50,6 +35,16 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 2246.0
+  Qts:  # total Q factor
+    value: 1.79
+    winner: vendor_page
+    sources:
+      vendor_page: 1.79
+  Qms:  # mechanical Q factor
+    value: 3.71
+    winner: vendor_page
+    sources:
+      vendor_page: 3.71
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
@@ -72,3 +67,8 @@ specs:
       vendor_page: 20.0
 _sources:
   vendor_page: https://www.soundimports.eu/en/dayton-audio-nd16fa-4.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/dayton-audio-nd16fa-4.html
+frd_url: null
+zma_url: null

@@ -4,63 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/292-7809--visaton-tiw200xs8-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Visaton-TIW200XS8-8-High-End-Woofer-8-Ohm-292-7809
 source: https://www.parts-express.com/Visaton-TIW200XS8-8-High-End-Woofer-8-Ohm-292-7809
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: true
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.0
-    winner: vendor_page
-    sources:
-      vendor_page: 6.0
-  Sd:  # effective piston area (m²)
-    value: 0.0206
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0206
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0125
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0125
-  Qes:  # electrical Q factor
-    value: 0.5
-    winner: vendor_page
-    sources:
-      vendor_page: 0.5
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.1985266770920595
-    winner: vendor_page
-    sources:
-      vendor_page: 1.1985266770920595
-  BL:  # force factor (T·m)
-    value: 8.51
-    winner: vendor_page
-    sources:
-      vendor_page: 8.51
-  Qts:  # total Q factor
-    value: 0.46
-    winner: vendor_page
-    sources:
-      vendor_page: 0.46
-  Qms:  # mechanical Q factor
-    value: 5.19
-    winner: vendor_page
-    sources:
-      vendor_page: 5.19
   Le:  # voice coil inductance (H)
     value: 0.0016
     winner: vendor_page
     sources:
       vendor_page: 0.0016
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.051536576
+    winner: vendor_page
+    sources:
+      vendor_page: 0.051536576
+  Qes:  # electrical Q factor
+    value: 0.5
+    winner: vendor_page
+    sources:
+      vendor_page: 0.5
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.033
+    winner: vendor_page
+    sources:
+      vendor_page: 0.033
+  BL:  # force factor (T·m)
+    value: 8.51
+    winner: vendor_page
+    sources:
+      vendor_page: 8.51
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
   Pe:  # rated power input (W)
     value: 120.0
     winner: vendor_page
@@ -71,16 +51,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 30.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.051536576
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.1985266770920595
     winner: vendor_page
     sources:
-      vendor_page: 0.051536576
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.033
+      vendor_page: 1.1985266770920595
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0125
     winner: vendor_page
     sources:
-      vendor_page: 0.033
+      vendor_page: 0.0125
+  Qts:  # total Q factor
+    value: 0.46
+    winner: vendor_page
+    sources:
+      vendor_page: 0.46
+  Qms:  # mechanical Q factor
+    value: 5.19
+    winner: vendor_page
+    sources:
+      vendor_page: 5.19
+  Sd:  # effective piston area (m²)
+    value: 0.0206
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0206
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -99,3 +94,8 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/292-7809--visaton-tiw200xs8-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Visaton-TIW200XS8-8-High-End-Woofer-8-Ohm-292-7809
+datasheet_url: https://www.parts-express.com/pedocs/specs/292-7809--visaton-tiw200xs8-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Visaton-TIW200XS8-8-High-End-Woofer-8-Ohm-292-7809
+frd_url: null
+zma_url: null

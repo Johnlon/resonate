@@ -6,50 +6,32 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/292-582--visaton-w170-8-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Visaton-W170-8-6.5-Woofer-8-Ohm-292-582
 source: https://www.parts-express.com/Visaton-W170-8-6.5-Woofer-8-Ohm-292-582
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd
 community: null
 fetched_sku: 292-582
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 7.2
-    winner: vendor_page
-    sources:
-      vendor_page: 7.2
-  Xmax:  # one-way linear excursion (m)
-    value: 0.002
-    winner: vendor_page
-    sources:
-      vendor_page: 0.002
-  Qes:  # electrical Q factor
-    value: 0.9
-    winner: vendor_page
-    sources:
-      vendor_page: 0.9
-  Qts:  # total Q factor
-    value: 0.69
-    winner: vendor_page
-    sources:
-      vendor_page: 0.69
-  Qms:  # mechanical Q factor
-    value: 2.92
-    winner: vendor_page
-    sources:
-      vendor_page: 2.92
   Le:  # voice coil inductance (H)
     value: 0.0009
     winner: vendor_page
     sources:
       vendor_page: 0.0009
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.02406928
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02406928
+  Qes:  # electrical Q factor
+    value: 0.9
+    winner: vendor_page
+    sources:
+      vendor_page: 0.9
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.2
+    winner: vendor_page
+    sources:
+      vendor_page: 7.2
   Pe:  # rated power input (W)
     value: 40.0
     winner: vendor_page
@@ -60,11 +42,21 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 7.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.02406928
+  Xmax:  # one-way linear excursion (m)
+    value: 0.002
     winner: vendor_page
     sources:
-      vendor_page: 0.02406928
+      vendor_page: 0.002
+  Qts:  # total Q factor
+    value: 0.69
+    winner: vendor_page
+    sources:
+      vendor_page: 0.69
+  Qms:  # mechanical Q factor
+    value: 2.92
+    winner: vendor_page
+    sources:
+      vendor_page: 2.92
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -73,3 +65,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/292-582--visaton-w170-8-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Visaton-W170-8-6.5-Woofer-8-Ohm-292-582
+datasheet_url: https://www.parts-express.com/pedocs/specs/292-582--visaton-w170-8-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Visaton-W170-8-6.5-Woofer-8-Ohm-292-582
+frd_url: null
+zma_url: null

@@ -4,42 +4,27 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/peerless-by-tymphany-bc25sc55-04.html
 source: https://www.soundimports.eu/en/peerless-by-tymphany-bc25sc55-04.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.0
-    winner: vendor_page
-    sources:
-      vendor_page: 3.0
-  Qes:  # electrical Q factor
-    value: 2.07
-    winner: vendor_page
-    sources:
-      vendor_page: 2.07
-  Qts:  # total Q factor
-    value: 1.3
-    winner: vendor_page
-    sources:
-      vendor_page: 1.3
-  Qms:  # mechanical Q factor
-    value: 3.6
-    winner: vendor_page
-    sources:
-      vendor_page: 3.6
   Le:  # voice coil inductance (H)
     value: 2.6e-05
     winner: vendor_page
     sources:
       vendor_page: 2.6e-05
+  Qes:  # electrical Q factor
+    value: 2.07
+    winner: vendor_page
+    sources:
+      vendor_page: 2.07
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0
   Pe:  # rated power input (W)
     value: 7.0
     winner: vendor_page
@@ -50,6 +35,16 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 1400.0
+  Qts:  # total Q factor
+    value: 1.3
+    winner: vendor_page
+    sources:
+      vendor_page: 1.3
+  Qms:  # mechanical Q factor
+    value: 3.6
+    winner: vendor_page
+    sources:
+      vendor_page: 3.6
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
@@ -57,3 +52,8 @@ specs:
       vendor_page: 4.0
 _sources:
   vendor_page: https://www.soundimports.eu/en/peerless-by-tymphany-bc25sc55-04.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/peerless-by-tymphany-bc25sc55-04.html
+frd_url: null
+zma_url: null

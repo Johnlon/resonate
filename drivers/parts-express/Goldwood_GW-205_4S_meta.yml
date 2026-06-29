@@ -7,70 +7,42 @@ corrections: '''Vas'' stored=0.00538019 differs from calculated=0.00531357 (deps
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Goldwood-GW-205-4S-5-1-4-Shielded-Poly-Woofer-4-Ohm-290-374
 source: https://www.parts-express.com/Goldwood-GW-205-4S-5-1-4-Shielded-Poly-Woofer-4-Ohm-290-374
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 290-374
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.6
-    winner: vendor_page
-    sources:
-      vendor_page: 3.6
-  Sd:  # effective piston area (m²)
-    value: 0.009677
-    winner: vendor_page
-    sources:
-      vendor_page: 0.009677
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0004
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0004
-  Xmax:  # one-way linear excursion (m)
-    value: 0.002
-    winner: vendor_page
-    sources:
-      vendor_page: 0.002
-  Qes:  # electrical Q factor
-    value: 0.87
-    winner: vendor_page
-    sources:
-      vendor_page: 0.87
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.4941533211139226
-    winner: vendor_page
-    sources:
-      vendor_page: 1.4941533211139226
-  BL:  # force factor (T·m)
-    value: 4.44
-    winner: vendor_page
-    sources:
-      vendor_page: 4.44
-  Qts:  # total Q factor
-    value: 0.68
-    winner: vendor_page
-    sources:
-      vendor_page: 0.68
-  Qms:  # mechanical Q factor
-    value: 3.18
-    winner: vendor_page
-    sources:
-      vendor_page: 3.18
   Le:  # voice coil inductance (H)
     value: 0.0002
     winner: vendor_page
     sources:
       vendor_page: 0.0002
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.005380192
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005380192
+  Qes:  # electrical Q factor
+    value: 0.87
+    winner: vendor_page
+    sources:
+      vendor_page: 0.87
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0091
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0091
+  BL:  # force factor (T·m)
+    value: 4.44
+    winner: vendor_page
+    sources:
+      vendor_page: 4.44
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.6
+    winner: vendor_page
+    sources:
+      vendor_page: 3.6
   Pe:  # rated power input (W)
     value: 70.0
     winner: vendor_page
@@ -81,20 +53,48 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 83.1
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.005380192
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.4941533211139226
     winner: vendor_page
     sources:
-      vendor_page: 0.005380192
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0091
+      vendor_page: 1.4941533211139226
+  Xmax:  # one-way linear excursion (m)
+    value: 0.002
     winner: vendor_page
     sources:
-      vendor_page: 0.0091
+      vendor_page: 0.002
+  Qts:  # total Q factor
+    value: 0.68
+    winner: vendor_page
+    sources:
+      vendor_page: 0.68
+  Qms:  # mechanical Q factor
+    value: 3.18
+    winner: vendor_page
+    sources:
+      vendor_page: 3.18
+  Sd:  # effective piston area (m²)
+    value: 0.009677
+    winner: vendor_page
+    sources:
+      vendor_page: 0.009677
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0004
 _sources:
   vendor_page: https://www.parts-express.com/Goldwood-GW-205-4S-5-1-4-Shielded-Poly-Woofer-4-Ohm-290-374
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Goldwood-GW-205-4S-5-1-4-Shielded-Poly-Woofer-4-Ohm-290-374
+frd_url: null
+zma_url: null

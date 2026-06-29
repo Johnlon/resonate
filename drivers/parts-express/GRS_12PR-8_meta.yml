@@ -6,65 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/GRS Spec Sheets/292-422--grs-12pr-8-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/GRS-12PR-8-12-Poly-Cone-Rubber-Surround-Woofer-292-422
 source: https://www.parts-express.com/GRS-12PR-8-12-Poly-Cone-Rubber-Surround-Woofer-292-422
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd
 community: null
 fetched_sku: 292-422
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 7.2
-    winner: vendor_page
-    sources:
-      vendor_page: 7.2
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00029
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00029
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0035
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0035
-  Qes:  # electrical Q factor
-    value: 1.58
-    winner: vendor_page
-    sources:
-      vendor_page: 1.58
-  Rms:  # mechanical resistance (kg/s)
-    value: 5.927533308659987
-    winner: vendor_page
-    sources:
-      vendor_page: 5.927533308659987
-  BL:  # force factor (T·m)
-    value: 9.2
-    winner: vendor_page
-    sources:
-      vendor_page: 9.2
-  Qts:  # total Q factor
-    value: 1.06
-    winner: vendor_page
-    sources:
-      vendor_page: 1.06
-  Qms:  # mechanical Q factor
-    value: 3.18
-    winner: vendor_page
-    sources:
-      vendor_page: 3.18
   Le:  # voice coil inductance (H)
     value: 0.0014
     winner: vendor_page
     sources:
       vendor_page: 0.0014
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.112700864
+    winner: vendor_page
+    sources:
+      vendor_page: 0.112700864
+  Qes:  # electrical Q factor
+    value: 1.58
+    winner: vendor_page
+    sources:
+      vendor_page: 1.58
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.1
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1
+  BL:  # force factor (T·m)
+    value: 9.2
+    winner: vendor_page
+    sources:
+      vendor_page: 9.2
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.2
+    winner: vendor_page
+    sources:
+      vendor_page: 7.2
   Pe:  # rated power input (W)
     value: 100.0
     winner: vendor_page
@@ -75,21 +52,44 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 30.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.112700864
+  Rms:  # mechanical resistance (kg/s)
+    value: 5.927533308659987
     winner: vendor_page
     sources:
-      vendor_page: 0.112700864
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.1
+      vendor_page: 5.927533308659987
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0035
     winner: vendor_page
     sources:
-      vendor_page: 0.1
+      vendor_page: 0.0035
+  Qts:  # total Q factor
+    value: 1.06
+    winner: vendor_page
+    sources:
+      vendor_page: 1.06
+  Qms:  # mechanical Q factor
+    value: 3.18
+    winner: vendor_page
+    sources:
+      vendor_page: 3.18
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00029
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00029
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/GRS Spec Sheets/292-422--grs-12pr-8-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/GRS-12PR-8-12-Poly-Cone-Rubber-Surround-Woofer-292-422
+datasheet_url: https://www.parts-express.com/pedocs/specs/GRS Spec Sheets/292-422--grs-12pr-8-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/GRS-12PR-8-12-Poly-Cone-Rubber-Surround-Woofer-292-422
+frd_url: null
+zma_url: null

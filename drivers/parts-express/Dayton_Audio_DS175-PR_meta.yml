@@ -6,50 +6,12 @@ corrections: null
 reviewed_by: null
 driver_type: passive_radiator
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/295-498--dayton-audio-ds175-pr-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-DS175-PR-6-1-2-Designer-Series-Passive-Radiator-295-498
 source: https://www.parts-express.com/Dayton-Audio-DS175-PR-6-1-2-Designer-Series-Passive-Radiator-295-498
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 295-498
 specs:
-  Sd:  # effective piston area (m²)
-    value: 0.0103
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0103
-  Cms:  # mechanical compliance (m/N)
-    value: 0.1287
-    winner: vendor_page
-    sources:
-      vendor_page: 0.1287
-  Xmax:  # one-way linear excursion (m)
-    value: 0.001
-    winner: vendor_page
-    sources:
-      vendor_page: 0.001
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.0115138716244048
-    winner: vendor_page
-    sources:
-      vendor_page: 1.0115138716244048
-  Qms:  # mechanical Q factor
-    value: 36.6
-    winner: vendor_page
-    sources:
-      vendor_page: 36.6
-  Fs:  # free air resonance (Hz)
-    value: 5.57
-    winner: vendor_page
-    sources:
-      vendor_page: 5.57
   Vas:  # equivalent acoustic volume (m³)
     value: 0.008
     winner: vendor_page
@@ -60,6 +22,44 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 0.00115
+  Fs:  # free air resonance (Hz)
+    value: 5.57
+    winner: vendor_page
+    sources:
+      vendor_page: 5.57
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.0115138716244048
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0115138716244048
+  Xmax:  # one-way linear excursion (m)
+    value: 0.001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001
+  Qms:  # mechanical Q factor
+    value: 36.6
+    winner: vendor_page
+    sources:
+      vendor_page: 36.6
+  Sd:  # effective piston area (m²)
+    value: 0.0103
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0103
+  Cms:  # mechanical compliance (m/N)
+    value: 0.1287
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1287
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/295-498--dayton-audio-ds175-pr-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Dayton-Audio-DS175-PR-6-1-2-Designer-Series-Passive-Radiator-295-498
+datasheet_url: https://www.parts-express.com/pedocs/specs/295-498--dayton-audio-ds175-pr-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-DS175-PR-6-1-2-Designer-Series-Passive-Radiator-295-498
+frd_url: null
+zma_url: null

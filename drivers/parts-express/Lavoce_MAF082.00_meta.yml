@@ -8,70 +8,42 @@ corrections: '''Qts'' stored=0.18 differs from calculated=0.183973 (deps: Qms=5.
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/LaVoce-MAF082.00-8-Professional-Midrange-Driver-8-Ohm-293-748
 source: https://www.parts-express.com/LaVoce-MAF082.00-8-Professional-Midrange-Driver-8-Ohm-293-748
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 293-748
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.8
-    winner: vendor_page
-    sources:
-      vendor_page: 5.8
-  Sd:  # effective piston area (m²)
-    value: 0.0214
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0214
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0002
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0002
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0026
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0026
-  Qes:  # electrical Q factor
-    value: 0.19
-    winner: vendor_page
-    sources:
-      vendor_page: 0.19
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.701659910434085
-    winner: vendor_page
-    sources:
-      vendor_page: 1.701659910434085
-  BL:  # force factor (T·m)
-    value: 17.36
-    winner: vendor_page
-    sources:
-      vendor_page: 17.36
-  Qts:  # total Q factor
-    value: 0.18
-    winner: vendor_page
-    sources:
-      vendor_page: 0.18
-  Qms:  # mechanical Q factor
-    value: 5.8
-    winner: vendor_page
-    sources:
-      vendor_page: 5.8
   Le:  # voice coil inductance (H)
     value: 0.0005200000000000001
     winner: vendor_page
     sources:
       vendor_page: 0.0005200000000000001
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.01274256
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01274256
+  Qes:  # electrical Q factor
+    value: 0.19
+    winner: vendor_page
+    sources:
+      vendor_page: 0.19
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.020399999999999998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.020399999999999998
+  BL:  # force factor (T·m)
+    value: 17.36
+    winner: vendor_page
+    sources:
+      vendor_page: 17.36
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.8
+    winner: vendor_page
+    sources:
+      vendor_page: 5.8
   Pe:  # rated power input (W)
     value: 200.0
     winner: vendor_page
@@ -82,20 +54,48 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 77.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.01274256
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.701659910434085
     winner: vendor_page
     sources:
-      vendor_page: 0.01274256
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.020399999999999998
+      vendor_page: 1.701659910434085
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0026
     winner: vendor_page
     sources:
-      vendor_page: 0.020399999999999998
+      vendor_page: 0.0026
+  Qts:  # total Q factor
+    value: 0.18
+    winner: vendor_page
+    sources:
+      vendor_page: 0.18
+  Qms:  # mechanical Q factor
+    value: 5.8
+    winner: vendor_page
+    sources:
+      vendor_page: 5.8
+  Sd:  # effective piston area (m²)
+    value: 0.0214
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0214
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0002
 _sources:
   vendor_page: https://www.parts-express.com/LaVoce-MAF082.00-8-Professional-Midrange-Driver-8-Ohm-293-748
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/LaVoce-MAF082.00-8-Professional-Midrange-Driver-8-Ohm-293-748
+frd_url: null
+zma_url: null

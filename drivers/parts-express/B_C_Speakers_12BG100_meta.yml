@@ -6,65 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/294-697--bc-12bg100-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/B-C-12BG100-12-Neodymium-Subwoofer-294-697
 source: https://www.parts-express.com/B-C-12BG100-12-Neodymium-Subwoofer-294-697
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-697
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.1
-    winner: vendor_page
-    sources:
-      vendor_page: 5.1
-  Sd:  # effective piston area (m²)
-    value: 0.0522
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0522
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0105
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0105
-  Qes:  # electrical Q factor
-    value: 0.35
-    winner: vendor_page
-    sources:
-      vendor_page: 0.35
-  Rms:  # mechanical resistance (kg/s)
-    value: 5.477459191317734
-    winner: vendor_page
-    sources:
-      vendor_page: 5.477459191317734
-  BL:  # force factor (T·m)
-    value: 23.0
-    winner: vendor_page
-    sources:
-      vendor_page: 23.0
-  Qts:  # total Q factor
-    value: 0.33
-    winner: vendor_page
-    sources:
-      vendor_page: 0.33
-  Qms:  # mechanical Q factor
-    value: 6.8
-    winner: vendor_page
-    sources:
-      vendor_page: 6.8
   Le:  # voice coil inductance (H)
     value: 0.0016
     winner: vendor_page
     sources:
       vendor_page: 0.0016
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.041059359999999996
+    winner: vendor_page
+    sources:
+      vendor_page: 0.041059359999999996
+  Qes:  # electrical Q factor
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.152
+    winner: vendor_page
+    sources:
+      vendor_page: 0.152
+  BL:  # force factor (T·m)
+    value: 23.0
+    winner: vendor_page
+    sources:
+      vendor_page: 23.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.1
+    winner: vendor_page
+    sources:
+      vendor_page: 5.1
   Pe:  # rated power input (W)
     value: 2000.0
     winner: vendor_page
@@ -75,16 +52,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 39.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.041059359999999996
+  Rms:  # mechanical resistance (kg/s)
+    value: 5.477459191317734
     winner: vendor_page
     sources:
-      vendor_page: 0.041059359999999996
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.152
+      vendor_page: 5.477459191317734
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0105
     winner: vendor_page
     sources:
-      vendor_page: 0.152
+      vendor_page: 0.0105
+  Qts:  # total Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Qms:  # mechanical Q factor
+    value: 6.8
+    winner: vendor_page
+    sources:
+      vendor_page: 6.8
+  Sd:  # effective piston area (m²)
+    value: 0.0522
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0522
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -93,3 +85,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/294-697--bc-12bg100-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/B-C-12BG100-12-Neodymium-Subwoofer-294-697
+datasheet_url: https://www.parts-express.com/pedocs/specs/294-697--bc-12bg100-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/B-C-12BG100-12-Neodymium-Subwoofer-294-697
+frd_url: null
+zma_url: null

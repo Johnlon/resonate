@@ -4,43 +4,38 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/292-7803--visaton-g50ffl8-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Visaton-G50FFL8-2-Fabric-Dome-Driver-8-Ohm-292-7803
 source: https://www.parts-express.com/Visaton-G50FFL8-2-Fabric-Dome-Driver-8-Ohm-292-7803
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.4
-    winner: vendor_page
-    sources:
-      vendor_page: 6.4
-  Sd:  # effective piston area (m²)
-    value: 0.002
-    winner: vendor_page
-    sources:
-      vendor_page: 0.002
-  Qes:  # electrical Q factor
-    value: 0.67
-    winner: vendor_page
-    sources:
-      vendor_page: 0.67
-  Qts:  # total Q factor
-    value: 0.28
-    winner: vendor_page
-    sources:
-      vendor_page: 0.28
   Le:  # voice coil inductance (H)
     value: 0.00016
     winner: vendor_page
     sources:
       vendor_page: 0.00016
+  Vas:  # equivalent acoustic volume (m³)
+    value: 2.83168e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 2.83168e-05
+  Qes:  # electrical Q factor
+    value: 0.67
+    winner: vendor_page
+    sources:
+      vendor_page: 0.67
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0012
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0012
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.4
+    winner: vendor_page
+    sources:
+      vendor_page: 6.4
   Pe:  # rated power input (W)
     value: 120.0
     winner: vendor_page
@@ -51,16 +46,16 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 455.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 2.83168e-05
+  Qts:  # total Q factor
+    value: 0.28
     winner: vendor_page
     sources:
-      vendor_page: 2.83168e-05
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0012
+      vendor_page: 0.28
+  Sd:  # effective piston area (m²)
+    value: 0.002
     winner: vendor_page
     sources:
-      vendor_page: 0.0012
+      vendor_page: 0.002
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -79,3 +74,8 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/292-7803--visaton-g50ffl8-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Visaton-G50FFL8-2-Fabric-Dome-Driver-8-Ohm-292-7803
+datasheet_url: https://www.parts-express.com/pedocs/specs/292-7803--visaton-g50ffl8-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Visaton-G50FFL8-2-Fabric-Dome-Driver-8-Ohm-292-7803
+frd_url: null
+zma_url: null

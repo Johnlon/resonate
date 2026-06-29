@@ -6,65 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/253-002--6g40nd-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Beyma-6G40Nd-G40-Series-6.5-Midbass-Speaker-8-Ohm-253-002
 source: https://www.parts-express.com/Beyma-6G40Nd-G40-Series-6.5-Midbass-Speaker-8-Ohm-253-002
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 253-002
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.0
-    winner: vendor_page
-    sources:
-      vendor_page: 6.0
-  Sd:  # effective piston area (m²)
-    value: 0.014
-    winner: vendor_page
-    sources:
-      vendor_page: 0.014
-  Xmax:  # one-way linear excursion (m)
-    value: 0.004
-    winner: vendor_page
-    sources:
-      vendor_page: 0.004
-  Qes:  # electrical Q factor
-    value: 0.36
-    winner: vendor_page
-    sources:
-      vendor_page: 0.36
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.0020208082474442455
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0020208082474442455
-  BL:  # force factor (T·m)
-    value: 11.2
-    winner: vendor_page
-    sources:
-      vendor_page: 11.2
-  Qts:  # total Q factor
-    value: 0.33
-    winner: vendor_page
-    sources:
-      vendor_page: 0.33
-  Qms:  # mechanical Q factor
-    value: 3.7
-    winner: vendor_page
-    sources:
-      vendor_page: 3.7
   Le:  # voice coil inductance (H)
     value: 85.0
     winner: vendor_page
     sources:
       vendor_page: 85.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0069942495999999995
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0069942495999999995
+  Qes:  # electrical Q factor
+    value: 0.36
+    winner: vendor_page
+    sources:
+      vendor_page: 0.36
+  Mms:  # moving mass incl. air load (kg)
+    value: 1.4e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 1.4e-05
+  BL:  # force factor (T·m)
+    value: 11.2
+    winner: vendor_page
+    sources:
+      vendor_page: 11.2
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
   Pe:  # rated power input (W)
     value: 170.0
     winner: vendor_page
@@ -75,16 +52,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 85.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0069942495999999995
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.0020208082474442455
     winner: vendor_page
     sources:
-      vendor_page: 0.0069942495999999995
-  Mms:  # moving mass incl. air load (kg)
-    value: 1.4e-05
+      vendor_page: 0.0020208082474442455
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
     winner: vendor_page
     sources:
-      vendor_page: 1.4e-05
+      vendor_page: 0.004
+  Qts:  # total Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Qms:  # mechanical Q factor
+    value: 3.7
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7
+  Sd:  # effective piston area (m²)
+    value: 0.014
+    winner: vendor_page
+    sources:
+      vendor_page: 0.014
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -108,3 +100,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/253-002--6g40nd-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Beyma-6G40Nd-G40-Series-6.5-Midbass-Speaker-8-Ohm-253-002
+datasheet_url: https://www.parts-express.com/pedocs/specs/253-002--6g40nd-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Beyma-6G40Nd-G40-Series-6.5-Midbass-Speaker-8-Ohm-253-002
+frd_url: null
+zma_url: null

@@ -4,57 +4,37 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/grs-s115v-lf-8.html
 source: https://www.soundimports.eu/en/grs-s115v-lf-8.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  Sd:  # effective piston area (m²)
-    value: 0.08296
-    winner: vendor_page
-    sources:
-      vendor_page: 0.08296
-  Cms:  # mechanical compliance (m/N)
-    value: 0.000249
-    winner: vendor_page
-    sources:
-      vendor_page: 0.000249
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00325
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00325
-  Qes:  # electrical Q factor
-    value: 0.405
-    winner: vendor_page
-    sources:
-      vendor_page: 0.405
-  BL:  # force factor (T·m)
-    value: 16.12
-    winner: vendor_page
-    sources:
-      vendor_page: 16.12
-  Qts:  # total Q factor
-    value: 0.394
-    winner: vendor_page
-    sources:
-      vendor_page: 0.394
-  Qms:  # mechanical Q factor
-    value: 14.02
-    winner: vendor_page
-    sources:
-      vendor_page: 14.02
   Le:  # voice coil inductance (H)
     value: 0.001044
     winner: vendor_page
     sources:
       vendor_page: 0.001044
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.008585
+    winner: vendor_page
+    sources:
+      vendor_page: 0.008585
+  Qes:  # electrical Q factor
+    value: 0.405
+    winner: vendor_page
+    sources:
+      vendor_page: 0.405
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.073
+    winner: vendor_page
+    sources:
+      vendor_page: 0.073
+  BL:  # force factor (T·m)
+    value: 16.12
+    winner: vendor_page
+    sources:
+      vendor_page: 16.12
   Pe:  # rated power input (W)
     value: 250.0
     winner: vendor_page
@@ -65,21 +45,36 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 37.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.008585
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00325
     winner: vendor_page
     sources:
-      vendor_page: 0.008585
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.073
+      vendor_page: 0.00325
+  Qts:  # total Q factor
+    value: 0.394
     winner: vendor_page
     sources:
-      vendor_page: 0.073
+      vendor_page: 0.394
+  Qms:  # mechanical Q factor
+    value: 14.02
+    winner: vendor_page
+    sources:
+      vendor_page: 14.02
+  Sd:  # effective piston area (m²)
+    value: 0.08296
+    winner: vendor_page
+    sources:
+      vendor_page: 0.08296
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000249
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000249
   power_peak_W:  # peak power handling (W)
     value: 700.0
     winner: vendor_page
@@ -107,3 +102,8 @@ specs:
       vendor_page: 34.0
 _sources:
   vendor_page: https://www.soundimports.eu/en/grs-s115v-lf-8.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/grs-s115v-lf-8.html
+frd_url: null
+zma_url: null

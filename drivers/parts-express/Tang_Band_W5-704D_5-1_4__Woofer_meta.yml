@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-850-tang-band-w5-704d-specifications-45673.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Tang-Band-W5-704D-5-1-4-Woofer-264-850
 source: https://www.parts-express.com/Tang-Band-W5-704D-5-1-4-Woofer-264-850
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: true
 driver_type: woofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.0
-    winner: vendor_page
-    sources:
-      vendor_page: 6.0
-  Sd:  # effective piston area (m²)
-    value: 0.0094
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0094
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00092
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00092
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0033
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0033
-  Qes:  # electrical Q factor
-    value: 0.46
-    winner: vendor_page
-    sources:
-      vendor_page: 0.46
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.3322174064353243
-    winner: vendor_page
-    sources:
-      vendor_page: 1.3322174064353243
-  BL:  # force factor (T·m)
-    value: 6.17
-    winner: vendor_page
-    sources:
-      vendor_page: 6.17
-  Qts:  # total Q factor
-    value: 0.38
-    winner: vendor_page
-    sources:
-      vendor_page: 0.38
-  Qms:  # mechanical Q factor
-    value: 2.07
-    winner: vendor_page
-    sources:
-      vendor_page: 2.07
   Le:  # voice coil inductance (H)
     value: 5.9999999999999995e-05
     winner: vendor_page
     sources:
       vendor_page: 5.9999999999999995e-05
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.011609887999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.011609887999999999
+  Qes:  # electrical Q factor
+    value: 0.46
+    winner: vendor_page
+    sources:
+      vendor_page: 0.46
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.007980000000000001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.007980000000000001
+  BL:  # force factor (T·m)
+    value: 6.17
+    winner: vendor_page
+    sources:
+      vendor_page: 6.17
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
   Pe:  # rated power input (W)
     value: 28.0
     winner: vendor_page
@@ -76,21 +51,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 55.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.011609887999999999
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.3322174064353243
     winner: vendor_page
     sources:
-      vendor_page: 0.011609887999999999
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.007980000000000001
+      vendor_page: 1.3322174064353243
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0033
     winner: vendor_page
     sources:
-      vendor_page: 0.007980000000000001
+      vendor_page: 0.0033
+  Qts:  # total Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  Qms:  # mechanical Q factor
+    value: 2.07
+    winner: vendor_page
+    sources:
+      vendor_page: 2.07
+  Sd:  # effective piston area (m²)
+    value: 0.0094
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0094
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00092
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00092
   freq_low_hz:  # published lower frequency limit (Hz)
     value: 2019.1
     winner: vendor_page
@@ -104,3 +99,8 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-850-tang-band-w5-704d-specifications-45673.pdf
   vendor_page: https://www.parts-express.com/Tang-Band-W5-704D-5-1-4-Woofer-264-850
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-850-tang-band-w5-704d-specifications-45673.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Tang-Band-W5-704D-5-1-4-Woofer-264-850
+frd_url: null
+zma_url: null

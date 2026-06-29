@@ -4,67 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/beyma-18p1000fev2s.html
 source: https://www.soundimports.eu/en/beyma-18p1000fev2s.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.2
-    winner: vendor_page
-    sources:
-      vendor_page: 5.2
-  Sd:  # effective piston area (m²)
-    value: 0.125
-    winner: vendor_page
-    sources:
-      vendor_page: 0.125
-  Cms:  # mechanical compliance (m/N)
-    value: 0.000105
-    winner: vendor_page
-    sources:
-      vendor_page: 0.000105
-  Xmax:  # one-way linear excursion (m)
-    value: 0.008
-    winner: vendor_page
-    sources:
-      vendor_page: 0.008
-  Qes:  # electrical Q factor
-    value: 0.33
-    winner: vendor_page
-    sources:
-      vendor_page: 0.33
-  Rms:  # mechanical resistance (kg/s)
-    value: 4.4
-    winner: vendor_page
-    sources:
-      vendor_page: 4.4
-  BL:  # force factor (T·m)
-    value: 26.8
-    winner: vendor_page
-    sources:
-      vendor_page: 26.8
-  Qts:  # total Q factor
-    value: 0.32
-    winner: vendor_page
-    sources:
-      vendor_page: 0.32
-  Qms:  # mechanical Q factor
-    value: 10.5
-    winner: vendor_page
-    sources:
-      vendor_page: 10.5
   Le:  # voice coil inductance (H)
     value: 0.00175
     winner: vendor_page
     sources:
       vendor_page: 0.00175
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.23
+    winner: vendor_page
+    sources:
+      vendor_page: 0.23
+  Qes:  # electrical Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.221
+    winner: vendor_page
+    sources:
+      vendor_page: 0.221
+  BL:  # force factor (T·m)
+    value: 26.8
+    winner: vendor_page
+    sources:
+      vendor_page: 26.8
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
   Pe:  # rated power input (W)
     value: 1200.0
     winner: vendor_page
@@ -75,21 +50,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 33.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.23
+  Rms:  # mechanical resistance (kg/s)
+    value: 4.4
     winner: vendor_page
     sources:
-      vendor_page: 0.23
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.221
+      vendor_page: 4.4
+  Xmax:  # one-way linear excursion (m)
+    value: 0.008
     winner: vendor_page
     sources:
-      vendor_page: 0.221
+      vendor_page: 0.008
+  Qts:  # total Q factor
+    value: 0.32
+    winner: vendor_page
+    sources:
+      vendor_page: 0.32
+  Qms:  # mechanical Q factor
+    value: 10.5
+    winner: vendor_page
+    sources:
+      vendor_page: 10.5
+  Sd:  # effective piston area (m²)
+    value: 0.125
+    winner: vendor_page
+    sources:
+      vendor_page: 0.125
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000105
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000105
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 98.0
     winner: vendor_page
@@ -112,3 +107,8 @@ specs:
       vendor_page: 101.6
 _sources:
   vendor_page: https://www.soundimports.eu/en/beyma-18p1000fev2s.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/beyma-18p1000fev2s.html
+frd_url: null
+zma_url: null

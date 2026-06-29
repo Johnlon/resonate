@@ -4,62 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/grs-15pt-8.html
 source: https://www.soundimports.eu/en/grs-15pt-8.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 7.4
-    winner: vendor_page
-    sources:
-      vendor_page: 7.4
-  Sd:  # effective piston area (m²)
-    value: 0.08296
-    winner: vendor_page
-    sources:
-      vendor_page: 0.08296
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00024
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00024
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0078
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0078
-  Qes:  # electrical Q factor
-    value: 0.43
-    winner: vendor_page
-    sources:
-      vendor_page: 0.43
-  BL:  # force factor (T·m)
-    value: 20.2
-    winner: vendor_page
-    sources:
-      vendor_page: 20.2
-  Qts:  # total Q factor
-    value: 0.41
-    winner: vendor_page
-    sources:
-      vendor_page: 0.41
-  Qms:  # mechanical Q factor
-    value: 11.7
-    winner: vendor_page
-    sources:
-      vendor_page: 11.7
   Le:  # voice coil inductance (H)
     value: 0.0021
     winner: vendor_page
     sources:
       vendor_page: 0.0021
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00855
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00855
+  Qes:  # electrical Q factor
+    value: 0.43
+    winner: vendor_page
+    sources:
+      vendor_page: 0.43
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.137
+    winner: vendor_page
+    sources:
+      vendor_page: 0.137
+  BL:  # force factor (T·m)
+    value: 20.2
+    winner: vendor_page
+    sources:
+      vendor_page: 20.2
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.4
+    winner: vendor_page
+    sources:
+      vendor_page: 7.4
   Pe:  # rated power input (W)
     value: 350.0
     winner: vendor_page
@@ -70,21 +50,36 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 28.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.00855
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0078
     winner: vendor_page
     sources:
-      vendor_page: 0.00855
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.137
+      vendor_page: 0.0078
+  Qts:  # total Q factor
+    value: 0.41
     winner: vendor_page
     sources:
-      vendor_page: 0.137
+      vendor_page: 0.41
+  Qms:  # mechanical Q factor
+    value: 11.7
+    winner: vendor_page
+    sources:
+      vendor_page: 11.7
+  Sd:  # effective piston area (m²)
+    value: 0.08296
+    winner: vendor_page
+    sources:
+      vendor_page: 0.08296
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00024
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00024
   power_peak_W:  # peak power handling (W)
     value: 700.0
     winner: vendor_page
@@ -107,3 +102,8 @@ specs:
       vendor_page: 6.0
 _sources:
   vendor_page: https://www.soundimports.eu/en/grs-15pt-8.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/grs-15pt-8.html
+frd_url: null
+zma_url: null

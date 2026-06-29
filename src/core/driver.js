@@ -92,11 +92,11 @@ export function parseWdr(text, sidecarText) {
     throw new Error('missing core T/S parameters');
   if (sidecarText) {
     const s = _parseSimpleYaml(sidecarText);
-    if (s.datasheet)   d.datasheetUrl  = s.datasheet;
-    if (s.vendor_page) d.vendorpageUrl = s.vendor_page;
-    if (s.source)      d.sourceUrl     = s.source;
-    if (s.frd)         d.frdUrl        = s.frd;
-    if (s.impedance)   d.impedanceUrl  = s.impedance;
+    if (s.datasheet_url)   d.datasheetUrl  = s.datasheet_url;
+    if (s.vendor_page_url) d.vendorpageUrl = s.vendor_page_url;
+    if (s.source)          d.sourceUrl     = s.source;
+    if (s.frd_url)         d.frdUrl        = s.frd_url;
+    if (s.zma_url)         d.impedanceUrl  = s.zma_url;
   }
   for (const k in d) if (d[k] === undefined) delete d[k];
   return d;

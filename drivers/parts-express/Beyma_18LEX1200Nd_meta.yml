@@ -8,70 +8,42 @@ corrections: '''Qts'' stored=0.33 differs from calculated=0.339111 (deps: Qms=10
 reviewed_by: null
 driver_type: subwoofer
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Beyma-18LEX1200Nd-LEX-Series-18-Neo-Subwoofer-8-Ohm-253-050
 source: https://www.parts-express.com/Beyma-18LEX1200Nd-LEX-Series-18-Neo-Subwoofer-8-Ohm-253-050
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 253-050
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.3
-    winner: vendor_page
-    sources:
-      vendor_page: 5.3
-  Sd:  # effective piston area (m²)
-    value: 0.1255
-    winner: vendor_page
-    sources:
-      vendor_page: 0.1255
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0001
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0001
-  Xmax:  # one-way linear excursion (m)
-    value: 0.011
-    winner: vendor_page
-    sources:
-      vendor_page: 0.011
-  Qes:  # electrical Q factor
-    value: 0.35
-    winner: vendor_page
-    sources:
-      vendor_page: 0.35
-  Rms:  # mechanical resistance (kg/s)
-    value: 4.150360936852571
-    winner: vendor_page
-    sources:
-      vendor_page: 4.150360936852571
-  BL:  # force factor (T·m)
-    value: 26.4
-    winner: vendor_page
-    sources:
-      vendor_page: 26.4
-  Qts:  # total Q factor
-    value: 0.33
-    winner: vendor_page
-    sources:
-      vendor_page: 0.33
-  Qms:  # mechanical Q factor
-    value: 10.9
-    winner: vendor_page
-    sources:
-      vendor_page: 10.9
   Le:  # voice coil inductance (H)
     value: 0.0017
     winner: vendor_page
     sources:
       vendor_page: 0.0017
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.21888886400000002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.21888886400000002
+  Qes:  # electrical Q factor
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.2
+    winner: vendor_page
+    sources:
+      vendor_page: 0.2
+  BL:  # force factor (T·m)
+    value: 26.4
+    winner: vendor_page
+    sources:
+      vendor_page: 26.4
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.3
+    winner: vendor_page
+    sources:
+      vendor_page: 5.3
   Pe:  # rated power input (W)
     value: 1200.0
     winner: vendor_page
@@ -82,21 +54,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 36.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.21888886400000002
+  Rms:  # mechanical resistance (kg/s)
+    value: 4.150360936852571
     winner: vendor_page
     sources:
-      vendor_page: 0.21888886400000002
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.2
+      vendor_page: 4.150360936852571
+  Xmax:  # one-way linear excursion (m)
+    value: 0.011
     winner: vendor_page
     sources:
-      vendor_page: 0.2
+      vendor_page: 0.011
+  Qts:  # total Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Qms:  # mechanical Q factor
+    value: 10.9
+    winner: vendor_page
+    sources:
+      vendor_page: 10.9
+  Sd:  # effective piston area (m²)
+    value: 0.1255
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1255
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0001
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 98.0
     winner: vendor_page
@@ -104,3 +96,11 @@ specs:
       vendor_page: 98.0
 _sources:
   vendor_page: https://www.parts-express.com/Beyma-18LEX1200Nd-LEX-Series-18-Neo-Subwoofer-8-Ohm-253-050
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Beyma-18LEX1200Nd-LEX-Series-18-Neo-Subwoofer-8-Ohm-253-050
+frd_url: null
+zma_url: null

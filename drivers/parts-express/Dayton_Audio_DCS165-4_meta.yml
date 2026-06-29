@@ -6,70 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: subwoofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/295-198--dcs165-4-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-DCS165-4-6-1-2-Classic-Subwoofer-4-Ohm-295-198
 source: https://www.parts-express.com/Dayton-Audio-DCS165-4-6-1-2-Classic-Subwoofer-4-Ohm-295-198
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 295-198
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.4
-    winner: vendor_page
-    sources:
-      vendor_page: 3.4
-  Sd:  # effective piston area (m²)
-    value: 0.01247
-    winner: vendor_page
-    sources:
-      vendor_page: 0.01247
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0005
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0005
-  Xmax:  # one-way linear excursion (m)
-    value: 0.006
-    winner: vendor_page
-    sources:
-      vendor_page: 0.006
-  Qes:  # electrical Q factor
-    value: 0.36
-    winner: vendor_page
-    sources:
-      vendor_page: 0.36
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.338403891377537
-    winner: vendor_page
-    sources:
-      vendor_page: 1.338403891377537
-  BL:  # force factor (T·m)
-    value: 9.15
-    winner: vendor_page
-    sources:
-      vendor_page: 9.15
-  Qts:  # total Q factor
-    value: 0.34
-    winner: vendor_page
-    sources:
-      vendor_page: 0.34
-  Qms:  # mechanical Q factor
-    value: 6.62
-    winner: vendor_page
-    sources:
-      vendor_page: 6.62
   Le:  # voice coil inductance (H)
     value: 0.0014299999999999998
     winner: vendor_page
     sources:
       vendor_page: 0.0014299999999999998
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.011893055999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.011893055999999999
+  Qes:  # electrical Q factor
+    value: 0.36
+    winner: vendor_page
+    sources:
+      vendor_page: 0.36
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0395
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0395
+  BL:  # force factor (T·m)
+    value: 9.15
+    winner: vendor_page
+    sources:
+      vendor_page: 9.15
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.4
+    winner: vendor_page
+    sources:
+      vendor_page: 3.4
   Pe:  # rated power input (W)
     value: 100.0
     winner: vendor_page
@@ -80,21 +52,49 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 35.7
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.011893055999999999
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.338403891377537
     winner: vendor_page
     sources:
-      vendor_page: 0.011893055999999999
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0395
+      vendor_page: 1.338403891377537
+  Xmax:  # one-way linear excursion (m)
+    value: 0.006
     winner: vendor_page
     sources:
-      vendor_page: 0.0395
+      vendor_page: 0.006
+  Qts:  # total Q factor
+    value: 0.34
+    winner: vendor_page
+    sources:
+      vendor_page: 0.34
+  Qms:  # mechanical Q factor
+    value: 6.62
+    winner: vendor_page
+    sources:
+      vendor_page: 6.62
+  Sd:  # effective piston area (m²)
+    value: 0.01247
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01247
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0005
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/295-198--dcs165-4-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Dayton-Audio-DCS165-4-6-1-2-Classic-Subwoofer-4-Ohm-295-198
+datasheet_url: https://www.parts-express.com/pedocs/specs/295-198--dcs165-4-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-DCS165-4-6-1-2-Classic-Subwoofer-4-Ohm-295-198
+frd_url: null
+zma_url: null

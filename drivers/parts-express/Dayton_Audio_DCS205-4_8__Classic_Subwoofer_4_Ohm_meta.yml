@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/295-200-dayton-audio-dcs205-4-specifications-46584.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-DCS205-4-8-Classic-Subwoofer-4-Ohm-295-200
 source: https://www.parts-express.com/Dayton-Audio-DCS205-4-8-Classic-Subwoofer-4-Ohm-295-200
-frd: https://www.parts-express.com/pedocs/tech-docs/295-200--Dayton-Audio-DCS205-4_data.zip
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.9
-    winner: vendor_page
-    sources:
-      vendor_page: 3.9
-  Sd:  # effective piston area (m²)
-    value: 0.02138
-    winner: vendor_page
-    sources:
-      vendor_page: 0.02138
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00041999999999999996
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00041999999999999996
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0088
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0088
-  Qes:  # electrical Q factor
-    value: 0.4
-    winner: vendor_page
-    sources:
-      vendor_page: 0.4
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.8646553007712845
-    winner: vendor_page
-    sources:
-      vendor_page: 1.8646553007712845
-  BL:  # force factor (T·m)
-    value: 10.7
-    winner: vendor_page
-    sources:
-      vendor_page: 10.7
-  Qts:  # total Q factor
-    value: 0.37
-    winner: vendor_page
-    sources:
-      vendor_page: 0.37
-  Qms:  # mechanical Q factor
-    value: 6.28
-    winner: vendor_page
-    sources:
-      vendor_page: 6.28
   Le:  # voice coil inductance (H)
     value: 0.0017800000000000001
     winner: vendor_page
     sources:
       vendor_page: 0.0017800000000000001
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.026900959999999998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.026900959999999998
+  Qes:  # electrical Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0577
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0577
+  BL:  # force factor (T·m)
+    value: 10.7
+    winner: vendor_page
+    sources:
+      vendor_page: 10.7
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.9
+    winner: vendor_page
+    sources:
+      vendor_page: 3.9
   Pe:  # rated power input (W)
     value: 150.0
     winner: vendor_page
@@ -76,31 +51,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 32.3
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.026900959999999998
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.8646553007712845
     winner: vendor_page
     sources:
-      vendor_page: 0.026900959999999998
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0577
+      vendor_page: 1.8646553007712845
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0088
     winner: vendor_page
     sources:
-      vendor_page: 0.0577
+      vendor_page: 0.0088
+  Qts:  # total Q factor
+    value: 0.37
+    winner: vendor_page
+    sources:
+      vendor_page: 0.37
+  Qms:  # mechanical Q factor
+    value: 6.28
+    winner: vendor_page
+    sources:
+      vendor_page: 6.28
+  Sd:  # effective piston area (m²)
+    value: 0.02138
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02138
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 30.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00041999999999999996
     winner: vendor_page
     sources:
-      vendor_page: 30.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 200.0
-    winner: vendor_page
-    sources:
-      vendor_page: 200.0
+      vendor_page: 0.00041999999999999996
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/295-200-dayton-audio-dcs205-4-specifications-46584.pdf
   vendor_page: https://www.parts-express.com/Dayton-Audio-DCS205-4-8-Classic-Subwoofer-4-Ohm-295-200
+datasheet_url: https://www.parts-express.com/pedocs/specs/295-200-dayton-audio-dcs205-4-specifications-46584.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-DCS205-4-8-Classic-Subwoofer-4-Ohm-295-200
+frd_url: https://www.parts-express.com/pedocs/tech-docs/295-200--Dayton-Audio-DCS205-4_data.zip
+zma_url: null

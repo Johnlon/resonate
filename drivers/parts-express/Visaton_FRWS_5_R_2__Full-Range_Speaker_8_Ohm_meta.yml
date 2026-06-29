@@ -4,33 +4,23 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/292-650--visaton-frws-5-r-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Visaton-FRWS-5-R-2-Fullrange-Speaker-8-Ohm-292-650
 source: https://www.parts-express.com/Visaton-FRWS-5-R-2-Fullrange-Speaker-8-Ohm-292-650
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.8
+  Le:  # voice coil inductance (H)
+    value: 0.0001
     winner: vendor_page
     sources:
-      vendor_page: 6.8
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0008110000000000001
+      vendor_page: 0.0001
+  Vas:  # equivalent acoustic volume (m³)
+    value: 9.91088e-05
     winner: vendor_page
     sources:
-      vendor_page: 0.0008110000000000001
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00035
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00035
+      vendor_page: 9.91088e-05
   Qes:  # electrical Q factor
     value: 3.22
     winner: vendor_page
@@ -41,21 +31,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 1.28
-  Qts:  # total Q factor
-    value: 1.63
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.8
     winner: vendor_page
     sources:
-      vendor_page: 1.63
-  Qms:  # mechanical Q factor
-    value: 3.31
-    winner: vendor_page
-    sources:
-      vendor_page: 3.31
-  Le:  # voice coil inductance (H)
-    value: 0.0001
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0001
+      vendor_page: 6.8
   Pe:  # rated power input (W)
     value: 4.0
     winner: vendor_page
@@ -66,16 +46,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 250.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 9.91088e-05
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00035
     winner: vendor_page
     sources:
-      vendor_page: 9.91088e-05
+      vendor_page: 0.00035
+  Qts:  # total Q factor
+    value: 1.63
+    winner: vendor_page
+    sources:
+      vendor_page: 1.63
+  Qms:  # mechanical Q factor
+    value: 3.31
+    winner: vendor_page
+    sources:
+      vendor_page: 3.31
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0008110000000000001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0008110000000000001
   freq_low_hz:  # published lower frequency limit (Hz)
     value: 2019.1
     winner: vendor_page
@@ -89,3 +84,8 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/292-650--visaton-frws-5-r-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Visaton-FRWS-5-R-2-Fullrange-Speaker-8-Ohm-292-650
+datasheet_url: https://www.parts-express.com/pedocs/specs/292-650--visaton-frws-5-r-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Visaton-FRWS-5-R-2-Fullrange-Speaker-8-Ohm-292-650
+frd_url: null
+zma_url: null

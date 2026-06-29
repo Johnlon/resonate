@@ -5,57 +5,37 @@ detail: Automatically scraped from SB Acoustics website (scraped 2026-06-29). T/
 corrections: null
 reviewed_by: null
 driver_type: null
-datasheet: https://sbacoustics.com/wp-content/uploads/2020/02/SB21RDC-C000-4.pdf
-manu_page: https://sbacoustics.com/product/sb21rdc-c000-4/
-vendor_page: null
 source: https://sbacoustics.com/product/sb21rdc-c000-4/
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.1
-    winner: manu_page
-    sources:
-      manu_page: 3.1
-  Sd:  # effective piston area (m²)
-    value: 0.00046
-    winner: manu_page
-    sources:
-      manu_page: 0.00046
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0005
-    winner: manu_page
-    sources:
-      manu_page: 0.0005
-  Qes:  # electrical Q factor
-    value: 1.64
-    winner: manu_page
-    sources:
-      manu_page: 1.64
-  BL:  # force factor (T·m)
-    value: 1.5
-    winner: manu_page
-    sources:
-      manu_page: 1.5
-  Qts:  # total Q factor
-    value: 1.0
-    winner: manu_page
-    sources:
-      manu_page: 1.0
-  Qms:  # mechanical Q factor
-    value: 2.54
-    winner: manu_page
-    sources:
-      manu_page: 2.54
   Le:  # voice coil inductance (H)
     value: 4.0e-05
     winner: manu_page
     sources:
       manu_page: 4.0e-05
+  Qes:  # electrical Q factor
+    value: 1.64
+    winner: manu_page
+    sources:
+      manu_page: 1.64
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00025
+    winner: manu_page
+    sources:
+      manu_page: 0.00025
+  BL:  # force factor (T·m)
+    value: 1.5
+    winner: manu_page
+    sources:
+      manu_page: 1.5
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.1
+    winner: manu_page
+    sources:
+      manu_page: 3.1
   Pe:  # rated power input (W)
     value: 40.0
     winner: manu_page
@@ -66,11 +46,26 @@ specs:
     winner: manu_page
     sources:
       manu_page: 760.0
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.00025
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0005
     winner: manu_page
     sources:
-      manu_page: 0.00025
+      manu_page: 0.0005
+  Qts:  # total Q factor
+    value: 1.0
+    winner: manu_page
+    sources:
+      manu_page: 1.0
+  Qms:  # mechanical Q factor
+    value: 2.54
+    winner: manu_page
+    sources:
+      manu_page: 2.54
+  Sd:  # effective piston area (m²)
+    value: 0.00046
+    winner: manu_page
+    sources:
+      manu_page: 0.00046
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: manu_page
@@ -94,3 +89,8 @@ specs:
 _sources:
   datasheet: https://sbacoustics.com/wp-content/uploads/2020/02/SB21RDC-C000-4.pdf
   manu_page: https://sbacoustics.com/product/sb21rdc-c000-4/
+datasheet_url: https://sbacoustics.com/wp-content/uploads/2020/02/SB21RDC-C000-4.pdf
+manu_page_url: https://sbacoustics.com/product/sb21rdc-c000-4/
+vendor_page_url: null
+frd_url: null
+zma_url: null

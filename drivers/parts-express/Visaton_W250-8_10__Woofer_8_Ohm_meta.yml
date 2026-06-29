@@ -4,48 +4,33 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/292-586--visaton-w250-8-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Visaton-W250-8-10-Woofer-8-Ohm-292-586
 source: https://www.parts-express.com/Visaton-W250-8-10-Woofer-8-Ohm-292-586
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.8
-    winner: vendor_page
-    sources:
-      vendor_page: 6.8
-  Xmax:  # one-way linear excursion (m)
-    value: 0.003
-    winner: vendor_page
-    sources:
-      vendor_page: 0.003
-  Qes:  # electrical Q factor
-    value: 1.0
-    winner: vendor_page
-    sources:
-      vendor_page: 1.0
-  Qts:  # total Q factor
-    value: 0.78
-    winner: vendor_page
-    sources:
-      vendor_page: 0.78
-  Qms:  # mechanical Q factor
-    value: 3.57
-    winner: vendor_page
-    sources:
-      vendor_page: 3.57
   Le:  # voice coil inductance (H)
     value: 0.0011
     winner: vendor_page
     sources:
       vendor_page: 0.0011
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.13507113599999998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.13507113599999998
+  Qes:  # electrical Q factor
+    value: 1.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.8
+    winner: vendor_page
+    sources:
+      vendor_page: 6.8
   Pe:  # rated power input (W)
     value: 90.0
     winner: vendor_page
@@ -56,11 +41,21 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 37.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.13507113599999998
+  Xmax:  # one-way linear excursion (m)
+    value: 0.003
     winner: vendor_page
     sources:
-      vendor_page: 0.13507113599999998
+      vendor_page: 0.003
+  Qts:  # total Q factor
+    value: 0.78
+    winner: vendor_page
+    sources:
+      vendor_page: 0.78
+  Qms:  # mechanical Q factor
+    value: 3.57
+    winner: vendor_page
+    sources:
+      vendor_page: 3.57
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -79,3 +74,8 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/292-586--visaton-w250-8-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Visaton-W250-8-10-Woofer-8-Ohm-292-586
+datasheet_url: https://www.parts-express.com/pedocs/specs/292-586--visaton-w250-8-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Visaton-W250-8-10-Woofer-8-Ohm-292-586
+frd_url: null
+zma_url: null

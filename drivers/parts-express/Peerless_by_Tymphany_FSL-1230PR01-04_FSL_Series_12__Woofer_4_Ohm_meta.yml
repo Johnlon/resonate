@@ -4,63 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-1003--fsl-1230pr01-04-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Peerless-by-Tymphany-FSL-1230PR01-04-FSL-Series-12-Woofer-264-1003
 source: https://www.parts-express.com/Peerless-by-Tymphany-FSL-1230PR01-04-FSL-Series-12-Woofer-264-1003
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.4
-    winner: vendor_page
-    sources:
-      vendor_page: 3.4
-  Sd:  # effective piston area (m²)
-    value: 0.0539
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0539
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00717
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00717
-  Qes:  # electrical Q factor
-    value: 0.597
-    winner: vendor_page
-    sources:
-      vendor_page: 0.597
-  Rms:  # mechanical resistance (kg/s)
-    value: 2.9345331377850115
-    winner: vendor_page
-    sources:
-      vendor_page: 2.9345331377850115
-  BL:  # force factor (T·m)
-    value: 11.8
-    winner: vendor_page
-    sources:
-      vendor_page: 11.8
-  Qts:  # total Q factor
-    value: 0.56
-    winner: vendor_page
-    sources:
-      vendor_page: 0.56
-  Qms:  # mechanical Q factor
-    value: 8.36
-    winner: vendor_page
-    sources:
-      vendor_page: 8.36
   Le:  # voice coil inductance (H)
     value: 0.000509
     winner: vendor_page
     sources:
       vendor_page: 0.000509
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.047005887999999996
+    winner: vendor_page
+    sources:
+      vendor_page: 0.047005887999999996
+  Qes:  # electrical Q factor
+    value: 0.597
+    winner: vendor_page
+    sources:
+      vendor_page: 0.597
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0685
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0685
+  BL:  # force factor (T·m)
+    value: 11.8
+    winner: vendor_page
+    sources:
+      vendor_page: 11.8
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.4
+    winner: vendor_page
+    sources:
+      vendor_page: 3.4
   Pe:  # rated power input (W)
     value: 700.0
     winner: vendor_page
@@ -71,31 +51,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 57.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.047005887999999996
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.9345331377850115
     winner: vendor_page
     sources:
-      vendor_page: 0.047005887999999996
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0685
+      vendor_page: 2.9345331377850115
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00717
     winner: vendor_page
     sources:
-      vendor_page: 0.0685
+      vendor_page: 0.00717
+  Qts:  # total Q factor
+    value: 0.56
+    winner: vendor_page
+    sources:
+      vendor_page: 0.56
+  Qms:  # mechanical Q factor
+    value: 8.36
+    winner: vendor_page
+    sources:
+      vendor_page: 8.36
+  Sd:  # effective piston area (m²)
+    value: 0.0539
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0539
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 60.0
-    winner: vendor_page
-    sources:
-      vendor_page: 60.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 600.0
-    winner: vendor_page
-    sources:
-      vendor_page: 600.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-1003--fsl-1230pr01-04-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Peerless-by-Tymphany-FSL-1230PR01-04-FSL-Series-12-Woofer-264-1003
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-1003--fsl-1230pr01-04-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Peerless-by-Tymphany-FSL-1230PR01-04-FSL-Series-12-Woofer-264-1003
+frd_url: null
+zma_url: null

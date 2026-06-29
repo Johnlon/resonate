@@ -6,45 +6,27 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/290-270-pyramid-wx65x-specifications.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Pyramid-WX65X-6-1-2-White-Poly-Woofer-290-270
 source: https://www.parts-express.com/Pyramid-WX65X-6-1-2-White-Poly-Woofer-290-270
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd
 community: null
 fetched_sku: 290-270
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.3
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.008495039999999999
     winner: vendor_page
     sources:
-      vendor_page: 3.3
-  Xmax:  # one-way linear excursion (m)
-    value: 0.002
-    winner: vendor_page
-    sources:
-      vendor_page: 0.002
+      vendor_page: 0.008495039999999999
   Qes:  # electrical Q factor
     value: 0.82
     winner: vendor_page
     sources:
       vendor_page: 0.82
-  Qts:  # total Q factor
-    value: 0.58
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.3
     winner: vendor_page
     sources:
-      vendor_page: 0.58
-  Qms:  # mechanical Q factor
-    value: 2.03
-    winner: vendor_page
-    sources:
-      vendor_page: 2.03
+      vendor_page: 3.3
   Pe:  # rated power input (W)
     value: 150.0
     winner: vendor_page
@@ -55,11 +37,21 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 69.5
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.008495039999999999
+  Xmax:  # one-way linear excursion (m)
+    value: 0.002
     winner: vendor_page
     sources:
-      vendor_page: 0.008495039999999999
+      vendor_page: 0.002
+  Qts:  # total Q factor
+    value: 0.58
+    winner: vendor_page
+    sources:
+      vendor_page: 0.58
+  Qms:  # mechanical Q factor
+    value: 2.03
+    winner: vendor_page
+    sources:
+      vendor_page: 2.03
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
@@ -68,3 +60,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/290-270-pyramid-wx65x-specifications.pdf
   vendor_page: https://www.parts-express.com/Pyramid-WX65X-6-1-2-White-Poly-Woofer-290-270
+datasheet_url: https://www.parts-express.com/pedocs/specs/290-270-pyramid-wx65x-specifications.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Pyramid-WX65X-6-1-2-White-Poly-Woofer-290-270
+frd_url: null
+zma_url: null

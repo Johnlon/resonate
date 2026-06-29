@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/294-1057--faitalpro-12rs1066-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/FaitalPRO-12RS1066-12-Neodymium-Professional-Subwoofer-8-Ohm-294-1057
 source: https://www.parts-express.com/FaitalPRO-12RS1066-12-Neodymium-Professional-Subwoofer-8-Ohm-294-1057
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.0
-    winner: vendor_page
-    sources:
-      vendor_page: 5.0
-  Sd:  # effective piston area (m²)
-    value: 0.0496
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0496
-  Cms:  # mechanical compliance (m/N)
-    value: 8.999999999999999e-05
-    winner: vendor_page
-    sources:
-      vendor_page: 8.999999999999999e-05
-  Xmax:  # one-way linear excursion (m)
-    value: 0.01245
-    winner: vendor_page
-    sources:
-      vendor_page: 0.01245
-  Qes:  # electrical Q factor
-    value: 0.34
-    winner: vendor_page
-    sources:
-      vendor_page: 0.34
-  Rms:  # mechanical resistance (kg/s)
-    value: 2.9711782031720446
-    winner: vendor_page
-    sources:
-      vendor_page: 2.9711782031720446
-  BL:  # force factor (T·m)
-    value: 24.8
-    winner: vendor_page
-    sources:
-      vendor_page: 24.8
-  Qts:  # total Q factor
-    value: 0.33
-    winner: vendor_page
-    sources:
-      vendor_page: 0.33
-  Qms:  # mechanical Q factor
-    value: 13.9
-    winner: vendor_page
-    sources:
-      vendor_page: 13.9
   Le:  # voice coil inductance (H)
     value: 0.00135
     winner: vendor_page
     sources:
       vendor_page: 0.00135
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.031431648
+    winner: vendor_page
+    sources:
+      vendor_page: 0.031431648
+  Qes:  # electrical Q factor
+    value: 0.34
+    winner: vendor_page
+    sources:
+      vendor_page: 0.34
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.1565
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1565
+  BL:  # force factor (T·m)
+    value: 24.8
+    winner: vendor_page
+    sources:
+      vendor_page: 24.8
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
   Pe:  # rated power input (W)
     value: 1000.0
     winner: vendor_page
@@ -76,31 +51,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 42.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.031431648
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.9711782031720446
     winner: vendor_page
     sources:
-      vendor_page: 0.031431648
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.1565
+      vendor_page: 2.9711782031720446
+  Xmax:  # one-way linear excursion (m)
+    value: 0.01245
     winner: vendor_page
     sources:
-      vendor_page: 0.1565
+      vendor_page: 0.01245
+  Qts:  # total Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Qms:  # mechanical Q factor
+    value: 13.9
+    winner: vendor_page
+    sources:
+      vendor_page: 13.9
+  Sd:  # effective piston area (m²)
+    value: 0.0496
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0496
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 45.0
+  Cms:  # mechanical compliance (m/N)
+    value: 8.999999999999999e-05
     winner: vendor_page
     sources:
-      vendor_page: 45.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 2500.0
-    winner: vendor_page
-    sources:
-      vendor_page: 2500.0
+      vendor_page: 8.999999999999999e-05
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/294-1057--faitalpro-12rs1066-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/FaitalPRO-12RS1066-12-Neodymium-Professional-Subwoofer-8-Ohm-294-1057
+datasheet_url: https://www.parts-express.com/pedocs/specs/294-1057--faitalpro-12rs1066-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/FaitalPRO-12RS1066-12-Neodymium-Professional-Subwoofer-8-Ohm-294-1057
+frd_url: null
+zma_url: null

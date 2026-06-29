@@ -4,12 +4,7 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/277-010-morel-mdt-29-specifications.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Morel-MDT-29-1-1-8-Soft-Dome-Tweeter-277-010
 source: https://www.parts-express.com/Morel-MDT-29-1-1-8-Soft-Dome-Tweeter-277-010
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
@@ -49,3 +44,8 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/277-010-morel-mdt-29-specifications.pdf
   vendor_page: https://www.parts-express.com/Morel-MDT-29-1-1-8-Soft-Dome-Tweeter-277-010
+datasheet_url: https://www.parts-express.com/pedocs/specs/277-010-morel-mdt-29-specifications.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Morel-MDT-29-1-1-8-Soft-Dome-Tweeter-277-010
+frd_url: null
+zma_url: null

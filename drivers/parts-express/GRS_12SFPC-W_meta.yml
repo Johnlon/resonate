@@ -6,70 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/GRS-12SFPC-W-12-Square-Frame-Paper-Cone-Woofer-White-290-914
 source: https://www.parts-express.com/GRS-12SFPC-W-12-Square-Frame-Paper-Cone-Woofer-White-290-914
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 290-914
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.8
-    winner: vendor_page
-    sources:
-      vendor_page: 5.8
-  Sd:  # effective piston area (m²)
-    value: 0.04879
-    winner: vendor_page
-    sources:
-      vendor_page: 0.04879
-  Cms:  # mechanical compliance (m/N)
-    value: 0.000457
-    winner: vendor_page
-    sources:
-      vendor_page: 0.000457
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0043
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0043
-  Qes:  # electrical Q factor
-    value: 0.89
-    winner: vendor_page
-    sources:
-      vendor_page: 0.89
-  Rms:  # mechanical resistance (kg/s)
-    value: 3.2768377566827493
-    winner: vendor_page
-    sources:
-      vendor_page: 3.2768377566827493
-  BL:  # force factor (T·m)
-    value: 8.6
-    winner: vendor_page
-    sources:
-      vendor_page: 8.6
-  Qts:  # total Q factor
-    value: 0.7
-    winner: vendor_page
-    sources:
-      vendor_page: 0.7
-  Qms:  # mechanical Q factor
-    value: 3.41
-    winner: vendor_page
-    sources:
-      vendor_page: 3.41
   Le:  # voice coil inductance (H)
     value: 0.0007099999999999999
     winner: vendor_page
     sources:
       vendor_page: 0.0007099999999999999
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.15432656
+    winner: vendor_page
+    sources:
+      vendor_page: 0.15432656
+  Qes:  # electrical Q factor
+    value: 0.89
+    winner: vendor_page
+    sources:
+      vendor_page: 0.89
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.057
+    winner: vendor_page
+    sources:
+      vendor_page: 0.057
+  BL:  # force factor (T·m)
+    value: 8.6
+    winner: vendor_page
+    sources:
+      vendor_page: 8.6
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.8
+    winner: vendor_page
+    sources:
+      vendor_page: 5.8
   Pe:  # rated power input (W)
     value: 80.0
     winner: vendor_page
@@ -80,20 +52,48 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 31.2
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.15432656
+  Rms:  # mechanical resistance (kg/s)
+    value: 3.2768377566827493
     winner: vendor_page
     sources:
-      vendor_page: 0.15432656
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.057
+      vendor_page: 3.2768377566827493
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0043
     winner: vendor_page
     sources:
-      vendor_page: 0.057
+      vendor_page: 0.0043
+  Qts:  # total Q factor
+    value: 0.7
+    winner: vendor_page
+    sources:
+      vendor_page: 0.7
+  Qms:  # mechanical Q factor
+    value: 3.41
+    winner: vendor_page
+    sources:
+      vendor_page: 3.41
+  Sd:  # effective piston area (m²)
+    value: 0.04879
+    winner: vendor_page
+    sources:
+      vendor_page: 0.04879
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000457
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000457
 _sources:
   vendor_page: https://www.parts-express.com/GRS-12SFPC-W-12-Square-Frame-Paper-Cone-Woofer-White-290-914
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/GRS-12SFPC-W-12-Square-Frame-Paper-Cone-Woofer-White-290-914
+frd_url: null
+zma_url: null

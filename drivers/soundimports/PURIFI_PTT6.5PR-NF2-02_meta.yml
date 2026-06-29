@@ -4,42 +4,12 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://doc.soundimports.nl/pdf/brands/purifi/PTT6.5PR-NF2-02/PTT6.5PR-NF2-02-Datasheet.pdf
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/purifi-ptt65pr-nf2-02.html
 source: https://www.soundimports.eu/en/purifi-ptt65pr-nf2-02.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  Sd:  # effective piston area (m²)
-    value: 0.0133
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0133
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00105
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00105
-  Xmax:  # one-way linear excursion (m)
-    value: 0.015
-    winner: vendor_page
-    sources:
-      vendor_page: 0.015
-  Qms:  # mechanical Q factor
-    value: 10.9
-    winner: vendor_page
-    sources:
-      vendor_page: 10.9
-  Fs:  # free air resonance (Hz)
-    value: 17.0
-    winner: vendor_page
-    sources:
-      vendor_page: 17.0
   Vas:  # equivalent acoustic volume (m³)
     value: 0.0262
     winner: vendor_page
@@ -50,6 +20,36 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 0.08
+  Fs:  # free air resonance (Hz)
+    value: 17.0
+    winner: vendor_page
+    sources:
+      vendor_page: 17.0
+  Xmax:  # one-way linear excursion (m)
+    value: 0.015
+    winner: vendor_page
+    sources:
+      vendor_page: 0.015
+  Qms:  # mechanical Q factor
+    value: 10.9
+    winner: vendor_page
+    sources:
+      vendor_page: 10.9
+  Sd:  # effective piston area (m²)
+    value: 0.0133
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0133
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00105
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00105
 _sources:
   datasheet: https://doc.soundimports.nl/pdf/brands/purifi/PTT6.5PR-NF2-02/PTT6.5PR-NF2-02-Datasheet.pdf
   vendor_page: https://www.soundimports.eu/en/purifi-ptt65pr-nf2-02.html
+datasheet_url: https://doc.soundimports.nl/pdf/brands/purifi/PTT6.5PR-NF2-02/PTT6.5PR-NF2-02-Datasheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/purifi-ptt65pr-nf2-02.html
+frd_url: null
+zma_url: null

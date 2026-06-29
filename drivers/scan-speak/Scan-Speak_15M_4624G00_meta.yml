@@ -4,53 +4,53 @@ detail: Automatically scraped from Scan-Speak website (scraped 2026-06-28). T/S 
   have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.scan-speak.dk/datasheet/reviews/15M-4624G00-VoiceCoil_2012-8.pdf
-manu_page: https://www.scan-speak.dk/product/15m-4624g00/
-vendor_page: null
 source: https://www.scan-speak.dk/product/15m-4624g00/
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: midrange
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.2
-    winner: manu_page
-    sources:
-      manu_page: 3.2
-  Sd:  # effective piston area (m²)
-    value: 0.0075
-    winner: manu_page
-    sources:
-      manu_page: 0.0075
-  BL:  # force factor (T·m)
-    value: 5.3
-    winner: manu_page
-    sources:
-      manu_page: 5.3
-  Qts:  # total Q factor
-    value: 0.43
-    winner: manu_page
-    sources:
-      manu_page: 0.43
-  SPL:  # sensitivity (dB, 2.83 V/1 m)
-    value: 92.5
-    winner: manu_page
-    sources:
-      manu_page: 92.5
-  Fs:  # free air resonance (Hz)
-    value: 100.0
-    winner: manu_page
-    sources:
-      manu_page: 100.0
   Vas:  # equivalent acoustic volume (m³)
     value: 0.0037
     winner: manu_page
     sources:
       manu_page: 0.0037
+  BL:  # force factor (T·m)
+    value: 5.3
+    winner: manu_page
+    sources:
+      manu_page: 5.3
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.2
+    winner: manu_page
+    sources:
+      manu_page: 3.2
+  Fs:  # free air resonance (Hz)
+    value: 100.0
+    winner: manu_page
+    sources:
+      manu_page: 100.0
+  Qts:  # total Q factor
+    value: 0.43
+    winner: manu_page
+    sources:
+      manu_page: 0.43
+  Sd:  # effective piston area (m²)
+    value: 0.0075
+    winner: manu_page
+    sources:
+      manu_page: 0.0075
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 92.5
+    winner: manu_page
+    sources:
+      manu_page: 92.5
 _sources:
   datasheet: https://www.scan-speak.dk/datasheet/reviews/15M-4624G00-VoiceCoil_2012-8.pdf
   manu_page: https://www.scan-speak.dk/product/15m-4624g00/
+datasheet_url: https://www.scan-speak.dk/datasheet/reviews/15M-4624G00-VoiceCoil_2012-8.pdf
+manu_page_url: https://www.scan-speak.dk/product/15m-4624g00/
+vendor_page_url: null
+frd_url: null
+zma_url: null

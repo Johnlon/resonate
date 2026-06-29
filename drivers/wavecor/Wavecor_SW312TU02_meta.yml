@@ -6,105 +6,85 @@ corrections: null
 reviewed_by: null
 driver_type: subwoofer
 nominal_size_cm: null
-datasheet: http://www.wavecor.com/Driver%20specifications%20PDF/SW312TU02_specifications.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: http://www.wavecor.com/html/sw312tu02.html
-vendor_page: null
 source: http://www.wavecor.com/html/sw312tu02.html
-frd: null
-impedance: http://www.wavecor.com/Driver%20measurements%20TXT/Impedance%20response/SW312TU02_impedance_response.txt
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 specs:
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.065
+    winner: manu_page
+    sources:
+      manu_page: 0.065
+  Qes:  # electrical Q factor
+    value: 0.53
+    winner: manu_page
+    sources:
+      manu_page: 0.53
   Mms:  # moving mass incl. air load (kg)
     value: 0.194
     winner: manu_page
     sources:
-      datasheet: 0.194
       manu_page: 0.194
-    note: Not in datasheet; value from manu_page
-  Znom:  # nominal impedance (Ω)
-    value: 4.0
-    winner: manu_page
-    sources:
-      datasheet: 4.0
-      manu_page: 4.0
-    note: Not in datasheet; value from manu_page
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.2
-    winner: manu_page
-    sources:
-      manu_page: 3.2
-    note: Not in datasheet; value from manu_page
-  Sd:  # effective piston area (m²)
-    value: 0.0513
-    winner: manu_page
-    sources:
-      datasheet: 0.0513
-      manu_page: 0.0513
-    note: Not in datasheet; value from manu_page
-  Cms:  # mechanical compliance (m/N)
-    value: 0.000173
-    winner: datasheet
-    sources:
-      datasheet: 0.000173
-  Fs:  # free air resonance (Hz)
-    value: 27.5
-    winner: manu_page
-    sources:
-      datasheet: 27.5
-      manu_page: 27.5
-    note: Not in datasheet; value from manu_page
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0115
-    winner: manu_page
-    sources:
-      manu_page: 0.0115
-    note: Not in datasheet; value from manu_page
-  Qts:  # total Q factor
-    value: 0.5
-    winner: manu_page
-    sources:
-      datasheet: 0.5
-      manu_page: 0.5
-    note: Not in datasheet; value from manu_page
   BL:  # force factor (T·m)
     value: 14.3
     winner: manu_page
     sources:
       manu_page: 14.3
-    note: Not in datasheet; value from manu_page
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.2
+    winner: manu_page
+    sources:
+      manu_page: 3.2
   Pe:  # rated power input (W)
     value: 250.0
     winner: manu_page
     sources:
       manu_page: 250.0
-    note: Not in datasheet; value from manu_page
+  Fs:  # free air resonance (Hz)
+    value: 27.5
+    winner: manu_page
+    sources:
+      manu_page: 27.5
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0115
+    winner: manu_page
+    sources:
+      manu_page: 0.0115
+  Qts:  # total Q factor
+    value: 0.5
+    winner: manu_page
+    sources:
+      manu_page: 0.5
   Qms:  # mechanical Q factor
     value: 11.5
     winner: manu_page
     sources:
-      datasheet: 11.5
       manu_page: 11.5
-    note: Not in datasheet; value from manu_page
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.065
+  Sd:  # effective piston area (m²)
+    value: 0.0513
     winner: manu_page
     sources:
-      datasheet: 0.065
-      manu_page: 0.065
-    note: Not in datasheet; value from manu_page
-  Qes:  # electrical Q factor
-    value: 0.53
+      manu_page: 0.0513
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
     winner: manu_page
     sources:
-      datasheet: 0.53
-      manu_page: 0.53
-    note: Not in datasheet; value from manu_page
+      manu_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000173
+    winner: manu_page
+    sources:
+      manu_page: 0.000173
 _sources:
   datasheet: http://www.wavecor.com/Driver%20specifications%20PDF/SW312TU02_specifications.pdf
   manu_page: http://www.wavecor.com/html/sw312tu02.html
+datasheet_url: http://www.wavecor.com/Driver%20specifications%20PDF/SW312TU02_specifications.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: http://www.wavecor.com/html/sw312tu02.html
+vendor_page_url: null
+frd_url: null
+zma_url: http://www.wavecor.com/Driver%20measurements%20TXT/Impedance%20response/SW312TU02_impedance_response.txt

@@ -4,62 +4,37 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/morel-powerslim6.html
 source: https://www.soundimports.eu/en/morel-powerslim6.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 4.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0077
     winner: vendor_page
     sources:
-      vendor_page: 4.0
-  Sd:  # effective piston area (m²)
-    value: 0.0141
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0141
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00028
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00028
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0025
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0025
+      vendor_page: 0.0077
   Qes:  # electrical Q factor
     value: 1.55
     winner: vendor_page
     sources:
       vendor_page: 1.55
-  Rms:  # mechanical resistance (kg/s)
-    value: 3.37
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.02
     winner: vendor_page
     sources:
-      vendor_page: 3.37
+      vendor_page: 0.02
   BL:  # force factor (T·m)
     value: 4.64
     winner: vendor_page
     sources:
       vendor_page: 4.64
-  Qts:  # total Q factor
-    value: 0.95
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.0
     winner: vendor_page
     sources:
-      vendor_page: 0.95
-  Qms:  # mechanical Q factor
-    value: 2.47
-    winner: vendor_page
-    sources:
-      vendor_page: 2.47
+      vendor_page: 4.0
   Pe:  # rated power input (W)
     value: 80.0
     winner: vendor_page
@@ -70,15 +45,40 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 66.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0077
+  Rms:  # mechanical resistance (kg/s)
+    value: 3.37
     winner: vendor_page
     sources:
-      vendor_page: 0.0077
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.02
+      vendor_page: 3.37
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0025
     winner: vendor_page
     sources:
-      vendor_page: 0.02
+      vendor_page: 0.0025
+  Qts:  # total Q factor
+    value: 0.95
+    winner: vendor_page
+    sources:
+      vendor_page: 0.95
+  Qms:  # mechanical Q factor
+    value: 2.47
+    winner: vendor_page
+    sources:
+      vendor_page: 2.47
+  Sd:  # effective piston area (m²)
+    value: 0.0141
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0141
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00028
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00028
 _sources:
   vendor_page: https://www.soundimports.eu/en/morel-powerslim6.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/morel-powerslim6.html
+frd_url: null
+zma_url: null

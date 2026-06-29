@@ -4,12 +4,7 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/292-694--visaton-fr8-8-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Visaton-FR8-3.3-Paper-Cone-Full-Range-Driver-8-Ohm-292-724
 source: https://www.parts-express.com/Visaton-FR8-3.3-Paper-Cone-Full-Range-Driver-8-Ohm-292-724
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
@@ -36,16 +31,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 130.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 130.0
-    winner: vendor_page
-    sources:
-      vendor_page: 130.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 20000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 20000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/292-694--visaton-fr8-8-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Visaton-FR8-3.3-Paper-Cone-Full-Range-Driver-8-Ohm-292-724
+datasheet_url: https://www.parts-express.com/pedocs/specs/292-694--visaton-fr8-8-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Visaton-FR8-3.3-Paper-Cone-Full-Range-Driver-8-Ohm-292-724
+frd_url: null
+zma_url: null

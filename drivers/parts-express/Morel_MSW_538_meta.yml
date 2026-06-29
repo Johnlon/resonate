@@ -6,40 +6,12 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/morel-msw-shallow-classic-series-drivers-overview.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Morel-MSW-144-Shallow-Classic-Series-5-DPC-Cone-Woofer-8-Ohms-297-004
 source: https://www.parts-express.com/Morel-MSW-144-Shallow-Classic-Series-5-DPC-Cone-Woofer-8-Ohms-297-004
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd
 community: null
 fetched_sku: 297-004
 specs:
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0035
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0035
-  Qts:  # total Q factor
-    value: 0.36
-    winner: vendor_page
-    sources:
-      vendor_page: 0.36
-  Pe:  # rated power input (W)
-    value: 150.0
-    winner: vendor_page
-    sources:
-      vendor_page: 150.0
-  Fs:  # free air resonance (Hz)
-    value: 45.0
-    winner: vendor_page
-    sources:
-      vendor_page: 45.0
   Vas:  # equivalent acoustic volume (m³)
     value: 0.012176224
     winner: vendor_page
@@ -50,6 +22,26 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 0.01368
+  Pe:  # rated power input (W)
+    value: 150.0
+    winner: vendor_page
+    sources:
+      vendor_page: 150.0
+  Fs:  # free air resonance (Hz)
+    value: 45.0
+    winner: vendor_page
+    sources:
+      vendor_page: 45.0
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0035
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0035
+  Qts:  # total Q factor
+    value: 0.36
+    winner: vendor_page
+    sources:
+      vendor_page: 0.36
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -58,3 +50,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/morel-msw-shallow-classic-series-drivers-overview.pdf
   vendor_page: https://www.parts-express.com/Morel-MSW-144-Shallow-Classic-Series-5-DPC-Cone-Woofer-8-Ohms-297-004
+datasheet_url: https://www.parts-express.com/pedocs/specs/morel-msw-shallow-classic-series-drivers-overview.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Morel-MSW-144-Shallow-Classic-Series-5-DPC-Cone-Woofer-8-Ohms-297-004
+frd_url: null
+zma_url: null

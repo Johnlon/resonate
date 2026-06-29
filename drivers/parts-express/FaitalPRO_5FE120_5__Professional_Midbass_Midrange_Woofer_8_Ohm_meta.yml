@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/294-1141-faitalpro-5fe120-8-specifications.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/FaitalPRO-5FE120-5-Professional-Woofer-8-Ohm-294-1141
 source: https://www.parts-express.com/FaitalPRO-5FE120-5-Professional-Woofer-8-Ohm-294-1141
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.4
-    winner: vendor_page
-    sources:
-      vendor_page: 5.4
-  Sd:  # effective piston area (m²)
-    value: 0.00798
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00798
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00055
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00055
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00525
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00525
-  Qes:  # electrical Q factor
-    value: 0.51
-    winner: vendor_page
-    sources:
-      vendor_page: 0.51
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.6112214278412794
-    winner: vendor_page
-    sources:
-      vendor_page: 0.6112214278412794
-  BL:  # force factor (T·m)
-    value: 6.9
-    winner: vendor_page
-    sources:
-      vendor_page: 6.9
-  Qts:  # total Q factor
-    value: 0.47
-    winner: vendor_page
-    sources:
-      vendor_page: 0.47
-  Qms:  # mechanical Q factor
-    value: 7.35
-    winner: vendor_page
-    sources:
-      vendor_page: 7.35
   Le:  # voice coil inductance (H)
     value: 0.00041
     winner: vendor_page
     sources:
       vendor_page: 0.00041
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.004813856
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004813856
+  Qes:  # electrical Q factor
+    value: 0.51
+    winner: vendor_page
+    sources:
+      vendor_page: 0.51
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.011
+    winner: vendor_page
+    sources:
+      vendor_page: 0.011
+  BL:  # force factor (T·m)
+    value: 6.9
+    winner: vendor_page
+    sources:
+      vendor_page: 6.9
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.4
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4
   Pe:  # rated power input (W)
     value: 80.0
     winner: vendor_page
@@ -76,31 +51,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 65.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.004813856
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.6112214278412794
     winner: vendor_page
     sources:
-      vendor_page: 0.004813856
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.011
+      vendor_page: 0.6112214278412794
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00525
     winner: vendor_page
     sources:
-      vendor_page: 0.011
+      vendor_page: 0.00525
+  Qts:  # total Q factor
+    value: 0.47
+    winner: vendor_page
+    sources:
+      vendor_page: 0.47
+  Qms:  # mechanical Q factor
+    value: 7.35
+    winner: vendor_page
+    sources:
+      vendor_page: 7.35
+  Sd:  # effective piston area (m²)
+    value: 0.00798
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00798
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 63.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00055
     winner: vendor_page
     sources:
-      vendor_page: 63.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 6000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 6000.0
+      vendor_page: 0.00055
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/294-1141-faitalpro-5fe120-8-specifications.pdf
   vendor_page: https://www.parts-express.com/FaitalPRO-5FE120-5-Professional-Woofer-8-Ohm-294-1141
+datasheet_url: https://www.parts-express.com/pedocs/specs/294-1141-faitalpro-5fe120-8-specifications.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/FaitalPRO-5FE120-5-Professional-Woofer-8-Ohm-294-1141
+frd_url: null
+zma_url: null

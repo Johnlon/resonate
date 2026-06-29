@@ -4,57 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/prv-audio-10mr650a.html
 source: https://www.soundimports.eu/en/prv-audio-10mr650a.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.6
-    winner: vendor_page
-    sources:
-      vendor_page: 5.6
-  Sd:  # effective piston area (m²)
-    value: 0.0398
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0398
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00572
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00572
-  Qes:  # electrical Q factor
-    value: 0.48
-    winner: vendor_page
-    sources:
-      vendor_page: 0.48
-  BL:  # force factor (T·m)
-    value: 12.25
-    winner: vendor_page
-    sources:
-      vendor_page: 12.25
-  Qts:  # total Q factor
-    value: 0.47
-    winner: vendor_page
-    sources:
-      vendor_page: 0.47
-  Qms:  # mechanical Q factor
-    value: 14.19
-    winner: vendor_page
-    sources:
-      vendor_page: 14.19
   Le:  # voice coil inductance (H)
     value: 0.00044
     winner: vendor_page
     sources:
       vendor_page: 0.00044
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0419
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0419
+  Qes:  # electrical Q factor
+    value: 0.48
+    winner: vendor_page
+    sources:
+      vendor_page: 0.48
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.03186
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03186
+  BL:  # force factor (T·m)
+    value: 12.25
+    winner: vendor_page
+    sources:
+      vendor_page: 12.25
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
   Pe:  # rated power input (W)
     value: 650.0
     winner: vendor_page
@@ -65,15 +50,30 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 64.7
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0419
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00572
     winner: vendor_page
     sources:
-      vendor_page: 0.0419
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.03186
+      vendor_page: 0.00572
+  Qts:  # total Q factor
+    value: 0.47
     winner: vendor_page
     sources:
-      vendor_page: 0.03186
+      vendor_page: 0.47
+  Qms:  # mechanical Q factor
+    value: 14.19
+    winner: vendor_page
+    sources:
+      vendor_page: 14.19
+  Sd:  # effective piston area (m²)
+    value: 0.0398
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0398
 _sources:
   vendor_page: https://www.soundimports.eu/en/prv-audio-10mr650a.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/prv-audio-10mr650a.html
+frd_url: null
+zma_url: null

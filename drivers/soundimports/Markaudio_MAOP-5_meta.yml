@@ -4,37 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/markaudio-maop-5.html
 source: https://www.soundimports.eu/en/markaudio-maop-5.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
 specs:
-  Sd:  # effective piston area (m²)
-    value: 0.0028
+  Le:  # voice coil inductance (H)
+    value: 6.81e-05
     winner: vendor_page
     sources:
-      vendor_page: 0.0028
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0013445
+      vendor_page: 6.81e-05
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0015008
     winner: vendor_page
     sources:
-      vendor_page: 0.0013445
+      vendor_page: 0.0015008
   Qes:  # electrical Q factor
     value: 0.6916
     winner: vendor_page
     sources:
       vendor_page: 0.6916
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0014396
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0014396
   BL:  # force factor (T·m)
     value: 2.2555
     winner: vendor_page
     sources:
       vendor_page: 2.2555
+  Fs:  # free air resonance (Hz)
+    value: 114.4
+    winner: vendor_page
+    sources:
+      vendor_page: 114.4
   Qts:  # total Q factor
     value: 0.49
     winner: vendor_page
@@ -45,30 +50,25 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 1.7096
-  Le:  # voice coil inductance (H)
-    value: 6.81e-05
+  Sd:  # effective piston area (m²)
+    value: 0.0028
     winner: vendor_page
     sources:
-      vendor_page: 6.81e-05
-  Fs:  # free air resonance (Hz)
-    value: 114.4
-    winner: vendor_page
-    sources:
-      vendor_page: 114.4
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0015008
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0015008
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0014396
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0014396
+      vendor_page: 0.0028
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0013445
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0013445
 _sources:
   vendor_page: https://www.soundimports.eu/en/markaudio-maop-5.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/markaudio-maop-5.html
+frd_url: null
+zma_url: null

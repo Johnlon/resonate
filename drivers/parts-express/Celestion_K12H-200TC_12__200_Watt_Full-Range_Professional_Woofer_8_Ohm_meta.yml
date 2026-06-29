@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/294-2082--k12h-200tc-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Celestion-K12H-200TC-12-200-Watt-Full-Range-Professional-Wo-294-2082
 source: https://www.parts-express.com/Celestion-K12H-200TC-12-200-Watt-Full-Range-Professional-Wo-294-2082
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.81
-    winner: vendor_page
-    sources:
-      vendor_page: 5.81
-  Sd:  # effective piston area (m²)
-    value: 0.053029999999999994
-    winner: vendor_page
-    sources:
-      vendor_page: 0.053029999999999994
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00016
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00016
-  Xmax:  # one-way linear excursion (m)
-    value: 0.002
-    winner: vendor_page
-    sources:
-      vendor_page: 0.002
-  Qes:  # electrical Q factor
-    value: 0.43
-    winner: vendor_page
-    sources:
-      vendor_page: 0.43
-  Rms:  # mechanical resistance (kg/s)
-    value: 5.6717214210481375
-    winner: vendor_page
-    sources:
-      vendor_page: 5.6717214210481375
-  BL:  # force factor (T·m)
-    value: 14.63
-    winner: vendor_page
-    sources:
-      vendor_page: 14.63
-  Qts:  # total Q factor
-    value: 0.37
-    winner: vendor_page
-    sources:
-      vendor_page: 0.37
-  Qms:  # mechanical Q factor
-    value: 2.8
-    winner: vendor_page
-    sources:
-      vendor_page: 2.8
   Le:  # voice coil inductance (H)
     value: 0.00063
     winner: vendor_page
     sources:
       vendor_page: 0.00063
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.06399596799999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.06399596799999999
+  Qes:  # electrical Q factor
+    value: 0.43
+    winner: vendor_page
+    sources:
+      vendor_page: 0.43
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.04057
+    winner: vendor_page
+    sources:
+      vendor_page: 0.04057
+  BL:  # force factor (T·m)
+    value: 14.63
+    winner: vendor_page
+    sources:
+      vendor_page: 14.63
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.81
+    winner: vendor_page
+    sources:
+      vendor_page: 5.81
   Pe:  # rated power input (W)
     value: 200.0
     winner: vendor_page
@@ -76,21 +51,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 62.3
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.06399596799999999
+  Rms:  # mechanical resistance (kg/s)
+    value: 5.6717214210481375
     winner: vendor_page
     sources:
-      vendor_page: 0.06399596799999999
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.04057
+      vendor_page: 5.6717214210481375
+  Xmax:  # one-way linear excursion (m)
+    value: 0.002
     winner: vendor_page
     sources:
-      vendor_page: 0.04057
+      vendor_page: 0.002
+  Qts:  # total Q factor
+    value: 0.37
+    winner: vendor_page
+    sources:
+      vendor_page: 0.37
+  Qms:  # mechanical Q factor
+    value: 2.8
+    winner: vendor_page
+    sources:
+      vendor_page: 2.8
+  Sd:  # effective piston area (m²)
+    value: 0.053029999999999994
+    winner: vendor_page
+    sources:
+      vendor_page: 0.053029999999999994
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00016
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00016
   freq_low_hz:  # published lower frequency limit (Hz)
     value: 12.0
     winner: vendor_page
@@ -104,3 +99,8 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/294-2082--k12h-200tc-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Celestion-K12H-200TC-12-200-Watt-Full-Range-Professional-Wo-294-2082
+datasheet_url: https://www.parts-express.com/pedocs/specs/294-2082--k12h-200tc-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Celestion-K12H-200TC-12-200-Watt-Full-Range-Professional-Wo-294-2082
+frd_url: null
+zma_url: null

@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-422-6w4p-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Selenium-6W4P-6-Woofer-264-422
 source: https://www.parts-express.com/Selenium-6W4P-6-Woofer-264-422
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.9
-    winner: vendor_page
-    sources:
-      vendor_page: 5.9
-  Sd:  # effective piston area (m²)
-    value: 0.0238
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0238
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00032
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00032
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0023
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0023
-  Qes:  # electrical Q factor
-    value: 0.95
-    winner: vendor_page
-    sources:
-      vendor_page: 0.95
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.2044960012748445
-    winner: vendor_page
-    sources:
-      vendor_page: 1.2044960012748445
-  BL:  # force factor (T·m)
-    value: 6.34
-    winner: vendor_page
-    sources:
-      vendor_page: 6.34
-  Qts:  # total Q factor
-    value: 0.83
-    winner: vendor_page
-    sources:
-      vendor_page: 0.83
-  Qms:  # mechanical Q factor
-    value: 6.7
-    winner: vendor_page
-    sources:
-      vendor_page: 6.7
   Le:  # voice coil inductance (H)
     value: 0.00057
     winner: vendor_page
     sources:
       vendor_page: 0.00057
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.007928704
+    winner: vendor_page
+    sources:
+      vendor_page: 0.007928704
+  Qes:  # electrical Q factor
+    value: 0.95
+    winner: vendor_page
+    sources:
+      vendor_page: 0.95
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0169
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0169
+  BL:  # force factor (T·m)
+    value: 6.34
+    winner: vendor_page
+    sources:
+      vendor_page: 6.34
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.9
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9
   Pe:  # rated power input (W)
     value: 100.0
     winner: vendor_page
@@ -76,31 +51,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 76.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.007928704
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.2044960012748445
     winner: vendor_page
     sources:
-      vendor_page: 0.007928704
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0169
+      vendor_page: 1.2044960012748445
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0023
     winner: vendor_page
     sources:
-      vendor_page: 0.0169
+      vendor_page: 0.0023
+  Qts:  # total Q factor
+    value: 0.83
+    winner: vendor_page
+    sources:
+      vendor_page: 0.83
+  Qms:  # mechanical Q factor
+    value: 6.7
+    winner: vendor_page
+    sources:
+      vendor_page: 6.7
+  Sd:  # effective piston area (m²)
+    value: 0.0238
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0238
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 80.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00032
     winner: vendor_page
     sources:
-      vendor_page: 80.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 9000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 9000.0
+      vendor_page: 0.00032
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-422-6w4p-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Selenium-6W4P-6-Woofer-264-422
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-422-6w4p-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Selenium-6W4P-6-Woofer-264-422
+frd_url: null
+zma_url: null

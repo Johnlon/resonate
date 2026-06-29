@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.parts-express.com/FaitalPRO-10RS350-10-Professional-Woofer-8-Ohm-294-1323
 source: https://www.parts-express.com/FaitalPRO-10RS350-10-Professional-Woofer-8-Ohm-294-1323
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.3
-    winner: vendor_page
-    sources:
-      vendor_page: 5.3
-  Sd:  # effective piston area (m²)
-    value: 0.0322
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0322
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00027
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00027
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00737
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00737
-  Qes:  # electrical Q factor
-    value: 0.4
-    winner: vendor_page
-    sources:
-      vendor_page: 0.4
-  Rms:  # mechanical resistance (kg/s)
-    value: 2.8515994855661195
-    winner: vendor_page
-    sources:
-      vendor_page: 2.8515994855661195
-  BL:  # force factor (T·m)
-    value: 14.0
-    winner: vendor_page
-    sources:
-      vendor_page: 14.0
-  Qts:  # total Q factor
-    value: 0.37
-    winner: vendor_page
-    sources:
-      vendor_page: 0.37
-  Qms:  # mechanical Q factor
-    value: 5.2
-    winner: vendor_page
-    sources:
-      vendor_page: 5.2
   Le:  # voice coil inductance (H)
     value: 0.00095
     winner: vendor_page
     sources:
       vendor_page: 0.00095
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.039360351999999994
+    winner: vendor_page
+    sources:
+      vendor_page: 0.039360351999999994
+  Qes:  # electrical Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.059
+    winner: vendor_page
+    sources:
+      vendor_page: 0.059
+  BL:  # force factor (T·m)
+    value: 14.0
+    winner: vendor_page
+    sources:
+      vendor_page: 14.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.3
+    winner: vendor_page
+    sources:
+      vendor_page: 5.3
   Pe:  # rated power input (W)
     value: 300.0
     winner: vendor_page
@@ -76,30 +51,45 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 40.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.039360351999999994
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.8515994855661195
     winner: vendor_page
     sources:
-      vendor_page: 0.039360351999999994
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.059
+      vendor_page: 2.8515994855661195
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00737
     winner: vendor_page
     sources:
-      vendor_page: 0.059
+      vendor_page: 0.00737
+  Qts:  # total Q factor
+    value: 0.37
+    winner: vendor_page
+    sources:
+      vendor_page: 0.37
+  Qms:  # mechanical Q factor
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
+  Sd:  # effective piston area (m²)
+    value: 0.0322
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0322
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 40.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00027
     winner: vendor_page
     sources:
-      vendor_page: 40.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 2500.0
-    winner: vendor_page
-    sources:
-      vendor_page: 2500.0
+      vendor_page: 0.00027
 _sources:
   vendor_page: https://www.parts-express.com/FaitalPRO-10RS350-10-Professional-Woofer-8-Ohm-294-1323
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/FaitalPRO-10RS350-10-Professional-Woofer-8-Ohm-294-1323
+frd_url: null
+zma_url: null

@@ -4,27 +4,22 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/seas-19tafd-g.html
 source: https://www.soundimports.eu/en/seas-19tafd-g.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.2
-    winner: vendor_page
-    sources:
-      vendor_page: 6.2
   Le:  # voice coil inductance (H)
     value: 5.0e-05
     winner: vendor_page
     sources:
       vendor_page: 5.0e-05
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.2
+    winner: vendor_page
+    sources:
+      vendor_page: 6.2
   Pe:  # rated power input (W)
     value: 90.0
     winner: vendor_page
@@ -42,3 +37,8 @@ specs:
       vendor_page: 8.0
 _sources:
   vendor_page: https://www.soundimports.eu/en/seas-19tafd-g.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/seas-19tafd-g.html
+frd_url: null
+zma_url: null

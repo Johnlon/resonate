@@ -6,71 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: subwoofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/295-054--dayton-audio-hts545he-4
-  spec-sheet-5vc.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-HTS545HE-4-21-Kraken-High-Excursion-Subwoofer-with-5-Voice-Coil-4-Ohm-295-054
 source: https://www.parts-express.com/Dayton-Audio-HTS545HE-4-21-Kraken-High-Excursion-Subwoofer-with-5-Voice-Coil-4-Ohm-295-054
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 295-054
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.8
-    winner: vendor_page
-    sources:
-      vendor_page: 3.8
-  Sd:  # effective piston area (m²)
-    value: 0.1525
-    winner: vendor_page
-    sources:
-      vendor_page: 0.1525
-  Cms:  # mechanical compliance (m/N)
-    value: 5.4e-05
-    winner: vendor_page
-    sources:
-      vendor_page: 5.4e-05
-  Xmax:  # one-way linear excursion (m)
-    value: 0.021
-    winner: vendor_page
-    sources:
-      vendor_page: 0.021
-  Qes:  # electrical Q factor
-    value: 0.29
-    winner: vendor_page
-    sources:
-      vendor_page: 0.29
-  Rms:  # mechanical resistance (kg/s)
-    value: 14.140189232820813
-    winner: vendor_page
-    sources:
-      vendor_page: 14.140189232820813
-  BL:  # force factor (T·m)
-    value: 38.3
-    winner: vendor_page
-    sources:
-      vendor_page: 38.3
-  Qts:  # total Q factor
-    value: 0.28
-    winner: vendor_page
-    sources:
-      vendor_page: 0.28
-  Qms:  # mechanical Q factor
-    value: 7.9
-    winner: vendor_page
-    sources:
-      vendor_page: 7.9
   Le:  # voice coil inductance (H)
     value: 0.0085
     winner: vendor_page
     sources:
       vendor_page: 0.0085
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.178962176
+    winner: vendor_page
+    sources:
+      vendor_page: 0.178962176
+  Qes:  # electrical Q factor
+    value: 0.29
+    winner: vendor_page
+    sources:
+      vendor_page: 0.29
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.676
+    winner: vendor_page
+    sources:
+      vendor_page: 0.676
+  BL:  # force factor (T·m)
+    value: 38.3
+    winner: vendor_page
+    sources:
+      vendor_page: 38.3
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.8
+    winner: vendor_page
+    sources:
+      vendor_page: 3.8
   Pe:  # rated power input (W)
     value: 2000.0
     winner: vendor_page
@@ -81,21 +52,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 26.3
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.178962176
+  Rms:  # mechanical resistance (kg/s)
+    value: 14.140189232820813
     winner: vendor_page
     sources:
-      vendor_page: 0.178962176
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.676
+      vendor_page: 14.140189232820813
+  Xmax:  # one-way linear excursion (m)
+    value: 0.021
     winner: vendor_page
     sources:
-      vendor_page: 0.676
+      vendor_page: 0.021
+  Qts:  # total Q factor
+    value: 0.28
+    winner: vendor_page
+    sources:
+      vendor_page: 0.28
+  Qms:  # mechanical Q factor
+    value: 7.9
+    winner: vendor_page
+    sources:
+      vendor_page: 7.9
+  Sd:  # effective piston area (m²)
+    value: 0.1525
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1525
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 5.4e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4e-05
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 2.0
     winner: vendor_page
@@ -105,3 +96,12 @@ _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/295-054--dayton-audio-hts545he-4
     spec-sheet-5vc.pdf
   vendor_page: https://www.parts-express.com/Dayton-Audio-HTS545HE-4-21-Kraken-High-Excursion-Subwoofer-with-5-Voice-Coil-4-Ohm-295-054
+datasheet_url: https://www.parts-express.com/pedocs/specs/295-054--dayton-audio-hts545he-4
+  spec-sheet-5vc.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-HTS545HE-4-21-Kraken-High-Excursion-Subwoofer-with-5-Voice-Coil-4-Ohm-295-054
+frd_url: null
+zma_url: null

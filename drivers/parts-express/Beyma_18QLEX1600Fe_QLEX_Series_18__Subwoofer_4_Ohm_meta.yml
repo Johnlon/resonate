@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/253-056--18qlex1600fe-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Beyma-18QLEX1600Fe-QLEX-Series-18-Subwoofer-4-Ohm-253-056
 source: https://www.parts-express.com/Beyma-18QLEX1600Fe-QLEX-Series-18-Subwoofer-4-Ohm-253-056
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.6
-    winner: vendor_page
-    sources:
-      vendor_page: 3.6
-  Sd:  # effective piston area (m²)
-    value: 1.255e-05
-    winner: vendor_page
-    sources:
-      vendor_page: 1.255e-05
-  Cms:  # mechanical compliance (m/N)
-    value: 0.08
-    winner: vendor_page
-    sources:
-      vendor_page: 0.08
-  Xmax:  # one-way linear excursion (m)
-    value: 0.013
-    winner: vendor_page
-    sources:
-      vendor_page: 0.013
-  Qes:  # electrical Q factor
-    value: 0.25
-    winner: vendor_page
-    sources:
-      vendor_page: 0.25
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.005641867082722636
-    winner: vendor_page
-    sources:
-      vendor_page: 0.005641867082722636
-  BL:  # force factor (T·m)
-    value: 30.7
-    winner: vendor_page
-    sources:
-      vendor_page: 30.7
-  Qts:  # total Q factor
-    value: 0.25
-    winner: vendor_page
-    sources:
-      vendor_page: 0.25
-  Qms:  # mechanical Q factor
-    value: 11.6
-    winner: vendor_page
-    sources:
-      vendor_page: 11.6
   Le:  # voice coil inductance (H)
     value: 0.0028
     winner: vendor_page
     sources:
       vendor_page: 0.0028
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.177263168
+    winner: vendor_page
+    sources:
+      vendor_page: 0.177263168
+  Qes:  # electrical Q factor
+    value: 0.25
+    winner: vendor_page
+    sources:
+      vendor_page: 0.25
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00033600000000000004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00033600000000000004
+  BL:  # force factor (T·m)
+    value: 30.7
+    winner: vendor_page
+    sources:
+      vendor_page: 30.7
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.6
+    winner: vendor_page
+    sources:
+      vendor_page: 3.6
   Pe:  # rated power input (W)
     value: 1600.0
     winner: vendor_page
@@ -76,31 +51,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 31.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.177263168
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.005641867082722636
     winner: vendor_page
     sources:
-      vendor_page: 0.177263168
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.00033600000000000004
+      vendor_page: 0.005641867082722636
+  Xmax:  # one-way linear excursion (m)
+    value: 0.013
     winner: vendor_page
     sources:
-      vendor_page: 0.00033600000000000004
+      vendor_page: 0.013
+  Qts:  # total Q factor
+    value: 0.25
+    winner: vendor_page
+    sources:
+      vendor_page: 0.25
+  Qms:  # mechanical Q factor
+    value: 11.6
+    winner: vendor_page
+    sources:
+      vendor_page: 11.6
+  Sd:  # effective piston area (m²)
+    value: 1.255e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 1.255e-05
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 30.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.08
     winner: vendor_page
     sources:
-      vendor_page: 30.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 1200.0
-    winner: vendor_page
-    sources:
-      vendor_page: 1200.0
+      vendor_page: 0.08
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/253-056--18qlex1600fe-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Beyma-18QLEX1600Fe-QLEX-Series-18-Subwoofer-4-Ohm-253-056
+datasheet_url: https://www.parts-express.com/pedocs/specs/253-056--18qlex1600fe-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Beyma-18QLEX1600Fe-QLEX-Series-18-Subwoofer-4-Ohm-253-056
+frd_url: null
+zma_url: null

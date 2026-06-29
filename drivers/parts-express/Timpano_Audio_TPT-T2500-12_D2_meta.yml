@@ -6,30 +6,17 @@ corrections: null
 reviewed_by: null
 driver_type: subwoofer
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Timpano-Audio-TPT-T2500-12-D2-12-Cast-Frame-DVC-Subwoofer-2-Ohms-Per-Coil-294-4114
 source: https://www.parts-express.com/Timpano-Audio-TPT-T2500-12-D2-12-Cast-Frame-DVC-Subwoofer-2-Ohms-Per-Coil-294-4114
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd
 community: null
 fetched_sku: 294-4114
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 0.83
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.026391257600000002
     winner: vendor_page
     sources:
-      vendor_page: 0.83
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0235
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0235
+      vendor_page: 0.026391257600000002
   Qes:  # electrical Q factor
     value: 0.916
     winner: vendor_page
@@ -40,16 +27,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 10.82
-  Qts:  # total Q factor
+  Re:  # DC voice coil resistance (Ω)
     value: 0.83
     winner: vendor_page
     sources:
       vendor_page: 0.83
-  Qms:  # mechanical Q factor
-    value: 9.1
-    winner: vendor_page
-    sources:
-      vendor_page: 9.1
   Pe:  # rated power input (W)
     value: 1250.0
     winner: vendor_page
@@ -60,11 +42,21 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 39.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.026391257600000002
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0235
     winner: vendor_page
     sources:
-      vendor_page: 0.026391257600000002
+      vendor_page: 0.0235
+  Qts:  # total Q factor
+    value: 0.83
+    winner: vendor_page
+    sources:
+      vendor_page: 0.83
+  Qms:  # mechanical Q factor
+    value: 9.1
+    winner: vendor_page
+    sources:
+      vendor_page: 9.1
   Znom:  # nominal impedance (Ω)
     value: 1.0
     winner: vendor_page
@@ -72,3 +64,11 @@ specs:
       vendor_page: 1.0
 _sources:
   vendor_page: https://www.parts-express.com/Timpano-Audio-TPT-T2500-12-D2-12-Cast-Frame-DVC-Subwoofer-2-Ohms-Per-Coil-294-4114
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Timpano-Audio-TPT-T2500-12-D2-12-Cast-Frame-DVC-Subwoofer-2-Ohms-Per-Coil-294-4114
+frd_url: null
+zma_url: null

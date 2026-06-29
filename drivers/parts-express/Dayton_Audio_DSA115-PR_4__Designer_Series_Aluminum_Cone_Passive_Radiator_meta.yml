@@ -4,48 +4,13 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/295-544--dayton-audio-dsa115-pr-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-DSA115-PR-4-Designer-Series-Aluminum-Cone-Passive-Radiator-295-544
 source: https://www.parts-express.com/Dayton-Audio-DSA115-PR-4-Designer-Series-Aluminum-Cone-Passive-Radiator-295-544
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Sd:  # effective piston area (m²)
-    value: 0.00541
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00541
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00227
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00227
-  Xmax:  # one-way linear excursion (m)
-    value: 0.006
-    winner: vendor_page
-    sources:
-      vendor_page: 0.006
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.6527471218691481
-    winner: vendor_page
-    sources:
-      vendor_page: 0.6527471218691481
-  Qms:  # mechanical Q factor
-    value: 3.48
-    winner: vendor_page
-    sources:
-      vendor_page: 3.48
-  Fs:  # free air resonance (Hz)
-    value: 30.9
-    winner: vendor_page
-    sources:
-      vendor_page: 30.9
   Vas:  # equivalent acoustic volume (m³)
     value: 0.009344544
     winner: vendor_page
@@ -56,6 +21,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 0.011699999999999999
+  Fs:  # free air resonance (Hz)
+    value: 30.9
+    winner: vendor_page
+    sources:
+      vendor_page: 30.9
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.6527471218691481
+    winner: vendor_page
+    sources:
+      vendor_page: 0.6527471218691481
+  Xmax:  # one-way linear excursion (m)
+    value: 0.006
+    winner: vendor_page
+    sources:
+      vendor_page: 0.006
+  Qms:  # mechanical Q factor
+    value: 3.48
+    winner: vendor_page
+    sources:
+      vendor_page: 3.48
+  Sd:  # effective piston area (m²)
+    value: 0.00541
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00541
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00227
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00227
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/295-544--dayton-audio-dsa115-pr-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Dayton-Audio-DSA115-PR-4-Designer-Series-Aluminum-Cone-Passive-Radiator-295-544
+datasheet_url: https://www.parts-express.com/pedocs/specs/295-544--dayton-audio-dsa115-pr-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-DSA115-PR-4-Designer-Series-Aluminum-Cone-Passive-Radiator-295-544
+frd_url: null
+zma_url: null

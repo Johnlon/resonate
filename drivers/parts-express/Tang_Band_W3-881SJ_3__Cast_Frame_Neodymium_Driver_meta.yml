@@ -4,63 +4,38 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-812--tang-band-w3-881sj-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Tang-Band-W3-881SJ-3-Cast-Frame-Neodymium-Driver-264-812
 source: https://www.parts-express.com/Tang-Band-W3-881SJ-3-Cast-Frame-Neodymium-Driver-264-812
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.6
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0022087104
     winner: vendor_page
     sources:
-      vendor_page: 6.6
-  Sd:  # effective piston area (m²)
-    value: 0.0032
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0032
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00131
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00131
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0005
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0005
+      vendor_page: 0.0022087104
   Qes:  # electrical Q factor
     value: 0.8
     winner: vendor_page
     sources:
       vendor_page: 0.8
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.32746242643281237
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0016
     winner: vendor_page
     sources:
-      vendor_page: 0.32746242643281237
+      vendor_page: 0.0016
   BL:  # force factor (T·m)
     value: 2.9
     winner: vendor_page
     sources:
       vendor_page: 2.9
-  Qts:  # total Q factor
-    value: 0.63
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.6
     winner: vendor_page
     sources:
-      vendor_page: 0.63
-  Qms:  # mechanical Q factor
-    value: 3.07
-    winner: vendor_page
-    sources:
-      vendor_page: 3.07
+      vendor_page: 6.6
   Pe:  # rated power input (W)
     value: 15.0
     winner: vendor_page
@@ -71,31 +46,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 100.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0022087104
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.32746242643281237
     winner: vendor_page
     sources:
-      vendor_page: 0.0022087104
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0016
+      vendor_page: 0.32746242643281237
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0005
     winner: vendor_page
     sources:
-      vendor_page: 0.0016
+      vendor_page: 0.0005
+  Qts:  # total Q factor
+    value: 0.63
+    winner: vendor_page
+    sources:
+      vendor_page: 0.63
+  Qms:  # mechanical Q factor
+    value: 3.07
+    winner: vendor_page
+    sources:
+      vendor_page: 3.07
+  Sd:  # effective piston area (m²)
+    value: 0.0032
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0032
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 100.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00131
     winner: vendor_page
     sources:
-      vendor_page: 100.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 20000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 20000.0
+      vendor_page: 0.00131
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-812--tang-band-w3-881sj-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Tang-Band-W3-881SJ-3-Cast-Frame-Neodymium-Driver-264-812
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-812--tang-band-w3-881sj-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Tang-Band-W3-881SJ-3-Cast-Frame-Neodymium-Driver-264-812
+frd_url: null
+zma_url: null

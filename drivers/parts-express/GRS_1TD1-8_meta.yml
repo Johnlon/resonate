@@ -6,45 +6,27 @@ corrections: null
 reviewed_by: null
 driver_type: tweeter
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/GRS-1TD1-8-1-Dome-Tweeter-8-Ohm-292-462
 source: https://www.parts-express.com/GRS-1TD1-8-1-Dome-Tweeter-8-Ohm-292-462
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd
 community: null
 fetched_sku: 292-462
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 7.48
-    winner: vendor_page
-    sources:
-      vendor_page: 7.48
-  Qes:  # electrical Q factor
-    value: 1.84
-    winner: vendor_page
-    sources:
-      vendor_page: 1.84
-  Qts:  # total Q factor
-    value: 1.18
-    winner: vendor_page
-    sources:
-      vendor_page: 1.18
-  Qms:  # mechanical Q factor
-    value: 3.29
-    winner: vendor_page
-    sources:
-      vendor_page: 3.29
   Le:  # voice coil inductance (H)
     value: 0.00011
     winner: vendor_page
     sources:
       vendor_page: 0.00011
+  Qes:  # electrical Q factor
+    value: 1.84
+    winner: vendor_page
+    sources:
+      vendor_page: 1.84
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.48
+    winner: vendor_page
+    sources:
+      vendor_page: 7.48
   Pe:  # rated power input (W)
     value: 50.0
     winner: vendor_page
@@ -55,6 +37,16 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 1130.0
+  Qts:  # total Q factor
+    value: 1.18
+    winner: vendor_page
+    sources:
+      vendor_page: 1.18
+  Qms:  # mechanical Q factor
+    value: 3.29
+    winner: vendor_page
+    sources:
+      vendor_page: 3.29
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -62,3 +54,11 @@ specs:
       vendor_page: 8.0
 _sources:
   vendor_page: https://www.parts-express.com/GRS-1TD1-8-1-Dome-Tweeter-8-Ohm-292-462
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/GRS-1TD1-8-1-Dome-Tweeter-8-Ohm-292-462
+frd_url: null
+zma_url: null

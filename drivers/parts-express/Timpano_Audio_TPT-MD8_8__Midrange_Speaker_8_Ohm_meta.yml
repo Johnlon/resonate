@@ -4,58 +4,38 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://cdn.shopify.com/s/files/1/0840/9428/8174/files/Timpano-Flyer-2-Panel-spread-For-Website-1.pdf?v=1722888558
-manu_page: null
-vendor_page: https://www.parts-express.com/Timpano-Audio-TPT-MD8-8-Midrange-Speaker-294-3324
 source: https://www.parts-express.com/Timpano-Audio-TPT-MD8-8-Midrange-Speaker-294-3324
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.8
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.027184128
     winner: vendor_page
     sources:
-      vendor_page: 5.8
-  Sd:  # effective piston area (m²)
-    value: 2.41e-06
-    winner: vendor_page
-    sources:
-      vendor_page: 2.41e-06
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00034
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00034
+      vendor_page: 0.027184128
   Qes:  # electrical Q factor
     value: 0.69
     winner: vendor_page
     sources:
       vendor_page: 0.69
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.33798328094340424
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0143
     winner: vendor_page
     sources:
-      vendor_page: 0.33798328094340424
+      vendor_page: 0.0143
   BL:  # force factor (T·m)
     value: 7.4
     winner: vendor_page
     sources:
       vendor_page: 7.4
-  Qts:  # total Q factor
-    value: 0.66
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.8
     winner: vendor_page
     sources:
-      vendor_page: 0.66
-  Qms:  # mechanical Q factor
-    value: 19.3
-    winner: vendor_page
-    sources:
-      vendor_page: 19.3
+      vendor_page: 5.8
   Pe:  # rated power input (W)
     value: 230.0
     winner: vendor_page
@@ -66,36 +46,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 72.6
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.027184128
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.33798328094340424
     winner: vendor_page
     sources:
-      vendor_page: 0.027184128
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0143
+      vendor_page: 0.33798328094340424
+  Qts:  # total Q factor
+    value: 0.66
     winner: vendor_page
     sources:
-      vendor_page: 0.0143
+      vendor_page: 0.66
+  Qms:  # mechanical Q factor
+    value: 19.3
+    winner: vendor_page
+    sources:
+      vendor_page: 19.3
+  Sd:  # effective piston area (m²)
+    value: 2.41e-06
+    winner: vendor_page
+    sources:
+      vendor_page: 2.41e-06
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00034
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00034
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 95.0
     winner: vendor_page
     sources:
       vendor_page: 95.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 110.0
-    winner: vendor_page
-    sources:
-      vendor_page: 110.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 8500.0
-    winner: vendor_page
-    sources:
-      vendor_page: 8500.0
 _sources:
   datasheet: https://cdn.shopify.com/s/files/1/0840/9428/8174/files/Timpano-Flyer-2-Panel-spread-For-Website-1.pdf?v=1722888558
   vendor_page: https://www.parts-express.com/Timpano-Audio-TPT-MD8-8-Midrange-Speaker-294-3324
+datasheet_url: https://cdn.shopify.com/s/files/1/0840/9428/8174/files/Timpano-Flyer-2-Panel-spread-For-Website-1.pdf?v=1722888558
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Timpano-Audio-TPT-MD8-8-Midrange-Speaker-294-3324
+frd_url: null
+zma_url: null

@@ -7,70 +7,42 @@ corrections: '''Vas'' stored=0.0365287 differs from calculated=0.0372806 (deps: 
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/PRV-Audio-10MB800FT-10-Professional-Midbass-Driver-8-Ohm-294-2988
 source: https://www.parts-express.com/PRV-Audio-10MB800FT-10-Professional-Midbass-Driver-8-Ohm-294-2988
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-2988
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.1
-    winner: vendor_page
-    sources:
-      vendor_page: 5.1
-  Sd:  # effective piston area (m²)
-    value: 0.038
-    winner: vendor_page
-    sources:
-      vendor_page: 0.038
-  Cms:  # mechanical compliance (m/N)
-    value: 0.000182
-    winner: vendor_page
-    sources:
-      vendor_page: 0.000182
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0035
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0035
-  Qes:  # electrical Q factor
-    value: 0.33
-    winner: vendor_page
-    sources:
-      vendor_page: 0.33
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.8772388175619237
-    winner: vendor_page
-    sources:
-      vendor_page: 0.8772388175619237
-  BL:  # force factor (T·m)
-    value: 14.39
-    winner: vendor_page
-    sources:
-      vendor_page: 14.39
-  Qts:  # total Q factor
-    value: 0.32
-    winner: vendor_page
-    sources:
-      vendor_page: 0.32
-  Qms:  # mechanical Q factor
-    value: 15.39
-    winner: vendor_page
-    sources:
-      vendor_page: 15.39
   Le:  # voice coil inductance (H)
     value: 0.0004
     winner: vendor_page
     sources:
       vendor_page: 0.0004
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.036528672
+    winner: vendor_page
+    sources:
+      vendor_page: 0.036528672
+  Qes:  # electrical Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0332
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0332
+  BL:  # force factor (T·m)
+    value: 14.39
+    winner: vendor_page
+    sources:
+      vendor_page: 14.39
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.1
+    winner: vendor_page
+    sources:
+      vendor_page: 5.1
   Pe:  # rated power input (W)
     value: 400.0
     winner: vendor_page
@@ -81,21 +53,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 64.72
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.036528672
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.8772388175619237
     winner: vendor_page
     sources:
-      vendor_page: 0.036528672
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0332
+      vendor_page: 0.8772388175619237
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0035
     winner: vendor_page
     sources:
-      vendor_page: 0.0332
+      vendor_page: 0.0035
+  Qts:  # total Q factor
+    value: 0.32
+    winner: vendor_page
+    sources:
+      vendor_page: 0.32
+  Qms:  # mechanical Q factor
+    value: 15.39
+    winner: vendor_page
+    sources:
+      vendor_page: 15.39
+  Sd:  # effective piston area (m²)
+    value: 0.038
+    winner: vendor_page
+    sources:
+      vendor_page: 0.038
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000182
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000182
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 99.0
     winner: vendor_page
@@ -113,3 +105,11 @@ specs:
       vendor_page: 6.0
 _sources:
   vendor_page: https://www.parts-express.com/PRV-Audio-10MB800FT-10-Professional-Midbass-Driver-8-Ohm-294-2988
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/PRV-Audio-10MB800FT-10-Professional-Midbass-Driver-8-Ohm-294-2988
+frd_url: null
+zma_url: null

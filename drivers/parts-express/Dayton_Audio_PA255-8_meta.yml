@@ -6,70 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/295-030-dayton-audio-pa255-8-specifications-46882.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-PA255-8-10-Pro-Woofer-295-030
 source: https://www.parts-express.com/Dayton-Audio-PA255-8-10-Pro-Woofer-295-030
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 295-030
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.5
-    winner: vendor_page
-    sources:
-      vendor_page: 5.5
-  Sd:  # effective piston area (m²)
-    value: 0.03464
-    winner: vendor_page
-    sources:
-      vendor_page: 0.03464
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00023999999999999998
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00023999999999999998
-  Xmax:  # one-way linear excursion (m)
-    value: 0.005
-    winner: vendor_page
-    sources:
-      vendor_page: 0.005
-  Qes:  # electrical Q factor
-    value: 0.66
-    winner: vendor_page
-    sources:
-      vendor_page: 0.66
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.580898267836475
-    winner: vendor_page
-    sources:
-      vendor_page: 1.580898267836475
-  BL:  # force factor (T·m)
-    value: 10.6
-    winner: vendor_page
-    sources:
-      vendor_page: 10.6
-  Qts:  # total Q factor
-    value: 0.61
-    winner: vendor_page
-    sources:
-      vendor_page: 0.61
-  Qms:  # mechanical Q factor
-    value: 8.49
-    winner: vendor_page
-    sources:
-      vendor_page: 8.49
   Le:  # voice coil inductance (H)
     value: 0.00149
     winner: vendor_page
     sources:
       vendor_page: 0.00149
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.041200944
+    winner: vendor_page
+    sources:
+      vendor_page: 0.041200944
+  Qes:  # electrical Q factor
+    value: 0.66
+    winner: vendor_page
+    sources:
+      vendor_page: 0.66
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0423
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0423
+  BL:  # force factor (T·m)
+    value: 10.6
+    winner: vendor_page
+    sources:
+      vendor_page: 10.6
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.5
+    winner: vendor_page
+    sources:
+      vendor_page: 5.5
   Pe:  # rated power input (W)
     value: 300.0
     winner: vendor_page
@@ -80,21 +52,49 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 50.5
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.041200944
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.580898267836475
     winner: vendor_page
     sources:
-      vendor_page: 0.041200944
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0423
+      vendor_page: 1.580898267836475
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005
     winner: vendor_page
     sources:
-      vendor_page: 0.0423
+      vendor_page: 0.005
+  Qts:  # total Q factor
+    value: 0.61
+    winner: vendor_page
+    sources:
+      vendor_page: 0.61
+  Qms:  # mechanical Q factor
+    value: 8.49
+    winner: vendor_page
+    sources:
+      vendor_page: 8.49
+  Sd:  # effective piston area (m²)
+    value: 0.03464
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03464
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00023999999999999998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00023999999999999998
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/295-030-dayton-audio-pa255-8-specifications-46882.pdf
   vendor_page: https://www.parts-express.com/Dayton-Audio-PA255-8-10-Pro-Woofer-295-030
+datasheet_url: https://www.parts-express.com/pedocs/specs/295-030-dayton-audio-pa255-8-specifications-46882.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-PA255-8-10-Pro-Woofer-295-030
+frd_url: null
+zma_url: null

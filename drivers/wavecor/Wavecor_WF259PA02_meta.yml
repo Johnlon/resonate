@@ -11,65 +11,37 @@ corrections: Split from combined WF259PA01_02 page (col_idx=0). PA02 = 4 ohm. Be
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.wavecor.com/WF259PA01_02_specifications.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: http://www.wavecor.com/html/wf259pa01_02.html
-vendor_page: null
 source: http://www.wavecor.com/html/wf259pa01_02.html
-frd: null
-impedance: null
 obsolete: true
 dq_issue: 'Qts_impossible: Wavecor publishes both at 2 d.p.; true Qts ≈ 0.284'
 community: null
 fetched_sku: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.1
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.031
     winner: manu_page
     sources:
-      manu_page: 3.1
-  Sd:  # effective piston area (m²)
-    value: 0.037
-    winner: manu_page
-    sources:
-      manu_page: 0.037
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00016
-    winner: manu_page
-    sources:
-      manu_page: 0.00016
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0045
-    winner: manu_page
-    sources:
-      manu_page: 0.0045
+      manu_page: 0.031
   Qes:  # electrical Q factor
     value: 0.29
     winner: manu_page
     sources:
       manu_page: 0.29
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.32
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.055
     winner: manu_page
     sources:
-      manu_page: 1.32
+      manu_page: 0.055
   BL:  # force factor (T·m)
     value: 14.1
     winner: manu_page
     sources:
       manu_page: 14.1
-  Qts:  # total Q factor
-    value: 0.29
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.1
     winner: manu_page
     sources:
-      manu_page: 0.29
-  Qms:  # mechanical Q factor
-    value: 14.0
-    winner: manu_page
-    sources:
-      manu_page: 14.0
+      manu_page: 3.1
   Pe:  # rated power input (W)
     value: 1100.0
     winner: manu_page
@@ -80,26 +52,49 @@ specs:
     winner: manu_page
     sources:
       manu_page: 54.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.031
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.32
     winner: manu_page
     sources:
-      manu_page: 0.031
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.055
+      manu_page: 1.32
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0045
     winner: manu_page
     sources:
-      manu_page: 0.055
+      manu_page: 0.0045
+  Qts:  # total Q factor
+    value: 0.29
+    winner: manu_page
+    sources:
+      manu_page: 0.29
+  Qms:  # mechanical Q factor
+    value: 14.0
+    winner: manu_page
+    sources:
+      manu_page: 14.0
+  Sd:  # effective piston area (m²)
+    value: 0.037
+    winner: manu_page
+    sources:
+      manu_page: 0.037
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: manu_page
     sources:
       manu_page: 4.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 2000.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00016
     winner: manu_page
     sources:
-      manu_page: 2000.0
+      manu_page: 0.00016
 _sources:
   datasheet: https://www.wavecor.com/WF259PA01_02_specifications.pdf
   manu_page: http://www.wavecor.com/html/wf259pa01_02.html
+datasheet_url: https://www.wavecor.com/WF259PA01_02_specifications.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: http://www.wavecor.com/html/wf259pa01_02.html
+vendor_page_url: null
+frd_url: null
+zma_url: null

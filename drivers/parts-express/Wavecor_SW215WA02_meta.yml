@@ -7,70 +7,42 @@ corrections: '''Qts'' stored=0.49 differs from calculated=0.4959 (deps: Qms=10.7
 reviewed_by: null
 driver_type: subwoofer
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Wavecor-SW215WA02-8-1-2-Balanced-Drive-Paper-Cone-Subwoofer-8-Ohm-298-1062
 source: https://www.parts-express.com/Wavecor-SW215WA02-8-1-2-Balanced-Drive-Paper-Cone-Subwoofer-8-Ohm-298-1062
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 298-1062
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.3
-    winner: vendor_page
-    sources:
-      vendor_page: 6.3
-  Sd:  # effective piston area (m²)
-    value: 0.0206
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0206
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00043
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00043
-  Xmax:  # one-way linear excursion (m)
-    value: 0.01
-    winner: vendor_page
-    sources:
-      vendor_page: 0.01
-  Qes:  # electrical Q factor
-    value: 0.52
-    winner: vendor_page
-    sources:
-      vendor_page: 0.52
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.0070712898890646
-    winner: vendor_page
-    sources:
-      vendor_page: 1.0070712898890646
-  BL:  # force factor (T·m)
-    value: 11.4
-    winner: vendor_page
-    sources:
-      vendor_page: 11.4
-  Qts:  # total Q factor
-    value: 0.49
-    winner: vendor_page
-    sources:
-      vendor_page: 0.49
-  Qms:  # mechanical Q factor
-    value: 10.7
-    winner: vendor_page
-    sources:
-      vendor_page: 10.7
   Le:  # voice coil inductance (H)
     value: 0.0017
     winner: vendor_page
     sources:
       vendor_page: 0.0017
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.026051456
+    winner: vendor_page
+    sources:
+      vendor_page: 0.026051456
+  Qes:  # electrical Q factor
+    value: 0.52
+    winner: vendor_page
+    sources:
+      vendor_page: 0.52
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.049
+    winner: vendor_page
+    sources:
+      vendor_page: 0.049
+  BL:  # force factor (T·m)
+    value: 11.4
+    winner: vendor_page
+    sources:
+      vendor_page: 11.4
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.3
+    winner: vendor_page
+    sources:
+      vendor_page: 6.3
   Pe:  # rated power input (W)
     value: 400.0
     winner: vendor_page
@@ -81,20 +53,48 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 35.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.026051456
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.0070712898890646
     winner: vendor_page
     sources:
-      vendor_page: 0.026051456
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.049
+      vendor_page: 1.0070712898890646
+  Xmax:  # one-way linear excursion (m)
+    value: 0.01
     winner: vendor_page
     sources:
-      vendor_page: 0.049
+      vendor_page: 0.01
+  Qts:  # total Q factor
+    value: 0.49
+    winner: vendor_page
+    sources:
+      vendor_page: 0.49
+  Qms:  # mechanical Q factor
+    value: 10.7
+    winner: vendor_page
+    sources:
+      vendor_page: 10.7
+  Sd:  # effective piston area (m²)
+    value: 0.0206
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0206
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00043
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00043
 _sources:
   vendor_page: https://www.parts-express.com/Wavecor-SW215WA02-8-1-2-Balanced-Drive-Paper-Cone-Subwoofer-8-Ohm-298-1062
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Wavecor-SW215WA02-8-1-2-Balanced-Drive-Paper-Cone-Subwoofer-8-Ohm-298-1062
+frd_url: null
+zma_url: null

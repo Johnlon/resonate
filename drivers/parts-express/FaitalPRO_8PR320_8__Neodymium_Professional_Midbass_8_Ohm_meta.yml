@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/294-1166--faitalpro-8pr320-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/FaitalPRO-8PR320-8-Neodymium-Professional-Midbass-8-Ohms-294-1166
 source: https://www.parts-express.com/FaitalPRO-8PR320-8-Neodymium-Professional-Midbass-8-Ohms-294-1166
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.4
-    winner: vendor_page
-    sources:
-      vendor_page: 5.4
-  Sd:  # effective piston area (m²)
-    value: 0.0223
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0223
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00019
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00019
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00733
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00733
-  Qes:  # electrical Q factor
-    value: 0.43
-    winner: vendor_page
-    sources:
-      vendor_page: 0.43
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.5788418689565291
-    winner: vendor_page
-    sources:
-      vendor_page: 1.5788418689565291
-  BL:  # force factor (T·m)
-    value: 12.9
-    winner: vendor_page
-    sources:
-      vendor_page: 12.9
-  Qts:  # total Q factor
-    value: 0.41
-    winner: vendor_page
-    sources:
-      vendor_page: 0.41
-  Qms:  # mechanical Q factor
-    value: 8.2
-    winner: vendor_page
-    sources:
-      vendor_page: 8.2
   Le:  # voice coil inductance (H)
     value: 0.0005200000000000001
     winner: vendor_page
     sources:
       vendor_page: 0.0005200000000000001
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.013025728
+    winner: vendor_page
+    sources:
+      vendor_page: 0.013025728
+  Qes:  # electrical Q factor
+    value: 0.43
+    winner: vendor_page
+    sources:
+      vendor_page: 0.43
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0317
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0317
+  BL:  # force factor (T·m)
+    value: 12.9
+    winner: vendor_page
+    sources:
+      vendor_page: 12.9
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.4
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4
   Pe:  # rated power input (W)
     value: 300.0
     winner: vendor_page
@@ -76,31 +51,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 65.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.013025728
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.5788418689565291
     winner: vendor_page
     sources:
-      vendor_page: 0.013025728
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0317
+      vendor_page: 1.5788418689565291
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00733
     winner: vendor_page
     sources:
-      vendor_page: 0.0317
+      vendor_page: 0.00733
+  Qts:  # total Q factor
+    value: 0.41
+    winner: vendor_page
+    sources:
+      vendor_page: 0.41
+  Qms:  # mechanical Q factor
+    value: 8.2
+    winner: vendor_page
+    sources:
+      vendor_page: 8.2
+  Sd:  # effective piston area (m²)
+    value: 0.0223
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0223
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 60.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00019
     winner: vendor_page
     sources:
-      vendor_page: 60.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 4000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 4000.0
+      vendor_page: 0.00019
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/294-1166--faitalpro-8pr320-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/FaitalPRO-8PR320-8-Neodymium-Professional-Midbass-8-Ohms-294-1166
+datasheet_url: https://www.parts-express.com/pedocs/specs/294-1166--faitalpro-8pr320-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/FaitalPRO-8PR320-8-Neodymium-Professional-Midbass-8-Ohms-294-1166
+frd_url: null
+zma_url: null

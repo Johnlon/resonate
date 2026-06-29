@@ -4,12 +4,7 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/298-1221--tw030wa23-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Wavecor-TW030WA23-30mm-Chambered-Graphene-Dome-Neo-Tweeter-4-Ohm-298-1221
 source: https://www.parts-express.com/Wavecor-TW030WA23-30mm-Chambered-Graphene-Dome-Neo-Tweeter-4-Ohm-298-1221
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
@@ -21,16 +16,6 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 1.82
-  Qts:  # total Q factor
-    value: 1.1
-    winner: vendor_page
-    sources:
-      vendor_page: 1.1
-  Qms:  # mechanical Q factor
-    value: 2.8
-    winner: vendor_page
-    sources:
-      vendor_page: 2.8
   Pe:  # rated power input (W)
     value: 50.0
     winner: vendor_page
@@ -41,21 +26,26 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 750.0
+  Qts:  # total Q factor
+    value: 1.1
+    winner: vendor_page
+    sources:
+      vendor_page: 1.1
+  Qms:  # mechanical Q factor
+    value: 2.8
+    winner: vendor_page
+    sources:
+      vendor_page: 2.8
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 2000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 2000.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 30000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 30000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/298-1221--tw030wa23-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Wavecor-TW030WA23-30mm-Chambered-Graphene-Dome-Neo-Tweeter-4-Ohm-298-1221
+datasheet_url: https://www.parts-express.com/pedocs/specs/298-1221--tw030wa23-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Wavecor-TW030WA23-30mm-Chambered-Graphene-Dome-Neo-Tweeter-4-Ohm-298-1221
+frd_url: null
+zma_url: null

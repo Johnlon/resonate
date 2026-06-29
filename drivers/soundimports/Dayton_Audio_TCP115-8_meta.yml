@@ -6,65 +6,17 @@ corrections: null
 reviewed_by: null
 driver_type: null
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/dayton-audio-tcp115-8.html
 source: https://www.soundimports.eu/en/dayton-audio-tcp115-8.html
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  Sd:  # effective piston area (m²)
-    value: 0.005
-    winner: vendor_page
-    sources:
-      vendor_page: 0.005
-  BL:  # force factor (T·m)
-    value: 7.4
-    winner: vendor_page
-    sources:
-      vendor_page: 7.4
-  Pe:  # rated power input (W)
-    value: 40.0
-    winner: vendor_page
-    sources:
-      vendor_page: 40.0
-  Xmax:  # one-way linear excursion (m)
-    value: 0.004
-    winner: vendor_page
-    sources:
-      vendor_page: 0.004
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.01016
-    winner: vendor_page
-    sources:
-      vendor_page: 0.01016
   Le:  # voice coil inductance (H)
     value: 0.0019
     winner: vendor_page
     sources:
       vendor_page: 0.0019
-  Re:  # DC voice coil resistance (Ω)
-    value: 7.8
-    winner: vendor_page
-    sources:
-      vendor_page: 7.8
-  Qts:  # total Q factor
-    value: 0.43
-    winner: vendor_page
-    sources:
-      vendor_page: 0.43
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00071
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00071
   Vas:  # equivalent acoustic volume (m³)
     value: 0.002548512
     winner: vendor_page
@@ -75,21 +27,61 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 0.54
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.01016
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01016
+  BL:  # force factor (T·m)
+    value: 7.4
+    winner: vendor_page
+    sources:
+      vendor_page: 7.4
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.8
+    winner: vendor_page
+    sources:
+      vendor_page: 7.8
+  Pe:  # rated power input (W)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
   Fs:  # free air resonance (Hz)
     value: 59.2
     winner: vendor_page
     sources:
       vendor_page: 59.2
-  Znom:  # nominal impedance (Ω)
-    value: 8.0
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
     winner: vendor_page
     sources:
-      vendor_page: 8.0
+      vendor_page: 0.004
+  Qts:  # total Q factor
+    value: 0.43
+    winner: vendor_page
+    sources:
+      vendor_page: 0.43
   Qms:  # mechanical Q factor
     value: 2.3
     winner: vendor_page
     sources:
       vendor_page: 2.3
+  Sd:  # effective piston area (m²)
+    value: 0.005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00071
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00071
   power_peak_W:  # peak power handling (W)
     value: 80.0
     winner: vendor_page
@@ -112,3 +104,11 @@ specs:
       vendor_page: 6.0
 _sources:
   vendor_page: https://www.soundimports.eu/en/dayton-audio-tcp115-8.html
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/dayton-audio-tcp115-8.html
+frd_url: null
+zma_url: null

@@ -4,67 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/faitalpro-15hx500-8p.html
 source: https://www.soundimports.eu/en/faitalpro-15hx500-8p.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: coaxial
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.0
-    winner: vendor_page
-    sources:
-      vendor_page: 5.0
-  Sd:  # effective piston area (m²)
-    value: 0.0864
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0864
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00014
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00014
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0094
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0094
-  Qes:  # electrical Q factor
-    value: 0.29
-    winner: vendor_page
-    sources:
-      vendor_page: 0.29
-  Rms:  # mechanical resistance (kg/s)
-    value: 5.0
-    winner: vendor_page
-    sources:
-      vendor_page: 5.0
-  BL:  # force factor (T·m)
-    value: 22.2
-    winner: vendor_page
-    sources:
-      vendor_page: 22.2
-  Qts:  # total Q factor
-    value: 0.28
-    winner: vendor_page
-    sources:
-      vendor_page: 0.28
-  Qms:  # mechanical Q factor
-    value: 5.5
-    winner: vendor_page
-    sources:
-      vendor_page: 5.5
   Le:  # voice coil inductance (H)
     value: 0.00084
     winner: vendor_page
     sources:
       vendor_page: 0.00084
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.1501
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1501
+  Qes:  # electrical Q factor
+    value: 0.29
+    winner: vendor_page
+    sources:
+      vendor_page: 0.29
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.11
+    winner: vendor_page
+    sources:
+      vendor_page: 0.11
+  BL:  # force factor (T·m)
+    value: 22.2
+    winner: vendor_page
+    sources:
+      vendor_page: 22.2
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
   Pe:  # rated power input (W)
     value: 400.0
     winner: vendor_page
@@ -75,21 +50,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 40.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.1501
+  Rms:  # mechanical resistance (kg/s)
+    value: 5.0
     winner: vendor_page
     sources:
-      vendor_page: 0.1501
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.11
+      vendor_page: 5.0
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0094
     winner: vendor_page
     sources:
-      vendor_page: 0.11
+      vendor_page: 0.0094
+  Qts:  # total Q factor
+    value: 0.28
+    winner: vendor_page
+    sources:
+      vendor_page: 0.28
+  Qms:  # mechanical Q factor
+    value: 5.5
+    winner: vendor_page
+    sources:
+      vendor_page: 5.5
+  Sd:  # effective piston area (m²)
+    value: 0.0864
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0864
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00014
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00014
   power_peak_W:  # peak power handling (W)
     value: 800.0
     winner: vendor_page
@@ -117,3 +112,8 @@ specs:
       vendor_page: 77.0
 _sources:
   vendor_page: https://www.soundimports.eu/en/faitalpro-15hx500-8p.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/faitalpro-15hx500-8p.html
+frd_url: null
+zma_url: null

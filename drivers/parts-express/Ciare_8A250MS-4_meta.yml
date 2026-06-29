@@ -6,45 +6,32 @@ corrections: null
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/293-206--ciare-americano-8a250ms-4-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Ciare-8A250MS-4-Americano-Series-8-Sealed-Back-Midrange-4-Ohm-293-206
 source: https://www.parts-express.com/Ciare-8A250MS-4-Americano-Series-8-Sealed-Back-Midrange-4-Ohm-293-206
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd
 community: null
 fetched_sku: 293-206
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 2.44
-    winner: vendor_page
-    sources:
-      vendor_page: 2.44
-  Qes:  # electrical Q factor
-    value: 2.38
-    winner: vendor_page
-    sources:
-      vendor_page: 2.38
-  Qts:  # total Q factor
-    value: 1.67
-    winner: vendor_page
-    sources:
-      vendor_page: 1.67
-  Qms:  # mechanical Q factor
-    value: 5.57
-    winner: vendor_page
-    sources:
-      vendor_page: 5.57
   Le:  # voice coil inductance (H)
     value: 0.00011999999999999999
     winner: vendor_page
     sources:
       vendor_page: 0.00011999999999999999
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.000566336
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000566336
+  Qes:  # electrical Q factor
+    value: 2.38
+    winner: vendor_page
+    sources:
+      vendor_page: 2.38
+  Re:  # DC voice coil resistance (Ω)
+    value: 2.44
+    winner: vendor_page
+    sources:
+      vendor_page: 2.44
   Pe:  # rated power input (W)
     value: 125.0
     winner: vendor_page
@@ -55,11 +42,16 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 76.45
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.000566336
+  Qts:  # total Q factor
+    value: 1.67
     winner: vendor_page
     sources:
-      vendor_page: 0.000566336
+      vendor_page: 1.67
+  Qms:  # mechanical Q factor
+    value: 5.57
+    winner: vendor_page
+    sources:
+      vendor_page: 5.57
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
@@ -73,3 +65,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/293-206--ciare-americano-8a250ms-4-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Ciare-8A250MS-4-Americano-Series-8-Sealed-Back-Midrange-4-Ohm-293-206
+datasheet_url: https://www.parts-express.com/pedocs/specs/293-206--ciare-americano-8a250ms-4-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Ciare-8A250MS-4-Americano-Series-8-Sealed-Back-Midrange-4-Ohm-293-206
+frd_url: null
+zma_url: null

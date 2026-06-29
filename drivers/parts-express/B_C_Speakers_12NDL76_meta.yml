@@ -6,65 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/294-570--bc-12ndl76-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/B-C-12NDL76-12-Neodymium-Woofer-294-570
 source: https://www.parts-express.com/B-C-12NDL76-12-Neodymium-Woofer-294-570
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-570
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.1
-    winner: vendor_page
-    sources:
-      vendor_page: 5.1
-  Sd:  # effective piston area (m²)
-    value: 0.0522
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0522
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0065
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0065
-  Qes:  # electrical Q factor
-    value: 0.21
-    winner: vendor_page
-    sources:
-      vendor_page: 0.21
-  Rms:  # mechanical resistance (kg/s)
-    value: 3.964390729529977
-    winner: vendor_page
-    sources:
-      vendor_page: 3.964390729529977
-  BL:  # force factor (T·m)
-    value: 20.1
-    winner: vendor_page
-    sources:
-      vendor_page: 20.1
-  Qts:  # total Q factor
-    value: 0.2
-    winner: vendor_page
-    sources:
-      vendor_page: 0.2
-  Qms:  # mechanical Q factor
-    value: 4.2
-    winner: vendor_page
-    sources:
-      vendor_page: 4.2
   Le:  # voice coil inductance (H)
     value: 0.001
     winner: vendor_page
     sources:
       vendor_page: 0.001
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.070792
+    winner: vendor_page
+    sources:
+      vendor_page: 0.070792
+  Qes:  # electrical Q factor
+    value: 0.21
+    winner: vendor_page
+    sources:
+      vendor_page: 0.21
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.053
+    winner: vendor_page
+    sources:
+      vendor_page: 0.053
+  BL:  # force factor (T·m)
+    value: 20.1
+    winner: vendor_page
+    sources:
+      vendor_page: 20.1
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.1
+    winner: vendor_page
+    sources:
+      vendor_page: 5.1
   Pe:  # rated power input (W)
     value: 800.0
     winner: vendor_page
@@ -75,16 +52,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 50.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.070792
+  Rms:  # mechanical resistance (kg/s)
+    value: 3.964390729529977
     winner: vendor_page
     sources:
-      vendor_page: 0.070792
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.053
+      vendor_page: 3.964390729529977
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0065
     winner: vendor_page
     sources:
-      vendor_page: 0.053
+      vendor_page: 0.0065
+  Qts:  # total Q factor
+    value: 0.2
+    winner: vendor_page
+    sources:
+      vendor_page: 0.2
+  Qms:  # mechanical Q factor
+    value: 4.2
+    winner: vendor_page
+    sources:
+      vendor_page: 4.2
+  Sd:  # effective piston area (m²)
+    value: 0.0522
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0522
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -93,3 +85,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/294-570--bc-12ndl76-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/B-C-12NDL76-12-Neodymium-Woofer-294-570
+datasheet_url: https://www.parts-express.com/pedocs/specs/294-570--bc-12ndl76-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/B-C-12NDL76-12-Neodymium-Woofer-294-570
+frd_url: null
+zma_url: null

@@ -4,42 +4,27 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/rs-speakers-tw-10428-n-ag.html
 source: https://www.soundimports.eu/en/rs-speakers-tw-10428-n-ag.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.0
-    winner: vendor_page
-    sources:
-      vendor_page: 6.0
-  Qes:  # electrical Q factor
-    value: 0.48
-    winner: vendor_page
-    sources:
-      vendor_page: 0.48
-  Qts:  # total Q factor
-    value: 0.39
-    winner: vendor_page
-    sources:
-      vendor_page: 0.39
-  Qms:  # mechanical Q factor
-    value: 2.12
-    winner: vendor_page
-    sources:
-      vendor_page: 2.12
   Le:  # voice coil inductance (H)
     value: 1.0e-05
     winner: vendor_page
     sources:
       vendor_page: 1.0e-05
+  Qes:  # electrical Q factor
+    value: 0.48
+    winner: vendor_page
+    sources:
+      vendor_page: 0.48
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
   Pe:  # rated power input (W)
     value: 25.0
     winner: vendor_page
@@ -50,6 +35,16 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 520.0
+  Qts:  # total Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Qms:  # mechanical Q factor
+    value: 2.12
+    winner: vendor_page
+    sources:
+      vendor_page: 2.12
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -57,3 +52,8 @@ specs:
       vendor_page: 8.0
 _sources:
   vendor_page: https://www.soundimports.eu/en/rs-speakers-tw-10428-n-ag.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/rs-speakers-tw-10428-n-ag.html
+frd_url: null
+zma_url: null

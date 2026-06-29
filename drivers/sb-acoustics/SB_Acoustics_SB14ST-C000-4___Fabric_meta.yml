@@ -5,42 +5,32 @@ detail: Automatically scraped from SB Acoustics website (scraped 2026-06-29). T/
 corrections: null
 reviewed_by: null
 driver_type: null
-datasheet: https://sbacoustics.com/wp-content/uploads/2025/12/SB14ST-C000-4.pdf
-manu_page: https://sbacoustics.com/product/sb14st-c000-4/
-vendor_page: null
 source: https://sbacoustics.com/product/sb14st-c000-4/
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 4.0
-    winner: manu_page
-    sources:
-      manu_page: 4.0
-  Sd:  # effective piston area (m²)
-    value: 0.00022
-    winner: manu_page
-    sources:
-      manu_page: 0.00022
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00015
-    winner: manu_page
-    sources:
-      manu_page: 0.00015
-  BL:  # force factor (T·m)
-    value: 0.92
-    winner: manu_page
-    sources:
-      manu_page: 0.92
   Le:  # voice coil inductance (H)
     value: 4.0e-05
     winner: manu_page
     sources:
       manu_page: 4.0e-05
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00011
+    winner: manu_page
+    sources:
+      manu_page: 0.00011
+  BL:  # force factor (T·m)
+    value: 0.92
+    winner: manu_page
+    sources:
+      manu_page: 0.92
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.0
+    winner: manu_page
+    sources:
+      manu_page: 4.0
   Pe:  # rated power input (W)
     value: 10.0
     winner: manu_page
@@ -51,11 +41,16 @@ specs:
     winner: manu_page
     sources:
       manu_page: 1300.0
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.00011
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00015
     winner: manu_page
     sources:
-      manu_page: 0.00011
+      manu_page: 0.00015
+  Sd:  # effective piston area (m²)
+    value: 0.00022
+    winner: manu_page
+    sources:
+      manu_page: 0.00022
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: manu_page
@@ -79,3 +74,8 @@ specs:
 _sources:
   datasheet: https://sbacoustics.com/wp-content/uploads/2025/12/SB14ST-C000-4.pdf
   manu_page: https://sbacoustics.com/product/sb14st-c000-4/
+datasheet_url: https://sbacoustics.com/wp-content/uploads/2025/12/SB14ST-C000-4.pdf
+manu_page_url: https://sbacoustics.com/product/sb14st-c000-4/
+vendor_page_url: null
+frd_url: null
+zma_url: null

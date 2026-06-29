@@ -6,120 +6,90 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: http://www.wavecor.com/Driver%20specifications%20PDF/WF182BD13_14_15_16_specifications.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: http://www.wavecor.com/html/wf182bd13_14_15_16.html
-vendor_page: null
 source: http://www.wavecor.com/html/wf182bd13_14_15_16.html
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 specs:
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0208
+    winner: manu_page
+    sources:
+      manu_page: 0.0208
+  Qes:  # electrical Q factor
+    value: 0.27
+    winner: manu_page
+    sources:
+      manu_page: 0.27
   Mms:  # moving mass incl. air load (kg)
     value: 0.016
     winner: manu_page
     sources:
-      datasheet: 0.016
       manu_page: 0.016
-    note: Not in datasheet; value from manu_page
-  Znom:  # nominal impedance (Ω)
-    value: 4.0
-    winner: manu_page
-    sources:
-      datasheet: 8.0
-      manu_page: 4.0
-    note: Not in datasheet; value from manu_page
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.3
-    winner: manu_page
-    sources:
-      manu_page: 3.3
-    note: Not in datasheet; value from manu_page
-  Sd:  # effective piston area (m²)
-    value: 0.0117
-    winner: manu_page
-    sources:
-      datasheet: 0.0117
-      manu_page: 0.0117
-    note: Not in datasheet; value from manu_page
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00107
-    winner: manu_page
-    sources:
-      datasheet: 0.00107
-      manu_page: 0.00107
-    note: Not in datasheet; value from manu_page
-  Fs:  # free air resonance (Hz)
-    value: 38.0
-    winner: manu_page
-    sources:
-      datasheet: 38.0
-      manu_page: 38.0
-    note: Not in datasheet; value from manu_page
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0055
-    winner: manu_page
-    sources:
-      datasheet: 0.0055
-      manu_page: 0.0055
-    note: Not in datasheet; value from manu_page
-  Qts:  # total Q factor
-    value: 0.26
-    winner: manu_page
-    sources:
-      datasheet: 0.26
-      manu_page: 0.26
-    note: Not in datasheet; value from manu_page
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.35
-    winner: manu_page
-    sources:
-      datasheet: 0.35
-      manu_page: 0.35
-    note: Not in datasheet; value from manu_page
   BL:  # force factor (T·m)
     value: 6.9
     winner: manu_page
     sources:
       manu_page: 6.9
-    note: Not in datasheet; value from manu_page
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.3
+    winner: manu_page
+    sources:
+      manu_page: 3.3
   Pe:  # rated power input (W)
     value: 350.0
     winner: manu_page
     sources:
       manu_page: 350.0
-    note: Not in datasheet; value from manu_page
+  Fs:  # free air resonance (Hz)
+    value: 38.0
+    winner: manu_page
+    sources:
+      manu_page: 38.0
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.35
+    winner: manu_page
+    sources:
+      manu_page: 0.35
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0055
+    winner: manu_page
+    sources:
+      manu_page: 0.0055
+  Qts:  # total Q factor
+    value: 0.26
+    winner: manu_page
+    sources:
+      manu_page: 0.26
   Qms:  # mechanical Q factor
     value: 10.9
     winner: manu_page
     sources:
-      datasheet: 10.9
       manu_page: 10.9
-    note: Not in datasheet; value from manu_page
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0208
+  Sd:  # effective piston area (m²)
+    value: 0.0117
     winner: manu_page
     sources:
-      datasheet: 0.0208
-      manu_page: 0.0208
-    note: Not in datasheet; value from manu_page
-  Qes:  # electrical Q factor
-    value: 0.27
+      manu_page: 0.0117
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
     winner: manu_page
     sources:
-      datasheet: 0.27
-      manu_page: 0.27
-    note: Not in datasheet; value from manu_page
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 2500.0
+      manu_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00107
     winner: manu_page
     sources:
-      manu_page: 2500.0
+      manu_page: 0.00107
 _sources:
   datasheet: http://www.wavecor.com/Driver%20specifications%20PDF/WF182BD13_14_15_16_specifications.pdf
   manu_page: http://www.wavecor.com/html/wf182bd13_14_15_16.html
+datasheet_url: http://www.wavecor.com/Driver%20specifications%20PDF/WF182BD13_14_15_16_specifications.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: http://www.wavecor.com/html/wf182bd13_14_15_16.html
+vendor_page_url: null
+frd_url: null
+zma_url: null

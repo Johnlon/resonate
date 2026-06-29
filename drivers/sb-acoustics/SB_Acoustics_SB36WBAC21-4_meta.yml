@@ -5,62 +5,42 @@ detail: Automatically scraped from SB Acoustics website (scraped 2026-06-29). T/
 corrections: null
 reviewed_by: null
 driver_type: null
-datasheet: https://sbacoustics.com/wp-content/uploads/2020/03/1in-SB36WBAC21-4.pdf
-manu_page: https://sbacoustics.com/product/1-sb36wbac21-4-aluminum/
-vendor_page: null
 source: https://sbacoustics.com/product/1-sb36wbac21-4-aluminum/
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.4
-    winner: manu_page
-    sources:
-      manu_page: 3.4
-  Sd:  # effective piston area (m²)
-    value: 0.00042
-    winner: manu_page
-    sources:
-      manu_page: 0.00042
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00083
-    winner: manu_page
-    sources:
-      manu_page: 0.00083
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00175
-    winner: manu_page
-    sources:
-      manu_page: 0.00175
-  Qes:  # electrical Q factor
-    value: 1.05
-    winner: manu_page
-    sources:
-      manu_page: 1.05
-  BL:  # force factor (T·m)
-    value: 1.76
-    winner: manu_page
-    sources:
-      manu_page: 1.76
-  Qts:  # total Q factor
-    value: 0.41
-    winner: manu_page
-    sources:
-      manu_page: 0.41
-  Qms:  # mechanical Q factor
-    value: 0.68
-    winner: manu_page
-    sources:
-      manu_page: 0.68
   Le:  # voice coil inductance (H)
     value: 0.00012
     winner: manu_page
     sources:
       manu_page: 0.00012
+  Vas:  # equivalent acoustic volume (m³)
+    value: 2.1e-05
+    winner: manu_page
+    sources:
+      manu_page: 2.1e-05
+  Qes:  # electrical Q factor
+    value: 1.05
+    winner: manu_page
+    sources:
+      manu_page: 1.05
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00076
+    winner: manu_page
+    sources:
+      manu_page: 0.00076
+  BL:  # force factor (T·m)
+    value: 1.76
+    winner: manu_page
+    sources:
+      manu_page: 1.76
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.4
+    winner: manu_page
+    sources:
+      manu_page: 3.4
   Pe:  # rated power input (W)
     value: 5.0
     winner: manu_page
@@ -71,21 +51,36 @@ specs:
     winner: manu_page
     sources:
       manu_page: 200.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 2.1e-05
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00175
     winner: manu_page
     sources:
-      manu_page: 2.1e-05
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.00076
+      manu_page: 0.00175
+  Qts:  # total Q factor
+    value: 0.41
     winner: manu_page
     sources:
-      manu_page: 0.00076
+      manu_page: 0.41
+  Qms:  # mechanical Q factor
+    value: 0.68
+    winner: manu_page
+    sources:
+      manu_page: 0.68
+  Sd:  # effective piston area (m²)
+    value: 0.00042
+    winner: manu_page
+    sources:
+      manu_page: 0.00042
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: manu_page
     sources:
       manu_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00083
+    winner: manu_page
+    sources:
+      manu_page: 0.00083
   voice_coil_dia_mm:  # voice coil diameter (mm)
     value: 20.4
     winner: manu_page
@@ -104,3 +99,8 @@ specs:
 _sources:
   datasheet: https://sbacoustics.com/wp-content/uploads/2020/03/1in-SB36WBAC21-4.pdf
   manu_page: https://sbacoustics.com/product/1-sb36wbac21-4-aluminum/
+datasheet_url: https://sbacoustics.com/wp-content/uploads/2020/03/1in-SB36WBAC21-4.pdf
+manu_page_url: https://sbacoustics.com/product/1-sb36wbac21-4-aluminum/
+vendor_page_url: null
+frd_url: null
+zma_url: null

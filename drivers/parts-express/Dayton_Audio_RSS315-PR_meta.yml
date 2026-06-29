@@ -7,50 +7,12 @@ corrections: '''Vas'' stored=0.0790039 differs from calculated=0.0801252 (deps: 
 reviewed_by: null
 driver_type: passive_radiator
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/295-502--rss315-pr-specification-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-RSS315-PR-12-Reference-Series-Aluminum-Cone-Passive-Radiator-295-502
 source: https://www.parts-express.com/Dayton-Audio-RSS315-PR-12-Reference-Series-Aluminum-Cone-Passive-Radiator-295-502
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 295-502
 specs:
-  Sd:  # effective piston area (m²)
-    value: 0.05067
-    winner: vendor_page
-    sources:
-      vendor_page: 0.05067
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00022
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00022
-  Xmax:  # one-way linear excursion (m)
-    value: 0.026
-    winner: vendor_page
-    sources:
-      vendor_page: 0.026
-  Rms:  # mechanical resistance (kg/s)
-    value: 8.263897168106764
-    winner: vendor_page
-    sources:
-      vendor_page: 8.263897168106764
-  Qms:  # mechanical Q factor
-    value: 4.79
-    winner: vendor_page
-    sources:
-      vendor_page: 4.79
-  Fs:  # free air resonance (Hz)
-    value: 21.0
-    winner: vendor_page
-    sources:
-      vendor_page: 21.0
   Vas:  # equivalent acoustic volume (m³)
     value: 0.079003872
     winner: vendor_page
@@ -61,6 +23,44 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 0.3
+  Fs:  # free air resonance (Hz)
+    value: 21.0
+    winner: vendor_page
+    sources:
+      vendor_page: 21.0
+  Rms:  # mechanical resistance (kg/s)
+    value: 8.263897168106764
+    winner: vendor_page
+    sources:
+      vendor_page: 8.263897168106764
+  Xmax:  # one-way linear excursion (m)
+    value: 0.026
+    winner: vendor_page
+    sources:
+      vendor_page: 0.026
+  Qms:  # mechanical Q factor
+    value: 4.79
+    winner: vendor_page
+    sources:
+      vendor_page: 4.79
+  Sd:  # effective piston area (m²)
+    value: 0.05067
+    winner: vendor_page
+    sources:
+      vendor_page: 0.05067
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00022
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00022
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/295-502--rss315-pr-specification-sheet.pdf
   vendor_page: https://www.parts-express.com/Dayton-Audio-RSS315-PR-12-Reference-Series-Aluminum-Cone-Passive-Radiator-295-502
+datasheet_url: https://www.parts-express.com/pedocs/specs/295-502--rss315-pr-specification-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-RSS315-PR-12-Reference-Series-Aluminum-Cone-Passive-Radiator-295-502
+frd_url: null
+zma_url: null

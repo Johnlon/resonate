@@ -6,65 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Beyma-12MI100-MI100-Series-12-Midrange-Speaker-8-Ohm-253-040
 source: https://www.parts-express.com/Beyma-12MI100-MI100-Series-12-Midrange-Speaker-8-Ohm-253-040
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 253-040
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.3
-    winner: vendor_page
-    sources:
-      vendor_page: 6.3
-  Sd:  # effective piston area (m²)
-    value: 0.053
-    winner: vendor_page
-    sources:
-      vendor_page: 0.053
-  Xmax:  # one-way linear excursion (m)
-    value: 0.003
-    winner: vendor_page
-    sources:
-      vendor_page: 0.003
-  Qes:  # electrical Q factor
-    value: 0.23
-    winner: vendor_page
-    sources:
-      vendor_page: 0.23
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.0031141751177039185
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0031141751177039185
-  BL:  # force factor (T·m)
-    value: 21.6
-    winner: vendor_page
-    sources:
-      vendor_page: 21.6
-  Qts:  # total Q factor
-    value: 0.22
-    winner: vendor_page
-    sources:
-      vendor_page: 0.22
-  Qms:  # mechanical Q factor
-    value: 5.5
-    winner: vendor_page
-    sources:
-      vendor_page: 5.5
   Le:  # voice coil inductance (H)
     value: 0.001
     winner: vendor_page
     sources:
       vendor_page: 0.001
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.06399596799999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.06399596799999999
+  Qes:  # electrical Q factor
+    value: 0.23
+    winner: vendor_page
+    sources:
+      vendor_page: 0.23
+  Mms:  # moving mass incl. air load (kg)
+    value: 4.7e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 4.7e-05
+  BL:  # force factor (T·m)
+    value: 21.6
+    winner: vendor_page
+    sources:
+      vendor_page: 21.6
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.3
+    winner: vendor_page
+    sources:
+      vendor_page: 6.3
   Pe:  # rated power input (W)
     value: 450.0
     winner: vendor_page
@@ -75,16 +52,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 58.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.06399596799999999
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.0031141751177039185
     winner: vendor_page
     sources:
-      vendor_page: 0.06399596799999999
-  Mms:  # moving mass incl. air load (kg)
-    value: 4.7e-05
+      vendor_page: 0.0031141751177039185
+  Xmax:  # one-way linear excursion (m)
+    value: 0.003
     winner: vendor_page
     sources:
-      vendor_page: 4.7e-05
+      vendor_page: 0.003
+  Qts:  # total Q factor
+    value: 0.22
+    winner: vendor_page
+    sources:
+      vendor_page: 0.22
+  Qms:  # mechanical Q factor
+    value: 5.5
+    winner: vendor_page
+    sources:
+      vendor_page: 5.5
+  Sd:  # effective piston area (m²)
+    value: 0.053
+    winner: vendor_page
+    sources:
+      vendor_page: 0.053
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -92,3 +84,11 @@ specs:
       vendor_page: 8.0
 _sources:
   vendor_page: https://www.parts-express.com/Beyma-12MI100-MI100-Series-12-Midrange-Speaker-8-Ohm-253-040
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Beyma-12MI100-MI100-Series-12-Midrange-Speaker-8-Ohm-253-040
+frd_url: null
+zma_url: null

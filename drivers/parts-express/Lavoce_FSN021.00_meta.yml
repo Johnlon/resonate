@@ -6,70 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/293-704--lavoce-fsn021.00-specifications.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/LaVoce-FSN021.00-2-Neodymium-Full-Range-Woofer-8-Ohm-293-704
 source: https://www.parts-express.com/LaVoce-FSN021.00-2-Neodymium-Full-Range-Woofer-8-Ohm-293-704
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 293-704
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.7
-    winner: vendor_page
-    sources:
-      vendor_page: 5.7
-  Sd:  # effective piston area (m²)
-    value: 0.0019
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0019
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0004
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0004
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0018
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0018
-  Qes:  # electrical Q factor
-    value: 0.73
-    winner: vendor_page
-    sources:
-      vendor_page: 0.73
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.5759586531581288
-    winner: vendor_page
-    sources:
-      vendor_page: 0.5759586531581288
-  BL:  # force factor (T·m)
-    value: 3.6
-    winner: vendor_page
-    sources:
-      vendor_page: 3.6
-  Qts:  # total Q factor
-    value: 0.59
-    winner: vendor_page
-    sources:
-      vendor_page: 0.59
-  Qms:  # mechanical Q factor
-    value: 3.0
-    winner: vendor_page
-    sources:
-      vendor_page: 3.0
   Le:  # voice coil inductance (H)
     value: 7.000000000000001e-05
     winner: vendor_page
     sources:
       vendor_page: 7.000000000000001e-05
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.000283168
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000283168
+  Qes:  # electrical Q factor
+    value: 0.73
+    winner: vendor_page
+    sources:
+      vendor_page: 0.73
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00125
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00125
+  BL:  # force factor (T·m)
+    value: 3.6
+    winner: vendor_page
+    sources:
+      vendor_page: 3.6
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.7
+    winner: vendor_page
+    sources:
+      vendor_page: 5.7
   Pe:  # rated power input (W)
     value: 20.0
     winner: vendor_page
@@ -80,21 +52,49 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 220.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.000283168
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.5759586531581288
     winner: vendor_page
     sources:
-      vendor_page: 0.000283168
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.00125
+      vendor_page: 0.5759586531581288
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0018
     winner: vendor_page
     sources:
-      vendor_page: 0.00125
+      vendor_page: 0.0018
+  Qts:  # total Q factor
+    value: 0.59
+    winner: vendor_page
+    sources:
+      vendor_page: 0.59
+  Qms:  # mechanical Q factor
+    value: 3.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0
+  Sd:  # effective piston area (m²)
+    value: 0.0019
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0019
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0004
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/293-704--lavoce-fsn021.00-specifications.pdf
   vendor_page: https://www.parts-express.com/LaVoce-FSN021.00-2-Neodymium-Full-Range-Woofer-8-Ohm-293-704
+datasheet_url: https://www.parts-express.com/pedocs/specs/293-704--lavoce-fsn021.00-specifications.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/LaVoce-FSN021.00-2-Neodymium-Full-Range-Woofer-8-Ohm-293-704
+frd_url: null
+zma_url: null

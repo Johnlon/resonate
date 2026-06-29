@@ -4,67 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/faitalpro-10pr300-4p.html
 source: https://www.soundimports.eu/en/faitalpro-10pr300-4p.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.3
-    winner: vendor_page
-    sources:
-      vendor_page: 3.3
-  Sd:  # effective piston area (m²)
-    value: 0.0348
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0348
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00029
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00029
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00492
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00492
-  Qes:  # electrical Q factor
-    value: 0.25
-    winner: vendor_page
-    sources:
-      vendor_page: 0.25
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.9
-    winner: vendor_page
-    sources:
-      vendor_page: 1.9
-  BL:  # force factor (T·m)
-    value: 11.8
-    winner: vendor_page
-    sources:
-      vendor_page: 11.8
-  Qts:  # total Q factor
-    value: 0.24
-    winner: vendor_page
-    sources:
-      vendor_page: 0.24
-  Qms:  # mechanical Q factor
-    value: 5.8
-    winner: vendor_page
-    sources:
-      vendor_page: 5.8
   Le:  # voice coil inductance (H)
     value: 0.00045
     winner: vendor_page
     sources:
       vendor_page: 0.00045
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0498
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0498
+  Qes:  # electrical Q factor
+    value: 0.25
+    winner: vendor_page
+    sources:
+      vendor_page: 0.25
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0344
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0344
+  BL:  # force factor (T·m)
+    value: 11.8
+    winner: vendor_page
+    sources:
+      vendor_page: 11.8
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.3
+    winner: vendor_page
+    sources:
+      vendor_page: 3.3
   Pe:  # rated power input (W)
     value: 300.0
     winner: vendor_page
@@ -75,21 +50,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 50.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0498
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.9
     winner: vendor_page
     sources:
-      vendor_page: 0.0498
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0344
+      vendor_page: 1.9
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00492
     winner: vendor_page
     sources:
-      vendor_page: 0.0344
+      vendor_page: 0.00492
+  Qts:  # total Q factor
+    value: 0.24
+    winner: vendor_page
+    sources:
+      vendor_page: 0.24
+  Qms:  # mechanical Q factor
+    value: 5.8
+    winner: vendor_page
+    sources:
+      vendor_page: 5.8
+  Sd:  # effective piston area (m²)
+    value: 0.0348
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0348
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00029
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00029
   power_peak_W:  # peak power handling (W)
     value: 600.0
     winner: vendor_page
@@ -117,3 +112,8 @@ specs:
       vendor_page: 65.0
 _sources:
   vendor_page: https://www.soundimports.eu/en/faitalpro-10pr300-4p.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/faitalpro-10pr300-4p.html
+frd_url: null
+zma_url: null

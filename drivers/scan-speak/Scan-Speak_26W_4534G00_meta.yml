@@ -4,53 +4,53 @@ detail: Automatically scraped from Scan-Speak website (scraped 2026-06-28). T/S 
   have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.scan-speak.dk/datasheet/pdf/26w-4534g00.pdf
-manu_page: https://www.scan-speak.dk/product/26w-4534g00/
-vendor_page: null
 source: https://www.scan-speak.dk/product/26w-4534g00/
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: woofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.8
-    winner: manu_page
-    sources:
-      manu_page: 3.8
-  Sd:  # effective piston area (m²)
-    value: 0.035
-    winner: manu_page
-    sources:
-      manu_page: 0.035
-  BL:  # force factor (T·m)
-    value: 8.8
-    winner: manu_page
-    sources:
-      manu_page: 8.8
-  Qts:  # total Q factor
-    value: 0.36
-    winner: manu_page
-    sources:
-      manu_page: 0.36
-  SPL:  # sensitivity (dB, 2.83 V/1 m)
-    value: 90.5
-    winner: manu_page
-    sources:
-      manu_page: 90.5
-  Fs:  # free air resonance (Hz)
-    value: 23.0
-    winner: manu_page
-    sources:
-      manu_page: 23.0
   Vas:  # equivalent acoustic volume (m³)
     value: 0.156
     winner: manu_page
     sources:
       manu_page: 0.156
+  BL:  # force factor (T·m)
+    value: 8.8
+    winner: manu_page
+    sources:
+      manu_page: 8.8
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.8
+    winner: manu_page
+    sources:
+      manu_page: 3.8
+  Fs:  # free air resonance (Hz)
+    value: 23.0
+    winner: manu_page
+    sources:
+      manu_page: 23.0
+  Qts:  # total Q factor
+    value: 0.36
+    winner: manu_page
+    sources:
+      manu_page: 0.36
+  Sd:  # effective piston area (m²)
+    value: 0.035
+    winner: manu_page
+    sources:
+      manu_page: 0.035
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 90.5
+    winner: manu_page
+    sources:
+      manu_page: 90.5
 _sources:
   datasheet: https://www.scan-speak.dk/datasheet/pdf/26w-4534g00.pdf
   manu_page: https://www.scan-speak.dk/product/26w-4534g00/
+datasheet_url: https://www.scan-speak.dk/datasheet/pdf/26w-4534g00.pdf
+manu_page_url: https://www.scan-speak.dk/product/26w-4534g00/
+vendor_page_url: null
+frd_url: null
+zma_url: null

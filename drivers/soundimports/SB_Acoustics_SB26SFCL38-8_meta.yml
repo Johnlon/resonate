@@ -4,62 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/sb-acoustics-sb26sfcl38-8.html
 source: https://www.soundimports.eu/en/sb-acoustics-sb26sfcl38-8.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.0
-    winner: vendor_page
-    sources:
-      vendor_page: 6.0
-  Sd:  # effective piston area (m²)
-    value: 0.0346
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0346
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00063
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00063
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0082
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0082
-  Qes:  # electrical Q factor
-    value: 0.6
-    winner: vendor_page
-    sources:
-      vendor_page: 0.6
-  BL:  # force factor (T·m)
-    value: 9.6
-    winner: vendor_page
-    sources:
-      vendor_page: 9.6
-  Qts:  # total Q factor
-    value: 0.53
-    winner: vendor_page
-    sources:
-      vendor_page: 0.53
-  Qms:  # mechanical Q factor
-    value: 5.09
-    winner: vendor_page
-    sources:
-      vendor_page: 5.09
   Le:  # voice coil inductance (H)
     value: 0.0016
     winner: vendor_page
     sources:
       vendor_page: 0.0016
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.107
+    winner: vendor_page
+    sources:
+      vendor_page: 0.107
+  Qes:  # electrical Q factor
+    value: 0.6
+    winner: vendor_page
+    sources:
+      vendor_page: 0.6
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.053
+    winner: vendor_page
+    sources:
+      vendor_page: 0.053
+  BL:  # force factor (T·m)
+    value: 9.6
+    winner: vendor_page
+    sources:
+      vendor_page: 9.6
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
   Pe:  # rated power input (W)
     value: 80.0
     winner: vendor_page
@@ -70,20 +50,40 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 27.5
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.107
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0082
     winner: vendor_page
     sources:
-      vendor_page: 0.107
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.053
+      vendor_page: 0.0082
+  Qts:  # total Q factor
+    value: 0.53
     winner: vendor_page
     sources:
-      vendor_page: 0.053
+      vendor_page: 0.53
+  Qms:  # mechanical Q factor
+    value: 5.09
+    winner: vendor_page
+    sources:
+      vendor_page: 5.09
+  Sd:  # effective piston area (m²)
+    value: 0.0346
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0346
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00063
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00063
 _sources:
   vendor_page: https://www.soundimports.eu/en/sb-acoustics-sb26sfcl38-8.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/sb-acoustics-sb26sfcl38-8.html
+frd_url: null
+zma_url: null

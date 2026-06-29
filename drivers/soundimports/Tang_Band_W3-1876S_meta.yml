@@ -6,65 +6,17 @@ corrections: null
 reviewed_by: null
 driver_type: null
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/tang-band-w3-1876s.html
 source: https://www.soundimports.eu/en/tang-band-w3-1876s.html
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  Sd:  # effective piston area (m²)
-    value: 0.0027
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0027
-  BL:  # force factor (T·m)
-    value: 5.28
-    winner: vendor_page
-    sources:
-      vendor_page: 5.28
-  Pe:  # rated power input (W)
-    value: 15.0
-    winner: vendor_page
-    sources:
-      vendor_page: 15.0
-  Xmax:  # one-way linear excursion (m)
-    value: 0.005
-    winner: vendor_page
-    sources:
-      vendor_page: 0.005
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.00998
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00998
   Le:  # voice coil inductance (H)
     value: 0.00019
     winner: vendor_page
     sources:
       vendor_page: 0.00019
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.6
-    winner: vendor_page
-    sources:
-      vendor_page: 3.6
-  Qts:  # total Q factor
-    value: 0.43
-    winner: vendor_page
-    sources:
-      vendor_page: 0.43
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00074
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00074
   Vas:  # equivalent acoustic volume (m³)
     value: 0.000849504
     winner: vendor_page
@@ -75,21 +27,61 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 0.5
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00998
+  BL:  # force factor (T·m)
+    value: 5.28
+    winner: vendor_page
+    sources:
+      vendor_page: 5.28
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.6
+    winner: vendor_page
+    sources:
+      vendor_page: 3.6
+  Pe:  # rated power input (W)
+    value: 15.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15.0
   Fs:  # free air resonance (Hz)
     value: 55.0
     winner: vendor_page
     sources:
       vendor_page: 55.0
-  Znom:  # nominal impedance (Ω)
-    value: 4.0
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005
     winner: vendor_page
     sources:
-      vendor_page: 4.0
+      vendor_page: 0.005
+  Qts:  # total Q factor
+    value: 0.43
+    winner: vendor_page
+    sources:
+      vendor_page: 0.43
   Qms:  # mechanical Q factor
     value: 3.17
     winner: vendor_page
     sources:
       vendor_page: 3.17
+  Sd:  # effective piston area (m²)
+    value: 0.0027
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0027
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00074
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00074
   power_peak_W:  # peak power handling (W)
     value: 30.0
     winner: vendor_page
@@ -112,3 +104,11 @@ specs:
       vendor_page: 2000.0
 _sources:
   vendor_page: https://www.soundimports.eu/en/tang-band-w3-1876s.html
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/tang-band-w3-1876s.html
+frd_url: null
+zma_url: null

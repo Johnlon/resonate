@@ -6,60 +6,32 @@ corrections: null
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Wavecor-WF095WA01-3-3-4-Paper-Cone-Midwoofer-4-Ohm-298-1225
 source: https://www.parts-express.com/Wavecor-WF095WA01-3-3-4-Paper-Cone-Midwoofer-4-Ohm-298-1225
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Re
 community: null
 fetched_sku: 298-1225
 specs:
-  Sd:  # effective piston area (m²)
-    value: 0.0035
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.001699008
     winner: vendor_page
     sources:
-      vendor_page: 0.0035
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00094
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00094
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0027
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0027
+      vendor_page: 0.001699008
   Qes:  # electrical Q factor
     value: 0.69
     winner: vendor_page
     sources:
       vendor_page: 0.69
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.2947385107731515
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0036
     winner: vendor_page
     sources:
-      vendor_page: 0.2947385107731515
+      vendor_page: 0.0036
   BL:  # force factor (T·m)
     value: 3.0
     winner: vendor_page
     sources:
       vendor_page: 3.0
-  Qts:  # total Q factor
-    value: 0.62
-    winner: vendor_page
-    sources:
-      vendor_page: 0.62
-  Qms:  # mechanical Q factor
-    value: 6.6
-    winner: vendor_page
-    sources:
-      vendor_page: 6.6
   Pe:  # rated power input (W)
     value: 10.0
     winner: vendor_page
@@ -70,20 +42,48 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 86.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.001699008
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.2947385107731515
     winner: vendor_page
     sources:
-      vendor_page: 0.001699008
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0036
+      vendor_page: 0.2947385107731515
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0027
     winner: vendor_page
     sources:
-      vendor_page: 0.0036
+      vendor_page: 0.0027
+  Qts:  # total Q factor
+    value: 0.62
+    winner: vendor_page
+    sources:
+      vendor_page: 0.62
+  Qms:  # mechanical Q factor
+    value: 6.6
+    winner: vendor_page
+    sources:
+      vendor_page: 6.6
+  Sd:  # effective piston area (m²)
+    value: 0.0035
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0035
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00094
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00094
 _sources:
   vendor_page: https://www.parts-express.com/Wavecor-WF095WA01-3-3-4-Paper-Cone-Midwoofer-4-Ohm-298-1225
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Wavecor-WF095WA01-3-3-4-Paper-Cone-Midwoofer-4-Ohm-298-1225
+frd_url: null
+zma_url: null

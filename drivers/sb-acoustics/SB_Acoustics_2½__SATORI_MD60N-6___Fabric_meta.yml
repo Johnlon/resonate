@@ -5,42 +5,32 @@ detail: Automatically scraped from SB Acoustics website (scraped 2026-06-29). T/
 corrections: null
 reviewed_by: null
 driver_type: null
-datasheet: https://sbacoustics.com/wp-content/uploads/2022/03/2.5in-SATORI-MD60N-6.pdf
-manu_page: https://sbacoustics.com/product/2-5in-satori-md60n-6-fabric/
-vendor_page: null
 source: https://sbacoustics.com/product/2-5in-satori-md60n-6-fabric/
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.3
-    winner: manu_page
-    sources:
-      manu_page: 5.3
-  Sd:  # effective piston area (m²)
-    value: 0.0032
-    winner: manu_page
-    sources:
-      manu_page: 0.0032
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00025
-    winner: manu_page
-    sources:
-      manu_page: 0.00025
-  BL:  # force factor (T·m)
-    value: 7.2
-    winner: manu_page
-    sources:
-      manu_page: 7.2
   Le:  # voice coil inductance (H)
     value: 0.00014
     winner: manu_page
     sources:
       manu_page: 0.00014
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.002
+    winner: manu_page
+    sources:
+      manu_page: 0.002
+  BL:  # force factor (T·m)
+    value: 7.2
+    winner: manu_page
+    sources:
+      manu_page: 7.2
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.3
+    winner: manu_page
+    sources:
+      manu_page: 5.3
   Pe:  # rated power input (W)
     value: 120.0
     winner: manu_page
@@ -51,11 +41,16 @@ specs:
     winner: manu_page
     sources:
       manu_page: 400.0
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.002
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00025
     winner: manu_page
     sources:
-      manu_page: 0.002
+      manu_page: 0.00025
+  Sd:  # effective piston area (m²)
+    value: 0.0032
+    winner: manu_page
+    sources:
+      manu_page: 0.0032
   Znom:  # nominal impedance (Ω)
     value: 6.0
     winner: manu_page
@@ -79,3 +74,8 @@ specs:
 _sources:
   datasheet: https://sbacoustics.com/wp-content/uploads/2022/03/2.5in-SATORI-MD60N-6.pdf
   manu_page: https://sbacoustics.com/product/2-5in-satori-md60n-6-fabric/
+datasheet_url: https://sbacoustics.com/wp-content/uploads/2022/03/2.5in-SATORI-MD60N-6.pdf
+manu_page_url: https://sbacoustics.com/product/2-5in-satori-md60n-6-fabric/
+vendor_page_url: null
+frd_url: null
+zma_url: null

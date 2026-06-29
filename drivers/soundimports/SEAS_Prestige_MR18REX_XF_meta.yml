@@ -4,33 +4,18 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/seas-mr18rex-xf.html
 source: https://www.soundimports.eu/en/seas-mr18rex-xf.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.2
+  Le:  # voice coil inductance (H)
+    value: 0.00043
     winner: vendor_page
     sources:
-      vendor_page: 6.2
-  Sd:  # effective piston area (m²)
-    value: 0.0126
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0126
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0001
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0001
-  Xmax:  # one-way linear excursion (m)
+      vendor_page: 0.00043
+  Vas:  # equivalent acoustic volume (m³)
     value: 0.003
     winner: vendor_page
     sources:
@@ -40,31 +25,21 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 0.96
-  Rms:  # mechanical resistance (kg/s)
-    value: 4.26
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0118
     winner: vendor_page
     sources:
-      vendor_page: 4.26
+      vendor_page: 0.0118
   BL:  # force factor (T·m)
     value: 8.3
     winner: vendor_page
     sources:
       vendor_page: 8.3
-  Qts:  # total Q factor
-    value: 0.69
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.2
     winner: vendor_page
     sources:
-      vendor_page: 0.69
-  Qms:  # mechanical Q factor
-    value: 2.49
-    winner: vendor_page
-    sources:
-      vendor_page: 2.49
-  Le:  # voice coil inductance (H)
-    value: 0.00043
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00043
+      vendor_page: 6.2
   Pe:  # rated power input (W)
     value: 80.0
     winner: vendor_page
@@ -75,20 +50,45 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 126.0
-  Vas:  # equivalent acoustic volume (m³)
+  Rms:  # mechanical resistance (kg/s)
+    value: 4.26
+    winner: vendor_page
+    sources:
+      vendor_page: 4.26
+  Xmax:  # one-way linear excursion (m)
     value: 0.003
     winner: vendor_page
     sources:
       vendor_page: 0.003
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0118
+  Qts:  # total Q factor
+    value: 0.69
     winner: vendor_page
     sources:
-      vendor_page: 0.0118
+      vendor_page: 0.69
+  Qms:  # mechanical Q factor
+    value: 2.49
+    winner: vendor_page
+    sources:
+      vendor_page: 2.49
+  Sd:  # effective piston area (m²)
+    value: 0.0126
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0126
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0001
 _sources:
   vendor_page: https://www.soundimports.eu/en/seas-mr18rex-xf.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/seas-mr18rex-xf.html
+frd_url: null
+zma_url: null

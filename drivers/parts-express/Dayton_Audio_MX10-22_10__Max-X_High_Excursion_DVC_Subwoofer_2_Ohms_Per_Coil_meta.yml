@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/295-164--dayton-audio-mx10-22-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-MX10-22-10-Max-X-High-Excursion-DVC-Subwoofer-2-Ohms-Per-Coil-295-164
 source: https://www.parts-express.com/Dayton-Audio-MX10-22-10-Max-X-High-Excursion-DVC-Subwoofer-2-Ohms-Per-Coil-295-164
-frd: https://www.parts-express.com/pedocs/tech-docs/MX10-22_data.zip
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 4.76
-    winner: vendor_page
-    sources:
-      vendor_page: 4.76
-  Sd:  # effective piston area (m²)
-    value: 0.03567
-    winner: vendor_page
-    sources:
-      vendor_page: 0.03567
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00013000000000000002
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00013000000000000002
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0116
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0116
-  Qes:  # electrical Q factor
-    value: 0.53
-    winner: vendor_page
-    sources:
-      vendor_page: 0.53
-  Rms:  # mechanical resistance (kg/s)
-    value: 10.21306393914088
-    winner: vendor_page
-    sources:
-      vendor_page: 10.21306393914088
-  BL:  # force factor (T·m)
-    value: 18.2
-    winner: vendor_page
-    sources:
-      vendor_page: 18.2
-  Qts:  # total Q factor
-    value: 0.46
-    winner: vendor_page
-    sources:
-      vendor_page: 0.46
-  Qms:  # mechanical Q factor
-    value: 3.59
-    winner: vendor_page
-    sources:
-      vendor_page: 3.59
   Le:  # voice coil inductance (H)
     value: 0.00433
     winner: vendor_page
     sources:
       vendor_page: 0.00433
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.023786111999999998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.023786111999999998
+  Qes:  # electrical Q factor
+    value: 0.53
+    winner: vendor_page
+    sources:
+      vendor_page: 0.53
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.179
+    winner: vendor_page
+    sources:
+      vendor_page: 0.179
+  BL:  # force factor (T·m)
+    value: 18.2
+    winner: vendor_page
+    sources:
+      vendor_page: 18.2
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.76
+    winner: vendor_page
+    sources:
+      vendor_page: 4.76
   Pe:  # rated power input (W)
     value: 400.0
     winner: vendor_page
@@ -76,21 +51,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 32.6
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.023786111999999998
+  Rms:  # mechanical resistance (kg/s)
+    value: 10.21306393914088
     winner: vendor_page
     sources:
-      vendor_page: 0.023786111999999998
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.179
+      vendor_page: 10.21306393914088
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0116
     winner: vendor_page
     sources:
-      vendor_page: 0.179
+      vendor_page: 0.0116
+  Qts:  # total Q factor
+    value: 0.46
+    winner: vendor_page
+    sources:
+      vendor_page: 0.46
+  Qms:  # mechanical Q factor
+    value: 3.59
+    winner: vendor_page
+    sources:
+      vendor_page: 3.59
+  Sd:  # effective piston area (m²)
+    value: 0.03567
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03567
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00013000000000000002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00013000000000000002
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 400.0
     winner: vendor_page
@@ -109,3 +104,8 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/295-164--dayton-audio-mx10-22-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Dayton-Audio-MX10-22-10-Max-X-High-Excursion-DVC-Subwoofer-2-Ohms-Per-Coil-295-164
+datasheet_url: https://www.parts-express.com/pedocs/specs/295-164--dayton-audio-mx10-22-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-MX10-22-10-Max-X-High-Excursion-DVC-Subwoofer-2-Ohms-Per-Coil-295-164
+frd_url: https://www.parts-express.com/pedocs/tech-docs/MX10-22_data.zip
+zma_url: null

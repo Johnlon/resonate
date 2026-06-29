@@ -4,63 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-1182--tymphany-pls-65f25al02-08-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Peerless-65F25AL02-2-1-2-Aluminum-Full-Range-Speaker-264-1182
 source: https://www.parts-express.com/Peerless-65F25AL02-2-1-2-Aluminum-Full-Range-Speaker-264-1182
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.1
-    winner: vendor_page
-    sources:
-      vendor_page: 6.1
-  Sd:  # effective piston area (m²)
-    value: 0.00221
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00221
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0026
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0026
-  Qes:  # electrical Q factor
-    value: 0.81
-    winner: vendor_page
-    sources:
-      vendor_page: 0.81
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.28180086102700447
-    winner: vendor_page
-    sources:
-      vendor_page: 0.28180086102700447
-  BL:  # force factor (T·m)
-    value: 3.19
-    winner: vendor_page
-    sources:
-      vendor_page: 3.19
-  Qts:  # total Q factor
-    value: 0.7
-    winner: vendor_page
-    sources:
-      vendor_page: 0.7
-  Qms:  # mechanical Q factor
-    value: 4.8
-    winner: vendor_page
-    sources:
-      vendor_page: 4.8
   Le:  # voice coil inductance (H)
     value: 5.0e-05
     winner: vendor_page
     sources:
       vendor_page: 5.0e-05
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.000849504
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000849504
+  Qes:  # electrical Q factor
+    value: 0.81
+    winner: vendor_page
+    sources:
+      vendor_page: 0.81
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00207
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00207
+  BL:  # force factor (T·m)
+    value: 3.19
+    winner: vendor_page
+    sources:
+      vendor_page: 3.19
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.1
+    winner: vendor_page
+    sources:
+      vendor_page: 6.1
   Pe:  # rated power input (W)
     value: 10.0
     winner: vendor_page
@@ -71,31 +51,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 104.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.000849504
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.28180086102700447
     winner: vendor_page
     sources:
-      vendor_page: 0.000849504
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.00207
+      vendor_page: 0.28180086102700447
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0026
     winner: vendor_page
     sources:
-      vendor_page: 0.00207
+      vendor_page: 0.0026
+  Qts:  # total Q factor
+    value: 0.7
+    winner: vendor_page
+    sources:
+      vendor_page: 0.7
+  Qms:  # mechanical Q factor
+    value: 4.8
+    winner: vendor_page
+    sources:
+      vendor_page: 4.8
+  Sd:  # effective piston area (m²)
+    value: 0.00221
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00221
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 100.0
-    winner: vendor_page
-    sources:
-      vendor_page: 100.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 15000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 15000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-1182--tymphany-pls-65f25al02-08-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Peerless-65F25AL02-2-1-2-Aluminum-Full-Range-Speaker-264-1182
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-1182--tymphany-pls-65f25al02-08-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Peerless-65F25AL02-2-1-2-Aluminum-Full-Range-Speaker-264-1182
+frd_url: null
+zma_url: null

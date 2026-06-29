@@ -4,33 +4,33 @@ detail: Automatically scraped from Scan-Speak website (scraped 2026-06-28). T/S 
   have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.scan-speak.dk/datasheet/pdf/26w-0-00-00.pdf
-manu_page: https://www.scan-speak.dk/product/26w-0-00-00/
-vendor_page: null
 source: https://www.scan-speak.dk/product/26w-0-00-00/
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: woofer
 specs:
-  Sd:  # effective piston area (m²)
-    value: 0.0352
-    winner: manu_page
-    sources:
-      manu_page: 0.0352
-  Fs:  # free air resonance (Hz)
-    value: 11.0
-    winner: manu_page
-    sources:
-      manu_page: 11.0
   Vas:  # equivalent acoustic volume (m³)
     value: 0.095
     winner: manu_page
     sources:
       manu_page: 0.095
+  Fs:  # free air resonance (Hz)
+    value: 11.0
+    winner: manu_page
+    sources:
+      manu_page: 11.0
+  Sd:  # effective piston area (m²)
+    value: 0.0352
+    winner: manu_page
+    sources:
+      manu_page: 0.0352
 _sources:
   datasheet: https://www.scan-speak.dk/datasheet/pdf/26w-0-00-00.pdf
   manu_page: https://www.scan-speak.dk/product/26w-0-00-00/
+datasheet_url: https://www.scan-speak.dk/datasheet/pdf/26w-0-00-00.pdf
+manu_page_url: https://www.scan-speak.dk/product/26w-0-00-00/
+vendor_page_url: null
+frd_url: null
+zma_url: null

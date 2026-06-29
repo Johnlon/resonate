@@ -6,65 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/292-7823--visaton-bf378-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Visaton-BF37-8-1.5-Full-Range-Driver-8-Ohm-292-7823
 source: https://www.parts-express.com/Visaton-BF37-8-1.5-Full-Range-Driver-8-Ohm-292-7823
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 292-7823
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 7.0
-    winner: vendor_page
-    sources:
-      vendor_page: 7.0
-  Sd:  # effective piston area (m²)
-    value: 0.00062
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00062
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0034
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0034
-  Qes:  # electrical Q factor
-    value: 1.1
-    winner: vendor_page
-    sources:
-      vendor_page: 1.1
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.24347343065320898
-    winner: vendor_page
-    sources:
-      vendor_page: 0.24347343065320898
-  BL:  # force factor (T·m)
-    value: 2.56
-    winner: vendor_page
-    sources:
-      vendor_page: 2.56
-  Qts:  # total Q factor
-    value: 0.86
-    winner: vendor_page
-    sources:
-      vendor_page: 0.86
-  Qms:  # mechanical Q factor
-    value: 4.0
-    winner: vendor_page
-    sources:
-      vendor_page: 4.0
   Le:  # voice coil inductance (H)
     value: 8.5e-05
     winner: vendor_page
     sources:
       vendor_page: 8.5e-05
+  Vas:  # equivalent acoustic volume (m³)
+    value: 5.66336e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 5.66336e-05
+  Qes:  # electrical Q factor
+    value: 1.1
+    winner: vendor_page
+    sources:
+      vendor_page: 1.1
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001
+  BL:  # force factor (T·m)
+    value: 2.56
+    winner: vendor_page
+    sources:
+      vendor_page: 2.56
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.0
+    winner: vendor_page
+    sources:
+      vendor_page: 7.0
   Pe:  # rated power input (W)
     value: 5.0
     winner: vendor_page
@@ -75,16 +52,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 155.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 5.66336e-05
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.24347343065320898
     winner: vendor_page
     sources:
-      vendor_page: 5.66336e-05
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.001
+      vendor_page: 0.24347343065320898
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0034
     winner: vendor_page
     sources:
-      vendor_page: 0.001
+      vendor_page: 0.0034
+  Qts:  # total Q factor
+    value: 0.86
+    winner: vendor_page
+    sources:
+      vendor_page: 0.86
+  Qms:  # mechanical Q factor
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  Sd:  # effective piston area (m²)
+    value: 0.00062
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00062
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -103,3 +95,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/292-7823--visaton-bf378-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Visaton-BF37-8-1.5-Full-Range-Driver-8-Ohm-292-7823
+datasheet_url: https://www.parts-express.com/pedocs/specs/292-7823--visaton-bf378-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Visaton-BF37-8-1.5-Full-Range-Driver-8-Ohm-292-7823
+frd_url: null
+zma_url: null

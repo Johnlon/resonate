@@ -4,57 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/prv-audio-18sw3600.html
 source: https://www.soundimports.eu/en/prv-audio-18sw3600.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.6
-    winner: vendor_page
-    sources:
-      vendor_page: 5.6
-  Sd:  # effective piston area (m²)
-    value: 0.134
-    winner: vendor_page
-    sources:
-      vendor_page: 0.134
-  Xmax:  # one-way linear excursion (m)
-    value: 0.01325
-    winner: vendor_page
-    sources:
-      vendor_page: 0.01325
-  Qes:  # electrical Q factor
-    value: 0.38
-    winner: vendor_page
-    sources:
-      vendor_page: 0.38
-  BL:  # force factor (T·m)
-    value: 25.53
-    winner: vendor_page
-    sources:
-      vendor_page: 25.53
-  Qts:  # total Q factor
-    value: 0.36
-    winner: vendor_page
-    sources:
-      vendor_page: 0.36
-  Qms:  # mechanical Q factor
-    value: 10.72
-    winner: vendor_page
-    sources:
-      vendor_page: 10.72
   Le:  # voice coil inductance (H)
     value: 0.00275
     winner: vendor_page
     sources:
       vendor_page: 0.00275
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.2797
+    winner: vendor_page
+    sources:
+      vendor_page: 0.2797
+  Qes:  # electrical Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.2151
+    winner: vendor_page
+    sources:
+      vendor_page: 0.2151
+  BL:  # force factor (T·m)
+    value: 25.53
+    winner: vendor_page
+    sources:
+      vendor_page: 25.53
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
   Pe:  # rated power input (W)
     value: 3600.0
     winner: vendor_page
@@ -65,15 +50,30 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 32.5
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.2797
+  Xmax:  # one-way linear excursion (m)
+    value: 0.01325
     winner: vendor_page
     sources:
-      vendor_page: 0.2797
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.2151
+      vendor_page: 0.01325
+  Qts:  # total Q factor
+    value: 0.36
     winner: vendor_page
     sources:
-      vendor_page: 0.2151
+      vendor_page: 0.36
+  Qms:  # mechanical Q factor
+    value: 10.72
+    winner: vendor_page
+    sources:
+      vendor_page: 10.72
+  Sd:  # effective piston area (m²)
+    value: 0.134
+    winner: vendor_page
+    sources:
+      vendor_page: 0.134
 _sources:
   vendor_page: https://www.soundimports.eu/en/prv-audio-18sw3600.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/prv-audio-18sw3600.html
+frd_url: null
+zma_url: null

@@ -4,47 +4,32 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/grs-4fr-8.html
 source: https://www.soundimports.eu/en/grs-4fr-8.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: fullrange
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 8.11
-    winner: vendor_page
-    sources:
-      vendor_page: 8.11
-  Xmax:  # one-way linear excursion (m)
-    value: 0.001
-    winner: vendor_page
-    sources:
-      vendor_page: 0.001
-  Qes:  # electrical Q factor
-    value: 0.98
-    winner: vendor_page
-    sources:
-      vendor_page: 0.98
-  Qts:  # total Q factor
-    value: 0.82
-    winner: vendor_page
-    sources:
-      vendor_page: 0.82
-  Qms:  # mechanical Q factor
-    value: 5.14
-    winner: vendor_page
-    sources:
-      vendor_page: 5.14
   Le:  # voice coil inductance (H)
     value: 0.00071
     winner: vendor_page
     sources:
       vendor_page: 0.00071
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00011
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00011
+  Qes:  # electrical Q factor
+    value: 0.98
+    winner: vendor_page
+    sources:
+      vendor_page: 0.98
+  Re:  # DC voice coil resistance (Ω)
+    value: 8.11
+    winner: vendor_page
+    sources:
+      vendor_page: 8.11
   Pe:  # rated power input (W)
     value: 15.0
     winner: vendor_page
@@ -55,11 +40,21 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 100.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.00011
+  Xmax:  # one-way linear excursion (m)
+    value: 0.001
     winner: vendor_page
     sources:
-      vendor_page: 0.00011
+      vendor_page: 0.001
+  Qts:  # total Q factor
+    value: 0.82
+    winner: vendor_page
+    sources:
+      vendor_page: 0.82
+  Qms:  # mechanical Q factor
+    value: 5.14
+    winner: vendor_page
+    sources:
+      vendor_page: 5.14
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -87,3 +82,8 @@ specs:
       vendor_page: 10.0
 _sources:
   vendor_page: https://www.soundimports.eu/en/grs-4fr-8.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/grs-4fr-8.html
+frd_url: null
+zma_url: null

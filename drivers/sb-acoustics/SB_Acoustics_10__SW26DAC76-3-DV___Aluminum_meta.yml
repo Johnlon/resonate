@@ -5,57 +5,37 @@ detail: Automatically scraped from SB Acoustics website (scraped 2026-06-29). T/
 corrections: null
 reviewed_by: null
 driver_type: null
-datasheet: https://sbacoustics.com/wp-content/uploads/2021/09/10in-SW26DAC76-3-DV-OEM-only.pdf
-manu_page: https://sbacoustics.com/product/10in-sw26dac76-3-dv/
-vendor_page: null
 source: https://sbacoustics.com/product/10in-sw26dac76-3-dv/
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 2.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0497
     winner: manu_page
     sources:
-      manu_page: 2.0
-  Sd:  # effective piston area (m²)
-    value: 0.0312
-    winner: manu_page
-    sources:
-      manu_page: 0.0312
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00036
-    winner: manu_page
-    sources:
-      manu_page: 0.00036
-  Xmax:  # one-way linear excursion (m)
-    value: 0.012
-    winner: manu_page
-    sources:
-      manu_page: 0.012
+      manu_page: 0.0497
   Qes:  # electrical Q factor
     value: 0.29
     winner: manu_page
     sources:
       manu_page: 0.29
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.185
+    winner: manu_page
+    sources:
+      manu_page: 0.185
   BL:  # force factor (T·m)
     value: 9.7
     winner: manu_page
     sources:
       manu_page: 9.7
-  Qts:  # total Q factor
-    value: 0.28
+  Re:  # DC voice coil resistance (Ω)
+    value: 2.0
     winner: manu_page
     sources:
-      manu_page: 0.28
-  Qms:  # mechanical Q factor
-    value: 5.96
-    winner: manu_page
-    sources:
-      manu_page: 5.96
+      manu_page: 2.0
   Pe:  # rated power input (W)
     value: 300.0
     winner: manu_page
@@ -66,21 +46,36 @@ specs:
     winner: manu_page
     sources:
       manu_page: 19.5
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0497
+  Xmax:  # one-way linear excursion (m)
+    value: 0.012
     winner: manu_page
     sources:
-      manu_page: 0.0497
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.185
+      manu_page: 0.012
+  Qts:  # total Q factor
+    value: 0.28
     winner: manu_page
     sources:
-      manu_page: 0.185
+      manu_page: 0.28
+  Qms:  # mechanical Q factor
+    value: 5.96
+    winner: manu_page
+    sources:
+      manu_page: 5.96
+  Sd:  # effective piston area (m²)
+    value: 0.0312
+    winner: manu_page
+    sources:
+      manu_page: 0.0312
   Znom:  # nominal impedance (Ω)
     value: 2.0
     winner: manu_page
     sources:
       manu_page: 2.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00036
+    winner: manu_page
+    sources:
+      manu_page: 0.00036
   voice_coil_dia_mm:  # voice coil diameter (mm)
     value: 75.5
     winner: manu_page
@@ -99,3 +94,8 @@ specs:
 _sources:
   datasheet: https://sbacoustics.com/wp-content/uploads/2021/09/10in-SW26DAC76-3-DV-OEM-only.pdf
   manu_page: https://sbacoustics.com/product/10in-sw26dac76-3-dv/
+datasheet_url: https://sbacoustics.com/wp-content/uploads/2021/09/10in-SW26DAC76-3-DV-OEM-only.pdf
+manu_page_url: https://sbacoustics.com/product/10in-sw26dac76-3-dv/
+vendor_page_url: null
+frd_url: null
+zma_url: null

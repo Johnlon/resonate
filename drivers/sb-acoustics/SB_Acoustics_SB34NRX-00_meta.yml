@@ -5,37 +5,12 @@ detail: Automatically scraped from SB Acoustics website (scraped 2026-06-29). T/
 corrections: null
 reviewed_by: null
 driver_type: null
-datasheet: https://sbacoustics.com/wp-content/uploads/2022/04/12in-SB34NRX-00.pdf
-manu_page: https://sbacoustics.com/product/12in-sb34nrx-00-norex/
-vendor_page: null
 source: https://sbacoustics.com/product/12in-sb34nrx-00-norex/
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  Sd:  # effective piston area (m²)
-    value: 0.0508
-    winner: manu_page
-    sources:
-      manu_page: 0.0508
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0005
-    winner: manu_page
-    sources:
-      manu_page: 0.0005
-  Qms:  # mechanical Q factor
-    value: 12.1
-    winner: manu_page
-    sources:
-      manu_page: 12.1
-  Fs:  # free air resonance (Hz)
-    value: 8.7
-    winner: manu_page
-    sources:
-      manu_page: 8.7
   Vas:  # equivalent acoustic volume (m³)
     value: 0.183
     winner: manu_page
@@ -46,6 +21,31 @@ specs:
     winner: manu_page
     sources:
       manu_page: 0.665
+  Fs:  # free air resonance (Hz)
+    value: 8.7
+    winner: manu_page
+    sources:
+      manu_page: 8.7
+  Qms:  # mechanical Q factor
+    value: 12.1
+    winner: manu_page
+    sources:
+      manu_page: 12.1
+  Sd:  # effective piston area (m²)
+    value: 0.0508
+    winner: manu_page
+    sources:
+      manu_page: 0.0508
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0005
+    winner: manu_page
+    sources:
+      manu_page: 0.0005
 _sources:
   datasheet: https://sbacoustics.com/wp-content/uploads/2022/04/12in-SB34NRX-00.pdf
   manu_page: https://sbacoustics.com/product/12in-sb34nrx-00-norex/
+datasheet_url: https://sbacoustics.com/wp-content/uploads/2022/04/12in-SB34NRX-00.pdf
+manu_page_url: https://sbacoustics.com/product/12in-sb34nrx-00-norex/
+vendor_page_url: null
+frd_url: null
+zma_url: null

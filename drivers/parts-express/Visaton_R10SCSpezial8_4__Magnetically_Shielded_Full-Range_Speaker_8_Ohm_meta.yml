@@ -4,63 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/292-7815--visaton-r10scspezial-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Visaton-R10SCSpezial8-4-Magnetically-Shielded-Full-Range-Speaker-8-Ohm-292-7815
 source: https://www.parts-express.com/Visaton-R10SCSpezial8-4-Magnetically-Shielded-Full-Range-Speaker-8-Ohm-292-7815
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 7.4
-    winner: vendor_page
-    sources:
-      vendor_page: 7.4
-  Sd:  # effective piston area (m²)
-    value: 0.0056
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0056
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0015
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0015
-  Qes:  # electrical Q factor
-    value: 2.63
-    winner: vendor_page
-    sources:
-      vendor_page: 2.63
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.43033891820871506
-    winner: vendor_page
-    sources:
-      vendor_page: 0.43033891820871506
-  BL:  # force factor (T·m)
-    value: 2.4
-    winner: vendor_page
-    sources:
-      vendor_page: 2.4
-  Qts:  # total Q factor
-    value: 1.76
-    winner: vendor_page
-    sources:
-      vendor_page: 1.76
-  Qms:  # mechanical Q factor
-    value: 5.3
-    winner: vendor_page
-    sources:
-      vendor_page: 5.3
   Le:  # voice coil inductance (H)
     value: 0.0005
     winner: vendor_page
     sources:
       vendor_page: 0.0005
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.002265344
+    winner: vendor_page
+    sources:
+      vendor_page: 0.002265344
+  Qes:  # electrical Q factor
+    value: 2.63
+    winner: vendor_page
+    sources:
+      vendor_page: 2.63
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0022
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0022
+  BL:  # force factor (T·m)
+    value: 2.4
+    winner: vendor_page
+    sources:
+      vendor_page: 2.4
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.4
+    winner: vendor_page
+    sources:
+      vendor_page: 7.4
   Pe:  # rated power input (W)
     value: 20.0
     winner: vendor_page
@@ -71,16 +51,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 165.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.002265344
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.43033891820871506
     winner: vendor_page
     sources:
-      vendor_page: 0.002265344
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0022
+      vendor_page: 0.43033891820871506
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0015
     winner: vendor_page
     sources:
-      vendor_page: 0.0022
+      vendor_page: 0.0015
+  Qts:  # total Q factor
+    value: 1.76
+    winner: vendor_page
+    sources:
+      vendor_page: 1.76
+  Qms:  # mechanical Q factor
+    value: 5.3
+    winner: vendor_page
+    sources:
+      vendor_page: 5.3
+  Sd:  # effective piston area (m²)
+    value: 0.0056
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0056
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -99,3 +94,8 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/292-7815--visaton-r10scspezial-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Visaton-R10SCSpezial8-4-Magnetically-Shielded-Full-Range-Speaker-8-Ohm-292-7815
+datasheet_url: https://www.parts-express.com/pedocs/specs/292-7815--visaton-r10scspezial-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Visaton-R10SCSpezial8-4-Magnetically-Shielded-Full-Range-Speaker-8-Ohm-292-7815
+frd_url: null
+zma_url: null

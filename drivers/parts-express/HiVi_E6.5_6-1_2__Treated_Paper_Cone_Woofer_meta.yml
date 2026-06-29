@@ -4,53 +4,38 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/297-478--hi-vi-e6.5-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/HiVi-E6.5-6-1-2-Treated-Paper-Cone-Woofer-8-Ohms-297-478
 source: https://www.parts-express.com/HiVi-E6.5-6-1-2-Treated-Paper-Cone-Woofer-8-Ohms-297-478
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.8
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.030865312000000002
     winner: vendor_page
     sources:
-      vendor_page: 6.8
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00575
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00575
+      vendor_page: 0.030865312000000002
   Qes:  # electrical Q factor
     value: 0.37
     winner: vendor_page
     sources:
       vendor_page: 0.37
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.4687931510967507
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.015099999999999999
     winner: vendor_page
     sources:
-      vendor_page: 1.4687931510967507
+      vendor_page: 0.015099999999999999
   BL:  # force factor (T·m)
     value: 8.1
     winner: vendor_page
     sources:
       vendor_page: 8.1
-  Qts:  # total Q factor
-    value: 0.32
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.8
     winner: vendor_page
     sources:
-      vendor_page: 0.32
-  Qms:  # mechanical Q factor
-    value: 2.39
-    winner: vendor_page
-    sources:
-      vendor_page: 2.39
+      vendor_page: 6.8
   Pe:  # rated power input (W)
     value: 60.0
     winner: vendor_page
@@ -61,16 +46,26 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 37.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.030865312000000002
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.4687931510967507
     winner: vendor_page
     sources:
-      vendor_page: 0.030865312000000002
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.015099999999999999
+      vendor_page: 1.4687931510967507
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00575
     winner: vendor_page
     sources:
-      vendor_page: 0.015099999999999999
+      vendor_page: 0.00575
+  Qts:  # total Q factor
+    value: 0.32
+    winner: vendor_page
+    sources:
+      vendor_page: 0.32
+  Qms:  # mechanical Q factor
+    value: 2.39
+    winner: vendor_page
+    sources:
+      vendor_page: 2.39
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -79,3 +74,8 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/297-478--hi-vi-e6.5-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/HiVi-E6.5-6-1-2-Treated-Paper-Cone-Woofer-8-Ohms-297-478
+datasheet_url: https://www.parts-express.com/pedocs/specs/297-478--hi-vi-e6.5-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/HiVi-E6.5-6-1-2-Treated-Paper-Cone-Woofer-8-Ohms-297-478
+frd_url: null
+zma_url: null

@@ -6,66 +6,55 @@ corrections: null
 reviewed_by: null
 driver_type: passive_radiator
 nominal_size_cm: null
-datasheet: http://www.wavecor.com/Driver%20specifications%20PDF/PR182BD02_specifications.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: http://www.wavecor.com/html/pr182bd02.html
-vendor_page: null
 source: http://www.wavecor.com/html/pr182bd02.html
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 specs:
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0127
+    winner: manu_page
+    sources:
+      manu_page: 0.0127
   Mms:  # moving mass incl. air load (kg)
     value: 0.037
     winner: manu_page
     sources:
       manu_page: 0.037
-    note: Not in datasheet; value from manu_page
-  Sd:  # effective piston area (m²)
-    value: 0.0131
-    winner: manu_page
-    sources:
-      datasheet: 0.0131
-      manu_page: 0.0131
-    note: Not in datasheet; value from manu_page
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00052
-    winner: manu_page
-    sources:
-      datasheet: 0.00052
-      manu_page: 0.00052
-    note: Not in datasheet; value from manu_page
   Fs:  # free air resonance (Hz)
     value: 36.2
     winner: manu_page
     sources:
       manu_page: 36.2
-    note: Not in datasheet; value from manu_page
   Xmax:  # one-way linear excursion (m)
     value: 0.015
     winner: manu_page
     sources:
-      datasheet: 0.015
       manu_page: 0.015
-    note: Not in datasheet; value from manu_page
   Qms:  # mechanical Q factor
     value: 32.5
     winner: manu_page
     sources:
       manu_page: 32.5
-    note: Not in datasheet; value from manu_page
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0127
+  Sd:  # effective piston area (m²)
+    value: 0.0131
     winner: manu_page
     sources:
-      datasheet: 0.0127
-      manu_page: 0.0127
-    note: Not in datasheet; value from manu_page
+      manu_page: 0.0131
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00052
+    winner: manu_page
+    sources:
+      manu_page: 0.00052
 _sources:
   datasheet: http://www.wavecor.com/Driver%20specifications%20PDF/PR182BD02_specifications.pdf
   manu_page: http://www.wavecor.com/html/pr182bd02.html
+datasheet_url: http://www.wavecor.com/Driver%20specifications%20PDF/PR182BD02_specifications.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: http://www.wavecor.com/html/pr182bd02.html
+vendor_page_url: null
+frd_url: null
+zma_url: null

@@ -4,12 +4,7 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/297-408--hivi-tn25-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/HiVi-TN25-Fabric-Dome-Tweeter-297-408
 source: https://www.parts-express.com/HiVi-TN25-Fabric-Dome-Tweeter-297-408
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
@@ -36,16 +31,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 5.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 2500.0
-    winner: vendor_page
-    sources:
-      vendor_page: 2500.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 22000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 22000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/297-408--hivi-tn25-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/HiVi-TN25-Fabric-Dome-Tweeter-297-408
+datasheet_url: https://www.parts-express.com/pedocs/specs/297-408--hivi-tn25-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/HiVi-TN25-Fabric-Dome-Tweeter-297-408
+frd_url: null
+zma_url: null

@@ -6,15 +6,7 @@ corrections: null
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/292-700--visaton-fr10-4-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Visaton-FR10-4-4-Paper-Cone-Full-Range-Driver-4-Ohm-292-730
 source: https://www.parts-express.com/Visaton-FR10-4-4-Paper-Cone-Full-Range-Driver-4-Ohm-292-730
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd
 community: null
@@ -35,16 +27,14 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 80.0
-    winner: vendor_page
-    sources:
-      vendor_page: 80.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 20000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 20000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/292-700--visaton-fr10-4-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Visaton-FR10-4-4-Paper-Cone-Full-Range-Driver-4-Ohm-292-730
+datasheet_url: https://www.parts-express.com/pedocs/specs/292-700--visaton-fr10-4-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Visaton-FR10-4-4-Paper-Cone-Full-Range-Driver-4-Ohm-292-730
+frd_url: null
+zma_url: null

@@ -4,67 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/seas-fa6rbnds.html
 source: https://www.soundimports.eu/en/seas-fa6rbnds.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.96
-    winner: vendor_page
-    sources:
-      vendor_page: 3.96
-  Sd:  # effective piston area (m²)
-    value: 0.001735
-    winner: vendor_page
-    sources:
-      vendor_page: 0.001735
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00118
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00118
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0043
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0043
-  Qes:  # electrical Q factor
-    value: 0.6
-    winner: vendor_page
-    sources:
-      vendor_page: 0.6
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.37
-    winner: vendor_page
-    sources:
-      vendor_page: 0.37
-  BL:  # force factor (T·m)
-    value: 2.9
-    winner: vendor_page
-    sources:
-      vendor_page: 2.9
-  Qts:  # total Q factor
-    value: 0.51
-    winner: vendor_page
-    sources:
-      vendor_page: 0.51
-  Qms:  # mechanical Q factor
-    value: 3.33
-    winner: vendor_page
-    sources:
-      vendor_page: 3.33
   Le:  # voice coil inductance (H)
     value: 0.00013
     winner: vendor_page
     sources:
       vendor_page: 0.00013
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0005
+  Qes:  # electrical Q factor
+    value: 0.6
+    winner: vendor_page
+    sources:
+      vendor_page: 0.6
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00181
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00181
+  BL:  # force factor (T·m)
+    value: 2.9
+    winner: vendor_page
+    sources:
+      vendor_page: 2.9
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.96
+    winner: vendor_page
+    sources:
+      vendor_page: 3.96
   Pe:  # rated power input (W)
     value: 10.0
     winner: vendor_page
@@ -75,20 +50,45 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 109.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0005
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.37
     winner: vendor_page
     sources:
-      vendor_page: 0.0005
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.00181
+      vendor_page: 0.37
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0043
     winner: vendor_page
     sources:
-      vendor_page: 0.00181
+      vendor_page: 0.0043
+  Qts:  # total Q factor
+    value: 0.51
+    winner: vendor_page
+    sources:
+      vendor_page: 0.51
+  Qms:  # mechanical Q factor
+    value: 3.33
+    winner: vendor_page
+    sources:
+      vendor_page: 3.33
+  Sd:  # effective piston area (m²)
+    value: 0.001735
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001735
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00118
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00118
 _sources:
   vendor_page: https://www.soundimports.eu/en/seas-fa6rbnds.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/seas-fa6rbnds.html
+frd_url: null
+zma_url: null

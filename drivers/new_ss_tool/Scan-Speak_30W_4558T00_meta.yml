@@ -5,74 +5,53 @@ detail: 'Automatically scraped from Scan-Speak website. T/S parameters not human
 corrections: null
 reviewed_by: null
 driver_type: subwoofer
-series: Discovery
 nominal_size_cm: 30.0
-datasheet: https://www.scan-speak.dk/datasheet/pdf/30w-4558t00.pdf
-adv_datasheet: https://www.scan-speak.dk/datasheet/adv/30w-4558t00.pdf
-drawing: https://www.scan-speak.dk/datasheet/drw/30w-4558t00.png
-cad: https://www.scan-speak.dk/datasheet/3d/30w-4558t00.ZIP
-manu_page: https://www.scan-speak.dk/product/30w-4558t00/
-vendor_page: null
 source: https://www.scan-speak.dk/product/30w-4558t00/
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
-datasheet_fields:
-- BL
-- Cms
-- Le
-- Mms
-- Qes
-- Qms
-- Qts
-- Re
-- SPL
-- Sd
-- Xmax
-- Znom
-adv_datasheet_fields: null
-manu_page_fields:
-- BL
-- Fs
-- Qts
-- Re
-- SPL
-- Sd
-- Vas
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 2.6
+  Le:  # voice coil inductance (H)
+    value: 0.00083
     winner: manu_page
     sources:
-      manu_page: 2.6
-  Sd:  # effective piston area (m²)
-    value: 0.0466
+      manu_page: 0.00083
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.197
     winner: manu_page
     sources:
-      manu_page: 0.0466
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00065
-    winner: manu_page
-    sources:
-      manu_page: 0.00065
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0125
-    winner: manu_page
-    sources:
-      manu_page: 0.0125
+      manu_page: 0.197
   Qes:  # electrical Q factor
     value: 0.34
     winner: manu_page
     sources:
       manu_page: 0.34
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.135
+    winner: manu_page
+    sources:
+      manu_page: 0.135
   BL:  # force factor (T·m)
     value: 10.5
     winner: manu_page
     sources:
       manu_page: 10.5
+  Re:  # DC voice coil resistance (Ω)
+    value: 2.6
+    winner: manu_page
+    sources:
+      manu_page: 2.6
+  Fs:  # free air resonance (Hz)
+    value: 17.0
+    winner: manu_page
+    sources:
+      manu_page: 17.0
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0125
+    winner: manu_page
+    sources:
+      manu_page: 0.0125
   Qts:  # total Q factor
     value: 0.32
     winner: manu_page
@@ -83,37 +62,35 @@ specs:
     winner: manu_page
     sources:
       manu_page: 5.01
-  SPL:  # sensitivity (dB, 2.83 V/1 m)
-    value: 89.0
+  Sd:  # effective piston area (m²)
+    value: 0.0466
     winner: manu_page
     sources:
-      manu_page: 89.0
-  Le:  # voice coil inductance (H)
-    value: 0.00083
-    winner: manu_page
-    sources:
-      manu_page: 0.00083
-  Fs:  # free air resonance (Hz)
-    value: 17.0
-    winner: manu_page
-    sources:
-      manu_page: 17.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.197
-    winner: manu_page
-    sources:
-      manu_page: 0.197
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.135
-    winner: manu_page
-    sources:
-      manu_page: 0.135
+      manu_page: 0.0466
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: manu_page
     sources:
       manu_page: 4.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 89.0
+    winner: manu_page
+    sources:
+      manu_page: 89.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00065
+    winner: manu_page
+    sources:
+      manu_page: 0.00065
 _sources:
   datasheet: https://www.scan-speak.dk/datasheet/pdf/30w-4558t00.pdf
   adv_datasheet: https://www.scan-speak.dk/datasheet/adv/30w-4558t00.pdf
   manu_page: https://www.scan-speak.dk/product/30w-4558t00/
+datasheet_url: https://www.scan-speak.dk/datasheet/pdf/30w-4558t00.pdf
+adv_datasheet_url: https://www.scan-speak.dk/datasheet/adv/30w-4558t00.pdf
+drawing_url: https://www.scan-speak.dk/datasheet/drw/30w-4558t00.png
+cad_url: https://www.scan-speak.dk/datasheet/3d/30w-4558t00.ZIP
+manu_page_url: https://www.scan-speak.dk/product/30w-4558t00/
+vendor_page_url: null
+frd_url: null
+zma_url: null

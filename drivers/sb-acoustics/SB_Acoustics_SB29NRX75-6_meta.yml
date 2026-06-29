@@ -5,62 +5,42 @@ detail: Automatically scraped from SB Acoustics website (scraped 2026-06-29). T/
 corrections: null
 reviewed_by: null
 driver_type: null
-datasheet: https://sbacoustics.com/wp-content/uploads/2020/02/10in-SB29NRX75-6.pdf
-manu_page: https://sbacoustics.com/product/10-sb29nrx75-6-norex/
-vendor_page: null
 source: https://sbacoustics.com/product/10-sb29nrx75-6-norex/
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 4.2
-    winner: manu_page
-    sources:
-      manu_page: 4.2
-  Sd:  # effective piston area (m²)
-    value: 0.0312
-    winner: manu_page
-    sources:
-      manu_page: 0.0312
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00074
-    winner: manu_page
-    sources:
-      manu_page: 0.00074
-  Xmax:  # one-way linear excursion (m)
-    value: 0.011
-    winner: manu_page
-    sources:
-      manu_page: 0.011
-  Qes:  # electrical Q factor
-    value: 0.38
-    winner: manu_page
-    sources:
-      manu_page: 0.38
-  BL:  # force factor (T·m)
-    value: 10.7
-    winner: manu_page
-    sources:
-      manu_page: 10.7
-  Qts:  # total Q factor
-    value: 0.35
-    winner: manu_page
-    sources:
-      manu_page: 0.35
-  Qms:  # mechanical Q factor
-    value: 5.7
-    winner: manu_page
-    sources:
-      manu_page: 5.7
   Le:  # voice coil inductance (H)
     value: 0.0018
     winner: manu_page
     sources:
       manu_page: 0.0018
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.102
+    winner: manu_page
+    sources:
+      manu_page: 0.102
+  Qes:  # electrical Q factor
+    value: 0.38
+    winner: manu_page
+    sources:
+      manu_page: 0.38
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.078
+    winner: manu_page
+    sources:
+      manu_page: 0.078
+  BL:  # force factor (T·m)
+    value: 10.7
+    winner: manu_page
+    sources:
+      manu_page: 10.7
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.2
+    winner: manu_page
+    sources:
+      manu_page: 4.2
   Pe:  # rated power input (W)
     value: 200.0
     winner: manu_page
@@ -71,21 +51,36 @@ specs:
     winner: manu_page
     sources:
       manu_page: 21.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.102
+  Xmax:  # one-way linear excursion (m)
+    value: 0.011
     winner: manu_page
     sources:
-      manu_page: 0.102
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.078
+      manu_page: 0.011
+  Qts:  # total Q factor
+    value: 0.35
     winner: manu_page
     sources:
-      manu_page: 0.078
+      manu_page: 0.35
+  Qms:  # mechanical Q factor
+    value: 5.7
+    winner: manu_page
+    sources:
+      manu_page: 5.7
+  Sd:  # effective piston area (m²)
+    value: 0.0312
+    winner: manu_page
+    sources:
+      manu_page: 0.0312
   Znom:  # nominal impedance (Ω)
     value: 6.0
     winner: manu_page
     sources:
       manu_page: 6.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00074
+    winner: manu_page
+    sources:
+      manu_page: 0.00074
   voice_coil_dia_mm:  # voice coil diameter (mm)
     value: 75.6
     winner: manu_page
@@ -104,3 +99,8 @@ specs:
 _sources:
   datasheet: https://sbacoustics.com/wp-content/uploads/2020/02/10in-SB29NRX75-6.pdf
   manu_page: https://sbacoustics.com/product/10-sb29nrx75-6-norex/
+datasheet_url: https://sbacoustics.com/wp-content/uploads/2020/02/10in-SB29NRX75-6.pdf
+manu_page_url: https://sbacoustics.com/product/10-sb29nrx75-6-norex/
+vendor_page_url: null
+frd_url: null
+zma_url: null

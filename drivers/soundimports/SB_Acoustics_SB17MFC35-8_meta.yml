@@ -4,67 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/sb-acoustics-sb17mfc35-8.html
 source: https://www.soundimports.eu/en/sb-acoustics-sb17mfc35-8.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.7
-    winner: vendor_page
-    sources:
-      vendor_page: 5.7
-  Sd:  # effective piston area (m²)
-    value: 0.0118
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0118
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00197
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00197
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0055
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0055
-  Qes:  # electrical Q factor
-    value: 0.4
-    winner: vendor_page
-    sources:
-      vendor_page: 0.4
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.5
-    winner: vendor_page
-    sources:
-      vendor_page: 0.5
-  BL:  # force factor (T·m)
-    value: 5.9
-    winner: vendor_page
-    sources:
-      vendor_page: 5.9
-  Qts:  # total Q factor
-    value: 0.37
-    winner: vendor_page
-    sources:
-      vendor_page: 0.37
-  Qms:  # mechanical Q factor
-    value: 4.9
-    winner: vendor_page
-    sources:
-      vendor_page: 4.9
   Le:  # voice coil inductance (H)
     value: 0.00015
     winner: vendor_page
     sources:
       vendor_page: 0.00015
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.039
+    winner: vendor_page
+    sources:
+      vendor_page: 0.039
+  Qes:  # electrical Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0118
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0118
+  BL:  # force factor (T·m)
+    value: 5.9
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.7
+    winner: vendor_page
+    sources:
+      vendor_page: 5.7
   Pe:  # rated power input (W)
     value: 60.0
     winner: vendor_page
@@ -75,12 +50,27 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 33.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.039
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.5
     winner: vendor_page
     sources:
-      vendor_page: 0.039
-  Mms:  # moving mass incl. air load (kg)
+      vendor_page: 0.5
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0055
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0055
+  Qts:  # total Q factor
+    value: 0.37
+    winner: vendor_page
+    sources:
+      vendor_page: 0.37
+  Qms:  # mechanical Q factor
+    value: 4.9
+    winner: vendor_page
+    sources:
+      vendor_page: 4.9
+  Sd:  # effective piston area (m²)
     value: 0.0118
     winner: vendor_page
     sources:
@@ -90,5 +80,15 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00197
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00197
 _sources:
   vendor_page: https://www.soundimports.eu/en/sb-acoustics-sb17mfc35-8.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/sb-acoustics-sb17mfc35-8.html
+frd_url: null
+zma_url: null

@@ -5,62 +5,42 @@ detail: Automatically scraped from SB Acoustics website (scraped 2026-06-29). T/
 corrections: null
 reviewed_by: null
 driver_type: null
-datasheet: https://sbacoustics.com/wp-content/uploads/2020/04/4in-SB12PACR25-4.pdf
-manu_page: https://sbacoustics.com/product/4-sb12pacr25-4-aluminum/
-vendor_page: null
 source: https://sbacoustics.com/product/4-sb12pacr25-4-aluminum/
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.1
-    winner: manu_page
-    sources:
-      manu_page: 3.1
-  Sd:  # effective piston area (m²)
-    value: 0.005
-    winner: manu_page
-    sources:
-      manu_page: 0.005
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0015
-    winner: manu_page
-    sources:
-      manu_page: 0.0015
-  Xmax:  # one-way linear excursion (m)
-    value: 0.005
-    winner: manu_page
-    sources:
-      manu_page: 0.005
-  Qes:  # electrical Q factor
-    value: 0.33
-    winner: manu_page
-    sources:
-      manu_page: 0.33
-  BL:  # force factor (T·m)
-    value: 4.35
-    winner: manu_page
-    sources:
-      manu_page: 4.35
-  Qts:  # total Q factor
-    value: 0.31
-    winner: manu_page
-    sources:
-      manu_page: 0.31
-  Qms:  # mechanical Q factor
-    value: 5.0
-    winner: manu_page
-    sources:
-      manu_page: 5.0
   Le:  # voice coil inductance (H)
     value: 0.00025
     winner: manu_page
     sources:
       manu_page: 0.00025
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0053
+    winner: manu_page
+    sources:
+      manu_page: 0.0053
+  Qes:  # electrical Q factor
+    value: 0.33
+    winner: manu_page
+    sources:
+      manu_page: 0.33
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0061
+    winner: manu_page
+    sources:
+      manu_page: 0.0061
+  BL:  # force factor (T·m)
+    value: 4.35
+    winner: manu_page
+    sources:
+      manu_page: 4.35
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.1
+    winner: manu_page
+    sources:
+      manu_page: 3.1
   Pe:  # rated power input (W)
     value: 30.0
     winner: manu_page
@@ -71,21 +51,36 @@ specs:
     winner: manu_page
     sources:
       manu_page: 52.5
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0053
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005
     winner: manu_page
     sources:
-      manu_page: 0.0053
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0061
+      manu_page: 0.005
+  Qts:  # total Q factor
+    value: 0.31
     winner: manu_page
     sources:
-      manu_page: 0.0061
+      manu_page: 0.31
+  Qms:  # mechanical Q factor
+    value: 5.0
+    winner: manu_page
+    sources:
+      manu_page: 5.0
+  Sd:  # effective piston area (m²)
+    value: 0.005
+    winner: manu_page
+    sources:
+      manu_page: 0.005
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: manu_page
     sources:
       manu_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0015
+    winner: manu_page
+    sources:
+      manu_page: 0.0015
   voice_coil_dia_mm:  # voice coil diameter (mm)
     value: 25.4
     winner: manu_page
@@ -104,3 +99,8 @@ specs:
 _sources:
   datasheet: https://sbacoustics.com/wp-content/uploads/2020/04/4in-SB12PACR25-4.pdf
   manu_page: https://sbacoustics.com/product/4-sb12pacr25-4-aluminum/
+datasheet_url: https://sbacoustics.com/wp-content/uploads/2020/04/4in-SB12PACR25-4.pdf
+manu_page_url: https://sbacoustics.com/product/4-sb12pacr25-4-aluminum/
+vendor_page_url: null
+frd_url: null
+zma_url: null

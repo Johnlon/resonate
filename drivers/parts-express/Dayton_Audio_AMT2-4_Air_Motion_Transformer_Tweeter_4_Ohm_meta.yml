@@ -4,12 +4,7 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/275-092s.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-AMT2-4-Air-Motion-Transformer-Tweeter-275-092
 source: https://www.parts-express.com/Dayton-Audio-AMT2-4-Air-Motion-Transformer-Tweeter-275-092
-frd: https://www.parts-express.com/pedocs/tech-docs/275-092--Dayton-Audio-AMT2-4_data.zip
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
@@ -21,16 +16,6 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 3.5
-  Qts:  # total Q factor
-    value: 2.86
-    winner: vendor_page
-    sources:
-      vendor_page: 2.86
-  Qms:  # mechanical Q factor
-    value: 2.92
-    winner: vendor_page
-    sources:
-      vendor_page: 2.92
   Pe:  # rated power input (W)
     value: 15.0
     winner: vendor_page
@@ -41,21 +26,26 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 2300.0
+  Qts:  # total Q factor
+    value: 2.86
+    winner: vendor_page
+    sources:
+      vendor_page: 2.86
+  Qms:  # mechanical Q factor
+    value: 2.92
+    winner: vendor_page
+    sources:
+      vendor_page: 2.92
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 2500.0
-    winner: vendor_page
-    sources:
-      vendor_page: 2500.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 22000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 22000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/275-092s.pdf
   vendor_page: https://www.parts-express.com/Dayton-Audio-AMT2-4-Air-Motion-Transformer-Tweeter-275-092
+datasheet_url: https://www.parts-express.com/pedocs/specs/275-092s.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-AMT2-4-Air-Motion-Transformer-Tweeter-275-092
+frd_url: https://www.parts-express.com/pedocs/tech-docs/275-092--Dayton-Audio-AMT2-4_data.zip
+zma_url: null

@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/celestion-pulse-xl-10.20-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Celestion-PULSE-XL-10.20-10-200-Watt-Professional-Woofer-8-Ohm-294-2506
 source: https://www.parts-express.com/Celestion-PULSE-XL-10.20-10-200-Watt-Professional-Woofer-8-Ohm-294-2506
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.8
-    winner: vendor_page
-    sources:
-      vendor_page: 5.8
-  Sd:  # effective piston area (m²)
-    value: 0.03464
-    winner: vendor_page
-    sources:
-      vendor_page: 0.03464
-  Cms:  # mechanical compliance (m/N)
-    value: 0.000453
-    winner: vendor_page
-    sources:
-      vendor_page: 0.000453
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00825
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00825
-  Qes:  # electrical Q factor
-    value: 0.493
-    winner: vendor_page
-    sources:
-      vendor_page: 0.493
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.4042608671706398
-    winner: vendor_page
-    sources:
-      vendor_page: 1.4042608671706398
-  BL:  # force factor (T·m)
-    value: 10.51
-    winner: vendor_page
-    sources:
-      vendor_page: 10.51
-  Qts:  # total Q factor
-    value: 0.459
-    winner: vendor_page
-    sources:
-      vendor_page: 0.459
-  Qms:  # mechanical Q factor
-    value: 6.678
-    winner: vendor_page
-    sources:
-      vendor_page: 6.678
   Le:  # voice coil inductance (H)
     value: 0.0012
     winner: vendor_page
     sources:
       vendor_page: 0.0012
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.07645536
+    winner: vendor_page
+    sources:
+      vendor_page: 0.07645536
+  Qes:  # electrical Q factor
+    value: 0.493
+    winner: vendor_page
+    sources:
+      vendor_page: 0.493
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.039799999999999995
+    winner: vendor_page
+    sources:
+      vendor_page: 0.039799999999999995
+  BL:  # force factor (T·m)
+    value: 10.51
+    winner: vendor_page
+    sources:
+      vendor_page: 10.51
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.8
+    winner: vendor_page
+    sources:
+      vendor_page: 5.8
   Pe:  # rated power input (W)
     value: 400.0
     winner: vendor_page
@@ -76,31 +51,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 37.5
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.07645536
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.4042608671706398
     winner: vendor_page
     sources:
-      vendor_page: 0.07645536
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.039799999999999995
+      vendor_page: 1.4042608671706398
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00825
     winner: vendor_page
     sources:
-      vendor_page: 0.039799999999999995
+      vendor_page: 0.00825
+  Qts:  # total Q factor
+    value: 0.459
+    winner: vendor_page
+    sources:
+      vendor_page: 0.459
+  Qms:  # mechanical Q factor
+    value: 6.678
+    winner: vendor_page
+    sources:
+      vendor_page: 6.678
+  Sd:  # effective piston area (m²)
+    value: 0.03464
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03464
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 40.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000453
     winner: vendor_page
     sources:
-      vendor_page: 40.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 2200.0
-    winner: vendor_page
-    sources:
-      vendor_page: 2200.0
+      vendor_page: 0.000453
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/celestion-pulse-xl-10.20-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Celestion-PULSE-XL-10.20-10-200-Watt-Professional-Woofer-8-Ohm-294-2506
+datasheet_url: https://www.parts-express.com/pedocs/specs/celestion-pulse-xl-10.20-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Celestion-PULSE-XL-10.20-10-200-Watt-Professional-Woofer-8-Ohm-294-2506
+frd_url: null
+zma_url: null

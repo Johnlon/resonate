@@ -6,65 +6,17 @@ corrections: null
 reviewed_by: null
 driver_type: null
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/peerless-by-tymphany-sls-p830667.html
 source: https://www.soundimports.eu/en/peerless-by-tymphany-sls-p830667.html
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  Sd:  # effective piston area (m²)
-    value: 0.0201
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0201
-  BL:  # force factor (T·m)
-    value: 8.33
-    winner: vendor_page
-    sources:
-      vendor_page: 8.33
-  Pe:  # rated power input (W)
-    value: 90.0
-    winner: vendor_page
-    sources:
-      vendor_page: 90.0
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0111
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0111
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0364
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0364
   Le:  # voice coil inductance (H)
     value: 0.000829
     winner: vendor_page
     sources:
       vendor_page: 0.000829
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.6
-    winner: vendor_page
-    sources:
-      vendor_page: 5.6
-  Qts:  # total Q factor
-    value: 0.75
-    winner: vendor_page
-    sources:
-      vendor_page: 0.75
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00033
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00033
   Vas:  # equivalent acoustic volume (m³)
     value: 0.019
     winner: vendor_page
@@ -75,21 +27,61 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 0.836
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0364
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0364
+  BL:  # force factor (T·m)
+    value: 8.33
+    winner: vendor_page
+    sources:
+      vendor_page: 8.33
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
+  Pe:  # rated power input (W)
+    value: 90.0
+    winner: vendor_page
+    sources:
+      vendor_page: 90.0
   Fs:  # free air resonance (Hz)
     value: 46.0
     winner: vendor_page
     sources:
       vendor_page: 46.0
-  Znom:  # nominal impedance (Ω)
-    value: 8.0
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0111
     winner: vendor_page
     sources:
-      vendor_page: 8.0
+      vendor_page: 0.0111
+  Qts:  # total Q factor
+    value: 0.75
+    winner: vendor_page
+    sources:
+      vendor_page: 0.75
   Qms:  # mechanical Q factor
     value: 7.21
     winner: vendor_page
     sources:
       vendor_page: 7.21
+  Sd:  # effective piston area (m²)
+    value: 0.0201
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0201
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00033
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00033
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 86.5
     winner: vendor_page
@@ -112,3 +104,11 @@ specs:
       vendor_page: 38.4
 _sources:
   vendor_page: https://www.soundimports.eu/en/peerless-by-tymphany-sls-p830667.html
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/peerless-by-tymphany-sls-p830667.html
+frd_url: null
+zma_url: null

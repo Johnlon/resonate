@@ -4,48 +4,33 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/292-530--visaton-frs-7-8-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Visaton-FRS7-8-2.5-Full-Range-Speaker-8-Ohm-292-530
 source: https://www.parts-express.com/Visaton-FRS7-8-2.5-Full-Range-Speaker-8-Ohm-292-530
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 7.2
-    winner: vendor_page
-    sources:
-      vendor_page: 7.2
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00075
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00075
-  Qes:  # electrical Q factor
-    value: 2.08
-    winner: vendor_page
-    sources:
-      vendor_page: 2.08
-  Qts:  # total Q factor
-    value: 1.28
-    winner: vendor_page
-    sources:
-      vendor_page: 1.28
-  Qms:  # mechanical Q factor
-    value: 3.32
-    winner: vendor_page
-    sources:
-      vendor_page: 3.32
   Le:  # voice coil inductance (H)
     value: 0.0003
     winner: vendor_page
     sources:
       vendor_page: 0.0003
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.000283168
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000283168
+  Qes:  # electrical Q factor
+    value: 2.08
+    winner: vendor_page
+    sources:
+      vendor_page: 2.08
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.2
+    winner: vendor_page
+    sources:
+      vendor_page: 7.2
   Pe:  # rated power input (W)
     value: 8.0
     winner: vendor_page
@@ -56,26 +41,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 250.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.000283168
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00075
     winner: vendor_page
     sources:
-      vendor_page: 0.000283168
+      vendor_page: 0.00075
+  Qts:  # total Q factor
+    value: 1.28
+    winner: vendor_page
+    sources:
+      vendor_page: 1.28
+  Qms:  # mechanical Q factor
+    value: 3.32
+    winner: vendor_page
+    sources:
+      vendor_page: 3.32
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 200.0
-    winner: vendor_page
-    sources:
-      vendor_page: 200.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 20000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 20000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/292-530--visaton-frs-7-8-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Visaton-FRS7-8-2.5-Full-Range-Speaker-8-Ohm-292-530
+datasheet_url: https://www.parts-express.com/pedocs/specs/292-530--visaton-frs-7-8-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Visaton-FRS7-8-2.5-Full-Range-Speaker-8-Ohm-292-530
+frd_url: null
+zma_url: null

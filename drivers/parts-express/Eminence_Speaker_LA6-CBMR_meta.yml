@@ -6,70 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/290-542--eminence-la6-cbmr-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Eminence-LA6-CBMR-6-1-2-Sealed-Back-Mid-Line-Array-Series-290-542
 source: https://www.parts-express.com/Eminence-LA6-CBMR-6-1-2-Sealed-Back-Mid-Line-Array-Series-290-542
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 290-542
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.3
-    winner: vendor_page
-    sources:
-      vendor_page: 6.3
-  Sd:  # effective piston area (m²)
-    value: 0.013309999999999999
-    winner: vendor_page
-    sources:
-      vendor_page: 0.013309999999999999
-  Cms:  # mechanical compliance (m/N)
-    value: 1.0e-05
-    winner: vendor_page
-    sources:
-      vendor_page: 1.0e-05
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0002
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0002
-  Qes:  # electrical Q factor
-    value: 1.24
-    winner: vendor_page
-    sources:
-      vendor_page: 1.24
-  Rms:  # mechanical resistance (kg/s)
-    value: 8.310666828026672
-    winner: vendor_page
-    sources:
-      vendor_page: 8.310666828026672
-  BL:  # force factor (T·m)
-    value: 11.1
-    winner: vendor_page
-    sources:
-      vendor_page: 11.1
-  Qts:  # total Q factor
-    value: 0.89
-    winner: vendor_page
-    sources:
-      vendor_page: 0.89
-  Qms:  # mechanical Q factor
-    value: 3.13
-    winner: vendor_page
-    sources:
-      vendor_page: 3.13
   Le:  # voice coil inductance (H)
     value: 0.00033
     winner: vendor_page
     sources:
       vendor_page: 0.00033
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.000283168
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000283168
+  Qes:  # electrical Q factor
+    value: 1.24
+    winner: vendor_page
+    sources:
+      vendor_page: 1.24
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.009
+    winner: vendor_page
+    sources:
+      vendor_page: 0.009
+  BL:  # force factor (T·m)
+    value: 11.1
+    winner: vendor_page
+    sources:
+      vendor_page: 11.1
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.3
+    winner: vendor_page
+    sources:
+      vendor_page: 6.3
   Pe:  # rated power input (W)
     value: 150.0
     winner: vendor_page
@@ -80,21 +52,49 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 460.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.000283168
+  Rms:  # mechanical resistance (kg/s)
+    value: 8.310666828026672
     winner: vendor_page
     sources:
-      vendor_page: 0.000283168
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.009
+      vendor_page: 8.310666828026672
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0002
     winner: vendor_page
     sources:
-      vendor_page: 0.009
+      vendor_page: 0.0002
+  Qts:  # total Q factor
+    value: 0.89
+    winner: vendor_page
+    sources:
+      vendor_page: 0.89
+  Qms:  # mechanical Q factor
+    value: 3.13
+    winner: vendor_page
+    sources:
+      vendor_page: 3.13
+  Sd:  # effective piston area (m²)
+    value: 0.013309999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.013309999999999999
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 1.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0e-05
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/290-542--eminence-la6-cbmr-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Eminence-LA6-CBMR-6-1-2-Sealed-Back-Mid-Line-Array-Series-290-542
+datasheet_url: https://www.parts-express.com/pedocs/specs/290-542--eminence-la6-cbmr-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Eminence-LA6-CBMR-6-1-2-Sealed-Back-Mid-Line-Array-Series-290-542
+frd_url: null
+zma_url: null

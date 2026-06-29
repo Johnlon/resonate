@@ -6,115 +6,90 @@ corrections: null
 reviewed_by: null
 driver_type: fullrange
 nominal_size_cm: null
-datasheet: http://www.wavecor.com/Driver%20specifications%20PDF/FR084WA01_02_specifications.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: http://www.wavecor.com/html/fr084wa01_02.html
-vendor_page: null
 source: http://www.wavecor.com/html/fr084wa01_02.html
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 specs:
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00107
+    winner: manu_page
+    sources:
+      manu_page: 0.00107
+  Qes:  # electrical Q factor
+    value: 0.96
+    winner: manu_page
+    sources:
+      manu_page: 0.96
   Mms:  # moving mass incl. air load (kg)
     value: 0.00345
     winner: manu_page
     sources:
-      datasheet: 0.00345
       manu_page: 0.00345
-    note: Not in datasheet; value from manu_page
-  Znom:  # nominal impedance (Ω)
-    value: 4.0
-    winner: manu_page
-    sources:
-      datasheet: 8.0
-      manu_page: 4.0
-    note: Not in datasheet; value from manu_page
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.3
-    winner: manu_page
-    sources:
-      manu_page: 3.3
-    note: Not in datasheet; value from manu_page
-  Sd:  # effective piston area (m²)
-    value: 0.0036
-    winner: manu_page
-    sources:
-      datasheet: 0.0036
-      manu_page: 0.0036
-    note: Not in datasheet; value from manu_page
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00058
-    winner: manu_page
-    sources:
-      datasheet: 0.00058
-      manu_page: 0.00058
-    note: Not in datasheet; value from manu_page
-  Fs:  # free air resonance (Hz)
-    value: 113.0
-    winner: manu_page
-    sources:
-      datasheet: 113.0
-      manu_page: 113.0
-    note: Not in datasheet; value from manu_page
-  Xmax:  # one-way linear excursion (m)
-    value: 0.002
-    winner: manu_page
-    sources:
-      datasheet: 0.002
-      manu_page: 0.002
-    note: Not in datasheet; value from manu_page
-  Qts:  # total Q factor
-    value: 0.82
-    winner: manu_page
-    sources:
-      datasheet: 0.82
-      manu_page: 0.82
-    note: Not in datasheet; value from manu_page
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.44
-    winner: manu_page
-    sources:
-      datasheet: 0.44
-      manu_page: 0.44
-    note: Not in datasheet; value from manu_page
   BL:  # force factor (T·m)
     value: 2.9
     winner: manu_page
     sources:
       manu_page: 2.9
-    note: Not in datasheet; value from manu_page
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.3
+    winner: manu_page
+    sources:
+      manu_page: 3.3
   Pe:  # rated power input (W)
     value: 30.0
     winner: manu_page
     sources:
       manu_page: 30.0
-    note: Not in datasheet; value from manu_page
+  Fs:  # free air resonance (Hz)
+    value: 113.0
+    winner: manu_page
+    sources:
+      manu_page: 113.0
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.44
+    winner: manu_page
+    sources:
+      manu_page: 0.44
+  Xmax:  # one-way linear excursion (m)
+    value: 0.002
+    winner: manu_page
+    sources:
+      manu_page: 0.002
+  Qts:  # total Q factor
+    value: 0.82
+    winner: manu_page
+    sources:
+      manu_page: 0.82
   Qms:  # mechanical Q factor
     value: 5.6
     winner: manu_page
     sources:
-      datasheet: 5.6
       manu_page: 5.6
-    note: Not in datasheet; value from manu_page
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.00107
+  Sd:  # effective piston area (m²)
+    value: 0.0036
     winner: manu_page
     sources:
-      datasheet: 0.00107
-      manu_page: 0.00107
-    note: Not in datasheet; value from manu_page
-  Qes:  # electrical Q factor
-    value: 0.96
+      manu_page: 0.0036
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
     winner: manu_page
     sources:
-      datasheet: 0.96
-      manu_page: 0.96
-    note: Not in datasheet; value from manu_page
+      manu_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00058
+    winner: manu_page
+    sources:
+      manu_page: 0.00058
 _sources:
   datasheet: http://www.wavecor.com/Driver%20specifications%20PDF/FR084WA01_02_specifications.pdf
   manu_page: http://www.wavecor.com/html/fr084wa01_02.html
+datasheet_url: http://www.wavecor.com/Driver%20specifications%20PDF/FR084WA01_02_specifications.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: http://www.wavecor.com/html/fr084wa01_02.html
+vendor_page_url: null
+frd_url: null
+zma_url: null

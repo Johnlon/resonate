@@ -8,70 +8,42 @@ corrections: '''Qts'' stored=0.22 differs from calculated=0.225778 (deps: Qms=3.
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/PRV-Audio-8MB700FT-NDY-4-8-Forte-Series-Neodymium-Speaker-4-Ohm-294-3410
 source: https://www.parts-express.com/PRV-Audio-8MB700FT-NDY-4-8-Forte-Series-Neodymium-Speaker-4-Ohm-294-3410
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-3410
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.3
-    winner: vendor_page
-    sources:
-      vendor_page: 3.3
-  Sd:  # effective piston area (m²)
-    value: 0.0249
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0249
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00028799999999999995
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00028799999999999995
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00375
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00375
-  Qes:  # electrical Q factor
-    value: 0.24
-    winner: vendor_page
-    sources:
-      vendor_page: 0.24
-  Rms:  # mechanical resistance (kg/s)
-    value: 2.4247686139307025
-    winner: vendor_page
-    sources:
-      vendor_page: 2.4247686139307025
-  BL:  # force factor (T·m)
-    value: 11.3
-    winner: vendor_page
-    sources:
-      vendor_page: 11.3
-  Qts:  # total Q factor
-    value: 0.22
-    winner: vendor_page
-    sources:
-      vendor_page: 0.22
-  Qms:  # mechanical Q factor
-    value: 3.81
-    winner: vendor_page
-    sources:
-      vendor_page: 3.81
   Le:  # voice coil inductance (H)
     value: 0.000266
     winner: vendor_page
     sources:
       vendor_page: 0.000266
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0249471008
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0249471008
+  Qes:  # electrical Q factor
+    value: 0.24
+    winner: vendor_page
+    sources:
+      vendor_page: 0.24
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.02467
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02467
+  BL:  # force factor (T·m)
+    value: 11.3
+    winner: vendor_page
+    sources:
+      vendor_page: 11.3
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.3
+    winner: vendor_page
+    sources:
+      vendor_page: 3.3
   Pe:  # rated power input (W)
     value: 700.0
     winner: vendor_page
@@ -82,21 +54,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 59.6
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0249471008
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.4247686139307025
     winner: vendor_page
     sources:
-      vendor_page: 0.0249471008
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.02467
+      vendor_page: 2.4247686139307025
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00375
     winner: vendor_page
     sources:
-      vendor_page: 0.02467
+      vendor_page: 0.00375
+  Qts:  # total Q factor
+    value: 0.22
+    winner: vendor_page
+    sources:
+      vendor_page: 0.22
+  Qms:  # mechanical Q factor
+    value: 3.81
+    winner: vendor_page
+    sources:
+      vendor_page: 3.81
+  Sd:  # effective piston area (m²)
+    value: 0.0249
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0249
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00028799999999999995
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00028799999999999995
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 3.0
     winner: vendor_page
@@ -114,3 +106,11 @@ specs:
       vendor_page: 5.0
 _sources:
   vendor_page: https://www.parts-express.com/PRV-Audio-8MB700FT-NDY-4-8-Forte-Series-Neodymium-Speaker-4-Ohm-294-3410
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/PRV-Audio-8MB700FT-NDY-4-8-Forte-Series-Neodymium-Speaker-4-Ohm-294-3410
+frd_url: null
+zma_url: null

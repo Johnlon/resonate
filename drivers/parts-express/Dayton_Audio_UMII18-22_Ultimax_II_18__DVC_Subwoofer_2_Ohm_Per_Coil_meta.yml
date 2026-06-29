@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/295-718--dayton-audio-UMII18-22-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-UMII18-22-ULTIMAX-II-18-1100W-RMS-DVC-Subwoofer-2-Ohm-Per-Coil-295-718
 source: https://www.parts-express.com/Dayton-Audio-UMII18-22-ULTIMAX-II-18-1100W-RMS-DVC-Subwoofer-2-Ohm-Per-Coil-295-718
-frd: https://www.parts-express.com/pedocs/tech-docs/UMII18-22_data.zip
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 4.2
-    winner: vendor_page
-    sources:
-      vendor_page: 4.2
-  Sd:  # effective piston area (m²)
-    value: 0.1184
-    winner: vendor_page
-    sources:
-      vendor_page: 0.1184
-  Cms:  # mechanical compliance (m/N)
-    value: 0.000124
-    winner: vendor_page
-    sources:
-      vendor_page: 0.000124
-  Xmax:  # one-way linear excursion (m)
-    value: 0.028
-    winner: vendor_page
-    sources:
-      vendor_page: 0.028
-  Qes:  # electrical Q factor
-    value: 0.67
-    winner: vendor_page
-    sources:
-      vendor_page: 0.67
-  Rms:  # mechanical resistance (kg/s)
-    value: 22.947285469699356
-    winner: vendor_page
-    sources:
-      vendor_page: 22.947285469699356
-  BL:  # force factor (T·m)
-    value: 19.2
-    winner: vendor_page
-    sources:
-      vendor_page: 19.2
-  Qts:  # total Q factor
-    value: 0.53
-    winner: vendor_page
-    sources:
-      vendor_page: 0.53
-  Qms:  # mechanical Q factor
-    value: 2.53
-    winner: vendor_page
-    sources:
-      vendor_page: 2.53
   Le:  # voice coil inductance (H)
     value: 0.00115
     winner: vendor_page
     sources:
       vendor_page: 0.00115
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.248338336
+    winner: vendor_page
+    sources:
+      vendor_page: 0.248338336
+  Qes:  # electrical Q factor
+    value: 0.67
+    winner: vendor_page
+    sources:
+      vendor_page: 0.67
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.42
+    winner: vendor_page
+    sources:
+      vendor_page: 0.42
+  BL:  # force factor (T·m)
+    value: 19.2
+    winner: vendor_page
+    sources:
+      vendor_page: 19.2
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.2
+    winner: vendor_page
+    sources:
+      vendor_page: 4.2
   Pe:  # rated power input (W)
     value: 1200.0
     winner: vendor_page
@@ -76,21 +51,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 22.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.248338336
+  Rms:  # mechanical resistance (kg/s)
+    value: 22.947285469699356
     winner: vendor_page
     sources:
-      vendor_page: 0.248338336
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.42
+      vendor_page: 22.947285469699356
+  Xmax:  # one-way linear excursion (m)
+    value: 0.028
     winner: vendor_page
     sources:
-      vendor_page: 0.42
+      vendor_page: 0.028
+  Qts:  # total Q factor
+    value: 0.53
+    winner: vendor_page
+    sources:
+      vendor_page: 0.53
+  Qms:  # mechanical Q factor
+    value: 2.53
+    winner: vendor_page
+    sources:
+      vendor_page: 2.53
+  Sd:  # effective piston area (m²)
+    value: 0.1184
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1184
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000124
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000124
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 1.0
     winner: vendor_page
@@ -109,3 +104,8 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/295-718--dayton-audio-UMII18-22-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Dayton-Audio-UMII18-22-ULTIMAX-II-18-1100W-RMS-DVC-Subwoofer-2-Ohm-Per-Coil-295-718
+datasheet_url: https://www.parts-express.com/pedocs/specs/295-718--dayton-audio-UMII18-22-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-UMII18-22-ULTIMAX-II-18-1100W-RMS-DVC-Subwoofer-2-Ohm-Per-Coil-295-718
+frd_url: https://www.parts-express.com/pedocs/tech-docs/UMII18-22_data.zip
+zma_url: null

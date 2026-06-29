@@ -106,7 +106,7 @@ def parse_product(html: str, url: str) -> dict | None:
         "provided_by":  "SB Acoustics website",
         "fields":       fields,
         "extra_specs":  extra_specs or None,
-        "pdf_url":      pdf_url,
+        "datasheet_url":  pdf_url,
         "extra_links":  [lnk[0] for lnk in extra],
     }
 

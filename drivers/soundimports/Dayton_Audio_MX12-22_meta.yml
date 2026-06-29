@@ -6,65 +6,17 @@ corrections: null
 reviewed_by: null
 driver_type: null
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/dayton-audio-mx12-22.html
 source: https://www.soundimports.eu/en/dayton-audio-mx12-22.html
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  Sd:  # effective piston area (m²)
-    value: 0.05147
-    winner: vendor_page
-    sources:
-      vendor_page: 0.05147
-  BL:  # force factor (T·m)
-    value: 21.5
-    winner: vendor_page
-    sources:
-      vendor_page: 21.5
-  Pe:  # rated power input (W)
-    value: 600.0
-    winner: vendor_page
-    sources:
-      vendor_page: 600.0
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0155
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0155
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.252
-    winner: vendor_page
-    sources:
-      vendor_page: 0.252
   Le:  # voice coil inductance (H)
     value: 0.00509
     winner: vendor_page
     sources:
       vendor_page: 0.00509
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.95
-    winner: vendor_page
-    sources:
-      vendor_page: 3.95
-  Qts:  # total Q factor
-    value: 0.35
-    winner: vendor_page
-    sources:
-      vendor_page: 0.35
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00012
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00012
   Vas:  # equivalent acoustic volume (m³)
     value: 0.045590048
     winner: vendor_page
@@ -75,21 +27,61 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 0.39
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.252
+    winner: vendor_page
+    sources:
+      vendor_page: 0.252
+  BL:  # force factor (T·m)
+    value: 21.5
+    winner: vendor_page
+    sources:
+      vendor_page: 21.5
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.95
+    winner: vendor_page
+    sources:
+      vendor_page: 3.95
+  Pe:  # rated power input (W)
+    value: 600.0
+    winner: vendor_page
+    sources:
+      vendor_page: 600.0
   Fs:  # free air resonance (Hz)
     value: 28.8
     winner: vendor_page
     sources:
       vendor_page: 28.8
-  Znom:  # nominal impedance (Ω)
-    value: 4.0
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0155
     winner: vendor_page
     sources:
-      vendor_page: 4.0
+      vendor_page: 0.0155
+  Qts:  # total Q factor
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
   Qms:  # mechanical Q factor
     value: 3.25
     winner: vendor_page
     sources:
       vendor_page: 3.25
+  Sd:  # effective piston area (m²)
+    value: 0.05147
+    winner: vendor_page
+    sources:
+      vendor_page: 0.05147
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00012
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00012
   power_peak_W:  # peak power handling (W)
     value: 1200.0
     winner: vendor_page
@@ -112,3 +104,11 @@ specs:
       vendor_page: 450.0
 _sources:
   vendor_page: https://www.soundimports.eu/en/dayton-audio-mx12-22.html
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/dayton-audio-mx12-22.html
+frd_url: null
+zma_url: null

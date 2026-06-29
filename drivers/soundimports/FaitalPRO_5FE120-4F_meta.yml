@@ -4,67 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/faitalpro-5fe120-4f.html
 source: https://www.soundimports.eu/en/faitalpro-5fe120-4f.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.1
-    winner: vendor_page
-    sources:
-      vendor_page: 3.1
-  Sd:  # effective piston area (m²)
-    value: 0.00798
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00798
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00055
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00055
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0052
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0052
-  Qes:  # electrical Q factor
-    value: 0.4
-    winner: vendor_page
-    sources:
-      vendor_page: 0.4
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.55
-    winner: vendor_page
-    sources:
-      vendor_page: 0.55
-  BL:  # force factor (T·m)
-    value: 5.9
-    winner: vendor_page
-    sources:
-      vendor_page: 5.9
-  Qts:  # total Q factor
-    value: 0.38
-    winner: vendor_page
-    sources:
-      vendor_page: 0.38
-  Qms:  # mechanical Q factor
-    value: 8.2
-    winner: vendor_page
-    sources:
-      vendor_page: 8.2
   Le:  # voice coil inductance (H)
     value: 0.00033
     winner: vendor_page
     sources:
       vendor_page: 0.00033
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005
+  Qes:  # electrical Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0109
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0109
+  BL:  # force factor (T·m)
+    value: 5.9
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.1
+    winner: vendor_page
+    sources:
+      vendor_page: 3.1
   Pe:  # rated power input (W)
     value: 80.0
     winner: vendor_page
@@ -75,21 +50,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 65.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.005
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.55
     winner: vendor_page
     sources:
-      vendor_page: 0.005
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0109
+      vendor_page: 0.55
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0052
     winner: vendor_page
     sources:
-      vendor_page: 0.0109
+      vendor_page: 0.0052
+  Qts:  # total Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  Qms:  # mechanical Q factor
+    value: 8.2
+    winner: vendor_page
+    sources:
+      vendor_page: 8.2
+  Sd:  # effective piston area (m²)
+    value: 0.00798
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00798
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00055
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00055
   power_peak_W:  # peak power handling (W)
     value: 160.0
     winner: vendor_page
@@ -117,3 +112,8 @@ specs:
       vendor_page: 32.0
 _sources:
   vendor_page: https://www.soundimports.eu/en/faitalpro-5fe120-4f.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/faitalpro-5fe120-4f.html
+frd_url: null
+zma_url: null

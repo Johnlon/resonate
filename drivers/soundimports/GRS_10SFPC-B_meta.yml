@@ -4,47 +4,32 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/grs-10sfpc-b.html
 source: https://www.soundimports.eu/en/grs-10sfpc-b.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.8
-    winner: vendor_page
-    sources:
-      vendor_page: 5.8
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00425
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00425
-  Qes:  # electrical Q factor
-    value: 0.77
-    winner: vendor_page
-    sources:
-      vendor_page: 0.77
-  Qts:  # total Q factor
-    value: 0.62
-    winner: vendor_page
-    sources:
-      vendor_page: 0.62
-  Qms:  # mechanical Q factor
-    value: 3.01
-    winner: vendor_page
-    sources:
-      vendor_page: 3.01
   Le:  # voice coil inductance (H)
     value: 0.00132
     winner: vendor_page
     sources:
       vendor_page: 0.00132
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00485
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00485
+  Qes:  # electrical Q factor
+    value: 0.77
+    winner: vendor_page
+    sources:
+      vendor_page: 0.77
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.8
+    winner: vendor_page
+    sources:
+      vendor_page: 5.8
   Pe:  # rated power input (W)
     value: 75.0
     winner: vendor_page
@@ -55,11 +40,21 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 32.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.00485
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00425
     winner: vendor_page
     sources:
-      vendor_page: 0.00485
+      vendor_page: 0.00425
+  Qts:  # total Q factor
+    value: 0.62
+    winner: vendor_page
+    sources:
+      vendor_page: 0.62
+  Qms:  # mechanical Q factor
+    value: 3.01
+    winner: vendor_page
+    sources:
+      vendor_page: 3.01
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -87,3 +82,8 @@ specs:
       vendor_page: 3.5
 _sources:
   vendor_page: https://www.soundimports.eu/en/grs-10sfpc-b.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/grs-10sfpc-b.html
+frd_url: null
+zma_url: null

@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/294-2074--tf1220-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Celestion-TF1220-12-Professional-Speaker-150W-294-2074
 source: https://www.parts-express.com/Celestion-TF1220-12-Professional-Speaker-150W-294-2074
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.46
-    winner: vendor_page
-    sources:
-      vendor_page: 5.46
-  Sd:  # effective piston area (m²)
-    value: 0.05313
-    winner: vendor_page
-    sources:
-      vendor_page: 0.05313
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00017999999999999998
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00017999999999999998
-  Xmax:  # one-way linear excursion (m)
-    value: 0.002
-    winner: vendor_page
-    sources:
-      vendor_page: 0.002
-  Qes:  # electrical Q factor
-    value: 0.44
-    winner: vendor_page
-    sources:
-      vendor_page: 0.44
-  Rms:  # mechanical resistance (kg/s)
-    value: 4.686271307405116
-    winner: vendor_page
-    sources:
-      vendor_page: 4.686271307405116
-  BL:  # force factor (T·m)
-    value: 13.91
-    winner: vendor_page
-    sources:
-      vendor_page: 13.91
-  Qts:  # total Q factor
-    value: 0.39
-    winner: vendor_page
-    sources:
-      vendor_page: 0.39
-  Qms:  # mechanical Q factor
-    value: 3.33
-    winner: vendor_page
-    sources:
-      vendor_page: 3.33
   Le:  # voice coil inductance (H)
     value: 0.0007099999999999999
     winner: vendor_page
     sources:
       vendor_page: 0.0007099999999999999
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.072774176
+    winner: vendor_page
+    sources:
+      vendor_page: 0.072774176
+  Qes:  # electrical Q factor
+    value: 0.44
+    winner: vendor_page
+    sources:
+      vendor_page: 0.44
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.04451
+    winner: vendor_page
+    sources:
+      vendor_page: 0.04451
+  BL:  # force factor (T·m)
+    value: 13.91
+    winner: vendor_page
+    sources:
+      vendor_page: 13.91
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.46
+    winner: vendor_page
+    sources:
+      vendor_page: 5.46
   Pe:  # rated power input (W)
     value: 150.0
     winner: vendor_page
@@ -76,31 +51,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 55.8
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.072774176
+  Rms:  # mechanical resistance (kg/s)
+    value: 4.686271307405116
     winner: vendor_page
     sources:
-      vendor_page: 0.072774176
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.04451
+      vendor_page: 4.686271307405116
+  Xmax:  # one-way linear excursion (m)
+    value: 0.002
     winner: vendor_page
     sources:
-      vendor_page: 0.04451
+      vendor_page: 0.002
+  Qts:  # total Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Qms:  # mechanical Q factor
+    value: 3.33
+    winner: vendor_page
+    sources:
+      vendor_page: 3.33
+  Sd:  # effective piston area (m²)
+    value: 0.05313
+    winner: vendor_page
+    sources:
+      vendor_page: 0.05313
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 60.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00017999999999999998
     winner: vendor_page
     sources:
-      vendor_page: 60.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 4000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 4000.0
+      vendor_page: 0.00017999999999999998
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/294-2074--tf1220-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Celestion-TF1220-12-Professional-Speaker-150W-294-2074
+datasheet_url: https://www.parts-express.com/pedocs/specs/294-2074--tf1220-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Celestion-TF1220-12-Professional-Speaker-150W-294-2074
+frd_url: null
+zma_url: null

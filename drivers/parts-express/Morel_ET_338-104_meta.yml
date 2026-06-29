@@ -6,30 +6,22 @@ corrections: null
 reviewed_by: null
 driver_type: tweeter
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/277-072--morel-et-338-104-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Morel-ET-338-104-1-1-8-Soft-Dome-Tweeter-Matched-Pair-277-072
 source: https://www.parts-express.com/Morel-ET-338-104-1-1-8-Soft-Dome-Tweeter-Matched-Pair-277-072
-frd: null
-impedance: null
 obsolete: null
 dq_issue: Fs_no_Q
 community: null
 fetched_sku: 277-072
 specs:
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00044
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00044
   Re:  # DC voice coil resistance (Ω)
     value: 5.2
     winner: vendor_page
     sources:
       vendor_page: 5.2
-  Sd:  # effective piston area (m²)
-    value: 0.0006
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0006
   Pe:  # rated power input (W)
     value: 200.0
     winner: vendor_page
@@ -40,11 +32,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 700.0
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.00044
+  Sd:  # effective piston area (m²)
+    value: 0.0006
     winner: vendor_page
     sources:
-      vendor_page: 0.00044
+      vendor_page: 0.0006
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -53,3 +45,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/277-072--morel-et-338-104-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Morel-ET-338-104-1-1-8-Soft-Dome-Tweeter-Matched-Pair-277-072
+datasheet_url: https://www.parts-express.com/pedocs/specs/277-072--morel-et-338-104-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Morel-ET-338-104-1-1-8-Soft-Dome-Tweeter-Matched-Pair-277-072
+frd_url: null
+zma_url: null

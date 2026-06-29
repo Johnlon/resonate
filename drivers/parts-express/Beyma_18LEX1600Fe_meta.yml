@@ -6,70 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: subwoofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/253-051--18lex1600fe-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Beyma-18LEX1600Fe-LEX-Series-18-Subwoofer-8-Ohm-253-051
 source: https://www.parts-express.com/Beyma-18LEX1600Fe-LEX-Series-18-Subwoofer-8-Ohm-253-051
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 253-051
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.3
-    winner: vendor_page
-    sources:
-      vendor_page: 5.3
-  Sd:  # effective piston area (m²)
-    value: 0.1255
-    winner: vendor_page
-    sources:
-      vendor_page: 0.1255
-  Cms:  # mechanical compliance (m/N)
-    value: 0.085
-    winner: vendor_page
-    sources:
-      vendor_page: 0.085
-  Xmax:  # one-way linear excursion (m)
-    value: 0.004
-    winner: vendor_page
-    sources:
-      vendor_page: 0.004
-  Qes:  # electrical Q factor
-    value: 0.4
-    winner: vendor_page
-    sources:
-      vendor_page: 0.4
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.007274909690799284
-    winner: vendor_page
-    sources:
-      vendor_page: 0.007274909690799284
-  BL:  # force factor (T·m)
-    value: 26.9
-    winner: vendor_page
-    sources:
-      vendor_page: 26.9
-  Qts:  # total Q factor
-    value: 0.38
-    winner: vendor_page
-    sources:
-      vendor_page: 0.38
-  Qms:  # mechanical Q factor
-    value: 7.4
-    winner: vendor_page
-    sources:
-      vendor_page: 7.4
   Le:  # voice coil inductance (H)
     value: 34.0
     winner: vendor_page
     sources:
       vendor_page: 34.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.18802355199999998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.18802355199999998
+  Qes:  # electrical Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.000252
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000252
+  BL:  # force factor (T·m)
+    value: 26.9
+    winner: vendor_page
+    sources:
+      vendor_page: 26.9
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.3
+    winner: vendor_page
+    sources:
+      vendor_page: 5.3
   Pe:  # rated power input (W)
     value: 1600.0
     winner: vendor_page
@@ -80,21 +52,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 34.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.18802355199999998
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.007274909690799284
     winner: vendor_page
     sources:
-      vendor_page: 0.18802355199999998
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.000252
+      vendor_page: 0.007274909690799284
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
     winner: vendor_page
     sources:
-      vendor_page: 0.000252
+      vendor_page: 0.004
+  Qts:  # total Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  Qms:  # mechanical Q factor
+    value: 7.4
+    winner: vendor_page
+    sources:
+      vendor_page: 7.4
+  Sd:  # effective piston area (m²)
+    value: 0.1255
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1255
   Znom:  # nominal impedance (Ω)
     value: 35.0
     winner: vendor_page
     sources:
       vendor_page: 35.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.085
+    winner: vendor_page
+    sources:
+      vendor_page: 0.085
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 97.0
     winner: vendor_page
@@ -103,3 +95,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/253-051--18lex1600fe-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Beyma-18LEX1600Fe-LEX-Series-18-Subwoofer-8-Ohm-253-051
+datasheet_url: https://www.parts-express.com/pedocs/specs/253-051--18lex1600fe-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Beyma-18LEX1600Fe-LEX-Series-18-Subwoofer-8-Ohm-253-051
+frd_url: null
+zma_url: null

@@ -6,15 +6,7 @@ corrections: null
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/HiVi-DMB-A-2-Fabric-Dome-Midrange-297-716
 source: https://www.parts-express.com/HiVi-DMB-A-2-Fabric-Dome-Midrange-297-716
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd; Fs_no_Q
 community: null
@@ -37,3 +29,11 @@ specs:
       vendor_page: 5.0
 _sources:
   vendor_page: https://www.parts-express.com/HiVi-DMB-A-2-Fabric-Dome-Midrange-297-716
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/HiVi-DMB-A-2-Fabric-Dome-Midrange-297-716
+frd_url: null
+zma_url: null

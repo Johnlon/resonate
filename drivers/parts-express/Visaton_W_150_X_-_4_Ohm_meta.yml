@@ -6,15 +6,7 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Visaton-W-150-X-5.9-Woofer-4-Ohm-292-519
 source: https://www.parts-express.com/Visaton-W-150-X-5.9-Woofer-4-Ohm-292-519
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd
 community: null
@@ -37,3 +29,11 @@ specs:
       vendor_page: 4.0
 _sources:
   vendor_page: https://www.parts-express.com/Visaton-W-150-X-5.9-Woofer-4-Ohm-292-519
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Visaton-W-150-X-5.9-Woofer-4-Ohm-292-519
+frd_url: null
+zma_url: null

@@ -74,7 +74,7 @@ def parse_product(html: str, url: str) -> dict | None:
         "manufacturer": "Scan-Speak",
         "provided_by":  f"Scan-Speak website (scraped {__import__('datetime').date.today()})",
         "fields":       fields,
-        "pdf_url":      pdf_url,
+        "datasheet_url":    pdf_url,
         "extra_links":  [l[0] for l in extra],
     }
 

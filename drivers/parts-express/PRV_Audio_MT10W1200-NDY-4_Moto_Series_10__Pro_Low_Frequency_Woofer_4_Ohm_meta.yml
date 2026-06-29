@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://prvaudio.com/wp-content/uploads/2026/02/PRV-Catalog-2026.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/PRV-Audio-MT10W1200-NDY-4-Moto-Series-10-Pro-Low-Frequency-Woofer-4-Ohm-267-8042
 source: https://www.parts-express.com/PRV-Audio-MT10W1200-NDY-4-Moto-Series-10-Pro-Low-Frequency-Woofer-4-Ohm-267-8042
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.0
-    winner: vendor_page
-    sources:
-      vendor_page: 3.0
-  Sd:  # effective piston area (m²)
-    value: 0.0373
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0373
-  Cms:  # mechanical compliance (m/N)
-    value: 0.000212
-    winner: vendor_page
-    sources:
-      vendor_page: 0.000212
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0065
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0065
-  Qes:  # electrical Q factor
-    value: 0.31
-    winner: vendor_page
-    sources:
-      vendor_page: 0.31
-  Rms:  # mechanical resistance (kg/s)
-    value: 2.0078417188984496
-    winner: vendor_page
-    sources:
-      vendor_page: 2.0078417188984496
-  BL:  # force factor (T·m)
-    value: 12.29
-    winner: vendor_page
-    sources:
-      vendor_page: 12.29
-  Qts:  # total Q factor
-    value: 0.3
-    winner: vendor_page
-    sources:
-      vendor_page: 0.3
-  Qms:  # mechanical Q factor
-    value: 7.94
-    winner: vendor_page
-    sources:
-      vendor_page: 7.94
   Le:  # voice coil inductance (H)
     value: 0.000376
     winner: vendor_page
     sources:
       vendor_page: 0.000376
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.041342527999999996
+    winner: vendor_page
+    sources:
+      vendor_page: 0.041342527999999996
+  Qes:  # electrical Q factor
+    value: 0.31
+    winner: vendor_page
+    sources:
+      vendor_page: 0.31
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0541
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0541
+  BL:  # force factor (T·m)
+    value: 12.29
+    winner: vendor_page
+    sources:
+      vendor_page: 12.29
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0
   Pe:  # rated power input (W)
     value: 600.0
     winner: vendor_page
@@ -76,21 +51,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 46.9
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.041342527999999996
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.0078417188984496
     winner: vendor_page
     sources:
-      vendor_page: 0.041342527999999996
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0541
+      vendor_page: 2.0078417188984496
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0065
     winner: vendor_page
     sources:
-      vendor_page: 0.0541
+      vendor_page: 0.0065
+  Qts:  # total Q factor
+    value: 0.3
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3
+  Qms:  # mechanical Q factor
+    value: 7.94
+    winner: vendor_page
+    sources:
+      vendor_page: 7.94
+  Sd:  # effective piston area (m²)
+    value: 0.0373
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0373
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000212
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000212
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 97.0
     winner: vendor_page
@@ -109,3 +104,8 @@ specs:
 _sources:
   datasheet: https://prvaudio.com/wp-content/uploads/2026/02/PRV-Catalog-2026.pdf
   vendor_page: https://www.parts-express.com/PRV-Audio-MT10W1200-NDY-4-Moto-Series-10-Pro-Low-Frequency-Woofer-4-Ohm-267-8042
+datasheet_url: https://prvaudio.com/wp-content/uploads/2026/02/PRV-Catalog-2026.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/PRV-Audio-MT10W1200-NDY-4-Moto-Series-10-Pro-Low-Frequency-Woofer-4-Ohm-267-8042
+frd_url: null
+zma_url: null

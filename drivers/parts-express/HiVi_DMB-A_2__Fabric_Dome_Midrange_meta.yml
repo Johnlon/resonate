@@ -4,12 +4,7 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.parts-express.com/HiVi-DMB-A-2-Fabric-Dome-Midrange-297-716
 source: https://www.parts-express.com/HiVi-DMB-A-2-Fabric-Dome-Midrange-297-716
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
@@ -31,15 +26,10 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 5.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 400.0
-    winner: vendor_page
-    sources:
-      vendor_page: 400.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 15000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 15000.0
 _sources:
   vendor_page: https://www.parts-express.com/HiVi-DMB-A-2-Fabric-Dome-Midrange-297-716
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/HiVi-DMB-A-2-Fabric-Dome-Midrange-297-716
+frd_url: null
+zma_url: null

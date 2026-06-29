@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://prvaudio.com/wp-content/uploads/2026/02/PRV-Catalog-2026.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/PRV-Audio-15SW2000-15-Pro-Audio-Subwoofer-8-Ohm-294-3007
 source: https://www.parts-express.com/PRV-Audio-15SW2000-15-Pro-Audio-Subwoofer-8-Ohm-294-3007
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.5
-    winner: vendor_page
-    sources:
-      vendor_page: 5.5
-  Sd:  # effective piston area (m²)
-    value: 0.0908
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0908
-  Cms:  # mechanical compliance (m/N)
-    value: 5.0e-05
-    winner: vendor_page
-    sources:
-      vendor_page: 5.0e-05
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0125
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0125
-  Qes:  # electrical Q factor
-    value: 0.57
-    winner: vendor_page
-    sources:
-      vendor_page: 0.57
-  Rms:  # mechanical resistance (kg/s)
-    value: 3.398158586154244
-    winner: vendor_page
-    sources:
-      vendor_page: 3.398158586154244
-  BL:  # force factor (T·m)
-    value: 23.19
-    winner: vendor_page
-    sources:
-      vendor_page: 23.19
-  Qts:  # total Q factor
-    value: 0.55
-    winner: vendor_page
-    sources:
-      vendor_page: 0.55
-  Qms:  # mechanical Q factor
-    value: 16.54
-    winner: vendor_page
-    sources:
-      vendor_page: 16.54
   Le:  # voice coil inductance (H)
     value: 0.00151
     winner: vendor_page
     sources:
       vendor_page: 0.00151
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.061447456
+    winner: vendor_page
+    sources:
+      vendor_page: 0.061447456
+  Qes:  # electrical Q factor
+    value: 0.57
+    winner: vendor_page
+    sources:
+      vendor_page: 0.57
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.1691
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1691
+  BL:  # force factor (T·m)
+    value: 23.19
+    winner: vendor_page
+    sources:
+      vendor_page: 23.19
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.5
+    winner: vendor_page
+    sources:
+      vendor_page: 5.5
   Pe:  # rated power input (W)
     value: 1000.0
     winner: vendor_page
@@ -76,31 +51,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 52.9
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.061447456
+  Rms:  # mechanical resistance (kg/s)
+    value: 3.398158586154244
     winner: vendor_page
     sources:
-      vendor_page: 0.061447456
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.1691
+      vendor_page: 3.398158586154244
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0125
     winner: vendor_page
     sources:
-      vendor_page: 0.1691
+      vendor_page: 0.0125
+  Qts:  # total Q factor
+    value: 0.55
+    winner: vendor_page
+    sources:
+      vendor_page: 0.55
+  Qms:  # mechanical Q factor
+    value: 16.54
+    winner: vendor_page
+    sources:
+      vendor_page: 16.54
+  Sd:  # effective piston area (m²)
+    value: 0.0908
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0908
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 45.0
+  Cms:  # mechanical compliance (m/N)
+    value: 5.0e-05
     winner: vendor_page
     sources:
-      vendor_page: 45.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 2300.0
-    winner: vendor_page
-    sources:
-      vendor_page: 2300.0
+      vendor_page: 5.0e-05
 _sources:
   datasheet: https://prvaudio.com/wp-content/uploads/2026/02/PRV-Catalog-2026.pdf
   vendor_page: https://www.parts-express.com/PRV-Audio-15SW2000-15-Pro-Audio-Subwoofer-8-Ohm-294-3007
+datasheet_url: https://prvaudio.com/wp-content/uploads/2026/02/PRV-Catalog-2026.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/PRV-Audio-15SW2000-15-Pro-Audio-Subwoofer-8-Ohm-294-3007
+frd_url: null
+zma_url: null

@@ -7,65 +7,42 @@ corrections: '''Qts'' stored=0.18 differs from calculated=0.183656 (deps: Qms=5.
 reviewed_by: null
 driver_type: subwoofer
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Beyma-15P80Fe-N-P80-Series-15-Subwoofer-8-Ohm-253-008
 source: https://www.parts-express.com/Beyma-15P80Fe-N-P80-Series-15-Subwoofer-8-Ohm-253-008
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 253-008
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.3
-    winner: vendor_page
-    sources:
-      vendor_page: 5.3
-  Sd:  # effective piston area (m²)
-    value: 0.088
-    winner: vendor_page
-    sources:
-      vendor_page: 0.088
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0075
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0075
-  Qes:  # electrical Q factor
-    value: 0.19
-    winner: vendor_page
-    sources:
-      vendor_page: 0.19
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.003216990877275948
-    winner: vendor_page
-    sources:
-      vendor_page: 0.003216990877275948
-  BL:  # force factor (T·m)
-    value: 22.1
-    winner: vendor_page
-    sources:
-      vendor_page: 22.1
-  Qts:  # total Q factor
-    value: 0.18
-    winner: vendor_page
-    sources:
-      vendor_page: 0.18
-  Qms:  # mechanical Q factor
-    value: 5.5
-    winner: vendor_page
-    sources:
-      vendor_page: 5.5
   Le:  # voice coil inductance (H)
     value: 0.0012
     winner: vendor_page
     sources:
       vendor_page: 0.0012
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.304971936
+    winner: vendor_page
+    sources:
+      vendor_page: 0.304971936
+  Qes:  # electrical Q factor
+    value: 0.19
+    winner: vendor_page
+    sources:
+      vendor_page: 0.19
+  Mms:  # moving mass incl. air load (kg)
+    value: 8.8e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 8.8e-05
+  BL:  # force factor (T·m)
+    value: 22.1
+    winner: vendor_page
+    sources:
+      vendor_page: 22.1
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.3
+    winner: vendor_page
+    sources:
+      vendor_page: 5.3
   Pe:  # rated power input (W)
     value: 800.0
     winner: vendor_page
@@ -76,16 +53,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 32.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.304971936
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.003216990877275948
     winner: vendor_page
     sources:
-      vendor_page: 0.304971936
-  Mms:  # moving mass incl. air load (kg)
-    value: 8.8e-05
+      vendor_page: 0.003216990877275948
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0075
     winner: vendor_page
     sources:
-      vendor_page: 8.8e-05
+      vendor_page: 0.0075
+  Qts:  # total Q factor
+    value: 0.18
+    winner: vendor_page
+    sources:
+      vendor_page: 0.18
+  Qms:  # mechanical Q factor
+    value: 5.5
+    winner: vendor_page
+    sources:
+      vendor_page: 5.5
+  Sd:  # effective piston area (m²)
+    value: 0.088
+    winner: vendor_page
+    sources:
+      vendor_page: 0.088
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -98,3 +90,11 @@ specs:
       vendor_page: 101.0
 _sources:
   vendor_page: https://www.parts-express.com/Beyma-15P80Fe-N-P80-Series-15-Subwoofer-8-Ohm-253-008
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Beyma-15P80Fe-N-P80-Series-15-Subwoofer-8-Ohm-253-008
+frd_url: null
+zma_url: null

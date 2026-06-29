@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/293-703--lavoce-fsn020.72-specifications.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/LaVoce-FSN020.72-2-Neodymium-Full-Range-Woofer-8-Ohm-293-703
 source: https://www.parts-express.com/LaVoce-FSN020.72-2-Neodymium-Full-Range-Woofer-8-Ohm-293-703
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.2
-    winner: vendor_page
-    sources:
-      vendor_page: 6.2
-  Sd:  # effective piston area (m²)
-    value: 0.0017399999999999998
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0017399999999999998
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0004
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0004
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0024
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0024
-  Qes:  # electrical Q factor
-    value: 1.16
-    winner: vendor_page
-    sources:
-      vendor_page: 1.16
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.41983101825245417
-    winner: vendor_page
-    sources:
-      vendor_page: 0.41983101825245417
-  BL:  # force factor (T·m)
-    value: 3.2
-    winner: vendor_page
-    sources:
-      vendor_page: 3.2
-  Qts:  # total Q factor
-    value: 0.92
-    winner: vendor_page
-    sources:
-      vendor_page: 0.92
-  Qms:  # mechanical Q factor
-    value: 4.4
-    winner: vendor_page
-    sources:
-      vendor_page: 4.4
   Le:  # voice coil inductance (H)
     value: 5.9999999999999995e-05
     winner: vendor_page
     sources:
       vendor_page: 5.9999999999999995e-05
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.000283168
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000283168
+  Qes:  # electrical Q factor
+    value: 1.16
+    winner: vendor_page
+    sources:
+      vendor_page: 1.16
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0014
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0014
+  BL:  # force factor (T·m)
+    value: 3.2
+    winner: vendor_page
+    sources:
+      vendor_page: 3.2
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.2
+    winner: vendor_page
+    sources:
+      vendor_page: 6.2
   Pe:  # rated power input (W)
     value: 15.0
     winner: vendor_page
@@ -76,31 +51,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 210.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.000283168
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.41983101825245417
     winner: vendor_page
     sources:
-      vendor_page: 0.000283168
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0014
+      vendor_page: 0.41983101825245417
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0024
     winner: vendor_page
     sources:
-      vendor_page: 0.0014
+      vendor_page: 0.0024
+  Qts:  # total Q factor
+    value: 0.92
+    winner: vendor_page
+    sources:
+      vendor_page: 0.92
+  Qms:  # mechanical Q factor
+    value: 4.4
+    winner: vendor_page
+    sources:
+      vendor_page: 4.4
+  Sd:  # effective piston area (m²)
+    value: 0.0017399999999999998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0017399999999999998
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 200.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0004
     winner: vendor_page
     sources:
-      vendor_page: 200.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 20000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 20000.0
+      vendor_page: 0.0004
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/293-703--lavoce-fsn020.72-specifications.pdf
   vendor_page: https://www.parts-express.com/LaVoce-FSN020.72-2-Neodymium-Full-Range-Woofer-8-Ohm-293-703
+datasheet_url: https://www.parts-express.com/pedocs/specs/293-703--lavoce-fsn020.72-specifications.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/LaVoce-FSN020.72-2-Neodymium-Full-Range-Woofer-8-Ohm-293-703
+frd_url: null
+zma_url: null

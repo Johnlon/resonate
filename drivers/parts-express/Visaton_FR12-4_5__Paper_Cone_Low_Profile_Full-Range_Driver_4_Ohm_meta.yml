@@ -4,12 +4,7 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/292-704--visaton-fr12-4-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Visaton-FR12-4-5-Paper-Cone-Low-Profile-Full-Range-Driver-4-Ohm-292-734
 source: https://www.parts-express.com/Visaton-FR12-4-5-Paper-Cone-Low-Profile-Full-Range-Driver-4-Ohm-292-734
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
@@ -44,3 +39,8 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/292-704--visaton-fr12-4-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Visaton-FR12-4-5-Paper-Cone-Low-Profile-Full-Range-Driver-4-Ohm-292-734
+datasheet_url: https://www.parts-express.com/pedocs/specs/292-704--visaton-fr12-4-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Visaton-FR12-4-5-Paper-Cone-Low-Profile-Full-Range-Driver-4-Ohm-292-734
+frd_url: null
+zma_url: null

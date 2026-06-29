@@ -6,45 +6,27 @@ corrections: null
 reviewed_by: null
 driver_type: tweeter
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Visaton-DT94-8-0.8-Polycarbonate-Tweeter-8-Ohm-292-556
 source: https://www.parts-express.com/Visaton-DT94-8-0.8-Polycarbonate-Tweeter-8-Ohm-292-556
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd
 community: null
 fetched_sku: 292-556
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.7
-    winner: vendor_page
-    sources:
-      vendor_page: 6.7
-  Qes:  # electrical Q factor
-    value: 0.66
-    winner: vendor_page
-    sources:
-      vendor_page: 0.66
-  Qts:  # total Q factor
-    value: 0.54
-    winner: vendor_page
-    sources:
-      vendor_page: 0.54
-  Qms:  # mechanical Q factor
-    value: 3.07
-    winner: vendor_page
-    sources:
-      vendor_page: 3.07
   Le:  # voice coil inductance (H)
     value: 8.999999999999999e-05
     winner: vendor_page
     sources:
       vendor_page: 8.999999999999999e-05
+  Qes:  # electrical Q factor
+    value: 0.66
+    winner: vendor_page
+    sources:
+      vendor_page: 0.66
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.7
+    winner: vendor_page
+    sources:
+      vendor_page: 6.7
   Pe:  # rated power input (W)
     value: 50.0
     winner: vendor_page
@@ -55,6 +37,16 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 1900.0
+  Qts:  # total Q factor
+    value: 0.54
+    winner: vendor_page
+    sources:
+      vendor_page: 0.54
+  Qms:  # mechanical Q factor
+    value: 3.07
+    winner: vendor_page
+    sources:
+      vendor_page: 3.07
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -62,3 +54,11 @@ specs:
       vendor_page: 8.0
 _sources:
   vendor_page: https://www.parts-express.com/Visaton-DT94-8-0.8-Polycarbonate-Tweeter-8-Ohm-292-556
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Visaton-DT94-8-0.8-Polycarbonate-Tweeter-8-Ohm-292-556
+frd_url: null
+zma_url: null

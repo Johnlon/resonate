@@ -5,62 +5,42 @@ detail: Automatically scraped from SB Acoustics website (scraped 2026-06-29). T/
 corrections: null
 reviewed_by: null
 driver_type: null
-datasheet: https://sbacoustics.com/wp-content/uploads/2020/02/3in-SB10PGC21-4.pdf
-manu_page: https://sbacoustics.com/product/3in-sb10pgc21-4/
-vendor_page: null
 source: https://sbacoustics.com/product/3in-sb10pgc21-4/
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.4
-    winner: manu_page
-    sources:
-      manu_page: 3.4
-  Sd:  # effective piston area (m²)
-    value: 0.0027
-    winner: manu_page
-    sources:
-      manu_page: 0.0027
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00114
-    winner: manu_page
-    sources:
-      manu_page: 0.00114
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00225
-    winner: manu_page
-    sources:
-      manu_page: 0.00225
-  Qes:  # electrical Q factor
-    value: 1.01
-    winner: manu_page
-    sources:
-      manu_page: 1.01
-  BL:  # force factor (T·m)
-    value: 2.3
-    winner: manu_page
-    sources:
-      manu_page: 2.3
-  Qts:  # total Q factor
-    value: 0.92
-    winner: manu_page
-    sources:
-      manu_page: 0.92
-  Qms:  # mechanical Q factor
-    value: 11.2
-    winner: manu_page
-    sources:
-      manu_page: 11.2
   Le:  # voice coil inductance (H)
     value: 0.00015
     winner: manu_page
     sources:
       manu_page: 0.00015
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0012
+    winner: manu_page
+    sources:
+      manu_page: 0.0012
+  Qes:  # electrical Q factor
+    value: 1.01
+    winner: manu_page
+    sources:
+      manu_page: 1.01
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0028
+    winner: manu_page
+    sources:
+      manu_page: 0.0028
+  BL:  # force factor (T·m)
+    value: 2.3
+    winner: manu_page
+    sources:
+      manu_page: 2.3
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.4
+    winner: manu_page
+    sources:
+      manu_page: 3.4
   Pe:  # rated power input (W)
     value: 20.0
     winner: manu_page
@@ -71,21 +51,36 @@ specs:
     winner: manu_page
     sources:
       manu_page: 89.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0012
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00225
     winner: manu_page
     sources:
-      manu_page: 0.0012
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0028
+      manu_page: 0.00225
+  Qts:  # total Q factor
+    value: 0.92
     winner: manu_page
     sources:
-      manu_page: 0.0028
+      manu_page: 0.92
+  Qms:  # mechanical Q factor
+    value: 11.2
+    winner: manu_page
+    sources:
+      manu_page: 11.2
+  Sd:  # effective piston area (m²)
+    value: 0.0027
+    winner: manu_page
+    sources:
+      manu_page: 0.0027
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: manu_page
     sources:
       manu_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00114
+    winner: manu_page
+    sources:
+      manu_page: 0.00114
   voice_coil_dia_mm:  # voice coil diameter (mm)
     value: 20.4
     winner: manu_page
@@ -114,3 +109,8 @@ specs:
 _sources:
   datasheet: https://sbacoustics.com/wp-content/uploads/2020/02/3in-SB10PGC21-4.pdf
   manu_page: https://sbacoustics.com/product/3in-sb10pgc21-4/
+datasheet_url: https://sbacoustics.com/wp-content/uploads/2020/02/3in-SB10PGC21-4.pdf
+manu_page_url: https://sbacoustics.com/product/3in-sb10pgc21-4/
+vendor_page_url: null
+frd_url: null
+zma_url: null

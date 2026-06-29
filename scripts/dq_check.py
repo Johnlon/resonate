@@ -30,7 +30,8 @@ except ImportError:
 
 DRIVERS_DIR = pathlib.Path(__file__).parent.parent / "drivers"
 # URL fields live in _meta.yml sidecars (NOT in WDR files)
-SIDECAR_URL_FIELDS = ["datasheet", "manu_page", "vendor_page", "frd", "impedance"]
+SIDECAR_URL_FIELDS = ["datasheet_url", "adv_datasheet_url", "drawing_url", "cad_url",
+                      "manu_page_url", "vendor_page_url", "frd_url", "zma_url"]
 
 
 def parse_fields(text: str) -> dict:

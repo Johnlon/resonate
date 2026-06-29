@@ -6,70 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/295-369--rsp100p-4-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-RS100P-4-4-Reference-Paper-Midwoofer-4-Ohm-295-369
 source: https://www.parts-express.com/Dayton-Audio-RS100P-4-4-Reference-Paper-Midwoofer-4-Ohm-295-369
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 295-369
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.0
-    winner: vendor_page
-    sources:
-      vendor_page: 3.0
-  Sd:  # effective piston area (m²)
-    value: 0.0036299999999999995
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0036299999999999995
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00095
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00095
-  Xmax:  # one-way linear excursion (m)
-    value: 0.004
-    winner: vendor_page
-    sources:
-      vendor_page: 0.004
-  Qes:  # electrical Q factor
-    value: 0.67
-    winner: vendor_page
-    sources:
-      vendor_page: 0.67
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.7383566374459427
-    winner: vendor_page
-    sources:
-      vendor_page: 0.7383566374459427
-  BL:  # force factor (T·m)
-    value: 2.95
-    winner: vendor_page
-    sources:
-      vendor_page: 2.95
-  Qts:  # total Q factor
-    value: 0.54
-    winner: vendor_page
-    sources:
-      vendor_page: 0.54
-  Qms:  # mechanical Q factor
-    value: 2.67
-    winner: vendor_page
-    sources:
-      vendor_page: 2.67
   Le:  # voice coil inductance (H)
     value: 0.00026000000000000003
     winner: vendor_page
     sources:
       vendor_page: 0.00026000000000000003
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.001982176
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001982176
+  Qes:  # electrical Q factor
+    value: 0.67
+    winner: vendor_page
+    sources:
+      vendor_page: 0.67
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0037
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0037
+  BL:  # force factor (T·m)
+    value: 2.95
+    winner: vendor_page
+    sources:
+      vendor_page: 2.95
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0
   Pe:  # rated power input (W)
     value: 30.0
     winner: vendor_page
@@ -80,21 +52,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 84.8
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.001982176
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.7383566374459427
     winner: vendor_page
     sources:
-      vendor_page: 0.001982176
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0037
+      vendor_page: 0.7383566374459427
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
     winner: vendor_page
     sources:
-      vendor_page: 0.0037
+      vendor_page: 0.004
+  Qts:  # total Q factor
+    value: 0.54
+    winner: vendor_page
+    sources:
+      vendor_page: 0.54
+  Qms:  # mechanical Q factor
+    value: 2.67
+    winner: vendor_page
+    sources:
+      vendor_page: 2.67
+  Sd:  # effective piston area (m²)
+    value: 0.0036299999999999995
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0036299999999999995
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00095
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00095
   freq_low_hz:  # published lower frequency limit (Hz)
     value: 2019.1
     winner: vendor_page
@@ -108,3 +100,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/295-369--rsp100p-4-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Dayton-Audio-RS100P-4-4-Reference-Paper-Midwoofer-4-Ohm-295-369
+datasheet_url: https://www.parts-express.com/pedocs/specs/295-369--rsp100p-4-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-RS100P-4-4-Reference-Paper-Midwoofer-4-Ohm-295-369
+frd_url: null
+zma_url: null

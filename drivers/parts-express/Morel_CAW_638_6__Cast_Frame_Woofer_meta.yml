@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/297-084--morel-caw-638-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Morel-CAW638-6-Cast-Frame-Woofer-297-084
 source: https://www.parts-express.com/Morel-CAW638-6-Cast-Frame-Woofer-297-084
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: woofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.4
-    winner: vendor_page
-    sources:
-      vendor_page: 6.4
-  Sd:  # effective piston area (m²)
-    value: 0.0119
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0119
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00079
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00079
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00425
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00425
-  Qes:  # electrical Q factor
-    value: 0.58
-    winner: vendor_page
-    sources:
-      vendor_page: 0.58
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.9649234051543434
-    winner: vendor_page
-    sources:
-      vendor_page: 1.9649234051543434
-  BL:  # force factor (T·m)
-    value: 7.3
-    winner: vendor_page
-    sources:
-      vendor_page: 7.3
-  Qts:  # total Q factor
-    value: 0.46
-    winner: vendor_page
-    sources:
-      vendor_page: 0.46
-  Qms:  # mechanical Q factor
-    value: 2.2
-    winner: vendor_page
-    sources:
-      vendor_page: 2.2
   Le:  # voice coil inductance (H)
     value: 0.00063
     winner: vendor_page
     sources:
       vendor_page: 0.00063
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.015574240000000001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.015574240000000001
+  Qes:  # electrical Q factor
+    value: 0.58
+    winner: vendor_page
+    sources:
+      vendor_page: 0.58
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.016
+    winner: vendor_page
+    sources:
+      vendor_page: 0.016
+  BL:  # force factor (T·m)
+    value: 7.3
+    winner: vendor_page
+    sources:
+      vendor_page: 7.3
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.4
+    winner: vendor_page
+    sources:
+      vendor_page: 6.4
   Pe:  # rated power input (W)
     value: 150.0
     winner: vendor_page
@@ -76,31 +51,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 43.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.015574240000000001
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.9649234051543434
     winner: vendor_page
     sources:
-      vendor_page: 0.015574240000000001
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.016
+      vendor_page: 1.9649234051543434
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00425
     winner: vendor_page
     sources:
-      vendor_page: 0.016
+      vendor_page: 0.00425
+  Qts:  # total Q factor
+    value: 0.46
+    winner: vendor_page
+    sources:
+      vendor_page: 0.46
+  Qms:  # mechanical Q factor
+    value: 2.2
+    winner: vendor_page
+    sources:
+      vendor_page: 2.2
+  Sd:  # effective piston area (m²)
+    value: 0.0119
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0119
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 30.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00079
     winner: vendor_page
     sources:
-      vendor_page: 30.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 5000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 5000.0
+      vendor_page: 0.00079
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/297-084--morel-caw-638-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Morel-CAW638-6-Cast-Frame-Woofer-297-084
+datasheet_url: https://www.parts-express.com/pedocs/specs/297-084--morel-caw-638-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Morel-CAW638-6-Cast-Frame-Woofer-297-084
+frd_url: null
+zma_url: null

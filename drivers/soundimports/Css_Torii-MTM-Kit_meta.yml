@@ -4,42 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/css-torii-mtm-kit.html
 source: https://www.soundimports.eu/en/css-torii-mtm-kit.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 4.7
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0166
     winner: vendor_page
     sources:
-      vendor_page: 4.7
-  Sd:  # effective piston area (m²)
-    value: 0.0093
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0093
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00135
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00135
+      vendor_page: 0.0166
   Qes:  # electrical Q factor
     value: 0.53
     winner: vendor_page
     sources:
       vendor_page: 0.53
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0122
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0122
   BL:  # force factor (T·m)
     value: 5.2
     winner: vendor_page
     sources:
       vendor_page: 5.2
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.7
+    winner: vendor_page
+    sources:
+      vendor_page: 4.7
+  Fs:  # free air resonance (Hz)
+    value: 39.0
+    winner: vendor_page
+    sources:
+      vendor_page: 39.0
   Qts:  # total Q factor
     value: 0.5
     winner: vendor_page
@@ -50,20 +50,20 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  Fs:  # free air resonance (Hz)
-    value: 39.0
+  Sd:  # effective piston area (m²)
+    value: 0.0093
     winner: vendor_page
     sources:
-      vendor_page: 39.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0166
+      vendor_page: 0.0093
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00135
     winner: vendor_page
     sources:
-      vendor_page: 0.0166
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0122
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0122
+      vendor_page: 0.00135
 _sources:
   vendor_page: https://www.soundimports.eu/en/css-torii-mtm-kit.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/css-torii-mtm-kit.html
+frd_url: null
+zma_url: null

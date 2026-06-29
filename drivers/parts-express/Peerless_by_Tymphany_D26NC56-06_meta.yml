@@ -6,65 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: tweeter
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-1454--tymphany-d26nc56-06-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Peerless-D26NC56-06-1-Fabric-Dome-Tweeter-6-Ohm-264-1454
 source: https://www.parts-express.com/Peerless-D26NC56-06-1-Fabric-Dome-Tweeter-6-Ohm-264-1454
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 264-1454
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 4.7
-    winner: vendor_page
-    sources:
-      vendor_page: 4.7
-  Sd:  # effective piston area (m²)
-    value: 0.000707
-    winner: vendor_page
-    sources:
-      vendor_page: 0.000707
-  Cms:  # mechanical compliance (m/N)
-    value: 3.7e-05
-    winner: vendor_page
-    sources:
-      vendor_page: 3.7e-05
-  Xmax:  # one-way linear excursion (m)
-    value: 0.000983
-    winner: vendor_page
-    sources:
-      vendor_page: 0.000983
-  Qes:  # electrical Q factor
-    value: 3.75
-    winner: vendor_page
-    sources:
-      vendor_page: 3.75
-  BL:  # force factor (T·m)
-    value: 1.8
-    winner: vendor_page
-    sources:
-      vendor_page: 1.8
-  Qts:  # total Q factor
-    value: 1.0
-    winner: vendor_page
-    sources:
-      vendor_page: 1.0
-  Qms:  # mechanical Q factor
-    value: 1.36
-    winner: vendor_page
-    sources:
-      vendor_page: 1.36
   Le:  # voice coil inductance (H)
     value: 3.3e-05
     winner: vendor_page
     sources:
       vendor_page: 3.3e-05
+  Vas:  # equivalent acoustic volume (m³)
+    value: 3.0e-06
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0e-06
+  Qes:  # electrical Q factor
+    value: 3.75
+    winner: vendor_page
+    sources:
+      vendor_page: 3.75
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.000249
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000249
+  BL:  # force factor (T·m)
+    value: 1.8
+    winner: vendor_page
+    sources:
+      vendor_page: 1.8
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.7
+    winner: vendor_page
+    sources:
+      vendor_page: 4.7
   Pe:  # rated power input (W)
     value: 15.0
     winner: vendor_page
@@ -75,21 +52,44 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 1700.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 3.0e-06
+  Xmax:  # one-way linear excursion (m)
+    value: 0.000983
     winner: vendor_page
     sources:
-      vendor_page: 3.0e-06
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.000249
+      vendor_page: 0.000983
+  Qts:  # total Q factor
+    value: 1.0
     winner: vendor_page
     sources:
-      vendor_page: 0.000249
+      vendor_page: 1.0
+  Qms:  # mechanical Q factor
+    value: 1.36
+    winner: vendor_page
+    sources:
+      vendor_page: 1.36
+  Sd:  # effective piston area (m²)
+    value: 0.000707
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000707
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 3.7e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7e-05
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-1454--tymphany-d26nc56-06-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Peerless-D26NC56-06-1-Fabric-Dome-Tweeter-6-Ohm-264-1454
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-1454--tymphany-d26nc56-06-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Peerless-D26NC56-06-1-Fabric-Dome-Tweeter-6-Ohm-264-1454
+frd_url: null
+zma_url: null

@@ -4,63 +4,38 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.parts-express.com/HiVi-D6.8B-6-Poly-Bass-Midrange-Shielded-297-444
 source: https://www.parts-express.com/HiVi-D6.8B-6-Poly-Bass-Midrange-Shielded-297-444
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: woofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.5
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.013592064
     winner: vendor_page
     sources:
-      vendor_page: 6.5
-  Sd:  # effective piston area (m²)
-    value: 0.01212
-    winner: vendor_page
-    sources:
-      vendor_page: 0.01212
-  Cms:  # mechanical compliance (m/N)
-    value: 0.000647
-    winner: vendor_page
-    sources:
-      vendor_page: 0.000647
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0053
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0053
+      vendor_page: 0.013592064
   Qes:  # electrical Q factor
     value: 0.49
     winner: vendor_page
     sources:
       vendor_page: 0.49
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.0978208094008923
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.02117
     winner: vendor_page
     sources:
-      vendor_page: 1.0978208094008923
+      vendor_page: 0.02117
   BL:  # force factor (T·m)
     value: 8.7
     winner: vendor_page
     sources:
       vendor_page: 8.7
-  Qts:  # total Q factor
-    value: 0.45
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.5
     winner: vendor_page
     sources:
-      vendor_page: 0.45
-  Qms:  # mechanical Q factor
-    value: 5.21
-    winner: vendor_page
-    sources:
-      vendor_page: 5.21
+      vendor_page: 6.5
   Pe:  # rated power input (W)
     value: 60.0
     winner: vendor_page
@@ -71,30 +46,45 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 43.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.013592064
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.0978208094008923
     winner: vendor_page
     sources:
-      vendor_page: 0.013592064
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.02117
+      vendor_page: 1.0978208094008923
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0053
     winner: vendor_page
     sources:
-      vendor_page: 0.02117
+      vendor_page: 0.0053
+  Qts:  # total Q factor
+    value: 0.45
+    winner: vendor_page
+    sources:
+      vendor_page: 0.45
+  Qms:  # mechanical Q factor
+    value: 5.21
+    winner: vendor_page
+    sources:
+      vendor_page: 5.21
+  Sd:  # effective piston area (m²)
+    value: 0.01212
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01212
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 43.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000647
     winner: vendor_page
     sources:
-      vendor_page: 43.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 4000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 4000.0
+      vendor_page: 0.000647
 _sources:
   vendor_page: https://www.parts-express.com/HiVi-D6.8B-6-Poly-Bass-Midrange-Shielded-297-444
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/HiVi-D6.8B-6-Poly-Bass-Midrange-Shielded-297-444
+frd_url: null
+zma_url: null

@@ -4,43 +4,28 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-1014--tymphany-xt25sc90-04-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Peerless-XT25SC90-04-1-Dual-Ring-Radiator-Tweeter-264-1014
 source: https://www.parts-express.com/Peerless-XT25SC90-04-1-Dual-Ring-Radiator-Tweeter-264-1014
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.13
-    winner: vendor_page
-    sources:
-      vendor_page: 3.13
-  Qes:  # electrical Q factor
-    value: 1.17
-    winner: vendor_page
-    sources:
-      vendor_page: 1.17
-  Qts:  # total Q factor
-    value: 1.0
-    winner: vendor_page
-    sources:
-      vendor_page: 1.0
-  Qms:  # mechanical Q factor
-    value: 7.36
-    winner: vendor_page
-    sources:
-      vendor_page: 7.36
   Le:  # voice coil inductance (H)
     value: 2.1000000000000002e-05
     winner: vendor_page
     sources:
       vendor_page: 2.1000000000000002e-05
+  Qes:  # electrical Q factor
+    value: 1.17
+    winner: vendor_page
+    sources:
+      vendor_page: 1.17
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.13
+    winner: vendor_page
+    sources:
+      vendor_page: 3.13
   Pe:  # rated power input (W)
     value: 100.0
     winner: vendor_page
@@ -51,21 +36,26 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 830.0
+  Qts:  # total Q factor
+    value: 1.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0
+  Qms:  # mechanical Q factor
+    value: 7.36
+    winner: vendor_page
+    sources:
+      vendor_page: 7.36
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 2000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 2000.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 20000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 20000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-1014--tymphany-xt25sc90-04-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Peerless-XT25SC90-04-1-Dual-Ring-Radiator-Tweeter-264-1014
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-1014--tymphany-xt25sc90-04-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Peerless-XT25SC90-04-1-Dual-Ring-Radiator-Tweeter-264-1014
+frd_url: null
+zma_url: null

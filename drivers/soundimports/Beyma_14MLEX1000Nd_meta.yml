@@ -4,67 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/beyma-14mlex1000nd.html
 source: https://www.soundimports.eu/en/beyma-14mlex1000nd.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.1
-    winner: vendor_page
-    sources:
-      vendor_page: 5.1
-  Sd:  # effective piston area (m²)
-    value: 0.0707
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0707
-  Cms:  # mechanical compliance (m/N)
-    value: 0.000106
-    winner: vendor_page
-    sources:
-      vendor_page: 0.000106
-  Xmax:  # one-way linear excursion (m)
-    value: 0.011
-    winner: vendor_page
-    sources:
-      vendor_page: 0.011
-  Qes:  # electrical Q factor
-    value: 0.23
-    winner: vendor_page
-    sources:
-      vendor_page: 0.23
-  Rms:  # mechanical resistance (kg/s)
-    value: 8.0
-    winner: vendor_page
-    sources:
-      vendor_page: 8.0
-  BL:  # force factor (T·m)
-    value: 26.5
-    winner: vendor_page
-    sources:
-      vendor_page: 26.5
-  Qts:  # total Q factor
-    value: 0.22
-    winner: vendor_page
-    sources:
-      vendor_page: 0.22
-  Qms:  # mechanical Q factor
-    value: 4.0
-    winner: vendor_page
-    sources:
-      vendor_page: 4.0
   Le:  # voice coil inductance (H)
     value: 0.00122
     winner: vendor_page
     sources:
       vendor_page: 0.00122
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.075
+    winner: vendor_page
+    sources:
+      vendor_page: 0.075
+  Qes:  # electrical Q factor
+    value: 0.23
+    winner: vendor_page
+    sources:
+      vendor_page: 0.23
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.107
+    winner: vendor_page
+    sources:
+      vendor_page: 0.107
+  BL:  # force factor (T·m)
+    value: 26.5
+    winner: vendor_page
+    sources:
+      vendor_page: 26.5
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.1
+    winner: vendor_page
+    sources:
+      vendor_page: 5.1
   Pe:  # rated power input (W)
     value: 1000.0
     winner: vendor_page
@@ -75,21 +50,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 47.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.075
+  Rms:  # mechanical resistance (kg/s)
+    value: 8.0
     winner: vendor_page
     sources:
-      vendor_page: 0.075
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.107
+      vendor_page: 8.0
+  Xmax:  # one-way linear excursion (m)
+    value: 0.011
     winner: vendor_page
     sources:
-      vendor_page: 0.107
+      vendor_page: 0.011
+  Qts:  # total Q factor
+    value: 0.22
+    winner: vendor_page
+    sources:
+      vendor_page: 0.22
+  Qms:  # mechanical Q factor
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  Sd:  # effective piston area (m²)
+    value: 0.0707
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0707
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000106
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000106
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 99.0
     winner: vendor_page
@@ -107,3 +102,8 @@ specs:
       vendor_page: 4.5
 _sources:
   vendor_page: https://www.soundimports.eu/en/beyma-14mlex1000nd.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/beyma-14mlex1000nd.html
+frd_url: null
+zma_url: null

@@ -7,65 +7,42 @@ corrections: '''Qts'' stored=0.19 differs from calculated=0.192593 (deps: Qms=5.
 reviewed_by: null
 driver_type: subwoofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/253-007--12p80ndv2-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Beyma-12P80Nd-V2-P80-Series-12-Neo-Subwoofer-8-Ohm-253-007
 source: https://www.parts-express.com/Beyma-12P80Nd-V2-P80-Series-12-Neo-Subwoofer-8-Ohm-253-007
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 253-007
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.0
-    winner: vendor_page
-    sources:
-      vendor_page: 5.0
-  Sd:  # effective piston area (m²)
-    value: 0.055
-    winner: vendor_page
-    sources:
-      vendor_page: 0.055
-  Xmax:  # one-way linear excursion (m)
-    value: 0.004
-    winner: vendor_page
-    sources:
-      vendor_page: 0.004
-  Qes:  # electrical Q factor
-    value: 0.2
-    winner: vendor_page
-    sources:
-      vendor_page: 0.2
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.004202484326609731
-    winner: vendor_page
-    sources:
-      vendor_page: 0.004202484326609731
-  BL:  # force factor (T·m)
-    value: 23.7
-    winner: vendor_page
-    sources:
-      vendor_page: 23.7
-  Qts:  # total Q factor
-    value: 0.19
-    winner: vendor_page
-    sources:
-      vendor_page: 0.19
-  Qms:  # mechanical Q factor
-    value: 5.2
-    winner: vendor_page
-    sources:
-      vendor_page: 5.2
   Le:  # voice coil inductance (H)
     value: 47.0
     winner: vendor_page
     sources:
       vendor_page: 47.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.06512863999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.06512863999999999
+  Qes:  # electrical Q factor
+    value: 0.2
+    winner: vendor_page
+    sources:
+      vendor_page: 0.2
+  Mms:  # moving mass incl. air load (kg)
+    value: 7.4e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 7.4e-05
+  BL:  # force factor (T·m)
+    value: 23.7
+    winner: vendor_page
+    sources:
+      vendor_page: 23.7
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
   Pe:  # rated power input (W)
     value: 700.0
     winner: vendor_page
@@ -76,16 +53,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 47.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.06512863999999999
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.004202484326609731
     winner: vendor_page
     sources:
-      vendor_page: 0.06512863999999999
-  Mms:  # moving mass incl. air load (kg)
-    value: 7.4e-05
+      vendor_page: 0.004202484326609731
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
     winner: vendor_page
     sources:
-      vendor_page: 7.4e-05
+      vendor_page: 0.004
+  Qts:  # total Q factor
+    value: 0.19
+    winner: vendor_page
+    sources:
+      vendor_page: 0.19
+  Qms:  # mechanical Q factor
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
+  Sd:  # effective piston area (m²)
+    value: 0.055
+    winner: vendor_page
+    sources:
+      vendor_page: 0.055
   Znom:  # nominal impedance (Ω)
     value: 50.0
     winner: vendor_page
@@ -99,3 +91,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/253-007--12p80ndv2-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Beyma-12P80Nd-V2-P80-Series-12-Neo-Subwoofer-8-Ohm-253-007
+datasheet_url: https://www.parts-express.com/pedocs/specs/253-007--12p80ndv2-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Beyma-12P80Nd-V2-P80-Series-12-Neo-Subwoofer-8-Ohm-253-007
+frd_url: null
+zma_url: null

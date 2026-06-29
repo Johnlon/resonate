@@ -6,70 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/296-412-aurum-cantus-ac-180f1-specifications-45626.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Aurum-Cantus-AC-180F1-7-Woofer-296-412
 source: https://www.parts-express.com/Aurum-Cantus-AC-180F1-7-Woofer-296-412
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 296-412
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 7.0
-    winner: vendor_page
-    sources:
-      vendor_page: 7.0
-  Sd:  # effective piston area (m²)
-    value: 0.0168
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0168
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00189
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00189
-  Xmax:  # one-way linear excursion (m)
-    value: 0.006
-    winner: vendor_page
-    sources:
-      vendor_page: 0.006
-  Qes:  # electrical Q factor
-    value: 0.36
-    winner: vendor_page
-    sources:
-      vendor_page: 0.36
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.0151979407797052
-    winner: vendor_page
-    sources:
-      vendor_page: 1.0151979407797052
-  BL:  # force factor (T·m)
-    value: 7.2
-    winner: vendor_page
-    sources:
-      vendor_page: 7.2
-  Qts:  # total Q factor
-    value: 0.32
-    winner: vendor_page
-    sources:
-      vendor_page: 0.32
-  Qms:  # mechanical Q factor
-    value: 3.05
-    winner: vendor_page
-    sources:
-      vendor_page: 3.05
   Le:  # voice coil inductance (H)
     value: 0.00048
     winner: vendor_page
     sources:
       vendor_page: 0.00048
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.076
+    winner: vendor_page
+    sources:
+      vendor_page: 0.076
+  Qes:  # electrical Q factor
+    value: 0.36
+    winner: vendor_page
+    sources:
+      vendor_page: 0.36
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0154
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0154
+  BL:  # force factor (T·m)
+    value: 7.2
+    winner: vendor_page
+    sources:
+      vendor_page: 7.2
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.0
+    winner: vendor_page
+    sources:
+      vendor_page: 7.0
   Pe:  # rated power input (W)
     value: 100.0
     winner: vendor_page
@@ -80,21 +52,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 32.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.076
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.0151979407797052
     winner: vendor_page
     sources:
-      vendor_page: 0.076
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0154
+      vendor_page: 1.0151979407797052
+  Xmax:  # one-way linear excursion (m)
+    value: 0.006
     winner: vendor_page
     sources:
-      vendor_page: 0.0154
+      vendor_page: 0.006
+  Qts:  # total Q factor
+    value: 0.32
+    winner: vendor_page
+    sources:
+      vendor_page: 0.32
+  Qms:  # mechanical Q factor
+    value: 3.05
+    winner: vendor_page
+    sources:
+      vendor_page: 3.05
+  Sd:  # effective piston area (m²)
+    value: 0.0168
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0168
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00189
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00189
   freq_low_hz:  # published lower frequency limit (Hz)
     value: 2019.1
     winner: vendor_page
@@ -108,3 +100,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/296-412-aurum-cantus-ac-180f1-specifications-45626.pdf
   vendor_page: https://www.parts-express.com/Aurum-Cantus-AC-180F1-7-Woofer-296-412
+datasheet_url: https://www.parts-express.com/pedocs/specs/296-412-aurum-cantus-ac-180f1-specifications-45626.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Aurum-Cantus-AC-180F1-7-Woofer-296-412
+frd_url: null
+zma_url: null

@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/290-379-goldwood-gw-80038-specifications-44700.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Goldwood-GW-8003-8-8-Full-Range-Driver-w-Whizzer-290-379
 source: https://www.parts-express.com/Goldwood-GW-8003-8-8-Full-Range-Driver-w-Whizzer-290-379
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 7.3
-    winner: vendor_page
-    sources:
-      vendor_page: 7.3
-  Sd:  # effective piston area (m²)
-    value: 0.021408
-    winner: vendor_page
-    sources:
-      vendor_page: 0.021408
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00069
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00069
-  Xmax:  # one-way linear excursion (m)
-    value: 0.002
-    winner: vendor_page
-    sources:
-      vendor_page: 0.002
-  Qes:  # electrical Q factor
-    value: 1.04
-    winner: vendor_page
-    sources:
-      vendor_page: 1.04
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.7114385242280497
-    winner: vendor_page
-    sources:
-      vendor_page: 1.7114385242280497
-  BL:  # force factor (T·m)
-    value: 6.26
-    winner: vendor_page
-    sources:
-      vendor_page: 6.26
-  Qts:  # total Q factor
-    value: 0.79
-    winner: vendor_page
-    sources:
-      vendor_page: 0.79
-  Qms:  # mechanical Q factor
-    value: 3.23
-    winner: vendor_page
-    sources:
-      vendor_page: 3.23
   Le:  # voice coil inductance (H)
     value: 0.00062
     winner: vendor_page
     sources:
       vendor_page: 0.00062
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.044457376
+    winner: vendor_page
+    sources:
+      vendor_page: 0.044457376
+  Qes:  # electrical Q factor
+    value: 1.04
+    winner: vendor_page
+    sources:
+      vendor_page: 1.04
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0212
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0212
+  BL:  # force factor (T·m)
+    value: 6.26
+    winner: vendor_page
+    sources:
+      vendor_page: 6.26
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.3
+    winner: vendor_page
+    sources:
+      vendor_page: 7.3
   Pe:  # rated power input (W)
     value: 130.0
     winner: vendor_page
@@ -76,31 +51,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 41.5
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.044457376
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.7114385242280497
     winner: vendor_page
     sources:
-      vendor_page: 0.044457376
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0212
+      vendor_page: 1.7114385242280497
+  Xmax:  # one-way linear excursion (m)
+    value: 0.002
     winner: vendor_page
     sources:
-      vendor_page: 0.0212
+      vendor_page: 0.002
+  Qts:  # total Q factor
+    value: 0.79
+    winner: vendor_page
+    sources:
+      vendor_page: 0.79
+  Qms:  # mechanical Q factor
+    value: 3.23
+    winner: vendor_page
+    sources:
+      vendor_page: 3.23
+  Sd:  # effective piston area (m²)
+    value: 0.021408
+    winner: vendor_page
+    sources:
+      vendor_page: 0.021408
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 28.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00069
     winner: vendor_page
     sources:
-      vendor_page: 28.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 20000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 20000.0
+      vendor_page: 0.00069
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/290-379-goldwood-gw-80038-specifications-44700.pdf
   vendor_page: https://www.parts-express.com/Goldwood-GW-8003-8-8-Full-Range-Driver-w-Whizzer-290-379
+datasheet_url: https://www.parts-express.com/pedocs/specs/290-379-goldwood-gw-80038-specifications-44700.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Goldwood-GW-8003-8-8-Full-Range-Driver-w-Whizzer-290-379
+frd_url: null
+zma_url: null

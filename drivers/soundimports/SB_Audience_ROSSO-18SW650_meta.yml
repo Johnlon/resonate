@@ -4,67 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/sb-audience-rosso-18sw650.html
 source: https://www.soundimports.eu/en/sb-audience-rosso-18sw650.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.0
-    winner: vendor_page
-    sources:
-      vendor_page: 5.0
-  Sd:  # effective piston area (m²)
-    value: 0.12441
-    winner: vendor_page
-    sources:
-      vendor_page: 0.12441
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00014
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00014
-  Xmax:  # one-way linear excursion (m)
-    value: 0.01118
-    winner: vendor_page
-    sources:
-      vendor_page: 0.01118
-  Qes:  # electrical Q factor
-    value: 0.44
-    winner: vendor_page
-    sources:
-      vendor_page: 0.44
-  Rms:  # mechanical resistance (kg/s)
-    value: 4.44
-    winner: vendor_page
-    sources:
-      vendor_page: 4.44
-  BL:  # force factor (T·m)
-    value: 20.6
-    winner: vendor_page
-    sources:
-      vendor_page: 20.6
-  Qts:  # total Q factor
-    value: 0.41
-    winner: vendor_page
-    sources:
-      vendor_page: 0.41
-  Qms:  # mechanical Q factor
-    value: 8.32
-    winner: vendor_page
-    sources:
-      vendor_page: 8.32
   Le:  # voice coil inductance (H)
     value: 0.0014
     winner: vendor_page
     sources:
       vendor_page: 0.0014
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.3043
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3043
+  Qes:  # electrical Q factor
+    value: 0.44
+    winner: vendor_page
+    sources:
+      vendor_page: 0.44
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.1897
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1897
+  BL:  # force factor (T·m)
+    value: 20.6
+    winner: vendor_page
+    sources:
+      vendor_page: 20.6
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
   Pe:  # rated power input (W)
     value: 650.0
     winner: vendor_page
@@ -75,20 +50,45 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 31.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.3043
+  Rms:  # mechanical resistance (kg/s)
+    value: 4.44
     winner: vendor_page
     sources:
-      vendor_page: 0.3043
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.1897
+      vendor_page: 4.44
+  Xmax:  # one-way linear excursion (m)
+    value: 0.01118
     winner: vendor_page
     sources:
-      vendor_page: 0.1897
+      vendor_page: 0.01118
+  Qts:  # total Q factor
+    value: 0.41
+    winner: vendor_page
+    sources:
+      vendor_page: 0.41
+  Qms:  # mechanical Q factor
+    value: 8.32
+    winner: vendor_page
+    sources:
+      vendor_page: 8.32
+  Sd:  # effective piston area (m²)
+    value: 0.12441
+    winner: vendor_page
+    sources:
+      vendor_page: 0.12441
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00014
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00014
 _sources:
   vendor_page: https://www.soundimports.eu/en/sb-audience-rosso-18sw650.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/sb-audience-rosso-18sw650.html
+frd_url: null
+zma_url: null

@@ -5,75 +5,53 @@ detail: 'Automatically scraped from Scan-Speak website. T/S parameters not human
 corrections: null
 reviewed_by: null
 driver_type: tweeter
-series: Discovery
 nominal_size_cm: 2.6
-datasheet: https://www.scan-speak.dk/datasheet/pdf/d2606-920000.pdf
-adv_datasheet: https://www.scan-speak.dk/datasheet/adv/d2606-920000.pdf
-drawing: https://www.scan-speak.dk/datasheet/drw/d2606-920000.png
-cad: https://www.scan-speak.dk/datasheet/3d/d2606-920000.ZIP
-manu_page: https://www.scan-speak.dk/product/d2606-920000/
-vendor_page: null
 source: https://www.scan-speak.dk/product/d2606-920000/
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
-datasheet_fields:
-- BL
-- Cms
-- Fs
-- Le
-- Mms
-- Qes
-- Qms
-- Qts
-- SPL
-- Sd
-- Vas
-- Xmax
-- Znom
-adv_datasheet_fields: null
-manu_page_fields:
-- BL
-- Fs
-- Qts
-- Re
-- SPL
-- Sd
-- Vas
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 4.6
+  Le:  # voice coil inductance (H)
+    value: 4.0e-05
     winner: manu_page
     sources:
-      manu_page: 4.6
-  Sd:  # effective piston area (m²)
-    value: 0.00071
+      manu_page: 4.0e-05
+  Vas:  # equivalent acoustic volume (m³)
+    value: 1.0e-05
     winner: manu_page
     sources:
-      manu_page: 0.00071
-  Cms:  # mechanical compliance (m/N)
-    value: 7.0e-05
-    winner: manu_page
-    sources:
-      manu_page: 7.0e-05
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0002
-    winner: manu_page
-    sources:
-      manu_page: 0.0002
+      manu_page: 1.0e-05
   Qes:  # electrical Q factor
     value: 1.31
     winner: manu_page
     sources:
       manu_page: 1.31
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00039
+    winner: manu_page
+    sources:
+      manu_page: 0.00039
   BL:  # force factor (T·m)
     value: 2.7
     winner: manu_page
     sources:
       manu_page: 2.7
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.6
+    winner: manu_page
+    sources:
+      manu_page: 4.6
+  Fs:  # free air resonance (Hz)
+    value: 1100.0
+    winner: manu_page
+    sources:
+      manu_page: 1100.0
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0002
+    winner: manu_page
+    sources:
+      manu_page: 0.0002
   Qts:  # total Q factor
     value: 0.84
     winner: manu_page
@@ -84,47 +62,35 @@ specs:
     winner: manu_page
     sources:
       manu_page: 2.36
-  SPL:  # sensitivity (dB, 2.83 V/1 m)
-    value: 91.5
+  Sd:  # effective piston area (m²)
+    value: 0.00071
     winner: manu_page
     sources:
-      manu_page: 91.5
-  Le:  # voice coil inductance (H)
-    value: 4.0e-05
-    winner: manu_page
-    sources:
-      manu_page: 4.0e-05
-  Fs:  # free air resonance (Hz)
-    value: 1100.0
-    winner: manu_page
-    sources:
-      manu_page: 1100.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 1.0e-05
-    winner: manu_page
-    sources:
-      manu_page: 1.0e-05
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.00039
-    winner: manu_page
-    sources:
-      manu_page: 0.00039
+      manu_page: 0.00071
   Znom:  # nominal impedance (Ω)
     value: 6.0
     winner: manu_page
     sources:
       manu_page: 6.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 2500.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 91.5
     winner: manu_page
     sources:
-      manu_page: 2500.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 20000.0
+      manu_page: 91.5
+  Cms:  # mechanical compliance (m/N)
+    value: 7.0e-05
     winner: manu_page
     sources:
-      manu_page: 20000.0
+      manu_page: 7.0e-05
 _sources:
   datasheet: https://www.scan-speak.dk/datasheet/pdf/d2606-920000.pdf
   adv_datasheet: https://www.scan-speak.dk/datasheet/adv/d2606-920000.pdf
   manu_page: https://www.scan-speak.dk/product/d2606-920000/
+datasheet_url: https://www.scan-speak.dk/datasheet/pdf/d2606-920000.pdf
+adv_datasheet_url: https://www.scan-speak.dk/datasheet/adv/d2606-920000.pdf
+drawing_url: https://www.scan-speak.dk/datasheet/drw/d2606-920000.png
+cad_url: https://www.scan-speak.dk/datasheet/3d/d2606-920000.ZIP
+manu_page_url: https://www.scan-speak.dk/product/d2606-920000/
+vendor_page_url: null
+frd_url: null
+zma_url: null

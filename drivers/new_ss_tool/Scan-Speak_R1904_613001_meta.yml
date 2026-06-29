@@ -5,73 +5,53 @@ detail: 'Automatically scraped from Scan-Speak website. T/S parameters not human
 corrections: null
 reviewed_by: null
 driver_type: tweeter, automotive
-series: Automotive
 nominal_size_cm: 1.9
-datasheet: https://www.scan-speak.dk/datasheet/pdf/r1904-613001.pdf
-adv_datasheet: https://www.scan-speak.dk/datasheet/adv/r1904-613001.pdf
-drawing: https://www.scan-speak.dk/datasheet/drw/r1904-613001.png
-cad: https://www.scan-speak.dk/datasheet/3d/r1904-613001.ZIP
-manu_page: https://www.scan-speak.dk/product/r1904-613001/
-vendor_page: null
 source: https://www.scan-speak.dk/product/r1904-613001/
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
-datasheet_fields:
-- BL
-- Cms
-- Fs
-- Le
-- Mms
-- Qes
-- Qms
-- Qts
-- SPL
-- Sd
-- Vas
-- Xmax
-adv_datasheet_fields: null
-manu_page_fields:
-- BL
-- Fs
-- Qts
-- Re
-- SPL
-- Sd
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 2.7
+  Le:  # voice coil inductance (H)
+    value: 2.0e-05
     winner: manu_page
     sources:
-      manu_page: 2.7
-  Sd:  # effective piston area (m²)
-    value: 0.00038
+      manu_page: 2.0e-05
+  Vas:  # equivalent acoustic volume (m³)
+    value: 2.0e-06
     winner: manu_page
     sources:
-      manu_page: 0.00038
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00011
-    winner: manu_page
-    sources:
-      manu_page: 0.00011
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0001
-    winner: manu_page
-    sources:
-      manu_page: 0.0001
+      manu_page: 2.0e-06
   Qes:  # electrical Q factor
     value: 2.02
     winner: manu_page
     sources:
       manu_page: 2.02
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00023
+    winner: manu_page
+    sources:
+      manu_page: 0.00023
   BL:  # force factor (T·m)
     value: 1.4
     winner: manu_page
     sources:
       manu_page: 1.4
+  Re:  # DC voice coil resistance (Ω)
+    value: 2.7
+    winner: manu_page
+    sources:
+      manu_page: 2.7
+  Fs:  # free air resonance (Hz)
+    value: 1000.0
+    winner: manu_page
+    sources:
+      manu_page: 1000.0
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0001
+    winner: manu_page
+    sources:
+      manu_page: 0.0001
   Qts:  # total Q factor
     value: 1.61
     winner: manu_page
@@ -82,42 +62,30 @@ specs:
     winner: manu_page
     sources:
       manu_page: 8.03
+  Sd:  # effective piston area (m²)
+    value: 0.00038
+    winner: manu_page
+    sources:
+      manu_page: 0.00038
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 87.0
     winner: manu_page
     sources:
       manu_page: 87.0
-  Le:  # voice coil inductance (H)
-    value: 2.0e-05
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00011
     winner: manu_page
     sources:
-      manu_page: 2.0e-05
-  Fs:  # free air resonance (Hz)
-    value: 1000.0
-    winner: manu_page
-    sources:
-      manu_page: 1000.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 2.0e-06
-    winner: manu_page
-    sources:
-      manu_page: 2.0e-06
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.00023
-    winner: manu_page
-    sources:
-      manu_page: 0.00023
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 3500.0
-    winner: manu_page
-    sources:
-      manu_page: 3500.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 20000.0
-    winner: manu_page
-    sources:
-      manu_page: 20000.0
+      manu_page: 0.00011
 _sources:
   datasheet: https://www.scan-speak.dk/datasheet/pdf/r1904-613001.pdf
   adv_datasheet: https://www.scan-speak.dk/datasheet/adv/r1904-613001.pdf
   manu_page: https://www.scan-speak.dk/product/r1904-613001/
+datasheet_url: https://www.scan-speak.dk/datasheet/pdf/r1904-613001.pdf
+adv_datasheet_url: https://www.scan-speak.dk/datasheet/adv/r1904-613001.pdf
+drawing_url: https://www.scan-speak.dk/datasheet/drw/r1904-613001.png
+cad_url: https://www.scan-speak.dk/datasheet/3d/r1904-613001.ZIP
+manu_page_url: https://www.scan-speak.dk/product/r1904-613001/
+vendor_page_url: null
+frd_url: null
+zma_url: null

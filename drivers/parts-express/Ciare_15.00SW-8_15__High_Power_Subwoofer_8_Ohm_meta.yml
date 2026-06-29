@@ -4,63 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/293-166--ciare-15.00sw-8-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Ciare-15.00SW-8-15-High-Power-Subwoofer-8-Ohm-293-166
 source: https://www.parts-express.com/Ciare-15.00SW-8-15-High-Power-Subwoofer-8-Ohm-293-166
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: true
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.75
-    winner: vendor_page
-    sources:
-      vendor_page: 6.75
-  Sd:  # effective piston area (m²)
-    value: 0.078
-    winner: vendor_page
-    sources:
-      vendor_page: 0.078
-  Xmax:  # one-way linear excursion (m)
-    value: 0.014
-    winner: vendor_page
-    sources:
-      vendor_page: 0.014
-  Qes:  # electrical Q factor
-    value: 0.44
-    winner: vendor_page
-    sources:
-      vendor_page: 0.44
-  Rms:  # mechanical resistance (kg/s)
-    value: 7.158343260679601
-    winner: vendor_page
-    sources:
-      vendor_page: 7.158343260679601
-  BL:  # force factor (T·m)
-    value: 25.0
-    winner: vendor_page
-    sources:
-      vendor_page: 25.0
-  Qts:  # total Q factor
-    value: 0.41
-    winner: vendor_page
-    sources:
-      vendor_page: 0.41
-  Qms:  # mechanical Q factor
-    value: 5.6
-    winner: vendor_page
-    sources:
-      vendor_page: 5.6
   Le:  # voice coil inductance (H)
     value: 0.0024
     winner: vendor_page
     sources:
       vendor_page: 0.0024
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.111001856
+    winner: vendor_page
+    sources:
+      vendor_page: 0.111001856
+  Qes:  # electrical Q factor
+    value: 0.44
+    winner: vendor_page
+    sources:
+      vendor_page: 0.44
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.22
+    winner: vendor_page
+    sources:
+      vendor_page: 0.22
+  BL:  # force factor (T·m)
+    value: 25.0
+    winner: vendor_page
+    sources:
+      vendor_page: 25.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.75
+    winner: vendor_page
+    sources:
+      vendor_page: 6.75
   Pe:  # rated power input (W)
     value: 1000.0
     winner: vendor_page
@@ -71,31 +51,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 29.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.111001856
+  Rms:  # mechanical resistance (kg/s)
+    value: 7.158343260679601
     winner: vendor_page
     sources:
-      vendor_page: 0.111001856
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.22
+      vendor_page: 7.158343260679601
+  Xmax:  # one-way linear excursion (m)
+    value: 0.014
     winner: vendor_page
     sources:
-      vendor_page: 0.22
+      vendor_page: 0.014
+  Qts:  # total Q factor
+    value: 0.41
+    winner: vendor_page
+    sources:
+      vendor_page: 0.41
+  Qms:  # mechanical Q factor
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
+  Sd:  # effective piston area (m²)
+    value: 0.078
+    winner: vendor_page
+    sources:
+      vendor_page: 0.078
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 20.0
-    winner: vendor_page
-    sources:
-      vendor_page: 20.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 200.0
-    winner: vendor_page
-    sources:
-      vendor_page: 200.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/293-166--ciare-15.00sw-8-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Ciare-15.00SW-8-15-High-Power-Subwoofer-8-Ohm-293-166
+datasheet_url: https://www.parts-express.com/pedocs/specs/293-166--ciare-15.00sw-8-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Ciare-15.00SW-8-15-High-Power-Subwoofer-8-Ohm-293-166
+frd_url: null
+zma_url: null

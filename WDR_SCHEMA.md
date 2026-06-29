@@ -455,8 +455,9 @@ the _meta.yml captures the complete multi-component spec set while the WDR conta
 primary component (e.g., woofer T/S for a coaxial).
 
 **Example:** A coaxial driver SB12PFC25-4-COAX has two acoustic components:
+
 - **WDR file** (`SB12PFC25-4-COAX.wdr`): Woofer T/S only (Fs=58 Hz, Qts=0.33, Vas=4.8L, etc.) — for WinISD enclosure design
-- **_meta.yml** (`SB12PFC25-4-COAX_meta.yml`): Complete metadata including both woofer and tweeter T/S under `specs.woofer` and `specs.tweeter` keys — the human-readable record
+- **\_meta.yml** (`SB12PFC25-4-COAX_meta.yml`): Complete metadata including both woofer and tweeter T/S under `specs.woofer` and `specs.tweeter` keys — the human-readable record
 
 **Schema and field definitions:** `scripts/wdr_meta_schema.py` — `MetaModel` (Pydantic v2).
 That file is the single source of truth. Reading it IS reading the `_meta.yml` schema.
@@ -471,35 +472,48 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: 18.0
-datasheet: https://www.scan-speak.dk/datasheet/pdf/18we-4542t00.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: https://www.scan-speak.dk/product/18we-4542t00/
-vendor_page: null
 source: https://www.scan-speak.dk/product/18we-4542t00/
-frd: null
-impedance: null
+datasheet_url: https://www.scan-speak.dk/datasheet/pdf/18we-4542t00.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: https://www.scan-speak.dk/product/18we-4542t00/
+vendor_page_url: null
+frd_url: null
+zma_url: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
-field_provenance:
-  Fs:
-    sources: { html: 46.0, pdf: 46.0 }
-    winner: html
-  Re:
-    sources: { html: 3.4, pdf: 3.49 }
-    winner: html
-  BL:
-    sources: { html: 8.1, pdf: 8.1 }
-    winner: html
-  Qms:
-    sources: { pdf: 5.62 }
-    winner: pdf
-freq_low_hz: null
-freq_high_hz: null
-specs: null
+_sources:
+  datasheet: https://www.scan-speak.dk/datasheet/pdf/18we-4542t00.pdf
+  manu_page: https://www.scan-speak.dk/product/18we-4542t00/
+specs:
+  Fs: # free air resonance (Hz)
+    value: 46.0
+    winner: manu_page
+    sources:
+      manu_page: 46.0
+      datasheet: 46.0
+  Re: # DC voice coil resistance (Ω)
+    value: 3.4
+    winner: manu_page
+    sources:
+      manu_page: 3.4
+      datasheet: 3.49
+    note: Datasheet value differs (3.49 Ω); manu_page wins per html_wins=True
+  BL: # force factor (T·m)
+    value: 8.1
+    winner: manu_page
+    sources:
+      manu_page: 8.1
+      datasheet: 8.1
+  Qms: # mechanical Q factor
+    value: 5.62
+    winner: datasheet
+    sources:
+      datasheet: 5.62
+    note: Not in manu_page; value from datasheet
 ```
 
 **Example 2 — coaxial driver with separate woofer/tweeter specs** (`drivers/sb-acoustics/SB_Acoustics_SB12PFC25-4-COAX_meta.yml`):
@@ -510,29 +524,29 @@ issue: scraped_not_human_verified
 detail: Coaxial driver. WDR contains woofer T/S only. Tweeter specs captured in specs.tweeter.
 driver_type: coaxial
 nominal_size_cm: 10.0
-datasheet: https://sbacoustics.com/wp-content/uploads/2020/11/4in-SB12PFC25-4-COAX-OEM-only.pdf
-manu_page: https://sbacoustics.com/product/4in-sb12pfc25-4-coax-paper/
 source: https://sbacoustics.com/product/4in-sb12pfc25-4-coax-paper/
+datasheet_url: https://sbacoustics.com/wp-content/uploads/2020/11/4in-SB12PFC25-4-COAX-OEM-only.pdf
+manu_page_url: https://sbacoustics.com/product/4in-sb12pfc25-4-coax-paper/
 specs:
   woofer:
-    Fs: 58              # Informational comment: Hz
-    Qts: 0.33           # Informational comment: dimensionless
+    Fs: 58 # Informational comment: Hz
+    Qts: 0.33 # Informational comment: dimensionless
     Qms: 4.07
     Qes: 0.36
-    Mms: 0.0045         # Informational comment: kg (4.5 g)
-    Cms: 0.00166        # Informational comment: m/N (1.66 mm/N)
-    Sd: 0.0045          # Informational comment: m² (45 cm²)
-    Vas: 0.0048         # Informational comment: m³ (4.8 liters)
-    BL: 3.8             # Informational comment: T·m
-    Re: 3.1             # Informational comment: Ω
-    Le: 0.00026         # Informational comment: H (0.26 mH)
-    Pe: 30              # Informational comment: W
-    sensitivity_dB: 87  # Informational comment: dB @ 2.83V/1m
+    Mms: 0.0045 # Informational comment: kg (4.5 g)
+    Cms: 0.00166 # Informational comment: m/N (1.66 mm/N)
+    Sd: 0.0045 # Informational comment: m² (45 cm²)
+    Vas: 0.0048 # Informational comment: m³ (4.8 liters)
+    BL: 3.8 # Informational comment: T·m
+    Re: 3.1 # Informational comment: Ω
+    Le: 0.00026 # Informational comment: H (0.26 mH)
+    Pe: 30 # Informational comment: W
+    sensitivity_dB: 87 # Informational comment: dB @ 2.83V/1m
   tweeter:
-    Fs: 1300            # Informational comment: Hz
-    Pe: 10              # Informational comment: W
-    sensitivity_dB: 89  # Informational comment: dB @ 2.83V/1m
-    Re: 3.0             # Informational comment: Ω
+    Fs: 1300 # Informational comment: Hz
+    Pe: 10 # Informational comment: W
+    sensitivity_dB: 89 # Informational comment: dB @ 2.83V/1m
+    Re: 3.0 # Informational comment: Ω
 ```
 
 **Units convention:** All values in `specs:` use SI units (Hz, Ω, H, T·m, kg, m², m³, m/N, W, dB), same as WDR fields (see §3 and §6). Inline YAML comments are **informational only** — they show the unit and (optionally) the equivalent in datasheet units for human readability. The comments are not part of the data model.

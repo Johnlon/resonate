@@ -6,45 +6,27 @@ corrections: null
 reviewed_by: null
 driver_type: tweeter
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-1034--tymphany-ne25vts-04-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Peerless-NE25VTS-04-1-Silk-Dome-Tweeter-264-1034
 source: https://www.parts-express.com/Peerless-NE25VTS-04-1-Silk-Dome-Tweeter-264-1034
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd
 community: null
 fetched_sku: 264-1034
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.15
-    winner: vendor_page
-    sources:
-      vendor_page: 3.15
-  Qes:  # electrical Q factor
-    value: 1.12
-    winner: vendor_page
-    sources:
-      vendor_page: 1.12
-  Qts:  # total Q factor
-    value: 0.89
-    winner: vendor_page
-    sources:
-      vendor_page: 0.89
-  Qms:  # mechanical Q factor
-    value: 4.41
-    winner: vendor_page
-    sources:
-      vendor_page: 4.41
   Le:  # voice coil inductance (H)
     value: 1.0e-05
     winner: vendor_page
     sources:
       vendor_page: 1.0e-05
+  Qes:  # electrical Q factor
+    value: 1.12
+    winner: vendor_page
+    sources:
+      vendor_page: 1.12
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.15
+    winner: vendor_page
+    sources:
+      vendor_page: 3.15
   Pe:  # rated power input (W)
     value: 80.0
     winner: vendor_page
@@ -55,6 +37,16 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 732.9
+  Qts:  # total Q factor
+    value: 0.89
+    winner: vendor_page
+    sources:
+      vendor_page: 0.89
+  Qms:  # mechanical Q factor
+    value: 4.41
+    winner: vendor_page
+    sources:
+      vendor_page: 4.41
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
@@ -63,3 +55,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-1034--tymphany-ne25vts-04-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Peerless-NE25VTS-04-1-Silk-Dome-Tweeter-264-1034
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-1034--tymphany-ne25vts-04-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Peerless-NE25VTS-04-1-Silk-Dome-Tweeter-264-1034
+frd_url: null
+zma_url: null

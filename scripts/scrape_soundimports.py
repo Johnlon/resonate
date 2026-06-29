@@ -240,7 +240,7 @@ def parse_product(html: str, url: str) -> dict | None:
         "manufacturer": brand,
         "provided_by":  "SoundImports (scraped via soundimports.eu)",
         "fields":       fields,
-        "pdf_url":      pdf_url,
+        "datasheet_url":    pdf_url,
         "extra_links":  [lnk[0] for lnk in extra],
     }
 

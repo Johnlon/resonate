@@ -6,70 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/294-2761--prv-audio-69mr500-php-4-specifications.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/PRV-Audio-69MR500PhP-4-6-x-9-Midrange-Loudspeaker-4-Ohm-294-2761
 source: https://www.parts-express.com/PRV-Audio-69MR500PhP-4-6-x-9-Midrange-Loudspeaker-4-Ohm-294-2761
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-2761
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.7
-    winner: vendor_page
-    sources:
-      vendor_page: 3.7
-  Sd:  # effective piston area (m²)
-    value: 0.0231
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0231
-  Cms:  # mechanical compliance (m/N)
-    value: 0.01516
-    winner: vendor_page
-    sources:
-      vendor_page: 0.01516
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00287
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00287
-  Qes:  # electrical Q factor
-    value: 0.68
-    winner: vendor_page
-    sources:
-      vendor_page: 0.68
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.5991514535486248
-    winner: vendor_page
-    sources:
-      vendor_page: 0.5991514535486248
-  BL:  # force factor (T·m)
-    value: 6.8
-    winner: vendor_page
-    sources:
-      vendor_page: 6.8
-  Qts:  # total Q factor
-    value: 0.65
-    winner: vendor_page
-    sources:
-      vendor_page: 0.65
-  Qms:  # mechanical Q factor
-    value: 14.2
-    winner: vendor_page
-    sources:
-      vendor_page: 14.2
   Le:  # voice coil inductance (H)
     value: 0.00014000000000000001
     winner: vendor_page
     sources:
       vendor_page: 0.00014000000000000001
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.015291072000000001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.015291072000000001
+  Qes:  # electrical Q factor
+    value: 0.68
+    winner: vendor_page
+    sources:
+      vendor_page: 0.68
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.01476
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01476
+  BL:  # force factor (T·m)
+    value: 6.8
+    winner: vendor_page
+    sources:
+      vendor_page: 6.8
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.7
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7
   Pe:  # rated power input (W)
     value: 250.0
     winner: vendor_page
@@ -80,21 +52,49 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 91.74
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.015291072000000001
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.5991514535486248
     winner: vendor_page
     sources:
-      vendor_page: 0.015291072000000001
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.01476
+      vendor_page: 0.5991514535486248
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00287
     winner: vendor_page
     sources:
-      vendor_page: 0.01476
+      vendor_page: 0.00287
+  Qts:  # total Q factor
+    value: 0.65
+    winner: vendor_page
+    sources:
+      vendor_page: 0.65
+  Qms:  # mechanical Q factor
+    value: 14.2
+    winner: vendor_page
+    sources:
+      vendor_page: 14.2
+  Sd:  # effective piston area (m²)
+    value: 0.0231
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0231
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.01516
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01516
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/294-2761--prv-audio-69mr500-php-4-specifications.pdf
   vendor_page: https://www.parts-express.com/PRV-Audio-69MR500PhP-4-6-x-9-Midrange-Loudspeaker-4-Ohm-294-2761
+datasheet_url: https://www.parts-express.com/pedocs/specs/294-2761--prv-audio-69mr500-php-4-specifications.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/PRV-Audio-69MR500PhP-4-6-x-9-Midrange-Loudspeaker-4-Ohm-294-2761
+frd_url: null
+zma_url: null

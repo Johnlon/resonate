@@ -4,62 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/dayton-audio-mx5-22.html
 source: https://www.soundimports.eu/en/dayton-audio-mx5-22.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 4.3
-    winner: vendor_page
-    sources:
-      vendor_page: 4.3
-  Sd:  # effective piston area (m²)
-    value: 0.00844
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00844
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00048
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00048
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0093
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0093
-  Qes:  # electrical Q factor
-    value: 0.5
-    winner: vendor_page
-    sources:
-      vendor_page: 0.5
-  BL:  # force factor (T·m)
-    value: 8.0
-    winner: vendor_page
-    sources:
-      vendor_page: 8.0
-  Qts:  # total Q factor
-    value: 0.43
-    winner: vendor_page
-    sources:
-      vendor_page: 0.43
-  Qms:  # mechanical Q factor
-    value: 3.02
-    winner: vendor_page
-    sources:
-      vendor_page: 3.02
   Le:  # voice coil inductance (H)
     value: 0.0011
     winner: vendor_page
     sources:
       vendor_page: 0.0011
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0049
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0049
+  Qes:  # electrical Q factor
+    value: 0.5
+    winner: vendor_page
+    sources:
+      vendor_page: 0.5
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.026
+    winner: vendor_page
+    sources:
+      vendor_page: 0.026
+  BL:  # force factor (T·m)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.3
+    winner: vendor_page
+    sources:
+      vendor_page: 4.3
   Pe:  # rated power input (W)
     value: 50.0
     winner: vendor_page
@@ -70,21 +50,36 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 45.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0049
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0093
     winner: vendor_page
     sources:
-      vendor_page: 0.0049
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.026
+      vendor_page: 0.0093
+  Qts:  # total Q factor
+    value: 0.43
     winner: vendor_page
     sources:
-      vendor_page: 0.026
+      vendor_page: 0.43
+  Qms:  # mechanical Q factor
+    value: 3.02
+    winner: vendor_page
+    sources:
+      vendor_page: 3.02
+  Sd:  # effective piston area (m²)
+    value: 0.00844
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00844
   Znom:  # nominal impedance (Ω)
     value: 2.0
     winner: vendor_page
     sources:
       vendor_page: 2.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00048
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00048
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 84.3
     winner: vendor_page
@@ -107,3 +102,8 @@ specs:
       vendor_page: 32.0
 _sources:
   vendor_page: https://www.soundimports.eu/en/dayton-audio-mx5-22.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/dayton-audio-mx5-22.html
+frd_url: null
+zma_url: null

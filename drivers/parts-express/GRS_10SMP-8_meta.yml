@@ -6,70 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/292-872--grs-10smp-8-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/GRS-10-Woofer-Surface-Mount-Poly-Cone-8-Ohm-10SMP-8-292-872
 source: https://www.parts-express.com/GRS-10-Woofer-Surface-Mount-Poly-Cone-8-Ohm-10SMP-8-292-872
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 292-872
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.1
-    winner: vendor_page
-    sources:
-      vendor_page: 6.1
-  Sd:  # effective piston area (m²)
-    value: 0.034
-    winner: vendor_page
-    sources:
-      vendor_page: 0.034
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00049
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00049
-  Xmax:  # one-way linear excursion (m)
-    value: 0.005
-    winner: vendor_page
-    sources:
-      vendor_page: 0.005
-  Qes:  # electrical Q factor
-    value: 0.73
-    winner: vendor_page
-    sources:
-      vendor_page: 0.73
-  Rms:  # mechanical resistance (kg/s)
-    value: 4.041801748509341
-    winner: vendor_page
-    sources:
-      vendor_page: 4.041801748509341
-  BL:  # force factor (T·m)
-    value: 9.6
-    winner: vendor_page
-    sources:
-      vendor_page: 9.6
-  Qts:  # total Q factor
-    value: 0.58
-    winner: vendor_page
-    sources:
-      vendor_page: 0.58
-  Qms:  # mechanical Q factor
-    value: 2.75
-    winner: vendor_page
-    sources:
-      vendor_page: 2.75
   Le:  # voice coil inductance (H)
     value: 0.00046
     winner: vendor_page
     sources:
       vendor_page: 0.00046
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.081
+    winner: vendor_page
+    sources:
+      vendor_page: 0.081
+  Qes:  # electrical Q factor
+    value: 0.73
+    winner: vendor_page
+    sources:
+      vendor_page: 0.73
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.061
+    winner: vendor_page
+    sources:
+      vendor_page: 0.061
+  BL:  # force factor (T·m)
+    value: 9.6
+    winner: vendor_page
+    sources:
+      vendor_page: 9.6
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.1
+    winner: vendor_page
+    sources:
+      vendor_page: 6.1
   Pe:  # rated power input (W)
     value: 70.0
     winner: vendor_page
@@ -80,31 +52,49 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 29.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.081
+  Rms:  # mechanical resistance (kg/s)
+    value: 4.041801748509341
     winner: vendor_page
     sources:
-      vendor_page: 0.081
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.061
+      vendor_page: 4.041801748509341
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005
     winner: vendor_page
     sources:
-      vendor_page: 0.061
+      vendor_page: 0.005
+  Qts:  # total Q factor
+    value: 0.58
+    winner: vendor_page
+    sources:
+      vendor_page: 0.58
+  Qms:  # mechanical Q factor
+    value: 2.75
+    winner: vendor_page
+    sources:
+      vendor_page: 2.75
+  Sd:  # effective piston area (m²)
+    value: 0.034
+    winner: vendor_page
+    sources:
+      vendor_page: 0.034
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 24.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00049
     winner: vendor_page
     sources:
-      vendor_page: 24.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 2000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 2000.0
+      vendor_page: 0.00049
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/292-872--grs-10smp-8-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/GRS-10-Woofer-Surface-Mount-Poly-Cone-8-Ohm-10SMP-8-292-872
+datasheet_url: https://www.parts-express.com/pedocs/specs/292-872--grs-10smp-8-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/GRS-10-Woofer-Surface-Mount-Poly-Cone-8-Ohm-10SMP-8-292-872
+frd_url: null
+zma_url: null

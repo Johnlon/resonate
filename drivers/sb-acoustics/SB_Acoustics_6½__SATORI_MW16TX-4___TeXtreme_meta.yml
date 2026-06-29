@@ -5,62 +5,42 @@ detail: Automatically scraped from SB Acoustics website (scraped 2026-06-29). T/
 corrections: null
 reviewed_by: null
 driver_type: null
-datasheet: https://sbacoustics.com/wp-content/uploads/2024/04/6.5in-SATORI-MW16TX-4.pdf
-manu_page: https://sbacoustics.com/product/6-5-satori-mw16tx-4-textreme/
-vendor_page: null
 source: https://sbacoustics.com/product/6-5-satori-mw16tx-4-textreme/
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.4
-    winner: manu_page
-    sources:
-      manu_page: 3.4
-  Sd:  # effective piston area (m²)
-    value: 0.0119
-    winner: manu_page
-    sources:
-      manu_page: 0.0119
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00239
-    winner: manu_page
-    sources:
-      manu_page: 0.00239
-  Xmax:  # one-way linear excursion (m)
-    value: 0.006
-    winner: manu_page
-    sources:
-      manu_page: 0.006
-  Qes:  # electrical Q factor
-    value: 0.29
-    winner: manu_page
-    sources:
-      manu_page: 0.29
-  BL:  # force factor (T·m)
-    value: 5.2
-    winner: manu_page
-    sources:
-      manu_page: 5.2
-  Qts:  # total Q factor
-    value: 0.27
-    winner: manu_page
-    sources:
-      manu_page: 0.27
-  Qms:  # mechanical Q factor
-    value: 5.0
-    winner: manu_page
-    sources:
-      manu_page: 5.0
   Le:  # voice coil inductance (H)
     value: 0.00015
     winner: manu_page
     sources:
       manu_page: 0.00015
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.048
+    winner: manu_page
+    sources:
+      manu_page: 0.048
+  Qes:  # electrical Q factor
+    value: 0.29
+    winner: manu_page
+    sources:
+      manu_page: 0.29
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0126
+    winner: manu_page
+    sources:
+      manu_page: 0.0126
+  BL:  # force factor (T·m)
+    value: 5.2
+    winner: manu_page
+    sources:
+      manu_page: 5.2
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.4
+    winner: manu_page
+    sources:
+      manu_page: 3.4
   Pe:  # rated power input (W)
     value: 60.0
     winner: manu_page
@@ -71,21 +51,36 @@ specs:
     winner: manu_page
     sources:
       manu_page: 29.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.048
+  Xmax:  # one-way linear excursion (m)
+    value: 0.006
     winner: manu_page
     sources:
-      manu_page: 0.048
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0126
+      manu_page: 0.006
+  Qts:  # total Q factor
+    value: 0.27
     winner: manu_page
     sources:
-      manu_page: 0.0126
+      manu_page: 0.27
+  Qms:  # mechanical Q factor
+    value: 5.0
+    winner: manu_page
+    sources:
+      manu_page: 5.0
+  Sd:  # effective piston area (m²)
+    value: 0.0119
+    winner: manu_page
+    sources:
+      manu_page: 0.0119
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: manu_page
     sources:
       manu_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00239
+    winner: manu_page
+    sources:
+      manu_page: 0.00239
   voice_coil_dia_mm:  # voice coil diameter (mm)
     value: 36.0
     winner: manu_page
@@ -104,3 +99,8 @@ specs:
 _sources:
   datasheet: https://sbacoustics.com/wp-content/uploads/2024/04/6.5in-SATORI-MW16TX-4.pdf
   manu_page: https://sbacoustics.com/product/6-5-satori-mw16tx-4-textreme/
+datasheet_url: https://sbacoustics.com/wp-content/uploads/2024/04/6.5in-SATORI-MW16TX-4.pdf
+manu_page_url: https://sbacoustics.com/product/6-5-satori-mw16tx-4-textreme/
+vendor_page_url: null
+frd_url: null
+zma_url: null

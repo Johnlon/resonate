@@ -6,50 +6,32 @@ corrections: null
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/287-020--morel-mdm-55-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Morel-MDM-55-2-1-8-Soft-Dome-Midrange-287-020
 source: https://www.parts-express.com/Morel-MDM-55-2-1-8-Soft-Dome-Midrange-287-020
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 287-020
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.3
-    winner: vendor_page
-    sources:
-      vendor_page: 6.3
-  Sd:  # effective piston area (m²)
-    value: 0.0028
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0028
-  Qes:  # electrical Q factor
-    value: 1.75
-    winner: vendor_page
-    sources:
-      vendor_page: 1.75
-  Qts:  # total Q factor
-    value: 0.68
-    winner: vendor_page
-    sources:
-      vendor_page: 0.68
-  Qms:  # mechanical Q factor
-    value: 1.13
-    winner: vendor_page
-    sources:
-      vendor_page: 1.13
   Le:  # voice coil inductance (H)
     value: 0.00019
     winner: vendor_page
     sources:
       vendor_page: 0.00019
+  Qes:  # electrical Q factor
+    value: 1.75
+    winner: vendor_page
+    sources:
+      vendor_page: 1.75
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0028
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0028
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.3
+    winner: vendor_page
+    sources:
+      vendor_page: 6.3
   Pe:  # rated power input (W)
     value: 200.0
     winner: vendor_page
@@ -60,7 +42,17 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 380.0
-  Mms:  # moving mass incl. air load (kg)
+  Qts:  # total Q factor
+    value: 0.68
+    winner: vendor_page
+    sources:
+      vendor_page: 0.68
+  Qms:  # mechanical Q factor
+    value: 1.13
+    winner: vendor_page
+    sources:
+      vendor_page: 1.13
+  Sd:  # effective piston area (m²)
     value: 0.0028
     winner: vendor_page
     sources:
@@ -73,3 +65,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/287-020--morel-mdm-55-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Morel-MDM-55-2-1-8-Soft-Dome-Midrange-287-020
+datasheet_url: https://www.parts-express.com/pedocs/specs/287-020--morel-mdm-55-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Morel-MDM-55-2-1-8-Soft-Dome-Midrange-287-020
+frd_url: null
+zma_url: null

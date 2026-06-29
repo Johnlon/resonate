@@ -6,70 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: subwoofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/253-075--12br70-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Beyma-12BR70-12-Subwoofer-8-Ohm-253-075
 source: https://www.parts-express.com/Beyma-12BR70-12-Subwoofer-8-Ohm-253-075
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 253-075
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.6
-    winner: vendor_page
-    sources:
-      vendor_page: 5.6
-  Sd:  # effective piston area (m²)
-    value: 0.054
-    winner: vendor_page
-    sources:
-      vendor_page: 0.054
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0034500000000000004
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0034500000000000004
-  Xmax:  # one-way linear excursion (m)
-    value: 0.004
-    winner: vendor_page
-    sources:
-      vendor_page: 0.004
-  Qes:  # electrical Q factor
-    value: 0.56
-    winner: vendor_page
-    sources:
-      vendor_page: 0.56
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.32758243396977205
-    winner: vendor_page
-    sources:
-      vendor_page: 0.32758243396977205
-  BL:  # force factor (T·m)
-    value: 12.1
-    winner: vendor_page
-    sources:
-      vendor_page: 12.1
-  Qts:  # total Q factor
-    value: 0.5
-    winner: vendor_page
-    sources:
-      vendor_page: 0.5
-  Qms:  # mechanical Q factor
-    value: 4.4
-    winner: vendor_page
-    sources:
-      vendor_page: 4.4
   Le:  # voice coil inductance (H)
     value: 31.0
     winner: vendor_page
     sources:
       vendor_page: 31.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.141867168
+    winner: vendor_page
+    sources:
+      vendor_page: 0.141867168
+  Qes:  # electrical Q factor
+    value: 0.56
+    winner: vendor_page
+    sources:
+      vendor_page: 0.56
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0074
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0074
+  BL:  # force factor (T·m)
+    value: 12.1
+    winner: vendor_page
+    sources:
+      vendor_page: 12.1
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
   Pe:  # rated power input (W)
     value: 125.0
     winner: vendor_page
@@ -80,21 +52,49 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 31.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.141867168
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.32758243396977205
     winner: vendor_page
     sources:
-      vendor_page: 0.141867168
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0074
+      vendor_page: 0.32758243396977205
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
     winner: vendor_page
     sources:
-      vendor_page: 0.0074
+      vendor_page: 0.004
+  Qts:  # total Q factor
+    value: 0.5
+    winner: vendor_page
+    sources:
+      vendor_page: 0.5
+  Qms:  # mechanical Q factor
+    value: 4.4
+    winner: vendor_page
+    sources:
+      vendor_page: 4.4
+  Sd:  # effective piston area (m²)
+    value: 0.054
+    winner: vendor_page
+    sources:
+      vendor_page: 0.054
   Znom:  # nominal impedance (Ω)
     value: 35.0
     winner: vendor_page
     sources:
       vendor_page: 35.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0034500000000000004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0034500000000000004
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/253-075--12br70-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Beyma-12BR70-12-Subwoofer-8-Ohm-253-075
+datasheet_url: https://www.parts-express.com/pedocs/specs/253-075--12br70-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Beyma-12BR70-12-Subwoofer-8-Ohm-253-075
+frd_url: null
+zma_url: null

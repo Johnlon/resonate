@@ -4,63 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/294-5996--bc-15ndl88-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/B-C-15NDL88-15-Neodymium-Woofer-294-5996
 source: https://www.parts-express.com/B-C-15NDL88-15-Neodymium-Woofer-294-5996
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.0
-    winner: vendor_page
-    sources:
-      vendor_page: 6.0
-  Sd:  # effective piston area (m²)
-    value: 0.0855
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0855
-  Xmax:  # one-way linear excursion (m)
-    value: 0.008
-    winner: vendor_page
-    sources:
-      vendor_page: 0.008
-  Qes:  # electrical Q factor
-    value: 0.36
-    winner: vendor_page
-    sources:
-      vendor_page: 0.36
-  Rms:  # mechanical resistance (kg/s)
-    value: 4.727839436058082
-    winner: vendor_page
-    sources:
-      vendor_page: 4.727839436058082
-  BL:  # force factor (T·m)
-    value: 20.1
-    winner: vendor_page
-    sources:
-      vendor_page: 20.1
-  Qts:  # total Q factor
-    value: 0.34
-    winner: vendor_page
-    sources:
-      vendor_page: 0.34
-  Qms:  # mechanical Q factor
-    value: 6.1
-    winner: vendor_page
-    sources:
-      vendor_page: 6.1
   Le:  # voice coil inductance (H)
     value: 0.00125
     winner: vendor_page
     sources:
       vendor_page: 0.00125
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.12600976
+    winner: vendor_page
+    sources:
+      vendor_page: 0.12600976
+  Qes:  # electrical Q factor
+    value: 0.36
+    winner: vendor_page
+    sources:
+      vendor_page: 0.36
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.102
+    winner: vendor_page
+    sources:
+      vendor_page: 0.102
+  BL:  # force factor (T·m)
+    value: 20.1
+    winner: vendor_page
+    sources:
+      vendor_page: 20.1
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
   Pe:  # rated power input (W)
     value: 1400.0
     winner: vendor_page
@@ -71,31 +51,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 45.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.12600976
+  Rms:  # mechanical resistance (kg/s)
+    value: 4.727839436058082
     winner: vendor_page
     sources:
-      vendor_page: 0.12600976
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.102
+      vendor_page: 4.727839436058082
+  Xmax:  # one-way linear excursion (m)
+    value: 0.008
     winner: vendor_page
     sources:
-      vendor_page: 0.102
+      vendor_page: 0.008
+  Qts:  # total Q factor
+    value: 0.34
+    winner: vendor_page
+    sources:
+      vendor_page: 0.34
+  Qms:  # mechanical Q factor
+    value: 6.1
+    winner: vendor_page
+    sources:
+      vendor_page: 6.1
+  Sd:  # effective piston area (m²)
+    value: 0.0855
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0855
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 45.0
-    winner: vendor_page
-    sources:
-      vendor_page: 45.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 3000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 3000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/294-5996--bc-15ndl88-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/B-C-15NDL88-15-Neodymium-Woofer-294-5996
+datasheet_url: https://www.parts-express.com/pedocs/specs/294-5996--bc-15ndl88-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/B-C-15NDL88-15-Neodymium-Woofer-294-5996
+frd_url: null
+zma_url: null

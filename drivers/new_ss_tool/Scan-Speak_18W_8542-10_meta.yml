@@ -5,75 +5,53 @@ detail: 'Automatically scraped from Scan-Speak website. T/S parameters not human
 corrections: null
 reviewed_by: null
 driver_type: midwoofer
-series: Classic
 nominal_size_cm: 18.0
-datasheet: https://www.scan-speak.dk/datasheet/pdf/18w-8542-10.pdf
-adv_datasheet: https://www.scan-speak.dk/datasheet/adv/18w-8542-10.pdf
-drawing: https://www.scan-speak.dk/datasheet/drw/18w-8542-10.png
-cad: https://www.scan-speak.dk/datasheet/3d/18w-8542-10.ZIP
-manu_page: https://www.scan-speak.dk/product/18w-8542-10/
-vendor_page: null
 source: https://www.scan-speak.dk/product/18w-8542-10/
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
-datasheet_fields:
-- BL
-- Cms
-- Fs
-- Le
-- Mms
-- Qes
-- Qms
-- Qts
-- Re
-- SPL
-- Sd
-- Vas
-- Xmax
-adv_datasheet_fields: null
-manu_page_fields:
-- BL
-- Fs
-- Qts
-- Re
-- SPL
-- Sd
-- Vas
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.7
+  Le:  # voice coil inductance (H)
+    value: 0.0002
     winner: manu_page
     sources:
-      manu_page: 5.7
-  Sd:  # effective piston area (m²)
-    value: 0.0135
+      manu_page: 0.0002
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.026
     winner: manu_page
     sources:
-      manu_page: 0.0135
-  Cms:  # mechanical compliance (m/N)
-    value: 0.001
-    winner: manu_page
-    sources:
-      manu_page: 0.001
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0065
-    winner: manu_page
-    sources:
-      manu_page: 0.0065
+      manu_page: 0.026
   Qes:  # electrical Q factor
     value: 0.44
     winner: manu_page
     sources:
       manu_page: 0.44
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.01369
+    winner: manu_page
+    sources:
+      manu_page: 0.01369
   BL:  # force factor (T·m)
     value: 6.9
     winner: manu_page
     sources:
       manu_page: 6.9
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.7
+    winner: manu_page
+    sources:
+      manu_page: 5.7
+  Fs:  # free air resonance (Hz)
+    value: 43.0
+    winner: manu_page
+    sources:
+      manu_page: 43.0
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0065
+    winner: manu_page
+    sources:
+      manu_page: 0.0065
   Qts:  # total Q factor
     value: 0.35
     winner: manu_page
@@ -84,32 +62,30 @@ specs:
     winner: manu_page
     sources:
       manu_page: 1.7
+  Sd:  # effective piston area (m²)
+    value: 0.0135
+    winner: manu_page
+    sources:
+      manu_page: 0.0135
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 88.0
     winner: manu_page
     sources:
       manu_page: 88.0
-  Le:  # voice coil inductance (H)
-    value: 0.0002
+  Cms:  # mechanical compliance (m/N)
+    value: 0.001
     winner: manu_page
     sources:
-      manu_page: 0.0002
-  Fs:  # free air resonance (Hz)
-    value: 43.0
-    winner: manu_page
-    sources:
-      manu_page: 43.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.026
-    winner: manu_page
-    sources:
-      manu_page: 0.026
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.01369
-    winner: manu_page
-    sources:
-      manu_page: 0.01369
+      manu_page: 0.001
 _sources:
   datasheet: https://www.scan-speak.dk/datasheet/pdf/18w-8542-10.pdf
   adv_datasheet: https://www.scan-speak.dk/datasheet/adv/18w-8542-10.pdf
   manu_page: https://www.scan-speak.dk/product/18w-8542-10/
+datasheet_url: https://www.scan-speak.dk/datasheet/pdf/18w-8542-10.pdf
+adv_datasheet_url: https://www.scan-speak.dk/datasheet/adv/18w-8542-10.pdf
+drawing_url: https://www.scan-speak.dk/datasheet/drw/18w-8542-10.png
+cad_url: https://www.scan-speak.dk/datasheet/3d/18w-8542-10.ZIP
+manu_page_url: https://www.scan-speak.dk/product/18w-8542-10/
+vendor_page_url: null
+frd_url: null
+zma_url: null

@@ -99,7 +99,7 @@ FIELD_MAP = {
 #   dq_issue    — known DQ flag with explanation (or None)
 SPLIT_PAGES = {
     "http://www.wavecor.com/html/wf259pa01_02.html": {
-        "pdf_url": ("https://www.wavecor.com/Driver%20specifications%20PDF/"
+        "datasheet_url": ("https://www.wavecor.com/Driver%20specifications%20PDF/"
                     "WF259PA01_02_specifications.pdf"),
         "reason": "significantly different Re/BL/sensitivity per impedance variant; discontinued",
         "variants": [
@@ -229,9 +229,9 @@ def parse_product(html: str, url: str) -> dict | None:
         "manufacturer":  "Wavecor",
         "provided_by":   f"Wavecor website (scraped {date.today()})",
         "fields":        fields,
-        "pdf_url":       pdf_url,
+        "datasheet_url":       pdf_url,
         "frd_url":       spl_url,
-        "impedance_url": imp_url,
+        "zma_url":       imp_url,
     }
 
 
@@ -279,7 +279,7 @@ def _process_splits(out_dir: Path) -> None:
             wdr_text = to_wdr(
                 brand="Wavecor", model=model, fields=fields,
                 provided_by=f"Wavecor website (scraped {today})",
-                comment=f"Source: {url} | Datasheet: {cfg['pdf_url']}",
+                comment=f"Source: {url} | Datasheet: {cfg['datasheet_url']}",
                 manufacturer="Wavecor",
                 date_added=today, date_modified=today,
             )
@@ -294,14 +294,14 @@ def _process_splits(out_dir: Path) -> None:
                     f"Split from combined page: {variant['note']}. "
                     "T/S parameters have not been verified by a human against the datasheet."
                 ),
-                "corrections": variant.get("corrections"),
-                "reviewed_by": None,
-                "datasheet":   cfg["pdf_url"],
-                "manu_page":   url,
-                "vendor_page": None,
-                "source":      url,
-                "frd":         None,
-                "impedance":   None,
+                "corrections":      variant.get("corrections"),
+                "reviewed_by":     None,
+                "source":          url,
+                "datasheet_url":   cfg["datasheet_url"],
+                "manu_page_url":   url,
+                "vendor_page_url": None,
+                "frd_url":         None,
+                "zma_url":         None,
                 "obsolete":    True if variant.get("discontinued") else None,
                 "dq_issue":    variant.get("dq_issue"),
                 "community":   None,

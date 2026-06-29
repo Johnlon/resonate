@@ -4,38 +4,18 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/292-543--visaton-k50-sq-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Visaton-K50-SQ-2-Speaker-8-ohm-292-543
 source: https://www.parts-express.com/Visaton-K50-SQ-2-Speaker-8-ohm-292-543
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 7.3
+  Vas:  # equivalent acoustic volume (m³)
+    value: 5.66336e-05
     winner: vendor_page
     sources:
-      vendor_page: 7.3
-  Sd:  # effective piston area (m²)
-    value: 0.00125
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00125
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00027
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00027
-  Xmax:  # one-way linear excursion (m)
-    value: 0.001
-    winner: vendor_page
-    sources:
-      vendor_page: 0.001
+      vendor_page: 5.66336e-05
   Qes:  # electrical Q factor
     value: 7.32
     winner: vendor_page
@@ -46,16 +26,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 1.12
-  Qts:  # total Q factor
-    value: 3.42
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.3
     winner: vendor_page
     sources:
-      vendor_page: 3.42
-  Qms:  # mechanical Q factor
-    value: 6.42
-    winner: vendor_page
-    sources:
-      vendor_page: 6.42
+      vendor_page: 7.3
   Pe:  # rated power input (W)
     value: 2.0
     winner: vendor_page
@@ -66,16 +41,36 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 480.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 5.66336e-05
+  Xmax:  # one-way linear excursion (m)
+    value: 0.001
     winner: vendor_page
     sources:
-      vendor_page: 5.66336e-05
+      vendor_page: 0.001
+  Qts:  # total Q factor
+    value: 3.42
+    winner: vendor_page
+    sources:
+      vendor_page: 3.42
+  Qms:  # mechanical Q factor
+    value: 6.42
+    winner: vendor_page
+    sources:
+      vendor_page: 6.42
+  Sd:  # effective piston area (m²)
+    value: 0.00125
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00125
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00027
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00027
   freq_low_hz:  # published lower frequency limit (Hz)
     value: 2019.1
     winner: vendor_page
@@ -89,3 +84,8 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/292-543--visaton-k50-sq-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Visaton-K50-SQ-2-Speaker-8-ohm-292-543
+datasheet_url: https://www.parts-express.com/pedocs/specs/292-543--visaton-k50-sq-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Visaton-K50-SQ-2-Speaker-8-ohm-292-543
+frd_url: null
+zma_url: null

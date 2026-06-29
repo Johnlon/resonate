@@ -4,67 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/beyma-8wrs300.html
 source: https://www.soundimports.eu/en/beyma-8wrs300.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.9
-    winner: vendor_page
-    sources:
-      vendor_page: 5.9
-  Sd:  # effective piston area (m²)
-    value: 0.022
-    winner: vendor_page
-    sources:
-      vendor_page: 0.022
-  Cms:  # mechanical compliance (m/N)
-    value: 0.000192
-    winner: vendor_page
-    sources:
-      vendor_page: 0.000192
-  Xmax:  # one-way linear excursion (m)
-    value: 0.006
-    winner: vendor_page
-    sources:
-      vendor_page: 0.006
-  Qes:  # electrical Q factor
-    value: 0.34
-    winner: vendor_page
-    sources:
-      vendor_page: 0.34
-  Rms:  # mechanical resistance (kg/s)
-    value: 4.5
-    winner: vendor_page
-    sources:
-      vendor_page: 4.5
-  BL:  # force factor (T·m)
-    value: 15.5
-    winner: vendor_page
-    sources:
-      vendor_page: 15.5
-  Qts:  # total Q factor
-    value: 0.3
-    winner: vendor_page
-    sources:
-      vendor_page: 0.3
-  Qms:  # mechanical Q factor
-    value: 2.7
-    winner: vendor_page
-    sources:
-      vendor_page: 2.7
   Le:  # voice coil inductance (H)
     value: 0.0009
     winner: vendor_page
     sources:
       vendor_page: 0.0009
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0131
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0131
+  Qes:  # electrical Q factor
+    value: 0.34
+    winner: vendor_page
+    sources:
+      vendor_page: 0.34
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.028
+    winner: vendor_page
+    sources:
+      vendor_page: 0.028
+  BL:  # force factor (T·m)
+    value: 15.5
+    winner: vendor_page
+    sources:
+      vendor_page: 15.5
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.9
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9
   Pe:  # rated power input (W)
     value: 600.0
     winner: vendor_page
@@ -75,21 +50,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 69.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0131
+  Rms:  # mechanical resistance (kg/s)
+    value: 4.5
     winner: vendor_page
     sources:
-      vendor_page: 0.0131
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.028
+      vendor_page: 4.5
+  Xmax:  # one-way linear excursion (m)
+    value: 0.006
     winner: vendor_page
     sources:
-      vendor_page: 0.028
+      vendor_page: 0.006
+  Qts:  # total Q factor
+    value: 0.3
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3
+  Qms:  # mechanical Q factor
+    value: 2.7
+    winner: vendor_page
+    sources:
+      vendor_page: 2.7
+  Sd:  # effective piston area (m²)
+    value: 0.022
+    winner: vendor_page
+    sources:
+      vendor_page: 0.022
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000192
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000192
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 95.0
     winner: vendor_page
@@ -107,3 +102,8 @@ specs:
       vendor_page: 4.0
 _sources:
   vendor_page: https://www.soundimports.eu/en/beyma-8wrs300.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/beyma-8wrs300.html
+frd_url: null
+zma_url: null

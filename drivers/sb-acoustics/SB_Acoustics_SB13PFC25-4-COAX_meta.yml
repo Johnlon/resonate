@@ -5,12 +5,7 @@ detail: Automatically scraped from SB Acoustics website (scraped 2026-06-29). T/
 corrections: null
 reviewed_by: null
 driver_type: coaxial
-datasheet: https://sbacoustics.com/wp-content/uploads/2020/11/5in-SB13PFC25-4-COAX-OEM-only.pdf
-manu_page: https://sbacoustics.com/product/5in-sb13pfc25-4-coax-paper/
-vendor_page: null
 source: https://sbacoustics.com/product/5in-sb13pfc25-4-coax-paper/
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
@@ -108,3 +103,8 @@ specs:
       winner: manu_page
       sources:
         manu_page: 10.0
+datasheet_url: https://sbacoustics.com/wp-content/uploads/2020/11/5in-SB13PFC25-4-COAX-OEM-only.pdf
+manu_page_url: https://sbacoustics.com/product/5in-sb13pfc25-4-coax-paper/
+vendor_page_url: null
+frd_url: null
+zma_url: null

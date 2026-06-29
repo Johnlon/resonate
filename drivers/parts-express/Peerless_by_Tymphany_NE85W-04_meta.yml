@@ -6,70 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-1052--tymphany-ne85w-04-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Peerless-NE85W-04-2-1-2-Full-Range-Woofer-264-1052
 source: https://www.parts-express.com/Peerless-NE85W-04-2-1-2-Full-Range-Woofer-264-1052
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 264-1052
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.7
-    winner: vendor_page
-    sources:
-      vendor_page: 3.7
-  Sd:  # effective piston area (m²)
-    value: 0.00221
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00221
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00107
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00107
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00175
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00175
-  Qes:  # electrical Q factor
-    value: 0.69
-    winner: vendor_page
-    sources:
-      vendor_page: 0.69
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.16765016796098003
-    winner: vendor_page
-    sources:
-      vendor_page: 0.16765016796098003
-  BL:  # force factor (T·m)
-    value: 2.75
-    winner: vendor_page
-    sources:
-      vendor_page: 2.75
-  Qts:  # total Q factor
-    value: 0.64
-    winner: vendor_page
-    sources:
-      vendor_page: 0.64
-  Qms:  # mechanical Q factor
-    value: 8.45
-    winner: vendor_page
-    sources:
-      vendor_page: 8.45
   Le:  # voice coil inductance (H)
     value: 5.9999999999999995e-05
     winner: vendor_page
     sources:
       vendor_page: 5.9999999999999995e-05
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.000849504
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000849504
+  Qes:  # electrical Q factor
+    value: 0.69
+    winner: vendor_page
+    sources:
+      vendor_page: 0.69
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00216
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00216
+  BL:  # force factor (T·m)
+    value: 2.75
+    winner: vendor_page
+    sources:
+      vendor_page: 2.75
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.7
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7
   Pe:  # rated power input (W)
     value: 20.0
     winner: vendor_page
@@ -80,21 +52,49 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 105.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.000849504
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.16765016796098003
     winner: vendor_page
     sources:
-      vendor_page: 0.000849504
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.00216
+      vendor_page: 0.16765016796098003
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00175
     winner: vendor_page
     sources:
-      vendor_page: 0.00216
+      vendor_page: 0.00175
+  Qts:  # total Q factor
+    value: 0.64
+    winner: vendor_page
+    sources:
+      vendor_page: 0.64
+  Qms:  # mechanical Q factor
+    value: 8.45
+    winner: vendor_page
+    sources:
+      vendor_page: 8.45
+  Sd:  # effective piston area (m²)
+    value: 0.00221
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00221
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00107
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00107
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-1052--tymphany-ne85w-04-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Peerless-NE85W-04-2-1-2-Full-Range-Woofer-264-1052
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-1052--tymphany-ne85w-04-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Peerless-NE85W-04-2-1-2-Full-Range-Woofer-264-1052
+frd_url: null
+zma_url: null

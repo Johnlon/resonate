@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/290-300-goldwood-gw-2064-specifications.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Goldwood-GW-206-4-6-1-2-OEM-Woofer-4-Ohm-290-300
 source: https://www.parts-express.com/Goldwood-GW-206-4-6-1-2-OEM-Woofer-4-Ohm-290-300
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: woofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.7
-    winner: vendor_page
-    sources:
-      vendor_page: 3.7
-  Sd:  # effective piston area (m²)
-    value: 0.013635
-    winner: vendor_page
-    sources:
-      vendor_page: 0.013635
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00051
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00051
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0035
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0035
-  Qes:  # electrical Q factor
-    value: 0.73
-    winner: vendor_page
-    sources:
-      vendor_page: 0.73
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.3877985547232912
-    winner: vendor_page
-    sources:
-      vendor_page: 1.3877985547232912
-  BL:  # force factor (T·m)
-    value: 5.19
-    winner: vendor_page
-    sources:
-      vendor_page: 5.19
-  Qts:  # total Q factor
-    value: 0.61
-    winner: vendor_page
-    sources:
-      vendor_page: 0.61
-  Qms:  # mechanical Q factor
-    value: 3.84
-    winner: vendor_page
-    sources:
-      vendor_page: 3.84
   Le:  # voice coil inductance (H)
     value: 0.0004
     winner: vendor_page
     sources:
       vendor_page: 0.0004
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.013308895999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.013308895999999999
+  Qes:  # electrical Q factor
+    value: 0.73
+    winner: vendor_page
+    sources:
+      vendor_page: 0.73
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0144
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0144
+  BL:  # force factor (T·m)
+    value: 5.19
+    winner: vendor_page
+    sources:
+      vendor_page: 5.19
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.7
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7
   Pe:  # rated power input (W)
     value: 90.0
     winner: vendor_page
@@ -76,31 +51,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 58.9
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.013308895999999999
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.3877985547232912
     winner: vendor_page
     sources:
-      vendor_page: 0.013308895999999999
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0144
+      vendor_page: 1.3877985547232912
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0035
     winner: vendor_page
     sources:
-      vendor_page: 0.0144
+      vendor_page: 0.0035
+  Qts:  # total Q factor
+    value: 0.61
+    winner: vendor_page
+    sources:
+      vendor_page: 0.61
+  Qms:  # mechanical Q factor
+    value: 3.84
+    winner: vendor_page
+    sources:
+      vendor_page: 3.84
+  Sd:  # effective piston area (m²)
+    value: 0.013635
+    winner: vendor_page
+    sources:
+      vendor_page: 0.013635
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 56.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00051
     winner: vendor_page
     sources:
-      vendor_page: 56.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 8000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 8000.0
+      vendor_page: 0.00051
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/290-300-goldwood-gw-2064-specifications.pdf
   vendor_page: https://www.parts-express.com/Goldwood-GW-206-4-6-1-2-OEM-Woofer-4-Ohm-290-300
+datasheet_url: https://www.parts-express.com/pedocs/specs/290-300-goldwood-gw-2064-specifications.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Goldwood-GW-206-4-6-1-2-OEM-Woofer-4-Ohm-290-300
+frd_url: null
+zma_url: null

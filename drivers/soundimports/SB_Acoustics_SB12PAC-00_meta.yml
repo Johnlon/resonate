@@ -4,47 +4,12 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/sb-acoustics-sb12pac-00.html
 source: https://www.soundimports.eu/en/sb-acoustics-sb12pac-00.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  Sd:  # effective piston area (m²)
-    value: 0.005
-    winner: vendor_page
-    sources:
-      vendor_page: 0.005
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00121
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00121
-  Xmax:  # one-way linear excursion (m)
-    value: 0.009
-    winner: vendor_page
-    sources:
-      vendor_page: 0.009
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.32
-    winner: vendor_page
-    sources:
-      vendor_page: 0.32
-  Qms:  # mechanical Q factor
-    value: 12.4
-    winner: vendor_page
-    sources:
-      vendor_page: 12.4
-  Fs:  # free air resonance (Hz)
-    value: 33.0
-    winner: vendor_page
-    sources:
-      vendor_page: 33.0
   Vas:  # equivalent acoustic volume (m³)
     value: 0.0043
     winner: vendor_page
@@ -55,5 +20,40 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 0.0192
+  Fs:  # free air resonance (Hz)
+    value: 33.0
+    winner: vendor_page
+    sources:
+      vendor_page: 33.0
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.32
+    winner: vendor_page
+    sources:
+      vendor_page: 0.32
+  Xmax:  # one-way linear excursion (m)
+    value: 0.009
+    winner: vendor_page
+    sources:
+      vendor_page: 0.009
+  Qms:  # mechanical Q factor
+    value: 12.4
+    winner: vendor_page
+    sources:
+      vendor_page: 12.4
+  Sd:  # effective piston area (m²)
+    value: 0.005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00121
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00121
 _sources:
   vendor_page: https://www.soundimports.eu/en/sb-acoustics-sb12pac-00.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/sb-acoustics-sb12pac-00.html
+frd_url: null
+zma_url: null

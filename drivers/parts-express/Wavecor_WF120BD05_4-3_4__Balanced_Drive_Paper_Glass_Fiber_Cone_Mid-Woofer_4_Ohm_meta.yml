@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/298-1148-1150-1156-1158--wavecor-wf120bd05-06-09-10-specifications.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Wavecor-WF120BD05-4-3-4-Balanced-Drive-Paper-Glass-Fiber-Cone-Mid-Woofer-4-Ohm-298-1148
 source: https://www.parts-express.com/Wavecor-WF120BD05-4-3-4-Balanced-Drive-Paper-Glass-Fiber-Cone-Mid-Woofer-4-Ohm-298-1148
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: woofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.2
-    winner: vendor_page
-    sources:
-      vendor_page: 3.2
-  Sd:  # effective piston area (m²)
-    value: 0.0054
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0054
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0015
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0015
-  Xmax:  # one-way linear excursion (m)
-    value: 0.004
-    winner: vendor_page
-    sources:
-      vendor_page: 0.004
-  Qes:  # electrical Q factor
-    value: 0.42
-    winner: vendor_page
-    sources:
-      vendor_page: 0.42
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.29751731508590906
-    winner: vendor_page
-    sources:
-      vendor_page: 0.29751731508590906
-  BL:  # force factor (T·m)
-    value: 4.1
-    winner: vendor_page
-    sources:
-      vendor_page: 4.1
-  Qts:  # total Q factor
-    value: 0.4
-    winner: vendor_page
-    sources:
-      vendor_page: 0.4
-  Qms:  # mechanical Q factor
-    value: 7.4
-    winner: vendor_page
-    sources:
-      vendor_page: 7.4
   Le:  # voice coil inductance (H)
     value: 8.7e-05
     winner: vendor_page
     sources:
       vendor_page: 8.7e-05
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.006229696
+    winner: vendor_page
+    sources:
+      vendor_page: 0.006229696
+  Qes:  # electrical Q factor
+    value: 0.42
+    winner: vendor_page
+    sources:
+      vendor_page: 0.42
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0073
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0073
+  BL:  # force factor (T·m)
+    value: 4.1
+    winner: vendor_page
+    sources:
+      vendor_page: 4.1
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.2
+    winner: vendor_page
+    sources:
+      vendor_page: 3.2
   Pe:  # rated power input (W)
     value: 60.0
     winner: vendor_page
@@ -76,31 +51,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 48.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.006229696
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.29751731508590906
     winner: vendor_page
     sources:
-      vendor_page: 0.006229696
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0073
+      vendor_page: 0.29751731508590906
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
     winner: vendor_page
     sources:
-      vendor_page: 0.0073
+      vendor_page: 0.004
+  Qts:  # total Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Qms:  # mechanical Q factor
+    value: 7.4
+    winner: vendor_page
+    sources:
+      vendor_page: 7.4
+  Sd:  # effective piston area (m²)
+    value: 0.0054
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0054
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 60.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0015
     winner: vendor_page
     sources:
-      vendor_page: 60.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 3500.0
-    winner: vendor_page
-    sources:
-      vendor_page: 3500.0
+      vendor_page: 0.0015
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/298-1148-1150-1156-1158--wavecor-wf120bd05-06-09-10-specifications.pdf
   vendor_page: https://www.parts-express.com/Wavecor-WF120BD05-4-3-4-Balanced-Drive-Paper-Glass-Fiber-Cone-Mid-Woofer-4-Ohm-298-1148
+datasheet_url: https://www.parts-express.com/pedocs/specs/298-1148-1150-1156-1158--wavecor-wf120bd05-06-09-10-specifications.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Wavecor-WF120BD05-4-3-4-Balanced-Drive-Paper-Glass-Fiber-Cone-Mid-Woofer-4-Ohm-298-1148
+frd_url: null
+zma_url: null

@@ -4,62 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/eton-5-612-c8-25-rp.html
 source: https://www.soundimports.eu/en/eton-5-612-c8-25-rp.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.4
-    winner: vendor_page
-    sources:
-      vendor_page: 5.4
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00109
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00109
-  Xmax:  # one-way linear excursion (m)
-    value: 0.002
-    winner: vendor_page
-    sources:
-      vendor_page: 0.002
-  Qes:  # electrical Q factor
-    value: 0.38
-    winner: vendor_page
-    sources:
-      vendor_page: 0.38
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.37
-    winner: vendor_page
-    sources:
-      vendor_page: 0.37
-  BL:  # force factor (T·m)
-    value: 5.9
-    winner: vendor_page
-    sources:
-      vendor_page: 5.9
-  Qts:  # total Q factor
-    value: 0.36
-    winner: vendor_page
-    sources:
-      vendor_page: 0.36
-  Qms:  # mechanical Q factor
-    value: 7.89
-    winner: vendor_page
-    sources:
-      vendor_page: 7.89
   Le:  # voice coil inductance (H)
     value: 0.00044
     winner: vendor_page
     sources:
       vendor_page: 0.00044
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0098
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0098
+  Qes:  # electrical Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0078
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0078
+  BL:  # force factor (T·m)
+    value: 5.9
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.4
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4
   Pe:  # rated power input (W)
     value: 50.0
     winner: vendor_page
@@ -70,21 +50,36 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 55.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0098
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.37
     winner: vendor_page
     sources:
-      vendor_page: 0.0098
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0078
+      vendor_page: 0.37
+  Xmax:  # one-way linear excursion (m)
+    value: 0.002
     winner: vendor_page
     sources:
-      vendor_page: 0.0078
+      vendor_page: 0.002
+  Qts:  # total Q factor
+    value: 0.36
+    winner: vendor_page
+    sources:
+      vendor_page: 0.36
+  Qms:  # mechanical Q factor
+    value: 7.89
+    winner: vendor_page
+    sources:
+      vendor_page: 7.89
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00109
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00109
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 88.0
     winner: vendor_page
@@ -107,3 +102,8 @@ specs:
       vendor_page: 25.0
 _sources:
   vendor_page: https://www.soundimports.eu/en/eton-5-612-c8-25-rp.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/eton-5-612-c8-25-rp.html
+frd_url: null
+zma_url: null

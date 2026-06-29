@@ -6,45 +6,27 @@ corrections: null
 reviewed_by: null
 driver_type: tweeter
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/275-106--dayton-audio-nd16fa-4-specification-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-ND16FA-4-5-8-Soft-Dome-Neodymium-Tweeter-4-Ohm-275-106
 source: https://www.parts-express.com/Dayton-Audio-ND16FA-4-5-8-Soft-Dome-Neodymium-Tweeter-4-Ohm-275-106
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd
 community: null
 fetched_sku: 275-106
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.17
-    winner: vendor_page
-    sources:
-      vendor_page: 3.17
-  Qes:  # electrical Q factor
-    value: 3.46
-    winner: vendor_page
-    sources:
-      vendor_page: 3.46
-  Qts:  # total Q factor
-    value: 1.79
-    winner: vendor_page
-    sources:
-      vendor_page: 1.79
-  Qms:  # mechanical Q factor
-    value: 3.71
-    winner: vendor_page
-    sources:
-      vendor_page: 3.71
   Le:  # voice coil inductance (H)
     value: 2.9999999999999997e-05
     winner: vendor_page
     sources:
       vendor_page: 2.9999999999999997e-05
+  Qes:  # electrical Q factor
+    value: 3.46
+    winner: vendor_page
+    sources:
+      vendor_page: 3.46
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.17
+    winner: vendor_page
+    sources:
+      vendor_page: 3.17
   Pe:  # rated power input (W)
     value: 30.0
     winner: vendor_page
@@ -55,6 +37,16 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 2246.0
+  Qts:  # total Q factor
+    value: 1.79
+    winner: vendor_page
+    sources:
+      vendor_page: 1.79
+  Qms:  # mechanical Q factor
+    value: 3.71
+    winner: vendor_page
+    sources:
+      vendor_page: 3.71
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
@@ -63,3 +55,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/275-106--dayton-audio-nd16fa-4-specification-sheet.pdf
   vendor_page: https://www.parts-express.com/Dayton-Audio-ND16FA-4-5-8-Soft-Dome-Neodymium-Tweeter-4-Ohm-275-106
+datasheet_url: https://www.parts-express.com/pedocs/specs/275-106--dayton-audio-nd16fa-4-specification-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-ND16FA-4-5-8-Soft-Dome-Neodymium-Tweeter-4-Ohm-275-106
+frd_url: null
+zma_url: null

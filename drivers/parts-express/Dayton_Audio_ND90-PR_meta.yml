@@ -6,51 +6,12 @@ corrections: null
 reviewed_by: null
 driver_type: passive_radiator
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/290-209--dayton-audio-nd90-pr
-  3-1-2-inch-aluminum-cone-passive-radiator-specifications.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-ND90-PR-3-1-2-Aluminum-Cone-Passive-Radiator-290-209
 source: https://www.parts-express.com/Dayton-Audio-ND90-PR-3-1-2-Aluminum-Cone-Passive-Radiator-290-209
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 290-209
 specs:
-  Sd:  # effective piston area (m²)
-    value: 0.00312
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00312
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00109
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00109
-  Xmax:  # one-way linear excursion (m)
-    value: 0.009
-    winner: vendor_page
-    sources:
-      vendor_page: 0.009
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.4452173159614178
-    winner: vendor_page
-    sources:
-      vendor_page: 0.4452173159614178
-  Qms:  # mechanical Q factor
-    value: 6.15
-    winner: vendor_page
-    sources:
-      vendor_page: 6.15
-  Fs:  # free air resonance (Hz)
-    value: 53.8
-    winner: vendor_page
-    sources:
-      vendor_page: 53.8
   Vas:  # equivalent acoustic volume (m³)
     value: 0.00141584
     winner: vendor_page
@@ -61,7 +22,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 0.0081
+  Fs:  # free air resonance (Hz)
+    value: 53.8
+    winner: vendor_page
+    sources:
+      vendor_page: 53.8
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.4452173159614178
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4452173159614178
+  Xmax:  # one-way linear excursion (m)
+    value: 0.009
+    winner: vendor_page
+    sources:
+      vendor_page: 0.009
+  Qms:  # mechanical Q factor
+    value: 6.15
+    winner: vendor_page
+    sources:
+      vendor_page: 6.15
+  Sd:  # effective piston area (m²)
+    value: 0.00312
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00312
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00109
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00109
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/290-209--dayton-audio-nd90-pr
     3-1-2-inch-aluminum-cone-passive-radiator-specifications.pdf
   vendor_page: https://www.parts-express.com/Dayton-Audio-ND90-PR-3-1-2-Aluminum-Cone-Passive-Radiator-290-209
+datasheet_url: https://www.parts-express.com/pedocs/specs/290-209--dayton-audio-nd90-pr
+  3-1-2-inch-aluminum-cone-passive-radiator-specifications.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-ND90-PR-3-1-2-Aluminum-Cone-Passive-Radiator-290-209
+frd_url: null
+zma_url: null

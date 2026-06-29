@@ -4,38 +4,23 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-1046--tymphany-ne65w-04-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Peerless-NE65W-04-2-Full-Range-Woofer-264-1046
 source: https://www.parts-express.com/Peerless-NE65W-04-2-Full-Range-Woofer-264-1046
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.7
+  Le:  # voice coil inductance (H)
+    value: 4.0e-05
     winner: vendor_page
     sources:
-      vendor_page: 3.7
-  Sd:  # effective piston area (m²)
-    value: 0.00147
+      vendor_page: 4.0e-05
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0001699008
     winner: vendor_page
     sources:
-      vendor_page: 0.00147
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00058
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00058
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00165
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00165
+      vendor_page: 0.0001699008
   Qes:  # electrical Q factor
     value: 0.74
     winner: vendor_page
@@ -46,21 +31,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 2.85
-  Qts:  # total Q factor
-    value: 0.65
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.7
     winner: vendor_page
     sources:
-      vendor_page: 0.65
-  Qms:  # mechanical Q factor
-    value: 5.0
-    winner: vendor_page
-    sources:
-      vendor_page: 5.0
-  Le:  # voice coil inductance (H)
-    value: 4.0e-05
-    winner: vendor_page
-    sources:
-      vendor_page: 4.0e-05
+      vendor_page: 3.7
   Pe:  # rated power input (W)
     value: 20.0
     winner: vendor_page
@@ -71,26 +46,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 166.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0001699008
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00165
     winner: vendor_page
     sources:
-      vendor_page: 0.0001699008
+      vendor_page: 0.00165
+  Qts:  # total Q factor
+    value: 0.65
+    winner: vendor_page
+    sources:
+      vendor_page: 0.65
+  Qms:  # mechanical Q factor
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+  Sd:  # effective piston area (m²)
+    value: 0.00147
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00147
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 150.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00058
     winner: vendor_page
     sources:
-      vendor_page: 150.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 18000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 18000.0
+      vendor_page: 0.00058
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-1046--tymphany-ne65w-04-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Peerless-NE65W-04-2-Full-Range-Woofer-264-1046
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-1046--tymphany-ne65w-04-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Peerless-NE65W-04-2-Full-Range-Woofer-264-1046
+frd_url: null
+zma_url: null

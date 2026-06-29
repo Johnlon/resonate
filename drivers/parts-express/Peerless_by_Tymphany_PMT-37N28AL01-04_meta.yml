@@ -6,40 +6,22 @@ corrections: null
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-1560--tymphany-pmt-37n28al01-04-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Peerless-PMT-37N28AL01-04-37mm-Aluminum-Cone-Transducer-4-Ohm-264-1560
 source: https://www.parts-express.com/Peerless-PMT-37N28AL01-04-37mm-Aluminum-Cone-Transducer-4-Ohm-264-1560
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 264-1560
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.58
+  Le:  # voice coil inductance (H)
+    value: 5.9999999999999995e-05
     winner: vendor_page
     sources:
-      vendor_page: 3.58
-  Sd:  # effective piston area (m²)
-    value: 0.0007997
+      vendor_page: 5.9999999999999995e-05
+  Vas:  # equivalent acoustic volume (m³)
+    value: 6.9942496e-05
     winner: vendor_page
     sources:
-      vendor_page: 0.0007997
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0007700000000000001
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0007700000000000001
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0001
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0001
+      vendor_page: 6.9942496e-05
   Qes:  # electrical Q factor
     value: 0.57
     winner: vendor_page
@@ -50,21 +32,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 3.0
-  Qts:  # total Q factor
-    value: 0.39
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.58
     winner: vendor_page
     sources:
-      vendor_page: 0.39
-  Qms:  # mechanical Q factor
-    value: 1.2
-    winner: vendor_page
-    sources:
-      vendor_page: 1.2
-  Le:  # voice coil inductance (H)
-    value: 5.9999999999999995e-05
-    winner: vendor_page
-    sources:
-      vendor_page: 5.9999999999999995e-05
+      vendor_page: 3.58
   Pe:  # rated power input (W)
     value: 5.0
     winner: vendor_page
@@ -75,16 +47,44 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 167.6
-  Vas:  # equivalent acoustic volume (m³)
-    value: 6.9942496e-05
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0001
     winner: vendor_page
     sources:
-      vendor_page: 6.9942496e-05
+      vendor_page: 0.0001
+  Qts:  # total Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Qms:  # mechanical Q factor
+    value: 1.2
+    winner: vendor_page
+    sources:
+      vendor_page: 1.2
+  Sd:  # effective piston area (m²)
+    value: 0.0007997
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0007997
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0007700000000000001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0007700000000000001
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-1560--tymphany-pmt-37n28al01-04-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Peerless-PMT-37N28AL01-04-37mm-Aluminum-Cone-Transducer-4-Ohm-264-1560
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-1560--tymphany-pmt-37n28al01-04-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Peerless-PMT-37N28AL01-04-37mm-Aluminum-Cone-Transducer-4-Ohm-264-1560
+frd_url: null
+zma_url: null

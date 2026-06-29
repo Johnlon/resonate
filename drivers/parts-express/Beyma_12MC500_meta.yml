@@ -7,65 +7,42 @@ corrections: '''Qts'' stored=0.34 differs from calculated=0.334969 (deps: Qms=7.
 reviewed_by: null
 driver_type: subwoofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/253-014--12mc500-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Beyma-12MC500-MC-Series-12-Subwoofer-8-Ohm-253-014
 source: https://www.parts-express.com/Beyma-12MC500-MC-Series-12-Subwoofer-8-Ohm-253-014
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 253-014
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.6
-    winner: vendor_page
-    sources:
-      vendor_page: 5.6
-  Sd:  # effective piston area (m²)
-    value: 0.055
-    winner: vendor_page
-    sources:
-      vendor_page: 0.055
-  Xmax:  # one-way linear excursion (m)
-    value: 0.004
-    winner: vendor_page
-    sources:
-      vendor_page: 0.004
-  Qes:  # electrical Q factor
-    value: 0.35
-    winner: vendor_page
-    sources:
-      vendor_page: 0.35
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.0027090195112878137
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0027090195112878137
-  BL:  # force factor (T·m)
-    value: 18.3
-    winner: vendor_page
-    sources:
-      vendor_page: 18.3
-  Qts:  # total Q factor
-    value: 0.34
-    winner: vendor_page
-    sources:
-      vendor_page: 0.34
-  Qms:  # mechanical Q factor
-    value: 7.8
-    winner: vendor_page
-    sources:
-      vendor_page: 7.8
   Le:  # voice coil inductance (H)
     value: 57.0
     winner: vendor_page
     sources:
       vendor_page: 57.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.05691676799999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.05691676799999999
+  Qes:  # electrical Q factor
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
+  Mms:  # moving mass incl. air load (kg)
+    value: 5.9e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9e-05
+  BL:  # force factor (T·m)
+    value: 18.3
+    winner: vendor_page
+    sources:
+      vendor_page: 18.3
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
   Pe:  # rated power input (W)
     value: 500.0
     winner: vendor_page
@@ -76,16 +53,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 57.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.05691676799999999
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.0027090195112878137
     winner: vendor_page
     sources:
-      vendor_page: 0.05691676799999999
-  Mms:  # moving mass incl. air load (kg)
-    value: 5.9e-05
+      vendor_page: 0.0027090195112878137
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
     winner: vendor_page
     sources:
-      vendor_page: 5.9e-05
+      vendor_page: 0.004
+  Qts:  # total Q factor
+    value: 0.34
+    winner: vendor_page
+    sources:
+      vendor_page: 0.34
+  Qms:  # mechanical Q factor
+    value: 7.8
+    winner: vendor_page
+    sources:
+      vendor_page: 7.8
+  Sd:  # effective piston area (m²)
+    value: 0.055
+    winner: vendor_page
+    sources:
+      vendor_page: 0.055
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -99,3 +91,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/253-014--12mc500-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Beyma-12MC500-MC-Series-12-Subwoofer-8-Ohm-253-014
+datasheet_url: https://www.parts-express.com/pedocs/specs/253-014--12mc500-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Beyma-12MC500-MC-Series-12-Subwoofer-8-Ohm-253-014
+frd_url: null
+zma_url: null

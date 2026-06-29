@@ -6,30 +6,22 @@ corrections: null
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/GRS Spec Sheets/292-431--grs-5sbm1-8-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/GRS-5SBM1-8-5-1-4-Sealed-Back-Midrange-with-1-Voice-Coil-8-Ohm-292-431
 source: https://www.parts-express.com/GRS-5SBM1-8-5-1-4-Sealed-Back-Midrange-with-1-Voice-Coil-8-Ohm-292-431
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd
 community: null
 fetched_sku: 292-431
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 7.1
-    winner: vendor_page
-    sources:
-      vendor_page: 7.1
   Le:  # voice coil inductance (H)
     value: 0.0008
     winner: vendor_page
     sources:
       vendor_page: 0.0008
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.1
+    winner: vendor_page
+    sources:
+      vendor_page: 7.1
   Pe:  # rated power input (W)
     value: 100.0
     winner: vendor_page
@@ -58,3 +50,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/GRS Spec Sheets/292-431--grs-5sbm1-8-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/GRS-5SBM1-8-5-1-4-Sealed-Back-Midrange-with-1-Voice-Coil-8-Ohm-292-431
+datasheet_url: https://www.parts-express.com/pedocs/specs/GRS Spec Sheets/292-431--grs-5sbm1-8-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/GRS-5SBM1-8-5-1-4-Sealed-Back-Midrange-with-1-Voice-Coil-8-Ohm-292-431
+frd_url: null
+zma_url: null

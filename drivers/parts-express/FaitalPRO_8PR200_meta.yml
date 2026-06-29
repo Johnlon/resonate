@@ -8,75 +8,42 @@ corrections: '''Qts'' stored=0.36 differs from calculated=0.365235 (deps: Qms=9.
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/294-1175-faitalpro-8pr200-8-specifications.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/FaitalPRO-8PR200-8-Neodymium-Professional-Woofer-8-Ohm-294-1175
 source: https://www.parts-express.com/FaitalPRO-8PR200-8-Neodymium-Professional-Woofer-8-Ohm-294-1175
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-1175
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.1
-    winner: vendor_page
-    sources:
-      vendor_page: 5.1
-  Sd:  # effective piston area (m²)
-    value: 0.0196
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0196
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00028
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00028
-  Xmax:  # one-way linear excursion (m)
-    value: 0.008150000000000001
-    winner: vendor_page
-    sources:
-      vendor_page: 0.008150000000000001
-  Qes:  # electrical Q factor
-    value: 0.38
-    winner: vendor_page
-    sources:
-      vendor_page: 0.38
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.04
-    winner: vendor_page
-    sources:
-      vendor_page: 1.04
-  BL:  # force factor (T·m)
-    value: 11.5
-    winner: vendor_page
-    sources:
-      vendor_page: 11.5
-  Qts:  # total Q factor
-    value: 0.36
-    winner: vendor_page
-    sources:
-      vendor_page: 0.36
-  Qms:  # mechanical Q factor
-    value: 9.4
-    winner: vendor_page
-    sources:
-      vendor_page: 9.4
-  SPL:  # sensitivity (dB, 2.83 V/1 m)
-    value: 95.0
-    winner: vendor_page
-    sources:
-      vendor_page: 95.0
   Le:  # voice coil inductance (H)
     value: 0.00055
     winner: vendor_page
     sources:
       vendor_page: 0.00055
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0151
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0151
+  Qes:  # electrical Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0272
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0272
+  BL:  # force factor (T·m)
+    value: 11.5
+    winner: vendor_page
+    sources:
+      vendor_page: 11.5
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.1
+    winner: vendor_page
+    sources:
+      vendor_page: 5.1
   Pe:  # rated power input (W)
     value: 200.0
     winner: vendor_page
@@ -87,21 +54,54 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 58.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0151
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.04
     winner: vendor_page
     sources:
-      vendor_page: 0.0151
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0272
+      vendor_page: 1.04
+  Xmax:  # one-way linear excursion (m)
+    value: 0.008150000000000001
     winner: vendor_page
     sources:
-      vendor_page: 0.0272
+      vendor_page: 0.008150000000000001
+  Qts:  # total Q factor
+    value: 0.36
+    winner: vendor_page
+    sources:
+      vendor_page: 0.36
+  Qms:  # mechanical Q factor
+    value: 9.4
+    winner: vendor_page
+    sources:
+      vendor_page: 9.4
+  Sd:  # effective piston area (m²)
+    value: 0.0196
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0196
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 95.0
+    winner: vendor_page
+    sources:
+      vendor_page: 95.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00028
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00028
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/294-1175-faitalpro-8pr200-8-specifications.pdf
   vendor_page: https://www.parts-express.com/FaitalPRO-8PR200-8-Neodymium-Professional-Woofer-8-Ohm-294-1175
+datasheet_url: https://www.parts-express.com/pedocs/specs/294-1175-faitalpro-8pr200-8-specifications.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/FaitalPRO-8PR200-8-Neodymium-Professional-Woofer-8-Ohm-294-1175
+frd_url: null
+zma_url: null

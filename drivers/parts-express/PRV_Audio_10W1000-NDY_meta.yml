@@ -8,70 +8,42 @@ corrections: '''Qts'' stored=0.4 differs from calculated=0.405288 (deps: Qms=11.
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/294-3414--prv-audio-10w1000-ndy-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/PRV-Audio-10W1000-NDY-10-Neodymium-Woofer-294-3414
 source: https://www.parts-express.com/PRV-Audio-10W1000-NDY-10-Neodymium-Woofer-294-3414
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-3414
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.1
-    winner: vendor_page
-    sources:
-      vendor_page: 5.1
-  Sd:  # effective piston area (m²)
-    value: 0.038
-    winner: vendor_page
-    sources:
-      vendor_page: 0.038
-  Cms:  # mechanical compliance (m/N)
-    value: 0.000193
-    winner: vendor_page
-    sources:
-      vendor_page: 0.000193
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0065
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0065
-  Qes:  # electrical Q factor
-    value: 0.42
-    winner: vendor_page
-    sources:
-      vendor_page: 0.42
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.144621280950572
-    winner: vendor_page
-    sources:
-      vendor_page: 1.144621280950572
-  BL:  # force factor (T·m)
-    value: 12.73
-    winner: vendor_page
-    sources:
-      vendor_page: 12.73
-  Qts:  # total Q factor
-    value: 0.4
-    winner: vendor_page
-    sources:
-      vendor_page: 0.4
-  Qms:  # mechanical Q factor
-    value: 11.57
-    winner: vendor_page
-    sources:
-      vendor_page: 11.57
   Le:  # voice coil inductance (H)
     value: 0.00064
     winner: vendor_page
     sources:
       vendor_page: 0.00064
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.03901
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03901
+  Qes:  # electrical Q factor
+    value: 0.42
+    winner: vendor_page
+    sources:
+      vendor_page: 0.42
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.03393
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03393
+  BL:  # force factor (T·m)
+    value: 12.73
+    winner: vendor_page
+    sources:
+      vendor_page: 12.73
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.1
+    winner: vendor_page
+    sources:
+      vendor_page: 5.1
   Pe:  # rated power input (W)
     value: 500.0
     winner: vendor_page
@@ -82,21 +54,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 62.12
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.03901
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.144621280950572
     winner: vendor_page
     sources:
-      vendor_page: 0.03901
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.03393
+      vendor_page: 1.144621280950572
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0065
     winner: vendor_page
     sources:
-      vendor_page: 0.03393
+      vendor_page: 0.0065
+  Qts:  # total Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Qms:  # mechanical Q factor
+    value: 11.57
+    winner: vendor_page
+    sources:
+      vendor_page: 11.57
+  Sd:  # effective piston area (m²)
+    value: 0.038
+    winner: vendor_page
+    sources:
+      vendor_page: 0.038
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000193
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000193
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 98.0
     winner: vendor_page
@@ -105,3 +97,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/294-3414--prv-audio-10w1000-ndy-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/PRV-Audio-10W1000-NDY-10-Neodymium-Woofer-294-3414
+datasheet_url: https://www.parts-express.com/pedocs/specs/294-3414--prv-audio-10w1000-ndy-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/PRV-Audio-10W1000-NDY-10-Neodymium-Woofer-294-3414
+frd_url: null
+zma_url: null

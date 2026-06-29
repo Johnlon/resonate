@@ -7,35 +7,42 @@ corrections: '''Qts'' stored=0.28 differs from calculated=0.283765 (deps: Qms=0.
 reviewed_by: null
 driver_type: tweeter
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/292-7804--visaton-g20sc8-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Visaton-G20SC8-0.8-Magnetically-Shielded-Textile-Dome-Tweeter-8-Ohm-292-7804
 source: https://www.parts-express.com/Visaton-G20SC8-0.8-Magnetically-Shielded-Textile-Dome-Tweeter-8-Ohm-292-7804
-frd: null
-impedance: null
 obsolete: null
 dq_issue: Qms_low
 community: null
 fetched_sku: 292-7804
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 4.8
+  Le:  # voice coil inductance (H)
+    value: 2.0e-05
     winner: vendor_page
     sources:
-      vendor_page: 4.8
-  Sd:  # effective piston area (m²)
-    value: 0.0004
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0004
+      vendor_page: 2.0e-05
   Qes:  # electrical Q factor
     value: 1.34
     winner: vendor_page
     sources:
       vendor_page: 1.34
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00015
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00015
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.8
+    winner: vendor_page
+    sources:
+      vendor_page: 4.8
+  Pe:  # rated power input (W)
+    value: 80.0
+    winner: vendor_page
+    sources:
+      vendor_page: 80.0
+  Fs:  # free air resonance (Hz)
+    value: 1890.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1890.0
   Rms:  # mechanical resistance (kg/s)
     value: 4.948008429403924
     winner: vendor_page
@@ -51,26 +58,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 0.36
-  Le:  # voice coil inductance (H)
-    value: 2.0e-05
+  Sd:  # effective piston area (m²)
+    value: 0.0004
     winner: vendor_page
     sources:
-      vendor_page: 2.0e-05
-  Pe:  # rated power input (W)
-    value: 80.0
-    winner: vendor_page
-    sources:
-      vendor_page: 80.0
-  Fs:  # free air resonance (Hz)
-    value: 1890.0
-    winner: vendor_page
-    sources:
-      vendor_page: 1890.0
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.00015
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00015
+      vendor_page: 0.0004
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -89,3 +81,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/292-7804--visaton-g20sc8-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Visaton-G20SC8-0.8-Magnetically-Shielded-Textile-Dome-Tweeter-8-Ohm-292-7804
+datasheet_url: https://www.parts-express.com/pedocs/specs/292-7804--visaton-g20sc8-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Visaton-G20SC8-0.8-Magnetically-Shielded-Textile-Dome-Tweeter-8-Ohm-292-7804
+frd_url: null
+zma_url: null

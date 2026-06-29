@@ -7,70 +7,42 @@ corrections: '''Qts'' stored=0.24 differs from calculated=0.236559 (deps: Qms=4.
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/294-5989--bc-15sw115-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/B-C-15SW115-15-Professional-Neodymium-Subwoofer-8-Ohm-294-5989
 source: https://www.parts-express.com/B-C-15SW115-15-Professional-Neodymium-Subwoofer-8-Ohm-294-5989
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-5989
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.0
-    winner: vendor_page
-    sources:
-      vendor_page: 5.0
-  Sd:  # effective piston area (m²)
-    value: 0.0855
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0855
-  Cms:  # mechanical compliance (m/N)
-    value: 0.06
-    winner: vendor_page
-    sources:
-      vendor_page: 0.06
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0135
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0135
-  Qes:  # electrical Q factor
-    value: 0.25
-    winner: vendor_page
-    sources:
-      vendor_page: 0.25
-  Rms:  # mechanical resistance (kg/s)
-    value: 9.995976625058432
-    winner: vendor_page
-    sources:
-      vendor_page: 9.995976625058432
-  BL:  # force factor (T·m)
-    value: 30.0
-    winner: vendor_page
-    sources:
-      vendor_page: 30.0
-  Qts:  # total Q factor
-    value: 0.24
-    winner: vendor_page
-    sources:
-      vendor_page: 0.24
-  Qms:  # mechanical Q factor
-    value: 4.4
-    winner: vendor_page
-    sources:
-      vendor_page: 4.4
   Le:  # voice coil inductance (H)
     value: 0.0018
     winner: vendor_page
     sources:
       vendor_page: 0.0018
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.11043552
+    winner: vendor_page
+    sources:
+      vendor_page: 0.11043552
+  Qes:  # electrical Q factor
+    value: 0.25
+    winner: vendor_page
+    sources:
+      vendor_page: 0.25
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.2
+    winner: vendor_page
+    sources:
+      vendor_page: 0.2
+  BL:  # force factor (T·m)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
   Pe:  # rated power input (W)
     value: 3400.0
     winner: vendor_page
@@ -81,21 +53,49 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 35.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.11043552
+  Rms:  # mechanical resistance (kg/s)
+    value: 9.995976625058432
     winner: vendor_page
     sources:
-      vendor_page: 0.11043552
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.2
+      vendor_page: 9.995976625058432
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0135
     winner: vendor_page
     sources:
-      vendor_page: 0.2
+      vendor_page: 0.0135
+  Qts:  # total Q factor
+    value: 0.24
+    winner: vendor_page
+    sources:
+      vendor_page: 0.24
+  Qms:  # mechanical Q factor
+    value: 4.4
+    winner: vendor_page
+    sources:
+      vendor_page: 4.4
+  Sd:  # effective piston area (m²)
+    value: 0.0855
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0855
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.06
+    winner: vendor_page
+    sources:
+      vendor_page: 0.06
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/294-5989--bc-15sw115-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/B-C-15SW115-15-Professional-Neodymium-Subwoofer-8-Ohm-294-5989
+datasheet_url: https://www.parts-express.com/pedocs/specs/294-5989--bc-15sw115-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/B-C-15SW115-15-Professional-Neodymium-Subwoofer-8-Ohm-294-5989
+frd_url: null
+zma_url: null

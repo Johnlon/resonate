@@ -4,58 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/292-644--visaton-bg13-p-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Visaton-BG13P-5-Full-Range-Speaker-8-Ohm-292-644
 source: https://www.parts-express.com/Visaton-BG13P-5-Full-Range-Speaker-8-Ohm-292-644
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.2
-    winner: vendor_page
-    sources:
-      vendor_page: 5.2
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00029
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00029
-  Qes:  # electrical Q factor
-    value: 1.58
-    winner: vendor_page
-    sources:
-      vendor_page: 1.58
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.0348775800060495
-    winner: vendor_page
-    sources:
-      vendor_page: 1.0348775800060495
-  BL:  # force factor (T·m)
-    value: 3.22
-    winner: vendor_page
-    sources:
-      vendor_page: 3.22
-  Qts:  # total Q factor
-    value: 1.042
-    winner: vendor_page
-    sources:
-      vendor_page: 1.042
-  Qms:  # mechanical Q factor
-    value: 3.06
-    winner: vendor_page
-    sources:
-      vendor_page: 3.06
   Le:  # voice coil inductance (H)
     value: 0.00065
     winner: vendor_page
     sources:
       vendor_page: 0.00065
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.05691676799999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.05691676799999999
+  Qes:  # electrical Q factor
+    value: 1.58
+    winner: vendor_page
+    sources:
+      vendor_page: 1.58
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.003
+  BL:  # force factor (T·m)
+    value: 3.22
+    winner: vendor_page
+    sources:
+      vendor_page: 3.22
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
   Pe:  # rated power input (W)
     value: 20.0
     winner: vendor_page
@@ -66,21 +51,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 168.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.05691676799999999
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.0348775800060495
     winner: vendor_page
     sources:
-      vendor_page: 0.05691676799999999
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.003
+      vendor_page: 1.0348775800060495
+  Qts:  # total Q factor
+    value: 1.042
     winner: vendor_page
     sources:
-      vendor_page: 0.003
+      vendor_page: 1.042
+  Qms:  # mechanical Q factor
+    value: 3.06
+    winner: vendor_page
+    sources:
+      vendor_page: 3.06
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00029
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00029
   freq_low_hz:  # published lower frequency limit (Hz)
     value: 2019.1
     winner: vendor_page
@@ -94,3 +89,8 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/292-644--visaton-bg13-p-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Visaton-BG13P-5-Full-Range-Speaker-8-Ohm-292-644
+datasheet_url: https://www.parts-express.com/pedocs/specs/292-644--visaton-bg13-p-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Visaton-BG13P-5-Full-Range-Speaker-8-Ohm-292-644
+frd_url: null
+zma_url: null

@@ -6,65 +6,17 @@ corrections: null
 reviewed_by: null
 driver_type: null
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/dayton-audio-e150he-44.html
 source: https://www.soundimports.eu/en/dayton-audio-e150he-44.html
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  Sd:  # effective piston area (m²)
-    value: 0.0095
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0095
-  BL:  # force factor (T·m)
-    value: 9.8
-    winner: vendor_page
-    sources:
-      vendor_page: 9.8
-  Pe:  # rated power input (W)
-    value: 200.0
-    winner: vendor_page
-    sources:
-      vendor_page: 200.0
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0147
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0147
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0266
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0266
   Le:  # voice coil inductance (H)
     value: 0.0016
     winner: vendor_page
     sources:
       vendor_page: 0.0016
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.6
-    winner: vendor_page
-    sources:
-      vendor_page: 6.6
-  Qts:  # total Q factor
-    value: 0.39
-    winner: vendor_page
-    sources:
-      vendor_page: 0.39
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0006
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0006
   Vas:  # equivalent acoustic volume (m³)
     value: 0.007645536
     winner: vendor_page
@@ -75,21 +27,61 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 0.45
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0266
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0266
+  BL:  # force factor (T·m)
+    value: 9.8
+    winner: vendor_page
+    sources:
+      vendor_page: 9.8
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.6
+    winner: vendor_page
+    sources:
+      vendor_page: 6.6
+  Pe:  # rated power input (W)
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
   Fs:  # free air resonance (Hz)
     value: 40.0
     winner: vendor_page
     sources:
       vendor_page: 40.0
-  Znom:  # nominal impedance (Ω)
-    value: 8.0
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0147
     winner: vendor_page
     sources:
-      vendor_page: 8.0
+      vendor_page: 0.0147
+  Qts:  # total Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
   Qms:  # mechanical Q factor
     value: 2.94
     winner: vendor_page
     sources:
       vendor_page: 2.94
+  Sd:  # effective piston area (m²)
+    value: 0.0095
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0095
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0006
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0006
   power_peak_W:  # peak power handling (W)
     value: 400.0
     winner: vendor_page
@@ -112,3 +104,11 @@ specs:
       vendor_page: 4.0
 _sources:
   vendor_page: https://www.soundimports.eu/en/dayton-audio-e150he-44.html
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/dayton-audio-e150he-44.html
+frd_url: null
+zma_url: null

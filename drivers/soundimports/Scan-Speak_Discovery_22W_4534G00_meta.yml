@@ -4,67 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/scan-speak-22w4534g00.html
 source: https://www.soundimports.eu/en/scan-speak-22w4534g00.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.0
-    winner: vendor_page
-    sources:
-      vendor_page: 3.0
-  Sd:  # effective piston area (m²)
-    value: 0.0235
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0235
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00123
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00123
-  Xmax:  # one-way linear excursion (m)
-    value: 0.012
-    winner: vendor_page
-    sources:
-      vendor_page: 0.012
-  Qes:  # electrical Q factor
-    value: 0.37
-    winner: vendor_page
-    sources:
-      vendor_page: 0.37
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.19
-    winner: vendor_page
-    sources:
-      vendor_page: 1.19
-  BL:  # force factor (T·m)
-    value: 6.0
-    winner: vendor_page
-    sources:
-      vendor_page: 6.0
-  Qts:  # total Q factor
-    value: 0.34
-    winner: vendor_page
-    sources:
-      vendor_page: 0.34
-  Qms:  # mechanical Q factor
-    value: 3.7
-    winner: vendor_page
-    sources:
-      vendor_page: 3.7
   Le:  # voice coil inductance (H)
     value: 0.00055
     winner: vendor_page
     sources:
       vendor_page: 0.00055
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.095
+    winner: vendor_page
+    sources:
+      vendor_page: 0.095
+  Qes:  # electrical Q factor
+    value: 0.37
+    winner: vendor_page
+    sources:
+      vendor_page: 0.37
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0237
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0237
+  BL:  # force factor (T·m)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0
   Pe:  # rated power input (W)
     value: 70.0
     winner: vendor_page
@@ -75,20 +50,45 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 30.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.095
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.19
     winner: vendor_page
     sources:
-      vendor_page: 0.095
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0237
+      vendor_page: 1.19
+  Xmax:  # one-way linear excursion (m)
+    value: 0.012
     winner: vendor_page
     sources:
-      vendor_page: 0.0237
+      vendor_page: 0.012
+  Qts:  # total Q factor
+    value: 0.34
+    winner: vendor_page
+    sources:
+      vendor_page: 0.34
+  Qms:  # mechanical Q factor
+    value: 3.7
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7
+  Sd:  # effective piston area (m²)
+    value: 0.0235
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0235
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00123
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00123
 _sources:
   vendor_page: https://www.soundimports.eu/en/scan-speak-22w4534g00.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/scan-speak-22w4534g00.html
+frd_url: null
+zma_url: null

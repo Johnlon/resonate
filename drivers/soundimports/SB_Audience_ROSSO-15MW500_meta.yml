@@ -4,67 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/sb-audience-rosso-15mw500.html
 source: https://www.soundimports.eu/en/sb-audience-rosso-15mw500.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.6
-    winner: vendor_page
-    sources:
-      vendor_page: 5.6
-  Sd:  # effective piston area (m²)
-    value: 0.08657
-    winner: vendor_page
-    sources:
-      vendor_page: 0.08657
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00011
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00011
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00838
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00838
-  Qes:  # electrical Q factor
-    value: 0.35
-    winner: vendor_page
-    sources:
-      vendor_page: 0.35
-  Rms:  # mechanical resistance (kg/s)
-    value: 3.55
-    winner: vendor_page
-    sources:
-      vendor_page: 3.55
-  BL:  # force factor (T·m)
-    value: 23.2
-    winner: vendor_page
-    sources:
-      vendor_page: 23.2
-  Qts:  # total Q factor
-    value: 0.33
-    winner: vendor_page
-    sources:
-      vendor_page: 0.33
-  Qms:  # mechanical Q factor
-    value: 9.39
-    winner: vendor_page
-    sources:
-      vendor_page: 9.39
   Le:  # voice coil inductance (H)
     value: 0.00137
     winner: vendor_page
     sources:
       vendor_page: 0.00137
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.1213
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1213
+  Qes:  # electrical Q factor
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.1271
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1271
+  BL:  # force factor (T·m)
+    value: 23.2
+    winner: vendor_page
+    sources:
+      vendor_page: 23.2
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
   Pe:  # rated power input (W)
     value: 500.0
     winner: vendor_page
@@ -75,15 +50,40 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 42.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.1213
+  Rms:  # mechanical resistance (kg/s)
+    value: 3.55
     winner: vendor_page
     sources:
-      vendor_page: 0.1213
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.1271
+      vendor_page: 3.55
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00838
     winner: vendor_page
     sources:
-      vendor_page: 0.1271
+      vendor_page: 0.00838
+  Qts:  # total Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Qms:  # mechanical Q factor
+    value: 9.39
+    winner: vendor_page
+    sources:
+      vendor_page: 9.39
+  Sd:  # effective piston area (m²)
+    value: 0.08657
+    winner: vendor_page
+    sources:
+      vendor_page: 0.08657
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00011
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00011
 _sources:
   vendor_page: https://www.soundimports.eu/en/sb-audience-rosso-15mw500.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/sb-audience-rosso-15mw500.html
+frd_url: null
+zma_url: null

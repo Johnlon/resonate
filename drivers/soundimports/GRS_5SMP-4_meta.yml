@@ -4,62 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/grs-5smp-4.html
 source: https://www.soundimports.eu/en/grs-5smp-4.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.7
-    winner: vendor_page
-    sources:
-      vendor_page: 3.7
-  Sd:  # effective piston area (m²)
-    value: 0.008
-    winner: vendor_page
-    sources:
-      vendor_page: 0.008
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00063
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00063
-  Xmax:  # one-way linear excursion (m)
-    value: 0.002
-    winner: vendor_page
-    sources:
-      vendor_page: 0.002
-  Qes:  # electrical Q factor
-    value: 0.62
-    winner: vendor_page
-    sources:
-      vendor_page: 0.62
-  BL:  # force factor (T·m)
-    value: 4.9
-    winner: vendor_page
-    sources:
-      vendor_page: 4.9
-  Qts:  # total Q factor
-    value: 0.54
-    winner: vendor_page
-    sources:
-      vendor_page: 0.54
-  Qms:  # mechanical Q factor
-    value: 4.21
-    winner: vendor_page
-    sources:
-      vendor_page: 4.21
   Le:  # voice coil inductance (H)
     value: 0.00058
     winner: vendor_page
     sources:
       vendor_page: 0.00058
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.006
+    winner: vendor_page
+    sources:
+      vendor_page: 0.006
+  Qes:  # electrical Q factor
+    value: 0.62
+    winner: vendor_page
+    sources:
+      vendor_page: 0.62
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0104
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0104
+  BL:  # force factor (T·m)
+    value: 4.9
+    winner: vendor_page
+    sources:
+      vendor_page: 4.9
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.7
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7
   Pe:  # rated power input (W)
     value: 35.0
     winner: vendor_page
@@ -70,21 +50,36 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 62.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.006
+  Xmax:  # one-way linear excursion (m)
+    value: 0.002
     winner: vendor_page
     sources:
-      vendor_page: 0.006
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0104
+      vendor_page: 0.002
+  Qts:  # total Q factor
+    value: 0.54
     winner: vendor_page
     sources:
-      vendor_page: 0.0104
+      vendor_page: 0.54
+  Qms:  # mechanical Q factor
+    value: 4.21
+    winner: vendor_page
+    sources:
+      vendor_page: 4.21
+  Sd:  # effective piston area (m²)
+    value: 0.008
+    winner: vendor_page
+    sources:
+      vendor_page: 0.008
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00063
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00063
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 88.8
     winner: vendor_page
@@ -107,3 +102,8 @@ specs:
       vendor_page: 26.0
 _sources:
   vendor_page: https://www.soundimports.eu/en/grs-5smp-4.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/grs-5smp-4.html
+frd_url: null
+zma_url: null

@@ -4,62 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/dayton-audio-pa460-8.html
 source: https://www.soundimports.eu/en/dayton-audio-pa460-8.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.6
-    winner: vendor_page
-    sources:
-      vendor_page: 5.6
-  Sd:  # effective piston area (m²)
-    value: 0.12411
-    winner: vendor_page
-    sources:
-      vendor_page: 0.12411
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00019
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00019
-  Xmax:  # one-way linear excursion (m)
-    value: 0.006
-    winner: vendor_page
-    sources:
-      vendor_page: 0.006
-  Qes:  # electrical Q factor
-    value: 0.34
-    winner: vendor_page
-    sources:
-      vendor_page: 0.34
-  BL:  # force factor (T·m)
-    value: 22.3
-    winner: vendor_page
-    sources:
-      vendor_page: 22.3
-  Qts:  # total Q factor
-    value: 0.33
-    winner: vendor_page
-    sources:
-      vendor_page: 0.33
-  Qms:  # mechanical Q factor
-    value: 11.2
-    winner: vendor_page
-    sources:
-      vendor_page: 11.2
   Le:  # voice coil inductance (H)
     value: 0.0039
     winner: vendor_page
     sources:
       vendor_page: 0.0039
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.402
+    winner: vendor_page
+    sources:
+      vendor_page: 0.402
+  Qes:  # electrical Q factor
+    value: 0.34
+    winner: vendor_page
+    sources:
+      vendor_page: 0.34
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.171
+    winner: vendor_page
+    sources:
+      vendor_page: 0.171
+  BL:  # force factor (T·m)
+    value: 22.3
+    winner: vendor_page
+    sources:
+      vendor_page: 22.3
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
   Pe:  # rated power input (W)
     value: 500.0
     winner: vendor_page
@@ -70,20 +50,40 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 28.3
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.402
+  Xmax:  # one-way linear excursion (m)
+    value: 0.006
     winner: vendor_page
     sources:
-      vendor_page: 0.402
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.171
+      vendor_page: 0.006
+  Qts:  # total Q factor
+    value: 0.33
     winner: vendor_page
     sources:
-      vendor_page: 0.171
+      vendor_page: 0.33
+  Qms:  # mechanical Q factor
+    value: 11.2
+    winner: vendor_page
+    sources:
+      vendor_page: 11.2
+  Sd:  # effective piston area (m²)
+    value: 0.12411
+    winner: vendor_page
+    sources:
+      vendor_page: 0.12411
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00019
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00019
 _sources:
   vendor_page: https://www.soundimports.eu/en/dayton-audio-pa460-8.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/dayton-audio-pa460-8.html
+frd_url: null
+zma_url: null

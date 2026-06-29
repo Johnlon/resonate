@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-SS18-22-18-Signature-Series-DVC-Subwoofer-2-Ohm-per-Coil-295-736
 source: https://www.parts-express.com/Dayton-Audio-SS18-22-18-Signature-Series-DVC-Subwoofer-2-Ohm-per-Coil-295-736
-frd: https://www.parts-express.com/pedocs/tech-docs/SS18-22_data.zip
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.3
-    winner: vendor_page
-    sources:
-      vendor_page: 5.3
-  Sd:  # effective piston area (m²)
-    value: 0.1188
-    winner: vendor_page
-    sources:
-      vendor_page: 0.1188
-  Cms:  # mechanical compliance (m/N)
-    value: 0.000112
-    winner: vendor_page
-    sources:
-      vendor_page: 0.000112
-  Xmax:  # one-way linear excursion (m)
-    value: 0.026
-    winner: vendor_page
-    sources:
-      vendor_page: 0.026
-  Qes:  # electrical Q factor
-    value: 0.42
-    winner: vendor_page
-    sources:
-      vendor_page: 0.42
-  Rms:  # mechanical resistance (kg/s)
-    value: 19.28753089736275
-    winner: vendor_page
-    sources:
-      vendor_page: 19.28753089736275
-  BL:  # force factor (T·m)
-    value: 29.2
-    winner: vendor_page
-    sources:
-      vendor_page: 29.2
-  Qts:  # total Q factor
-    value: 0.37
-    winner: vendor_page
-    sources:
-      vendor_page: 0.37
-  Qms:  # mechanical Q factor
-    value: 3.4
-    winner: vendor_page
-    sources:
-      vendor_page: 3.4
   Le:  # voice coil inductance (H)
     value: 0.0021000000000000003
     winner: vendor_page
     sources:
       vendor_page: 0.0021000000000000003
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.22370272
+    winner: vendor_page
+    sources:
+      vendor_page: 0.22370272
+  Qes:  # electrical Q factor
+    value: 0.42
+    winner: vendor_page
+    sources:
+      vendor_page: 0.42
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.497
+    winner: vendor_page
+    sources:
+      vendor_page: 0.497
+  BL:  # force factor (T·m)
+    value: 29.2
+    winner: vendor_page
+    sources:
+      vendor_page: 29.2
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.3
+    winner: vendor_page
+    sources:
+      vendor_page: 5.3
   Pe:  # rated power input (W)
     value: 1300.0
     winner: vendor_page
@@ -76,35 +51,50 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 21.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.22370272
+  Rms:  # mechanical resistance (kg/s)
+    value: 19.28753089736275
     winner: vendor_page
     sources:
-      vendor_page: 0.22370272
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.497
+      vendor_page: 19.28753089736275
+  Xmax:  # one-way linear excursion (m)
+    value: 0.026
     winner: vendor_page
     sources:
-      vendor_page: 0.497
+      vendor_page: 0.026
+  Qts:  # total Q factor
+    value: 0.37
+    winner: vendor_page
+    sources:
+      vendor_page: 0.37
+  Qms:  # mechanical Q factor
+    value: 3.4
+    winner: vendor_page
+    sources:
+      vendor_page: 3.4
+  Sd:  # effective piston area (m²)
+    value: 0.1188
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1188
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000112
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000112
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 1.0
     winner: vendor_page
     sources:
       vendor_page: 1.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 20.0
-    winner: vendor_page
-    sources:
-      vendor_page: 20.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 400.0
-    winner: vendor_page
-    sources:
-      vendor_page: 400.0
 _sources:
   vendor_page: https://www.parts-express.com/Dayton-Audio-SS18-22-18-Signature-Series-DVC-Subwoofer-2-Ohm-per-Coil-295-736
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-SS18-22-18-Signature-Series-DVC-Subwoofer-2-Ohm-per-Coil-295-736
+frd_url: https://www.parts-express.com/pedocs/tech-docs/SS18-22_data.zip
+zma_url: null

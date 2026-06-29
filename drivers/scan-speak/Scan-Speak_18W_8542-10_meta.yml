@@ -4,53 +4,53 @@ detail: Automatically scraped from Scan-Speak website (scraped 2026-06-28). T/S 
   have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.scan-speak.dk/datasheet/pdf/18w-8542-10.pdf
-manu_page: https://www.scan-speak.dk/product/18w-8542-10/
-vendor_page: null
 source: https://www.scan-speak.dk/product/18w-8542-10/
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: woofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.7
-    winner: manu_page
-    sources:
-      manu_page: 5.7
-  Sd:  # effective piston area (m²)
-    value: 0.0135
-    winner: manu_page
-    sources:
-      manu_page: 0.0135
-  BL:  # force factor (T·m)
-    value: 6.9
-    winner: manu_page
-    sources:
-      manu_page: 6.9
-  Qts:  # total Q factor
-    value: 0.35
-    winner: manu_page
-    sources:
-      manu_page: 0.35
-  SPL:  # sensitivity (dB, 2.83 V/1 m)
-    value: 88.0
-    winner: manu_page
-    sources:
-      manu_page: 88.0
-  Fs:  # free air resonance (Hz)
-    value: 43.0
-    winner: manu_page
-    sources:
-      manu_page: 43.0
   Vas:  # equivalent acoustic volume (m³)
     value: 0.026
     winner: manu_page
     sources:
       manu_page: 0.026
+  BL:  # force factor (T·m)
+    value: 6.9
+    winner: manu_page
+    sources:
+      manu_page: 6.9
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.7
+    winner: manu_page
+    sources:
+      manu_page: 5.7
+  Fs:  # free air resonance (Hz)
+    value: 43.0
+    winner: manu_page
+    sources:
+      manu_page: 43.0
+  Qts:  # total Q factor
+    value: 0.35
+    winner: manu_page
+    sources:
+      manu_page: 0.35
+  Sd:  # effective piston area (m²)
+    value: 0.0135
+    winner: manu_page
+    sources:
+      manu_page: 0.0135
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 88.0
+    winner: manu_page
+    sources:
+      manu_page: 88.0
 _sources:
   datasheet: https://www.scan-speak.dk/datasheet/pdf/18w-8542-10.pdf
   manu_page: https://www.scan-speak.dk/product/18w-8542-10/
+datasheet_url: https://www.scan-speak.dk/datasheet/pdf/18w-8542-10.pdf
+manu_page_url: https://www.scan-speak.dk/product/18w-8542-10/
+vendor_page_url: null
+frd_url: null
+zma_url: null

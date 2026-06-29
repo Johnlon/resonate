@@ -6,35 +6,22 @@ corrections: null
 reviewed_by: null
 driver_type: tweeter
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/277-010-morel-mdt-29-specifications.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Morel-MDT-29-1-1-8-Soft-Dome-Tweeter-277-010
 source: https://www.parts-express.com/Morel-MDT-29-1-1-8-Soft-Dome-Tweeter-277-010
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 277-010
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.2
-    winner: vendor_page
-    sources:
-      vendor_page: 5.2
-  Sd:  # effective piston area (m²)
-    value: 0.0006
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0006
   Qes:  # electrical Q factor
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
   Pe:  # rated power input (W)
     value: 80.0
     winner: vendor_page
@@ -45,6 +32,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 900.0
+  Sd:  # effective piston area (m²)
+    value: 0.0006
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0006
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -63,3 +55,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/277-010-morel-mdt-29-specifications.pdf
   vendor_page: https://www.parts-express.com/Morel-MDT-29-1-1-8-Soft-Dome-Tweeter-277-010
+datasheet_url: https://www.parts-express.com/pedocs/specs/277-010-morel-mdt-29-specifications.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Morel-MDT-29-1-1-8-Soft-Dome-Tweeter-277-010
+frd_url: null
+zma_url: null

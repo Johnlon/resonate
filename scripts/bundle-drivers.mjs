@@ -60,11 +60,11 @@ for (const src of sources) {
     const sidecarPath = p.replace(/\.wdr$/i, '_meta.yml');
     const sidecar = existsSync(sidecarPath) ? readFileSync(sidecarPath, 'utf8') : '';
     const ymlVal = key => { const m = sidecar.match(new RegExp(`^${key}:\\s*(.+)$`, 'm')); if (!m) return ''; const v = m[1].trim(); return (v === 'null' || v === '~') ? '' : v; };
-    const datasheet    = ymlVal('datasheet');
-    const manupage     = ymlVal('manu_page');
-    const vendorpage   = ymlVal('vendor_page');
-    const frd          = ymlVal('frd');
-    const impedance    = ymlVal('impedance');
+    const datasheet    = ymlVal('datasheet_url');
+    const manupage     = ymlVal('manu_page_url');
+    const vendorpage   = ymlVal('vendor_page_url');
+    const frd          = ymlVal('frd_url');
+    const impedance    = ymlVal('zma_url');
     const driver_type  = ymlVal('driver_type');
     const freq_low_hz  = ymlVal('freq_low_hz');
     const freq_high_hz = ymlVal('freq_high_hz');

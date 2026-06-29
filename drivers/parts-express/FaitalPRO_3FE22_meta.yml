@@ -7,65 +7,37 @@ corrections: '''Vas'' stored=0.00113267 differs from calculated=0.00111265 (deps
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/FaitalPRO-3FE22-3-Neodymium-Professional-Woofer-4-Ohm-294-1100
 source: https://www.parts-express.com/FaitalPRO-3FE22-3-Neodymium-Professional-Woofer-4-Ohm-294-1100
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-1100
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.7
-    winner: vendor_page
-    sources:
-      vendor_page: 3.7
-  Sd:  # effective piston area (m²)
-    value: 0.00302
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00302
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00086
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00086
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00173
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00173
-  Qes:  # electrical Q factor
-    value: 0.4
-    winner: vendor_page
-    sources:
-      vendor_page: 0.4
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.46463891347210384
-    winner: vendor_page
-    sources:
-      vendor_page: 0.46463891347210384
-  Qts:  # total Q factor
-    value: 0.36
-    winner: vendor_page
-    sources:
-      vendor_page: 0.36
-  Qms:  # mechanical Q factor
-    value: 3.57
-    winner: vendor_page
-    sources:
-      vendor_page: 3.57
   Le:  # voice coil inductance (H)
     value: 0.0001
     winner: vendor_page
     sources:
       vendor_page: 0.0001
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.001132672
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001132672
+  Qes:  # electrical Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0024
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0024
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.7
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7
   Pe:  # rated power input (W)
     value: 20.0
     winner: vendor_page
@@ -76,21 +48,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 110.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.001132672
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.46463891347210384
     winner: vendor_page
     sources:
-      vendor_page: 0.001132672
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0024
+      vendor_page: 0.46463891347210384
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00173
     winner: vendor_page
     sources:
-      vendor_page: 0.0024
+      vendor_page: 0.00173
+  Qts:  # total Q factor
+    value: 0.36
+    winner: vendor_page
+    sources:
+      vendor_page: 0.36
+  Qms:  # mechanical Q factor
+    value: 3.57
+    winner: vendor_page
+    sources:
+      vendor_page: 3.57
+  Sd:  # effective piston area (m²)
+    value: 0.00302
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00302
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00086
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00086
   freq_low_hz:  # published lower frequency limit (Hz)
     value: 2019.1
     winner: vendor_page
@@ -103,3 +95,11 @@ specs:
       vendor_page: 294.0
 _sources:
   vendor_page: https://www.parts-express.com/FaitalPRO-3FE22-3-Neodymium-Professional-Woofer-4-Ohm-294-1100
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/FaitalPRO-3FE22-3-Neodymium-Professional-Woofer-4-Ohm-294-1100
+frd_url: null
+zma_url: null

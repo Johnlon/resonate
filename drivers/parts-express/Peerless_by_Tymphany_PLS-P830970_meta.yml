@@ -6,70 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-1044--tymphany-pls-p830970-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Peerless-830970-2-Full-Range-Woofer-264-1044
 source: https://www.parts-express.com/Peerless-830970-2-Full-Range-Woofer-264-1044
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 264-1044
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.8
-    winner: vendor_page
-    sources:
-      vendor_page: 3.8
-  Sd:  # effective piston area (m²)
-    value: 0.0013
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0013
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00076
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00076
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0018
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0018
-  Qes:  # electrical Q factor
-    value: 0.67
-    winner: vendor_page
-    sources:
-      vendor_page: 0.67
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.45429893765146523
-    winner: vendor_page
-    sources:
-      vendor_page: 0.45429893765146523
-  BL:  # force factor (T·m)
-    value: 2.8
-    winner: vendor_page
-    sources:
-      vendor_page: 2.8
-  Qts:  # total Q factor
-    value: 0.57
-    winner: vendor_page
-    sources:
-      vendor_page: 0.57
-  Qms:  # mechanical Q factor
-    value: 3.85
-    winner: vendor_page
-    sources:
-      vendor_page: 3.85
   Le:  # voice coil inductance (H)
     value: 0.0002
     winner: vendor_page
     sources:
       vendor_page: 0.0002
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.000283168
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000283168
+  Qes:  # electrical Q factor
+    value: 0.67
+    winner: vendor_page
+    sources:
+      vendor_page: 0.67
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0015
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0015
+  BL:  # force factor (T·m)
+    value: 2.8
+    winner: vendor_page
+    sources:
+      vendor_page: 2.8
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.8
+    winner: vendor_page
+    sources:
+      vendor_page: 3.8
   Pe:  # rated power input (W)
     value: 25.0
     winner: vendor_page
@@ -80,31 +52,49 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 147.5
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.000283168
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.45429893765146523
     winner: vendor_page
     sources:
-      vendor_page: 0.000283168
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0015
+      vendor_page: 0.45429893765146523
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0018
     winner: vendor_page
     sources:
-      vendor_page: 0.0015
+      vendor_page: 0.0018
+  Qts:  # total Q factor
+    value: 0.57
+    winner: vendor_page
+    sources:
+      vendor_page: 0.57
+  Qms:  # mechanical Q factor
+    value: 3.85
+    winner: vendor_page
+    sources:
+      vendor_page: 3.85
+  Sd:  # effective piston area (m²)
+    value: 0.0013
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0013
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 150.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00076
     winner: vendor_page
     sources:
-      vendor_page: 150.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 20000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 20000.0
+      vendor_page: 0.00076
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-1044--tymphany-pls-p830970-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Peerless-830970-2-Full-Range-Woofer-264-1044
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-1044--tymphany-pls-p830970-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Peerless-830970-2-Full-Range-Woofer-264-1044
+frd_url: null
+zma_url: null

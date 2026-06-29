@@ -6,15 +6,7 @@ corrections: null
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Visaton-SL713-4-2-3-4-x-5-Paper-Cone-Full-Range-Driver-4-Ohm-292-732
 source: https://www.parts-express.com/Visaton-SL713-4-2-3-4-x-5-Paper-Cone-Full-Range-Driver-4-Ohm-292-732
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd
 community: null
@@ -47,3 +39,11 @@ specs:
       vendor_page: 20000.0
 _sources:
   vendor_page: https://www.parts-express.com/Visaton-SL713-4-2-3-4-x-5-Paper-Cone-Full-Range-Driver-4-Ohm-292-732
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Visaton-SL713-4-2-3-4-x-5-Paper-Cone-Full-Range-Driver-4-Ohm-292-732
+frd_url: null
+zma_url: null

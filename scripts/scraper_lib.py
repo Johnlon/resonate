@@ -534,15 +534,15 @@ def run_scraper(vendor_name: str,
 
         # Download FRD/impedance files first so the WDR can reference them.
         extras = []
-        frd_ok = ""
-        impedance_ok = ""
+        frd_url = ""
+        zma_url = ""
 
-        if product.get("pdf_url"):
-            pdf_name = urllib.parse.unquote(product["pdf_url"].split("/")[-1])
+        if product.get("datasheet_url"):
+            pdf_name = urllib.parse.unquote(product["datasheet_url"].split("/")[-1])
             pdf_path = pdf_dir / pdf_name
             if not pdf_path.exists():
                 try:
-                    pdf_path.write_bytes(fetch_binary(product["pdf_url"]))
+                    pdf_path.write_bytes(fetch_binary(product["datasheet_url"]))
                     extras.append("+PDF")
                 except Exception as e:
                     extras.append(f"(PDF err: {e})")
@@ -557,19 +557,19 @@ def run_scraper(vendor_name: str,
                 except Exception as e:
                     extras.append(f"(FRD err: {e})")
             if fpath.exists():
-                frd_ok = product["frd_url"]
+                frd_url = product["frd_url"]
 
-        if product.get("impedance_url"):
-            fname = urllib.parse.unquote(product["impedance_url"].split("/")[-1])
+        if product.get("zma_url"):
+            fname = urllib.parse.unquote(product["zma_url"].split("/")[-1])
             fpath = out / fname
             if not fpath.exists():
                 try:
-                    fpath.write_bytes(fetch_binary(product["impedance_url"]))
+                    fpath.write_bytes(fetch_binary(product["zma_url"]))
                     extras.append(f"+IMP")
                 except Exception as e:
                     extras.append(f"(IMP err: {e})")
             if fpath.exists():
-                impedance_ok = product["impedance_url"]
+                zma_url = product["zma_url"]
 
         for link in product.get("extra_links", []):
             fname = urllib.parse.unquote(link.split("/")[-1])
@@ -601,12 +601,12 @@ def run_scraper(vendor_name: str,
             "corrections": None,
             "reviewed_by": None,
             "driver_type": product.get("driver_type") or None,
-            "datasheet": product.get("pdf_url") or None,
-            "manu_page": url if is_manufacturer_site else None,
-            "vendor_page": None if is_manufacturer_site else url,
+            "datasheet_url": product.get("datasheet_url") or None,
+            "manu_page_url": url if is_manufacturer_site else None,
+            "vendor_page_url": None if is_manufacturer_site else url,
             "source": url,
-            "frd": frd_ok or None,
-            "impedance": impedance_ok or None,
+            "frd_url": frd_url or None,
+            "zma_url": zma_url or None,
             "obsolete": None,
             "dq_issue": "; ".join(dq_issues) if dq_issues else None,
             "community": None,

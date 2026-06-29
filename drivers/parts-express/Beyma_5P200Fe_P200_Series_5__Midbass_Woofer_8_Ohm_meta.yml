@@ -4,63 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/253-031--5p200fe-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Beyma-5P200Fe-P200-Series-5-Midbass-Woofer-8-Ohm-253-031
 source: https://www.parts-express.com/Beyma-5P200Fe-P200-Series-5-Midbass-Woofer-8-Ohm-253-031
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.2
-    winner: vendor_page
-    sources:
-      vendor_page: 5.2
-  Sd:  # effective piston area (m²)
-    value: 9.5e-07
-    winner: vendor_page
-    sources:
-      vendor_page: 9.5e-07
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0057
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0057
-  Qes:  # electrical Q factor
-    value: 0.35
-    winner: vendor_page
-    sources:
-      vendor_page: 0.35
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.6031857894892403
-    winner: vendor_page
-    sources:
-      vendor_page: 0.6031857894892403
-  BL:  # force factor (T·m)
-    value: 8.5
-    winner: vendor_page
-    sources:
-      vendor_page: 8.5
-  Qts:  # total Q factor
-    value: 0.33
-    winner: vendor_page
-    sources:
-      vendor_page: 0.33
-  Qms:  # mechanical Q factor
-    value: 7.5
-    winner: vendor_page
-    sources:
-      vendor_page: 7.5
   Le:  # voice coil inductance (H)
     value: 0.0006
     winner: vendor_page
     sources:
       vendor_page: 0.0006
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00566336
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00566336
+  Qes:  # electrical Q factor
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.01
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01
+  BL:  # force factor (T·m)
+    value: 8.5
+    winner: vendor_page
+    sources:
+      vendor_page: 8.5
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
   Pe:  # rated power input (W)
     value: 150.0
     winner: vendor_page
@@ -71,16 +51,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 72.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.00566336
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.6031857894892403
     winner: vendor_page
     sources:
-      vendor_page: 0.00566336
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.01
+      vendor_page: 0.6031857894892403
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0057
     winner: vendor_page
     sources:
-      vendor_page: 0.01
+      vendor_page: 0.0057
+  Qts:  # total Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Qms:  # mechanical Q factor
+    value: 7.5
+    winner: vendor_page
+    sources:
+      vendor_page: 7.5
+  Sd:  # effective piston area (m²)
+    value: 9.5e-07
+    winner: vendor_page
+    sources:
+      vendor_page: 9.5e-07
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -91,16 +86,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 92.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 70.0
-    winner: vendor_page
-    sources:
-      vendor_page: 70.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 10000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 10000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/253-031--5p200fe-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Beyma-5P200Fe-P200-Series-5-Midbass-Woofer-8-Ohm-253-031
+datasheet_url: https://www.parts-express.com/pedocs/specs/253-031--5p200fe-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Beyma-5P200Fe-P200-Series-5-Midbass-Woofer-8-Ohm-253-031
+frd_url: null
+zma_url: null

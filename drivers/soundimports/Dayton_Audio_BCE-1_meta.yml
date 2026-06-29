@@ -4,27 +4,22 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/BCE-1/pdf_Dayton%20Audio_BCE-1_2.pdf
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/dayton-audio-bce-1.html
 source: https://www.soundimports.eu/en/dayton-audio-bce-1.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 4.0
-    winner: vendor_page
-    sources:
-      vendor_page: 4.0
   Le:  # voice coil inductance (H)
     value: 0.00056
     winner: vendor_page
     sources:
       vendor_page: 0.00056
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
   Pe:  # rated power input (W)
     value: 1.0
     winner: vendor_page
@@ -58,3 +53,8 @@ specs:
 _sources:
   datasheet: https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/BCE-1/pdf_Dayton%20Audio_BCE-1_2.pdf
   vendor_page: https://www.soundimports.eu/en/dayton-audio-bce-1.html
+datasheet_url: https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/BCE-1/pdf_Dayton%20Audio_BCE-1_2.pdf
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/dayton-audio-bce-1.html
+frd_url: null
+zma_url: null

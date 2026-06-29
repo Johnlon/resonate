@@ -4,28 +4,23 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/GRS%20Spec%20Sheets/292-438--grs-1tm-4-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/GRS-1TM-4-1-Mylar-Tweeter-with-1-2-Voice-Coil-4-Ohm-292-438
 source: https://www.parts-express.com/GRS-1TM-4-1-Mylar-Tweeter-with-1-2-Voice-Coil-4-Ohm-292-438
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.5
-    winner: vendor_page
-    sources:
-      vendor_page: 3.5
   Le:  # voice coil inductance (H)
     value: 0.0001
     winner: vendor_page
     sources:
       vendor_page: 0.0001
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.5
+    winner: vendor_page
+    sources:
+      vendor_page: 3.5
   Pe:  # rated power input (W)
     value: 5.0
     winner: vendor_page
@@ -41,16 +36,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 4800.0
-    winner: vendor_page
-    sources:
-      vendor_page: 4800.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 20000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 20000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/GRS%20Spec%20Sheets/292-438--grs-1tm-4-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/GRS-1TM-4-1-Mylar-Tweeter-with-1-2-Voice-Coil-4-Ohm-292-438
+datasheet_url: https://www.parts-express.com/pedocs/specs/GRS%20Spec%20Sheets/292-438--grs-1tm-4-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/GRS-1TM-4-1-Mylar-Tweeter-with-1-2-Voice-Coil-4-Ohm-292-438
+frd_url: null
+zma_url: null

@@ -4,12 +4,7 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-841--tang-band-13-1761s-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Tang-Band-13-1761S-1-2-Silk-Dome-Tweeter-Pair-264-841
 source: https://www.parts-express.com/Tang-Band-13-1761S-1-2-Silk-Dome-Tweeter-Pair-264-841
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
@@ -36,16 +31,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 4000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 4000.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 20000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 20000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-841--tang-band-13-1761s-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Tang-Band-13-1761S-1-2-Silk-Dome-Tweeter-Pair-264-841
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-841--tang-band-13-1761s-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Tang-Band-13-1761S-1-2-Silk-Dome-Tweeter-Pair-264-841
+frd_url: null
+zma_url: null

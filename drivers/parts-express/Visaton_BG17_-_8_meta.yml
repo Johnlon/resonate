@@ -6,50 +6,32 @@ corrections: null
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/292-546--visaton-bg17-8-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Visaton-BG17-8-6.5-Full-Range-Speaker-with-Whizzer-Cone-292-546
 source: https://www.parts-express.com/Visaton-BG17-8-6.5-Full-Range-Speaker-with-Whizzer-Cone-292-546
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd
 community: null
 fetched_sku: 292-546
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.3
-    winner: vendor_page
-    sources:
-      vendor_page: 6.3
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0015
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0015
-  Qes:  # electrical Q factor
-    value: 0.98
-    winner: vendor_page
-    sources:
-      vendor_page: 0.98
-  Qts:  # total Q factor
-    value: 0.74
-    winner: vendor_page
-    sources:
-      vendor_page: 0.74
-  Qms:  # mechanical Q factor
-    value: 2.94
-    winner: vendor_page
-    sources:
-      vendor_page: 2.94
   Le:  # voice coil inductance (H)
     value: 0.0007
     winner: vendor_page
     sources:
       vendor_page: 0.0007
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.008211871999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.008211871999999999
+  Qes:  # electrical Q factor
+    value: 0.98
+    winner: vendor_page
+    sources:
+      vendor_page: 0.98
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.3
+    winner: vendor_page
+    sources:
+      vendor_page: 6.3
   Pe:  # rated power input (W)
     value: 40.0
     winner: vendor_page
@@ -60,11 +42,21 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 120.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.008211871999999999
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0015
     winner: vendor_page
     sources:
-      vendor_page: 0.008211871999999999
+      vendor_page: 0.0015
+  Qts:  # total Q factor
+    value: 0.74
+    winner: vendor_page
+    sources:
+      vendor_page: 0.74
+  Qms:  # mechanical Q factor
+    value: 2.94
+    winner: vendor_page
+    sources:
+      vendor_page: 2.94
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -83,3 +75,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/292-546--visaton-bg17-8-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Visaton-BG17-8-6.5-Full-Range-Speaker-with-Whizzer-Cone-292-546
+datasheet_url: https://www.parts-express.com/pedocs/specs/292-546--visaton-bg17-8-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Visaton-BG17-8-6.5-Full-Range-Speaker-with-Whizzer-Cone-292-546
+frd_url: null
+zma_url: null

@@ -6,25 +6,22 @@ corrections: null
 reviewed_by: null
 driver_type: subwoofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/293-210--ciare-americano-10a500w-4-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Ciare-12A500W-4-Americano-Series-12-Woofer-4-Ohm-293-210
 source: https://www.parts-express.com/Ciare-12A500W-4-Americano-Series-12-Woofer-4-Ohm-293-210
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd
 community: null
 fetched_sku: 293-210
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.68
+  Le:  # voice coil inductance (H)
+    value: 0.00055
     winner: vendor_page
     sources:
-      vendor_page: 3.68
+      vendor_page: 0.00055
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00368
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00368
   Qes:  # electrical Q factor
     value: 0.57
     winner: vendor_page
@@ -35,21 +32,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 10.07
-  Qts:  # total Q factor
-    value: 0.54
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.68
     winner: vendor_page
     sources:
-      vendor_page: 0.54
-  Qms:  # mechanical Q factor
-    value: 10.81
-    winner: vendor_page
-    sources:
-      vendor_page: 10.81
-  Le:  # voice coil inductance (H)
-    value: 0.00055
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00055
+      vendor_page: 3.68
   Pe:  # rated power input (W)
     value: 250.0
     winner: vendor_page
@@ -60,11 +47,16 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 50.18
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.00368
+  Qts:  # total Q factor
+    value: 0.54
     winner: vendor_page
     sources:
-      vendor_page: 0.00368
+      vendor_page: 0.54
+  Qms:  # mechanical Q factor
+    value: 10.81
+    winner: vendor_page
+    sources:
+      vendor_page: 10.81
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
@@ -78,3 +70,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/293-210--ciare-americano-10a500w-4-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Ciare-12A500W-4-Americano-Series-12-Woofer-4-Ohm-293-210
+datasheet_url: https://www.parts-express.com/pedocs/specs/293-210--ciare-americano-10a500w-4-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Ciare-12A500W-4-Americano-Series-12-Woofer-4-Ohm-293-210
+frd_url: null
+zma_url: null

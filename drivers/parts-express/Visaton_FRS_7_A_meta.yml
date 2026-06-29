@@ -6,15 +6,7 @@ corrections: null
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/292-7827--visaton-frs7a8-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Visaton-FRS7A8-2.5-Full-Range-Speaker-8-Ohm-292-7827
 source: https://www.parts-express.com/Visaton-FRS7A8-2.5-Full-Range-Speaker-8-Ohm-292-7827
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd
 community: null
@@ -48,3 +40,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/292-7827--visaton-frs7a8-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Visaton-FRS7A8-2.5-Full-Range-Speaker-8-Ohm-292-7827
+datasheet_url: https://www.parts-express.com/pedocs/specs/292-7827--visaton-frs7a8-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Visaton-FRS7A8-2.5-Full-Range-Speaker-8-Ohm-292-7827
+frd_url: null
+zma_url: null

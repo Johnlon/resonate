@@ -4,53 +4,28 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/298-1233--wf182bd13-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Wavecor-WF182BD13-7-Kevlar-Carbon-Fiber-Cone-Midwoofer-4-Ohm-298-1233
 source: https://www.parts-express.com/Wavecor-WF182BD13-7-Kevlar-Carbon-Fiber-Cone-Midwoofer-4-Ohm-298-1233
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Sd:  # effective piston area (m²)
-    value: 0.0117
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.022936608
     winner: vendor_page
     sources:
-      vendor_page: 0.0117
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0011799999999999998
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0011799999999999998
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0055
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0055
+      vendor_page: 0.022936608
   Qes:  # electrical Q factor
     value: 0.26
     winner: vendor_page
     sources:
       vendor_page: 0.26
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.3446775939938516
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.016
     winner: vendor_page
     sources:
-      vendor_page: 0.3446775939938516
-  Qts:  # total Q factor
-    value: 0.25
-    winner: vendor_page
-    sources:
-      vendor_page: 0.25
-  Qms:  # mechanical Q factor
-    value: 10.5
-    winner: vendor_page
-    sources:
-      vendor_page: 10.5
+      vendor_page: 0.016
   Pe:  # rated power input (W)
     value: 80.0
     winner: vendor_page
@@ -61,21 +36,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 36.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.022936608
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.3446775939938516
     winner: vendor_page
     sources:
-      vendor_page: 0.022936608
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.016
+      vendor_page: 0.3446775939938516
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0055
     winner: vendor_page
     sources:
-      vendor_page: 0.016
+      vendor_page: 0.0055
+  Qts:  # total Q factor
+    value: 0.25
+    winner: vendor_page
+    sources:
+      vendor_page: 0.25
+  Qms:  # mechanical Q factor
+    value: 10.5
+    winner: vendor_page
+    sources:
+      vendor_page: 10.5
+  Sd:  # effective piston area (m²)
+    value: 0.0117
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0117
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0011799999999999998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0011799999999999998
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/298-1233--wf182bd13-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Wavecor-WF182BD13-7-Kevlar-Carbon-Fiber-Cone-Midwoofer-4-Ohm-298-1233
+datasheet_url: https://www.parts-express.com/pedocs/specs/298-1233--wf182bd13-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Wavecor-WF182BD13-7-Kevlar-Carbon-Fiber-Cone-Midwoofer-4-Ohm-298-1233
+frd_url: null
+zma_url: null

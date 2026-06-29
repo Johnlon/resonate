@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/GRS%20Spec%20Sheets/292-426--grs-6pr-8-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/GRS-6PR-8-6-1-2-Poly-Cone-Rubber-Surround-Woofer-292-426
 source: https://www.parts-express.com/GRS-6PR-8-6-1-2-Poly-Cone-Rubber-Surround-Woofer-292-426
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: woofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 7.1
-    winner: vendor_page
-    sources:
-      vendor_page: 7.1
-  Sd:  # effective piston area (m²)
-    value: 0.014
-    winner: vendor_page
-    sources:
-      vendor_page: 0.014
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00038
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00038
-  Xmax:  # one-way linear excursion (m)
-    value: 0.003
-    winner: vendor_page
-    sources:
-      vendor_page: 0.003
-  Qes:  # electrical Q factor
-    value: 1.16
-    winner: vendor_page
-    sources:
-      vendor_page: 1.16
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.753921642157994
-    winner: vendor_page
-    sources:
-      vendor_page: 1.753921642157994
-  BL:  # force factor (T·m)
-    value: 6.1
-    winner: vendor_page
-    sources:
-      vendor_page: 6.1
-  Qts:  # total Q factor
-    value: 0.87
-    winner: vendor_page
-    sources:
-      vendor_page: 0.87
-  Qms:  # mechanical Q factor
-    value: 3.51
-    winner: vendor_page
-    sources:
-      vendor_page: 3.51
   Le:  # voice coil inductance (H)
     value: 0.0011
     winner: vendor_page
     sources:
       vendor_page: 0.0011
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.010477216
+    winner: vendor_page
+    sources:
+      vendor_page: 0.010477216
+  Qes:  # electrical Q factor
+    value: 1.16
+    winner: vendor_page
+    sources:
+      vendor_page: 1.16
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.014199999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.014199999999999999
+  BL:  # force factor (T·m)
+    value: 6.1
+    winner: vendor_page
+    sources:
+      vendor_page: 6.1
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.1
+    winner: vendor_page
+    sources:
+      vendor_page: 7.1
   Pe:  # rated power input (W)
     value: 60.0
     winner: vendor_page
@@ -76,31 +51,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 69.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.010477216
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.753921642157994
     winner: vendor_page
     sources:
-      vendor_page: 0.010477216
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.014199999999999999
+      vendor_page: 1.753921642157994
+  Xmax:  # one-way linear excursion (m)
+    value: 0.003
     winner: vendor_page
     sources:
-      vendor_page: 0.014199999999999999
+      vendor_page: 0.003
+  Qts:  # total Q factor
+    value: 0.87
+    winner: vendor_page
+    sources:
+      vendor_page: 0.87
+  Qms:  # mechanical Q factor
+    value: 3.51
+    winner: vendor_page
+    sources:
+      vendor_page: 3.51
+  Sd:  # effective piston area (m²)
+    value: 0.014
+    winner: vendor_page
+    sources:
+      vendor_page: 0.014
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 60.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00038
     winner: vendor_page
     sources:
-      vendor_page: 60.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 8000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 8000.0
+      vendor_page: 0.00038
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/GRS%20Spec%20Sheets/292-426--grs-6pr-8-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/GRS-6PR-8-6-1-2-Poly-Cone-Rubber-Surround-Woofer-292-426
+datasheet_url: https://www.parts-express.com/pedocs/specs/GRS%20Spec%20Sheets/292-426--grs-6pr-8-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/GRS-6PR-8-6-1-2-Poly-Cone-Rubber-Surround-Woofer-292-426
+frd_url: null
+zma_url: null

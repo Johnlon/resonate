@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/294-1244-faitalpro-12pr310-8-specifications.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/FaitalPRO-12PR310-12-Professional-Woofer-8-Ohm-294-1244
 source: https://www.parts-express.com/FaitalPRO-12PR310-12-Professional-Woofer-8-Ohm-294-1244
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.4
-    winner: vendor_page
-    sources:
-      vendor_page: 5.4
-  Sd:  # effective piston area (m²)
-    value: 0.0489
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0489
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00017999999999999998
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00017999999999999998
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00492
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00492
-  Qes:  # electrical Q factor
-    value: 0.41
-    winner: vendor_page
-    sources:
-      vendor_page: 0.41
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.3717926818071569
-    winner: vendor_page
-    sources:
-      vendor_page: 1.3717926818071569
-  BL:  # force factor (T·m)
-    value: 14.4
-    winner: vendor_page
-    sources:
-      vendor_page: 14.4
-  Qts:  # total Q factor
-    value: 0.4
-    winner: vendor_page
-    sources:
-      vendor_page: 0.4
-  Qms:  # mechanical Q factor
-    value: 11.6
-    winner: vendor_page
-    sources:
-      vendor_page: 11.6
   Le:  # voice coil inductance (H)
     value: 0.00061
     winner: vendor_page
     sources:
       vendor_page: 0.00061
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.062863296
+    winner: vendor_page
+    sources:
+      vendor_page: 0.062863296
+  Qes:  # electrical Q factor
+    value: 0.41
+    winner: vendor_page
+    sources:
+      vendor_page: 0.41
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0469
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0469
+  BL:  # force factor (T·m)
+    value: 14.4
+    winner: vendor_page
+    sources:
+      vendor_page: 14.4
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.4
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4
   Pe:  # rated power input (W)
     value: 300.0
     winner: vendor_page
@@ -76,21 +51,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 54.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.062863296
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.3717926818071569
     winner: vendor_page
     sources:
-      vendor_page: 0.062863296
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0469
+      vendor_page: 1.3717926818071569
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00492
     winner: vendor_page
     sources:
-      vendor_page: 0.0469
+      vendor_page: 0.00492
+  Qts:  # total Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Qms:  # mechanical Q factor
+    value: 11.6
+    winner: vendor_page
+    sources:
+      vendor_page: 11.6
+  Sd:  # effective piston area (m²)
+    value: 0.0489
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0489
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00017999999999999998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00017999999999999998
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 4.0
     winner: vendor_page
@@ -109,3 +104,8 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/294-1244-faitalpro-12pr310-8-specifications.pdf
   vendor_page: https://www.parts-express.com/FaitalPRO-12PR310-12-Professional-Woofer-8-Ohm-294-1244
+datasheet_url: https://www.parts-express.com/pedocs/specs/294-1244-faitalpro-12pr310-8-specifications.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/FaitalPRO-12PR310-12-Professional-Woofer-8-Ohm-294-1244
+frd_url: null
+zma_url: null

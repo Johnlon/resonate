@@ -6,65 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/JBL-Selenium-8PWX-8R-8-Professional-Woofer-8-Ohm-294-494
 source: https://www.parts-express.com/JBL-Selenium-8PWX-8R-8-Professional-Woofer-8-Ohm-294-494
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-494
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.67
-    winner: vendor_page
-    sources:
-      vendor_page: 6.67
-  Sd:  # effective piston area (m²)
-    value: 0.025
-    winner: vendor_page
-    sources:
-      vendor_page: 0.025
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0039
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0039
-  Qes:  # electrical Q factor
-    value: 1.18
-    winner: vendor_page
-    sources:
-      vendor_page: 1.18
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.222796309335256
-    winner: vendor_page
-    sources:
-      vendor_page: 1.222796309335256
-  BL:  # force factor (T·m)
-    value: 7.21
-    winner: vendor_page
-    sources:
-      vendor_page: 7.21
-  Qts:  # total Q factor
-    value: 1.02
-    winner: vendor_page
-    sources:
-      vendor_page: 1.02
-  Qms:  # mechanical Q factor
-    value: 7.53
-    winner: vendor_page
-    sources:
-      vendor_page: 7.53
   Le:  # voice coil inductance (H)
     value: 0.00075
     winner: vendor_page
     sources:
       vendor_page: 0.00075
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.017273247999999998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.017273247999999998
+  Qes:  # electrical Q factor
+    value: 1.18
+    winner: vendor_page
+    sources:
+      vendor_page: 1.18
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.01654
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01654
+  BL:  # force factor (T·m)
+    value: 7.21
+    winner: vendor_page
+    sources:
+      vendor_page: 7.21
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.67
+    winner: vendor_page
+    sources:
+      vendor_page: 6.67
   Pe:  # rated power input (W)
     value: 200.0
     winner: vendor_page
@@ -75,16 +52,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 88.6
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.017273247999999998
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.222796309335256
     winner: vendor_page
     sources:
-      vendor_page: 0.017273247999999998
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.01654
+      vendor_page: 1.222796309335256
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0039
     winner: vendor_page
     sources:
-      vendor_page: 0.01654
+      vendor_page: 0.0039
+  Qts:  # total Q factor
+    value: 1.02
+    winner: vendor_page
+    sources:
+      vendor_page: 1.02
+  Qms:  # mechanical Q factor
+    value: 7.53
+    winner: vendor_page
+    sources:
+      vendor_page: 7.53
+  Sd:  # effective piston area (m²)
+    value: 0.025
+    winner: vendor_page
+    sources:
+      vendor_page: 0.025
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -102,3 +94,11 @@ specs:
       vendor_page: 8.0
 _sources:
   vendor_page: https://www.parts-express.com/JBL-Selenium-8PWX-8R-8-Professional-Woofer-8-Ohm-294-494
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/JBL-Selenium-8PWX-8R-8-Professional-Woofer-8-Ohm-294-494
+frd_url: null
+zma_url: null

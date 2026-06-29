@@ -7,70 +7,42 @@ corrections: '''Vas'' stored=0.0167 differs from calculated=0.0169109 (deps: roo
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/295-573--dayton-audio-rs150p-8a-reference-series-specifications.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-RS150P-8A-6-Reference-Paper-Woofer-8-Ohm-295-573
 source: https://www.parts-express.com/Dayton-Audio-RS150P-8A-6-Reference-Paper-Woofer-8-Ohm-295-573
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 295-573
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.7
-    winner: vendor_page
-    sources:
-      vendor_page: 6.7
-  Sd:  # effective piston area (m²)
-    value: 0.0085
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0085
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00165
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00165
-  Xmax:  # one-way linear excursion (m)
-    value: 0.004
-    winner: vendor_page
-    sources:
-      vendor_page: 0.004
-  Qes:  # electrical Q factor
-    value: 0.43
-    winner: vendor_page
-    sources:
-      vendor_page: 0.43
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.2301038511929483
-    winner: vendor_page
-    sources:
-      vendor_page: 1.2301038511929483
-  BL:  # force factor (T·m)
-    value: 5.6
-    winner: vendor_page
-    sources:
-      vendor_page: 5.6
-  Qts:  # total Q factor
-    value: 0.34
-    winner: vendor_page
-    sources:
-      vendor_page: 0.34
-  Qms:  # mechanical Q factor
-    value: 1.66
-    winner: vendor_page
-    sources:
-      vendor_page: 1.66
   Le:  # voice coil inductance (H)
     value: 0.00065
     winner: vendor_page
     sources:
       vendor_page: 0.00065
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0167
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0167
+  Qes:  # electrical Q factor
+    value: 0.43
+    winner: vendor_page
+    sources:
+      vendor_page: 0.43
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0069
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0069
+  BL:  # force factor (T·m)
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.7
+    winner: vendor_page
+    sources:
+      vendor_page: 6.7
   Pe:  # rated power input (W)
     value: 40.0
     winner: vendor_page
@@ -81,21 +53,49 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 47.1
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0167
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.2301038511929483
     winner: vendor_page
     sources:
-      vendor_page: 0.0167
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0069
+      vendor_page: 1.2301038511929483
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
     winner: vendor_page
     sources:
-      vendor_page: 0.0069
+      vendor_page: 0.004
+  Qts:  # total Q factor
+    value: 0.34
+    winner: vendor_page
+    sources:
+      vendor_page: 0.34
+  Qms:  # mechanical Q factor
+    value: 1.66
+    winner: vendor_page
+    sources:
+      vendor_page: 1.66
+  Sd:  # effective piston area (m²)
+    value: 0.0085
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0085
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00165
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00165
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/295-573--dayton-audio-rs150p-8a-reference-series-specifications.pdf
   vendor_page: https://www.parts-express.com/Dayton-Audio-RS150P-8A-6-Reference-Paper-Woofer-8-Ohm-295-573
+datasheet_url: https://www.parts-express.com/pedocs/specs/295-573--dayton-audio-rs150p-8a-reference-series-specifications.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-RS150P-8A-6-Reference-Paper-Woofer-8-Ohm-295-573
+frd_url: null
+zma_url: null

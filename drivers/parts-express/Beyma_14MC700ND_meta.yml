@@ -6,65 +6,42 @@ corrections: '''Qts'' stored=0.28 differs from calculated=0.275 (deps: Qms=3.3, 
 reviewed_by: null
 driver_type: subwoofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/253-019--14mc700nd-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Beyma-14MC700Nd-14-Subwoofer-8-Ohm-253-019
 source: https://www.parts-express.com/Beyma-14MC700Nd-14-Subwoofer-8-Ohm-253-019
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 253-019
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.3
-    winner: vendor_page
-    sources:
-      vendor_page: 5.3
-  Sd:  # effective piston area (m²)
-    value: 0.07
-    winner: vendor_page
-    sources:
-      vendor_page: 0.07
-  Xmax:  # one-way linear excursion (m)
-    value: 0.004
-    winner: vendor_page
-    sources:
-      vendor_page: 0.004
-  Qes:  # electrical Q factor
-    value: 0.3
-    winner: vendor_page
-    sources:
-      vendor_page: 0.3
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.008350924471905958
-    winner: vendor_page
-    sources:
-      vendor_page: 0.008350924471905958
-  BL:  # force factor (T·m)
-    value: 22.0
-    winner: vendor_page
-    sources:
-      vendor_page: 22.0
-  Qts:  # total Q factor
-    value: 0.28
-    winner: vendor_page
-    sources:
-      vendor_page: 0.28
-  Qms:  # mechanical Q factor
-    value: 3.3
-    winner: vendor_page
-    sources:
-      vendor_page: 3.3
   Le:  # voice coil inductance (H)
     value: 51.0
     winner: vendor_page
     sources:
       vendor_page: 51.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0778712
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0778712
+  Qes:  # electrical Q factor
+    value: 0.3
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3
+  Mms:  # moving mass incl. air load (kg)
+    value: 8.599999999999999e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 8.599999999999999e-05
+  BL:  # force factor (T·m)
+    value: 22.0
+    winner: vendor_page
+    sources:
+      vendor_page: 22.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.3
+    winner: vendor_page
+    sources:
+      vendor_page: 5.3
   Pe:  # rated power input (W)
     value: 700.0
     winner: vendor_page
@@ -75,16 +52,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 51.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0778712
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.008350924471905958
     winner: vendor_page
     sources:
-      vendor_page: 0.0778712
-  Mms:  # moving mass incl. air load (kg)
-    value: 8.599999999999999e-05
+      vendor_page: 0.008350924471905958
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
     winner: vendor_page
     sources:
-      vendor_page: 8.599999999999999e-05
+      vendor_page: 0.004
+  Qts:  # total Q factor
+    value: 0.28
+    winner: vendor_page
+    sources:
+      vendor_page: 0.28
+  Qms:  # mechanical Q factor
+    value: 3.3
+    winner: vendor_page
+    sources:
+      vendor_page: 3.3
+  Sd:  # effective piston area (m²)
+    value: 0.07
+    winner: vendor_page
+    sources:
+      vendor_page: 0.07
   Znom:  # nominal impedance (Ω)
     value: 55.0
     winner: vendor_page
@@ -93,3 +85,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/253-019--14mc700nd-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Beyma-14MC700Nd-14-Subwoofer-8-Ohm-253-019
+datasheet_url: https://www.parts-express.com/pedocs/specs/253-019--14mc700nd-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Beyma-14MC700Nd-14-Subwoofer-8-Ohm-253-019
+frd_url: null
+zma_url: null

@@ -6,15 +6,7 @@ corrections: null
 reviewed_by: null
 driver_type: tweeter
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Goldwood-GT-336-1-Titanium-Dome-Tweeter-4-1-2-x-3-1-2-270-160
 source: https://www.parts-express.com/Goldwood-GT-336-1-Titanium-Dome-Tweeter-4-1-2-x-3-1-2-270-160
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd; Fs_no_Q
 community: null
@@ -42,3 +34,11 @@ specs:
       vendor_page: 8.0
 _sources:
   vendor_page: https://www.parts-express.com/Goldwood-GT-336-1-Titanium-Dome-Tweeter-4-1-2-x-3-1-2-270-160
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Goldwood-GT-336-1-Titanium-Dome-Tweeter-4-1-2-x-3-1-2-270-160
+frd_url: null
+zma_url: null

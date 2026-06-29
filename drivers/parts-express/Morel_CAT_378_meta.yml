@@ -6,35 +6,27 @@ corrections: null
 reviewed_by: null
 driver_type: tweeter
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/277-084--morel-cat-378-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Morel-CAT-378-1-1-8-Soft-Dome-Horn-Tweeter-277-084
 source: https://www.parts-express.com/Morel-CAT-378-1-1-8-Soft-Dome-Horn-Tweeter-277-084
-frd: null
-impedance: null
 obsolete: null
 dq_issue: Fs_no_Q
 community: null
 fetched_sku: 277-084
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.2
-    winner: vendor_page
-    sources:
-      vendor_page: 5.2
-  Sd:  # effective piston area (m²)
-    value: 0.0006
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0006
   Le:  # voice coil inductance (H)
     value: 8.999999999999999e-05
     winner: vendor_page
     sources:
       vendor_page: 8.999999999999999e-05
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00044
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00044
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
   Pe:  # rated power input (W)
     value: 200.0
     winner: vendor_page
@@ -45,11 +37,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 700.0
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.00044
+  Sd:  # effective piston area (m²)
+    value: 0.0006
     winner: vendor_page
     sources:
-      vendor_page: 0.00044
+      vendor_page: 0.0006
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -58,3 +50,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/277-084--morel-cat-378-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Morel-CAT-378-1-1-8-Soft-Dome-Horn-Tweeter-277-084
+datasheet_url: https://www.parts-express.com/pedocs/specs/277-084--morel-cat-378-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Morel-CAT-378-1-1-8-Soft-Dome-Horn-Tweeter-277-084
+frd_url: null
+zma_url: null

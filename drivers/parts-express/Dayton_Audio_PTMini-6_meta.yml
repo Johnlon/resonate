@@ -6,15 +6,7 @@ corrections: null
 reviewed_by: null
 driver_type: tweeter
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/275-083--dayton-audio-ptmini-6-specifications.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-PTMini-6-Planar-Tweeter-6-Ohm-275-083
 source: https://www.parts-express.com/Dayton-Audio-PTMini-6-Planar-Tweeter-6-Ohm-275-083
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd
 community: null
@@ -25,16 +17,6 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 5.9
-  Qts:  # total Q factor
-    value: 1.74
-    winner: vendor_page
-    sources:
-      vendor_page: 1.74
-  Qms:  # mechanical Q factor
-    value: 1.78
-    winner: vendor_page
-    sources:
-      vendor_page: 1.78
   Pe:  # rated power input (W)
     value: 15.0
     winner: vendor_page
@@ -45,6 +27,16 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 4461.0
+  Qts:  # total Q factor
+    value: 1.74
+    winner: vendor_page
+    sources:
+      vendor_page: 1.74
+  Qms:  # mechanical Q factor
+    value: 1.78
+    winner: vendor_page
+    sources:
+      vendor_page: 1.78
   Znom:  # nominal impedance (Ω)
     value: 6.0
     winner: vendor_page
@@ -53,3 +45,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/275-083--dayton-audio-ptmini-6-specifications.pdf
   vendor_page: https://www.parts-express.com/Dayton-Audio-PTMini-6-Planar-Tweeter-6-Ohm-275-083
+datasheet_url: https://www.parts-express.com/pedocs/specs/275-083--dayton-audio-ptmini-6-specifications.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-PTMini-6-Planar-Tweeter-6-Ohm-275-083
+frd_url: null
+zma_url: null

@@ -4,63 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Peerless-HDS-P830933-5-1-4-Paper-Cone-HDS-Woofer-8-Ohm-264-1500
 source: https://www.parts-express.com/Peerless-HDS-P830933-5-1-4-Paper-Cone-HDS-Woofer-8-Ohm-264-1500
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.0
-    winner: vendor_page
-    sources:
-      vendor_page: 6.0
-  Sd:  # effective piston area (m²)
-    value: 0.00883
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00883
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00556
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00556
-  Qes:  # electrical Q factor
-    value: 0.434
-    winner: vendor_page
-    sources:
-      vendor_page: 0.434
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.8311128048555929
-    winner: vendor_page
-    sources:
-      vendor_page: 0.8311128048555929
-  BL:  # force factor (T·m)
-    value: 7.22
-    winner: vendor_page
-    sources:
-      vendor_page: 7.22
-  Qts:  # total Q factor
-    value: 0.4
-    winner: vendor_page
-    sources:
-      vendor_page: 0.4
-  Qms:  # mechanical Q factor
-    value: 4.57
-    winner: vendor_page
-    sources:
-      vendor_page: 4.57
   Le:  # voice coil inductance (H)
     value: 0.000402
     winner: vendor_page
     sources:
       vendor_page: 0.000402
+  Vas:  # equivalent acoustic volume (m³)
+    value: 18.689087999999998
+    winner: vendor_page
+    sources:
+      vendor_page: 18.689087999999998
+  Qes:  # electrical Q factor
+    value: 0.434
+    winner: vendor_page
+    sources:
+      vendor_page: 0.434
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.009300000000000001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.009300000000000001
+  BL:  # force factor (T·m)
+    value: 7.22
+    winner: vendor_page
+    sources:
+      vendor_page: 7.22
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
   Pe:  # rated power input (W)
     value: 40.0
     winner: vendor_page
@@ -71,16 +51,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 65.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 18.689087999999998
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.8311128048555929
     winner: vendor_page
     sources:
-      vendor_page: 18.689087999999998
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.009300000000000001
+      vendor_page: 0.8311128048555929
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00556
     winner: vendor_page
     sources:
-      vendor_page: 0.009300000000000001
+      vendor_page: 0.00556
+  Qts:  # total Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Qms:  # mechanical Q factor
+    value: 4.57
+    winner: vendor_page
+    sources:
+      vendor_page: 4.57
+  Sd:  # effective piston area (m²)
+    value: 0.00883
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00883
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -91,15 +86,10 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 88.1
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 100.0
-    winner: vendor_page
-    sources:
-      vendor_page: 100.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 2500.0
-    winner: vendor_page
-    sources:
-      vendor_page: 2500.0
 _sources:
   vendor_page: https://www.parts-express.com/Peerless-HDS-P830933-5-1-4-Paper-Cone-HDS-Woofer-8-Ohm-264-1500
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Peerless-HDS-P830933-5-1-4-Paper-Cone-HDS-Woofer-8-Ohm-264-1500
+frd_url: null
+zma_url: null

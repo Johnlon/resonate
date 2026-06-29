@@ -6,45 +6,27 @@ corrections: null
 reviewed_by: null
 driver_type: tweeter
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/275-075-dayton-audio-specifications-46122.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-DC28FS-8-1-1-8-Silk-Dome-Shielded-Tweeter-275-075
 source: https://www.parts-express.com/Dayton-Audio-DC28FS-8-1-1-8-Silk-Dome-Shielded-Tweeter-275-075
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd
 community: null
 fetched_sku: 275-075
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.4
-    winner: vendor_page
-    sources:
-      vendor_page: 5.4
-  Qes:  # electrical Q factor
-    value: 1.73
-    winner: vendor_page
-    sources:
-      vendor_page: 1.73
-  Qts:  # total Q factor
-    value: 0.97
-    winner: vendor_page
-    sources:
-      vendor_page: 0.97
-  Qms:  # mechanical Q factor
-    value: 2.21
-    winner: vendor_page
-    sources:
-      vendor_page: 2.21
   Le:  # voice coil inductance (H)
     value: 0.00158
     winner: vendor_page
     sources:
       vendor_page: 0.00158
+  Qes:  # electrical Q factor
+    value: 1.73
+    winner: vendor_page
+    sources:
+      vendor_page: 1.73
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.4
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4
   Pe:  # rated power input (W)
     value: 50.0
     winner: vendor_page
@@ -55,21 +37,29 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 905.0
+  Qts:  # total Q factor
+    value: 0.97
+    winner: vendor_page
+    sources:
+      vendor_page: 0.97
+  Qms:  # mechanical Q factor
+    value: 2.21
+    winner: vendor_page
+    sources:
+      vendor_page: 2.21
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 1600.0
-    winner: vendor_page
-    sources:
-      vendor_page: 1600.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 20000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 20000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/275-075-dayton-audio-specifications-46122.pdf
   vendor_page: https://www.parts-express.com/Dayton-Audio-DC28FS-8-1-1-8-Silk-Dome-Shielded-Tweeter-275-075
+datasheet_url: https://www.parts-express.com/pedocs/specs/275-075-dayton-audio-specifications-46122.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-DC28FS-8-1-1-8-Silk-Dome-Shielded-Tweeter-275-075
+frd_url: null
+zma_url: null

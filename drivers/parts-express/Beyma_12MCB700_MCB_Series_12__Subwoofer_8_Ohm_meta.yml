@@ -4,63 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/253-021--12mcb700-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Beyma-12MCB700-MCB-Series-12-Subwoofer-8-Ohm-253-021
 source: https://www.parts-express.com/Beyma-12MCB700-MCB-Series-12-Subwoofer-8-Ohm-253-021
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.4
-    winner: vendor_page
-    sources:
-      vendor_page: 5.4
-  Sd:  # effective piston area (m²)
-    value: 5.5e-06
-    winner: vendor_page
-    sources:
-      vendor_page: 5.5e-06
-  Xmax:  # one-way linear excursion (m)
-    value: 0.007
-    winner: vendor_page
-    sources:
-      vendor_page: 0.007
-  Qes:  # electrical Q factor
-    value: 0.29
-    winner: vendor_page
-    sources:
-      vendor_page: 0.29
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.005669366434862812
-    winner: vendor_page
-    sources:
-      vendor_page: 0.005669366434862812
-  BL:  # force factor (T·m)
-    value: 20.4
-    winner: vendor_page
-    sources:
-      vendor_page: 20.4
-  Qts:  # total Q factor
-    value: 0.27
-    winner: vendor_page
-    sources:
-      vendor_page: 0.27
-  Qms:  # mechanical Q factor
-    value: 3.9
-    winner: vendor_page
-    sources:
-      vendor_page: 3.9
   Le:  # voice coil inductance (H)
     value: 0.0009
     winner: vendor_page
     sources:
       vendor_page: 0.0009
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.013308895999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.013308895999999999
+  Qes:  # electrical Q factor
+    value: 0.29
+    winner: vendor_page
+    sources:
+      vendor_page: 0.29
+  Mms:  # moving mass incl. air load (kg)
+    value: 6.900000000000001e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 6.900000000000001e-05
+  BL:  # force factor (T·m)
+    value: 20.4
+    winner: vendor_page
+    sources:
+      vendor_page: 20.4
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.4
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4
   Pe:  # rated power input (W)
     value: 700.0
     winner: vendor_page
@@ -71,16 +51,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 51.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.013308895999999999
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.005669366434862812
     winner: vendor_page
     sources:
-      vendor_page: 0.013308895999999999
-  Mms:  # moving mass incl. air load (kg)
-    value: 6.900000000000001e-05
+      vendor_page: 0.005669366434862812
+  Xmax:  # one-way linear excursion (m)
+    value: 0.007
     winner: vendor_page
     sources:
-      vendor_page: 6.900000000000001e-05
+      vendor_page: 0.007
+  Qts:  # total Q factor
+    value: 0.27
+    winner: vendor_page
+    sources:
+      vendor_page: 0.27
+  Qms:  # mechanical Q factor
+    value: 3.9
+    winner: vendor_page
+    sources:
+      vendor_page: 3.9
+  Sd:  # effective piston area (m²)
+    value: 5.5e-06
+    winner: vendor_page
+    sources:
+      vendor_page: 5.5e-06
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -91,16 +86,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 98.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 55.0
-    winner: vendor_page
-    sources:
-      vendor_page: 55.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 4000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 4000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/253-021--12mcb700-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Beyma-12MCB700-MCB-Series-12-Subwoofer-8-Ohm-253-021
+datasheet_url: https://www.parts-express.com/pedocs/specs/253-021--12mcb700-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Beyma-12MCB700-MCB-Series-12-Subwoofer-8-Ohm-253-021
+frd_url: null
+zma_url: null

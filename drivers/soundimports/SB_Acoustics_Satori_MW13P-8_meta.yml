@@ -4,62 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/sb-acoustics-mw13p-8.html
 source: https://www.soundimports.eu/en/sb-acoustics-mw13p-8.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.0
-    winner: vendor_page
-    sources:
-      vendor_page: 6.0
-  Sd:  # effective piston area (m²)
-    value: 0.007
-    winner: vendor_page
-    sources:
-      vendor_page: 0.007
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00216
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00216
-  Xmax:  # one-way linear excursion (m)
-    value: 0.005
-    winner: vendor_page
-    sources:
-      vendor_page: 0.005
-  Qes:  # electrical Q factor
-    value: 0.33
-    winner: vendor_page
-    sources:
-      vendor_page: 0.33
-  BL:  # force factor (T·m)
-    value: 5.7
-    winner: vendor_page
-    sources:
-      vendor_page: 5.7
-  Qts:  # total Q factor
-    value: 0.3
-    winner: vendor_page
-    sources:
-      vendor_page: 0.3
-  Qms:  # mechanical Q factor
-    value: 3.55
-    winner: vendor_page
-    sources:
-      vendor_page: 3.55
   Le:  # voice coil inductance (H)
     value: 0.00015
     winner: vendor_page
     sources:
       vendor_page: 0.00015
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00052
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00052
+  Qes:  # electrical Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0068
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0068
+  BL:  # force factor (T·m)
+    value: 5.7
+    winner: vendor_page
+    sources:
+      vendor_page: 5.7
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
   Pe:  # rated power input (W)
     value: 40.0
     winner: vendor_page
@@ -70,20 +50,40 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 41.5
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.00052
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005
     winner: vendor_page
     sources:
-      vendor_page: 0.00052
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0068
+      vendor_page: 0.005
+  Qts:  # total Q factor
+    value: 0.3
     winner: vendor_page
     sources:
-      vendor_page: 0.0068
+      vendor_page: 0.3
+  Qms:  # mechanical Q factor
+    value: 3.55
+    winner: vendor_page
+    sources:
+      vendor_page: 3.55
+  Sd:  # effective piston area (m²)
+    value: 0.007
+    winner: vendor_page
+    sources:
+      vendor_page: 0.007
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00216
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00216
 _sources:
   vendor_page: https://www.soundimports.eu/en/sb-acoustics-mw13p-8.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/sb-acoustics-mw13p-8.html
+frd_url: null
+zma_url: null

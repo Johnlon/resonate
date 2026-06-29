@@ -4,62 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/sb-acoustics-sb12pacr25-4-coax.html
 source: https://www.soundimports.eu/en/sb-acoustics-sb12pacr25-4-coax.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: coaxial
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.1
-    winner: vendor_page
-    sources:
-      vendor_page: 3.1
-  Sd:  # effective piston area (m²)
-    value: 0.0045
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0045
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00149
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00149
-  Xmax:  # one-way linear excursion (m)
-    value: 0.005
-    winner: vendor_page
-    sources:
-      vendor_page: 0.005
-  Qes:  # electrical Q factor
-    value: 0.38
-    winner: vendor_page
-    sources:
-      vendor_page: 0.38
-  BL:  # force factor (T·m)
-    value: 4.0
-    winner: vendor_page
-    sources:
-      vendor_page: 4.0
-  Qts:  # total Q factor
-    value: 0.35
-    winner: vendor_page
-    sources:
-      vendor_page: 0.35
-  Qms:  # mechanical Q factor
-    value: 4.84
-    winner: vendor_page
-    sources:
-      vendor_page: 4.84
   Le:  # voice coil inductance (H)
     value: 0.00025
     winner: vendor_page
     sources:
       vendor_page: 0.00025
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0043
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0043
+  Qes:  # electrical Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0056
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0056
+  BL:  # force factor (T·m)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.1
+    winner: vendor_page
+    sources:
+      vendor_page: 3.1
   Pe:  # rated power input (W)
     value: 30.0
     winner: vendor_page
@@ -70,20 +50,40 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 55.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0043
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005
     winner: vendor_page
     sources:
-      vendor_page: 0.0043
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0056
+      vendor_page: 0.005
+  Qts:  # total Q factor
+    value: 0.35
     winner: vendor_page
     sources:
-      vendor_page: 0.0056
+      vendor_page: 0.35
+  Qms:  # mechanical Q factor
+    value: 4.84
+    winner: vendor_page
+    sources:
+      vendor_page: 4.84
+  Sd:  # effective piston area (m²)
+    value: 0.0045
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0045
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00149
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00149
 _sources:
   vendor_page: https://www.soundimports.eu/en/sb-acoustics-sb12pacr25-4-coax.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/sb-acoustics-sb12pacr25-4-coax.html
+frd_url: null
+zma_url: null

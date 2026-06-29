@@ -4,57 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/prv-audio-4mr60-4.html
 source: https://www.soundimports.eu/en/prv-audio-4mr60-4.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.6
-    winner: vendor_page
-    sources:
-      vendor_page: 3.6
-  Sd:  # effective piston area (m²)
-    value: 0.0057
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0057
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00287
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00287
-  Qes:  # electrical Q factor
-    value: 0.75
-    winner: vendor_page
-    sources:
-      vendor_page: 0.75
-  BL:  # force factor (T·m)
-    value: 3.42
-    winner: vendor_page
-    sources:
-      vendor_page: 3.42
-  Qts:  # total Q factor
-    value: 0.68
-    winner: vendor_page
-    sources:
-      vendor_page: 0.68
-  Qms:  # mechanical Q factor
-    value: 7.34
-    winner: vendor_page
-    sources:
-      vendor_page: 7.34
   Le:  # voice coil inductance (H)
     value: 0.0002
     winner: vendor_page
     sources:
       vendor_page: 0.0002
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00326
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00326
+  Qes:  # electrical Q factor
+    value: 0.75
+    winner: vendor_page
+    sources:
+      vendor_page: 0.75
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00432
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00432
+  BL:  # force factor (T·m)
+    value: 3.42
+    winner: vendor_page
+    sources:
+      vendor_page: 3.42
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.6
+    winner: vendor_page
+    sources:
+      vendor_page: 3.6
   Pe:  # rated power input (W)
     value: 60.0
     winner: vendor_page
@@ -65,15 +50,30 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 89.88
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.00326
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00287
     winner: vendor_page
     sources:
-      vendor_page: 0.00326
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.00432
+      vendor_page: 0.00287
+  Qts:  # total Q factor
+    value: 0.68
     winner: vendor_page
     sources:
-      vendor_page: 0.00432
+      vendor_page: 0.68
+  Qms:  # mechanical Q factor
+    value: 7.34
+    winner: vendor_page
+    sources:
+      vendor_page: 7.34
+  Sd:  # effective piston area (m²)
+    value: 0.0057
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0057
 _sources:
   vendor_page: https://www.soundimports.eu/en/prv-audio-4mr60-4.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/prv-audio-4mr60-4.html
+frd_url: null
+zma_url: null

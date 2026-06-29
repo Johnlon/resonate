@@ -6,20 +6,22 @@ corrections: null
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/293-203--ciare-americano-8a250m-8-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Ciare-8A250M-8-Americano-Series-8-Midrange-8-Ohm-293-203
 source: https://www.parts-express.com/Ciare-8A250M-8-Americano-Series-8-Midrange-8-Ohm-293-203
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd; missing_Re
 community: null
 fetched_sku: 293-203
 specs:
+  Le:  # voice coil inductance (H)
+    value: 0.00045
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00045
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.016423743999999997
+    winner: vendor_page
+    sources:
+      vendor_page: 0.016423743999999997
   Qes:  # electrical Q factor
     value: 0.67
     winner: vendor_page
@@ -30,21 +32,6 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 7.91
-  Qts:  # total Q factor
-    value: 0.6
-    winner: vendor_page
-    sources:
-      vendor_page: 0.6
-  Qms:  # mechanical Q factor
-    value: 5.73
-    winner: vendor_page
-    sources:
-      vendor_page: 5.73
-  Le:  # voice coil inductance (H)
-    value: 0.00045
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00045
   Pe:  # rated power input (W)
     value: 125.0
     winner: vendor_page
@@ -55,11 +42,16 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 76.45
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.016423743999999997
+  Qts:  # total Q factor
+    value: 0.6
     winner: vendor_page
     sources:
-      vendor_page: 0.016423743999999997
+      vendor_page: 0.6
+  Qms:  # mechanical Q factor
+    value: 5.73
+    winner: vendor_page
+    sources:
+      vendor_page: 5.73
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -73,3 +65,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/293-203--ciare-americano-8a250m-8-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Ciare-8A250M-8-Americano-Series-8-Midrange-8-Ohm-293-203
+datasheet_url: https://www.parts-express.com/pedocs/specs/293-203--ciare-americano-8a250m-8-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Ciare-8A250M-8-Americano-Series-8-Midrange-8-Ohm-293-203
+frd_url: null
+zma_url: null

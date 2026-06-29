@@ -4,57 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/prv-audio-8mb450-v2.html
 source: https://www.soundimports.eu/en/prv-audio-8mb450-v2.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.3
-    winner: vendor_page
-    sources:
-      vendor_page: 6.3
-  Sd:  # effective piston area (m²)
-    value: 0.0241
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0241
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0045
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0045
-  Qes:  # electrical Q factor
-    value: 1.09
-    winner: vendor_page
-    sources:
-      vendor_page: 1.09
-  BL:  # force factor (T·m)
-    value: 7.37
-    winner: vendor_page
-    sources:
-      vendor_page: 7.37
-  Qts:  # total Q factor
-    value: 1.05
-    winner: vendor_page
-    sources:
-      vendor_page: 1.05
-  Qms:  # mechanical Q factor
-    value: 26.56
-    winner: vendor_page
-    sources:
-      vendor_page: 26.56
   Le:  # voice coil inductance (H)
     value: 0.00025
     winner: vendor_page
     sources:
       vendor_page: 0.00025
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.01818
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01818
+  Qes:  # electrical Q factor
+    value: 1.09
+    winner: vendor_page
+    sources:
+      vendor_page: 1.09
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.02014
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02014
+  BL:  # force factor (T·m)
+    value: 7.37
+    winner: vendor_page
+    sources:
+      vendor_page: 7.37
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.3
+    winner: vendor_page
+    sources:
+      vendor_page: 6.3
   Pe:  # rated power input (W)
     value: 450.0
     winner: vendor_page
@@ -65,15 +50,30 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 74.72
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.01818
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0045
     winner: vendor_page
     sources:
-      vendor_page: 0.01818
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.02014
+      vendor_page: 0.0045
+  Qts:  # total Q factor
+    value: 1.05
     winner: vendor_page
     sources:
-      vendor_page: 0.02014
+      vendor_page: 1.05
+  Qms:  # mechanical Q factor
+    value: 26.56
+    winner: vendor_page
+    sources:
+      vendor_page: 26.56
+  Sd:  # effective piston area (m²)
+    value: 0.0241
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0241
 _sources:
   vendor_page: https://www.soundimports.eu/en/prv-audio-8mb450-v2.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/prv-audio-8mb450-v2.html
+frd_url: null
+zma_url: null

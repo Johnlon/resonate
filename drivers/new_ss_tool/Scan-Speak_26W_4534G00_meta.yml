@@ -5,68 +5,57 @@ detail: Automatically scraped from Scan-Speak website. T/S parameters not human-
 corrections: null
 reviewed_by: null
 driver_type: woofer
-series: Discovery
 nominal_size_cm: 26.0
-datasheet: https://www.scan-speak.dk/datasheet/pdf/26w-4534g00.pdf
-adv_datasheet: https://www.scan-speak.dk/datasheet/adv/26w-4534g00.pdf
-drawing: https://www.scan-speak.dk/datasheet/drw/26w-4534g00.png
-cad: https://www.scan-speak.dk/datasheet/3d/26w-4534g00.ZIP
-manu_page: https://www.scan-speak.dk/product/26w-4534g00/
-vendor_page: null
 source: https://www.scan-speak.dk/product/26w-4534g00/
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
-datasheet_fields: null
-adv_datasheet_fields: null
-manu_page_fields:
-- BL
-- Fs
-- Qts
-- Re
-- SPL
-- Sd
-- Vas
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.8
-    winner: manu_page
-    sources:
-      manu_page: 3.8
-  Sd:  # effective piston area (m²)
-    value: 0.035
-    winner: manu_page
-    sources:
-      manu_page: 0.035
-  BL:  # force factor (T·m)
-    value: 8.8
-    winner: manu_page
-    sources:
-      manu_page: 8.8
-  Qts:  # total Q factor
-    value: 0.36
-    winner: manu_page
-    sources:
-      manu_page: 0.36
-  SPL:  # sensitivity (dB, 2.83 V/1 m)
-    value: 90.5
-    winner: manu_page
-    sources:
-      manu_page: 90.5
-  Fs:  # free air resonance (Hz)
-    value: 23.0
-    winner: manu_page
-    sources:
-      manu_page: 23.0
   Vas:  # equivalent acoustic volume (m³)
     value: 0.156
     winner: manu_page
     sources:
       manu_page: 0.156
+  BL:  # force factor (T·m)
+    value: 8.8
+    winner: manu_page
+    sources:
+      manu_page: 8.8
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.8
+    winner: manu_page
+    sources:
+      manu_page: 3.8
+  Fs:  # free air resonance (Hz)
+    value: 23.0
+    winner: manu_page
+    sources:
+      manu_page: 23.0
+  Qts:  # total Q factor
+    value: 0.36
+    winner: manu_page
+    sources:
+      manu_page: 0.36
+  Sd:  # effective piston area (m²)
+    value: 0.035
+    winner: manu_page
+    sources:
+      manu_page: 0.035
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 90.5
+    winner: manu_page
+    sources:
+      manu_page: 90.5
 _sources:
   datasheet: https://www.scan-speak.dk/datasheet/pdf/26w-4534g00.pdf
   adv_datasheet: https://www.scan-speak.dk/datasheet/adv/26w-4534g00.pdf
   manu_page: https://www.scan-speak.dk/product/26w-4534g00/
+datasheet_url: https://www.scan-speak.dk/datasheet/pdf/26w-4534g00.pdf
+adv_datasheet_url: https://www.scan-speak.dk/datasheet/adv/26w-4534g00.pdf
+drawing_url: https://www.scan-speak.dk/datasheet/drw/26w-4534g00.png
+cad_url: https://www.scan-speak.dk/datasheet/3d/26w-4534g00.ZIP
+manu_page_url: https://www.scan-speak.dk/product/26w-4534g00/
+vendor_page_url: null
+frd_url: null
+zma_url: null

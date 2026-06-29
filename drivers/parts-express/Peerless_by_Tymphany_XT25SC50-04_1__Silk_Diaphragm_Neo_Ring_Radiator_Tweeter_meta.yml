@@ -4,43 +4,28 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-1021--xt25sc50-04-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Peerless-by-Tymphany-XT25SC50-04-1-Silk-Diaphragm-Neo-Ring-Radiator-Tweeter-264-1021
 source: https://www.parts-express.com/Peerless-by-Tymphany-XT25SC50-04-1-Silk-Diaphragm-Neo-Ring-Radiator-Tweeter-264-1021
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.2
-    winner: vendor_page
-    sources:
-      vendor_page: 3.2
-  Qes:  # electrical Q factor
-    value: 1.09
-    winner: vendor_page
-    sources:
-      vendor_page: 1.09
-  Qts:  # total Q factor
-    value: 0.97
-    winner: vendor_page
-    sources:
-      vendor_page: 0.97
-  Qms:  # mechanical Q factor
-    value: 9.28
-    winner: vendor_page
-    sources:
-      vendor_page: 9.28
   Le:  # voice coil inductance (H)
     value: 2.1000000000000002e-05
     winner: vendor_page
     sources:
       vendor_page: 2.1000000000000002e-05
+  Qes:  # electrical Q factor
+    value: 1.09
+    winner: vendor_page
+    sources:
+      vendor_page: 1.09
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.2
+    winner: vendor_page
+    sources:
+      vendor_page: 3.2
   Pe:  # rated power input (W)
     value: 15.0
     winner: vendor_page
@@ -51,21 +36,26 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 820.0
+  Qts:  # total Q factor
+    value: 0.97
+    winner: vendor_page
+    sources:
+      vendor_page: 0.97
+  Qms:  # mechanical Q factor
+    value: 9.28
+    winner: vendor_page
+    sources:
+      vendor_page: 9.28
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 800.0
-    winner: vendor_page
-    sources:
-      vendor_page: 800.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 20000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 20000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-1021--xt25sc50-04-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Peerless-by-Tymphany-XT25SC50-04-1-Silk-Diaphragm-Neo-Ring-Radiator-Tweeter-264-1021
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-1021--xt25sc50-04-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Peerless-by-Tymphany-XT25SC50-04-1-Silk-Diaphragm-Neo-Ring-Radiator-Tweeter-264-1021
+frd_url: null
+zma_url: null

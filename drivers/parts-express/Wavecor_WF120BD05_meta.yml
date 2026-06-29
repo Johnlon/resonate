@@ -6,70 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Wavecor-WF120BD05-4-3-4-Balanced-Drive-Paper-Glass-Fiber-Cone-Mid-Woofer-4-Ohm-298-1148
 source: https://www.parts-express.com/Wavecor-WF120BD05-4-3-4-Balanced-Drive-Paper-Glass-Fiber-Cone-Mid-Woofer-4-Ohm-298-1148
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 298-1148
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.2
-    winner: vendor_page
-    sources:
-      vendor_page: 3.2
-  Sd:  # effective piston area (m²)
-    value: 0.0054
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0054
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0015
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0015
-  Xmax:  # one-way linear excursion (m)
-    value: 0.004
-    winner: vendor_page
-    sources:
-      vendor_page: 0.004
-  Qes:  # electrical Q factor
-    value: 0.42
-    winner: vendor_page
-    sources:
-      vendor_page: 0.42
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.29751731508590906
-    winner: vendor_page
-    sources:
-      vendor_page: 0.29751731508590906
-  BL:  # force factor (T·m)
-    value: 4.1
-    winner: vendor_page
-    sources:
-      vendor_page: 4.1
-  Qts:  # total Q factor
-    value: 0.4
-    winner: vendor_page
-    sources:
-      vendor_page: 0.4
-  Qms:  # mechanical Q factor
-    value: 7.4
-    winner: vendor_page
-    sources:
-      vendor_page: 7.4
   Le:  # voice coil inductance (H)
     value: 8.7e-05
     winner: vendor_page
     sources:
       vendor_page: 8.7e-05
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.006229696
+    winner: vendor_page
+    sources:
+      vendor_page: 0.006229696
+  Qes:  # electrical Q factor
+    value: 0.42
+    winner: vendor_page
+    sources:
+      vendor_page: 0.42
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0073
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0073
+  BL:  # force factor (T·m)
+    value: 4.1
+    winner: vendor_page
+    sources:
+      vendor_page: 4.1
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.2
+    winner: vendor_page
+    sources:
+      vendor_page: 3.2
   Pe:  # rated power input (W)
     value: 60.0
     winner: vendor_page
@@ -80,20 +52,48 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 48.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.006229696
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.29751731508590906
     winner: vendor_page
     sources:
-      vendor_page: 0.006229696
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0073
+      vendor_page: 0.29751731508590906
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
     winner: vendor_page
     sources:
-      vendor_page: 0.0073
+      vendor_page: 0.004
+  Qts:  # total Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Qms:  # mechanical Q factor
+    value: 7.4
+    winner: vendor_page
+    sources:
+      vendor_page: 7.4
+  Sd:  # effective piston area (m²)
+    value: 0.0054
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0054
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0015
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0015
 _sources:
   vendor_page: https://www.parts-express.com/Wavecor-WF120BD05-4-3-4-Balanced-Drive-Paper-Glass-Fiber-Cone-Mid-Woofer-4-Ohm-298-1148
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Wavecor-WF120BD05-4-3-4-Balanced-Drive-Paper-Glass-Fiber-Cone-Mid-Woofer-4-Ohm-298-1148
+frd_url: null
+zma_url: null

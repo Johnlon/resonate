@@ -4,62 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/visaton-b-100.html
 source: https://www.soundimports.eu/en/visaton-b-100.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.8
-    winner: vendor_page
-    sources:
-      vendor_page: 5.8
-  Sd:  # effective piston area (m²)
-    value: 0.00541
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00541
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00128
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00128
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0016
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0016
-  Qes:  # electrical Q factor
-    value: 0.54
-    winner: vendor_page
-    sources:
-      vendor_page: 0.54
-  BL:  # force factor (T·m)
-    value: 4.1
-    winner: vendor_page
-    sources:
-      vendor_page: 4.1
-  Qts:  # total Q factor
-    value: 0.52
-    winner: vendor_page
-    sources:
-      vendor_page: 0.52
-  Qms:  # mechanical Q factor
-    value: 10.13
-    winner: vendor_page
-    sources:
-      vendor_page: 10.13
   Le:  # voice coil inductance (H)
     value: 0.00036
     winner: vendor_page
     sources:
       vendor_page: 0.00036
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00527
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00527
+  Qes:  # electrical Q factor
+    value: 0.54
+    winner: vendor_page
+    sources:
+      vendor_page: 0.54
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0032
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0032
+  BL:  # force factor (T·m)
+    value: 4.1
+    winner: vendor_page
+    sources:
+      vendor_page: 4.1
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.8
+    winner: vendor_page
+    sources:
+      vendor_page: 5.8
   Pe:  # rated power input (W)
     value: 30.0
     winner: vendor_page
@@ -70,20 +50,40 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 75.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.00527
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0016
     winner: vendor_page
     sources:
-      vendor_page: 0.00527
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0032
+      vendor_page: 0.0016
+  Qts:  # total Q factor
+    value: 0.52
     winner: vendor_page
     sources:
-      vendor_page: 0.0032
+      vendor_page: 0.52
+  Qms:  # mechanical Q factor
+    value: 10.13
+    winner: vendor_page
+    sources:
+      vendor_page: 10.13
+  Sd:  # effective piston area (m²)
+    value: 0.00541
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00541
   Znom:  # nominal impedance (Ω)
     value: 6.0
     winner: vendor_page
     sources:
       vendor_page: 6.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00128
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00128
 _sources:
   vendor_page: https://www.soundimports.eu/en/visaton-b-100.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/visaton-b-100.html
+frd_url: null
+zma_url: null

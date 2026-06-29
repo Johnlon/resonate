@@ -4,63 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/292-602--visaton-r-10-sc-4-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Visaton-R10SC-4-4-Fullrange-Speaker-4-Ohm-292-602
 source: https://www.parts-express.com/Visaton-R10SC-4-4-Fullrange-Speaker-4-Ohm-292-602
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.6
-    winner: vendor_page
-    sources:
-      vendor_page: 3.6
-  Sd:  # effective piston area (m²)
-    value: 0.0056
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0056
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0015
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0015
-  Qes:  # electrical Q factor
-    value: 1.67
-    winner: vendor_page
-    sources:
-      vendor_page: 1.67
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.307777905281375
-    winner: vendor_page
-    sources:
-      vendor_page: 0.307777905281375
-  BL:  # force factor (T·m)
-    value: 2.0
-    winner: vendor_page
-    sources:
-      vendor_page: 2.0
-  Qts:  # total Q factor
-    value: 1.32
-    winner: vendor_page
-    sources:
-      vendor_page: 1.32
-  Qms:  # mechanical Q factor
-    value: 6.4
-    winner: vendor_page
-    sources:
-      vendor_page: 6.4
   Le:  # voice coil inductance (H)
     value: 0.00095
     winner: vendor_page
     sources:
       vendor_page: 0.00095
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0026051456
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0026051456
+  Qes:  # electrical Q factor
+    value: 1.67
+    winner: vendor_page
+    sources:
+      vendor_page: 1.67
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0019
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0019
+  BL:  # force factor (T·m)
+    value: 2.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.6
+    winner: vendor_page
+    sources:
+      vendor_page: 3.6
   Pe:  # rated power input (W)
     value: 20.0
     winner: vendor_page
@@ -71,16 +51,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 165.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0026051456
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.307777905281375
     winner: vendor_page
     sources:
-      vendor_page: 0.0026051456
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0019
+      vendor_page: 0.307777905281375
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0015
     winner: vendor_page
     sources:
-      vendor_page: 0.0019
+      vendor_page: 0.0015
+  Qts:  # total Q factor
+    value: 1.32
+    winner: vendor_page
+    sources:
+      vendor_page: 1.32
+  Qms:  # mechanical Q factor
+    value: 6.4
+    winner: vendor_page
+    sources:
+      vendor_page: 6.4
+  Sd:  # effective piston area (m²)
+    value: 0.0056
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0056
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
@@ -99,3 +94,8 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/292-602--visaton-r-10-sc-4-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Visaton-R10SC-4-4-Fullrange-Speaker-4-Ohm-292-602
+datasheet_url: https://www.parts-express.com/pedocs/specs/292-602--visaton-r-10-sc-4-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Visaton-R10SC-4-4-Fullrange-Speaker-4-Ohm-292-602
+frd_url: null
+zma_url: null

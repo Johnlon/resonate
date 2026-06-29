@@ -4,67 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/sb-acoustics-sb16frpc25-7.html
 source: https://www.soundimports.eu/en/sb-acoustics-sb16frpc25-7.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.2
-    winner: vendor_page
-    sources:
-      vendor_page: 5.2
-  Sd:  # effective piston area (m²)
-    value: 0.0128
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0128
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00133
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00133
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0061
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0061
-  Qes:  # electrical Q factor
-    value: 0.48
-    winner: vendor_page
-    sources:
-      vendor_page: 0.48
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.3
-    winner: vendor_page
-    sources:
-      vendor_page: 0.3
-  BL:  # force factor (T·m)
-    value: 5.4
-    winner: vendor_page
-    sources:
-      vendor_page: 5.4
-  Qts:  # total Q factor
-    value: 0.46
-    winner: vendor_page
-    sources:
-      vendor_page: 0.46
-  Qms:  # mechanical Q factor
-    value: 9.0
-    winner: vendor_page
-    sources:
-      vendor_page: 9.0
   Le:  # voice coil inductance (H)
     value: 0.00022
     winner: vendor_page
     sources:
       vendor_page: 0.00022
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.031
+    winner: vendor_page
+    sources:
+      vendor_page: 0.031
+  Qes:  # electrical Q factor
+    value: 0.48
+    winner: vendor_page
+    sources:
+      vendor_page: 0.48
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0098
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0098
+  BL:  # force factor (T·m)
+    value: 5.4
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
   Pe:  # rated power input (W)
     value: 30.0
     winner: vendor_page
@@ -75,20 +50,45 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 44.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.031
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.3
     winner: vendor_page
     sources:
-      vendor_page: 0.031
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0098
+      vendor_page: 0.3
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0061
     winner: vendor_page
     sources:
-      vendor_page: 0.0098
+      vendor_page: 0.0061
+  Qts:  # total Q factor
+    value: 0.46
+    winner: vendor_page
+    sources:
+      vendor_page: 0.46
+  Qms:  # mechanical Q factor
+    value: 9.0
+    winner: vendor_page
+    sources:
+      vendor_page: 9.0
+  Sd:  # effective piston area (m²)
+    value: 0.0128
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0128
   Znom:  # nominal impedance (Ω)
     value: 7.0
     winner: vendor_page
     sources:
       vendor_page: 7.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00133
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00133
 _sources:
   vendor_page: https://www.soundimports.eu/en/sb-acoustics-sb16frpc25-7.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/sb-acoustics-sb16frpc25-7.html
+frd_url: null
+zma_url: null

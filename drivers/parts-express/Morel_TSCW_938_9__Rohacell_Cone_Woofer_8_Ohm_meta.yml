@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/297-112--morel-tscw938-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Morel-TSCW-938-9-Rohacell-Cone-Woofer-8-Ohm-297-112
 source: https://www.parts-express.com/Morel-TSCW-938-9-Rohacell-Cone-Woofer-8-Ohm-297-112
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.4
-    winner: vendor_page
-    sources:
-      vendor_page: 6.4
-  Sd:  # effective piston area (m²)
-    value: 0.0249
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0249
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0009699999999999999
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0009699999999999999
-  Xmax:  # one-way linear excursion (m)
-    value: 0.006
-    winner: vendor_page
-    sources:
-      vendor_page: 0.006
-  Qes:  # electrical Q factor
-    value: 0.38
-    winner: vendor_page
-    sources:
-      vendor_page: 0.38
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.9544457680906135
-    winner: vendor_page
-    sources:
-      vendor_page: 0.9544457680906135
-  BL:  # force factor (T·m)
-    value: 9.85
-    winner: vendor_page
-    sources:
-      vendor_page: 9.85
-  Qts:  # total Q factor
-    value: 0.36
-    winner: vendor_page
-    sources:
-      vendor_page: 0.36
-  Qms:  # mechanical Q factor
-    value: 6.3
-    winner: vendor_page
-    sources:
-      vendor_page: 6.3
   Le:  # voice coil inductance (H)
     value: 0.00035999999999999997
     winner: vendor_page
     sources:
       vendor_page: 0.00035999999999999997
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.081977136
+    winner: vendor_page
+    sources:
+      vendor_page: 0.081977136
+  Qes:  # electrical Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.033
+    winner: vendor_page
+    sources:
+      vendor_page: 0.033
+  BL:  # force factor (T·m)
+    value: 9.85
+    winner: vendor_page
+    sources:
+      vendor_page: 9.85
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.4
+    winner: vendor_page
+    sources:
+      vendor_page: 6.4
   Pe:  # rated power input (W)
     value: 180.0
     winner: vendor_page
@@ -76,31 +51,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 29.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.081977136
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.9544457680906135
     winner: vendor_page
     sources:
-      vendor_page: 0.081977136
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.033
+      vendor_page: 0.9544457680906135
+  Xmax:  # one-way linear excursion (m)
+    value: 0.006
     winner: vendor_page
     sources:
-      vendor_page: 0.033
+      vendor_page: 0.006
+  Qts:  # total Q factor
+    value: 0.36
+    winner: vendor_page
+    sources:
+      vendor_page: 0.36
+  Qms:  # mechanical Q factor
+    value: 6.3
+    winner: vendor_page
+    sources:
+      vendor_page: 6.3
+  Sd:  # effective piston area (m²)
+    value: 0.0249
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0249
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 30.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0009699999999999999
     winner: vendor_page
     sources:
-      vendor_page: 30.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 3000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 3000.0
+      vendor_page: 0.0009699999999999999
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/297-112--morel-tscw938-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Morel-TSCW-938-9-Rohacell-Cone-Woofer-8-Ohm-297-112
+datasheet_url: https://www.parts-express.com/pedocs/specs/297-112--morel-tscw938-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Morel-TSCW-938-9-Rohacell-Cone-Woofer-8-Ohm-297-112
+frd_url: null
+zma_url: null

@@ -4,43 +4,28 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-1524--tymphany-oc16sc04-04-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Peerless-OC16SC04-04-16mm-Fabric-Dome-OC-Tweeter-4-Ohm-264-1524
 source: https://www.parts-express.com/Peerless-OC16SC04-04-16mm-Fabric-Dome-OC-Tweeter-4-Ohm-264-1524
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.93
-    winner: vendor_page
-    sources:
-      vendor_page: 3.93
-  Qes:  # electrical Q factor
-    value: 4.19
-    winner: vendor_page
-    sources:
-      vendor_page: 4.19
-  Qts:  # total Q factor
-    value: 1.73
-    winner: vendor_page
-    sources:
-      vendor_page: 1.73
-  Qms:  # mechanical Q factor
-    value: 2.94
-    winner: vendor_page
-    sources:
-      vendor_page: 2.94
   Le:  # voice coil inductance (H)
     value: 2.0e-05
     winner: vendor_page
     sources:
       vendor_page: 2.0e-05
+  Qes:  # electrical Q factor
+    value: 4.19
+    winner: vendor_page
+    sources:
+      vendor_page: 4.19
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.93
+    winner: vendor_page
+    sources:
+      vendor_page: 3.93
   Pe:  # rated power input (W)
     value: 100.0
     winner: vendor_page
@@ -51,21 +36,26 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 2153.0
+  Qts:  # total Q factor
+    value: 1.73
+    winner: vendor_page
+    sources:
+      vendor_page: 1.73
+  Qms:  # mechanical Q factor
+    value: 2.94
+    winner: vendor_page
+    sources:
+      vendor_page: 2.94
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 2500.0
-    winner: vendor_page
-    sources:
-      vendor_page: 2500.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 20000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 20000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-1524--tymphany-oc16sc04-04-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Peerless-OC16SC04-04-16mm-Fabric-Dome-OC-Tweeter-4-Ohm-264-1524
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-1524--tymphany-oc16sc04-04-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Peerless-OC16SC04-04-16mm-Fabric-Dome-OC-Tweeter-4-Ohm-264-1524
+frd_url: null
+zma_url: null

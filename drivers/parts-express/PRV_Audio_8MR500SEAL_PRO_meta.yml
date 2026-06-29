@@ -6,70 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/PRV-Audio-8MR500SEAL-PRO-8-Sealed-Professional-Midrange-Speaker-8-Ohm-294-3536
 source: https://www.parts-express.com/PRV-Audio-8MR500SEAL-PRO-8-Sealed-Professional-Midrange-Speaker-8-Ohm-294-3536
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-3536
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.0
-    winner: vendor_page
-    sources:
-      vendor_page: 6.0
-  Sd:  # effective piston area (m²)
-    value: 0.0241
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0241
-  Cms:  # mechanical compliance (m/N)
-    value: 1.2e-05
-    winner: vendor_page
-    sources:
-      vendor_page: 1.2e-05
-  Xmax:  # one-way linear excursion (m)
-    value: 0.004
-    winner: vendor_page
-    sources:
-      vendor_page: 0.004
-  Qes:  # electrical Q factor
-    value: 2.58
-    winner: vendor_page
-    sources:
-      vendor_page: 2.58
-  Rms:  # mechanical resistance (kg/s)
-    value: 4.721048276563272
-    winner: vendor_page
-    sources:
-      vendor_page: 4.721048276563272
-  BL:  # force factor (T·m)
-    value: 8.83
-    winner: vendor_page
-    sources:
-      vendor_page: 8.83
-  Qts:  # total Q factor
-    value: 2.26
-    winner: vendor_page
-    sources:
-      vendor_page: 2.26
-  Qms:  # mechanical Q factor
-    value: 18.14
-    winner: vendor_page
-    sources:
-      vendor_page: 18.14
   Le:  # voice coil inductance (H)
     value: 0.00025
     winner: vendor_page
     sources:
       vendor_page: 0.00025
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0274956128
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0274956128
+  Qes:  # electrical Q factor
+    value: 2.58
+    winner: vendor_page
+    sources:
+      vendor_page: 2.58
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.013630000000000001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.013630000000000001
+  BL:  # force factor (T·m)
+    value: 8.83
+    winner: vendor_page
+    sources:
+      vendor_page: 8.83
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
   Pe:  # rated power input (W)
     value: 400.0
     winner: vendor_page
@@ -80,21 +52,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 1000.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0274956128
+  Rms:  # mechanical resistance (kg/s)
+    value: 4.721048276563272
     winner: vendor_page
     sources:
-      vendor_page: 0.0274956128
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.013630000000000001
+      vendor_page: 4.721048276563272
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
     winner: vendor_page
     sources:
-      vendor_page: 0.013630000000000001
+      vendor_page: 0.004
+  Qts:  # total Q factor
+    value: 2.26
+    winner: vendor_page
+    sources:
+      vendor_page: 2.26
+  Qms:  # mechanical Q factor
+    value: 18.14
+    winner: vendor_page
+    sources:
+      vendor_page: 18.14
+  Sd:  # effective piston area (m²)
+    value: 0.0241
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0241
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 1.2e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 1.2e-05
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 8.0
     winner: vendor_page
@@ -112,3 +104,11 @@ specs:
       vendor_page: 400.0
 _sources:
   vendor_page: https://www.parts-express.com/PRV-Audio-8MR500SEAL-PRO-8-Sealed-Professional-Midrange-Speaker-8-Ohm-294-3536
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/PRV-Audio-8MR500SEAL-PRO-8-Sealed-Professional-Midrange-Speaker-8-Ohm-294-3536
+frd_url: null
+zma_url: null

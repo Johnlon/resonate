@@ -6,15 +6,7 @@ corrections: null
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Goldwood-GM-85-8-Heavy-Duty-5-1-4-Sealed-Back-Midrange-8-Ohm-280-115
 source: https://www.parts-express.com/Goldwood-GM-85-8-Heavy-Duty-5-1-4-Sealed-Back-Midrange-8-Ohm-280-115
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd
 community: null
@@ -37,3 +29,11 @@ specs:
       vendor_page: 8.0
 _sources:
   vendor_page: https://www.parts-express.com/Goldwood-GM-85-8-Heavy-Duty-5-1-4-Sealed-Back-Midrange-8-Ohm-280-115
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Goldwood-GM-85-8-Heavy-Duty-5-1-4-Sealed-Back-Midrange-8-Ohm-280-115
+frd_url: null
+zma_url: null

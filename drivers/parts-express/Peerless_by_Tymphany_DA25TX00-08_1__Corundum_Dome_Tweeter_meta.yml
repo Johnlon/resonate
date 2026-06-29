@@ -4,43 +4,28 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-1676--peerless-da25tx00-08-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Peerless-DA25TX00-08-1-Corundum-Dome-Tweeter-264-1676
 source: https://www.parts-express.com/Peerless-DA25TX00-08-1-Corundum-Dome-Tweeter-264-1676
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.89
-    winner: vendor_page
-    sources:
-      vendor_page: 6.89
-  Qes:  # electrical Q factor
-    value: 0.85
-    winner: vendor_page
-    sources:
-      vendor_page: 0.85
-  Qts:  # total Q factor
-    value: 0.6
-    winner: vendor_page
-    sources:
-      vendor_page: 0.6
-  Qms:  # mechanical Q factor
-    value: 1.98
-    winner: vendor_page
-    sources:
-      vendor_page: 1.98
   Le:  # voice coil inductance (H)
     value: 1.0e-05
     winner: vendor_page
     sources:
       vendor_page: 1.0e-05
+  Qes:  # electrical Q factor
+    value: 0.85
+    winner: vendor_page
+    sources:
+      vendor_page: 0.85
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.89
+    winner: vendor_page
+    sources:
+      vendor_page: 6.89
   Pe:  # rated power input (W)
     value: 100.0
     winner: vendor_page
@@ -51,21 +36,26 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 633.0
+  Qts:  # total Q factor
+    value: 0.6
+    winner: vendor_page
+    sources:
+      vendor_page: 0.6
+  Qms:  # mechanical Q factor
+    value: 1.98
+    winner: vendor_page
+    sources:
+      vendor_page: 1.98
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 1000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 1000.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 40000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 40000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-1676--peerless-da25tx00-08-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Peerless-DA25TX00-08-1-Corundum-Dome-Tweeter-264-1676
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-1676--peerless-da25tx00-08-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Peerless-DA25TX00-08-1-Corundum-Dome-Tweeter-264-1676
+frd_url: null
+zma_url: null

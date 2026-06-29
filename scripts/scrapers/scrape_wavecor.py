@@ -111,7 +111,7 @@ FIELD_MAP = {
 #   dq_issue    — known DQ flag with explanation (or None)
 SPLIT_PAGES = {
     "http://www.wavecor.com/html/wf259pa01_02.html": {
-        "pdf_url": "https://www.wavecor.com/WF259PA01_02_specifications.pdf",
+        "datasheet_url": "https://www.wavecor.com/WF259PA01_02_specifications.pdf",
         "reason": "significantly different Re/BL/sensitivity per impedance variant; discontinued",
         "variants": [
             {
@@ -292,9 +292,9 @@ def _parse_asset_urls(html: str, page_url: str, model: str) -> dict[str, str | N
         elif "_impedance_response.txt" in hl:
             imp = urllib.parse.urljoin(page_url, h)
     return {
-        "pdf_url": pdf or f"https://www.wavecor.com/{model}_specifications.pdf",
-        "spl_url": spl or f"https://www.wavecor.com/{model}_SPL_response.txt",
-        "imp_url": imp or f"https://www.wavecor.com/{model}_impedance_response.txt",
+        "datasheet_url": pdf or f"https://www.wavecor.com/{model}_specifications.pdf",
+        "spl_url":       spl or f"https://www.wavecor.com/{model}_SPL_response.txt",
+        "imp_url":       imp or f"https://www.wavecor.com/{model}_impedance_response.txt",
     }
 
 
@@ -322,9 +322,9 @@ def parse_product(html: str, url: str) -> dict | None:
         "manufacturer":  "Wavecor",
         "provided_by":   f"Wavecor website (scraped {date.today()})",
         "fields":        fields,
-        "pdf_url":       assets["pdf_url"],
+        "datasheet_url": assets["datasheet_url"],
         "frd_url":       assets["spl_url"],
-        "impedance_url": assets["imp_url"],
+        "zma_url":       assets["imp_url"],
         "driver_type":   _driver_type_from_url(url),
         "freq_low_hz":   freq_low,
         "freq_high_hz":  freq_high,
@@ -399,22 +399,19 @@ def _process_splits(out_dir: Path) -> None:
                 "reviewed_by":      None,
                 "driver_type":      driver_type,
                 "nominal_size_cm":  None,
-                "datasheet":        cfg["pdf_url"],
-                "adv_datasheet":    None,
-                "drawing":          None,
-                "cad":              None,
-                "manu_page":        url,
-                "vendor_page":      None,
+                "datasheet_url":    cfg["datasheet_url"],
+                "adv_datasheet_url": None,
+                "drawing_url":      None,
+                "cad_url":          None,
+                "manu_page_url":    url,
+                "vendor_page_url":  None,
                 "source":           url,
-                "frd":              None,
-                "impedance":        None,
+                "frd_url":          None,
+                "zma_url":          None,
                 "obsolete":         True if variant.get("discontinued") else None,
                 "dq_issue":         variant.get("dq_issue"),
                 "community":        None,
                 "fetched_sku":      None,
-                "field_provenance": None,
-                "freq_low_hz":      freq_low,
-                "freq_high_hz":     freq_high,
             }
             meta_path.write_text(
                 yaml.dump(meta, allow_unicode=True, sort_keys=False), encoding="utf-8"

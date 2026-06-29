@@ -6,65 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: subwoofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-1646--tymphany-xxls-p830845-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Peerless-XXLS-P830845-12-Nomex-Cone-Subwoofer-8-Ohm-264-1646
 source: https://www.parts-express.com/Peerless-XXLS-P830845-12-Nomex-Cone-Subwoofer-8-Ohm-264-1646
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 264-1646
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.66
-    winner: vendor_page
-    sources:
-      vendor_page: 5.66
-  Sd:  # effective piston area (m²)
-    value: 0.049089999999999995
-    winner: vendor_page
-    sources:
-      vendor_page: 0.049089999999999995
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0125
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0125
-  Qes:  # electrical Q factor
-    value: 0.55
-    winner: vendor_page
-    sources:
-      vendor_page: 0.55
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.9493483207335602
-    winner: vendor_page
-    sources:
-      vendor_page: 1.9493483207335602
-  BL:  # force factor (T·m)
-    value: 13.06
-    winner: vendor_page
-    sources:
-      vendor_page: 13.06
-  Qts:  # total Q factor
-    value: 0.52
-    winner: vendor_page
-    sources:
-      vendor_page: 0.52
-  Qms:  # mechanical Q factor
-    value: 8.55
-    winner: vendor_page
-    sources:
-      vendor_page: 8.55
   Le:  # voice coil inductance (H)
     value: 0.00079
     winner: vendor_page
     sources:
       vendor_page: 0.00079
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.11949689599999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.11949689599999999
+  Qes:  # electrical Q factor
+    value: 0.55
+    winner: vendor_page
+    sources:
+      vendor_page: 0.55
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.09809999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.09809999999999999
+  BL:  # force factor (T·m)
+    value: 13.06
+    winner: vendor_page
+    sources:
+      vendor_page: 13.06
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.66
+    winner: vendor_page
+    sources:
+      vendor_page: 5.66
   Pe:  # rated power input (W)
     value: 175.0
     winner: vendor_page
@@ -75,16 +52,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 27.04
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.11949689599999999
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.9493483207335602
     winner: vendor_page
     sources:
-      vendor_page: 0.11949689599999999
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.09809999999999999
+      vendor_page: 1.9493483207335602
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0125
     winner: vendor_page
     sources:
-      vendor_page: 0.09809999999999999
+      vendor_page: 0.0125
+  Qts:  # total Q factor
+    value: 0.52
+    winner: vendor_page
+    sources:
+      vendor_page: 0.52
+  Qms:  # mechanical Q factor
+    value: 8.55
+    winner: vendor_page
+    sources:
+      vendor_page: 8.55
+  Sd:  # effective piston area (m²)
+    value: 0.049089999999999995
+    winner: vendor_page
+    sources:
+      vendor_page: 0.049089999999999995
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -93,3 +85,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-1646--tymphany-xxls-p830845-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Peerless-XXLS-P830845-12-Nomex-Cone-Subwoofer-8-Ohm-264-1646
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-1646--tymphany-xxls-p830845-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Peerless-XXLS-P830845-12-Nomex-Cone-Subwoofer-8-Ohm-264-1646
+frd_url: null
+zma_url: null

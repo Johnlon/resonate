@@ -4,23 +4,13 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/292-653--visaton-sc-59-om-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Visaton-SC-5.9-OM-4-2-x-3.5-Fullrange-Driver-4-Ohm-292-653
 source: https://www.parts-express.com/Visaton-SC-5.9-OM-4-2-x-3.5-Fullrange-Driver-4-Ohm-292-653
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0005
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0005
   Pe:  # rated power input (W)
     value: 10.0
     winner: vendor_page
@@ -31,21 +21,21 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 170.0
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0005
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 90.0
-    winner: vendor_page
-    sources:
-      vendor_page: 90.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 20000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 20000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/292-653--visaton-sc-59-om-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Visaton-SC-5.9-OM-4-2-x-3.5-Fullrange-Driver-4-Ohm-292-653
+datasheet_url: https://www.parts-express.com/pedocs/specs/292-653--visaton-sc-59-om-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Visaton-SC-5.9-OM-4-2-x-3.5-Fullrange-Driver-4-Ohm-292-653
+frd_url: null
+zma_url: null

@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/294-6028--bc-18ds115-4-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/B-C-18DS115-4-18-Professional-Neodymium-Subwoofer-4-Ohm-294-6028
 source: https://www.parts-express.com/B-C-18DS115-4-18-Professional-Neodymium-Subwoofer-4-Ohm-294-6028
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.3
-    winner: vendor_page
-    sources:
-      vendor_page: 3.3
-  Sd:  # effective piston area (m²)
-    value: 0.1241
-    winner: vendor_page
-    sources:
-      vendor_page: 0.1241
-  Cms:  # mechanical compliance (m/N)
-    value: 8.09e-05
-    winner: vendor_page
-    sources:
-      vendor_page: 8.09e-05
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0165
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0165
-  Qes:  # electrical Q factor
-    value: 0.18
-    winner: vendor_page
-    sources:
-      vendor_page: 0.18
-  Rms:  # mechanical resistance (kg/s)
-    value: 13.809779917253655
-    winner: vendor_page
-    sources:
-      vendor_page: 13.809779917253655
-  BL:  # force factor (T·m)
-    value: 34.68
-    winner: vendor_page
-    sources:
-      vendor_page: 34.68
-  Qts:  # total Q factor
-    value: 0.17
-    winner: vendor_page
-    sources:
-      vendor_page: 0.17
-  Qms:  # mechanical Q factor
-    value: 4.75
-    winner: vendor_page
-    sources:
-      vendor_page: 4.75
   Le:  # voice coil inductance (H)
     value: 0.0028
     winner: vendor_page
     sources:
       vendor_page: 0.0028
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.17698
+    winner: vendor_page
+    sources:
+      vendor_page: 0.17698
+  Qes:  # electrical Q factor
+    value: 0.18
+    winner: vendor_page
+    sources:
+      vendor_page: 0.18
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.348
+    winner: vendor_page
+    sources:
+      vendor_page: 0.348
+  BL:  # force factor (T·m)
+    value: 34.68
+    winner: vendor_page
+    sources:
+      vendor_page: 34.68
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.3
+    winner: vendor_page
+    sources:
+      vendor_page: 3.3
   Pe:  # rated power input (W)
     value: 3400.0
     winner: vendor_page
@@ -76,31 +51,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 30.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.17698
+  Rms:  # mechanical resistance (kg/s)
+    value: 13.809779917253655
     winner: vendor_page
     sources:
-      vendor_page: 0.17698
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.348
+      vendor_page: 13.809779917253655
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0165
     winner: vendor_page
     sources:
-      vendor_page: 0.348
+      vendor_page: 0.0165
+  Qts:  # total Q factor
+    value: 0.17
+    winner: vendor_page
+    sources:
+      vendor_page: 0.17
+  Qms:  # mechanical Q factor
+    value: 4.75
+    winner: vendor_page
+    sources:
+      vendor_page: 4.75
+  Sd:  # effective piston area (m²)
+    value: 0.1241
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1241
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 30.0
+  Cms:  # mechanical compliance (m/N)
+    value: 8.09e-05
     winner: vendor_page
     sources:
-      vendor_page: 30.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 500.0
-    winner: vendor_page
-    sources:
-      vendor_page: 500.0
+      vendor_page: 8.09e-05
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/294-6028--bc-18ds115-4-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/B-C-18DS115-4-18-Professional-Neodymium-Subwoofer-4-Ohm-294-6028
+datasheet_url: https://www.parts-express.com/pedocs/specs/294-6028--bc-18ds115-4-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/B-C-18DS115-4-18-Professional-Neodymium-Subwoofer-4-Ohm-294-6028
+frd_url: null
+zma_url: null

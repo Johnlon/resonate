@@ -7,65 +7,42 @@ corrections: '''Qts'' stored=0.45 differs from calculated=0.443289 (deps: Qms=7.
 reviewed_by: null
 driver_type: subwoofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/253-016--15mc500-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Beyma-15MC500-MC-Series-15-Subwoofer-8-Ohm-253-016
 source: https://www.parts-express.com/Beyma-15MC500-MC-Series-15-Subwoofer-8-Ohm-253-016
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 253-016
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.6
-    winner: vendor_page
-    sources:
-      vendor_page: 5.6
-  Sd:  # effective piston area (m²)
-    value: 0.088
-    winner: vendor_page
-    sources:
-      vendor_page: 0.088
-  Xmax:  # one-way linear excursion (m)
-    value: 0.004
-    winner: vendor_page
-    sources:
-      vendor_page: 0.004
-  Qes:  # electrical Q factor
-    value: 0.47
-    winner: vendor_page
-    sources:
-      vendor_page: 0.47
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.003631358892918664
-    winner: vendor_page
-    sources:
-      vendor_page: 0.003631358892918664
-  BL:  # force factor (T·m)
-    value: 18.3
-    winner: vendor_page
-    sources:
-      vendor_page: 18.3
-  Qts:  # total Q factor
-    value: 0.45
-    winner: vendor_page
-    sources:
-      vendor_page: 0.45
-  Qms:  # mechanical Q factor
-    value: 7.8
-    winner: vendor_page
-    sources:
-      vendor_page: 7.8
   Le:  # voice coil inductance (H)
     value: 46.0
     winner: vendor_page
     sources:
       vendor_page: 46.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.133938464
+    winner: vendor_page
+    sources:
+      vendor_page: 0.133938464
+  Qes:  # electrical Q factor
+    value: 0.47
+    winner: vendor_page
+    sources:
+      vendor_page: 0.47
+  Mms:  # moving mass incl. air load (kg)
+    value: 9.800000000000001e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 9.800000000000001e-05
+  BL:  # force factor (T·m)
+    value: 18.3
+    winner: vendor_page
+    sources:
+      vendor_page: 18.3
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
   Pe:  # rated power input (W)
     value: 500.0
     winner: vendor_page
@@ -76,16 +53,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 46.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.133938464
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.003631358892918664
     winner: vendor_page
     sources:
-      vendor_page: 0.133938464
-  Mms:  # moving mass incl. air load (kg)
-    value: 9.800000000000001e-05
+      vendor_page: 0.003631358892918664
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
     winner: vendor_page
     sources:
-      vendor_page: 9.800000000000001e-05
+      vendor_page: 0.004
+  Qts:  # total Q factor
+    value: 0.45
+    winner: vendor_page
+    sources:
+      vendor_page: 0.45
+  Qms:  # mechanical Q factor
+    value: 7.8
+    winner: vendor_page
+    sources:
+      vendor_page: 7.8
+  Sd:  # effective piston area (m²)
+    value: 0.088
+    winner: vendor_page
+    sources:
+      vendor_page: 0.088
   Znom:  # nominal impedance (Ω)
     value: 50.0
     winner: vendor_page
@@ -99,3 +91,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/253-016--15mc500-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Beyma-15MC500-MC-Series-15-Subwoofer-8-Ohm-253-016
+datasheet_url: https://www.parts-express.com/pedocs/specs/253-016--15mc500-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Beyma-15MC500-MC-Series-15-Subwoofer-8-Ohm-253-016
+frd_url: null
+zma_url: null

@@ -6,70 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/295-567--dayton-audio-rs225p-4a-reference-series-specifications.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-RS225P-4A-8-Reference-Paper-Woofer-4-Ohm-295-567
 source: https://www.parts-express.com/Dayton-Audio-RS225P-4A-8-Reference-Paper-Woofer-4-Ohm-295-567
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 295-567
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.3
-    winner: vendor_page
-    sources:
-      vendor_page: 3.3
-  Sd:  # effective piston area (m²)
-    value: 0.02138
-    winner: vendor_page
-    sources:
-      vendor_page: 0.02138
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00071
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00071
-  Xmax:  # one-way linear excursion (m)
-    value: 0.006
-    winner: vendor_page
-    sources:
-      vendor_page: 0.006
-  Qes:  # electrical Q factor
-    value: 0.48
-    winner: vendor_page
-    sources:
-      vendor_page: 0.48
-  Rms:  # mechanical resistance (kg/s)
-    value: 3.20102819027933
-    winner: vendor_page
-    sources:
-      vendor_page: 3.20102819027933
-  BL:  # force factor (T·m)
-    value: 6.4
-    winner: vendor_page
-    sources:
-      vendor_page: 6.4
-  Qts:  # total Q factor
-    value: 0.38
-    winner: vendor_page
-    sources:
-      vendor_page: 0.38
-  Qms:  # mechanical Q factor
-    value: 1.85
-    winner: vendor_page
-    sources:
-      vendor_page: 1.85
   Le:  # voice coil inductance (H)
     value: 0.00051
     winner: vendor_page
     sources:
       vendor_page: 0.00051
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0458
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0458
+  Qes:  # electrical Q factor
+    value: 0.48
+    winner: vendor_page
+    sources:
+      vendor_page: 0.48
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.025
+    winner: vendor_page
+    sources:
+      vendor_page: 0.025
+  BL:  # force factor (T·m)
+    value: 6.4
+    winner: vendor_page
+    sources:
+      vendor_page: 6.4
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.3
+    winner: vendor_page
+    sources:
+      vendor_page: 3.3
   Pe:  # rated power input (W)
     value: 80.0
     winner: vendor_page
@@ -80,21 +52,49 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 37.7
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0458
+  Rms:  # mechanical resistance (kg/s)
+    value: 3.20102819027933
     winner: vendor_page
     sources:
-      vendor_page: 0.0458
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.025
+      vendor_page: 3.20102819027933
+  Xmax:  # one-way linear excursion (m)
+    value: 0.006
     winner: vendor_page
     sources:
-      vendor_page: 0.025
+      vendor_page: 0.006
+  Qts:  # total Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  Qms:  # mechanical Q factor
+    value: 1.85
+    winner: vendor_page
+    sources:
+      vendor_page: 1.85
+  Sd:  # effective piston area (m²)
+    value: 0.02138
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02138
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00071
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00071
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/295-567--dayton-audio-rs225p-4a-reference-series-specifications.pdf
   vendor_page: https://www.parts-express.com/Dayton-Audio-RS225P-4A-8-Reference-Paper-Woofer-4-Ohm-295-567
+datasheet_url: https://www.parts-express.com/pedocs/specs/295-567--dayton-audio-rs225p-4a-reference-series-specifications.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-RS225P-4A-8-Reference-Paper-Woofer-4-Ohm-295-567
+frd_url: null
+zma_url: null

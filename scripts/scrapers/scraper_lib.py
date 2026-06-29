@@ -192,7 +192,7 @@ def annotate_specs_yaml(yaml_str: str) -> str:
 
 # ── PDF fetch / cache helper ───────────────────────────────────────────────────
 
-def _get_or_fetch_pdf(pdf_url: str, pdf_dir: Path,
+def _get_or_fetch_pdf(datasheet_url: str, pdf_dir: Path,
                       name_suffix: str = "") -> Path | None:
     """
     Return path to a cached PDF, downloading it if not already on disk.
@@ -200,7 +200,7 @@ def _get_or_fetch_pdf(pdf_url: str, pdf_dir: Path,
     same slug is used for multiple PDF types (e.g. primary vs adv datasheet).
     Returns None on network error; never raises.
     """
-    pdf_name = urllib.parse.unquote(pdf_url.rstrip("/").split("/")[-1])
+    pdf_name = urllib.parse.unquote(datasheet_url.rstrip("/").split("/")[-1])
     if not pdf_name.lower().endswith(".pdf"):
         pdf_name += ".pdf"
     if name_suffix:
@@ -209,7 +209,7 @@ def _get_or_fetch_pdf(pdf_url: str, pdf_dir: Path,
     if pdf_path.exists():
         return pdf_path
     try:
-        data = fetch_binary(pdf_url)
+        data = fetch_binary(datasheet_url)
         pdf_path.write_bytes(data)
         return pdf_path
     except Exception:
@@ -417,11 +417,11 @@ def _scrape_one(idx_url: tuple[int, str], cfg: _WorkerConfig) -> _WorkerResult:
     brand           = product.get("brand", "")
     model           = product.get("model", "")
     item_id         = model or slug   # use official model name in all problem log entries
-    html_fields: dict = product.get("fields", {})
-    pdf_url: str | None     = product.get("pdf_url")
-    adv_pdf_url: str | None = product.get("adv_pdf_url")
-    drawing_url: str | None = product.get("drawing_url")
-    cad_url: str | None     = product.get("cad_url")
+    html_fields: dict    = product.get("fields", {})
+    datasheet_url: str | None     = product.get("datasheet_url")
+    adv_datasheet_url: str | None = product.get("adv_datasheet_url")
+    drawing_url: str | None       = product.get("drawing_url")
+    cad_url: str | None           = product.get("cad_url")
     extras_log: list[str] = []
 
     # Source name constants for this scrape
@@ -434,8 +434,8 @@ def _scrape_one(idx_url: tuple[int, str], cfg: _WorkerConfig) -> _WorkerResult:
     freq_high_hz: float | None = None
     _freq_from_pdf = False
 
-    if pdf_url and not cfg.no_pdf:
-        pdf_path = _get_or_fetch_pdf(pdf_url, cfg.pdf_dir)
+    if datasheet_url and not cfg.no_pdf:
+        pdf_path = _get_or_fetch_pdf(datasheet_url, cfg.pdf_dir)
         if pdf_path:
             extras_log.append("+PDF")
             try:
@@ -453,7 +453,7 @@ def _scrape_one(idx_url: tuple[int, str], cfg: _WorkerConfig) -> _WorkerResult:
                     _prob(
                         f"pdf_range_{rej['field']}",
                         item_id,
-                        pdf_url,        # URL of the PDF, not the product page
+                        datasheet_url,        # URL of the PDF, not the product page
                         (f"extracted={rej['field']}={rej['extracted_si']:.4g} "
                          f"raw={rej['raw_str']!r} range={rej['range_desc']} pos={rej['pos']} "
                          f"local={pdf_path} "
@@ -478,12 +478,12 @@ def _scrape_one(idx_url: tuple[int, str], cfg: _WorkerConfig) -> _WorkerResult:
                     print(f"[{ts()}]   [{i}/{cfg.total}] {slug} "
                           f"PDF({pdf_source})→{list(pdf_fields.keys())}", flush=True)
                 else:
-                    _prob("pdf_no_fields", item_id, pdf_url, None,
+                    _prob("pdf_no_fields", item_id, datasheet_url, None,
                           f"pass1={len(pass1)} pass2={len(pass2)} chars={len(text)}")
             except Exception as e:
-                _prob("pdf_extract", item_id, pdf_url or url, None, f"Exception: {e}")
+                _prob("pdf_extract", item_id, datasheet_url or url, None, f"Exception: {e}")
         else:
-            _prob("pdf_fetch", item_id, pdf_url, None, "Could not download or cache PDF")
+            _prob("pdf_fetch", item_id, datasheet_url, None, "Could not download or cache PDF")
 
     # parse_product() may supply HTML-sourced freq range; prefer it over PDF when present.
     if product.get("freq_low_hz") is not None:
@@ -495,8 +495,8 @@ def _scrape_one(idx_url: tuple[int, str], cfg: _WorkerConfig) -> _WorkerResult:
 
     # ── Advanced parameters PDF (secondary source) ───────────────────────────
     adv_pdf_fields: dict = {}
-    if adv_pdf_url and not cfg.no_pdf and adv_pdf_url != pdf_url:
-        adv_path = _get_or_fetch_pdf(adv_pdf_url, cfg.pdf_dir, name_suffix="_adv")
+    if adv_datasheet_url and not cfg.no_pdf and adv_datasheet_url != datasheet_url:
+        adv_path = _get_or_fetch_pdf(adv_datasheet_url, cfg.pdf_dir, name_suffix="_adv")
         if adv_path:
             try:
                 adv_text    = _pdf_local.full_text(adv_path)
@@ -508,7 +508,7 @@ def _scrape_one(idx_url: tuple[int, str], cfg: _WorkerConfig) -> _WorkerResult:
                     _prob(
                         f"adv_pdf_range_{rej['field']}",
                         item_id,
-                        adv_pdf_url,    # URL of the adv PDF, not the product page
+                        adv_datasheet_url,    # URL of the adv PDF, not the product page
                         (f"extracted={rej['field']}={rej['extracted_si']:.4g} "
                          f"raw={rej['raw_str']!r} range={rej['range_desc']} pos={rej['pos']} "
                          f"local={adv_path} "
@@ -625,7 +625,7 @@ def _scrape_one(idx_url: tuple[int, str], cfg: _WorkerConfig) -> _WorkerResult:
     _fetch_asset(cad_url, "cad")
 
     # ── Extra files ───────────────────────────────────────────────────────────
-    frd_ok = impedance_ok = ""
+    frd_url = zma_url = ""
     for link in product.get("extra_links", []):
         fname = urllib.parse.unquote(link.rstrip("/").split("/")[-1])
         fpath = cfg.out / fname
@@ -642,9 +642,9 @@ def _scrape_one(idx_url: tuple[int, str], cfg: _WorkerConfig) -> _WorkerResult:
         ext = fname.rsplit(".", 1)[-1].lower()
         frd_file, zma_file = _classify_extra(fpath, ext, _prob, item_id, link)
         if frd_file:
-            frd_ok = link
+            frd_url = link
         if zma_file:
-            impedance_ok = link
+            zma_url = link
 
     # Direct frd_url / impedance_url keys bypass content classification.
     # Use when the vendor explicitly names the file type (e.g. Wavecor "_SPL_response.txt").
@@ -662,14 +662,14 @@ def _scrape_one(idx_url: tuple[int, str], cfg: _WorkerConfig) -> _WorkerResult:
                 return ""
         return murl if mpath.exists() else ""
 
-    frd_ok      = frd_ok      or _fetch_measurement(product.get("frd_url"),       "FRD")
-    impedance_ok = impedance_ok or _fetch_measurement(product.get("impedance_url"), "IMP")
+    frd_url      = frd_url      or _fetch_measurement(product.get("frd_url"),       "FRD")
+    zma_url = zma_url or _fetch_measurement(product.get("zma_url"), "IMP")
 
     # ── Write WDR ─────────────────────────────────────────────────────────────
     today = datetime.now(timezone.utc).strftime("%Y%m%d")
     comment_parts = [f"Source: {url}"]
-    if pdf_url:
-        comment_parts.append(f"Datasheet: {pdf_url}")
+    if datasheet_url:
+        comment_parts.append(f"Datasheet: {datasheet_url}")
 
     wdr_text = _plib.to_wdr(
         brand=brand, model=model, fields=fields,
@@ -692,34 +692,14 @@ def _scrape_one(idx_url: tuple[int, str], cfg: _WorkerConfig) -> _WorkerResult:
     if html_fields and not pdf_fields:
         detail_parts.append("PDF extraction returned no matches; using HTML only.")
 
-    # ── Build specs: block ────────────────────────────────────────────────────
-    # Coaxials: specs from parse_product() with woofer/tweeter sub-dicts.
-    # All others: build from merged T/S fields + extra_specs from parse_product().
-    _prod_specs = product.get("specs")
-    if _prod_specs and ("woofer" in _prod_specs or "tweeter" in _prod_specs):
-        _specs = _prod_specs  # preserve coaxial structure
-    else:
-        _specs: dict = {}
-        if fields.get("SPL")  and fields["SPL"] > 0:
-            _specs["sensitivity_db"]  = fields["SPL"]
-        if fields.get("Pe")   and fields["Pe"] > 0:
-            _specs["power_rms_W"]     = fields["Pe"]
-        if fields.get("Xmax") and fields["Xmax"] > 0:
-            _specs["linear_xmax_mm"] = round(fields["Xmax"] * 2000, 1)
-        if freq_low_hz:
-            _specs["freq_low_hz"]     = freq_low_hz
-        if freq_high_hz:
-            _specs["freq_high_hz"]    = freq_high_hz
-        # extra_specs from parse_product(): non-T/S data (voice coil dia, Hg, etc.)
-        _specs.update(product.get("extra_specs") or {})
-        _specs = _specs or None
+    # _specs was built above in the unified provenance block.
 
     # Named source index
     _sources_index: dict[str, str | None] = {}
-    if pdf_url:
-        _sources_index["datasheet"] = pdf_url
-    if adv_pdf_url and adv_pdf_url != pdf_url:
-        _sources_index["adv_datasheet"] = adv_pdf_url
+    if datasheet_url:
+        _sources_index["datasheet"] = datasheet_url
+    if adv_datasheet_url and adv_datasheet_url != datasheet_url:
+        _sources_index["adv_datasheet"] = adv_datasheet_url
     _sources_index[_html_src] = url
 
     meta = {
@@ -730,15 +710,15 @@ def _scrape_one(idx_url: tuple[int, str], cfg: _WorkerConfig) -> _WorkerResult:
         "reviewed_by":     None,
         "driver_type":     product.get("driver_type") or None,
         "nominal_size_cm": product.get("nominal_size_cm"),
-        "source":          url,
-        "datasheet":       pdf_url or None,
-        "adv_datasheet":   adv_pdf_url or None,
-        "drawing":         drawing_url or None,
-        "cad":             cad_url or None,
-        "manu_page":       url if cfg.is_manufacturer_site else None,
-        "vendor_page":     None if cfg.is_manufacturer_site else url,
-        "frd":             frd_ok or None,
-        "impedance":       impedance_ok or None,
+        "source":              url,
+        "datasheet_url":       datasheet_url or None,
+        "adv_datasheet_url":   adv_datasheet_url or None,
+        "drawing_url":         drawing_url or None,
+        "cad_url":             cad_url or None,
+        "manu_page_url":       url if cfg.is_manufacturer_site else None,
+        "vendor_page_url":     None if cfg.is_manufacturer_site else url,
+        "frd_url":             frd_url or None,
+        "zma_url":             zma_url or None,
         "obsolete":        None,
         "dq_issue":        None,
         "community":       None,
@@ -796,7 +776,7 @@ def run_scraper(
         "manufacturer": str,
         "provided_by":  str,
         "fields":       dict[str, float],  # T/S from HTML (may be partial)
-        "pdf_url":      str | None,
+        "datasheet_url":      str | None,
         "extra_links":  list[str],
       }
 

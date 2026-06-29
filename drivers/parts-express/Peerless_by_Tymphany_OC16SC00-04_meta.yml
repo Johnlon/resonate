@@ -6,45 +6,27 @@ corrections: null
 reviewed_by: null
 driver_type: tweeter
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-1522--tymphany-oc16sc00-04-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Peerless-OC16SC00-04-16mm-Fabric-Dome-OC-Tweeter-4-Ohm-264-1522
 source: https://www.parts-express.com/Peerless-OC16SC00-04-16mm-Fabric-Dome-OC-Tweeter-4-Ohm-264-1522
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd
 community: null
 fetched_sku: 264-1522
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.89
-    winner: vendor_page
-    sources:
-      vendor_page: 3.89
-  Qes:  # electrical Q factor
-    value: 4.04
-    winner: vendor_page
-    sources:
-      vendor_page: 4.04
-  Qts:  # total Q factor
-    value: 1.59
-    winner: vendor_page
-    sources:
-      vendor_page: 1.59
-  Qms:  # mechanical Q factor
-    value: 2.62
-    winner: vendor_page
-    sources:
-      vendor_page: 2.62
   Le:  # voice coil inductance (H)
     value: 2.0e-05
     winner: vendor_page
     sources:
       vendor_page: 2.0e-05
+  Qes:  # electrical Q factor
+    value: 4.04
+    winner: vendor_page
+    sources:
+      vendor_page: 4.04
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.89
+    winner: vendor_page
+    sources:
+      vendor_page: 3.89
   Pe:  # rated power input (W)
     value: 100.0
     winner: vendor_page
@@ -55,6 +37,16 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 2082.09
+  Qts:  # total Q factor
+    value: 1.59
+    winner: vendor_page
+    sources:
+      vendor_page: 1.59
+  Qms:  # mechanical Q factor
+    value: 2.62
+    winner: vendor_page
+    sources:
+      vendor_page: 2.62
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
@@ -63,3 +55,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-1522--tymphany-oc16sc00-04-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Peerless-OC16SC00-04-16mm-Fabric-Dome-OC-Tweeter-4-Ohm-264-1522
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-1522--tymphany-oc16sc00-04-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Peerless-OC16SC00-04-16mm-Fabric-Dome-OC-Tweeter-4-Ohm-264-1522
+frd_url: null
+zma_url: null

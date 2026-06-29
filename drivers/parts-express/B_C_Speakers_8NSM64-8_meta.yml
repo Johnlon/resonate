@@ -6,65 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/294-5946--bc-speakers-8nsm64-8-spec-sheet.PDF
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/B-C-8NSM64-8-8-Professional-Neodymium-Sealed-Back-Midrange-8-Ohm-294-5946
 source: https://www.parts-express.com/B-C-8NSM64-8-8-Professional-Neodymium-Sealed-Back-Midrange-8-Ohm-294-5946
-frd: null
-impedance: null
 obsolete: null
 dq_issue: Vas_tiny_for_driver
 community: null
 fetched_sku: 294-5946
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.7
-    winner: vendor_page
-    sources:
-      vendor_page: 5.7
-  Sd:  # effective piston area (m²)
-    value: 0.022
-    winner: vendor_page
-    sources:
-      vendor_page: 0.022
-  Xmax:  # one-way linear excursion (m)
-    value: 0.002
-    winner: vendor_page
-    sources:
-      vendor_page: 0.002
-  Qes:  # electrical Q factor
-    value: 0.35
-    winner: vendor_page
-    sources:
-      vendor_page: 0.35
-  Rms:  # mechanical resistance (kg/s)
-    value: 3.144970710206556
-    winner: vendor_page
-    sources:
-      vendor_page: 3.144970710206556
-  BL:  # force factor (T·m)
-    value: 22.0
-    winner: vendor_page
-    sources:
-      vendor_page: 22.0
-  Qts:  # total Q factor
-    value: 0.34
-    winner: vendor_page
-    sources:
-      vendor_page: 0.34
-  Qms:  # mechanical Q factor
-    value: 9.3
-    winner: vendor_page
-    sources:
-      vendor_page: 9.3
   Le:  # voice coil inductance (H)
     value: 0.0006
     winner: vendor_page
     sources:
       vendor_page: 0.0006
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00141584
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00141584
+  Qes:  # electrical Q factor
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.019
+    winner: vendor_page
+    sources:
+      vendor_page: 0.019
+  BL:  # force factor (T·m)
+    value: 22.0
+    winner: vendor_page
+    sources:
+      vendor_page: 22.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.7
+    winner: vendor_page
+    sources:
+      vendor_page: 5.7
   Pe:  # rated power input (W)
     value: 500.0
     winner: vendor_page
@@ -75,16 +52,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 245.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.00141584
+  Rms:  # mechanical resistance (kg/s)
+    value: 3.144970710206556
     winner: vendor_page
     sources:
-      vendor_page: 0.00141584
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.019
+      vendor_page: 3.144970710206556
+  Xmax:  # one-way linear excursion (m)
+    value: 0.002
     winner: vendor_page
     sources:
-      vendor_page: 0.019
+      vendor_page: 0.002
+  Qts:  # total Q factor
+    value: 0.34
+    winner: vendor_page
+    sources:
+      vendor_page: 0.34
+  Qms:  # mechanical Q factor
+    value: 9.3
+    winner: vendor_page
+    sources:
+      vendor_page: 9.3
+  Sd:  # effective piston area (m²)
+    value: 0.022
+    winner: vendor_page
+    sources:
+      vendor_page: 0.022
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -93,3 +85,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/294-5946--bc-speakers-8nsm64-8-spec-sheet.PDF
   vendor_page: https://www.parts-express.com/B-C-8NSM64-8-8-Professional-Neodymium-Sealed-Back-Midrange-8-Ohm-294-5946
+datasheet_url: https://www.parts-express.com/pedocs/specs/294-5946--bc-speakers-8nsm64-8-spec-sheet.PDF
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/B-C-8NSM64-8-8-Professional-Neodymium-Sealed-Back-Midrange-8-Ohm-294-5946
+frd_url: null
+zma_url: null

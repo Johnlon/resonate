@@ -6,40 +6,22 @@ corrections: null
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/285-135-dayton-audio-ce30mb-16b-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-CE30MB-16B-1-1-4-Mini-Speaker-Black-16-Ohm-285-135
 source: https://www.parts-express.com/Dayton-Audio-CE30MB-16B-1-1-4-Mini-Speaker-Black-16-Ohm-285-135
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 285-135
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 15.7
+  Le:  # voice coil inductance (H)
+    value: 0.00135
     winner: vendor_page
     sources:
-      vendor_page: 15.7
-  Sd:  # effective piston area (m²)
-    value: 0.00031
+      vendor_page: 0.00135
+  Vas:  # equivalent acoustic volume (m³)
+    value: 3.964352e-05
     winner: vendor_page
     sources:
-      vendor_page: 0.00031
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00323
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00323
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0001
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0001
+      vendor_page: 3.964352e-05
   Qes:  # electrical Q factor
     value: 5.28
     winner: vendor_page
@@ -50,21 +32,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 0.6
-  Qts:  # total Q factor
-    value: 1.72
+  Re:  # DC voice coil resistance (Ω)
+    value: 15.7
     winner: vendor_page
     sources:
-      vendor_page: 1.72
-  Qms:  # mechanical Q factor
-    value: 2.55
-    winner: vendor_page
-    sources:
-      vendor_page: 2.55
-  Le:  # voice coil inductance (H)
-    value: 0.00135
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00135
+      vendor_page: 15.7
   Pe:  # rated power input (W)
     value: 0.5
     winner: vendor_page
@@ -75,16 +47,44 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 401.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 3.964352e-05
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0001
     winner: vendor_page
     sources:
-      vendor_page: 3.964352e-05
+      vendor_page: 0.0001
+  Qts:  # total Q factor
+    value: 1.72
+    winner: vendor_page
+    sources:
+      vendor_page: 1.72
+  Qms:  # mechanical Q factor
+    value: 2.55
+    winner: vendor_page
+    sources:
+      vendor_page: 2.55
+  Sd:  # effective piston area (m²)
+    value: 0.00031
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00031
   Znom:  # nominal impedance (Ω)
     value: 16.0
     winner: vendor_page
     sources:
       vendor_page: 16.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00323
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00323
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/285-135-dayton-audio-ce30mb-16b-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Dayton-Audio-CE30MB-16B-1-1-4-Mini-Speaker-Black-16-Ohm-285-135
+datasheet_url: https://www.parts-express.com/pedocs/specs/285-135-dayton-audio-ce30mb-16b-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-CE30MB-16B-1-1-4-Mini-Speaker-Black-16-Ohm-285-135
+frd_url: null
+zma_url: null

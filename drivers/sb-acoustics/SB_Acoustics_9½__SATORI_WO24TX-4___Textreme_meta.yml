@@ -5,62 +5,42 @@ detail: Automatically scraped from SB Acoustics website (scraped 2026-06-29). T/
 corrections: null
 reviewed_by: null
 driver_type: null
-datasheet: https://sbacoustics.com/wp-content/uploads/2024/11/9.5in-SATORI-WO24TX-4.pdf
-manu_page: https://sbacoustics.com/product/95-satori-wo24tx-4-textreme/
-vendor_page: null
 source: https://sbacoustics.com/product/95-satori-wo24tx-4-textreme/
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.3
-    winner: manu_page
-    sources:
-      manu_page: 3.3
-  Sd:  # effective piston area (m²)
-    value: 0.0255
-    winner: manu_page
-    sources:
-      manu_page: 0.0255
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00086
-    winner: manu_page
-    sources:
-      manu_page: 0.00086
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00875
-    winner: manu_page
-    sources:
-      manu_page: 0.00875
-  Qes:  # electrical Q factor
-    value: 0.37
-    winner: manu_page
-    sources:
-      manu_page: 0.37
-  BL:  # force factor (T·m)
-    value: 7.9
-    winner: manu_page
-    sources:
-      manu_page: 7.9
-  Qts:  # total Q factor
-    value: 0.35
-    winner: manu_page
-    sources:
-      manu_page: 0.35
-  Qms:  # mechanical Q factor
-    value: 5.66
-    winner: manu_page
-    sources:
-      manu_page: 5.66
   Le:  # voice coil inductance (H)
     value: 0.00029
     winner: manu_page
     sources:
       manu_page: 0.00029
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.079
+    winner: manu_page
+    sources:
+      manu_page: 0.079
+  Qes:  # electrical Q factor
+    value: 0.37
+    winner: manu_page
+    sources:
+      manu_page: 0.37
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0428
+    winner: manu_page
+    sources:
+      manu_page: 0.0428
+  BL:  # force factor (T·m)
+    value: 7.9
+    winner: manu_page
+    sources:
+      manu_page: 7.9
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.3
+    winner: manu_page
+    sources:
+      manu_page: 3.3
   Pe:  # rated power input (W)
     value: 90.0
     winner: manu_page
@@ -71,21 +51,36 @@ specs:
     winner: manu_page
     sources:
       manu_page: 26.3
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.079
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00875
     winner: manu_page
     sources:
-      manu_page: 0.079
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0428
+      manu_page: 0.00875
+  Qts:  # total Q factor
+    value: 0.35
     winner: manu_page
     sources:
-      manu_page: 0.0428
+      manu_page: 0.35
+  Qms:  # mechanical Q factor
+    value: 5.66
+    winner: manu_page
+    sources:
+      manu_page: 5.66
+  Sd:  # effective piston area (m²)
+    value: 0.0255
+    winner: manu_page
+    sources:
+      manu_page: 0.0255
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: manu_page
     sources:
       manu_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00086
+    winner: manu_page
+    sources:
+      manu_page: 0.00086
   voice_coil_dia_mm:  # voice coil diameter (mm)
     value: 49.5
     winner: manu_page
@@ -104,3 +99,8 @@ specs:
 _sources:
   datasheet: https://sbacoustics.com/wp-content/uploads/2024/11/9.5in-SATORI-WO24TX-4.pdf
   manu_page: https://sbacoustics.com/product/95-satori-wo24tx-4-textreme/
+datasheet_url: https://sbacoustics.com/wp-content/uploads/2024/11/9.5in-SATORI-WO24TX-4.pdf
+manu_page_url: https://sbacoustics.com/product/95-satori-wo24tx-4-textreme/
+vendor_page_url: null
+frd_url: null
+zma_url: null

@@ -7,70 +7,42 @@ corrections: '''Vas'' stored=0.0229366 differs from calculated=0.0232388 (deps: 
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-1094--tymphany-hds-p830883-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Peerless-830883-6-1-2-Nomex-Cone-HDS-Woofer-264-1094
 source: https://www.parts-express.com/Peerless-830883-6-1-2-Nomex-Cone-HDS-Woofer-264-1094
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 264-1094
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.9
-    winner: vendor_page
-    sources:
-      vendor_page: 5.9
-  Sd:  # effective piston area (m²)
-    value: 0.01431
-    winner: vendor_page
-    sources:
-      vendor_page: 0.01431
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0008
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0008
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00562
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00562
-  Qes:  # electrical Q factor
-    value: 0.46
-    winner: vendor_page
-    sources:
-      vendor_page: 0.46
-  Rms:  # mechanical resistance (kg/s)
-    value: 2.1294857403360195
-    winner: vendor_page
-    sources:
-      vendor_page: 2.1294857403360195
-  BL:  # force factor (T·m)
-    value: 7.7
-    winner: vendor_page
-    sources:
-      vendor_page: 7.7
-  Qts:  # total Q factor
-    value: 0.38
-    winner: vendor_page
-    sources:
-      vendor_page: 0.38
-  Qms:  # mechanical Q factor
-    value: 2.18
-    winner: vendor_page
-    sources:
-      vendor_page: 2.18
   Le:  # voice coil inductance (H)
     value: 0.00017999999999999998
     winner: vendor_page
     sources:
       vendor_page: 0.00017999999999999998
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.022936608
+    winner: vendor_page
+    sources:
+      vendor_page: 0.022936608
+  Qes:  # electrical Q factor
+    value: 0.46
+    winner: vendor_page
+    sources:
+      vendor_page: 0.46
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.01734
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01734
+  BL:  # force factor (T·m)
+    value: 7.7
+    winner: vendor_page
+    sources:
+      vendor_page: 7.7
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.9
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9
   Pe:  # rated power input (W)
     value: 30.0
     winner: vendor_page
@@ -81,21 +53,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 43.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.022936608
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.1294857403360195
     winner: vendor_page
     sources:
-      vendor_page: 0.022936608
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.01734
+      vendor_page: 2.1294857403360195
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00562
     winner: vendor_page
     sources:
-      vendor_page: 0.01734
+      vendor_page: 0.00562
+  Qts:  # total Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  Qms:  # mechanical Q factor
+    value: 2.18
+    winner: vendor_page
+    sources:
+      vendor_page: 2.18
+  Sd:  # effective piston area (m²)
+    value: 0.01431
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01431
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0008
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0008
   freq_low_hz:  # published lower frequency limit (Hz)
     value: 4.0
     winner: vendor_page
@@ -109,3 +101,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-1094--tymphany-hds-p830883-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Peerless-830883-6-1-2-Nomex-Cone-HDS-Woofer-264-1094
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-1094--tymphany-hds-p830883-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Peerless-830883-6-1-2-Nomex-Cone-HDS-Woofer-264-1094
+frd_url: null
+zma_url: null

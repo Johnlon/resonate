@@ -4,53 +4,33 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/290-910--grs-10sfpc-w-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/GRS-10SFPC-W-10-Square-Frame-Paper-Cone-Woofer-White-290-910
 source: https://www.parts-express.com/GRS-10SFPC-W-10-Square-Frame-Paper-Cone-Woofer-White-290-910
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.9
-    winner: vendor_page
-    sources:
-      vendor_page: 5.9
-  Sd:  # effective piston area (m²)
-    value: 0.03539
-    winner: vendor_page
-    sources:
-      vendor_page: 0.03539
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0043
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0043
-  Qes:  # electrical Q factor
-    value: 0.9
-    winner: vendor_page
-    sources:
-      vendor_page: 0.9
-  Qts:  # total Q factor
-    value: 0.67
-    winner: vendor_page
-    sources:
-      vendor_page: 0.67
-  Qms:  # mechanical Q factor
-    value: 2.92
-    winner: vendor_page
-    sources:
-      vendor_page: 2.92
   Le:  # voice coil inductance (H)
     value: 0.00068
     winner: vendor_page
     sources:
       vendor_page: 0.00068
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.08268505599999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.08268505599999999
+  Qes:  # electrical Q factor
+    value: 0.9
+    winner: vendor_page
+    sources:
+      vendor_page: 0.9
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.9
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9
   Pe:  # rated power input (W)
     value: 75.0
     winner: vendor_page
@@ -61,26 +41,36 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 34.1
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.08268505599999999
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0043
     winner: vendor_page
     sources:
-      vendor_page: 0.08268505599999999
+      vendor_page: 0.0043
+  Qts:  # total Q factor
+    value: 0.67
+    winner: vendor_page
+    sources:
+      vendor_page: 0.67
+  Qms:  # mechanical Q factor
+    value: 2.92
+    winner: vendor_page
+    sources:
+      vendor_page: 2.92
+  Sd:  # effective piston area (m²)
+    value: 0.03539
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03539
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 30.0
-    winner: vendor_page
-    sources:
-      vendor_page: 30.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 4000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 4000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/290-910--grs-10sfpc-w-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/GRS-10SFPC-W-10-Square-Frame-Paper-Cone-Woofer-White-290-910
+datasheet_url: https://www.parts-express.com/pedocs/specs/290-910--grs-10sfpc-w-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/GRS-10SFPC-W-10-Square-Frame-Paper-Cone-Woofer-White-290-910
+frd_url: null
+zma_url: null

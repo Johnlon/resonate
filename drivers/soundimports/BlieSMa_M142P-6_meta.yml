@@ -4,47 +4,57 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/bliesma-m142p-6.html
 source: https://www.soundimports.eu/en/bliesma-m142p-6.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: midrange
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.4
+  Le:  # voice coil inductance (H)
+    value: 3.0e-05
     winner: vendor_page
     sources:
-      vendor_page: 5.4
-  Sd:  # effective piston area (m²)
-    value: 0.01803
+      vendor_page: 3.0e-05
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0246
     winner: vendor_page
     sources:
-      vendor_page: 0.01803
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00185
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00185
+      vendor_page: 0.0246
   Qes:  # electrical Q factor
     value: 0.32
     winner: vendor_page
     sources:
       vendor_page: 0.32
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.54
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0117
     winner: vendor_page
     sources:
-      vendor_page: 0.54
+      vendor_page: 0.0117
   BL:  # force factor (T·m)
     value: 8.8
     winner: vendor_page
     sources:
       vendor_page: 8.8
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.4
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4
+  Fs:  # free air resonance (Hz)
+    value: 63.0
+    winner: vendor_page
+    sources:
+      vendor_page: 63.0
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.54
+    winner: vendor_page
+    sources:
+      vendor_page: 0.54
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00185
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00185
   Qts:  # total Q factor
     value: 0.31
     winner: vendor_page
@@ -55,26 +65,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 7.3
-  Le:  # voice coil inductance (H)
-    value: 3.0e-05
+  Sd:  # effective piston area (m²)
+    value: 0.01803
     winner: vendor_page
     sources:
-      vendor_page: 3.0e-05
-  Fs:  # free air resonance (Hz)
-    value: 63.0
-    winner: vendor_page
-    sources:
-      vendor_page: 63.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0246
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0246
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0117
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0117
+      vendor_page: 0.01803
   Znom:  # nominal impedance (Ω)
     value: 6.0
     winner: vendor_page
@@ -102,3 +97,8 @@ specs:
       vendor_page: 137.0
 _sources:
   vendor_page: https://www.soundimports.eu/en/bliesma-m142p-6.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/bliesma-m142p-6.html
+frd_url: null
+zma_url: null

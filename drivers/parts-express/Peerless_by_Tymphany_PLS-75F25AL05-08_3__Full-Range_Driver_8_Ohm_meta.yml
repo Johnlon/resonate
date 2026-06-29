@@ -4,63 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-1548--tymphany-pls-75f25al05-08-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Peerless-PLS-75F25AL05-08-3-Full-Range-Driver-8-Ohm-264-1548
 source: https://www.parts-express.com/Peerless-PLS-75F25AL05-08-3-Full-Range-Driver-8-Ohm-264-1548
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.3
-    winner: vendor_page
-    sources:
-      vendor_page: 6.3
-  Sd:  # effective piston area (m²)
-    value: 0.0028899999999999998
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0028899999999999998
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0033799999999999998
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0033799999999999998
-  Qes:  # electrical Q factor
-    value: 0.75
-    winner: vendor_page
-    sources:
-      vendor_page: 0.75
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.22473390070388982
-    winner: vendor_page
-    sources:
-      vendor_page: 0.22473390070388982
-  BL:  # force factor (T·m)
-    value: 3.58
-    winner: vendor_page
-    sources:
-      vendor_page: 3.58
-  Qts:  # total Q factor
-    value: 0.74
-    winner: vendor_page
-    sources:
-      vendor_page: 0.74
-  Qms:  # mechanical Q factor
-    value: 6.71
-    winner: vendor_page
-    sources:
-      vendor_page: 6.71
   Le:  # voice coil inductance (H)
     value: 9.2e-05
     winner: vendor_page
     sources:
       vendor_page: 9.2e-05
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.001132672
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001132672
+  Qes:  # electrical Q factor
+    value: 0.75
+    winner: vendor_page
+    sources:
+      vendor_page: 0.75
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0024
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0024
+  BL:  # force factor (T·m)
+    value: 3.58
+    winner: vendor_page
+    sources:
+      vendor_page: 3.58
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.3
+    winner: vendor_page
+    sources:
+      vendor_page: 6.3
   Pe:  # rated power input (W)
     value: 25.0
     winner: vendor_page
@@ -71,31 +51,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 100.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.001132672
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.22473390070388982
     winner: vendor_page
     sources:
-      vendor_page: 0.001132672
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0024
+      vendor_page: 0.22473390070388982
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0033799999999999998
     winner: vendor_page
     sources:
-      vendor_page: 0.0024
+      vendor_page: 0.0033799999999999998
+  Qts:  # total Q factor
+    value: 0.74
+    winner: vendor_page
+    sources:
+      vendor_page: 0.74
+  Qms:  # mechanical Q factor
+    value: 6.71
+    winner: vendor_page
+    sources:
+      vendor_page: 6.71
+  Sd:  # effective piston area (m²)
+    value: 0.0028899999999999998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0028899999999999998
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 60.0
-    winner: vendor_page
-    sources:
-      vendor_page: 60.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 16000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 16000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-1548--tymphany-pls-75f25al05-08-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Peerless-PLS-75F25AL05-08-3-Full-Range-Driver-8-Ohm-264-1548
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-1548--tymphany-pls-75f25al05-08-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Peerless-PLS-75F25AL05-08-3-Full-Range-Driver-8-Ohm-264-1548
+frd_url: null
+zma_url: null

@@ -4,48 +4,13 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/295-506--rss460-pr-specification-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-RSS460-PR-18-Reference-Series-Aluminum-Cone-Passive-Radiator-295-506
 source: https://www.parts-express.com/Dayton-Audio-RSS460-PR-18-Reference-Series-Aluminum-Cone-Passive-Radiator-295-506
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Sd:  # effective piston area (m²)
-    value: 0.1164
-    winner: vendor_page
-    sources:
-      vendor_page: 0.1164
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00023
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00023
-  Xmax:  # one-way linear excursion (m)
-    value: 0.034
-    winner: vendor_page
-    sources:
-      vendor_page: 0.034
-  Rms:  # mechanical resistance (kg/s)
-    value: 9.181195230172953
-    winner: vendor_page
-    sources:
-      vendor_page: 9.181195230172953
-  Qms:  # mechanical Q factor
-    value: 5.03
-    winner: vendor_page
-    sources:
-      vendor_page: 5.03
-  Fs:  # free air resonance (Hz)
-    value: 14.7
-    winner: vendor_page
-    sources:
-      vendor_page: 14.7
   Vas:  # equivalent acoustic volume (m³)
     value: 0.449104448
     winner: vendor_page
@@ -56,6 +21,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 0.5
+  Fs:  # free air resonance (Hz)
+    value: 14.7
+    winner: vendor_page
+    sources:
+      vendor_page: 14.7
+  Rms:  # mechanical resistance (kg/s)
+    value: 9.181195230172953
+    winner: vendor_page
+    sources:
+      vendor_page: 9.181195230172953
+  Xmax:  # one-way linear excursion (m)
+    value: 0.034
+    winner: vendor_page
+    sources:
+      vendor_page: 0.034
+  Qms:  # mechanical Q factor
+    value: 5.03
+    winner: vendor_page
+    sources:
+      vendor_page: 5.03
+  Sd:  # effective piston area (m²)
+    value: 0.1164
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1164
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00023
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00023
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/295-506--rss460-pr-specification-sheet.pdf
   vendor_page: https://www.parts-express.com/Dayton-Audio-RSS460-PR-18-Reference-Series-Aluminum-Cone-Passive-Radiator-295-506
+datasheet_url: https://www.parts-express.com/pedocs/specs/295-506--rss460-pr-specification-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-RSS460-PR-18-Reference-Series-Aluminum-Cone-Passive-Radiator-295-506
+frd_url: null
+zma_url: null

@@ -6,30 +6,12 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/293-144--ciare-cw261spl-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Ciare-CW261SPL-10-High-Output-Woofer-8-Ohm-293-144
 source: https://www.parts-express.com/Ciare-CW261SPL-10-High-Output-Woofer-8-Ohm-293-144
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 293-144
 specs:
-  Sd:  # effective piston area (m²)
-    value: 0.0356
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0356
-  SPL:  # sensitivity (dB, 2.83 V/1 m)
-    value: 96.5
-    winner: vendor_page
-    sources:
-      vendor_page: 96.5
   Pe:  # rated power input (W)
     value: 300.0
     winner: vendor_page
@@ -40,11 +22,29 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 44.0
+  Sd:  # effective piston area (m²)
+    value: 0.0356
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0356
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 96.5
+    winner: vendor_page
+    sources:
+      vendor_page: 96.5
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/293-144--ciare-cw261spl-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Ciare-CW261SPL-10-High-Output-Woofer-8-Ohm-293-144
+datasheet_url: https://www.parts-express.com/pedocs/specs/293-144--ciare-cw261spl-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Ciare-CW261SPL-10-High-Output-Woofer-8-Ohm-293-144
+frd_url: null
+zma_url: null

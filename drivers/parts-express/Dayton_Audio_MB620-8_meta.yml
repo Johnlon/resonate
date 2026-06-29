@@ -6,70 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-MB620-8-6.5-Professional-High-Power-Midbass-Driver-8-Ohm-295-635
 source: https://www.parts-express.com/Dayton-Audio-MB620-8-6.5-Professional-High-Power-Midbass-Driver-8-Ohm-295-635
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 295-635
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.47
-    winner: vendor_page
-    sources:
-      vendor_page: 5.47
-  Sd:  # effective piston area (m²)
-    value: 0.013219999999999999
-    winner: vendor_page
-    sources:
-      vendor_page: 0.013219999999999999
-  Cms:  # mechanical compliance (m/N)
-    value: 0.000273
-    winner: vendor_page
-    sources:
-      vendor_page: 0.000273
-  Xmax:  # one-way linear excursion (m)
-    value: 0.002
-    winner: vendor_page
-    sources:
-      vendor_page: 0.002
-  Qes:  # electrical Q factor
-    value: 0.69
-    winner: vendor_page
-    sources:
-      vendor_page: 0.69
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.3176400061084403
-    winner: vendor_page
-    sources:
-      vendor_page: 1.3176400061084403
-  BL:  # force factor (T·m)
-    value: 6.67
-    winner: vendor_page
-    sources:
-      vendor_page: 6.67
-  Qts:  # total Q factor
-    value: 0.55
-    winner: vendor_page
-    sources:
-      vendor_page: 0.55
-  Qms:  # mechanical Q factor
-    value: 4.26
-    winner: vendor_page
-    sources:
-      vendor_page: 4.26
   Le:  # voice coil inductance (H)
     value: 0.00093
     winner: vendor_page
     sources:
       vendor_page: 0.00093
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.006796032
+    winner: vendor_page
+    sources:
+      vendor_page: 0.006796032
+  Qes:  # electrical Q factor
+    value: 0.69
+    winner: vendor_page
+    sources:
+      vendor_page: 0.69
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00859
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00859
+  BL:  # force factor (T·m)
+    value: 6.67
+    winner: vendor_page
+    sources:
+      vendor_page: 6.67
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.47
+    winner: vendor_page
+    sources:
+      vendor_page: 5.47
   Pe:  # rated power input (W)
     value: 200.0
     winner: vendor_page
@@ -80,21 +52,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 104.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.006796032
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.3176400061084403
     winner: vendor_page
     sources:
-      vendor_page: 0.006796032
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.00859
+      vendor_page: 1.3176400061084403
+  Xmax:  # one-way linear excursion (m)
+    value: 0.002
     winner: vendor_page
     sources:
-      vendor_page: 0.00859
+      vendor_page: 0.002
+  Qts:  # total Q factor
+    value: 0.55
+    winner: vendor_page
+    sources:
+      vendor_page: 0.55
+  Qms:  # mechanical Q factor
+    value: 4.26
+    winner: vendor_page
+    sources:
+      vendor_page: 4.26
+  Sd:  # effective piston area (m²)
+    value: 0.013219999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.013219999999999999
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000273
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000273
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 200.0
     winner: vendor_page
@@ -112,3 +104,11 @@ specs:
       vendor_page: 8.0
 _sources:
   vendor_page: https://www.parts-express.com/Dayton-Audio-MB620-8-6.5-Professional-High-Power-Midbass-Driver-8-Ohm-295-635
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-MB620-8-6.5-Professional-High-Power-Midbass-Driver-8-Ohm-295-635
+frd_url: null
+zma_url: null

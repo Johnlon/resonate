@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/296-442-aurum-cantus-ac13050ck-specifications.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Aurum-Cantus-AC130-50CK-5-1-4-Midwoofer-296-442
 source: https://www.parts-express.com/Aurum-Cantus-AC130-50CK-5-1-4-Midwoofer-296-442
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 7.0
-    winner: vendor_page
-    sources:
-      vendor_page: 7.0
-  Sd:  # effective piston area (m²)
-    value: 0.0095
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0095
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00173
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00173
-  Xmax:  # one-way linear excursion (m)
-    value: 0.006
-    winner: vendor_page
-    sources:
-      vendor_page: 0.006
-  Qes:  # electrical Q factor
-    value: 0.23
-    winner: vendor_page
-    sources:
-      vendor_page: 0.23
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.909377103764667
-    winner: vendor_page
-    sources:
-      vendor_page: 0.909377103764667
-  BL:  # force factor (T·m)
-    value: 9.1
-    winner: vendor_page
-    sources:
-      vendor_page: 9.1
-  Qts:  # total Q factor
-    value: 0.21
-    winner: vendor_page
-    sources:
-      vendor_page: 0.21
-  Qms:  # mechanical Q factor
-    value: 3.17
-    winner: vendor_page
-    sources:
-      vendor_page: 3.17
   Le:  # voice coil inductance (H)
     value: 0.00067
     winner: vendor_page
     sources:
       vendor_page: 0.00067
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.022087104
+    winner: vendor_page
+    sources:
+      vendor_page: 0.022087104
+  Qes:  # electrical Q factor
+    value: 0.23
+    winner: vendor_page
+    sources:
+      vendor_page: 0.23
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0124
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0124
+  BL:  # force factor (T·m)
+    value: 9.1
+    winner: vendor_page
+    sources:
+      vendor_page: 9.1
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.0
+    winner: vendor_page
+    sources:
+      vendor_page: 7.0
   Pe:  # rated power input (W)
     value: 150.0
     winner: vendor_page
@@ -76,21 +51,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 37.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.022087104
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.909377103764667
     winner: vendor_page
     sources:
-      vendor_page: 0.022087104
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0124
+      vendor_page: 0.909377103764667
+  Xmax:  # one-way linear excursion (m)
+    value: 0.006
     winner: vendor_page
     sources:
-      vendor_page: 0.0124
+      vendor_page: 0.006
+  Qts:  # total Q factor
+    value: 0.21
+    winner: vendor_page
+    sources:
+      vendor_page: 0.21
+  Qms:  # mechanical Q factor
+    value: 3.17
+    winner: vendor_page
+    sources:
+      vendor_page: 3.17
+  Sd:  # effective piston area (m²)
+    value: 0.0095
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0095
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00173
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00173
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/296-442-aurum-cantus-ac13050ck-specifications.pdf
   vendor_page: https://www.parts-express.com/Aurum-Cantus-AC130-50CK-5-1-4-Midwoofer-296-442
+datasheet_url: https://www.parts-express.com/pedocs/specs/296-442-aurum-cantus-ac13050ck-specifications.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Aurum-Cantus-AC130-50CK-5-1-4-Midwoofer-296-442
+frd_url: null
+zma_url: null

@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/290-570--eminence-lab-12-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Eminence-LAB-12-Professional-12-Subwoofer-Speaker-290-570
 source: https://www.parts-express.com/Eminence-LAB-12-Professional-12-Subwoofer-Speaker-290-570
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 4.29
-    winner: vendor_page
-    sources:
-      vendor_page: 4.29
-  Sd:  # effective piston area (m²)
-    value: 0.05067
-    winner: vendor_page
-    sources:
-      vendor_page: 0.05067
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00035
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00035
-  Xmax:  # one-way linear excursion (m)
-    value: 0.013
-    winner: vendor_page
-    sources:
-      vendor_page: 0.013
-  Qes:  # electrical Q factor
-    value: 0.39
-    winner: vendor_page
-    sources:
-      vendor_page: 0.39
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.5151344749745366
-    winner: vendor_page
-    sources:
-      vendor_page: 1.5151344749745366
-  BL:  # force factor (T·m)
-    value: 15.0
-    winner: vendor_page
-    sources:
-      vendor_page: 15.0
-  Qts:  # total Q factor
-    value: 0.38
-    winner: vendor_page
-    sources:
-      vendor_page: 0.38
-  Qms:  # mechanical Q factor
-    value: 13.32
-    winner: vendor_page
-    sources:
-      vendor_page: 13.32
   Le:  # voice coil inductance (H)
     value: 0.00148
     winner: vendor_page
     sources:
       vendor_page: 0.00148
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.125160256
+    winner: vendor_page
+    sources:
+      vendor_page: 0.125160256
+  Qes:  # electrical Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.146
+    winner: vendor_page
+    sources:
+      vendor_page: 0.146
+  BL:  # force factor (T·m)
+    value: 15.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.29
+    winner: vendor_page
+    sources:
+      vendor_page: 4.29
   Pe:  # rated power input (W)
     value: 400.0
     winner: vendor_page
@@ -76,31 +51,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 22.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.125160256
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.5151344749745366
     winner: vendor_page
     sources:
-      vendor_page: 0.125160256
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.146
+      vendor_page: 1.5151344749745366
+  Xmax:  # one-way linear excursion (m)
+    value: 0.013
     winner: vendor_page
     sources:
-      vendor_page: 0.146
+      vendor_page: 0.013
+  Qts:  # total Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  Qms:  # mechanical Q factor
+    value: 13.32
+    winner: vendor_page
+    sources:
+      vendor_page: 13.32
+  Sd:  # effective piston area (m²)
+    value: 0.05067
+    winner: vendor_page
+    sources:
+      vendor_page: 0.05067
   Znom:  # nominal impedance (Ω)
     value: 6.0
     winner: vendor_page
     sources:
       vendor_page: 6.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 25.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00035
     winner: vendor_page
     sources:
-      vendor_page: 25.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 100.0
-    winner: vendor_page
-    sources:
-      vendor_page: 100.0
+      vendor_page: 0.00035
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/290-570--eminence-lab-12-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Eminence-LAB-12-Professional-12-Subwoofer-Speaker-290-570
+datasheet_url: https://www.parts-express.com/pedocs/specs/290-570--eminence-lab-12-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Eminence-LAB-12-Professional-12-Subwoofer-Speaker-290-570
+frd_url: null
+zma_url: null

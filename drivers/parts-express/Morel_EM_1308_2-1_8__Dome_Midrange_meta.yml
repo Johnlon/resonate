@@ -4,48 +4,28 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/287-030--morel-em-1308-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Morel-EM-1308-2-1-8-Dome-Midrange-287-030
 source: https://www.parts-express.com/Morel-EM-1308-2-1-8-Dome-Midrange-287-030
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.2
-    winner: vendor_page
-    sources:
-      vendor_page: 6.2
-  Sd:  # effective piston area (m²)
-    value: 0.0028
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0028
-  Qes:  # electrical Q factor
-    value: 1.01
-    winner: vendor_page
-    sources:
-      vendor_page: 1.01
-  Qts:  # total Q factor
-    value: 0.47
-    winner: vendor_page
-    sources:
-      vendor_page: 0.47
-  Qms:  # mechanical Q factor
-    value: 0.9
-    winner: vendor_page
-    sources:
-      vendor_page: 0.9
   Le:  # voice coil inductance (H)
     value: 0.0002
     winner: vendor_page
     sources:
       vendor_page: 0.0002
+  Qes:  # electrical Q factor
+    value: 1.01
+    winner: vendor_page
+    sources:
+      vendor_page: 1.01
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.2
+    winner: vendor_page
+    sources:
+      vendor_page: 6.2
   Pe:  # rated power input (W)
     value: 200.0
     winner: vendor_page
@@ -56,21 +36,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 320.0
+  Qts:  # total Q factor
+    value: 0.47
+    winner: vendor_page
+    sources:
+      vendor_page: 0.47
+  Qms:  # mechanical Q factor
+    value: 0.9
+    winner: vendor_page
+    sources:
+      vendor_page: 0.9
+  Sd:  # effective piston area (m²)
+    value: 0.0028
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0028
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 500.0
-    winner: vendor_page
-    sources:
-      vendor_page: 500.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 5000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 5000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/287-030--morel-em-1308-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Morel-EM-1308-2-1-8-Dome-Midrange-287-030
+datasheet_url: https://www.parts-express.com/pedocs/specs/287-030--morel-em-1308-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Morel-EM-1308-2-1-8-Dome-Midrange-287-030
+frd_url: null
+zma_url: null

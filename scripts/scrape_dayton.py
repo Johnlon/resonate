@@ -92,7 +92,7 @@ def parse_product(html: str, url: str) -> dict | None:
         "manufacturer":  "Dayton Audio",
         "provided_by":   f"Dayton Audio website (scraped {__import__('datetime').date.today()})",
         "fields":        fields,
-        "pdf_url":       pdf_url,
+        "datasheet_url":   pdf_url,
         "extra_links":   [l[0] for l in extra],
     }
 

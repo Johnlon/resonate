@@ -6,65 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/253-087--10nmfs-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Beyma-10NMFS-NMF-Series-10-Carbon-Fiber-Cone-Woofer-8-Ohm-253-087
 source: https://www.parts-express.com/Beyma-10NMFS-NMF-Series-10-Carbon-Fiber-Cone-Woofer-8-Ohm-253-087
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 253-087
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.9
-    winner: vendor_page
-    sources:
-      vendor_page: 5.9
-  Sd:  # effective piston area (m²)
-    value: 0.037
-    winner: vendor_page
-    sources:
-      vendor_page: 0.037
-  Xmax:  # one-way linear excursion (m)
-    value: 0.005
-    winner: vendor_page
-    sources:
-      vendor_page: 0.005
-  Qes:  # electrical Q factor
-    value: 0.45
-    winner: vendor_page
-    sources:
-      vendor_page: 0.45
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.0033173088528583743
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0033173088528583743
-  BL:  # force factor (T·m)
-    value: 16.0
-    winner: vendor_page
-    sources:
-      vendor_page: 16.0
-  Qts:  # total Q factor
-    value: 0.42
-    winner: vendor_page
-    sources:
-      vendor_page: 0.42
-  Qms:  # mechanical Q factor
-    value: 5.9
-    winner: vendor_page
-    sources:
-      vendor_page: 5.9
   Le:  # voice coil inductance (H)
     value: 35.0
     winner: vendor_page
     sources:
       vendor_page: 35.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.045023712
+    winner: vendor_page
+    sources:
+      vendor_page: 0.045023712
+  Qes:  # electrical Q factor
+    value: 0.45
+    winner: vendor_page
+    sources:
+      vendor_page: 0.45
+  Mms:  # moving mass incl. air load (kg)
+    value: 8.9e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 8.9e-05
+  BL:  # force factor (T·m)
+    value: 16.0
+    winner: vendor_page
+    sources:
+      vendor_page: 16.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.9
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9
   Pe:  # rated power input (W)
     value: 350.0
     winner: vendor_page
@@ -75,16 +52,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 35.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.045023712
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.0033173088528583743
     winner: vendor_page
     sources:
-      vendor_page: 0.045023712
-  Mms:  # moving mass incl. air load (kg)
-    value: 8.9e-05
+      vendor_page: 0.0033173088528583743
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005
     winner: vendor_page
     sources:
-      vendor_page: 8.9e-05
+      vendor_page: 0.005
+  Qts:  # total Q factor
+    value: 0.42
+    winner: vendor_page
+    sources:
+      vendor_page: 0.42
+  Qms:  # mechanical Q factor
+    value: 5.9
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9
+  Sd:  # effective piston area (m²)
+    value: 0.037
+    winner: vendor_page
+    sources:
+      vendor_page: 0.037
   Znom:  # nominal impedance (Ω)
     value: 30.0
     winner: vendor_page
@@ -98,3 +90,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/253-087--10nmfs-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Beyma-10NMFS-NMF-Series-10-Carbon-Fiber-Cone-Woofer-8-Ohm-253-087
+datasheet_url: https://www.parts-express.com/pedocs/specs/253-087--10nmfs-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Beyma-10NMFS-NMF-Series-10-Carbon-Fiber-Cone-Woofer-8-Ohm-253-087
+frd_url: null
+zma_url: null

@@ -6,65 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Beyma-8P300Fe-N-P200-Series-8-Midbass-Woofer-8-Ohm-253-036
 source: https://www.parts-express.com/Beyma-8P300Fe-N-P200-Series-8-Midbass-Woofer-8-Ohm-253-036
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 253-036
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.2
-    winner: vendor_page
-    sources:
-      vendor_page: 5.2
-  Sd:  # effective piston area (m²)
-    value: 0.022
-    winner: vendor_page
-    sources:
-      vendor_page: 0.022
-  Xmax:  # one-way linear excursion (m)
-    value: 0.006
-    winner: vendor_page
-    sources:
-      vendor_page: 0.006
-  Qes:  # electrical Q factor
-    value: 0.32
-    winner: vendor_page
-    sources:
-      vendor_page: 0.32
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.0005821832539869197
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0005821832539869197
-  BL:  # force factor (T·m)
-    value: 11.6
-    winner: vendor_page
-    sources:
-      vendor_page: 11.6
-  Qts:  # total Q factor
-    value: 0.31
-    winner: vendor_page
-    sources:
-      vendor_page: 0.31
-  Qms:  # mechanical Q factor
-    value: 14.3
-    winner: vendor_page
-    sources:
-      vendor_page: 14.3
   Le:  # voice coil inductance (H)
     value: 0.0004
     winner: vendor_page
     sources:
       vendor_page: 0.0004
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.024918784
+    winner: vendor_page
+    sources:
+      vendor_page: 0.024918784
+  Qes:  # electrical Q factor
+    value: 0.32
+    winner: vendor_page
+    sources:
+      vendor_page: 0.32
+  Mms:  # moving mass incl. air load (kg)
+    value: 2.5e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 2.5e-05
+  BL:  # force factor (T·m)
+    value: 11.6
+    winner: vendor_page
+    sources:
+      vendor_page: 11.6
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
   Pe:  # rated power input (W)
     value: 300.0
     winner: vendor_page
@@ -75,16 +52,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 53.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.024918784
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.0005821832539869197
     winner: vendor_page
     sources:
-      vendor_page: 0.024918784
-  Mms:  # moving mass incl. air load (kg)
-    value: 2.5e-05
+      vendor_page: 0.0005821832539869197
+  Xmax:  # one-way linear excursion (m)
+    value: 0.006
     winner: vendor_page
     sources:
-      vendor_page: 2.5e-05
+      vendor_page: 0.006
+  Qts:  # total Q factor
+    value: 0.31
+    winner: vendor_page
+    sources:
+      vendor_page: 0.31
+  Qms:  # mechanical Q factor
+    value: 14.3
+    winner: vendor_page
+    sources:
+      vendor_page: 14.3
+  Sd:  # effective piston area (m²)
+    value: 0.022
+    winner: vendor_page
+    sources:
+      vendor_page: 0.022
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -97,3 +89,11 @@ specs:
       vendor_page: 94.0
 _sources:
   vendor_page: https://www.parts-express.com/Beyma-8P300Fe-N-P200-Series-8-Midbass-Woofer-8-Ohm-253-036
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Beyma-8P300Fe-N-P200-Series-8-Midbass-Woofer-8-Ohm-253-036
+frd_url: null
+zma_url: null

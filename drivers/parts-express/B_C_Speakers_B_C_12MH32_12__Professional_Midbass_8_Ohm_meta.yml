@@ -4,63 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/294-5953--bc-12mh32-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/B-C-12MH32-12-Professional-Midbass-8-Ohm-294-5953
 source: https://www.parts-express.com/B-C-12MH32-12-Professional-Midbass-8-Ohm-294-5953
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.0
-    winner: vendor_page
-    sources:
-      vendor_page: 5.0
-  Sd:  # effective piston area (m²)
-    value: 0.0522
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0522
-  Xmax:  # one-way linear excursion (m)
-    value: 0.005
-    winner: vendor_page
-    sources:
-      vendor_page: 0.005
-  Qes:  # electrical Q factor
-    value: 0.2
-    winner: vendor_page
-    sources:
-      vendor_page: 0.2
-  Rms:  # mechanical resistance (kg/s)
-    value: 2.4975661596038856
-    winner: vendor_page
-    sources:
-      vendor_page: 2.4975661596038856
-  BL:  # force factor (T·m)
-    value: 22.3
-    winner: vendor_page
-    sources:
-      vendor_page: 22.3
-  Qts:  # total Q factor
-    value: 0.19
-    winner: vendor_page
-    sources:
-      vendor_page: 0.19
-  Qms:  # mechanical Q factor
-    value: 7.2
-    winner: vendor_page
-    sources:
-      vendor_page: 7.2
   Le:  # voice coil inductance (H)
     value: 0.00083
     winner: vendor_page
     sources:
       vendor_page: 0.00083
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.062296960000000005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.062296960000000005
+  Qes:  # electrical Q factor
+    value: 0.2
+    winner: vendor_page
+    sources:
+      vendor_page: 0.2
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.054
+    winner: vendor_page
+    sources:
+      vendor_page: 0.054
+  BL:  # force factor (T·m)
+    value: 22.3
+    winner: vendor_page
+    sources:
+      vendor_page: 22.3
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
   Pe:  # rated power input (W)
     value: 800.0
     winner: vendor_page
@@ -71,31 +51,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 53.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.062296960000000005
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.4975661596038856
     winner: vendor_page
     sources:
-      vendor_page: 0.062296960000000005
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.054
+      vendor_page: 2.4975661596038856
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005
     winner: vendor_page
     sources:
-      vendor_page: 0.054
+      vendor_page: 0.005
+  Qts:  # total Q factor
+    value: 0.19
+    winner: vendor_page
+    sources:
+      vendor_page: 0.19
+  Qms:  # mechanical Q factor
+    value: 7.2
+    winner: vendor_page
+    sources:
+      vendor_page: 7.2
+  Sd:  # effective piston area (m²)
+    value: 0.0522
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0522
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 50.0
-    winner: vendor_page
-    sources:
-      vendor_page: 50.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 3000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 3000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/294-5953--bc-12mh32-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/B-C-12MH32-12-Professional-Midbass-8-Ohm-294-5953
+datasheet_url: https://www.parts-express.com/pedocs/specs/294-5953--bc-12mh32-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/B-C-12MH32-12-Professional-Midbass-8-Ohm-294-5953
+frd_url: null
+zma_url: null

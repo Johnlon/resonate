@@ -4,67 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://doc.soundimports.nl/pdf/brands/ETON/SYMPHONY%20II/SYMPHONY_II_4-312_C8_25_HEX.pdf
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/eton-4-312-c8-25-hex.html
 source: https://www.soundimports.eu/en/eton-4-312-c8-25-hex.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.9
-    winner: vendor_page
-    sources:
-      vendor_page: 5.9
-  Sd:  # effective piston area (m²)
-    value: 0.0055
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0055
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00086
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00086
-  Xmax:  # one-way linear excursion (m)
-    value: 0.002
-    winner: vendor_page
-    sources:
-      vendor_page: 0.002
-  Qes:  # electrical Q factor
-    value: 0.42
-    winner: vendor_page
-    sources:
-      vendor_page: 0.42
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.5
-    winner: vendor_page
-    sources:
-      vendor_page: 0.5
-  BL:  # force factor (T·m)
-    value: 5.8
-    winner: vendor_page
-    sources:
-      vendor_page: 5.8
-  Qts:  # total Q factor
-    value: 0.39
-    winner: vendor_page
-    sources:
-      vendor_page: 0.39
-  Qms:  # mechanical Q factor
-    value: 5.56
-    winner: vendor_page
-    sources:
-      vendor_page: 5.56
   Le:  # voice coil inductance (H)
     value: 0.00038
     winner: vendor_page
     sources:
       vendor_page: 0.00038
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0037
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0037
+  Qes:  # electrical Q factor
+    value: 0.42
+    winner: vendor_page
+    sources:
+      vendor_page: 0.42
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0058
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0058
+  BL:  # force factor (T·m)
+    value: 5.8
+    winner: vendor_page
+    sources:
+      vendor_page: 5.8
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.9
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9
   Pe:  # rated power input (W)
     value: 50.0
     winner: vendor_page
@@ -75,21 +50,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 71.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0037
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.5
     winner: vendor_page
     sources:
-      vendor_page: 0.0037
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0058
+      vendor_page: 0.5
+  Xmax:  # one-way linear excursion (m)
+    value: 0.002
     winner: vendor_page
     sources:
-      vendor_page: 0.0058
+      vendor_page: 0.002
+  Qts:  # total Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Qms:  # mechanical Q factor
+    value: 5.56
+    winner: vendor_page
+    sources:
+      vendor_page: 5.56
+  Sd:  # effective piston area (m²)
+    value: 0.0055
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0055
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00086
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00086
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 88.0
     winner: vendor_page
@@ -113,3 +108,8 @@ specs:
 _sources:
   datasheet: https://doc.soundimports.nl/pdf/brands/ETON/SYMPHONY%20II/SYMPHONY_II_4-312_C8_25_HEX.pdf
   vendor_page: https://www.soundimports.eu/en/eton-4-312-c8-25-hex.html
+datasheet_url: https://doc.soundimports.nl/pdf/brands/ETON/SYMPHONY%20II/SYMPHONY_II_4-312_C8_25_HEX.pdf
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/eton-4-312-c8-25-hex.html
+frd_url: null
+zma_url: null

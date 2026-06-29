@@ -4,23 +4,23 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/293-210--ciare-americano-10a500w-4-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Ciare-12A500W-4-Americano-Series-12-Woofer-4-Ohm-293-210
 source: https://www.parts-express.com/Ciare-12A500W-4-Americano-Series-12-Woofer-4-Ohm-293-210
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.68
+  Le:  # voice coil inductance (H)
+    value: 0.00055
     winner: vendor_page
     sources:
-      vendor_page: 3.68
+      vendor_page: 0.00055
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.07503952
+    winner: vendor_page
+    sources:
+      vendor_page: 0.07503952
   Qes:  # electrical Q factor
     value: 0.57
     winner: vendor_page
@@ -31,21 +31,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 10.07
-  Qts:  # total Q factor
-    value: 0.54
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.68
     winner: vendor_page
     sources:
-      vendor_page: 0.54
-  Qms:  # mechanical Q factor
-    value: 10.81
-    winner: vendor_page
-    sources:
-      vendor_page: 10.81
-  Le:  # voice coil inductance (H)
-    value: 0.00055
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00055
+      vendor_page: 3.68
   Pe:  # rated power input (W)
     value: 250.0
     winner: vendor_page
@@ -56,11 +46,16 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 50.18
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.07503952
+  Qts:  # total Q factor
+    value: 0.54
     winner: vendor_page
     sources:
-      vendor_page: 0.07503952
+      vendor_page: 0.54
+  Qms:  # mechanical Q factor
+    value: 10.81
+    winner: vendor_page
+    sources:
+      vendor_page: 10.81
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
@@ -71,16 +66,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 116.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 50.18
-    winner: vendor_page
-    sources:
-      vendor_page: 50.18
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 4100.0
-    winner: vendor_page
-    sources:
-      vendor_page: 4100.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/293-210--ciare-americano-10a500w-4-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Ciare-12A500W-4-Americano-Series-12-Woofer-4-Ohm-293-210
+datasheet_url: https://www.parts-express.com/pedocs/specs/293-210--ciare-americano-10a500w-4-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Ciare-12A500W-4-Americano-Series-12-Woofer-4-Ohm-293-210
+frd_url: null
+zma_url: null

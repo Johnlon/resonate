@@ -6,45 +6,27 @@ corrections: null
 reviewed_by: null
 driver_type: tweeter
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/275-030-dayton-audio-nd20fa-6-specifications-46118.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-ND20FA-6-3-4-Soft-Dome-Neodymium-Tweeter-275-030
 source: https://www.parts-express.com/Dayton-Audio-ND20FA-6-3-4-Soft-Dome-Neodymium-Tweeter-275-030
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd
 community: null
 fetched_sku: 275-030
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.2
-    winner: vendor_page
-    sources:
-      vendor_page: 5.2
-  Qes:  # electrical Q factor
-    value: 2.88
-    winner: vendor_page
-    sources:
-      vendor_page: 2.88
-  Qts:  # total Q factor
-    value: 0.99
-    winner: vendor_page
-    sources:
-      vendor_page: 0.99
-  Qms:  # mechanical Q factor
-    value: 1.5
-    winner: vendor_page
-    sources:
-      vendor_page: 1.5
   Le:  # voice coil inductance (H)
     value: 5.0e-05
     winner: vendor_page
     sources:
       vendor_page: 5.0e-05
+  Qes:  # electrical Q factor
+    value: 2.88
+    winner: vendor_page
+    sources:
+      vendor_page: 2.88
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
   Pe:  # rated power input (W)
     value: 15.0
     winner: vendor_page
@@ -55,6 +37,16 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 2005.0
+  Qts:  # total Q factor
+    value: 0.99
+    winner: vendor_page
+    sources:
+      vendor_page: 0.99
+  Qms:  # mechanical Q factor
+    value: 1.5
+    winner: vendor_page
+    sources:
+      vendor_page: 1.5
   Znom:  # nominal impedance (Ω)
     value: 6.0
     winner: vendor_page
@@ -63,3 +55,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/275-030-dayton-audio-nd20fa-6-specifications-46118.pdf
   vendor_page: https://www.parts-express.com/Dayton-Audio-ND20FA-6-3-4-Soft-Dome-Neodymium-Tweeter-275-030
+datasheet_url: https://www.parts-express.com/pedocs/specs/275-030-dayton-audio-nd20fa-6-specifications-46118.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-ND20FA-6-3-4-Soft-Dome-Neodymium-Tweeter-275-030
+frd_url: null
+zma_url: null

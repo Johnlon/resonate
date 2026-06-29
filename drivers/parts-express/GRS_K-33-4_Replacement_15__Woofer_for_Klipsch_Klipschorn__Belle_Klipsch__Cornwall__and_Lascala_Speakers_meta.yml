@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/292-830--grs-k-33-4-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/GRS-K-33-4-Replacement-15-Woofer-for-Klipsch-Speakers-292-830
 source: https://www.parts-express.com/GRS-K-33-4-Replacement-15-Woofer-for-Klipsch-Speakers-292-830
-frd: https://www.parts-express.com/pedocs/tech-docs/292-830--GRS-K-33-4_data.zip
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.52
-    winner: vendor_page
-    sources:
-      vendor_page: 3.52
-  Sd:  # effective piston area (m²)
-    value: 0.08553
-    winner: vendor_page
-    sources:
-      vendor_page: 0.08553
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00026700000000000004
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00026700000000000004
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00825
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00825
-  Qes:  # electrical Q factor
-    value: 0.5458
-    winner: vendor_page
-    sources:
-      vendor_page: 0.5458
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.4688552576437568
-    winner: vendor_page
-    sources:
-      vendor_page: 1.4688552576437568
-  BL:  # force factor (T·m)
-    value: 10.93
-    winner: vendor_page
-    sources:
-      vendor_page: 10.93
-  Qts:  # total Q factor
-    value: 0.52
-    winner: vendor_page
-    sources:
-      vendor_page: 0.52
-  Qms:  # mechanical Q factor
-    value: 12.61
-    winner: vendor_page
-    sources:
-      vendor_page: 12.61
   Le:  # voice coil inductance (H)
     value: 0.001129
     winner: vendor_page
     sources:
       vendor_page: 0.001129
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.27410662399999997
+    winner: vendor_page
+    sources:
+      vendor_page: 0.27410662399999997
+  Qes:  # electrical Q factor
+    value: 0.5458
+    winner: vendor_page
+    sources:
+      vendor_page: 0.5458
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.09154999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.09154999999999999
+  BL:  # force factor (T·m)
+    value: 10.93
+    winner: vendor_page
+    sources:
+      vendor_page: 10.93
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.52
+    winner: vendor_page
+    sources:
+      vendor_page: 3.52
   Pe:  # rated power input (W)
     value: 200.0
     winner: vendor_page
@@ -76,21 +51,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 32.2
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.27410662399999997
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.4688552576437568
     winner: vendor_page
     sources:
-      vendor_page: 0.27410662399999997
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.09154999999999999
+      vendor_page: 1.4688552576437568
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00825
     winner: vendor_page
     sources:
-      vendor_page: 0.09154999999999999
+      vendor_page: 0.00825
+  Qts:  # total Q factor
+    value: 0.52
+    winner: vendor_page
+    sources:
+      vendor_page: 0.52
+  Qms:  # mechanical Q factor
+    value: 12.61
+    winner: vendor_page
+    sources:
+      vendor_page: 12.61
+  Sd:  # effective piston area (m²)
+    value: 0.08553
+    winner: vendor_page
+    sources:
+      vendor_page: 0.08553
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00026700000000000004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00026700000000000004
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 200.0
     winner: vendor_page
@@ -109,3 +104,8 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/292-830--grs-k-33-4-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/GRS-K-33-4-Replacement-15-Woofer-for-Klipsch-Speakers-292-830
+datasheet_url: https://www.parts-express.com/pedocs/specs/292-830--grs-k-33-4-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/GRS-K-33-4-Replacement-15-Woofer-for-Klipsch-Speakers-292-830
+frd_url: https://www.parts-express.com/pedocs/tech-docs/292-830--GRS-K-33-4_data.zip
+zma_url: null

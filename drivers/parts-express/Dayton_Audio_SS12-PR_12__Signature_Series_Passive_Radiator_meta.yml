@@ -4,48 +4,13 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-SS12-PR-12-Signature-Series-Passive-Radiator-295-733
 source: https://www.parts-express.com/Dayton-Audio-SS12-PR-12-Signature-Series-Passive-Radiator-295-733
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Sd:  # effective piston area (m²)
-    value: 0.05227999999999999
-    winner: vendor_page
-    sources:
-      vendor_page: 0.05227999999999999
-  Cms:  # mechanical compliance (m/N)
-    value: 0.000199
-    winner: vendor_page
-    sources:
-      vendor_page: 0.000199
-  Xmax:  # one-way linear excursion (m)
-    value: 0.03
-    winner: vendor_page
-    sources:
-      vendor_page: 0.03
-  Rms:  # mechanical resistance (kg/s)
-    value: 4.480808721920071
-    winner: vendor_page
-    sources:
-      vendor_page: 4.480808721920071
-  Qms:  # mechanical Q factor
-    value: 7.0
-    winner: vendor_page
-    sources:
-      vendor_page: 7.0
-  Fs:  # free air resonance (Hz)
-    value: 25.6
-    winner: vendor_page
-    sources:
-      vendor_page: 25.6
   Vas:  # equivalent acoustic volume (m³)
     value: 0.077304864
     winner: vendor_page
@@ -56,5 +21,40 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 0.195
+  Fs:  # free air resonance (Hz)
+    value: 25.6
+    winner: vendor_page
+    sources:
+      vendor_page: 25.6
+  Rms:  # mechanical resistance (kg/s)
+    value: 4.480808721920071
+    winner: vendor_page
+    sources:
+      vendor_page: 4.480808721920071
+  Xmax:  # one-way linear excursion (m)
+    value: 0.03
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03
+  Qms:  # mechanical Q factor
+    value: 7.0
+    winner: vendor_page
+    sources:
+      vendor_page: 7.0
+  Sd:  # effective piston area (m²)
+    value: 0.05227999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.05227999999999999
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000199
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000199
 _sources:
   vendor_page: https://www.parts-express.com/Dayton-Audio-SS12-PR-12-Signature-Series-Passive-Radiator-295-733
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-SS12-PR-12-Signature-Series-Passive-Radiator-295-733
+frd_url: null
+zma_url: null

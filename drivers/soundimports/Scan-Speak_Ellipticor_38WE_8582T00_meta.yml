@@ -4,67 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/scan-speak-38we-8582t00.html
 source: https://www.soundimports.eu/en/scan-speak-38we-8582t00.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.4
-    winner: vendor_page
-    sources:
-      vendor_page: 6.4
-  Sd:  # effective piston area (m²)
-    value: 0.0825
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0825
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00378
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00378
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0102
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0102
-  Qes:  # electrical Q factor
-    value: 0.26
-    winner: vendor_page
-    sources:
-      vendor_page: 0.26
-  Rms:  # mechanical resistance (kg/s)
-    value: 3.7
-    winner: vendor_page
-    sources:
-      vendor_page: 3.7
-  BL:  # force factor (T·m)
-    value: 18.7
-    winner: vendor_page
-    sources:
-      vendor_page: 18.7
-  Qts:  # total Q factor
-    value: 0.24
-    winner: vendor_page
-    sources:
-      vendor_page: 0.24
-  Qms:  # mechanical Q factor
-    value: 3.78
-    winner: vendor_page
-    sources:
-      vendor_page: 3.78
   Le:  # voice coil inductance (H)
     value: 0.0008
     winner: vendor_page
     sources:
       vendor_page: 0.0008
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.423
+    winner: vendor_page
+    sources:
+      vendor_page: 0.423
+  Qes:  # electrical Q factor
+    value: 0.26
+    winner: vendor_page
+    sources:
+      vendor_page: 0.26
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0855
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0855
+  BL:  # force factor (T·m)
+    value: 18.7
+    winner: vendor_page
+    sources:
+      vendor_page: 18.7
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.4
+    winner: vendor_page
+    sources:
+      vendor_page: 6.4
   Pe:  # rated power input (W)
     value: 350.0
     winner: vendor_page
@@ -75,20 +50,45 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 26.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.423
+  Rms:  # mechanical resistance (kg/s)
+    value: 3.7
     winner: vendor_page
     sources:
-      vendor_page: 0.423
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0855
+      vendor_page: 3.7
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0102
     winner: vendor_page
     sources:
-      vendor_page: 0.0855
+      vendor_page: 0.0102
+  Qts:  # total Q factor
+    value: 0.24
+    winner: vendor_page
+    sources:
+      vendor_page: 0.24
+  Qms:  # mechanical Q factor
+    value: 3.78
+    winner: vendor_page
+    sources:
+      vendor_page: 3.78
+  Sd:  # effective piston area (m²)
+    value: 0.0825
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0825
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00378
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00378
 _sources:
   vendor_page: https://www.soundimports.eu/en/scan-speak-38we-8582t00.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/scan-speak-38we-8582t00.html
+frd_url: null
+zma_url: null

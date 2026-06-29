@@ -4,27 +4,22 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://doc.soundimports.nl/pdf/brands/Seas/27TAC-GB/H1825-06_27TAC_GB_Datasheet.pdf
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/seas-27tacgb.html
 source: https://www.soundimports.eu/en/seas-27tacgb.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 4.7
-    winner: vendor_page
-    sources:
-      vendor_page: 4.7
   Le:  # voice coil inductance (H)
     value: 1.0e-05
     winner: vendor_page
     sources:
       vendor_page: 1.0e-05
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.7
+    winner: vendor_page
+    sources:
+      vendor_page: 4.7
   Pe:  # rated power input (W)
     value: 180.0
     winner: vendor_page
@@ -40,16 +35,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 6.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 1800.0
-    winner: vendor_page
-    sources:
-      vendor_page: 1800.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 20000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 20000.0
 _sources:
   datasheet: https://doc.soundimports.nl/pdf/brands/Seas/27TAC-GB/H1825-06_27TAC_GB_Datasheet.pdf
   vendor_page: https://www.soundimports.eu/en/seas-27tacgb.html
+datasheet_url: https://doc.soundimports.nl/pdf/brands/Seas/27TAC-GB/H1825-06_27TAC_GB_Datasheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/seas-27tacgb.html
+frd_url: null
+zma_url: null

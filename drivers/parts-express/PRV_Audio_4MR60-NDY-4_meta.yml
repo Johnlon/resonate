@@ -6,70 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/294-3402--prv-audio-4mr60-ndy-4-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/PRV-Audio-4MR60-NDY-4-4-Neodymium-Midrange-Speaker-4-Ohms-294-3402
 source: https://www.parts-express.com/PRV-Audio-4MR60-NDY-4-4-Neodymium-Midrange-Speaker-4-Ohms-294-3402
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-3402
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.3
-    winner: vendor_page
-    sources:
-      vendor_page: 3.3
-  Sd:  # effective piston area (m²)
-    value: 0.00554
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00554
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00285
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00285
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0014
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0014
-  Qes:  # electrical Q factor
-    value: 1.04
-    winner: vendor_page
-    sources:
-      vendor_page: 1.04
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.5284397445311722
-    winner: vendor_page
-    sources:
-      vendor_page: 0.5284397445311722
-  BL:  # force factor (T·m)
-    value: 2.82
-    winner: vendor_page
-    sources:
-      vendor_page: 2.82
-  Qts:  # total Q factor
-    value: 0.85
-    winner: vendor_page
-    sources:
-      vendor_page: 0.85
-  Qms:  # mechanical Q factor
-    value: 4.74
-    winner: vendor_page
-    sources:
-      vendor_page: 4.74
   Le:  # voice coil inductance (H)
     value: 5.1e-05
     winner: vendor_page
     sources:
       vendor_page: 5.1e-05
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0283168
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0283168
+  Qes:  # electrical Q factor
+    value: 1.04
+    winner: vendor_page
+    sources:
+      vendor_page: 1.04
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00417
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00417
+  BL:  # force factor (T·m)
+    value: 2.82
+    winner: vendor_page
+    sources:
+      vendor_page: 2.82
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.3
+    winner: vendor_page
+    sources:
+      vendor_page: 3.3
   Pe:  # rated power input (W)
     value: 60.0
     winner: vendor_page
@@ -80,21 +52,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 95.6
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0283168
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.5284397445311722
     winner: vendor_page
     sources:
-      vendor_page: 0.0283168
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.00417
+      vendor_page: 0.5284397445311722
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0014
     winner: vendor_page
     sources:
-      vendor_page: 0.00417
+      vendor_page: 0.0014
+  Qts:  # total Q factor
+    value: 0.85
+    winner: vendor_page
+    sources:
+      vendor_page: 0.85
+  Qms:  # mechanical Q factor
+    value: 4.74
+    winner: vendor_page
+    sources:
+      vendor_page: 4.74
+  Sd:  # effective piston area (m²)
+    value: 0.00554
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00554
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00285
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00285
   freq_low_hz:  # published lower frequency limit (Hz)
     value: 90.0
     winner: vendor_page
@@ -108,3 +100,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/294-3402--prv-audio-4mr60-ndy-4-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/PRV-Audio-4MR60-NDY-4-4-Neodymium-Midrange-Speaker-4-Ohms-294-3402
+datasheet_url: https://www.parts-express.com/pedocs/specs/294-3402--prv-audio-4mr60-ndy-4-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/PRV-Audio-4MR60-NDY-4-4-Neodymium-Midrange-Speaker-4-Ohms-294-3402
+frd_url: null
+zma_url: null

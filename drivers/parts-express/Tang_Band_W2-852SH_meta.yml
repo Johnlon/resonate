@@ -7,65 +7,42 @@ corrections: '''Qts'' stored=0.29 differs from calculated=0.296398 (deps: Qms=1.
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-808--tang-band-w2-852sh-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Tang-Band-W2-852SH-2-Shielded-Speaker-Driver-264-808
 source: https://www.parts-express.com/Tang-Band-W2-852SH-2-Shielded-Speaker-Driver-264-808
-frd: null
-impedance: null
 obsolete: null
 dq_issue: Sd_tiny
 community: null
 fetched_sku: 264-808
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.6
-    winner: vendor_page
-    sources:
-      vendor_page: 3.6
-  Sd:  # effective piston area (m²)
-    value: 1.3e-07
-    winner: vendor_page
-    sources:
-      vendor_page: 1.3e-07
-  Cms:  # mechanical compliance (m/N)
-    value: 0.001051
-    winner: vendor_page
-    sources:
-      vendor_page: 0.001051
-  Xmax:  # one-way linear excursion (m)
-    value: 0.001
-    winner: vendor_page
-    sources:
-      vendor_page: 0.001
-  Qes:  # electrical Q factor
-    value: 0.37
-    winner: vendor_page
-    sources:
-      vendor_page: 0.37
-  BL:  # force factor (T·m)
-    value: 2.99
-    winner: vendor_page
-    sources:
-      vendor_page: 2.99
-  Qts:  # total Q factor
-    value: 0.29
-    winner: vendor_page
-    sources:
-      vendor_page: 0.29
-  Qms:  # mechanical Q factor
-    value: 1.49
-    winner: vendor_page
-    sources:
-      vendor_page: 1.49
   Le:  # voice coil inductance (H)
     value: 2.9999999999999997e-05
     winner: vendor_page
     sources:
       vendor_page: 2.9999999999999997e-05
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00025
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00025
+  Qes:  # electrical Q factor
+    value: 0.37
+    winner: vendor_page
+    sources:
+      vendor_page: 0.37
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001
+  BL:  # force factor (T·m)
+    value: 2.99
+    winner: vendor_page
+    sources:
+      vendor_page: 2.99
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.6
+    winner: vendor_page
+    sources:
+      vendor_page: 3.6
   Pe:  # rated power input (W)
     value: 8.0
     winner: vendor_page
@@ -76,21 +53,44 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 160.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.00025
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00025
-  Mms:  # moving mass incl. air load (kg)
+  Xmax:  # one-way linear excursion (m)
     value: 0.001
     winner: vendor_page
     sources:
       vendor_page: 0.001
+  Qts:  # total Q factor
+    value: 0.29
+    winner: vendor_page
+    sources:
+      vendor_page: 0.29
+  Qms:  # mechanical Q factor
+    value: 1.49
+    winner: vendor_page
+    sources:
+      vendor_page: 1.49
+  Sd:  # effective piston area (m²)
+    value: 1.3e-07
+    winner: vendor_page
+    sources:
+      vendor_page: 1.3e-07
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.001051
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001051
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-808--tang-band-w2-852sh-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Tang-Band-W2-852SH-2-Shielded-Speaker-Driver-264-808
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-808--tang-band-w2-852sh-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Tang-Band-W2-852SH-2-Shielded-Speaker-Driver-264-808
+frd_url: null
+zma_url: null

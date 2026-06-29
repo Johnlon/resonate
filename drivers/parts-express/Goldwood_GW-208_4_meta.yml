@@ -6,70 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Goldwood-GW-208-4-8-OEM-Woofer-4-Ohm-290-310
 source: https://www.parts-express.com/Goldwood-GW-208-4-8-OEM-Woofer-4-Ohm-290-310
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 290-310
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.7
-    winner: vendor_page
-    sources:
-      vendor_page: 3.7
-  Sd:  # effective piston area (m²)
-    value: 0.02059
-    winner: vendor_page
-    sources:
-      vendor_page: 0.02059
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00038
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00038
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0035
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0035
-  Qes:  # electrical Q factor
-    value: 0.85
-    winner: vendor_page
-    sources:
-      vendor_page: 0.85
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.960399678506506
-    winner: vendor_page
-    sources:
-      vendor_page: 1.960399678506506
-  BL:  # force factor (T·m)
-    value: 5.93
-    winner: vendor_page
-    sources:
-      vendor_page: 5.93
-  Qts:  # total Q factor
-    value: 0.7
-    winner: vendor_page
-    sources:
-      vendor_page: 0.7
-  Qms:  # mechanical Q factor
-    value: 4.11
-    winner: vendor_page
-    sources:
-      vendor_page: 4.11
   Le:  # voice coil inductance (H)
     value: 0.0004
     winner: vendor_page
     sources:
       vendor_page: 0.0004
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.022936608
+    winner: vendor_page
+    sources:
+      vendor_page: 0.022936608
+  Qes:  # electrical Q factor
+    value: 0.85
+    winner: vendor_page
+    sources:
+      vendor_page: 0.85
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0249
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0249
+  BL:  # force factor (T·m)
+    value: 5.93
+    winner: vendor_page
+    sources:
+      vendor_page: 5.93
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.7
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7
   Pe:  # rated power input (W)
     value: 100.0
     winner: vendor_page
@@ -80,20 +52,48 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 51.5
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.022936608
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.960399678506506
     winner: vendor_page
     sources:
-      vendor_page: 0.022936608
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0249
+      vendor_page: 1.960399678506506
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0035
     winner: vendor_page
     sources:
-      vendor_page: 0.0249
+      vendor_page: 0.0035
+  Qts:  # total Q factor
+    value: 0.7
+    winner: vendor_page
+    sources:
+      vendor_page: 0.7
+  Qms:  # mechanical Q factor
+    value: 4.11
+    winner: vendor_page
+    sources:
+      vendor_page: 4.11
+  Sd:  # effective piston area (m²)
+    value: 0.02059
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02059
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00038
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00038
 _sources:
   vendor_page: https://www.parts-express.com/Goldwood-GW-208-4-8-OEM-Woofer-4-Ohm-290-310
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Goldwood-GW-208-4-8-OEM-Woofer-4-Ohm-290-310
+frd_url: null
+zma_url: null

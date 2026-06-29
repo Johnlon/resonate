@@ -6,65 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: subwoofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/290-3006--css-sdx12-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/CSS-SDX12-XBL2-12-Subwoofer-290-3006
 source: https://www.parts-express.com/CSS-SDX12-XBL2-12-Subwoofer-290-3006
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 290-3006
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.7
-    winner: vendor_page
-    sources:
-      vendor_page: 3.7
-  Sd:  # effective piston area (m²)
-    value: 0.0491
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0491
-  Xmax:  # one-way linear excursion (m)
-    value: 0.028
-    winner: vendor_page
-    sources:
-      vendor_page: 0.028
-  Qes:  # electrical Q factor
-    value: 0.41
-    winner: vendor_page
-    sources:
-      vendor_page: 0.41
-  Rms:  # mechanical resistance (kg/s)
-    value: 9.319587733251655
-    winner: vendor_page
-    sources:
-      vendor_page: 9.319587733251655
-  BL:  # force factor (T·m)
-    value: 18.4
-    winner: vendor_page
-    sources:
-      vendor_page: 18.4
-  Qts:  # total Q factor
-    value: 0.374
-    winner: vendor_page
-    sources:
-      vendor_page: 0.374
-  Qms:  # mechanical Q factor
-    value: 3.962
-    winner: vendor_page
-    sources:
-      vendor_page: 3.962
   Le:  # voice coil inductance (H)
     value: 0.00138
     winner: vendor_page
     sources:
       vendor_page: 0.00138
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.06739398399999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.06739398399999999
+  Qes:  # electrical Q factor
+    value: 0.41
+    winner: vendor_page
+    sources:
+      vendor_page: 0.41
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.2759
+    winner: vendor_page
+    sources:
+      vendor_page: 0.2759
+  BL:  # force factor (T·m)
+    value: 18.4
+    winner: vendor_page
+    sources:
+      vendor_page: 18.4
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.7
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7
   Pe:  # rated power input (W)
     value: 1000.0
     winner: vendor_page
@@ -75,16 +52,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 21.3
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.06739398399999999
+  Rms:  # mechanical resistance (kg/s)
+    value: 9.319587733251655
     winner: vendor_page
     sources:
-      vendor_page: 0.06739398399999999
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.2759
+      vendor_page: 9.319587733251655
+  Xmax:  # one-way linear excursion (m)
+    value: 0.028
     winner: vendor_page
     sources:
-      vendor_page: 0.2759
+      vendor_page: 0.028
+  Qts:  # total Q factor
+    value: 0.374
+    winner: vendor_page
+    sources:
+      vendor_page: 0.374
+  Qms:  # mechanical Q factor
+    value: 3.962
+    winner: vendor_page
+    sources:
+      vendor_page: 3.962
+  Sd:  # effective piston area (m²)
+    value: 0.0491
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0491
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
@@ -93,3 +85,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/290-3006--css-sdx12-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/CSS-SDX12-XBL2-12-Subwoofer-290-3006
+datasheet_url: https://www.parts-express.com/pedocs/specs/290-3006--css-sdx12-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/CSS-SDX12-XBL2-12-Subwoofer-290-3006
+frd_url: null
+zma_url: null

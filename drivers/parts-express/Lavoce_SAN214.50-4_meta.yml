@@ -6,40 +6,22 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/293-818--lavoce-san214.50-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Lavoce-SAN214.50-4-21-Subwoofer-293-818
 source: https://www.parts-express.com/Lavoce-SAN214.50-4-21-Subwoofer-293-818
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 293-818
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.4
+  Le:  # voice coil inductance (H)
+    value: 0.00332
     winner: vendor_page
     sources:
-      vendor_page: 3.4
-  Sd:  # effective piston area (m²)
-    value: 0.16619
+      vendor_page: 0.00332
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.24663932800000002
     winner: vendor_page
     sources:
-      vendor_page: 0.16619
-  Cms:  # mechanical compliance (m/N)
-    value: 5.9999999999999995e-05
-    winner: vendor_page
-    sources:
-      vendor_page: 5.9999999999999995e-05
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0155
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0155
+      vendor_page: 0.24663932800000002
   Qes:  # electrical Q factor
     value: 0.25
     winner: vendor_page
@@ -50,21 +32,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 33.87
-  Qts:  # total Q factor
-    value: 0.24
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.4
     winner: vendor_page
     sources:
-      vendor_page: 0.24
-  Qms:  # mechanical Q factor
-    value: 6.02
-    winner: vendor_page
-    sources:
-      vendor_page: 6.02
-  Le:  # voice coil inductance (H)
-    value: 0.00332
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00332
+      vendor_page: 3.4
   Pe:  # rated power input (W)
     value: 1700.0
     winner: vendor_page
@@ -75,16 +47,44 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 30.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.24663932800000002
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0155
     winner: vendor_page
     sources:
-      vendor_page: 0.24663932800000002
+      vendor_page: 0.0155
+  Qts:  # total Q factor
+    value: 0.24
+    winner: vendor_page
+    sources:
+      vendor_page: 0.24
+  Qms:  # mechanical Q factor
+    value: 6.02
+    winner: vendor_page
+    sources:
+      vendor_page: 6.02
+  Sd:  # effective piston area (m²)
+    value: 0.16619
+    winner: vendor_page
+    sources:
+      vendor_page: 0.16619
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 5.9999999999999995e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9999999999999995e-05
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/293-818--lavoce-san214.50-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Lavoce-SAN214.50-4-21-Subwoofer-293-818
+datasheet_url: https://www.parts-express.com/pedocs/specs/293-818--lavoce-san214.50-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Lavoce-SAN214.50-4-21-Subwoofer-293-818
+frd_url: null
+zma_url: null

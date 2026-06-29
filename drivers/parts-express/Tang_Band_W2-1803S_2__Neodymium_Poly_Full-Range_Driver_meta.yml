@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-885-tang-band-w2-1803s-specifications-46391.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Tang-Band-W2-1803S-2-Neodymium-Poly-Full-Range-Driver-264-885
 source: https://www.parts-express.com/Tang-Band-W2-1803S-2-Neodymium-Poly-Full-Range-Driver-264-885
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: true
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.6
-    winner: vendor_page
-    sources:
-      vendor_page: 5.6
-  Sd:  # effective piston area (m²)
-    value: 0.0013
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0013
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0013700000000000001
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0013700000000000001
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0007
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0007
-  Qes:  # electrical Q factor
-    value: 0.94
-    winner: vendor_page
-    sources:
-      vendor_page: 0.94
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.2640486501450295
-    winner: vendor_page
-    sources:
-      vendor_page: 0.2640486501450295
-  BL:  # force factor (T·m)
-    value: 2.12
-    winner: vendor_page
-    sources:
-      vendor_page: 2.12
-  Qts:  # total Q factor
-    value: 0.7
-    winner: vendor_page
-    sources:
-      vendor_page: 0.7
-  Qms:  # mechanical Q factor
-    value: 2.84
-    winner: vendor_page
-    sources:
-      vendor_page: 2.84
   Le:  # voice coil inductance (H)
     value: 8.0e-05
     winner: vendor_page
     sources:
       vendor_page: 8.0e-05
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.000283168
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000283168
+  Qes:  # electrical Q factor
+    value: 0.94
+    winner: vendor_page
+    sources:
+      vendor_page: 0.94
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0007700000000000001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0007700000000000001
+  BL:  # force factor (T·m)
+    value: 2.12
+    winner: vendor_page
+    sources:
+      vendor_page: 2.12
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
   Pe:  # rated power input (W)
     value: 3.0
     winner: vendor_page
@@ -76,31 +51,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 155.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.000283168
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.2640486501450295
     winner: vendor_page
     sources:
-      vendor_page: 0.000283168
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0007700000000000001
+      vendor_page: 0.2640486501450295
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0007
     winner: vendor_page
     sources:
-      vendor_page: 0.0007700000000000001
+      vendor_page: 0.0007
+  Qts:  # total Q factor
+    value: 0.7
+    winner: vendor_page
+    sources:
+      vendor_page: 0.7
+  Qms:  # mechanical Q factor
+    value: 2.84
+    winner: vendor_page
+    sources:
+      vendor_page: 2.84
+  Sd:  # effective piston area (m²)
+    value: 0.0013
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0013
   Znom:  # nominal impedance (Ω)
     value: 6.0
     winner: vendor_page
     sources:
       vendor_page: 6.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 155.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0013700000000000001
     winner: vendor_page
     sources:
-      vendor_page: 155.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 20000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 20000.0
+      vendor_page: 0.0013700000000000001
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-885-tang-band-w2-1803s-specifications-46391.pdf
   vendor_page: https://www.parts-express.com/Tang-Band-W2-1803S-2-Neodymium-Poly-Full-Range-Driver-264-885
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-885-tang-band-w2-1803s-specifications-46391.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Tang-Band-W2-1803S-2-Neodymium-Poly-Full-Range-Driver-264-885
+frd_url: null
+zma_url: null

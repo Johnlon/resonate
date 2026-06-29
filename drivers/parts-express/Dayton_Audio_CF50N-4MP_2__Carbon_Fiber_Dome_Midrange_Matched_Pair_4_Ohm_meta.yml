@@ -4,48 +4,28 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/285-410--dayton-audio-cf50n-4mp-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-CF50N-4MP-2-Carbon-Fiber-Cone-Midrange-Matched-Pair-4-Ohm-285-410
 source: https://www.parts-express.com/Dayton-Audio-CF50N-4MP-2-Carbon-Fiber-Cone-Midrange-Matched-Pair-4-Ohm-285-410
-frd: https://www.parts-express.com/pedocs/tech-docs/CF50N-4MP_data.zip
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.0
-    winner: vendor_page
-    sources:
-      vendor_page: 3.0
-  Sd:  # effective piston area (m²)
-    value: 0.00196
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00196
-  Qes:  # electrical Q factor
-    value: 0.82
-    winner: vendor_page
-    sources:
-      vendor_page: 0.82
-  Qts:  # total Q factor
-    value: 0.68
-    winner: vendor_page
-    sources:
-      vendor_page: 0.68
-  Qms:  # mechanical Q factor
-    value: 4.09
-    winner: vendor_page
-    sources:
-      vendor_page: 4.09
   Le:  # voice coil inductance (H)
     value: 5.9999999999999995e-05
     winner: vendor_page
     sources:
       vendor_page: 5.9999999999999995e-05
+  Qes:  # electrical Q factor
+    value: 0.82
+    winner: vendor_page
+    sources:
+      vendor_page: 0.82
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0
   Pe:  # rated power input (W)
     value: 50.0
     winner: vendor_page
@@ -56,6 +36,21 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 345.0
+  Qts:  # total Q factor
+    value: 0.68
+    winner: vendor_page
+    sources:
+      vendor_page: 0.68
+  Qms:  # mechanical Q factor
+    value: 4.09
+    winner: vendor_page
+    sources:
+      vendor_page: 4.09
+  Sd:  # effective piston area (m²)
+    value: 0.00196
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00196
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
@@ -74,3 +69,8 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/285-410--dayton-audio-cf50n-4mp-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Dayton-Audio-CF50N-4MP-2-Carbon-Fiber-Cone-Midrange-Matched-Pair-4-Ohm-285-410
+datasheet_url: https://www.parts-express.com/pedocs/specs/285-410--dayton-audio-cf50n-4mp-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-CF50N-4MP-2-Carbon-Fiber-Cone-Midrange-Matched-Pair-4-Ohm-285-410
+frd_url: https://www.parts-express.com/pedocs/tech-docs/CF50N-4MP_data.zip
+zma_url: null

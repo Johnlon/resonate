@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://prvaudio.com/wp-content/uploads/2026/02/PRV-Catalog-2026.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/PRV-Audio-6MR200A-4-6-Alto-Series-Full-Range-Speaker-294-3167
 source: https://www.parts-express.com/PRV-Audio-6MR200A-4-6-Alto-Series-Full-Range-Speaker-294-3167
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.4
-    winner: vendor_page
-    sources:
-      vendor_page: 3.4
-  Sd:  # effective piston area (m²)
-    value: 0.01077
-    winner: vendor_page
-    sources:
-      vendor_page: 0.01077
-  Cms:  # mechanical compliance (m/N)
-    value: 0.000193
-    winner: vendor_page
-    sources:
-      vendor_page: 0.000193
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00262
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00262
-  Qes:  # electrical Q factor
-    value: 1.28
-    winner: vendor_page
-    sources:
-      vendor_page: 1.28
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.005502131899579655
-    winner: vendor_page
-    sources:
-      vendor_page: 0.005502131899579655
-  BL:  # force factor (T·m)
-    value: 4.92
-    winner: vendor_page
-    sources:
-      vendor_page: 4.92
-  Qts:  # total Q factor
-    value: 1.17
-    winner: vendor_page
-    sources:
-      vendor_page: 1.17
-  Qms:  # mechanical Q factor
-    value: 1316.0
-    winner: vendor_page
-    sources:
-      vendor_page: 1316.0
   Le:  # voice coil inductance (H)
     value: 0.00026000000000000003
     winner: vendor_page
     sources:
       vendor_page: 0.00026000000000000003
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0031714816
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0031714816
+  Qes:  # electrical Q factor
+    value: 1.28
+    winner: vendor_page
+    sources:
+      vendor_page: 1.28
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0101
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0101
+  BL:  # force factor (T·m)
+    value: 4.92
+    winner: vendor_page
+    sources:
+      vendor_page: 4.92
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.4
+    winner: vendor_page
+    sources:
+      vendor_page: 3.4
   Pe:  # rated power input (W)
     value: 100.0
     winner: vendor_page
@@ -76,21 +51,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 114.1
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0031714816
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.005502131899579655
     winner: vendor_page
     sources:
-      vendor_page: 0.0031714816
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0101
+      vendor_page: 0.005502131899579655
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00262
     winner: vendor_page
     sources:
-      vendor_page: 0.0101
+      vendor_page: 0.00262
+  Qts:  # total Q factor
+    value: 1.17
+    winner: vendor_page
+    sources:
+      vendor_page: 1.17
+  Qms:  # mechanical Q factor
+    value: 1316.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1316.0
+  Sd:  # effective piston area (m²)
+    value: 0.01077
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01077
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000193
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000193
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 94.0
     winner: vendor_page
@@ -109,3 +104,8 @@ specs:
 _sources:
   datasheet: https://prvaudio.com/wp-content/uploads/2026/02/PRV-Catalog-2026.pdf
   vendor_page: https://www.parts-express.com/PRV-Audio-6MR200A-4-6-Alto-Series-Full-Range-Speaker-294-3167
+datasheet_url: https://prvaudio.com/wp-content/uploads/2026/02/PRV-Catalog-2026.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/PRV-Audio-6MR200A-4-6-Alto-Series-Full-Range-Speaker-294-3167
+frd_url: null
+zma_url: null

@@ -6,15 +6,7 @@ corrections: null
 reviewed_by: null
 driver_type: tweeter
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Goldwood-GT-302-S-1-2-Mylar-Dome-Tweeter-Shielded-270-175
 source: https://www.parts-express.com/Goldwood-GT-302-S-1-2-Mylar-Dome-Tweeter-Shielded-270-175
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd; Fs_no_Q
 community: null
@@ -37,3 +29,11 @@ specs:
       vendor_page: 8.0
 _sources:
   vendor_page: https://www.parts-express.com/Goldwood-GT-302-S-1-2-Mylar-Dome-Tweeter-Shielded-270-175
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Goldwood-GT-302-S-1-2-Mylar-Dome-Tweeter-Shielded-270-175
+frd_url: null
+zma_url: null

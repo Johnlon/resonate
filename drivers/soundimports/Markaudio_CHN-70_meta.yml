@@ -4,57 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/markaudio-chn-70.html
 source: https://www.soundimports.eu/en/markaudio-chn-70.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.0
-    winner: vendor_page
-    sources:
-      vendor_page: 5.0
-  Sd:  # effective piston area (m²)
-    value: 0.005027
-    winner: vendor_page
-    sources:
-      vendor_page: 0.005027
-  Xmax:  # one-way linear excursion (m)
-    value: 0.004
-    winner: vendor_page
-    sources:
-      vendor_page: 0.004
-  Qes:  # electrical Q factor
-    value: 0.65
-    winner: vendor_page
-    sources:
-      vendor_page: 0.65
-  BL:  # force factor (T·m)
-    value: 3.4
-    winner: vendor_page
-    sources:
-      vendor_page: 3.4
-  Qts:  # total Q factor
-    value: 0.48
-    winner: vendor_page
-    sources:
-      vendor_page: 0.48
-  Qms:  # mechanical Q factor
-    value: 1.85
-    winner: vendor_page
-    sources:
-      vendor_page: 1.85
   Le:  # voice coil inductance (H)
     value: 0.00017
     winner: vendor_page
     sources:
       vendor_page: 0.00017
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.000188
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000188
+  Qes:  # electrical Q factor
+    value: 0.65
+    winner: vendor_page
+    sources:
+      vendor_page: 0.65
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0034
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0034
+  BL:  # force factor (T·m)
+    value: 3.4
+    winner: vendor_page
+    sources:
+      vendor_page: 3.4
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
   Pe:  # rated power input (W)
     value: 16.0
     winner: vendor_page
@@ -65,16 +50,26 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 71.6
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.000188
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
     winner: vendor_page
     sources:
-      vendor_page: 0.000188
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0034
+      vendor_page: 0.004
+  Qts:  # total Q factor
+    value: 0.48
     winner: vendor_page
     sources:
-      vendor_page: 0.0034
+      vendor_page: 0.48
+  Qms:  # mechanical Q factor
+    value: 1.85
+    winner: vendor_page
+    sources:
+      vendor_page: 1.85
+  Sd:  # effective piston area (m²)
+    value: 0.005027
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005027
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -82,3 +77,8 @@ specs:
       vendor_page: 8.0
 _sources:
   vendor_page: https://www.soundimports.eu/en/markaudio-chn-70.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/markaudio-chn-70.html
+frd_url: null
+zma_url: null

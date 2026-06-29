@@ -4,48 +4,28 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-855--tang-band-50-1426se-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Tang-Band-50-1426SE-2-Fabric-Dome-Midrange-264-855
 source: https://www.parts-express.com/Tang-Band-50-1426SE-2-Fabric-Dome-Midrange-264-855
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.6
-    winner: vendor_page
-    sources:
-      vendor_page: 5.6
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00065
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00065
-  Qes:  # electrical Q factor
-    value: 0.92
-    winner: vendor_page
-    sources:
-      vendor_page: 0.92
-  Qts:  # total Q factor
-    value: 0.46
-    winner: vendor_page
-    sources:
-      vendor_page: 0.46
-  Qms:  # mechanical Q factor
-    value: 0.91
-    winner: vendor_page
-    sources:
-      vendor_page: 0.91
   Le:  # voice coil inductance (H)
     value: 2.5e-05
     winner: vendor_page
     sources:
       vendor_page: 2.5e-05
+  Qes:  # electrical Q factor
+    value: 0.92
+    winner: vendor_page
+    sources:
+      vendor_page: 0.92
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
   Pe:  # rated power input (W)
     value: 20.0
     winner: vendor_page
@@ -56,21 +36,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 500.0
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00065
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00065
+  Qts:  # total Q factor
+    value: 0.46
+    winner: vendor_page
+    sources:
+      vendor_page: 0.46
+  Qms:  # mechanical Q factor
+    value: 0.91
+    winner: vendor_page
+    sources:
+      vendor_page: 0.91
   Znom:  # nominal impedance (Ω)
     value: 6.0
     winner: vendor_page
     sources:
       vendor_page: 6.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 500.0
-    winner: vendor_page
-    sources:
-      vendor_page: 500.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 10000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 10000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-855--tang-band-50-1426se-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Tang-Band-50-1426SE-2-Fabric-Dome-Midrange-264-855
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-855--tang-band-50-1426se-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Tang-Band-50-1426SE-2-Fabric-Dome-Midrange-264-855
+frd_url: null
+zma_url: null

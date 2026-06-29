@@ -7,70 +7,42 @@ corrections: '''Qts'' stored=0.4 differs from calculated=0.394521 (deps: Qms=3.2
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/293-112--ciare-cme160-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Ciare-CME160-6.5-Woofer-293-112
 source: https://www.parts-express.com/Ciare-CME160-6.5-Woofer-293-112
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 293-112
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.2
-    winner: vendor_page
-    sources:
-      vendor_page: 3.2
-  Sd:  # effective piston area (m²)
-    value: 0.0137
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0137
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0035
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0035
-  Qes:  # electrical Q factor
-    value: 0.45
-    winner: vendor_page
-    sources:
-      vendor_page: 0.45
-  Rms:  # mechanical resistance (kg/s)
-    value: 2.48382169174443
-    winner: vendor_page
-    sources:
-      vendor_page: 2.48382169174443
-  BL:  # force factor (T·m)
-    value: 7.6
-    winner: vendor_page
-    sources:
-      vendor_page: 7.6
-  Qts:  # total Q factor
-    value: 0.4
-    winner: vendor_page
-    sources:
-      vendor_page: 0.4
-  Qms:  # mechanical Q factor
-    value: 3.2
-    winner: vendor_page
-    sources:
-      vendor_page: 3.2
-  SPL:  # sensitivity (dB, 2.83 V/1 m)
-    value: 97.5
-    winner: vendor_page
-    sources:
-      vendor_page: 97.5
   Le:  # voice coil inductance (H)
     value: 0.0003
     winner: vendor_page
     sources:
       vendor_page: 0.0003
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0045
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0045
+  Qes:  # electrical Q factor
+    value: 0.45
+    winner: vendor_page
+    sources:
+      vendor_page: 0.45
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0115
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0115
+  BL:  # force factor (T·m)
+    value: 7.6
+    winner: vendor_page
+    sources:
+      vendor_page: 7.6
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.2
+    winner: vendor_page
+    sources:
+      vendor_page: 3.2
   Pe:  # rated power input (W)
     value: 130.0
     winner: vendor_page
@@ -81,31 +53,49 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 110.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0045
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.48382169174443
     winner: vendor_page
     sources:
-      vendor_page: 0.0045
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0115
+      vendor_page: 2.48382169174443
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0035
     winner: vendor_page
     sources:
-      vendor_page: 0.0115
+      vendor_page: 0.0035
+  Qts:  # total Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Qms:  # mechanical Q factor
+    value: 3.2
+    winner: vendor_page
+    sources:
+      vendor_page: 3.2
+  Sd:  # effective piston area (m²)
+    value: 0.0137
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0137
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 60.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 97.5
     winner: vendor_page
     sources:
-      vendor_page: 60.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 5000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 5000.0
+      vendor_page: 97.5
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/293-112--ciare-cme160-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Ciare-CME160-6.5-Woofer-293-112
+datasheet_url: https://www.parts-express.com/pedocs/specs/293-112--ciare-cme160-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Ciare-CME160-6.5-Woofer-293-112
+frd_url: null
+zma_url: null

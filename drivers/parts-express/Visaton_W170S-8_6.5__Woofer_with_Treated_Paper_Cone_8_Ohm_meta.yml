@@ -4,48 +4,33 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/292-568--visaton-w170s-8-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Visaton-W170S-8-6.5-Woofer-with-Treated-Paper-Cone-8-Ohm-292-568
 source: https://www.parts-express.com/Visaton-W170S-8-6.5-Woofer-with-Treated-Paper-Cone-8-Ohm-292-568
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.9
-    winner: vendor_page
-    sources:
-      vendor_page: 5.9
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00425
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00425
-  Qes:  # electrical Q factor
-    value: 0.66
-    winner: vendor_page
-    sources:
-      vendor_page: 0.66
-  Qts:  # total Q factor
-    value: 0.52
-    winner: vendor_page
-    sources:
-      vendor_page: 0.52
-  Qms:  # mechanical Q factor
-    value: 2.43
-    winner: vendor_page
-    sources:
-      vendor_page: 2.43
   Le:  # voice coil inductance (H)
     value: 0.0012
     winner: vendor_page
     sources:
       vendor_page: 0.0012
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.037944512
+    winner: vendor_page
+    sources:
+      vendor_page: 0.037944512
+  Qes:  # electrical Q factor
+    value: 0.66
+    winner: vendor_page
+    sources:
+      vendor_page: 0.66
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.9
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9
   Pe:  # rated power input (W)
     value: 50.0
     winner: vendor_page
@@ -56,11 +41,21 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 36.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.037944512
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00425
     winner: vendor_page
     sources:
-      vendor_page: 0.037944512
+      vendor_page: 0.00425
+  Qts:  # total Q factor
+    value: 0.52
+    winner: vendor_page
+    sources:
+      vendor_page: 0.52
+  Qms:  # mechanical Q factor
+    value: 2.43
+    winner: vendor_page
+    sources:
+      vendor_page: 2.43
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -79,3 +74,8 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/292-568--visaton-w170s-8-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Visaton-W170S-8-6.5-Woofer-with-Treated-Paper-Cone-8-Ohm-292-568
+datasheet_url: https://www.parts-express.com/pedocs/specs/292-568--visaton-w170s-8-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Visaton-W170S-8-6.5-Woofer-with-Treated-Paper-Cone-8-Ohm-292-568
+frd_url: null
+zma_url: null

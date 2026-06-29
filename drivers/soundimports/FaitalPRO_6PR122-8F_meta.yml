@@ -4,57 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/faitalpro-6pr122-8f.html
 source: https://www.soundimports.eu/en/faitalpro-6pr122-8f.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: midrange
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.0
-    winner: vendor_page
-    sources:
-      vendor_page: 6.0
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00275
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00275
-  Qes:  # electrical Q factor
-    value: 0.44
-    winner: vendor_page
-    sources:
-      vendor_page: 0.44
-  Rms:  # mechanical resistance (kg/s)
-    value: 2.4
-    winner: vendor_page
-    sources:
-      vendor_page: 2.4
-  BL:  # force factor (T·m)
-    value: 10.5
-    winner: vendor_page
-    sources:
-      vendor_page: 10.5
-  Qts:  # total Q factor
-    value: 0.39
-    winner: vendor_page
-    sources:
-      vendor_page: 0.39
-  Qms:  # mechanical Q factor
-    value: 3.3
-    winner: vendor_page
-    sources:
-      vendor_page: 3.3
   Le:  # voice coil inductance (H)
     value: 0.00015
     winner: vendor_page
     sources:
       vendor_page: 0.00015
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0047
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0047
+  Qes:  # electrical Q factor
+    value: 0.44
+    winner: vendor_page
+    sources:
+      vendor_page: 0.44
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0117
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0117
+  BL:  # force factor (T·m)
+    value: 10.5
+    winner: vendor_page
+    sources:
+      vendor_page: 10.5
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
   Pe:  # rated power input (W)
     value: 120.0
     winner: vendor_page
@@ -65,16 +50,26 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 110.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0047
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.4
     winner: vendor_page
     sources:
-      vendor_page: 0.0047
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0117
+      vendor_page: 2.4
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00275
     winner: vendor_page
     sources:
-      vendor_page: 0.0117
+      vendor_page: 0.00275
+  Qts:  # total Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Qms:  # mechanical Q factor
+    value: 3.3
+    winner: vendor_page
+    sources:
+      vendor_page: 3.3
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -107,3 +102,8 @@ specs:
       vendor_page: 37.0
 _sources:
   vendor_page: https://www.soundimports.eu/en/faitalpro-6pr122-8f.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/faitalpro-6pr122-8f.html
+frd_url: null
+zma_url: null

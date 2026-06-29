@@ -6,40 +6,22 @@ corrections: null
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/295-583--dayton-audio-dma58-8-specification-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-DMA58-8-2-Dual-Magnet-Aluminum-Cone-Full-Range-Driver-8-Ohm-295-583
 source: https://www.parts-express.com/Dayton-Audio-DMA58-8-2-Dual-Magnet-Aluminum-Cone-Full-Range-Driver-8-Ohm-295-583
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 295-583
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.9
+  Le:  # voice coil inductance (H)
+    value: 0.0004
     winner: vendor_page
     sources:
-      vendor_page: 6.9
-  Sd:  # effective piston area (m²)
-    value: 0.00145
+      vendor_page: 0.0004
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00013592063999999998
     winner: vendor_page
     sources:
-      vendor_page: 0.00145
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00046
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00046
-  Xmax:  # one-way linear excursion (m)
-    value: 0.002
-    winner: vendor_page
-    sources:
-      vendor_page: 0.002
+      vendor_page: 0.00013592063999999998
   Qes:  # electrical Q factor
     value: 0.69
     winner: vendor_page
@@ -50,21 +32,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 4.6
-  Qts:  # total Q factor
-    value: 0.54
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.9
     winner: vendor_page
     sources:
-      vendor_page: 0.54
-  Qms:  # mechanical Q factor
-    value: 2.45
-    winner: vendor_page
-    sources:
-      vendor_page: 2.45
-  Le:  # voice coil inductance (H)
-    value: 0.0004
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0004
+      vendor_page: 6.9
   Pe:  # rated power input (W)
     value: 15.0
     winner: vendor_page
@@ -75,16 +47,44 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 166.2
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.00013592063999999998
+  Xmax:  # one-way linear excursion (m)
+    value: 0.002
     winner: vendor_page
     sources:
-      vendor_page: 0.00013592063999999998
+      vendor_page: 0.002
+  Qts:  # total Q factor
+    value: 0.54
+    winner: vendor_page
+    sources:
+      vendor_page: 0.54
+  Qms:  # mechanical Q factor
+    value: 2.45
+    winner: vendor_page
+    sources:
+      vendor_page: 2.45
+  Sd:  # effective piston area (m²)
+    value: 0.00145
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00145
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00046
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00046
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/295-583--dayton-audio-dma58-8-specification-sheet.pdf
   vendor_page: https://www.parts-express.com/Dayton-Audio-DMA58-8-2-Dual-Magnet-Aluminum-Cone-Full-Range-Driver-8-Ohm-295-583
+datasheet_url: https://www.parts-express.com/pedocs/specs/295-583--dayton-audio-dma58-8-specification-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-DMA58-8-2-Dual-Magnet-Aluminum-Cone-Full-Range-Driver-8-Ohm-295-583
+frd_url: null
+zma_url: null

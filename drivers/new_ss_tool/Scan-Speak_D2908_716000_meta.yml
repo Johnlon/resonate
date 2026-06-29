@@ -5,78 +5,57 @@ detail: Automatically scraped from Scan-Speak website. T/S parameters not human-
 corrections: null
 reviewed_by: null
 driver_type: tweeter
-series: Revelator
 nominal_size_cm: 2.6
-datasheet: https://www.scan-speak.dk/datasheet/pdf/d2908-716000.pdf
-adv_datasheet: https://www.scan-speak.dk/datasheet/adv/d2908-714000.pdf
-drawing: https://www.scan-speak.dk/datasheet/drw/d2908-716000.png
-cad: https://www.scan-speak.dk/datasheet/3d/d2908-716000.ZIP
-manu_page: https://www.scan-speak.dk/product/d2908-716000/
-vendor_page: null
 source: https://www.scan-speak.dk/product/d2908-716000/
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
-datasheet_fields: null
-adv_datasheet_fields: null
-manu_page_fields:
-- BL
-- Fs
-- Qts
-- Re
-- SPL
-- Sd
-- Vas
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.7
-    winner: manu_page
-    sources:
-      manu_page: 5.7
-  Sd:  # effective piston area (m²)
-    value: 0.0007
-    winner: manu_page
-    sources:
-      manu_page: 0.0007
-  BL:  # force factor (T·m)
-    value: 3.6
-    winner: manu_page
-    sources:
-      manu_page: 3.6
-  Qts:  # total Q factor
-    value: 0.47
-    winner: manu_page
-    sources:
-      manu_page: 0.47
-  SPL:  # sensitivity (dB, 2.83 V/1 m)
-    value: 92.0
-    winner: manu_page
-    sources:
-      manu_page: 92.0
-  Fs:  # free air resonance (Hz)
-    value: 534.0
-    winner: manu_page
-    sources:
-      manu_page: 534.0
   Vas:  # equivalent acoustic volume (m³)
     value: 2.0e-05
     winner: manu_page
     sources:
       manu_page: 2.0e-05
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 2500.0
+  BL:  # force factor (T·m)
+    value: 3.6
     winner: manu_page
     sources:
-      manu_page: 2500.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 40000.0
+      manu_page: 3.6
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.7
     winner: manu_page
     sources:
-      manu_page: 40000.0
+      manu_page: 5.7
+  Fs:  # free air resonance (Hz)
+    value: 534.0
+    winner: manu_page
+    sources:
+      manu_page: 534.0
+  Qts:  # total Q factor
+    value: 0.47
+    winner: manu_page
+    sources:
+      manu_page: 0.47
+  Sd:  # effective piston area (m²)
+    value: 0.0007
+    winner: manu_page
+    sources:
+      manu_page: 0.0007
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 92.0
+    winner: manu_page
+    sources:
+      manu_page: 92.0
 _sources:
   datasheet: https://www.scan-speak.dk/datasheet/pdf/d2908-716000.pdf
   adv_datasheet: https://www.scan-speak.dk/datasheet/adv/d2908-714000.pdf
   manu_page: https://www.scan-speak.dk/product/d2908-716000/
+datasheet_url: https://www.scan-speak.dk/datasheet/pdf/d2908-716000.pdf
+adv_datasheet_url: https://www.scan-speak.dk/datasheet/adv/d2908-714000.pdf
+drawing_url: https://www.scan-speak.dk/datasheet/drw/d2908-716000.png
+cad_url: https://www.scan-speak.dk/datasheet/3d/d2908-716000.ZIP
+manu_page_url: https://www.scan-speak.dk/product/d2908-716000/
+vendor_page_url: null
+frd_url: null
+zma_url: null

@@ -7,40 +7,22 @@ corrections: '''Vas'' stored=0.0169901 differs from calculated=0.0166995 (deps: 
 reviewed_by: null
 driver_type: fullrange
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/293-794--lavoce-csf082.00k-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Lavoce-CSF082.00K-8-Coaxial-Woofer-293-794
 source: https://www.parts-express.com/Lavoce-CSF082.00K-8-Coaxial-Woofer-293-794
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 293-794
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.7
+  Le:  # voice coil inductance (H)
+    value: 0.00047999999999999996
     winner: vendor_page
     sources:
-      vendor_page: 5.7
-  Sd:  # effective piston area (m²)
-    value: 0.0217
+      vendor_page: 0.00047999999999999996
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.016990079999999998
     winner: vendor_page
     sources:
-      vendor_page: 0.0217
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00025
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00025
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0053
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0053
+      vendor_page: 0.016990079999999998
   Qes:  # electrical Q factor
     value: 0.39
     winner: vendor_page
@@ -51,21 +33,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 11.0
-  Qts:  # total Q factor
-    value: 0.35
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.7
     winner: vendor_page
     sources:
-      vendor_page: 0.35
-  Qms:  # mechanical Q factor
-    value: 3.5
-    winner: vendor_page
-    sources:
-      vendor_page: 3.5
-  Le:  # voice coil inductance (H)
-    value: 0.00047999999999999996
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00047999999999999996
+      vendor_page: 5.7
   Pe:  # rated power input (W)
     value: 200.0
     winner: vendor_page
@@ -76,16 +48,44 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 76.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.016990079999999998
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0053
     winner: vendor_page
     sources:
-      vendor_page: 0.016990079999999998
+      vendor_page: 0.0053
+  Qts:  # total Q factor
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
+  Qms:  # mechanical Q factor
+    value: 3.5
+    winner: vendor_page
+    sources:
+      vendor_page: 3.5
+  Sd:  # effective piston area (m²)
+    value: 0.0217
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0217
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00025
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00025
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/293-794--lavoce-csf082.00k-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Lavoce-CSF082.00K-8-Coaxial-Woofer-293-794
+datasheet_url: https://www.parts-express.com/pedocs/specs/293-794--lavoce-csf082.00k-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Lavoce-CSF082.00K-8-Coaxial-Woofer-293-794
+frd_url: null
+zma_url: null

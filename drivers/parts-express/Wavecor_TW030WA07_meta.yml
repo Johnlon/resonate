@@ -6,45 +6,27 @@ corrections: null
 reviewed_by: null
 driver_type: tweeter
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Wavecor-TW030WA07-30mm-Textile-Dome-Tweeter-with-Rear-Chamber-8-Ohm-298-1112
 source: https://www.parts-express.com/Wavecor-TW030WA07-30mm-Textile-Dome-Tweeter-with-Rear-Chamber-8-Ohm-298-1112
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd
 community: null
 fetched_sku: 298-1112
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.3
-    winner: vendor_page
-    sources:
-      vendor_page: 6.3
-  Qes:  # electrical Q factor
-    value: 1.19
-    winner: vendor_page
-    sources:
-      vendor_page: 1.19
-  Qts:  # total Q factor
-    value: 0.68
-    winner: vendor_page
-    sources:
-      vendor_page: 0.68
-  Qms:  # mechanical Q factor
-    value: 1.6
-    winner: vendor_page
-    sources:
-      vendor_page: 1.6
   Le:  # voice coil inductance (H)
     value: 0.028
     winner: vendor_page
     sources:
       vendor_page: 0.028
+  Qes:  # electrical Q factor
+    value: 1.19
+    winner: vendor_page
+    sources:
+      vendor_page: 1.19
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.3
+    winner: vendor_page
+    sources:
+      vendor_page: 6.3
   Pe:  # rated power input (W)
     value: 50.0
     winner: vendor_page
@@ -55,6 +37,16 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 470.0
+  Qts:  # total Q factor
+    value: 0.68
+    winner: vendor_page
+    sources:
+      vendor_page: 0.68
+  Qms:  # mechanical Q factor
+    value: 1.6
+    winner: vendor_page
+    sources:
+      vendor_page: 1.6
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -62,3 +54,11 @@ specs:
       vendor_page: 8.0
 _sources:
   vendor_page: https://www.parts-express.com/Wavecor-TW030WA07-30mm-Textile-Dome-Tweeter-with-Rear-Chamber-8-Ohm-298-1112
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Wavecor-TW030WA07-30mm-Textile-Dome-Tweeter-with-Rear-Chamber-8-Ohm-298-1112
+frd_url: null
+zma_url: null

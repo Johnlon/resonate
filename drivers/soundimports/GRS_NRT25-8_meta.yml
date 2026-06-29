@@ -4,52 +4,37 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/grs-nrt25-8.html
 source: https://www.soundimports.eu/en/grs-nrt25-8.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: tweeter
 specs:
-  Sd:  # effective piston area (m²)
-    value: 0.000376
-    winner: vendor_page
-    sources:
-      vendor_page: 0.000376
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00038
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00038
-  Qes:  # electrical Q factor
-    value: 2.9
-    winner: vendor_page
-    sources:
-      vendor_page: 2.9
-  BL:  # force factor (T·m)
-    value: 1.62
-    winner: vendor_page
-    sources:
-      vendor_page: 1.62
-  Qts:  # total Q factor
-    value: 1.32
-    winner: vendor_page
-    sources:
-      vendor_page: 1.32
-  Qms:  # mechanical Q factor
-    value: 2.41
-    winner: vendor_page
-    sources:
-      vendor_page: 2.41
   Le:  # voice coil inductance (H)
     value: 8.0e-05
     winner: vendor_page
     sources:
       vendor_page: 8.0e-05
+  Vas:  # equivalent acoustic volume (m³)
+    value: 1.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0e-05
+  Qes:  # electrical Q factor
+    value: 2.9
+    winner: vendor_page
+    sources:
+      vendor_page: 2.9
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00046
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00046
+  BL:  # force factor (T·m)
+    value: 1.62
+    winner: vendor_page
+    sources:
+      vendor_page: 1.62
   Pe:  # rated power input (W)
     value: 5.0
     winner: vendor_page
@@ -60,21 +45,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 380.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 1.0e-05
+  Qts:  # total Q factor
+    value: 1.32
     winner: vendor_page
     sources:
-      vendor_page: 1.0e-05
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.00046
+      vendor_page: 1.32
+  Qms:  # mechanical Q factor
+    value: 2.41
     winner: vendor_page
     sources:
-      vendor_page: 0.00046
+      vendor_page: 2.41
+  Sd:  # effective piston area (m²)
+    value: 0.000376
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000376
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00038
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00038
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 75.7
     winner: vendor_page
@@ -92,3 +87,8 @@ specs:
       vendor_page: 15.0
 _sources:
   vendor_page: https://www.soundimports.eu/en/grs-nrt25-8.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/grs-nrt25-8.html
+frd_url: null
+zma_url: null

@@ -7,70 +7,42 @@ corrections: '''Qts'' stored=0.52 differs from calculated=0.525463 (deps: Qms=8.
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/294-3532--prv-audio-8mr400-8-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/PRV-Audio-8MR400-8-Midrange-Woofer-294-3532
 source: https://www.parts-express.com/PRV-Audio-8MR400-8-Midrange-Woofer-294-3532
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-3532
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.4
-    winner: vendor_page
-    sources:
-      vendor_page: 5.4
-  Sd:  # effective piston area (m²)
-    value: 0.0222
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0222
-  Cms:  # mechanical compliance (m/N)
-    value: 0.02023
-    winner: vendor_page
-    sources:
-      vendor_page: 0.02023
-  Xmax:  # one-way linear excursion (m)
-    value: 0.004
-    winner: vendor_page
-    sources:
-      vendor_page: 0.004
-  Qes:  # electrical Q factor
-    value: 0.56
-    winner: vendor_page
-    sources:
-      vendor_page: 0.56
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.8102580432924041
-    winner: vendor_page
-    sources:
-      vendor_page: 0.8102580432924041
-  BL:  # force factor (T·m)
-    value: 8.15
-    winner: vendor_page
-    sources:
-      vendor_page: 8.15
-  Qts:  # total Q factor
-    value: 0.52
-    winner: vendor_page
-    sources:
-      vendor_page: 0.52
-  Qms:  # mechanical Q factor
-    value: 8.52
-    winner: vendor_page
-    sources:
-      vendor_page: 8.52
   Le:  # voice coil inductance (H)
     value: 0.00041999999999999996
     winner: vendor_page
     sources:
       vendor_page: 0.00041999999999999996
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0202181952
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0202181952
+  Qes:  # electrical Q factor
+    value: 0.56
+    winner: vendor_page
+    sources:
+      vendor_page: 0.56
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.01405
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01405
+  BL:  # force factor (T·m)
+    value: 8.15
+    winner: vendor_page
+    sources:
+      vendor_page: 8.15
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.4
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4
   Pe:  # rated power input (W)
     value: 400.0
     winner: vendor_page
@@ -81,21 +53,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 78.2
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0202181952
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.8102580432924041
     winner: vendor_page
     sources:
-      vendor_page: 0.0202181952
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.01405
+      vendor_page: 0.8102580432924041
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
     winner: vendor_page
     sources:
-      vendor_page: 0.01405
+      vendor_page: 0.004
+  Qts:  # total Q factor
+    value: 0.52
+    winner: vendor_page
+    sources:
+      vendor_page: 0.52
+  Qms:  # mechanical Q factor
+    value: 8.52
+    winner: vendor_page
+    sources:
+      vendor_page: 8.52
+  Sd:  # effective piston area (m²)
+    value: 0.0222
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0222
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.02023
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02023
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 80.0
     winner: vendor_page
@@ -114,3 +106,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/294-3532--prv-audio-8mr400-8-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/PRV-Audio-8MR400-8-Midrange-Woofer-294-3532
+datasheet_url: https://www.parts-express.com/pedocs/specs/294-3532--prv-audio-8mr400-8-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/PRV-Audio-8MR400-8-Midrange-Woofer-294-3532
+frd_url: null
+zma_url: null

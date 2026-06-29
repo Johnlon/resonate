@@ -6,70 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: subwoofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/253-053--21lex1600nd-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Beyma-21LEX1600Nd-LEX-Series-21-Neo-Subwoofer-8-Ohm-253-053
 source: https://www.parts-express.com/Beyma-21LEX1600Nd-LEX-Series-21-Neo-Subwoofer-8-Ohm-253-053
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 253-053
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.4
-    winner: vendor_page
-    sources:
-      vendor_page: 5.4
-  Sd:  # effective piston area (m²)
-    value: 0.1734
-    winner: vendor_page
-    sources:
-      vendor_page: 0.1734
-  Cms:  # mechanical compliance (m/N)
-    value: 0.072
-    winner: vendor_page
-    sources:
-      vendor_page: 0.072
-  Xmax:  # one-way linear excursion (m)
-    value: 0.004
-    winner: vendor_page
-    sources:
-      vendor_page: 0.004
-  Qes:  # electrical Q factor
-    value: 0.3
-    winner: vendor_page
-    sources:
-      vendor_page: 0.3
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.008613808694377594
-    winner: vendor_page
-    sources:
-      vendor_page: 0.008613808694377594
-  BL:  # force factor (T·m)
-    value: 36.6
-    winner: vendor_page
-    sources:
-      vendor_page: 36.6
-  Qts:  # total Q factor
-    value: 0.29
-    winner: vendor_page
-    sources:
-      vendor_page: 0.29
-  Qms:  # mechanical Q factor
-    value: 8.6
-    winner: vendor_page
-    sources:
-      vendor_page: 8.6
   Le:  # voice coil inductance (H)
     value: 0.0047
     winner: vendor_page
     sources:
       vendor_page: 0.0047
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.304971936
+    winner: vendor_page
+    sources:
+      vendor_page: 0.304971936
+  Qes:  # electrical Q factor
+    value: 0.3
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.000393
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000393
+  BL:  # force factor (T·m)
+    value: 36.6
+    winner: vendor_page
+    sources:
+      vendor_page: 36.6
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.4
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4
   Pe:  # rated power input (W)
     value: 1600.0
     winner: vendor_page
@@ -80,21 +52,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 30.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.304971936
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.008613808694377594
     winner: vendor_page
     sources:
-      vendor_page: 0.304971936
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.000393
+      vendor_page: 0.008613808694377594
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
     winner: vendor_page
     sources:
-      vendor_page: 0.000393
+      vendor_page: 0.004
+  Qts:  # total Q factor
+    value: 0.29
+    winner: vendor_page
+    sources:
+      vendor_page: 0.29
+  Qms:  # mechanical Q factor
+    value: 8.6
+    winner: vendor_page
+    sources:
+      vendor_page: 8.6
+  Sd:  # effective piston area (m²)
+    value: 0.1734
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1734
   Znom:  # nominal impedance (Ω)
     value: 30.0
     winner: vendor_page
     sources:
       vendor_page: 30.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.072
+    winner: vendor_page
+    sources:
+      vendor_page: 0.072
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 98.0
     winner: vendor_page
@@ -103,3 +95,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/253-053--21lex1600nd-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Beyma-21LEX1600Nd-LEX-Series-21-Neo-Subwoofer-8-Ohm-253-053
+datasheet_url: https://www.parts-express.com/pedocs/specs/253-053--21lex1600nd-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Beyma-21LEX1600Nd-LEX-Series-21-Neo-Subwoofer-8-Ohm-253-053
+frd_url: null
+zma_url: null

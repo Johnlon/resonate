@@ -4,62 +4,17 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://doc.soundimports.nl/pdf/brands/Accuton/C220-11-221/c220_11_221-datasheet.pdf
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/accuton-c220-11-221.html
 source: https://www.soundimports.eu/en/accuton-c220-11-221.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 10.9
-    winner: vendor_page
-    sources:
-      vendor_page: 10.9
-  Sd:  # effective piston area (m²)
-    value: 0.0227
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0227
-  Xmax:  # one-way linear excursion (m)
-    value: 0.005
-    winner: vendor_page
-    sources:
-      vendor_page: 0.005
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.72
-    winner: vendor_page
-    sources:
-      vendor_page: 0.72
-  BL:  # force factor (T·m)
-    value: 11.1
-    winner: vendor_page
-    sources:
-      vendor_page: 11.1
-  Qms:  # mechanical Q factor
-    value: 6.74
-    winner: vendor_page
-    sources:
-      vendor_page: 6.74
   Le:  # voice coil inductance (H)
     value: 0.0012
     winner: vendor_page
     sources:
       vendor_page: 0.0012
-  Pe:  # rated power input (W)
-    value: 150.0
-    winner: vendor_page
-    sources:
-      vendor_page: 150.0
-  Fs:  # free air resonance (Hz)
-    value: 25.0
-    winner: vendor_page
-    sources:
-      vendor_page: 25.0
   Vas:  # equivalent acoustic volume (m³)
     value: 0.095
     winner: vendor_page
@@ -70,6 +25,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 0.0306
+  BL:  # force factor (T·m)
+    value: 11.1
+    winner: vendor_page
+    sources:
+      vendor_page: 11.1
+  Re:  # DC voice coil resistance (Ω)
+    value: 10.9
+    winner: vendor_page
+    sources:
+      vendor_page: 10.9
+  Pe:  # rated power input (W)
+    value: 150.0
+    winner: vendor_page
+    sources:
+      vendor_page: 150.0
+  Fs:  # free air resonance (Hz)
+    value: 25.0
+    winner: vendor_page
+    sources:
+      vendor_page: 25.0
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.72
+    winner: vendor_page
+    sources:
+      vendor_page: 0.72
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005
+  Qms:  # mechanical Q factor
+    value: 6.74
+    winner: vendor_page
+    sources:
+      vendor_page: 6.74
+  Sd:  # effective piston area (m²)
+    value: 0.0227
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0227
   Znom:  # nominal impedance (Ω)
     value: 11.0
     winner: vendor_page
@@ -98,3 +93,8 @@ specs:
 _sources:
   datasheet: https://doc.soundimports.nl/pdf/brands/Accuton/C220-11-221/c220_11_221-datasheet.pdf
   vendor_page: https://www.soundimports.eu/en/accuton-c220-11-221.html
+datasheet_url: https://doc.soundimports.nl/pdf/brands/Accuton/C220-11-221/c220_11_221-datasheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/accuton-c220-11-221.html
+frd_url: null
+zma_url: null

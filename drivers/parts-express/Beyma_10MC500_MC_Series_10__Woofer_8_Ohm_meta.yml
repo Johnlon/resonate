@@ -4,63 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/253-012--10mc500-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Beyma-10MC500-MC-Series-10-Woofer-8-Ohm-253-012
 source: https://www.parts-express.com/Beyma-10MC500-MC-Series-10-Woofer-8-Ohm-253-012
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.6
-    winner: vendor_page
-    sources:
-      vendor_page: 5.6
-  Sd:  # effective piston area (m²)
-    value: 3.5000000000000004e-06
-    winner: vendor_page
-    sources:
-      vendor_page: 3.5000000000000004e-06
-  Xmax:  # one-way linear excursion (m)
-    value: 0.008
-    winner: vendor_page
-    sources:
-      vendor_page: 0.008
-  Qes:  # electrical Q factor
-    value: 0.3
-    winner: vendor_page
-    sources:
-      vendor_page: 0.3
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.002395987997137815
-    winner: vendor_page
-    sources:
-      vendor_page: 0.002395987997137815
-  BL:  # force factor (T·m)
-    value: 18.3
-    winner: vendor_page
-    sources:
-      vendor_page: 18.3
-  Qts:  # total Q factor
-    value: 0.29
-    winner: vendor_page
-    sources:
-      vendor_page: 0.29
-  Qms:  # mechanical Q factor
-    value: 7.5
-    winner: vendor_page
-    sources:
-      vendor_page: 7.5
   Le:  # voice coil inductance (H)
     value: 0.001
     winner: vendor_page
     sources:
       vendor_page: 0.001
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.02406928
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02406928
+  Qes:  # electrical Q factor
+    value: 0.3
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3
+  Mms:  # moving mass incl. air load (kg)
+    value: 4.4e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 4.4e-05
+  BL:  # force factor (T·m)
+    value: 18.3
+    winner: vendor_page
+    sources:
+      vendor_page: 18.3
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
   Pe:  # rated power input (W)
     value: 500.0
     winner: vendor_page
@@ -71,16 +51,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 65.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.02406928
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.002395987997137815
     winner: vendor_page
     sources:
-      vendor_page: 0.02406928
-  Mms:  # moving mass incl. air load (kg)
-    value: 4.4e-05
+      vendor_page: 0.002395987997137815
+  Xmax:  # one-way linear excursion (m)
+    value: 0.008
     winner: vendor_page
     sources:
-      vendor_page: 4.4e-05
+      vendor_page: 0.008
+  Qts:  # total Q factor
+    value: 0.29
+    winner: vendor_page
+    sources:
+      vendor_page: 0.29
+  Qms:  # mechanical Q factor
+    value: 7.5
+    winner: vendor_page
+    sources:
+      vendor_page: 7.5
+  Sd:  # effective piston area (m²)
+    value: 3.5000000000000004e-06
+    winner: vendor_page
+    sources:
+      vendor_page: 3.5000000000000004e-06
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -91,16 +86,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 97.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 70.0
-    winner: vendor_page
-    sources:
-      vendor_page: 70.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 5000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 5000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/253-012--10mc500-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Beyma-10MC500-MC-Series-10-Woofer-8-Ohm-253-012
+datasheet_url: https://www.parts-express.com/pedocs/specs/253-012--10mc500-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Beyma-10MC500-MC-Series-10-Woofer-8-Ohm-253-012
+frd_url: null
+zma_url: null

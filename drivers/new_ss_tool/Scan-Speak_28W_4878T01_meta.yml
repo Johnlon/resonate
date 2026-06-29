@@ -5,74 +5,62 @@ detail: 'Automatically scraped from Scan-Speak website. T/S parameters not human
 corrections: null
 reviewed_by: null
 driver_type: woofer
-series: Revelator
 nominal_size_cm: 28.0
-datasheet: https://www.scan-speak.dk/datasheet/pdf/28w-4878t01.pdf
-adv_datasheet: https://www.scan-speak.dk/datasheet/adv/28w-4878t01.pdf
-drawing: https://www.scan-speak.dk/datasheet/drw/28w-4878t01.png
-cad: https://www.scan-speak.dk/datasheet/3d/28w-4878t01.ZIP
-manu_page: https://www.scan-speak.dk/product/28w-4878t01/
-vendor_page: null
 source: https://www.scan-speak.dk/product/28w-4878t01/
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
-datasheet_fields:
-- Xmax
-adv_datasheet_fields: null
-manu_page_fields:
-- BL
-- Fs
-- Qts
-- Re
-- SPL
-- Sd
-- Vas
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.1
-    winner: manu_page
-    sources:
-      manu_page: 3.1
-  Sd:  # effective piston area (m²)
-    value: 0.0363
-    winner: manu_page
-    sources:
-      manu_page: 0.0363
-  Xmax:  # one-way linear excursion (m)
-    value: 0.05143
-    winner: manu_page
-    sources:
-      manu_page: 0.05143
-  BL:  # force factor (T·m)
-    value: 12.0
-    winner: manu_page
-    sources:
-      manu_page: 12.0
-  Qts:  # total Q factor
-    value: 0.26
-    winner: manu_page
-    sources:
-      manu_page: 0.26
-  SPL:  # sensitivity (dB, 2.83 V/1 m)
-    value: 91.0
-    winner: manu_page
-    sources:
-      manu_page: 91.0
-  Fs:  # free air resonance (Hz)
-    value: 23.0
-    winner: manu_page
-    sources:
-      manu_page: 23.0
   Vas:  # equivalent acoustic volume (m³)
     value: 0.104
     winner: manu_page
     sources:
       manu_page: 0.104
+  BL:  # force factor (T·m)
+    value: 12.0
+    winner: manu_page
+    sources:
+      manu_page: 12.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.1
+    winner: manu_page
+    sources:
+      manu_page: 3.1
+  Fs:  # free air resonance (Hz)
+    value: 23.0
+    winner: manu_page
+    sources:
+      manu_page: 23.0
+  Xmax:  # one-way linear excursion (m)
+    value: 0.05143
+    winner: manu_page
+    sources:
+      manu_page: 0.05143
+  Qts:  # total Q factor
+    value: 0.26
+    winner: manu_page
+    sources:
+      manu_page: 0.26
+  Sd:  # effective piston area (m²)
+    value: 0.0363
+    winner: manu_page
+    sources:
+      manu_page: 0.0363
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 91.0
+    winner: manu_page
+    sources:
+      manu_page: 91.0
 _sources:
   datasheet: https://www.scan-speak.dk/datasheet/pdf/28w-4878t01.pdf
   adv_datasheet: https://www.scan-speak.dk/datasheet/adv/28w-4878t01.pdf
   manu_page: https://www.scan-speak.dk/product/28w-4878t01/
+datasheet_url: https://www.scan-speak.dk/datasheet/pdf/28w-4878t01.pdf
+adv_datasheet_url: https://www.scan-speak.dk/datasheet/adv/28w-4878t01.pdf
+drawing_url: https://www.scan-speak.dk/datasheet/drw/28w-4878t01.png
+cad_url: https://www.scan-speak.dk/datasheet/3d/28w-4878t01.ZIP
+manu_page_url: https://www.scan-speak.dk/product/28w-4878t01/
+vendor_page_url: null
+frd_url: null
+zma_url: null

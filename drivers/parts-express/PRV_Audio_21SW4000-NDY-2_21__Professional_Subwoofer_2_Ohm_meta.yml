@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/294-2765--prv-audio-21sw4000-ndy-2-specifications.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/PRV-Audio-21SW4000-NDY-2-21-Professional-Subwoofer-2-Ohm-294-2765
 source: https://www.parts-express.com/PRV-Audio-21SW4000-NDY-2-21-Professional-Subwoofer-2-Ohm-294-2765
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 1.8
-    winner: vendor_page
-    sources:
-      vendor_page: 1.8
-  Sd:  # effective piston area (m²)
-    value: 0.1924
-    winner: vendor_page
-    sources:
-      vendor_page: 0.1924
-  Cms:  # mechanical compliance (m/N)
-    value: 5.5e-05
-    winner: vendor_page
-    sources:
-      vendor_page: 5.5e-05
-  Xmax:  # one-way linear excursion (m)
-    value: 0.015
-    winner: vendor_page
-    sources:
-      vendor_page: 0.015
-  Qes:  # electrical Q factor
-    value: 0.28
-    winner: vendor_page
-    sources:
-      vendor_page: 0.28
-  Rms:  # mechanical resistance (kg/s)
-    value: 7.612183464610598
-    winner: vendor_page
-    sources:
-      vendor_page: 7.612183464610598
-  BL:  # force factor (T·m)
-    value: 24.36
-    winner: vendor_page
-    sources:
-      vendor_page: 24.36
-  Qts:  # total Q factor
-    value: 0.28
-    winner: vendor_page
-    sources:
-      vendor_page: 0.28
-  Qms:  # mechanical Q factor
-    value: 12.33
-    winner: vendor_page
-    sources:
-      vendor_page: 12.33
   Le:  # voice coil inductance (H)
     value: 0.00114
     winner: vendor_page
     sources:
       vendor_page: 0.00114
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.28458384000000003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.28458384000000003
+  Qes:  # electrical Q factor
+    value: 0.28
+    winner: vendor_page
+    sources:
+      vendor_page: 0.28
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.485
+    winner: vendor_page
+    sources:
+      vendor_page: 0.485
+  BL:  # force factor (T·m)
+    value: 24.36
+    winner: vendor_page
+    sources:
+      vendor_page: 24.36
+  Re:  # DC voice coil resistance (Ω)
+    value: 1.8
+    winner: vendor_page
+    sources:
+      vendor_page: 1.8
   Pe:  # rated power input (W)
     value: 2000.0
     winner: vendor_page
@@ -76,31 +51,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 30.8
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.28458384000000003
+  Rms:  # mechanical resistance (kg/s)
+    value: 7.612183464610598
     winner: vendor_page
     sources:
-      vendor_page: 0.28458384000000003
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.485
+      vendor_page: 7.612183464610598
+  Xmax:  # one-way linear excursion (m)
+    value: 0.015
     winner: vendor_page
     sources:
-      vendor_page: 0.485
+      vendor_page: 0.015
+  Qts:  # total Q factor
+    value: 0.28
+    winner: vendor_page
+    sources:
+      vendor_page: 0.28
+  Qms:  # mechanical Q factor
+    value: 12.33
+    winner: vendor_page
+    sources:
+      vendor_page: 12.33
+  Sd:  # effective piston area (m²)
+    value: 0.1924
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1924
   Znom:  # nominal impedance (Ω)
     value: 2.0
     winner: vendor_page
     sources:
       vendor_page: 2.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 35.0
+  Cms:  # mechanical compliance (m/N)
+    value: 5.5e-05
     winner: vendor_page
     sources:
-      vendor_page: 35.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 1200.0
-    winner: vendor_page
-    sources:
-      vendor_page: 1200.0
+      vendor_page: 5.5e-05
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/294-2765--prv-audio-21sw4000-ndy-2-specifications.pdf
   vendor_page: https://www.parts-express.com/PRV-Audio-21SW4000-NDY-2-21-Professional-Subwoofer-2-Ohm-294-2765
+datasheet_url: https://www.parts-express.com/pedocs/specs/294-2765--prv-audio-21sw4000-ndy-2-specifications.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/PRV-Audio-21SW4000-NDY-2-21-Professional-Subwoofer-2-Ohm-294-2765
+frd_url: null
+zma_url: null

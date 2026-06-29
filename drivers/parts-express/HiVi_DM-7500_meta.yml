@@ -6,15 +6,7 @@ corrections: null
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/297-470--hi-vi-dm-7500-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/HiVi-DM-7500-3-Soft-Dome-Midrange-Driver-6-Ohms-297-470
 source: https://www.parts-express.com/HiVi-DM-7500-3-Soft-Dome-Midrange-Driver-6-Ohms-297-470
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd
 community: null
@@ -53,3 +45,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/297-470--hi-vi-dm-7500-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/HiVi-DM-7500-3-Soft-Dome-Midrange-Driver-6-Ohms-297-470
+datasheet_url: https://www.parts-express.com/pedocs/specs/297-470--hi-vi-dm-7500-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/HiVi-DM-7500-3-Soft-Dome-Midrange-Driver-6-Ohms-297-470
+frd_url: null
+zma_url: null

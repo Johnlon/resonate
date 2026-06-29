@@ -7,70 +7,42 @@ corrections: '''Vas'' stored=0.0611 differs from calculated=0.0627387 (deps: roo
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-1410--tymphany-fsl-1220R02-08-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Peerless-FSL-1220R02-08-Professional-12-Woofer-8-Ohm-264-1410
 source: https://www.parts-express.com/Peerless-FSL-1220R02-08-Professional-12-Woofer-8-Ohm-264-1410
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 264-1410
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.9
-    winner: vendor_page
-    sources:
-      vendor_page: 5.9
-  Sd:  # effective piston area (m²)
-    value: 0.0543
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0543
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00015
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00015
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00507
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00507
-  Qes:  # electrical Q factor
-    value: 0.588
-    winner: vendor_page
-    sources:
-      vendor_page: 0.588
-  Rms:  # mechanical resistance (kg/s)
-    value: 4.034328565984893
-    winner: vendor_page
-    sources:
-      vendor_page: 4.034328565984893
-  BL:  # force factor (T·m)
-    value: 13.3
-    winner: vendor_page
-    sources:
-      vendor_page: 13.3
-  Qts:  # total Q factor
-    value: 0.55
-    winner: vendor_page
-    sources:
-      vendor_page: 0.55
-  Qms:  # mechanical Q factor
-    value: 8.67
-    winner: vendor_page
-    sources:
-      vendor_page: 8.67
   Le:  # voice coil inductance (H)
     value: 0.000696
     winner: vendor_page
     sources:
       vendor_page: 0.000696
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0611
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0611
+  Qes:  # electrical Q factor
+    value: 0.588
+    winner: vendor_page
+    sources:
+      vendor_page: 0.588
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0453
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0453
+  BL:  # force factor (T·m)
+    value: 13.3
+    winner: vendor_page
+    sources:
+      vendor_page: 13.3
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.9
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9
   Pe:  # rated power input (W)
     value: 250.0
     winner: vendor_page
@@ -81,31 +53,49 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 62.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0611
+  Rms:  # mechanical resistance (kg/s)
+    value: 4.034328565984893
     winner: vendor_page
     sources:
-      vendor_page: 0.0611
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0453
+      vendor_page: 4.034328565984893
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00507
     winner: vendor_page
     sources:
-      vendor_page: 0.0453
+      vendor_page: 0.00507
+  Qts:  # total Q factor
+    value: 0.55
+    winner: vendor_page
+    sources:
+      vendor_page: 0.55
+  Qms:  # mechanical Q factor
+    value: 8.67
+    winner: vendor_page
+    sources:
+      vendor_page: 8.67
+  Sd:  # effective piston area (m²)
+    value: 0.0543
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0543
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 60.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00015
     winner: vendor_page
     sources:
-      vendor_page: 60.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 3000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 3000.0
+      vendor_page: 0.00015
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-1410--tymphany-fsl-1220R02-08-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Peerless-FSL-1220R02-08-Professional-12-Woofer-8-Ohm-264-1410
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-1410--tymphany-fsl-1220R02-08-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Peerless-FSL-1220R02-08-Professional-12-Woofer-8-Ohm-264-1410
+frd_url: null
+zma_url: null

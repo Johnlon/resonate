@@ -4,38 +4,23 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-925--tang-band-w1-2025sa-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Tang-Band-W1-2025SA-1-Neodymium-Full-Range-Driver-264-925
 source: https://www.parts-express.com/Tang-Band-W1-2025SA-1-Neodymium-Full-Range-Driver-264-925
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.6
+  Le:  # voice coil inductance (H)
+    value: 2.0e-05
     winner: vendor_page
     sources:
-      vendor_page: 3.6
-  Sd:  # effective piston area (m²)
-    value: 0.0006
+      vendor_page: 2.0e-05
+  Vas:  # equivalent acoustic volume (m³)
+    value: 5.66336e-05
     winner: vendor_page
     sources:
-      vendor_page: 0.0006
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00101
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00101
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00075
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00075
+      vendor_page: 5.66336e-05
   Qes:  # electrical Q factor
     value: 0.57
     winner: vendor_page
@@ -46,21 +31,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 2.14
-  Qts:  # total Q factor
-    value: 0.46
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.6
     winner: vendor_page
     sources:
-      vendor_page: 0.46
-  Qms:  # mechanical Q factor
-    value: 2.39
-    winner: vendor_page
-    sources:
-      vendor_page: 2.39
-  Le:  # voice coil inductance (H)
-    value: 2.0e-05
-    winner: vendor_page
-    sources:
-      vendor_page: 2.0e-05
+      vendor_page: 3.6
   Pe:  # rated power input (W)
     value: 4.0
     winner: vendor_page
@@ -71,16 +46,36 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 200.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 5.66336e-05
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00075
     winner: vendor_page
     sources:
-      vendor_page: 5.66336e-05
+      vendor_page: 0.00075
+  Qts:  # total Q factor
+    value: 0.46
+    winner: vendor_page
+    sources:
+      vendor_page: 0.46
+  Qms:  # mechanical Q factor
+    value: 2.39
+    winner: vendor_page
+    sources:
+      vendor_page: 2.39
+  Sd:  # effective piston area (m²)
+    value: 0.0006
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0006
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00101
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00101
   freq_low_hz:  # published lower frequency limit (Hz)
     value: 20.0
     winner: vendor_page
@@ -94,3 +89,8 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-925--tang-band-w1-2025sa-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Tang-Band-W1-2025SA-1-Neodymium-Full-Range-Driver-264-925
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-925--tang-band-w1-2025sa-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Tang-Band-W1-2025SA-1-Neodymium-Full-Range-Driver-264-925
+frd_url: null
+zma_url: null

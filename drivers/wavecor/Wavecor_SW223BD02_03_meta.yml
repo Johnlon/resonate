@@ -6,126 +6,95 @@ corrections: null
 reviewed_by: null
 driver_type: subwoofer
 nominal_size_cm: null
-datasheet: http://www.wavecor.com/Driver%20specifications%20PDF/SW223BD02_03_specifications.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: http://www.wavecor.com/html/sw223bd02_03.html
-vendor_page: null
 source: http://www.wavecor.com/html/sw223bd02_03.html
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.097
-    winner: manu_page
-    sources:
-      datasheet: 0.097
-      manu_page: 0.097
-    note: Not in datasheet; value from manu_page
-  Znom:  # nominal impedance (Ω)
-    value: 4.0
-    winner: manu_page
-    sources:
-      datasheet: 8.0
-      manu_page: 4.0
-    note: Not in datasheet; value from manu_page
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.5
-    winner: manu_page
-    sources:
-      manu_page: 3.5
-    note: Not in datasheet; value from manu_page
-  Sd:  # effective piston area (m²)
-    value: 0.0206
-    winner: manu_page
-    sources:
-      datasheet: 0.0206
-      manu_page: 0.0206
-    note: Not in datasheet; value from manu_page
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00047
-    winner: manu_page
-    sources:
-      datasheet: 0.00047
-      manu_page: 0.00047
-    note: Not in datasheet; value from manu_page
-  Fs:  # free air resonance (Hz)
-    value: 24.0
-    winner: manu_page
-    sources:
-      datasheet: 24.0
-      manu_page: 24.0
-    note: Not in datasheet; value from manu_page
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0117
-    winner: manu_page
-    sources:
-      datasheet: 0.0107
-      manu_page: 0.0117
-    note: Not in datasheet; value from manu_page
-  Qts:  # total Q factor
-    value: 0.4
-    winner: manu_page
-    sources:
-      datasheet: 0.4
-      manu_page: 0.4
-    note: Not in datasheet; value from manu_page
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.35
-    winner: manu_page
-    sources:
-      datasheet: 1.35
-      manu_page: 1.35
-    note: Not in datasheet; value from manu_page
-  BL:  # force factor (T·m)
-    value: 11.0
-    winner: manu_page
-    sources:
-      manu_page: 11.0
-    note: Not in datasheet; value from manu_page
-  Pe:  # rated power input (W)
-    value: 2500.0
-    winner: manu_page
-    sources:
-      manu_page: 2500.0
-    note: Not in datasheet; value from manu_page
-  Qms:  # mechanical Q factor
-    value: 10.7
-    winner: manu_page
-    sources:
-      datasheet: 10.7
-      manu_page: 10.7
-    note: Not in datasheet; value from manu_page
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.028
-    winner: manu_page
-    sources:
-      datasheet: 0.028
-      manu_page: 0.028
-    note: Not in datasheet; value from manu_page
   Le:  # voice coil inductance (H)
     value: 0.0008
     winner: manu_page
     sources:
       manu_page: 0.0008
-    note: Not in datasheet; value from manu_page
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.028
+    winner: manu_page
+    sources:
+      manu_page: 0.028
   Qes:  # electrical Q factor
     value: 0.42
     winner: manu_page
     sources:
-      datasheet: 0.42
       manu_page: 0.42
-    note: Not in datasheet; value from manu_page
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 1000.0
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.097
     winner: manu_page
     sources:
-      manu_page: 1000.0
+      manu_page: 0.097
+  BL:  # force factor (T·m)
+    value: 11.0
+    winner: manu_page
+    sources:
+      manu_page: 11.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.5
+    winner: manu_page
+    sources:
+      manu_page: 3.5
+  Pe:  # rated power input (W)
+    value: 2500.0
+    winner: manu_page
+    sources:
+      manu_page: 2500.0
+  Fs:  # free air resonance (Hz)
+    value: 24.0
+    winner: manu_page
+    sources:
+      manu_page: 24.0
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.35
+    winner: manu_page
+    sources:
+      manu_page: 1.35
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0117
+    winner: manu_page
+    sources:
+      manu_page: 0.0117
+  Qts:  # total Q factor
+    value: 0.4
+    winner: manu_page
+    sources:
+      manu_page: 0.4
+  Qms:  # mechanical Q factor
+    value: 10.7
+    winner: manu_page
+    sources:
+      manu_page: 10.7
+  Sd:  # effective piston area (m²)
+    value: 0.0206
+    winner: manu_page
+    sources:
+      manu_page: 0.0206
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: manu_page
+    sources:
+      manu_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00047
+    winner: manu_page
+    sources:
+      manu_page: 0.00047
 _sources:
   datasheet: http://www.wavecor.com/Driver%20specifications%20PDF/SW223BD02_03_specifications.pdf
   manu_page: http://www.wavecor.com/html/sw223bd02_03.html
+datasheet_url: http://www.wavecor.com/Driver%20specifications%20PDF/SW223BD02_03_specifications.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: http://www.wavecor.com/html/sw223bd02_03.html
+vendor_page_url: null
+frd_url: null
+zma_url: null

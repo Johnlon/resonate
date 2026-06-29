@@ -7,70 +7,42 @@ corrections: '''Vas'' stored=0.081 differs from calculated=0.0820433 (deps: roo=
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/294-2736--prv-audio-12m750a-specifications.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/PRV-Audio-12W750A-12-Alto-Series-Professional-Woofer-8-Ohm-294-2736
 source: https://www.parts-express.com/PRV-Audio-12W750A-12-Alto-Series-Professional-Woofer-8-Ohm-294-2736
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-2736
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.8
-    winner: vendor_page
-    sources:
-      vendor_page: 5.8
-  Sd:  # effective piston area (m²)
-    value: 0.0585
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0585
-  Cms:  # mechanical compliance (m/N)
-    value: 0.000169
-    winner: vendor_page
-    sources:
-      vendor_page: 0.000169
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00362
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00362
-  Qes:  # electrical Q factor
-    value: 0.44
-    winner: vendor_page
-    sources:
-      vendor_page: 0.44
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.8993691677421157
-    winner: vendor_page
-    sources:
-      vendor_page: 0.8993691677421157
-  BL:  # force factor (T·m)
-    value: 14.29
-    winner: vendor_page
-    sources:
-      vendor_page: 14.29
-  Qts:  # total Q factor
-    value: 0.43
-    winner: vendor_page
-    sources:
-      vendor_page: 0.43
-  Qms:  # mechanical Q factor
-    value: 17.45
-    winner: vendor_page
-    sources:
-      vendor_page: 17.45
   Le:  # voice coil inductance (H)
     value: 0.0007099999999999999
     winner: vendor_page
     sources:
       vendor_page: 0.0007099999999999999
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.081
+    winner: vendor_page
+    sources:
+      vendor_page: 0.081
+  Qes:  # electrical Q factor
+    value: 0.44
+    winner: vendor_page
+    sources:
+      vendor_page: 0.44
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.041722
+    winner: vendor_page
+    sources:
+      vendor_page: 0.041722
+  BL:  # force factor (T·m)
+    value: 14.29
+    winner: vendor_page
+    sources:
+      vendor_page: 14.29
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.8
+    winner: vendor_page
+    sources:
+      vendor_page: 5.8
   Pe:  # rated power input (W)
     value: 375.0
     winner: vendor_page
@@ -81,21 +53,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 59.87
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.081
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.8993691677421157
     winner: vendor_page
     sources:
-      vendor_page: 0.081
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.041722
+      vendor_page: 0.8993691677421157
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00362
     winner: vendor_page
     sources:
-      vendor_page: 0.041722
+      vendor_page: 0.00362
+  Qts:  # total Q factor
+    value: 0.43
+    winner: vendor_page
+    sources:
+      vendor_page: 0.43
+  Qms:  # mechanical Q factor
+    value: 17.45
+    winner: vendor_page
+    sources:
+      vendor_page: 17.45
+  Sd:  # effective piston area (m²)
+    value: 0.0585
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0585
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000169
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000169
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 97.0
     winner: vendor_page
@@ -114,3 +106,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/294-2736--prv-audio-12m750a-specifications.pdf
   vendor_page: https://www.parts-express.com/PRV-Audio-12W750A-12-Alto-Series-Professional-Woofer-8-Ohm-294-2736
+datasheet_url: https://www.parts-express.com/pedocs/specs/294-2736--prv-audio-12m750a-specifications.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/PRV-Audio-12W750A-12-Alto-Series-Professional-Woofer-8-Ohm-294-2736
+frd_url: null
+zma_url: null

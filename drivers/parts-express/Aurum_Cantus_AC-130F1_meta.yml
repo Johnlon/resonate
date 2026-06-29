@@ -8,70 +8,42 @@ corrections: '''Qts'' stored=0.27 differs from calculated=0.273529 (deps: Qms=3.
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Aurum-Cantus-AC-130F1-5-1-4-Woofer-296-400
 source: https://www.parts-express.com/Aurum-Cantus-AC-130F1-5-1-4-Woofer-296-400
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 296-400
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 7.0
-    winner: vendor_page
-    sources:
-      vendor_page: 7.0
-  Sd:  # effective piston area (m²)
-    value: 0.0095
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0095
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0028399999999999996
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0028399999999999996
-  Xmax:  # one-way linear excursion (m)
-    value: 0.005
-    winner: vendor_page
-    sources:
-      vendor_page: 0.005
-  Qes:  # electrical Q factor
-    value: 0.3
-    winner: vendor_page
-    sources:
-      vendor_page: 0.3
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.6881101328346675
-    winner: vendor_page
-    sources:
-      vendor_page: 0.6881101328346675
-  BL:  # force factor (T·m)
-    value: 6.1
-    winner: vendor_page
-    sources:
-      vendor_page: 6.1
-  Qts:  # total Q factor
-    value: 0.27
-    winner: vendor_page
-    sources:
-      vendor_page: 0.27
-  Qms:  # mechanical Q factor
-    value: 3.1
-    winner: vendor_page
-    sources:
-      vendor_page: 3.1
   Le:  # voice coil inductance (H)
     value: 0.00035
     winner: vendor_page
     sources:
       vendor_page: 0.00035
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.035962336
+    winner: vendor_page
+    sources:
+      vendor_page: 0.035962336
+  Qes:  # electrical Q factor
+    value: 0.3
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.009699999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.009699999999999999
+  BL:  # force factor (T·m)
+    value: 6.1
+    winner: vendor_page
+    sources:
+      vendor_page: 6.1
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.0
+    winner: vendor_page
+    sources:
+      vendor_page: 7.0
   Pe:  # rated power input (W)
     value: 60.0
     winner: vendor_page
@@ -82,20 +54,48 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 35.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.035962336
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.6881101328346675
     winner: vendor_page
     sources:
-      vendor_page: 0.035962336
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.009699999999999999
+      vendor_page: 0.6881101328346675
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005
     winner: vendor_page
     sources:
-      vendor_page: 0.009699999999999999
+      vendor_page: 0.005
+  Qts:  # total Q factor
+    value: 0.27
+    winner: vendor_page
+    sources:
+      vendor_page: 0.27
+  Qms:  # mechanical Q factor
+    value: 3.1
+    winner: vendor_page
+    sources:
+      vendor_page: 3.1
+  Sd:  # effective piston area (m²)
+    value: 0.0095
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0095
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0028399999999999996
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0028399999999999996
 _sources:
   vendor_page: https://www.parts-express.com/Aurum-Cantus-AC-130F1-5-1-4-Woofer-296-400
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Aurum-Cantus-AC-130F1-5-1-4-Woofer-296-400
+frd_url: null
+zma_url: null

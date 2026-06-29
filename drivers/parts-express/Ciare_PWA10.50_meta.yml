@@ -6,70 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: subwoofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/293-182--ciare-pwa10.50-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Ciare-PWA10.50-10-Woofer-8-Ohm-293-182
 source: https://www.parts-express.com/Ciare-PWA10.50-10-Woofer-8-Ohm-293-182
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 293-182
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.0
-    winner: vendor_page
-    sources:
-      vendor_page: 5.0
-  Sd:  # effective piston area (m²)
-    value: 0.03464
-    winner: vendor_page
-    sources:
-      vendor_page: 0.03464
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0058
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0058
-  Qes:  # electrical Q factor
-    value: 0.45
-    winner: vendor_page
-    sources:
-      vendor_page: 0.45
-  Rms:  # mechanical resistance (kg/s)
-    value: 3.0643128343036268
-    winner: vendor_page
-    sources:
-      vendor_page: 3.0643128343036268
-  BL:  # force factor (T·m)
-    value: 11.4
-    winner: vendor_page
-    sources:
-      vendor_page: 11.4
-  Qts:  # total Q factor
-    value: 0.4
-    winner: vendor_page
-    sources:
-      vendor_page: 0.4
-  Qms:  # mechanical Q factor
-    value: 3.74
-    winner: vendor_page
-    sources:
-      vendor_page: 3.74
-  SPL:  # sensitivity (dB, 2.83 V/1 m)
-    value: 96.5
-    winner: vendor_page
-    sources:
-      vendor_page: 96.5
   Le:  # voice coil inductance (H)
     value: 0.00066
     winner: vendor_page
     sources:
       vendor_page: 0.00066
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0399
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0399
+  Qes:  # electrical Q factor
+    value: 0.45
+    winner: vendor_page
+    sources:
+      vendor_page: 0.45
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.032
+    winner: vendor_page
+    sources:
+      vendor_page: 0.032
+  BL:  # force factor (T·m)
+    value: 11.4
+    winner: vendor_page
+    sources:
+      vendor_page: 11.4
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
   Pe:  # rated power input (W)
     value: 250.0
     winner: vendor_page
@@ -80,21 +52,49 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 57.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0399
+  Rms:  # mechanical resistance (kg/s)
+    value: 3.0643128343036268
     winner: vendor_page
     sources:
-      vendor_page: 0.0399
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.032
+      vendor_page: 3.0643128343036268
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0058
     winner: vendor_page
     sources:
-      vendor_page: 0.032
+      vendor_page: 0.0058
+  Qts:  # total Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Qms:  # mechanical Q factor
+    value: 3.74
+    winner: vendor_page
+    sources:
+      vendor_page: 3.74
+  Sd:  # effective piston area (m²)
+    value: 0.03464
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03464
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 96.5
+    winner: vendor_page
+    sources:
+      vendor_page: 96.5
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/293-182--ciare-pwa10.50-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Ciare-PWA10.50-10-Woofer-8-Ohm-293-182
+datasheet_url: https://www.parts-express.com/pedocs/specs/293-182--ciare-pwa10.50-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Ciare-PWA10.50-10-Woofer-8-Ohm-293-182
+frd_url: null
+zma_url: null

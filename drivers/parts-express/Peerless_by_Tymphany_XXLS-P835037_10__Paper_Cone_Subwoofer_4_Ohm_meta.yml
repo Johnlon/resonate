@@ -4,63 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-1650--tymphany-xxls-p835037-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Peerless-XXLS-P835037-10-Paper-Cone-Subwoofer-4-Ohm-264-1650
 source: https://www.parts-express.com/Peerless-XXLS-P835037-10-Paper-Cone-Subwoofer-4-Ohm-264-1650
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 2.71
-    winner: vendor_page
-    sources:
-      vendor_page: 2.71
-  Sd:  # effective piston area (m²)
-    value: 0.03464
-    winner: vendor_page
-    sources:
-      vendor_page: 0.03464
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0123
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0123
-  Qes:  # electrical Q factor
-    value: 0.45
-    winner: vendor_page
-    sources:
-      vendor_page: 0.45
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.6949426085316477
-    winner: vendor_page
-    sources:
-      vendor_page: 1.6949426085316477
-  BL:  # force factor (T·m)
-    value: 10.07
-    winner: vendor_page
-    sources:
-      vendor_page: 10.07
-  Qts:  # total Q factor
-    value: 0.43
-    winner: vendor_page
-    sources:
-      vendor_page: 0.43
-  Qms:  # mechanical Q factor
-    value: 9.83
-    winner: vendor_page
-    sources:
-      vendor_page: 9.83
   Le:  # voice coil inductance (H)
     value: 0.0005
     winner: vendor_page
     sources:
       vendor_page: 0.0005
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.05691676799999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.05691676799999999
+  Qes:  # electrical Q factor
+    value: 0.45
+    winner: vendor_page
+    sources:
+      vendor_page: 0.45
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0938
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0938
+  BL:  # force factor (T·m)
+    value: 10.07
+    winner: vendor_page
+    sources:
+      vendor_page: 10.07
+  Re:  # DC voice coil resistance (Ω)
+    value: 2.71
+    winner: vendor_page
+    sources:
+      vendor_page: 2.71
   Pe:  # rated power input (W)
     value: 120.0
     winner: vendor_page
@@ -71,16 +51,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 28.27
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.05691676799999999
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.6949426085316477
     winner: vendor_page
     sources:
-      vendor_page: 0.05691676799999999
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0938
+      vendor_page: 1.6949426085316477
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0123
     winner: vendor_page
     sources:
-      vendor_page: 0.0938
+      vendor_page: 0.0123
+  Qts:  # total Q factor
+    value: 0.43
+    winner: vendor_page
+    sources:
+      vendor_page: 0.43
+  Qms:  # mechanical Q factor
+    value: 9.83
+    winner: vendor_page
+    sources:
+      vendor_page: 9.83
+  Sd:  # effective piston area (m²)
+    value: 0.03464
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03464
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
@@ -89,3 +84,8 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-1650--tymphany-xxls-p835037-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Peerless-XXLS-P835037-10-Paper-Cone-Subwoofer-4-Ohm-264-1650
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-1650--tymphany-xxls-p835037-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Peerless-XXLS-P835037-10-Paper-Cone-Subwoofer-4-Ohm-264-1650
+frd_url: null
+zma_url: null

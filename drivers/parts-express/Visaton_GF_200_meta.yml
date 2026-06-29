@@ -6,65 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Visaton-GF200-2x4-8-DVC-Woofer-2x4-Ohm-292-7808
 source: https://www.parts-express.com/Visaton-GF200-2x4-8-DVC-Woofer-2x4-Ohm-292-7808
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 292-7808
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 2.9
-    winner: vendor_page
-    sources:
-      vendor_page: 2.9
-  Sd:  # effective piston area (m²)
-    value: 0.0214
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0214
-  Xmax:  # one-way linear excursion (m)
-    value: 0.01
-    winner: vendor_page
-    sources:
-      vendor_page: 0.01
-  Qes:  # electrical Q factor
-    value: 0.93
-    winner: vendor_page
-    sources:
-      vendor_page: 0.93
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.184192352794379
-    winner: vendor_page
-    sources:
-      vendor_page: 1.184192352794379
-  BL:  # force factor (T·m)
-    value: 4.6
-    winner: vendor_page
-    sources:
-      vendor_page: 4.6
-  Qts:  # total Q factor
-    value: 0.77
-    winner: vendor_page
-    sources:
-      vendor_page: 0.77
-  Qms:  # mechanical Q factor
-    value: 4.51
-    winner: vendor_page
-    sources:
-      vendor_page: 4.51
   Le:  # voice coil inductance (H)
     value: 0.0004
     winner: vendor_page
     sources:
       vendor_page: 0.0004
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.062013792
+    winner: vendor_page
+    sources:
+      vendor_page: 0.062013792
+  Qes:  # electrical Q factor
+    value: 0.93
+    winner: vendor_page
+    sources:
+      vendor_page: 0.93
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.025
+    winner: vendor_page
+    sources:
+      vendor_page: 0.025
+  BL:  # force factor (T·m)
+    value: 4.6
+    winner: vendor_page
+    sources:
+      vendor_page: 4.6
+  Re:  # DC voice coil resistance (Ω)
+    value: 2.9
+    winner: vendor_page
+    sources:
+      vendor_page: 2.9
   Pe:  # rated power input (W)
     value: 120.0
     winner: vendor_page
@@ -75,16 +52,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 34.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.062013792
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.184192352794379
     winner: vendor_page
     sources:
-      vendor_page: 0.062013792
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.025
+      vendor_page: 1.184192352794379
+  Xmax:  # one-way linear excursion (m)
+    value: 0.01
     winner: vendor_page
     sources:
-      vendor_page: 0.025
+      vendor_page: 0.01
+  Qts:  # total Q factor
+    value: 0.77
+    winner: vendor_page
+    sources:
+      vendor_page: 0.77
+  Qms:  # mechanical Q factor
+    value: 4.51
+    winner: vendor_page
+    sources:
+      vendor_page: 4.51
+  Sd:  # effective piston area (m²)
+    value: 0.0214
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0214
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
@@ -102,3 +94,11 @@ specs:
       vendor_page: 1.0
 _sources:
   vendor_page: https://www.parts-express.com/Visaton-GF200-2x4-8-DVC-Woofer-2x4-Ohm-292-7808
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Visaton-GF200-2x4-8-DVC-Woofer-2x4-Ohm-292-7808
+frd_url: null
+zma_url: null

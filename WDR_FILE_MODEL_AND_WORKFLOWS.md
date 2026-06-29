@@ -41,7 +41,7 @@ These rules apply every time a link field is written to `_meta.yml`, whether by 
 scraper, a backfill script, or an AI agent working on an individual file. Follow
 them in order. **Do not skip the inspection steps.**
 
-### `datasheet`
+### `datasheet_url`
 
 1. Obtain a candidate URL (from the product page, sitemap, or scraper output).
 2. **Verify it resolves to a PDF.** The URL must end in `.pdf` or return
@@ -57,10 +57,10 @@ them in order. **Do not skip the inspection steps.**
 4. **Check the PDF is product-specific, not a manufacturer catalog.** Reject any
    URL whose filename matches catalog patterns: `*catalog*`, `*Catalog*`,
    `*catalogue*`, `*Catalogo*`, `-WEB.pdf`. A catalog covers many products and
-   is not a datasheet. If only a catalog is available, leave `datasheet`
-   unset and set `manu_page` instead.
+   is not a datasheet. If only a catalog is available, leave `datasheet_url`
+   unset and set `manu_page_url` instead.
    > Real failure: 14 SICA drivers, 4 HiVi Swan, and 2 PRV Audio drivers had
-   > their datasheet set to full manufacturer catalog PDFs scraped from
+   > their `datasheet_url` set to full manufacturer catalog PDFs scraped from
    > SoundImports. None were product-specific.
 5. **If the PDF URL is from a different domain than the scraped source**, apply
    extra scrutiny. Verify the filename matches the current product's model
@@ -77,15 +77,15 @@ them in order. **Do not skip the inspection steps.**
 7. Set the field to the internet URL. Also download the PDF to
    `<collection>/datasheets/` for local caching. The WDR holds the internet URL;
    the local copy is a cache only.
-8. **If no PDF is found** → leave `datasheet` unset. Set
-   `manu_page` so a human reviewer can find the datasheet later.
+8. **If no PDF is found** → leave `datasheet_url` unset. Set
+   `manu_page_url` so a human reviewer can find the datasheet later.
 
-### `manu_page` and `vendor_page`
+### `manu_page_url` and `vendor_page_url`
 
 The directory a WDR lives in tells you what kind of site was scraped. Use that
 to decide which field(s) to fill:
 
-| Directory / scraped site                                                  | `manu_page`                                    | `vendor_page`        |
+| Directory / scraped site                                                  | `manu_page_url`                                | `vendor_page_url`    |
 | ------------------------------------------------------------------------- | ---------------------------------------------- | -------------------- |
 | `sb-acoustics/`, `scan-speak/`, `wavecor/` — manufacturer sells direct    | ✓ set to scraped URL                           | leave unset          |
 | `parts-express/`, `soundimports/` — third-party retailer                  | leave unset (manu page unknown at scrape time) | ✓ set to scraped URL |
@@ -94,9 +94,9 @@ to decide which field(s) to fill:
 Rules:
 
 - Only set a field when the scraped site actually fulfils that role. Do not copy
-  the retailer URL into `manu_page` or vice versa.
+  the retailer URL into `manu_page_url` or vice versa.
 - If a separate manufacturer page is discovered during a retailer scrape (e.g.
-  the PE listing links to a Dayton Audio product page), set `manu_page`
+  the PE listing links to a Dayton Audio product page), set `manu_page_url`
   to that URL as well.
 - Do not set either field to a brand homepage or a category listing.
 
@@ -104,17 +104,17 @@ Rules:
 
 Generic provenance field — always set, regardless of site type.
 
-For scraped drivers this is typically the same URL as `vendor_page`
-or `manu_page` (whichever applies). It exists as a separate field to
+For scraped drivers this is typically the same URL as `vendor_page_url`
+or `manu_page_url` (whichever applies). It exists as a separate field to
 cover sources that are neither vendor nor manufacturer listings — a GitHub repo
 of community measurements, an AVS Forum post, a raw datasheet. In those cases
-`vendor_page` and `manu_page` may be unset while
+`vendor_page_url` and `manu_page_url` may be unset while
 `source` still records where the numbers came from.
 
 **If in doubt:** `source` = the URL you would give someone who asked
 "where did you get these T/S numbers?"
 
-### `frd`
+### `frd_url`
 
 **This is the most abuse-prone field. Follow these steps exactly.**
 
@@ -124,30 +124,30 @@ of community measurements, an AVS Forum post, a raw datasheet. In those cases
 3. **Determine the file type:**
    - URL ends in `.frd`, `.txt`, `.zma` → inspect the first few lines. It must
      look like whitespace-separated columns of numbers (freq, amplitude, phase).
-     If it does → set `frd` (or `impedance` for ZMA/impedance).
+     If it does → set `frd_url` (or `zma_url` for ZMA/impedance format).
      If it contains HTML, XML, or binary → do not set.
    - URL ends in `.zip` → **download and list the contents before setting
      anything.** A ZIP must contain at least one `.frd`, `.zma`, or tab-separated
      `.txt` measurement file to qualify. If the ZIP contains only:
      - `.igs`, `.step`, `.x_t`, `.stp`, `.dwg`, `.dxf` files → it is a CAD
-       archive. Do not set `frd`. No `_meta.yml` field exists yet for
+       archive. Do not set `frd_url`. No `_meta.yml` field exists yet for
        mechanical/CAD files.
      - `.pdf`, `.jpg`, `.png` only → it is a graph archive, not raw data. Do not
-       set `frd`.
-     - A mix of FRD data and other files → the ZIP qualifies; set `frd`.
+       set `frd_url`.
+     - A mix of FRD data and other files → the ZIP qualifies; set `frd_url`.
    - URL ends in `.pdf` → it is a datasheet, not measurement data. Set
-     `datasheet` instead. Never set `frd` to a PDF URL.
+     `datasheet_url` instead. Never set `frd_url` to a PDF URL.
 4. Set the field to the **internet URL**. Cache the file locally alongside the
    WDR. Do not set the field to a local file path — ever.
-5. **If the same ZIP contains both FRD and impedance data** → set `frd`
-   to the ZIP URL only. Do not also set `impedance` to the same ZIP — it
+5. **If the same ZIP contains both FRD and impedance data** → set `frd_url`
+   to the ZIP URL only. Do not also set `zma_url` to the same ZIP — it
    is redundant and misleading.
 
-### `impedance`
+### `zma_url`
 
-1. Same rules as `frd` — verify the content before setting.
+1. Same rules as `frd_url` — verify the content before setting.
 2. Only set if the impedance data is in a **separate** file or URL from
-   `frd`. If both are in the same ZIP → `frd` covers it.
+   `frd_url`. If both are in the same ZIP → `frd_url` covers it.
 3. A valid impedance file has columns: freq (Hz) / impedance (Ω) / phase (°).
 
 ---
@@ -156,12 +156,12 @@ of community measurements, an AVS Forum post, a raw datasheet. In those cases
 
 | Situation                                                              | Correct action                                                                                                       |
 | ---------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| Product page has no PDF link and no separate FRD file                  | Set `manu_page`, `vendor_page`, and `source`. Leave `datasheet` and `frd` unset                                      |
-| ZIP found on vendor site — contents unknown                            | Download it, list contents (see `frd` step 3), then decide. Never set `frd` without inspection                       |
-| ZIP contains CAD files only                                            | Download and cache locally. Set no `_meta.yml` field (no mechanical-file field is defined yet). Do not set `frd`     |
-| FRD data is only available as a PDF graph (not raw data)               | Do not set `frd`. A rendered graph is not machine-readable data                                                      |
-| Multiple off-axis FRD files (0°, 15°, 30°, 45°)                        | If they are all in one ZIP → `frd` = ZIP URL. If individual `.frd` files → `frd` = on-axis (0°) URL                  |
-| Wavecor multi-model page (e.g. WF090WA01_02) — SPL TXT URL returns 404 | Do not set `frd`. The multi-model URL pattern does not match individual model TXT filenames on Wavecor's server      |
+| Product page has no PDF link and no separate FRD file                  | Set `manu_page_url`, `vendor_page_url`, and `source`. Leave `datasheet_url` and `frd_url` unset                      |
+| ZIP found on vendor site — contents unknown                            | Download it, list contents (see `frd_url` step 3), then decide. Never set `frd_url` without inspection               |
+| ZIP contains CAD files only                                            | Download and cache locally. Set no `_meta.yml` field (no mechanical-file field is defined yet). Do not set `frd_url` |
+| FRD data is only available as a PDF graph (not raw data)               | Do not set `frd_url`. A rendered graph is not machine-readable data                                                  |
+| Multiple off-axis FRD files (0°, 15°, 30°, 45°)                        | If they are all in one ZIP → `frd_url` = ZIP URL. If individual `.frd` files → `frd_url` = on-axis (0°) URL          |
+| Wavecor multi-model page (e.g. WF090WA01_02) — SPL TXT URL returns 404 | Do not set `frd_url`. The multi-model URL pattern does not match individual model TXT filenames on Wavecor's server  |
 | Scraper downloads a file that already exists locally                   | Skip the download; still set the field in `_meta.yml` to the internet URL if the local file passes the content check |
 | URL resolves but download fails (timeout, SSL error)                   | Do not set the field. Log the error. A cached file from a previous run is acceptable if it passes the content check  |
 | Manufacturer changes URL after field was set                           | During a scraper refresh, re-verify all link fields. Update stale URLs. Set `DateModified` to the refresh date       |

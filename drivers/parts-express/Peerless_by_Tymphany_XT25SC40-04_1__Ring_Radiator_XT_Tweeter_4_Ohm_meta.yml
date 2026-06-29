@@ -4,43 +4,28 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-1642--tymphany-xt25sc40-04-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Peerless-XT25SC40-04-1-Ring-Radiator-XT-Tweeter-4-Ohm-264-1642
 source: https://www.parts-express.com/Peerless-XT25SC40-04-1-Ring-Radiator-XT-Tweeter-4-Ohm-264-1642
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.22
-    winner: vendor_page
-    sources:
-      vendor_page: 3.22
-  Qes:  # electrical Q factor
-    value: 0.83
-    winner: vendor_page
-    sources:
-      vendor_page: 0.83
-  Qts:  # total Q factor
-    value: 0.63
-    winner: vendor_page
-    sources:
-      vendor_page: 0.63
-  Qms:  # mechanical Q factor
-    value: 2.53
-    winner: vendor_page
-    sources:
-      vendor_page: 2.53
   Le:  # voice coil inductance (H)
     value: 1.0e-05
     winner: vendor_page
     sources:
       vendor_page: 1.0e-05
+  Qes:  # electrical Q factor
+    value: 0.83
+    winner: vendor_page
+    sources:
+      vendor_page: 0.83
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.22
+    winner: vendor_page
+    sources:
+      vendor_page: 3.22
   Pe:  # rated power input (W)
     value: 100.0
     winner: vendor_page
@@ -51,21 +36,26 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 1018.0
+  Qts:  # total Q factor
+    value: 0.63
+    winner: vendor_page
+    sources:
+      vendor_page: 0.63
+  Qms:  # mechanical Q factor
+    value: 2.53
+    winner: vendor_page
+    sources:
+      vendor_page: 2.53
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 2500.0
-    winner: vendor_page
-    sources:
-      vendor_page: 2500.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 20000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 20000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-1642--tymphany-xt25sc40-04-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Peerless-XT25SC40-04-1-Ring-Radiator-XT-Tweeter-4-Ohm-264-1642
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-1642--tymphany-xt25sc40-04-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Peerless-XT25SC40-04-1-Ring-Radiator-XT-Tweeter-4-Ohm-264-1642
+frd_url: null
+zma_url: null

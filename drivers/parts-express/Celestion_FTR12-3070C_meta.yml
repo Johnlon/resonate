@@ -6,70 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/294-2000--ftr12-3070c-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Celestion-FTR12-3070C-12-Professional-Speaker-350W-294-2000
 source: https://www.parts-express.com/Celestion-FTR12-3070C-12-Professional-Speaker-350W-294-2000
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-2000
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.59
-    winner: vendor_page
-    sources:
-      vendor_page: 5.59
-  Sd:  # effective piston area (m²)
-    value: 0.05313
-    winner: vendor_page
-    sources:
-      vendor_page: 0.05313
-  Cms:  # mechanical compliance (m/N)
-    value: 1.1e-05
-    winner: vendor_page
-    sources:
-      vendor_page: 1.1e-05
-  Xmax:  # one-way linear excursion (m)
-    value: 0.005
-    winner: vendor_page
-    sources:
-      vendor_page: 0.005
-  Qes:  # electrical Q factor
-    value: 0.36
-    winner: vendor_page
-    sources:
-      vendor_page: 0.36
-  Rms:  # mechanical resistance (kg/s)
-    value: 7.96
-    winner: vendor_page
-    sources:
-      vendor_page: 7.96
-  BL:  # force factor (T·m)
-    value: 18.58
-    winner: vendor_page
-    sources:
-      vendor_page: 18.58
-  Qts:  # total Q factor
-    value: 0.32
-    winner: vendor_page
-    sources:
-      vendor_page: 0.32
-  Qms:  # mechanical Q factor
-    value: 2.804
-    winner: vendor_page
-    sources:
-      vendor_page: 2.804
   Le:  # voice coil inductance (H)
     value: 0.00109
     winner: vendor_page
     sources:
       vendor_page: 0.00109
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0437
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0437
+  Qes:  # electrical Q factor
+    value: 0.36
+    winner: vendor_page
+    sources:
+      vendor_page: 0.36
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.054611
+    winner: vendor_page
+    sources:
+      vendor_page: 0.054611
+  BL:  # force factor (T·m)
+    value: 18.58
+    winner: vendor_page
+    sources:
+      vendor_page: 18.58
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.59
+    winner: vendor_page
+    sources:
+      vendor_page: 5.59
   Pe:  # rated power input (W)
     value: 1.0
     winner: vendor_page
@@ -80,21 +52,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 65.1
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0437
+  Rms:  # mechanical resistance (kg/s)
+    value: 7.96
     winner: vendor_page
     sources:
-      vendor_page: 0.0437
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.054611
+      vendor_page: 7.96
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005
     winner: vendor_page
     sources:
-      vendor_page: 0.054611
+      vendor_page: 0.005
+  Qts:  # total Q factor
+    value: 0.32
+    winner: vendor_page
+    sources:
+      vendor_page: 0.32
+  Qms:  # mechanical Q factor
+    value: 2.804
+    winner: vendor_page
+    sources:
+      vendor_page: 2.804
+  Sd:  # effective piston area (m²)
+    value: 0.05313
+    winner: vendor_page
+    sources:
+      vendor_page: 0.05313
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 1.1e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 1.1e-05
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 96.0
     winner: vendor_page
@@ -103,3 +95,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/294-2000--ftr12-3070c-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Celestion-FTR12-3070C-12-Professional-Speaker-350W-294-2000
+datasheet_url: https://www.parts-express.com/pedocs/specs/294-2000--ftr12-3070c-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Celestion-FTR12-3070C-12-Professional-Speaker-350W-294-2000
+frd_url: null
+zma_url: null

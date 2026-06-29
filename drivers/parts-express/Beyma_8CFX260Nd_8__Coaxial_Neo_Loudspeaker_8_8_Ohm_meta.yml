@@ -4,63 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/253-098--8cfx260nd-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Beyma-8CFX260Nd-8-Coaxial-Neo-Loudspeaker-88-Ohm-253-098
 source: https://www.parts-express.com/Beyma-8CFX260Nd-8-Coaxial-Neo-Loudspeaker-88-Ohm-253-098
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.2
-    winner: vendor_page
-    sources:
-      vendor_page: 5.2
-  Sd:  # effective piston area (m²)
-    value: 2.1999999999999997e-06
-    winner: vendor_page
-    sources:
-      vendor_page: 2.1999999999999997e-06
-  Xmax:  # one-way linear excursion (m)
-    value: 0.006
-    winner: vendor_page
-    sources:
-      vendor_page: 0.006
-  Qes:  # electrical Q factor
-    value: 0.37
-    winner: vendor_page
-    sources:
-      vendor_page: 0.37
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.0027488935718910697
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0027488935718910697
-  BL:  # force factor (T·m)
-    value: 13.5
-    winner: vendor_page
-    sources:
-      vendor_page: 13.5
-  Qts:  # total Q factor
-    value: 0.35
-    winner: vendor_page
-    sources:
-      vendor_page: 0.35
-  Qms:  # mechanical Q factor
-    value: 4.8
-    winner: vendor_page
-    sources:
-      vendor_page: 4.8
   Le:  # voice coil inductance (H)
     value: 0.00023
     winner: vendor_page
     sources:
       vendor_page: 0.00023
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.007928704
+    winner: vendor_page
+    sources:
+      vendor_page: 0.007928704
+  Qes:  # electrical Q factor
+    value: 0.37
+    winner: vendor_page
+    sources:
+      vendor_page: 0.37
+  Mms:  # moving mass incl. air load (kg)
+    value: 2.1000000000000002e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 2.1000000000000002e-05
+  BL:  # force factor (T·m)
+    value: 13.5
+    winner: vendor_page
+    sources:
+      vendor_page: 13.5
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
   Pe:  # rated power input (W)
     value: 250.0
     winner: vendor_page
@@ -71,31 +51,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 100.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.007928704
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.0027488935718910697
     winner: vendor_page
     sources:
-      vendor_page: 0.007928704
-  Mms:  # moving mass incl. air load (kg)
-    value: 2.1000000000000002e-05
+      vendor_page: 0.0027488935718910697
+  Xmax:  # one-way linear excursion (m)
+    value: 0.006
     winner: vendor_page
     sources:
-      vendor_page: 2.1000000000000002e-05
+      vendor_page: 0.006
+  Qts:  # total Q factor
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
+  Qms:  # mechanical Q factor
+    value: 4.8
+    winner: vendor_page
+    sources:
+      vendor_page: 4.8
+  Sd:  # effective piston area (m²)
+    value: 2.1999999999999997e-06
+    winner: vendor_page
+    sources:
+      vendor_page: 2.1999999999999997e-06
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 100.0
-    winner: vendor_page
-    sources:
-      vendor_page: 100.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 20000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 20000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/253-098--8cfx260nd-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Beyma-8CFX260Nd-8-Coaxial-Neo-Loudspeaker-88-Ohm-253-098
+datasheet_url: https://www.parts-express.com/pedocs/specs/253-098--8cfx260nd-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Beyma-8CFX260Nd-8-Coaxial-Neo-Loudspeaker-88-Ohm-253-098
+frd_url: null
+zma_url: null

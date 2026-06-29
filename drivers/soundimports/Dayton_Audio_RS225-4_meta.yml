@@ -4,62 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/dayton-audio-rs225-4.html
 source: https://www.soundimports.eu/en/dayton-audio-rs225-4.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.2
-    winner: vendor_page
-    sources:
-      vendor_page: 3.2
-  Sd:  # effective piston area (m²)
-    value: 0.02138
-    winner: vendor_page
-    sources:
-      vendor_page: 0.02138
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00072
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00072
-  Xmax:  # one-way linear excursion (m)
-    value: 0.006
-    winner: vendor_page
-    sources:
-      vendor_page: 0.006
-  Qes:  # electrical Q factor
-    value: 0.52
-    winner: vendor_page
-    sources:
-      vendor_page: 0.52
-  BL:  # force factor (T·m)
-    value: 6.38
-    winner: vendor_page
-    sources:
-      vendor_page: 6.38
-  Qts:  # total Q factor
-    value: 0.41
-    winner: vendor_page
-    sources:
-      vendor_page: 0.41
-  Qms:  # mechanical Q factor
-    value: 2.02
-    winner: vendor_page
-    sources:
-      vendor_page: 2.02
   Le:  # voice coil inductance (H)
     value: 0.00049
     winner: vendor_page
     sources:
       vendor_page: 0.00049
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0464
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0464
+  Qes:  # electrical Q factor
+    value: 0.52
+    winner: vendor_page
+    sources:
+      vendor_page: 0.52
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0322
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0322
+  BL:  # force factor (T·m)
+    value: 6.38
+    winner: vendor_page
+    sources:
+      vendor_page: 6.38
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.2
+    winner: vendor_page
+    sources:
+      vendor_page: 3.2
   Pe:  # rated power input (W)
     value: 80.0
     winner: vendor_page
@@ -70,21 +50,36 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 33.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0464
+  Xmax:  # one-way linear excursion (m)
+    value: 0.006
     winner: vendor_page
     sources:
-      vendor_page: 0.0464
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0322
+      vendor_page: 0.006
+  Qts:  # total Q factor
+    value: 0.41
     winner: vendor_page
     sources:
-      vendor_page: 0.0322
+      vendor_page: 0.41
+  Qms:  # mechanical Q factor
+    value: 2.02
+    winner: vendor_page
+    sources:
+      vendor_page: 2.02
+  Sd:  # effective piston area (m²)
+    value: 0.02138
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02138
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00072
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00072
   power_peak_W:  # peak power handling (W)
     value: 160.0
     winner: vendor_page
@@ -112,3 +107,8 @@ specs:
       vendor_page: 38.0
 _sources:
   vendor_page: https://www.soundimports.eu/en/dayton-audio-rs225-4.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/dayton-audio-rs225-4.html
+frd_url: null
+zma_url: null

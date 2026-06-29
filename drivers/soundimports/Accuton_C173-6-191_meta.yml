@@ -4,67 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://doc.soundimports.nl/pdf/brands/Accuton/C173-6-191/C173-6-191.pdf
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/accuton-c173-6-191.html
 source: https://www.soundimports.eu/en/accuton-c173-6-191.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.9
-    winner: vendor_page
-    sources:
-      vendor_page: 5.9
-  Sd:  # effective piston area (m²)
-    value: 0.0133
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0133
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00086
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00086
-  Xmax:  # one-way linear excursion (m)
-    value: 0.005
-    winner: vendor_page
-    sources:
-      vendor_page: 0.005
-  Qes:  # electrical Q factor
-    value: 0.37
-    winner: vendor_page
-    sources:
-      vendor_page: 0.37
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.91
-    winner: vendor_page
-    sources:
-      vendor_page: 0.91
-  BL:  # force factor (T·m)
-    value: 8.8
-    winner: vendor_page
-    sources:
-      vendor_page: 8.8
-  Qts:  # total Q factor
-    value: 0.34
-    winner: vendor_page
-    sources:
-      vendor_page: 0.34
-  Qms:  # mechanical Q factor
-    value: 5.27
-    winner: vendor_page
-    sources:
-      vendor_page: 5.27
   Le:  # voice coil inductance (H)
     value: 0.00072
     winner: vendor_page
     sources:
       vendor_page: 0.00072
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0216
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0216
+  Qes:  # electrical Q factor
+    value: 0.37
+    winner: vendor_page
+    sources:
+      vendor_page: 0.37
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0198
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0198
+  BL:  # force factor (T·m)
+    value: 8.8
+    winner: vendor_page
+    sources:
+      vendor_page: 8.8
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.9
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9
   Pe:  # rated power input (W)
     value: 120.0
     winner: vendor_page
@@ -75,21 +50,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 38.6
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0216
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.91
     winner: vendor_page
     sources:
-      vendor_page: 0.0216
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0198
+      vendor_page: 0.91
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005
     winner: vendor_page
     sources:
-      vendor_page: 0.0198
+      vendor_page: 0.005
+  Qts:  # total Q factor
+    value: 0.34
+    winner: vendor_page
+    sources:
+      vendor_page: 0.34
+  Qms:  # mechanical Q factor
+    value: 5.27
+    winner: vendor_page
+    sources:
+      vendor_page: 5.27
+  Sd:  # effective piston area (m²)
+    value: 0.0133
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0133
   Znom:  # nominal impedance (Ω)
     value: 6.0
     winner: vendor_page
     sources:
       vendor_page: 6.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00086
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00086
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 88.0
     winner: vendor_page
@@ -100,16 +95,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 38.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 35.0
-    winner: vendor_page
-    sources:
-      vendor_page: 35.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 2800.0
-    winner: vendor_page
-    sources:
-      vendor_page: 2800.0
 _sources:
   datasheet: https://doc.soundimports.nl/pdf/brands/Accuton/C173-6-191/C173-6-191.pdf
   vendor_page: https://www.soundimports.eu/en/accuton-c173-6-191.html
+datasheet_url: https://doc.soundimports.nl/pdf/brands/Accuton/C173-6-191/C173-6-191.pdf
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/accuton-c173-6-191.html
+frd_url: null
+zma_url: null

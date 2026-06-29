@@ -6,25 +6,12 @@ corrections: null
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/292-590--visaton-sl87wpm-8-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Visaton-SL87WPM-8-3.3-Full-Range-Speaker-8-Ohm-292-590
 source: https://www.parts-express.com/Visaton-SL87WPM-8-3.3-Full-Range-Speaker-8-Ohm-292-590
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd
 community: null
 fetched_sku: 292-590
 specs:
-  Xmax:  # one-way linear excursion (m)
-    value: 0.001
-    winner: vendor_page
-    sources:
-      vendor_page: 0.001
   Le:  # voice coil inductance (H)
     value: 0.00087
     winner: vendor_page
@@ -40,6 +27,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 290.0
+  Xmax:  # one-way linear excursion (m)
+    value: 0.001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -48,3 +40,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/292-590--visaton-sl87wpm-8-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Visaton-SL87WPM-8-3.3-Full-Range-Speaker-8-Ohm-292-590
+datasheet_url: https://www.parts-express.com/pedocs/specs/292-590--visaton-sl87wpm-8-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Visaton-SL87WPM-8-3.3-Full-Range-Speaker-8-Ohm-292-590
+frd_url: null
+zma_url: null

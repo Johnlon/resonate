@@ -4,67 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/sb-audience-nero-15mwn700d.html
 source: https://www.soundimports.eu/en/sb-audience-nero-15mwn700d.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.4
-    winner: vendor_page
-    sources:
-      vendor_page: 5.4
-  Sd:  # effective piston area (m²)
-    value: 0.08657
-    winner: vendor_page
-    sources:
-      vendor_page: 0.08657
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00014
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00014
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0073
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0073
-  Qes:  # electrical Q factor
-    value: 0.48
-    winner: vendor_page
-    sources:
-      vendor_page: 0.48
-  Rms:  # mechanical resistance (kg/s)
-    value: 3.1
-    winner: vendor_page
-    sources:
-      vendor_page: 3.1
-  BL:  # force factor (T·m)
-    value: 17.7
-    winner: vendor_page
-    sources:
-      vendor_page: 17.7
-  Qts:  # total Q factor
-    value: 0.46
-    winner: vendor_page
-    sources:
-      vendor_page: 0.46
-  Qms:  # mechanical Q factor
-    value: 9.07
-    winner: vendor_page
-    sources:
-      vendor_page: 9.07
   Le:  # voice coil inductance (H)
     value: 0.00037
     winner: vendor_page
     sources:
       vendor_page: 0.00037
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.1459
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1459
+  Qes:  # electrical Q factor
+    value: 0.48
+    winner: vendor_page
+    sources:
+      vendor_page: 0.48
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.1076
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1076
+  BL:  # force factor (T·m)
+    value: 17.7
+    winner: vendor_page
+    sources:
+      vendor_page: 17.7
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.4
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4
   Pe:  # rated power input (W)
     value: 700.0
     winner: vendor_page
@@ -75,20 +50,45 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 41.4
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.1459
+  Rms:  # mechanical resistance (kg/s)
+    value: 3.1
     winner: vendor_page
     sources:
-      vendor_page: 0.1459
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.1076
+      vendor_page: 3.1
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0073
     winner: vendor_page
     sources:
-      vendor_page: 0.1076
+      vendor_page: 0.0073
+  Qts:  # total Q factor
+    value: 0.46
+    winner: vendor_page
+    sources:
+      vendor_page: 0.46
+  Qms:  # mechanical Q factor
+    value: 9.07
+    winner: vendor_page
+    sources:
+      vendor_page: 9.07
+  Sd:  # effective piston area (m²)
+    value: 0.08657
+    winner: vendor_page
+    sources:
+      vendor_page: 0.08657
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00014
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00014
 _sources:
   vendor_page: https://www.soundimports.eu/en/sb-audience-nero-15mwn700d.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/sb-audience-nero-15mwn700d.html
+frd_url: null
+zma_url: null

@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-1110-tymphany-sls-p830668-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Peerless-830668-10-Paper-Cone-SLS-Subwoofer-264-1110
 source: https://www.parts-express.com/Peerless-830668-10-Paper-Cone-SLS-Subwoofer-264-1110
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.6
-    winner: vendor_page
-    sources:
-      vendor_page: 5.6
-  Sd:  # effective piston area (m²)
-    value: 0.03464
-    winner: vendor_page
-    sources:
-      vendor_page: 0.03464
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00037
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00037
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0109
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0109
-  Qes:  # electrical Q factor
-    value: 0.646
-    winner: vendor_page
-    sources:
-      vendor_page: 0.646
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.7308967216412994
-    winner: vendor_page
-    sources:
-      vendor_page: 1.7308967216412994
-  BL:  # force factor (T·m)
-    value: 10.3
-    winner: vendor_page
-    sources:
-      vendor_page: 10.3
-  Qts:  # total Q factor
-    value: 0.59
-    winner: vendor_page
-    sources:
-      vendor_page: 0.59
-  Qms:  # mechanical Q factor
-    value: 7.28
-    winner: vendor_page
-    sources:
-      vendor_page: 7.28
   Le:  # voice coil inductance (H)
     value: 0.00146
     winner: vendor_page
     sources:
       vendor_page: 0.00146
+  Vas:  # equivalent acoustic volume (m³)
+    value: 1.7811267199999998
+    winner: vendor_page
+    sources:
+      vendor_page: 1.7811267199999998
+  Qes:  # electrical Q factor
+    value: 0.646
+    winner: vendor_page
+    sources:
+      vendor_page: 0.646
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0573
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0573
+  BL:  # force factor (T·m)
+    value: 10.3
+    winner: vendor_page
+    sources:
+      vendor_page: 10.3
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
   Pe:  # rated power input (W)
     value: 70.0
     winner: vendor_page
@@ -76,31 +51,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 35.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 1.7811267199999998
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.7308967216412994
     winner: vendor_page
     sources:
-      vendor_page: 1.7811267199999998
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0573
+      vendor_page: 1.7308967216412994
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0109
     winner: vendor_page
     sources:
-      vendor_page: 0.0573
+      vendor_page: 0.0109
+  Qts:  # total Q factor
+    value: 0.59
+    winner: vendor_page
+    sources:
+      vendor_page: 0.59
+  Qms:  # mechanical Q factor
+    value: 7.28
+    winner: vendor_page
+    sources:
+      vendor_page: 7.28
+  Sd:  # effective piston area (m²)
+    value: 0.03464
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03464
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 30.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00037
     winner: vendor_page
     sources:
-      vendor_page: 30.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 800.0
-    winner: vendor_page
-    sources:
-      vendor_page: 800.0
+      vendor_page: 0.00037
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-1110-tymphany-sls-p830668-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Peerless-830668-10-Paper-Cone-SLS-Subwoofer-264-1110
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-1110-tymphany-sls-p830668-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Peerless-830668-10-Paper-Cone-SLS-Subwoofer-264-1110
+frd_url: null
+zma_url: null

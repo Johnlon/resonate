@@ -4,62 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/sica-12-e-2-cs-8.html
 source: https://www.soundimports.eu/en/sica-12-e-2-cs-8.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.0
-    winner: vendor_page
-    sources:
-      vendor_page: 6.0
-  Sd:  # effective piston area (m²)
-    value: 0.04909
-    winner: vendor_page
-    sources:
-      vendor_page: 0.04909
-  Cms:  # mechanical compliance (m/N)
-    value: 0.000297
-    winner: vendor_page
-    sources:
-      vendor_page: 0.000297
-  Xmax:  # one-way linear excursion (m)
-    value: 0.004
-    winner: vendor_page
-    sources:
-      vendor_page: 0.004
-  Qes:  # electrical Q factor
-    value: 0.43
-    winner: vendor_page
-    sources:
-      vendor_page: 0.43
-  BL:  # force factor (T·m)
-    value: 13.05
-    winner: vendor_page
-    sources:
-      vendor_page: 13.05
-  Qts:  # total Q factor
-    value: 0.38
-    winner: vendor_page
-    sources:
-      vendor_page: 0.38
-  Qms:  # mechanical Q factor
-    value: 3.06
-    winner: vendor_page
-    sources:
-      vendor_page: 3.06
   Le:  # voice coil inductance (H)
     value: 0.00082
     winner: vendor_page
     sources:
       vendor_page: 0.00082
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.1018
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1018
+  Qes:  # electrical Q factor
+    value: 0.43
+    winner: vendor_page
+    sources:
+      vendor_page: 0.43
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0446
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0446
+  BL:  # force factor (T·m)
+    value: 13.05
+    winner: vendor_page
+    sources:
+      vendor_page: 13.05
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
   Pe:  # rated power input (W)
     value: 200.0
     winner: vendor_page
@@ -70,20 +50,40 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 43.7
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.1018
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
     winner: vendor_page
     sources:
-      vendor_page: 0.1018
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0446
+      vendor_page: 0.004
+  Qts:  # total Q factor
+    value: 0.38
     winner: vendor_page
     sources:
-      vendor_page: 0.0446
+      vendor_page: 0.38
+  Qms:  # mechanical Q factor
+    value: 3.06
+    winner: vendor_page
+    sources:
+      vendor_page: 3.06
+  Sd:  # effective piston area (m²)
+    value: 0.04909
+    winner: vendor_page
+    sources:
+      vendor_page: 0.04909
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000297
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000297
 _sources:
   vendor_page: https://www.soundimports.eu/en/sica-12-e-2-cs-8.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/sica-12-e-2-cs-8.html
+frd_url: null
+zma_url: null

@@ -4,67 +4,42 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/seas-a26re4.html
 source: https://www.soundimports.eu/en/seas-a26re4.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.3
-    winner: vendor_page
-    sources:
-      vendor_page: 6.3
-  Sd:  # effective piston area (m²)
-    value: 0.035
-    winner: vendor_page
-    sources:
-      vendor_page: 0.035
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0011
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0011
-  Xmax:  # one-way linear excursion (m)
-    value: 0.004
-    winner: vendor_page
-    sources:
-      vendor_page: 0.004
-  Qes:  # electrical Q factor
-    value: 0.43
-    winner: vendor_page
-    sources:
-      vendor_page: 0.43
-  Rms:  # mechanical resistance (kg/s)
-    value: 1.69
-    winner: vendor_page
-    sources:
-      vendor_page: 1.69
-  BL:  # force factor (T·m)
-    value: 9.7
-    winner: vendor_page
-    sources:
-      vendor_page: 9.7
-  Qts:  # total Q factor
-    value: 0.39
-    winner: vendor_page
-    sources:
-      vendor_page: 0.39
-  Qms:  # mechanical Q factor
-    value: 3.84
-    winner: vendor_page
-    sources:
-      vendor_page: 3.84
   Le:  # voice coil inductance (H)
     value: 0.0038
     winner: vendor_page
     sources:
       vendor_page: 0.0038
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.169
+    winner: vendor_page
+    sources:
+      vendor_page: 0.169
+  Qes:  # electrical Q factor
+    value: 0.43
+    winner: vendor_page
+    sources:
+      vendor_page: 0.43
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0374
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0374
+  BL:  # force factor (T·m)
+    value: 9.7
+    winner: vendor_page
+    sources:
+      vendor_page: 9.7
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.3
+    winner: vendor_page
+    sources:
+      vendor_page: 6.3
   Pe:  # rated power input (W)
     value: 80.0
     winner: vendor_page
@@ -75,20 +50,45 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 25.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.169
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.69
     winner: vendor_page
     sources:
-      vendor_page: 0.169
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0374
+      vendor_page: 1.69
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
     winner: vendor_page
     sources:
-      vendor_page: 0.0374
+      vendor_page: 0.004
+  Qts:  # total Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Qms:  # mechanical Q factor
+    value: 3.84
+    winner: vendor_page
+    sources:
+      vendor_page: 3.84
+  Sd:  # effective piston area (m²)
+    value: 0.035
+    winner: vendor_page
+    sources:
+      vendor_page: 0.035
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0011
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0011
 _sources:
   vendor_page: https://www.soundimports.eu/en/seas-a26re4.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/seas-a26re4.html
+frd_url: null
+zma_url: null

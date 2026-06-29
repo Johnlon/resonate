@@ -7,70 +7,42 @@ corrections: '''Vas'' stored=0.008441 differs from calculated=0.00830221 (deps: 
 reviewed_by: null
 driver_type: subwoofer
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/267-8044--prv-audio-mt8sw800-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/PRV-Audio-MT8SW800-D4-Moto-Series-8-Shallow-Subwoofer-DVC-4x4-Ohm-267-8044
 source: https://www.parts-express.com/PRV-Audio-MT8SW800-D4-Moto-Series-8-Shallow-Subwoofer-DVC-4x4-Ohm-267-8044
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 267-8044
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 1.7
-    winner: vendor_page
-    sources:
-      vendor_page: 1.7
-  Sd:  # effective piston area (m²)
-    value: 0.0213
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0213
-  Cms:  # mechanical compliance (m/N)
-    value: 0.000129
-    winner: vendor_page
-    sources:
-      vendor_page: 0.000129
-  Xmax:  # one-way linear excursion (m)
-    value: 0.014
-    winner: vendor_page
-    sources:
-      vendor_page: 0.014
-  Qes:  # electrical Q factor
-    value: 1.0
-    winner: vendor_page
-    sources:
-      vendor_page: 1.0
-  Rms:  # mechanical resistance (kg/s)
-    value: 2.6375928631170633
-    winner: vendor_page
-    sources:
-      vendor_page: 2.6375928631170633
-  BL:  # force factor (T·m)
-    value: 6.78
-    winner: vendor_page
-    sources:
-      vendor_page: 6.78
-  Qts:  # total Q factor
-    value: 0.92
-    winner: vendor_page
-    sources:
-      vendor_page: 0.92
-  Qms:  # mechanical Q factor
-    value: 10.35
-    winner: vendor_page
-    sources:
-      vendor_page: 10.35
   Le:  # voice coil inductance (H)
     value: 0.00118
     winner: vendor_page
     sources:
       vendor_page: 0.00118
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.008441
+    winner: vendor_page
+    sources:
+      vendor_page: 0.008441
+  Qes:  # electrical Q factor
+    value: 1.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.09623
+    winner: vendor_page
+    sources:
+      vendor_page: 0.09623
+  BL:  # force factor (T·m)
+    value: 6.78
+    winner: vendor_page
+    sources:
+      vendor_page: 6.78
+  Re:  # DC voice coil resistance (Ω)
+    value: 1.7
+    winner: vendor_page
+    sources:
+      vendor_page: 1.7
   Pe:  # rated power input (W)
     value: 400.0
     winner: vendor_page
@@ -81,21 +53,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 45.15
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.008441
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.6375928631170633
     winner: vendor_page
     sources:
-      vendor_page: 0.008441
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.09623
+      vendor_page: 2.6375928631170633
+  Xmax:  # one-way linear excursion (m)
+    value: 0.014
     winner: vendor_page
     sources:
-      vendor_page: 0.09623
+      vendor_page: 0.014
+  Qts:  # total Q factor
+    value: 0.92
+    winner: vendor_page
+    sources:
+      vendor_page: 0.92
+  Qms:  # mechanical Q factor
+    value: 10.35
+    winner: vendor_page
+    sources:
+      vendor_page: 10.35
+  Sd:  # effective piston area (m²)
+    value: 0.0213
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0213
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000129
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000129
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 400.0
     winner: vendor_page
@@ -104,3 +96,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/267-8044--prv-audio-mt8sw800-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/PRV-Audio-MT8SW800-D4-Moto-Series-8-Shallow-Subwoofer-DVC-4x4-Ohm-267-8044
+datasheet_url: https://www.parts-express.com/pedocs/specs/267-8044--prv-audio-mt8sw800-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/PRV-Audio-MT8SW800-D4-Moto-Series-8-Shallow-Subwoofer-DVC-4x4-Ohm-267-8044
+frd_url: null
+zma_url: null

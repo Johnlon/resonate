@@ -4,52 +4,32 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/hivi-f6.html
 source: https://www.soundimports.eu/en/hivi-f6.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.5
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00058
     winner: vendor_page
     sources:
-      vendor_page: 6.5
-  Sd:  # effective piston area (m²)
-    value: 0.0139
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0139
-  Cms:  # mechanical compliance (m/N)
-    value: 7.0e-05
-    winner: vendor_page
-    sources:
-      vendor_page: 7.0e-05
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0043
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0043
+      vendor_page: 0.00058
   Qes:  # electrical Q factor
     value: 0.38
     winner: vendor_page
     sources:
       vendor_page: 0.38
-  Qts:  # total Q factor
-    value: 0.35
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0183
     winner: vendor_page
     sources:
-      vendor_page: 0.35
-  Qms:  # mechanical Q factor
-    value: 3.91
+      vendor_page: 0.0183
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.5
     winner: vendor_page
     sources:
-      vendor_page: 3.91
+      vendor_page: 6.5
   Pe:  # rated power input (W)
     value: 45.0
     winner: vendor_page
@@ -60,21 +40,36 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 45.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.00058
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0043
     winner: vendor_page
     sources:
-      vendor_page: 0.00058
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0183
+      vendor_page: 0.0043
+  Qts:  # total Q factor
+    value: 0.35
     winner: vendor_page
     sources:
-      vendor_page: 0.0183
+      vendor_page: 0.35
+  Qms:  # mechanical Q factor
+    value: 3.91
+    winner: vendor_page
+    sources:
+      vendor_page: 3.91
+  Sd:  # effective piston area (m²)
+    value: 0.0139
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0139
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 7.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 7.0e-05
   power_peak_W:  # peak power handling (W)
     value: 90.0
     winner: vendor_page
@@ -97,3 +92,8 @@ specs:
       vendor_page: 4.0
 _sources:
   vendor_page: https://www.soundimports.eu/en/hivi-f6.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/hivi-f6.html
+frd_url: null
+zma_url: null

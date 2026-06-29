@@ -6,70 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/285-143--dayton-audio-ce65w-8-specification-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-CE65W-8-2-1-2-Shielded-Extended-Range-Driver-8-285-143
 source: https://www.parts-express.com/Dayton-Audio-CE65W-8-2-1-2-Shielded-Extended-Range-Driver-8-285-143
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 285-143
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.9
-    winner: vendor_page
-    sources:
-      vendor_page: 6.9
-  Sd:  # effective piston area (m²)
-    value: 0.00201
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00201
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00101
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00101
-  Xmax:  # one-way linear excursion (m)
-    value: 0.002
-    winner: vendor_page
-    sources:
-      vendor_page: 0.002
-  Qes:  # electrical Q factor
-    value: 0.95
-    winner: vendor_page
-    sources:
-      vendor_page: 0.95
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.32960972103237174
-    winner: vendor_page
-    sources:
-      vendor_page: 0.32960972103237174
-  BL:  # force factor (T·m)
-    value: 3.2
-    winner: vendor_page
-    sources:
-      vendor_page: 3.2
-  Qts:  # total Q factor
-    value: 0.78
-    winner: vendor_page
-    sources:
-      vendor_page: 0.78
-  Qms:  # mechanical Q factor
-    value: 4.27
-    winner: vendor_page
-    sources:
-      vendor_page: 4.27
   Le:  # voice coil inductance (H)
     value: 0.00015
     winner: vendor_page
     sources:
       vendor_page: 0.00015
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00058
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00058
+  Qes:  # electrical Q factor
+    value: 0.95
+    winner: vendor_page
+    sources:
+      vendor_page: 0.95
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.002
+  BL:  # force factor (T·m)
+    value: 3.2
+    winner: vendor_page
+    sources:
+      vendor_page: 3.2
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.9
+    winner: vendor_page
+    sources:
+      vendor_page: 6.9
   Pe:  # rated power input (W)
     value: 7.0
     winner: vendor_page
@@ -80,21 +52,49 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 112.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.00058
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.32960972103237174
     winner: vendor_page
     sources:
-      vendor_page: 0.00058
-  Mms:  # moving mass incl. air load (kg)
+      vendor_page: 0.32960972103237174
+  Xmax:  # one-way linear excursion (m)
     value: 0.002
     winner: vendor_page
     sources:
       vendor_page: 0.002
+  Qts:  # total Q factor
+    value: 0.78
+    winner: vendor_page
+    sources:
+      vendor_page: 0.78
+  Qms:  # mechanical Q factor
+    value: 4.27
+    winner: vendor_page
+    sources:
+      vendor_page: 4.27
+  Sd:  # effective piston area (m²)
+    value: 0.00201
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00201
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00101
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00101
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/285-143--dayton-audio-ce65w-8-specification-sheet.pdf
   vendor_page: https://www.parts-express.com/Dayton-Audio-CE65W-8-2-1-2-Shielded-Extended-Range-Driver-8-285-143
+datasheet_url: https://www.parts-express.com/pedocs/specs/285-143--dayton-audio-ce65w-8-specification-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-CE65W-8-2-1-2-Shielded-Extended-Range-Driver-8-285-143
+frd_url: null
+zma_url: null

@@ -6,66 +6,55 @@ corrections: null
 reviewed_by: null
 driver_type: passive_radiator
 nominal_size_cm: null
-datasheet: http://www.wavecor.com/Driver%20specifications%20PDF/PR259WA01_specifications.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: http://www.wavecor.com/html/pr259wa01.html
-vendor_page: null
 source: http://www.wavecor.com/html/pr259wa01.html
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 specs:
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.04
+    winner: manu_page
+    sources:
+      manu_page: 0.04
   Mms:  # moving mass incl. air load (kg)
     value: 0.266
     winner: manu_page
     sources:
       manu_page: 0.266
-    note: Not in datasheet; value from manu_page
-  Sd:  # effective piston area (m²)
-    value: 0.0312
-    winner: manu_page
-    sources:
-      datasheet: 0.0312
-      manu_page: 0.0312
-    note: Not in datasheet; value from manu_page
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00029
-    winner: manu_page
-    sources:
-      datasheet: 0.00029
-      manu_page: 0.00029
-    note: Not in datasheet; value from manu_page
   Fs:  # free air resonance (Hz)
     value: 18.1
     winner: manu_page
     sources:
       manu_page: 18.1
-    note: Not in datasheet; value from manu_page
   Xmax:  # one-way linear excursion (m)
     value: 0.02
     winner: manu_page
     sources:
-      datasheet: 0.02
       manu_page: 0.02
-    note: Not in datasheet; value from manu_page
   Qms:  # mechanical Q factor
     value: 26.0
     winner: manu_page
     sources:
       manu_page: 26.0
-    note: Not in datasheet; value from manu_page
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.04
+  Sd:  # effective piston area (m²)
+    value: 0.0312
     winner: manu_page
     sources:
-      datasheet: 0.04
-      manu_page: 0.04
-    note: Not in datasheet; value from manu_page
+      manu_page: 0.0312
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00029
+    winner: manu_page
+    sources:
+      manu_page: 0.00029
 _sources:
   datasheet: http://www.wavecor.com/Driver%20specifications%20PDF/PR259WA01_specifications.pdf
   manu_page: http://www.wavecor.com/html/pr259wa01.html
+datasheet_url: http://www.wavecor.com/Driver%20specifications%20PDF/PR259WA01_specifications.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: http://www.wavecor.com/html/pr259wa01.html
+vendor_page_url: null
+frd_url: null
+zma_url: null

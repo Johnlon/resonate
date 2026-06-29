@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/290-212-dayton-audio-nd105-4-specifications.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-ND105-4-4-Aluminum-Cone-Midbass-Driver-4-Ohm-290-212
 source: https://www.parts-express.com/Dayton-Audio-ND105-4-4-Aluminum-Cone-Midbass-Driver-4-Ohm-290-212
-frd: https://www.parts-express.com/pedocs/tech-docs/290-212--Dayton-Audio-ND105-4_data.zip
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.7
-    winner: vendor_page
-    sources:
-      vendor_page: 3.7
-  Sd:  # effective piston area (m²)
-    value: 0.00515
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00515
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00055
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00055
-  Xmax:  # one-way linear excursion (m)
-    value: 0.004
-    winner: vendor_page
-    sources:
-      vendor_page: 0.004
-  Qes:  # electrical Q factor
-    value: 0.66
-    winner: vendor_page
-    sources:
-      vendor_page: 0.66
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.4931538354710577
-    winner: vendor_page
-    sources:
-      vendor_page: 0.4931538354710577
-  BL:  # force factor (T·m)
-    value: 4.52
-    winner: vendor_page
-    sources:
-      vendor_page: 4.52
-  Qts:  # total Q factor
-    value: 0.61
-    winner: vendor_page
-    sources:
-      vendor_page: 0.61
-  Qms:  # mechanical Q factor
-    value: 7.42
-    winner: vendor_page
-    sources:
-      vendor_page: 7.42
   Le:  # voice coil inductance (H)
     value: 0.00076
     winner: vendor_page
     sources:
       vendor_page: 0.00076
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0019538592
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0019538592
+  Qes:  # electrical Q factor
+    value: 0.66
+    winner: vendor_page
+    sources:
+      vendor_page: 0.66
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0074
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0074
+  BL:  # force factor (T·m)
+    value: 4.52
+    winner: vendor_page
+    sources:
+      vendor_page: 4.52
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.7
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7
   Pe:  # rated power input (W)
     value: 30.0
     winner: vendor_page
@@ -76,31 +51,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 78.7
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0019538592
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.4931538354710577
     winner: vendor_page
     sources:
-      vendor_page: 0.0019538592
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0074
+      vendor_page: 0.4931538354710577
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
     winner: vendor_page
     sources:
-      vendor_page: 0.0074
+      vendor_page: 0.004
+  Qts:  # total Q factor
+    value: 0.61
+    winner: vendor_page
+    sources:
+      vendor_page: 0.61
+  Qms:  # mechanical Q factor
+    value: 7.42
+    winner: vendor_page
+    sources:
+      vendor_page: 7.42
+  Sd:  # effective piston area (m²)
+    value: 0.00515
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00515
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 60.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00055
     winner: vendor_page
     sources:
-      vendor_page: 60.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 10000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 10000.0
+      vendor_page: 0.00055
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/290-212-dayton-audio-nd105-4-specifications.pdf
   vendor_page: https://www.parts-express.com/Dayton-Audio-ND105-4-4-Aluminum-Cone-Midbass-Driver-4-Ohm-290-212
+datasheet_url: https://www.parts-express.com/pedocs/specs/290-212-dayton-audio-nd105-4-specifications.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-ND105-4-4-Aluminum-Cone-Midbass-Driver-4-Ohm-290-212
+frd_url: https://www.parts-express.com/pedocs/tech-docs/290-212--Dayton-Audio-ND105-4_data.zip
+zma_url: null

@@ -4,32 +4,17 @@ detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T
   parameters have not been verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: null
-manu_page: null
-vendor_page: https://www.soundimports.eu/en/css-ldw6.html
 source: https://www.soundimports.eu/en/css-ldw6.html
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 4.8
-    winner: vendor_page
-    sources:
-      vendor_page: 4.8
-  Sd:  # effective piston area (m²)
+  Vas:  # equivalent acoustic volume (m³)
     value: 0.0093
     winner: vendor_page
     sources:
       vendor_page: 0.0093
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00076
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00076
   Qes:  # electrical Q factor
     value: 0.44
     winner: vendor_page
@@ -40,6 +25,16 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 6.8
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.8
+    winner: vendor_page
+    sources:
+      vendor_page: 4.8
+  Fs:  # free air resonance (Hz)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
   Qts:  # total Q factor
     value: 0.42
     winner: vendor_page
@@ -50,16 +45,16 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 11.1
-  Fs:  # free air resonance (Hz)
-    value: 50.0
-    winner: vendor_page
-    sources:
-      vendor_page: 50.0
-  Vas:  # equivalent acoustic volume (m³)
+  Sd:  # effective piston area (m²)
     value: 0.0093
     winner: vendor_page
     sources:
       vendor_page: 0.0093
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00076
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00076
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 88.4
     winner: vendor_page
@@ -67,3 +62,8 @@ specs:
       vendor_page: 88.4
 _sources:
   vendor_page: https://www.soundimports.eu/en/css-ldw6.html
+datasheet_url: null
+manu_page_url: null
+vendor_page_url: https://www.soundimports.eu/en/css-ldw6.html
+frd_url: null
+zma_url: null

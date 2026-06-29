@@ -6,70 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/GRS-12PF-8-12-Paper-Cone-Foam-Surround-Woofer-292-412
 source: https://www.parts-express.com/GRS-12PF-8-12-Paper-Cone-Foam-Surround-Woofer-292-412
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 292-412
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 7.4
-    winner: vendor_page
-    sources:
-      vendor_page: 7.4
-  Sd:  # effective piston area (m²)
-    value: 0.05243
-    winner: vendor_page
-    sources:
-      vendor_page: 0.05243
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00029
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00029
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0035
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0035
-  Qes:  # electrical Q factor
-    value: 2.76
-    winner: vendor_page
-    sources:
-      vendor_page: 2.76
-  Rms:  # mechanical resistance (kg/s)
-    value: 2.2735643105362926
-    winner: vendor_page
-    sources:
-      vendor_page: 2.2735643105362926
-  BL:  # force factor (T·m)
-    value: 6.3
-    winner: vendor_page
-    sources:
-      vendor_page: 6.3
-  Qts:  # total Q factor
-    value: 1.93
-    winner: vendor_page
-    sources:
-      vendor_page: 1.93
-  Qms:  # mechanical Q factor
-    value: 6.49
-    winner: vendor_page
-    sources:
-      vendor_page: 6.49
   Le:  # voice coil inductance (H)
     value: 0.0012
     winner: vendor_page
     sources:
       vendor_page: 0.0012
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.112417696
+    winner: vendor_page
+    sources:
+      vendor_page: 0.112417696
+  Qes:  # electrical Q factor
+    value: 2.76
+    winner: vendor_page
+    sources:
+      vendor_page: 2.76
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.061799999999999994
+    winner: vendor_page
+    sources:
+      vendor_page: 0.061799999999999994
+  BL:  # force factor (T·m)
+    value: 6.3
+    winner: vendor_page
+    sources:
+      vendor_page: 6.3
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.4
+    winner: vendor_page
+    sources:
+      vendor_page: 7.4
   Pe:  # rated power input (W)
     value: 120.0
     winner: vendor_page
@@ -80,20 +52,48 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 38.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.112417696
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.2735643105362926
     winner: vendor_page
     sources:
-      vendor_page: 0.112417696
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.061799999999999994
+      vendor_page: 2.2735643105362926
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0035
     winner: vendor_page
     sources:
-      vendor_page: 0.061799999999999994
+      vendor_page: 0.0035
+  Qts:  # total Q factor
+    value: 1.93
+    winner: vendor_page
+    sources:
+      vendor_page: 1.93
+  Qms:  # mechanical Q factor
+    value: 6.49
+    winner: vendor_page
+    sources:
+      vendor_page: 6.49
+  Sd:  # effective piston area (m²)
+    value: 0.05243
+    winner: vendor_page
+    sources:
+      vendor_page: 0.05243
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00029
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00029
 _sources:
   vendor_page: https://www.parts-express.com/GRS-12PF-8-12-Paper-Cone-Foam-Surround-Woofer-292-412
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/GRS-12PF-8-12-Paper-Cone-Foam-Surround-Woofer-292-412
+frd_url: null
+zma_url: null

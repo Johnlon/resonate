@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/290-590--eminence-kappalite-3012lf-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Eminence-KAPPALITE-3012LF-Neo-12-Driver-290-590
 source: https://www.parts-express.com/Eminence-KAPPALITE-3012LF-Neo-12-Driver-290-590
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.6
-    winner: vendor_page
-    sources:
-      vendor_page: 5.6
-  Sd:  # effective piston area (m²)
-    value: 0.05454
-    winner: vendor_page
-    sources:
-      vendor_page: 0.05454
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00026000000000000003
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00026000000000000003
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0091
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0091
-  Qes:  # electrical Q factor
-    value: 0.34
-    winner: vendor_page
-    sources:
-      vendor_page: 0.34
-  Rms:  # mechanical resistance (kg/s)
-    value: 2.4118740141680717
-    winner: vendor_page
-    sources:
-      vendor_page: 2.4118740141680717
-  BL:  # force factor (T·m)
-    value: 16.7
-    winner: vendor_page
-    sources:
-      vendor_page: 16.7
-  Qts:  # total Q factor
-    value: 0.32
-    winner: vendor_page
-    sources:
-      vendor_page: 0.32
-  Qms:  # mechanical Q factor
-    value: 6.94
-    winner: vendor_page
-    sources:
-      vendor_page: 6.94
   Le:  # voice coil inductance (H)
     value: 0.00098
     winner: vendor_page
     sources:
       vendor_page: 0.00098
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.106754336
+    winner: vendor_page
+    sources:
+      vendor_page: 0.106754336
+  Qes:  # electrical Q factor
+    value: 0.34
+    winner: vendor_page
+    sources:
+      vendor_page: 0.34
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.072
+    winner: vendor_page
+    sources:
+      vendor_page: 0.072
+  BL:  # force factor (T·m)
+    value: 16.7
+    winner: vendor_page
+    sources:
+      vendor_page: 16.7
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
   Pe:  # rated power input (W)
     value: 450.0
     winner: vendor_page
@@ -76,31 +51,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 37.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.106754336
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.4118740141680717
     winner: vendor_page
     sources:
-      vendor_page: 0.106754336
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.072
+      vendor_page: 2.4118740141680717
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0091
     winner: vendor_page
     sources:
-      vendor_page: 0.072
+      vendor_page: 0.0091
+  Qts:  # total Q factor
+    value: 0.32
+    winner: vendor_page
+    sources:
+      vendor_page: 0.32
+  Qms:  # mechanical Q factor
+    value: 6.94
+    winner: vendor_page
+    sources:
+      vendor_page: 6.94
+  Sd:  # effective piston area (m²)
+    value: 0.05454
+    winner: vendor_page
+    sources:
+      vendor_page: 0.05454
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 46.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00026000000000000003
     winner: vendor_page
     sources:
-      vendor_page: 46.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 2000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 2000.0
+      vendor_page: 0.00026000000000000003
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/290-590--eminence-kappalite-3012lf-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Eminence-KAPPALITE-3012LF-Neo-12-Driver-290-590
+datasheet_url: https://www.parts-express.com/pedocs/specs/290-590--eminence-kappalite-3012lf-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Eminence-KAPPALITE-3012LF-Neo-12-Driver-290-590
+frd_url: null
+zma_url: null

@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/294-1322--faitalpro-10rs350-4-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/FaitalPRO-10RS350-10-Professional-Woofer-4-Ohm-294-1322
 source: https://www.parts-express.com/FaitalPRO-10RS350-10-Professional-Woofer-4-Ohm-294-1322
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.2
-    winner: vendor_page
-    sources:
-      vendor_page: 3.2
-  Sd:  # effective piston area (m²)
-    value: 0.0322
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0322
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00023999999999999998
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00023999999999999998
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00717
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00717
-  Qes:  # electrical Q factor
-    value: 0.33
-    winner: vendor_page
-    sources:
-      vendor_page: 0.33
-  Rms:  # mechanical resistance (kg/s)
-    value: 2.614615821374731
-    winner: vendor_page
-    sources:
-      vendor_page: 2.614615821374731
-  BL:  # force factor (T·m)
-    value: 12.5
-    winner: vendor_page
-    sources:
-      vendor_page: 12.5
-  Qts:  # total Q factor
-    value: 0.31
-    winner: vendor_page
-    sources:
-      vendor_page: 0.31
-  Qms:  # mechanical Q factor
-    value: 6.2
-    winner: vendor_page
-    sources:
-      vendor_page: 6.2
   Le:  # voice coil inductance (H)
     value: 0.00045
     winner: vendor_page
     sources:
       vendor_page: 0.00045
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.035962336
+    winner: vendor_page
+    sources:
+      vendor_page: 0.035962336
+  Qes:  # electrical Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0645
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0645
+  BL:  # force factor (T·m)
+    value: 12.5
+    winner: vendor_page
+    sources:
+      vendor_page: 12.5
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.2
+    winner: vendor_page
+    sources:
+      vendor_page: 3.2
   Pe:  # rated power input (W)
     value: 300.0
     winner: vendor_page
@@ -76,31 +51,46 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 40.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.035962336
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.614615821374731
     winner: vendor_page
     sources:
-      vendor_page: 0.035962336
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0645
+      vendor_page: 2.614615821374731
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00717
     winner: vendor_page
     sources:
-      vendor_page: 0.0645
+      vendor_page: 0.00717
+  Qts:  # total Q factor
+    value: 0.31
+    winner: vendor_page
+    sources:
+      vendor_page: 0.31
+  Qms:  # mechanical Q factor
+    value: 6.2
+    winner: vendor_page
+    sources:
+      vendor_page: 6.2
+  Sd:  # effective piston area (m²)
+    value: 0.0322
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0322
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 40.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00023999999999999998
     winner: vendor_page
     sources:
-      vendor_page: 40.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 2500.0
-    winner: vendor_page
-    sources:
-      vendor_page: 2500.0
+      vendor_page: 0.00023999999999999998
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/294-1322--faitalpro-10rs350-4-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/FaitalPRO-10RS350-10-Professional-Woofer-4-Ohm-294-1322
+datasheet_url: https://www.parts-express.com/pedocs/specs/294-1322--faitalpro-10rs350-4-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/FaitalPRO-10RS350-10-Professional-Woofer-4-Ohm-294-1322
+frd_url: null
+zma_url: null

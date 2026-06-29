@@ -4,63 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/292-553--visaton-sc5.9nd-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Visaton-SC5.9-ND-2-x-3.5-Shielded-Fullrange-Driver-8-Ohm-292-553
 source: https://www.parts-express.com/Visaton-SC5.9-ND-2-x-3.5-Shielded-Fullrange-Driver-8-Ohm-292-553
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 7.7
-    winner: vendor_page
-    sources:
-      vendor_page: 7.7
-  Sd:  # effective piston area (m²)
-    value: 0.00265
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00265
-  Xmax:  # one-way linear excursion (m)
-    value: 0.001
-    winner: vendor_page
-    sources:
-      vendor_page: 0.001
-  Qes:  # electrical Q factor
-    value: 10.02
-    winner: vendor_page
-    sources:
-      vendor_page: 10.02
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.302457057766811
-    winner: vendor_page
-    sources:
-      vendor_page: 0.302457057766811
-  BL:  # force factor (T·m)
-    value: 1.2
-    winner: vendor_page
-    sources:
-      vendor_page: 1.2
-  Qts:  # total Q factor
-    value: 4.1
-    winner: vendor_page
-    sources:
-      vendor_page: 4.1
-  Qms:  # mechanical Q factor
-    value: 6.98
-    winner: vendor_page
-    sources:
-      vendor_page: 6.98
   Le:  # voice coil inductance (H)
     value: 0.0004
     winner: vendor_page
     sources:
       vendor_page: 0.0004
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0003964352
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0003964352
+  Qes:  # electrical Q factor
+    value: 10.02
+    winner: vendor_page
+    sources:
+      vendor_page: 10.02
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0012
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0012
+  BL:  # force factor (T·m)
+    value: 1.2
+    winner: vendor_page
+    sources:
+      vendor_page: 1.2
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.7
+    winner: vendor_page
+    sources:
+      vendor_page: 7.7
   Pe:  # rated power input (W)
     value: 3.0
     winner: vendor_page
@@ -71,31 +51,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 280.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0003964352
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.302457057766811
     winner: vendor_page
     sources:
-      vendor_page: 0.0003964352
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0012
+      vendor_page: 0.302457057766811
+  Xmax:  # one-way linear excursion (m)
+    value: 0.001
     winner: vendor_page
     sources:
-      vendor_page: 0.0012
+      vendor_page: 0.001
+  Qts:  # total Q factor
+    value: 4.1
+    winner: vendor_page
+    sources:
+      vendor_page: 4.1
+  Qms:  # mechanical Q factor
+    value: 6.98
+    winner: vendor_page
+    sources:
+      vendor_page: 6.98
+  Sd:  # effective piston area (m²)
+    value: 0.00265
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00265
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 150.0
-    winner: vendor_page
-    sources:
-      vendor_page: 150.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 17000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 17000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/292-553--visaton-sc5.9nd-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Visaton-SC5.9-ND-2-x-3.5-Shielded-Fullrange-Driver-8-Ohm-292-553
+datasheet_url: https://www.parts-express.com/pedocs/specs/292-553--visaton-sc5.9nd-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Visaton-SC5.9-ND-2-x-3.5-Shielded-Fullrange-Driver-8-Ohm-292-553
+frd_url: null
+zma_url: null

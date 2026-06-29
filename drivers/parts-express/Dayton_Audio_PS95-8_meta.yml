@@ -6,70 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: midrange
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/295-349--dayton-audio-ps95-8-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Dayton-Audio-PS95-8-3-1-2-Point-Source-Full-Range-Driver-8-295-349
 source: https://www.parts-express.com/Dayton-Audio-PS95-8-3-1-2-Point-Source-Full-Range-Driver-8-295-349
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 295-349
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 7.1
-    winner: vendor_page
-    sources:
-      vendor_page: 7.1
-  Sd:  # effective piston area (m²)
-    value: 0.00283
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00283
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00079
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00079
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0025
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0025
-  Qes:  # electrical Q factor
-    value: 0.8
-    winner: vendor_page
-    sources:
-      vendor_page: 0.8
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.22592037101776968
-    winner: vendor_page
-    sources:
-      vendor_page: 0.22592037101776968
-  BL:  # force factor (T·m)
-    value: 3.83
-    winner: vendor_page
-    sources:
-      vendor_page: 3.83
-  Qts:  # total Q factor
-    value: 0.72
-    winner: vendor_page
-    sources:
-      vendor_page: 0.72
-  Qms:  # mechanical Q factor
-    value: 7.33
-    winner: vendor_page
-    sources:
-      vendor_page: 7.33
   Le:  # voice coil inductance (H)
     value: 0.00063
     winner: vendor_page
     sources:
       vendor_page: 0.00063
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.000849504
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000849504
+  Qes:  # electrical Q factor
+    value: 0.8
+    winner: vendor_page
+    sources:
+      vendor_page: 0.8
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0022
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0022
+  BL:  # force factor (T·m)
+    value: 3.83
+    winner: vendor_page
+    sources:
+      vendor_page: 3.83
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.1
+    winner: vendor_page
+    sources:
+      vendor_page: 7.1
   Pe:  # rated power input (W)
     value: 10.0
     winner: vendor_page
@@ -80,21 +52,49 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 119.8
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.000849504
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.22592037101776968
     winner: vendor_page
     sources:
-      vendor_page: 0.000849504
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0022
+      vendor_page: 0.22592037101776968
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0025
     winner: vendor_page
     sources:
-      vendor_page: 0.0022
+      vendor_page: 0.0025
+  Qts:  # total Q factor
+    value: 0.72
+    winner: vendor_page
+    sources:
+      vendor_page: 0.72
+  Qms:  # mechanical Q factor
+    value: 7.33
+    winner: vendor_page
+    sources:
+      vendor_page: 7.33
+  Sd:  # effective piston area (m²)
+    value: 0.00283
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00283
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00079
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00079
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/295-349--dayton-audio-ps95-8-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Dayton-Audio-PS95-8-3-1-2-Point-Source-Full-Range-Driver-8-295-349
+datasheet_url: https://www.parts-express.com/pedocs/specs/295-349--dayton-audio-ps95-8-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Dayton-Audio-PS95-8-3-1-2-Point-Source-Full-Range-Driver-8-295-349
+frd_url: null
+zma_url: null

@@ -6,15 +6,7 @@ corrections: null
 reviewed_by: null
 driver_type: tweeter
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/277-110--beston-rt001a-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Beston-RT001A-Ribbon-Tweeter-277-110
 source: https://www.parts-express.com/Beston-RT001A-Ribbon-Tweeter-277-110
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd; Fs_no_Q
 community: null
@@ -25,11 +17,6 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 5.4
-  SPL:  # sensitivity (dB, 2.83 V/1 m)
-    value: 88.0
-    winner: vendor_page
-    sources:
-      vendor_page: 88.0
   Pe:  # rated power input (W)
     value: 15.0
     winner: vendor_page
@@ -45,6 +32,19 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 6.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 88.0
+    winner: vendor_page
+    sources:
+      vendor_page: 88.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/277-110--beston-rt001a-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Beston-RT001A-Ribbon-Tweeter-277-110
+datasheet_url: https://www.parts-express.com/pedocs/specs/277-110--beston-rt001a-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Beston-RT001A-Ribbon-Tweeter-277-110
+frd_url: null
+zma_url: null

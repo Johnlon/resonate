@@ -6,15 +6,7 @@ corrections: null
 reviewed_by: null
 driver_type: tweeter
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/293-104--ciare-ct440-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Ciare-CT440-1.25-Neodymium-Horn-Tweeter-293-104
 source: https://www.parts-express.com/Ciare-CT440-1.25-Neodymium-Horn-Tweeter-293-104
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd; Fs_no_Q
 community: null
@@ -25,11 +17,6 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 4.5
-  SPL:  # sensitivity (dB, 2.83 V/1 m)
-    value: 110.0
-    winner: vendor_page
-    sources:
-      vendor_page: 110.0
   Pe:  # rated power input (W)
     value: 250.0
     winner: vendor_page
@@ -45,6 +32,11 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 110.0
+    winner: vendor_page
+    sources:
+      vendor_page: 110.0
   freq_low_hz:  # published lower frequency limit (Hz)
     value: 1.25
     winner: vendor_page
@@ -58,3 +50,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/293-104--ciare-ct440-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Ciare-CT440-1.25-Neodymium-Horn-Tweeter-293-104
+datasheet_url: https://www.parts-express.com/pedocs/specs/293-104--ciare-ct440-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Ciare-CT440-1.25-Neodymium-Horn-Tweeter-293-104
+frd_url: null
+zma_url: null

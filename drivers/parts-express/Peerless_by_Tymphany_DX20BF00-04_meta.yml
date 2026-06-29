@@ -6,45 +6,27 @@ corrections: null
 reviewed_by: null
 driver_type: tweeter
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/264-1472--tymphany-dx20bf00-04-spec-sheet.pdf
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/Peerless-DX20BF00-04-3-4-Silk-Dome-Tweeter-4-Ohm-264-1472
 source: https://www.parts-express.com/Peerless-DX20BF00-04-3-4-Silk-Dome-Tweeter-4-Ohm-264-1472
-frd: null
-impedance: null
 obsolete: null
 dq_issue: missing_Sd
 community: null
 fetched_sku: 264-1472
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 2.81
-    winner: vendor_page
-    sources:
-      vendor_page: 2.81
-  Qes:  # electrical Q factor
-    value: 2.93
-    winner: vendor_page
-    sources:
-      vendor_page: 2.93
-  Qts:  # total Q factor
-    value: 1.27
-    winner: vendor_page
-    sources:
-      vendor_page: 1.27
-  Qms:  # mechanical Q factor
-    value: 2.24
-    winner: vendor_page
-    sources:
-      vendor_page: 2.24
   Le:  # voice coil inductance (H)
     value: 1.0e-05
     winner: vendor_page
     sources:
       vendor_page: 1.0e-05
+  Qes:  # electrical Q factor
+    value: 2.93
+    winner: vendor_page
+    sources:
+      vendor_page: 2.93
+  Re:  # DC voice coil resistance (Ω)
+    value: 2.81
+    winner: vendor_page
+    sources:
+      vendor_page: 2.81
   Pe:  # rated power input (W)
     value: 60.0
     winner: vendor_page
@@ -55,6 +37,16 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 822.1
+  Qts:  # total Q factor
+    value: 1.27
+    winner: vendor_page
+    sources:
+      vendor_page: 1.27
+  Qms:  # mechanical Q factor
+    value: 2.24
+    winner: vendor_page
+    sources:
+      vendor_page: 2.24
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
@@ -63,3 +55,11 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/264-1472--tymphany-dx20bf00-04-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Peerless-DX20BF00-04-3-4-Silk-Dome-Tweeter-4-Ohm-264-1472
+datasheet_url: https://www.parts-express.com/pedocs/specs/264-1472--tymphany-dx20bf00-04-spec-sheet.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Peerless-DX20BF00-04-3-4-Silk-Dome-Tweeter-4-Ohm-264-1472
+frd_url: null
+zma_url: null

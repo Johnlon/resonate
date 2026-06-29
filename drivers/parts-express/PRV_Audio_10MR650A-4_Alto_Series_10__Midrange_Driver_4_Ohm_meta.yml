@@ -4,68 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://prvaudio.com/wp-content/uploads/2026/02/PRV-Catalog-2026.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/PRV-Audio-10MR650A-4-10-Midrange-Woofer-4-Ohm-294-3542
 source: https://www.parts-express.com/PRV-Audio-10MR650A-4-10-Midrange-Woofer-4-Ohm-294-3542
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.1
-    winner: vendor_page
-    sources:
-      vendor_page: 3.1
-  Sd:  # effective piston area (m²)
-    value: 0.0398
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0398
-  Cms:  # mechanical compliance (m/N)
-    value: 0.000199
-    winner: vendor_page
-    sources:
-      vendor_page: 0.000199
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00522
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00522
-  Qes:  # electrical Q factor
-    value: 0.4
-    winner: vendor_page
-    sources:
-      vendor_page: 0.4
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.8249499680069688
-    winner: vendor_page
-    sources:
-      vendor_page: 0.8249499680069688
-  BL:  # force factor (T·m)
-    value: 9.96
-    winner: vendor_page
-    sources:
-      vendor_page: 9.96
-  Qts:  # total Q factor
-    value: 0.39
-    winner: vendor_page
-    sources:
-      vendor_page: 0.39
-  Qms:  # mechanical Q factor
-    value: 15.58
-    winner: vendor_page
-    sources:
-      vendor_page: 15.58
   Le:  # voice coil inductance (H)
     value: 0.00028000000000000003
     winner: vendor_page
     sources:
       vendor_page: 0.00028000000000000003
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.04389104
+    winner: vendor_page
+    sources:
+      vendor_page: 0.04389104
+  Qes:  # electrical Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.03294
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03294
+  BL:  # force factor (T·m)
+    value: 9.96
+    winner: vendor_page
+    sources:
+      vendor_page: 9.96
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.1
+    winner: vendor_page
+    sources:
+      vendor_page: 3.1
   Pe:  # rated power input (W)
     value: 650.0
     winner: vendor_page
@@ -76,21 +51,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 62.1
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.04389104
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.8249499680069688
     winner: vendor_page
     sources:
-      vendor_page: 0.04389104
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.03294
+      vendor_page: 0.8249499680069688
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00522
     winner: vendor_page
     sources:
-      vendor_page: 0.03294
+      vendor_page: 0.00522
+  Qts:  # total Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Qms:  # mechanical Q factor
+    value: 15.58
+    winner: vendor_page
+    sources:
+      vendor_page: 15.58
+  Sd:  # effective piston area (m²)
+    value: 0.0398
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0398
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000199
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000199
   freq_low_hz:  # published lower frequency limit (Hz)
     value: 10.0
     winner: vendor_page
@@ -109,3 +104,8 @@ specs:
 _sources:
   datasheet: https://prvaudio.com/wp-content/uploads/2026/02/PRV-Catalog-2026.pdf
   vendor_page: https://www.parts-express.com/PRV-Audio-10MR650A-4-10-Midrange-Woofer-4-Ohm-294-3542
+datasheet_url: https://prvaudio.com/wp-content/uploads/2026/02/PRV-Catalog-2026.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/PRV-Audio-10MR650A-4-10-Midrange-Woofer-4-Ohm-294-3542
+frd_url: null
+zma_url: null

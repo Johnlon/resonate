@@ -6,70 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: woofer
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/FaitalPRO-M5N12-80-5-Neodymium-Professional-Woofer-12-Ohm-294-1143
 source: https://www.parts-express.com/FaitalPRO-M5N12-80-5-Neodymium-Professional-Woofer-12-Ohm-294-1143
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-1143
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 7.2
-    winner: vendor_page
-    sources:
-      vendor_page: 7.2
-  Sd:  # effective piston area (m²)
-    value: 0.00942
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00942
-  Cms:  # mechanical compliance (m/N)
-    value: 8.999999999999999e-05
-    winner: vendor_page
-    sources:
-      vendor_page: 8.999999999999999e-05
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00275
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00275
-  Qes:  # electrical Q factor
-    value: 0.54
-    winner: vendor_page
-    sources:
-      vendor_page: 0.54
-  Rms:  # mechanical resistance (kg/s)
-    value: 3.4348079679248396
-    winner: vendor_page
-    sources:
-      vendor_page: 3.4348079679248396
-  BL:  # force factor (T·m)
-    value: 11.3
-    winner: vendor_page
-    sources:
-      vendor_page: 11.3
-  Qts:  # total Q factor
-    value: 0.45
-    winner: vendor_page
-    sources:
-      vendor_page: 0.45
-  Qms:  # mechanical Q factor
-    value: 2.7
-    winner: vendor_page
-    sources:
-      vendor_page: 2.7
   Le:  # voice coil inductance (H)
     value: 0.00015
     winner: vendor_page
     sources:
       vendor_page: 0.00015
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.001132672
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001132672
+  Qes:  # electrical Q factor
+    value: 0.54
+    winner: vendor_page
+    sources:
+      vendor_page: 0.54
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.008199999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.008199999999999999
+  BL:  # force factor (T·m)
+    value: 11.3
+    winner: vendor_page
+    sources:
+      vendor_page: 11.3
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.2
+    winner: vendor_page
+    sources:
+      vendor_page: 7.2
   Pe:  # rated power input (W)
     value: 80.0
     winner: vendor_page
@@ -80,21 +52,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 180.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.001132672
+  Rms:  # mechanical resistance (kg/s)
+    value: 3.4348079679248396
     winner: vendor_page
     sources:
-      vendor_page: 0.001132672
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.008199999999999999
+      vendor_page: 3.4348079679248396
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00275
     winner: vendor_page
     sources:
-      vendor_page: 0.008199999999999999
+      vendor_page: 0.00275
+  Qts:  # total Q factor
+    value: 0.45
+    winner: vendor_page
+    sources:
+      vendor_page: 0.45
+  Qms:  # mechanical Q factor
+    value: 2.7
+    winner: vendor_page
+    sources:
+      vendor_page: 2.7
+  Sd:  # effective piston area (m²)
+    value: 0.00942
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00942
   Znom:  # nominal impedance (Ω)
     value: 12.0
     winner: vendor_page
     sources:
       vendor_page: 12.0
+  Cms:  # mechanical compliance (m/N)
+    value: 8.999999999999999e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 8.999999999999999e-05
   SPL:  # sensitivity (dB, 2.83 V/1 m)
     value: 99.0
     winner: vendor_page
@@ -102,3 +94,11 @@ specs:
       vendor_page: 99.0
 _sources:
   vendor_page: https://www.parts-express.com/FaitalPRO-M5N12-80-5-Neodymium-Professional-Woofer-12-Ohm-294-1143
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/FaitalPRO-M5N12-80-5-Neodymium-Professional-Woofer-12-Ohm-294-1143
+frd_url: null
+zma_url: null

@@ -4,23 +4,13 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/292-634--visaton-fr-58-4-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/Visaton-FR58-4-2.3-Full-Range-Driver-4-Ohm-292-634
 source: https://www.parts-express.com/Visaton-FR58-4-2.3-Full-Range-Driver-4-Ohm-292-634
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00055
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00055
   Pe:  # rated power input (W)
     value: 10.0
     winner: vendor_page
@@ -31,21 +21,21 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 190.0
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00055
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00055
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 120.0
-    winner: vendor_page
-    sources:
-      vendor_page: 120.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 20000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 20000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/292-634--visaton-fr-58-4-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/Visaton-FR58-4-2.3-Full-Range-Driver-4-Ohm-292-634
+datasheet_url: https://www.parts-express.com/pedocs/specs/292-634--visaton-fr-58-4-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/Visaton-FR58-4-2.3-Full-Range-Driver-4-Ohm-292-634
+frd_url: null
+zma_url: null

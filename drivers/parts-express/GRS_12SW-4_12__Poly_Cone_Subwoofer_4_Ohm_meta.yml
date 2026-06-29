@@ -4,63 +4,43 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/GRS%20Spec%20Sheets/292-484--grs-12sw-4-spec-sheet.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/GRS-12SW-4-12-Poly-Cone-Subwoofer-4-Ohm-292-484
 source: https://www.parts-express.com/GRS-12SW-4-12-Poly-Cone-Subwoofer-4-Ohm-292-484
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.7
-    winner: vendor_page
-    sources:
-      vendor_page: 3.7
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0002
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0002
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0085
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0085
-  Qes:  # electrical Q factor
-    value: 1.02
-    winner: vendor_page
-    sources:
-      vendor_page: 1.02
-  Rms:  # mechanical resistance (kg/s)
-    value: 6.247460463039014
-    winner: vendor_page
-    sources:
-      vendor_page: 6.247460463039014
-  BL:  # force factor (T·m)
-    value: 9.5
-    winner: vendor_page
-    sources:
-      vendor_page: 9.5
-  Qts:  # total Q factor
-    value: 0.82
-    winner: vendor_page
-    sources:
-      vendor_page: 0.82
-  Qms:  # mechanical Q factor
-    value: 4.01
-    winner: vendor_page
-    sources:
-      vendor_page: 4.01
   Le:  # voice coil inductance (H)
     value: 0.0012
     winner: vendor_page
     sources:
       vendor_page: 0.0012
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.06909299199999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.06909299199999999
+  Qes:  # electrical Q factor
+    value: 1.02
+    winner: vendor_page
+    sources:
+      vendor_page: 1.02
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.12459999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.12459999999999999
+  BL:  # force factor (T·m)
+    value: 9.5
+    winner: vendor_page
+    sources:
+      vendor_page: 9.5
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.7
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7
   Pe:  # rated power input (W)
     value: 120.0
     winner: vendor_page
@@ -71,31 +51,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 32.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.06909299199999999
+  Rms:  # mechanical resistance (kg/s)
+    value: 6.247460463039014
     winner: vendor_page
     sources:
-      vendor_page: 0.06909299199999999
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.12459999999999999
+      vendor_page: 6.247460463039014
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0085
     winner: vendor_page
     sources:
-      vendor_page: 0.12459999999999999
+      vendor_page: 0.0085
+  Qts:  # total Q factor
+    value: 0.82
+    winner: vendor_page
+    sources:
+      vendor_page: 0.82
+  Qms:  # mechanical Q factor
+    value: 4.01
+    winner: vendor_page
+    sources:
+      vendor_page: 4.01
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 29.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0002
     winner: vendor_page
     sources:
-      vendor_page: 29.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 800.0
-    winner: vendor_page
-    sources:
-      vendor_page: 800.0
+      vendor_page: 0.0002
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/GRS%20Spec%20Sheets/292-484--grs-12sw-4-spec-sheet.pdf
   vendor_page: https://www.parts-express.com/GRS-12SW-4-12-Poly-Cone-Subwoofer-4-Ohm-292-484
+datasheet_url: https://www.parts-express.com/pedocs/specs/GRS%20Spec%20Sheets/292-484--grs-12sw-4-spec-sheet.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/GRS-12SW-4-12-Poly-Cone-Subwoofer-4-Ohm-292-484
+frd_url: null
+zma_url: null

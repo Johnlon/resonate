@@ -6,65 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: fullrange
 nominal_size_cm: null
-datasheet: https://www.parts-express.com/pedocs/specs/294-5962--bc-speakers-10cxn64-8-spec-sheet.PDF
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/B-C-10CXN64-8-10-Professional-Neodymium-Coaxial-Speaker-80-x-80-Degree-8-Ohm-294-5962
 source: https://www.parts-express.com/B-C-10CXN64-8-10-Professional-Neodymium-Coaxial-Speaker-80-x-80-Degree-8-Ohm-294-5962
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-5962
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.6
-    winner: vendor_page
-    sources:
-      vendor_page: 5.6
-  Sd:  # effective piston area (m²)
-    value: 0.032
-    winner: vendor_page
-    sources:
-      vendor_page: 0.032
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0055
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0055
-  Qes:  # electrical Q factor
-    value: 0.33
-    winner: vendor_page
-    sources:
-      vendor_page: 0.33
-  Rms:  # mechanical resistance (kg/s)
-    value: 2.5559100231705534
-    winner: vendor_page
-    sources:
-      vendor_page: 2.5559100231705534
-  BL:  # force factor (T·m)
-    value: 15.8
-    winner: vendor_page
-    sources:
-      vendor_page: 15.8
-  Qts:  # total Q factor
-    value: 0.31
-    winner: vendor_page
-    sources:
-      vendor_page: 0.31
-  Qms:  # mechanical Q factor
-    value: 5.6
-    winner: vendor_page
-    sources:
-      vendor_page: 5.6
   Le:  # voice coil inductance (H)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.022936608
+    winner: vendor_page
+    sources:
+      vendor_page: 0.022936608
+  Qes:  # electrical Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0335
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0335
+  BL:  # force factor (T·m)
+    value: 15.8
+    winner: vendor_page
+    sources:
+      vendor_page: 15.8
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
   Pe:  # rated power input (W)
     value: 500.0
     winner: vendor_page
@@ -75,31 +52,44 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 68.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.022936608
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.5559100231705534
     winner: vendor_page
     sources:
-      vendor_page: 0.022936608
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0335
+      vendor_page: 2.5559100231705534
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0055
     winner: vendor_page
     sources:
-      vendor_page: 0.0335
+      vendor_page: 0.0055
+  Qts:  # total Q factor
+    value: 0.31
+    winner: vendor_page
+    sources:
+      vendor_page: 0.31
+  Qms:  # mechanical Q factor
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
+  Sd:  # effective piston area (m²)
+    value: 0.032
+    winner: vendor_page
+    sources:
+      vendor_page: 0.032
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
     sources:
       vendor_page: 8.0
-  freq_low_hz:  # published lower frequency limit (Hz)
-    value: 70.0
-    winner: vendor_page
-    sources:
-      vendor_page: 70.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 3000.0
-    winner: vendor_page
-    sources:
-      vendor_page: 3000.0
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/294-5962--bc-speakers-10cxn64-8-spec-sheet.PDF
   vendor_page: https://www.parts-express.com/B-C-10CXN64-8-10-Professional-Neodymium-Coaxial-Speaker-80-x-80-Degree-8-Ohm-294-5962
+datasheet_url: https://www.parts-express.com/pedocs/specs/294-5962--bc-speakers-10cxn64-8-spec-sheet.PDF
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/B-C-10CXN64-8-10-Professional-Neodymium-Coaxial-Speaker-80-x-80-Degree-8-Ohm-294-5962
+frd_url: null
+zma_url: null

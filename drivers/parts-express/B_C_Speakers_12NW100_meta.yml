@@ -6,65 +6,42 @@ corrections: null
 reviewed_by: null
 driver_type: subwoofer
 nominal_size_cm: null
-datasheet: null
-adv_datasheet: null
-drawing: null
-cad: null
-manu_page: null
-vendor_page: https://www.parts-express.com/B-C-12NW100-12-Neodymium-Subwoofer-Speaker-294-571
 source: https://www.parts-express.com/B-C-12NW100-12-Neodymium-Subwoofer-Speaker-294-571
-frd: null
-impedance: null
 obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-571
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 5.1
-    winner: vendor_page
-    sources:
-      vendor_page: 5.1
-  Sd:  # effective piston area (m²)
-    value: 0.0531
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0531
-  Xmax:  # one-way linear excursion (m)
-    value: 0.009
-    winner: vendor_page
-    sources:
-      vendor_page: 0.009
-  Qes:  # electrical Q factor
-    value: 0.21
-    winner: vendor_page
-    sources:
-      vendor_page: 0.21
-  Rms:  # mechanical resistance (kg/s)
-    value: 8.723155601467658
-    winner: vendor_page
-    sources:
-      vendor_page: 8.723155601467658
-  BL:  # force factor (T·m)
-    value: 28.0
-    winner: vendor_page
-    sources:
-      vendor_page: 28.0
-  Qts:  # total Q factor
-    value: 0.2
-    winner: vendor_page
-    sources:
-      vendor_page: 0.2
-  Qms:  # mechanical Q factor
-    value: 3.6
-    winner: vendor_page
-    sources:
-      vendor_page: 3.6
   Le:  # voice coil inductance (H)
     value: 0.0019
     winner: vendor_page
     sources:
       vendor_page: 0.0019
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0424752
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0424752
+  Qes:  # electrical Q factor
+    value: 0.21
+    winner: vendor_page
+    sources:
+      vendor_page: 0.21
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.119
+    winner: vendor_page
+    sources:
+      vendor_page: 0.119
+  BL:  # force factor (T·m)
+    value: 28.0
+    winner: vendor_page
+    sources:
+      vendor_page: 28.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.1
+    winner: vendor_page
+    sources:
+      vendor_page: 5.1
   Pe:  # rated power input (W)
     value: 2000.0
     winner: vendor_page
@@ -75,16 +52,31 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 42.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.0424752
+  Rms:  # mechanical resistance (kg/s)
+    value: 8.723155601467658
     winner: vendor_page
     sources:
-      vendor_page: 0.0424752
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.119
+      vendor_page: 8.723155601467658
+  Xmax:  # one-way linear excursion (m)
+    value: 0.009
     winner: vendor_page
     sources:
-      vendor_page: 0.119
+      vendor_page: 0.009
+  Qts:  # total Q factor
+    value: 0.2
+    winner: vendor_page
+    sources:
+      vendor_page: 0.2
+  Qms:  # mechanical Q factor
+    value: 3.6
+    winner: vendor_page
+    sources:
+      vendor_page: 3.6
+  Sd:  # effective piston area (m²)
+    value: 0.0531
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0531
   Znom:  # nominal impedance (Ω)
     value: 8.0
     winner: vendor_page
@@ -92,3 +84,11 @@ specs:
       vendor_page: 8.0
 _sources:
   vendor_page: https://www.parts-express.com/B-C-12NW100-12-Neodymium-Subwoofer-Speaker-294-571
+datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/B-C-12NW100-12-Neodymium-Subwoofer-Speaker-294-571
+frd_url: null
+zma_url: null

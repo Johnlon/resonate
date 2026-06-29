@@ -4,63 +4,38 @@ detail: Automatically scraped from Parts Express API. T/S parameters have not be
   verified by a human against the datasheet.
 corrections: null
 reviewed_by: null
-datasheet: https://www.parts-express.com/pedocs/specs/294-1123-faitalpro-4fe35-4-specifications.pdf
-manu_page: null
-vendor_page: https://www.parts-express.com/FaitalPRO-4FE35-4-Professional-Woofer-4-Ohm-294-1123
 source: https://www.parts-express.com/FaitalPRO-4FE35-4-Professional-Woofer-4-Ohm-294-1123
-frd: null
-impedance: null
 dq_issue: null
 community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  Re:  # DC voice coil resistance (Ω)
-    value: 3.3
-    winner: vendor_page
-    sources:
-      vendor_page: 3.3
-  Sd:  # effective piston area (m²)
-    value: 0.0048
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0048
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00065
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00065
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00173
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00173
-  Qes:  # electrical Q factor
-    value: 0.9
-    winner: vendor_page
-    sources:
-      vendor_page: 0.9
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.6219396623857966
-    winner: vendor_page
-    sources:
-      vendor_page: 0.6219396623857966
-  Qts:  # total Q factor
-    value: 0.73
-    winner: vendor_page
-    sources:
-      vendor_page: 0.73
-  Qms:  # mechanical Q factor
-    value: 3.94
-    winner: vendor_page
-    sources:
-      vendor_page: 3.94
   Le:  # voice coil inductance (H)
     value: 4.0e-05
     winner: vendor_page
     sources:
       vendor_page: 4.0e-05
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.001982176
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001982176
+  Qes:  # electrical Q factor
+    value: 0.9
+    winner: vendor_page
+    sources:
+      vendor_page: 0.9
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0039
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0039
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.3
+    winner: vendor_page
+    sources:
+      vendor_page: 3.3
   Pe:  # rated power input (W)
     value: 30.0
     winner: vendor_page
@@ -71,21 +46,41 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 100.0
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.001982176
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.6219396623857966
     winner: vendor_page
     sources:
-      vendor_page: 0.001982176
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0039
+      vendor_page: 0.6219396623857966
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00173
     winner: vendor_page
     sources:
-      vendor_page: 0.0039
+      vendor_page: 0.00173
+  Qts:  # total Q factor
+    value: 0.73
+    winner: vendor_page
+    sources:
+      vendor_page: 0.73
+  Qms:  # mechanical Q factor
+    value: 3.94
+    winner: vendor_page
+    sources:
+      vendor_page: 3.94
+  Sd:  # effective piston area (m²)
+    value: 0.0048
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0048
   Znom:  # nominal impedance (Ω)
     value: 4.0
     winner: vendor_page
     sources:
       vendor_page: 4.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00065
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00065
   freq_low_hz:  # published lower frequency limit (Hz)
     value: 2019.1
     winner: vendor_page
@@ -99,3 +94,8 @@ specs:
 _sources:
   datasheet: https://www.parts-express.com/pedocs/specs/294-1123-faitalpro-4fe35-4-specifications.pdf
   vendor_page: https://www.parts-express.com/FaitalPRO-4FE35-4-Professional-Woofer-4-Ohm-294-1123
+datasheet_url: https://www.parts-express.com/pedocs/specs/294-1123-faitalpro-4fe35-4-specifications.pdf
+manu_page_url: null
+vendor_page_url: https://www.parts-express.com/FaitalPRO-4FE35-4-Professional-Woofer-4-Ohm-294-1123
+frd_url: null
+zma_url: null
