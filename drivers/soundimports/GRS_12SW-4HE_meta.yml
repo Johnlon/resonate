@@ -19,66 +19,96 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
-field_provenance:
-  Sd:
-    sources:
-      html: 0.05073
-    winner: html
-  BL:
-    sources:
-      html: 16.2
-    winner: html
-  Pe:
-    sources:
-      html: 250.0
-    winner: html
-  Xmax:
-    sources:
-      html: 0.0125
-    winner: html
-  Mms:
-    sources:
-      html: 0.237
-    winner: html
-  Le:
-    sources:
-      html: 0.0035
-    winner: html
-  Re:
-    sources:
-      html: 3.9
-    winner: html
-  Qts:
-    sources:
-      html: 0.43
-    winner: html
-  Cms:
-    sources:
-      html: 0.00022
-    winner: html
-  Vas:
-    sources:
-      html: 0.080419712
-    winner: html
-  Qes:
-    sources:
-      html: 0.48
-    winner: html
-  Fs:
-    sources:
-      html: 22.0
-    winner: html
-  Znom:
-    sources:
-      html: 4.0
-    winner: html
-  Qms:
-    sources:
-      html: 4.08
-    winner: html
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 500.0
-  sensitivity_db: 84.5
-  linear_xmax_mm: 25.0
+  Sd:  # effective piston area (m²)
+    value: 0.05073
+    winner: vendor_page
+    sources:
+      vendor_page: 0.05073
+  BL:  # force factor (T·m)
+    value: 16.2
+    winner: vendor_page
+    sources:
+      vendor_page: 16.2
+  Pe:  # rated power input (W)
+    value: 250.0
+    winner: vendor_page
+    sources:
+      vendor_page: 250.0
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0125
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0125
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.237
+    winner: vendor_page
+    sources:
+      vendor_page: 0.237
+  Le:  # voice coil inductance (H)
+    value: 0.0035
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0035
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.9
+    winner: vendor_page
+    sources:
+      vendor_page: 3.9
+  Qts:  # total Q factor
+    value: 0.43
+    winner: vendor_page
+    sources:
+      vendor_page: 0.43
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00022
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00022
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.080419712
+    winner: vendor_page
+    sources:
+      vendor_page: 0.080419712
+  Qes:  # electrical Q factor
+    value: 0.48
+    winner: vendor_page
+    sources:
+      vendor_page: 0.48
+  Fs:  # free air resonance (Hz)
+    value: 22.0
+    winner: vendor_page
+    sources:
+      vendor_page: 22.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  Qms:  # mechanical Q factor
+    value: 4.08
+    winner: vendor_page
+    sources:
+      vendor_page: 4.08
+  power_peak_W:  # peak power handling (W)
+    value: 500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 500.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 84.5
+    winner: vendor_page
+    sources:
+      vendor_page: 84.5
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 500.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/grs-12sw-4he.html

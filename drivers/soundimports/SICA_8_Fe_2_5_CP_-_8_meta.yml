@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 300.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.5
+    winner: vendor_page
+    sources:
+      vendor_page: 5.5
+  Sd:  # effective piston area (m²)
+    value: 0.02138
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02138
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00023
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00023
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004
+  Qes:  # electrical Q factor
+    value: 0.28
+    winner: vendor_page
+    sources:
+      vendor_page: 0.28
+  BL:  # force factor (T·m)
+    value: 13.7
+    winner: vendor_page
+    sources:
+      vendor_page: 13.7
+  Qts:  # total Q factor
+    value: 0.25
+    winner: vendor_page
+    sources:
+      vendor_page: 0.25
+  Qms:  # mechanical Q factor
+    value: 2.75
+    winner: vendor_page
+    sources:
+      vendor_page: 2.75
+  Le:  # voice coil inductance (H)
+    value: 0.00045
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00045
+  Pe:  # rated power input (W)
+    value: 300.0
+    winner: vendor_page
+    sources:
+      vendor_page: 300.0
+  Fs:  # free air resonance (Hz)
+    value: 74.2
+    winner: vendor_page
+    sources:
+      vendor_page: 74.2
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0149
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0149
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.02
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sica-8-fe-25-cp-8.html

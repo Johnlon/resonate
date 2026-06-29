@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 40.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.7
+    winner: vendor_page
+    sources:
+      vendor_page: 5.7
+  Sd:  # effective piston area (m²)
+    value: 0.0059
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0059
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00167
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00167
+  Xmax:  # one-way linear excursion (m)
+    value: 0.003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.003
+  Qes:  # electrical Q factor
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
+  BL:  # force factor (T·m)
+    value: 5.4
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4
+  Qts:  # total Q factor
+    value: 0.32
+    winner: vendor_page
+    sources:
+      vendor_page: 0.32
+  Qms:  # mechanical Q factor
+    value: 3.42
+    winner: vendor_page
+    sources:
+      vendor_page: 3.42
+  Le:  # voice coil inductance (H)
+    value: 0.0006
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0006
+  Pe:  # rated power input (W)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  Fs:  # free air resonance (Hz)
+    value: 52.0
+    winner: vendor_page
+    sources:
+      vendor_page: 52.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00028
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00028
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0056
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0056
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/scan-speak-12w-8524g00.html

@@ -16,6 +16,81 @@ fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  freq_low_hz: 20000.0
-  freq_high_hz: 81.0
-  power_rms_W: 10.0
+  Sd:  # effective piston area (m²)
+    value: 0.00236
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00236
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005
+  Qes:  # electrical Q factor
+    value: 0.74
+    winner: vendor_page
+    sources:
+      vendor_page: 0.74
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.4424778385337737
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4424778385337737
+  BL:  # force factor (T·m)
+    value: 3.6
+    winner: vendor_page
+    sources:
+      vendor_page: 3.6
+  Qts:  # total Q factor
+    value: 0.62
+    winner: vendor_page
+    sources:
+      vendor_page: 0.62
+  Qms:  # mechanical Q factor
+    value: 3.55
+    winner: vendor_page
+    sources:
+      vendor_page: 3.55
+  Le:  # voice coil inductance (H)
+    value: 0.00053
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00053
+  Pe:  # rated power input (W)
+    value: 10.0
+    winner: vendor_page
+    sources:
+      vendor_page: 10.0
+  Fs:  # free air resonance (Hz)
+    value: 100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 100.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.000849504
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000849504
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0025
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0025
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 20000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20000.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 81.0
+    winner: vendor_page
+    sources:
+      vendor_page: 81.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/292-7812--visaton-FRS7XWP8-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Visaton-FRS7XWP8-2.5-Full-Range-Speaker-8-Ohm-292-7812

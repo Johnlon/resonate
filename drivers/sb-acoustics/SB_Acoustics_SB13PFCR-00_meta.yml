@@ -15,4 +15,37 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.0087
+    winner: manu_page
+    sources:
+      manu_page: 0.0087
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00133
+    winner: manu_page
+    sources:
+      manu_page: 0.00133
+  Qms:  # mechanical Q factor
+    value: 5.9
+    winner: manu_page
+    sources:
+      manu_page: 5.9
+  Fs:  # free air resonance (Hz)
+    value: 23.0
+    winner: manu_page
+    sources:
+      manu_page: 23.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0142
+    winner: manu_page
+    sources:
+      manu_page: 0.0142
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.036
+    winner: manu_page
+    sources:
+      manu_page: 0.036
+_sources:
+  datasheet: https://sbacoustics.com/wp-content/uploads/2020/03/5in-SB13PFCR-00.pdf
+  manu_page: https://sbacoustics.com/product/5-sb13pfcr-00-paper/

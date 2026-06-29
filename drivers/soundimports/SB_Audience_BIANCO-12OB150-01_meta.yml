@@ -15,4 +15,80 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 150.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.2
+    winner: vendor_page
+    sources:
+      vendor_page: 7.2
+  Sd:  # effective piston area (m²)
+    value: 0.05391
+    winner: vendor_page
+    sources:
+      vendor_page: 0.05391
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00025
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00025
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00679
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00679
+  Qes:  # electrical Q factor
+    value: 0.69
+    winner: vendor_page
+    sources:
+      vendor_page: 0.69
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.26
+    winner: vendor_page
+    sources:
+      vendor_page: 2.26
+  BL:  # force factor (T·m)
+    value: 12.2
+    winner: vendor_page
+    sources:
+      vendor_page: 12.2
+  Qts:  # total Q factor
+    value: 0.63
+    winner: vendor_page
+    sources:
+      vendor_page: 0.63
+  Qms:  # mechanical Q factor
+    value: 6.39
+    winner: vendor_page
+    sources:
+      vendor_page: 6.39
+  Le:  # voice coil inductance (H)
+    value: 0.00118
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00118
+  Pe:  # rated power input (W)
+    value: 150.0
+    winner: vendor_page
+    sources:
+      vendor_page: 150.0
+  Fs:  # free air resonance (Hz)
+    value: 44.0
+    winner: vendor_page
+    sources:
+      vendor_page: 44.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.1038
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1038
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0524
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0524
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sb-audience-bianco-12ob150-01.html

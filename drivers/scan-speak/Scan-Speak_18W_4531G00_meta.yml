@@ -16,4 +16,41 @@ community: null
 fetched_sku: null
 driver_type: woofer
 specs:
-  sensitivity_db: 90.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.4
+    winner: manu_page
+    sources:
+      manu_page: 3.4
+  Sd:  # effective piston area (m²)
+    value: 0.015
+    winner: manu_page
+    sources:
+      manu_page: 0.015
+  BL:  # force factor (T·m)
+    value: 5.7
+    winner: manu_page
+    sources:
+      manu_page: 5.7
+  Qts:  # total Q factor
+    value: 0.35
+    winner: manu_page
+    sources:
+      manu_page: 0.35
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 90.0
+    winner: manu_page
+    sources:
+      manu_page: 90.0
+  Fs:  # free air resonance (Hz)
+    value: 33.0
+    winner: manu_page
+    sources:
+      manu_page: 33.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0419
+    winner: manu_page
+    sources:
+      manu_page: 0.0419
+_sources:
+  datasheet: https://www.scan-speak.dk/datasheet/pdf/18w-4531g00.pdf
+  manu_page: https://www.scan-speak.dk/product/18w-4531g00/

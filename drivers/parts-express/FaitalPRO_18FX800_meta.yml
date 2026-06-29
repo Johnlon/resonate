@@ -21,9 +21,87 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-1089
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  sensitivity_db: 96.0
-  power_rms_W: 1000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.2
+    winner: vendor_page
+    sources:
+      vendor_page: 6.2
+  Sd:  # effective piston area (m²)
+    value: 0.1213
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1213
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00012
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00012
+  Xmax:  # one-way linear excursion (m)
+    value: 0.013800000000000002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.013800000000000002
+  Qes:  # electrical Q factor
+    value: 0.43
+    winner: vendor_page
+    sources:
+      vendor_page: 0.43
+  Rms:  # mechanical resistance (kg/s)
+    value: 5.8
+    winner: vendor_page
+    sources:
+      vendor_page: 5.8
+  BL:  # force factor (T·m)
+    value: 24.0
+    winner: vendor_page
+    sources:
+      vendor_page: 24.0
+  Qts:  # total Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Qms:  # mechanical Q factor
+    value: 6.8
+    winner: vendor_page
+    sources:
+      vendor_page: 6.8
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 96.0
+    winner: vendor_page
+    sources:
+      vendor_page: 96.0
+  Le:  # voice coil inductance (H)
+    value: 0.0015
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0015
+  Pe:  # rated power input (W)
+    value: 1000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1000.0
+  Fs:  # free air resonance (Hz)
+    value: 34.0
+    winner: vendor_page
+    sources:
+      vendor_page: 34.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.247
+    winner: vendor_page
+    sources:
+      vendor_page: 0.247
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.1823
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1823
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-1089--faitalpro-18fx800-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/FaitalPRO-18FX800-18-Subwoofer-8-Ohm-294-1089

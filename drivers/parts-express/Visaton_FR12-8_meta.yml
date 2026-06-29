@@ -19,10 +19,32 @@ obsolete: null
 dq_issue: missing_Sd
 community: null
 fetched_sku: 292-706
-field_provenance: null
-freq_low_hz: 70.0
-freq_high_hz: 18000.0
 specs:
-  freq_low_hz: 70.0
-  freq_high_hz: 18000.0
-  power_rms_W: 15.0
+  Pe:  # rated power input (W)
+    value: 15.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15.0
+  Fs:  # free air resonance (Hz)
+    value: 110.0
+    winner: vendor_page
+    sources:
+      vendor_page: 110.0
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 70.0
+    winner: vendor_page
+    sources:
+      vendor_page: 70.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 18000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 18000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/292-706--visaton-fr12-8-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Visaton-FR12-8-5-Paper-Cone-Low-Profile-Full-Range-Driver-8-Ohm-292-736

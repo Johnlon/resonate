@@ -19,8 +19,27 @@ obsolete: null
 dq_issue: missing_Sd; Fs_no_Q
 community: null
 fetched_sku: 297-415
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 60.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.3
+    winner: vendor_page
+    sources:
+      vendor_page: 4.3
+  Pe:  # rated power input (W)
+    value: 60.0
+    winner: vendor_page
+    sources:
+      vendor_page: 60.0
+  Fs:  # free air resonance (Hz)
+    value: 800.0
+    winner: vendor_page
+    sources:
+      vendor_page: 800.0
+  Znom:  # nominal impedance (Ω)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/297-415-hi-vi-dmn-a-specifications.pdf
+  vendor_page: https://www.parts-express.com/HiVi-DMN-A-Soft-Dome-Fabric-Midrange-297-415

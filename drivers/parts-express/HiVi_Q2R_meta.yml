@@ -19,11 +19,41 @@ obsolete: null
 dq_issue: missing_Sd; Fs_no_Q
 community: null
 fetched_sku: 297-418
-field_provenance: null
-freq_low_hz: 1500.0
-freq_high_hz: 20000.0
 specs:
-  sensitivity_db: 2.83
-  power_rms_W: 15.0
-  freq_low_hz: 1500.0
-  freq_high_hz: 20000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.1
+    winner: vendor_page
+    sources:
+      vendor_page: 5.1
+  Pe:  # rated power input (W)
+    value: 15.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15.0
+  Fs:  # free air resonance (Hz)
+    value: 1000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1000.0
+  Znom:  # nominal impedance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 2.83
+    winner: vendor_page
+    sources:
+      vendor_page: 2.83
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 1500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1500.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 20000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20000.0
+_sources:
+  vendor_page: https://www.parts-express.com/HiVi-Q2R-1-1-8-Textile-Dome-Tweeter-297-418

@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 80.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.7
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7
+  Sd:  # effective piston area (m²)
+    value: 0.022
+    winner: vendor_page
+    sources:
+      vendor_page: 0.022
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00185
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00185
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0045
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0045
+  Qes:  # electrical Q factor
+    value: 0.23
+    winner: vendor_page
+    sources:
+      vendor_page: 0.23
+  BL:  # force factor (T·m)
+    value: 8.2
+    winner: vendor_page
+    sources:
+      vendor_page: 8.2
+  Qts:  # total Q factor
+    value: 0.22
+    winner: vendor_page
+    sources:
+      vendor_page: 0.22
+  Qms:  # mechanical Q factor
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
+  Le:  # voice coil inductance (H)
+    value: 0.0003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0003
+  Pe:  # rated power input (W)
+    value: 80.0
+    winner: vendor_page
+    sources:
+      vendor_page: 80.0
+  Fs:  # free air resonance (Hz)
+    value: 21.0
+    winner: vendor_page
+    sources:
+      vendor_page: 21.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.126
+    winner: vendor_page
+    sources:
+      vendor_page: 0.126
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0325
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0325
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/scan-speak-22w4851t00.html

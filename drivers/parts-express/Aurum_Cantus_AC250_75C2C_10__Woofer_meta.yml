@@ -16,4 +16,81 @@ fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 250.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.0
+    winner: vendor_page
+    sources:
+      vendor_page: 7.0
+  Sd:  # effective piston area (m²)
+    value: 0.0346
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0346
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0011
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0011
+  Xmax:  # one-way linear excursion (m)
+    value: 0.008
+    winner: vendor_page
+    sources:
+      vendor_page: 0.008
+  Qes:  # electrical Q factor
+    value: 0.32
+    winner: vendor_page
+    sources:
+      vendor_page: 0.32
+  Rms:  # mechanical resistance (kg/s)
+    value: 4.54290408440641
+    winner: vendor_page
+    sources:
+      vendor_page: 4.54290408440641
+  BL:  # force factor (T·m)
+    value: 11.4
+    winner: vendor_page
+    sources:
+      vendor_page: 11.4
+  Qts:  # total Q factor
+    value: 0.28
+    winner: vendor_page
+    sources:
+      vendor_page: 0.28
+  Qms:  # mechanical Q factor
+    value: 1.95
+    winner: vendor_page
+    sources:
+      vendor_page: 1.95
+  Le:  # voice coil inductance (H)
+    value: 0.00131
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00131
+  Pe:  # rated power input (W)
+    value: 250.0
+    winner: vendor_page
+    sources:
+      vendor_page: 250.0
+  Fs:  # free air resonance (Hz)
+    value: 23.0
+    winner: vendor_page
+    sources:
+      vendor_page: 23.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.19312057600000002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.19312057600000002
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0613
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0613
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/296-454-aurum-cantus-ac25075c2c-specifications.pdf
+  vendor_page: https://www.parts-express.com/Aurum-Cantus-AC250-75C2C-10-Woofer-296-454

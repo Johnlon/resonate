@@ -15,4 +15,80 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 100.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0
+  Sd:  # effective piston area (m²)
+    value: 0.0075
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0075
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00125
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00125
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0034
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0034
+  Qes:  # electrical Q factor
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.74
+    winner: vendor_page
+    sources:
+      vendor_page: 0.74
+  BL:  # force factor (T·m)
+    value: 4.8
+    winner: vendor_page
+    sources:
+      vendor_page: 4.8
+  Qts:  # total Q factor
+    value: 0.32
+    winner: vendor_page
+    sources:
+      vendor_page: 0.32
+  Qms:  # mechanical Q factor
+    value: 3.53
+    winner: vendor_page
+    sources:
+      vendor_page: 3.53
+  Le:  # voice coil inductance (H)
+    value: 0.00024
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00024
+  Pe:  # rated power input (W)
+    value: 100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 100.0
+  Fs:  # free air resonance (Hz)
+    value: 48.0
+    winner: vendor_page
+    sources:
+      vendor_page: 48.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.01
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0086
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0086
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/seas-ml15rcytp.html

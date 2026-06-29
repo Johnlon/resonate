@@ -19,8 +19,77 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 264-1182
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 10.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.1
+    winner: vendor_page
+    sources:
+      vendor_page: 6.1
+  Sd:  # effective piston area (m²)
+    value: 0.00221
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00221
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0026
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0026
+  Qes:  # electrical Q factor
+    value: 0.81
+    winner: vendor_page
+    sources:
+      vendor_page: 0.81
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.28180086102700447
+    winner: vendor_page
+    sources:
+      vendor_page: 0.28180086102700447
+  BL:  # force factor (T·m)
+    value: 3.19
+    winner: vendor_page
+    sources:
+      vendor_page: 3.19
+  Qts:  # total Q factor
+    value: 0.7
+    winner: vendor_page
+    sources:
+      vendor_page: 0.7
+  Qms:  # mechanical Q factor
+    value: 4.81
+    winner: vendor_page
+    sources:
+      vendor_page: 4.81
+  Le:  # voice coil inductance (H)
+    value: 5.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0e-05
+  Pe:  # rated power input (W)
+    value: 10.0
+    winner: vendor_page
+    sources:
+      vendor_page: 10.0
+  Fs:  # free air resonance (Hz)
+    value: 104.0
+    winner: vendor_page
+    sources:
+      vendor_page: 104.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.000849504
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000849504
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00207
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00207
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/264-1182--tymphany-pls-65f25al02-08-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Peerless-65F25AL02-2-1-2-Aluminum-Full-Range-Speaker-264-1182

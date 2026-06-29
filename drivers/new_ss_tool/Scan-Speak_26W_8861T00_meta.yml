@@ -42,7 +42,78 @@ manu_page_fields:
 - SPL
 - Sd
 - Vas
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  sensitivity_db: 88.5
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.2
+    winner: manu_page
+    sources:
+      manu_page: 6.2
+  Sd:  # effective piston area (m²)
+    value: 0.032
+    winner: manu_page
+    sources:
+      manu_page: 0.032
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00161
+    winner: manu_page
+    sources:
+      manu_page: 0.00161
+  Xmax:  # one-way linear excursion (m)
+    value: 0.009
+    winner: manu_page
+    sources:
+      manu_page: 0.009
+  Qes:  # electrical Q factor
+    value: 0.33
+    winner: manu_page
+    sources:
+      manu_page: 0.33
+  BL:  # force factor (T·m)
+    value: 9.9
+    winner: manu_page
+    sources:
+      manu_page: 9.9
+  Qts:  # total Q factor
+    value: 0.31
+    winner: manu_page
+    sources:
+      manu_page: 0.31
+  Qms:  # mechanical Q factor
+    value: 5.2
+    winner: manu_page
+    sources:
+      manu_page: 5.2
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 88.5
+    winner: manu_page
+    sources:
+      manu_page: 88.5
+  Le:  # voice coil inductance (H)
+    value: 0.00035
+    winner: manu_page
+    sources:
+      manu_page: 0.00035
+  Fs:  # free air resonance (Hz)
+    value: 19.0
+    winner: manu_page
+    sources:
+      manu_page: 19.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.231
+    winner: manu_page
+    sources:
+      manu_page: 0.231
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.04359
+    winner: manu_page
+    sources:
+      manu_page: 0.04359
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: manu_page
+    sources:
+      manu_page: 8.0
+_sources:
+  datasheet: https://www.scan-speak.dk/datasheet/pdf/26w-8861t00.pdf
+  adv_datasheet: https://www.scan-speak.dk/datasheet/adv/26w-8861t00.pdf
+  manu_page: https://www.scan-speak.dk/product/26w-8861t00/

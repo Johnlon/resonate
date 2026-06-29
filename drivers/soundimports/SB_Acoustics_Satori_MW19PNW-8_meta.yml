@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 70.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  Sd:  # effective piston area (m²)
+    value: 0.0158
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0158
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00217
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00217
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0067
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0067
+  Qes:  # electrical Q factor
+    value: 0.29
+    winner: vendor_page
+    sources:
+      vendor_page: 0.29
+  BL:  # force factor (T·m)
+    value: 7.5
+    winner: vendor_page
+    sources:
+      vendor_page: 7.5
+  Qts:  # total Q factor
+    value: 0.27
+    winner: vendor_page
+    sources:
+      vendor_page: 0.27
+  Qms:  # mechanical Q factor
+    value: 4.41
+    winner: vendor_page
+    sources:
+      vendor_page: 4.41
+  Le:  # voice coil inductance (H)
+    value: 0.0002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0002
+  Pe:  # rated power input (W)
+    value: 70.0
+    winner: vendor_page
+    sources:
+      vendor_page: 70.0
+  Fs:  # free air resonance (Hz)
+    value: 32.5
+    winner: vendor_page
+    sources:
+      vendor_page: 32.5
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00268
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00268
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0163
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0163
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sb-acoustics-mw19pnw-8.html

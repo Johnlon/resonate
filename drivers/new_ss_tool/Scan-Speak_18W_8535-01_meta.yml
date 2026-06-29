@@ -30,7 +30,43 @@ manu_page_fields:
 - SPL
 - Sd
 - Vas
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  sensitivity_db: 87.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.9
+    winner: manu_page
+    sources:
+      manu_page: 5.9
+  Sd:  # effective piston area (m²)
+    value: 0.0145
+    winner: manu_page
+    sources:
+      manu_page: 0.0145
+  BL:  # force factor (T·m)
+    value: 5.9
+    winner: manu_page
+    sources:
+      manu_page: 5.9
+  Qts:  # total Q factor
+    value: 0.38
+    winner: manu_page
+    sources:
+      manu_page: 0.38
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 87.0
+    winner: manu_page
+    sources:
+      manu_page: 87.0
+  Fs:  # free air resonance (Hz)
+    value: 25.0
+    winner: manu_page
+    sources:
+      manu_page: 25.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0689
+    winner: manu_page
+    sources:
+      manu_page: 0.0689
+_sources:
+  datasheet: https://www.scan-speak.dk/datasheet/pdf/18w-8535-01.pdf
+  adv_datasheet: https://www.scan-speak.dk/datasheet/adv/18w-8535-01.pdf
+  manu_page: https://www.scan-speak.dk/product/18w-8535-01/

@@ -15,6 +15,90 @@ community: null
 fetched_sku: null
 driver_type: midrange
 specs:
-  sensitivity_db: 94.0
-  voice_coil_dia_mm: 137.0
-  linear_xmax_mm: 3.7
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.4
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4
+  Sd:  # effective piston area (m²)
+    value: 0.01803
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01803
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00185
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00185
+  Qes:  # electrical Q factor
+    value: 0.32
+    winner: vendor_page
+    sources:
+      vendor_page: 0.32
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.54
+    winner: vendor_page
+    sources:
+      vendor_page: 0.54
+  BL:  # force factor (T·m)
+    value: 8.8
+    winner: vendor_page
+    sources:
+      vendor_page: 8.8
+  Qts:  # total Q factor
+    value: 0.31
+    winner: vendor_page
+    sources:
+      vendor_page: 0.31
+  Qms:  # mechanical Q factor
+    value: 7.3
+    winner: vendor_page
+    sources:
+      vendor_page: 7.3
+  Le:  # voice coil inductance (H)
+    value: 3.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0e-05
+  Fs:  # free air resonance (Hz)
+    value: 63.0
+    winner: vendor_page
+    sources:
+      vendor_page: 63.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0246
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0246
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0117
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0117
+  Znom:  # nominal impedance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 94.0
+    winner: vendor_page
+    sources:
+      vendor_page: 94.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 180.0
+    winner: vendor_page
+    sources:
+      vendor_page: 180.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 2.2
+    winner: vendor_page
+    sources:
+      vendor_page: 2.2
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 137.0
+    winner: vendor_page
+    sources:
+      vendor_page: 137.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/bliesma-m142p-6.html

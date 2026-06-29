@@ -15,9 +15,67 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
-freq_low_hz: 300.0
-freq_high_hz: 12000.0
 specs:
-  freq_low_hz: 300.0
-  freq_high_hz: 12000.0
-  power_rms_W: 180.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.4
+    winner: vendor_page
+    sources:
+      vendor_page: 6.4
+  Sd:  # effective piston area (m²)
+    value: 0.002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.002
+  Qes:  # electrical Q factor
+    value: 0.67
+    winner: vendor_page
+    sources:
+      vendor_page: 0.67
+  Qts:  # total Q factor
+    value: 0.28
+    winner: vendor_page
+    sources:
+      vendor_page: 0.28
+  Le:  # voice coil inductance (H)
+    value: 0.00016
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00016
+  Pe:  # rated power input (W)
+    value: 120.0
+    winner: vendor_page
+    sources:
+      vendor_page: 120.0
+  Fs:  # free air resonance (Hz)
+    value: 455.0
+    winner: vendor_page
+    sources:
+      vendor_page: 455.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 2.83168e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 2.83168e-05
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0012
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0012
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 300.0
+    winner: vendor_page
+    sources:
+      vendor_page: 300.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 12000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 12000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/292-7803--visaton-g50ffl8-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Visaton-G50FFL8-2-Fabric-Dome-Driver-8-Ohm-292-7803

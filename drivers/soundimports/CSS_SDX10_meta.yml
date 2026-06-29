@@ -15,6 +15,95 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 1500.0
-  sensitivity_db: 87.2
-  linear_xmax_mm: 36.8
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.5
+    winner: vendor_page
+    sources:
+      vendor_page: 3.5
+  Sd:  # effective piston area (m²)
+    value: 0.02924
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02924
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00028
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00028
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0184
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0184
+  Qes:  # electrical Q factor
+    value: 0.63
+    winner: vendor_page
+    sources:
+      vendor_page: 0.63
+  BL:  # force factor (T·m)
+    value: 10.26
+    winner: vendor_page
+    sources:
+      vendor_page: 10.26
+  Qts:  # total Q factor
+    value: 0.54
+    winner: vendor_page
+    sources:
+      vendor_page: 0.54
+  Qms:  # mechanical Q factor
+    value: 3.69
+    winner: vendor_page
+    sources:
+      vendor_page: 3.69
+  Le:  # voice coil inductance (H)
+    value: 0.00142
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00142
+  Pe:  # rated power input (W)
+    value: 750.0
+    winner: vendor_page
+    sources:
+      vendor_page: 750.0
+  Fs:  # free air resonance (Hz)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.03398
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03398
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.1005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1005
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  power_peak_W:  # peak power handling (W)
+    value: 1500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1500.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 87.2
+    winner: vendor_page
+    sources:
+      vendor_page: 87.2
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 16.0
+    winner: vendor_page
+    sources:
+      vendor_page: 16.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 500.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/css-sdx10.html

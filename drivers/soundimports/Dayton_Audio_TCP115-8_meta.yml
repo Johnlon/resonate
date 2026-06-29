@@ -19,66 +19,96 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
-field_provenance:
-  Sd:
-    sources:
-      html: 0.005
-    winner: html
-  BL:
-    sources:
-      html: 7.4
-    winner: html
-  Pe:
-    sources:
-      html: 40.0
-    winner: html
-  Xmax:
-    sources:
-      html: 0.004
-    winner: html
-  Mms:
-    sources:
-      html: 0.01016
-    winner: html
-  Le:
-    sources:
-      html: 0.0019
-    winner: html
-  Re:
-    sources:
-      html: 7.8
-    winner: html
-  Qts:
-    sources:
-      html: 0.43
-    winner: html
-  Cms:
-    sources:
-      html: 0.00071
-    winner: html
-  Vas:
-    sources:
-      html: 0.002548512
-    winner: html
-  Qes:
-    sources:
-      html: 0.54
-    winner: html
-  Fs:
-    sources:
-      html: 59.2
-    winner: html
-  Znom:
-    sources:
-      html: 8.0
-    winner: html
-  Qms:
-    sources:
-      html: 2.3
-    winner: html
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 80.0
-  sensitivity_db: 81.9
-  linear_xmax_mm: 8.0
+  Sd:  # effective piston area (m²)
+    value: 0.005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005
+  BL:  # force factor (T·m)
+    value: 7.4
+    winner: vendor_page
+    sources:
+      vendor_page: 7.4
+  Pe:  # rated power input (W)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.01016
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01016
+  Le:  # voice coil inductance (H)
+    value: 0.0019
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0019
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.8
+    winner: vendor_page
+    sources:
+      vendor_page: 7.8
+  Qts:  # total Q factor
+    value: 0.43
+    winner: vendor_page
+    sources:
+      vendor_page: 0.43
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00071
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00071
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.002548512
+    winner: vendor_page
+    sources:
+      vendor_page: 0.002548512
+  Qes:  # electrical Q factor
+    value: 0.54
+    winner: vendor_page
+    sources:
+      vendor_page: 0.54
+  Fs:  # free air resonance (Hz)
+    value: 59.2
+    winner: vendor_page
+    sources:
+      vendor_page: 59.2
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  Qms:  # mechanical Q factor
+    value: 2.3
+    winner: vendor_page
+    sources:
+      vendor_page: 2.3
+  power_peak_W:  # peak power handling (W)
+    value: 80.0
+    winner: vendor_page
+    sources:
+      vendor_page: 80.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 81.9
+    winner: vendor_page
+    sources:
+      vendor_page: 81.9
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 55.0
+    winner: vendor_page
+    sources:
+      vendor_page: 55.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-tcp115-8.html

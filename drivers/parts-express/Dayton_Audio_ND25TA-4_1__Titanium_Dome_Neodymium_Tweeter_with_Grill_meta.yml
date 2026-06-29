@@ -15,9 +15,57 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
-freq_low_hz: 2900.0
-freq_high_hz: 20000.0
 specs:
-  power_rms_W: 22.0
-  freq_low_hz: 2900.0
-  freq_high_hz: 20000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.2
+    winner: vendor_page
+    sources:
+      vendor_page: 3.2
+  Qes:  # electrical Q factor
+    value: 2.63
+    winner: vendor_page
+    sources:
+      vendor_page: 2.63
+  Qts:  # total Q factor
+    value: 1.45
+    winner: vendor_page
+    sources:
+      vendor_page: 1.45
+  Qms:  # mechanical Q factor
+    value: 3.24
+    winner: vendor_page
+    sources:
+      vendor_page: 3.24
+  Le:  # voice coil inductance (H)
+    value: 0.00047999999999999996
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00047999999999999996
+  Pe:  # rated power input (W)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  Fs:  # free air resonance (Hz)
+    value: 1470.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1470.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 2900.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2900.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 20000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/275-057--dayton-audio-nd25ta-4-1-inch-titanium-dome-neodymium-tweeter-4-ohm-specifications.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-ND25TA-4-1-Titanium-Dome-Neodymium-Tweeter-275-057

@@ -19,8 +19,81 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-1323
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 300.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.3
+    winner: vendor_page
+    sources:
+      vendor_page: 5.3
+  Sd:  # effective piston area (m²)
+    value: 0.0322
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0322
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00027
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00027
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00737
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00737
+  Qes:  # electrical Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.8515994855661195
+    winner: vendor_page
+    sources:
+      vendor_page: 2.8515994855661195
+  BL:  # force factor (T·m)
+    value: 14.0
+    winner: vendor_page
+    sources:
+      vendor_page: 14.0
+  Qts:  # total Q factor
+    value: 0.37
+    winner: vendor_page
+    sources:
+      vendor_page: 0.37
+  Qms:  # mechanical Q factor
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
+  Le:  # voice coil inductance (H)
+    value: 0.00095
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00095
+  Pe:  # rated power input (W)
+    value: 300.0
+    winner: vendor_page
+    sources:
+      vendor_page: 300.0
+  Fs:  # free air resonance (Hz)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.039360351999999994
+    winner: vendor_page
+    sources:
+      vendor_page: 0.039360351999999994
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.059
+    winner: vendor_page
+    sources:
+      vendor_page: 0.059
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.parts-express.com/FaitalPRO-10RS350-10-Professional-Woofer-8-Ohm-294-1323

@@ -19,8 +19,81 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-2511
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 150.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.59
+    winner: vendor_page
+    sources:
+      vendor_page: 5.59
+  Sd:  # effective piston area (m²)
+    value: 0.015453999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.015453999999999999
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000298
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000298
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0035
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0035
+  Qes:  # electrical Q factor
+    value: 0.516
+    winner: vendor_page
+    sources:
+      vendor_page: 0.516
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.0765149960055123
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0765149960055123
+  BL:  # force factor (T·m)
+    value: 0.298
+    winner: vendor_page
+    sources:
+      vendor_page: 0.298
+  Qts:  # total Q factor
+    value: 0.472
+    winner: vendor_page
+    sources:
+      vendor_page: 0.472
+  Qms:  # mechanical Q factor
+    value: 5.535
+    winner: vendor_page
+    sources:
+      vendor_page: 5.535
+  Le:  # voice coil inductance (H)
+    value: 0.00036899999999999997
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00036899999999999997
+  Pe:  # rated power input (W)
+    value: 150.0
+    winner: vendor_page
+    sources:
+      vendor_page: 150.0
+  Fs:  # free air resonance (Hz)
+    value: 89.6
+    winner: vendor_page
+    sources:
+      vendor_page: 89.6
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.007362368
+    winner: vendor_page
+    sources:
+      vendor_page: 0.007362368
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.010584
+    winner: vendor_page
+    sources:
+      vendor_page: 0.010584
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.parts-express.com/Celestion-Truvox-0615-6.5-Midbass-Woofer-8-Ohm-294-2511

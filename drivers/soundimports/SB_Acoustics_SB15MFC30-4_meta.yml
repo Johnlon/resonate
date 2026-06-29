@@ -15,4 +15,80 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 50.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.1
+    winner: vendor_page
+    sources:
+      vendor_page: 3.1
+  Sd:  # effective piston area (m²)
+    value: 0.0082
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0082
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00203
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00203
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005
+  Qes:  # electrical Q factor
+    value: 0.3
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.42
+    winner: vendor_page
+    sources:
+      vendor_page: 0.42
+  BL:  # force factor (T·m)
+    value: 4.8
+    winner: vendor_page
+    sources:
+      vendor_page: 4.8
+  Qts:  # total Q factor
+    value: 0.28
+    winner: vendor_page
+    sources:
+      vendor_page: 0.28
+  Qms:  # mechanical Q factor
+    value: 5.26
+    winner: vendor_page
+    sources:
+      vendor_page: 5.26
+  Le:  # voice coil inductance (H)
+    value: 0.00012
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00012
+  Pe:  # rated power input (W)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  Fs:  # free air resonance (Hz)
+    value: 35.5
+    winner: vendor_page
+    sources:
+      vendor_page: 35.5
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0194
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0194
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0099
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0099
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sb-acoustics-sb15mfc30-4.html

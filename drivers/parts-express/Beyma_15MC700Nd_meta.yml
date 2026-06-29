@@ -19,9 +19,87 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 253-017
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  sensitivity_db: 100.0
-  power_rms_W: 700.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
+  Sd:  # effective piston area (m²)
+    value: 0.088
+    winner: vendor_page
+    sources:
+      vendor_page: 0.088
+  Cms:  # mechanical compliance (m/N)
+    value: 0.096
+    winner: vendor_page
+    sources:
+      vendor_page: 0.096
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004
+  Qes:  # electrical Q factor
+    value: 0.34
+    winner: vendor_page
+    sources:
+      vendor_page: 0.34
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.009150761268206268
+    winner: vendor_page
+    sources:
+      vendor_page: 0.009150761268206268
+  BL:  # force factor (T·m)
+    value: 22.6
+    winner: vendor_page
+    sources:
+      vendor_page: 22.6
+  Qts:  # total Q factor
+    value: 0.31
+    winner: vendor_page
+    sources:
+      vendor_page: 0.31
+  Qms:  # mechanical Q factor
+    value: 3.6
+    winner: vendor_page
+    sources:
+      vendor_page: 3.6
+  Le:  # voice coil inductance (H)
+    value: 0.0008
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0008
+  Pe:  # rated power input (W)
+    value: 700.0
+    winner: vendor_page
+    sources:
+      vendor_page: 700.0
+  Fs:  # free air resonance (Hz)
+    value: 49.0
+    winner: vendor_page
+    sources:
+      vendor_page: 49.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.105055328
+    winner: vendor_page
+    sources:
+      vendor_page: 0.105055328
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.000107
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000107
+  Znom:  # nominal impedance (Ω)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 100.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/253-017--15mc700nd-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Beyma-15MC700Nd-MC-Series-15-Neo-Subwoofer-8-Ohm-253-017

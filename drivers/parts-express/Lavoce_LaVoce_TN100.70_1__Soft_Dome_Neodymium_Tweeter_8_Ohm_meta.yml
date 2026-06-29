@@ -15,9 +15,57 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
-freq_low_hz: 1500.0
-freq_high_hz: 30000.0
 specs:
-  freq_low_hz: 2019.1
-  freq_high_hz: 293.0
-  power_rms_W: 8.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.9
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9
+  Qes:  # electrical Q factor
+    value: 2.9
+    winner: vendor_page
+    sources:
+      vendor_page: 2.9
+  Qts:  # total Q factor
+    value: 1.2
+    winner: vendor_page
+    sources:
+      vendor_page: 1.2
+  Qms:  # mechanical Q factor
+    value: 2.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0
+  Le:  # voice coil inductance (H)
+    value: 2.9999999999999997e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 2.9999999999999997e-05
+  Pe:  # rated power input (W)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  Fs:  # free air resonance (Hz)
+    value: 1500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1500.0
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 2019.1
+    winner: vendor_page
+    sources:
+      vendor_page: 2019.1
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 293.0
+    winner: vendor_page
+    sources:
+      vendor_page: 293.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/293-738--lavoce-tn100.70-specifications.pdf
+  vendor_page: https://www.parts-express.com/LaVoce-TN100.70-1-Soft-Dome-Neodymium-Tweeter-8-Ohm-293-738

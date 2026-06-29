@@ -15,4 +15,65 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 40.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.2
+    winner: vendor_page
+    sources:
+      vendor_page: 6.2
+  Sd:  # effective piston area (m²)
+    value: 0.0085
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0085
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0019898
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0019898
+  Xmax:  # one-way linear excursion (m)
+    value: 0.007
+    winner: vendor_page
+    sources:
+      vendor_page: 0.007
+  Qes:  # electrical Q factor
+    value: 0.4354
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4354
+  Qts:  # total Q factor
+    value: 0.36
+    winner: vendor_page
+    sources:
+      vendor_page: 0.36
+  Qms:  # mechanical Q factor
+    value: 2.2008
+    winner: vendor_page
+    sources:
+      vendor_page: 2.2008
+  Pe:  # rated power input (W)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  Fs:  # free air resonance (Hz)
+    value: 48.5
+    winner: vendor_page
+    sources:
+      vendor_page: 48.5
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.02005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02005
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0054051
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0054051
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/markaudio-chp-90.html

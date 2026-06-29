@@ -15,4 +15,80 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 40.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.7
+    winner: vendor_page
+    sources:
+      vendor_page: 5.7
+  Sd:  # effective piston area (m²)
+    value: 0.0136
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0136
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00119
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00119
+  Xmax:  # one-way linear excursion (m)
+    value: 0.003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.003
+  Qes:  # electrical Q factor
+    value: 0.42
+    winner: vendor_page
+    sources:
+      vendor_page: 0.42
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.51
+    winner: vendor_page
+    sources:
+      vendor_page: 0.51
+  BL:  # force factor (T·m)
+    value: 6.6
+    winner: vendor_page
+    sources:
+      vendor_page: 6.6
+  Qts:  # total Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Qms:  # mechanical Q factor
+    value: 6.29
+    winner: vendor_page
+    sources:
+      vendor_page: 6.29
+  Le:  # voice coil inductance (H)
+    value: 0.00049
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00049
+  Pe:  # rated power input (W)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  Fs:  # free air resonance (Hz)
+    value: 42.0
+    winner: vendor_page
+    sources:
+      vendor_page: 42.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.031
+    winner: vendor_page
+    sources:
+      vendor_page: 0.031
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0121
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0121
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/seas-fea18rcz.html

@@ -15,9 +15,32 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
-freq_low_hz: 200.0
-freq_high_hz: 15000.0
 specs:
-  freq_low_hz: 200.0
-  freq_high_hz: 15000.0
-  power_rms_W: 2.0
+  Pe:  # rated power input (W)
+    value: 2.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0
+  Fs:  # free air resonance (Hz)
+    value: 300.0
+    winner: vendor_page
+    sources:
+      vendor_page: 300.0
+  Znom:  # nominal impedance (Ω)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 15000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/292-716--visaton-k64wp-50-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Visaton-K64WP-50-2-1-2-Waterproof-Full-Range-Driver-with-Plastic-Diaphragm-50-Ohm-292-746

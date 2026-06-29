@@ -15,5 +15,60 @@ community: null
 fetched_sku: null
 driver_type: tweeter
 specs:
-  power_rms_W: 15.0
-  sensitivity_db: 93.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.2
+    winner: vendor_page
+    sources:
+      vendor_page: 3.2
+  Qes:  # electrical Q factor
+    value: 3.74
+    winner: vendor_page
+    sources:
+      vendor_page: 3.74
+  Qts:  # total Q factor
+    value: 1.33
+    winner: vendor_page
+    sources:
+      vendor_page: 1.33
+  Qms:  # mechanical Q factor
+    value: 2.08
+    winner: vendor_page
+    sources:
+      vendor_page: 2.08
+  Le:  # voice coil inductance (H)
+    value: 3.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0e-05
+  Pe:  # rated power input (W)
+    value: 15.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15.0
+  Fs:  # free air resonance (Hz)
+    value: 2072.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2072.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 93.0
+    winner: vendor_page
+    sources:
+      vendor_page: 93.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 3.5
+    winner: vendor_page
+    sources:
+      vendor_page: 3.5
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 25.0
+    winner: vendor_page
+    sources:
+      vendor_page: 25.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-nd20fb-4.html

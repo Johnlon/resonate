@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 30.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.1
+    winner: vendor_page
+    sources:
+      vendor_page: 3.1
+  Sd:  # effective piston area (m²)
+    value: 0.005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0015
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0015
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005
+  Qes:  # electrical Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  BL:  # force factor (T·m)
+    value: 4.35
+    winner: vendor_page
+    sources:
+      vendor_page: 4.35
+  Qts:  # total Q factor
+    value: 0.31
+    winner: vendor_page
+    sources:
+      vendor_page: 0.31
+  Qms:  # mechanical Q factor
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+  Le:  # voice coil inductance (H)
+    value: 0.00024
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00024
+  Pe:  # rated power input (W)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  Fs:  # free air resonance (Hz)
+    value: 52.5
+    winner: vendor_page
+    sources:
+      vendor_page: 52.5
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0061
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0061
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sb-acoustics-sb12pac25-4.html

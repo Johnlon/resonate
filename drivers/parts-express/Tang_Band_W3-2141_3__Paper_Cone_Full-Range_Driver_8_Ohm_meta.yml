@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
-freq_low_hz: 75.0
-freq_high_hz: 20000.0
 specs:
-  power_rms_W: 25.0
-  freq_low_hz: 75.0
-  freq_high_hz: 20000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.5
+    winner: vendor_page
+    sources:
+      vendor_page: 6.5
+  Sd:  # effective piston area (m²)
+    value: 0.0032090000000000005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0032090000000000005
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00225
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00225
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0016
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0016
+  Qes:  # electrical Q factor
+    value: 0.46
+    winner: vendor_page
+    sources:
+      vendor_page: 0.46
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.31334570550844815
+    winner: vendor_page
+    sources:
+      vendor_page: 0.31334570550844815
+  BL:  # force factor (T·m)
+    value: 3.64
+    winner: vendor_page
+    sources:
+      vendor_page: 3.64
+  Qts:  # total Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Qms:  # mechanical Q factor
+    value: 2.51
+    winner: vendor_page
+    sources:
+      vendor_page: 2.51
+  Le:  # voice coil inductance (H)
+    value: 2.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0e-05
+  Pe:  # rated power input (W)
+    value: 25.0
+    winner: vendor_page
+    sources:
+      vendor_page: 25.0
+  Fs:  # free air resonance (Hz)
+    value: 75.0
+    winner: vendor_page
+    sources:
+      vendor_page: 75.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0032847488
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0032847488
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0016690000000000001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0016690000000000001
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 75.0
+    winner: vendor_page
+    sources:
+      vendor_page: 75.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 20000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/264-956--tang-band-w3-2141-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Tang-Band-W3-2141-3-Paper-Cone-Full-Range-Driver-8-Ohm-264-956

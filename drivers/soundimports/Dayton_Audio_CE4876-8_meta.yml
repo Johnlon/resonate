@@ -15,7 +15,100 @@ community: null
 fetched_sku: null
 driver_type: fullrange
 specs:
-  power_rms_W: 30.0
-  sensitivity_db: 85.0
-  voice_coil_dia_mm: 16.0
-  linear_xmax_mm: 4.4
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.2
+    winner: vendor_page
+    sources:
+      vendor_page: 7.2
+  Sd:  # effective piston area (m²)
+    value: 0.00263
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00263
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00038
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00038
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0022
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0022
+  Qes:  # electrical Q factor
+    value: 1.72
+    winner: vendor_page
+    sources:
+      vendor_page: 1.72
+  BL:  # force factor (T·m)
+    value: 2.94
+    winner: vendor_page
+    sources:
+      vendor_page: 2.94
+  Qts:  # total Q factor
+    value: 1.42
+    winner: vendor_page
+    sources:
+      vendor_page: 1.42
+  Qms:  # mechanical Q factor
+    value: 8.13
+    winner: vendor_page
+    sources:
+      vendor_page: 8.13
+  Le:  # voice coil inductance (H)
+    value: 0.00017
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00017
+  Pe:  # rated power input (W)
+    value: 15.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15.0
+  Fs:  # free air resonance (Hz)
+    value: 203.0
+    winner: vendor_page
+    sources:
+      vendor_page: 203.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00037
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00037
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0016
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0016
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  power_peak_W:  # peak power handling (W)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 85.0
+    winner: vendor_page
+    sources:
+      vendor_page: 85.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 150.0
+    winner: vendor_page
+    sources:
+      vendor_page: 150.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 17.0
+    winner: vendor_page
+    sources:
+      vendor_page: 17.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 16.0
+    winner: vendor_page
+    sources:
+      vendor_page: 16.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-ce4876-8.html

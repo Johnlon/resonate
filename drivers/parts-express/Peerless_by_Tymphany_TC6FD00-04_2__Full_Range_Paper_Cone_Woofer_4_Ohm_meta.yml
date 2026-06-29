@@ -15,9 +15,82 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
-freq_low_hz: 150.0
-freq_high_hz: 20000.0
 specs:
-  power_rms_W: 15.0
-  freq_low_hz: 150.0
-  freq_high_hz: 20000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.5
+    winner: vendor_page
+    sources:
+      vendor_page: 3.5
+  Sd:  # effective piston area (m²)
+    value: 0.0015199999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0015199999999999999
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00068
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00068
+  Xmax:  # one-way linear excursion (m)
+    value: 0.001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001
+  Qes:  # electrical Q factor
+    value: 1.29
+    winner: vendor_page
+    sources:
+      vendor_page: 1.29
+  BL:  # force factor (T·m)
+    value: 1.92
+    winner: vendor_page
+    sources:
+      vendor_page: 1.92
+  Qts:  # total Q factor
+    value: 0.98
+    winner: vendor_page
+    sources:
+      vendor_page: 0.98
+  Qms:  # mechanical Q factor
+    value: 4.1
+    winner: vendor_page
+    sources:
+      vendor_page: 4.1
+  Le:  # voice coil inductance (H)
+    value: 2.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0e-05
+  Pe:  # rated power input (W)
+    value: 15.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15.0
+  Fs:  # free air resonance (Hz)
+    value: 175.0
+    winner: vendor_page
+    sources:
+      vendor_page: 175.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0002265344
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0002265344
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 150.0
+    winner: vendor_page
+    sources:
+      vendor_page: 150.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 20000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/264-1126--tymphany-tc6fd00-04-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Peerless-TC6FD00-04-2-Full-Range-Paper-Cone-Woofer-4-Ohm-264-1126

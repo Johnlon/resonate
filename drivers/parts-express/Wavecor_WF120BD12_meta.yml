@@ -21,8 +21,67 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 298-1228
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 40.0
+  Sd:  # effective piston area (m²)
+    value: 0.0048
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0048
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00115
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00115
+  Xmax:  # one-way linear excursion (m)
+    value: 0.003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.003
+  Qes:  # electrical Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.25
+    winner: vendor_page
+    sources:
+      vendor_page: 0.25
+  Qts:  # total Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Qms:  # mechanical Q factor
+    value: 9.6
+    winner: vendor_page
+    sources:
+      vendor_page: 9.6
+  Pe:  # rated power input (W)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  Fs:  # free air resonance (Hz)
+    value: 58.0
+    winner: vendor_page
+    sources:
+      vendor_page: 58.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0038
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0038
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0066
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0066
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/298-1228--wf120bd13-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Wavecor-WF120BD12-4-3-4-Kevlar-Carbon-Fiber-Cone-Midwoofer-8-Ohm-298-1228

@@ -15,4 +15,30 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 160.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.26
+    winner: vendor_page
+    sources:
+      vendor_page: 7.26
+  Le:  # voice coil inductance (H)
+    value: 0.00032
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00032
+  Pe:  # rated power input (W)
+    value: 160.0
+    winner: vendor_page
+    sources:
+      vendor_page: 160.0
+  Fs:  # free air resonance (Hz)
+    value: 29.9
+    winner: vendor_page
+    sources:
+      vendor_page: 29.9
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/xcite-xtb40-8.html

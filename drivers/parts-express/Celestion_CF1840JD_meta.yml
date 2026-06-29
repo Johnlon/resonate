@@ -19,8 +19,81 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-2102
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 10.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.29
+    winner: vendor_page
+    sources:
+      vendor_page: 5.29
+  Sd:  # effective piston area (m²)
+    value: 0.1134
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1134
+  Cms:  # mechanical compliance (m/N)
+    value: 8.999999999999999e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 8.999999999999999e-05
+  Xmax:  # one-way linear excursion (m)
+    value: 0.01
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01
+  Qes:  # electrical Q factor
+    value: 0.44
+    winner: vendor_page
+    sources:
+      vendor_page: 0.44
+  Rms:  # mechanical resistance (kg/s)
+    value: 11.565374364734819
+    winner: vendor_page
+    sources:
+      vendor_page: 11.565374364734819
+  BL:  # force factor (T·m)
+    value: 24.76
+    winner: vendor_page
+    sources:
+      vendor_page: 24.76
+  Qts:  # total Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Qms:  # mechanical Q factor
+    value: 4.37
+    winner: vendor_page
+    sources:
+      vendor_page: 4.37
+  Le:  # voice coil inductance (H)
+    value: 0.00116
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00116
+  Pe:  # rated power input (W)
+    value: 1200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1200.0
+  Fs:  # free air resonance (Hz)
+    value: 37.0
+    winner: vendor_page
+    sources:
+      vendor_page: 37.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.154892896
+    winner: vendor_page
+    sources:
+      vendor_page: 0.154892896
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.2174
+    winner: vendor_page
+    sources:
+      vendor_page: 0.2174
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.parts-express.com/Celestion-CF1840JD-18-1200-Watt-Professional-Woofer-294-2102

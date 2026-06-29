@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 90.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.3
+    winner: vendor_page
+    sources:
+      vendor_page: 3.3
+  Sd:  # effective piston area (m²)
+    value: 0.0255
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0255
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00077
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00077
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0085
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0085
+  Qes:  # electrical Q factor
+    value: 0.42
+    winner: vendor_page
+    sources:
+      vendor_page: 0.42
+  BL:  # force factor (T·m)
+    value: 7.6
+    winner: vendor_page
+    sources:
+      vendor_page: 7.6
+  Qts:  # total Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Qms:  # mechanical Q factor
+    value: 6.7
+    winner: vendor_page
+    sources:
+      vendor_page: 6.7
+  Le:  # voice coil inductance (H)
+    value: 0.00029
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00029
+  Pe:  # rated power input (W)
+    value: 90.0
+    winner: vendor_page
+    sources:
+      vendor_page: 90.0
+  Fs:  # free air resonance (Hz)
+    value: 28.0
+    winner: vendor_page
+    sources:
+      vendor_page: 28.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0025
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0025
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.042
+    winner: vendor_page
+    sources:
+      vendor_page: 0.042
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sb-acoustics-wo24p-4.html

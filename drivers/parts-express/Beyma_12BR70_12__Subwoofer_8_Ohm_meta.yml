@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 35.0
-freq_high_hz: 4000.0
 specs:
-  power_rms_W: 125.0
-  freq_low_hz: 35.0
-  freq_high_hz: 4000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
+  Sd:  # effective piston area (m²)
+    value: 0.054
+    winner: vendor_page
+    sources:
+      vendor_page: 0.054
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0034500000000000004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0034500000000000004
+  Xmax:  # one-way linear excursion (m)
+    value: 0.008
+    winner: vendor_page
+    sources:
+      vendor_page: 0.008
+  Qes:  # electrical Q factor
+    value: 0.56
+    winner: vendor_page
+    sources:
+      vendor_page: 0.56
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.32758243396977205
+    winner: vendor_page
+    sources:
+      vendor_page: 0.32758243396977205
+  BL:  # force factor (T·m)
+    value: 12.1
+    winner: vendor_page
+    sources:
+      vendor_page: 12.1
+  Qts:  # total Q factor
+    value: 0.5
+    winner: vendor_page
+    sources:
+      vendor_page: 0.5
+  Qms:  # mechanical Q factor
+    value: 4.4
+    winner: vendor_page
+    sources:
+      vendor_page: 4.4
+  Le:  # voice coil inductance (H)
+    value: 0.0008
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0008
+  Pe:  # rated power input (W)
+    value: 125.0
+    winner: vendor_page
+    sources:
+      vendor_page: 125.0
+  Fs:  # free air resonance (Hz)
+    value: 31.0
+    winner: vendor_page
+    sources:
+      vendor_page: 31.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.141867168
+    winner: vendor_page
+    sources:
+      vendor_page: 0.141867168
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0074
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0074
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 35.0
+    winner: vendor_page
+    sources:
+      vendor_page: 35.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 4000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/253-075--12br70-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Beyma-12BR70-12-Subwoofer-8-Ohm-253-075

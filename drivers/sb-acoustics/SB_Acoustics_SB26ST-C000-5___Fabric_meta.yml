@@ -16,8 +16,81 @@ dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  voice_coil_dia_mm: 25.4
-  Hg_mm: 3.0
-  linear_xmax_mm: 1.2
-  sensitivity_db: 91.0
-  power_rms_W: 80.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.4
+    winner: manu_page
+    sources:
+      manu_page: 4.4
+  Sd:  # effective piston area (m²)
+    value: 0.00062
+    winner: manu_page
+    sources:
+      manu_page: 0.00062
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0006
+    winner: manu_page
+    sources:
+      manu_page: 0.0006
+  Qes:  # electrical Q factor
+    value: 1.64
+    winner: manu_page
+    sources:
+      manu_page: 1.64
+  BL:  # force factor (T·m)
+    value: 2.2
+    winner: manu_page
+    sources:
+      manu_page: 2.2
+  Qts:  # total Q factor
+    value: 1.24
+    winner: manu_page
+    sources:
+      manu_page: 1.24
+  Qms:  # mechanical Q factor
+    value: 5.0
+    winner: manu_page
+    sources:
+      manu_page: 5.0
+  Le:  # voice coil inductance (H)
+    value: 7.0e-05
+    winner: manu_page
+    sources:
+      manu_page: 7.0e-05
+  Pe:  # rated power input (W)
+    value: 80.0
+    winner: manu_page
+    sources:
+      manu_page: 80.0
+  Fs:  # free air resonance (Hz)
+    value: 870.0
+    winner: manu_page
+    sources:
+      manu_page: 870.0
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00033
+    winner: manu_page
+    sources:
+      manu_page: 0.00033
+  Znom:  # nominal impedance (Ω)
+    value: 5.0
+    winner: manu_page
+    sources:
+      manu_page: 5.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 25.4
+    winner: manu_page
+    sources:
+      manu_page: 25.4
+  Hg_mm:  # magnetic gap height (mm)
+    value: 3.0
+    winner: manu_page
+    sources:
+      manu_page: 3.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 91.0
+    winner: manu_page
+    sources:
+      manu_page: 91.0
+_sources:
+  datasheet: https://sbacoustics.com/wp-content/uploads/2020/02/SB26ST-C000-5.pdf
+  manu_page: https://sbacoustics.com/product/sb26st-c000-5/

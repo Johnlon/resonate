@@ -15,4 +15,40 @@ community: null
 fetched_sku: null
 driver_type: pr
 specs:
-  linear_xmax_mm: 16.0
+  Sd:  # effective piston area (m²)
+    value: 0.01287
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01287
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00115
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00115
+  Xmax:  # one-way linear excursion (m)
+    value: 0.008
+    winner: vendor_page
+    sources:
+      vendor_page: 0.008
+  Qms:  # mechanical Q factor
+    value: 4.3
+    winner: vendor_page
+    sources:
+      vendor_page: 4.3
+  Fs:  # free air resonance (Hz)
+    value: 26.8
+    winner: vendor_page
+    sources:
+      vendor_page: 26.8
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00095
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00095
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0307
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0307
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-dsa175-pr.html

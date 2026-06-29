@@ -19,8 +19,82 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 295-584
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 2.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.98
+    winner: vendor_page
+    sources:
+      vendor_page: 3.98
+  Sd:  # effective piston area (m²)
+    value: 0.00229
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00229
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0007099999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0007099999999999999
+  Xmax:  # one-way linear excursion (m)
+    value: 0.002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.002
+  Qes:  # electrical Q factor
+    value: 0.56
+    winner: vendor_page
+    sources:
+      vendor_page: 0.56
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.9745097211723632
+    winner: vendor_page
+    sources:
+      vendor_page: 0.9745097211723632
+  BL:  # force factor (T·m)
+    value: 3.7
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7
+  Qts:  # total Q factor
+    value: 0.44
+    winner: vendor_page
+    sources:
+      vendor_page: 0.44
+  Qms:  # mechanical Q factor
+    value: 2.04
+    winner: vendor_page
+    sources:
+      vendor_page: 2.04
+  Le:  # voice coil inductance (H)
+    value: 0.0003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0003
+  Pe:  # rated power input (W)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  Fs:  # free air resonance (Hz)
+    value: 113.0
+    winner: vendor_page
+    sources:
+      vendor_page: 113.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.000566336
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000566336
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0028
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0028
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/295-584--dayton-audio-dma70-4-specification-sheet.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-DMA70-4-2-1-2-Dual-Magnet-Aluminum-Cone-Full-Range-Driver-4-Ohm-295-584

@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 35.0
-freq_high_hz: 1000.0
 specs:
-  power_rms_W: 6000.0
-  freq_low_hz: 35.0
-  freq_high_hz: 1000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.5
+    winner: vendor_page
+    sources:
+      vendor_page: 5.5
+  Sd:  # effective piston area (m²)
+    value: 0.1225
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1225
+  Cms:  # mechanical compliance (m/N)
+    value: 7.000000000000001e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 7.000000000000001e-05
+  Xmax:  # one-way linear excursion (m)
+    value: 0.013
+    winner: vendor_page
+    sources:
+      vendor_page: 0.013
+  Qes:  # electrical Q factor
+    value: 0.44
+    winner: vendor_page
+    sources:
+      vendor_page: 0.44
+  Rms:  # mechanical resistance (kg/s)
+    value: 7.568821685417872
+    winner: vendor_page
+    sources:
+      vendor_page: 7.568821685417872
+  BL:  # force factor (T·m)
+    value: 27.2
+    winner: vendor_page
+    sources:
+      vendor_page: 27.2
+  Qts:  # total Q factor
+    value: 0.42
+    winner: vendor_page
+    sources:
+      vendor_page: 0.42
+  Qms:  # mechanical Q factor
+    value: 7.8
+    winner: vendor_page
+    sources:
+      vendor_page: 7.8
+  Le:  # voice coil inductance (H)
+    value: 0.0021000000000000003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0021000000000000003
+  Pe:  # rated power input (W)
+    value: 1500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1500.0
+  Fs:  # free air resonance (Hz)
+    value: 36.0
+    winner: vendor_page
+    sources:
+      vendor_page: 36.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.15998992
+    winner: vendor_page
+    sources:
+      vendor_page: 0.15998992
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.261
+    winner: vendor_page
+    sources:
+      vendor_page: 0.261
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 35.0
+    winner: vendor_page
+    sources:
+      vendor_page: 35.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 1000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/293-731--lavoce-san184.03-specifications.pdf
+  vendor_page: https://www.parts-express.com/LaVoce-SAN184.03-18-Subwoofer-8-Ohm-293-731

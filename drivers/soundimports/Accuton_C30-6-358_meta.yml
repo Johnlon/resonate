@@ -15,5 +15,51 @@ community: null
 fetched_sku: null
 driver_type: tweeter
 specs:
-  power_rms_W: 120.0
-  sensitivity_db: 93.5
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.8
+    winner: vendor_page
+    sources:
+      vendor_page: 5.8
+  Qes:  # electrical Q factor
+    value: 0.81
+    winner: vendor_page
+    sources:
+      vendor_page: 0.81
+  Qts:  # total Q factor
+    value: 0.62
+    winner: vendor_page
+    sources:
+      vendor_page: 0.62
+  Qms:  # mechanical Q factor
+    value: 2.54
+    winner: vendor_page
+    sources:
+      vendor_page: 2.54
+  Le:  # voice coil inductance (H)
+    value: 1.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0e-05
+  Pe:  # rated power input (W)
+    value: 120.0
+    winner: vendor_page
+    sources:
+      vendor_page: 120.0
+  Fs:  # free air resonance (Hz)
+    value: 826.0
+    winner: vendor_page
+    sources:
+      vendor_page: 826.0
+  Znom:  # nominal impedance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 93.5
+    winner: vendor_page
+    sources:
+      vendor_page: 93.5
+_sources:
+  datasheet: https://doc.soundimports.nl/pdf/brands/Accuton/C30-6-358/data-C30-6-358.pdf
+  vendor_page: https://www.soundimports.eu/en/accuton-c30-6-358.html

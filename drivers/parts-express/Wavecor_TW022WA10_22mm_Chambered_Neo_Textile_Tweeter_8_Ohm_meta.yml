@@ -15,9 +15,52 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
-freq_low_hz: 2000.0
-freq_high_hz: 30000.0
 specs:
-  power_rms_W: 22.0
-  freq_low_hz: 2000.0
-  freq_high_hz: 30000.0
+  Qes:  # electrical Q factor
+    value: 1.4
+    winner: vendor_page
+    sources:
+      vendor_page: 1.4
+  Qts:  # total Q factor
+    value: 0.66
+    winner: vendor_page
+    sources:
+      vendor_page: 0.66
+  Qms:  # mechanical Q factor
+    value: 1.2
+    winner: vendor_page
+    sources:
+      vendor_page: 1.2
+  Le:  # voice coil inductance (H)
+    value: 0.037
+    winner: vendor_page
+    sources:
+      vendor_page: 0.037
+  Pe:  # rated power input (W)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  Fs:  # free air resonance (Hz)
+    value: 730.0
+    winner: vendor_page
+    sources:
+      vendor_page: 730.0
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 2000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2000.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 30000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/298-1218--tw022wa10-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Wavecor-TW022WA09-22mm-Chambered-Neo-Textile-Tweeter-Pair-4-Ohm-298-1218

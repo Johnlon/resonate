@@ -16,6 +16,86 @@ fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 0.16
-  freq_low_hz: 3200.0
-  freq_high_hz: 93.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.1
+    winner: vendor_page
+    sources:
+      vendor_page: 6.1
+  Sd:  # effective piston area (m²)
+    value: 0.121
+    winner: vendor_page
+    sources:
+      vendor_page: 0.121
+  Xmax:  # one-way linear excursion (m)
+    value: 0.01
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01
+  Qes:  # electrical Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  Rms:  # mechanical resistance (kg/s)
+    value: 3.7783167833809017
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7783167833809017
+  BL:  # force factor (T·m)
+    value: 23.6
+    winner: vendor_page
+    sources:
+      vendor_page: 23.6
+  Qts:  # total Q factor
+    value: 0.36
+    winner: vendor_page
+    sources:
+      vendor_page: 0.36
+  Qms:  # mechanical Q factor
+    value: 8.97
+    winner: vendor_page
+    sources:
+      vendor_page: 8.97
+  Le:  # voice coil inductance (H)
+    value: 0.0015
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0015
+  Pe:  # rated power input (W)
+    value: 700.0
+    winner: vendor_page
+    sources:
+      vendor_page: 700.0
+  Fs:  # free air resonance (Hz)
+    value: 29.0
+    winner: vendor_page
+    sources:
+      vendor_page: 29.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.325076864
+    winner: vendor_page
+    sources:
+      vendor_page: 0.325076864
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.186
+    winner: vendor_page
+    sources:
+      vendor_page: 0.186
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 3200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3200.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 93.0
+    winner: vendor_page
+    sources:
+      vendor_page: 93.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/292-7834--visaton-paw46-8-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Visaton-PAW46-8-18-Woofer-8-Ohm-292-7834

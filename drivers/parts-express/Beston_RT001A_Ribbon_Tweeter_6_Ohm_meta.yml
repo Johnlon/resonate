@@ -15,9 +15,37 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 3000.0
-freq_high_hz: 40000.0
 specs:
-  power_rms_W: 3.0
-  freq_low_hz: 3000.0
-  freq_high_hz: 40000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.4
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4
+  Pe:  # rated power input (W)
+    value: 15.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15.0
+  Fs:  # free air resonance (Hz)
+    value: 3500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3500.0
+  Znom:  # nominal impedance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 3000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3000.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 40000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/277-110--beston-rt001a-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Beston-RT001A-Ribbon-Tweeter-277-110

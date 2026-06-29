@@ -15,6 +15,95 @@ community: null
 fetched_sku: null
 driver_type: mid-bass
 specs:
-  power_rms_W: 700.0
-  sensitivity_db: 99.0
-  linear_xmax_mm: 14.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.3
+    winner: vendor_page
+    sources:
+      vendor_page: 5.3
+  Sd:  # effective piston area (m²)
+    value: 0.07
+    winner: vendor_page
+    sources:
+      vendor_page: 0.07
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00011
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00011
+  Xmax:  # one-way linear excursion (m)
+    value: 0.007
+    winner: vendor_page
+    sources:
+      vendor_page: 0.007
+  Qes:  # electrical Q factor
+    value: 0.3
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3
+  Rms:  # mechanical resistance (kg/s)
+    value: 8.3
+    winner: vendor_page
+    sources:
+      vendor_page: 8.3
+  BL:  # force factor (T·m)
+    value: 22.0
+    winner: vendor_page
+    sources:
+      vendor_page: 22.0
+  Qts:  # total Q factor
+    value: 0.28
+    winner: vendor_page
+    sources:
+      vendor_page: 0.28
+  Qms:  # mechanical Q factor
+    value: 3.3
+    winner: vendor_page
+    sources:
+      vendor_page: 3.3
+  Le:  # voice coil inductance (H)
+    value: 0.001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001
+  Pe:  # rated power input (W)
+    value: 700.0
+    winner: vendor_page
+    sources:
+      vendor_page: 700.0
+  Fs:  # free air resonance (Hz)
+    value: 51.0
+    winner: vendor_page
+    sources:
+      vendor_page: 51.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.078
+    winner: vendor_page
+    sources:
+      vendor_page: 0.078
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.086
+    winner: vendor_page
+    sources:
+      vendor_page: 0.086
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 99.0
+    winner: vendor_page
+    sources:
+      vendor_page: 99.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 55.0
+    winner: vendor_page
+    sources:
+      vendor_page: 55.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/beyma-14mc700nd.html

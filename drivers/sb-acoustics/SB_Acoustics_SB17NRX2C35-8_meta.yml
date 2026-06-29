@@ -16,8 +16,91 @@ dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  voice_coil_dia_mm: 35.5
-  Hg_mm: 5.0
-  linear_xmax_mm: 11.0
-  sensitivity_db: 87.0
-  power_rms_W: 50.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.7
+    winner: manu_page
+    sources:
+      manu_page: 5.7
+  Sd:  # effective piston area (m²)
+    value: 0.0118
+    winner: manu_page
+    sources:
+      manu_page: 0.0118
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00137
+    winner: manu_page
+    sources:
+      manu_page: 0.00137
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0055
+    winner: manu_page
+    sources:
+      manu_page: 0.0055
+  Qes:  # electrical Q factor
+    value: 0.47
+    winner: manu_page
+    sources:
+      manu_page: 0.47
+  BL:  # force factor (T·m)
+    value: 6.25
+    winner: manu_page
+    sources:
+      manu_page: 6.25
+  Qts:  # total Q factor
+    value: 0.42
+    winner: manu_page
+    sources:
+      manu_page: 0.42
+  Qms:  # mechanical Q factor
+    value: 4.55
+    winner: manu_page
+    sources:
+      manu_page: 4.55
+  Le:  # voice coil inductance (H)
+    value: 0.00015
+    winner: manu_page
+    sources:
+      manu_page: 0.00015
+  Pe:  # rated power input (W)
+    value: 50.0
+    winner: manu_page
+    sources:
+      manu_page: 50.0
+  Fs:  # free air resonance (Hz)
+    value: 36.5
+    winner: manu_page
+    sources:
+      manu_page: 36.5
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.027
+    winner: manu_page
+    sources:
+      manu_page: 0.027
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0139
+    winner: manu_page
+    sources:
+      manu_page: 0.0139
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: manu_page
+    sources:
+      manu_page: 8.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 35.5
+    winner: manu_page
+    sources:
+      manu_page: 35.5
+  Hg_mm:  # magnetic gap height (mm)
+    value: 5.0
+    winner: manu_page
+    sources:
+      manu_page: 5.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 87.0
+    winner: manu_page
+    sources:
+      manu_page: 87.0
+_sources:
+  datasheet: https://sbacoustics.com/wp-content/uploads/2020/02/6in-SB17NRX2C35-8.pdf
+  manu_page: https://sbacoustics.com/product/6in-sb17nrx2c35-8-norex/

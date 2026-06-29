@@ -19,8 +19,71 @@ obsolete: null
 dq_issue: missing_Re
 community: null
 fetched_sku: 294-5917
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 8.0
+  Sd:  # effective piston area (m²)
+    value: 0.022
+    winner: vendor_page
+    sources:
+      vendor_page: 0.022
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005
+  Qes:  # electrical Q factor
+    value: 0.36
+    winner: vendor_page
+    sources:
+      vendor_page: 0.36
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.5117781263701247
+    winner: vendor_page
+    sources:
+      vendor_page: 2.5117781263701247
+  BL:  # force factor (T·m)
+    value: 12.6
+    winner: vendor_page
+    sources:
+      vendor_page: 12.6
+  Qts:  # total Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Qms:  # mechanical Q factor
+    value: 4.2
+    winner: vendor_page
+    sources:
+      vendor_page: 4.2
+  Le:  # voice coil inductance (H)
+    value: 0.0005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0005
+  Pe:  # rated power input (W)
+    value: 400.0
+    winner: vendor_page
+    sources:
+      vendor_page: 400.0
+  Fs:  # free air resonance (Hz)
+    value: 73.0
+    winner: vendor_page
+    sources:
+      vendor_page: 73.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.013875232
+    winner: vendor_page
+    sources:
+      vendor_page: 0.013875232
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.023
+    winner: vendor_page
+    sources:
+      vendor_page: 0.023
+  Znom:  # nominal impedance (Ω)
+    value: 16.0
+    winner: vendor_page
+    sources:
+      vendor_page: 16.0
+_sources:
+  vendor_page: https://www.parts-express.com/B-C-8PS21-16-8-Professional-Woofer-16-Ohm-294-5917

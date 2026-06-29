@@ -43,9 +43,88 @@ manu_page_fields:
 - SPL
 - Sd
 - Vas
-freq_low_hz: 2500.0
-freq_high_hz: 30000.0
 specs:
-  sensitivity_db: 91.5
-  freq_low_hz: 2500.0
-  freq_high_hz: 30000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.0
+    winner: manu_page
+    sources:
+      manu_page: 3.0
+  Sd:  # effective piston area (m²)
+    value: 0.00069
+    winner: manu_page
+    sources:
+      manu_page: 0.00069
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00033
+    winner: manu_page
+    sources:
+      manu_page: 0.00033
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0002
+    winner: manu_page
+    sources:
+      manu_page: 0.0002
+  Qes:  # electrical Q factor
+    value: 0.59
+    winner: manu_page
+    sources:
+      manu_page: 0.59
+  BL:  # force factor (T·m)
+    value: 2.3
+    winner: manu_page
+    sources:
+      manu_page: 2.3
+  Qts:  # total Q factor
+    value: 0.49
+    winner: manu_page
+    sources:
+      manu_page: 0.49
+  Qms:  # mechanical Q factor
+    value: 3.0
+    winner: manu_page
+    sources:
+      manu_page: 3.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 91.5
+    winner: manu_page
+    sources:
+      manu_page: 91.5
+  Le:  # voice coil inductance (H)
+    value: 3.0e-05
+    winner: manu_page
+    sources:
+      manu_page: 3.0e-05
+  Fs:  # free air resonance (Hz)
+    value: 470.0
+    winner: manu_page
+    sources:
+      manu_page: 470.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 2.0e-05
+    winner: manu_page
+    sources:
+      manu_page: 2.0e-05
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00035
+    winner: manu_page
+    sources:
+      manu_page: 0.00035
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: manu_page
+    sources:
+      manu_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 2500.0
+    winner: manu_page
+    sources:
+      manu_page: 2500.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 30000.0
+    winner: manu_page
+    sources:
+      manu_page: 30000.0
+_sources:
+  datasheet: https://www.scan-speak.dk/datasheet/pdf/d3004-660000.pdf
+  adv_datasheet: https://www.scan-speak.dk/datasheet/adv/d3004-660000.pdf
+  manu_page: https://www.scan-speak.dk/product/d3004-660000/

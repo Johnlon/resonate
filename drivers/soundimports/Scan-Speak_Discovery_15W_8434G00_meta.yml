@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 60.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.7
+    winner: vendor_page
+    sources:
+      vendor_page: 5.7
+  Sd:  # effective piston area (m²)
+    value: 0.008
+    winner: vendor_page
+    sources:
+      vendor_page: 0.008
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00143
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00143
+  Qes:  # electrical Q factor
+    value: 0.27
+    winner: vendor_page
+    sources:
+      vendor_page: 0.27
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.66
+    winner: vendor_page
+    sources:
+      vendor_page: 0.66
+  BL:  # force factor (T·m)
+    value: 7.3
+    winner: vendor_page
+    sources:
+      vendor_page: 7.3
+  Qts:  # total Q factor
+    value: 0.25
+    winner: vendor_page
+    sources:
+      vendor_page: 0.25
+  Qms:  # mechanical Q factor
+    value: 3.74
+    winner: vendor_page
+    sources:
+      vendor_page: 3.74
+  Le:  # voice coil inductance (H)
+    value: 0.0008
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0008
+  Pe:  # rated power input (W)
+    value: 60.0
+    winner: vendor_page
+    sources:
+      vendor_page: 60.0
+  Fs:  # free air resonance (Hz)
+    value: 45.0
+    winner: vendor_page
+    sources:
+      vendor_page: 45.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0128
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0128
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00861
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00861
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/scan-speak-15w8434g00.html

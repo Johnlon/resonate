@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
-freq_low_hz: 150.0
-freq_high_hz: 20000.0
 specs:
-  power_rms_W: 2.0
-  freq_low_hz: 150.0
-  freq_high_hz: 20000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.6
+    winner: vendor_page
+    sources:
+      vendor_page: 3.6
+  Sd:  # effective piston area (m²)
+    value: 0.0015199999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0015199999999999999
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0005
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00165
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00165
+  Qes:  # electrical Q factor
+    value: 0.81
+    winner: vendor_page
+    sources:
+      vendor_page: 0.81
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.3238533226900564
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3238533226900564
+  BL:  # force factor (T·m)
+    value: 2.83
+    winner: vendor_page
+    sources:
+      vendor_page: 2.83
+  Qts:  # total Q factor
+    value: 0.71
+    winner: vendor_page
+    sources:
+      vendor_page: 0.71
+  Qms:  # mechanical Q factor
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
+  Le:  # voice coil inductance (H)
+    value: 2.9999999999999997e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 2.9999999999999997e-05
+  Pe:  # rated power input (W)
+    value: 25.0
+    winner: vendor_page
+    sources:
+      vendor_page: 25.0
+  Fs:  # free air resonance (Hz)
+    value: 176.0
+    winner: vendor_page
+    sources:
+      vendor_page: 176.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.000283168
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000283168
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00164
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00164
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 150.0
+    winner: vendor_page
+    sources:
+      vendor_page: 150.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 20000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/264-1042--tymphany-pls-p830983-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Peerless-830983-2-Full-Range-Woofer-264-1042

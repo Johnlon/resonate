@@ -19,10 +19,92 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-3135
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  freq_low_hz: 6.0
-  freq_high_hz: 250.0
-  power_rms_W: 125.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.6
+    winner: vendor_page
+    sources:
+      vendor_page: 3.6
+  Sd:  # effective piston area (m²)
+    value: 0.0143
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0143
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000139
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000139
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00325
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00325
+  Qes:  # electrical Q factor
+    value: 0.85
+    winner: vendor_page
+    sources:
+      vendor_page: 0.85
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.2778294198997602
+    winner: vendor_page
+    sources:
+      vendor_page: 0.2778294198997602
+  BL:  # force factor (T·m)
+    value: 5.82
+    winner: vendor_page
+    sources:
+      vendor_page: 5.82
+  Qts:  # total Q factor
+    value: 0.82
+    winner: vendor_page
+    sources:
+      vendor_page: 0.82
+  Qms:  # mechanical Q factor
+    value: 28.73
+    winner: vendor_page
+    sources:
+      vendor_page: 28.73
+  Le:  # voice coil inductance (H)
+    value: 0.000135
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000135
+  Pe:  # rated power input (W)
+    value: 125.0
+    winner: vendor_page
+    sources:
+      vendor_page: 125.0
+  Fs:  # free air resonance (Hz)
+    value: 142.9
+    winner: vendor_page
+    sources:
+      vendor_page: 142.9
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00401
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00401
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00889
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00889
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 250.0
+    winner: vendor_page
+    sources:
+      vendor_page: 250.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-3135--prv-audio-6mr250b-4-slim-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/PRV-Audio-6MR250B-4-SLIM-6-Midrange-Slim-Speaker-4-Ohm-294-3135

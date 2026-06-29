@@ -15,4 +15,30 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 80.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 2.7
+    winner: vendor_page
+    sources:
+      vendor_page: 2.7
+  Le:  # voice coil inductance (H)
+    value: 3.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0e-05
+  Pe:  # rated power input (W)
+    value: 80.0
+    winner: vendor_page
+    sources:
+      vendor_page: 80.0
+  Fs:  # free air resonance (Hz)
+    value: 1170.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1170.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/seas-27tffnc-cg.html

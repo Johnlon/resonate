@@ -15,9 +15,57 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
-freq_low_hz: 1100.0
-freq_high_hz: 20000.0
 specs:
-  freq_low_hz: 1.0
-  freq_high_hz: 100.0
-  power_rms_W: 50.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0
+  Qes:  # electrical Q factor
+    value: 1.26
+    winner: vendor_page
+    sources:
+      vendor_page: 1.26
+  Qts:  # total Q factor
+    value: 0.84
+    winner: vendor_page
+    sources:
+      vendor_page: 0.84
+  Qms:  # mechanical Q factor
+    value: 2.54
+    winner: vendor_page
+    sources:
+      vendor_page: 2.54
+  Le:  # voice coil inductance (H)
+    value: 2.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0e-05
+  Pe:  # rated power input (W)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  Fs:  # free air resonance (Hz)
+    value: 1128.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1128.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 1.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 100.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/264-1040--tymphany-bc25tg15-04-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Peerless-BC25TG15-04-1-Silk-Dome-Tweeter-264-1040

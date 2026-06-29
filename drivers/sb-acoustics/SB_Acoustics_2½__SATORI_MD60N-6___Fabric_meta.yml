@@ -16,8 +16,66 @@ dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  voice_coil_dia_mm: 60.5
-  Hg_mm: 3.0
-  linear_xmax_mm: 0.5
-  sensitivity_db: 95.0
-  power_rms_W: 120.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.3
+    winner: manu_page
+    sources:
+      manu_page: 5.3
+  Sd:  # effective piston area (m²)
+    value: 0.0032
+    winner: manu_page
+    sources:
+      manu_page: 0.0032
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00025
+    winner: manu_page
+    sources:
+      manu_page: 0.00025
+  BL:  # force factor (T·m)
+    value: 7.2
+    winner: manu_page
+    sources:
+      manu_page: 7.2
+  Le:  # voice coil inductance (H)
+    value: 0.00014
+    winner: manu_page
+    sources:
+      manu_page: 0.00014
+  Pe:  # rated power input (W)
+    value: 120.0
+    winner: manu_page
+    sources:
+      manu_page: 120.0
+  Fs:  # free air resonance (Hz)
+    value: 400.0
+    winner: manu_page
+    sources:
+      manu_page: 400.0
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.002
+    winner: manu_page
+    sources:
+      manu_page: 0.002
+  Znom:  # nominal impedance (Ω)
+    value: 6.0
+    winner: manu_page
+    sources:
+      manu_page: 6.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 60.5
+    winner: manu_page
+    sources:
+      manu_page: 60.5
+  Hg_mm:  # magnetic gap height (mm)
+    value: 3.0
+    winner: manu_page
+    sources:
+      manu_page: 3.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 95.0
+    winner: manu_page
+    sources:
+      manu_page: 95.0
+_sources:
+  datasheet: https://sbacoustics.com/wp-content/uploads/2022/03/2.5in-SATORI-MD60N-6.pdf
+  manu_page: https://sbacoustics.com/product/2-5in-satori-md60n-6-fabric/

@@ -14,4 +14,41 @@ dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.0124
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0124
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0014
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0014
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.2
+    winner: vendor_page
+    sources:
+      vendor_page: 1.2
+  Qms:  # mechanical Q factor
+    value: 4.4
+    winner: vendor_page
+    sources:
+      vendor_page: 4.4
+  Fs:  # free air resonance (Hz)
+    value: 22.0
+    winner: vendor_page
+    sources:
+      vendor_page: 22.0
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.038
+    winner: vendor_page
+    sources:
+      vendor_page: 0.038
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sb-acoustics-sb16pfcr-00.html

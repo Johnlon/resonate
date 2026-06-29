@@ -20,9 +20,82 @@ obsolete: null
 dq_issue: Qts_impossible; suspect:Qts; suspect:Qes; suspect:Qms
 community: null
 fetched_sku: 253-005
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  sensitivity_db: 500.0
-  power_rms_W: 500.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  Sd:  # effective piston area (m²)
+    value: 0.053
+    winner: vendor_page
+    sources:
+      vendor_page: 0.053
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004
+  Qes:  # electrical Q factor
+    value: 0.3
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.0014776318549987854
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0014776318549987854
+  BL:  # force factor (T·m)
+    value: 18.4
+    winner: vendor_page
+    sources:
+      vendor_page: 18.4
+  Qts:  # total Q factor
+    value: 0.3
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3
+  Qms:  # mechanical Q factor
+    value: 11.6
+    winner: vendor_page
+    sources:
+      vendor_page: 11.6
+  Le:  # voice coil inductance (H)
+    value: 44.0
+    winner: vendor_page
+    sources:
+      vendor_page: 44.0
+  Pe:  # rated power input (W)
+    value: 500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 500.0
+  Fs:  # free air resonance (Hz)
+    value: 44.0
+    winner: vendor_page
+    sources:
+      vendor_page: 44.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.08098604799999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.08098604799999999
+  Mms:  # moving mass incl. air load (kg)
+    value: 6.2e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 6.2e-05
+  Znom:  # nominal impedance (Ω)
+    value: 45.0
+    winner: vendor_page
+    sources:
+      vendor_page: 45.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 500.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/253-005--12g40-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Beyma-12G40-G40-Series-12-Subwoofer-8-Ohm-253-005

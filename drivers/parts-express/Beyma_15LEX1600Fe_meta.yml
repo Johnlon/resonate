@@ -20,9 +20,86 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 253-045
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  sensitivity_db: 96.0
-  power_rms_W: 1600.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.3
+    winner: vendor_page
+    sources:
+      vendor_page: 5.3
+  Sd:  # effective piston area (m²)
+    value: 0.088
+    winner: vendor_page
+    sources:
+      vendor_page: 0.088
+  Cms:  # mechanical compliance (m/N)
+    value: 0.097
+    winner: vendor_page
+    sources:
+      vendor_page: 0.097
+  Xmax:  # one-way linear excursion (m)
+    value: 0.013
+    winner: vendor_page
+    sources:
+      vendor_page: 0.013
+  Qes:  # electrical Q factor
+    value: 0.34
+    winner: vendor_page
+    sources:
+      vendor_page: 0.34
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.00619394586368631
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00619394586368631
+  BL:  # force factor (T·m)
+    value: 25.8
+    winner: vendor_page
+    sources:
+      vendor_page: 25.8
+  Qts:  # total Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Qms:  # mechanical Q factor
+    value: 6.9
+    winner: vendor_page
+    sources:
+      vendor_page: 6.9
+  Le:  # voice coil inductance (H)
+    value: 0.0017
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0017
+  Pe:  # rated power input (W)
+    value: 1600.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1600.0
+  Fs:  # free air resonance (Hz)
+    value: 38.0
+    winner: vendor_page
+    sources:
+      vendor_page: 38.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.107887008
+    winner: vendor_page
+    sources:
+      vendor_page: 0.107887008
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.000179
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000179
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 96.0
+    winner: vendor_page
+    sources:
+      vendor_page: 96.0
+_sources:
+  vendor_page: https://www.parts-express.com/Beyma-15LEX1600Fe-LEX-Series-15-Subwoofer-8-Ohm-253-045

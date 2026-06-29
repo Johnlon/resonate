@@ -15,9 +15,87 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 19.0
-freq_high_hz: 2000.0
 specs:
-  power_rms_W: 600.0
-  freq_low_hz: 19.0
-  freq_high_hz: 2000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.4
+    winner: vendor_page
+    sources:
+      vendor_page: 6.4
+  Sd:  # effective piston area (m²)
+    value: 0.0437
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0437
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0105
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0105
+  Qes:  # electrical Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  Rms:  # mechanical resistance (kg/s)
+    value: 3.2585253826315963
+    winner: vendor_page
+    sources:
+      vendor_page: 3.2585253826315963
+  BL:  # force factor (T·m)
+    value: 15.25
+    winner: vendor_page
+    sources:
+      vendor_page: 15.25
+  Qts:  # total Q factor
+    value: 0.34
+    winner: vendor_page
+    sources:
+      vendor_page: 0.34
+  Qms:  # mechanical Q factor
+    value: 4.03
+    winner: vendor_page
+    sources:
+      vendor_page: 4.03
+  Le:  # voice coil inductance (H)
+    value: 0.00062
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00062
+  Pe:  # rated power input (W)
+    value: 600.0
+    winner: vendor_page
+    sources:
+      vendor_page: 600.0
+  Fs:  # free air resonance (Hz)
+    value: 19.0
+    winner: vendor_page
+    sources:
+      vendor_page: 19.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.170467136
+    winner: vendor_page
+    sources:
+      vendor_page: 0.170467136
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.11
+    winner: vendor_page
+    sources:
+      vendor_page: 0.11
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 19.0
+    winner: vendor_page
+    sources:
+      vendor_page: 19.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 2000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/297-110--morel-ticw-1258ft-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Morel-TiCW-1258Ft-Titanium-Series-12-Subwoofer-8-Ohm-297-110

@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 125.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.4
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4
+  Sd:  # effective piston area (m²)
+    value: 0.00933
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00933
+  Cms:  # mechanical compliance (m/N)
+    value: 3.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0e-05
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0032
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0032
+  Qes:  # electrical Q factor
+    value: 0.76
+    winner: vendor_page
+    sources:
+      vendor_page: 0.76
+  BL:  # force factor (T·m)
+    value: 10.6
+    winner: vendor_page
+    sources:
+      vendor_page: 10.6
+  Qts:  # total Q factor
+    value: 0.73
+    winner: vendor_page
+    sources:
+      vendor_page: 0.73
+  Qms:  # mechanical Q factor
+    value: 16.6
+    winner: vendor_page
+    sources:
+      vendor_page: 16.6
+  Le:  # voice coil inductance (H)
+    value: 3.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0e-05
+  Pe:  # rated power input (W)
+    value: 125.0
+    winner: vendor_page
+    sources:
+      vendor_page: 125.0
+  Fs:  # free air resonance (Hz)
+    value: 360.0
+    winner: vendor_page
+    sources:
+      vendor_page: 360.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0003
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0079
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0079
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sb-audience-nero-5ccn125d.html

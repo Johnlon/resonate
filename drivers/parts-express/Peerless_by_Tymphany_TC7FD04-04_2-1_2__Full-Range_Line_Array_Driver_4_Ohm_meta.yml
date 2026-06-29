@@ -15,10 +15,97 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
-freq_low_hz: 200.0
-freq_high_hz: 10000.0
 specs:
-  power_rms_W: 2019.0
-  sensitivity_db: 86.8
-  freq_low_hz: 200.0
-  freq_high_hz: 10000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.4
+    winner: vendor_page
+    sources:
+      vendor_page: 3.4
+  Sd:  # effective piston area (m²)
+    value: 0.00221
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00221
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000519
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000519
+  Xmax:  # one-way linear excursion (m)
+    value: 0.001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001
+  Qes:  # electrical Q factor
+    value: 0.88
+    winner: vendor_page
+    sources:
+      vendor_page: 0.88
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.4479541524883328
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4479541524883328
+  BL:  # force factor (T·m)
+    value: 2.44
+    winner: vendor_page
+    sources:
+      vendor_page: 2.44
+  Qts:  # total Q factor
+    value: 0.7
+    winner: vendor_page
+    sources:
+      vendor_page: 0.7
+  Qms:  # mechanical Q factor
+    value: 3.4
+    winner: vendor_page
+    sources:
+      vendor_page: 3.4
+  Le:  # voice coil inductance (H)
+    value: 2.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0e-05
+  Pe:  # rated power input (W)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  Fs:  # free air resonance (Hz)
+    value: 202.0
+    winner: vendor_page
+    sources:
+      vendor_page: 202.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0003681184
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0003681184
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0012
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0012
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 86.8
+    winner: vendor_page
+    sources:
+      vendor_page: 86.8
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 10000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 10000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/264-1354-tymphany-tc7fd04-04-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Peerless-TC7FD04-04-2-1-2-Full-Range-Line-Array-Driver-4-Oh-264-1354

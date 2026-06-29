@@ -15,4 +15,40 @@ community: null
 fetched_sku: null
 driver_type: pr
 specs:
-  linear_xmax_mm: 22.0
+  Sd:  # effective piston area (m²)
+    value: 0.0353
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0353
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0006
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0006
+  Xmax:  # one-way linear excursion (m)
+    value: 0.011
+    winner: vendor_page
+    sources:
+      vendor_page: 0.011
+  Qms:  # mechanical Q factor
+    value: 3.98
+    winner: vendor_page
+    sources:
+      vendor_page: 3.98
+  Fs:  # free air resonance (Hz)
+    value: 21.9
+    winner: vendor_page
+    sources:
+      vendor_page: 21.9
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.1056
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1056
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0884
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0884
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-ds270-pr.html

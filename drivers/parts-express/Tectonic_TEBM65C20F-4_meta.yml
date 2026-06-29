@@ -19,8 +19,67 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 297-2164
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 30.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.8
+    winner: vendor_page
+    sources:
+      vendor_page: 3.8
+  Sd:  # effective piston area (m²)
+    value: 0.00372
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00372
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00047
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00047
+  Qes:  # electrical Q factor
+    value: 0.94
+    winner: vendor_page
+    sources:
+      vendor_page: 0.94
+  BL:  # force factor (T·m)
+    value: 3.75
+    winner: vendor_page
+    sources:
+      vendor_page: 3.75
+  Qts:  # total Q factor
+    value: 0.83
+    winner: vendor_page
+    sources:
+      vendor_page: 0.83
+  Qms:  # mechanical Q factor
+    value: 7.0
+    winner: vendor_page
+    sources:
+      vendor_page: 7.0
+  Le:  # voice coil inductance (H)
+    value: 2.9999999999999997e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 2.9999999999999997e-05
+  Pe:  # rated power input (W)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  Fs:  # free air resonance (Hz)
+    value: 97.0
+    winner: vendor_page
+    sources:
+      vendor_page: 97.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.000991088
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000991088
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/297-2164--tebm65c20f-4-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Tectonic-TEBM65C20F-4-3-1-2-BMR-Full-Range-Speaker-4-Ohm-297-2164

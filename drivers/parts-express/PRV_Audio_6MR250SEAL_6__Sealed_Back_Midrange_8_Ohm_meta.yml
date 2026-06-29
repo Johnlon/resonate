@@ -15,10 +15,87 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
-freq_low_hz: 400.0
-freq_high_hz: 6000.0
 specs:
-  power_rms_W: 250.0
-  freq_low_hz: 160.0
-  freq_high_hz: 9.0
-  sensitivity_db: 94.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.5
+    winner: vendor_page
+    sources:
+      vendor_page: 5.5
+  Sd:  # effective piston area (m²)
+    value: 0.0139
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0139
+  Cms:  # mechanical compliance (m/N)
+    value: 1.7e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 1.7e-05
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0025
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0025
+  Qes:  # electrical Q factor
+    value: 2.8
+    winner: vendor_page
+    sources:
+      vendor_page: 2.8
+  BL:  # force factor (T·m)
+    value: 6.84
+    winner: vendor_page
+    sources:
+      vendor_page: 6.84
+  Qts:  # total Q factor
+    value: 2.5
+    winner: vendor_page
+    sources:
+      vendor_page: 2.5
+  Qms:  # mechanical Q factor
+    value: 23.17
+    winner: vendor_page
+    sources:
+      vendor_page: 23.17
+  Le:  # voice coil inductance (H)
+    value: 0.00019
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00019
+  Pe:  # rated power input (W)
+    value: 250.0
+    winner: vendor_page
+    sources:
+      vendor_page: 250.0
+  Fs:  # free air resonance (Hz)
+    value: 387.4
+    winner: vendor_page
+    sources:
+      vendor_page: 387.4
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0004530688
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0004530688
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 160.0
+    winner: vendor_page
+    sources:
+      vendor_page: 160.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 9.0
+    winner: vendor_page
+    sources:
+      vendor_page: 9.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 94.0
+    winner: vendor_page
+    sources:
+      vendor_page: 94.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-3526--prv-audio-6mr250seal-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/PRV-Audio-6MR250SEAL-6-Sealed-Back-Midrange-8-Ohm-294-3526

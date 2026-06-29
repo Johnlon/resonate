@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 95.0
-freq_high_hz: 4000.0
 specs:
-  power_rms_W: 6.0
-  freq_low_hz: 95.0
-  freq_high_hz: 4000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.18
+    winner: vendor_page
+    sources:
+      vendor_page: 5.18
+  Sd:  # effective piston area (m²)
+    value: 0.01299
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01299
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00015
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00015
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0045
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0045
+  Qes:  # electrical Q factor
+    value: 0.66
+    winner: vendor_page
+    sources:
+      vendor_page: 0.66
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.4569796880387225
+    winner: vendor_page
+    sources:
+      vendor_page: 2.4569796880387225
+  BL:  # force factor (T·m)
+    value: 8.13
+    winner: vendor_page
+    sources:
+      vendor_page: 8.13
+  Qts:  # total Q factor
+    value: 0.56
+    winner: vendor_page
+    sources:
+      vendor_page: 0.56
+  Qms:  # mechanical Q factor
+    value: 3.46
+    winner: vendor_page
+    sources:
+      vendor_page: 3.46
+  Le:  # voice coil inductance (H)
+    value: 0.00043
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00043
+  Pe:  # rated power input (W)
+    value: 175.0
+    winner: vendor_page
+    sources:
+      vendor_page: 175.0
+  Fs:  # free air resonance (Hz)
+    value: 123.0
+    winner: vendor_page
+    sources:
+      vendor_page: 123.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.003398016
+    winner: vendor_page
+    sources:
+      vendor_page: 0.003398016
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.011
+    winner: vendor_page
+    sources:
+      vendor_page: 0.011
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 95.0
+    winner: vendor_page
+    sources:
+      vendor_page: 95.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 4000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/290-662--eminence-beta-6a-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Eminence-Beta-6A-6-1-2-High-Power-Midbass-Woofer-290-662

@@ -19,11 +19,97 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-2520
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  freq_low_hz: 2145.0
-  freq_high_hz: 21.0
-  sensitivity_db: 97.0
-  power_rms_W: 1800.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  Sd:  # effective piston area (m²)
+    value: 0.16619
+    winner: vendor_page
+    sources:
+      vendor_page: 0.16619
+  Cms:  # mechanical compliance (m/N)
+    value: 6.5e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 6.5e-05
+  Xmax:  # one-way linear excursion (m)
+    value: 0.015
+    winner: vendor_page
+    sources:
+      vendor_page: 0.015
+  Qes:  # electrical Q factor
+    value: 0.359
+    winner: vendor_page
+    sources:
+      vendor_page: 0.359
+  Rms:  # mechanical resistance (kg/s)
+    value: 9.77
+    winner: vendor_page
+    sources:
+      vendor_page: 9.77
+  BL:  # force factor (T·m)
+    value: 33.8
+    winner: vendor_page
+    sources:
+      vendor_page: 33.8
+  Qts:  # total Q factor
+    value: 0.344
+    winner: vendor_page
+    sources:
+      vendor_page: 0.344
+  Qms:  # mechanical Q factor
+    value: 8.393
+    winner: vendor_page
+    sources:
+      vendor_page: 8.393
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 97.0
+    winner: vendor_page
+    sources:
+      vendor_page: 97.0
+  Le:  # voice coil inductance (H)
+    value: 0.00391
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00391
+  Pe:  # rated power input (W)
+    value: 1800.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1800.0
+  Fs:  # free air resonance (Hz)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.2538
+    winner: vendor_page
+    sources:
+      vendor_page: 0.2538
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.4352
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4352
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 2145.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2145.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 21.0
+    winner: vendor_page
+    sources:
+      vendor_page: 21.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-2520--celestion-tsq2145-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Celestion-TSQ21-21-Neodymium-Subwoofer-8-Ohm-294-2520

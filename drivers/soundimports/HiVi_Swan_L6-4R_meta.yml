@@ -15,7 +15,85 @@ community: null
 fetched_sku: null
 driver_type: mid-bass
 specs:
-  power_rms_W: 60.0
-  sensitivity_db: 88.0
-  voice_coil_dia_mm: 30.0
-  linear_xmax_mm: 8.6
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.6
+    winner: vendor_page
+    sources:
+      vendor_page: 3.6
+  Sd:  # effective piston area (m²)
+    value: 0.0133
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0133
+  Cms:  # mechanical compliance (m/N)
+    value: 0.58845
+    winner: vendor_page
+    sources:
+      vendor_page: 0.58845
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0043
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0043
+  Qes:  # electrical Q factor
+    value: 0.443
+    winner: vendor_page
+    sources:
+      vendor_page: 0.443
+  BL:  # force factor (T·m)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  Qts:  # total Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Qms:  # mechanical Q factor
+    value: 3.856
+    winner: vendor_page
+    sources:
+      vendor_page: 3.856
+  Pe:  # rated power input (W)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  Fs:  # free air resonance (Hz)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.01469
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01469
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.017315
+    winner: vendor_page
+    sources:
+      vendor_page: 0.017315
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  power_peak_W:  # peak power handling (W)
+    value: 60.0
+    winner: vendor_page
+    sources:
+      vendor_page: 60.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 88.0
+    winner: vendor_page
+    sources:
+      vendor_page: 88.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/hivi-l6-4r.html

@@ -19,8 +19,81 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 295-526
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 50.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.9
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9
+  Sd:  # effective piston area (m²)
+    value: 0.007540000000000001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.007540000000000001
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00099
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00099
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004900000000000001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004900000000000001
+  Qes:  # electrical Q factor
+    value: 0.47
+    winner: vendor_page
+    sources:
+      vendor_page: 0.47
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.5159570550329688
+    winner: vendor_page
+    sources:
+      vendor_page: 1.5159570550329688
+  BL:  # force factor (T·m)
+    value: 6.22
+    winner: vendor_page
+    sources:
+      vendor_page: 6.22
+  Qts:  # total Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  Qms:  # mechanical Q factor
+    value: 2.04
+    winner: vendor_page
+    sources:
+      vendor_page: 2.04
+  Le:  # voice coil inductance (H)
+    value: 0.00078
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00078
+  Pe:  # rated power input (W)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  Fs:  # free air resonance (Hz)
+    value: 51.81
+    winner: vendor_page
+    sources:
+      vendor_page: 51.81
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.007928704
+    winner: vendor_page
+    sources:
+      vendor_page: 0.007928704
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0095
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0095
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.parts-express.com/Dayton-Audio-DSA135-8-5-Designer-Series-Aluminum-Cone-Woofer-295-526

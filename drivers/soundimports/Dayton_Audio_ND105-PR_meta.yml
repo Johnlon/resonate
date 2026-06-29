@@ -15,4 +15,45 @@ community: null
 fetched_sku: null
 driver_type: pr
 specs:
-  linear_xmax_mm: 12.0
+  Sd:  # effective piston area (m²)
+    value: 0.00515
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00515
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00068
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00068
+  Xmax:  # one-way linear excursion (m)
+    value: 0.006
+    winner: vendor_page
+    sources:
+      vendor_page: 0.006
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.76
+    winner: vendor_page
+    sources:
+      vendor_page: 0.76
+  Qms:  # mechanical Q factor
+    value: 5.93
+    winner: vendor_page
+    sources:
+      vendor_page: 5.93
+  Fs:  # free air resonance (Hz)
+    value: 51.5
+    winner: vendor_page
+    sources:
+      vendor_page: 51.5
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0026
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0026
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0139
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0139
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-nd105-pr.html

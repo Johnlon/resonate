@@ -15,6 +15,75 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 150.0
-  sensitivity_db: 89.0
-  linear_xmax_mm: 8.5
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.8
+    winner: vendor_page
+    sources:
+      vendor_page: 5.8
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00425
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00425
+  Qes:  # electrical Q factor
+    value: 0.77
+    winner: vendor_page
+    sources:
+      vendor_page: 0.77
+  Qts:  # total Q factor
+    value: 0.62
+    winner: vendor_page
+    sources:
+      vendor_page: 0.62
+  Qms:  # mechanical Q factor
+    value: 3.01
+    winner: vendor_page
+    sources:
+      vendor_page: 3.01
+  Le:  # voice coil inductance (H)
+    value: 0.00132
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00132
+  Pe:  # rated power input (W)
+    value: 75.0
+    winner: vendor_page
+    sources:
+      vendor_page: 75.0
+  Fs:  # free air resonance (Hz)
+    value: 32.0
+    winner: vendor_page
+    sources:
+      vendor_page: 32.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00485
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00485
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  power_peak_W:  # peak power handling (W)
+    value: 150.0
+    winner: vendor_page
+    sources:
+      vendor_page: 150.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 89.0
+    winner: vendor_page
+    sources:
+      vendor_page: 89.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 32.0
+    winner: vendor_page
+    sources:
+      vendor_page: 32.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 3.5
+    winner: vendor_page
+    sources:
+      vendor_page: 3.5
+_sources:
+  vendor_page: https://www.soundimports.eu/en/grs-10sfpc-b.html

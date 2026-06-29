@@ -15,9 +15,87 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 34.0
-freq_high_hz: 1000.0
 specs:
-  power_rms_W: 18.0
-  freq_low_hz: 34.0
-  freq_high_hz: 1000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.5
+    winner: vendor_page
+    sources:
+      vendor_page: 4.5
+  Sd:  # effective piston area (m²)
+    value: 0.121
+    winner: vendor_page
+    sources:
+      vendor_page: 0.121
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0145
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0145
+  Qes:  # electrical Q factor
+    value: 0.3
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3
+  Rms:  # mechanical resistance (kg/s)
+    value: 6.251438686680153
+    winner: vendor_page
+    sources:
+      vendor_page: 6.251438686680153
+  BL:  # force factor (T·m)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  Qts:  # total Q factor
+    value: 0.29
+    winner: vendor_page
+    sources:
+      vendor_page: 0.29
+  Qms:  # mechanical Q factor
+    value: 9.5
+    winner: vendor_page
+    sources:
+      vendor_page: 9.5
+  Le:  # voice coil inductance (H)
+    value: 0.0044
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0044
+  Pe:  # rated power input (W)
+    value: 3000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3000.0
+  Fs:  # free air resonance (Hz)
+    value: 34.0
+    winner: vendor_page
+    sources:
+      vendor_page: 34.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.154892896
+    winner: vendor_page
+    sources:
+      vendor_page: 0.154892896
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.278
+    winner: vendor_page
+    sources:
+      vendor_page: 0.278
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 34.0
+    winner: vendor_page
+    sources:
+      vendor_page: 34.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 1000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-5972--bc-speakers-18ds100-8-spec-sheet.PDF
+  vendor_page: https://www.parts-express.com/B-C-18DS100-8-18-Professional-Neodymium-Subwoofer-8-Ohm-294-5972

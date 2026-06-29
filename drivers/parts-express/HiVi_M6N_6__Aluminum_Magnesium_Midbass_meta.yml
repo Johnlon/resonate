@@ -15,9 +15,86 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
-freq_low_hz: 46.0
-freq_high_hz: 8000.0
 specs:
-  power_rms_W: 45.0
-  freq_low_hz: 46.0
-  freq_high_hz: 8000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.5
+    winner: vendor_page
+    sources:
+      vendor_page: 6.5
+  Sd:  # effective piston area (m²)
+    value: 0.0133
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0133
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000871
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000871
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0043
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0043
+  Qes:  # electrical Q factor
+    value: 0.42
+    winner: vendor_page
+    sources:
+      vendor_page: 0.42
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.8381152938532086
+    winner: vendor_page
+    sources:
+      vendor_page: 0.8381152938532086
+  BL:  # force factor (T·m)
+    value: 7.8
+    winner: vendor_page
+    sources:
+      vendor_page: 7.8
+  Qts:  # total Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Qms:  # mechanical Q factor
+    value: 4.69
+    winner: vendor_page
+    sources:
+      vendor_page: 4.69
+  Pe:  # rated power input (W)
+    value: 45.0
+    winner: vendor_page
+    sources:
+      vendor_page: 45.0
+  Fs:  # free air resonance (Hz)
+    value: 46.0
+    winner: vendor_page
+    sources:
+      vendor_page: 46.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.021803936
+    winner: vendor_page
+    sources:
+      vendor_page: 0.021803936
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0136
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0136
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 46.0
+    winner: vendor_page
+    sources:
+      vendor_page: 46.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 8000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8000.0
+_sources:
+  vendor_page: https://www.parts-express.com/HiVi-M6N-6-Aluminum-Magnesium-Midbass-297-441

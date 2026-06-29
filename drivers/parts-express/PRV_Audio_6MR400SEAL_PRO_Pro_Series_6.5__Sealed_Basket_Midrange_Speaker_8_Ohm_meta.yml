@@ -15,10 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
-freq_low_hz: 400.0
-freq_high_hz: 9000.0
 specs:
-  power_rms_W: 400.0
-  sensitivity_db: 200.0
-  freq_low_hz: 10.0
-  freq_high_hz: 400.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.4
+    winner: vendor_page
+    sources:
+      vendor_page: 6.4
+  Sd:  # effective piston area (m²)
+    value: 0.0149
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0149
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0035
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0035
+  Qes:  # electrical Q factor
+    value: 2.05
+    winner: vendor_page
+    sources:
+      vendor_page: 2.05
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.7198289219047636
+    winner: vendor_page
+    sources:
+      vendor_page: 1.7198289219047636
+  BL:  # force factor (T·m)
+    value: 8.15
+    winner: vendor_page
+    sources:
+      vendor_page: 8.15
+  Qts:  # total Q factor
+    value: 1.76
+    winner: vendor_page
+    sources:
+      vendor_page: 1.76
+  Qms:  # mechanical Q factor
+    value: 12.4
+    winner: vendor_page
+    sources:
+      vendor_page: 12.4
+  Le:  # voice coil inductance (H)
+    value: 0.00121
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00121
+  Pe:  # rated power input (W)
+    value: 400.0
+    winner: vendor_page
+    sources:
+      vendor_page: 400.0
+  Fs:  # free air resonance (Hz)
+    value: 356.9
+    winner: vendor_page
+    sources:
+      vendor_page: 356.9
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0184342368
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0184342368
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00951
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00951
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 10.0
+    winner: vendor_page
+    sources:
+      vendor_page: 10.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 400.0
+    winner: vendor_page
+    sources:
+      vendor_page: 400.0
+_sources:
+  datasheet: https://prvaudio.com/wp-content/uploads/2026/02/PRV-Catalog-2026.pdf
+  vendor_page: https://www.parts-express.com/PRV-Audio-6MR400SEAL-PRO-6-Sealed-Professional-Back-Midrange-Speaker-8-Ohm-294-3528

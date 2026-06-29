@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 24.0
-freq_high_hz: 2000.0
 specs:
-  power_rms_W: 120.0
-  freq_low_hz: 24.0
-  freq_high_hz: 2000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  Sd:  # effective piston area (m²)
+    value: 0.05067
+    winner: vendor_page
+    sources:
+      vendor_page: 0.05067
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00038
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00038
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0055
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0055
+  Qes:  # electrical Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Rms:  # mechanical resistance (kg/s)
+    value: 9.110329469420071
+    winner: vendor_page
+    sources:
+      vendor_page: 9.110329469420071
+  BL:  # force factor (T·m)
+    value: 16.1
+    winner: vendor_page
+    sources:
+      vendor_page: 16.1
+  Qts:  # total Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Qms:  # mechanical Q factor
+    value: 1.89
+    winner: vendor_page
+    sources:
+      vendor_page: 1.89
+  Le:  # voice coil inductance (H)
+    value: 0.00111
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00111
+  Pe:  # rated power input (W)
+    value: 120.0
+    winner: vendor_page
+    sources:
+      vendor_page: 120.0
+  Fs:  # free air resonance (Hz)
+    value: 24.23
+    winner: vendor_page
+    sources:
+      vendor_page: 24.23
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.14696419200000002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.14696419200000002
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.11309999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.11309999999999999
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 24.0
+    winner: vendor_page
+    sources:
+      vendor_page: 24.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 2000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/295-534--dayton-audio-DSA315-8-specifications.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-DSA315-8-12-Designer-Series-Aluminum-Cone-Woofer-295-534

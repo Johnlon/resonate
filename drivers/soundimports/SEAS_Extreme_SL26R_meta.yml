@@ -14,4 +14,41 @@ dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.0342
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0342
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00029
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00029
+  Xmax:  # one-way linear excursion (m)
+    value: 0.028
+    winner: vendor_page
+    sources:
+      vendor_page: 0.028
+  Rms:  # mechanical resistance (kg/s)
+    value: 4.08
+    winner: vendor_page
+    sources:
+      vendor_page: 4.08
+  Fs:  # free air resonance (Hz)
+    value: 18.0
+    winner: vendor_page
+    sources:
+      vendor_page: 18.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.05
+    winner: vendor_page
+    sources:
+      vendor_page: 0.05
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.273
+    winner: vendor_page
+    sources:
+      vendor_page: 0.273
+_sources:
+  vendor_page: https://www.soundimports.eu/en/seas-sl26r.html

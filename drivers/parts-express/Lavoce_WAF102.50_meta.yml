@@ -20,8 +20,82 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 293-716
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 250.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.5
+    winner: vendor_page
+    sources:
+      vendor_page: 5.5
+  Sd:  # effective piston area (m²)
+    value: 0.0347
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0347
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00014000000000000001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00014000000000000001
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005
+  Qes:  # electrical Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.912315665210825
+    winner: vendor_page
+    sources:
+      vendor_page: 2.912315665210825
+  BL:  # force factor (T·m)
+    value: 16.0
+    winner: vendor_page
+    sources:
+      vendor_page: 16.0
+  Qts:  # total Q factor
+    value: 0.31
+    winner: vendor_page
+    sources:
+      vendor_page: 0.31
+  Qms:  # mechanical Q factor
+    value: 5.3
+    winner: vendor_page
+    sources:
+      vendor_page: 5.3
+  Le:  # voice coil inductance (H)
+    value: 0.0008
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0008
+  Pe:  # rated power input (W)
+    value: 250.0
+    winner: vendor_page
+    sources:
+      vendor_page: 250.0
+  Fs:  # free air resonance (Hz)
+    value: 71.0
+    winner: vendor_page
+    sources:
+      vendor_page: 71.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.023502943999999998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.023502943999999998
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0346
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0346
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/293-716--lavoce-waf102.50-specifications.pdf
+  vendor_page: https://www.parts-express.com/LaVoce-WAF102.50-10-Woofer-293-716

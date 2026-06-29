@@ -15,10 +15,62 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
-freq_low_hz: 2000.0
-freq_high_hz: 20000.0
 specs:
-  sensitivity_db: 90.0
-  power_rms_W: 100.0
-  freq_low_hz: 2000.0
-  freq_high_hz: 20000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
+  Qes:  # electrical Q factor
+    value: 1.6
+    winner: vendor_page
+    sources:
+      vendor_page: 1.6
+  Qts:  # total Q factor
+    value: 1.2
+    winner: vendor_page
+    sources:
+      vendor_page: 1.2
+  Qms:  # mechanical Q factor
+    value: 4.7
+    winner: vendor_page
+    sources:
+      vendor_page: 4.7
+  Le:  # voice coil inductance (H)
+    value: 5.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0e-05
+  Pe:  # rated power input (W)
+    value: 100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 100.0
+  Fs:  # free air resonance (Hz)
+    value: 1000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1000.0
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 90.0
+    winner: vendor_page
+    sources:
+      vendor_page: 90.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 2000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2000.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 20000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/293-192--ciare-ht200-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Ciare-HT200-.75-Dome-Tweeter-8-Ohm-293-192

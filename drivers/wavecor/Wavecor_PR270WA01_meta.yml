@@ -19,39 +19,53 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
-field_provenance:
-  Mms:
+specs:
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.112
+    winner: manu_page
     sources:
-      html: 0.112
-    winner: html
-  Sd:
+      manu_page: 0.112
+    note: Not in datasheet; value from manu_page
+  Sd:  # effective piston area (m²)
+    value: 0.0312
+    winner: manu_page
     sources:
-      pdf: 0.0312
-      html: 0.0312
-    winner: html
-  Cms:
+      datasheet: 0.0312
+      manu_page: 0.0312
+    note: Not in datasheet; value from manu_page
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00033
+    winner: manu_page
     sources:
-      pdf: 0.00033
-      html: 0.00033
-    winner: html
-  Fs:
+      datasheet: 0.00033
+      manu_page: 0.00033
+    note: Not in datasheet; value from manu_page
+  Fs:  # free air resonance (Hz)
+    value: 26.0
+    winner: manu_page
     sources:
-      html: 26.0
-    winner: html
-  Xmax:
+      manu_page: 26.0
+    note: Not in datasheet; value from manu_page
+  Xmax:  # one-way linear excursion (m)
+    value: 0.02
+    winner: manu_page
     sources:
-      pdf: 0.02
-      html: 0.02
-    winner: html
-  Qms:
+      datasheet: 0.02
+      manu_page: 0.02
+    note: Not in datasheet; value from manu_page
+  Qms:  # mechanical Q factor
+    value: 24.0
+    winner: manu_page
     sources:
-      html: 24.0
-    winner: html
-  Vas:
+      manu_page: 24.0
+    note: Not in datasheet; value from manu_page
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.046
+    winner: manu_page
     sources:
-      pdf: 0.046
-      html: 0.046
-    winner: html
-freq_low_hz: null
-freq_high_hz: null
-specs: null
+      datasheet: 0.046
+      manu_page: 0.046
+    note: Not in datasheet; value from manu_page
+_sources:
+  datasheet: http://www.wavecor.com/Driver%20specifications%20PDF/PR270WA01_specifications.pdf
+  manu_page: http://www.wavecor.com/html/pr270wa01.html

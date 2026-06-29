@@ -14,4 +14,46 @@ dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.0087
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0087
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00133
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00133
+  Xmax:  # one-way linear excursion (m)
+    value: 0.01
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.88
+    winner: vendor_page
+    sources:
+      vendor_page: 0.88
+  Qms:  # mechanical Q factor
+    value: 5.9
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9
+  Fs:  # free air resonance (Hz)
+    value: 23.0
+    winner: vendor_page
+    sources:
+      vendor_page: 23.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0142
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0142
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.036
+    winner: vendor_page
+    sources:
+      vendor_page: 0.036
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sb-acoustics-sb13pfcr-00.html

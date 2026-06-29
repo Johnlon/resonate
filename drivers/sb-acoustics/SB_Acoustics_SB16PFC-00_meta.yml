@@ -15,4 +15,37 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.0124
+    winner: manu_page
+    sources:
+      manu_page: 0.0124
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0014
+    winner: manu_page
+    sources:
+      manu_page: 0.0014
+  Qms:  # mechanical Q factor
+    value: 4.4
+    winner: manu_page
+    sources:
+      manu_page: 4.4
+  Fs:  # free air resonance (Hz)
+    value: 22.0
+    winner: manu_page
+    sources:
+      manu_page: 22.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.03
+    winner: manu_page
+    sources:
+      manu_page: 0.03
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.038
+    winner: manu_page
+    sources:
+      manu_page: 0.038
+_sources:
+  datasheet: https://sbacoustics.com/wp-content/uploads/2021/02/6in-SB16PFC-00-OEM-only.pdf
+  manu_page: https://sbacoustics.com/product/6-sb16pfc-00-paper/

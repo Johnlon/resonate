@@ -15,9 +15,57 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
-freq_low_hz: 2000.0
-freq_high_hz: 20000.0
 specs:
-  power_rms_W: 100.0
-  freq_low_hz: 2000.0
-  freq_high_hz: 20000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
+  Qes:  # electrical Q factor
+    value: 0.7
+    winner: vendor_page
+    sources:
+      vendor_page: 0.7
+  Qts:  # total Q factor
+    value: 0.51
+    winner: vendor_page
+    sources:
+      vendor_page: 0.51
+  Qms:  # mechanical Q factor
+    value: 1.89
+    winner: vendor_page
+    sources:
+      vendor_page: 1.89
+  Le:  # voice coil inductance (H)
+    value: 2.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0e-05
+  Pe:  # rated power input (W)
+    value: 100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 100.0
+  Fs:  # free air resonance (Hz)
+    value: 721.0
+    winner: vendor_page
+    sources:
+      vendor_page: 721.0
+  Znom:  # nominal impedance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 2000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2000.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 20000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/264-1460--tymphany-da25bg08-06-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Peerless-DA25BG08-06-1-Aluminum-Dome-Tweeter-6-Ohm-264-1460

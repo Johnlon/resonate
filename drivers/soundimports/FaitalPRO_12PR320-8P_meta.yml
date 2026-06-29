@@ -15,7 +15,105 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 600.0
-  sensitivity_db: 97.0
-  voice_coil_dia_mm: 65.0
-  linear_xmax_mm: 14.74
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.3
+    winner: vendor_page
+    sources:
+      vendor_page: 5.3
+  Sd:  # effective piston area (m²)
+    value: 0.0539
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0539
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00028
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00028
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00737
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00737
+  Qes:  # electrical Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.7
+    winner: vendor_page
+    sources:
+      vendor_page: 1.7
+  BL:  # force factor (T·m)
+    value: 13.5
+    winner: vendor_page
+    sources:
+      vendor_page: 13.5
+  Qts:  # total Q factor
+    value: 0.37
+    winner: vendor_page
+    sources:
+      vendor_page: 0.37
+  Qms:  # mechanical Q factor
+    value: 7.8
+    winner: vendor_page
+    sources:
+      vendor_page: 7.8
+  Le:  # voice coil inductance (H)
+    value: 0.00067
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00067
+  Pe:  # rated power input (W)
+    value: 300.0
+    winner: vendor_page
+    sources:
+      vendor_page: 300.0
+  Fs:  # free air resonance (Hz)
+    value: 42.0
+    winner: vendor_page
+    sources:
+      vendor_page: 42.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.1133
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1133
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0514
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0514
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  power_peak_W:  # peak power handling (W)
+    value: 600.0
+    winner: vendor_page
+    sources:
+      vendor_page: 600.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 97.0
+    winner: vendor_page
+    sources:
+      vendor_page: 97.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 45.0
+    winner: vendor_page
+    sources:
+      vendor_page: 45.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 65.0
+    winner: vendor_page
+    sources:
+      vendor_page: 65.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/faitalpro-12pr320-8p.html

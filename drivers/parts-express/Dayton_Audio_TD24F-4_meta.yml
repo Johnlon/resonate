@@ -19,10 +19,42 @@ obsolete: null
 dq_issue: missing_Sd; Fs_low
 community: null
 fetched_sku: 275-021
-field_provenance: null
-freq_low_hz: 3000.0
-freq_high_hz: 25000.0
 specs:
-  power_rms_W: 25.0
-  freq_low_hz: 3000.0
-  freq_high_hz: 25000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.5
+    winner: vendor_page
+    sources:
+      vendor_page: 3.5
+  Le:  # voice coil inductance (H)
+    value: 0.00012
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00012
+  Pe:  # rated power input (W)
+    value: 25.0
+    winner: vendor_page
+    sources:
+      vendor_page: 25.0
+  Fs:  # free air resonance (Hz)
+    value: 1.667
+    winner: vendor_page
+    sources:
+      vendor_page: 1.667
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 3000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3000.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 25000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 25000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/275-021--dayton-audio-td24f-4-specification-sheet.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-TD24F-4-1-Soft-Dome-Neodymium-Tweeter-4-Ohm-275-021

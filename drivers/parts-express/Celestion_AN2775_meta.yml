@@ -19,8 +19,77 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-2046
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 1.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.26
+    winner: vendor_page
+    sources:
+      vendor_page: 5.26
+  Sd:  # effective piston area (m²)
+    value: 0.002827
+    winner: vendor_page
+    sources:
+      vendor_page: 0.002827
+  Cms:  # mechanical compliance (m/N)
+    value: 0.621
+    winner: vendor_page
+    sources:
+      vendor_page: 0.621
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004
+  Qes:  # electrical Q factor
+    value: 1.166
+    winner: vendor_page
+    sources:
+      vendor_page: 1.166
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.3837783522450372
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3837783522450372
+  BL:  # force factor (T·m)
+    value: 3.06
+    winner: vendor_page
+    sources:
+      vendor_page: 3.06
+  Qts:  # total Q factor
+    value: 0.959
+    winner: vendor_page
+    sources:
+      vendor_page: 0.959
+  Qms:  # mechanical Q factor
+    value: 5.408
+    winner: vendor_page
+    sources:
+      vendor_page: 5.408
+  Pe:  # rated power input (W)
+    value: 1.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0
+  Fs:  # free air resonance (Hz)
+    value: 123.3
+    winner: vendor_page
+    sources:
+      vendor_page: 123.3
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00357
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00357
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00268
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00268
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-2046--an2775-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Celestion-AN2775-2-3-4-Full-Range-Compact-Array-Driver-294-2046

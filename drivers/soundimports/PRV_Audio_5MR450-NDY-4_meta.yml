@@ -15,4 +15,65 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 450.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.7
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7
+  Sd:  # effective piston area (m²)
+    value: 0.0095
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0095
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0033
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0033
+  Qes:  # electrical Q factor
+    value: 0.5
+    winner: vendor_page
+    sources:
+      vendor_page: 0.5
+  BL:  # force factor (T·m)
+    value: 7.94
+    winner: vendor_page
+    sources:
+      vendor_page: 7.94
+  Qts:  # total Q factor
+    value: 0.49
+    winner: vendor_page
+    sources:
+      vendor_page: 0.49
+  Qms:  # mechanical Q factor
+    value: 20.74
+    winner: vendor_page
+    sources:
+      vendor_page: 20.74
+  Le:  # voice coil inductance (H)
+    value: 2.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0e-05
+  Pe:  # rated power input (W)
+    value: 450.0
+    winner: vendor_page
+    sources:
+      vendor_page: 450.0
+  Fs:  # free air resonance (Hz)
+    value: 149.5
+    winner: vendor_page
+    sources:
+      vendor_page: 149.5
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00156
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00156
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00914
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00914
+_sources:
+  vendor_page: https://www.soundimports.eu/en/prv-audio-5mr450-ndy-4.html

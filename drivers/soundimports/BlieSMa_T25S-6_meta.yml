@@ -15,5 +15,50 @@ community: null
 fetched_sku: null
 driver_type: tweeter
 specs:
-  power_rms_W: 100.0
-  sensitivity_db: 91.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
+  Qes:  # electrical Q factor
+    value: 0.82
+    winner: vendor_page
+    sources:
+      vendor_page: 0.82
+  Qts:  # total Q factor
+    value: 0.51
+    winner: vendor_page
+    sources:
+      vendor_page: 0.51
+  Qms:  # mechanical Q factor
+    value: 1.35
+    winner: vendor_page
+    sources:
+      vendor_page: 1.35
+  Le:  # voice coil inductance (H)
+    value: 8.0e-06
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0e-06
+  Pe:  # rated power input (W)
+    value: 100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 100.0
+  Fs:  # free air resonance (Hz)
+    value: 920.0
+    winner: vendor_page
+    sources:
+      vendor_page: 920.0
+  Znom:  # nominal impedance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 91.0
+    winner: vendor_page
+    sources:
+      vendor_page: 91.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/bliesma-t25s-6.html

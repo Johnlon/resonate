@@ -15,4 +15,80 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 200.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.1
+    winner: vendor_page
+    sources:
+      vendor_page: 3.1
+  Sd:  # effective piston area (m²)
+    value: 0.0363
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0363
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00056
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00056
+  Xmax:  # one-way linear excursion (m)
+    value: 0.007
+    winner: vendor_page
+    sources:
+      vendor_page: 0.007
+  Qes:  # electrical Q factor
+    value: 0.27
+    winner: vendor_page
+    sources:
+      vendor_page: 0.27
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0
+  BL:  # force factor (T·m)
+    value: 12.0
+    winner: vendor_page
+    sources:
+      vendor_page: 12.0
+  Qts:  # total Q factor
+    value: 0.26
+    winner: vendor_page
+    sources:
+      vendor_page: 0.26
+  Qms:  # mechanical Q factor
+    value: 6.21
+    winner: vendor_page
+    sources:
+      vendor_page: 6.21
+  Le:  # voice coil inductance (H)
+    value: 0.0005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0005
+  Pe:  # rated power input (W)
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
+  Fs:  # free air resonance (Hz)
+    value: 23.0
+    winner: vendor_page
+    sources:
+      vendor_page: 23.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.104
+    winner: vendor_page
+    sources:
+      vendor_page: 0.104
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.086
+    winner: vendor_page
+    sources:
+      vendor_page: 0.086
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/scan-speak-28w-4878t01.html

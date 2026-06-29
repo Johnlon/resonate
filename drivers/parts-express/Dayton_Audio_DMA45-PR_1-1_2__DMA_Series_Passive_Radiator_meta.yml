@@ -15,4 +15,37 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.00086
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00086
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00212
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00212
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005
+  Qms:  # mechanical Q factor
+    value: 2.75
+    winner: vendor_page
+    sources:
+      vendor_page: 2.75
+  Fs:  # free air resonance (Hz)
+    value: 60.0
+    winner: vendor_page
+    sources:
+      vendor_page: 60.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00026051456
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00026051456
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/295-592--dayton-audio-dma45-pr-specification-sheet.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-DMA45-PR-1-1-2-DMA-Series-Passive-Radiator-295-592

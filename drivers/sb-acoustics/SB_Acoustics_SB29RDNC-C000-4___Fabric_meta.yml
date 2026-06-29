@@ -16,8 +16,81 @@ dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  voice_coil_dia_mm: 29.0
-  Hg_mm: 2.5
-  linear_xmax_mm: 0.5
-  sensitivity_db: 94.0
-  power_rms_W: 100.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.0
+    winner: manu_page
+    sources:
+      manu_page: 3.0
+  Sd:  # effective piston area (m²)
+    value: 0.00096
+    winner: manu_page
+    sources:
+      manu_page: 0.00096
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00025
+    winner: manu_page
+    sources:
+      manu_page: 0.00025
+  Qes:  # electrical Q factor
+    value: 0.72
+    winner: manu_page
+    sources:
+      manu_page: 0.72
+  BL:  # force factor (T·m)
+    value: 2.6
+    winner: manu_page
+    sources:
+      manu_page: 2.6
+  Qts:  # total Q factor
+    value: 0.45
+    winner: manu_page
+    sources:
+      manu_page: 0.45
+  Qms:  # mechanical Q factor
+    value: 1.2
+    winner: manu_page
+    sources:
+      manu_page: 1.2
+  Le:  # voice coil inductance (H)
+    value: 5.0e-05
+    winner: manu_page
+    sources:
+      manu_page: 5.0e-05
+  Pe:  # rated power input (W)
+    value: 100.0
+    winner: manu_page
+    sources:
+      manu_page: 100.0
+  Fs:  # free air resonance (Hz)
+    value: 680.0
+    winner: manu_page
+    sources:
+      manu_page: 680.0
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00045
+    winner: manu_page
+    sources:
+      manu_page: 0.00045
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: manu_page
+    sources:
+      manu_page: 4.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 29.0
+    winner: manu_page
+    sources:
+      manu_page: 29.0
+  Hg_mm:  # magnetic gap height (mm)
+    value: 2.5
+    winner: manu_page
+    sources:
+      manu_page: 2.5
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 94.0
+    winner: manu_page
+    sources:
+      manu_page: 94.0
+_sources:
+  datasheet: https://sbacoustics.com/wp-content/uploads/2020/02/SB29RDNC-C000-4.pdf
+  manu_page: https://sbacoustics.com/product/sb29rdnc-c000-4/

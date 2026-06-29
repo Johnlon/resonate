@@ -20,9 +20,86 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 253-047
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  sensitivity_db: 98.0
-  power_rms_W: 1000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.4
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4
+  Sd:  # effective piston area (m²)
+    value: 0.1255
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1255
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0057
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0057
+  Xmax:  # one-way linear excursion (m)
+    value: 0.011
+    winner: vendor_page
+    sources:
+      vendor_page: 0.011
+  Qes:  # electrical Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.005735773546170516
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005735773546170516
+  BL:  # force factor (T·m)
+    value: 23.8
+    winner: vendor_page
+    sources:
+      vendor_page: 23.8
+  Qts:  # total Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  Qms:  # mechanical Q factor
+    value: 7.3
+    winner: vendor_page
+    sources:
+      vendor_page: 7.3
+  Le:  # voice coil inductance (H)
+    value: 0.0019
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0019
+  Pe:  # rated power input (W)
+    value: 1000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1000.0
+  Fs:  # free air resonance (Hz)
+    value: 34.0
+    winner: vendor_page
+    sources:
+      vendor_page: 34.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.250037344
+    winner: vendor_page
+    sources:
+      vendor_page: 0.250037344
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00019600000000000002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00019600000000000002
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 98.0
+    winner: vendor_page
+    sources:
+      vendor_page: 98.0
+_sources:
+  vendor_page: https://www.parts-express.com/Beyma-18LEX1000Fe-LEX-Series-18-Subwoofer-8-Ohm-253-047

@@ -15,5 +15,45 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 5.0
-  voice_coil_dia_mm: 19.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.5
+    winner: vendor_page
+    sources:
+      vendor_page: 3.5
+  Le:  # voice coil inductance (H)
+    value: 0.00013
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00013
+  Pe:  # rated power input (W)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+  Fs:  # free air resonance (Hz)
+    value: 450.0
+    winner: vendor_page
+    sources:
+      vendor_page: 450.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 100.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 15000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15000.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 19.0
+    winner: vendor_page
+    sources:
+      vendor_page: 19.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-daex19qlp-4.html

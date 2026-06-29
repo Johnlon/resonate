@@ -15,9 +15,87 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 35.0
-freq_high_hz: 1000.0
 specs:
-  power_rms_W: 15.0
-  freq_low_hz: 35.0
-  freq_high_hz: 1000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.2
+    winner: vendor_page
+    sources:
+      vendor_page: 3.2
+  Sd:  # effective piston area (m²)
+    value: 0.0855
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0855
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0165
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0165
+  Qes:  # electrical Q factor
+    value: 0.17
+    winner: vendor_page
+    sources:
+      vendor_page: 0.17
+  Rms:  # mechanical resistance (kg/s)
+    value: 12.408622557710835
+    winner: vendor_page
+    sources:
+      vendor_page: 12.408622557710835
+  BL:  # force factor (T·m)
+    value: 33.6
+    winner: vendor_page
+    sources:
+      vendor_page: 33.6
+  Qts:  # total Q factor
+    value: 0.16
+    winner: vendor_page
+    sources:
+      vendor_page: 0.16
+  Qms:  # mechanical Q factor
+    value: 4.7
+    winner: vendor_page
+    sources:
+      vendor_page: 4.7
+  Le:  # voice coil inductance (H)
+    value: 0.0032
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0032
+  Pe:  # rated power input (W)
+    value: 3200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3200.0
+  Fs:  # free air resonance (Hz)
+    value: 34.0
+    winner: vendor_page
+    sources:
+      vendor_page: 34.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.08296822400000001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.08296822400000001
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.273
+    winner: vendor_page
+    sources:
+      vendor_page: 0.273
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 35.0
+    winner: vendor_page
+    sources:
+      vendor_page: 35.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 1000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-6058--bc-15ds115-4-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/B-C-15DS115-4-15-Neodymium-Subwoofer-4-Ohm-294-6058

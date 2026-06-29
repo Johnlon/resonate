@@ -15,4 +15,70 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 40.0
+  Sd:  # effective piston area (m²)
+    value: 0.0085
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0085
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0025942
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0025942
+  Xmax:  # one-way linear excursion (m)
+    value: 0.007
+    winner: vendor_page
+    sources:
+      vendor_page: 0.007
+  Qes:  # electrical Q factor
+    value: 0.4212
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4212
+  BL:  # force factor (T·m)
+    value: 4.726
+    winner: vendor_page
+    sources:
+      vendor_page: 4.726
+  Qts:  # total Q factor
+    value: 0.36
+    winner: vendor_page
+    sources:
+      vendor_page: 0.36
+  Qms:  # mechanical Q factor
+    value: 2.4647
+    winner: vendor_page
+    sources:
+      vendor_page: 2.4647
+  Le:  # voice coil inductance (H)
+    value: 9.12e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 9.12e-05
+  Pe:  # rated power input (W)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  Fs:  # free air resonance (Hz)
+    value: 44.3
+    winner: vendor_page
+    sources:
+      vendor_page: 44.3
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0261403
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0261403
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0049661
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0049661
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/markaudio-chr-90-silver.html

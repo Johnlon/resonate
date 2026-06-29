@@ -15,4 +15,80 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 70.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.46
+    winner: vendor_page
+    sources:
+      vendor_page: 3.46
+  Sd:  # effective piston area (m²)
+    value: 0.0123
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0123
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00059
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00059
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0095
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0095
+  Qes:  # electrical Q factor
+    value: 0.66
+    winner: vendor_page
+    sources:
+      vendor_page: 0.66
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.02
+    winner: vendor_page
+    sources:
+      vendor_page: 1.02
+  BL:  # force factor (T·m)
+    value: 5.18
+    winner: vendor_page
+    sources:
+      vendor_page: 5.18
+  Qts:  # total Q factor
+    value: 0.59
+    winner: vendor_page
+    sources:
+      vendor_page: 0.59
+  Qms:  # mechanical Q factor
+    value: 5.08
+    winner: vendor_page
+    sources:
+      vendor_page: 5.08
+  Le:  # voice coil inductance (H)
+    value: 0.00028
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00028
+  Pe:  # rated power input (W)
+    value: 70.0
+    winner: vendor_page
+    sources:
+      vendor_page: 70.0
+  Fs:  # free air resonance (Hz)
+    value: 51.0
+    winner: vendor_page
+    sources:
+      vendor_page: 51.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0126
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0126
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0163
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0163
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/scan-speak-16w4531g06.html

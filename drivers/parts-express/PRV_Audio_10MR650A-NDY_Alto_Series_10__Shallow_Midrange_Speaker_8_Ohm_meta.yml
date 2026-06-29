@@ -15,10 +15,97 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
-freq_low_hz: 70.0
-freq_high_hz: 6500.0
 specs:
-  power_rms_W: 4.0
-  freq_low_hz: 70.0
-  freq_high_hz: 6.0
-  sensitivity_db: 2.83
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.1
+    winner: vendor_page
+    sources:
+      vendor_page: 5.1
+  Sd:  # effective piston area (m²)
+    value: 0.038
+    winner: vendor_page
+    sources:
+      vendor_page: 0.038
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000202
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000202
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0035
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0035
+  Qes:  # electrical Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.2356169505900803
+    winner: vendor_page
+    sources:
+      vendor_page: 1.2356169505900803
+  BL:  # force factor (T·m)
+    value: 12.74
+    winner: vendor_page
+    sources:
+      vendor_page: 12.74
+  Qts:  # total Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  Qms:  # mechanical Q factor
+    value: 10.23
+    winner: vendor_page
+    sources:
+      vendor_page: 10.23
+  Le:  # voice coil inductance (H)
+    value: 0.00039
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00039
+  Pe:  # rated power input (W)
+    value: 650.0
+    winner: vendor_page
+    sources:
+      vendor_page: 650.0
+  Fs:  # free air resonance (Hz)
+    value: 62.4
+    winner: vendor_page
+    sources:
+      vendor_page: 62.4
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.040776191999999996
+    winner: vendor_page
+    sources:
+      vendor_page: 0.040776191999999996
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.032240000000000005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.032240000000000005
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 70.0
+    winner: vendor_page
+    sources:
+      vendor_page: 70.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 2.83
+    winner: vendor_page
+    sources:
+      vendor_page: 2.83
+_sources:
+  datasheet: https://prvaudio.com/wp-content/uploads/2026/02/PRV-Catalog-2026.pdf
+  vendor_page: https://www.parts-express.com/PRV-Audio-10MR650A-NDY-10-Shallow-Midrange-Speaker-8-Ohm-294-2768

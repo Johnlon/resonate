@@ -14,4 +14,71 @@ dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
-specs: null
+specs:
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.07
+    winner: vendor_page
+    sources:
+      vendor_page: 6.07
+  Sd:  # effective piston area (m²)
+    value: 0.0219
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0219
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00066
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00066
+  Qes:  # electrical Q factor
+    value: 0.26
+    winner: vendor_page
+    sources:
+      vendor_page: 0.26
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.52
+    winner: vendor_page
+    sources:
+      vendor_page: 0.52
+  BL:  # force factor (T·m)
+    value: 11.1
+    winner: vendor_page
+    sources:
+      vendor_page: 11.1
+  Qts:  # total Q factor
+    value: 0.25
+    winner: vendor_page
+    sources:
+      vendor_page: 0.25
+  Qms:  # mechanical Q factor
+    value: 10.0
+    winner: vendor_page
+    sources:
+      vendor_page: 10.0
+  Le:  # voice coil inductance (H)
+    value: 0.00049
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00049
+  Fs:  # free air resonance (Hz)
+    value: 46.0
+    winner: vendor_page
+    sources:
+      vendor_page: 46.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0443
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0443
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.018
+    winner: vendor_page
+    sources:
+      vendor_page: 0.018
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/jantzen-audio-ja-8008hmq.html

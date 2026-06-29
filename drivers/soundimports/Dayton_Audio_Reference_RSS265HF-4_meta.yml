@@ -15,7 +15,100 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 700.0
-  sensitivity_db: 87.8
-  voice_coil_dia_mm: 64.0
-  linear_xmax_mm: 24.6
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.5
+    winner: vendor_page
+    sources:
+      vendor_page: 3.5
+  Sd:  # effective piston area (m²)
+    value: 0.03563
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03563
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00032
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00032
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0123
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0123
+  Qes:  # electrical Q factor
+    value: 0.53
+    winner: vendor_page
+    sources:
+      vendor_page: 0.53
+  BL:  # force factor (T·m)
+    value: 11.43
+    winner: vendor_page
+    sources:
+      vendor_page: 11.43
+  Qts:  # total Q factor
+    value: 0.45
+    winner: vendor_page
+    sources:
+      vendor_page: 0.45
+  Qms:  # mechanical Q factor
+    value: 3.06
+    winner: vendor_page
+    sources:
+      vendor_page: 3.06
+  Le:  # voice coil inductance (H)
+    value: 0.00096
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00096
+  Pe:  # rated power input (W)
+    value: 350.0
+    winner: vendor_page
+    sources:
+      vendor_page: 350.0
+  Fs:  # free air resonance (Hz)
+    value: 25.6
+    winner: vendor_page
+    sources:
+      vendor_page: 25.6
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.054
+    winner: vendor_page
+    sources:
+      vendor_page: 0.054
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.12
+    winner: vendor_page
+    sources:
+      vendor_page: 0.12
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  power_peak_W:  # peak power handling (W)
+    value: 700.0
+    winner: vendor_page
+    sources:
+      vendor_page: 700.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 87.8
+    winner: vendor_page
+    sources:
+      vendor_page: 87.8
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 22.0
+    winner: vendor_page
+    sources:
+      vendor_page: 22.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 1.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 64.0
+    winner: vendor_page
+    sources:
+      vendor_page: 64.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-rss265hf-4.html

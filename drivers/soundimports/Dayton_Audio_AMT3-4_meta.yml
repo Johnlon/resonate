@@ -15,5 +15,50 @@ community: null
 fetched_sku: null
 driver_type: tweeter
 specs:
-  power_rms_W: 25.0
-  sensitivity_db: 96.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0
+  Qts:  # total Q factor
+    value: 6.15
+    winner: vendor_page
+    sources:
+      vendor_page: 6.15
+  Qms:  # mechanical Q factor
+    value: 6.26
+    winner: vendor_page
+    sources:
+      vendor_page: 6.26
+  Pe:  # rated power input (W)
+    value: 25.0
+    winner: vendor_page
+    sources:
+      vendor_page: 25.0
+  Fs:  # free air resonance (Hz)
+    value: 1900.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1900.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 96.0
+    winner: vendor_page
+    sources:
+      vendor_page: 96.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 1.9
+    winner: vendor_page
+    sources:
+      vendor_page: 1.9
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 18.0
+    winner: vendor_page
+    sources:
+      vendor_page: 18.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-amt3-4.html

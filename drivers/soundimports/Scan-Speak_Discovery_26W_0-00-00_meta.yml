@@ -14,4 +14,41 @@ dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.0352
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0352
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00055
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00055
+  Xmax:  # one-way linear excursion (m)
+    value: 0.028
+    winner: vendor_page
+    sources:
+      vendor_page: 0.028
+  Qms:  # mechanical Q factor
+    value: 13.7
+    winner: vendor_page
+    sources:
+      vendor_page: 13.7
+  Fs:  # free air resonance (Hz)
+    value: 11.0
+    winner: vendor_page
+    sources:
+      vendor_page: 11.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0951
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0951
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+_sources:
+  vendor_page: https://www.soundimports.eu/en/scan-speak-26w-0-00-00.html

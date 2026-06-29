@@ -44,7 +44,78 @@ manu_page_fields:
 - SPL
 - Sd
 - Vas
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  sensitivity_db: 90.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.3
+    winner: manu_page
+    sources:
+      manu_page: 3.3
+  Sd:  # effective piston area (m²)
+    value: 0.005
+    winner: manu_page
+    sources:
+      manu_page: 0.005
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00077
+    winner: manu_page
+    sources:
+      manu_page: 0.00077
+  Xmax:  # one-way linear excursion (m)
+    value: 0.003
+    winner: manu_page
+    sources:
+      manu_page: 0.003
+  Qes:  # electrical Q factor
+    value: 0.33
+    winner: manu_page
+    sources:
+      manu_page: 0.33
+  BL:  # force factor (T·m)
+    value: 5.5
+    winner: manu_page
+    sources:
+      manu_page: 5.5
+  Qts:  # total Q factor
+    value: 0.31
+    winner: manu_page
+    sources:
+      manu_page: 0.31
+  Qms:  # mechanical Q factor
+    value: 4.54
+    winner: manu_page
+    sources:
+      manu_page: 4.54
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 90.0
+    winner: manu_page
+    sources:
+      manu_page: 90.0
+  Le:  # voice coil inductance (H)
+    value: 6.0e-05
+    winner: manu_page
+    sources:
+      manu_page: 6.0e-05
+  Fs:  # free air resonance (Hz)
+    value: 68.0
+    winner: manu_page
+    sources:
+      manu_page: 68.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0027
+    winner: manu_page
+    sources:
+      manu_page: 0.0027
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.071
+    winner: manu_page
+    sources:
+      manu_page: 0.071
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: manu_page
+    sources:
+      manu_page: 4.0
+_sources:
+  datasheet: https://www.scan-speak.dk/datasheet/pdf/11m-4631g05.pdf
+  adv_datasheet: https://www.scan-speak.dk/datasheet/adv/11m-4631g05.pdf
+  manu_page: https://www.scan-speak.dk/product/11m-4631g05/

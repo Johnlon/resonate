@@ -42,7 +42,73 @@ manu_page_fields:
 - SPL
 - Sd
 - Vas
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  sensitivity_db: 92.5
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.4
+    winner: manu_page
+    sources:
+      manu_page: 3.4
+  Sd:  # effective piston area (m²)
+    value: 0.0133
+    winner: manu_page
+    sources:
+      manu_page: 0.0133
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00068
+    winner: manu_page
+    sources:
+      manu_page: 0.00068
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0072
+    winner: manu_page
+    sources:
+      manu_page: 0.0072
+  Qes:  # electrical Q factor
+    value: 0.26
+    winner: manu_page
+    sources:
+      manu_page: 0.26
+  BL:  # force factor (T·m)
+    value: 8.1
+    winner: manu_page
+    sources:
+      manu_page: 8.1
+  Qts:  # total Q factor
+    value: 0.25
+    winner: manu_page
+    sources:
+      manu_page: 0.25
+  Qms:  # mechanical Q factor
+    value: 5.62
+    winner: manu_page
+    sources:
+      manu_page: 5.62
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 92.5
+    winner: manu_page
+    sources:
+      manu_page: 92.5
+  Le:  # voice coil inductance (H)
+    value: 0.0001
+    winner: manu_page
+    sources:
+      manu_page: 0.0001
+  Fs:  # free air resonance (Hz)
+    value: 46.0
+    winner: manu_page
+    sources:
+      manu_page: 46.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0172
+    winner: manu_page
+    sources:
+      manu_page: 0.0172
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.01759
+    winner: manu_page
+    sources:
+      manu_page: 0.01759
+_sources:
+  datasheet: https://www.scan-speak.dk/datasheet/pdf/18we-4542t00.pdf
+  adv_datasheet: https://www.scan-speak.dk/datasheet/adv/18we-4542t00.pdf
+  manu_page: https://www.scan-speak.dk/product/18we-4542t00/

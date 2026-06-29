@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 35.0
-freq_high_hz: 3150.0
 specs:
-  power_rms_W: 1.2
-  freq_low_hz: 35.0
-  freq_high_hz: 3150.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 12.7
+    winner: vendor_page
+    sources:
+      vendor_page: 12.7
+  Sd:  # effective piston area (m²)
+    value: 0.0847
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0847
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00022
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00022
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00925
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00925
+  Qes:  # electrical Q factor
+    value: 0.47
+    winner: vendor_page
+    sources:
+      vendor_page: 0.47
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.589360283384291
+    winner: vendor_page
+    sources:
+      vendor_page: 1.589360283384291
+  BL:  # force factor (T·m)
+    value: 23.8
+    winner: vendor_page
+    sources:
+      vendor_page: 23.8
+  Qts:  # total Q factor
+    value: 0.45
+    winner: vendor_page
+    sources:
+      vendor_page: 0.45
+  Qms:  # mechanical Q factor
+    value: 13.2
+    winner: vendor_page
+    sources:
+      vendor_page: 13.2
+  Le:  # voice coil inductance (H)
+    value: 0.002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.002
+  Pe:  # rated power input (W)
+    value: 500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 500.0
+  Fs:  # free air resonance (Hz)
+    value: 35.0
+    winner: vendor_page
+    sources:
+      vendor_page: 35.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.217189856
+    winner: vendor_page
+    sources:
+      vendor_page: 0.217189856
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.09540000000000001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.09540000000000001
+  Znom:  # nominal impedance (Ω)
+    value: 16.0
+    winner: vendor_page
+    sources:
+      vendor_page: 16.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 35.0
+    winner: vendor_page
+    sources:
+      vendor_page: 35.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 3150.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3150.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-1061--faitalpro-15fh500-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/FaitalPRO-15FH500-15-Neodymium-Professional-Subwoofer-16-Ohm-294-1061

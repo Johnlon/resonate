@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
-freq_low_hz: 30.0
-freq_high_hz: 1200.0
 specs:
-  power_rms_W: 1600.0
-  freq_low_hz: 30.0
-  freq_high_hz: 1200.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.6
+    winner: vendor_page
+    sources:
+      vendor_page: 3.6
+  Sd:  # effective piston area (m²)
+    value: 1.255e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 1.255e-05
+  Cms:  # mechanical compliance (m/N)
+    value: 0.08
+    winner: vendor_page
+    sources:
+      vendor_page: 0.08
+  Xmax:  # one-way linear excursion (m)
+    value: 0.013
+    winner: vendor_page
+    sources:
+      vendor_page: 0.013
+  Qes:  # electrical Q factor
+    value: 0.25
+    winner: vendor_page
+    sources:
+      vendor_page: 0.25
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.005641867082722636
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005641867082722636
+  BL:  # force factor (T·m)
+    value: 30.7
+    winner: vendor_page
+    sources:
+      vendor_page: 30.7
+  Qts:  # total Q factor
+    value: 0.25
+    winner: vendor_page
+    sources:
+      vendor_page: 0.25
+  Qms:  # mechanical Q factor
+    value: 11.6
+    winner: vendor_page
+    sources:
+      vendor_page: 11.6
+  Le:  # voice coil inductance (H)
+    value: 0.0028
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0028
+  Pe:  # rated power input (W)
+    value: 1600.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1600.0
+  Fs:  # free air resonance (Hz)
+    value: 31.0
+    winner: vendor_page
+    sources:
+      vendor_page: 31.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.177263168
+    winner: vendor_page
+    sources:
+      vendor_page: 0.177263168
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00033600000000000004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00033600000000000004
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 1200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1200.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/253-056--18qlex1600fe-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Beyma-18QLEX1600Fe-QLEX-Series-18-Subwoofer-4-Ohm-253-056

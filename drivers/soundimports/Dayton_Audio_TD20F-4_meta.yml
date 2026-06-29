@@ -15,5 +15,50 @@ community: null
 fetched_sku: null
 driver_type: tweeter
 specs:
-  power_rms_W: 20.0
-  sensitivity_db: 90.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.4
+    winner: vendor_page
+    sources:
+      vendor_page: 3.4
+  Qts:  # total Q factor
+    value: 1.38
+    winner: vendor_page
+    sources:
+      vendor_page: 1.38
+  Le:  # voice coil inductance (H)
+    value: 3.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0e-05
+  Pe:  # rated power input (W)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  Fs:  # free air resonance (Hz)
+    value: 1696.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1696.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 90.0
+    winner: vendor_page
+    sources:
+      vendor_page: 90.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 3.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-td20f-4.html

@@ -19,8 +19,27 @@ obsolete: null
 dq_issue: missing_Sd; Fs_no_Q
 community: null
 fetched_sku: 292-594
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 80.0
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0015
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0015
+  Pe:  # rated power input (W)
+    value: 80.0
+    winner: vendor_page
+    sources:
+      vendor_page: 80.0
+  Fs:  # free air resonance (Hz)
+    value: 700.0
+    winner: vendor_page
+    sources:
+      vendor_page: 700.0
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/292-594--visaton-m10-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Visaton-M10-4-Cone-Midrange-Driver-8-Ohm-292-594

@@ -15,4 +15,46 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.03464
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03464
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000145
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000145
+  Xmax:  # one-way linear excursion (m)
+    value: 0.03
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03
+  Rms:  # mechanical resistance (kg/s)
+    value: 6.079585937129632
+    winner: vendor_page
+    sources:
+      vendor_page: 6.079585937129632
+  Qms:  # mechanical Q factor
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
+  Fs:  # free air resonance (Hz)
+    value: 34.7
+    winner: vendor_page
+    sources:
+      vendor_page: 34.7
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0246922496
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0246922496
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.145
+    winner: vendor_page
+    sources:
+      vendor_page: 0.145
+_sources:
+  vendor_page: https://www.parts-express.com/Dayton-Audio-SS10-PR-10-Signature-Series-Passive-Radiator-295-731

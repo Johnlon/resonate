@@ -20,9 +20,76 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-3332
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  sensitivity_db: 101.0
-  power_rms_W: 0.38
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.5
+    winner: vendor_page
+    sources:
+      vendor_page: 5.5
+  Sd:  # effective piston area (m²)
+    value: 0.0573
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0573
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00020999999999999998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00020999999999999998
+  Qes:  # electrical Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.3722241825448176
+    winner: vendor_page
+    sources:
+      vendor_page: 1.3722241825448176
+  BL:  # force factor (T·m)
+    value: 14.3
+    winner: vendor_page
+    sources:
+      vendor_page: 14.3
+  Qts:  # total Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  Qms:  # mechanical Q factor
+    value: 10.7
+    winner: vendor_page
+    sources:
+      vendor_page: 10.7
+  Pe:  # rated power input (W)
+    value: 400.0
+    winner: vendor_page
+    sources:
+      vendor_page: 400.0
+  Fs:  # free air resonance (Hz)
+    value: 51.7
+    winner: vendor_page
+    sources:
+      vendor_page: 51.7
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.09627712
+    winner: vendor_page
+    sources:
+      vendor_page: 0.09627712
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.045200000000000004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.045200000000000004
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 101.0
+    winner: vendor_page
+    sources:
+      vendor_page: 101.0
+_sources:
+  vendor_page: https://www.parts-express.com/Timpano-Audio-TPT-MD12-PRO-12-Midrange-Speaker-294-3332

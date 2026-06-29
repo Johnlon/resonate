@@ -15,9 +15,31 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
-freq_low_hz: 4000.0
-freq_high_hz: 19000.0
 specs:
-  power_rms_W: 2019.1
-  freq_low_hz: 4000.0
-  freq_high_hz: 19000.0
+  Pe:  # rated power input (W)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  Fs:  # free air resonance (Hz)
+    value: 2600.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2600.0
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 4000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4000.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 19000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 19000.0
+_sources:
+  vendor_page: https://www.parts-express.com/Goldwood-GT-302-S-1-2-Mylar-Dome-Tweeter-Shielded-270-175

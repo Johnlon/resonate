@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: true
 driver_type: subwoofer
-freq_low_hz: 60.0
-freq_high_hz: 3000.0
 specs:
-  power_rms_W: 250.0
-  freq_low_hz: 60.0
-  freq_high_hz: 3000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.8
+    winner: vendor_page
+    sources:
+      vendor_page: 5.8
+  Sd:  # effective piston area (m²)
+    value: 0.054329999999999996
+    winner: vendor_page
+    sources:
+      vendor_page: 0.054329999999999996
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000123
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000123
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0024
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0024
+  Qes:  # electrical Q factor
+    value: 0.58
+    winner: vendor_page
+    sources:
+      vendor_page: 0.58
+  Rms:  # mechanical resistance (kg/s)
+    value: 4.034328565984893
+    winner: vendor_page
+    sources:
+      vendor_page: 4.034328565984893
+  BL:  # force factor (T·m)
+    value: 13.96
+    winner: vendor_page
+    sources:
+      vendor_page: 13.96
+  Qts:  # total Q factor
+    value: 0.51
+    winner: vendor_page
+    sources:
+      vendor_page: 0.51
+  Qms:  # mechanical Q factor
+    value: 4.8
+    winner: vendor_page
+    sources:
+      vendor_page: 4.8
+  Le:  # voice coil inductance (H)
+    value: 0.00066
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00066
+  Pe:  # rated power input (W)
+    value: 250.0
+    winner: vendor_page
+    sources:
+      vendor_page: 250.0
+  Fs:  # free air resonance (Hz)
+    value: 67.0
+    winner: vendor_page
+    sources:
+      vendor_page: 67.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.051253408
+    winner: vendor_page
+    sources:
+      vendor_page: 0.051253408
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.046
+    winner: vendor_page
+    sources:
+      vendor_page: 0.046
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 60.0
+    winner: vendor_page
+    sources:
+      vendor_page: 60.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 3000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/264-1410--tymphany-fsl-1220R02-08-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Peerless-FSL-1220R02-08-Professional-12-Woofer-8-Ohm-264-1410

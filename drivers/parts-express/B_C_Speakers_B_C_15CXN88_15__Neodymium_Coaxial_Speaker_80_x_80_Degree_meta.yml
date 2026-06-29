@@ -15,10 +15,97 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 40.0
-freq_high_hz: 18000.0
 specs:
-  power_rms_W: 3.0
-  sensitivity_db: 100.0
-  freq_low_hz: 106.0
-  freq_high_hz: 2.83
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+  Sd:  # effective piston area (m²)
+    value: 0.0855
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0855
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00017
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00017
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0085
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0085
+  Qes:  # electrical Q factor
+    value: 0.26
+    winner: vendor_page
+    sources:
+      vendor_page: 0.26
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.2692669264765106
+    winner: vendor_page
+    sources:
+      vendor_page: 2.2692669264765106
+  BL:  # force factor (T·m)
+    value: 21.2
+    winner: vendor_page
+    sources:
+      vendor_page: 21.2
+  Qts:  # total Q factor
+    value: 0.25
+    winner: vendor_page
+    sources:
+      vendor_page: 0.25
+  Qms:  # mechanical Q factor
+    value: 10.3
+    winner: vendor_page
+    sources:
+      vendor_page: 10.3
+  Le:  # voice coil inductance (H)
+    value: 0.0010500000000000002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0010500000000000002
+  Pe:  # rated power input (W)
+    value: 1000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1000.0
+  Fs:  # free air resonance (Hz)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.178112672
+    winner: vendor_page
+    sources:
+      vendor_page: 0.178112672
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.093
+    winner: vendor_page
+    sources:
+      vendor_page: 0.093
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 100.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 106.0
+    winner: vendor_page
+    sources:
+      vendor_page: 106.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 2.83
+    winner: vendor_page
+    sources:
+      vendor_page: 2.83
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-6038--bc-15cxn88-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/B-C-15CXN88-15-Neodymium-Coaxial-Speaker-80-x-80-Degree-294-6038

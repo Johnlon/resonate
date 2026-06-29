@@ -19,8 +19,32 @@ obsolete: null
 dq_issue: Fs_no_Q
 community: null
 fetched_sku: 275-093
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 3.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.7
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7
+  Sd:  # effective piston area (m²)
+    value: 0.003254
+    winner: vendor_page
+    sources:
+      vendor_page: 0.003254
+  Pe:  # rated power input (W)
+    value: 25.0
+    winner: vendor_page
+    sources:
+      vendor_page: 25.0
+  Fs:  # free air resonance (Hz)
+    value: 875.0
+    winner: vendor_page
+    sources:
+      vendor_page: 875.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/275-093--dayton-audio-amt3-4-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-AMT3-4-Air-Motion-Transformer-Tweeter-275-093

@@ -15,4 +15,80 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 200.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.5
+    winner: vendor_page
+    sources:
+      vendor_page: 4.5
+  Sd:  # effective piston area (m²)
+    value: 0.0508
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0508
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00046
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00046
+  Xmax:  # one-way linear excursion (m)
+    value: 0.011
+    winner: vendor_page
+    sources:
+      vendor_page: 0.011
+  Qes:  # electrical Q factor
+    value: 0.34
+    winner: vendor_page
+    sources:
+      vendor_page: 0.34
+  Rms:  # mechanical resistance (kg/s)
+    value: 3.7
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7
+  BL:  # force factor (T·m)
+    value: 15.4
+    winner: vendor_page
+    sources:
+      vendor_page: 15.4
+  Qts:  # total Q factor
+    value: 0.32
+    winner: vendor_page
+    sources:
+      vendor_page: 0.32
+  Qms:  # mechanical Q factor
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+  Le:  # voice coil inductance (H)
+    value: 0.003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.003
+  Pe:  # rated power input (W)
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
+  Fs:  # free air resonance (Hz)
+    value: 19.0
+    winner: vendor_page
+    sources:
+      vendor_page: 19.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.164
+    winner: vendor_page
+    sources:
+      vendor_page: 0.164
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.154
+    winner: vendor_page
+    sources:
+      vendor_page: 0.154
+  Znom:  # nominal impedance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sb-acoustics-sb34swnrx-s75-6.html

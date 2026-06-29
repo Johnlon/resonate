@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 40.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.4
+    winner: vendor_page
+    sources:
+      vendor_page: 6.4
+  Sd:  # effective piston area (m²)
+    value: 0.00544
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00544
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00137
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00137
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004
+  Qes:  # electrical Q factor
+    value: 0.44
+    winner: vendor_page
+    sources:
+      vendor_page: 0.44
+  BL:  # force factor (T·m)
+    value: 4.98
+    winner: vendor_page
+    sources:
+      vendor_page: 4.98
+  Qts:  # total Q factor
+    value: 0.41
+    winner: vendor_page
+    sources:
+      vendor_page: 0.41
+  Qms:  # mechanical Q factor
+    value: 5.95
+    winner: vendor_page
+    sources:
+      vendor_page: 5.95
+  Le:  # voice coil inductance (H)
+    value: 0.0007
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0007
+  Pe:  # rated power input (W)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  Fs:  # free air resonance (Hz)
+    value: 62.0
+    winner: vendor_page
+    sources:
+      vendor_page: 62.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00568
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00568
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/visaton-ti-100.html

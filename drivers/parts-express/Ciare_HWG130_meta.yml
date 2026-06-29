@@ -19,11 +19,92 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 293-135
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  freq_low_hz: 130.0
-  freq_high_hz: 130.0
-  sensitivity_db: 130.0
-  power_rms_W: 130.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.4
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4
+  Sd:  # effective piston area (m²)
+    value: 0.0087
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0087
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0065
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0065
+  Qes:  # electrical Q factor
+    value: 0.3
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.6859143960337715
+    winner: vendor_page
+    sources:
+      vendor_page: 0.6859143960337715
+  BL:  # force factor (T·m)
+    value: 7.8
+    winner: vendor_page
+    sources:
+      vendor_page: 7.8
+  Qts:  # total Q factor
+    value: 0.28
+    winner: vendor_page
+    sources:
+      vendor_page: 0.28
+  Qms:  # mechanical Q factor
+    value: 4.8
+    winner: vendor_page
+    sources:
+      vendor_page: 4.8
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 88.0
+    winner: vendor_page
+    sources:
+      vendor_page: 88.0
+  Le:  # voice coil inductance (H)
+    value: 0.0007
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0007
+  Pe:  # rated power input (W)
+    value: 130.0
+    winner: vendor_page
+    sources:
+      vendor_page: 130.0
+  Fs:  # free air resonance (Hz)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0125
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0125
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0131
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0131
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 130.0
+    winner: vendor_page
+    sources:
+      vendor_page: 130.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 130.0
+    winner: vendor_page
+    sources:
+      vendor_page: 130.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/293-135--ciare-hwg130-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Ciare-HWG130-5-Woofer-8-Ohm-293-135

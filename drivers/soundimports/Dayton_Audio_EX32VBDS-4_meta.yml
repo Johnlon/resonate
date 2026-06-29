@@ -15,4 +15,30 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 80.0
+  Le:  # voice coil inductance (H)
+    value: 0.00043
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00043
+  Pe:  # rated power input (W)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  Fs:  # free air resonance (Hz)
+    value: 85.4
+    winner: vendor_page
+    sources:
+      vendor_page: 85.4
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  power_peak_W:  # peak power handling (W)
+    value: 80.0
+    winner: vendor_page
+    sources:
+      vendor_page: 80.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-ex32vbds-4.html

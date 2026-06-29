@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 200.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.1
+    winner: vendor_page
+    sources:
+      vendor_page: 6.1
+  Sd:  # effective piston area (m²)
+    value: 0.02138
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02138
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000536
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000536
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0065
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0065
+  Qes:  # electrical Q factor
+    value: 0.53
+    winner: vendor_page
+    sources:
+      vendor_page: 0.53
+  BL:  # force factor (T·m)
+    value: 9.45
+    winner: vendor_page
+    sources:
+      vendor_page: 9.45
+  Qts:  # total Q factor
+    value: 0.48
+    winner: vendor_page
+    sources:
+      vendor_page: 0.48
+  Qms:  # mechanical Q factor
+    value: 5.25
+    winner: vendor_page
+    sources:
+      vendor_page: 5.25
+  Le:  # voice coil inductance (H)
+    value: 0.00059
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00059
+  Pe:  # rated power input (W)
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
+  Fs:  # free air resonance (Hz)
+    value: 38.0
+    winner: vendor_page
+    sources:
+      vendor_page: 38.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0348
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0348
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0327
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0327
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sica-8-h-2-cp-8.html

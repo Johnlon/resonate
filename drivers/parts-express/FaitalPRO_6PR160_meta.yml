@@ -19,9 +19,87 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-1320
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  sensitivity_db: 95.0
-  power_rms_W: 120.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.9
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9
+  Sd:  # effective piston area (m²)
+    value: 0.0117
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0117
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00025
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00025
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005
+  Qes:  # electrical Q factor
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.07
+    winner: vendor_page
+    sources:
+      vendor_page: 1.07
+  BL:  # force factor (T·m)
+    value: 11.0
+    winner: vendor_page
+    sources:
+      vendor_page: 11.0
+  Qts:  # total Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Qms:  # mechanical Q factor
+    value: 6.6
+    winner: vendor_page
+    sources:
+      vendor_page: 6.6
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 95.0
+    winner: vendor_page
+    sources:
+      vendor_page: 95.0
+  Le:  # voice coil inductance (H)
+    value: 0.00028
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00028
+  Pe:  # rated power input (W)
+    value: 120.0
+    winner: vendor_page
+    sources:
+      vendor_page: 120.0
+  Fs:  # free air resonance (Hz)
+    value: 90.0
+    winner: vendor_page
+    sources:
+      vendor_page: 90.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00486
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00486
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0125
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0125
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-1320--faitalpro-6pr160-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/FaitalPRO-6PR160-6-Professional-Neodymium-Midbass-8-Ohm-294-1320

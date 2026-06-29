@@ -16,4 +16,66 @@ fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 0.32
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.2
+    winner: vendor_page
+    sources:
+      vendor_page: 7.2
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005900000000000001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005900000000000001
+  Qes:  # electrical Q factor
+    value: 0.43
+    winner: vendor_page
+    sources:
+      vendor_page: 0.43
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.1438051276961336
+    winner: vendor_page
+    sources:
+      vendor_page: 2.1438051276961336
+  BL:  # force factor (T·m)
+    value: 9.9
+    winner: vendor_page
+    sources:
+      vendor_page: 9.9
+  Qts:  # total Q factor
+    value: 0.37
+    winner: vendor_page
+    sources:
+      vendor_page: 0.37
+  Qms:  # mechanical Q factor
+    value: 2.84
+    winner: vendor_page
+    sources:
+      vendor_page: 2.84
+  Pe:  # rated power input (W)
+    value: 80.0
+    winner: vendor_page
+    sources:
+      vendor_page: 80.0
+  Fs:  # free air resonance (Hz)
+    value: 34.0
+    winner: vendor_page
+    sources:
+      vendor_page: 34.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.049837568
+    winner: vendor_page
+    sources:
+      vendor_page: 0.049837568
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0285
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0285
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/297-480--hi-vi-e8-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/HiVi-E8-8-Treated-Paper-Cone-Woofer-8-Ohms-297-480

@@ -16,8 +16,81 @@ dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  voice_coil_dia_mm: 25.4
-  Hg_mm: 2.5
-  linear_xmax_mm: 1.2
-  sensitivity_db: 92.5
-  power_rms_W: 120.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.2
+    winner: manu_page
+    sources:
+      manu_page: 3.2
+  Sd:  # effective piston area (m²)
+    value: 0.00062
+    winner: manu_page
+    sources:
+      manu_page: 0.00062
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0006
+    winner: manu_page
+    sources:
+      manu_page: 0.0006
+  Qes:  # electrical Q factor
+    value: 1.77
+    winner: manu_page
+    sources:
+      manu_page: 1.77
+  BL:  # force factor (T·m)
+    value: 1.8
+    winner: manu_page
+    sources:
+      manu_page: 1.8
+  Qts:  # total Q factor
+    value: 0.84
+    winner: manu_page
+    sources:
+      manu_page: 0.84
+  Qms:  # mechanical Q factor
+    value: 1.6
+    winner: manu_page
+    sources:
+      manu_page: 1.6
+  Le:  # voice coil inductance (H)
+    value: 4.0e-05
+    winner: manu_page
+    sources:
+      manu_page: 4.0e-05
+  Pe:  # rated power input (W)
+    value: 120.0
+    winner: manu_page
+    sources:
+      manu_page: 120.0
+  Fs:  # free air resonance (Hz)
+    value: 960.0
+    winner: manu_page
+    sources:
+      manu_page: 960.0
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0003
+    winner: manu_page
+    sources:
+      manu_page: 0.0003
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: manu_page
+    sources:
+      manu_page: 4.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 25.4
+    winner: manu_page
+    sources:
+      manu_page: 25.4
+  Hg_mm:  # magnetic gap height (mm)
+    value: 2.5
+    winner: manu_page
+    sources:
+      manu_page: 2.5
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 92.5
+    winner: manu_page
+    sources:
+      manu_page: 92.5
+_sources:
+  datasheet: https://sbacoustics.com/wp-content/uploads/2020/02/SB26STCN-C000-4.pdf
+  manu_page: https://sbacoustics.com/product/sb26stcn-c000-4/

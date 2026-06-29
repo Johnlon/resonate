@@ -15,4 +15,35 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 15.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.5
+    winner: vendor_page
+    sources:
+      vendor_page: 7.5
+  Xmax:  # one-way linear excursion (m)
+    value: 0.002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.002
+  Le:  # voice coil inductance (H)
+    value: 0.00161
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00161
+  Pe:  # rated power input (W)
+    value: 15.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15.0
+  Fs:  # free air resonance (Hz)
+    value: 160.0
+    winner: vendor_page
+    sources:
+      vendor_page: 160.0
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sure-electronics-aa-sp15113.html

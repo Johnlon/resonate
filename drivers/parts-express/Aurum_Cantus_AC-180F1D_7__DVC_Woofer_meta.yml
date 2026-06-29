@@ -16,4 +16,81 @@ fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 100.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.4
+    winner: vendor_page
+    sources:
+      vendor_page: 3.4
+  Sd:  # effective piston area (m²)
+    value: 0.0168
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0168
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0019299999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0019299999999999999
+  Xmax:  # one-way linear excursion (m)
+    value: 0.006
+    winner: vendor_page
+    sources:
+      vendor_page: 0.006
+  Qes:  # electrical Q factor
+    value: 0.71
+    winner: vendor_page
+    sources:
+      vendor_page: 0.71
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.9982478558640074
+    winner: vendor_page
+    sources:
+      vendor_page: 0.9982478558640074
+  BL:  # force factor (T·m)
+    value: 3.3
+    winner: vendor_page
+    sources:
+      vendor_page: 3.3
+  Qts:  # total Q factor
+    value: 0.59
+    winner: vendor_page
+    sources:
+      vendor_page: 0.59
+  Qms:  # mechanical Q factor
+    value: 3.47
+    winner: vendor_page
+    sources:
+      vendor_page: 3.47
+  Le:  # voice coil inductance (H)
+    value: 0.00019
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00019
+  Pe:  # rated power input (W)
+    value: 100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 100.0
+  Fs:  # free air resonance (Hz)
+    value: 37.0
+    winner: vendor_page
+    sources:
+      vendor_page: 37.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.077021696
+    winner: vendor_page
+    sources:
+      vendor_page: 0.077021696
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0149
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0149
+  Znom:  # nominal impedance (Ω)
+    value: 16.0
+    winner: vendor_page
+    sources:
+      vendor_page: 16.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/296-414-aurum-cantus-ac-180f1d-specifications-45627.pdf
+  vendor_page: https://www.parts-express.com/Aurum-Cantus-AC-180F1D-7-DVC-Woofer-296-414

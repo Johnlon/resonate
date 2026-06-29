@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 33.0
-freq_high_hz: 2000.0
 specs:
-  power_rms_W: 300.0
-  freq_low_hz: 33.0
-  freq_high_hz: 2000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.2
+    winner: vendor_page
+    sources:
+      vendor_page: 6.2
+  Sd:  # effective piston area (m²)
+    value: 0.0213
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0213
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0007
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0007
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0065
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0065
+  Qes:  # electrical Q factor
+    value: 0.47
+    winner: vendor_page
+    sources:
+      vendor_page: 0.47
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.4799386930791792
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4799386930791792
+  BL:  # force factor (T·m)
+    value: 9.5
+    winner: vendor_page
+    sources:
+      vendor_page: 9.5
+  Qts:  # total Q factor
+    value: 0.46
+    winner: vendor_page
+    sources:
+      vendor_page: 0.46
+  Qms:  # mechanical Q factor
+    value: 14.3
+    winner: vendor_page
+    sources:
+      vendor_page: 14.3
+  Le:  # voice coil inductance (H)
+    value: 0.0002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0002
+  Pe:  # rated power input (W)
+    value: 300.0
+    winner: vendor_page
+    sources:
+      vendor_page: 300.0
+  Fs:  # free air resonance (Hz)
+    value: 33.1
+    winner: vendor_page
+    sources:
+      vendor_page: 33.1
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.045023712
+    winner: vendor_page
+    sources:
+      vendor_page: 0.045023712
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.033
+    winner: vendor_page
+    sources:
+      vendor_page: 0.033
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 33.0
+    winner: vendor_page
+    sources:
+      vendor_page: 33.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 2000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/298-1212-1214--wavecor-wf223bd01-02-specifications.pdf
+  vendor_page: https://www.parts-express.com/Wavecor-WF223BD02-8-3-4-Balanced-Drive-Paper-Glass-Fiber-Cone-Mid-Woofer-8-Ohm-298-1214

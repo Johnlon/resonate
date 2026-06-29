@@ -20,8 +20,76 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 253-042
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 1300.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+  Sd:  # effective piston area (m²)
+    value: 0.055
+    winner: vendor_page
+    sources:
+      vendor_page: 0.055
+  Xmax:  # one-way linear excursion (m)
+    value: 0.011
+    winner: vendor_page
+    sources:
+      vendor_page: 0.011
+  Qes:  # electrical Q factor
+    value: 0.25
+    winner: vendor_page
+    sources:
+      vendor_page: 0.25
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.008414980322115517
+    winner: vendor_page
+    sources:
+      vendor_page: 0.008414980322115517
+  BL:  # force factor (T·m)
+    value: 26.4
+    winner: vendor_page
+    sources:
+      vendor_page: 26.4
+  Qts:  # total Q factor
+    value: 0.24
+    winner: vendor_page
+    sources:
+      vendor_page: 0.24
+  Qms:  # mechanical Q factor
+    value: 4.2
+    winner: vendor_page
+    sources:
+      vendor_page: 4.2
+  Le:  # voice coil inductance (H)
+    value: 0.0013
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0013
+  Pe:  # rated power input (W)
+    value: 1300.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1300.0
+  Fs:  # free air resonance (Hz)
+    value: 45.0
+    winner: vendor_page
+    sources:
+      vendor_page: 45.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.043041536
+    winner: vendor_page
+    sources:
+      vendor_page: 0.043041536
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.000125
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000125
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.parts-express.com/Beyma-12LEX1300Nd-LEX-Series-12-Neo-Subwoofer-8-Ohm-253-042

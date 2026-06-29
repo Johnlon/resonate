@@ -15,4 +15,70 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 300.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
+  Sd:  # effective piston area (m²)
+    value: 0.09079
+    winner: vendor_page
+    sources:
+      vendor_page: 0.09079
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00011
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00011
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00853
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00853
+  Qes:  # electrical Q factor
+    value: 0.57
+    winner: vendor_page
+    sources:
+      vendor_page: 0.57
+  BL:  # force factor (T·m)
+    value: 17.0
+    winner: vendor_page
+    sources:
+      vendor_page: 17.0
+  Qts:  # total Q factor
+    value: 0.54
+    winner: vendor_page
+    sources:
+      vendor_page: 0.54
+  Qms:  # mechanical Q factor
+    value: 10.62
+    winner: vendor_page
+    sources:
+      vendor_page: 10.62
+  Le:  # voice coil inductance (H)
+    value: 0.00085
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00085
+  Pe:  # rated power input (W)
+    value: 300.0
+    winner: vendor_page
+    sources:
+      vendor_page: 300.0
+  Fs:  # free air resonance (Hz)
+    value: 47.0
+    winner: vendor_page
+    sources:
+      vendor_page: 47.0
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.1071
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1071
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sb-audience-bianco-15w200.html

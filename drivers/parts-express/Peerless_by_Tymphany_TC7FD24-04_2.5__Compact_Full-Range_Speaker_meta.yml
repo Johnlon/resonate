@@ -15,9 +15,87 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
-freq_low_hz: 100.0
-freq_high_hz: 10000.0
 specs:
-  power_rms_W: 20.0
-  freq_low_hz: 100.0
-  freq_high_hz: 10000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.4
+    winner: vendor_page
+    sources:
+      vendor_page: 3.4
+  Sd:  # effective piston area (m²)
+    value: 0.00238
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00238
+  Xmax:  # one-way linear excursion (m)
+    value: 0.002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.002
+  Qes:  # electrical Q factor
+    value: 0.995
+    winner: vendor_page
+    sources:
+      vendor_page: 0.995
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.5698702953023345
+    winner: vendor_page
+    sources:
+      vendor_page: 0.5698702953023345
+  BL:  # force factor (T·m)
+    value: 2.56
+    winner: vendor_page
+    sources:
+      vendor_page: 2.56
+  Qts:  # total Q factor
+    value: 0.77
+    winner: vendor_page
+    sources:
+      vendor_page: 0.77
+  Qms:  # mechanical Q factor
+    value: 3.44
+    winner: vendor_page
+    sources:
+      vendor_page: 3.44
+  Le:  # voice coil inductance (H)
+    value: 3.7e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7e-05
+  Pe:  # rated power input (W)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  Fs:  # free air resonance (Hz)
+    value: 240.0
+    winner: vendor_page
+    sources:
+      vendor_page: 240.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00025485119999999996
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00025485119999999996
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0013
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0013
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 100.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 10000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 10000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/264-1017--tc7fd24-04-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Peerless-by-Tymphany-TC7FD24-04-2.5-Compact-Full-Range-Speaker-264-1017

@@ -15,4 +15,80 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 250.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.9
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9
+  Sd:  # effective piston area (m²)
+    value: 0.01327
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01327
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00082
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00082
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0098
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0098
+  Qes:  # electrical Q factor
+    value: 0.42
+    winner: vendor_page
+    sources:
+      vendor_page: 0.42
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.75
+    winner: vendor_page
+    sources:
+      vendor_page: 0.75
+  BL:  # force factor (T·m)
+    value: 9.0
+    winner: vendor_page
+    sources:
+      vendor_page: 9.0
+  Qts:  # total Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Qms:  # mechanical Q factor
+    value: 7.7
+    winner: vendor_page
+    sources:
+      vendor_page: 7.7
+  Le:  # voice coil inductance (H)
+    value: 0.0005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0005
+  Pe:  # rated power input (W)
+    value: 250.0
+    winner: vendor_page
+    sources:
+      vendor_page: 250.0
+  Fs:  # free air resonance (Hz)
+    value: 34.0
+    winner: vendor_page
+    sources:
+      vendor_page: 34.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0204
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0204
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0272
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0272
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/purifi-ptt65x08-naa-08.html

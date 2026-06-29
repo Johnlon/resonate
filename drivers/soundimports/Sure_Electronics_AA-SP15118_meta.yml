@@ -15,4 +15,80 @@ community: null
 fetched_sku: null
 driver_type: tweeter
 specs:
-  power_rms_W: 2.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.17
+    winner: vendor_page
+    sources:
+      vendor_page: 7.17
+  Sd:  # effective piston area (m²)
+    value: 0.001151
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001151
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0004
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0005
+  Qes:  # electrical Q factor
+    value: 6.97
+    winner: vendor_page
+    sources:
+      vendor_page: 6.97
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.3
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3
+  BL:  # force factor (T·m)
+    value: 1.2
+    winner: vendor_page
+    sources:
+      vendor_page: 1.2
+  Qts:  # total Q factor
+    value: 2.79
+    winner: vendor_page
+    sources:
+      vendor_page: 2.79
+  Qms:  # mechanical Q factor
+    value: 4.66
+    winner: vendor_page
+    sources:
+      vendor_page: 4.66
+  Le:  # voice coil inductance (H)
+    value: 5.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0e-05
+  Pe:  # rated power input (W)
+    value: 2.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0
+  Fs:  # free air resonance (Hz)
+    value: 300.0
+    winner: vendor_page
+    sources:
+      vendor_page: 300.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 3.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0e-05
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0007
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0007
+  Znom:  # nominal impedance (Ω)
+    value: 7.27
+    winner: vendor_page
+    sources:
+      vendor_page: 7.27
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sure-electronics-aa-sp15118.html

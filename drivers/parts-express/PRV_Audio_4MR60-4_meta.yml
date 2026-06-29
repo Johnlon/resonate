@@ -19,8 +19,82 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-2760
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 2019.1
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.6
+    winner: vendor_page
+    sources:
+      vendor_page: 3.6
+  Sd:  # effective piston area (m²)
+    value: 0.0057
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0057
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00326
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00326
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00287
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00287
+  Qes:  # electrical Q factor
+    value: 0.75
+    winner: vendor_page
+    sources:
+      vendor_page: 0.75
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.332376736262695
+    winner: vendor_page
+    sources:
+      vendor_page: 0.332376736262695
+  BL:  # force factor (T·m)
+    value: 3.42
+    winner: vendor_page
+    sources:
+      vendor_page: 3.42
+  Qts:  # total Q factor
+    value: 0.68
+    winner: vendor_page
+    sources:
+      vendor_page: 0.68
+  Qms:  # mechanical Q factor
+    value: 7.34
+    winner: vendor_page
+    sources:
+      vendor_page: 7.34
+  Le:  # voice coil inductance (H)
+    value: 0.0002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0002
+  Pe:  # rated power input (W)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  Fs:  # free air resonance (Hz)
+    value: 89.88
+    winner: vendor_page
+    sources:
+      vendor_page: 89.88
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.003398016
+    winner: vendor_page
+    sources:
+      vendor_page: 0.003398016
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00432
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00432
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-2760--prv-audio-4mr60-4-specifications.pdf
+  vendor_page: https://www.parts-express.com/PRV-Audio-4MR60-4-4-Full-Range-4-Ohm-294-2760

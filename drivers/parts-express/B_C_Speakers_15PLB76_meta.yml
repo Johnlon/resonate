@@ -19,8 +19,77 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-5986
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 800.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+  Sd:  # effective piston area (m²)
+    value: 0.0855
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0855
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005
+  Qes:  # electrical Q factor
+    value: 0.26
+    winner: vendor_page
+    sources:
+      vendor_page: 0.26
+  Rms:  # mechanical resistance (kg/s)
+    value: 3.936042863616229
+    winner: vendor_page
+    sources:
+      vendor_page: 3.936042863616229
+  BL:  # force factor (T·m)
+    value: 22.1
+    winner: vendor_page
+    sources:
+      vendor_page: 22.1
+  Qts:  # total Q factor
+    value: 0.25
+    winner: vendor_page
+    sources:
+      vendor_page: 0.25
+  Qms:  # mechanical Q factor
+    value: 5.9
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9
+  Le:  # voice coil inductance (H)
+    value: 0.0013
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0013
+  Pe:  # rated power input (W)
+    value: 800.0
+    winner: vendor_page
+    sources:
+      vendor_page: 800.0
+  Fs:  # free air resonance (Hz)
+    value: 42.0
+    winner: vendor_page
+    sources:
+      vendor_page: 42.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.16423743999999998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.16423743999999998
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.088
+    winner: vendor_page
+    sources:
+      vendor_page: 0.088
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-5986--bc-15plb76-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/B-C-15PLB76-15-Professional-Woofer-8-Ohm-294-5986

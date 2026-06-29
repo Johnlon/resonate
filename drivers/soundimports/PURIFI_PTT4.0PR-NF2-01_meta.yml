@@ -14,4 +14,41 @@ dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.0057
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0057
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00141
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00141
+  Xmax:  # one-way linear excursion (m)
+    value: 0.014
+    winner: vendor_page
+    sources:
+      vendor_page: 0.014
+  Qms:  # mechanical Q factor
+    value: 7.0
+    winner: vendor_page
+    sources:
+      vendor_page: 7.0
+  Fs:  # free air resonance (Hz)
+    value: 24.0
+    winner: vendor_page
+    sources:
+      vendor_page: 24.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0064
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0064
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.03
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03
+_sources:
+  vendor_page: https://www.soundimports.eu/en/purifi-ptt40pr-nf2-01.html

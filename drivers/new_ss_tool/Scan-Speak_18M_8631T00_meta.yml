@@ -43,7 +43,73 @@ manu_page_fields:
 - SPL
 - Sd
 - Vas
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  sensitivity_db: 89.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.0
+    winner: manu_page
+    sources:
+      manu_page: 6.0
+  Sd:  # effective piston area (m²)
+    value: 0.0154
+    winner: manu_page
+    sources:
+      manu_page: 0.0154
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00042
+    winner: manu_page
+    sources:
+      manu_page: 0.00042
+  Xmax:  # one-way linear excursion (m)
+    value: 0.003
+    winner: manu_page
+    sources:
+      manu_page: 0.003
+  Qes:  # electrical Q factor
+    value: 0.82
+    winner: manu_page
+    sources:
+      manu_page: 0.82
+  BL:  # force factor (T·m)
+    value: 6.5
+    winner: manu_page
+    sources:
+      manu_page: 6.5
+  Qts:  # total Q factor
+    value: 0.71
+    winner: manu_page
+    sources:
+      manu_page: 0.71
+  Qms:  # mechanical Q factor
+    value: 5.24
+    winner: manu_page
+    sources:
+      manu_page: 5.24
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 89.0
+    winner: manu_page
+    sources:
+      manu_page: 89.0
+  Le:  # voice coil inductance (H)
+    value: 0.00022
+    winner: manu_page
+    sources:
+      manu_page: 0.00022
+  Fs:  # free air resonance (Hz)
+    value: 65.0
+    winner: manu_page
+    sources:
+      manu_page: 65.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.014
+    winner: manu_page
+    sources:
+      manu_page: 0.014
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.01429
+    winner: manu_page
+    sources:
+      manu_page: 0.01429
+_sources:
+  datasheet: https://www.scan-speak.dk/datasheet/pdf/18m-8631t00.pdf
+  adv_datasheet: https://www.scan-speak.dk/datasheet/adv/18m-8631t00.pdf
+  manu_page: https://www.scan-speak.dk/product/18m-8631t00/

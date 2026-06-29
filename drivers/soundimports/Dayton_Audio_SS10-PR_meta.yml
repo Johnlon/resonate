@@ -14,4 +14,31 @@ dq_issue: null
 community: null
 fetched_sku: null
 driver_type: pr
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.03464
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03464
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000145
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000145
+  Rms:  # mechanical resistance (kg/s)
+    value: 6.08
+    winner: vendor_page
+    sources:
+      vendor_page: 6.08
+  Fs:  # free air resonance (Hz)
+    value: 34.7
+    winner: vendor_page
+    sources:
+      vendor_page: 34.7
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0247
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0247
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-ss10-pr.html

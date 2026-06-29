@@ -15,6 +15,95 @@ community: null
 fetched_sku: null
 driver_type: tweeter
 specs:
-  power_rms_W: 30.0
-  sensitivity_db: 80.5
-  linear_xmax_mm: 2.6
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.2
+    winner: vendor_page
+    sources:
+      vendor_page: 6.2
+  Sd:  # effective piston area (m²)
+    value: 0.0012
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0012
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0006
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0006
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0013
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0013
+  Qes:  # electrical Q factor
+    value: 1.35
+    winner: vendor_page
+    sources:
+      vendor_page: 1.35
+  BL:  # force factor (T·m)
+    value: 2.55
+    winner: vendor_page
+    sources:
+      vendor_page: 2.55
+  Qts:  # total Q factor
+    value: 1.07
+    winner: vendor_page
+    sources:
+      vendor_page: 1.07
+  Qms:  # mechanical Q factor
+    value: 5.12
+    winner: vendor_page
+    sources:
+      vendor_page: 5.12
+  Le:  # voice coil inductance (H)
+    value: 0.00032
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00032
+  Pe:  # rated power input (W)
+    value: 15.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15.0
+  Fs:  # free air resonance (Hz)
+    value: 185.0
+    winner: vendor_page
+    sources:
+      vendor_page: 185.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 4.0e-06
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0e-06
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00123
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00123
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  power_peak_W:  # peak power handling (W)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 80.5
+    winner: vendor_page
+    sources:
+      vendor_page: 80.5
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 160.0
+    winner: vendor_page
+    sources:
+      vendor_page: 160.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-rs75-8.html

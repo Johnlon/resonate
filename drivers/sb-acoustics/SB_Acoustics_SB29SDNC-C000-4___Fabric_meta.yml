@@ -16,8 +16,81 @@ dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  voice_coil_dia_mm: 29.0
-  Hg_mm: 2.5
-  linear_xmax_mm: 0.5
-  sensitivity_db: 95.5
-  power_rms_W: 80.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.0
+    winner: manu_page
+    sources:
+      manu_page: 3.0
+  Sd:  # effective piston area (m²)
+    value: 0.00096
+    winner: manu_page
+    sources:
+      manu_page: 0.00096
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00025
+    winner: manu_page
+    sources:
+      manu_page: 0.00025
+  Qes:  # electrical Q factor
+    value: 0.79
+    winner: manu_page
+    sources:
+      manu_page: 0.79
+  BL:  # force factor (T·m)
+    value: 2.6
+    winner: manu_page
+    sources:
+      manu_page: 2.6
+  Qts:  # total Q factor
+    value: 0.49
+    winner: manu_page
+    sources:
+      manu_page: 0.49
+  Qms:  # mechanical Q factor
+    value: 1.3
+    winner: manu_page
+    sources:
+      manu_page: 1.3
+  Le:  # voice coil inductance (H)
+    value: 5.0e-05
+    winner: manu_page
+    sources:
+      manu_page: 5.0e-05
+  Pe:  # rated power input (W)
+    value: 80.0
+    winner: manu_page
+    sources:
+      manu_page: 80.0
+  Fs:  # free air resonance (Hz)
+    value: 630.0
+    winner: manu_page
+    sources:
+      manu_page: 630.0
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00045
+    winner: manu_page
+    sources:
+      manu_page: 0.00045
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: manu_page
+    sources:
+      manu_page: 4.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 29.0
+    winner: manu_page
+    sources:
+      manu_page: 29.0
+  Hg_mm:  # magnetic gap height (mm)
+    value: 2.5
+    winner: manu_page
+    sources:
+      manu_page: 2.5
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 95.5
+    winner: manu_page
+    sources:
+      manu_page: 95.5
+_sources:
+  datasheet: https://sbacoustics.com/wp-content/uploads/2023/06/SB29SDNC-C000-4.pdf
+  manu_page: https://sbacoustics.com/product/sb29sdnc-c000-4-fabric/

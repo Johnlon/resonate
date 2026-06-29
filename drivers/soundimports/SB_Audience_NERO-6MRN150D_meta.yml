@@ -15,4 +15,80 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 150.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
+  Sd:  # effective piston area (m²)
+    value: 0.01368
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01368
+  Cms:  # mechanical compliance (m/N)
+    value: 4.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0e-05
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00343
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00343
+  Qes:  # electrical Q factor
+    value: 0.58
+    winner: vendor_page
+    sources:
+      vendor_page: 0.58
+  Rms:  # mechanical resistance (kg/s)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  BL:  # force factor (T·m)
+    value: 13.1
+    winner: vendor_page
+    sources:
+      vendor_page: 13.1
+  Qts:  # total Q factor
+    value: 0.48
+    winner: vendor_page
+    sources:
+      vendor_page: 0.48
+  Qms:  # mechanical Q factor
+    value: 2.96
+    winner: vendor_page
+    sources:
+      vendor_page: 2.96
+  Le:  # voice coil inductance (H)
+    value: 0.00028
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00028
+  Pe:  # rated power input (W)
+    value: 150.0
+    winner: vendor_page
+    sources:
+      vendor_page: 150.0
+  Fs:  # free air resonance (Hz)
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0011
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0011
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0138
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0138
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sb-audience-nero-6mrn150d.html

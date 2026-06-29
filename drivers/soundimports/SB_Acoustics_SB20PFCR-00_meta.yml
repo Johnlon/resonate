@@ -14,4 +14,16 @@ dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
-specs: null
+specs:
+  Xmax:  # one-way linear excursion (m)
+    value: 0.011
+    winner: vendor_page
+    sources:
+      vendor_page: 0.011
+  Fs:  # free air resonance (Hz)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sb-acoustics-sb20pfcr-00.html

@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 100.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.5
+    winner: vendor_page
+    sources:
+      vendor_page: 5.5
+  Sd:  # effective piston area (m²)
+    value: 0.015394
+    winner: vendor_page
+    sources:
+      vendor_page: 0.015394
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00123
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00123
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0063
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0063
+  Qes:  # electrical Q factor
+    value: 0.26
+    winner: vendor_page
+    sources:
+      vendor_page: 0.26
+  BL:  # force factor (T·m)
+    value: 9.8
+    winner: vendor_page
+    sources:
+      vendor_page: 9.8
+  Qts:  # total Q factor
+    value: 0.24
+    winner: vendor_page
+    sources:
+      vendor_page: 0.24
+  Qms:  # mechanical Q factor
+    value: 4.12
+    winner: vendor_page
+    sources:
+      vendor_page: 4.12
+  Le:  # voice coil inductance (H)
+    value: 0.0012
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0012
+  Pe:  # rated power input (W)
+    value: 100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 100.0
+  Fs:  # free air resonance (Hz)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.04075
+    winner: vendor_page
+    sources:
+      vendor_page: 0.04075
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.025
+    winner: vendor_page
+    sources:
+      vendor_page: 0.025
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/volt-loudspeakers-bm1651.html

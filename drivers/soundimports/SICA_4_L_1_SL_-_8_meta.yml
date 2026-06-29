@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 60.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  Sd:  # effective piston area (m²)
+    value: 0.00442
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00442
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000432
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000432
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0024
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0024
+  Qes:  # electrical Q factor
+    value: 0.78
+    winner: vendor_page
+    sources:
+      vendor_page: 0.78
+  BL:  # force factor (T·m)
+    value: 5.1
+    winner: vendor_page
+    sources:
+      vendor_page: 5.1
+  Qts:  # total Q factor
+    value: 0.63
+    winner: vendor_page
+    sources:
+      vendor_page: 0.63
+  Qms:  # mechanical Q factor
+    value: 3.15
+    winner: vendor_page
+    sources:
+      vendor_page: 3.15
+  Le:  # voice coil inductance (H)
+    value: 0.00037
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00037
+  Pe:  # rated power input (W)
+    value: 60.0
+    winner: vendor_page
+    sources:
+      vendor_page: 60.0
+  Fs:  # free air resonance (Hz)
+    value: 108.3
+    winner: vendor_page
+    sources:
+      vendor_page: 108.3
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0012
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0012
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sica-4-l-1-sl-8.html

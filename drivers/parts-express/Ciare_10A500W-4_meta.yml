@@ -19,9 +19,62 @@ obsolete: null
 dq_issue: missing_Sd
 community: null
 fetched_sku: 293-208
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  sensitivity_db: 115.0
-  power_rms_W: 250.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.1
+    winner: vendor_page
+    sources:
+      vendor_page: 3.1
+  Qes:  # electrical Q factor
+    value: 0.54
+    winner: vendor_page
+    sources:
+      vendor_page: 0.54
+  BL:  # force factor (T·m)
+    value: 8.01
+    winner: vendor_page
+    sources:
+      vendor_page: 8.01
+  Qts:  # total Q factor
+    value: 0.51
+    winner: vendor_page
+    sources:
+      vendor_page: 0.51
+  Qms:  # mechanical Q factor
+    value: 10.18
+    winner: vendor_page
+    sources:
+      vendor_page: 10.18
+  Le:  # voice coil inductance (H)
+    value: 0.00034
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00034
+  Pe:  # rated power input (W)
+    value: 250.0
+    winner: vendor_page
+    sources:
+      vendor_page: 250.0
+  Fs:  # free air resonance (Hz)
+    value: 54.65
+    winner: vendor_page
+    sources:
+      vendor_page: 54.65
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0031
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0031
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 115.0
+    winner: vendor_page
+    sources:
+      vendor_page: 115.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/293-208--ciare-americano-10a500w-4-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Ciare-10A500W-4-Americano-Series-10-Woofer-4-Ohm-293-208

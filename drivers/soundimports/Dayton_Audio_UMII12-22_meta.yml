@@ -15,7 +15,95 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 800.0
-  sensitivity_db: 88.6
-  voice_coil_dia_mm: 76.0
-  linear_xmax_mm: 44.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.2
+    winner: vendor_page
+    sources:
+      vendor_page: 4.2
+  Sd:  # effective piston area (m²)
+    value: 0.0528
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0528
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000133
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000133
+  Xmax:  # one-way linear excursion (m)
+    value: 0.022
+    winner: vendor_page
+    sources:
+      vendor_page: 0.022
+  Qes:  # electrical Q factor
+    value: 0.71
+    winner: vendor_page
+    sources:
+      vendor_page: 0.71
+  BL:  # force factor (T·m)
+    value: 14.8
+    winner: vendor_page
+    sources:
+      vendor_page: 14.8
+  Qts:  # total Q factor
+    value: 0.56
+    winner: vendor_page
+    sources:
+      vendor_page: 0.56
+  Qms:  # mechanical Q factor
+    value: 2.75
+    winner: vendor_page
+    sources:
+      vendor_page: 2.75
+  Le:  # voice coil inductance (H)
+    value: 0.00066
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00066
+  Pe:  # rated power input (W)
+    value: 800.0
+    winner: vendor_page
+    sources:
+      vendor_page: 800.0
+  Fs:  # free air resonance (Hz)
+    value: 31.0
+    winner: vendor_page
+    sources:
+      vendor_page: 31.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.053
+    winner: vendor_page
+    sources:
+      vendor_page: 0.053
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.189
+    winner: vendor_page
+    sources:
+      vendor_page: 0.189
+  Znom:  # nominal impedance (Ω)
+    value: 2.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 88.6
+    winner: vendor_page
+    sources:
+      vendor_page: 88.6
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 22.0
+    winner: vendor_page
+    sources:
+      vendor_page: 22.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 400.0
+    winner: vendor_page
+    sources:
+      vendor_page: 400.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 76.0
+    winner: vendor_page
+    sources:
+      vendor_page: 76.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-umii12-22.html

@@ -15,4 +15,45 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 40.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.1
+    winner: vendor_page
+    sources:
+      vendor_page: 3.1
+  Qes:  # electrical Q factor
+    value: 1.64
+    winner: vendor_page
+    sources:
+      vendor_page: 1.64
+  Qts:  # total Q factor
+    value: 1.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0
+  Qms:  # mechanical Q factor
+    value: 2.54
+    winner: vendor_page
+    sources:
+      vendor_page: 2.54
+  Le:  # voice coil inductance (H)
+    value: 4.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0e-05
+  Pe:  # rated power input (W)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  Fs:  # free air resonance (Hz)
+    value: 760.0
+    winner: vendor_page
+    sources:
+      vendor_page: 760.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sb-acoustics-sb21rdc-c000-4.html

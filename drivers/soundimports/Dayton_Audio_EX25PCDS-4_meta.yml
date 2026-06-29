@@ -15,5 +15,50 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 20.0
-  voice_coil_dia_mm: 25.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.2
+    winner: vendor_page
+    sources:
+      vendor_page: 4.2
+  Qts:  # total Q factor
+    value: 1.122
+    winner: vendor_page
+    sources:
+      vendor_page: 1.122
+  Le:  # voice coil inductance (H)
+    value: 9.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 9.0e-05
+  Pe:  # rated power input (W)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  Fs:  # free air resonance (Hz)
+    value: 99.7
+    winner: vendor_page
+    sources:
+      vendor_page: 99.7
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 60.0
+    winner: vendor_page
+    sources:
+      vendor_page: 60.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 15.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 25.0
+    winner: vendor_page
+    sources:
+      vendor_page: 25.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-ex25pcds-4.html

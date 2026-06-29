@@ -14,11 +14,87 @@ dq_issue: null
 community: null
 fetched_sku: null
 driver_type: midrange
-freq_low_hz: 200.0
-freq_high_hz: 6000.0
 specs:
-  power_rms_W: 120.0
-  sensitivity_db: 93.0
-  linear_xmax_mm: 6.0
-  freq_low_hz: 200.0
-  freq_high_hz: 6000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.4
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4
+  Sd:  # effective piston area (m²)
+    value: 0.0118
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0118
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00052
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00052
+  Xmax:  # one-way linear excursion (m)
+    value: 0.003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.003
+  Qes:  # electrical Q factor
+    value: 0.22
+    winner: vendor_page
+    sources:
+      vendor_page: 0.22
+  BL:  # force factor (T·m)
+    value: 11.7
+    winner: vendor_page
+    sources:
+      vendor_page: 11.7
+  Qts:  # total Q factor
+    value: 0.21
+    winner: vendor_page
+    sources:
+      vendor_page: 0.21
+  Qms:  # mechanical Q factor
+    value: 4.76
+    winner: vendor_page
+    sources:
+      vendor_page: 4.76
+  Le:  # voice coil inductance (H)
+    value: 6.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0e-05
+  Pe:  # rated power input (W)
+    value: 120.0
+    winner: vendor_page
+    sources:
+      vendor_page: 120.0
+  Fs:  # free air resonance (Hz)
+    value: 55.0
+    winner: vendor_page
+    sources:
+      vendor_page: 55.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0103
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0103
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0161
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0161
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 93.0
+    winner: vendor_page
+    sources:
+      vendor_page: 93.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 6000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6000.0
+_sources:
+  datasheet: https://doc.soundimports.nl/pdf/brands/Accuton/C168-6-990/C168-6-990.pdf
+  vendor_page: https://www.soundimports.eu/en/accuton-c168-6-990.html

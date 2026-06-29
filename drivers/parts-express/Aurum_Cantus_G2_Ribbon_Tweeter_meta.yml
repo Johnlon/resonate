@@ -16,4 +16,21 @@ fetched_sku: null
 obsolete: null
 driver_type: null
 specs:
-  power_rms_W: 40.0
+  Pe:  # rated power input (W)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  Fs:  # free air resonance (Hz)
+    value: 96.0
+    winner: vendor_page
+    sources:
+      vendor_page: 96.0
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/276-402-aurum-cantus-g2-specifications.pdf
+  vendor_page: https://www.parts-express.com/Aurum-Cantus-G2-Ribbon-Tweeter-276-402

@@ -20,10 +20,92 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-3143
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  freq_low_hz: 2019.1
-  freq_high_hz: 294.0
-  power_rms_W: 250.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.5
+    winner: vendor_page
+    sources:
+      vendor_page: 3.5
+  Sd:  # effective piston area (m²)
+    value: 0.0241
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0241
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00036
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00036
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00325
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00325
+  Qes:  # electrical Q factor
+    value: 0.48
+    winner: vendor_page
+    sources:
+      vendor_page: 0.48
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.2716571416705097
+    winner: vendor_page
+    sources:
+      vendor_page: 0.2716571416705097
+  BL:  # force factor (T·m)
+    value: 6.45
+    winner: vendor_page
+    sources:
+      vendor_page: 6.45
+  Qts:  # total Q factor
+    value: 0.46
+    winner: vendor_page
+    sources:
+      vendor_page: 0.46
+  Qms:  # mechanical Q factor
+    value: 20.8
+    winner: vendor_page
+    sources:
+      vendor_page: 20.8
+  Le:  # voice coil inductance (H)
+    value: 0.000132
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000132
+  Pe:  # rated power input (W)
+    value: 250.0
+    winner: vendor_page
+    sources:
+      vendor_page: 250.0
+  Fs:  # free air resonance (Hz)
+    value: 78.2
+    winner: vendor_page
+    sources:
+      vendor_page: 78.2
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.02081
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02081
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0115
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0115
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 2019.1
+    winner: vendor_page
+    sources:
+      vendor_page: 2019.1
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 294.0
+    winner: vendor_page
+    sources:
+      vendor_page: 294.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-3143--prv-audio-8mr500-4-bullet-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/PRV-Audio-8MR500-4-BULLET-8-Midrange-Speaker-4-Ohm-294-3143

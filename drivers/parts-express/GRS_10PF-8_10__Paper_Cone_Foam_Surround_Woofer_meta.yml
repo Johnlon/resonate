@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: woofer
-freq_low_hz: 40.0
-freq_high_hz: 5000.0
 specs:
-  power_rms_W: 110.0
-  freq_low_hz: 40.0
-  freq_high_hz: 5000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.2
+    winner: vendor_page
+    sources:
+      vendor_page: 7.2
+  Sd:  # effective piston area (m²)
+    value: 0.03447
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03447
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00035
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00035
+  Xmax:  # one-way linear excursion (m)
+    value: 0.003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.003
+  Qes:  # electrical Q factor
+    value: 1.57
+    winner: vendor_page
+    sources:
+      vendor_page: 1.57
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.904516452072454
+    winner: vendor_page
+    sources:
+      vendor_page: 1.904516452072454
+  BL:  # force factor (T·m)
+    value: 6.8
+    winner: vendor_page
+    sources:
+      vendor_page: 6.8
+  Qts:  # total Q factor
+    value: 1.21
+    winner: vendor_page
+    sources:
+      vendor_page: 1.21
+  Qms:  # mechanical Q factor
+    value: 5.3
+    winner: vendor_page
+    sources:
+      vendor_page: 5.3
+  Le:  # voice coil inductance (H)
+    value: 0.0012
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0012
+  Pe:  # rated power input (W)
+    value: 110.0
+    winner: vendor_page
+    sources:
+      vendor_page: 110.0
+  Fs:  # free air resonance (Hz)
+    value: 45.0
+    winner: vendor_page
+    sources:
+      vendor_page: 45.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.058898944
+    winner: vendor_page
+    sources:
+      vendor_page: 0.058898944
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0357
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0357
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 5000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/GRS%20Spec%20Sheets/292-410--grs-10pf-8-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/GRS-10PF-8-10-Paper-Cone-Foam-Surround-Woofer-292-410

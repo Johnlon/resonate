@@ -15,5 +15,66 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 5.0
-  voice_coil_dia_mm: 19.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.8
+    winner: vendor_page
+    sources:
+      vendor_page: 3.8
+  Cms:  # mechanical compliance (m/N)
+    value: 1.0e-07
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0e-07
+  BL:  # force factor (T·m)
+    value: 1.78
+    winner: vendor_page
+    sources:
+      vendor_page: 1.78
+  Qts:  # total Q factor
+    value: 2.34
+    winner: vendor_page
+    sources:
+      vendor_page: 2.34
+  Le:  # voice coil inductance (H)
+    value: 4.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0e-05
+  Pe:  # rated power input (W)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+  Fs:  # free air resonance (Hz)
+    value: 637.0
+    winner: vendor_page
+    sources:
+      vendor_page: 637.0
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00058
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00058
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 70.0
+    winner: vendor_page
+    sources:
+      vendor_page: 70.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 19.0
+    winner: vendor_page
+    sources:
+      vendor_page: 19.0
+_sources:
+  datasheet: https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/BCE-1/pdf_Dayton%20Audio_BCE-1_2.pdf
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-daex19ct-4.html

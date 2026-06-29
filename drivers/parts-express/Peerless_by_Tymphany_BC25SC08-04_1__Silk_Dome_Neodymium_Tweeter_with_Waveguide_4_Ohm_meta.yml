@@ -15,9 +15,57 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
-freq_low_hz: 2500.0
-freq_high_hz: 20000.0
 specs:
-  power_rms_W: 100.0
-  freq_low_hz: 2500.0
-  freq_high_hz: 20000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 2.8
+    winner: vendor_page
+    sources:
+      vendor_page: 2.8
+  Qes:  # electrical Q factor
+    value: 1.53
+    winner: vendor_page
+    sources:
+      vendor_page: 1.53
+  Qts:  # total Q factor
+    value: 1.17
+    winner: vendor_page
+    sources:
+      vendor_page: 1.17
+  Qms:  # mechanical Q factor
+    value: 4.9
+    winner: vendor_page
+    sources:
+      vendor_page: 4.9
+  Le:  # voice coil inductance (H)
+    value: 2.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0e-05
+  Pe:  # rated power input (W)
+    value: 100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 100.0
+  Fs:  # free air resonance (Hz)
+    value: 1660.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1660.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 2500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2500.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 20000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/264-1390--tymphany-bc25sc08-04-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Peerless-BC25SC08-04-1-Silk-Dome-Neodymium-Tweeter-with-Wav-264-1390

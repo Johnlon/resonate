@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: coaxial
 specs:
-  power_rms_W: 40.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.2
+    winner: vendor_page
+    sources:
+      vendor_page: 3.2
+  Sd:  # effective piston area (m²)
+    value: 0.00899
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00899
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00151
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00151
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00465
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00465
+  Qes:  # electrical Q factor
+    value: 0.3
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3
+  BL:  # force factor (T·m)
+    value: 5.1
+    winner: vendor_page
+    sources:
+      vendor_page: 5.1
+  Qts:  # total Q factor
+    value: 0.27
+    winner: vendor_page
+    sources:
+      vendor_page: 0.27
+  Qms:  # mechanical Q factor
+    value: 2.26
+    winner: vendor_page
+    sources:
+      vendor_page: 2.26
+  Le:  # voice coil inductance (H)
+    value: 0.0003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0003
+  Pe:  # rated power input (W)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  Fs:  # free air resonance (Hz)
+    value: 43.0
+    winner: vendor_page
+    sources:
+      vendor_page: 43.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0006
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0006
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0091
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0091
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sb-acoustics-sb13pfc25-4-coax.html

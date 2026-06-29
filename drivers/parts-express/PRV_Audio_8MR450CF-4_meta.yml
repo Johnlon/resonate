@@ -19,11 +19,97 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-3533
-field_provenance: null
-freq_low_hz: 95.0
-freq_high_hz: 10000.0
 specs:
-  power_rms_W: 8.0
-  sensitivity_db: 2.83
-  freq_low_hz: 95.0
-  freq_high_hz: 10.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.4
+    winner: vendor_page
+    sources:
+      vendor_page: 3.4
+  Sd:  # effective piston area (m²)
+    value: 0.0227
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0227
+  Cms:  # mechanical compliance (m/N)
+    value: 0.01753
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01753
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0035
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0035
+  Qes:  # electrical Q factor
+    value: 0.73
+    winner: vendor_page
+    sources:
+      vendor_page: 0.73
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.3398085217779647
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3398085217779647
+  BL:  # force factor (T·m)
+    value: 6.06
+    winner: vendor_page
+    sources:
+      vendor_page: 6.06
+  Qts:  # total Q factor
+    value: 0.71
+    winner: vendor_page
+    sources:
+      vendor_page: 0.71
+  Qms:  # mechanical Q factor
+    value: 23.21
+    winner: vendor_page
+    sources:
+      vendor_page: 23.21
+  Le:  # voice coil inductance (H)
+    value: 0.00015
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00015
+  Pe:  # rated power input (W)
+    value: 450.0
+    winner: vendor_page
+    sources:
+      vendor_page: 450.0
+  Fs:  # free air resonance (Hz)
+    value: 82.8
+    winner: vendor_page
+    sources:
+      vendor_page: 82.8
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.017556416
+    winner: vendor_page
+    sources:
+      vendor_page: 0.017556416
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.01516
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01516
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 2.83
+    winner: vendor_page
+    sources:
+      vendor_page: 2.83
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 95.0
+    winner: vendor_page
+    sources:
+      vendor_page: 95.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 10.0
+    winner: vendor_page
+    sources:
+      vendor_page: 10.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-3533--8mr450cd-4-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/PRV-Audio-8MR450CF-4-Moto-Series-8-Carbon-Fiber-Midrange-Loudspeaker-4-Ohm-294-3533

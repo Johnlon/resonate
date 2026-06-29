@@ -19,8 +19,82 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 295-251
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 250.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.4
+    winner: vendor_page
+    sources:
+      vendor_page: 7.4
+  Sd:  # effective piston area (m²)
+    value: 0.03664
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03664
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00016
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00016
+  Xmax:  # one-way linear excursion (m)
+    value: 0.01
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01
+  Qes:  # electrical Q factor
+    value: 0.47
+    winner: vendor_page
+    sources:
+      vendor_page: 0.47
+  Rms:  # mechanical resistance (kg/s)
+    value: 5.523834911997337
+    winner: vendor_page
+    sources:
+      vendor_page: 5.523834911997337
+  BL:  # force factor (T·m)
+    value: 21.1
+    winner: vendor_page
+    sources:
+      vendor_page: 21.1
+  Qts:  # total Q factor
+    value: 0.43
+    winner: vendor_page
+    sources:
+      vendor_page: 0.43
+  Qms:  # mechanical Q factor
+    value: 5.15
+    winner: vendor_page
+    sources:
+      vendor_page: 5.15
+  Le:  # voice coil inductance (H)
+    value: 0.00525
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00525
+  Pe:  # rated power input (W)
+    value: 250.0
+    winner: vendor_page
+    sources:
+      vendor_page: 250.0
+  Fs:  # free air resonance (Hz)
+    value: 34.3
+    winner: vendor_page
+    sources:
+      vendor_page: 34.3
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.030582144000000002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.030582144000000002
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.132
+    winner: vendor_page
+    sources:
+      vendor_page: 0.132
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/295-251--dayton-audio-ls10-44-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-LS10-44-10-Low-Profile-Subwoofer-Dual-4-Ohm-295-251

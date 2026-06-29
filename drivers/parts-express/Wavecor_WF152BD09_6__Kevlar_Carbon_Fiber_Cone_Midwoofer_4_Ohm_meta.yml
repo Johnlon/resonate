@@ -16,4 +16,66 @@ fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  power_rms_W: 70.0
+  Sd:  # effective piston area (m²)
+    value: 0.0085
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0085
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00094
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00094
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0045
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0045
+  Qes:  # electrical Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.322536845768552
+    winner: vendor_page
+    sources:
+      vendor_page: 0.322536845768552
+  Qts:  # total Q factor
+    value: 0.32
+    winner: vendor_page
+    sources:
+      vendor_page: 0.32
+  Qms:  # mechanical Q factor
+    value: 10.5
+    winner: vendor_page
+    sources:
+      vendor_page: 10.5
+  Pe:  # rated power input (W)
+    value: 70.0
+    winner: vendor_page
+    sources:
+      vendor_page: 70.0
+  Fs:  # free air resonance (Hz)
+    value: 49.0
+    winner: vendor_page
+    sources:
+      vendor_page: 49.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.009627712
+    winner: vendor_page
+    sources:
+      vendor_page: 0.009627712
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.011
+    winner: vendor_page
+    sources:
+      vendor_page: 0.011
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/298-1229--wf152bd09-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Wavecor-WF152BD09-6-Kevlar-Carbon-Fiber-Cone-Midwoofer-4-Ohm-298-1229

@@ -21,10 +21,91 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 295-315
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  freq_low_hz: 0.38
-  freq_high_hz: 250.0
-  power_rms_W: 70.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.6
+    winner: vendor_page
+    sources:
+      vendor_page: 6.6
+  Sd:  # effective piston area (m²)
+    value: 0.03431
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03431
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00061
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00061
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0045
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0045
+  Qes:  # electrical Q factor
+    value: 0.44
+    winner: vendor_page
+    sources:
+      vendor_page: 0.44
+  Rms:  # mechanical resistance (kg/s)
+    value: 3.3419188940006617
+    winner: vendor_page
+    sources:
+      vendor_page: 3.3419188940006617
+  BL:  # force factor (T·m)
+    value: 12.64
+    winner: vendor_page
+    sources:
+      vendor_page: 12.64
+  Qts:  # total Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  Qms:  # mechanical Q factor
+    value: 3.16
+    winner: vendor_page
+    sources:
+      vendor_page: 3.16
+  Le:  # voice coil inductance (H)
+    value: 0.00263
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00263
+  Pe:  # rated power input (W)
+    value: 70.0
+    winner: vendor_page
+    sources:
+      vendor_page: 70.0
+  Fs:  # free air resonance (Hz)
+    value: 24.9
+    winner: vendor_page
+    sources:
+      vendor_page: 24.9
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.103922656
+    winner: vendor_page
+    sources:
+      vendor_page: 0.103922656
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0675
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0675
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 250.0
+    winner: vendor_page
+    sources:
+      vendor_page: 250.0
+_sources:
+  vendor_page: https://www.parts-express.com/Dayton-Audio-DC250-8-10-Classic-Woofer-295-315

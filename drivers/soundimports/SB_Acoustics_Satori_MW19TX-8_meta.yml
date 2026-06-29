@@ -15,4 +15,80 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 70.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  Sd:  # effective piston area (m²)
+    value: 0.0158
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0158
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00152
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00152
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0067
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0067
+  Qes:  # electrical Q factor
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.5
+    winner: vendor_page
+    sources:
+      vendor_page: 0.5
+  BL:  # force factor (T·m)
+    value: 7.5
+    winner: vendor_page
+    sources:
+      vendor_page: 7.5
+  Qts:  # total Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Qms:  # mechanical Q factor
+    value: 6.47
+    winner: vendor_page
+    sources:
+      vendor_page: 6.47
+  Le:  # voice coil inductance (H)
+    value: 0.0002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0002
+  Pe:  # rated power input (W)
+    value: 70.0
+    winner: vendor_page
+    sources:
+      vendor_page: 70.0
+  Fs:  # free air resonance (Hz)
+    value: 33.0
+    winner: vendor_page
+    sources:
+      vendor_page: 33.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0534
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0534
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0156
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0156
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sb-acoustics-mw19tx-8.html

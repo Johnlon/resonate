@@ -15,10 +15,97 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 95.0
-freq_high_hz: 10000.0
 specs:
-  power_rms_W: 8.0
-  sensitivity_db: 250.0
-  freq_low_hz: 95.0
-  freq_high_hz: 10.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.5
+    winner: vendor_page
+    sources:
+      vendor_page: 3.5
+  Sd:  # effective piston area (m²)
+    value: 0.0227
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0227
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000303
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000303
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00325
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00325
+  Qes:  # electrical Q factor
+    value: 0.24
+    winner: vendor_page
+    sources:
+      vendor_page: 0.24
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.8137576058807355
+    winner: vendor_page
+    sources:
+      vendor_page: 0.8137576058807355
+  BL:  # force factor (T·m)
+    value: 11.49
+    winner: vendor_page
+    sources:
+      vendor_page: 11.49
+  Qts:  # total Q factor
+    value: 0.23
+    winner: vendor_page
+    sources:
+      vendor_page: 0.23
+  Qms:  # mechanical Q factor
+    value: 11.0
+    winner: vendor_page
+    sources:
+      vendor_page: 11.0
+  Le:  # voice coil inductance (H)
+    value: 7.9e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 7.9e-05
+  Pe:  # rated power input (W)
+    value: 250.0
+    winner: vendor_page
+    sources:
+      vendor_page: 250.0
+  Fs:  # free air resonance (Hz)
+    value: 58.7
+    winner: vendor_page
+    sources:
+      vendor_page: 58.7
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.021803936
+    winner: vendor_page
+    sources:
+      vendor_page: 0.021803936
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.02427
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02427
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 250.0
+    winner: vendor_page
+    sources:
+      vendor_page: 250.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 95.0
+    winner: vendor_page
+    sources:
+      vendor_page: 95.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 10.0
+    winner: vendor_page
+    sources:
+      vendor_page: 10.0
+_sources:
+  datasheet: https://prvaudio.com/wp-content/uploads/2026/02/PRV-Catalog-2026.pdf
+  vendor_page: https://www.parts-express.com/PRV-Audio-8MR500CF-NDY-4-8-Midrange-Neodymium-Speaker-Pair-4-Ohm-294-3145

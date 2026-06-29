@@ -20,11 +20,97 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 295-742
-field_provenance: null
-freq_low_hz: 30.0
-freq_high_hz: 1000.0
 specs:
-  sensitivity_db: 50.0
-  freq_low_hz: 25.0
-  freq_high_hz: 1.0
-  power_rms_W: 50.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.3
+    winner: vendor_page
+    sources:
+      vendor_page: 4.3
+  Sd:  # effective piston area (m²)
+    value: 0.00844
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00844
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00048
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00048
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0093
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0093
+  Qes:  # electrical Q factor
+    value: 0.5
+    winner: vendor_page
+    sources:
+      vendor_page: 0.5
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.4342141752980515
+    winner: vendor_page
+    sources:
+      vendor_page: 2.4342141752980515
+  BL:  # force factor (T·m)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  Qts:  # total Q factor
+    value: 0.43
+    winner: vendor_page
+    sources:
+      vendor_page: 0.43
+  Qms:  # mechanical Q factor
+    value: 3.02
+    winner: vendor_page
+    sources:
+      vendor_page: 3.02
+  Le:  # voice coil inductance (H)
+    value: 0.0011
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0011
+  Pe:  # rated power input (W)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  Fs:  # free air resonance (Hz)
+    value: 45.0
+    winner: vendor_page
+    sources:
+      vendor_page: 45.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0049
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0049
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.026
+    winner: vendor_page
+    sources:
+      vendor_page: 0.026
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 25.0
+    winner: vendor_page
+    sources:
+      vendor_page: 25.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 1.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/295-742--dayton-audio-mx5-22-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-MX5-22-5-1-4-Max-X-High-Excursion-DVC-Subwoofer-Driver-2-Ohms-Per-Coil-295-742

@@ -15,10 +15,97 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 80.0
-freq_high_hz: 20000.0
 specs:
-  power_rms_W: 1.0
-  sensitivity_db: 96.0
-  freq_low_hz: 80.0
-  freq_high_hz: 20000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.77
+    winner: vendor_page
+    sources:
+      vendor_page: 5.77
+  Sd:  # effective piston area (m²)
+    value: 0.007854
+    winner: vendor_page
+    sources:
+      vendor_page: 0.007854
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00029099999999999997
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00029099999999999997
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00225
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00225
+  Qes:  # electrical Q factor
+    value: 0.665
+    winner: vendor_page
+    sources:
+      vendor_page: 0.665
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.4157467863295192
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4157467863295192
+  BL:  # force factor (T·m)
+    value: 6.96
+    winner: vendor_page
+    sources:
+      vendor_page: 6.96
+  Qts:  # total Q factor
+    value: 0.627
+    winner: vendor_page
+    sources:
+      vendor_page: 0.627
+  Qms:  # mechanical Q factor
+    value: 10.966
+    winner: vendor_page
+    sources:
+      vendor_page: 10.966
+  Le:  # voice coil inductance (H)
+    value: 0.000363
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000363
+  Pe:  # rated power input (W)
+    value: 150.0
+    winner: vendor_page
+    sources:
+      vendor_page: 150.0
+  Fs:  # free air resonance (Hz)
+    value: 80.0
+    winner: vendor_page
+    sources:
+      vendor_page: 80.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.02548512
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02548512
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00907
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00907
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 96.0
+    winner: vendor_page
+    sources:
+      vendor_page: 96.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 80.0
+    winner: vendor_page
+    sources:
+      vendor_page: 80.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 20000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-1974--tfx0515-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Celestion-TFX0515-5-Coaxial-Full-Range-Professional-Driver-294-1974

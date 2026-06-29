@@ -20,8 +20,71 @@ obsolete: null
 dq_issue: missing_Sd
 community: null
 fetched_sku: 297-484
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 15.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.5
+    winner: vendor_page
+    sources:
+      vendor_page: 6.5
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00128
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00128
+  Xmax:  # one-way linear excursion (m)
+    value: 0.003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.003
+  Qes:  # electrical Q factor
+    value: 1.35
+    winner: vendor_page
+    sources:
+      vendor_page: 1.35
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.3527103345318438
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3527103345318438
+  BL:  # force factor (T·m)
+    value: 3.1
+    winner: vendor_page
+    sources:
+      vendor_page: 3.1
+  Qts:  # total Q factor
+    value: 1.08
+    winner: vendor_page
+    sources:
+      vendor_page: 1.08
+  Qms:  # mechanical Q factor
+    value: 5.9
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9
+  Pe:  # rated power input (W)
+    value: 15.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15.0
+  Fs:  # free air resonance (Hz)
+    value: 69.0
+    winner: vendor_page
+    sources:
+      vendor_page: 69.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.004247519999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004247519999999999
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0048
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0048
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.parts-express.com/HiVi-M4N-B-4-Damped-Aluminum-Magnesium-Cone-Full-Range-Driver-8-Ohms-297-484

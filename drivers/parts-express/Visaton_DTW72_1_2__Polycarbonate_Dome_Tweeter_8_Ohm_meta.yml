@@ -15,9 +15,32 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
-freq_low_hz: 2.2
-freq_high_hz: 23000.0
 specs:
-  power_rms_W: 70.0
-  freq_low_hz: 2.2
-  freq_high_hz: 23000.0
+  Pe:  # rated power input (W)
+    value: 70.0
+    winner: vendor_page
+    sources:
+      vendor_page: 70.0
+  Fs:  # free air resonance (Hz)
+    value: 3000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3000.0
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 2.2
+    winner: vendor_page
+    sources:
+      vendor_page: 2.2
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 23000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 23000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/292-676--visaton-dtw72-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Visaton-DTW72-1-2-Polycarbonate-Dome-Tweeter-8-Ohm-292-676

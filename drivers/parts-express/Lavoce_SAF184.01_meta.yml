@@ -19,8 +19,82 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 293-727
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 700.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.9
+    winner: vendor_page
+    sources:
+      vendor_page: 4.9
+  Sd:  # effective piston area (m²)
+    value: 0.116
+    winner: vendor_page
+    sources:
+      vendor_page: 0.116
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00011
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00011
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0068
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0068
+  Qes:  # electrical Q factor
+    value: 0.31
+    winner: vendor_page
+    sources:
+      vendor_page: 0.31
+  Rms:  # mechanical resistance (kg/s)
+    value: 4.7427215991090055
+    winner: vendor_page
+    sources:
+      vendor_page: 4.7427215991090055
+  BL:  # force factor (T·m)
+    value: 25.6
+    winner: vendor_page
+    sources:
+      vendor_page: 25.6
+  Qts:  # total Q factor
+    value: 0.3
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3
+  Qms:  # mechanical Q factor
+    value: 8.7
+    winner: vendor_page
+    sources:
+      vendor_page: 8.7
+  Le:  # voice coil inductance (H)
+    value: 0.0016
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0016
+  Pe:  # rated power input (W)
+    value: 700.0
+    winner: vendor_page
+    sources:
+      vendor_page: 700.0
+  Fs:  # free air resonance (Hz)
+    value: 33.0
+    winner: vendor_page
+    sources:
+      vendor_page: 33.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.22087104
+    winner: vendor_page
+    sources:
+      vendor_page: 0.22087104
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.199
+    winner: vendor_page
+    sources:
+      vendor_page: 0.199
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/293-727--lavoce-saf184.01-specifications.pdf
+  vendor_page: https://www.parts-express.com/LaVoce-SAF184.01-18-Subwoofer-8-Ohm-293-727

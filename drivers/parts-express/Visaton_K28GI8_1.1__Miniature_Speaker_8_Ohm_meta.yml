@@ -15,9 +15,32 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
-freq_low_hz: 500.0
-freq_high_hz: 7000.0
 specs:
-  freq_low_hz: 90.0
-  freq_high_hz: 20000.0
-  power_rms_W: 0.5
+  Pe:  # rated power input (W)
+    value: 0.5
+    winner: vendor_page
+    sources:
+      vendor_page: 0.5
+  Fs:  # free air resonance (Hz)
+    value: 730.0
+    winner: vendor_page
+    sources:
+      vendor_page: 730.0
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 90.0
+    winner: vendor_page
+    sources:
+      vendor_page: 90.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 20000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/292-7829--visaton-k28gi8-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Visaton-K28GI8-1.1-Miniature-Speaker-8-Ohm-292-7829

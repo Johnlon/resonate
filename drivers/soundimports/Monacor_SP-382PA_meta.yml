@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 150.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.0
+    winner: vendor_page
+    sources:
+      vendor_page: 7.0
+  Sd:  # effective piston area (m²)
+    value: 0.0825
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0825
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00026
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00026
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0035
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0035
+  Qes:  # electrical Q factor
+    value: 0.99
+    winner: vendor_page
+    sources:
+      vendor_page: 0.99
+  BL:  # force factor (T·m)
+    value: 10.9
+    winner: vendor_page
+    sources:
+      vendor_page: 10.9
+  Qts:  # total Q factor
+    value: 0.75
+    winner: vendor_page
+    sources:
+      vendor_page: 0.75
+  Qms:  # mechanical Q factor
+    value: 3.03
+    winner: vendor_page
+    sources:
+      vendor_page: 3.03
+  Le:  # voice coil inductance (H)
+    value: 0.0008
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0008
+  Pe:  # rated power input (W)
+    value: 150.0
+    winner: vendor_page
+    sources:
+      vendor_page: 150.0
+  Fs:  # free air resonance (Hz)
+    value: 25.0
+    winner: vendor_page
+    sources:
+      vendor_page: 25.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.27
+    winner: vendor_page
+    sources:
+      vendor_page: 0.27
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.073
+    winner: vendor_page
+    sources:
+      vendor_page: 0.073
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/monacor-sp-382pa.html

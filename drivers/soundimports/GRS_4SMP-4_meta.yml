@@ -15,7 +15,95 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 30.0
-  sensitivity_db: 86.0
-  voice_coil_dia_mm: 26.0
-  linear_xmax_mm: 8.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.7
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7
+  Sd:  # effective piston area (m²)
+    value: 0.0054
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0054
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00098
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00098
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004
+  Qes:  # electrical Q factor
+    value: 0.67
+    winner: vendor_page
+    sources:
+      vendor_page: 0.67
+  BL:  # force factor (T·m)
+    value: 3.9
+    winner: vendor_page
+    sources:
+      vendor_page: 3.9
+  Qts:  # total Q factor
+    value: 0.55
+    winner: vendor_page
+    sources:
+      vendor_page: 0.55
+  Qms:  # mechanical Q factor
+    value: 3.05
+    winner: vendor_page
+    sources:
+      vendor_page: 3.05
+  Le:  # voice coil inductance (H)
+    value: 0.00032
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00032
+  Pe:  # rated power input (W)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  Fs:  # free air resonance (Hz)
+    value: 58.0
+    winner: vendor_page
+    sources:
+      vendor_page: 58.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0077
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0077
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 86.0
+    winner: vendor_page
+    sources:
+      vendor_page: 86.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 26.0
+    winner: vendor_page
+    sources:
+      vendor_page: 26.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/grs-4smp-4.html

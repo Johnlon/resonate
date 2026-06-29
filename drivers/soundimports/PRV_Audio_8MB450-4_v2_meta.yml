@@ -15,4 +15,65 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 450.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.6
+    winner: vendor_page
+    sources:
+      vendor_page: 3.6
+  Sd:  # effective piston area (m²)
+    value: 0.0241
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0241
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0045
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0045
+  Qes:  # electrical Q factor
+    value: 0.92
+    winner: vendor_page
+    sources:
+      vendor_page: 0.92
+  BL:  # force factor (T·m)
+    value: 6.19
+    winner: vendor_page
+    sources:
+      vendor_page: 6.19
+  Qts:  # total Q factor
+    value: 0.88
+    winner: vendor_page
+    sources:
+      vendor_page: 0.88
+  Qms:  # mechanical Q factor
+    value: 22.84
+    winner: vendor_page
+    sources:
+      vendor_page: 22.84
+  Le:  # voice coil inductance (H)
+    value: 0.00017
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00017
+  Pe:  # rated power input (W)
+    value: 450.0
+    winner: vendor_page
+    sources:
+      vendor_page: 450.0
+  Fs:  # free air resonance (Hz)
+    value: 76.59
+    winner: vendor_page
+    sources:
+      vendor_page: 76.59
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.01702
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01702
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.02048
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02048
+_sources:
+  vendor_page: https://www.soundimports.eu/en/prv-audio-8mb450-4-v2.html

@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
-freq_low_hz: 40.0
-freq_high_hz: 25000.0
 specs:
-  power_rms_W: 220.0
-  freq_low_hz: 40.0
-  freq_high_hz: 25000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.2
+    winner: vendor_page
+    sources:
+      vendor_page: 6.2
+  Sd:  # effective piston area (m²)
+    value: 0.02164
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02164
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00141
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00141
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0048
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0048
+  Qes:  # electrical Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.42738818592082295
+    winner: vendor_page
+    sources:
+      vendor_page: 0.42738818592082295
+  BL:  # force factor (T·m)
+    value: 6.15
+    winner: vendor_page
+    sources:
+      vendor_page: 6.15
+  Qts:  # total Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  Qms:  # mechanical Q factor
+    value: 5.73
+    winner: vendor_page
+    sources:
+      vendor_page: 5.73
+  Le:  # voice coil inductance (H)
+    value: 0.00073
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00073
+  Pe:  # rated power input (W)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  Fs:  # free air resonance (Hz)
+    value: 46.4
+    winner: vendor_page
+    sources:
+      vendor_page: 46.4
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.090330592
+    winner: vendor_page
+    sources:
+      vendor_page: 0.090330592
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.008400000000000001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.008400000000000001
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 25000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 25000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/PS220-8%208_%20Point%20Source%20Full-Range%20Neo%20Driver%20Specification%20Sheet.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-PS220-8-8-Point-Source-Full-Range-Neo-Driver-295-346

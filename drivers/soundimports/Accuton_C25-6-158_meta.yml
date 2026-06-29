@@ -14,9 +14,52 @@ dq_issue: null
 community: null
 fetched_sku: null
 driver_type: tweeter
-freq_low_hz: 2000.0
-freq_high_hz: 25000.0
 specs:
-  power_rms_W: 100.0
-  freq_low_hz: 2000.0
-  freq_high_hz: 25000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.69
+    winner: vendor_page
+    sources:
+      vendor_page: 5.69
+  Qes:  # electrical Q factor
+    value: 0.97
+    winner: vendor_page
+    sources:
+      vendor_page: 0.97
+  Qts:  # total Q factor
+    value: 0.73
+    winner: vendor_page
+    sources:
+      vendor_page: 0.73
+  Qms:  # mechanical Q factor
+    value: 2.87
+    winner: vendor_page
+    sources:
+      vendor_page: 2.87
+  Pe:  # rated power input (W)
+    value: 100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 100.0
+  Fs:  # free air resonance (Hz)
+    value: 905.0
+    winner: vendor_page
+    sources:
+      vendor_page: 905.0
+  Znom:  # nominal impedance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 2000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2000.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 25000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 25000.0
+_sources:
+  datasheet: https://doc.soundimports.nl/pdf/brands/Accuton/C25-6-158/C25-6-158%20CEL.pdf
+  vendor_page: https://www.soundimports.eu/en/accuton-c25-6-158.html

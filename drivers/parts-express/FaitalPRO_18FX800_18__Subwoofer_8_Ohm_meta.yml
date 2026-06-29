@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 30.0
-freq_high_hz: 1600.0
 specs:
-  power_rms_W: 1000.0
-  freq_low_hz: 30.0
-  freq_high_hz: 1600.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.2
+    winner: vendor_page
+    sources:
+      vendor_page: 6.2
+  Sd:  # effective piston area (m²)
+    value: 0.1213
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1213
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00011999999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00011999999999999999
+  Xmax:  # one-way linear excursion (m)
+    value: 0.013800000000000002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.013800000000000002
+  Qes:  # electrical Q factor
+    value: 0.43
+    winner: vendor_page
+    sources:
+      vendor_page: 0.43
+  Rms:  # mechanical resistance (kg/s)
+    value: 5.727123407494194
+    winner: vendor_page
+    sources:
+      vendor_page: 5.727123407494194
+  BL:  # force factor (T·m)
+    value: 24.0
+    winner: vendor_page
+    sources:
+      vendor_page: 24.0
+  Qts:  # total Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Qms:  # mechanical Q factor
+    value: 6.8
+    winner: vendor_page
+    sources:
+      vendor_page: 6.8
+  Le:  # voice coil inductance (H)
+    value: 0.0015
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0015
+  Pe:  # rated power input (W)
+    value: 1000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1000.0
+  Fs:  # free air resonance (Hz)
+    value: 34.0
+    winner: vendor_page
+    sources:
+      vendor_page: 34.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.24692249600000002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.24692249600000002
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.18230000000000002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.18230000000000002
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 1600.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1600.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-1089--faitalpro-18fx800-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/FaitalPRO-18FX800-18-Subwoofer-8-Ohm-294-1089

@@ -19,9 +19,32 @@ obsolete: null
 dq_issue: missing_Sd; Fs_no_Q
 community: null
 fetched_sku: 253-088
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  sensitivity_db: 92.0
-  power_rms_W: 20.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.1
+    winner: vendor_page
+    sources:
+      vendor_page: 3.1
+  Pe:  # rated power input (W)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  Fs:  # free air resonance (Hz)
+    value: 600.0
+    winner: vendor_page
+    sources:
+      vendor_page: 600.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 92.0
+    winner: vendor_page
+    sources:
+      vendor_page: 92.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/253-088--t25m-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Beyma-T25M-NMF-Series-1-Aluminum-Dome-Tweeter-253-088

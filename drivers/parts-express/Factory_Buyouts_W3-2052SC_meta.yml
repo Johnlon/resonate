@@ -20,10 +20,91 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 299-572
-field_provenance: null
-freq_low_hz: 50.0
-freq_high_hz: 800.0
 specs:
-  freq_low_hz: 3.0
-  freq_high_hz: 2052.0
-  power_rms_W: 15.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.3
+    winner: vendor_page
+    sources:
+      vendor_page: 4.3
+  Sd:  # effective piston area (m²)
+    value: 0.00288
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00288
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0005
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005
+  Qes:  # electrical Q factor
+    value: 0.53
+    winner: vendor_page
+    sources:
+      vendor_page: 0.53
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.8466786126896936
+    winner: vendor_page
+    sources:
+      vendor_page: 0.8466786126896936
+  BL:  # force factor (T·m)
+    value: 6.6
+    winner: vendor_page
+    sources:
+      vendor_page: 6.6
+  Qts:  # total Q factor
+    value: 0.49
+    winner: vendor_page
+    sources:
+      vendor_page: 0.49
+  Qms:  # mechanical Q factor
+    value: 6.48
+    winner: vendor_page
+    sources:
+      vendor_page: 6.48
+  Le:  # voice coil inductance (H)
+    value: 0.001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001
+  Pe:  # rated power input (W)
+    value: 15.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15.0
+  Fs:  # free air resonance (Hz)
+    value: 59.0
+    winner: vendor_page
+    sources:
+      vendor_page: 59.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0005946528
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0005946528
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0148
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0148
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 3.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 2052.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2052.0
+_sources:
+  vendor_page: https://www.parts-express.com/Tang-Band-W3-2052SC-3-RBM-Neodymium-Subwoofer-4-Ohm-299-572

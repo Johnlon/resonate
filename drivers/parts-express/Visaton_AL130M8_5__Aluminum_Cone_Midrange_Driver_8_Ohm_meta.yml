@@ -16,6 +16,86 @@ fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  freq_low_hz: 8000.0
-  freq_high_hz: 90.0
-  power_rms_W: 60.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.4
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4
+  Sd:  # effective piston area (m²)
+    value: 0.0079
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0079
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0055
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0055
+  Qes:  # electrical Q factor
+    value: 0.52
+    winner: vendor_page
+    sources:
+      vendor_page: 0.52
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.6037010393094191
+    winner: vendor_page
+    sources:
+      vendor_page: 0.6037010393094191
+  BL:  # force factor (T·m)
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
+  Qts:  # total Q factor
+    value: 0.46
+    winner: vendor_page
+    sources:
+      vendor_page: 0.46
+  Qms:  # mechanical Q factor
+    value: 4.39
+    winner: vendor_page
+    sources:
+      vendor_page: 4.39
+  Le:  # voice coil inductance (H)
+    value: 0.0008
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0008
+  Pe:  # rated power input (W)
+    value: 60.0
+    winner: vendor_page
+    sources:
+      vendor_page: 60.0
+  Fs:  # free air resonance (Hz)
+    value: 57.0
+    winner: vendor_page
+    sources:
+      vendor_page: 57.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.009061376
+    winner: vendor_page
+    sources:
+      vendor_page: 0.009061376
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0074
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0074
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 8000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8000.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 90.0
+    winner: vendor_page
+    sources:
+      vendor_page: 90.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/292-7807--visaton-al130m8-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Visaton-AL130M8-5-Aluminum-Cone-Midrange-Driver-8-Ohm-292-7807

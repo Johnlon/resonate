@@ -20,7 +20,47 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 290-217
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.00866
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00866
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00079
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00079
+  Xmax:  # one-way linear excursion (m)
+    value: 0.009
+    winner: vendor_page
+    sources:
+      vendor_page: 0.009
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.132973971509537
+    winner: vendor_page
+    sources:
+      vendor_page: 1.132973971509537
+  Qms:  # mechanical Q factor
+    value: 4.02
+    winner: vendor_page
+    sources:
+      vendor_page: 4.02
+  Fs:  # free air resonance (Hz)
+    value: 44.2
+    winner: vendor_page
+    sources:
+      vendor_page: 44.2
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.008495039999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.008495039999999999
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.016399999999999998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.016399999999999998
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/290-217--dayton-audio-nd140-pr-5-1-4-inch-aluminum-cone-passive-radiator-specifications.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-ND140-PR-5-1-4-Aluminum-Cone-Passive-Radiator-290-217

@@ -15,8 +15,87 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 35.0
-freq_high_hz: 1300.0
 specs:
-  freq_low_hz: 35.0
-  freq_high_hz: 1300.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.5
+    winner: vendor_page
+    sources:
+      vendor_page: 5.5
+  Sd:  # effective piston area (m²)
+    value: 0.134
+    winner: vendor_page
+    sources:
+      vendor_page: 0.134
+  Cms:  # mechanical compliance (m/N)
+    value: 7.9e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 7.9e-05
+  Xmax:  # one-way linear excursion (m)
+    value: 0.01325
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01325
+  Qes:  # electrical Q factor
+    value: 0.42
+    winner: vendor_page
+    sources:
+      vendor_page: 0.42
+  Rms:  # mechanical resistance (kg/s)
+    value: 5.860569399173855
+    winner: vendor_page
+    sources:
+      vendor_page: 5.860569399173855
+  BL:  # force factor (T·m)
+    value: 27.11
+    winner: vendor_page
+    sources:
+      vendor_page: 27.11
+  Qts:  # total Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Qms:  # mechanical Q factor
+    value: 9.64
+    winner: vendor_page
+    sources:
+      vendor_page: 9.64
+  Le:  # voice coil inductance (H)
+    value: 0.0030600000000000002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0030600000000000002
+  Fs:  # free air resonance (Hz)
+    value: 35.4
+    winner: vendor_page
+    sources:
+      vendor_page: 35.4
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.199350272
+    winner: vendor_page
+    sources:
+      vendor_page: 0.199350272
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.254
+    winner: vendor_page
+    sources:
+      vendor_page: 0.254
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 35.0
+    winner: vendor_page
+    sources:
+      vendor_page: 35.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 1300.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1300.0
+_sources:
+  datasheet: https://prvaudio.com/wp-content/uploads/2026/02/PRV-Catalog-2026.pdf
+  vendor_page: https://www.parts-express.com/PRV-Audio-18SW3600-18-Professional-Subwoofer-Driver-8-Ohm-294-2982

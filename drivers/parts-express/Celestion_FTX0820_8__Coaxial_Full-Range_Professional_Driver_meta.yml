@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: coaxial
-freq_low_hz: 70.0
-freq_high_hz: 20000.0
 specs:
-  power_rms_W: 200.0
-  freq_low_hz: 70.0
-  freq_high_hz: 20.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.9
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9
+  Sd:  # effective piston area (m²)
+    value: 0.02271
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02271
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00023799999999999998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00023799999999999998
+  Xmax:  # one-way linear excursion (m)
+    value: 0.002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.002
+  Qes:  # electrical Q factor
+    value: 0.242
+    winner: vendor_page
+    sources:
+      vendor_page: 0.242
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.2248572014011634
+    winner: vendor_page
+    sources:
+      vendor_page: 2.2248572014011634
+  BL:  # force factor (T·m)
+    value: 14.4
+    winner: vendor_page
+    sources:
+      vendor_page: 14.4
+  Qts:  # total Q factor
+    value: 0.231
+    winner: vendor_page
+    sources:
+      vendor_page: 0.231
+  Qms:  # mechanical Q factor
+    value: 4.7
+    winner: vendor_page
+    sources:
+      vendor_page: 4.7
+  Le:  # voice coil inductance (H)
+    value: 0.0008399999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0008399999999999999
+  Pe:  # rated power input (W)
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
+  Fs:  # free air resonance (Hz)
+    value: 78.8
+    winner: vendor_page
+    sources:
+      vendor_page: 78.8
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0212376
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0212376
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.02112
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02112
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 70.0
+    winner: vendor_page
+    sources:
+      vendor_page: 70.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-2096--ftx0820-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Celestion-FTX0820-8-Coaxial-Full-Range-Professional-Driver-294-2096

@@ -15,9 +15,77 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 29.0
-freq_high_hz: 2000.0
 specs:
-  power_rms_W: 2.0
-  freq_low_hz: 29.0
-  freq_high_hz: 2000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.5
+    winner: vendor_page
+    sources:
+      vendor_page: 6.5
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0058
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0058
+  Qes:  # electrical Q factor
+    value: 0.5
+    winner: vendor_page
+    sources:
+      vendor_page: 0.5
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.3248509258266121
+    winner: vendor_page
+    sources:
+      vendor_page: 1.3248509258266121
+  BL:  # force factor (T·m)
+    value: 9.6
+    winner: vendor_page
+    sources:
+      vendor_page: 9.6
+  Qts:  # total Q factor
+    value: 0.45
+    winner: vendor_page
+    sources:
+      vendor_page: 0.45
+  Qms:  # mechanical Q factor
+    value: 5.02
+    winner: vendor_page
+    sources:
+      vendor_page: 5.02
+  Pe:  # rated power input (W)
+    value: 80.0
+    winner: vendor_page
+    sources:
+      vendor_page: 80.0
+  Fs:  # free air resonance (Hz)
+    value: 29.0
+    winner: vendor_page
+    sources:
+      vendor_page: 29.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.053518751999999996
+    winner: vendor_page
+    sources:
+      vendor_page: 0.053518751999999996
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0365
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0365
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 29.0
+    winner: vendor_page
+    sources:
+      vendor_page: 29.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 2000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/297-446-hi-vi-m8n-specifications-44414.pdf
+  vendor_page: https://www.parts-express.com/HiVi-M8N-8-Aluminum-Magnesium-Woofer-297-446

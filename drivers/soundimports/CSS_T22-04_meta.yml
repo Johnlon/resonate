@@ -15,4 +15,40 @@ community: null
 fetched_sku: null
 driver_type: tweeter
 specs:
-  sensitivity_db: 87.7
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.7
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7
+  Qes:  # electrical Q factor
+    value: 3.15
+    winner: vendor_page
+    sources:
+      vendor_page: 3.15
+  Qts:  # total Q factor
+    value: 2.35
+    winner: vendor_page
+    sources:
+      vendor_page: 2.35
+  Qms:  # mechanical Q factor
+    value: 9.3
+    winner: vendor_page
+    sources:
+      vendor_page: 9.3
+  Fs:  # free air resonance (Hz)
+    value: 1099.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1099.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 87.7
+    winner: vendor_page
+    sources:
+      vendor_page: 87.7
+_sources:
+  vendor_page: https://www.soundimports.eu/en/css-t22-04.html

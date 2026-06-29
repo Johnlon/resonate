@@ -15,6 +15,90 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 2000.0
-  sensitivity_db: 87.2
-  linear_xmax_mm: 56.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.7
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7
+  Sd:  # effective piston area (m²)
+    value: 0.0491
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0491
+  Xmax:  # one-way linear excursion (m)
+    value: 0.028
+    winner: vendor_page
+    sources:
+      vendor_page: 0.028
+  Qes:  # electrical Q factor
+    value: 0.414
+    winner: vendor_page
+    sources:
+      vendor_page: 0.414
+  BL:  # force factor (T·m)
+    value: 18.4
+    winner: vendor_page
+    sources:
+      vendor_page: 18.4
+  Qts:  # total Q factor
+    value: 0.374
+    winner: vendor_page
+    sources:
+      vendor_page: 0.374
+  Qms:  # mechanical Q factor
+    value: 3.962
+    winner: vendor_page
+    sources:
+      vendor_page: 3.962
+  Le:  # voice coil inductance (H)
+    value: 0.00138
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00138
+  Pe:  # rated power input (W)
+    value: 1000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1000.0
+  Fs:  # free air resonance (Hz)
+    value: 21.3
+    winner: vendor_page
+    sources:
+      vendor_page: 21.3
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0674
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0674
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.2759
+    winner: vendor_page
+    sources:
+      vendor_page: 0.2759
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  power_peak_W:  # peak power handling (W)
+    value: 2000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2000.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 87.2
+    winner: vendor_page
+    sources:
+      vendor_page: 87.2
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 16.0
+    winner: vendor_page
+    sources:
+      vendor_page: 16.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 500.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/css-sdx12.html

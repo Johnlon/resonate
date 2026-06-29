@@ -20,8 +20,82 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 295-206
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 300.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.3
+    winner: vendor_page
+    sources:
+      vendor_page: 3.3
+  Sd:  # effective piston area (m²)
+    value: 0.08501
+    winner: vendor_page
+    sources:
+      vendor_page: 0.08501
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0003
+  Xmax:  # one-way linear excursion (m)
+    value: 0.009300000000000001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.009300000000000001
+  Qes:  # electrical Q factor
+    value: 0.42
+    winner: vendor_page
+    sources:
+      vendor_page: 0.42
+  Rms:  # mechanical resistance (kg/s)
+    value: 5.695999583501039
+    winner: vendor_page
+    sources:
+      vendor_page: 5.695999583501039
+  BL:  # force factor (T·m)
+    value: 15.4
+    winner: vendor_page
+    sources:
+      vendor_page: 15.4
+  Qts:  # total Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Qms:  # mechanical Q factor
+    value: 5.27
+    winner: vendor_page
+    sources:
+      vendor_page: 5.27
+  Le:  # voice coil inductance (H)
+    value: 0.0022
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0022
+  Pe:  # rated power input (W)
+    value: 300.0
+    winner: vendor_page
+    sources:
+      vendor_page: 300.0
+  Fs:  # free air resonance (Hz)
+    value: 17.5
+    winner: vendor_page
+    sources:
+      vendor_page: 17.5
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.310918464
+    winner: vendor_page
+    sources:
+      vendor_page: 0.310918464
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.273
+    winner: vendor_page
+    sources:
+      vendor_page: 0.273
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/295-206-dayton-audio-dcs385-4-specifications-46581.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-DCS385-4-15-Classic-Subwoofer-4-Ohm-295-206

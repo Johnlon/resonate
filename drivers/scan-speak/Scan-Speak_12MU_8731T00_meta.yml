@@ -16,4 +16,41 @@ community: null
 fetched_sku: null
 driver_type: midrange
 specs:
-  sensitivity_db: 87.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.9
+    winner: manu_page
+    sources:
+      manu_page: 5.9
+  Sd:  # effective piston area (m²)
+    value: 0.0058
+    winner: manu_page
+    sources:
+      manu_page: 0.0058
+  BL:  # force factor (T·m)
+    value: 6.1
+    winner: manu_page
+    sources:
+      manu_page: 6.1
+  Qts:  # total Q factor
+    value: 0.29
+    winner: manu_page
+    sources:
+      manu_page: 0.29
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 87.0
+    winner: manu_page
+    sources:
+      manu_page: 87.0
+  Fs:  # free air resonance (Hz)
+    value: 66.0
+    winner: manu_page
+    sources:
+      manu_page: 66.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0058
+    winner: manu_page
+    sources:
+      manu_page: 0.0058
+_sources:
+  datasheet: https://www.scan-speak.dk/datasheet/pdf/12mu-8731t00.pdf
+  manu_page: https://www.scan-speak.dk/product/12mu-8731t00/

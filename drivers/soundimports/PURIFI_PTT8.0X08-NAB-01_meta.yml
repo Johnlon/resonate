@@ -14,4 +14,76 @@ dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
-specs: null
+specs:
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  Sd:  # effective piston area (m²)
+    value: 0.02351
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02351
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00095
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00095
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0093
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0093
+  Qes:  # electrical Q factor
+    value: 0.37
+    winner: vendor_page
+    sources:
+      vendor_page: 0.37
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.22
+    winner: vendor_page
+    sources:
+      vendor_page: 1.22
+  BL:  # force factor (T·m)
+    value: 10.7
+    winner: vendor_page
+    sources:
+      vendor_page: 10.7
+  Qts:  # total Q factor
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
+  Qms:  # mechanical Q factor
+    value: 5.8
+    winner: vendor_page
+    sources:
+      vendor_page: 5.8
+  Le:  # voice coil inductance (H)
+    value: 0.00033
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00033
+  Fs:  # free air resonance (Hz)
+    value: 24.0
+    winner: vendor_page
+    sources:
+      vendor_page: 24.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0745
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0745
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0476
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0476
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/purifi-ptt80x08-nab-01.html

@@ -16,8 +16,91 @@ dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  voice_coil_dia_mm: 30.5
-  Hg_mm: 5.0
-  linear_xmax_mm: 11.3
-  sensitivity_db: 90.5
-  power_rms_W: 50.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.6
+    winner: manu_page
+    sources:
+      manu_page: 5.6
+  Sd:  # effective piston area (m²)
+    value: 0.0216
+    winner: manu_page
+    sources:
+      manu_page: 0.0216
+  Cms:  # mechanical compliance (m/N)
+    value: 0.001
+    winner: manu_page
+    sources:
+      manu_page: 0.001
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00565
+    winner: manu_page
+    sources:
+      manu_page: 0.00565
+  Qes:  # electrical Q factor
+    value: 0.43
+    winner: manu_page
+    sources:
+      manu_page: 0.43
+  BL:  # force factor (T·m)
+    value: 7.7
+    winner: manu_page
+    sources:
+      manu_page: 7.7
+  Qts:  # total Q factor
+    value: 0.37
+    winner: manu_page
+    sources:
+      manu_page: 0.37
+  Qms:  # mechanical Q factor
+    value: 2.66
+    winner: manu_page
+    sources:
+      manu_page: 2.66
+  Le:  # voice coil inductance (H)
+    value: 0.00084
+    winner: manu_page
+    sources:
+      manu_page: 0.00084
+  Pe:  # rated power input (W)
+    value: 50.0
+    winner: manu_page
+    sources:
+      manu_page: 50.0
+  Fs:  # free air resonance (Hz)
+    value: 34.0
+    winner: manu_page
+    sources:
+      manu_page: 34.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0662
+    winner: manu_page
+    sources:
+      manu_page: 0.0662
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0212
+    winner: manu_page
+    sources:
+      manu_page: 0.0212
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: manu_page
+    sources:
+      manu_page: 8.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 30.5
+    winner: manu_page
+    sources:
+      manu_page: 30.5
+  Hg_mm:  # magnetic gap height (mm)
+    value: 5.0
+    winner: manu_page
+    sources:
+      manu_page: 5.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 90.5
+    winner: manu_page
+    sources:
+      manu_page: 90.5
+_sources:
+  datasheet: https://sbacoustics.com/wp-content/uploads/2020/11/8in-SB20PFC30-8-OEM-only.pdf
+  manu_page: https://sbacoustics.com/product/8-sb20pfc30-8-paper/

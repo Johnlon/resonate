@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 1000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.3
+    winner: vendor_page
+    sources:
+      vendor_page: 4.3
+  Sd:  # effective piston area (m²)
+    value: 0.1219
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1219
+  Cms:  # mechanical compliance (m/N)
+    value: 7.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 7.0e-05
+  Xmax:  # one-way linear excursion (m)
+    value: 0.022
+    winner: vendor_page
+    sources:
+      vendor_page: 0.022
+  Qes:  # electrical Q factor
+    value: 0.85
+    winner: vendor_page
+    sources:
+      vendor_page: 0.85
+  BL:  # force factor (T·m)
+    value: 21.1
+    winner: vendor_page
+    sources:
+      vendor_page: 21.1
+  Qts:  # total Q factor
+    value: 0.7
+    winner: vendor_page
+    sources:
+      vendor_page: 0.7
+  Qms:  # mechanical Q factor
+    value: 4.05
+    winner: vendor_page
+    sources:
+      vendor_page: 4.05
+  Le:  # voice coil inductance (H)
+    value: 0.0015
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0015
+  Pe:  # rated power input (W)
+    value: 1000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1000.0
+  Fs:  # free air resonance (Hz)
+    value: 26.2
+    winner: vendor_page
+    sources:
+      vendor_page: 26.2
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.1447
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1447
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.532
+    winner: vendor_page
+    sources:
+      vendor_page: 0.532
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-um18-22.html

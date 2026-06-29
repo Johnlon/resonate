@@ -15,10 +15,97 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 60.0
-freq_high_hz: 5000.0
 specs:
-  sensitivity_db: 5.0
-  freq_low_hz: 60.0
-  freq_high_hz: 5.0
-  power_rms_W: 2.5
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.4
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4
+  Sd:  # effective piston area (m²)
+    value: 0.0322
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0322
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00025
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00025
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00492
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00492
+  Qes:  # electrical Q factor
+    value: 0.29
+    winner: vendor_page
+    sources:
+      vendor_page: 0.29
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.832956817197907
+    winner: vendor_page
+    sources:
+      vendor_page: 1.832956817197907
+  BL:  # force factor (T·m)
+    value: 14.1
+    winner: vendor_page
+    sources:
+      vendor_page: 14.1
+  Qts:  # total Q factor
+    value: 0.27
+    winner: vendor_page
+    sources:
+      vendor_page: 0.27
+  Qms:  # mechanical Q factor
+    value: 5.8
+    winner: vendor_page
+    sources:
+      vendor_page: 5.8
+  Le:  # voice coil inductance (H)
+    value: 0.0006
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0006
+  Pe:  # rated power input (W)
+    value: 300.0
+    winner: vendor_page
+    sources:
+      vendor_page: 300.0
+  Fs:  # free air resonance (Hz)
+    value: 60.0
+    winner: vendor_page
+    sources:
+      vendor_page: 60.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.03681184
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03681184
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0282
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0282
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 60.0
+    winner: vendor_page
+    sources:
+      vendor_page: 60.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-1203-faitalpro-10pr300-8-specifications.pdf
+  vendor_page: https://www.parts-express.com/FaitalPRO-10PR300-10-Neodymium-Professional-Woofer-8-Ohm-294-1203

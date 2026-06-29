@@ -16,4 +16,41 @@ community: null
 fetched_sku: null
 driver_type: woofer
 specs:
-  sensitivity_db: 86.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.9
+    winner: manu_page
+    sources:
+      manu_page: 5.9
+  Sd:  # effective piston area (m²)
+    value: 0.0095
+    winner: manu_page
+    sources:
+      manu_page: 0.0095
+  BL:  # force factor (T·m)
+    value: 6.6
+    winner: manu_page
+    sources:
+      manu_page: 6.6
+  Qts:  # total Q factor
+    value: 0.39
+    winner: manu_page
+    sources:
+      manu_page: 0.39
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 86.0
+    winner: manu_page
+    sources:
+      manu_page: 86.0
+  Fs:  # free air resonance (Hz)
+    value: 39.0
+    winner: manu_page
+    sources:
+      manu_page: 39.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.016
+    winner: manu_page
+    sources:
+      manu_page: 0.016
+_sources:
+  datasheet: https://www.scan-speak.dk/datasheet/pdf/15w-8530k00.pdf
+  manu_page: https://www.scan-speak.dk/product/15w-8530k00/

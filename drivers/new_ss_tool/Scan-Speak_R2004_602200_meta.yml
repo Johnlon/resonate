@@ -41,9 +41,83 @@ manu_page_fields:
 - SPL
 - Sd
 - Vas
-freq_low_hz: 3000.0
-freq_high_hz: 40000.0
 specs:
-  sensitivity_db: 87.5
-  freq_low_hz: 3000.0
-  freq_high_hz: 40000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 2.8
+    winner: manu_page
+    sources:
+      manu_page: 2.8
+  Sd:  # effective piston area (m²)
+    value: 0.00038
+    winner: manu_page
+    sources:
+      manu_page: 0.00038
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00029
+    winner: manu_page
+    sources:
+      manu_page: 0.00029
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0004
+    winner: manu_page
+    sources:
+      manu_page: 0.0004
+  Qes:  # electrical Q factor
+    value: 1.43
+    winner: manu_page
+    sources:
+      manu_page: 1.43
+  BL:  # force factor (T·m)
+    value: 1.3
+    winner: manu_page
+    sources:
+      manu_page: 1.3
+  Qts:  # total Q factor
+    value: 0.96
+    winner: manu_page
+    sources:
+      manu_page: 0.96
+  Qms:  # mechanical Q factor
+    value: 2.88
+    winner: manu_page
+    sources:
+      manu_page: 2.88
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 87.5
+    winner: manu_page
+    sources:
+      manu_page: 87.5
+  Le:  # voice coil inductance (H)
+    value: 2.0e-05
+    winner: manu_page
+    sources:
+      manu_page: 2.0e-05
+  Fs:  # free air resonance (Hz)
+    value: 625.0
+    winner: manu_page
+    sources:
+      manu_page: 625.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 1.0e-05
+    winner: manu_page
+    sources:
+      manu_page: 1.0e-05
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.000229
+    winner: manu_page
+    sources:
+      manu_page: 0.000229
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 3000.0
+    winner: manu_page
+    sources:
+      manu_page: 3000.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 40000.0
+    winner: manu_page
+    sources:
+      manu_page: 40000.0
+_sources:
+  datasheet: https://www.scan-speak.dk/datasheet/pdf/r2004-602200.pdf
+  adv_datasheet: https://www.scan-speak.dk/datasheet/adv/r2004-602000.pdf
+  manu_page: https://www.scan-speak.dk/product/r2004-602200/

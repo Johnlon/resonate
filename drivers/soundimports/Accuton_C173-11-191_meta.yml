@@ -15,7 +15,90 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 120.0
-  sensitivity_db: 88.0
-  voice_coil_dia_mm: 38.0
-  linear_xmax_mm: 10.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.9
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9
+  Sd:  # effective piston area (m²)
+    value: 0.0133
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0133
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00086
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00086
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005
+  Qes:  # electrical Q factor
+    value: 0.37
+    winner: vendor_page
+    sources:
+      vendor_page: 0.37
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.91
+    winner: vendor_page
+    sources:
+      vendor_page: 0.91
+  BL:  # force factor (T·m)
+    value: 8.8
+    winner: vendor_page
+    sources:
+      vendor_page: 8.8
+  Qts:  # total Q factor
+    value: 0.34
+    winner: vendor_page
+    sources:
+      vendor_page: 0.34
+  Qms:  # mechanical Q factor
+    value: 5.27
+    winner: vendor_page
+    sources:
+      vendor_page: 5.27
+  Le:  # voice coil inductance (H)
+    value: 0.00072
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00072
+  Pe:  # rated power input (W)
+    value: 120.0
+    winner: vendor_page
+    sources:
+      vendor_page: 120.0
+  Fs:  # free air resonance (Hz)
+    value: 38.6
+    winner: vendor_page
+    sources:
+      vendor_page: 38.6
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0216
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0216
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0198
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0198
+  Znom:  # nominal impedance (Ω)
+    value: 11.0
+    winner: vendor_page
+    sources:
+      vendor_page: 11.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 88.0
+    winner: vendor_page
+    sources:
+      vendor_page: 88.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 38.0
+    winner: vendor_page
+    sources:
+      vendor_page: 38.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/accuton-c173-11-191.html

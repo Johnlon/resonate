@@ -15,5 +15,40 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 30.0
-  voice_coil_dia_mm: 32.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.7
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7
+  Qts:  # total Q factor
+    value: 2.57
+    winner: vendor_page
+    sources:
+      vendor_page: 2.57
+  Le:  # voice coil inductance (H)
+    value: 8.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0e-05
+  Pe:  # rated power input (W)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  Fs:  # free air resonance (Hz)
+    value: 272.5
+    winner: vendor_page
+    sources:
+      vendor_page: 272.5
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 32.0
+    winner: vendor_page
+    sources:
+      vendor_page: 32.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-ex32hrds-4.html

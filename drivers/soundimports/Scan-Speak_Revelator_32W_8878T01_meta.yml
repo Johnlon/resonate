@@ -15,4 +15,80 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 150.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.1
+    winner: vendor_page
+    sources:
+      vendor_page: 6.1
+  Sd:  # effective piston area (m²)
+    value: 0.0526
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0526
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0006
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0006
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0075
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0075
+  Qes:  # electrical Q factor
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.4
+    winner: vendor_page
+    sources:
+      vendor_page: 2.4
+  BL:  # force factor (T·m)
+    value: 15.6
+    winner: vendor_page
+    sources:
+      vendor_page: 15.6
+  Qts:  # total Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Qms:  # mechanical Q factor
+    value: 5.69
+    winner: vendor_page
+    sources:
+      vendor_page: 5.69
+  Le:  # voice coil inductance (H)
+    value: 0.00068
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00068
+  Pe:  # rated power input (W)
+    value: 150.0
+    winner: vendor_page
+    sources:
+      vendor_page: 150.0
+  Fs:  # free air resonance (Hz)
+    value: 19.0
+    winner: vendor_page
+    sources:
+      vendor_page: 19.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.234
+    winner: vendor_page
+    sources:
+      vendor_page: 0.234
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.1148
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1148
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/scan-speak-32w-8878t01.html

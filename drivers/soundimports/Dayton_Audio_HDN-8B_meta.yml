@@ -15,5 +15,55 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 50.0
-  voice_coil_dia_mm: 50.0
+  BL:  # force factor (T·m)
+    value: 18.2
+    winner: vendor_page
+    sources:
+      vendor_page: 18.2
+  Qts:  # total Q factor
+    value: 1.52
+    winner: vendor_page
+    sources:
+      vendor_page: 1.52
+  Le:  # voice coil inductance (H)
+    value: 0.00086
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00086
+  Pe:  # rated power input (W)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  Fs:  # free air resonance (Hz)
+    value: 695.0
+    winner: vendor_page
+    sources:
+      vendor_page: 695.0
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0382
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0382
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 15.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-hdn-8b.html

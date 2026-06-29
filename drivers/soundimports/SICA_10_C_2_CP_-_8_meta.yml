@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 200.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.2
+    winner: vendor_page
+    sources:
+      vendor_page: 6.2
+  Sd:  # effective piston area (m²)
+    value: 0.03464
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03464
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000371
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000371
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004
+  Qes:  # electrical Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  BL:  # force factor (T·m)
+    value: 12.7
+    winner: vendor_page
+    sources:
+      vendor_page: 12.7
+  Qts:  # total Q factor
+    value: 0.31
+    winner: vendor_page
+    sources:
+      vendor_page: 0.31
+  Qms:  # mechanical Q factor
+    value: 4.71
+    winner: vendor_page
+    sources:
+      vendor_page: 4.71
+  Le:  # voice coil inductance (H)
+    value: 0.00081
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00081
+  Pe:  # rated power input (W)
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
+  Fs:  # free air resonance (Hz)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0632
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0632
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0273
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0273
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sica-10-c-2-cp-8.html

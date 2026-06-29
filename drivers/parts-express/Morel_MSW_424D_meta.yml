@@ -20,8 +20,77 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 297-002
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 424.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.1
+    winner: vendor_page
+    sources:
+      vendor_page: 3.1
+  Sd:  # effective piston area (m²)
+    value: 0.0057
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0057
+  Cms:  # mechanical compliance (m/N)
+    value: 0.001056
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001056
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004
+  Qes:  # electrical Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.21
+    winner: vendor_page
+    sources:
+      vendor_page: 1.21
+  Qts:  # total Q factor
+    value: 0.32
+    winner: vendor_page
+    sources:
+      vendor_page: 0.32
+  Qms:  # mechanical Q factor
+    value: 2.05
+    winner: vendor_page
+    sources:
+      vendor_page: 2.05
+  Le:  # voice coil inductance (H)
+    value: 0.00025
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00025
+  Pe:  # rated power input (W)
+    value: 150.0
+    winner: vendor_page
+    sources:
+      vendor_page: 150.0
+  Fs:  # free air resonance (Hz)
+    value: 60.0
+    winner: vendor_page
+    sources:
+      vendor_page: 60.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00475
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00475
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0065
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0065
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/297-002--morel-msw-424d-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Morel-MSW-114-Shallow-Classic-Series-4-DPC-Cone-Woofer-Midrange-4-Ohms-297-002

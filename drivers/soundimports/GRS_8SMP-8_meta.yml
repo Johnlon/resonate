@@ -15,7 +15,95 @@ community: null
 fetched_sku: null
 driver_type: mid-bass
 specs:
-  power_rms_W: 60.0
-  sensitivity_db: 89.5
-  voice_coil_dia_mm: 39.0
-  linear_xmax_mm: 11.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.8
+    winner: vendor_page
+    sources:
+      vendor_page: 5.8
+  Sd:  # effective piston area (m²)
+    value: 0.0211
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0211
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00051
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00051
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0055
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0055
+  Qes:  # electrical Q factor
+    value: 0.55
+    winner: vendor_page
+    sources:
+      vendor_page: 0.55
+  BL:  # force factor (T·m)
+    value: 8.95
+    winner: vendor_page
+    sources:
+      vendor_page: 8.95
+  Qts:  # total Q factor
+    value: 0.46
+    winner: vendor_page
+    sources:
+      vendor_page: 0.46
+  Qms:  # mechanical Q factor
+    value: 2.85
+    winner: vendor_page
+    sources:
+      vendor_page: 2.85
+  Le:  # voice coil inductance (H)
+    value: 0.00041
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00041
+  Pe:  # rated power input (W)
+    value: 60.0
+    winner: vendor_page
+    sources:
+      vendor_page: 60.0
+  Fs:  # free air resonance (Hz)
+    value: 41.0
+    winner: vendor_page
+    sources:
+      vendor_page: 41.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0325
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0325
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0295
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0295
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 89.5
+    winner: vendor_page
+    sources:
+      vendor_page: 89.5
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 1.5
+    winner: vendor_page
+    sources:
+      vendor_page: 1.5
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 39.0
+    winner: vendor_page
+    sources:
+      vendor_page: 39.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/grs-8smp-8.html

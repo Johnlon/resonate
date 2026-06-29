@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 35.0
-freq_high_hz: 1000.0
 specs:
-  power_rms_W: 1200.0
-  freq_low_hz: 35.0
-  freq_high_hz: 1000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.1
+    winner: vendor_page
+    sources:
+      vendor_page: 5.1
+  Sd:  # effective piston area (m²)
+    value: 0.01876
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01876
+  Cms:  # mechanical compliance (m/N)
+    value: 9.1e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 9.1e-05
+  Xmax:  # one-way linear excursion (m)
+    value: 0.009300000000000001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.009300000000000001
+  Qes:  # electrical Q factor
+    value: 0.431
+    winner: vendor_page
+    sources:
+      vendor_page: 0.431
+  Rms:  # mechanical resistance (kg/s)
+    value: 15.979104576323994
+    winner: vendor_page
+    sources:
+      vendor_page: 15.979104576323994
+  BL:  # force factor (T·m)
+    value: 24.38
+    winner: vendor_page
+    sources:
+      vendor_page: 24.38
+  Qts:  # total Q factor
+    value: 0.379
+    winner: vendor_page
+    sources:
+      vendor_page: 0.379
+  Qms:  # mechanical Q factor
+    value: 3.147
+    winner: vendor_page
+    sources:
+      vendor_page: 3.147
+  Le:  # voice coil inductance (H)
+    value: 0.00161
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00161
+  Pe:  # rated power input (W)
+    value: 1200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1200.0
+  Fs:  # free air resonance (Hz)
+    value: 34.8
+    winner: vendor_page
+    sources:
+      vendor_page: 34.8
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.18887305599999998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.18887305599999998
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.22998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.22998
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 35.0
+    winner: vendor_page
+    sources:
+      vendor_page: 35.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 1000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-1996--powerprox-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Celestion-PowerProX18-18-Professional-Subwoofer-294-1996

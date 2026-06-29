@@ -15,9 +15,87 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: woofer
-freq_low_hz: 80.0
-freq_high_hz: 5000.0
 specs:
-  power_rms_W: 10.0
-  freq_low_hz: 80.0
-  freq_high_hz: 5000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.8
+    winner: vendor_page
+    sources:
+      vendor_page: 3.8
+  Sd:  # effective piston area (m²)
+    value: 0.00221
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00221
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00433
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00433
+  Qes:  # electrical Q factor
+    value: 0.609
+    winner: vendor_page
+    sources:
+      vendor_page: 0.609
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.36291072726046913
+    winner: vendor_page
+    sources:
+      vendor_page: 0.36291072726046913
+  BL:  # force factor (T·m)
+    value: 3.59
+    winner: vendor_page
+    sources:
+      vendor_page: 3.59
+  Qts:  # total Q factor
+    value: 0.55
+    winner: vendor_page
+    sources:
+      vendor_page: 0.55
+  Qms:  # mechanical Q factor
+    value: 5.81
+    winner: vendor_page
+    sources:
+      vendor_page: 5.81
+  Le:  # voice coil inductance (H)
+    value: 0.000247
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000247
+  Pe:  # rated power input (W)
+    value: 10.0
+    winner: vendor_page
+    sources:
+      vendor_page: 10.0
+  Fs:  # free air resonance (Hz)
+    value: 94.0
+    winner: vendor_page
+    sources:
+      vendor_page: 94.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.000566336
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000566336
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00357
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00357
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 80.0
+    winner: vendor_page
+    sources:
+      vendor_page: 80.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 5000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/264-1013--sls-65s25pr-03-04-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Peerless-by-Tymphany-SLS-65S25PR03-04-SLS-Series-2.5-Woofer-4-Ohm-264-1013

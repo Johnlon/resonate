@@ -19,9 +19,82 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 293-190
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 15.0
-  sensitivity_db: 97.9
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.3
+    winner: vendor_page
+    sources:
+      vendor_page: 5.3
+  Sd:  # effective piston area (m²)
+    value: 0.0881
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0881
+  Xmax:  # one-way linear excursion (m)
+    value: 0.007
+    winner: vendor_page
+    sources:
+      vendor_page: 0.007
+  Qes:  # electrical Q factor
+    value: 0.41
+    winner: vendor_page
+    sources:
+      vendor_page: 0.41
+  Rms:  # mechanical resistance (kg/s)
+    value: 3.3072469003644462
+    winner: vendor_page
+    sources:
+      vendor_page: 3.3072469003644462
+  BL:  # force factor (T·m)
+    value: 19.3
+    winner: vendor_page
+    sources:
+      vendor_page: 19.3
+  Qts:  # total Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Qms:  # mechanical Q factor
+    value: 8.61
+    winner: vendor_page
+    sources:
+      vendor_page: 8.61
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 97.9
+    winner: vendor_page
+    sources:
+      vendor_page: 97.9
+  Le:  # voice coil inductance (H)
+    value: 0.00116
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00116
+  Pe:  # rated power input (W)
+    value: 500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 500.0
+  Fs:  # free air resonance (Hz)
+    value: 44.0
+    winner: vendor_page
+    sources:
+      vendor_page: 44.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.135
+    winner: vendor_page
+    sources:
+      vendor_page: 0.135
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.103
+    winner: vendor_page
+    sources:
+      vendor_page: 0.103
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/293-190--ciare-pwa15.75-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Ciare-PWA15.75-15-Woofer-8-Ohm-293-190

@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 50.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 2.8
+    winner: vendor_page
+    sources:
+      vendor_page: 2.8
+  Sd:  # effective piston area (m²)
+    value: 0.00899
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00899
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00049
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00049
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0138
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0138
+  Qes:  # electrical Q factor
+    value: 0.601
+    winner: vendor_page
+    sources:
+      vendor_page: 0.601
+  BL:  # force factor (T·m)
+    value: 5.18
+    winner: vendor_page
+    sources:
+      vendor_page: 5.18
+  Qts:  # total Q factor
+    value: 0.5
+    winner: vendor_page
+    sources:
+      vendor_page: 0.5
+  Qms:  # mechanical Q factor
+    value: 5.47
+    winner: vendor_page
+    sources:
+      vendor_page: 5.47
+  Le:  # voice coil inductance (H)
+    value: 0.000353
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000353
+  Pe:  # rated power input (W)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  Fs:  # free air resonance (Hz)
+    value: 55.0
+    winner: vendor_page
+    sources:
+      vendor_page: 55.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00565
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00565
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0169
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0169
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/peerless-by-tymphany-sls-135f32cp01-04.html

@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 50.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.5
+    winner: vendor_page
+    sources:
+      vendor_page: 3.5
+  Sd:  # effective piston area (m²)
+    value: 0.0095
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0095
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00112
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00112
+  Qes:  # electrical Q factor
+    value: 0.24
+    winner: vendor_page
+    sources:
+      vendor_page: 0.24
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.5
+    winner: vendor_page
+    sources:
+      vendor_page: 0.5
+  BL:  # force factor (T·m)
+    value: 5.46
+    winner: vendor_page
+    sources:
+      vendor_page: 5.46
+  Qts:  # total Q factor
+    value: 0.23
+    winner: vendor_page
+    sources:
+      vendor_page: 0.23
+  Qms:  # mechanical Q factor
+    value: 4.8
+    winner: vendor_page
+    sources:
+      vendor_page: 4.8
+  Le:  # voice coil inductance (H)
+    value: 0.00134
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00134
+  Pe:  # rated power input (W)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  Fs:  # free air resonance (Hz)
+    value: 35.0
+    winner: vendor_page
+    sources:
+      vendor_page: 35.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0238
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0238
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0109
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0109
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/scan-speak-15m4531k00.html

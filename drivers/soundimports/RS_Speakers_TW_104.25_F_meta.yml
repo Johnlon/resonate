@@ -15,4 +15,45 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 22.5
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  Qes:  # electrical Q factor
+    value: 1.35
+    winner: vendor_page
+    sources:
+      vendor_page: 1.35
+  Qts:  # total Q factor
+    value: 1.11
+    winner: vendor_page
+    sources:
+      vendor_page: 1.11
+  Qms:  # mechanical Q factor
+    value: 6.34
+    winner: vendor_page
+    sources:
+      vendor_page: 6.34
+  Le:  # voice coil inductance (H)
+    value: 4.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0e-05
+  Pe:  # rated power input (W)
+    value: 22.5
+    winner: vendor_page
+    sources:
+      vendor_page: 22.5
+  Fs:  # free air resonance (Hz)
+    value: 950.0
+    winner: vendor_page
+    sources:
+      vendor_page: 950.0
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/rs-speakers-tw-10425-f.html

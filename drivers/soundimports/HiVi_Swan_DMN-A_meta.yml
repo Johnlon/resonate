@@ -15,5 +15,45 @@ community: null
 fetched_sku: null
 driver_type: tweeter
 specs:
-  power_rms_W: 85.0
-  sensitivity_db: 93.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.3
+    winner: vendor_page
+    sources:
+      vendor_page: 4.3
+  Pe:  # rated power input (W)
+    value: 60.0
+    winner: vendor_page
+    sources:
+      vendor_page: 60.0
+  Fs:  # free air resonance (Hz)
+    value: 800.0
+    winner: vendor_page
+    sources:
+      vendor_page: 800.0
+  Znom:  # nominal impedance (Ω)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+  power_peak_W:  # peak power handling (W)
+    value: 85.0
+    winner: vendor_page
+    sources:
+      vendor_page: 85.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 93.0
+    winner: vendor_page
+    sources:
+      vendor_page: 93.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 800.0
+    winner: vendor_page
+    sources:
+      vendor_page: 800.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 9.0
+    winner: vendor_page
+    sources:
+      vendor_page: 9.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/hivi-dmn-a.html

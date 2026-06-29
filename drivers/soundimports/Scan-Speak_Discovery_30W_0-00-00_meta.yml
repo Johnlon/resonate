@@ -14,4 +14,46 @@ dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.0466
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0466
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00065
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00065
+  Xmax:  # one-way linear excursion (m)
+    value: 0.028
+    winner: vendor_page
+    sources:
+      vendor_page: 0.028
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.84
+    winner: vendor_page
+    sources:
+      vendor_page: 1.84
+  Qms:  # mechanical Q factor
+    value: 14.0
+    winner: vendor_page
+    sources:
+      vendor_page: 14.0
+  Fs:  # free air resonance (Hz)
+    value: 9.5
+    winner: vendor_page
+    sources:
+      vendor_page: 9.5
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.2
+    winner: vendor_page
+    sources:
+      vendor_page: 0.2
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.435
+    winner: vendor_page
+    sources:
+      vendor_page: 0.435
+_sources:
+  vendor_page: https://www.soundimports.eu/en/scan-speak-30w-0-00-00.html

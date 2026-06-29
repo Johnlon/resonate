@@ -15,4 +15,70 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 150.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.4
+    winner: vendor_page
+    sources:
+      vendor_page: 3.4
+  Sd:  # effective piston area (m²)
+    value: 0.0222
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0222
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0067
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0067
+  Qes:  # electrical Q factor
+    value: 0.478
+    winner: vendor_page
+    sources:
+      vendor_page: 0.478
+  BL:  # force factor (T·m)
+    value: 12.0
+    winner: vendor_page
+    sources:
+      vendor_page: 12.0
+  Qts:  # total Q factor
+    value: 0.44
+    winner: vendor_page
+    sources:
+      vendor_page: 0.44
+  Qms:  # mechanical Q factor
+    value: 5.09
+    winner: vendor_page
+    sources:
+      vendor_page: 5.09
+  Le:  # voice coil inductance (H)
+    value: 0.00233
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00233
+  Pe:  # rated power input (W)
+    value: 150.0
+    winner: vendor_page
+    sources:
+      vendor_page: 150.0
+  Fs:  # free air resonance (Hz)
+    value: 42.0
+    winner: vendor_page
+    sources:
+      vendor_page: 42.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0139
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0139
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0716
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0716
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/peerless-by-tymphany-gbs-200f35cp02-04.html

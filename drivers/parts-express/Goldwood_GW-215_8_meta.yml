@@ -19,9 +19,87 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 290-345
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  sensitivity_db: 87.8
-  power_rms_W: 135.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.1
+    winner: vendor_page
+    sources:
+      vendor_page: 7.1
+  Sd:  # effective piston area (m²)
+    value: 0.082342
+    winner: vendor_page
+    sources:
+      vendor_page: 0.082342
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00038
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00038
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0035
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0035
+  Qes:  # electrical Q factor
+    value: 2.69
+    winner: vendor_page
+    sources:
+      vendor_page: 2.69
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.9790261309912687
+    winner: vendor_page
+    sources:
+      vendor_page: 1.9790261309912687
+  BL:  # force factor (T·m)
+    value: 6.09
+    winner: vendor_page
+    sources:
+      vendor_page: 6.09
+  Qts:  # total Q factor
+    value: 1.95
+    winner: vendor_page
+    sources:
+      vendor_page: 1.95
+  Qms:  # mechanical Q factor
+    value: 7.09
+    winner: vendor_page
+    sources:
+      vendor_page: 7.09
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 87.8
+    winner: vendor_page
+    sources:
+      vendor_page: 87.8
+  Le:  # voice coil inductance (H)
+    value: 0.0009
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0009
+  Pe:  # rated power input (W)
+    value: 135.0
+    winner: vendor_page
+    sources:
+      vendor_page: 135.0
+  Fs:  # free air resonance (Hz)
+    value: 29.5
+    winner: vendor_page
+    sources:
+      vendor_page: 29.5
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.36641939199999995
+    winner: vendor_page
+    sources:
+      vendor_page: 0.36641939199999995
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0757
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0757
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/290-345-goldwood-gw-2158-specifications.pdf
+  vendor_page: https://www.parts-express.com/Goldwood-GW-215-8-15-OEM-Woofer-8-Ohm-290-345

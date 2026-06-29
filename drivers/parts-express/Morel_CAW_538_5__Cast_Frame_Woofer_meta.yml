@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: woofer
-freq_low_hz: 35.0
-freq_high_hz: 3500.0
 specs:
-  power_rms_W: 2019.1
-  freq_low_hz: 35.0
-  freq_high_hz: 3500.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
+  Sd:  # effective piston area (m²)
+    value: 0.009
+    winner: vendor_page
+    sources:
+      vendor_page: 0.009
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0007199999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0007199999999999999
+  Xmax:  # one-way linear excursion (m)
+    value: 0.003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.003
+  Qes:  # electrical Q factor
+    value: 0.48
+    winner: vendor_page
+    sources:
+      vendor_page: 0.48
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.355336131543823
+    winner: vendor_page
+    sources:
+      vendor_page: 2.355336131543823
+  BL:  # force factor (T·m)
+    value: 6.9
+    winner: vendor_page
+    sources:
+      vendor_page: 6.9
+  Qts:  # total Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  Qms:  # mechanical Q factor
+    value: 1.83
+    winner: vendor_page
+    sources:
+      vendor_page: 1.83
+  Le:  # voice coil inductance (H)
+    value: 0.00047
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00047
+  Pe:  # rated power input (W)
+    value: 150.0
+    winner: vendor_page
+    sources:
+      vendor_page: 150.0
+  Fs:  # free air resonance (Hz)
+    value: 49.0
+    winner: vendor_page
+    sources:
+      vendor_page: 49.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.008211871999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.008211871999999999
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.014
+    winner: vendor_page
+    sources:
+      vendor_page: 0.014
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 35.0
+    winner: vendor_page
+    sources:
+      vendor_page: 35.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 3500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3500.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/297-082--morel-caw-538-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Morel-CAW538-5-Cast-Frame-Woofer-297-082

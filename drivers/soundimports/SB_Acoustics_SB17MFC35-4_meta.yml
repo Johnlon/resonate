@@ -15,4 +15,81 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 60.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.1
+    winner: vendor_page
+    sources:
+      vendor_page: 3.1
+  Sd:  # effective piston area (m²)
+    value: 0.0118
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0118
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00229
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00229
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0055
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0055
+  Qes:  # electrical Q factor
+    value: 0.3
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.45
+    winner: vendor_page
+    sources:
+      vendor_page: 0.45
+  BL:  # force factor (T·m)
+    value: 4.9
+    winner: vendor_page
+    sources:
+      vendor_page: 4.9
+  Qts:  # total Q factor
+    value: 0.28
+    winner: vendor_page
+    sources:
+      vendor_page: 0.28
+  Qms:  # mechanical Q factor
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
+  Le:  # voice coil inductance (H)
+    value: 0.00013
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00013
+  Pe:  # rated power input (W)
+    value: 60.0
+    winner: vendor_page
+    sources:
+      vendor_page: 60.0
+  Fs:  # free air resonance (Hz)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.045
+    winner: vendor_page
+    sources:
+      vendor_page: 0.045
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0123
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0123
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  datasheet: https://doc.soundimports.nl/pdf/brands/SB%20Acoustics/SB17MFC35-4/SB17MFC35-4.pdf
+  vendor_page: https://www.soundimports.eu/en/sb-acoustics-sb17mfc35-4.html

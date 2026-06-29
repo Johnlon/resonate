@@ -15,4 +15,80 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 40.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+  Sd:  # effective piston area (m²)
+    value: 0.0222
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0222
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00085
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00085
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0055
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0055
+  Qes:  # electrical Q factor
+    value: 0.77
+    winner: vendor_page
+    sources:
+      vendor_page: 0.77
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.07
+    winner: vendor_page
+    sources:
+      vendor_page: 1.07
+  BL:  # force factor (T·m)
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
+  Qts:  # total Q factor
+    value: 0.66
+    winner: vendor_page
+    sources:
+      vendor_page: 0.66
+  Qms:  # mechanical Q factor
+    value: 4.5
+    winner: vendor_page
+    sources:
+      vendor_page: 4.5
+  Le:  # voice coil inductance (H)
+    value: 0.00095
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00095
+  Pe:  # rated power input (W)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  Fs:  # free air resonance (Hz)
+    value: 39.0
+    winner: vendor_page
+    sources:
+      vendor_page: 39.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0595
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0595
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0196
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0196
+  Znom:  # nominal impedance (Ω)
+    value: 7.0
+    winner: vendor_page
+    sources:
+      vendor_page: 7.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sb-acoustics-sb20pfcs30-7.html

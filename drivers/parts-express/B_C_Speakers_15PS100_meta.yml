@@ -19,8 +19,82 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-673
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 2019.1
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.3
+    winner: vendor_page
+    sources:
+      vendor_page: 5.3
+  Sd:  # effective piston area (m²)
+    value: 0.0855
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0855
+  Cms:  # mechanical compliance (m/N)
+    value: 0.015
+    winner: vendor_page
+    sources:
+      vendor_page: 0.015
+  Xmax:  # one-way linear excursion (m)
+    value: 0.008
+    winner: vendor_page
+    sources:
+      vendor_page: 0.008
+  Qes:  # electrical Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Rms:  # mechanical resistance (kg/s)
+    value: 6.26355035309465
+    winner: vendor_page
+    sources:
+      vendor_page: 6.26355035309465
+  BL:  # force factor (T·m)
+    value: 22.5
+    winner: vendor_page
+    sources:
+      vendor_page: 22.5
+  Qts:  # total Q factor
+    value: 0.31
+    winner: vendor_page
+    sources:
+      vendor_page: 0.31
+  Qms:  # mechanical Q factor
+    value: 4.8
+    winner: vendor_page
+    sources:
+      vendor_page: 4.8
+  Le:  # voice coil inductance (H)
+    value: 0.0021000000000000003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0021000000000000003
+  Pe:  # rated power input (W)
+    value: 1400.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1400.0
+  Fs:  # free air resonance (Hz)
+    value: 33.0
+    winner: vendor_page
+    sources:
+      vendor_page: 33.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.15007904
+    winner: vendor_page
+    sources:
+      vendor_page: 0.15007904
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.145
+    winner: vendor_page
+    sources:
+      vendor_page: 0.145
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-673--bc-15ps100-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/B-C-15PS100-15-Woofer-294-673

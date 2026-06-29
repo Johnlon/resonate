@@ -15,5 +15,50 @@ community: null
 fetched_sku: null
 driver_type: tweeter
 specs:
-  power_rms_W: 10.0
-  sensitivity_db: 90.5
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+  Qts:  # total Q factor
+    value: 2.2
+    winner: vendor_page
+    sources:
+      vendor_page: 2.2
+  Le:  # voice coil inductance (H)
+    value: 5.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0e-05
+  Pe:  # rated power input (W)
+    value: 10.0
+    winner: vendor_page
+    sources:
+      vendor_page: 10.0
+  Fs:  # free air resonance (Hz)
+    value: 2283.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2283.0
+  Znom:  # nominal impedance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 90.5
+    winner: vendor_page
+    sources:
+      vendor_page: 90.5
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 3.5
+    winner: vendor_page
+    sources:
+      vendor_page: 3.5
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 27.0
+    winner: vendor_page
+    sources:
+      vendor_page: 27.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-nd16fa-6.html

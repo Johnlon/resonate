@@ -15,6 +15,95 @@ community: null
 fetched_sku: null
 driver_type: fullrange
 specs:
-  power_rms_W: 30.0
-  sensitivity_db: 82.3
-  linear_xmax_mm: 5.8
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.4
+    winner: vendor_page
+    sources:
+      vendor_page: 6.4
+  Sd:  # effective piston area (m²)
+    value: 0.001735
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001735
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000737
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000737
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0029
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0029
+  Qes:  # electrical Q factor
+    value: 0.69
+    winner: vendor_page
+    sources:
+      vendor_page: 0.69
+  BL:  # force factor (T·m)
+    value: 3.39
+    winner: vendor_page
+    sources:
+      vendor_page: 3.39
+  Qts:  # total Q factor
+    value: 0.55
+    winner: vendor_page
+    sources:
+      vendor_page: 0.55
+  Qms:  # mechanical Q factor
+    value: 2.6
+    winner: vendor_page
+    sources:
+      vendor_page: 2.6
+  Le:  # voice coil inductance (H)
+    value: 0.00022
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00022
+  Pe:  # rated power input (W)
+    value: 15.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15.0
+  Fs:  # free air resonance (Hz)
+    value: 134.0
+    winner: vendor_page
+    sources:
+      vendor_page: 134.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 1.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0e-05
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00191
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00191
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  power_peak_W:  # peak power handling (W)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 82.3
+    winner: vendor_page
+    sources:
+      vendor_page: 82.3
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 130.0
+    winner: vendor_page
+    sources:
+      vendor_page: 130.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 15.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/fountek-fr58ex.html

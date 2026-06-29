@@ -15,4 +15,70 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 200.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.5
+    winner: vendor_page
+    sources:
+      vendor_page: 6.5
+  Sd:  # effective piston area (m²)
+    value: 0.00567
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00567
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00116
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00116
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00685
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00685
+  Qes:  # electrical Q factor
+    value: 0.43
+    winner: vendor_page
+    sources:
+      vendor_page: 0.43
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.79
+    winner: vendor_page
+    sources:
+      vendor_page: 0.79
+  BL:  # force factor (T·m)
+    value: 7.0
+    winner: vendor_page
+    sources:
+      vendor_page: 7.0
+  Qts:  # total Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Qms:  # mechanical Q factor
+    value: 4.1
+    winner: vendor_page
+    sources:
+      vendor_page: 4.1
+  Pe:  # rated power input (W)
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
+  Fs:  # free air resonance (Hz)
+    value: 43.0
+    winner: vendor_page
+    sources:
+      vendor_page: 43.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0053
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0053
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0119
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0119
+_sources:
+  vendor_page: https://www.soundimports.eu/en/purifi-ptt40x08-nac-03.html

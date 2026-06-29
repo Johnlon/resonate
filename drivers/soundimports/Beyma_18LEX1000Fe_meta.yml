@@ -15,7 +15,105 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 2.0
-  sensitivity_db: 98.0
-  voice_coil_dia_mm: 88.9
-  linear_xmax_mm: 22.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.4
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4
+  Sd:  # effective piston area (m²)
+    value: 0.1255
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1255
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000111
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000111
+  Xmax:  # one-way linear excursion (m)
+    value: 0.011
+    winner: vendor_page
+    sources:
+      vendor_page: 0.011
+  Qes:  # electrical Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Rms:  # mechanical resistance (kg/s)
+    value: 5.7
+    winner: vendor_page
+    sources:
+      vendor_page: 5.7
+  BL:  # force factor (T·m)
+    value: 23.8
+    winner: vendor_page
+    sources:
+      vendor_page: 23.8
+  Qts:  # total Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  Qms:  # mechanical Q factor
+    value: 7.3
+    winner: vendor_page
+    sources:
+      vendor_page: 7.3
+  Le:  # voice coil inductance (H)
+    value: 0.0019
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0019
+  Pe:  # rated power input (W)
+    value: 1000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1000.0
+  Fs:  # free air resonance (Hz)
+    value: 34.0
+    winner: vendor_page
+    sources:
+      vendor_page: 34.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.25
+    winner: vendor_page
+    sources:
+      vendor_page: 0.25
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.196
+    winner: vendor_page
+    sources:
+      vendor_page: 0.196
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  power_peak_W:  # peak power handling (W)
+    value: 2.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 98.0
+    winner: vendor_page
+    sources:
+      vendor_page: 98.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 35.0
+    winner: vendor_page
+    sources:
+      vendor_page: 35.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 1.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 88.9
+    winner: vendor_page
+    sources:
+      vendor_page: 88.9
+_sources:
+  vendor_page: https://www.soundimports.eu/en/beyma-18lex1000fe.html

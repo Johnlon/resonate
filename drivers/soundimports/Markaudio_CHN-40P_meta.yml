@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 7.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.8
+    winner: vendor_page
+    sources:
+      vendor_page: 6.8
+  Sd:  # effective piston area (m²)
+    value: 0.0023
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0023
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00157
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00157
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0035
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0035
+  Qes:  # electrical Q factor
+    value: 0.77
+    winner: vendor_page
+    sources:
+      vendor_page: 0.77
+  BL:  # force factor (T·m)
+    value: 3.1
+    winner: vendor_page
+    sources:
+      vendor_page: 3.1
+  Qts:  # total Q factor
+    value: 0.64
+    winner: vendor_page
+    sources:
+      vendor_page: 0.64
+  Qms:  # mechanical Q factor
+    value: 3.77
+    winner: vendor_page
+    sources:
+      vendor_page: 3.77
+  Le:  # voice coil inductance (H)
+    value: 0.00106
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00106
+  Pe:  # rated power input (W)
+    value: 7.0
+    winner: vendor_page
+    sources:
+      vendor_page: 7.0
+  Fs:  # free air resonance (Hz)
+    value: 97.48
+    winner: vendor_page
+    sources:
+      vendor_page: 97.48
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00115
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00115
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00169
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00169
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/markaudio-chn-40p.html

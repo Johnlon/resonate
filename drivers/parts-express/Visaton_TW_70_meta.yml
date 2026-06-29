@@ -19,10 +19,67 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 292-7841
-field_provenance: null
-freq_low_hz: 800.0
-freq_high_hz: 20000.0
 specs:
-  freq_low_hz: 95.0
-  freq_high_hz: 22000.0
-  power_rms_W: 40.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.0
+    winner: vendor_page
+    sources:
+      vendor_page: 7.0
+  Sd:  # effective piston area (m²)
+    value: 0.002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.002
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0005
+  Qes:  # electrical Q factor
+    value: 4.21
+    winner: vendor_page
+    sources:
+      vendor_page: 4.21
+  Qts:  # total Q factor
+    value: 0.97
+    winner: vendor_page
+    sources:
+      vendor_page: 0.97
+  Qms:  # mechanical Q factor
+    value: 1.26
+    winner: vendor_page
+    sources:
+      vendor_page: 1.26
+  Le:  # voice coil inductance (H)
+    value: 0.00016
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00016
+  Pe:  # rated power input (W)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  Fs:  # free air resonance (Hz)
+    value: 1500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1500.0
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 95.0
+    winner: vendor_page
+    sources:
+      vendor_page: 95.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 22000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 22000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/292-7841--visaton-tw70-8-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Visaton-TW70-8-2.5-Cone-Tweeter-8-Ohm-292-7841

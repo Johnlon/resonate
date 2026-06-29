@@ -15,9 +15,77 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
-freq_low_hz: 250.0
-freq_high_hz: 20000.0
 specs:
-  power_rms_W: 1.0
-  freq_low_hz: 250.0
-  freq_high_hz: 20000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.5
+    winner: vendor_page
+    sources:
+      vendor_page: 6.5
+  Sd:  # effective piston area (m²)
+    value: 0.0005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0005
+  Cms:  # mechanical compliance (m/N)
+    value: 0.001057
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001057
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00095
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00095
+  Qes:  # electrical Q factor
+    value: 0.68
+    winner: vendor_page
+    sources:
+      vendor_page: 0.68
+  BL:  # force factor (T·m)
+    value: 2.3
+    winner: vendor_page
+    sources:
+      vendor_page: 2.3
+  Qts:  # total Q factor
+    value: 0.56
+    winner: vendor_page
+    sources:
+      vendor_page: 0.56
+  Qms:  # mechanical Q factor
+    value: 2.57
+    winner: vendor_page
+    sources:
+      vendor_page: 2.57
+  Pe:  # rated power input (W)
+    value: 1.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0
+  Fs:  # free air resonance (Hz)
+    value: 220.0
+    winner: vendor_page
+    sources:
+      vendor_page: 220.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 2.83168e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 2.83168e-05
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 250.0
+    winner: vendor_page
+    sources:
+      vendor_page: 250.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 20000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/297-411--hivi-b1s-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/HiVi-B1S-1-Shielded-Aluminum-Mid-Tweeter-297-411

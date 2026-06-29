@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 31.0
-freq_high_hz: 200.0
 specs:
-  power_rms_W: 200.0
-  freq_low_hz: 31.0
-  freq_high_hz: 200.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.45
+    winner: vendor_page
+    sources:
+      vendor_page: 3.45
+  Sd:  # effective piston area (m²)
+    value: 0.03464
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03464
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00019
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00019
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0083
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0083
+  Qes:  # electrical Q factor
+    value: 0.5
+    winner: vendor_page
+    sources:
+      vendor_page: 0.5
+  Rms:  # mechanical resistance (kg/s)
+    value: 3.048742078261998
+    winner: vendor_page
+    sources:
+      vendor_page: 3.048742078261998
+  BL:  # force factor (T·m)
+    value: 12.6
+    winner: vendor_page
+    sources:
+      vendor_page: 12.6
+  Qts:  # total Q factor
+    value: 0.46
+    winner: vendor_page
+    sources:
+      vendor_page: 0.46
+  Qms:  # mechanical Q factor
+    value: 7.42
+    winner: vendor_page
+    sources:
+      vendor_page: 7.42
+  Le:  # voice coil inductance (H)
+    value: 0.0018
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0018
+  Pe:  # rated power input (W)
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
+  Fs:  # free air resonance (Hz)
+    value: 37.7
+    winner: vendor_page
+    sources:
+      vendor_page: 37.7
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.03199798399999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03199798399999999
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0955
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0955
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 31.0
+    winner: vendor_page
+    sources:
+      vendor_page: 31.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/295-202-dayton-audio-dcs255-4-specifications-46583.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-DCS255-4-10-Classic-Subwoofer-4-Ohm-295-202

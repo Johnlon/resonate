@@ -15,4 +15,22 @@ dq_issue: null
 community: null
 fetched_sku: null
 driver_type: woofer
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.0466
+    winner: manu_page
+    sources:
+      manu_page: 0.0466
+  Fs:  # free air resonance (Hz)
+    value: 9.5
+    winner: manu_page
+    sources:
+      manu_page: 9.5
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.2
+    winner: manu_page
+    sources:
+      manu_page: 0.2
+_sources:
+  datasheet: https://www.scan-speak.dk/datasheet/pdf/30w-0-00-00.pdf
+  manu_page: https://www.scan-speak.dk/product/30w-0-00-00/

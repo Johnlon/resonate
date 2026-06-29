@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 7.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.4
+    winner: vendor_page
+    sources:
+      vendor_page: 3.4
+  Sd:  # effective piston area (m²)
+    value: 0.0028
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0028
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000982
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000982
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0035
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0035
+  Qes:  # electrical Q factor
+    value: 0.6865
+    winner: vendor_page
+    sources:
+      vendor_page: 0.6865
+  BL:  # force factor (T·m)
+    value: 2.6869
+    winner: vendor_page
+    sources:
+      vendor_page: 2.6869
+  Qts:  # total Q factor
+    value: 0.55
+    winner: vendor_page
+    sources:
+      vendor_page: 0.55
+  Qms:  # mechanical Q factor
+    value: 2.8318
+    winner: vendor_page
+    sources:
+      vendor_page: 2.8318
+  Le:  # voice coil inductance (H)
+    value: 6.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0e-05
+  Pe:  # rated power input (W)
+    value: 7.0
+    winner: vendor_page
+    sources:
+      vendor_page: 7.0
+  Fs:  # free air resonance (Hz)
+    value: 113.6
+    winner: vendor_page
+    sources:
+      vendor_page: 113.6
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0010965
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0010965
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0020871
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0020871
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/markaudio-chn-50.html

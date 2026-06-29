@@ -15,4 +15,65 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 2000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.6
+    winner: vendor_page
+    sources:
+      vendor_page: 6.6
+  Sd:  # effective piston area (m²)
+    value: 0.0573
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0573
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00615
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00615
+  Qes:  # electrical Q factor
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
+  BL:  # force factor (T·m)
+    value: 22.77
+    winner: vendor_page
+    sources:
+      vendor_page: 22.77
+  Qts:  # total Q factor
+    value: 0.34
+    winner: vendor_page
+    sources:
+      vendor_page: 0.34
+  Qms:  # mechanical Q factor
+    value: 17.61
+    winner: vendor_page
+    sources:
+      vendor_page: 17.61
+  Le:  # voice coil inductance (H)
+    value: 0.00069
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00069
+  Pe:  # rated power input (W)
+    value: 2000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2000.0
+  Fs:  # free air resonance (Hz)
+    value: 54.48
+    winner: vendor_page
+    sources:
+      vendor_page: 54.48
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.04816
+    winner: vendor_page
+    sources:
+      vendor_page: 0.04816
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.08111
+    winner: vendor_page
+    sources:
+      vendor_page: 0.08111
+_sources:
+  vendor_page: https://www.soundimports.eu/en/prv-audio-12mr2000-ndy.html

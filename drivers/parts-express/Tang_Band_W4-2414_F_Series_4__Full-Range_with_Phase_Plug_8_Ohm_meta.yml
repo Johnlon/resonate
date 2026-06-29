@@ -15,9 +15,72 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
-freq_low_hz: 65.0
-freq_high_hz: 40000.0
 specs:
-  freq_low_hz: 65.0
-  freq_high_hz: 40.0
-  power_rms_W: 25.0
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0025
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0025
+  Qes:  # electrical Q factor
+    value: 0.47
+    winner: vendor_page
+    sources:
+      vendor_page: 0.47
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.7460431940546446
+    winner: vendor_page
+    sources:
+      vendor_page: 0.7460431940546446
+  BL:  # force factor (T·m)
+    value: 5.49
+    winner: vendor_page
+    sources:
+      vendor_page: 5.49
+  Qts:  # total Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Qms:  # mechanical Q factor
+    value: 2.77
+    winner: vendor_page
+    sources:
+      vendor_page: 2.77
+  Pe:  # rated power input (W)
+    value: 25.0
+    winner: vendor_page
+    sources:
+      vendor_page: 25.0
+  Fs:  # free air resonance (Hz)
+    value: 65.0
+    winner: vendor_page
+    sources:
+      vendor_page: 65.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.003964352
+    winner: vendor_page
+    sources:
+      vendor_page: 0.003964352
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.005059999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005059999999999999
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 65.0
+    winner: vendor_page
+    sources:
+      vendor_page: 65.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/264-816--tang-band-w4-2414-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Tang-Band-W4-2414-F-Series-4-Full-Range-with-Phase-Plug-8-Ohm-264-816

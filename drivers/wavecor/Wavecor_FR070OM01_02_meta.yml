@@ -19,79 +19,108 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
-field_provenance:
-  Mms:
-    sources:
-      pdf: 0.00215
-      html: 0.00215
-    winner: html
-  Znom:
-    sources:
-      pdf: 8.0
-      html: 4.0
-    winner: html
-  Re:
-    sources:
-      html: 3.0
-    winner: html
-  Sd:
-    sources:
-      pdf: 0.0022
-      html: 0.0022
-    winner: html
-  Cms:
-    sources:
-      pdf: 0.00088
-      html: 0.00088
-    winner: html
-  Fs:
-    sources:
-      pdf: 116.0
-      html: 116.0
-    winner: html
-  Xmax:
-    sources:
-      pdf: 0.0025
-      html: 0.0025
-    winner: html
-  Qts:
-    sources:
-      pdf: 0.83
-      html: 0.83
-    winner: html
-  Rms:
-    sources:
-      pdf: 0.11
-      html: 0.11
-    winner: html
-  BL:
-    sources:
-      html: 2.3
-    winner: html
-  Pe:
-    sources:
-      html: 60.0
-    winner: html
-  Qms:
-    sources:
-      pdf: 14.2
-      html: 14.2
-    winner: html
-  Vas:
-    sources:
-      pdf: 0.0006
-      html: 0.0006
-    winner: html
-  Le:
-    sources:
-      html: 6.7e-05
-    winner: html
-  Qes:
-    sources:
-      pdf: 0.89
-      html: 0.89
-    winner: html
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 60.0
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00215
+    winner: manu_page
+    sources:
+      datasheet: 0.00215
+      manu_page: 0.00215
+    note: Not in datasheet; value from manu_page
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: manu_page
+    sources:
+      datasheet: 8.0
+      manu_page: 4.0
+    note: Not in datasheet; value from manu_page
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.0
+    winner: manu_page
+    sources:
+      manu_page: 3.0
+    note: Not in datasheet; value from manu_page
+  Sd:  # effective piston area (m²)
+    value: 0.0022
+    winner: manu_page
+    sources:
+      datasheet: 0.0022
+      manu_page: 0.0022
+    note: Not in datasheet; value from manu_page
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00088
+    winner: manu_page
+    sources:
+      datasheet: 0.00088
+      manu_page: 0.00088
+    note: Not in datasheet; value from manu_page
+  Fs:  # free air resonance (Hz)
+    value: 116.0
+    winner: manu_page
+    sources:
+      datasheet: 116.0
+      manu_page: 116.0
+    note: Not in datasheet; value from manu_page
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0025
+    winner: manu_page
+    sources:
+      datasheet: 0.0025
+      manu_page: 0.0025
+    note: Not in datasheet; value from manu_page
+  Qts:  # total Q factor
+    value: 0.83
+    winner: manu_page
+    sources:
+      datasheet: 0.83
+      manu_page: 0.83
+    note: Not in datasheet; value from manu_page
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.11
+    winner: manu_page
+    sources:
+      datasheet: 0.11
+      manu_page: 0.11
+    note: Not in datasheet; value from manu_page
+  BL:  # force factor (T·m)
+    value: 2.3
+    winner: manu_page
+    sources:
+      manu_page: 2.3
+    note: Not in datasheet; value from manu_page
+  Pe:  # rated power input (W)
+    value: 60.0
+    winner: manu_page
+    sources:
+      manu_page: 60.0
+    note: Not in datasheet; value from manu_page
+  Qms:  # mechanical Q factor
+    value: 14.2
+    winner: manu_page
+    sources:
+      datasheet: 14.2
+      manu_page: 14.2
+    note: Not in datasheet; value from manu_page
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0006
+    winner: manu_page
+    sources:
+      datasheet: 0.0006
+      manu_page: 0.0006
+    note: Not in datasheet; value from manu_page
+  Le:  # voice coil inductance (H)
+    value: 6.7e-05
+    winner: manu_page
+    sources:
+      manu_page: 6.7e-05
+    note: Not in datasheet; value from manu_page
+  Qes:  # electrical Q factor
+    value: 0.89
+    winner: manu_page
+    sources:
+      datasheet: 0.89
+      manu_page: 0.89
+    note: Not in datasheet; value from manu_page
+_sources:
+  datasheet: http://www.wavecor.com/Driver%20specifications%20PDF/FR070OM01_02_specifications.pdf
+  manu_page: http://www.wavecor.com/html/fr070om01_02.html

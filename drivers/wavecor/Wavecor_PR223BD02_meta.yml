@@ -19,39 +19,53 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
-field_provenance:
-  Mms:
+specs:
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.162
+    winner: manu_page
     sources:
-      html: 0.162
-    winner: html
-  Sd:
+      manu_page: 0.162
+    note: Not in datasheet; value from manu_page
+  Sd:  # effective piston area (m²)
+    value: 0.0206
+    winner: manu_page
     sources:
-      pdf: 0.0206
-      html: 0.0206
-    winner: html
-  Cms:
+      datasheet: 0.0206
+      manu_page: 0.0206
+    note: Not in datasheet; value from manu_page
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00069
+    winner: manu_page
     sources:
-      pdf: 0.00069
-      html: 0.00069
-    winner: html
-  Fs:
+      datasheet: 0.00069
+      manu_page: 0.00069
+    note: Not in datasheet; value from manu_page
+  Fs:  # free air resonance (Hz)
+    value: 15.0
+    winner: manu_page
     sources:
-      html: 15.0
-    winner: html
-  Xmax:
+      manu_page: 15.0
+    note: Not in datasheet; value from manu_page
+  Xmax:  # one-way linear excursion (m)
+    value: 0.017
+    winner: manu_page
     sources:
-      pdf: 0.017
-      html: 0.017
-    winner: html
-  Qms:
+      datasheet: 0.017
+      manu_page: 0.017
+    note: Not in datasheet; value from manu_page
+  Qms:  # mechanical Q factor
+    value: 19.0
+    winner: manu_page
     sources:
-      html: 19.0
-    winner: html
-  Vas:
+      manu_page: 19.0
+    note: Not in datasheet; value from manu_page
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0416
+    winner: manu_page
     sources:
-      pdf: 0.0416
-      html: 0.0416
-    winner: html
-freq_low_hz: null
-freq_high_hz: null
-specs: null
+      datasheet: 0.0416
+      manu_page: 0.0416
+    note: Not in datasheet; value from manu_page
+_sources:
+  datasheet: http://www.wavecor.com/Driver%20specifications%20PDF/PR223BD02_specifications.pdf
+  manu_page: http://www.wavecor.com/html/pr223bd02.html

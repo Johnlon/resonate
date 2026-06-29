@@ -19,8 +19,66 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 292-408
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 100.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.59
+    winner: vendor_page
+    sources:
+      vendor_page: 7.59
+  Sd:  # effective piston area (m²)
+    value: 0.02154
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02154
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00044
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00044
+  Xmax:  # one-way linear excursion (m)
+    value: 0.003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.003
+  Qes:  # electrical Q factor
+    value: 1.17
+    winner: vendor_page
+    sources:
+      vendor_page: 1.17
+  Qts:  # total Q factor
+    value: 0.93
+    winner: vendor_page
+    sources:
+      vendor_page: 0.93
+  Qms:  # mechanical Q factor
+    value: 4.58
+    winner: vendor_page
+    sources:
+      vendor_page: 4.58
+  Le:  # voice coil inductance (H)
+    value: 0.00111
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00111
+  Pe:  # rated power input (W)
+    value: 100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 100.0
+  Fs:  # free air resonance (Hz)
+    value: 51.0
+    winner: vendor_page
+    sources:
+      vendor_page: 51.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.026900959999999998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.026900959999999998
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.parts-express.com/GRS-8PF-8-8-Paper-Cone-Foam-Surround-Woofer-292-408

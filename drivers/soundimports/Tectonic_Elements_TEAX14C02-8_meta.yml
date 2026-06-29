@@ -15,4 +15,45 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 2.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.8
+    winner: vendor_page
+    sources:
+      vendor_page: 7.8
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0002
+  BL:  # force factor (T·m)
+    value: 2.4
+    winner: vendor_page
+    sources:
+      vendor_page: 2.4
+  Le:  # voice coil inductance (H)
+    value: 0.00013
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00013
+  Pe:  # rated power input (W)
+    value: 2.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0
+  Fs:  # free air resonance (Hz)
+    value: 600.0
+    winner: vendor_page
+    sources:
+      vendor_page: 600.0
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.355
+    winner: vendor_page
+    sources:
+      vendor_page: 0.355
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/tectonic-elements-teax14c02-8.html

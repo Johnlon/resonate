@@ -15,4 +15,37 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.0312
+    winner: manu_page
+    sources:
+      manu_page: 0.0312
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00039
+    winner: manu_page
+    sources:
+      manu_page: 0.00039
+  Qms:  # mechanical Q factor
+    value: 8.8
+    winner: manu_page
+    sources:
+      manu_page: 8.8
+  Fs:  # free air resonance (Hz)
+    value: 13.0
+    winner: manu_page
+    sources:
+      manu_page: 13.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.054
+    winner: manu_page
+    sources:
+      manu_page: 0.054
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.4
+    winner: manu_page
+    sources:
+      manu_page: 0.4
+_sources:
+  datasheet: https://sbacoustics.com/wp-content/uploads/2020/09/10in-SW26DBAC-00.pdf
+  manu_page: https://sbacoustics.com/product/10in-sw26dbac-00/

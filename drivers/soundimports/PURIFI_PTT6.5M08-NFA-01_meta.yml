@@ -15,4 +15,70 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 200.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.5
+    winner: vendor_page
+    sources:
+      vendor_page: 6.5
+  Sd:  # effective piston area (m²)
+    value: 0.0133
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0133
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00046
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00046
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0039
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0039
+  Qes:  # electrical Q factor
+    value: 0.42
+    winner: vendor_page
+    sources:
+      vendor_page: 0.42
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.44
+    winner: vendor_page
+    sources:
+      vendor_page: 1.44
+  BL:  # force factor (T·m)
+    value: 9.7
+    winner: vendor_page
+    sources:
+      vendor_page: 9.7
+  Qts:  # total Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  Pe:  # rated power input (W)
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
+  Fs:  # free air resonance (Hz)
+    value: 57.0
+    winner: vendor_page
+    sources:
+      vendor_page: 57.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.012
+    winner: vendor_page
+    sources:
+      vendor_page: 0.012
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.017
+    winner: vendor_page
+    sources:
+      vendor_page: 0.017
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/purifi-ptt65m08-nfa-01.html

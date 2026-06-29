@@ -15,9 +15,86 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
-freq_low_hz: 130.0
-freq_high_hz: 15000.0
 specs:
-  power_rms_W: 15.0
-  freq_low_hz: 130.0
-  freq_high_hz: 15000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.5
+    winner: vendor_page
+    sources:
+      vendor_page: 6.5
+  Sd:  # effective piston area (m²)
+    value: 3.0e-07
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0e-07
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0007289999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0007289999999999999
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0025499999999999997
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0025499999999999997
+  Qes:  # electrical Q factor
+    value: 1.27
+    winner: vendor_page
+    sources:
+      vendor_page: 1.27
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.43528149818468725
+    winner: vendor_page
+    sources:
+      vendor_page: 0.43528149818468725
+  BL:  # force factor (T·m)
+    value: 2.98
+    winner: vendor_page
+    sources:
+      vendor_page: 2.98
+  Qts:  # total Q factor
+    value: 0.96
+    winner: vendor_page
+    sources:
+      vendor_page: 0.96
+  Qms:  # mechanical Q factor
+    value: 3.86
+    winner: vendor_page
+    sources:
+      vendor_page: 3.86
+  Pe:  # rated power input (W)
+    value: 15.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15.0
+  Fs:  # free air resonance (Hz)
+    value: 130.0
+    winner: vendor_page
+    sources:
+      vendor_page: 130.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.000849504
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000849504
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.002057
+    winner: vendor_page
+    sources:
+      vendor_page: 0.002057
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 130.0
+    winner: vendor_page
+    sources:
+      vendor_page: 130.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 15000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15000.0
+_sources:
+  vendor_page: https://www.parts-express.com/HiVi-C3N-III-3-Paper-Cone-Full-Range-Driver-297-714

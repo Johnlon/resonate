@@ -15,9 +15,77 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
-freq_low_hz: 250.0
-freq_high_hz: 10000.0
 specs:
-  freq_low_hz: 2019.1
-  freq_high_hz: 292.0
-  power_rms_W: 2.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.3
+    winner: vendor_page
+    sources:
+      vendor_page: 7.3
+  Sd:  # effective piston area (m²)
+    value: 0.00125
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00125
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00027
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00027
+  Xmax:  # one-way linear excursion (m)
+    value: 0.001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001
+  Qes:  # electrical Q factor
+    value: 7.32
+    winner: vendor_page
+    sources:
+      vendor_page: 7.32
+  BL:  # force factor (T·m)
+    value: 1.12
+    winner: vendor_page
+    sources:
+      vendor_page: 1.12
+  Qts:  # total Q factor
+    value: 3.42
+    winner: vendor_page
+    sources:
+      vendor_page: 3.42
+  Qms:  # mechanical Q factor
+    value: 6.42
+    winner: vendor_page
+    sources:
+      vendor_page: 6.42
+  Pe:  # rated power input (W)
+    value: 2.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0
+  Fs:  # free air resonance (Hz)
+    value: 480.0
+    winner: vendor_page
+    sources:
+      vendor_page: 480.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 5.66336e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 5.66336e-05
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 2019.1
+    winner: vendor_page
+    sources:
+      vendor_page: 2019.1
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 292.0
+    winner: vendor_page
+    sources:
+      vendor_page: 292.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/292-543--visaton-k50-sq-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Visaton-K50-SQ-2-Speaker-8-ohm-292-543

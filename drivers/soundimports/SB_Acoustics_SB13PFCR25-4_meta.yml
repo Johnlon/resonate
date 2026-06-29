@@ -15,4 +15,80 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 40.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.2
+    winner: vendor_page
+    sources:
+      vendor_page: 3.2
+  Sd:  # effective piston area (m²)
+    value: 0.0087
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0087
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00125
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00125
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0045
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0045
+  Qes:  # electrical Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.1
+    winner: vendor_page
+    sources:
+      vendor_page: 1.1
+  BL:  # force factor (T·m)
+    value: 5.3
+    winner: vendor_page
+    sources:
+      vendor_page: 5.3
+  Qts:  # total Q factor
+    value: 0.29
+    winner: vendor_page
+    sources:
+      vendor_page: 0.29
+  Qms:  # mechanical Q factor
+    value: 2.6
+    winner: vendor_page
+    sources:
+      vendor_page: 2.6
+  Le:  # voice coil inductance (H)
+    value: 0.00056
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00056
+  Pe:  # rated power input (W)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  Fs:  # free air resonance (Hz)
+    value: 44.0
+    winner: vendor_page
+    sources:
+      vendor_page: 44.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0134
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0134
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0105
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0105
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sb13pfcr25-4-woofer.html

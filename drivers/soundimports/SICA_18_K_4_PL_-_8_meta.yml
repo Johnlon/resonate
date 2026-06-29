@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 1200.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  Sd:  # effective piston area (m²)
+    value: 0.11642
+    winner: vendor_page
+    sources:
+      vendor_page: 0.11642
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000105
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000105
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0065
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0065
+  Qes:  # electrical Q factor
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
+  BL:  # force factor (T·m)
+    value: 26.8
+    winner: vendor_page
+    sources:
+      vendor_page: 26.8
+  Qts:  # total Q factor
+    value: 0.32
+    winner: vendor_page
+    sources:
+      vendor_page: 0.32
+  Qms:  # mechanical Q factor
+    value: 4.62
+    winner: vendor_page
+    sources:
+      vendor_page: 4.62
+  Le:  # voice coil inductance (H)
+    value: 0.0016
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0016
+  Pe:  # rated power input (W)
+    value: 1200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1200.0
+  Fs:  # free air resonance (Hz)
+    value: 36.8
+    winner: vendor_page
+    sources:
+      vendor_page: 36.8
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.201
+    winner: vendor_page
+    sources:
+      vendor_page: 0.201
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.1788
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1788
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sica-18-k-4-pl-8.html

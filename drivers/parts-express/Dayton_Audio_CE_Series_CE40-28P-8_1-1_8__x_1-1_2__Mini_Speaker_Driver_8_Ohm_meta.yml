@@ -15,9 +15,77 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
-freq_low_hz: 550.0
-freq_high_hz: 15000.0
 specs:
-  power_rms_W: 2.0
-  freq_low_hz: 550.0
-  freq_high_hz: 15000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.0
+    winner: vendor_page
+    sources:
+      vendor_page: 7.0
+  Sd:  # effective piston area (m²)
+    value: 0.000528
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000528
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00017999999999999998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00017999999999999998
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0001
+  Qes:  # electrical Q factor
+    value: 9.87
+    winner: vendor_page
+    sources:
+      vendor_page: 9.87
+  BL:  # force factor (T·m)
+    value: 1.03
+    winner: vendor_page
+    sources:
+      vendor_page: 1.03
+  Qts:  # total Q factor
+    value: 2.83
+    winner: vendor_page
+    sources:
+      vendor_page: 2.83
+  Qms:  # mechanical Q factor
+    value: 3.96
+    winner: vendor_page
+    sources:
+      vendor_page: 3.96
+  Le:  # voice coil inductance (H)
+    value: 0.00026000000000000003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00026000000000000003
+  Pe:  # rated power input (W)
+    value: 2.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0
+  Fs:  # free air resonance (Hz)
+    value: 608.0
+    winner: vendor_page
+    sources:
+      vendor_page: 608.0
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 550.0
+    winner: vendor_page
+    sources:
+      vendor_page: 550.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 15000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/285-115-dayton-audio-ce40-28p-8-specifications.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-CE40-28P-8-1-1-8-x-1-1-2-Mini-Speaker-285-115

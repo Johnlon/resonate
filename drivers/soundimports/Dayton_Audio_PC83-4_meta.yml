@@ -15,6 +15,95 @@ community: null
 fetched_sku: null
 driver_type: fullrange
 specs:
-  power_rms_W: 60.0
-  sensitivity_db: 86.8
-  linear_xmax_mm: 4.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.9
+    winner: vendor_page
+    sources:
+      vendor_page: 3.9
+  Sd:  # effective piston area (m²)
+    value: 0.00302
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00302
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00147
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00147
+  Xmax:  # one-way linear excursion (m)
+    value: 0.002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.002
+  Qes:  # electrical Q factor
+    value: 0.64
+    winner: vendor_page
+    sources:
+      vendor_page: 0.64
+  BL:  # force factor (T·m)
+    value: 2.9
+    winner: vendor_page
+    sources:
+      vendor_page: 2.9
+  Qts:  # total Q factor
+    value: 0.54
+    winner: vendor_page
+    sources:
+      vendor_page: 0.54
+  Qms:  # mechanical Q factor
+    value: 3.41
+    winner: vendor_page
+    sources:
+      vendor_page: 3.41
+  Le:  # voice coil inductance (H)
+    value: 0.00038
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00038
+  Pe:  # rated power input (W)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  Fs:  # free air resonance (Hz)
+    value: 80.0
+    winner: vendor_page
+    sources:
+      vendor_page: 80.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 7.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 7.0e-05
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0027
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0027
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  power_peak_W:  # peak power handling (W)
+    value: 60.0
+    winner: vendor_page
+    sources:
+      vendor_page: 60.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 86.8
+    winner: vendor_page
+    sources:
+      vendor_page: 86.8
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 80.0
+    winner: vendor_page
+    sources:
+      vendor_page: 80.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-pc83-4.html

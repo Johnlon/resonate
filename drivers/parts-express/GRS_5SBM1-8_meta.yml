@@ -19,10 +19,42 @@ obsolete: null
 dq_issue: missing_Sd
 community: null
 fetched_sku: 292-431
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 3.0
-  freq_low_hz: 500.0
-  freq_high_hz: 10.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.1
+    winner: vendor_page
+    sources:
+      vendor_page: 7.1
+  Le:  # voice coil inductance (H)
+    value: 0.0008
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0008
+  Pe:  # rated power input (W)
+    value: 100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 100.0
+  Fs:  # free air resonance (Hz)
+    value: 475.0
+    winner: vendor_page
+    sources:
+      vendor_page: 475.0
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 500.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 10.0
+    winner: vendor_page
+    sources:
+      vendor_page: 10.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/GRS Spec Sheets/292-431--grs-5sbm1-8-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/GRS-5SBM1-8-5-1-4-Sealed-Back-Midrange-with-1-Voice-Coil-8-Ohm-292-431

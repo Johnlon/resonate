@@ -14,9 +14,92 @@ dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
-freq_low_hz: 30.0
-freq_high_hz: 1000.0
 specs:
-  power_rms_W: 100.0
-  freq_low_hz: 30.0
-  freq_high_hz: 1000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.3
+    winner: vendor_page
+    sources:
+      vendor_page: 6.3
+  Sd:  # effective piston area (m²)
+    value: 0.035
+    winner: vendor_page
+    sources:
+      vendor_page: 0.035
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0008
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0008
+  Xmax:  # one-way linear excursion (m)
+    value: 0.007
+    winner: vendor_page
+    sources:
+      vendor_page: 0.007
+  Qes:  # electrical Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Rms:  # mechanical resistance (kg/s)
+    value: 3.4
+    winner: vendor_page
+    sources:
+      vendor_page: 3.4
+  BL:  # force factor (T·m)
+    value: 10.7
+    winner: vendor_page
+    sources:
+      vendor_page: 10.7
+  Qts:  # total Q factor
+    value: 0.34
+    winner: vendor_page
+    sources:
+      vendor_page: 0.34
+  Qms:  # mechanical Q factor
+    value: 2.14
+    winner: vendor_page
+    sources:
+      vendor_page: 2.14
+  Le:  # voice coil inductance (H)
+    value: 0.00195
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00195
+  Pe:  # rated power input (W)
+    value: 100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 100.0
+  Fs:  # free air resonance (Hz)
+    value: 25.0
+    winner: vendor_page
+    sources:
+      vendor_page: 25.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.129
+    winner: vendor_page
+    sources:
+      vendor_page: 0.129
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0361
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0361
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 1000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1000.0
+_sources:
+  datasheet: https://doc.soundimports.nl/pdf/brands/Seas/CA26RFX/h1305_ca26rfx_datasheet.pdf
+  vendor_page: https://www.soundimports.eu/en/seas-ca26rfx.html

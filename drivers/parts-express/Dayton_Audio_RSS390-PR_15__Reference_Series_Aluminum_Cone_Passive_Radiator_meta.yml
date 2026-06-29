@@ -15,4 +15,47 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.08296
+    winner: vendor_page
+    sources:
+      vendor_page: 0.08296
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00022
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00022
+  Xmax:  # one-way linear excursion (m)
+    value: 0.03
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03
+  Rms:  # mechanical resistance (kg/s)
+    value: 11.23871966493056
+    winner: vendor_page
+    sources:
+      vendor_page: 11.23871966493056
+  Qms:  # mechanical Q factor
+    value: 4.07
+    winner: vendor_page
+    sources:
+      vendor_page: 4.07
+  Fs:  # free air resonance (Hz)
+    value: 18.2
+    winner: vendor_page
+    sources:
+      vendor_page: 18.2
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.21265916799999998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.21265916799999998
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/295-504--rss390-pr-specification-sheet.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-RSS390-PR-15-Reference-Series-Aluminum-Cone-Passive-Radiator-295-504

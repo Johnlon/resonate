@@ -19,10 +19,92 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-6008
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 2019.1
-  freq_low_hz: 30.0
-  freq_high_hz: 1.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.2
+    winner: vendor_page
+    sources:
+      vendor_page: 3.2
+  Sd:  # effective piston area (m²)
+    value: 0.121
+    winner: vendor_page
+    sources:
+      vendor_page: 0.121
+  Cms:  # mechanical compliance (m/N)
+    value: 8.8e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 8.8e-05
+  Xmax:  # one-way linear excursion (m)
+    value: 0.012
+    winner: vendor_page
+    sources:
+      vendor_page: 0.012
+  Qes:  # electrical Q factor
+    value: 0.34
+    winner: vendor_page
+    sources:
+      vendor_page: 0.34
+  Rms:  # mechanical resistance (kg/s)
+    value: 8.92615728406479
+    winner: vendor_page
+    sources:
+      vendor_page: 8.92615728406479
+  BL:  # force factor (T·m)
+    value: 22.8
+    winner: vendor_page
+    sources:
+      vendor_page: 22.8
+  Qts:  # total Q factor
+    value: 0.32
+    winner: vendor_page
+    sources:
+      vendor_page: 0.32
+  Qms:  # mechanical Q factor
+    value: 6.23
+    winner: vendor_page
+    sources:
+      vendor_page: 6.23
+  Le:  # voice coil inductance (H)
+    value: 0.00164
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00164
+  Pe:  # rated power input (W)
+    value: 3000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3000.0
+  Fs:  # free air resonance (Hz)
+    value: 33.0
+    winner: vendor_page
+    sources:
+      vendor_page: 33.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.181510688
+    winner: vendor_page
+    sources:
+      vendor_page: 0.181510688
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.2682
+    winner: vendor_page
+    sources:
+      vendor_page: 0.2682
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 1.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-6008--bc-18tbw100-4-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/B-C-18TBW100-4-18-Professional-Subwoofer-4-Ohm-294-6008

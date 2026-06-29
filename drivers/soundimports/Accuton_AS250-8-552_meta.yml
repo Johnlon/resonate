@@ -15,7 +15,100 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 300.0
-  sensitivity_db: 87.0
-  voice_coil_dia_mm: 114.0
-  linear_xmax_mm: 18.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  Sd:  # effective piston area (m²)
+    value: 0.0382
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0382
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00072
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00072
+  Xmax:  # one-way linear excursion (m)
+    value: 0.009
+    winner: vendor_page
+    sources:
+      vendor_page: 0.009
+  Qes:  # electrical Q factor
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.4
+    winner: vendor_page
+    sources:
+      vendor_page: 2.4
+  BL:  # force factor (T·m)
+    value: 16.0
+    winner: vendor_page
+    sources:
+      vendor_page: 16.0
+  Qts:  # total Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Qms:  # mechanical Q factor
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+  Le:  # voice coil inductance (H)
+    value: 0.0005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0005
+  Pe:  # rated power input (W)
+    value: 300.0
+    winner: vendor_page
+    sources:
+      vendor_page: 300.0
+  Fs:  # free air resonance (Hz)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.159
+    winner: vendor_page
+    sources:
+      vendor_page: 0.159
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.088
+    winner: vendor_page
+    sources:
+      vendor_page: 0.088
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 87.0
+    winner: vendor_page
+    sources:
+      vendor_page: 87.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 600.0
+    winner: vendor_page
+    sources:
+      vendor_page: 600.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 114.0
+    winner: vendor_page
+    sources:
+      vendor_page: 114.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/accuton-as250-8-552.html

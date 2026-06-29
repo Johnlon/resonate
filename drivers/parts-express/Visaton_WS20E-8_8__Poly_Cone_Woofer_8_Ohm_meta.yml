@@ -15,9 +15,32 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: woofer
-freq_low_hz: 47.0
-freq_high_hz: 7000.0
 specs:
-  power_rms_W: 80.0
-  freq_low_hz: 47.0
-  freq_high_hz: 7000.0
+  Pe:  # rated power input (W)
+    value: 80.0
+    winner: vendor_page
+    sources:
+      vendor_page: 80.0
+  Fs:  # free air resonance (Hz)
+    value: 47.0
+    winner: vendor_page
+    sources:
+      vendor_page: 47.0
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 47.0
+    winner: vendor_page
+    sources:
+      vendor_page: 47.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 7000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 7000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/292-684--visaton-ws20e-8-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Visaton-WS20E-8-Poly-Cone-Woofer-8-Ohm-292-684

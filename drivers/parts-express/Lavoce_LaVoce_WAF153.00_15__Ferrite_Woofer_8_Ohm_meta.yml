@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 40.0
-freq_high_hz: 3000.0
 specs:
-  power_rms_W: 500.0
-  freq_low_hz: 40.0
-  freq_high_hz: 3000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.7
+    winner: vendor_page
+    sources:
+      vendor_page: 4.7
+  Sd:  # effective piston area (m²)
+    value: 0.0855
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0855
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00014000000000000001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00014000000000000001
+  Xmax:  # one-way linear excursion (m)
+    value: 0.007
+    winner: vendor_page
+    sources:
+      vendor_page: 0.007
+  Qes:  # electrical Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.971946650295944
+    winner: vendor_page
+    sources:
+      vendor_page: 2.971946650295944
+  BL:  # force factor (T·m)
+    value: 17.8
+    winner: vendor_page
+    sources:
+      vendor_page: 17.8
+  Qts:  # total Q factor
+    value: 0.37
+    winner: vendor_page
+    sources:
+      vendor_page: 0.37
+  Qms:  # mechanical Q factor
+    value: 9.0
+    winner: vendor_page
+    sources:
+      vendor_page: 9.0
+  Le:  # voice coil inductance (H)
+    value: 0.0009
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0009
+  Pe:  # rated power input (W)
+    value: 500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 500.0
+  Fs:  # free air resonance (Hz)
+    value: 43.0
+    winner: vendor_page
+    sources:
+      vendor_page: 43.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.146114688
+    winner: vendor_page
+    sources:
+      vendor_page: 0.146114688
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.099
+    winner: vendor_page
+    sources:
+      vendor_page: 0.099
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 3000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/293-720--lavoce-waf153.00-specifications.pdf
+  vendor_page: https://www.parts-express.com/LaVoce-WAF153.00-15-Woofer-8-Ohm-293-720

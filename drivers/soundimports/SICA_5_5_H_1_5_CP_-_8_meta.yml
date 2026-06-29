@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 120.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.1
+    winner: vendor_page
+    sources:
+      vendor_page: 6.1
+  Sd:  # effective piston area (m²)
+    value: 0.00785
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00785
+  Cms:  # mechanical compliance (m/N)
+    value: 0.001016
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001016
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0045
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0045
+  Qes:  # electrical Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  BL:  # force factor (T·m)
+    value: 7.22
+    winner: vendor_page
+    sources:
+      vendor_page: 7.22
+  Qts:  # total Q factor
+    value: 0.37
+    winner: vendor_page
+    sources:
+      vendor_page: 0.37
+  Qms:  # mechanical Q factor
+    value: 4.07
+    winner: vendor_page
+    sources:
+      vendor_page: 4.07
+  Le:  # voice coil inductance (H)
+    value: 0.00053
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00053
+  Pe:  # rated power input (W)
+    value: 120.0
+    winner: vendor_page
+    sources:
+      vendor_page: 120.0
+  Fs:  # free air resonance (Hz)
+    value: 48.0
+    winner: vendor_page
+    sources:
+      vendor_page: 48.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0084
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0084
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0114
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0114
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sica-55-h-15-cp-8.html

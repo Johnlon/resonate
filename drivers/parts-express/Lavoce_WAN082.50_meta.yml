@@ -20,8 +20,81 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 293-715
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 250.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.8
+    winner: vendor_page
+    sources:
+      vendor_page: 6.8
+  Sd:  # effective piston area (m²)
+    value: 0.0227
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0227
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00014000000000000001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00014000000000000001
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0040999999999999995
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0040999999999999995
+  Qes:  # electrical Q factor
+    value: 0.36
+    winner: vendor_page
+    sources:
+      vendor_page: 0.36
+  Rms:  # mechanical resistance (kg/s)
+    value: 3.82085593004164
+    winner: vendor_page
+    sources:
+      vendor_page: 3.82085593004164
+  BL:  # force factor (T·m)
+    value: 16.4
+    winner: vendor_page
+    sources:
+      vendor_page: 16.4
+  Qts:  # total Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Qms:  # mechanical Q factor
+    value: 3.7
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7
+  Le:  # voice coil inductance (H)
+    value: 0.0008
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0008
+  Pe:  # rated power input (W)
+    value: 250.0
+    winner: vendor_page
+    sources:
+      vendor_page: 250.0
+  Fs:  # free air resonance (Hz)
+    value: 75.0
+    winner: vendor_page
+    sources:
+      vendor_page: 75.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.009910879999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.009910879999999999
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.03
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.parts-express.com/LaVoce-WAN082.50-8-Neodymium-Woofer-8-Ohm-293-715

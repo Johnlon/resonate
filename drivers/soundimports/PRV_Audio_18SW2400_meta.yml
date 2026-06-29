@@ -15,4 +15,65 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 2400.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
+  Sd:  # effective piston area (m²)
+    value: 0.129
+    winner: vendor_page
+    sources:
+      vendor_page: 0.129
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0125
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0125
+  Qes:  # electrical Q factor
+    value: 0.58
+    winner: vendor_page
+    sources:
+      vendor_page: 0.58
+  BL:  # force factor (T·m)
+    value: 22.5
+    winner: vendor_page
+    sources:
+      vendor_page: 22.5
+  Qts:  # total Q factor
+    value: 0.56
+    winner: vendor_page
+    sources:
+      vendor_page: 0.56
+  Qms:  # mechanical Q factor
+    value: 15.57
+    winner: vendor_page
+    sources:
+      vendor_page: 15.57
+  Le:  # voice coil inductance (H)
+    value: 0.00154
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00154
+  Pe:  # rated power input (W)
+    value: 2400.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2400.0
+  Fs:  # free air resonance (Hz)
+    value: 36.3
+    winner: vendor_page
+    sources:
+      vendor_page: 36.3
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.1928
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1928
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.2312
+    winner: vendor_page
+    sources:
+      vendor_page: 0.2312
+_sources:
+  vendor_page: https://www.soundimports.eu/en/prv-audio-18sw2400.html

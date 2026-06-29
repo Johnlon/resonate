@@ -15,9 +15,47 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 800.0
-freq_high_hz: 18000.0
 specs:
-  power_rms_W: 50.0
-  freq_low_hz: 800.0
-  freq_high_hz: 18000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.96
+    winner: vendor_page
+    sources:
+      vendor_page: 3.96
+  Qts:  # total Q factor
+    value: 4.12
+    winner: vendor_page
+    sources:
+      vendor_page: 4.12
+  Le:  # voice coil inductance (H)
+    value: 5.9999999999999995e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9999999999999995e-05
+  Pe:  # rated power input (W)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  Fs:  # free air resonance (Hz)
+    value: 800.0
+    winner: vendor_page
+    sources:
+      vendor_page: 800.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 800.0
+    winner: vendor_page
+    sources:
+      vendor_page: 800.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 18000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 18000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/275-094--dayton-audio-amtpro-4-specifications.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-AMTPRO-4-Air-Motion-Transformer-Tweeter-275-094

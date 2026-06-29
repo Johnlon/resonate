@@ -30,7 +30,43 @@ manu_page_fields:
 - SPL
 - Sd
 - Vas
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  sensitivity_db: 86.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.2
+    winner: manu_page
+    sources:
+      manu_page: 6.2
+  Sd:  # effective piston area (m²)
+    value: 0.022
+    winner: manu_page
+    sources:
+      manu_page: 0.022
+  BL:  # force factor (T·m)
+    value: 10.1
+    winner: manu_page
+    sources:
+      manu_page: 10.1
+  Qts:  # total Q factor
+    value: 0.3
+    winner: manu_page
+    sources:
+      manu_page: 0.3
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 86.0
+    winner: manu_page
+    sources:
+      manu_page: 86.0
+  Fs:  # free air resonance (Hz)
+    value: 23.0
+    winner: manu_page
+    sources:
+      manu_page: 23.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0877
+    winner: manu_page
+    sources:
+      manu_page: 0.0877
+_sources:
+  datasheet: https://www.scan-speak.dk/datasheet/pdf/22w-8857t00.pdf
+  adv_datasheet: https://www.scan-speak.dk/datasheet/adv/22w-8857t00.pdf
+  manu_page: https://www.scan-speak.dk/product/22w-8857t00/

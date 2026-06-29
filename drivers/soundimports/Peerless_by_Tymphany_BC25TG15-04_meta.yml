@@ -15,4 +15,45 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 7.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.2
+    winner: vendor_page
+    sources:
+      vendor_page: 3.2
+  Qes:  # electrical Q factor
+    value: 1.53
+    winner: vendor_page
+    sources:
+      vendor_page: 1.53
+  Qts:  # total Q factor
+    value: 0.98
+    winner: vendor_page
+    sources:
+      vendor_page: 0.98
+  Qms:  # mechanical Q factor
+    value: 2.75
+    winner: vendor_page
+    sources:
+      vendor_page: 2.75
+  Le:  # voice coil inductance (H)
+    value: 2.9e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 2.9e-05
+  Pe:  # rated power input (W)
+    value: 7.0
+    winner: vendor_page
+    sources:
+      vendor_page: 7.0
+  Fs:  # free air resonance (Hz)
+    value: 1100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1100.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/peerless-by-tymphany-bc25tg15-04.html

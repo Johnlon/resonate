@@ -15,4 +15,80 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 150.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 2.6
+    winner: vendor_page
+    sources:
+      vendor_page: 2.6
+  Sd:  # effective piston area (m²)
+    value: 0.0466
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0466
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00065
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00065
+  Xmax:  # one-way linear excursion (m)
+    value: 0.028
+    winner: vendor_page
+    sources:
+      vendor_page: 0.028
+  Qes:  # electrical Q factor
+    value: 0.34
+    winner: vendor_page
+    sources:
+      vendor_page: 0.34
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.88
+    winner: vendor_page
+    sources:
+      vendor_page: 2.88
+  BL:  # force factor (T·m)
+    value: 10.5
+    winner: vendor_page
+    sources:
+      vendor_page: 10.5
+  Qts:  # total Q factor
+    value: 0.32
+    winner: vendor_page
+    sources:
+      vendor_page: 0.32
+  Qms:  # mechanical Q factor
+    value: 5.01
+    winner: vendor_page
+    sources:
+      vendor_page: 5.01
+  Le:  # voice coil inductance (H)
+    value: 0.00083
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00083
+  Pe:  # rated power input (W)
+    value: 150.0
+    winner: vendor_page
+    sources:
+      vendor_page: 150.0
+  Fs:  # free air resonance (Hz)
+    value: 17.0
+    winner: vendor_page
+    sources:
+      vendor_page: 17.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.197
+    winner: vendor_page
+    sources:
+      vendor_page: 0.197
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.135
+    winner: vendor_page
+    sources:
+      vendor_page: 0.135
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/scan-speak-30w4558t06.html

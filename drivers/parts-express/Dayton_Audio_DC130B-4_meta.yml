@@ -20,8 +20,81 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 295-307
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 40.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.2
+    winner: vendor_page
+    sources:
+      vendor_page: 3.2
+  Sd:  # effective piston area (m²)
+    value: 0.00916
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00916
+  Cms:  # mechanical compliance (m/N)
+    value: 0.001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0025
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0025
+  Qes:  # electrical Q factor
+    value: 0.41
+    winner: vendor_page
+    sources:
+      vendor_page: 0.41
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.1835825656024404
+    winner: vendor_page
+    sources:
+      vendor_page: 1.1835825656024404
+  BL:  # force factor (T·m)
+    value: 4.89
+    winner: vendor_page
+    sources:
+      vendor_page: 4.89
+  Qts:  # total Q factor
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
+  Qms:  # mechanical Q factor
+    value: 2.52
+    winner: vendor_page
+    sources:
+      vendor_page: 2.52
+  Le:  # voice coil inductance (H)
+    value: 0.0005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0005
+  Pe:  # rated power input (W)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  Fs:  # free air resonance (Hz)
+    value: 50.5
+    winner: vendor_page
+    sources:
+      vendor_page: 50.5
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.012176224
+    winner: vendor_page
+    sources:
+      vendor_page: 0.012176224
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0094
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0094
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.parts-express.com/Dayton-Audio-DC130B-4-5-1-4-Classic-Woofer-Speaker-295-307

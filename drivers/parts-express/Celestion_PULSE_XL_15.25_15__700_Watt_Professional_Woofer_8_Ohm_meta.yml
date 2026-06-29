@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 35.0
-freq_high_hz: 2100.0
 specs:
-  power_rms_W: 8.0
-  freq_low_hz: 35.0
-  freq_high_hz: 2100.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.66
+    winner: vendor_page
+    sources:
+      vendor_page: 6.66
+  Sd:  # effective piston area (m²)
+    value: 0.08553
+    winner: vendor_page
+    sources:
+      vendor_page: 0.08553
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000187
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000187
+  Xmax:  # one-way linear excursion (m)
+    value: 0.008
+    winner: vendor_page
+    sources:
+      vendor_page: 0.008
+  Qes:  # electrical Q factor
+    value: 0.72
+    winner: vendor_page
+    sources:
+      vendor_page: 0.72
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.7499888524799512
+    winner: vendor_page
+    sources:
+      vendor_page: 1.7499888524799512
+  BL:  # force factor (T·m)
+    value: 14.1
+    winner: vendor_page
+    sources:
+      vendor_page: 14.1
+  Qts:  # total Q factor
+    value: 0.68
+    winner: vendor_page
+    sources:
+      vendor_page: 0.68
+  Qms:  # mechanical Q factor
+    value: 12.216
+    winner: vendor_page
+    sources:
+      vendor_page: 12.216
+  Le:  # voice coil inductance (H)
+    value: 0.00114
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00114
+  Pe:  # rated power input (W)
+    value: 700.0
+    winner: vendor_page
+    sources:
+      vendor_page: 700.0
+  Fs:  # free air resonance (Hz)
+    value: 39.9
+    winner: vendor_page
+    sources:
+      vendor_page: 39.9
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.19312057600000002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.19312057600000002
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.085273
+    winner: vendor_page
+    sources:
+      vendor_page: 0.085273
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 35.0
+    winner: vendor_page
+    sources:
+      vendor_page: 35.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 2100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2100.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-2508--celestion%20-%20pulse-xl-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Celestion-PULSE-XL-15.25-15-700-Watt-Professional-Woofer-8-Ohm-294-2508

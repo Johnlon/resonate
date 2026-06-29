@@ -15,4 +15,46 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.05227999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.05227999999999999
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000199
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000199
+  Xmax:  # one-way linear excursion (m)
+    value: 0.03
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03
+  Rms:  # mechanical resistance (kg/s)
+    value: 4.480808721920071
+    winner: vendor_page
+    sources:
+      vendor_page: 4.480808721920071
+  Qms:  # mechanical Q factor
+    value: 7.0
+    winner: vendor_page
+    sources:
+      vendor_page: 7.0
+  Fs:  # free air resonance (Hz)
+    value: 25.6
+    winner: vendor_page
+    sources:
+      vendor_page: 25.6
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.077304864
+    winner: vendor_page
+    sources:
+      vendor_page: 0.077304864
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.195
+    winner: vendor_page
+    sources:
+      vendor_page: 0.195
+_sources:
+  vendor_page: https://www.parts-express.com/Dayton-Audio-SS12-PR-12-Signature-Series-Passive-Radiator-295-733

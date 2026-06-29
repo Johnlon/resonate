@@ -20,9 +20,76 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-3324
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  sensitivity_db: 95.0
-  power_rms_W: 3.52
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.8
+    winner: vendor_page
+    sources:
+      vendor_page: 5.8
+  Sd:  # effective piston area (m²)
+    value: 0.0241
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0241
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00034
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00034
+  Qes:  # electrical Q factor
+    value: 0.69
+    winner: vendor_page
+    sources:
+      vendor_page: 0.69
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.33798328094340424
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33798328094340424
+  BL:  # force factor (T·m)
+    value: 7.4
+    winner: vendor_page
+    sources:
+      vendor_page: 7.4
+  Qts:  # total Q factor
+    value: 0.66
+    winner: vendor_page
+    sources:
+      vendor_page: 0.66
+  Qms:  # mechanical Q factor
+    value: 19.3
+    winner: vendor_page
+    sources:
+      vendor_page: 19.3
+  Pe:  # rated power input (W)
+    value: 230.0
+    winner: vendor_page
+    sources:
+      vendor_page: 230.0
+  Fs:  # free air resonance (Hz)
+    value: 72.6
+    winner: vendor_page
+    sources:
+      vendor_page: 72.6
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.027184128
+    winner: vendor_page
+    sources:
+      vendor_page: 0.027184128
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0143
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0143
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 95.0
+    winner: vendor_page
+    sources:
+      vendor_page: 95.0
+_sources:
+  vendor_page: https://www.parts-express.com/Timpano-Audio-TPT-MD8-8-Midrange-Speaker-294-3324

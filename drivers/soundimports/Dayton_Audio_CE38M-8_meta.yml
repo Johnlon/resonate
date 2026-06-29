@@ -15,6 +15,90 @@ community: null
 fetched_sku: null
 driver_type: tweeter
 specs:
-  power_rms_W: 0.5
-  sensitivity_db: 75.0
-  linear_xmax_mm: 0.2
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.72
+    winner: vendor_page
+    sources:
+      vendor_page: 7.72
+  Sd:  # effective piston area (m²)
+    value: 0.00049
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00049
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00968
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00968
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0001
+  Qes:  # electrical Q factor
+    value: 4.453
+    winner: vendor_page
+    sources:
+      vendor_page: 4.453
+  BL:  # force factor (T·m)
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Qts:  # total Q factor
+    value: 1.17
+    winner: vendor_page
+    sources:
+      vendor_page: 1.17
+  Qms:  # mechanical Q factor
+    value: 1.591
+    winner: vendor_page
+    sources:
+      vendor_page: 1.591
+  Le:  # voice coil inductance (H)
+    value: 0.000172
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000172
+  Pe:  # rated power input (W)
+    value: 0.25
+    winner: vendor_page
+    sources:
+      vendor_page: 0.25
+  Fs:  # free air resonance (Hz)
+    value: 192.0
+    winner: vendor_page
+    sources:
+      vendor_page: 192.0
+  Mms:  # moving mass incl. air load (kg)
+    value: 7.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 7.0e-05
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  power_peak_W:  # peak power handling (W)
+    value: 0.5
+    winner: vendor_page
+    sources:
+      vendor_page: 0.5
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 75.0
+    winner: vendor_page
+    sources:
+      vendor_page: 75.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 190.0
+    winner: vendor_page
+    sources:
+      vendor_page: 190.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-ce38m-8.html

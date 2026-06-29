@@ -19,9 +19,57 @@ obsolete: null
 dq_issue: missing_Sd; missing_Re
 community: null
 fetched_sku: 293-203
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  sensitivity_db: 93.0
-  power_rms_W: 125.0
+  Qes:  # electrical Q factor
+    value: 0.67
+    winner: vendor_page
+    sources:
+      vendor_page: 0.67
+  BL:  # force factor (T·m)
+    value: 7.91
+    winner: vendor_page
+    sources:
+      vendor_page: 7.91
+  Qts:  # total Q factor
+    value: 0.6
+    winner: vendor_page
+    sources:
+      vendor_page: 0.6
+  Qms:  # mechanical Q factor
+    value: 5.73
+    winner: vendor_page
+    sources:
+      vendor_page: 5.73
+  Le:  # voice coil inductance (H)
+    value: 0.00045
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00045
+  Pe:  # rated power input (W)
+    value: 125.0
+    winner: vendor_page
+    sources:
+      vendor_page: 125.0
+  Fs:  # free air resonance (Hz)
+    value: 76.45
+    winner: vendor_page
+    sources:
+      vendor_page: 76.45
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.016423743999999997
+    winner: vendor_page
+    sources:
+      vendor_page: 0.016423743999999997
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 93.0
+    winner: vendor_page
+    sources:
+      vendor_page: 93.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/293-203--ciare-americano-8a250m-8-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Ciare-8A250M-8-Americano-Series-8-Midrange-8-Ohm-293-203

@@ -15,5 +15,80 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 300.0
-  linear_xmax_mm: 32.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.4
+    winner: vendor_page
+    sources:
+      vendor_page: 7.4
+  Sd:  # effective piston area (m²)
+    value: 0.039861
+    winner: vendor_page
+    sources:
+      vendor_page: 0.039861
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00059
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00059
+  Xmax:  # one-way linear excursion (m)
+    value: 0.016
+    winner: vendor_page
+    sources:
+      vendor_page: 0.016
+  Qes:  # electrical Q factor
+    value: 0.36
+    winner: vendor_page
+    sources:
+      vendor_page: 0.36
+  Qts:  # total Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Qms:  # mechanical Q factor
+    value: 3.54
+    winner: vendor_page
+    sources:
+      vendor_page: 3.54
+  Le:  # voice coil inductance (H)
+    value: 0.00045
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00045
+  Pe:  # rated power input (W)
+    value: 300.0
+    winner: vendor_page
+    sources:
+      vendor_page: 300.0
+  Fs:  # free air resonance (Hz)
+    value: 24.0
+    winner: vendor_page
+    sources:
+      vendor_page: 24.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.131
+    winner: vendor_page
+    sources:
+      vendor_page: 0.131
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.07659
+    winner: vendor_page
+    sources:
+      vendor_page: 0.07659
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 600.0
+    winner: vendor_page
+    sources:
+      vendor_page: 600.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/accuton-asp250.html

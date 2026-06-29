@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
-freq_low_hz: 50.0
-freq_high_hz: 40000.0
 specs:
-  power_rms_W: 45.0
-  freq_low_hz: 50.0
-  freq_high_hz: 40000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.6
+    winner: vendor_page
+    sources:
+      vendor_page: 3.6
+  Sd:  # effective piston area (m²)
+    value: 0.0025670000000000003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0025670000000000003
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00038
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00038
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004
+  Qes:  # electrical Q factor
+    value: 0.41
+    winner: vendor_page
+    sources:
+      vendor_page: 0.41
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.3020388157319824
+    winner: vendor_page
+    sources:
+      vendor_page: 1.3020388157319824
+  BL:  # force factor (T·m)
+    value: 8.41
+    winner: vendor_page
+    sources:
+      vendor_page: 8.41
+  Qts:  # total Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  Qms:  # mechanical Q factor
+    value: 6.02
+    winner: vendor_page
+    sources:
+      vendor_page: 6.02
+  Le:  # voice coil inductance (H)
+    value: 2.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0e-05
+  Pe:  # rated power input (W)
+    value: 45.0
+    winner: vendor_page
+    sources:
+      vendor_page: 45.0
+  Fs:  # free air resonance (Hz)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.010760384
+    winner: vendor_page
+    sources:
+      vendor_page: 0.010760384
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.02495
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02495
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 40000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/264-9002--tang-band-w6-2313-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Tang-Band-W6-2313-6-1-2-Coaxial-Full-Range-Woofer-264-9002

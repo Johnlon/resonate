@@ -16,8 +16,81 @@ dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  voice_coil_dia_mm: 29.0
-  Hg_mm: 2.5
-  linear_xmax_mm: 0.5
-  sensitivity_db: 96.0
-  power_rms_W: 80.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.0
+    winner: manu_page
+    sources:
+      manu_page: 3.0
+  Sd:  # effective piston area (m²)
+    value: 0.00096
+    winner: manu_page
+    sources:
+      manu_page: 0.00096
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00025
+    winner: manu_page
+    sources:
+      manu_page: 0.00025
+  Qes:  # electrical Q factor
+    value: 0.64
+    winner: manu_page
+    sources:
+      manu_page: 0.64
+  BL:  # force factor (T·m)
+    value: 3.1
+    winner: manu_page
+    sources:
+      manu_page: 3.1
+  Qts:  # total Q factor
+    value: 0.47
+    winner: manu_page
+    sources:
+      manu_page: 0.47
+  Qms:  # mechanical Q factor
+    value: 1.73
+    winner: manu_page
+    sources:
+      manu_page: 1.73
+  Le:  # voice coil inductance (H)
+    value: 2.0e-05
+    winner: manu_page
+    sources:
+      manu_page: 2.0e-05
+  Pe:  # rated power input (W)
+    value: 80.0
+    winner: manu_page
+    sources:
+      manu_page: 80.0
+  Fs:  # free air resonance (Hz)
+    value: 635.0
+    winner: manu_page
+    sources:
+      manu_page: 635.0
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00051
+    winner: manu_page
+    sources:
+      manu_page: 0.00051
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: manu_page
+    sources:
+      manu_page: 4.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 29.0
+    winner: manu_page
+    sources:
+      manu_page: 29.0
+  Hg_mm:  # magnetic gap height (mm)
+    value: 2.5
+    winner: manu_page
+    sources:
+      manu_page: 2.5
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 96.0
+    winner: manu_page
+    sources:
+      manu_page: 96.0
+_sources:
+  datasheet: https://sbacoustics.com/wp-content/uploads/2024/10/SATORI-TW29TXNWG-4.pdf
+  manu_page: https://sbacoustics.com/product/satori-tw29txnwg-4-textreme/

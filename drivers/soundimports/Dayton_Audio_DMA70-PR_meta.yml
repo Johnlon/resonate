@@ -15,4 +15,45 @@ community: null
 fetched_sku: null
 driver_type: pr
 specs:
-  linear_xmax_mm: 14.0
+  Sd:  # effective piston area (m²)
+    value: 0.00229
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00229
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00177
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00177
+  Xmax:  # one-way linear excursion (m)
+    value: 0.007
+    winner: vendor_page
+    sources:
+      vendor_page: 0.007
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.49
+    winner: vendor_page
+    sources:
+      vendor_page: 1.49
+  Qms:  # mechanical Q factor
+    value: 3.86
+    winner: vendor_page
+    sources:
+      vendor_page: 3.86
+  Fs:  # free air resonance (Hz)
+    value: 34.5
+    winner: vendor_page
+    sources:
+      vendor_page: 34.5
+  Vas:  # equivalent acoustic volume (m³)
+    value: 4.6e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 4.6e-05
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.012
+    winner: vendor_page
+    sources:
+      vendor_page: 0.012
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-dma70-pr.html

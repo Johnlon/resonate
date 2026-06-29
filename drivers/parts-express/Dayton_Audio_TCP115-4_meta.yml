@@ -21,8 +21,81 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 295-415
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 40.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.2
+    winner: vendor_page
+    sources:
+      vendor_page: 3.2
+  Sd:  # effective piston area (m²)
+    value: 0.00503
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00503
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00088
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00088
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004
+  Qes:  # electrical Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.0657803051942647
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0657803051942647
+  BL:  # force factor (T·m)
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
+  Qts:  # total Q factor
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
+  Qms:  # mechanical Q factor
+    value: 3.14
+    winner: vendor_page
+    sources:
+      vendor_page: 3.14
+  Le:  # voice coil inductance (H)
+    value: 0.0009699999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0009699999999999999
+  Pe:  # rated power input (W)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  Fs:  # free air resonance (Hz)
+    value: 53.8
+    winner: vendor_page
+    sources:
+      vendor_page: 53.8
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.003114848
+    winner: vendor_page
+    sources:
+      vendor_page: 0.003114848
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0099
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0099
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.parts-express.com/Dayton-Audio-TCP115-4-4-Treated-Paper-Cone-Midbass-Woofer-4-Ohm-295-415

@@ -16,5 +16,86 @@ fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 4.0
-  sensitivity_db: 400.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 1.7
+    winner: vendor_page
+    sources:
+      vendor_page: 1.7
+  Sd:  # effective piston area (m²)
+    value: 0.0213
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0213
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000129
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000129
+  Xmax:  # one-way linear excursion (m)
+    value: 0.014
+    winner: vendor_page
+    sources:
+      vendor_page: 0.014
+  Qes:  # electrical Q factor
+    value: 1.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.6375928631170633
+    winner: vendor_page
+    sources:
+      vendor_page: 2.6375928631170633
+  BL:  # force factor (T·m)
+    value: 6.78
+    winner: vendor_page
+    sources:
+      vendor_page: 6.78
+  Qts:  # total Q factor
+    value: 0.92
+    winner: vendor_page
+    sources:
+      vendor_page: 0.92
+  Qms:  # mechanical Q factor
+    value: 10.35
+    winner: vendor_page
+    sources:
+      vendor_page: 10.35
+  Le:  # voice coil inductance (H)
+    value: 0.0011799999999999998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0011799999999999998
+  Pe:  # rated power input (W)
+    value: 800.0
+    winner: vendor_page
+    sources:
+      vendor_page: 800.0
+  Fs:  # free air resonance (Hz)
+    value: 45.15
+    winner: vendor_page
+    sources:
+      vendor_page: 45.15
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.008211871999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.008211871999999999
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.09623000000000001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.09623000000000001
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 400.0
+    winner: vendor_page
+    sources:
+      vendor_page: 400.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/267-8044--prv-audio-mt8sw800-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/PRV-Audio-MT8SW800-D4-Moto-Series-8-Shallow-Subwoofer-DVC-4x4-Ohm-267-8044

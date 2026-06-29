@@ -20,9 +20,82 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 253-023
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 2.0
-  sensitivity_db: 96.5
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
+  Sd:  # effective piston area (m²)
+    value: 0.035
+    winner: vendor_page
+    sources:
+      vendor_page: 0.035
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004
+  Qes:  # electrical Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.0017791990077756054
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0017791990077756054
+  BL:  # force factor (T·m)
+    value: 17.6
+    winner: vendor_page
+    sources:
+      vendor_page: 17.6
+  Qts:  # total Q factor
+    value: 0.31
+    winner: vendor_page
+    sources:
+      vendor_page: 0.31
+  Qms:  # mechanical Q factor
+    value: 10.1
+    winner: vendor_page
+    sources:
+      vendor_page: 10.1
+  Le:  # voice coil inductance (H)
+    value: 65.0
+    winner: vendor_page
+    sources:
+      vendor_page: 65.0
+  Pe:  # rated power input (W)
+    value: 500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 500.0
+  Fs:  # free air resonance (Hz)
+    value: 65.0
+    winner: vendor_page
+    sources:
+      vendor_page: 65.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.02406928
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02406928
+  Mms:  # moving mass incl. air load (kg)
+    value: 4.4e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 4.4e-05
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 96.5
+    winner: vendor_page
+    sources:
+      vendor_page: 96.5
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/253-023--10mcs500-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Beyma-10MCS500-MCS-Series-10-Subwoofer-8-Ohm-253-023

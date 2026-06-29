@@ -15,4 +15,80 @@ community: null
 fetched_sku: null
 driver_type: tweeter
 specs:
-  power_rms_W: 3.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.64
+    winner: vendor_page
+    sources:
+      vendor_page: 3.64
+  Sd:  # effective piston area (m²)
+    value: 0.000908
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000908
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00107
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00107
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0027
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0027
+  Qes:  # electrical Q factor
+    value: 0.48
+    winner: vendor_page
+    sources:
+      vendor_page: 0.48
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.68
+    winner: vendor_page
+    sources:
+      vendor_page: 0.68
+  BL:  # force factor (T·m)
+    value: 2.8
+    winner: vendor_page
+    sources:
+      vendor_page: 2.8
+  Qts:  # total Q factor
+    value: 0.37
+    winner: vendor_page
+    sources:
+      vendor_page: 0.37
+  Qms:  # mechanical Q factor
+    value: 1.56
+    winner: vendor_page
+    sources:
+      vendor_page: 1.56
+  Le:  # voice coil inductance (H)
+    value: 9.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 9.0e-05
+  Pe:  # rated power input (W)
+    value: 3.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0
+  Fs:  # free air resonance (Hz)
+    value: 140.0
+    winner: vendor_page
+    sources:
+      vendor_page: 140.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00013
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00013
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00121
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00121
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/seas-fl4rcnf.html

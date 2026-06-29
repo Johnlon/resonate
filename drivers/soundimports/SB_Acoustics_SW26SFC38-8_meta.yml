@@ -15,4 +15,70 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 80.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  Sd:  # effective piston area (m²)
+    value: 0.034
+    winner: vendor_page
+    sources:
+      vendor_page: 0.034
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00049
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00049
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0035
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0035
+  Qes:  # electrical Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  BL:  # force factor (T·m)
+    value: 13.5
+    winner: vendor_page
+    sources:
+      vendor_page: 13.5
+  Qts:  # total Q factor
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
+  Qms:  # mechanical Q factor
+    value: 5.18
+    winner: vendor_page
+    sources:
+      vendor_page: 5.18
+  Le:  # voice coil inductance (H)
+    value: 0.00138
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00138
+  Pe:  # rated power input (W)
+    value: 80.0
+    winner: vendor_page
+    sources:
+      vendor_page: 80.0
+  Fs:  # free air resonance (Hz)
+    value: 28.5
+    winner: vendor_page
+    sources:
+      vendor_page: 28.5
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.08
+    winner: vendor_page
+    sources:
+      vendor_page: 0.08
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0637
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0637
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sb-acoustics-sw26sfc38-8.html

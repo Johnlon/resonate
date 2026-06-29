@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 200.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.1
+    winner: vendor_page
+    sources:
+      vendor_page: 5.1
+  Sd:  # effective piston area (m²)
+    value: 0.02138
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02138
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000857
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000857
+  Xmax:  # one-way linear excursion (m)
+    value: 0.006
+    winner: vendor_page
+    sources:
+      vendor_page: 0.006
+  Qes:  # electrical Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  BL:  # force factor (T·m)
+    value: 8.6
+    winner: vendor_page
+    sources:
+      vendor_page: 8.6
+  Qts:  # total Q factor
+    value: 0.36
+    winner: vendor_page
+    sources:
+      vendor_page: 0.36
+  Qms:  # mechanical Q factor
+    value: 5.81
+    winner: vendor_page
+    sources:
+      vendor_page: 5.81
+  Le:  # voice coil inductance (H)
+    value: 0.00065
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00065
+  Pe:  # rated power input (W)
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
+  Fs:  # free air resonance (Hz)
+    value: 33.4
+    winner: vendor_page
+    sources:
+      vendor_page: 33.4
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0556
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0556
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0265
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0265
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/rs-speakers-w-22050-fibonacci.html

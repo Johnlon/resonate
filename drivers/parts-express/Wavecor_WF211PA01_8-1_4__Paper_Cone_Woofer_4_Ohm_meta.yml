@@ -16,4 +16,66 @@ fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  power_rms_W: 170.0
+  Sd:  # effective piston area (m²)
+    value: 0.0214
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0214
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00028000000000000003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00028000000000000003
+  Xmax:  # one-way linear excursion (m)
+    value: 0.002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.002
+  Qes:  # electrical Q factor
+    value: 0.26
+    winner: vendor_page
+    sources:
+      vendor_page: 0.26
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.6617941829678422
+    winner: vendor_page
+    sources:
+      vendor_page: 1.6617941829678422
+  Qts:  # total Q factor
+    value: 0.25
+    winner: vendor_page
+    sources:
+      vendor_page: 0.25
+  Qms:  # mechanical Q factor
+    value: 5.8
+    winner: vendor_page
+    sources:
+      vendor_page: 5.8
+  Pe:  # rated power input (W)
+    value: 170.0
+    winner: vendor_page
+    sources:
+      vendor_page: 170.0
+  Fs:  # free air resonance (Hz)
+    value: 59.0
+    winner: vendor_page
+    sources:
+      vendor_page: 59.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.018122752
+    winner: vendor_page
+    sources:
+      vendor_page: 0.018122752
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.026
+    winner: vendor_page
+    sources:
+      vendor_page: 0.026
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/298-1237--wf211pa01-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Wavecor-WF211PA01-8-1-4-Paper-Cone-Woofer-4-Ohm-298-1237

@@ -19,8 +19,82 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 253-057
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 1600.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.4
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4
+  Sd:  # effective piston area (m²)
+    value: 0.1734
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1734
+  Cms:  # mechanical compliance (m/N)
+    value: 0.072
+    winner: vendor_page
+    sources:
+      vendor_page: 0.072
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004
+  Qes:  # electrical Q factor
+    value: 0.3
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.016252505994571193
+    winner: vendor_page
+    sources:
+      vendor_page: 0.016252505994571193
+  BL:  # force factor (T·m)
+    value: 36.4
+    winner: vendor_page
+    sources:
+      vendor_page: 36.4
+  Qts:  # total Q factor
+    value: 0.28
+    winner: vendor_page
+    sources:
+      vendor_page: 0.28
+  Qms:  # mechanical Q factor
+    value: 4.5
+    winner: vendor_page
+    sources:
+      vendor_page: 4.5
+  Le:  # voice coil inductance (H)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  Pe:  # rated power input (W)
+    value: 1600.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1600.0
+  Fs:  # free air resonance (Hz)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.308936288
+    winner: vendor_page
+    sources:
+      vendor_page: 0.308936288
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.000388
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000388
+  Znom:  # nominal impedance (Ω)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/253-057--21qlex1600fe-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Beyma-21QLEX1600Fe-QLEX-Series-21-Subwoofer-8-Ohm-253-057

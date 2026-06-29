@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 2500.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 2.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0
+  Sd:  # effective piston area (m²)
+    value: 0.0775
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0775
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00011
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00011
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0372
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0372
+  Qes:  # electrical Q factor
+    value: 0.47
+    winner: vendor_page
+    sources:
+      vendor_page: 0.47
+  BL:  # force factor (T·m)
+    value: 43.3
+    winner: vendor_page
+    sources:
+      vendor_page: 43.3
+  Qts:  # total Q factor
+    value: 0.46
+    winner: vendor_page
+    sources:
+      vendor_page: 0.46
+  Qms:  # mechanical Q factor
+    value: 14.6
+    winner: vendor_page
+    sources:
+      vendor_page: 14.6
+  Le:  # voice coil inductance (H)
+    value: 0.00919
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00919
+  Pe:  # rated power input (W)
+    value: 2500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2500.0
+  Fs:  # free air resonance (Hz)
+    value: 21.0
+    winner: vendor_page
+    sources:
+      vendor_page: 21.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0903
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0903
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.561
+    winner: vendor_page
+    sources:
+      vendor_page: 0.561
+  Znom:  # nominal impedance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/peerless-by-tymphany-stw-350f.html

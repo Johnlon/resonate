@@ -15,4 +15,45 @@ community: null
 fetched_sku: null
 driver_type: pr
 specs:
-  linear_xmax_mm: 14.0
+  Sd:  # effective piston area (m²)
+    value: 0.00312
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00312
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00141
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00141
+  Xmax:  # one-way linear excursion (m)
+    value: 0.007
+    winner: vendor_page
+    sources:
+      vendor_page: 0.007
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
+  Qms:  # mechanical Q factor
+    value: 8.91
+    winner: vendor_page
+    sources:
+      vendor_page: 8.91
+  Fs:  # free air resonance (Hz)
+    value: 34.6
+    winner: vendor_page
+    sources:
+      vendor_page: 34.6
+  Vas:  # equivalent acoustic volume (m³)
+    value: 7.1e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 7.1e-05
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0137
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0137
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-dma80-pr.html

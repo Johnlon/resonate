@@ -14,4 +14,36 @@ dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.023
+    winner: vendor_page
+    sources:
+      vendor_page: 0.023
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00161
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00161
+  Xmax:  # one-way linear excursion (m)
+    value: 0.01
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01
+  Fs:  # free air resonance (Hz)
+    value: 48.0
+    winner: vendor_page
+    sources:
+      vendor_page: 48.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.122
+    winner: vendor_page
+    sources:
+      vendor_page: 0.122
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0289
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0289
+_sources:
+  vendor_page: https://www.soundimports.eu/en/seas-sp22r.html

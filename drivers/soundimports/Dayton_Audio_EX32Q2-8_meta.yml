@@ -15,4 +15,25 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 40.0
+  Pe:  # rated power input (W)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  Fs:  # free air resonance (Hz)
+    value: 195.0
+    winner: vendor_page
+    sources:
+      vendor_page: 195.0
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  power_peak_W:  # peak power handling (W)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-ex32q2-8.html

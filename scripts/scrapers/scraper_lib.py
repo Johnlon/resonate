@@ -145,6 +145,51 @@ def merge_fields(pdf_fields: dict, html_fields: dict) -> dict:
     return merged
 
 
+# ── Spec field comments and YAML annotator ────────────────────────────────────
+
+SPEC_FIELD_COMMENTS: dict[str, str] = {
+    "Fs":               "free air resonance (Hz)",
+    "Re":               "DC voice coil resistance (Ω)",
+    "Qts":              "total Q factor",
+    "Qes":              "electrical Q factor",
+    "Qms":              "mechanical Q factor",
+    "BL":               "force factor (T·m)",
+    "Mms":              "moving mass incl. air load (kg)",
+    "Cms":              "mechanical compliance (m/N)",
+    "Sd":               "effective piston area (m²)",
+    "Vas":              "equivalent acoustic volume (m³)",
+    "Xmax":             "one-way linear excursion (m)",
+    "Le":               "voice coil inductance (H)",
+    "Znom":             "nominal impedance (Ω)",
+    "Pe":               "rated power input (W)",
+    "SPL":              "sensitivity (dB, 2.83 V/1 m)",
+    "Rms":              "mechanical resistance (kg/s)",
+    "voice_coil_dia_mm": "voice coil diameter (mm)",
+    "Hg_mm":            "magnetic gap height (mm)",
+    "freq_low_hz":      "published lower frequency limit (Hz)",
+    "freq_high_hz":     "published upper frequency limit (Hz)",
+    "power_peak_W":     "peak power handling (W)",
+    "weight_kg":        "driver weight (kg)",
+}
+
+
+def annotate_specs_yaml(yaml_str: str) -> str:
+    """Insert inline # comments on spec field key lines in yaml.dump() output."""
+    in_specs = False
+    out = []
+    for line in yaml_str.splitlines():
+        if line == "specs:":
+            in_specs = True
+        elif in_specs and line and not line.startswith(" "):
+            in_specs = False
+        if in_specs:
+            m = re.match(r"^( {2})([A-Za-z_][A-Za-z0-9_]*):(\s*)$", line)
+            if m and m.group(2) in SPEC_FIELD_COMMENTS:
+                line = f"{m.group(1)}{m.group(2)}:  # {SPEC_FIELD_COMMENTS[m.group(2)]}"
+        out.append(line)
+    return "\n".join(out) + "\n"
+
+
 # ── PDF fetch / cache helper ───────────────────────────────────────────────────
 
 def _get_or_fetch_pdf(pdf_url: str, pdf_dir: Path,
@@ -379,11 +424,15 @@ def _scrape_one(idx_url: tuple[int, str], cfg: _WorkerConfig) -> _WorkerResult:
     cad_url: str | None     = product.get("cad_url")
     extras_log: list[str] = []
 
+    # Source name constants for this scrape
+    _html_src = "manu_page" if cfg.is_manufacturer_site else "vendor_page"
+
     # ── PDF extraction (primary source) ──────────────────────────────────────
     pdf_fields: dict = {}
     pdf_source: str  = ""
     freq_low_hz: float | None = None
     freq_high_hz: float | None = None
+    _freq_from_pdf = False
 
     if pdf_url and not cfg.no_pdf:
         pdf_path = _get_or_fetch_pdf(pdf_url, cfg.pdf_dir)
@@ -393,7 +442,10 @@ def _scrape_one(idx_url: tuple[int, str], cfg: _WorkerConfig) -> _WorkerResult:
                 text    = _pdf_local.full_text(pdf_path)
                 _pdf_rejects: list = []
                 pass1   = _pdf_local.find_ts_fields(text, brand=brand, problems=_pdf_rejects)
-                freq_low_hz, freq_high_hz = _pdf_local.find_freq_range(text)
+                _freq_low_pdf, _freq_high_pdf = _pdf_local.find_freq_range(text)
+                if _freq_low_pdf or _freq_high_pdf:
+                    freq_low_hz, freq_high_hz = _freq_low_pdf, _freq_high_pdf
+                    _freq_from_pdf = True
                 spatial = _pdf_local.extract_text_spatial(pdf_path)
                 pass2   = _pdf_local.find_ts_fields(spatial, brand=brand, problems=_pdf_rejects)
 
@@ -436,8 +488,10 @@ def _scrape_one(idx_url: tuple[int, str], cfg: _WorkerConfig) -> _WorkerResult:
     # parse_product() may supply HTML-sourced freq range; prefer it over PDF when present.
     if product.get("freq_low_hz") is not None:
         freq_low_hz = product["freq_low_hz"]
+        _freq_from_pdf = False
     if product.get("freq_high_hz") is not None:
         freq_high_hz = product["freq_high_hz"]
+        _freq_from_pdf = False
 
     # ── Advanced parameters PDF (secondary source) ───────────────────────────
     adv_pdf_fields: dict = {}
@@ -479,24 +533,62 @@ def _scrape_one(idx_url: tuple[int, str], cfg: _WorkerConfig) -> _WorkerResult:
     if not fields:
         _prob("no_fields", item_id, url, None, "No T/S fields from PDF or HTML")
 
-    # ── Field provenance ──────────────────────────────────────────────────────
-    # For each T/S field that appeared in any source, record which sources had it,
-    # each source's value in WDR SI units, and which source's value was written.
-    #
-    # Priority (highest to lowest) matches the merge order above:
-    #   html_wins=True  → html > adv_pdf > pdf
-    #   html_wins=False → pdf  > adv_pdf > html
-    _all_src = {"pdf": pdf_fields, "adv_pdf": adv_pdf_fields, "html": html_fields}
-    _priority = (["html", "adv_pdf", "pdf"] if cfg.html_wins
-                 else ["pdf", "adv_pdf", "html"])
-    field_provenance: dict[str, dict] = {}
-    for _fld in set().union(*[s.keys() for s in _all_src.values()]):
-        _srcs = {s: _all_src[s][_fld]
-                 for s in ("pdf", "adv_pdf", "html") if _fld in _all_src[s]}
-        if not _srcs:
+    # ── Build unified specs block with full source provenance ────────────────
+    # Named source keys (match _sources index):
+    #   datasheet, adv_datasheet, manu_page / vendor_page
+    _adv_src = "adv_datasheet"
+    _named_src: dict[str, dict] = {
+        "datasheet":   pdf_fields,
+        _adv_src:      adv_pdf_fields,
+        _html_src:     html_fields,
+    }
+    _priority_named = (
+        [_html_src, _adv_src, "datasheet"] if cfg.html_wins
+        else ["datasheet", _adv_src, _html_src]
+    )
+    # T/S fields — all sources with full contest record
+    _WDR_TS = {"Fs","Re","Qts","Qes","Qms","BL","Mms","Cms","Sd","Vas","Xmax","Le","Znom","Pe","SPL","Rms"}
+    _specs: dict = {}
+    for _fld in set().union(*[s.keys() for s in _named_src.values()]):
+        _src_vals = {
+            src: _named_src[src][_fld]
+            for src in _named_src if _fld in _named_src.get(src, {})
+        }
+        if not _src_vals:
             continue
-        _winner = next(s for s in _priority if s in _srcs)
-        field_provenance[_fld] = {"sources": _srcs, "winner": _winner}
+        _winner = next((s for s in _priority_named if s in _src_vals), next(iter(_src_vals)))
+        _entry: dict = {"value": _src_vals[_winner], "winner": _winner, "sources": _src_vals}
+        # Auto-note when a datasheet exists but this T/S field isn't in it
+        if (_fld in _WDR_TS and _winner != "datasheet"
+                and "datasheet" in _named_src and _named_src["datasheet"]):
+            _entry["note"] = f"Not in datasheet; value from {_winner}"
+        _specs[_fld] = _entry
+    # Coaxial: specs sub-dicts from parse_product() — wrap each value in provenance
+    _prod_specs = product.get("specs")
+    if _prod_specs and ("woofer" in _prod_specs or "tweeter" in _prod_specs):
+        _coax: dict = {}
+        for _comp, _comp_fields in _prod_specs.items():
+            if isinstance(_comp_fields, dict):
+                _coax[_comp] = {
+                    k: {"value": v, "winner": _html_src, "sources": {_html_src: v}}
+                    for k, v in _comp_fields.items()
+                }
+            else:
+                _coax[_comp] = _comp_fields
+        _specs = _coax
+    else:
+        # Non-T/S extra specs from parse_product() — always from HTML
+        for _k, _v in (product.get("extra_specs") or {}).items():
+            if _k not in _specs:
+                _specs[_k] = {"value": _v, "winner": _html_src, "sources": {_html_src: _v}}
+            elif _html_src not in _specs[_k]["sources"]:
+                _specs[_k]["sources"][_html_src] = _v
+        # Freq range with source tracking
+        _freq_src = "datasheet" if _freq_from_pdf else _html_src
+        if freq_low_hz:
+            _specs["freq_low_hz"] = {"value": freq_low_hz, "winner": _freq_src, "sources": {_freq_src: freq_low_hz}}
+        if freq_high_hz:
+            _specs["freq_high_hz"] = {"value": freq_high_hz, "winner": _freq_src, "sources": {_freq_src: freq_high_hz}}
 
     # ── HTML vs PDF discrepancy check ────────────────────────────────────────
     # For any field present in both HTML and the winning PDF source, flag
@@ -622,34 +714,41 @@ def _scrape_one(idx_url: tuple[int, str], cfg: _WorkerConfig) -> _WorkerResult:
         _specs.update(product.get("extra_specs") or {})
         _specs = _specs or None
 
+    # Named source index
+    _sources_index: dict[str, str | None] = {}
+    if pdf_url:
+        _sources_index["datasheet"] = pdf_url
+    if adv_pdf_url and adv_pdf_url != pdf_url:
+        _sources_index["adv_datasheet"] = adv_pdf_url
+    _sources_index[_html_src] = url
+
     meta = {
-        "quality":            "M",
-        "issue":              "scraped_not_human_verified",
-        "detail":             " ".join(detail_parts),
-        "corrections":        None,
-        "reviewed_by":        None,
-        "driver_type":        product.get("driver_type") or None,
-        "nominal_size_cm":    product.get("nominal_size_cm"),
-        "datasheet":          pdf_url or None,
-        "adv_datasheet":      adv_pdf_url or None,
-        "drawing":            drawing_url or None,
-        "cad":                cad_url or None,
-        "manu_page":          url if cfg.is_manufacturer_site else None,
-        "vendor_page":        None if cfg.is_manufacturer_site else url,
-        "source":             url,
-        "frd":                frd_ok or None,
-        "impedance":          impedance_ok or None,
-        "obsolete":           None,
-        "dq_issue":           None,
-        "community":          None,
-        "fetched_sku":        None,
-        "field_provenance":   field_provenance or None,
-        "freq_low_hz":        freq_low_hz,
-        "freq_high_hz":       freq_high_hz,
-        "specs":              _specs,
+        "quality":         "M",
+        "issue":           "scraped_not_human_verified",
+        "detail":          " ".join(detail_parts),
+        "corrections":     None,
+        "reviewed_by":     None,
+        "driver_type":     product.get("driver_type") or None,
+        "nominal_size_cm": product.get("nominal_size_cm"),
+        "source":          url,
+        "datasheet":       pdf_url or None,
+        "adv_datasheet":   adv_pdf_url or None,
+        "drawing":         drawing_url or None,
+        "cad":             cad_url or None,
+        "manu_page":       url if cfg.is_manufacturer_site else None,
+        "vendor_page":     None if cfg.is_manufacturer_site else url,
+        "frd":             frd_ok or None,
+        "impedance":       impedance_ok or None,
+        "obsolete":        None,
+        "dq_issue":        None,
+        "community":       None,
+        "fetched_sku":     None,
+        "_sources":        _sources_index,
+        "specs":           _specs or None,
     }
     meta_path = cfg.out / wdr_name.replace(".wdr", "_meta.yml")
-    meta_path.write_text(yaml.dump(meta, allow_unicode=True, sort_keys=False), encoding="utf-8")
+    _meta_yaml = yaml.dump(meta, allow_unicode=True, sort_keys=False)
+    meta_path.write_text(annotate_specs_yaml(_meta_yaml), encoding="utf-8")
 
     # ── Strict schema validation ───────────────────────────────────────────────
     # Both files must pass before the driver counts as success.

@@ -14,4 +14,41 @@ dq_issue: null
 community: null
 fetched_sku: null
 driver_type: null
-specs: null
+specs:
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.03
+    winner: vendor_page
+    sources:
+      vendor_page: 3.03
+  Qes:  # electrical Q factor
+    value: 0.83
+    winner: vendor_page
+    sources:
+      vendor_page: 0.83
+  Qts:  # total Q factor
+    value: 0.69
+    winner: vendor_page
+    sources:
+      vendor_page: 0.69
+  Qms:  # mechanical Q factor
+    value: 3.89
+    winner: vendor_page
+    sources:
+      vendor_page: 3.89
+  Le:  # voice coil inductance (H)
+    value: 4.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0e-05
+  Fs:  # free air resonance (Hz)
+    value: 280.0
+    winner: vendor_page
+    sources:
+      vendor_page: 280.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/scan-speak-d8404-552000.html

@@ -16,8 +16,91 @@ dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  voice_coil_dia_mm: 49.5
-  Hg_mm: 6.0
-  linear_xmax_mm: 17.0
-  sensitivity_db: 91.0
-  power_rms_W: 90.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.3
+    winner: manu_page
+    sources:
+      manu_page: 3.3
+  Sd:  # effective piston area (m²)
+    value: 0.0255
+    winner: manu_page
+    sources:
+      manu_page: 0.0255
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00077
+    winner: manu_page
+    sources:
+      manu_page: 0.00077
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0085
+    winner: manu_page
+    sources:
+      manu_page: 0.0085
+  Qes:  # electrical Q factor
+    value: 0.42
+    winner: manu_page
+    sources:
+      manu_page: 0.42
+  BL:  # force factor (T·m)
+    value: 7.6
+    winner: manu_page
+    sources:
+      manu_page: 7.6
+  Qts:  # total Q factor
+    value: 0.4
+    winner: manu_page
+    sources:
+      manu_page: 0.4
+  Qms:  # mechanical Q factor
+    value: 6.7
+    winner: manu_page
+    sources:
+      manu_page: 6.7
+  Le:  # voice coil inductance (H)
+    value: 0.00029
+    winner: manu_page
+    sources:
+      manu_page: 0.00029
+  Pe:  # rated power input (W)
+    value: 90.0
+    winner: manu_page
+    sources:
+      manu_page: 90.0
+  Fs:  # free air resonance (Hz)
+    value: 28.0
+    winner: manu_page
+    sources:
+      manu_page: 28.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.071
+    winner: manu_page
+    sources:
+      manu_page: 0.071
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.042
+    winner: manu_page
+    sources:
+      manu_page: 0.042
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: manu_page
+    sources:
+      manu_page: 4.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 49.5
+    winner: manu_page
+    sources:
+      manu_page: 49.5
+  Hg_mm:  # magnetic gap height (mm)
+    value: 6.0
+    winner: manu_page
+    sources:
+      manu_page: 6.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 91.0
+    winner: manu_page
+    sources:
+      manu_page: 91.0
+_sources:
+  datasheet: https://sbacoustics.com/wp-content/uploads/2024/04/9.5in-SATORI-WO24P-4.pdf
+  manu_page: https://sbacoustics.com/product/9½in-satori-wo24p-4/

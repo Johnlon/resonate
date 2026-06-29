@@ -20,11 +20,97 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 295-650
-field_provenance: null
-freq_low_hz: 75.0
-freq_high_hz: 8500.0
 specs:
-  sensitivity_db: 40.0
-  power_rms_W: 40.0
-  freq_low_hz: 75.0
-  freq_high_hz: 8500.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.7
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7
+  Sd:  # effective piston area (m²)
+    value: 0.00564
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00564
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00068
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00068
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004
+  Qes:  # electrical Q factor
+    value: 0.47
+    winner: vendor_page
+    sources:
+      vendor_page: 0.47
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.6488557190567151
+    winner: vendor_page
+    sources:
+      vendor_page: 0.6488557190567151
+  BL:  # force factor (T·m)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+  Qts:  # total Q factor
+    value: 0.43
+    winner: vendor_page
+    sources:
+      vendor_page: 0.43
+  Qms:  # mechanical Q factor
+    value: 4.84
+    winner: vendor_page
+    sources:
+      vendor_page: 4.84
+  Le:  # voice coil inductance (H)
+    value: 0.00022
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00022
+  Pe:  # rated power input (W)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  Fs:  # free air resonance (Hz)
+    value: 74.6
+    winner: vendor_page
+    sources:
+      vendor_page: 74.6
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0031
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0031
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0067
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0067
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 75.0
+    winner: vendor_page
+    sources:
+      vendor_page: 75.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 8500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8500.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/295-650--dayton-audio-sig120-4-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-SIG120-4-4-Signature-Series-Extended-Range-40W-Driver-4-Ohm

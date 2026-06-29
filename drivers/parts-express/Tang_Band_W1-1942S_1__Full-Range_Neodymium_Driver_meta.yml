@@ -15,9 +15,82 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
-freq_low_hz: 120.0
-freq_high_hz: 20000.0
 specs:
-  freq_low_hz: 20.0
-  freq_high_hz: 0.0
-  power_rms_W: 150.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.5
+    winner: vendor_page
+    sources:
+      vendor_page: 3.5
+  Sd:  # effective piston area (m²)
+    value: 0.0009
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0009
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0013700000000000001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0013700000000000001
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0013
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0013
+  Qes:  # electrical Q factor
+    value: 0.27
+    winner: vendor_page
+    sources:
+      vendor_page: 0.27
+  BL:  # force factor (T·m)
+    value: 3.49
+    winner: vendor_page
+    sources:
+      vendor_page: 3.49
+  Qts:  # total Q factor
+    value: 0.24
+    winner: vendor_page
+    sources:
+      vendor_page: 0.24
+  Qms:  # mechanical Q factor
+    value: 1.79
+    winner: vendor_page
+    sources:
+      vendor_page: 1.79
+  Le:  # voice coil inductance (H)
+    value: 4.6e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 4.6e-05
+  Pe:  # rated power input (W)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  Fs:  # free air resonance (Hz)
+    value: 120.0
+    winner: vendor_page
+    sources:
+      vendor_page: 120.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.000141584
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000141584
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 0.0
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/264-924--tang-band-w1-1942s-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Tang-Band-W1-1942S-1-Neodymium-Full-Range-Driver-264-924

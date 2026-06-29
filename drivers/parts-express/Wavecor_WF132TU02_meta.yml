@@ -19,8 +19,77 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 298-1162
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 132.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.2
+    winner: vendor_page
+    sources:
+      vendor_page: 3.2
+  Sd:  # effective piston area (m²)
+    value: 0.0095
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0095
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00066
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00066
+  Qes:  # electrical Q factor
+    value: 0.46
+    winner: vendor_page
+    sources:
+      vendor_page: 0.46
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.4869468613064179
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4869468613064179
+  BL:  # force factor (T·m)
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
+  Qts:  # total Q factor
+    value: 0.44
+    winner: vendor_page
+    sources:
+      vendor_page: 0.44
+  Qms:  # mechanical Q factor
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  Le:  # voice coil inductance (H)
+    value: 0.00023
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00023
+  Pe:  # rated power input (W)
+    value: 55.0
+    winner: vendor_page
+    sources:
+      vendor_page: 55.0
+  Fs:  # free air resonance (Hz)
+    value: 62.0
+    winner: vendor_page
+    sources:
+      vendor_page: 62.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.009
+    winner: vendor_page
+    sources:
+      vendor_page: 0.009
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.01
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/298-1162--wavecor-wf132tu02-specifications.pdf
+  vendor_page: https://www.parts-express.com/Wavecor-WF132TU02-5-1-4-Paper-Cone-Mid-Woofer-4-Ohm-298-1162

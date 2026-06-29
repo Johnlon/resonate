@@ -21,8 +21,82 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 293-782
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 600.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
+  Sd:  # effective piston area (m²)
+    value: 0.08814
+    winner: vendor_page
+    sources:
+      vendor_page: 0.08814
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0001
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0066
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0066
+  Qes:  # electrical Q factor
+    value: 0.3
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3
+  Rms:  # mechanical resistance (kg/s)
+    value: 5.964206681047357
+    winner: vendor_page
+    sources:
+      vendor_page: 5.964206681047357
+  BL:  # force factor (T·m)
+    value: 23.9
+    winner: vendor_page
+    sources:
+      vendor_page: 23.9
+  Qts:  # total Q factor
+    value: 0.29
+    winner: vendor_page
+    sources:
+      vendor_page: 0.29
+  Qms:  # mechanical Q factor
+    value: 5.58
+    winner: vendor_page
+    sources:
+      vendor_page: 5.58
+  Le:  # voice coil inductance (H)
+    value: 0.001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001
+  Pe:  # rated power input (W)
+    value: 600.0
+    winner: vendor_page
+    sources:
+      vendor_page: 600.0
+  Fs:  # free air resonance (Hz)
+    value: 46.3
+    winner: vendor_page
+    sources:
+      vendor_page: 46.3
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.1132672
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1132672
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.1144
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1144
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/293-782--lavoce-wan153.01-specifications.pdf
+  vendor_page: https://www.parts-express.com/LaVoce-WAN153.01-15-Professional-Neodymium-Woofer-8-Ohm-293-782

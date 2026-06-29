@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 750.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.8
+    winner: vendor_page
+    sources:
+      vendor_page: 5.8
+  Sd:  # effective piston area (m²)
+    value: 0.1029
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1029
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00016
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00016
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0125
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0125
+  Qes:  # electrical Q factor
+    value: 0.34
+    winner: vendor_page
+    sources:
+      vendor_page: 0.34
+  BL:  # force factor (T·m)
+    value: 25.7
+    winner: vendor_page
+    sources:
+      vendor_page: 25.7
+  Qts:  # total Q factor
+    value: 0.31
+    winner: vendor_page
+    sources:
+      vendor_page: 0.31
+  Qms:  # mechanical Q factor
+    value: 3.94
+    winner: vendor_page
+    sources:
+      vendor_page: 3.94
+  Le:  # voice coil inductance (H)
+    value: 0.0038
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0038
+  Pe:  # rated power input (W)
+    value: 750.0
+    winner: vendor_page
+    sources:
+      vendor_page: 750.0
+  Fs:  # free air resonance (Hz)
+    value: 26.0
+    winner: vendor_page
+    sources:
+      vendor_page: 26.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.238
+    winner: vendor_page
+    sources:
+      vendor_page: 0.238
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.235
+    winner: vendor_page
+    sources:
+      vendor_page: 0.235
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/volt-loudspeakers-rv4564.html

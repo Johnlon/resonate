@@ -20,8 +20,77 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 253-060
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 3.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
+  Sd:  # effective piston area (m²)
+    value: 0.053
+    winner: vendor_page
+    sources:
+      vendor_page: 0.053
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004
+  Qes:  # electrical Q factor
+    value: 0.28
+    winner: vendor_page
+    sources:
+      vendor_page: 0.28
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.002968805057642355
+    winner: vendor_page
+    sources:
+      vendor_page: 0.002968805057642355
+  BL:  # force factor (T·m)
+    value: 18.0
+    winner: vendor_page
+    sources:
+      vendor_page: 18.0
+  Qts:  # total Q factor
+    value: 0.27
+    winner: vendor_page
+    sources:
+      vendor_page: 0.27
+  Qms:  # mechanical Q factor
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
+  Le:  # voice coil inductance (H)
+    value: 42.0
+    winner: vendor_page
+    sources:
+      vendor_page: 42.0
+  Pe:  # rated power input (W)
+    value: 400.0
+    winner: vendor_page
+    sources:
+      vendor_page: 400.0
+  Fs:  # free air resonance (Hz)
+    value: 42.0
+    winner: vendor_page
+    sources:
+      vendor_page: 42.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.090896928
+    winner: vendor_page
+    sources:
+      vendor_page: 0.090896928
+  Mms:  # moving mass incl. air load (kg)
+    value: 6.3e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 6.3e-05
+  Znom:  # nominal impedance (Ω)
+    value: 45.0
+    winner: vendor_page
+    sources:
+      vendor_page: 45.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/253-060--12wr400-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Beyma-12WR400-WR-Series-12-Subwoofer-8-Ohm-253-060

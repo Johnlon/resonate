@@ -15,4 +15,80 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 60.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.1
+    winner: vendor_page
+    sources:
+      vendor_page: 3.1
+  Sd:  # effective piston area (m²)
+    value: 0.0118
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0118
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0014
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0014
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0055
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0055
+  Qes:  # electrical Q factor
+    value: 0.41
+    winner: vendor_page
+    sources:
+      vendor_page: 0.41
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.7
+    winner: vendor_page
+    sources:
+      vendor_page: 0.7
+  BL:  # force factor (T·m)
+    value: 4.9
+    winner: vendor_page
+    sources:
+      vendor_page: 4.9
+  Qts:  # total Q factor
+    value: 0.37
+    winner: vendor_page
+    sources:
+      vendor_page: 0.37
+  Qms:  # mechanical Q factor
+    value: 4.49
+    winner: vendor_page
+    sources:
+      vendor_page: 4.49
+  Le:  # voice coil inductance (H)
+    value: 0.00013
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00013
+  Pe:  # rated power input (W)
+    value: 60.0
+    winner: vendor_page
+    sources:
+      vendor_page: 60.0
+  Fs:  # free air resonance (Hz)
+    value: 36.0
+    winner: vendor_page
+    sources:
+      vendor_page: 36.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0276
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0276
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0139
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0139
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sb-acoustics-sb17nrx2c35-4.html

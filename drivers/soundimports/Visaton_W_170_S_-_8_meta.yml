@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 50.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.9
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9
+  Sd:  # effective piston area (m²)
+    value: 0.0129
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0129
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00161
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00161
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00425
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00425
+  Qes:  # electrical Q factor
+    value: 0.66
+    winner: vendor_page
+    sources:
+      vendor_page: 0.66
+  BL:  # force factor (T·m)
+    value: 5.4
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4
+  Qts:  # total Q factor
+    value: 0.52
+    winner: vendor_page
+    sources:
+      vendor_page: 0.52
+  Qms:  # mechanical Q factor
+    value: 2.43
+    winner: vendor_page
+    sources:
+      vendor_page: 2.43
+  Le:  # voice coil inductance (H)
+    value: 0.0012
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0012
+  Pe:  # rated power input (W)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  Fs:  # free air resonance (Hz)
+    value: 36.0
+    winner: vendor_page
+    sources:
+      vendor_page: 36.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.038
+    winner: vendor_page
+    sources:
+      vendor_page: 0.038
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.013
+    winner: vendor_page
+    sources:
+      vendor_page: 0.013
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/visaton-w-170-s-8.html

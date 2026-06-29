@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 130.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
+  Sd:  # effective piston area (m²)
+    value: 0.01227
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01227
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000876
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000876
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0045
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0045
+  Qes:  # electrical Q factor
+    value: 0.42
+    winner: vendor_page
+    sources:
+      vendor_page: 0.42
+  BL:  # force factor (T·m)
+    value: 7.03
+    winner: vendor_page
+    sources:
+      vendor_page: 7.03
+  Qts:  # total Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Qms:  # mechanical Q factor
+    value: 6.64
+    winner: vendor_page
+    sources:
+      vendor_page: 6.64
+  Le:  # voice coil inductance (H)
+    value: 0.00032
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00032
+  Pe:  # rated power input (W)
+    value: 130.0
+    winner: vendor_page
+    sources:
+      vendor_page: 130.0
+  Fs:  # free air resonance (Hz)
+    value: 45.6
+    winner: vendor_page
+    sources:
+      vendor_page: 45.6
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0187
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0187
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0139
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0139
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/rs-speakers-mw-17438-fibonacci.html

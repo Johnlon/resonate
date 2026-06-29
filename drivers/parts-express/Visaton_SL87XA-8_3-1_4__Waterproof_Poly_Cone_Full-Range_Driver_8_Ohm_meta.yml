@@ -15,9 +15,32 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
-freq_low_hz: 350.0
-freq_high_hz: 5800.0
 specs:
-  freq_low_hz: 350.0
-  freq_high_hz: 5800.0
-  power_rms_W: 20.0
+  Pe:  # rated power input (W)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  Fs:  # free air resonance (Hz)
+    value: 550.0
+    winner: vendor_page
+    sources:
+      vendor_page: 550.0
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 350.0
+    winner: vendor_page
+    sources:
+      vendor_page: 350.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 5800.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5800.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/292-710--visaton-sl87xa-8-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Visaton-SL87XA-8-3-1-4-Waterproof-Poly-Cone-Full-Range-Driver-8-Ohm-292-740

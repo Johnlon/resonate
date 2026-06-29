@@ -15,10 +15,97 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 25.0
-freq_high_hz: 1200.0
 specs:
-  sensitivity_db: 500.0
-  freq_low_hz: 90.0
-  freq_high_hz: 8.0
-  power_rms_W: 500.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.4
+    winner: vendor_page
+    sources:
+      vendor_page: 6.4
+  Sd:  # effective piston area (m²)
+    value: 0.08374
+    winner: vendor_page
+    sources:
+      vendor_page: 0.08374
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00033
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00033
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00925
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00925
+  Qes:  # electrical Q factor
+    value: 0.27
+    winner: vendor_page
+    sources:
+      vendor_page: 0.27
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.7978930393985517
+    winner: vendor_page
+    sources:
+      vendor_page: 2.7978930393985517
+  BL:  # force factor (T·m)
+    value: 21.1
+    winner: vendor_page
+    sources:
+      vendor_page: 21.1
+  Qts:  # total Q factor
+    value: 0.26
+    winner: vendor_page
+    sources:
+      vendor_page: 0.26
+  Qms:  # mechanical Q factor
+    value: 6.7
+    winner: vendor_page
+    sources:
+      vendor_page: 6.7
+  Le:  # voice coil inductance (H)
+    value: 0.00174
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00174
+  Pe:  # rated power input (W)
+    value: 500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 500.0
+  Fs:  # free air resonance (Hz)
+    value: 25.5
+    winner: vendor_page
+    sources:
+      vendor_page: 25.5
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.33130655999999997
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33130655999999997
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.117
+    winner: vendor_page
+    sources:
+      vendor_page: 0.117
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 500.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 90.0
+    winner: vendor_page
+    sources:
+      vendor_page: 90.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/295-648--dayton-audio-odeum-apollo-15lf-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-Odeum-Apollo-15LF-15LF500-8-15-Professional-Woofer-8-ohm-295-648

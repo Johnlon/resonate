@@ -15,9 +15,32 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
-freq_low_hz: 80.0
-freq_high_hz: 17000.0
 specs:
-  power_rms_W: 10.0
-  freq_low_hz: 80.0
-  freq_high_hz: 17.0
+  Pe:  # rated power input (W)
+    value: 10.0
+    winner: vendor_page
+    sources:
+      vendor_page: 10.0
+  Fs:  # free air resonance (Hz)
+    value: 120.0
+    winner: vendor_page
+    sources:
+      vendor_page: 120.0
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 80.0
+    winner: vendor_page
+    sources:
+      vendor_page: 80.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 17.0
+    winner: vendor_page
+    sources:
+      vendor_page: 17.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/292-7814--visaton-frw10n-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Visaton-FRW10N8-4-Full-Range-Driver-8-Ohm-292-7814

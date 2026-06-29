@@ -15,9 +15,57 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
-freq_low_hz: 1500.0
-freq_high_hz: 25000.0
 specs:
-  power_rms_W: 30.0
-  freq_low_hz: 1500.0
-  freq_high_hz: 25000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.3
+    winner: vendor_page
+    sources:
+      vendor_page: 6.3
+  Qes:  # electrical Q factor
+    value: 1.19
+    winner: vendor_page
+    sources:
+      vendor_page: 1.19
+  Qts:  # total Q factor
+    value: 0.68
+    winner: vendor_page
+    sources:
+      vendor_page: 0.68
+  Qms:  # mechanical Q factor
+    value: 1.6
+    winner: vendor_page
+    sources:
+      vendor_page: 1.6
+  Le:  # voice coil inductance (H)
+    value: 0.028
+    winner: vendor_page
+    sources:
+      vendor_page: 0.028
+  Pe:  # rated power input (W)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  Fs:  # free air resonance (Hz)
+    value: 470.0
+    winner: vendor_page
+    sources:
+      vendor_page: 470.0
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 1500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1500.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 25000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 25000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/298-1108-1110-1112-1114--wavecor-tw030wa05-06-07-08-specifications.pdf
+  vendor_page: https://www.parts-express.com/Wavecor-TW030WA07-30mm-Textile-Dome-Tweeter-with-Rear-Chamber-8-Ohm-298-1112

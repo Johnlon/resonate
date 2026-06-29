@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
-freq_low_hz: 85.0
-freq_high_hz: 20000.0
 specs:
-  power_rms_W: 15.0
-  freq_low_hz: 85.0
-  freq_high_hz: 20000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.5
+    winner: vendor_page
+    sources:
+      vendor_page: 3.5
+  Sd:  # effective piston area (m²)
+    value: 0.00156
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00156
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00126
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00126
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0035
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0035
+  Qes:  # electrical Q factor
+    value: 0.68
+    winner: vendor_page
+    sources:
+      vendor_page: 0.68
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.2528530058419843
+    winner: vendor_page
+    sources:
+      vendor_page: 0.2528530058419843
+  BL:  # force factor (T·m)
+    value: 2.68
+    winner: vendor_page
+    sources:
+      vendor_page: 2.68
+  Qts:  # total Q factor
+    value: 0.61
+    winner: vendor_page
+    sources:
+      vendor_page: 0.61
+  Qms:  # mechanical Q factor
+    value: 5.56
+    winner: vendor_page
+    sources:
+      vendor_page: 5.56
+  Le:  # voice coil inductance (H)
+    value: 0.00044
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00044
+  Pe:  # rated power input (W)
+    value: 15.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15.0
+  Fs:  # free air resonance (Hz)
+    value: 89.5
+    winner: vendor_page
+    sources:
+      vendor_page: 89.5
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.000849504
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000849504
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0025
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0025
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 85.0
+    winner: vendor_page
+    sources:
+      vendor_page: 85.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 20000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/290-204-dayton-audio-nd65-4-specifications.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-ND65-4-2-1-2-Aluminum-Cone-Full-Range-Driver-290-204

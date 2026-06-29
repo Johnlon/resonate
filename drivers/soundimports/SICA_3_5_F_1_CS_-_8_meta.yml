@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 45.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+  Sd:  # effective piston area (m²)
+    value: 0.00385
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00385
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00067
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00067
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0015
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0015
+  Qes:  # electrical Q factor
+    value: 0.63
+    winner: vendor_page
+    sources:
+      vendor_page: 0.63
+  BL:  # force factor (T·m)
+    value: 4.2
+    winner: vendor_page
+    sources:
+      vendor_page: 4.2
+  Qts:  # total Q factor
+    value: 0.57
+    winner: vendor_page
+    sources:
+      vendor_page: 0.57
+  Qms:  # mechanical Q factor
+    value: 6.52
+    winner: vendor_page
+    sources:
+      vendor_page: 6.52
+  Le:  # voice coil inductance (H)
+    value: 0.00021
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00021
+  Pe:  # rated power input (W)
+    value: 45.0
+    winner: vendor_page
+    sources:
+      vendor_page: 45.0
+  Fs:  # free air resonance (Hz)
+    value: 107.0
+    winner: vendor_page
+    sources:
+      vendor_page: 107.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0014
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0014
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0033
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0033
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sica-35-f-1-cs-8.html

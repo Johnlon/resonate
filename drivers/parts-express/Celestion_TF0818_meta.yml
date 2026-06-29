@@ -19,8 +19,82 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-2060
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 100.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.72
+    winner: vendor_page
+    sources:
+      vendor_page: 6.72
+  Sd:  # effective piston area (m²)
+    value: 0.022680000000000002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.022680000000000002
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00013
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00013
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005
+  Qes:  # electrical Q factor
+    value: 0.493
+    winner: vendor_page
+    sources:
+      vendor_page: 0.493
+  Rms:  # mechanical resistance (kg/s)
+    value: 3.72
+    winner: vendor_page
+    sources:
+      vendor_page: 3.72
+  BL:  # force factor (T·m)
+    value: 12.95
+    winner: vendor_page
+    sources:
+      vendor_page: 12.95
+  Qts:  # total Q factor
+    value: 0.429
+    winner: vendor_page
+    sources:
+      vendor_page: 0.429
+  Qms:  # mechanical Q factor
+    value: 3.311
+    winner: vendor_page
+    sources:
+      vendor_page: 3.311
+  Le:  # voice coil inductance (H)
+    value: 0.00075
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00075
+  Pe:  # rated power input (W)
+    value: 1.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0
+  Fs:  # free air resonance (Hz)
+    value: 100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 100.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.009441
+    winner: vendor_page
+    sources:
+      vendor_page: 0.009441
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.01957
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01957
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-2060--tf0818-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Celestion-TF0818-8-Professional-Speaker-150W-294-2060

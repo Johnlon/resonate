@@ -19,8 +19,67 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 298-1220
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 65.0
+  Sd:  # effective piston area (m²)
+    value: 0.00115
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00115
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0001
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0004
+  Qes:  # electrical Q factor
+    value: 1.78
+    winner: vendor_page
+    sources:
+      vendor_page: 1.78
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.26
+    winner: vendor_page
+    sources:
+      vendor_page: 0.26
+  Qts:  # total Q factor
+    value: 1.46
+    winner: vendor_page
+    sources:
+      vendor_page: 1.46
+  Qms:  # mechanical Q factor
+    value: 8.2
+    winner: vendor_page
+    sources:
+      vendor_page: 8.2
+  Pe:  # rated power input (W)
+    value: 65.0
+    winner: vendor_page
+    sources:
+      vendor_page: 65.0
+  Fs:  # free air resonance (Hz)
+    value: 750.0
+    winner: vendor_page
+    sources:
+      vendor_page: 750.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.019
+    winner: vendor_page
+    sources:
+      vendor_page: 0.019
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00045
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00045
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/298-1220--tw030wa22-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Wavecor-TW030WA22-30mm-Graphene-Dome-Tweeter-8-Ohm-298-1220

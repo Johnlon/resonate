@@ -15,9 +15,87 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 150.0
-freq_high_hz: 8000.0
 specs:
-  freq_low_hz: 400.0
-  freq_high_hz: 8.0
-  power_rms_W: 240.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
+  Sd:  # effective piston area (m²)
+    value: 0.0132
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0132
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0025
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0025
+  Qes:  # electrical Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.0326278461364713
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0326278461364713
+  BL:  # force factor (T·m)
+    value: 8.2
+    winner: vendor_page
+    sources:
+      vendor_page: 8.2
+  Qts:  # total Q factor
+    value: 0.36
+    winner: vendor_page
+    sources:
+      vendor_page: 0.36
+  Qms:  # mechanical Q factor
+    value: 4.6
+    winner: vendor_page
+    sources:
+      vendor_page: 4.6
+  Le:  # voice coil inductance (H)
+    value: 0.0006
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0006
+  Pe:  # rated power input (W)
+    value: 240.0
+    winner: vendor_page
+    sources:
+      vendor_page: 240.0
+  Fs:  # free air resonance (Hz)
+    value: 126.0
+    winner: vendor_page
+    sources:
+      vendor_page: 126.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0059465279999999995
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0059465279999999995
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.006
+    winner: vendor_page
+    sources:
+      vendor_page: 0.006
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 400.0
+    winner: vendor_page
+    sources:
+      vendor_page: 400.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-650--bc-6pev13-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/B-C-6PEV13-6-1-2-Midrange-Speaker-294-650

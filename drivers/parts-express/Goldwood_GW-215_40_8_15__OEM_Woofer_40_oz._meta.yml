@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 20.0
-freq_high_hz: 2500.0
 specs:
-  power_rms_W: 150.0
-  freq_low_hz: 20.0
-  freq_high_hz: 2500.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.15
+    winner: vendor_page
+    sources:
+      vendor_page: 7.15
+  Sd:  # effective piston area (m²)
+    value: 0.08234
+    winner: vendor_page
+    sources:
+      vendor_page: 0.08234
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00027
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00027
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0035
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0035
+  Qes:  # electrical Q factor
+    value: 1.38
+    winner: vendor_page
+    sources:
+      vendor_page: 1.38
+  Rms:  # mechanical resistance (kg/s)
+    value: 3.6875221544448706
+    winner: vendor_page
+    sources:
+      vendor_page: 3.6875221544448706
+  BL:  # force factor (T·m)
+    value: 9.93
+    winner: vendor_page
+    sources:
+      vendor_page: 9.93
+  Qts:  # total Q factor
+    value: 1.09
+    winner: vendor_page
+    sources:
+      vendor_page: 1.09
+  Qms:  # mechanical Q factor
+    value: 5.15
+    winner: vendor_page
+    sources:
+      vendor_page: 5.15
+  Le:  # voice coil inductance (H)
+    value: 0.0008399999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0008399999999999999
+  Pe:  # rated power input (W)
+    value: 150.0
+    winner: vendor_page
+    sources:
+      vendor_page: 150.0
+  Fs:  # free air resonance (Hz)
+    value: 30.53
+    winner: vendor_page
+    sources:
+      vendor_page: 30.53
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.261080896
+    winner: vendor_page
+    sources:
+      vendor_page: 0.261080896
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.099
+    winner: vendor_page
+    sources:
+      vendor_page: 0.099
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 2500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2500.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/290-346-goldwood-gw-215408-specifications.pdf
+  vendor_page: https://www.parts-express.com/Goldwood-GW-215-40-8-15-OEM-Woofer-40-oz.-290-346

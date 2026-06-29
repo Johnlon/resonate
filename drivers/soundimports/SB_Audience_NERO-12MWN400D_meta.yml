@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 400.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.4
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4
+  Sd:  # effective piston area (m²)
+    value: 0.05433
+    winner: vendor_page
+    sources:
+      vendor_page: 0.05433
+  Cms:  # mechanical compliance (m/N)
+    value: 7.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 7.0e-05
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00713
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00713
+  Qes:  # electrical Q factor
+    value: 0.55
+    winner: vendor_page
+    sources:
+      vendor_page: 0.55
+  BL:  # force factor (T·m)
+    value: 17.8
+    winner: vendor_page
+    sources:
+      vendor_page: 17.8
+  Qts:  # total Q factor
+    value: 0.52
+    winner: vendor_page
+    sources:
+      vendor_page: 0.52
+  Qms:  # mechanical Q factor
+    value: 8.98
+    winner: vendor_page
+    sources:
+      vendor_page: 8.98
+  Le:  # voice coil inductance (H)
+    value: 0.00019
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00019
+  Pe:  # rated power input (W)
+    value: 400.0
+    winner: vendor_page
+    sources:
+      vendor_page: 400.0
+  Fs:  # free air resonance (Hz)
+    value: 66.0
+    winner: vendor_page
+    sources:
+      vendor_page: 66.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0311
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0311
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0788
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0788
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sb-audience-nero-12mwn400d.html

@@ -15,9 +15,77 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: woofer
-freq_low_hz: 32.0
-freq_high_hz: 9500.0
 specs:
-  freq_low_hz: 95.0
-  freq_high_hz: 22000.0
-  power_rms_W: 25.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.7
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7
+  Sd:  # effective piston area (m²)
+    value: 0.0052899999999999996
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0052899999999999996
+  Xmax:  # one-way linear excursion (m)
+    value: 0.007
+    winner: vendor_page
+    sources:
+      vendor_page: 0.007
+  Qes:  # electrical Q factor
+    value: 0.69
+    winner: vendor_page
+    sources:
+      vendor_page: 0.69
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.6731984257692415
+    winner: vendor_page
+    sources:
+      vendor_page: 0.6731984257692415
+  Qts:  # total Q factor
+    value: 0.56
+    winner: vendor_page
+    sources:
+      vendor_page: 0.56
+  Qms:  # mechanical Q factor
+    value: 2.94
+    winner: vendor_page
+    sources:
+      vendor_page: 2.94
+  Pe:  # rated power input (W)
+    value: 25.0
+    winner: vendor_page
+    sources:
+      vendor_page: 25.0
+  Fs:  # free air resonance (Hz)
+    value: 42.0
+    winner: vendor_page
+    sources:
+      vendor_page: 42.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.007362368
+    winner: vendor_page
+    sources:
+      vendor_page: 0.007362368
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0075
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0075
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 95.0
+    winner: vendor_page
+    sources:
+      vendor_page: 95.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 22000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 22000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/292-7844--visaton-kt100v4-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Visaton-KT100V4-4-Woofer-4-Ohm-292-7844

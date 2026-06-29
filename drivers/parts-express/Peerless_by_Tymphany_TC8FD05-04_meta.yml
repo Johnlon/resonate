@@ -19,11 +19,92 @@ obsolete: null
 dq_issue: missing_Sd
 community: null
 fetched_sku: 264-1656
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  freq_low_hz: 100.0
-  freq_high_hz: 20.0
-  sensitivity_db: 4.0
-  power_rms_W: 20.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.16
+    winner: vendor_page
+    sources:
+      vendor_page: 3.16
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000574
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000574
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0016
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0016
+  Qes:  # electrical Q factor
+    value: 1.03
+    winner: vendor_page
+    sources:
+      vendor_page: 1.03
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.5824413046655362
+    winner: vendor_page
+    sources:
+      vendor_page: 0.5824413046655362
+  BL:  # force factor (T·m)
+    value: 2.379
+    winner: vendor_page
+    sources:
+      vendor_page: 2.379
+  Qts:  # total Q factor
+    value: 0.78
+    winner: vendor_page
+    sources:
+      vendor_page: 0.78
+  Qms:  # mechanical Q factor
+    value: 3.15
+    winner: vendor_page
+    sources:
+      vendor_page: 3.15
+  Le:  # voice coil inductance (H)
+    value: 2.9999999999999997e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 2.9999999999999997e-05
+  Pe:  # rated power input (W)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  Fs:  # free air resonance (Hz)
+    value: 146.0
+    winner: vendor_page
+    sources:
+      vendor_page: 146.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0008778208
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0008778208
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.002
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 100.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/264-1656--tympany-tc8fd05-04-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Peerless-TC8FD05-04-3-Paper-Cone-Full-Range-Driver-264-1656

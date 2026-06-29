@@ -15,7 +15,85 @@ community: null
 fetched_sku: null
 driver_type: mid-bass
 specs:
-  power_rms_W: 35.0
-  sensitivity_db: 87.0
-  voice_coil_dia_mm: 25.0
-  linear_xmax_mm: 5.4
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.5
+    winner: vendor_page
+    sources:
+      vendor_page: 6.5
+  Cms:  # mechanical compliance (m/N)
+    value: 0.001051
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001051
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0027
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0027
+  Qes:  # electrical Q factor
+    value: 0.37
+    winner: vendor_page
+    sources:
+      vendor_page: 0.37
+  BL:  # force factor (T·m)
+    value: 7.5
+    winner: vendor_page
+    sources:
+      vendor_page: 7.5
+  Qts:  # total Q factor
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
+  Qms:  # mechanical Q factor
+    value: 6.51
+    winner: vendor_page
+    sources:
+      vendor_page: 6.51
+  Pe:  # rated power input (W)
+    value: 35.0
+    winner: vendor_page
+    sources:
+      vendor_page: 35.0
+  Fs:  # free air resonance (Hz)
+    value: 47.0
+    winner: vendor_page
+    sources:
+      vendor_page: 47.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0113
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0113
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0107
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0107
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 87.0
+    winner: vendor_page
+    sources:
+      vendor_page: 87.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 25.0
+    winner: vendor_page
+    sources:
+      vendor_page: 25.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/hivi-m5n-b.html

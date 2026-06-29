@@ -15,5 +15,56 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 10.0
-  voice_coil_dia_mm: 25.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.147
+    winner: vendor_page
+    sources:
+      vendor_page: 7.147
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000534
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000534
+  BL:  # force factor (T·m)
+    value: 2.999
+    winner: vendor_page
+    sources:
+      vendor_page: 2.999
+  Le:  # voice coil inductance (H)
+    value: 0.00028
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00028
+  Pe:  # rated power input (W)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+  Fs:  # free air resonance (Hz)
+    value: 298.0
+    winner: vendor_page
+    sources:
+      vendor_page: 298.0
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00077
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00077
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  power_peak_W:  # peak power handling (W)
+    value: 10.0
+    winner: vendor_page
+    sources:
+      vendor_page: 10.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 25.0
+    winner: vendor_page
+    sources:
+      vendor_page: 25.0
+_sources:
+  datasheet: https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/BCE-1/pdf_Dayton%20Audio_BCE-1_2.pdf
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-daex25.html

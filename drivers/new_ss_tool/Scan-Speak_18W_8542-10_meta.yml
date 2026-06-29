@@ -43,7 +43,73 @@ manu_page_fields:
 - SPL
 - Sd
 - Vas
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  sensitivity_db: 88.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.7
+    winner: manu_page
+    sources:
+      manu_page: 5.7
+  Sd:  # effective piston area (m²)
+    value: 0.0135
+    winner: manu_page
+    sources:
+      manu_page: 0.0135
+  Cms:  # mechanical compliance (m/N)
+    value: 0.001
+    winner: manu_page
+    sources:
+      manu_page: 0.001
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0065
+    winner: manu_page
+    sources:
+      manu_page: 0.0065
+  Qes:  # electrical Q factor
+    value: 0.44
+    winner: manu_page
+    sources:
+      manu_page: 0.44
+  BL:  # force factor (T·m)
+    value: 6.9
+    winner: manu_page
+    sources:
+      manu_page: 6.9
+  Qts:  # total Q factor
+    value: 0.35
+    winner: manu_page
+    sources:
+      manu_page: 0.35
+  Qms:  # mechanical Q factor
+    value: 1.7
+    winner: manu_page
+    sources:
+      manu_page: 1.7
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 88.0
+    winner: manu_page
+    sources:
+      manu_page: 88.0
+  Le:  # voice coil inductance (H)
+    value: 0.0002
+    winner: manu_page
+    sources:
+      manu_page: 0.0002
+  Fs:  # free air resonance (Hz)
+    value: 43.0
+    winner: manu_page
+    sources:
+      manu_page: 43.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.026
+    winner: manu_page
+    sources:
+      manu_page: 0.026
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.01369
+    winner: manu_page
+    sources:
+      manu_page: 0.01369
+_sources:
+  datasheet: https://www.scan-speak.dk/datasheet/pdf/18w-8542-10.pdf
+  adv_datasheet: https://www.scan-speak.dk/datasheet/adv/18w-8542-10.pdf
+  manu_page: https://www.scan-speak.dk/product/18w-8542-10/

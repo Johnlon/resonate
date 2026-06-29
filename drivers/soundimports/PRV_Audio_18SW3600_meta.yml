@@ -15,4 +15,65 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 3600.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
+  Sd:  # effective piston area (m²)
+    value: 0.134
+    winner: vendor_page
+    sources:
+      vendor_page: 0.134
+  Xmax:  # one-way linear excursion (m)
+    value: 0.01325
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01325
+  Qes:  # electrical Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  BL:  # force factor (T·m)
+    value: 25.53
+    winner: vendor_page
+    sources:
+      vendor_page: 25.53
+  Qts:  # total Q factor
+    value: 0.36
+    winner: vendor_page
+    sources:
+      vendor_page: 0.36
+  Qms:  # mechanical Q factor
+    value: 10.72
+    winner: vendor_page
+    sources:
+      vendor_page: 10.72
+  Le:  # voice coil inductance (H)
+    value: 0.00275
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00275
+  Pe:  # rated power input (W)
+    value: 3600.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3600.0
+  Fs:  # free air resonance (Hz)
+    value: 32.5
+    winner: vendor_page
+    sources:
+      vendor_page: 32.5
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.2797
+    winner: vendor_page
+    sources:
+      vendor_page: 0.2797
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.2151
+    winner: vendor_page
+    sources:
+      vendor_page: 0.2151
+_sources:
+  vendor_page: https://www.soundimports.eu/en/prv-audio-18sw3600.html

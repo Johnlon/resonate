@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 5.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.4
+    winner: vendor_page
+    sources:
+      vendor_page: 3.4
+  Sd:  # effective piston area (m²)
+    value: 0.002827
+    winner: vendor_page
+    sources:
+      vendor_page: 0.002827
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0016
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0016
+  Xmax:  # one-way linear excursion (m)
+    value: 0.003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.003
+  Qes:  # electrical Q factor
+    value: 0.6366
+    winner: vendor_page
+    sources:
+      vendor_page: 0.6366
+  BL:  # force factor (T·m)
+    value: 2.49
+    winner: vendor_page
+    sources:
+      vendor_page: 2.49
+  Qts:  # total Q factor
+    value: 0.4986
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4986
+  Qms:  # mechanical Q factor
+    value: 2.301
+    winner: vendor_page
+    sources:
+      vendor_page: 2.301
+  Le:  # voice coil inductance (H)
+    value: 0.00039
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00039
+  Pe:  # rated power input (W)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+  Fs:  # free air resonance (Hz)
+    value: 94.54
+    winner: vendor_page
+    sources:
+      vendor_page: 94.54
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0017845
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0017845
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00193
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00193
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/markaudio-alpair-5-grey.html

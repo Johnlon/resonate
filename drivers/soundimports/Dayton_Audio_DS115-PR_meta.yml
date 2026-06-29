@@ -15,4 +15,40 @@ community: null
 fetched_sku: null
 driver_type: pr
 specs:
-  linear_xmax_mm: 12.0
+  Sd:  # effective piston area (m²)
+    value: 0.00541
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00541
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00227
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00227
+  Xmax:  # one-way linear excursion (m)
+    value: 0.006
+    winner: vendor_page
+    sources:
+      vendor_page: 0.006
+  Qms:  # mechanical Q factor
+    value: 3.66
+    winner: vendor_page
+    sources:
+      vendor_page: 3.66
+  Fs:  # free air resonance (Hz)
+    value: 29.3
+    winner: vendor_page
+    sources:
+      vendor_page: 29.3
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00033
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00033
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.013
+    winner: vendor_page
+    sources:
+      vendor_page: 0.013
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-ds115-pr.html

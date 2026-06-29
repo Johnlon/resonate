@@ -19,10 +19,87 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 292-7818
-field_provenance: null
-freq_low_hz: 100.0
-freq_high_hz: 20000.0
 specs:
-  power_rms_W: 15.0
-  freq_low_hz: 100.0
-  freq_high_hz: 20000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.1
+    winner: vendor_page
+    sources:
+      vendor_page: 4.1
+  Sd:  # effective piston area (m²)
+    value: 0.003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.003
+  Xmax:  # one-way linear excursion (m)
+    value: 0.003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.003
+  Qes:  # electrical Q factor
+    value: 1.33
+    winner: vendor_page
+    sources:
+      vendor_page: 1.33
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.0988379800571322
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0988379800571322
+  BL:  # force factor (T·m)
+    value: 2.8
+    winner: vendor_page
+    sources:
+      vendor_page: 2.8
+  Qts:  # total Q factor
+    value: 0.88
+    winner: vendor_page
+    sources:
+      vendor_page: 0.88
+  Qms:  # mechanical Q factor
+    value: 2.62
+    winner: vendor_page
+    sources:
+      vendor_page: 2.62
+  Le:  # voice coil inductance (H)
+    value: 0.0003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0003
+  Pe:  # rated power input (W)
+    value: 15.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15.0
+  Fs:  # free air resonance (Hz)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.000283168
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000283168
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0029
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0029
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 100.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 20000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/292-7818--visaton-fr8wp-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Visaton-FR8WP-8-3.3-Full-Range-Driver-8-Ohm-White-292-7818

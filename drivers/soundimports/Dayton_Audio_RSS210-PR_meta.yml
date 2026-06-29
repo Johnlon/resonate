@@ -15,4 +15,40 @@ community: null
 fetched_sku: null
 driver_type: pr
 specs:
-  linear_xmax_mm: 40.0
+  Sd:  # effective piston area (m²)
+    value: 0.0213
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0213
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00061
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00061
+  Xmax:  # one-way linear excursion (m)
+    value: 0.02
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02
+  Qms:  # mechanical Q factor
+    value: 10.7
+    winner: vendor_page
+    sources:
+      vendor_page: 10.7
+  Fs:  # free air resonance (Hz)
+    value: 19.5
+    winner: vendor_page
+    sources:
+      vendor_page: 19.5
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0392
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0392
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.11
+    winner: vendor_page
+    sources:
+      vendor_page: 0.11
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-rss210-pr.html

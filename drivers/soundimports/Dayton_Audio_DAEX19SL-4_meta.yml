@@ -15,5 +15,36 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 4.0
-  voice_coil_dia_mm: 19.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 2.94
+    winner: vendor_page
+    sources:
+      vendor_page: 2.94
+  Le:  # voice coil inductance (H)
+    value: 1.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0e-05
+  Pe:  # rated power input (W)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  Fs:  # free air resonance (Hz)
+    value: 426.0
+    winner: vendor_page
+    sources:
+      vendor_page: 426.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 19.0
+    winner: vendor_page
+    sources:
+      vendor_page: 19.0
+_sources:
+  datasheet: https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/BCE-1/pdf_Dayton%20Audio_BCE-1_2.pdf
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-daex19sl-4.html

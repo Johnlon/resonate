@@ -15,7 +15,105 @@ community: null
 fetched_sku: null
 driver_type: mid-bass
 specs:
-  power_rms_W: 400.0
-  sensitivity_db: 92.0
-  voice_coil_dia_mm: 44.0
-  linear_xmax_mm: 11.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 12.6
+    winner: vendor_page
+    sources:
+      vendor_page: 12.6
+  Sd:  # effective piston area (m²)
+    value: 0.0133
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0133
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0004
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0055
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0055
+  Qes:  # electrical Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0
+  BL:  # force factor (T·m)
+    value: 14.2
+    winner: vendor_page
+    sources:
+      vendor_page: 14.2
+  Qts:  # total Q factor
+    value: 0.36
+    winner: vendor_page
+    sources:
+      vendor_page: 0.36
+  Qms:  # mechanical Q factor
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  Le:  # voice coil inductance (H)
+    value: 0.00034
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00034
+  Pe:  # rated power input (W)
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
+  Fs:  # free air resonance (Hz)
+    value: 65.0
+    winner: vendor_page
+    sources:
+      vendor_page: 65.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0099
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0099
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.015
+    winner: vendor_page
+    sources:
+      vendor_page: 0.015
+  Znom:  # nominal impedance (Ω)
+    value: 16.0
+    winner: vendor_page
+    sources:
+      vendor_page: 16.0
+  power_peak_W:  # peak power handling (W)
+    value: 400.0
+    winner: vendor_page
+    sources:
+      vendor_page: 400.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 92.0
+    winner: vendor_page
+    sources:
+      vendor_page: 92.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 60.0
+    winner: vendor_page
+    sources:
+      vendor_page: 60.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 6000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6000.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 44.0
+    winner: vendor_page
+    sources:
+      vendor_page: 44.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/faitalpro-6rs140-16p.html

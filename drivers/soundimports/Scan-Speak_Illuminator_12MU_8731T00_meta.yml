@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 80.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.9
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9
+  Sd:  # effective piston area (m²)
+    value: 0.0058
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0058
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00124
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00124
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0034
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0034
+  Qes:  # electrical Q factor
+    value: 0.31
+    winner: vendor_page
+    sources:
+      vendor_page: 0.31
+  BL:  # force factor (T·m)
+    value: 6.1
+    winner: vendor_page
+    sources:
+      vendor_page: 6.1
+  Qts:  # total Q factor
+    value: 0.29
+    winner: vendor_page
+    sources:
+      vendor_page: 0.29
+  Qms:  # mechanical Q factor
+    value: 3.63
+    winner: vendor_page
+    sources:
+      vendor_page: 3.63
+  Le:  # voice coil inductance (H)
+    value: 0.00125
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00125
+  Pe:  # rated power input (W)
+    value: 80.0
+    winner: vendor_page
+    sources:
+      vendor_page: 80.0
+  Fs:  # free air resonance (Hz)
+    value: 66.0
+    winner: vendor_page
+    sources:
+      vendor_page: 66.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0002
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0047
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0047
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/scan-speak-12mu-8731t00.html

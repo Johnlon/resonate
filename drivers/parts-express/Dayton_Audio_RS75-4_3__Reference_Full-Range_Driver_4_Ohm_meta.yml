@@ -15,9 +15,87 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
-freq_low_hz: 170.0
-freq_high_hz: 20000.0
 specs:
-  power_rms_W: 15.0
-  freq_low_hz: 170.0
-  freq_high_hz: 20000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.1
+    winner: vendor_page
+    sources:
+      vendor_page: 3.1
+  Sd:  # effective piston area (m²)
+    value: 0.0012
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0012
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0007199999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0007199999999999999
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0011
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0011
+  Qes:  # electrical Q factor
+    value: 0.97
+    winner: vendor_page
+    sources:
+      vendor_page: 0.97
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.21238475335206003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.21238475335206003
+  BL:  # force factor (T·m)
+    value: 2.01
+    winner: vendor_page
+    sources:
+      vendor_page: 2.01
+  Qts:  # total Q factor
+    value: 0.83
+    winner: vendor_page
+    sources:
+      vendor_page: 0.83
+  Qms:  # mechanical Q factor
+    value: 5.76
+    winner: vendor_page
+    sources:
+      vendor_page: 5.76
+  Pe:  # rated power input (W)
+    value: 15.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15.0
+  Fs:  # free air resonance (Hz)
+    value: 177.0
+    winner: vendor_page
+    sources:
+      vendor_page: 177.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.000141584
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000141584
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0011
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0011
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 170.0
+    winner: vendor_page
+    sources:
+      vendor_page: 170.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 20000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/295-380--dayton-audio-rs75-4-specification-sheet.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-RS75-4-3-Reference-Full-Range-Driver-4-Ohm-295-380

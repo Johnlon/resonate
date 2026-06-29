@@ -15,5 +15,60 @@ community: null
 fetched_sku: null
 driver_type: tweeter
 specs:
-  power_rms_W: 20.0
-  sensitivity_db: 91.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.2
+    winner: vendor_page
+    sources:
+      vendor_page: 3.2
+  Qes:  # electrical Q factor
+    value: 2.63
+    winner: vendor_page
+    sources:
+      vendor_page: 2.63
+  Qts:  # total Q factor
+    value: 1.45
+    winner: vendor_page
+    sources:
+      vendor_page: 1.45
+  Qms:  # mechanical Q factor
+    value: 3.24
+    winner: vendor_page
+    sources:
+      vendor_page: 3.24
+  Le:  # voice coil inductance (H)
+    value: 0.00048
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00048
+  Pe:  # rated power input (W)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  Fs:  # free air resonance (Hz)
+    value: 1470.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1470.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 91.0
+    winner: vendor_page
+    sources:
+      vendor_page: 91.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 2.9
+    winner: vendor_page
+    sources:
+      vendor_page: 2.9
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-nd25ta-4.html

@@ -15,4 +15,15 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 20.0
+  Pe:  # rated power input (W)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  Fs:  # free air resonance (Hz)
+    value: 104.1
+    winner: vendor_page
+    sources:
+      vendor_page: 104.1
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-ex25vcs-4.html

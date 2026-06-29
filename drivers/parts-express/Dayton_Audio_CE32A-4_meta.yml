@@ -20,8 +20,72 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 285-103
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 2.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.6
+    winner: vendor_page
+    sources:
+      vendor_page: 3.6
+  Sd:  # effective piston area (m²)
+    value: 0.000392
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000392
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00069
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00069
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0005
+  Qes:  # electrical Q factor
+    value: 1.24
+    winner: vendor_page
+    sources:
+      vendor_page: 1.24
+  BL:  # force factor (T·m)
+    value: 1.59
+    winner: vendor_page
+    sources:
+      vendor_page: 1.59
+  Qts:  # total Q factor
+    value: 0.86
+    winner: vendor_page
+    sources:
+      vendor_page: 0.86
+  Qms:  # mechanical Q factor
+    value: 2.86
+    winner: vendor_page
+    sources:
+      vendor_page: 2.86
+  Le:  # voice coil inductance (H)
+    value: 0.00015
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00015
+  Pe:  # rated power input (W)
+    value: 2.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0
+  Fs:  # free air resonance (Hz)
+    value: 262.0
+    winner: vendor_page
+    sources:
+      vendor_page: 262.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 1.4724735999999998e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 1.4724735999999998e-05
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/285-103-dayton-audio-ce32a-4-specifications-2940.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-CE32A-4-1-1-4-Mini-Speaker-4-Ohm-285-103

@@ -15,5 +15,30 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 40.0
-  sensitivity_db: 90.0
+  Pe:  # rated power input (W)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  Fs:  # free air resonance (Hz)
+    value: 3.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  power_peak_W:  # peak power handling (W)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 90.0
+    winner: vendor_page
+    sources:
+      vendor_page: 90.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dynavox-207630.html

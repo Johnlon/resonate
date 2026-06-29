@@ -15,9 +15,41 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
-freq_low_hz: 500.0
-freq_high_hz: 6500.0
 specs:
-  power_rms_W: 200.0
-  freq_low_hz: 500.0
-  freq_high_hz: 6500.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.3
+    winner: vendor_page
+    sources:
+      vendor_page: 6.3
+  Le:  # voice coil inductance (H)
+    value: 0.00019
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00019
+  Pe:  # rated power input (W)
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
+  Fs:  # free air resonance (Hz)
+    value: 380.0
+    winner: vendor_page
+    sources:
+      vendor_page: 380.0
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 500.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 6500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6500.0
+_sources:
+  vendor_page: https://www.parts-express.com/Morel-CAM-558-2-1-8-Soft-Dome-Midrange-287-025

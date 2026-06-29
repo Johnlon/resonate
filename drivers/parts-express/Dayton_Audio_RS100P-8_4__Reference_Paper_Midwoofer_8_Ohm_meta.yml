@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: woofer
-freq_low_hz: 90.0
-freq_high_hz: 12500.0
 specs:
-  freq_low_hz: 2019.1
-  freq_high_hz: 295.0
-  power_rms_W: 30.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.6
+    winner: vendor_page
+    sources:
+      vendor_page: 6.6
+  Sd:  # effective piston area (m²)
+    value: 0.00374
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00374
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00098
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00098
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0037
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0037
+  Qes:  # electrical Q factor
+    value: 0.71
+    winner: vendor_page
+    sources:
+      vendor_page: 0.71
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.7715059830393722
+    winner: vendor_page
+    sources:
+      vendor_page: 0.7715059830393722
+  BL:  # force factor (T·m)
+    value: 3.95
+    winner: vendor_page
+    sources:
+      vendor_page: 3.95
+  Qts:  # total Q factor
+    value: 0.54
+    winner: vendor_page
+    sources:
+      vendor_page: 0.54
+  Qms:  # mechanical Q factor
+    value: 2.18
+    winner: vendor_page
+    sources:
+      vendor_page: 2.18
+  Le:  # voice coil inductance (H)
+    value: 0.00051
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00051
+  Pe:  # rated power input (W)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  Fs:  # free air resonance (Hz)
+    value: 95.6
+    winner: vendor_page
+    sources:
+      vendor_page: 95.6
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.001699008
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001699008
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0028
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0028
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 2019.1
+    winner: vendor_page
+    sources:
+      vendor_page: 2019.1
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 295.0
+    winner: vendor_page
+    sources:
+      vendor_page: 295.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/295-359--dayton-audio-rs100p-8-specifications.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-RS100P-8-4-Reference-Paper-Midwoofer-8-Ohm-295-359

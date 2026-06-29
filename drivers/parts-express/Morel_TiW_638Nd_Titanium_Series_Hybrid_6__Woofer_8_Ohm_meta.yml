@@ -15,9 +15,77 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 40.0
-freq_high_hz: 4500.0
 specs:
-  power_rms_W: 40.0
-  freq_low_hz: 40.0
-  freq_high_hz: 4500.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.4
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00525
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00525
+  Qes:  # electrical Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.1309733552923256
+    winner: vendor_page
+    sources:
+      vendor_page: 1.1309733552923256
+  Qts:  # total Q factor
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
+  Qms:  # mechanical Q factor
+    value: 3.4
+    winner: vendor_page
+    sources:
+      vendor_page: 3.4
+  Le:  # voice coil inductance (H)
+    value: 0.00053
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00053
+  Pe:  # rated power input (W)
+    value: 150.0
+    winner: vendor_page
+    sources:
+      vendor_page: 150.0
+  Fs:  # free air resonance (Hz)
+    value: 36.0
+    winner: vendor_page
+    sources:
+      vendor_page: 36.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.020954432
+    winner: vendor_page
+    sources:
+      vendor_page: 0.020954432
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.017
+    winner: vendor_page
+    sources:
+      vendor_page: 0.017
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 4500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4500.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/297-103--morel-tiw-638nd-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Morel-TiW-638Nd-Titanium-Series-Hybrid-6-Woofer-8-Ohm-297-103

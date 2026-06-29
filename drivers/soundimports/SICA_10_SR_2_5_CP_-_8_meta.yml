@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 300.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
+  Sd:  # effective piston area (m²)
+    value: 0.0353
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0353
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000377
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000377
+  Xmax:  # one-way linear excursion (m)
+    value: 0.006
+    winner: vendor_page
+    sources:
+      vendor_page: 0.006
+  Qes:  # electrical Q factor
+    value: 0.34
+    winner: vendor_page
+    sources:
+      vendor_page: 0.34
+  BL:  # force factor (T·m)
+    value: 13.7
+    winner: vendor_page
+    sources:
+      vendor_page: 13.7
+  Qts:  # total Q factor
+    value: 0.32
+    winner: vendor_page
+    sources:
+      vendor_page: 0.32
+  Qms:  # mechanical Q factor
+    value: 6.35
+    winner: vendor_page
+    sources:
+      vendor_page: 6.35
+  Le:  # voice coil inductance (H)
+    value: 0.00116
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00116
+  Pe:  # rated power input (W)
+    value: 300.0
+    winner: vendor_page
+    sources:
+      vendor_page: 300.0
+  Fs:  # free air resonance (Hz)
+    value: 34.5
+    winner: vendor_page
+    sources:
+      vendor_page: 34.5
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0667
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0667
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0565
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0565
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sica-10-sr-25-cp-8.html

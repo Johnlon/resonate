@@ -16,8 +16,81 @@ dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  voice_coil_dia_mm: 29.0
-  Hg_mm: 2.5
-  linear_xmax_mm: 0.5
-  sensitivity_db: 93.0
-  power_rms_W: 80.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.2
+    winner: manu_page
+    sources:
+      manu_page: 6.2
+  Sd:  # effective piston area (m²)
+    value: 0.00096
+    winner: manu_page
+    sources:
+      manu_page: 0.00096
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00025
+    winner: manu_page
+    sources:
+      manu_page: 0.00025
+  Qes:  # electrical Q factor
+    value: 0.65
+    winner: manu_page
+    sources:
+      manu_page: 0.65
+  BL:  # force factor (T·m)
+    value: 4.1
+    winner: manu_page
+    sources:
+      manu_page: 4.1
+  Qts:  # total Q factor
+    value: 0.46
+    winner: manu_page
+    sources:
+      manu_page: 0.46
+  Qms:  # mechanical Q factor
+    value: 1.61
+    winner: manu_page
+    sources:
+      manu_page: 1.61
+  Le:  # voice coil inductance (H)
+    value: 4.0e-05
+    winner: manu_page
+    sources:
+      manu_page: 4.0e-05
+  Pe:  # rated power input (W)
+    value: 80.0
+    winner: manu_page
+    sources:
+      manu_page: 80.0
+  Fs:  # free air resonance (Hz)
+    value: 650.0
+    winner: manu_page
+    sources:
+      manu_page: 650.0
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00043
+    winner: manu_page
+    sources:
+      manu_page: 0.00043
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: manu_page
+    sources:
+      manu_page: 8.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 29.0
+    winner: manu_page
+    sources:
+      manu_page: 29.0
+  Hg_mm:  # magnetic gap height (mm)
+    value: 2.5
+    winner: manu_page
+    sources:
+      manu_page: 2.5
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 93.0
+    winner: manu_page
+    sources:
+      manu_page: 93.0
+_sources:
+  datasheet: https://sbacoustics.com/wp-content/uploads/2020/05/SATORI-TW29DN-B-8.pdf
+  manu_page: https://sbacoustics.com/product/satori-tw29dn-b-8/

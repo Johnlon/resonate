@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 40.0
-freq_high_hz: 800.0
 specs:
-  power_rms_W: 80.0
-  freq_low_hz: 40.0
-  freq_high_hz: 800.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.8
+    winner: vendor_page
+    sources:
+      vendor_page: 3.8
+  Sd:  # effective piston area (m²)
+    value: 0.02168
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02168
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00033
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00033
+  Xmax:  # one-way linear excursion (m)
+    value: 0.006
+    winner: vendor_page
+    sources:
+      vendor_page: 0.006
+  Qes:  # electrical Q factor
+    value: 1.13
+    winner: vendor_page
+    sources:
+      vendor_page: 1.13
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.3124443661712215
+    winner: vendor_page
+    sources:
+      vendor_page: 2.3124443661712215
+  BL:  # force factor (T·m)
+    value: 5.8
+    winner: vendor_page
+    sources:
+      vendor_page: 5.8
+  Qts:  # total Q factor
+    value: 0.89
+    winner: vendor_page
+    sources:
+      vendor_page: 0.89
+  Qms:  # mechanical Q factor
+    value: 4.33
+    winner: vendor_page
+    sources:
+      vendor_page: 4.33
+  Le:  # voice coil inductance (H)
+    value: 0.0008
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0008
+  Pe:  # rated power input (W)
+    value: 80.0
+    winner: vendor_page
+    sources:
+      vendor_page: 80.0
+  Fs:  # free air resonance (Hz)
+    value: 48.0
+    winner: vendor_page
+    sources:
+      vendor_page: 48.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.022087104
+    winner: vendor_page
+    sources:
+      vendor_page: 0.022087104
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0332
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0332
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 800.0
+    winner: vendor_page
+    sources:
+      vendor_page: 800.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/GRS%20Spec%20Sheets/292-480--grs-8sw-4-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/GRS-8SW-4-8-Poly-Cone-Subwoofer-4-Ohm-292-480

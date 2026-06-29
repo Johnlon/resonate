@@ -15,4 +15,50 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 120.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.3
+    winner: vendor_page
+    sources:
+      vendor_page: 5.3
+  Sd:  # effective piston area (m²)
+    value: 0.0032
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0032
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0005
+  BL:  # force factor (T·m)
+    value: 7.2
+    winner: vendor_page
+    sources:
+      vendor_page: 7.2
+  Le:  # voice coil inductance (H)
+    value: 0.00014
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00014
+  Pe:  # rated power input (W)
+    value: 120.0
+    winner: vendor_page
+    sources:
+      vendor_page: 120.0
+  Fs:  # free air resonance (Hz)
+    value: 450.0
+    winner: vendor_page
+    sources:
+      vendor_page: 450.0
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.002
+  Znom:  # nominal impedance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sb-acoustics-satori-md60n-6.html

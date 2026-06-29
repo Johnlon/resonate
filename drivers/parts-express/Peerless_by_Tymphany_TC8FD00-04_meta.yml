@@ -19,11 +19,92 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 264-1145
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  freq_low_hz: 120.0
-  freq_high_hz: 20.0
-  sensitivity_db: 4.0
-  power_rms_W: 25.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.3
+    winner: vendor_page
+    sources:
+      vendor_page: 3.3
+  Sd:  # effective piston area (m²)
+    value: 0.0033200000000000005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0033200000000000005
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0024
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0024
+  Qes:  # electrical Q factor
+    value: 1.23
+    winner: vendor_page
+    sources:
+      vendor_page: 1.23
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.5412879234225656
+    winner: vendor_page
+    sources:
+      vendor_page: 0.5412879234225656
+  BL:  # force factor (T·m)
+    value: 2.32
+    winner: vendor_page
+    sources:
+      vendor_page: 2.32
+  Qts:  # total Q factor
+    value: 0.92
+    winner: vendor_page
+    sources:
+      vendor_page: 0.92
+  Qms:  # mechanical Q factor
+    value: 3.7
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7
+  Le:  # voice coil inductance (H)
+    value: 2.9999999999999997e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 2.9999999999999997e-05
+  Pe:  # rated power input (W)
+    value: 25.0
+    winner: vendor_page
+    sources:
+      vendor_page: 25.0
+  Fs:  # free air resonance (Hz)
+    value: 125.0
+    winner: vendor_page
+    sources:
+      vendor_page: 125.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.000849504
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000849504
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0025499999999999997
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0025499999999999997
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 120.0
+    winner: vendor_page
+    sources:
+      vendor_page: 120.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/264-1145--tymphany-tc8fd00-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Peerless-TC8FD00-3-Full-Range-Speaker-4-Ohm-264-1145

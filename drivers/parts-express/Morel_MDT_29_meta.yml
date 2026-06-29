@@ -19,10 +19,47 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 277-010
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  freq_low_hz: 2019.1
-  freq_high_hz: 277.0
-  power_rms_W: 80.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
+  Sd:  # effective piston area (m²)
+    value: 0.0006
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0006
+  Qes:  # electrical Q factor
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  Pe:  # rated power input (W)
+    value: 80.0
+    winner: vendor_page
+    sources:
+      vendor_page: 80.0
+  Fs:  # free air resonance (Hz)
+    value: 900.0
+    winner: vendor_page
+    sources:
+      vendor_page: 900.0
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 2019.1
+    winner: vendor_page
+    sources:
+      vendor_page: 2019.1
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 277.0
+    winner: vendor_page
+    sources:
+      vendor_page: 277.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/277-010-morel-mdt-29-specifications.pdf
+  vendor_page: https://www.parts-express.com/Morel-MDT-29-1-1-8-Soft-Dome-Tweeter-277-010

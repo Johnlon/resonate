@@ -19,8 +19,77 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-5996
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 1.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  Sd:  # effective piston area (m²)
+    value: 0.0855
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0855
+  Xmax:  # one-way linear excursion (m)
+    value: 0.008
+    winner: vendor_page
+    sources:
+      vendor_page: 0.008
+  Qes:  # electrical Q factor
+    value: 0.36
+    winner: vendor_page
+    sources:
+      vendor_page: 0.36
+  Rms:  # mechanical resistance (kg/s)
+    value: 4.727839436058082
+    winner: vendor_page
+    sources:
+      vendor_page: 4.727839436058082
+  BL:  # force factor (T·m)
+    value: 20.1
+    winner: vendor_page
+    sources:
+      vendor_page: 20.1
+  Qts:  # total Q factor
+    value: 0.34
+    winner: vendor_page
+    sources:
+      vendor_page: 0.34
+  Qms:  # mechanical Q factor
+    value: 6.1
+    winner: vendor_page
+    sources:
+      vendor_page: 6.1
+  Le:  # voice coil inductance (H)
+    value: 0.00125
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00125
+  Pe:  # rated power input (W)
+    value: 1400.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1400.0
+  Fs:  # free air resonance (Hz)
+    value: 45.0
+    winner: vendor_page
+    sources:
+      vendor_page: 45.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.12600976
+    winner: vendor_page
+    sources:
+      vendor_page: 0.12600976
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.102
+    winner: vendor_page
+    sources:
+      vendor_page: 0.102
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-5996--bc-15ndl88-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/B-C-15NDL88-15-Neodymium-Woofer-294-5996

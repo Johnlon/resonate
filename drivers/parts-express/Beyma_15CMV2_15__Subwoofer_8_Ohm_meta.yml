@@ -15,10 +15,97 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
-freq_low_hz: 50.0
-freq_high_hz: 4000.0
 specs:
-  sensitivity_db: 97.0
-  power_rms_W: 350.0
-  freq_low_hz: 50.0
-  freq_high_hz: 4000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  Sd:  # effective piston area (m²)
+    value: 8.799999999999999e-06
+    winner: vendor_page
+    sources:
+      vendor_page: 8.799999999999999e-06
+  Cms:  # mechanical compliance (m/N)
+    value: 0.095
+    winner: vendor_page
+    sources:
+      vendor_page: 0.095
+  Xmax:  # one-way linear excursion (m)
+    value: 0.007
+    winner: vendor_page
+    sources:
+      vendor_page: 0.007
+  Qes:  # electrical Q factor
+    value: 0.55
+    winner: vendor_page
+    sources:
+      vendor_page: 0.55
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.007959723045241653
+    winner: vendor_page
+    sources:
+      vendor_page: 0.007959723045241653
+  BL:  # force factor (T·m)
+    value: 18.8
+    winner: vendor_page
+    sources:
+      vendor_page: 18.8
+  Qts:  # total Q factor
+    value: 0.49
+    winner: vendor_page
+    sources:
+      vendor_page: 0.49
+  Qms:  # mechanical Q factor
+    value: 4.1
+    winner: vendor_page
+    sources:
+      vendor_page: 4.1
+  Le:  # voice coil inductance (H)
+    value: 0.0012
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0012
+  Pe:  # rated power input (W)
+    value: 350.0
+    winner: vendor_page
+    sources:
+      vendor_page: 350.0
+  Fs:  # free air resonance (Hz)
+    value: 49.0
+    winner: vendor_page
+    sources:
+      vendor_page: 49.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.103922656
+    winner: vendor_page
+    sources:
+      vendor_page: 0.103922656
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.000106
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000106
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 97.0
+    winner: vendor_page
+    sources:
+      vendor_page: 97.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 4000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/253-030--15cmv2-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Beyma-15CMV2-15-Subwoofer-8-Ohm-253-030

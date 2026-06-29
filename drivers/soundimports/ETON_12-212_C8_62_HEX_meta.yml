@@ -15,7 +15,105 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 400.0
-  sensitivity_db: 92.0
-  voice_coil_dia_mm: 62.0
-  linear_xmax_mm: 17.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.2
+    winner: vendor_page
+    sources:
+      vendor_page: 6.2
+  Sd:  # effective piston area (m²)
+    value: 0.0515
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0515
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00047
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00047
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0085
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0085
+  Qes:  # electrical Q factor
+    value: 0.32
+    winner: vendor_page
+    sources:
+      vendor_page: 0.32
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.13
+    winner: vendor_page
+    sources:
+      vendor_page: 2.13
+  BL:  # force factor (T·m)
+    value: 15.7
+    winner: vendor_page
+    sources:
+      vendor_page: 15.7
+  Qts:  # total Q factor
+    value: 0.31
+    winner: vendor_page
+    sources:
+      vendor_page: 0.31
+  Qms:  # mechanical Q factor
+    value: 7.15
+    winner: vendor_page
+    sources:
+      vendor_page: 7.15
+  Le:  # voice coil inductance (H)
+    value: 0.00157
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00157
+  Pe:  # rated power input (W)
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
+  Fs:  # free air resonance (Hz)
+    value: 24.0
+    winner: vendor_page
+    sources:
+      vendor_page: 24.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.176
+    winner: vendor_page
+    sources:
+      vendor_page: 0.176
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0927
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0927
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  power_peak_W:  # peak power handling (W)
+    value: 400.0
+    winner: vendor_page
+    sources:
+      vendor_page: 400.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 92.0
+    winner: vendor_page
+    sources:
+      vendor_page: 92.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 24.0
+    winner: vendor_page
+    sources:
+      vendor_page: 24.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 1.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 62.0
+    winner: vendor_page
+    sources:
+      vendor_page: 62.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/eton-12-212-c8-62-hex.html

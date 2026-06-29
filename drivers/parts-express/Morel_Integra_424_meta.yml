@@ -19,10 +19,92 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 297-024
-field_provenance: null
-freq_low_hz: 100.0
-freq_high_hz: 6500.0
 specs:
-  power_rms_W: 60.0
-  freq_low_hz: 100.0
-  freq_high_hz: 6500.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.5
+    winner: vendor_page
+    sources:
+      vendor_page: 3.5
+  Sd:  # effective piston area (m²)
+    value: 0.000615
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000615
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00035
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00035
+  Xmax:  # one-way linear excursion (m)
+    value: 0.003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.003
+  Qes:  # electrical Q factor
+    value: 2.73
+    winner: vendor_page
+    sources:
+      vendor_page: 2.73
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.52
+    winner: vendor_page
+    sources:
+      vendor_page: 1.52
+  BL:  # force factor (T·m)
+    value: 4.32
+    winner: vendor_page
+    sources:
+      vendor_page: 4.32
+  Qts:  # total Q factor
+    value: 1.53
+    winner: vendor_page
+    sources:
+      vendor_page: 1.53
+  Qms:  # mechanical Q factor
+    value: 3.5
+    winner: vendor_page
+    sources:
+      vendor_page: 3.5
+  Le:  # voice coil inductance (H)
+    value: 0.00015
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00015
+  Pe:  # rated power input (W)
+    value: 60.0
+    winner: vendor_page
+    sources:
+      vendor_page: 60.0
+  Fs:  # free air resonance (Hz)
+    value: 1100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1100.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.002
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 100.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 6500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6500.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/297-024--morel-integra-424-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Morel-Integra-424-Hybrid-Series-4-Point-Source-Coaxial-Full-Range-297-024

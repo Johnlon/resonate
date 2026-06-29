@@ -19,8 +19,82 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 290-218
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 40.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.8
+    winner: vendor_page
+    sources:
+      vendor_page: 7.8
+  Sd:  # effective piston area (m²)
+    value: 0.00866
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00866
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00076
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00076
+  Xmax:  # one-way linear excursion (m)
+    value: 0.02
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02
+  Qes:  # electrical Q factor
+    value: 0.79
+    winner: vendor_page
+    sources:
+      vendor_page: 0.79
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.736926085129486
+    winner: vendor_page
+    sources:
+      vendor_page: 0.736926085129486
+  BL:  # force factor (T·m)
+    value: 6.05
+    winner: vendor_page
+    sources:
+      vendor_page: 6.05
+  Qts:  # total Q factor
+    value: 0.68
+    winner: vendor_page
+    sources:
+      vendor_page: 0.68
+  Qms:  # mechanical Q factor
+    value: 5.01
+    winner: vendor_page
+    sources:
+      vendor_page: 5.01
+  Le:  # voice coil inductance (H)
+    value: 0.0014399999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0014399999999999999
+  Pe:  # rated power input (W)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  Fs:  # free air resonance (Hz)
+    value: 56.5
+    winner: vendor_page
+    sources:
+      vendor_page: 56.5
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0076455360000000005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0076455360000000005
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0104
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0104
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/290-218-dayton-audio-nd140-8-specifications.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-ND140-8-5-1-4-Aluminum-Cone-Midbass-Driver-8-O-290-218

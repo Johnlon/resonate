@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 50.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.3
+    winner: vendor_page
+    sources:
+      vendor_page: 6.3
+  Sd:  # effective piston area (m²)
+    value: 0.0137
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0137
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00074
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00074
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0124
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0124
+  Qes:  # electrical Q factor
+    value: 0.426
+    winner: vendor_page
+    sources:
+      vendor_page: 0.426
+  BL:  # force factor (T·m)
+    value: 8.53
+    winner: vendor_page
+    sources:
+      vendor_page: 8.53
+  Qts:  # total Q factor
+    value: 0.41
+    winner: vendor_page
+    sources:
+      vendor_page: 0.41
+  Qms:  # mechanical Q factor
+    value: 9.02
+    winner: vendor_page
+    sources:
+      vendor_page: 9.02
+  Le:  # voice coil inductance (H)
+    value: 0.00027
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00027
+  Pe:  # rated power input (W)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  Fs:  # free air resonance (Hz)
+    value: 44.0
+    winner: vendor_page
+    sources:
+      vendor_page: 44.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0197
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0197
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0179
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0179
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/peerless-by-tymphany-ne180w-08.html

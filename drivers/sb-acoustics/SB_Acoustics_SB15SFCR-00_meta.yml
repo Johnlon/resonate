@@ -15,4 +15,37 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.0178
+    winner: manu_page
+    sources:
+      manu_page: 0.0178
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00093
+    winner: manu_page
+    sources:
+      manu_page: 0.00093
+  Qms:  # mechanical Q factor
+    value: 2.7
+    winner: manu_page
+    sources:
+      manu_page: 2.7
+  Fs:  # free air resonance (Hz)
+    value: 21.0
+    winner: manu_page
+    sources:
+      manu_page: 21.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0418
+    winner: manu_page
+    sources:
+      manu_page: 0.0418
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.062
+    winner: manu_page
+    sources:
+      manu_page: 0.062
+_sources:
+  datasheet: https://sbacoustics.com/wp-content/uploads/2020/11/5x8in-SB15SFCR-00.pdf
+  manu_page: https://sbacoustics.com/product/5x8in-sb15sfcr-00/

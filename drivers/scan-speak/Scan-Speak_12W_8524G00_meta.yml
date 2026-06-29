@@ -16,4 +16,41 @@ community: null
 fetched_sku: null
 driver_type: woofer
 specs:
-  sensitivity_db: 86.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.7
+    winner: manu_page
+    sources:
+      manu_page: 5.7
+  Sd:  # effective piston area (m²)
+    value: 0.0059
+    winner: manu_page
+    sources:
+      manu_page: 0.0059
+  BL:  # force factor (T·m)
+    value: 5.4
+    winner: manu_page
+    sources:
+      manu_page: 5.4
+  Qts:  # total Q factor
+    value: 0.32
+    winner: manu_page
+    sources:
+      manu_page: 0.32
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 86.0
+    winner: manu_page
+    sources:
+      manu_page: 86.0
+  Fs:  # free air resonance (Hz)
+    value: 52.0
+    winner: manu_page
+    sources:
+      manu_page: 52.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0082
+    winner: manu_page
+    sources:
+      manu_page: 0.0082
+_sources:
+  datasheet: https://www.scan-speak.dk/datasheet/pdf/12w-8524g00.pdf
+  manu_page: https://www.scan-speak.dk/product/12w-8524g00/

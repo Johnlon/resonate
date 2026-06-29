@@ -15,9 +15,82 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
-freq_low_hz: 150.0
-freq_high_hz: 18000.0
 specs:
-  power_rms_W: 20.0
-  freq_low_hz: 150.0
-  freq_high_hz: 18000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.7
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7
+  Sd:  # effective piston area (m²)
+    value: 0.00147
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00147
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00058
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00058
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00165
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00165
+  Qes:  # electrical Q factor
+    value: 0.74
+    winner: vendor_page
+    sources:
+      vendor_page: 0.74
+  BL:  # force factor (T·m)
+    value: 2.85
+    winner: vendor_page
+    sources:
+      vendor_page: 2.85
+  Qts:  # total Q factor
+    value: 0.65
+    winner: vendor_page
+    sources:
+      vendor_page: 0.65
+  Qms:  # mechanical Q factor
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+  Le:  # voice coil inductance (H)
+    value: 4.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0e-05
+  Pe:  # rated power input (W)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  Fs:  # free air resonance (Hz)
+    value: 166.0
+    winner: vendor_page
+    sources:
+      vendor_page: 166.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0001699008
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0001699008
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 150.0
+    winner: vendor_page
+    sources:
+      vendor_page: 150.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 18000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 18000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/264-1046--tymphany-ne65w-04-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Peerless-NE65W-04-2-Full-Range-Woofer-264-1046

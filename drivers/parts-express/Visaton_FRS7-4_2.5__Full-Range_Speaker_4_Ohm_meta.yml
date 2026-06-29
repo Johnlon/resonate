@@ -15,9 +15,67 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
-freq_low_hz: 200.0
-freq_high_hz: 20000.0
 specs:
-  power_rms_W: 8.0
-  freq_low_hz: 200.0
-  freq_high_hz: 20000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.6
+    winner: vendor_page
+    sources:
+      vendor_page: 3.6
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00075
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00075
+  Qes:  # electrical Q factor
+    value: 1.96
+    winner: vendor_page
+    sources:
+      vendor_page: 1.96
+  Qts:  # total Q factor
+    value: 1.22
+    winner: vendor_page
+    sources:
+      vendor_page: 1.22
+  Qms:  # mechanical Q factor
+    value: 3.21
+    winner: vendor_page
+    sources:
+      vendor_page: 3.21
+  Le:  # voice coil inductance (H)
+    value: 0.0003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0003
+  Pe:  # rated power input (W)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  Fs:  # free air resonance (Hz)
+    value: 250.0
+    winner: vendor_page
+    sources:
+      vendor_page: 250.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.000283168
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000283168
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 20000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/292-528--visaton-frs7-4-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Visaton-FRS7-4-2.5-Full-Range-Speaker-4-Ohm-292-528

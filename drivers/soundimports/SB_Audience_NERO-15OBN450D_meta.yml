@@ -15,4 +15,80 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 450.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.3
+    winner: vendor_page
+    sources:
+      vendor_page: 5.3
+  Sd:  # effective piston area (m²)
+    value: 0.08657
+    winner: vendor_page
+    sources:
+      vendor_page: 0.08657
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0003
+  Xmax:  # one-way linear excursion (m)
+    value: 0.016
+    winner: vendor_page
+    sources:
+      vendor_page: 0.016
+  Qes:  # electrical Q factor
+    value: 0.91
+    winner: vendor_page
+    sources:
+      vendor_page: 0.91
+  Rms:  # mechanical resistance (kg/s)
+    value: 3.27
+    winner: vendor_page
+    sources:
+      vendor_page: 3.27
+  BL:  # force factor (T·m)
+    value: 11.0
+    winner: vendor_page
+    sources:
+      vendor_page: 11.0
+  Qts:  # total Q factor
+    value: 0.8
+    winner: vendor_page
+    sources:
+      vendor_page: 0.8
+  Qms:  # mechanical Q factor
+    value: 6.37
+    winner: vendor_page
+    sources:
+      vendor_page: 6.37
+  Le:  # voice coil inductance (H)
+    value: 0.0008
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0008
+  Pe:  # rated power input (W)
+    value: 450.0
+    winner: vendor_page
+    sources:
+      vendor_page: 450.0
+  Fs:  # free air resonance (Hz)
+    value: 25.0
+    winner: vendor_page
+    sources:
+      vendor_page: 25.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.319
+    winner: vendor_page
+    sources:
+      vendor_page: 0.319
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.13
+    winner: vendor_page
+    sources:
+      vendor_page: 0.13
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sb-audience-nero-15obn450d.html

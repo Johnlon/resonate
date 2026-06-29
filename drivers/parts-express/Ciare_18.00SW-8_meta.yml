@@ -20,8 +20,76 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 293-168
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 1000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.0
+    winner: vendor_page
+    sources:
+      vendor_page: 7.0
+  Sd:  # effective piston area (m²)
+    value: 0.1134
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1134
+  Xmax:  # one-way linear excursion (m)
+    value: 0.014
+    winner: vendor_page
+    sources:
+      vendor_page: 0.014
+  Qes:  # electrical Q factor
+    value: 0.55
+    winner: vendor_page
+    sources:
+      vendor_page: 0.55
+  Rms:  # mechanical resistance (kg/s)
+    value: 12.727670296871842
+    winner: vendor_page
+    sources:
+      vendor_page: 12.727670296871842
+  BL:  # force factor (T·m)
+    value: 32.5
+    winner: vendor_page
+    sources:
+      vendor_page: 32.5
+  Qts:  # total Q factor
+    value: 0.5
+    winner: vendor_page
+    sources:
+      vendor_page: 0.5
+  Qms:  # mechanical Q factor
+    value: 6.7
+    winner: vendor_page
+    sources:
+      vendor_page: 6.7
+  Le:  # voice coil inductance (H)
+    value: 0.003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.003
+  Pe:  # rated power input (W)
+    value: 1000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1000.0
+  Fs:  # free air resonance (Hz)
+    value: 36.0
+    winner: vendor_page
+    sources:
+      vendor_page: 36.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.09287910399999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.09287910399999999
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.377
+    winner: vendor_page
+    sources:
+      vendor_page: 0.377
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.parts-express.com/Ciare-18.00SW-8-18-High-Power-Subwoofer-8-Ohm-293-168

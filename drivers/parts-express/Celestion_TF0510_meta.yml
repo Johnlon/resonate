@@ -19,8 +19,82 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-2050
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 30.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.32
+    winner: vendor_page
+    sources:
+      vendor_page: 6.32
+  Sd:  # effective piston area (m²)
+    value: 0.007866
+    winner: vendor_page
+    sources:
+      vendor_page: 0.007866
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00022
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00022
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005
+  Qes:  # electrical Q factor
+    value: 0.768
+    winner: vendor_page
+    sources:
+      vendor_page: 0.768
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.38
+    winner: vendor_page
+    sources:
+      vendor_page: 2.38
+  BL:  # force factor (T·m)
+    value: 6.82
+    winner: vendor_page
+    sources:
+      vendor_page: 6.82
+  Qts:  # total Q factor
+    value: 0.658
+    winner: vendor_page
+    sources:
+      vendor_page: 0.658
+  Qms:  # mechanical Q factor
+    value: 2.376
+    winner: vendor_page
+    sources:
+      vendor_page: 2.376
+  Le:  # voice coil inductance (H)
+    value: 0.00033
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00033
+  Pe:  # rated power input (W)
+    value: 1.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0
+  Fs:  # free air resonance (Hz)
+    value: 128.1
+    winner: vendor_page
+    sources:
+      vendor_page: 128.1
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00738
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00738
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00702
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00702
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-2050--tf0510-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Celestion-TF0510-5-Professional-Speaker-30W-294-2050

@@ -19,80 +19,113 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
-field_provenance:
-  Mms:
-    sources:
-      pdf: 0.0135
-      html: 0.0135
-    winner: html
-  Znom:
-    sources:
-      pdf: 8.0
-      html: 4.0
-    winner: html
-  Re:
-    sources:
-      html: 3.2
-    winner: html
-  Sd:
-    sources:
-      pdf: 0.0093
-      html: 0.0093
-    winner: html
-  Cms:
-    sources:
-      pdf: 0.00075
-      html: 0.00075
-    winner: html
-  Fs:
-    sources:
-      pdf: 50.0
-      html: 50.0
-    winner: html
-  Xmax:
-    sources:
-      pdf: 0.0045
-      html: 0.0045
-    winner: html
-  Qts:
-    sources:
-      pdf: 0.33
-      html: 0.33
-    winner: html
-  Rms:
-    sources:
-      pdf: 0.41
-      html: 0.41
-    winner: html
-  BL:
-    sources:
-      html: 6.35
-    winner: html
-  Pe:
-    sources:
-      html: 230.0
-    winner: html
-  Qms:
-    sources:
-      pdf: 10.3
-      html: 10.3
-    winner: html
-  Vas:
-    sources:
-      pdf: 0.0092
-      html: 0.0092
-    winner: html
-  Le:
-    sources:
-      html: 0.00011
-    winner: html
-  Qes:
-    sources:
-      pdf: 0.34
-      html: 0.34
-    winner: html
-freq_low_hz: null
-freq_high_hz: 3000.0
 specs:
-  power_rms_W: 230.0
-  freq_high_hz: 3000.0
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0135
+    winner: manu_page
+    sources:
+      datasheet: 0.0135
+      manu_page: 0.0135
+    note: Not in datasheet; value from manu_page
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: manu_page
+    sources:
+      datasheet: 8.0
+      manu_page: 4.0
+    note: Not in datasheet; value from manu_page
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.2
+    winner: manu_page
+    sources:
+      manu_page: 3.2
+    note: Not in datasheet; value from manu_page
+  Sd:  # effective piston area (m²)
+    value: 0.0093
+    winner: manu_page
+    sources:
+      datasheet: 0.0093
+      manu_page: 0.0093
+    note: Not in datasheet; value from manu_page
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00075
+    winner: manu_page
+    sources:
+      datasheet: 0.00075
+      manu_page: 0.00075
+    note: Not in datasheet; value from manu_page
+  Fs:  # free air resonance (Hz)
+    value: 50.0
+    winner: manu_page
+    sources:
+      datasheet: 50.0
+      manu_page: 50.0
+    note: Not in datasheet; value from manu_page
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0045
+    winner: manu_page
+    sources:
+      datasheet: 0.0045
+      manu_page: 0.0045
+    note: Not in datasheet; value from manu_page
+  Qts:  # total Q factor
+    value: 0.33
+    winner: manu_page
+    sources:
+      datasheet: 0.33
+      manu_page: 0.33
+    note: Not in datasheet; value from manu_page
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.41
+    winner: manu_page
+    sources:
+      datasheet: 0.41
+      manu_page: 0.41
+    note: Not in datasheet; value from manu_page
+  BL:  # force factor (T·m)
+    value: 6.35
+    winner: manu_page
+    sources:
+      manu_page: 6.35
+    note: Not in datasheet; value from manu_page
+  Pe:  # rated power input (W)
+    value: 230.0
+    winner: manu_page
+    sources:
+      manu_page: 230.0
+    note: Not in datasheet; value from manu_page
+  Qms:  # mechanical Q factor
+    value: 10.3
+    winner: manu_page
+    sources:
+      datasheet: 10.3
+      manu_page: 10.3
+    note: Not in datasheet; value from manu_page
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0092
+    winner: manu_page
+    sources:
+      datasheet: 0.0092
+      manu_page: 0.0092
+    note: Not in datasheet; value from manu_page
+  Le:  # voice coil inductance (H)
+    value: 0.00011
+    winner: manu_page
+    sources:
+      manu_page: 0.00011
+    note: Not in datasheet; value from manu_page
+  Qes:  # electrical Q factor
+    value: 0.34
+    winner: manu_page
+    sources:
+      datasheet: 0.34
+      manu_page: 0.34
+    note: Not in datasheet; value from manu_page
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 3000.0
+    winner: manu_page
+    sources:
+      manu_page: 3000.0
+_sources:
+  datasheet: http://www.wavecor.com/WF152BD13_14_15_16_specifications.pdf
+  manu_page: http://www.wavecor.com/html/wf152bd13_14_15_16.html

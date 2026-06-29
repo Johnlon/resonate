@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 30.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.9
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9
+  Sd:  # effective piston area (m²)
+    value: 0.0143
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0143
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00024
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00024
+  Xmax:  # one-way linear excursion (m)
+    value: 0.01
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01
+  Qes:  # electrical Q factor
+    value: 0.971
+    winner: vendor_page
+    sources:
+      vendor_page: 0.971
+  BL:  # force factor (T·m)
+    value: 7.8
+    winner: vendor_page
+    sources:
+      vendor_page: 7.8
+  Qts:  # total Q factor
+    value: 0.67
+    winner: vendor_page
+    sources:
+      vendor_page: 0.67
+  Qms:  # mechanical Q factor
+    value: 2.18
+    winner: vendor_page
+    sources:
+      vendor_page: 2.18
+  Le:  # voice coil inductance (H)
+    value: 0.000215
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000215
+  Pe:  # rated power input (W)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  Fs:  # free air resonance (Hz)
+    value: 68.0
+    winner: vendor_page
+    sources:
+      vendor_page: 68.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00681
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00681
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0237
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0237
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/peerless-by-tymphany-hds-p830883.html

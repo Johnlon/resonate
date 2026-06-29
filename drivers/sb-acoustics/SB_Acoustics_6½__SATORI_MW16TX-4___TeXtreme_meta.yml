@@ -16,8 +16,91 @@ dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  voice_coil_dia_mm: 36.0
-  Hg_mm: 5.0
-  linear_xmax_mm: 12.0
-  sensitivity_db: 90.5
-  power_rms_W: 60.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.4
+    winner: manu_page
+    sources:
+      manu_page: 3.4
+  Sd:  # effective piston area (m²)
+    value: 0.0119
+    winner: manu_page
+    sources:
+      manu_page: 0.0119
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00239
+    winner: manu_page
+    sources:
+      manu_page: 0.00239
+  Xmax:  # one-way linear excursion (m)
+    value: 0.006
+    winner: manu_page
+    sources:
+      manu_page: 0.006
+  Qes:  # electrical Q factor
+    value: 0.29
+    winner: manu_page
+    sources:
+      manu_page: 0.29
+  BL:  # force factor (T·m)
+    value: 5.2
+    winner: manu_page
+    sources:
+      manu_page: 5.2
+  Qts:  # total Q factor
+    value: 0.27
+    winner: manu_page
+    sources:
+      manu_page: 0.27
+  Qms:  # mechanical Q factor
+    value: 5.0
+    winner: manu_page
+    sources:
+      manu_page: 5.0
+  Le:  # voice coil inductance (H)
+    value: 0.00015
+    winner: manu_page
+    sources:
+      manu_page: 0.00015
+  Pe:  # rated power input (W)
+    value: 60.0
+    winner: manu_page
+    sources:
+      manu_page: 60.0
+  Fs:  # free air resonance (Hz)
+    value: 29.0
+    winner: manu_page
+    sources:
+      manu_page: 29.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.048
+    winner: manu_page
+    sources:
+      manu_page: 0.048
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0126
+    winner: manu_page
+    sources:
+      manu_page: 0.0126
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: manu_page
+    sources:
+      manu_page: 4.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 36.0
+    winner: manu_page
+    sources:
+      manu_page: 36.0
+  Hg_mm:  # magnetic gap height (mm)
+    value: 5.0
+    winner: manu_page
+    sources:
+      manu_page: 5.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 90.5
+    winner: manu_page
+    sources:
+      manu_page: 90.5
+_sources:
+  datasheet: https://sbacoustics.com/wp-content/uploads/2024/04/6.5in-SATORI-MW16TX-4.pdf
+  manu_page: https://sbacoustics.com/product/6-5-satori-mw16tx-4-textreme/

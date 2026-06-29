@@ -15,10 +15,97 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 80.0
-freq_high_hz: 9500.0
 specs:
-  freq_low_hz: 8.0
-  freq_high_hz: 450.0
-  sensitivity_db: 9.0
-  power_rms_W: 2.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.8
+    winner: vendor_page
+    sources:
+      vendor_page: 5.8
+  Sd:  # effective piston area (m²)
+    value: 0.0241
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0241
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000432
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000432
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004
+  Qes:  # electrical Q factor
+    value: 0.57
+    winner: vendor_page
+    sources:
+      vendor_page: 0.57
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.3719789648426148
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3719789648426148
+  BL:  # force factor (T·m)
+    value: 7.58
+    winner: vendor_page
+    sources:
+      vendor_page: 7.58
+  Qts:  # total Q factor
+    value: 0.55
+    winner: vendor_page
+    sources:
+      vendor_page: 0.55
+  Qms:  # mechanical Q factor
+    value: 15.19
+    winner: vendor_page
+    sources:
+      vendor_page: 15.19
+  Le:  # voice coil inductance (H)
+    value: 0.000257
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000257
+  Pe:  # rated power input (W)
+    value: 225.0
+    winner: vendor_page
+    sources:
+      vendor_page: 225.0
+  Fs:  # free air resonance (Hz)
+    value: 65.26
+    winner: vendor_page
+    sources:
+      vendor_page: 65.26
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.034829663999999996
+    winner: vendor_page
+    sources:
+      vendor_page: 0.034829663999999996
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.013779999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.013779999999999999
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 450.0
+    winner: vendor_page
+    sources:
+      vendor_page: 450.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 9.0
+    winner: vendor_page
+    sources:
+      vendor_page: 9.0
+_sources:
+  datasheet: https://prvaudio.com/wp-content/uploads/2026/02/PRV-Catalog-2026.pdf
+  vendor_page: https://www.parts-express.com/PRV-Audio-8MR450A-8-Alto-Series-Professional-Midrange-Speaker-294-2950

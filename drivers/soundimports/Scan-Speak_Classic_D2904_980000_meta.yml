@@ -15,4 +15,45 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 160.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.5
+    winner: vendor_page
+    sources:
+      vendor_page: 3.5
+  Qes:  # electrical Q factor
+    value: 0.84
+    winner: vendor_page
+    sources:
+      vendor_page: 0.84
+  Qts:  # total Q factor
+    value: 0.66
+    winner: vendor_page
+    sources:
+      vendor_page: 0.66
+  Qms:  # mechanical Q factor
+    value: 3.09
+    winner: vendor_page
+    sources:
+      vendor_page: 3.09
+  Le:  # voice coil inductance (H)
+    value: 1.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0e-05
+  Pe:  # rated power input (W)
+    value: 160.0
+    winner: vendor_page
+    sources:
+      vendor_page: 160.0
+  Fs:  # free air resonance (Hz)
+    value: 500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 500.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/scan-speak-d2904-980000.html

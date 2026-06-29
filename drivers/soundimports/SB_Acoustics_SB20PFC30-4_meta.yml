@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 50.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.4
+    winner: vendor_page
+    sources:
+      vendor_page: 3.4
+  Sd:  # effective piston area (m²)
+    value: 0.0216
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0216
+  Cms:  # mechanical compliance (m/N)
+    value: 0.001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00575
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00575
+  Qes:  # electrical Q factor
+    value: 0.37
+    winner: vendor_page
+    sources:
+      vendor_page: 0.37
+  BL:  # force factor (T·m)
+    value: 6.6
+    winner: vendor_page
+    sources:
+      vendor_page: 6.6
+  Qts:  # total Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Qms:  # mechanical Q factor
+    value: 2.78
+    winner: vendor_page
+    sources:
+      vendor_page: 2.78
+  Le:  # voice coil inductance (H)
+    value: 0.00071
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00071
+  Pe:  # rated power input (W)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  Fs:  # free air resonance (Hz)
+    value: 33.7
+    winner: vendor_page
+    sources:
+      vendor_page: 33.7
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00233
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00233
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0224
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0224
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sb-acoustics-sb20pfc30-4.html

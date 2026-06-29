@@ -19,8 +19,67 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 298-1238
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 170.0
+  Sd:  # effective piston area (m²)
+    value: 0.0214
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0214
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00021
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00021
+  Xmax:  # one-way linear excursion (m)
+    value: 0.002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.002
+  Qes:  # electrical Q factor
+    value: 0.3
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.68
+    winner: vendor_page
+    sources:
+      vendor_page: 1.68
+  Qts:  # total Q factor
+    value: 0.29
+    winner: vendor_page
+    sources:
+      vendor_page: 0.29
+  Qms:  # mechanical Q factor
+    value: 6.7
+    winner: vendor_page
+    sources:
+      vendor_page: 6.7
+  Pe:  # rated power input (W)
+    value: 170.0
+    winner: vendor_page
+    sources:
+      vendor_page: 170.0
+  Fs:  # free air resonance (Hz)
+    value: 68.0
+    winner: vendor_page
+    sources:
+      vendor_page: 68.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0136
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0136
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.026
+    winner: vendor_page
+    sources:
+      vendor_page: 0.026
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/298-1238--wf211pa02-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Wavecor-WF211PA02-8-1-4-Paper-Cone-Woofer-8-Ohm-298-1238

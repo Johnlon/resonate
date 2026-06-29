@@ -20,11 +20,96 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-2990
-field_provenance: null
-freq_low_hz: 55.0
-freq_high_hz: 2500.0
 specs:
-  sensitivity_db: 800.0
-  freq_low_hz: 55.0
-  freq_high_hz: 2.0
-  power_rms_W: 2.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.1
+    winner: vendor_page
+    sources:
+      vendor_page: 5.1
+  Sd:  # effective piston area (m²)
+    value: 0.0594
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0594
+  Cms:  # mechanical compliance (m/N)
+    value: 9.5e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 9.5e-05
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0105
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0105
+  Qes:  # electrical Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.1724352279388177
+    winner: vendor_page
+    sources:
+      vendor_page: 2.1724352279388177
+  BL:  # force factor (T·m)
+    value: 20.35
+    winner: vendor_page
+    sources:
+      vendor_page: 20.35
+  Qts:  # total Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Qms:  # mechanical Q factor
+    value: 14.98
+    winner: vendor_page
+    sources:
+      vendor_page: 14.98
+  Le:  # voice coil inductance (H)
+    value: 0.00126
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00126
+  Pe:  # rated power input (W)
+    value: 800.0
+    winner: vendor_page
+    sources:
+      vendor_page: 800.0
+  Fs:  # free air resonance (Hz)
+    value: 51.2
+    winner: vendor_page
+    sources:
+      vendor_page: 51.2
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.047005887999999996
+    winner: vendor_page
+    sources:
+      vendor_page: 0.047005887999999996
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.10116
+    winner: vendor_page
+    sources:
+      vendor_page: 0.10116
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 800.0
+    winner: vendor_page
+    sources:
+      vendor_page: 800.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 55.0
+    winner: vendor_page
+    sources:
+      vendor_page: 55.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 2.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0
+_sources:
+  vendor_page: https://www.parts-express.com/PRV-Audio-12W1600-12-Professional-Woofer-8-Ohm-294-2990

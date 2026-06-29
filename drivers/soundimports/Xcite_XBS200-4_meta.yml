@@ -15,4 +15,45 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 200.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.08
+    winner: vendor_page
+    sources:
+      vendor_page: 4.08
+  BL:  # force factor (T·m)
+    value: 29.1
+    winner: vendor_page
+    sources:
+      vendor_page: 29.1
+  Qts:  # total Q factor
+    value: 1.41
+    winner: vendor_page
+    sources:
+      vendor_page: 1.41
+  Le:  # voice coil inductance (H)
+    value: 0.00083
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00083
+  Pe:  # rated power input (W)
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
+  Fs:  # free air resonance (Hz)
+    value: 21.1
+    winner: vendor_page
+    sources:
+      vendor_page: 21.1
+  Mms:  # moving mass incl. air load (kg)
+    value: 2.59
+    winner: vendor_page
+    sources:
+      vendor_page: 2.59
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/xcite-xbs200-4.html

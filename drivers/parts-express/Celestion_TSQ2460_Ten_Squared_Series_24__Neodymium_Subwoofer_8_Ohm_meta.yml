@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 20.0
-freq_high_hz: 200.0
 specs:
-  power_rms_W: 2460.0
-  freq_low_hz: 20.0
-  freq_high_hz: 200.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.1
+    winner: vendor_page
+    sources:
+      vendor_page: 5.1
+  Sd:  # effective piston area (m²)
+    value: 0.2239
+    winner: vendor_page
+    sources:
+      vendor_page: 0.2239
+  Cms:  # mechanical compliance (m/N)
+    value: 5.7e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 5.7e-05
+  Xmax:  # one-way linear excursion (m)
+    value: 0.01875
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01875
+  Qes:  # electrical Q factor
+    value: 0.31
+    winner: vendor_page
+    sources:
+      vendor_page: 0.31
+  Rms:  # mechanical resistance (kg/s)
+    value: 9.375976521490315
+    winner: vendor_page
+    sources:
+      vendor_page: 9.375976521490315
+  BL:  # force factor (T·m)
+    value: 40.5
+    winner: vendor_page
+    sources:
+      vendor_page: 40.5
+  Qts:  # total Q factor
+    value: 0.3
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3
+  Qms:  # mechanical Q factor
+    value: 10.3
+    winner: vendor_page
+    sources:
+      vendor_page: 10.3
+  Le:  # voice coil inductance (H)
+    value: 0.0025
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0025
+  Pe:  # rated power input (W)
+    value: 2400.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2400.0
+  Fs:  # free air resonance (Hz)
+    value: 29.0
+    winner: vendor_page
+    sources:
+      vendor_page: 29.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.403797568
+    winner: vendor_page
+    sources:
+      vendor_page: 0.403797568
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.53
+    winner: vendor_page
+    sources:
+      vendor_page: 0.53
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-2521--celestion-tsq2460-specifications.pdf
+  vendor_page: https://www.parts-express.com/Celestion-TSQ2460-24-Neodymium-Subwoofer-8-Ohm-294-2521

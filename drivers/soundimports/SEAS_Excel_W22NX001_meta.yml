@@ -15,4 +15,80 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 200.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.3
+    winner: vendor_page
+    sources:
+      vendor_page: 6.3
+  Sd:  # effective piston area (m²)
+    value: 0.022
+    winner: vendor_page
+    sources:
+      vendor_page: 0.022
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00135
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00135
+  Xmax:  # one-way linear excursion (m)
+    value: 0.007
+    winner: vendor_page
+    sources:
+      vendor_page: 0.007
+  Qes:  # electrical Q factor
+    value: 0.44
+    winner: vendor_page
+    sources:
+      vendor_page: 0.44
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.15
+    winner: vendor_page
+    sources:
+      vendor_page: 1.15
+  BL:  # force factor (T·m)
+    value: 8.3
+    winner: vendor_page
+    sources:
+      vendor_page: 8.3
+  Qts:  # total Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Qms:  # mechanical Q factor
+    value: 4.18
+    winner: vendor_page
+    sources:
+      vendor_page: 4.18
+  Le:  # voice coil inductance (H)
+    value: 0.00026
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00026
+  Pe:  # rated power input (W)
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
+  Fs:  # free air resonance (Hz)
+    value: 25.0
+    winner: vendor_page
+    sources:
+      vendor_page: 25.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.093
+    winner: vendor_page
+    sources:
+      vendor_page: 0.093
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0311
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0311
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/seas-w22nx001.html

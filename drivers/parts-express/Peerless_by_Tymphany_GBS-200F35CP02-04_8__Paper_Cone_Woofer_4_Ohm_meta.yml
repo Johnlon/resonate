@@ -15,9 +15,87 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
-freq_low_hz: 40.0
-freq_high_hz: 600.0
 specs:
-  power_rms_W: 150.0
-  freq_low_hz: 40.0
-  freq_high_hz: 600.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.52
+    winner: vendor_page
+    sources:
+      vendor_page: 3.52
+  Sd:  # effective piston area (m²)
+    value: 0.02217
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02217
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0052
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0052
+  Qes:  # electrical Q factor
+    value: 0.43
+    winner: vendor_page
+    sources:
+      vendor_page: 0.43
+  Rms:  # mechanical resistance (kg/s)
+    value: 3.7892357110408486
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7892357110408486
+  BL:  # force factor (T·m)
+    value: 12.0
+    winner: vendor_page
+    sources:
+      vendor_page: 12.0
+  Qts:  # total Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Qms:  # mechanical Q factor
+    value: 4.63
+    winner: vendor_page
+    sources:
+      vendor_page: 4.63
+  Le:  # voice coil inductance (H)
+    value: 0.00181
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00181
+  Pe:  # rated power input (W)
+    value: 150.0
+    winner: vendor_page
+    sources:
+      vendor_page: 150.0
+  Fs:  # free air resonance (Hz)
+    value: 41.8
+    winner: vendor_page
+    sources:
+      vendor_page: 41.8
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.015007904
+    winner: vendor_page
+    sources:
+      vendor_page: 0.015007904
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0668
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0668
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 600.0
+    winner: vendor_page
+    sources:
+      vendor_page: 600.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/264-1490--gbs-200f35cp02-04-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Peerless-GBS-200F35CP02-04-8-Paper-Cone-Woofer-4-Ohm-264-1490

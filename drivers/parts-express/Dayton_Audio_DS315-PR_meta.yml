@@ -19,7 +19,47 @@ obsolete: null
 dq_issue: Fs_low
 community: null
 fetched_sku: 295-496
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.048
+    winner: vendor_page
+    sources:
+      vendor_page: 0.048
+  Cms:  # mechanical compliance (m/N)
+    value: 0.48
+    winner: vendor_page
+    sources:
+      vendor_page: 0.48
+  Xmax:  # one-way linear excursion (m)
+    value: 0.013
+    winner: vendor_page
+    sources:
+      vendor_page: 0.013
+  Rms:  # mechanical resistance (kg/s)
+    value: 4.026035595213531
+    winner: vendor_page
+    sources:
+      vendor_page: 4.026035595213531
+  Qms:  # mechanical Q factor
+    value: 4.27
+    winner: vendor_page
+    sources:
+      vendor_page: 4.27
+  Fs:  # free air resonance (Hz)
+    value: 3.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.013
+    winner: vendor_page
+    sources:
+      vendor_page: 0.013
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00045
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00045
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/295-496-dayton-audio-ds315-pr-spec-sheet.pdf.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-DS315-PR-12-Designer-Series-Passive-Radiator-295-496

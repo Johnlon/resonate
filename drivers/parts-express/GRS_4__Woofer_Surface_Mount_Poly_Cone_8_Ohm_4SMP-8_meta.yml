@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: woofer
-freq_low_hz: 50.0
-freq_high_hz: 6000.0
 specs:
-  power_rms_W: 30.0
-  freq_low_hz: 50.0
-  freq_high_hz: 6000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.5
+    winner: vendor_page
+    sources:
+      vendor_page: 5.5
+  Sd:  # effective piston area (m²)
+    value: 0.0054
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0054
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0009699999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0009699999999999999
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004
+  Qes:  # electrical Q factor
+    value: 0.83
+    winner: vendor_page
+    sources:
+      vendor_page: 0.83
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.8708494835750907
+    winner: vendor_page
+    sources:
+      vendor_page: 0.8708494835750907
+  BL:  # force factor (T·m)
+    value: 4.2
+    winner: vendor_page
+    sources:
+      vendor_page: 4.2
+  Qts:  # total Q factor
+    value: 0.65
+    winner: vendor_page
+    sources:
+      vendor_page: 0.65
+  Qms:  # mechanical Q factor
+    value: 3.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0
+  Le:  # voice coil inductance (H)
+    value: 0.00058
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00058
+  Pe:  # rated power input (W)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  Fs:  # free air resonance (Hz)
+    value: 63.0
+    winner: vendor_page
+    sources:
+      vendor_page: 63.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0039926688
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0039926688
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0066
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0066
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 6000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/292-856--grs-4smp-8-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/GRS-4-Woofer-Surface-Mount-Poly-Cone-8-Ohm-4SMP-8-292-856

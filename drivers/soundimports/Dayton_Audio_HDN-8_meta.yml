@@ -15,5 +15,66 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 100.0
-  voice_coil_dia_mm: 50.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.46
+    winner: vendor_page
+    sources:
+      vendor_page: 7.46
+  BL:  # force factor (T·m)
+    value: 18.2
+    winner: vendor_page
+    sources:
+      vendor_page: 18.2
+  Le:  # voice coil inductance (H)
+    value: 0.00086
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00086
+  Pe:  # rated power input (W)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  Fs:  # free air resonance (Hz)
+    value: 695.0
+    winner: vendor_page
+    sources:
+      vendor_page: 695.0
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0382
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0382
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  power_peak_W:  # peak power handling (W)
+    value: 100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 100.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 15.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  weight_kg:  # driver weight (kg)
+    value: 1.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0
+_sources:
+  datasheet: https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/BCE-1/pdf_Dayton%20Audio_BCE-1_2.pdf
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-hdn-8.html

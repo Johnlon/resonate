@@ -19,77 +19,112 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
-field_provenance:
-  Mms:
-    sources:
-      pdf: 0.00043
-      html: 0.00043
-    winner: html
-  Znom:
-    sources:
-      pdf: 8.0
-      html: 4.0
-    winner: html
-  Re:
-    sources:
-      html: 3.5
-    winner: html
-  Sd:
-    sources:
-      pdf: 0.00115
-      html: 0.00115
-    winner: html
-  Cms:
-    sources:
-      pdf: 0.000106
-      html: 0.000106
-    winner: html
-  Fs:
-    sources:
-      pdf: 750.0
-      html: 750.0
-    winner: html
-  Xmax:
-    sources:
-      pdf: 0.00065
-      html: 0.00065
-    winner: html
-  Qts:
-    sources:
-      pdf: 1.1
-      html: 1.1
-    winner: html
-  Rms:
-    sources:
-      pdf: 0.72
-      html: 0.72
-    winner: html
-  BL:
-    sources:
-      html: 2.0
-    winner: html
-  Pe:
-    sources:
-      html: 1000.0
-    winner: html
-  Qms:
-    sources:
-      pdf: 2.8
-      html: 2.8
-    winner: html
-  Vas:
-    sources:
-      pdf: 0.02
-      html: 2.0e-05
-    winner: html
-  Qes:
-    sources:
-      pdf: 1.82
-      html: 1.82
-    winner: html
-freq_low_hz: 2000.0
-freq_high_hz: 30000.0
 specs:
-  power_rms_W: 1000.0
-  freq_low_hz: 2000.0
-  freq_high_hz: 30000.0
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00043
+    winner: manu_page
+    sources:
+      datasheet: 0.00043
+      manu_page: 0.00043
+    note: Not in datasheet; value from manu_page
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: manu_page
+    sources:
+      datasheet: 8.0
+      manu_page: 4.0
+    note: Not in datasheet; value from manu_page
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.5
+    winner: manu_page
+    sources:
+      manu_page: 3.5
+    note: Not in datasheet; value from manu_page
+  Sd:  # effective piston area (m²)
+    value: 0.00115
+    winner: manu_page
+    sources:
+      datasheet: 0.00115
+      manu_page: 0.00115
+    note: Not in datasheet; value from manu_page
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000106
+    winner: manu_page
+    sources:
+      datasheet: 0.000106
+      manu_page: 0.000106
+    note: Not in datasheet; value from manu_page
+  Fs:  # free air resonance (Hz)
+    value: 750.0
+    winner: manu_page
+    sources:
+      datasheet: 750.0
+      manu_page: 750.0
+    note: Not in datasheet; value from manu_page
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00065
+    winner: manu_page
+    sources:
+      datasheet: 0.00065
+      manu_page: 0.00065
+    note: Not in datasheet; value from manu_page
+  Qts:  # total Q factor
+    value: 1.1
+    winner: manu_page
+    sources:
+      datasheet: 1.1
+      manu_page: 1.1
+    note: Not in datasheet; value from manu_page
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.72
+    winner: manu_page
+    sources:
+      datasheet: 0.72
+      manu_page: 0.72
+    note: Not in datasheet; value from manu_page
+  BL:  # force factor (T·m)
+    value: 2.0
+    winner: manu_page
+    sources:
+      manu_page: 2.0
+    note: Not in datasheet; value from manu_page
+  Pe:  # rated power input (W)
+    value: 1000.0
+    winner: manu_page
+    sources:
+      manu_page: 1000.0
+    note: Not in datasheet; value from manu_page
+  Qms:  # mechanical Q factor
+    value: 2.8
+    winner: manu_page
+    sources:
+      datasheet: 2.8
+      manu_page: 2.8
+    note: Not in datasheet; value from manu_page
+  Vas:  # equivalent acoustic volume (m³)
+    value: 2.0e-05
+    winner: manu_page
+    sources:
+      datasheet: 0.02
+      manu_page: 2.0e-05
+    note: Not in datasheet; value from manu_page
+  Qes:  # electrical Q factor
+    value: 1.82
+    winner: manu_page
+    sources:
+      datasheet: 1.82
+      manu_page: 1.82
+    note: Not in datasheet; value from manu_page
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 2000.0
+    winner: manu_page
+    sources:
+      manu_page: 2000.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 30000.0
+    winner: manu_page
+    sources:
+      manu_page: 30000.0
+_sources:
+  datasheet: http://www.wavecor.com/Driver%20specifications%20PDF/TW030WA23_24_25_26_specifications.pdf
+  manu_page: http://www.wavecor.com/html/tw030wa23_24_25_26.html

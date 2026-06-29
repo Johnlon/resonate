@@ -19,10 +19,87 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 292-602
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  freq_low_hz: 100.0
-  freq_high_hz: 13.0
-  power_rms_W: 20.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.6
+    winner: vendor_page
+    sources:
+      vendor_page: 3.6
+  Sd:  # effective piston area (m²)
+    value: 0.0056
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0056
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0015
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0015
+  Qes:  # electrical Q factor
+    value: 1.67
+    winner: vendor_page
+    sources:
+      vendor_page: 1.67
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.307777905281375
+    winner: vendor_page
+    sources:
+      vendor_page: 0.307777905281375
+  BL:  # force factor (T·m)
+    value: 2.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0
+  Qts:  # total Q factor
+    value: 1.32
+    winner: vendor_page
+    sources:
+      vendor_page: 1.32
+  Qms:  # mechanical Q factor
+    value: 6.4
+    winner: vendor_page
+    sources:
+      vendor_page: 6.4
+  Le:  # voice coil inductance (H)
+    value: 0.00095
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00095
+  Pe:  # rated power input (W)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  Fs:  # free air resonance (Hz)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0026051456
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0026051456
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0019
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0019
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 100.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 13.0
+    winner: vendor_page
+    sources:
+      vendor_page: 13.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/292-602--visaton-r-10-sc-4-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Visaton-R10SC-4-4-Fullrange-Speaker-4-Ohm-292-602

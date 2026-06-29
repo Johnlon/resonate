@@ -14,4 +14,41 @@ dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.0312
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0312
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00039
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00039
+  Xmax:  # one-way linear excursion (m)
+    value: 0.017
+    winner: vendor_page
+    sources:
+      vendor_page: 0.017
+  Qms:  # mechanical Q factor
+    value: 8.8
+    winner: vendor_page
+    sources:
+      vendor_page: 8.8
+  Fs:  # free air resonance (Hz)
+    value: 13.0
+    winner: vendor_page
+    sources:
+      vendor_page: 13.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0019
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0019
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sb-acoustics-sw26dac-00.html

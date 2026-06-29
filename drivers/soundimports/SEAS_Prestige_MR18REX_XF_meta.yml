@@ -15,4 +15,80 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 80.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.2
+    winner: vendor_page
+    sources:
+      vendor_page: 6.2
+  Sd:  # effective piston area (m²)
+    value: 0.0126
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0126
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0001
+  Xmax:  # one-way linear excursion (m)
+    value: 0.003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.003
+  Qes:  # electrical Q factor
+    value: 0.96
+    winner: vendor_page
+    sources:
+      vendor_page: 0.96
+  Rms:  # mechanical resistance (kg/s)
+    value: 4.26
+    winner: vendor_page
+    sources:
+      vendor_page: 4.26
+  BL:  # force factor (T·m)
+    value: 8.3
+    winner: vendor_page
+    sources:
+      vendor_page: 8.3
+  Qts:  # total Q factor
+    value: 0.69
+    winner: vendor_page
+    sources:
+      vendor_page: 0.69
+  Qms:  # mechanical Q factor
+    value: 2.49
+    winner: vendor_page
+    sources:
+      vendor_page: 2.49
+  Le:  # voice coil inductance (H)
+    value: 0.00043
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00043
+  Pe:  # rated power input (W)
+    value: 80.0
+    winner: vendor_page
+    sources:
+      vendor_page: 80.0
+  Fs:  # free air resonance (Hz)
+    value: 126.0
+    winner: vendor_page
+    sources:
+      vendor_page: 126.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.003
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0118
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0118
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/seas-mr18rex-xf.html

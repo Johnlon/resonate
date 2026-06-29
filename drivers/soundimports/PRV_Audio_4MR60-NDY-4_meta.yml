@@ -15,4 +15,65 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 60.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.3
+    winner: vendor_page
+    sources:
+      vendor_page: 3.3
+  Sd:  # effective piston area (m²)
+    value: 0.00554
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00554
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0014
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0014
+  Qes:  # electrical Q factor
+    value: 1.04
+    winner: vendor_page
+    sources:
+      vendor_page: 1.04
+  BL:  # force factor (T·m)
+    value: 2.82
+    winner: vendor_page
+    sources:
+      vendor_page: 2.82
+  Qts:  # total Q factor
+    value: 0.85
+    winner: vendor_page
+    sources:
+      vendor_page: 0.85
+  Qms:  # mechanical Q factor
+    value: 4.74
+    winner: vendor_page
+    sources:
+      vendor_page: 4.74
+  Le:  # voice coil inductance (H)
+    value: 5.1e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 5.1e-05
+  Pe:  # rated power input (W)
+    value: 60.0
+    winner: vendor_page
+    sources:
+      vendor_page: 60.0
+  Fs:  # free air resonance (Hz)
+    value: 95.6
+    winner: vendor_page
+    sources:
+      vendor_page: 95.6
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00285
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00285
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00417
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00417
+_sources:
+  vendor_page: https://www.soundimports.eu/en/prv-audio-4mr60-ndy-4.html

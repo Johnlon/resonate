@@ -30,9 +30,53 @@ manu_page_fields:
 - SPL
 - Sd
 - Vas
-freq_low_hz: 2500.0
-freq_high_hz: 40000.0
 specs:
-  sensitivity_db: 92.0
-  freq_low_hz: 2500.0
-  freq_high_hz: 40000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.7
+    winner: manu_page
+    sources:
+      manu_page: 5.7
+  Sd:  # effective piston area (m²)
+    value: 0.0007
+    winner: manu_page
+    sources:
+      manu_page: 0.0007
+  BL:  # force factor (T·m)
+    value: 3.6
+    winner: manu_page
+    sources:
+      manu_page: 3.6
+  Qts:  # total Q factor
+    value: 0.47
+    winner: manu_page
+    sources:
+      manu_page: 0.47
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 92.0
+    winner: manu_page
+    sources:
+      manu_page: 92.0
+  Fs:  # free air resonance (Hz)
+    value: 534.0
+    winner: manu_page
+    sources:
+      manu_page: 534.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 2.0e-05
+    winner: manu_page
+    sources:
+      manu_page: 2.0e-05
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 2500.0
+    winner: manu_page
+    sources:
+      manu_page: 2500.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 40000.0
+    winner: manu_page
+    sources:
+      manu_page: 40000.0
+_sources:
+  datasheet: https://www.scan-speak.dk/datasheet/pdf/d2908-716000.pdf
+  adv_datasheet: https://www.scan-speak.dk/datasheet/adv/d2908-714000.pdf
+  manu_page: https://www.scan-speak.dk/product/d2908-716000/

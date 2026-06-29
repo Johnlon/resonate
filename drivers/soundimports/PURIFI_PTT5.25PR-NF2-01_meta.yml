@@ -14,4 +14,46 @@ dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.00849
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00849
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00128
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00128
+  Xmax:  # one-way linear excursion (m)
+    value: 0.007
+    winner: vendor_page
+    sources:
+      vendor_page: 0.007
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.63
+    winner: vendor_page
+    sources:
+      vendor_page: 0.63
+  Qms:  # mechanical Q factor
+    value: 9.9
+    winner: vendor_page
+    sources:
+      vendor_page: 9.9
+  Fs:  # free air resonance (Hz)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0131
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0131
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.05
+    winner: vendor_page
+    sources:
+      vendor_page: 0.05
+_sources:
+  vendor_page: https://www.soundimports.eu/en/purifi-ptt525pr-nf2-01.html

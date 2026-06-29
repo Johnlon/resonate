@@ -15,5 +15,60 @@ community: null
 fetched_sku: null
 driver_type: tweeter
 specs:
-  power_rms_W: 50.0
-  sensitivity_db: 89.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.4
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4
+  Qes:  # electrical Q factor
+    value: 1.73
+    winner: vendor_page
+    sources:
+      vendor_page: 1.73
+  Qts:  # total Q factor
+    value: 0.97
+    winner: vendor_page
+    sources:
+      vendor_page: 0.97
+  Qms:  # mechanical Q factor
+    value: 2.21
+    winner: vendor_page
+    sources:
+      vendor_page: 2.21
+  Le:  # voice coil inductance (H)
+    value: 0.00158
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00158
+  Pe:  # rated power input (W)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  Fs:  # free air resonance (Hz)
+    value: 905.0
+    winner: vendor_page
+    sources:
+      vendor_page: 905.0
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 89.0
+    winner: vendor_page
+    sources:
+      vendor_page: 89.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 1.6
+    winner: vendor_page
+    sources:
+      vendor_page: 1.6
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-dc28fs-8.html

@@ -15,9 +15,31 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: woofer
-freq_low_hz: 32.0
-freq_high_hz: 1400.0
 specs:
-  power_rms_W: 50.0
-  freq_low_hz: 32.0
-  freq_high_hz: 1400.0
+  Pe:  # rated power input (W)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  Fs:  # free air resonance (Hz)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 32.0
+    winner: vendor_page
+    sources:
+      vendor_page: 32.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 1400.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1400.0
+_sources:
+  vendor_page: https://www.parts-express.com/Visaton-W-150-X-5.9-Woofer-4-Ohm-292-519

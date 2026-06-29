@@ -15,9 +15,52 @@ dq_issue: null
 community: null
 fetched_sku: null
 driver_type: woofer
-freq_low_hz: 300.0
-freq_high_hz: 40000.0
 specs:
-  sensitivity_db: 93.5
-  freq_low_hz: 300.0
-  freq_high_hz: 40000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.4
+    winner: manu_page
+    sources:
+      manu_page: 3.4
+  Sd:  # effective piston area (m²)
+    value: 0.0233
+    winner: manu_page
+    sources:
+      manu_page: 0.0233
+  BL:  # force factor (T·m)
+    value: 8.2
+    winner: manu_page
+    sources:
+      manu_page: 8.2
+  Qts:  # total Q factor
+    value: 0.28
+    winner: manu_page
+    sources:
+      manu_page: 0.28
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 93.5
+    winner: manu_page
+    sources:
+      manu_page: 93.5
+  Fs:  # free air resonance (Hz)
+    value: 38.0
+    winner: manu_page
+    sources:
+      manu_page: 38.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.054
+    winner: manu_page
+    sources:
+      manu_page: 0.054
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 300.0
+    winner: manu_page
+    sources:
+      manu_page: 300.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 40000.0
+    winner: manu_page
+    sources:
+      manu_page: 40000.0
+_sources:
+  datasheet: https://www.scan-speak.dk/datasheet/reviews/21WE-4542T00_VoiceCoil_2020-10.pdf
+  manu_page: https://www.scan-speak.dk/product/21we-4542t00/

@@ -19,8 +19,77 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 253-061
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 3.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
+  Sd:  # effective piston area (m²)
+    value: 0.088
+    winner: vendor_page
+    sources:
+      vendor_page: 0.088
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004
+  Qes:  # electrical Q factor
+    value: 0.31
+    winner: vendor_page
+    sources:
+      vendor_page: 0.31
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.0025102091544293085
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0025102091544293085
+  BL:  # force factor (T·m)
+    value: 19.2
+    winner: vendor_page
+    sources:
+      vendor_page: 19.2
+  Qts:  # total Q factor
+    value: 0.3
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3
+  Qms:  # mechanical Q factor
+    value: 8.2
+    winner: vendor_page
+    sources:
+      vendor_page: 8.2
+  Le:  # voice coil inductance (H)
+    value: 36.0
+    winner: vendor_page
+    sources:
+      vendor_page: 36.0
+  Pe:  # rated power input (W)
+    value: 400.0
+    winner: vendor_page
+    sources:
+      vendor_page: 400.0
+  Fs:  # free air resonance (Hz)
+    value: 36.0
+    winner: vendor_page
+    sources:
+      vendor_page: 36.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.235878944
+    winner: vendor_page
+    sources:
+      vendor_page: 0.235878944
+  Mms:  # moving mass incl. air load (kg)
+    value: 9.1e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 9.1e-05
+  Znom:  # nominal impedance (Ω)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/253-061--15wr400-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Beyma-15WR400-WR-Series-15-Subwoofer-8-Ohm-253-061

@@ -19,10 +19,62 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 285-410
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  freq_low_hz: 1.0
-  freq_high_hz: 300.0
-  power_rms_W: 50.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0
+  Sd:  # effective piston area (m²)
+    value: 0.00196
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00196
+  Qes:  # electrical Q factor
+    value: 0.82
+    winner: vendor_page
+    sources:
+      vendor_page: 0.82
+  Qts:  # total Q factor
+    value: 0.68
+    winner: vendor_page
+    sources:
+      vendor_page: 0.68
+  Qms:  # mechanical Q factor
+    value: 4.09
+    winner: vendor_page
+    sources:
+      vendor_page: 4.09
+  Le:  # voice coil inductance (H)
+    value: 5.9999999999999995e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9999999999999995e-05
+  Pe:  # rated power input (W)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  Fs:  # free air resonance (Hz)
+    value: 345.0
+    winner: vendor_page
+    sources:
+      vendor_page: 345.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 1.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 300.0
+    winner: vendor_page
+    sources:
+      vendor_page: 300.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/285-410--dayton-audio-cf50n-4mp-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-CF50N-4MP-2-Carbon-Fiber-Cone-Midrange-Matched-Pair-4-Ohm-285-410

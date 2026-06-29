@@ -15,4 +15,15 @@ community: null
 fetched_sku: null
 driver_type: pr
 specs:
-  linear_xmax_mm: 38.0
+  Xmax:  # one-way linear excursion (m)
+    value: 0.019
+    winner: vendor_page
+    sources:
+      vendor_page: 0.019
+  Fs:  # free air resonance (Hz)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-epique-e150he-pr.html

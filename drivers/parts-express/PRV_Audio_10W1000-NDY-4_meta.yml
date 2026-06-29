@@ -19,9 +19,87 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-2955
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 3.0
-  sensitivity_db: 97.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0
+  Sd:  # effective piston area (m²)
+    value: 0.038
+    winner: vendor_page
+    sources:
+      vendor_page: 0.038
+  Cms:  # mechanical compliance (m/N)
+    value: 0.04636
+    winner: vendor_page
+    sources:
+      vendor_page: 0.04636
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0065
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0065
+  Qes:  # electrical Q factor
+    value: 0.28
+    winner: vendor_page
+    sources:
+      vendor_page: 0.28
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.6336570059498223
+    winner: vendor_page
+    sources:
+      vendor_page: 1.6336570059498223
+  BL:  # force factor (T·m)
+    value: 12.03
+    winner: vendor_page
+    sources:
+      vendor_page: 12.03
+  Qts:  # total Q factor
+    value: 0.27
+    winner: vendor_page
+    sources:
+      vendor_page: 0.27
+  Qms:  # mechanical Q factor
+    value: 8.37
+    winner: vendor_page
+    sources:
+      vendor_page: 8.37
+  Le:  # voice coil inductance (H)
+    value: 0.00047
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00047
+  Pe:  # rated power input (W)
+    value: 500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 500.0
+  Fs:  # free air resonance (Hz)
+    value: 50.19
+    winner: vendor_page
+    sources:
+      vendor_page: 50.19
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.046439551999999995
+    winner: vendor_page
+    sources:
+      vendor_page: 0.046439551999999995
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.04336
+    winner: vendor_page
+    sources:
+      vendor_page: 0.04336
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 97.0
+    winner: vendor_page
+    sources:
+      vendor_page: 97.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-2955--prv-audio-10w1000-ndy-4-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/PRV-Audio-10W1000-NDY-4-10-Neodymium-Pro-Audio-Woofer-4-Ohm-294-2955

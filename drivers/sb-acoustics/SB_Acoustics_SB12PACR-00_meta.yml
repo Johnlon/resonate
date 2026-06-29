@@ -15,4 +15,37 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.005
+    winner: manu_page
+    sources:
+      manu_page: 0.005
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00121
+    winner: manu_page
+    sources:
+      manu_page: 0.00121
+  Qms:  # mechanical Q factor
+    value: 12.4
+    winner: manu_page
+    sources:
+      manu_page: 12.4
+  Fs:  # free air resonance (Hz)
+    value: 33.0
+    winner: manu_page
+    sources:
+      manu_page: 33.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0043
+    winner: manu_page
+    sources:
+      manu_page: 0.0043
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0192
+    winner: manu_page
+    sources:
+      manu_page: 0.0192
+_sources:
+  datasheet: https://sbacoustics.com/wp-content/uploads/2020/03/4in-SB12PACR-00.pdf
+  manu_page: https://sbacoustics.com/product/4-sb12pacr-00-aluminium/

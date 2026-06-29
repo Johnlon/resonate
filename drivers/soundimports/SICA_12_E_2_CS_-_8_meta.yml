@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 200.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  Sd:  # effective piston area (m²)
+    value: 0.04909
+    winner: vendor_page
+    sources:
+      vendor_page: 0.04909
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000297
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000297
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004
+  Qes:  # electrical Q factor
+    value: 0.43
+    winner: vendor_page
+    sources:
+      vendor_page: 0.43
+  BL:  # force factor (T·m)
+    value: 13.05
+    winner: vendor_page
+    sources:
+      vendor_page: 13.05
+  Qts:  # total Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  Qms:  # mechanical Q factor
+    value: 3.06
+    winner: vendor_page
+    sources:
+      vendor_page: 3.06
+  Le:  # voice coil inductance (H)
+    value: 0.00082
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00082
+  Pe:  # rated power input (W)
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
+  Fs:  # free air resonance (Hz)
+    value: 43.7
+    winner: vendor_page
+    sources:
+      vendor_page: 43.7
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.1018
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1018
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0446
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0446
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sica-12-e-2-cs-8.html

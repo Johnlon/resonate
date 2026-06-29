@@ -15,9 +15,57 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
-freq_low_hz: 3500.0
-freq_high_hz: 27000.0
 specs:
-  power_rms_W: 10.0
-  freq_low_hz: 3500.0
-  freq_high_hz: 27000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.8
+    winner: vendor_page
+    sources:
+      vendor_page: 5.8
+  Qes:  # electrical Q factor
+    value: 6.09
+    winner: vendor_page
+    sources:
+      vendor_page: 6.09
+  Qts:  # total Q factor
+    value: 2.2
+    winner: vendor_page
+    sources:
+      vendor_page: 2.2
+  Qms:  # mechanical Q factor
+    value: 3.45
+    winner: vendor_page
+    sources:
+      vendor_page: 3.45
+  Le:  # voice coil inductance (H)
+    value: 4.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0e-05
+  Pe:  # rated power input (W)
+    value: 10.0
+    winner: vendor_page
+    sources:
+      vendor_page: 10.0
+  Fs:  # free air resonance (Hz)
+    value: 2125.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2125.0
+  Znom:  # nominal impedance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 3500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3500.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 27000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 27000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/275-025-dayton-audio-nd16fa-6-specifications-46192.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-ND16FA-6-5-8-Soft-Dome-Neodymium-Tweeter-275-025

@@ -19,8 +19,77 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 264-1632
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 25.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.11
+    winner: vendor_page
+    sources:
+      vendor_page: 6.11
+  Sd:  # effective piston area (m²)
+    value: 0.0036299999999999995
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0036299999999999995
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0026
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0026
+  Qes:  # electrical Q factor
+    value: 1.23
+    winner: vendor_page
+    sources:
+      vendor_page: 1.23
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.942477796076938
+    winner: vendor_page
+    sources:
+      vendor_page: 0.942477796076938
+  BL:  # force factor (T·m)
+    value: 3.32
+    winner: vendor_page
+    sources:
+      vendor_page: 3.32
+  Qts:  # total Q factor
+    value: 0.72
+    winner: vendor_page
+    sources:
+      vendor_page: 0.72
+  Qms:  # mechanical Q factor
+    value: 1.75
+    winner: vendor_page
+    sources:
+      vendor_page: 1.75
+  Le:  # voice coil inductance (H)
+    value: 0.00011
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00011
+  Pe:  # rated power input (W)
+    value: 25.0
+    winner: vendor_page
+    sources:
+      vendor_page: 25.0
+  Fs:  # free air resonance (Hz)
+    value: 105.0
+    winner: vendor_page
+    sources:
+      vendor_page: 105.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.000991088
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000991088
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0025
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0025
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/264-1632--peerless-tg9fd10-08-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Peerless-TG9FD10-08-3-1-2-Glass-Fiber-Cone-Full-Range-Driver-8-Ohm-264-1632

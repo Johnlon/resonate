@@ -43,7 +43,73 @@ manu_page_fields:
 - SPL
 - Sd
 - Vas
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  sensitivity_db: 92.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.7
+    winner: manu_page
+    sources:
+      manu_page: 5.7
+  Sd:  # effective piston area (m²)
+    value: 0.0055
+    winner: manu_page
+    sources:
+      manu_page: 0.0055
+  Cms:  # mechanical compliance (m/N)
+    value: 9.0e-05
+    winner: manu_page
+    sources:
+      manu_page: 9.0e-05
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0004
+    winner: manu_page
+    sources:
+      manu_page: 0.0004
+  Qes:  # electrical Q factor
+    value: 2.22
+    winner: manu_page
+    sources:
+      manu_page: 2.22
+  BL:  # force factor (T·m)
+    value: 4.7
+    winner: manu_page
+    sources:
+      manu_page: 4.7
+  Qts:  # total Q factor
+    value: 1.73
+    winner: manu_page
+    sources:
+      manu_page: 1.73
+  Qms:  # mechanical Q factor
+    value: 7.75
+    winner: manu_page
+    sources:
+      manu_page: 7.75
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 92.0
+    winner: manu_page
+    sources:
+      manu_page: 92.0
+  Le:  # voice coil inductance (H)
+    value: 0.00013
+    winner: manu_page
+    sources:
+      manu_page: 0.00013
+  Fs:  # free air resonance (Hz)
+    value: 300.0
+    winner: manu_page
+    sources:
+      manu_page: 300.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00036
+    winner: manu_page
+    sources:
+      manu_page: 0.00036
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00339
+    winner: manu_page
+    sources:
+      manu_page: 0.00339
+_sources:
+  datasheet: https://www.scan-speak.dk/datasheet/pdf/d7608-920010.pdf
+  adv_datasheet: https://www.scan-speak.dk/datasheet/adv/d7608-920010.pdf
+  manu_page: https://www.scan-speak.dk/product/d7608-920010/

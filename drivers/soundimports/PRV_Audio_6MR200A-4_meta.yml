@@ -15,4 +15,65 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 200.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.4
+    winner: vendor_page
+    sources:
+      vendor_page: 3.4
+  Sd:  # effective piston area (m²)
+    value: 0.0137
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0137
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00262
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00262
+  Qes:  # electrical Q factor
+    value: 1.08
+    winner: vendor_page
+    sources:
+      vendor_page: 1.08
+  BL:  # force factor (T·m)
+    value: 4.92
+    winner: vendor_page
+    sources:
+      vendor_page: 4.92
+  Qts:  # total Q factor
+    value: 0.97
+    winner: vendor_page
+    sources:
+      vendor_page: 0.97
+  Qms:  # mechanical Q factor
+    value: 9.47
+    winner: vendor_page
+    sources:
+      vendor_page: 9.47
+  Le:  # voice coil inductance (H)
+    value: 0.00018
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00018
+  Pe:  # rated power input (W)
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
+  Fs:  # free air resonance (Hz)
+    value: 138.3
+    winner: vendor_page
+    sources:
+      vendor_page: 138.3
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00389
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00389
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00889
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00889
+_sources:
+  vendor_page: https://www.soundimports.eu/en/prv-audio-6mr200a-4.html

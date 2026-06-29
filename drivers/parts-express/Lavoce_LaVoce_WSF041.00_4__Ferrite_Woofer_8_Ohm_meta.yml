@@ -15,9 +15,82 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 120.0
-freq_high_hz: 11000.0
 specs:
-  power_rms_W: 40.0
-  freq_low_hz: 120.0
-  freq_high_hz: 11000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.5
+    winner: vendor_page
+    sources:
+      vendor_page: 5.5
+  Sd:  # effective piston area (m²)
+    value: 0.0052899999999999996
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0052899999999999996
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000378
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000378
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0028
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0028
+  Qes:  # electrical Q factor
+    value: 0.57
+    winner: vendor_page
+    sources:
+      vendor_page: 0.57
+  BL:  # force factor (T·m)
+    value: 5.8
+    winner: vendor_page
+    sources:
+      vendor_page: 5.8
+  Qts:  # total Q factor
+    value: 0.524
+    winner: vendor_page
+    sources:
+      vendor_page: 0.524
+  Qms:  # mechanical Q factor
+    value: 6.5
+    winner: vendor_page
+    sources:
+      vendor_page: 6.5
+  Le:  # voice coil inductance (H)
+    value: 2.9999999999999997e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 2.9999999999999997e-05
+  Pe:  # rated power input (W)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  Fs:  # free air resonance (Hz)
+    value: 122.0
+    winner: vendor_page
+    sources:
+      vendor_page: 122.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0015007904
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0015007904
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 120.0
+    winner: vendor_page
+    sources:
+      vendor_page: 120.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 11000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 11000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/293-710--lavoce-wsf041.00-specifications.pdf
+  vendor_page: https://www.parts-express.com/LaVoce-WSF041.00-4-Woofer-8-Ohm-293-710

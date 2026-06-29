@@ -15,5 +15,40 @@ community: null
 fetched_sku: null
 driver_type: tweeter
 specs:
-  power_rms_W: 80.0
-  sensitivity_db: 106.0
+  Pe:  # rated power input (W)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  Fs:  # free air resonance (Hz)
+    value: 1600.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1600.0
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  power_peak_W:  # peak power handling (W)
+    value: 80.0
+    winner: vendor_page
+    sources:
+      vendor_page: 80.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 106.0
+    winner: vendor_page
+    sources:
+      vendor_page: 106.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 2.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 18.0
+    winner: vendor_page
+    sources:
+      vendor_page: 18.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/grs-bt3-8.html

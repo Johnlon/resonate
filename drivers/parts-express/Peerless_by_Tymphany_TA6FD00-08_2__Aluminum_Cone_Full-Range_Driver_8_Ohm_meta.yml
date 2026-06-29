@@ -16,4 +16,66 @@ fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  power_rms_W: 10.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.46
+    winner: vendor_page
+    sources:
+      vendor_page: 6.46
+  Sd:  # effective piston area (m²)
+    value: 0.0015199999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0015199999999999999
+  Xmax:  # one-way linear excursion (m)
+    value: 0.001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001
+  Qes:  # electrical Q factor
+    value: 1.42
+    winner: vendor_page
+    sources:
+      vendor_page: 1.42
+  BL:  # force factor (T·m)
+    value: 2.45
+    winner: vendor_page
+    sources:
+      vendor_page: 2.45
+  Qts:  # total Q factor
+    value: 1.03
+    winner: vendor_page
+    sources:
+      vendor_page: 1.03
+  Qms:  # mechanical Q factor
+    value: 3.81
+    winner: vendor_page
+    sources:
+      vendor_page: 3.81
+  Le:  # voice coil inductance (H)
+    value: 4.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0e-05
+  Pe:  # rated power input (W)
+    value: 10.0
+    winner: vendor_page
+    sources:
+      vendor_page: 10.0
+  Fs:  # free air resonance (Hz)
+    value: 150.1
+    winner: vendor_page
+    sources:
+      vendor_page: 150.1
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00025485119999999996
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00025485119999999996
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/264-1612--tymphany-ta6fd00-08-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Peerless-TA6FD00-08-2-Aluminum-Cone-Full-Range-Driver-8-Ohm-264-1612

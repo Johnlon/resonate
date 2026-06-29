@@ -21,8 +21,82 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-2092
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 1530.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.82
+    winner: vendor_page
+    sources:
+      vendor_page: 5.82
+  Sd:  # effective piston area (m²)
+    value: 0.0855
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0855
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00016
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00016
+  Xmax:  # one-way linear excursion (m)
+    value: 0.003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.003
+  Qes:  # electrical Q factor
+    value: 0.313
+    winner: vendor_page
+    sources:
+      vendor_page: 0.313
+  Rms:  # mechanical resistance (kg/s)
+    value: 8.87
+    winner: vendor_page
+    sources:
+      vendor_page: 8.87
+  BL:  # force factor (T·m)
+    value: 21.22
+    winner: vendor_page
+    sources:
+      vendor_page: 21.22
+  Qts:  # total Q factor
+    value: 0.281
+    winner: vendor_page
+    sources:
+      vendor_page: 0.281
+  Qms:  # mechanical Q factor
+    value: 2.278
+    winner: vendor_page
+    sources:
+      vendor_page: 2.278
+  Le:  # voice coil inductance (H)
+    value: 0.0009599999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0009599999999999999
+  Pe:  # rated power input (W)
+    value: 1.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0
+  Fs:  # free air resonance (Hz)
+    value: 42.0
+    winner: vendor_page
+    sources:
+      vendor_page: 42.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.1622
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1622
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.09165
+    winner: vendor_page
+    sources:
+      vendor_page: 0.09165
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-2092--tf1530-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Celestion-TF1530-15-Professional-Speaker-400W-294-2092

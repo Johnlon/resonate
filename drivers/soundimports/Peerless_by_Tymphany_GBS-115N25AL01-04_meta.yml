@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 20.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.3
+    winner: vendor_page
+    sources:
+      vendor_page: 3.3
+  Sd:  # effective piston area (m²)
+    value: 0.00581
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00581
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00037
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00037
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00727
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00727
+  Qes:  # electrical Q factor
+    value: 0.772
+    winner: vendor_page
+    sources:
+      vendor_page: 0.772
+  BL:  # force factor (T·m)
+    value: 4.53
+    winner: vendor_page
+    sources:
+      vendor_page: 4.53
+  Qts:  # total Q factor
+    value: 0.63
+    winner: vendor_page
+    sources:
+      vendor_page: 0.63
+  Qms:  # mechanical Q factor
+    value: 3.46
+    winner: vendor_page
+    sources:
+      vendor_page: 3.46
+  Le:  # voice coil inductance (H)
+    value: 0.000344
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000344
+  Pe:  # rated power input (W)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  Fs:  # free air resonance (Hz)
+    value: 90.0
+    winner: vendor_page
+    sources:
+      vendor_page: 90.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00179
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00179
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0093
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0093
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/peerless-by-tymphany-gbs-115n25al01-04.html

@@ -15,9 +15,57 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
-freq_low_hz: 1200.0
-freq_high_hz: 22000.0
 specs:
-  power_rms_W: 50.0
-  freq_low_hz: 1200.0
-  freq_high_hz: 22000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.1
+    winner: vendor_page
+    sources:
+      vendor_page: 3.1
+  Qes:  # electrical Q factor
+    value: 0.6
+    winner: vendor_page
+    sources:
+      vendor_page: 0.6
+  Qts:  # total Q factor
+    value: 0.5
+    winner: vendor_page
+    sources:
+      vendor_page: 0.5
+  Qms:  # mechanical Q factor
+    value: 3.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0
+  Le:  # voice coil inductance (H)
+    value: 8.999999999999999e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 8.999999999999999e-05
+  Pe:  # rated power input (W)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  Fs:  # free air resonance (Hz)
+    value: 1900.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1900.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 1200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1200.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 22000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 22000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/292-554--visaton-dt94-4-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Visaton-DT94-4-0.8-Polycarbonate-Tweeter-4-Ohm-292-554

@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
-freq_low_hz: 110.0
-freq_high_hz: 10000.0
 specs:
-  power_rms_W: 5.0
-  freq_low_hz: 110.0
-  freq_high_hz: 10000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.2
+    winner: vendor_page
+    sources:
+      vendor_page: 3.2
+  Sd:  # effective piston area (m²)
+    value: 0.0036299999999999995
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0036299999999999995
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0007
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0007
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0026
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0026
+  Qes:  # electrical Q factor
+    value: 1.14
+    winner: vendor_page
+    sources:
+      vendor_page: 1.14
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.66976660979432
+    winner: vendor_page
+    sources:
+      vendor_page: 0.66976660979432
+  BL:  # force factor (T·m)
+    value: 2.4
+    winner: vendor_page
+    sources:
+      vendor_page: 2.4
+  Qts:  # total Q factor
+    value: 0.83
+    winner: vendor_page
+    sources:
+      vendor_page: 0.83
+  Qms:  # mechanical Q factor
+    value: 3.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0
+  Le:  # voice coil inductance (H)
+    value: 7.000000000000001e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 7.000000000000001e-05
+  Pe:  # rated power input (W)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+  Fs:  # free air resonance (Hz)
+    value: 113.0
+    winner: vendor_page
+    sources:
+      vendor_page: 113.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00141584
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00141584
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00283
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00283
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 110.0
+    winner: vendor_page
+    sources:
+      vendor_page: 110.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 10000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 10000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/264-1064--tymphany-tg9fd10-04-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Peerless-TG9FD10-04-3-1-2-Glass-Fiber-Cone-Full-Range-264-1064

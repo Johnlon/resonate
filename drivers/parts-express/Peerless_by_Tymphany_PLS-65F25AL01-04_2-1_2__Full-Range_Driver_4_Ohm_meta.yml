@@ -16,4 +16,76 @@ fetched_sku: null
 obsolete: null
 driver_type: mid-bass
 specs:
-  power_rms_W: 25.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.43
+    winner: vendor_page
+    sources:
+      vendor_page: 3.43
+  Sd:  # effective piston area (m²)
+    value: 0.00212
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00212
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0017
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0017
+  Qes:  # electrical Q factor
+    value: 0.85
+    winner: vendor_page
+    sources:
+      vendor_page: 0.85
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.4801067573015565
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4801067573015565
+  BL:  # force factor (T·m)
+    value: 2.45
+    winner: vendor_page
+    sources:
+      vendor_page: 2.45
+  Qts:  # total Q factor
+    value: 0.67
+    winner: vendor_page
+    sources:
+      vendor_page: 0.67
+  Qms:  # mechanical Q factor
+    value: 3.08
+    winner: vendor_page
+    sources:
+      vendor_page: 3.08
+  Le:  # voice coil inductance (H)
+    value: 2.9999999999999997e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 2.9999999999999997e-05
+  Pe:  # rated power input (W)
+    value: 25.0
+    winner: vendor_page
+    sources:
+      vendor_page: 25.0
+  Fs:  # free air resonance (Hz)
+    value: 112.07
+    winner: vendor_page
+    sources:
+      vendor_page: 112.07
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.000566336
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000566336
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0021000000000000003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0021000000000000003
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/264-1540--tymphany-pls-65f25al01-04-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Peerless-PLS-65F25AL01-04-2-1-2-Full-Range-Driver-4-Ohm-264-1540

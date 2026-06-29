@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 25.0
-freq_high_hz: 400.0
 specs:
-  power_rms_W: 300.0
-  freq_low_hz: 25.0
-  freq_high_hz: 400.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.39
+    winner: vendor_page
+    sources:
+      vendor_page: 4.39
+  Sd:  # effective piston area (m²)
+    value: 0.03526
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03526
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00021799999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00021799999999999999
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0126
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0126
+  Qes:  # electrical Q factor
+    value: 0.48
+    winner: vendor_page
+    sources:
+      vendor_page: 0.48
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.8619977996853352
+    winner: vendor_page
+    sources:
+      vendor_page: 1.8619977996853352
+  BL:  # force factor (T·m)
+    value: 14.12
+    winner: vendor_page
+    sources:
+      vendor_page: 14.12
+  Qts:  # total Q factor
+    value: 0.46
+    winner: vendor_page
+    sources:
+      vendor_page: 0.46
+  Qms:  # mechanical Q factor
+    value: 11.7
+    winner: vendor_page
+    sources:
+      vendor_page: 11.7
+  Le:  # voice coil inductance (H)
+    value: 0.00102
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00102
+  Pe:  # rated power input (W)
+    value: 300.0
+    winner: vendor_page
+    sources:
+      vendor_page: 300.0
+  Fs:  # free air resonance (Hz)
+    value: 33.5
+    winner: vendor_page
+    sources:
+      vendor_page: 33.5
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.038482531199999996
+    winner: vendor_page
+    sources:
+      vendor_page: 0.038482531199999996
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.1035
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1035
+  Znom:  # nominal impedance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 25.0
+    winner: vendor_page
+    sources:
+      vendor_page: 25.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 400.0
+    winner: vendor_page
+    sources:
+      vendor_page: 400.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/264-1654--tympany-sdf-250f75pr01-06-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Peerless-SDF-250F75PR01-06-10-Paper-Cone-Subwoofer-264-1654

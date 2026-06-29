@@ -15,4 +15,60 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 100.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 10.6
+    winner: vendor_page
+    sources:
+      vendor_page: 10.6
+  Sd:  # effective piston area (m²)
+    value: 0.0057
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0057
+  Xmax:  # one-way linear excursion (m)
+    value: 0.001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001
+  Qes:  # electrical Q factor
+    value: 1.41
+    winner: vendor_page
+    sources:
+      vendor_page: 1.41
+  Qts:  # total Q factor
+    value: 1.1
+    winner: vendor_page
+    sources:
+      vendor_page: 1.1
+  Qms:  # mechanical Q factor
+    value: 4.99
+    winner: vendor_page
+    sources:
+      vendor_page: 4.99
+  Le:  # voice coil inductance (H)
+    value: 0.00024
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00024
+  Pe:  # rated power input (W)
+    value: 100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 100.0
+  Fs:  # free air resonance (Hz)
+    value: 450.0
+    winner: vendor_page
+    sources:
+      vendor_page: 450.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00016
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00016
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/volt-loudspeakers-vm753e.html

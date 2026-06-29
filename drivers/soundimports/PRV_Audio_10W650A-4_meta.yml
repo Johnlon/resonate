@@ -15,4 +15,65 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 650.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.7
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7
+  Sd:  # effective piston area (m²)
+    value: 0.0415
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0415
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004
+  Qes:  # electrical Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
+  BL:  # force factor (T·m)
+    value: 11.23
+    winner: vendor_page
+    sources:
+      vendor_page: 11.23
+  Qts:  # total Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Qms:  # mechanical Q factor
+    value: 16.07
+    winner: vendor_page
+    sources:
+      vendor_page: 16.07
+  Le:  # voice coil inductance (H)
+    value: 0.00057
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00057
+  Pe:  # rated power input (W)
+    value: 650.0
+    winner: vendor_page
+    sources:
+      vendor_page: 650.0
+  Fs:  # free air resonance (Hz)
+    value: 66.88
+    winner: vendor_page
+    sources:
+      vendor_page: 66.88
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.04123
+    winner: vendor_page
+    sources:
+      vendor_page: 0.04123
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.03309
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03309
+_sources:
+  vendor_page: https://www.soundimports.eu/en/prv-audio-10w650a-4.html

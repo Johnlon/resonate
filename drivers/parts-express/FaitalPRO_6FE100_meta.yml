@@ -20,9 +20,87 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-1150
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  sensitivity_db: 91.0
-  power_rms_W: 100.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.4
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4
+  Sd:  # effective piston area (m²)
+    value: 0.0143
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0143
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00048
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00048
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00525
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00525
+  Qes:  # electrical Q factor
+    value: 0.6
+    winner: vendor_page
+    sources:
+      vendor_page: 0.6
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.9
+    winner: vendor_page
+    sources:
+      vendor_page: 0.9
+  BL:  # force factor (T·m)
+    value: 6.8
+    winner: vendor_page
+    sources:
+      vendor_page: 6.8
+  Qts:  # total Q factor
+    value: 0.54
+    winner: vendor_page
+    sources:
+      vendor_page: 0.54
+  Qms:  # mechanical Q factor
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 91.0
+    winner: vendor_page
+    sources:
+      vendor_page: 91.0
+  Le:  # voice coil inductance (H)
+    value: 0.0005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0005
+  Pe:  # rated power input (W)
+    value: 100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 100.0
+  Fs:  # free air resonance (Hz)
+    value: 61.0
+    winner: vendor_page
+    sources:
+      vendor_page: 61.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0141
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0141
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.014
+    winner: vendor_page
+    sources:
+      vendor_page: 0.014
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-1150-faitalpro-6fe100-8-specifications.pdf
+  vendor_page: https://www.parts-express.com/FaitalPRO-6FE100-6-Professional-Woofer-8-Ohm-294-1150

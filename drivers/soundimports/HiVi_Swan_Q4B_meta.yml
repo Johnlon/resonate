@@ -15,5 +15,30 @@ community: null
 fetched_sku: null
 driver_type: tweeter
 specs:
-  power_rms_W: 30.0
-  sensitivity_db: 90.0
+  Pe:  # rated power input (W)
+    value: 15.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15.0
+  Fs:  # free air resonance (Hz)
+    value: 700.0
+    winner: vendor_page
+    sources:
+      vendor_page: 700.0
+  Znom:  # nominal impedance (Ω)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+  power_peak_W:  # peak power handling (W)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 90.0
+    winner: vendor_page
+    sources:
+      vendor_page: 90.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/hivi-q4b.html

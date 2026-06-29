@@ -19,8 +19,77 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-5767
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 500.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  Sd:  # effective piston area (m²)
+    value: 0.032
+    winner: vendor_page
+    sources:
+      vendor_page: 0.032
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0055
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0055
+  Qes:  # electrical Q factor
+    value: 0.44
+    winner: vendor_page
+    sources:
+      vendor_page: 0.44
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.8539373355741284
+    winner: vendor_page
+    sources:
+      vendor_page: 1.8539373355741284
+  BL:  # force factor (T·m)
+    value: 13.4
+    winner: vendor_page
+    sources:
+      vendor_page: 13.4
+  Qts:  # total Q factor
+    value: 0.42
+    winner: vendor_page
+    sources:
+      vendor_page: 0.42
+  Qms:  # mechanical Q factor
+    value: 7.9
+    winner: vendor_page
+    sources:
+      vendor_page: 7.9
+  Le:  # voice coil inductance (H)
+    value: 3.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0
+  Pe:  # rated power input (W)
+    value: 500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 500.0
+  Fs:  # free air resonance (Hz)
+    value: 63.0
+    winner: vendor_page
+    sources:
+      vendor_page: 63.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.025201952
+    winner: vendor_page
+    sources:
+      vendor_page: 0.025201952
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.037
+    winner: vendor_page
+    sources:
+      vendor_page: 0.037
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-5767--bc-10fcx64-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/B-C-10FCX64-10-Professional-Coaxial-Speaker-70-x-70-8-Ohm-294-5767

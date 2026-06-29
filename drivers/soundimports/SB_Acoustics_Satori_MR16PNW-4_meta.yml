@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 40.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.2
+    winner: vendor_page
+    sources:
+      vendor_page: 3.2
+  Sd:  # effective piston area (m²)
+    value: 0.0119
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0119
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00235
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00235
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0031
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0031
+  Qes:  # electrical Q factor
+    value: 0.26
+    winner: vendor_page
+    sources:
+      vendor_page: 0.26
+  BL:  # force factor (T·m)
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
+  Qts:  # total Q factor
+    value: 0.25
+    winner: vendor_page
+    sources:
+      vendor_page: 0.25
+  Qms:  # mechanical Q factor
+    value: 4.85
+    winner: vendor_page
+    sources:
+      vendor_page: 4.85
+  Le:  # voice coil inductance (H)
+    value: 0.00011
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00011
+  Pe:  # rated power input (W)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  Fs:  # free air resonance (Hz)
+    value: 31.0
+    winner: vendor_page
+    sources:
+      vendor_page: 31.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00166
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00166
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0112
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0112
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sb-acoustics-mr16pnw-4.html

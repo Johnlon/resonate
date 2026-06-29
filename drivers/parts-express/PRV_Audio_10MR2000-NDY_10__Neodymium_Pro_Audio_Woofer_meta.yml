@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 90.0
-freq_high_hz: 6500.0
 specs:
-  power_rms_W: 1.0
-  freq_low_hz: 90.0
-  freq_high_hz: 6500.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+  Sd:  # effective piston area (m²)
+    value: 0.0373
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0373
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00014299999999999998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00014299999999999998
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00715
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00715
+  Qes:  # electrical Q factor
+    value: 0.21
+    winner: vendor_page
+    sources:
+      vendor_page: 0.21
+  Rms:  # mechanical resistance (kg/s)
+    value: 13.187746633311741
+    winner: vendor_page
+    sources:
+      vendor_page: 13.187746633311741
+  BL:  # force factor (T·m)
+    value: 21.73
+    winner: vendor_page
+    sources:
+      vendor_page: 21.73
+  Qts:  # total Q factor
+    value: 0.21
+    winner: vendor_page
+    sources:
+      vendor_page: 0.21
+  Qms:  # mechanical Q factor
+    value: 1.54
+    winner: vendor_page
+    sources:
+      vendor_page: 1.54
+  Le:  # voice coil inductance (H)
+    value: 0.0005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0005
+  Pe:  # rated power input (W)
+    value: 1000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1000.0
+  Fs:  # free air resonance (Hz)
+    value: 54.48
+    winner: vendor_page
+    sources:
+      vendor_page: 54.48
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.028033632
+    winner: vendor_page
+    sources:
+      vendor_page: 0.028033632
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.05933
+    winner: vendor_page
+    sources:
+      vendor_page: 0.05933
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 90.0
+    winner: vendor_page
+    sources:
+      vendor_page: 90.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 6500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6500.0
+_sources:
+  datasheet: https://prvaudio.com/wp-content/uploads/2026/02/PRV-Catalog-2026.pdf
+  vendor_page: https://www.parts-express.com/PRV-Audio-10MR2000-NDY-10-Neodymium-Pro-Audio-Woofer-294-2956

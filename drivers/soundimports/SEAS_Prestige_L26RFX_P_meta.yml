@@ -15,4 +15,65 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 125.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.3
+    winner: vendor_page
+    sources:
+      vendor_page: 6.3
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0012
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0012
+  Xmax:  # one-way linear excursion (m)
+    value: 0.007
+    winner: vendor_page
+    sources:
+      vendor_page: 0.007
+  Qes:  # electrical Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Qts:  # total Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Qms:  # mechanical Q factor
+    value: 2.15
+    winner: vendor_page
+    sources:
+      vendor_page: 2.15
+  Le:  # voice coil inductance (H)
+    value: 0.00183
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00183
+  Pe:  # rated power input (W)
+    value: 125.0
+    winner: vendor_page
+    sources:
+      vendor_page: 125.0
+  Fs:  # free air resonance (Hz)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00603
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00603
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.053
+    winner: vendor_page
+    sources:
+      vendor_page: 0.053
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/seas-l26rfx-p.html

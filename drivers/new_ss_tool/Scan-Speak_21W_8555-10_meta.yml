@@ -43,7 +43,78 @@ manu_page_fields:
 - SPL
 - Sd
 - Vas
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  sensitivity_db: 87.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.5
+    winner: manu_page
+    sources:
+      manu_page: 5.5
+  Sd:  # effective piston area (m²)
+    value: 0.022
+    winner: manu_page
+    sources:
+      manu_page: 0.022
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00198
+    winner: manu_page
+    sources:
+      manu_page: 0.00198
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0065
+    winner: manu_page
+    sources:
+      manu_page: 0.0065
+  Qes:  # electrical Q factor
+    value: 0.33
+    winner: manu_page
+    sources:
+      manu_page: 0.33
+  BL:  # force factor (T·m)
+    value: 8.2
+    winner: manu_page
+    sources:
+      manu_page: 8.2
+  Qts:  # total Q factor
+    value: 0.31
+    winner: manu_page
+    sources:
+      manu_page: 0.31
+  Qms:  # mechanical Q factor
+    value: 4.5
+    winner: manu_page
+    sources:
+      manu_page: 4.5
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 87.0
+    winner: manu_page
+    sources:
+      manu_page: 87.0
+  Le:  # voice coil inductance (H)
+    value: 0.0004
+    winner: manu_page
+    sources:
+      manu_page: 0.0004
+  Fs:  # free air resonance (Hz)
+    value: 20.0
+    winner: manu_page
+    sources:
+      manu_page: 20.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.134
+    winner: manu_page
+    sources:
+      manu_page: 0.134
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.032
+    winner: manu_page
+    sources:
+      manu_page: 0.032
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: manu_page
+    sources:
+      manu_page: 8.0
+_sources:
+  datasheet: https://www.scan-speak.dk/datasheet/pdf/21w-8555-10.pdf
+  adv_datasheet: https://www.scan-speak.dk/datasheet/adv/21w-8555-10.pdf
+  manu_page: https://www.scan-speak.dk/product/21w-8555-10/

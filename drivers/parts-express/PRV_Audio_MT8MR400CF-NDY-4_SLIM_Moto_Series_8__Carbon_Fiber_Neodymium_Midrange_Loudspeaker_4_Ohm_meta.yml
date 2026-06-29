@@ -15,10 +15,97 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
-freq_low_hz: 110.0
-freq_high_hz: 13500.0
 specs:
-  freq_low_hz: 12.0
-  freq_high_hz: 0.0
-  sensitivity_db: 95.0
-  power_rms_W: 2.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.4
+    winner: vendor_page
+    sources:
+      vendor_page: 3.4
+  Sd:  # effective piston area (m²)
+    value: 0.0227
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0227
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000131
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000131
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0035
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0035
+  Qes:  # electrical Q factor
+    value: 0.88
+    winner: vendor_page
+    sources:
+      vendor_page: 0.88
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.2027970215159614
+    winner: vendor_page
+    sources:
+      vendor_page: 1.2027970215159614
+  BL:  # force factor (T·m)
+    value: 6.49
+    winner: vendor_page
+    sources:
+      vendor_page: 6.49
+  Qts:  # total Q factor
+    value: 0.8
+    winner: vendor_page
+    sources:
+      vendor_page: 0.8
+  Qms:  # mechanical Q factor
+    value: 9.07
+    winner: vendor_page
+    sources:
+      vendor_page: 9.07
+  Le:  # voice coil inductance (H)
+    value: 0.000104
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000104
+  Pe:  # rated power input (W)
+    value: 400.0
+    winner: vendor_page
+    sources:
+      vendor_page: 400.0
+  Fs:  # free air resonance (Hz)
+    value: 111.3
+    winner: vendor_page
+    sources:
+      vendor_page: 111.3
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.009344544
+    winner: vendor_page
+    sources:
+      vendor_page: 0.009344544
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0156
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0156
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 12.0
+    winner: vendor_page
+    sources:
+      vendor_page: 12.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 0.0
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 95.0
+    winner: vendor_page
+    sources:
+      vendor_page: 95.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/267-8032--prv-audio-mt8mr400cf-ndy-4-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/PRV-Audio-MT8MR400CF-NDY-4-SLIM-Moto-Series-8-Carbon-Fiber-Neodymium-Midrange-Loudspeaker-267-8032

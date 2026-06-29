@@ -15,4 +15,25 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 10.0
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00055
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00055
+  Pe:  # rated power input (W)
+    value: 10.0
+    winner: vendor_page
+    sources:
+      vendor_page: 10.0
+  Fs:  # free air resonance (Hz)
+    value: 190.0
+    winner: vendor_page
+    sources:
+      vendor_page: 190.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/visaton-fr-58-4.html

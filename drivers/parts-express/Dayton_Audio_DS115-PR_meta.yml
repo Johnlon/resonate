@@ -19,7 +19,47 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 295-493
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.00541
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00541
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00227
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00227
+  Xmax:  # one-way linear excursion (m)
+    value: 0.006
+    winner: vendor_page
+    sources:
+      vendor_page: 0.006
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.6538976184439084
+    winner: vendor_page
+    sources:
+      vendor_page: 0.6538976184439084
+  Qms:  # mechanical Q factor
+    value: 3.66
+    winner: vendor_page
+    sources:
+      vendor_page: 3.66
+  Fs:  # free air resonance (Hz)
+    value: 29.3
+    winner: vendor_page
+    sources:
+      vendor_page: 29.3
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.009344544
+    winner: vendor_page
+    sources:
+      vendor_page: 0.009344544
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.013
+    winner: vendor_page
+    sources:
+      vendor_page: 0.013
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/295-493--dayton-audio-ds115-pr-specification-sheet.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-DS115-PR-4-Designer-Series-Passive-Radiator-295-493

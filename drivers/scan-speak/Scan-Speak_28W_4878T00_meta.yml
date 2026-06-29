@@ -16,4 +16,41 @@ community: null
 fetched_sku: null
 driver_type: woofer
 specs:
-  sensitivity_db: 88.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.1
+    winner: manu_page
+    sources:
+      manu_page: 3.1
+  Sd:  # effective piston area (m²)
+    value: 0.0363
+    winner: manu_page
+    sources:
+      manu_page: 0.0363
+  BL:  # force factor (T·m)
+    value: 11.2
+    winner: manu_page
+    sources:
+      manu_page: 11.2
+  Qts:  # total Q factor
+    value: 0.3
+    winner: manu_page
+    sources:
+      manu_page: 0.3
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 88.0
+    winner: manu_page
+    sources:
+      manu_page: 88.0
+  Fs:  # free air resonance (Hz)
+    value: 18.0
+    winner: manu_page
+    sources:
+      manu_page: 18.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.127
+    winner: manu_page
+    sources:
+      manu_page: 0.127
+_sources:
+  datasheet: https://www.scan-speak.dk/datasheet/pdf/28w-4878t00.pdf
+  manu_page: https://www.scan-speak.dk/product/28w-4878t00/

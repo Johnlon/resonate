@@ -15,4 +15,45 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 25.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.1
+    winner: vendor_page
+    sources:
+      vendor_page: 4.1
+  Qes:  # electrical Q factor
+    value: 4.45
+    winner: vendor_page
+    sources:
+      vendor_page: 4.45
+  Qts:  # total Q factor
+    value: 1.7
+    winner: vendor_page
+    sources:
+      vendor_page: 1.7
+  Qms:  # mechanical Q factor
+    value: 2.71
+    winner: vendor_page
+    sources:
+      vendor_page: 2.71
+  Le:  # voice coil inductance (H)
+    value: 3.2e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 3.2e-05
+  Pe:  # rated power input (W)
+    value: 25.0
+    winner: vendor_page
+    sources:
+      vendor_page: 25.0
+  Fs:  # free air resonance (Hz)
+    value: 2200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2200.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/peerless-by-tymphany-oc16sc04-04.html

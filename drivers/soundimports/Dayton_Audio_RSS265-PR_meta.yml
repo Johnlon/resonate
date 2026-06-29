@@ -15,4 +15,45 @@ community: null
 fetched_sku: null
 driver_type: pr
 specs:
-  linear_xmax_mm: 48.0
+  Sd:  # effective piston area (m²)
+    value: 0.03563
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03563
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00033
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00033
+  Xmax:  # one-way linear excursion (m)
+    value: 0.024
+    winner: vendor_page
+    sources:
+      vendor_page: 0.024
+  Rms:  # mechanical resistance (kg/s)
+    value: 11.02
+    winner: vendor_page
+    sources:
+      vendor_page: 11.02
+  Qms:  # mechanical Q factor
+    value: 4.92
+    winner: vendor_page
+    sources:
+      vendor_page: 4.92
+  Fs:  # free air resonance (Hz)
+    value: 19.6
+    winner: vendor_page
+    sources:
+      vendor_page: 19.6
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0597
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0597
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.2
+    winner: vendor_page
+    sources:
+      vendor_page: 0.2
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-rss265-pr.html

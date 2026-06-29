@@ -32,6 +32,38 @@ manu_page_fields:
 - Fs
 - Sd
 - Vas
-freq_low_hz: null
-freq_high_hz: null
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.0352
+    winner: manu_page
+    sources:
+      manu_page: 0.0352
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00055
+    winner: manu_page
+    sources:
+      manu_page: 0.00055
+  Qms:  # mechanical Q factor
+    value: 13.7
+    winner: manu_page
+    sources:
+      manu_page: 13.7
+  Fs:  # free air resonance (Hz)
+    value: 11.0
+    winner: manu_page
+    sources:
+      manu_page: 11.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.095
+    winner: manu_page
+    sources:
+      manu_page: 0.095
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.4
+    winner: manu_page
+    sources:
+      manu_page: 0.4
+_sources:
+  datasheet: https://www.scan-speak.dk/datasheet/pdf/26w-0-00-00.pdf
+  adv_datasheet: https://www.scan-speak.dk/datasheet/adv/26w-0-00-00.pdf
+  manu_page: https://www.scan-speak.dk/product/26w-0-00-00/

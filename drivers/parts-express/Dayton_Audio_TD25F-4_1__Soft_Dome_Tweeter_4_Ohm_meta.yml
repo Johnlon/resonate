@@ -15,9 +15,57 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
-freq_low_hz: 2000.0
-freq_high_hz: 20000.0
 specs:
-  freq_low_hz: 2.0
-  freq_high_hz: 0.0
-  power_rms_W: 20.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.5
+    winner: vendor_page
+    sources:
+      vendor_page: 3.5
+  Qes:  # electrical Q factor
+    value: 1.62
+    winner: vendor_page
+    sources:
+      vendor_page: 1.62
+  Qts:  # total Q factor
+    value: 0.94
+    winner: vendor_page
+    sources:
+      vendor_page: 0.94
+  Qms:  # mechanical Q factor
+    value: 2.22
+    winner: vendor_page
+    sources:
+      vendor_page: 2.22
+  Le:  # voice coil inductance (H)
+    value: 4.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0e-05
+  Pe:  # rated power input (W)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  Fs:  # free air resonance (Hz)
+    value: 900.0
+    winner: vendor_page
+    sources:
+      vendor_page: 900.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 2.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 0.0
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/275-022--dayton-audio-td25f-4-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-TD25F-4-1-Soft-Dome-Tweeter-4-Ohm-275-022

@@ -15,9 +15,42 @@ community: null
 fetched_sku: null
 obsolete: true
 driver_type: tweeter
-freq_low_hz: 850.0
-freq_high_hz: 40000.0
 specs:
-  power_rms_W: 5.0
-  freq_low_hz: 850.0
-  freq_high_hz: 40000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.6
+    winner: vendor_page
+    sources:
+      vendor_page: 3.6
+  Le:  # voice coil inductance (H)
+    value: 2.0e-06
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0e-06
+  Pe:  # rated power input (W)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+  Fs:  # free air resonance (Hz)
+    value: 850.0
+    winner: vendor_page
+    sources:
+      vendor_page: 850.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 850.0
+    winner: vendor_page
+    sources:
+      vendor_page: 850.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 40000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/264-8016--tang-band-20-2240S-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Tang-Band-20-2240S-20mm-Hi-Res-Neodymium-Tweeter-264-8016

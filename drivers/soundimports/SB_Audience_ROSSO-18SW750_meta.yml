@@ -15,4 +15,70 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 750.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.1
+    winner: vendor_page
+    sources:
+      vendor_page: 5.1
+  Sd:  # effective piston area (m²)
+    value: 0.12566
+    winner: vendor_page
+    sources:
+      vendor_page: 0.12566
+  Cms:  # mechanical compliance (m/N)
+    value: 9.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 9.0e-05
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00882
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00882
+  Qes:  # electrical Q factor
+    value: 0.45
+    winner: vendor_page
+    sources:
+      vendor_page: 0.45
+  BL:  # force factor (T·m)
+    value: 23.3
+    winner: vendor_page
+    sources:
+      vendor_page: 23.3
+  Qts:  # total Q factor
+    value: 0.43
+    winner: vendor_page
+    sources:
+      vendor_page: 0.43
+  Qms:  # mechanical Q factor
+    value: 10.5
+    winner: vendor_page
+    sources:
+      vendor_page: 10.5
+  Le:  # voice coil inductance (H)
+    value: 0.00159
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00159
+  Pe:  # rated power input (W)
+    value: 750.0
+    winner: vendor_page
+    sources:
+      vendor_page: 750.0
+  Fs:  # free air resonance (Hz)
+    value: 36.0
+    winner: vendor_page
+    sources:
+      vendor_page: 36.0
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.2124
+    winner: vendor_page
+    sources:
+      vendor_page: 0.2124
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sb-audience-rosso-18sw750.html

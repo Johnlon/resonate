@@ -19,8 +19,77 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-5944
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 250.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.4
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4
+  Sd:  # effective piston area (m²)
+    value: 0.0143
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0143
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0028
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0028
+  Qes:  # electrical Q factor
+    value: 0.68
+    winner: vendor_page
+    sources:
+      vendor_page: 0.68
+  Rms:  # mechanical resistance (kg/s)
+    value: 4.39822971502571
+    winner: vendor_page
+    sources:
+      vendor_page: 4.39822971502571
+  BL:  # force factor (T·m)
+    value: 13.9
+    winner: vendor_page
+    sources:
+      vendor_page: 13.9
+  Qts:  # total Q factor
+    value: 0.6
+    winner: vendor_page
+    sources:
+      vendor_page: 0.6
+  Qms:  # mechanical Q factor
+    value: 5.4
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4
+  Le:  # voice coil inductance (H)
+    value: 0.00015
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00015
+  Pe:  # rated power input (W)
+    value: 500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 500.0
+  Fs:  # free air resonance (Hz)
+    value: 280.0
+    winner: vendor_page
+    sources:
+      vendor_page: 280.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.000566336
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000566336
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0135
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0135
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-5944--bc-speakers-6nsm51-8-spec-sheet.PDF
+  vendor_page: https://www.parts-express.com/B-C-6NSM51-8-6-Professional-Neodymium-Sealed-Back-Midrange-8-Ohm-294-5944

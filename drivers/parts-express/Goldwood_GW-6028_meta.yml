@@ -19,11 +19,97 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 290-350
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  freq_low_hz: 2019.1
-  freq_high_hz: 290.0
-  sensitivity_db: 85.0
-  power_rms_W: 90.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.3
+    winner: vendor_page
+    sources:
+      vendor_page: 7.3
+  Sd:  # effective piston area (m²)
+    value: 0.013635
+    winner: vendor_page
+    sources:
+      vendor_page: 0.013635
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00047
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00047
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0025
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0025
+  Qes:  # electrical Q factor
+    value: 1.2
+    winner: vendor_page
+    sources:
+      vendor_page: 1.2
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.6688140175868982
+    winner: vendor_page
+    sources:
+      vendor_page: 1.6688140175868982
+  BL:  # force factor (T·m)
+    value: 6.1
+    winner: vendor_page
+    sources:
+      vendor_page: 6.1
+  Qts:  # total Q factor
+    value: 0.9
+    winner: vendor_page
+    sources:
+      vendor_page: 0.9
+  Qms:  # mechanical Q factor
+    value: 3.5
+    winner: vendor_page
+    sources:
+      vendor_page: 3.5
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 85.0
+    winner: vendor_page
+    sources:
+      vendor_page: 85.0
+  Le:  # voice coil inductance (H)
+    value: 0.0005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0005
+  Pe:  # rated power input (W)
+    value: 90.0
+    winner: vendor_page
+    sources:
+      vendor_page: 90.0
+  Fs:  # free air resonance (Hz)
+    value: 58.1
+    winner: vendor_page
+    sources:
+      vendor_page: 58.1
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.011609887999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.011609887999999999
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.016
+    winner: vendor_page
+    sources:
+      vendor_page: 0.016
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 2019.1
+    winner: vendor_page
+    sources:
+      vendor_page: 2019.1
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 290.0
+    winner: vendor_page
+    sources:
+      vendor_page: 290.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/290-350-goldwood-gw-6028-specifications.pdf
+  vendor_page: https://www.parts-express.com/Goldwood-GW-6028-6-1-2-Butyl-Surround-Woofer-8-Ohm-290-350

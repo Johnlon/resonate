@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: woofer
-freq_low_hz: 150.0
-freq_high_hz: 7500.0
 specs:
-  power_rms_W: 40.0
-  freq_low_hz: 150.0
-  freq_high_hz: 7500.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.2
+    winner: vendor_page
+    sources:
+      vendor_page: 3.2
+  Sd:  # effective piston area (m²)
+    value: 0.0054
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0054
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0011799999999999998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0011799999999999998
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004
+  Qes:  # electrical Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.31125933367874264
+    winner: vendor_page
+    sources:
+      vendor_page: 0.31125933367874264
+  BL:  # force factor (T·m)
+    value: 4.5
+    winner: vendor_page
+    sources:
+      vendor_page: 4.5
+  Qts:  # total Q factor
+    value: 0.36
+    winner: vendor_page
+    sources:
+      vendor_page: 0.36
+  Qms:  # mechanical Q factor
+    value: 7.8
+    winner: vendor_page
+    sources:
+      vendor_page: 7.8
+  Le:  # voice coil inductance (H)
+    value: 0.00022
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00022
+  Pe:  # rated power input (W)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  Fs:  # free air resonance (Hz)
+    value: 56.0
+    winner: vendor_page
+    sources:
+      vendor_page: 56.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.004813856
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004813856
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.006900000000000001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.006900000000000001
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 150.0
+    winner: vendor_page
+    sources:
+      vendor_page: 150.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 7500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 7500.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/298-1140-1142--wavecore-wf118wa07-08-specifications.pdf
+  vendor_page: https://www.parts-express.com/Wavecor-WF118WA07-4-1-2-Balanced-Drive-Paper-Cone-Mid-Woofer-with-Truncated-Frame-4-Ohm-298-1140

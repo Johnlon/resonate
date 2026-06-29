@@ -15,4 +15,55 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 200.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.2
+    winner: vendor_page
+    sources:
+      vendor_page: 6.2
+  Sd:  # effective piston area (m²)
+    value: 0.0508
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0508
+  Xmax:  # one-way linear excursion (m)
+    value: 0.02
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02
+  Qes:  # electrical Q factor
+    value: 1.78
+    winner: vendor_page
+    sources:
+      vendor_page: 1.78
+  Qms:  # mechanical Q factor
+    value: 5.5
+    winner: vendor_page
+    sources:
+      vendor_page: 5.5
+  Le:  # voice coil inductance (H)
+    value: 0.0012
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0012
+  Pe:  # rated power input (W)
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
+  Fs:  # free air resonance (Hz)
+    value: 22.0
+    winner: vendor_page
+    sources:
+      vendor_page: 22.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.205
+    winner: vendor_page
+    sources:
+      vendor_page: 0.205
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sb-acoustics-gema.html

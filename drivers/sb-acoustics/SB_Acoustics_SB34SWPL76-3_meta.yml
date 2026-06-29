@@ -16,8 +16,91 @@ dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  voice_coil_dia_mm: 75.5
-  Hg_mm: 8.0
-  linear_xmax_mm: 30.0
-  sensitivity_db: 90.0
-  power_rms_W: 300.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 2.0
+    winner: manu_page
+    sources:
+      manu_page: 2.0
+  Sd:  # effective piston area (m²)
+    value: 0.0458
+    winner: manu_page
+    sources:
+      manu_page: 0.0458
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00014
+    winner: manu_page
+    sources:
+      manu_page: 0.00014
+  Xmax:  # one-way linear excursion (m)
+    value: 0.015
+    winner: manu_page
+    sources:
+      manu_page: 0.015
+  Qes:  # electrical Q factor
+    value: 0.52
+    winner: manu_page
+    sources:
+      manu_page: 0.52
+  BL:  # force factor (T·m)
+    value: 9.7
+    winner: manu_page
+    sources:
+      manu_page: 9.7
+  Qts:  # total Q factor
+    value: 0.48
+    winner: manu_page
+    sources:
+      manu_page: 0.48
+  Qms:  # mechanical Q factor
+    value: 5.62
+    winner: manu_page
+    sources:
+      manu_page: 5.62
+  Le:  # voice coil inductance (H)
+    value: 0.0014
+    winner: manu_page
+    sources:
+      manu_page: 0.0014
+  Pe:  # rated power input (W)
+    value: 300.0
+    winner: manu_page
+    sources:
+      manu_page: 300.0
+  Fs:  # free air resonance (Hz)
+    value: 27.5
+    winner: manu_page
+    sources:
+      manu_page: 27.5
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.043
+    winner: manu_page
+    sources:
+      manu_page: 0.043
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.231
+    winner: manu_page
+    sources:
+      manu_page: 0.231
+  Znom:  # nominal impedance (Ω)
+    value: 2.0
+    winner: manu_page
+    sources:
+      manu_page: 2.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 75.5
+    winner: manu_page
+    sources:
+      manu_page: 75.5
+  Hg_mm:  # magnetic gap height (mm)
+    value: 8.0
+    winner: manu_page
+    sources:
+      manu_page: 8.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 90.0
+    winner: manu_page
+    sources:
+      manu_page: 90.0
+_sources:
+  datasheet: https://sbacoustics.com/wp-content/uploads/2020/03/12in-SB34SWPL76-3-DV.pdf
+  manu_page: https://sbacoustics.com/product/12in-sb34swpl76-3-dv/

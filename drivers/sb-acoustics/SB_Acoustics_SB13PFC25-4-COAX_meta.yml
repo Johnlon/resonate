@@ -17,22 +17,94 @@ community: null
 fetched_sku: null
 specs:
   woofer:
-    Znom: 4.0
-    Re: 3.2
-    Le: 0.0003
-    Sd: 0.0082
-    Xmax: 0.00465
-    Fs: 43.0
-    Qms: 2.26
-    Qes: 0.3
-    Qts: 0.27
-    Mms: 0.0091
-    BL: 5.1
-    Vas: 0.0144
-    Cms: 0.00151
-    Pe: 40.0
+    Znom:
+      value: 4.0
+      winner: manu_page
+      sources:
+        manu_page: 4.0
+    Re:
+      value: 3.2
+      winner: manu_page
+      sources:
+        manu_page: 3.2
+    Le:
+      value: 0.0003
+      winner: manu_page
+      sources:
+        manu_page: 0.0003
+    Sd:
+      value: 0.0082
+      winner: manu_page
+      sources:
+        manu_page: 0.0082
+    Xmax:
+      value: 0.00465
+      winner: manu_page
+      sources:
+        manu_page: 0.00465
+    Fs:
+      value: 43.0
+      winner: manu_page
+      sources:
+        manu_page: 43.0
+    Qms:
+      value: 2.26
+      winner: manu_page
+      sources:
+        manu_page: 2.26
+    Qes:
+      value: 0.3
+      winner: manu_page
+      sources:
+        manu_page: 0.3
+    Qts:
+      value: 0.27
+      winner: manu_page
+      sources:
+        manu_page: 0.27
+    Mms:
+      value: 0.0091
+      winner: manu_page
+      sources:
+        manu_page: 0.0091
+    BL:
+      value: 5.1
+      winner: manu_page
+      sources:
+        manu_page: 5.1
+    Vas:
+      value: 0.0144
+      winner: manu_page
+      sources:
+        manu_page: 0.0144
+    Cms:
+      value: 0.00151
+      winner: manu_page
+      sources:
+        manu_page: 0.00151
+    Pe:
+      value: 40.0
+      winner: manu_page
+      sources:
+        manu_page: 40.0
   tweeter:
-    Znom: 4.0
-    Re: 3.0
-    Fs: 1300.0
-    Pe: 10.0
+    Znom:
+      value: 4.0
+      winner: manu_page
+      sources:
+        manu_page: 4.0
+    Re:
+      value: 3.0
+      winner: manu_page
+      sources:
+        manu_page: 3.0
+    Fs:
+      value: 1300.0
+      winner: manu_page
+      sources:
+        manu_page: 1300.0
+    Pe:
+      value: 10.0
+      winner: manu_page
+      sources:
+        manu_page: 10.0

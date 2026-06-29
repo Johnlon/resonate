@@ -19,11 +19,62 @@ obsolete: null
 dq_issue: missing_Sd
 community: null
 fetched_sku: 264-1022
-field_provenance: null
-freq_low_hz: 2500.0
-freq_high_hz: 20000.0
 specs:
-  sensitivity_db: 100.0
-  freq_low_hz: 264.0
-  freq_high_hz: 1022.0
-  power_rms_W: 100.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.9
+    winner: vendor_page
+    sources:
+      vendor_page: 4.9
+  Qes:  # electrical Q factor
+    value: 1.01
+    winner: vendor_page
+    sources:
+      vendor_page: 1.01
+  Qts:  # total Q factor
+    value: 0.55
+    winner: vendor_page
+    sources:
+      vendor_page: 0.55
+  Qms:  # mechanical Q factor
+    value: 1.21
+    winner: vendor_page
+    sources:
+      vendor_page: 1.21
+  Le:  # voice coil inductance (H)
+    value: 4.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0e-05
+  Pe:  # rated power input (W)
+    value: 100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 100.0
+  Fs:  # free air resonance (Hz)
+    value: 911.7
+    winner: vendor_page
+    sources:
+      vendor_page: 911.7
+  Znom:  # nominal impedance (Ω)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 100.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 264.0
+    winner: vendor_page
+    sources:
+      vendor_page: 264.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 1022.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1022.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/264-1022--tymphany-d27tg35-06-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Peerless-D27TG-35-06-1-Silk-Dome-Tweeter-264-1022

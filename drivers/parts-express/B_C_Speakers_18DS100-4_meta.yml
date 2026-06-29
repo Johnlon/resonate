@@ -20,8 +20,77 @@ obsolete: null
 dq_issue: Qts_impossible; suspect:Qts; suspect:Qes; suspect:Qms
 community: null
 fetched_sku: 294-5970
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 18.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 2.5
+    winner: vendor_page
+    sources:
+      vendor_page: 2.5
+  Sd:  # effective piston area (m²)
+    value: 0.121
+    winner: vendor_page
+    sources:
+      vendor_page: 0.121
+  Xmax:  # one-way linear excursion (m)
+    value: 0.013
+    winner: vendor_page
+    sources:
+      vendor_page: 0.013
+  Qes:  # electrical Q factor
+    value: 0.24
+    winner: vendor_page
+    sources:
+      vendor_page: 0.24
+  Rms:  # mechanical resistance (kg/s)
+    value: 6.031857894892402
+    winner: vendor_page
+    sources:
+      vendor_page: 6.031857894892402
+  BL:  # force factor (T·m)
+    value: 24.3
+    winner: vendor_page
+    sources:
+      vendor_page: 24.3
+  Qts:  # total Q factor
+    value: 0.24
+    winner: vendor_page
+    sources:
+      vendor_page: 0.24
+  Qms:  # mechanical Q factor
+    value: 10.0
+    winner: vendor_page
+    sources:
+      vendor_page: 10.0
+  Le:  # voice coil inductance (H)
+    value: 0.00282
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00282
+  Pe:  # rated power input (W)
+    value: 3000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3000.0
+  Fs:  # free air resonance (Hz)
+    value: 32.0
+    winner: vendor_page
+    sources:
+      vendor_page: 32.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.156875072
+    winner: vendor_page
+    sources:
+      vendor_page: 0.156875072
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.3
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-5970--bc-speakers-18ds100-4-spec-sheet.PDF
+  vendor_page: https://www.parts-express.com/B-C-18DS100-4-18-Professional-Neodymium-Subwoofer-4-Ohm-294-5970

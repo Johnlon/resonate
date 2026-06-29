@@ -15,4 +15,65 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 500.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.8
+    winner: vendor_page
+    sources:
+      vendor_page: 3.8
+  Sd:  # effective piston area (m²)
+    value: 0.0143
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0143
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0025
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0025
+  Qes:  # electrical Q factor
+    value: 0.47
+    winner: vendor_page
+    sources:
+      vendor_page: 0.47
+  BL:  # force factor (T·m)
+    value: 8.77
+    winner: vendor_page
+    sources:
+      vendor_page: 8.77
+  Qts:  # total Q factor
+    value: 0.43
+    winner: vendor_page
+    sources:
+      vendor_page: 0.43
+  Qms:  # mechanical Q factor
+    value: 23.1
+    winner: vendor_page
+    sources:
+      vendor_page: 23.1
+  Le:  # voice coil inductance (H)
+    value: 5.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0e-05
+  Pe:  # rated power input (W)
+    value: 500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 500.0
+  Fs:  # free air resonance (Hz)
+    value: 99.8
+    winner: vendor_page
+    sources:
+      vendor_page: 99.8
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00514
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00514
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.01414
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01414
+_sources:
+  vendor_page: https://www.soundimports.eu/en/prv-audio-6mr500-ndy.html

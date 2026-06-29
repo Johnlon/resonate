@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: tweeter
 specs:
-  power_rms_W: 20.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.5
+    winner: vendor_page
+    sources:
+      vendor_page: 5.5
+  Sd:  # effective piston area (m²)
+    value: 0.00113
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00113
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000603
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000603
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0014
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0014
+  Qes:  # electrical Q factor
+    value: 1.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0
+  BL:  # force factor (T·m)
+    value: 2.6
+    winner: vendor_page
+    sources:
+      vendor_page: 2.6
+  Qts:  # total Q factor
+    value: 0.81
+    winner: vendor_page
+    sources:
+      vendor_page: 0.81
+  Qms:  # mechanical Q factor
+    value: 2.75
+    winner: vendor_page
+    sources:
+      vendor_page: 2.75
+  Le:  # voice coil inductance (H)
+    value: 0.0002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0002
+  Pe:  # rated power input (W)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  Fs:  # free air resonance (Hz)
+    value: 216.0
+    winner: vendor_page
+    sources:
+      vendor_page: 216.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0001
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0009
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0009
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sica-2-h-08-sl-8.html

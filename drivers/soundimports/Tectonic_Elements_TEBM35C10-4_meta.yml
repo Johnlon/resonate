@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: tweeter
 specs:
-  power_rms_W: 10.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.2
+    winner: vendor_page
+    sources:
+      vendor_page: 4.2
+  Sd:  # effective piston area (m²)
+    value: 0.001104
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001104
+  Cms:  # mechanical compliance (m/N)
+    value: 0.001085
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001085
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0025
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0025
+  Qes:  # electrical Q factor
+    value: 1.06
+    winner: vendor_page
+    sources:
+      vendor_page: 1.06
+  BL:  # force factor (T·m)
+    value: 2.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0
+  Qts:  # total Q factor
+    value: 0.83
+    winner: vendor_page
+    sources:
+      vendor_page: 0.83
+  Qms:  # mechanical Q factor
+    value: 3.84
+    winner: vendor_page
+    sources:
+      vendor_page: 3.84
+  Le:  # voice coil inductance (H)
+    value: 5.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0e-05
+  Pe:  # rated power input (W)
+    value: 10.0
+    winner: vendor_page
+    sources:
+      vendor_page: 10.0
+  Fs:  # free air resonance (Hz)
+    value: 145.0
+    winner: vendor_page
+    sources:
+      vendor_page: 145.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 6.3e-06
+    winner: vendor_page
+    sources:
+      vendor_page: 6.3e-06
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00111
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00111
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/tectonic-elements-tebm35c10-4.html

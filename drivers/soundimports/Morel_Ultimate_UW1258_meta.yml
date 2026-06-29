@@ -15,4 +15,80 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 800.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.8
+    winner: vendor_page
+    sources:
+      vendor_page: 6.8
+  Sd:  # effective piston area (m²)
+    value: 0.0437
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0437
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00044
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00044
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0125
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0125
+  Qes:  # electrical Q factor
+    value: 0.56
+    winner: vendor_page
+    sources:
+      vendor_page: 0.56
+  Rms:  # mechanical resistance (kg/s)
+    value: 8.15
+    winner: vendor_page
+    sources:
+      vendor_page: 8.15
+  BL:  # force factor (T·m)
+    value: 0.64
+    winner: vendor_page
+    sources:
+      vendor_page: 0.64
+  Qts:  # total Q factor
+    value: 0.43
+    winner: vendor_page
+    sources:
+      vendor_page: 0.43
+  Qms:  # mechanical Q factor
+    value: 1.88
+    winner: vendor_page
+    sources:
+      vendor_page: 1.88
+  Le:  # voice coil inductance (H)
+    value: 0.00133
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00133
+  Pe:  # rated power input (W)
+    value: 800.0
+    winner: vendor_page
+    sources:
+      vendor_page: 800.0
+  Fs:  # free air resonance (Hz)
+    value: 21.0
+    winner: vendor_page
+    sources:
+      vendor_page: 21.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.13838
+    winner: vendor_page
+    sources:
+      vendor_page: 0.13838
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.10449
+    winner: vendor_page
+    sources:
+      vendor_page: 0.10449
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/morel-uw1258.html

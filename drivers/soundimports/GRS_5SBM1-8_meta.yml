@@ -15,5 +15,50 @@ community: null
 fetched_sku: null
 driver_type: midrange
 specs:
-  power_rms_W: 200.0
-  sensitivity_db: 91.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.1
+    winner: vendor_page
+    sources:
+      vendor_page: 7.1
+  Le:  # voice coil inductance (H)
+    value: 0.0008
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0008
+  Pe:  # rated power input (W)
+    value: 100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 100.0
+  Fs:  # free air resonance (Hz)
+    value: 475.0
+    winner: vendor_page
+    sources:
+      vendor_page: 475.0
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  power_peak_W:  # peak power handling (W)
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 91.0
+    winner: vendor_page
+    sources:
+      vendor_page: 91.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 500.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 10.0
+    winner: vendor_page
+    sources:
+      vendor_page: 10.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/grs-5sbm1-8.html

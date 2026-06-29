@@ -15,10 +15,97 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 50.0
-freq_high_hz: 3000.0
 specs:
-  sensitivity_db: 96.0
-  power_rms_W: 350.0
-  freq_low_hz: 50.0
-  freq_high_hz: 3000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.84
+    winner: vendor_page
+    sources:
+      vendor_page: 5.84
+  Sd:  # effective piston area (m²)
+    value: 0.053092999999999994
+    winner: vendor_page
+    sources:
+      vendor_page: 0.053092999999999994
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000152
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000152
+  Xmax:  # one-way linear excursion (m)
+    value: 0.007
+    winner: vendor_page
+    sources:
+      vendor_page: 0.007
+  Qes:  # electrical Q factor
+    value: 0.417
+    winner: vendor_page
+    sources:
+      vendor_page: 0.417
+  Rms:  # mechanical resistance (kg/s)
+    value: 5.416433234000501
+    winner: vendor_page
+    sources:
+      vendor_page: 5.416433234000501
+  BL:  # force factor (T·m)
+    value: 18.38
+    winner: vendor_page
+    sources:
+      vendor_page: 18.38
+  Qts:  # total Q factor
+    value: 0.381
+    winner: vendor_page
+    sources:
+      vendor_page: 0.381
+  Qms:  # mechanical Q factor
+    value: 4.451
+    winner: vendor_page
+    sources:
+      vendor_page: 4.451
+  Le:  # voice coil inductance (H)
+    value: 0.000713
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000713
+  Pe:  # rated power input (W)
+    value: 350.0
+    winner: vendor_page
+    sources:
+      vendor_page: 350.0
+  Fs:  # free air resonance (Hz)
+    value: 43.4
+    winner: vendor_page
+    sources:
+      vendor_page: 43.4
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.060597952000000004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.060597952000000004
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.08841
+    winner: vendor_page
+    sources:
+      vendor_page: 0.08841
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 96.0
+    winner: vendor_page
+    sources:
+      vendor_page: 96.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 3000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-1971--celestion-cf1230bmb-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Celestion-CF1230BMB-12-Extended-Excursion-Midbass-Driver-8-Ohm-294-1971

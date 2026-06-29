@@ -15,9 +15,57 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
-freq_low_hz: 2000.0
-freq_high_hz: 30000.0
 specs:
-  power_rms_W: 35.0
-  freq_low_hz: 2000.0
-  freq_high_hz: 30000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.5
+    winner: vendor_page
+    sources:
+      vendor_page: 3.5
+  Qes:  # electrical Q factor
+    value: 1.72
+    winner: vendor_page
+    sources:
+      vendor_page: 1.72
+  Qts:  # total Q factor
+    value: 1.01
+    winner: vendor_page
+    sources:
+      vendor_page: 1.01
+  Qms:  # mechanical Q factor
+    value: 2.45
+    winner: vendor_page
+    sources:
+      vendor_page: 2.45
+  Le:  # voice coil inductance (H)
+    value: 0.033
+    winner: vendor_page
+    sources:
+      vendor_page: 0.033
+  Pe:  # rated power input (W)
+    value: 35.0
+    winner: vendor_page
+    sources:
+      vendor_page: 35.0
+  Fs:  # free air resonance (Hz)
+    value: 690.0
+    winner: vendor_page
+    sources:
+      vendor_page: 690.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 2000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2000.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 30000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/298-1124-1126--wavecor-tw030wa13-14-specifications.pdf
+  vendor_page: https://www.parts-express.com/Wavecor-TW030WA13-30mm-Textile-Dome-Neodymium-Tweeter-with-Heat-Sink-and-Rear-Chamber-4-Ohm-298-1124

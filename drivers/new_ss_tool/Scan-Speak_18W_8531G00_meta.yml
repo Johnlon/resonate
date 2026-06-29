@@ -43,9 +43,88 @@ manu_page_fields:
 - SPL
 - Sd
 - Vas
-freq_low_hz: 3.0
-freq_high_hz: 52.0
 specs:
-  sensitivity_db: 87.0
-  freq_low_hz: 3.0
-  freq_high_hz: 52.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.8
+    winner: manu_page
+    sources:
+      manu_page: 5.8
+  Sd:  # effective piston area (m²)
+    value: 0.015
+    winner: manu_page
+    sources:
+      manu_page: 0.015
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00185
+    winner: manu_page
+    sources:
+      manu_page: 0.00185
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0065
+    winner: manu_page
+    sources:
+      manu_page: 0.0065
+  Qes:  # electrical Q factor
+    value: 0.39
+    winner: manu_page
+    sources:
+      manu_page: 0.39
+  BL:  # force factor (T·m)
+    value: 6.8
+    winner: manu_page
+    sources:
+      manu_page: 6.8
+  Qts:  # total Q factor
+    value: 0.36
+    winner: manu_page
+    sources:
+      manu_page: 0.36
+  Qms:  # mechanical Q factor
+    value: 5.1
+    winner: manu_page
+    sources:
+      manu_page: 5.1
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 87.0
+    winner: manu_page
+    sources:
+      manu_page: 87.0
+  Le:  # voice coil inductance (H)
+    value: 0.00035
+    winner: manu_page
+    sources:
+      manu_page: 0.00035
+  Fs:  # free air resonance (Hz)
+    value: 28.0
+    winner: manu_page
+    sources:
+      manu_page: 28.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0582
+    winner: manu_page
+    sources:
+      manu_page: 0.0582
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.01759
+    winner: manu_page
+    sources:
+      manu_page: 0.01759
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: manu_page
+    sources:
+      manu_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 3.0
+    winner: manu_page
+    sources:
+      manu_page: 3.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 52.0
+    winner: manu_page
+    sources:
+      manu_page: 52.0
+_sources:
+  datasheet: https://www.scan-speak.dk/datasheet/pdf/18w-8531g00.pdf
+  adv_datasheet: https://www.scan-speak.dk/datasheet/adv/18w-8531g00.pdf
+  manu_page: https://www.scan-speak.dk/product/18w-8531g00/

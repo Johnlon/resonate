@@ -15,4 +15,46 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.01986
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01986
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000212
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000212
+  Xmax:  # one-way linear excursion (m)
+    value: 0.025
+    winner: vendor_page
+    sources:
+      vendor_page: 0.025
+  Rms:  # mechanical resistance (kg/s)
+    value: 7.833037682950552
+    winner: vendor_page
+    sources:
+      vendor_page: 7.833037682950552
+  Qms:  # mechanical Q factor
+    value: 2.55
+    winner: vendor_page
+    sources:
+      vendor_page: 2.55
+  Fs:  # free air resonance (Hz)
+    value: 37.4
+    winner: vendor_page
+    sources:
+      vendor_page: 37.4
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.011893055999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.011893055999999999
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.085
+    winner: vendor_page
+    sources:
+      vendor_page: 0.085
+_sources:
+  vendor_page: https://www.parts-express.com/Dayton-Audio-SS8-PR-8-Signature-Series-Passive-Radiator-295-729

@@ -15,9 +15,87 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
-freq_low_hz: 120.0
-freq_high_hz: 20000.0
 specs:
-  freq_low_hz: 120.0
-  freq_high_hz: 20000.0
-  power_rms_W: 4.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.9
+    winner: vendor_page
+    sources:
+      vendor_page: 6.9
+  Sd:  # effective piston area (m²)
+    value: 0.00235
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00235
+  Xmax:  # one-way linear excursion (m)
+    value: 0.001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001
+  Qes:  # electrical Q factor
+    value: 2.29
+    winner: vendor_page
+    sources:
+      vendor_page: 2.29
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.4065590492880909
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4065590492880909
+  BL:  # force factor (T·m)
+    value: 1.98
+    winner: vendor_page
+    sources:
+      vendor_page: 1.98
+  Qts:  # total Q factor
+    value: 1.31
+    winner: vendor_page
+    sources:
+      vendor_page: 1.31
+  Qms:  # mechanical Q factor
+    value: 3.06
+    winner: vendor_page
+    sources:
+      vendor_page: 3.06
+  Le:  # voice coil inductance (H)
+    value: 0.00013000000000000002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00013000000000000002
+  Pe:  # rated power input (W)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  Fs:  # free air resonance (Hz)
+    value: 220.0
+    winner: vendor_page
+    sources:
+      vendor_page: 220.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.000424752
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000424752
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0009
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0009
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 120.0
+    winner: vendor_page
+    sources:
+      vendor_page: 120.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 20000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/292-7839--visaton-sc4.9fl8-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Visaton-SC4.9FL8-1.6-x-3.5-Full-Range-Speaker-8-Ohm-292-7839

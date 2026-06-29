@@ -15,4 +15,35 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 2.0
+  Pe:  # rated power input (W)
+    value: 2.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0
+  Fs:  # free air resonance (Hz)
+    value: 1480.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1480.0
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  power_peak_W:  # peak power handling (W)
+    value: 2.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 1.48
+    winner: vendor_page
+    sources:
+      vendor_page: 1.48
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 10.0
+    winner: vendor_page
+    sources:
+      vendor_page: 10.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-ce3525mp-8.html

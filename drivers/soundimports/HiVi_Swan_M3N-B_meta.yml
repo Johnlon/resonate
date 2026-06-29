@@ -15,7 +15,70 @@ community: null
 fetched_sku: null
 driver_type: mid-bass
 specs:
-  power_rms_W: 15.0
-  sensitivity_db: 82.0
-  voice_coil_dia_mm: 20.0
-  linear_xmax_mm: 6.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.5
+    winner: vendor_page
+    sources:
+      vendor_page: 6.5
+  Xmax:  # one-way linear excursion (m)
+    value: 0.003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.003
+  Qes:  # electrical Q factor
+    value: 1.03
+    winner: vendor_page
+    sources:
+      vendor_page: 1.03
+  BL:  # force factor (T·m)
+    value: 3.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0
+  Qts:  # total Q factor
+    value: 0.8
+    winner: vendor_page
+    sources:
+      vendor_page: 0.8
+  Qms:  # mechanical Q factor
+    value: 3.57
+    winner: vendor_page
+    sources:
+      vendor_page: 3.57
+  Pe:  # rated power input (W)
+    value: 15.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15.0
+  Fs:  # free air resonance (Hz)
+    value: 91.0
+    winner: vendor_page
+    sources:
+      vendor_page: 91.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0015
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0015
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0026
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0026
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 82.0
+    winner: vendor_page
+    sources:
+      vendor_page: 82.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/hivi-m3n-b.html

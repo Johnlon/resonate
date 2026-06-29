@@ -15,7 +15,7 @@ import re
 from pathlib import Path
 from typing import Any, Literal, Optional
 
-from pydantic import BaseModel, ConfigDict, Field, field_validator
+from pydantic import BaseModel, ConfigDict, Field
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -28,16 +28,8 @@ class FieldProvenanceEntry(BaseModel):
     """One T/S field's source record — what each source had and which won."""
     model_config = ConfigDict(extra="forbid")
 
-    # source names: 'pdf' | 'adv_pdf' | 'html'
-    sources: dict[str, float] = Field(description="source → SI value")
-    winner: str               = Field(description="source whose value is in the WDR")
-
-    @field_validator("winner")
-    @classmethod
-    def _known_source(cls, v: str) -> str:
-        if v not in {"pdf", "adv_pdf", "html"}:
-            raise ValueError(f"must be 'pdf', 'adv_pdf', or 'html'; got {v!r}")
-        return v
+    sources: dict[str, float] = Field(description="source_key → SI value")
+    winner: str               = Field(description="source key whose value is in the WDR")
 
 
 class MetaModel(BaseModel):
@@ -45,7 +37,7 @@ class MetaModel(BaseModel):
     _meta.yml sidecar — provenance, quality, and source links for one driver.
     extra="forbid" rejects any key not listed here.
     """
-    model_config = ConfigDict(extra="forbid")
+    model_config = ConfigDict(extra="forbid", populate_by_name=True)
 
     # ── mandatory ─────────────────────────────────────────────────────────────
     quality: Literal["H", "M", "L"] = Field(
@@ -102,26 +94,33 @@ class MetaModel(BaseModel):
     fetched_sku: Optional[str] = Field(None,
         description="SKU/product ID the scraper used to fetch this driver's data — aids re-scraping")
 
-    # ── per-field provenance ──────────────────────────────────────────────────
-    # Keyed by WDR field name (e.g. 'Fs', 'Re', 'BL').
-    # Winner priority: html > adv_pdf > pdf when html_wins=True (manufacturer sites);
-    #                  pdf > adv_pdf > html when html_wins=False (resellers).
-    field_provenance: Optional[dict[str, FieldProvenanceEntry]] = Field(None,
-        description="Per-field source record. Each key is a WDR field name; value records all source values and which won.")
+    # ── named source index ────────────────────────────────────────────────────
+    # Maps source keys used in specs.*.winner/sources to their URLs.
+    # Keys: 'datasheet', 'adv_datasheet', 'manu_page', 'vendor_page'
+    source_index: Optional[dict[str, Optional[str]]] = Field(None, alias="_sources",
+        description="Named source index. Maps source keys to URLs. "
+                    "Keys: datasheet, adv_datasheet, manu_page, vendor_page.")
 
-    # ── frequency range (from product page, informational only) ───────────────
+    # ── per-field provenance (legacy — replaced by specs.*. sources) ──────────
+    field_provenance: Optional[dict] = Field(None,
+        description="Legacy per-field source record. Superseded by specs block. Kept for backward compatibility.")
+
+    # ── frequency range (legacy — now in specs.freq_low_hz / freq_high_hz) ───
     freq_low_hz: Optional[float] = Field(None,
-        description="Lower frequency limit published by manufacturer (Hz) — informational, not a simulation parameter")
+        description="Legacy: lower frequency limit (Hz). Superseded by specs.freq_low_hz.")
     freq_high_hz: Optional[float] = Field(None,
-        description="Upper frequency limit published by manufacturer (Hz) — informational, not a simulation parameter")
+        description="Legacy: upper frequency limit (Hz). Superseded by specs.freq_high_hz.")
 
-    # ── complete datasheet specs (for composite drivers like coaxials) ────────
+    # ── unified specs block ───────────────────────────────────────────────────
+    # Every field (T/S + non-T/S) with full source provenance.
+    # Each entry: {value: <SI>, winner: <source_key>, sources: {key: val, ...}, note?: str}
+    # Source keys map to URLs via the _sources block above.
+    # Field names match WDR keys (Fs, Re, SPL, Pe, Xmax…) where a WDR field exists;
+    # non-WDR fields use descriptive names (voice_coil_dia_mm, Hg_mm, freq_low_hz…).
+    # Coaxial drivers: {woofer: {field: {value,winner,sources}}, tweeter: {...}}
     specs: Optional[dict] = Field(None,
-        description="Complete non-T/S datasheet specifications. For composite drivers (e.g. coaxials), "
-                    "contains sub-dicts keyed by component (e.g. 'woofer', 'tweeter'). "
-                    "All T/S values in SI units: Hz, Ω, H, T·m, kg, m², m³, m/N, kg/s, W, dB. "
-                    "See WDR_SCHEMA.md §3 and §6 for unit reference. "
-                    "YAML may include inline unit comments for clarity (# Hz, # m³, etc.) — comments are informational only.")
+        description="Unified parameter block. Each entry has value, winner, sources, optional note. "
+                    "All T/S values in SI units. See _sources for URL index.")
 
 
 # ══════════════════════════════════════════════════════════════════════════════

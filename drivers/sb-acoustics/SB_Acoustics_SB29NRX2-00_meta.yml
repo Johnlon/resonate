@@ -15,4 +15,37 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.0312
+    winner: manu_page
+    sources:
+      manu_page: 0.0312
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00043
+    winner: manu_page
+    sources:
+      manu_page: 0.00043
+  Qms:  # mechanical Q factor
+    value: 7.3
+    winner: manu_page
+    sources:
+      manu_page: 7.3
+  Fs:  # free air resonance (Hz)
+    value: 17.0
+    winner: manu_page
+    sources:
+      manu_page: 17.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.06
+    winner: manu_page
+    sources:
+      manu_page: 0.06
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.205
+    winner: manu_page
+    sources:
+      manu_page: 0.205
+_sources:
+  datasheet: https://sbacoustics.com/wp-content/uploads/2020/10/10in-SB29NRX2-00.pdf
+  manu_page: https://sbacoustics.com/product/10-sb29nrx2-00-norex/

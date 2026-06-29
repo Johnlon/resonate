@@ -19,10 +19,31 @@ obsolete: null
 dq_issue: missing_Sd; Fs_no_Q
 community: null
 fetched_sku: 270-176
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  freq_low_hz: 2.0
-  freq_high_hz: 0.0
-  power_rms_W: 50.0
+  Pe:  # rated power input (W)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  Fs:  # free air resonance (Hz)
+    value: 1300.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1300.0
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 2.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 0.0
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0
+_sources:
+  vendor_page: https://www.parts-express.com/Goldwood-GT-510-1-Soft-Dome-Tweeter-270-176

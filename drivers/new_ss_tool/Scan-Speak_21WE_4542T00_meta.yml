@@ -42,7 +42,73 @@ manu_page_fields:
 - SPL
 - Sd
 - Vas
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  sensitivity_db: 93.5
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.4
+    winner: manu_page
+    sources:
+      manu_page: 3.4
+  Sd:  # effective piston area (m²)
+    value: 0.0233
+    winner: manu_page
+    sources:
+      manu_page: 0.0233
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0007
+    winner: manu_page
+    sources:
+      manu_page: 0.0007
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0072
+    winner: manu_page
+    sources:
+      manu_page: 0.0072
+  Qes:  # electrical Q factor
+    value: 0.3
+    winner: manu_page
+    sources:
+      manu_page: 0.3
+  BL:  # force factor (T·m)
+    value: 8.2
+    winner: manu_page
+    sources:
+      manu_page: 8.2
+  Qts:  # total Q factor
+    value: 0.28
+    winner: manu_page
+    sources:
+      manu_page: 0.28
+  Qms:  # mechanical Q factor
+    value: 5.43
+    winner: manu_page
+    sources:
+      manu_page: 5.43
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 93.5
+    winner: manu_page
+    sources:
+      manu_page: 93.5
+  Le:  # voice coil inductance (H)
+    value: 0.0001
+    winner: manu_page
+    sources:
+      manu_page: 0.0001
+  Fs:  # free air resonance (Hz)
+    value: 38.0
+    winner: manu_page
+    sources:
+      manu_page: 38.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.054
+    winner: manu_page
+    sources:
+      manu_page: 0.054
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.259
+    winner: manu_page
+    sources:
+      manu_page: 0.259
+_sources:
+  datasheet: https://www.scan-speak.dk/datasheet/pdf/21we-4542t00.pdf
+  adv_datasheet: https://www.scan-speak.dk/datasheet/adv/21we-4542t00.pdf
+  manu_page: https://www.scan-speak.dk/product/21we-4542t00/

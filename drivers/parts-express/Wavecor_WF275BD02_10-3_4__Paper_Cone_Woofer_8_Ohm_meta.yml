@@ -16,4 +16,66 @@ fetched_sku: null
 obsolete: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 180.0
+  Sd:  # effective piston area (m²)
+    value: 0.0312
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0312
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0005899999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0005899999999999999
+  Xmax:  # one-way linear excursion (m)
+    value: 0.009
+    winner: vendor_page
+    sources:
+      vendor_page: 0.009
+  Qes:  # electrical Q factor
+    value: 0.47
+    winner: vendor_page
+    sources:
+      vendor_page: 0.47
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.8407235561465075
+    winner: vendor_page
+    sources:
+      vendor_page: 0.8407235561465075
+  Qts:  # total Q factor
+    value: 0.45
+    winner: vendor_page
+    sources:
+      vendor_page: 0.45
+  Qms:  # mechanical Q factor
+    value: 11.3
+    winner: vendor_page
+    sources:
+      vendor_page: 11.3
+  Pe:  # rated power input (W)
+    value: 180.0
+    winner: vendor_page
+    sources:
+      vendor_page: 180.0
+  Fs:  # free air resonance (Hz)
+    value: 28.0
+    winner: vendor_page
+    sources:
+      vendor_page: 28.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.08155238399999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.08155238399999999
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.054
+    winner: vendor_page
+    sources:
+      vendor_page: 0.054
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/298-1240--wf275bd02-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Wavecor-WF275BD02-10-3-4-Paper-Cone-Woofer-8-Ohm-298-1240

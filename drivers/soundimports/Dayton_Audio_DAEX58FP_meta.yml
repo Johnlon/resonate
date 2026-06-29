@@ -15,5 +15,71 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 40.0
-  voice_coil_dia_mm: 32.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.0
+    winner: vendor_page
+    sources:
+      vendor_page: 7.0
+  Cms:  # mechanical compliance (m/N)
+    value: 5.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0e-05
+  BL:  # force factor (T·m)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+  Qts:  # total Q factor
+    value: 1.98
+    winner: vendor_page
+    sources:
+      vendor_page: 1.98
+  Le:  # voice coil inductance (H)
+    value: 0.00047
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00047
+  Pe:  # rated power input (W)
+    value: 25.0
+    winner: vendor_page
+    sources:
+      vendor_page: 25.0
+  Fs:  # free air resonance (Hz)
+    value: 240.0
+    winner: vendor_page
+    sources:
+      vendor_page: 240.0
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00995
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00995
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  power_peak_W:  # peak power handling (W)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 60.0
+    winner: vendor_page
+    sources:
+      vendor_page: 60.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 12.0
+    winner: vendor_page
+    sources:
+      vendor_page: 12.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 32.0
+    winner: vendor_page
+    sources:
+      vendor_page: 32.0
+_sources:
+  datasheet: https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/BCE-1/pdf_Dayton%20Audio_BCE-1_2.pdf
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-daex58fp.html

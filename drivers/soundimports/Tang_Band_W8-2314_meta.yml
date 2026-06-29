@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 50.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.6
+    winner: vendor_page
+    sources:
+      vendor_page: 3.6
+  Sd:  # effective piston area (m²)
+    value: 0.022
+    winner: vendor_page
+    sources:
+      vendor_page: 0.022
+  Cms:  # mechanical compliance (m/N)
+    value: 0.71959
+    winner: vendor_page
+    sources:
+      vendor_page: 0.71959
+  Xmax:  # one-way linear excursion (m)
+    value: 0.006
+    winner: vendor_page
+    sources:
+      vendor_page: 0.006
+  Qes:  # electrical Q factor
+    value: 0.54
+    winner: vendor_page
+    sources:
+      vendor_page: 0.54
+  BL:  # force factor (T·m)
+    value: 6.08
+    winner: vendor_page
+    sources:
+      vendor_page: 6.08
+  Qts:  # total Q factor
+    value: 0.46
+    winner: vendor_page
+    sources:
+      vendor_page: 0.46
+  Qms:  # mechanical Q factor
+    value: 2.93
+    winner: vendor_page
+    sources:
+      vendor_page: 2.93
+  Le:  # voice coil inductance (H)
+    value: 6.3e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 6.3e-05
+  Pe:  # rated power input (W)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  Fs:  # free air resonance (Hz)
+    value: 38.0
+    winner: vendor_page
+    sources:
+      vendor_page: 38.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.04946
+    winner: vendor_page
+    sources:
+      vendor_page: 0.04946
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.02225
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02225
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/tang-band-w8-2314.html

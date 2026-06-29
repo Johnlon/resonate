@@ -31,7 +31,48 @@ manu_page_fields:
 - SPL
 - Sd
 - Vas
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  sensitivity_db: 80.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.0
+    winner: manu_page
+    sources:
+      manu_page: 6.0
+  Sd:  # effective piston area (m²)
+    value: 0.00152
+    winner: manu_page
+    sources:
+      manu_page: 0.00152
+  BL:  # force factor (T·m)
+    value: 3.1
+    winner: manu_page
+    sources:
+      manu_page: 3.1
+  Qts:  # total Q factor
+    value: 0.61
+    winner: manu_page
+    sources:
+      manu_page: 0.61
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 80.0
+    winner: manu_page
+    sources:
+      manu_page: 80.0
+  Fs:  # free air resonance (Hz)
+    value: 93.0
+    winner: manu_page
+    sources:
+      manu_page: 93.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0005
+    winner: manu_page
+    sources:
+      manu_page: 0.0005
+  Znom:  # nominal impedance (Ω)
+    value: 7.0
+    winner: manu_page
+    sources:
+      manu_page: 7.0
+_sources:
+  datasheet: https://www.scan-speak.dk/datasheet/pdf/5f-8422t01.pdf
+  adv_datasheet: https://www.scan-speak.dk/datasheet/adv/5f-8422t01.pdf
+  manu_page: https://www.scan-speak.dk/product/5f-8422t01/

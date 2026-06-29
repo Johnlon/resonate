@@ -19,9 +19,82 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 253-087
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  sensitivity_db: 90.0
-  power_rms_W: 350.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.9
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9
+  Sd:  # effective piston area (m²)
+    value: 0.037
+    winner: vendor_page
+    sources:
+      vendor_page: 0.037
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005
+  Qes:  # electrical Q factor
+    value: 0.45
+    winner: vendor_page
+    sources:
+      vendor_page: 0.45
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.0033173088528583743
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0033173088528583743
+  BL:  # force factor (T·m)
+    value: 16.0
+    winner: vendor_page
+    sources:
+      vendor_page: 16.0
+  Qts:  # total Q factor
+    value: 0.42
+    winner: vendor_page
+    sources:
+      vendor_page: 0.42
+  Qms:  # mechanical Q factor
+    value: 5.9
+    winner: vendor_page
+    sources:
+      vendor_page: 5.9
+  Le:  # voice coil inductance (H)
+    value: 35.0
+    winner: vendor_page
+    sources:
+      vendor_page: 35.0
+  Pe:  # rated power input (W)
+    value: 350.0
+    winner: vendor_page
+    sources:
+      vendor_page: 350.0
+  Fs:  # free air resonance (Hz)
+    value: 35.0
+    winner: vendor_page
+    sources:
+      vendor_page: 35.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.045023712
+    winner: vendor_page
+    sources:
+      vendor_page: 0.045023712
+  Mms:  # moving mass incl. air load (kg)
+    value: 8.9e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 8.9e-05
+  Znom:  # nominal impedance (Ω)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 90.0
+    winner: vendor_page
+    sources:
+      vendor_page: 90.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/253-087--10nmfs-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Beyma-10NMFS-NMF-Series-10-Carbon-Fiber-Cone-Woofer-8-Ohm-253-087

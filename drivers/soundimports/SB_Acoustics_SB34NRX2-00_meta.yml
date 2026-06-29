@@ -14,4 +14,46 @@ dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.0506
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0506
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00044
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00044
+  Xmax:  # one-way linear excursion (m)
+    value: 0.017
+    winner: vendor_page
+    sources:
+      vendor_page: 0.017
+  Rms:  # mechanical resistance (kg/s)
+    value: 3.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0
+  Qms:  # mechanical Q factor
+    value: 8.62
+    winner: vendor_page
+    sources:
+      vendor_page: 8.62
+  Fs:  # free air resonance (Hz)
+    value: 14.0
+    winner: vendor_page
+    sources:
+      vendor_page: 14.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.16
+    winner: vendor_page
+    sources:
+      vendor_page: 0.16
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.294
+    winner: vendor_page
+    sources:
+      vendor_page: 0.294
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sb-acoustics-sb34nrx2-00.html

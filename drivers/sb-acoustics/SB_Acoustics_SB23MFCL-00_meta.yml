@@ -15,4 +15,37 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.021
+    winner: manu_page
+    sources:
+      manu_page: 0.021
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0005
+    winner: manu_page
+    sources:
+      manu_page: 0.0005
+  Qms:  # mechanical Q factor
+    value: 15.3
+    winner: manu_page
+    sources:
+      manu_page: 15.3
+  Fs:  # free air resonance (Hz)
+    value: 19.0
+    winner: manu_page
+    sources:
+      manu_page: 19.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0312
+    winner: manu_page
+    sources:
+      manu_page: 0.0312
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.141
+    winner: manu_page
+    sources:
+      manu_page: 0.141
+_sources:
+  datasheet: https://sbacoustics.com/wp-content/uploads/2026/05/8-inch-SB23MFCL-00.pdf
+  manu_page: https://sbacoustics.com/product/8″-sb23mfcl-00-polypropylene/

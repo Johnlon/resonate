@@ -19,11 +19,97 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-1070
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  freq_low_hz: 200.0
-  freq_high_hz: 8.0
-  power_rms_W: 40.0
-  sensitivity_db: 97.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.7
+    winner: vendor_page
+    sources:
+      vendor_page: 4.7
+  Sd:  # effective piston area (m²)
+    value: 0.00515
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00515
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00029
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00029
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0016699999999999998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0016699999999999998
+  Qes:  # electrical Q factor
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.7
+    winner: vendor_page
+    sources:
+      vendor_page: 0.7
+  BL:  # force factor (T·m)
+    value: 7.2
+    winner: vendor_page
+    sources:
+      vendor_page: 7.2
+  Qts:  # total Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Qms:  # mechanical Q factor
+    value: 5.23
+    winner: vendor_page
+    sources:
+      vendor_page: 5.23
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 97.0
+    winner: vendor_page
+    sources:
+      vendor_page: 97.0
+  Le:  # voice coil inductance (H)
+    value: 0.00016
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00016
+  Pe:  # rated power input (W)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  Fs:  # free air resonance (Hz)
+    value: 150.0
+    winner: vendor_page
+    sources:
+      vendor_page: 150.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0011
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0011
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0039
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0039
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/294-1070--faitalpro-4fe44-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/FaitalPRO-4FE44-4-Neodymium-Professional-Midrange-8-Ohm-294-1070

@@ -19,8 +19,67 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 297-2166
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 5.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.7
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7
+  Sd:  # effective piston area (m²)
+    value: 0.00176
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00176
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00041999999999999996
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00041999999999999996
+  Qes:  # electrical Q factor
+    value: 1.23
+    winner: vendor_page
+    sources:
+      vendor_page: 1.23
+  BL:  # force factor (T·m)
+    value: 2.59
+    winner: vendor_page
+    sources:
+      vendor_page: 2.59
+  Qts:  # total Q factor
+    value: 1.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0
+  Qms:  # mechanical Q factor
+    value: 5.29
+    winner: vendor_page
+    sources:
+      vendor_page: 5.29
+  Le:  # voice coil inductance (H)
+    value: 5.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0e-05
+  Pe:  # rated power input (W)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+  Fs:  # free air resonance (Hz)
+    value: 170.0
+    winner: vendor_page
+    sources:
+      vendor_page: 170.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0001699008
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0001699008
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/297-2170--tebm36s12-4a-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Tectonic-TEBM36S05-4-1-1-2-Square-BMR-Full-Range-Speaker-4-Ohm-297-2166

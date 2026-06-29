@@ -15,4 +15,47 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.02112
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02112
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00058
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00058
+  Xmax:  # one-way linear excursion (m)
+    value: 0.011
+    winner: vendor_page
+    sources:
+      vendor_page: 0.011
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.4069085429339985
+    winner: vendor_page
+    sources:
+      vendor_page: 1.4069085429339985
+  Qms:  # mechanical Q factor
+    value: 7.66
+    winner: vendor_page
+    sources:
+      vendor_page: 7.66
+  Fs:  # free air resonance (Hz)
+    value: 25.6
+    winner: vendor_page
+    sources:
+      vendor_page: 25.6
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.03681184
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03681184
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.067
+    winner: vendor_page
+    sources:
+      vendor_page: 0.067
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/295-549--dayton-audio-dsa215-pr-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-DSA215-PR-8-Designer-Series-Aluminum-Cone-Passive-Radiator-295-549

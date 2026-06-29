@@ -15,4 +15,60 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 50.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.12
+    winner: vendor_page
+    sources:
+      vendor_page: 3.12
+  Sd:  # effective piston area (m²)
+    value: 0.01227
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01227
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000306
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000306
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0025
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0025
+  BL:  # force factor (T·m)
+    value: 4.99
+    winner: vendor_page
+    sources:
+      vendor_page: 4.99
+  Qts:  # total Q factor
+    value: 0.69
+    winner: vendor_page
+    sources:
+      vendor_page: 0.69
+  Pe:  # rated power input (W)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  Fs:  # free air resonance (Hz)
+    value: 85.4
+    winner: vendor_page
+    sources:
+      vendor_page: 85.4
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0065
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0065
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0113
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0113
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sica-6-c-1-cs-4.html

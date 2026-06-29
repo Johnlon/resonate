@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
-freq_low_hz: 50.0
-freq_high_hz: 18000.0
 specs:
-  freq_low_hz: 50.0
-  freq_high_hz: 18.0
-  power_rms_W: 125.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.6
+    winner: vendor_page
+    sources:
+      vendor_page: 6.6
+  Sd:  # effective piston area (m²)
+    value: 0.0227
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0227
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000294
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000294
+  Xmax:  # one-way linear excursion (m)
+    value: 0.002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.002
+  Qes:  # electrical Q factor
+    value: 1.1
+    winner: vendor_page
+    sources:
+      vendor_page: 1.1
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.5064059799816383
+    winner: vendor_page
+    sources:
+      vendor_page: 0.5064059799816383
+  BL:  # force factor (T·m)
+    value: 6.53
+    winner: vendor_page
+    sources:
+      vendor_page: 6.53
+  Qts:  # total Q factor
+    value: 1.02
+    winner: vendor_page
+    sources:
+      vendor_page: 1.02
+  Qms:  # mechanical Q factor
+    value: 14.07
+    winner: vendor_page
+    sources:
+      vendor_page: 14.07
+  Le:  # voice coil inductance (H)
+    value: 0.000275
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000275
+  Pe:  # rated power input (W)
+    value: 125.0
+    winner: vendor_page
+    sources:
+      vendor_page: 125.0
+  Fs:  # free air resonance (Hz)
+    value: 75.6
+    winner: vendor_page
+    sources:
+      vendor_page: 75.6
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.021209283199999998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.021209283199999998
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.015
+    winner: vendor_page
+    sources:
+      vendor_page: 0.015
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 18.0
+    winner: vendor_page
+    sources:
+      vendor_page: 18.0
+_sources:
+  datasheet: https://prvaudio.com/wp-content/uploads/2026/02/PRV-Catalog-2026.pdf
+  vendor_page: https://www.parts-express.com/PRV-Audio-8FR250-8-Full-Range-Speaker-294-2898

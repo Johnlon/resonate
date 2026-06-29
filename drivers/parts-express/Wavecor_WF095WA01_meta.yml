@@ -19,8 +19,71 @@ obsolete: null
 dq_issue: missing_Re
 community: null
 fetched_sku: 298-1225
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 10.0
+  Sd:  # effective piston area (m²)
+    value: 0.0035
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0035
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00094
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00094
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0027
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0027
+  Qes:  # electrical Q factor
+    value: 0.69
+    winner: vendor_page
+    sources:
+      vendor_page: 0.69
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.2947385107731515
+    winner: vendor_page
+    sources:
+      vendor_page: 0.2947385107731515
+  BL:  # force factor (T·m)
+    value: 3.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0
+  Qts:  # total Q factor
+    value: 0.62
+    winner: vendor_page
+    sources:
+      vendor_page: 0.62
+  Qms:  # mechanical Q factor
+    value: 6.6
+    winner: vendor_page
+    sources:
+      vendor_page: 6.6
+  Pe:  # rated power input (W)
+    value: 10.0
+    winner: vendor_page
+    sources:
+      vendor_page: 10.0
+  Fs:  # free air resonance (Hz)
+    value: 86.0
+    winner: vendor_page
+    sources:
+      vendor_page: 86.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.001699008
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001699008
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0036
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0036
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.parts-express.com/Wavecor-WF095WA01-3-3-4-Paper-Cone-Midwoofer-4-Ohm-298-1225

@@ -15,9 +15,42 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
-freq_low_hz: 2200.0
-freq_high_hz: 20000.0
 specs:
-  power_rms_W: 120.0
-  freq_low_hz: 2200.0
-  freq_high_hz: 20000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
+  Le:  # voice coil inductance (H)
+    value: 5.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0e-05
+  Pe:  # rated power input (W)
+    value: 120.0
+    winner: vendor_page
+    sources:
+      vendor_page: 120.0
+  Fs:  # free air resonance (Hz)
+    value: 750.0
+    winner: vendor_page
+    sources:
+      vendor_page: 750.0
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 2200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2200.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 20000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/277-074--morel-et-448-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Morel-ET-448-1-1-8-Soft-Dome-Tweeter-277-074

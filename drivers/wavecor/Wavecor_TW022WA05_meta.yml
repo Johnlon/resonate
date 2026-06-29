@@ -19,81 +19,118 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
-field_provenance:
-  Mms:
-    sources:
-      pdf: 0.00029
-      html: 0.00029
-    winner: html
-  Znom:
-    sources:
-      pdf: 4.0
-      html: 4.0
-    winner: html
-  Re:
-    sources:
-      html: 3.7
-    winner: html
-  Sd:
-    sources:
-      pdf: 0.00061
-      html: 0.00061
-    winner: html
-  Cms:
-    sources:
-      pdf: 0.00014
-      html: 0.00014
-    winner: html
-  Fs:
-    sources:
-      pdf: 790.0
-      html: 790.0
-    winner: html
-  Xmax:
-    sources:
-      pdf: 0.00035
-      html: 0.00035
-    winner: html
-  Qts:
-    sources:
-      pdf: 1.09
-      html: 1.09
-    winner: html
-  Rms:
-    sources:
-      pdf: 0.32
-      html: 0.32
-    winner: html
-  BL:
-    sources:
-      html: 1.9
-    winner: html
-  Pe:
-    sources:
-      html: 80.0
-    winner: html
-  Qms:
-    sources:
-      pdf: 4.5
-      html: 4.5
-    winner: html
-  Vas:
-    sources:
-      pdf: 7.4e-06
-      html: 7.4e-06
-    winner: html
-  Le:
-    sources:
-      html: 0.036
-    winner: html
-  Qes:
-    sources:
-      pdf: 1.44
-      html: 1.44
-    winner: html
-freq_low_hz: 2500.0
-freq_high_hz: 25000.0
 specs:
-  power_rms_W: 80.0
-  freq_low_hz: 2500.0
-  freq_high_hz: 25000.0
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00029
+    winner: manu_page
+    sources:
+      datasheet: 0.00029
+      manu_page: 0.00029
+    note: Not in datasheet; value from manu_page
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: manu_page
+    sources:
+      datasheet: 4.0
+      manu_page: 4.0
+    note: Not in datasheet; value from manu_page
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.7
+    winner: manu_page
+    sources:
+      manu_page: 3.7
+    note: Not in datasheet; value from manu_page
+  Sd:  # effective piston area (m²)
+    value: 0.00061
+    winner: manu_page
+    sources:
+      datasheet: 0.00061
+      manu_page: 0.00061
+    note: Not in datasheet; value from manu_page
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00014
+    winner: manu_page
+    sources:
+      datasheet: 0.00014
+      manu_page: 0.00014
+    note: Not in datasheet; value from manu_page
+  Fs:  # free air resonance (Hz)
+    value: 790.0
+    winner: manu_page
+    sources:
+      datasheet: 790.0
+      manu_page: 790.0
+    note: Not in datasheet; value from manu_page
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00035
+    winner: manu_page
+    sources:
+      datasheet: 0.00035
+      manu_page: 0.00035
+    note: Not in datasheet; value from manu_page
+  Qts:  # total Q factor
+    value: 1.09
+    winner: manu_page
+    sources:
+      datasheet: 1.09
+      manu_page: 1.09
+    note: Not in datasheet; value from manu_page
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.32
+    winner: manu_page
+    sources:
+      datasheet: 0.32
+      manu_page: 0.32
+    note: Not in datasheet; value from manu_page
+  BL:  # force factor (T·m)
+    value: 1.9
+    winner: manu_page
+    sources:
+      manu_page: 1.9
+    note: Not in datasheet; value from manu_page
+  Pe:  # rated power input (W)
+    value: 80.0
+    winner: manu_page
+    sources:
+      manu_page: 80.0
+    note: Not in datasheet; value from manu_page
+  Qms:  # mechanical Q factor
+    value: 4.5
+    winner: manu_page
+    sources:
+      datasheet: 4.5
+      manu_page: 4.5
+    note: Not in datasheet; value from manu_page
+  Vas:  # equivalent acoustic volume (m³)
+    value: 7.4e-06
+    winner: manu_page
+    sources:
+      datasheet: 7.4e-06
+      manu_page: 7.4e-06
+    note: Not in datasheet; value from manu_page
+  Le:  # voice coil inductance (H)
+    value: 0.036
+    winner: manu_page
+    sources:
+      manu_page: 0.036
+    note: Not in datasheet; value from manu_page
+  Qes:  # electrical Q factor
+    value: 1.44
+    winner: manu_page
+    sources:
+      datasheet: 1.44
+      manu_page: 1.44
+    note: Not in datasheet; value from manu_page
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 2500.0
+    winner: manu_page
+    sources:
+      manu_page: 2500.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 25000.0
+    winner: manu_page
+    sources:
+      manu_page: 25000.0
+_sources:
+  datasheet: http://www.wavecor.com/Driver%20specifications%20PDF/TW022WA05_specifications.pdf
+  manu_page: http://www.wavecor.com/html/tw022wa05.html

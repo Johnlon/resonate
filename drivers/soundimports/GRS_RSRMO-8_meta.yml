@@ -15,6 +15,75 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 250.0
-  sensitivity_db: 90.0
-  linear_xmax_mm: 5.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.2
+    winner: vendor_page
+    sources:
+      vendor_page: 7.2
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0025
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0025
+  Qes:  # electrical Q factor
+    value: 0.63
+    winner: vendor_page
+    sources:
+      vendor_page: 0.63
+  Qts:  # total Q factor
+    value: 0.56
+    winner: vendor_page
+    sources:
+      vendor_page: 0.56
+  Qms:  # mechanical Q factor
+    value: 4.94
+    winner: vendor_page
+    sources:
+      vendor_page: 4.94
+  Le:  # voice coil inductance (H)
+    value: 0.00182
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00182
+  Pe:  # rated power input (W)
+    value: 125.0
+    winner: vendor_page
+    sources:
+      vendor_page: 125.0
+  Fs:  # free air resonance (Hz)
+    value: 22.0
+    winner: vendor_page
+    sources:
+      vendor_page: 22.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.01209
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01209
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  power_peak_W:  # peak power handling (W)
+    value: 250.0
+    winner: vendor_page
+    sources:
+      vendor_page: 250.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 90.0
+    winner: vendor_page
+    sources:
+      vendor_page: 90.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 22.0
+    winner: vendor_page
+    sources:
+      vendor_page: 22.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 1.2
+    winner: vendor_page
+    sources:
+      vendor_page: 1.2
+_sources:
+  vendor_page: https://www.soundimports.eu/en/grs-rsrmo-8.html

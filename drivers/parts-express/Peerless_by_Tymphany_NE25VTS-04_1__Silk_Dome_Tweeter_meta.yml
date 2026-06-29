@@ -15,9 +15,57 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
-freq_low_hz: 2000.0
-freq_high_hz: 20000.0
 specs:
-  power_rms_W: 80.0
-  freq_low_hz: 2000.0
-  freq_high_hz: 20000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.15
+    winner: vendor_page
+    sources:
+      vendor_page: 3.15
+  Qes:  # electrical Q factor
+    value: 1.12
+    winner: vendor_page
+    sources:
+      vendor_page: 1.12
+  Qts:  # total Q factor
+    value: 0.89
+    winner: vendor_page
+    sources:
+      vendor_page: 0.89
+  Qms:  # mechanical Q factor
+    value: 4.41
+    winner: vendor_page
+    sources:
+      vendor_page: 4.41
+  Le:  # voice coil inductance (H)
+    value: 1.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0e-05
+  Pe:  # rated power input (W)
+    value: 80.0
+    winner: vendor_page
+    sources:
+      vendor_page: 80.0
+  Fs:  # free air resonance (Hz)
+    value: 732.9
+    winner: vendor_page
+    sources:
+      vendor_page: 732.9
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 2000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2000.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 20000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/264-1034--tymphany-ne25vts-04-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Peerless-NE25VTS-04-1-Silk-Dome-Tweeter-264-1034

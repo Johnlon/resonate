@@ -20,8 +20,77 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 253-059
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 300.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.1
+    winner: vendor_page
+    sources:
+      vendor_page: 6.1
+  Sd:  # effective piston area (m²)
+    value: 0.035
+    winner: vendor_page
+    sources:
+      vendor_page: 0.035
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004
+  Qes:  # electrical Q factor
+    value: 0.39
+    winner: vendor_page
+    sources:
+      vendor_page: 0.39
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.003267256359733385
+    winner: vendor_page
+    sources:
+      vendor_page: 0.003267256359733385
+  BL:  # force factor (T·m)
+    value: 14.2
+    winner: vendor_page
+    sources:
+      vendor_page: 14.2
+  Qts:  # total Q factor
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
+  Qms:  # mechanical Q factor
+    value: 3.9
+    winner: vendor_page
+    sources:
+      vendor_page: 3.9
+  Le:  # voice coil inductance (H)
+    value: 52.0
+    winner: vendor_page
+    sources:
+      vendor_page: 52.0
+  Pe:  # rated power input (W)
+    value: 300.0
+    winner: vendor_page
+    sources:
+      vendor_page: 300.0
+  Fs:  # free air resonance (Hz)
+    value: 52.0
+    winner: vendor_page
+    sources:
+      vendor_page: 52.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.041908864
+    winner: vendor_page
+    sources:
+      vendor_page: 0.041908864
+  Mms:  # moving mass incl. air load (kg)
+    value: 3.9e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 3.9e-05
+  Znom:  # nominal impedance (Ω)
+    value: 55.0
+    winner: vendor_page
+    sources:
+      vendor_page: 55.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/253-059--10wr300-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Beyma-10WR300-WR-Series-10-Woofer-8-Ohm-253-059

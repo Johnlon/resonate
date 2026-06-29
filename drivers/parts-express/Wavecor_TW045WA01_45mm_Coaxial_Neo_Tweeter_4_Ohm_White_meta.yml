@@ -15,9 +15,47 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: tweeter
-freq_low_hz: 2000.0
-freq_high_hz: 40000.0
 specs:
-  power_rms_W: 180.0
-  freq_low_hz: 2000.0
-  freq_high_hz: 40000.0
+  Qes:  # electrical Q factor
+    value: 1.85
+    winner: vendor_page
+    sources:
+      vendor_page: 1.85
+  Qts:  # total Q factor
+    value: 1.3
+    winner: vendor_page
+    sources:
+      vendor_page: 1.3
+  Qms:  # mechanical Q factor
+    value: 4.4
+    winner: vendor_page
+    sources:
+      vendor_page: 4.4
+  Pe:  # rated power input (W)
+    value: 180.0
+    winner: vendor_page
+    sources:
+      vendor_page: 180.0
+  Fs:  # free air resonance (Hz)
+    value: 840.0
+    winner: vendor_page
+    sources:
+      vendor_page: 840.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 2000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2000.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 40000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/298-1223--tw045wa01-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Wavecor-TW045WA01-45mm-Coaxial-Neo-Tweeter-4-Ohm-White-298-1223

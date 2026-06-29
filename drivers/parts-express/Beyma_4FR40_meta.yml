@@ -19,9 +19,81 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 253-092
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  sensitivity_db: 87.0
-  power_rms_W: 40.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.4
+    winner: vendor_page
+    sources:
+      vendor_page: 6.4
+  Sd:  # effective piston area (m²)
+    value: 0.0055
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0055
+  Xmax:  # one-way linear excursion (m)
+    value: 0.003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.003
+  Qes:  # electrical Q factor
+    value: 0.96
+    winner: vendor_page
+    sources:
+      vendor_page: 0.96
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.0002250826028625041
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0002250826028625041
+  BL:  # force factor (T·m)
+    value: 4.2
+    winner: vendor_page
+    sources:
+      vendor_page: 4.2
+  Qts:  # total Q factor
+    value: 0.88
+    winner: vendor_page
+    sources:
+      vendor_page: 0.88
+  Qms:  # mechanical Q factor
+    value: 11.3
+    winner: vendor_page
+    sources:
+      vendor_page: 11.3
+  Le:  # voice coil inductance (H)
+    value: 0.0002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0002
+  Pe:  # rated power input (W)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  Fs:  # free air resonance (Hz)
+    value: 92.0
+    winner: vendor_page
+    sources:
+      vendor_page: 92.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0027750464
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0027750464
+  Mms:  # moving mass incl. air load (kg)
+    value: 4.4e-06
+    winner: vendor_page
+    sources:
+      vendor_page: 4.4e-06
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 87.0
+    winner: vendor_page
+    sources:
+      vendor_page: 87.0
+_sources:
+  vendor_page: https://www.parts-express.com/Beyma-4FR40-4-Full-Range-Loudspeaker-8-Ohm-253-092

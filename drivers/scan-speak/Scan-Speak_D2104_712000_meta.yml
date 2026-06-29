@@ -16,4 +16,41 @@ community: null
 fetched_sku: null
 driver_type: tweeter
 specs:
-  sensitivity_db: 92.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 2.8
+    winner: manu_page
+    sources:
+      manu_page: 2.8
+  Sd:  # effective piston area (m²)
+    value: 0.00045
+    winner: manu_page
+    sources:
+      manu_page: 0.00045
+  BL:  # force factor (T·m)
+    value: 2.0
+    winner: manu_page
+    sources:
+      manu_page: 2.0
+  Qts:  # total Q factor
+    value: 0.4
+    winner: manu_page
+    sources:
+      manu_page: 0.4
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 92.0
+    winner: manu_page
+    sources:
+      manu_page: 92.0
+  Fs:  # free air resonance (Hz)
+    value: 500.0
+    winner: manu_page
+    sources:
+      manu_page: 500.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 1.0e-05
+    winner: manu_page
+    sources:
+      manu_page: 1.0e-05
+_sources:
+  datasheet: https://www.scan-speak.dk/datasheet/pdf/d2104-712000.pdf
+  manu_page: https://www.scan-speak.dk/product/d2104-712000/

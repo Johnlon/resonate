@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 125.0
-freq_high_hz: 6500.0
 specs:
-  freq_low_hz: 6.0
-  freq_high_hz: 500.0
-  power_rms_W: 100.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.7
+    winner: vendor_page
+    sources:
+      vendor_page: 6.7
+  Sd:  # effective piston area (m²)
+    value: 0.0154
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0154
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00014399999999999998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00014399999999999998
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0048
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0048
+  Qes:  # electrical Q factor
+    value: 1.2
+    winner: vendor_page
+    sources:
+      vendor_page: 1.2
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.4306592431341413
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4306592431341413
+  BL:  # force factor (T·m)
+    value: 7.05
+    winner: vendor_page
+    sources:
+      vendor_page: 7.05
+  Qts:  # total Q factor
+    value: 1.13
+    winner: vendor_page
+    sources:
+      vendor_page: 1.13
+  Qms:  # mechanical Q factor
+    value: 20.81
+    winner: vendor_page
+    sources:
+      vendor_page: 20.81
+  Le:  # voice coil inductance (H)
+    value: 0.00025
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00025
+  Pe:  # rated power input (W)
+    value: 100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 100.0
+  Fs:  # free air resonance (Hz)
+    value: 123.28
+    winner: vendor_page
+    sources:
+      vendor_page: 123.28
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.004247519999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004247519999999999
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.01157
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01157
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 6.0
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 500.0
+_sources:
+  datasheet: https://prvaudio.com/wp-content/uploads/2026/02/PRV-Catalog-2026.pdf
+  vendor_page: https://www.parts-express.com/PRV-Audio-6MB200-V2-6-Midbass-Woofer-8-Ohm-294-3057

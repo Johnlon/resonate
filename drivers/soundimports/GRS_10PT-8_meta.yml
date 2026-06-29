@@ -15,6 +15,95 @@ community: null
 fetched_sku: null
 driver_type: mid-bass
 specs:
-  power_rms_W: 400.0
-  sensitivity_db: 93.0
-  linear_xmax_mm: 15.6
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.1
+    winner: vendor_page
+    sources:
+      vendor_page: 7.1
+  Sd:  # effective piston area (m²)
+    value: 0.0348
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0348
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00027
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00027
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0078
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0078
+  Qes:  # electrical Q factor
+    value: 0.5
+    winner: vendor_page
+    sources:
+      vendor_page: 0.5
+  BL:  # force factor (T·m)
+    value: 13.4
+    winner: vendor_page
+    sources:
+      vendor_page: 13.4
+  Qts:  # total Q factor
+    value: 0.48
+    winner: vendor_page
+    sources:
+      vendor_page: 0.48
+  Qms:  # mechanical Q factor
+    value: 11.4
+    winner: vendor_page
+    sources:
+      vendor_page: 11.4
+  Le:  # voice coil inductance (H)
+    value: 0.0016
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0016
+  Pe:  # rated power input (W)
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
+  Fs:  # free air resonance (Hz)
+    value: 47.0
+    winner: vendor_page
+    sources:
+      vendor_page: 47.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00163
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00163
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.043
+    winner: vendor_page
+    sources:
+      vendor_page: 0.043
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  power_peak_W:  # peak power handling (W)
+    value: 400.0
+    winner: vendor_page
+    sources:
+      vendor_page: 400.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 93.0
+    winner: vendor_page
+    sources:
+      vendor_page: 93.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 7.0
+    winner: vendor_page
+    sources:
+      vendor_page: 7.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/grs-10pt-8.html

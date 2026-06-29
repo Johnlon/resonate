@@ -19,10 +19,92 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 264-492
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  freq_low_hz: 12.0
-  freq_high_hz: 8.0
-  power_rms_W: 150.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.33
+    winner: vendor_page
+    sources:
+      vendor_page: 5.33
+  Sd:  # effective piston area (m²)
+    value: 0.054
+    winner: vendor_page
+    sources:
+      vendor_page: 0.054
+  Cms:  # mechanical compliance (m/N)
+    value: 0.004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004
+  Qes:  # electrical Q factor
+    value: 0.96
+    winner: vendor_page
+    sources:
+      vendor_page: 0.96
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.00029873225753159524
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00029873225753159524
+  BL:  # force factor (T·m)
+    value: 9.89
+    winner: vendor_page
+    sources:
+      vendor_page: 9.89
+  Qts:  # total Q factor
+    value: 0.87
+    winner: vendor_page
+    sources:
+      vendor_page: 0.87
+  Qms:  # mechanical Q factor
+    value: 123.0
+    winner: vendor_page
+    sources:
+      vendor_page: 123.0
+  Le:  # voice coil inductance (H)
+    value: 0.00091
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00091
+  Pe:  # rated power input (W)
+    value: 150.0
+    winner: vendor_page
+    sources:
+      vendor_page: 150.0
+  Fs:  # free air resonance (Hz)
+    value: 73.1
+    winner: vendor_page
+    sources:
+      vendor_page: 73.1
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.051536576
+    winner: vendor_page
+    sources:
+      vendor_page: 0.051536576
+  Mms:  # moving mass incl. air load (kg)
+    value: 8.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0e-05
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 12.0
+    winner: vendor_page
+    sources:
+      vendor_page: 12.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/264-492--jbl-selenium-12pwx-8r-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/JBL-Selenium-12PWX-8R-12-Professional-Woofer-8-ohm-264-492

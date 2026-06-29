@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 120.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 2.6
+    winner: vendor_page
+    sources:
+      vendor_page: 2.6
+  Sd:  # effective piston area (m²)
+    value: 0.0511
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0511
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00036
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00036
+  Xmax:  # one-way linear excursion (m)
+    value: 0.015
+    winner: vendor_page
+    sources:
+      vendor_page: 0.015
+  Qes:  # electrical Q factor
+    value: 0.444
+    winner: vendor_page
+    sources:
+      vendor_page: 0.444
+  BL:  # force factor (T·m)
+    value: 10.5
+    winner: vendor_page
+    sources:
+      vendor_page: 10.5
+  Qts:  # total Q factor
+    value: 0.43
+    winner: vendor_page
+    sources:
+      vendor_page: 0.43
+  Qms:  # mechanical Q factor
+    value: 10.4
+    winner: vendor_page
+    sources:
+      vendor_page: 10.4
+  Le:  # voice coil inductance (H)
+    value: 0.000429
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000429
+  Pe:  # rated power input (W)
+    value: 120.0
+    winner: vendor_page
+    sources:
+      vendor_page: 120.0
+  Fs:  # free air resonance (Hz)
+    value: 23.0
+    winner: vendor_page
+    sources:
+      vendor_page: 23.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.133
+    winner: vendor_page
+    sources:
+      vendor_page: 0.133
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.129
+    winner: vendor_page
+    sources:
+      vendor_page: 0.129
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/peerless-by-tymphany-xxls-p835017.html

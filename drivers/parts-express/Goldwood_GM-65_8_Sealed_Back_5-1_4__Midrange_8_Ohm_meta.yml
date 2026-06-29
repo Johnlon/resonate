@@ -15,9 +15,31 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: mid-bass
-freq_low_hz: 550.0
-freq_high_hz: 15000.0
 specs:
-  power_rms_W: 50.0
-  freq_low_hz: 550.0
-  freq_high_hz: 15000.0
+  Pe:  # rated power input (W)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  Fs:  # free air resonance (Hz)
+    value: 470.0
+    winner: vendor_page
+    sources:
+      vendor_page: 470.0
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 550.0
+    winner: vendor_page
+    sources:
+      vendor_page: 550.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 15000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15000.0
+_sources:
+  vendor_page: https://www.parts-express.com/Goldwood-GM-65-8-Sealed-Back-5-1-4-Midrange-8-Ohm-280-105

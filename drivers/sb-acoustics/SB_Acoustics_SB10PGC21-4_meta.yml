@@ -16,10 +16,101 @@ dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  voice_coil_dia_mm: 20.4
-  Hg_mm: 3.0
-  linear_xmax_mm: 4.5
-  sensitivity_db: 84.0
-  freq_low_hz: 90.0
-  freq_high_hz: 20.0
-  power_rms_W: 20.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.4
+    winner: manu_page
+    sources:
+      manu_page: 3.4
+  Sd:  # effective piston area (m²)
+    value: 0.0027
+    winner: manu_page
+    sources:
+      manu_page: 0.0027
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00114
+    winner: manu_page
+    sources:
+      manu_page: 0.00114
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00225
+    winner: manu_page
+    sources:
+      manu_page: 0.00225
+  Qes:  # electrical Q factor
+    value: 1.01
+    winner: manu_page
+    sources:
+      manu_page: 1.01
+  BL:  # force factor (T·m)
+    value: 2.3
+    winner: manu_page
+    sources:
+      manu_page: 2.3
+  Qts:  # total Q factor
+    value: 0.92
+    winner: manu_page
+    sources:
+      manu_page: 0.92
+  Qms:  # mechanical Q factor
+    value: 11.2
+    winner: manu_page
+    sources:
+      manu_page: 11.2
+  Le:  # voice coil inductance (H)
+    value: 0.00015
+    winner: manu_page
+    sources:
+      manu_page: 0.00015
+  Pe:  # rated power input (W)
+    value: 20.0
+    winner: manu_page
+    sources:
+      manu_page: 20.0
+  Fs:  # free air resonance (Hz)
+    value: 89.0
+    winner: manu_page
+    sources:
+      manu_page: 89.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0012
+    winner: manu_page
+    sources:
+      manu_page: 0.0012
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0028
+    winner: manu_page
+    sources:
+      manu_page: 0.0028
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: manu_page
+    sources:
+      manu_page: 4.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 20.4
+    winner: manu_page
+    sources:
+      manu_page: 20.4
+  Hg_mm:  # magnetic gap height (mm)
+    value: 3.0
+    winner: manu_page
+    sources:
+      manu_page: 3.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 84.0
+    winner: manu_page
+    sources:
+      manu_page: 84.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 90.0
+    winner: manu_page
+    sources:
+      manu_page: 90.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 20.0
+    winner: manu_page
+    sources:
+      manu_page: 20.0
+_sources:
+  datasheet: https://sbacoustics.com/wp-content/uploads/2020/02/3in-SB10PGC21-4.pdf
+  manu_page: https://sbacoustics.com/product/3in-sb10pgc21-4/

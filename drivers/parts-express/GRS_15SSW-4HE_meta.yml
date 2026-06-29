@@ -20,11 +20,97 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 292-822
-field_provenance: null
-freq_low_hz: 20.0
-freq_high_hz: 300.0
 specs:
-  freq_low_hz: 15.0
-  freq_high_hz: 4.0
-  sensitivity_db: 300.0
-  power_rms_W: 300.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.2
+    winner: vendor_page
+    sources:
+      vendor_page: 4.2
+  Sd:  # effective piston area (m²)
+    value: 0.08194
+    winner: vendor_page
+    sources:
+      vendor_page: 0.08194
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00020999999999999998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00020999999999999998
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0123
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0123
+  Qes:  # electrical Q factor
+    value: 0.55
+    winner: vendor_page
+    sources:
+      vendor_page: 0.55
+  Rms:  # mechanical resistance (kg/s)
+    value: 8.644397516785862
+    winner: vendor_page
+    sources:
+      vendor_page: 8.644397516785862
+  BL:  # force factor (T·m)
+    value: 16.6
+    winner: vendor_page
+    sources:
+      vendor_page: 16.6
+  Qts:  # total Q factor
+    value: 0.49
+    winner: vendor_page
+    sources:
+      vendor_page: 0.49
+  Qms:  # mechanical Q factor
+    value: 4.27
+    winner: vendor_page
+    sources:
+      vendor_page: 4.27
+  Le:  # voice coil inductance (H)
+    value: 0.0037
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0037
+  Pe:  # rated power input (W)
+    value: 300.0
+    winner: vendor_page
+    sources:
+      vendor_page: 300.0
+  Fs:  # free air resonance (Hz)
+    value: 20.7
+    winner: vendor_page
+    sources:
+      vendor_page: 20.7
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.19651859200000002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.19651859200000002
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.2838
+    winner: vendor_page
+    sources:
+      vendor_page: 0.2838
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 15.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 300.0
+    winner: vendor_page
+    sources:
+      vendor_page: 300.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/Spec Sheets/292-822--grs-15ssw-4he-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/GRS-15SSW-4HE-15-Paper-Cone-Rubber-Surround-High-Excursion-Super-Subwoofer-4-Ohm-292-822

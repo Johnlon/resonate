@@ -15,5 +15,56 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 3.0
-  voice_coil_dia_mm: 13.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.3
+    winner: vendor_page
+    sources:
+      vendor_page: 7.3
+  Cms:  # mechanical compliance (m/N)
+    value: 3.0e-07
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0e-07
+  BL:  # force factor (T·m)
+    value: 1.15
+    winner: vendor_page
+    sources:
+      vendor_page: 1.15
+  Qts:  # total Q factor
+    value: 2.63
+    winner: vendor_page
+    sources:
+      vendor_page: 2.63
+  Le:  # voice coil inductance (H)
+    value: 8.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0e-05
+  Pe:  # rated power input (W)
+    value: 3.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0
+  Fs:  # free air resonance (Hz)
+    value: 775.0
+    winner: vendor_page
+    sources:
+      vendor_page: 775.0
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0002
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 13.0
+    winner: vendor_page
+    sources:
+      vendor_page: 13.0
+_sources:
+  datasheet: https://doc.soundimports.nl/pdf/brands/Dayton%20Audio/BCE-1/pdf_Dayton%20Audio_BCE-1_2.pdf
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-daex13ct-8.html

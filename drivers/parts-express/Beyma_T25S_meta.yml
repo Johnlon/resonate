@@ -19,9 +19,31 @@ obsolete: null
 dq_issue: missing_Sd; Fs_no_Q
 community: null
 fetched_sku: 253-089
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  sensitivity_db: 92.0
-  power_rms_W: 15.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.1
+    winner: vendor_page
+    sources:
+      vendor_page: 3.1
+  Pe:  # rated power input (W)
+    value: 15.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15.0
+  Fs:  # free air resonance (Hz)
+    value: 760.0
+    winner: vendor_page
+    sources:
+      vendor_page: 760.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 92.0
+    winner: vendor_page
+    sources:
+      vendor_page: 92.0
+_sources:
+  vendor_page: https://www.parts-express.com/Beyma-T25S-NMF-Series-1-Fabric-Dome-Tweeter-253-089

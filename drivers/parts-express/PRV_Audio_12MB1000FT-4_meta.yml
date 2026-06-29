@@ -20,11 +20,96 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-3416
-field_provenance: null
-freq_low_hz: 70.0
-freq_high_hz: 3200.0
 specs:
-  power_rms_W: 12.0
-  freq_low_hz: 70.0
-  freq_high_hz: 3.0
-  sensitivity_db: 500.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.5
+    winner: vendor_page
+    sources:
+      vendor_page: 3.5
+  Sd:  # effective piston area (m²)
+    value: 0.0573
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0573
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00020899999999999998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00020899999999999998
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00613
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00613
+  Qes:  # electrical Q factor
+    value: 0.28
+    winner: vendor_page
+    sources:
+      vendor_page: 0.28
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.954301454919399
+    winner: vendor_page
+    sources:
+      vendor_page: 1.954301454919399
+  BL:  # force factor (T·m)
+    value: 14.52
+    winner: vendor_page
+    sources:
+      vendor_page: 14.52
+  Qts:  # total Q factor
+    value: 0.27
+    winner: vendor_page
+    sources:
+      vendor_page: 0.27
+  Qms:  # mechanical Q factor
+    value: 8.55
+    winner: vendor_page
+    sources:
+      vendor_page: 8.55
+  Le:  # voice coil inductance (H)
+    value: 0.0007099999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0007099999999999999
+  Pe:  # rated power input (W)
+    value: 1000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1000.0
+  Fs:  # free air resonance (Hz)
+    value: 45.67
+    winner: vendor_page
+    sources:
+      vendor_page: 45.67
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.095427616
+    winner: vendor_page
+    sources:
+      vendor_page: 0.095427616
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.05823
+    winner: vendor_page
+    sources:
+      vendor_page: 0.05823
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 70.0
+    winner: vendor_page
+    sources:
+      vendor_page: 70.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 3.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 500.0
+_sources:
+  vendor_page: https://www.parts-express.com/PRV-Audio-12MB1000FT-4-12-Forte-Series-Speaker-4-Ohm-294-3416

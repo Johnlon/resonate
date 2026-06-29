@@ -20,8 +20,81 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 295-428
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 70.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.7
+    winner: vendor_page
+    sources:
+      vendor_page: 5.7
+  Sd:  # effective piston area (m²)
+    value: 0.01287
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01287
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0007099999999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0007099999999999999
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00525
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00525
+  Qes:  # electrical Q factor
+    value: 0.32
+    winner: vendor_page
+    sources:
+      vendor_page: 0.32
+  Rms:  # mechanical resistance (kg/s)
+    value: 3.70823574570967
+    winner: vendor_page
+    sources:
+      vendor_page: 3.70823574570967
+  BL:  # force factor (T·m)
+    value: 10.4
+    winner: vendor_page
+    sources:
+      vendor_page: 10.4
+  Qts:  # total Q factor
+    value: 0.27
+    winner: vendor_page
+    sources:
+      vendor_page: 0.27
+  Qms:  # mechanical Q factor
+    value: 1.63
+    winner: vendor_page
+    sources:
+      vendor_page: 1.63
+  Le:  # voice coil inductance (H)
+    value: 0.00106
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00106
+  Pe:  # rated power input (W)
+    value: 70.0
+    winner: vendor_page
+    sources:
+      vendor_page: 70.0
+  Fs:  # free air resonance (Hz)
+    value: 37.0
+    winner: vendor_page
+    sources:
+      vendor_page: 37.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.016990079999999998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.016990079999999998
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.026
+    winner: vendor_page
+    sources:
+      vendor_page: 0.026
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.parts-express.com/Dayton-Audio-DS175-8-6-1-2-Designer-Series-Woofer-295-428

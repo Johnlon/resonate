@@ -15,4 +15,25 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 48.0
+  Pe:  # rated power input (W)
+    value: 24.0
+    winner: vendor_page
+    sources:
+      vendor_page: 24.0
+  Fs:  # free air resonance (Hz)
+    value: 115.0
+    winner: vendor_page
+    sources:
+      vendor_page: 115.0
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  power_peak_W:  # peak power handling (W)
+    value: 48.0
+    winner: vendor_page
+    sources:
+      vendor_page: 48.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-ex25fhe2-4.html

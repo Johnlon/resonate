@@ -15,9 +15,51 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 60.0
-freq_high_hz: 16000.0
 specs:
-  power_rms_W: 2.0
-  freq_low_hz: 60.0
-  freq_high_hz: 16000.0
+  Qes:  # electrical Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
+  Qts:  # total Q factor
+    value: 0.32
+    winner: vendor_page
+    sources:
+      vendor_page: 0.32
+  Qms:  # mechanical Q factor
+    value: 7.77
+    winner: vendor_page
+    sources:
+      vendor_page: 7.77
+  Pe:  # rated power input (W)
+    value: 250.0
+    winner: vendor_page
+    sources:
+      vendor_page: 250.0
+  Fs:  # free air resonance (Hz)
+    value: 62.8
+    winner: vendor_page
+    sources:
+      vendor_page: 62.8
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.030865312000000002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.030865312000000002
+  Znom:  # nominal impedance (Ω)
+    value: 2.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 60.0
+    winner: vendor_page
+    sources:
+      vendor_page: 60.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 16000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 16000.0
+_sources:
+  vendor_page: https://www.parts-express.com/DS18-PRO-M8.2NEO-8-Professional-Water-Resistant-Neodymium-Full-Range-Speaker-2-Ohm-294-8054

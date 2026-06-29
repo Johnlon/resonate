@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 20.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.2
+    winner: vendor_page
+    sources:
+      vendor_page: 7.2
+  Sd:  # effective piston area (m²)
+    value: 0.005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000564
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000564
+  Xmax:  # one-way linear excursion (m)
+    value: 0.002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.002
+  Qes:  # electrical Q factor
+    value: 1.91
+    winner: vendor_page
+    sources:
+      vendor_page: 1.91
+  BL:  # force factor (T·m)
+    value: 2.9
+    winner: vendor_page
+    sources:
+      vendor_page: 2.9
+  Qts:  # total Q factor
+    value: 1.44
+    winner: vendor_page
+    sources:
+      vendor_page: 1.44
+  Qms:  # mechanical Q factor
+    value: 5.89
+    winner: vendor_page
+    sources:
+      vendor_page: 5.89
+  Le:  # voice coil inductance (H)
+    value: 0.0002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0002
+  Pe:  # rated power input (W)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  Fs:  # free air resonance (Hz)
+    value: 120.0
+    winner: vendor_page
+    sources:
+      vendor_page: 120.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.002
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0028
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0028
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/visaton-fr-10-hm-8.html

@@ -15,4 +15,65 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 450.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.8
+    winner: vendor_page
+    sources:
+      vendor_page: 5.8
+  Sd:  # effective piston area (m²)
+    value: 0.0241
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0241
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004
+  Qes:  # electrical Q factor
+    value: 0.57
+    winner: vendor_page
+    sources:
+      vendor_page: 0.57
+  BL:  # force factor (T·m)
+    value: 7.58
+    winner: vendor_page
+    sources:
+      vendor_page: 7.58
+  Qts:  # total Q factor
+    value: 0.55
+    winner: vendor_page
+    sources:
+      vendor_page: 0.55
+  Qms:  # mechanical Q factor
+    value: 15.19
+    winner: vendor_page
+    sources:
+      vendor_page: 15.19
+  Le:  # voice coil inductance (H)
+    value: 0.000257
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000257
+  Pe:  # rated power input (W)
+    value: 450.0
+    winner: vendor_page
+    sources:
+      vendor_page: 450.0
+  Fs:  # free air resonance (Hz)
+    value: 65.26
+    winner: vendor_page
+    sources:
+      vendor_page: 65.26
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.03486
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03486
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.01378
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01378
+_sources:
+  vendor_page: https://www.soundimports.eu/en/prv-audio-8mr450a.html

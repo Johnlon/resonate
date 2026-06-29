@@ -19,7 +19,47 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 295-498
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.0103
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0103
+  Cms:  # mechanical compliance (m/N)
+    value: 0.1287
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1287
+  Xmax:  # one-way linear excursion (m)
+    value: 0.001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.0115138716244048
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0115138716244048
+  Qms:  # mechanical Q factor
+    value: 36.6
+    winner: vendor_page
+    sources:
+      vendor_page: 36.6
+  Fs:  # free air resonance (Hz)
+    value: 5.57
+    winner: vendor_page
+    sources:
+      vendor_page: 5.57
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.008
+    winner: vendor_page
+    sources:
+      vendor_page: 0.008
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00115
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00115
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/295-498--dayton-audio-ds175-pr-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-DS175-PR-6-1-2-Designer-Series-Passive-Radiator-295-498

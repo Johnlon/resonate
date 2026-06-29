@@ -15,5 +15,50 @@ community: null
 fetched_sku: null
 driver_type: tweeter
 specs:
-  power_rms_W: 75.0
-  sensitivity_db: 89.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.4
+    winner: vendor_page
+    sources:
+      vendor_page: 6.4
+  Qes:  # electrical Q factor
+    value: 1.85
+    winner: vendor_page
+    sources:
+      vendor_page: 1.85
+  Qts:  # total Q factor
+    value: 1.28
+    winner: vendor_page
+    sources:
+      vendor_page: 1.28
+  Qms:  # mechanical Q factor
+    value: 4.21
+    winner: vendor_page
+    sources:
+      vendor_page: 4.21
+  Le:  # voice coil inductance (H)
+    value: 6.6e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 6.6e-05
+  Pe:  # rated power input (W)
+    value: 75.0
+    winner: vendor_page
+    sources:
+      vendor_page: 75.0
+  Fs:  # free air resonance (Hz)
+    value: 865.0
+    winner: vendor_page
+    sources:
+      vendor_page: 865.0
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 89.0
+    winner: vendor_page
+    sources:
+      vendor_page: 89.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/css-ld25x-wg.html

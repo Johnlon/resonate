@@ -15,4 +15,65 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 20.0
+  Sd:  # effective piston area (m²)
+    value: 5.02
+    winner: vendor_page
+    sources:
+      vendor_page: 5.02
+  Cms:  # mechanical compliance (m/N)
+    value: 1.26e-06
+    winner: vendor_page
+    sources:
+      vendor_page: 1.26e-06
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0042
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0042
+  Qes:  # electrical Q factor
+    value: 0.69
+    winner: vendor_page
+    sources:
+      vendor_page: 0.69
+  BL:  # force factor (T·m)
+    value: 4.43
+    winner: vendor_page
+    sources:
+      vendor_page: 4.43
+  Qts:  # total Q factor
+    value: 0.49
+    winner: vendor_page
+    sources:
+      vendor_page: 0.49
+  Qms:  # mechanical Q factor
+    value: 1.78
+    winner: vendor_page
+    sources:
+      vendor_page: 1.78
+  Pe:  # rated power input (W)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  Fs:  # free air resonance (Hz)
+    value: 66.4
+    winner: vendor_page
+    sources:
+      vendor_page: 66.4
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0046
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0046
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0045
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0045
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/markaudio-chbw-70.html

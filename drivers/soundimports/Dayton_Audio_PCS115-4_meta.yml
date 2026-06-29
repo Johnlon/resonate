@@ -15,7 +15,85 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 20.0
-  sensitivity_db: 86.1
-  voice_coil_dia_mm: 25.0
-  linear_xmax_mm: 5.5
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.6
+    winner: vendor_page
+    sources:
+      vendor_page: 3.6
+  Sd:  # effective piston area (m²)
+    value: 0.00515
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00515
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00047
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00047
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00275
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00275
+  Qes:  # electrical Q factor
+    value: 1.05
+    winner: vendor_page
+    sources:
+      vendor_page: 1.05
+  BL:  # force factor (T·m)
+    value: 3.6
+    winner: vendor_page
+    sources:
+      vendor_page: 3.6
+  Qts:  # total Q factor
+    value: 0.79
+    winner: vendor_page
+    sources:
+      vendor_page: 0.79
+  Qms:  # mechanical Q factor
+    value: 3.11
+    winner: vendor_page
+    sources:
+      vendor_page: 3.11
+  Le:  # voice coil inductance (H)
+    value: 0.00037
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00037
+  Pe:  # rated power input (W)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  Fs:  # free air resonance (Hz)
+    value: 88.0
+    winner: vendor_page
+    sources:
+      vendor_page: 88.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00177
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00177
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00695
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00695
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 86.1
+    winner: vendor_page
+    sources:
+      vendor_page: 86.1
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 25.0
+    winner: vendor_page
+    sources:
+      vendor_page: 25.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-pcs115-4.html

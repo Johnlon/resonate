@@ -15,4 +15,65 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 2000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.1
+    winner: vendor_page
+    sources:
+      vendor_page: 3.1
+  Sd:  # effective piston area (m²)
+    value: 0.0935
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0935
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0125
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0125
+  Qes:  # electrical Q factor
+    value: 0.45
+    winner: vendor_page
+    sources:
+      vendor_page: 0.45
+  BL:  # force factor (T·m)
+    value: 18.29
+    winner: vendor_page
+    sources:
+      vendor_page: 18.29
+  Qts:  # total Q factor
+    value: 0.44
+    winner: vendor_page
+    sources:
+      vendor_page: 0.44
+  Qms:  # mechanical Q factor
+    value: 17.11
+    winner: vendor_page
+    sources:
+      vendor_page: 17.11
+  Le:  # voice coil inductance (H)
+    value: 0.00094
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00094
+  Pe:  # rated power input (W)
+    value: 2000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2000.0
+  Fs:  # free air resonance (Hz)
+    value: 46.8
+    winner: vendor_page
+    sources:
+      vendor_page: 46.8
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.08443
+    winner: vendor_page
+    sources:
+      vendor_page: 0.08443
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.1671
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1671
+_sources:
+  vendor_page: https://www.soundimports.eu/en/prv-audio-15sw2000-4.html

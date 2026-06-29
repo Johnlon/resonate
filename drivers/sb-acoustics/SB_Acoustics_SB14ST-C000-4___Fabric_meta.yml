@@ -16,8 +16,66 @@ dq_issue: null
 community: null
 fetched_sku: null
 specs:
-  voice_coil_dia_mm: 12.4
-  Hg_mm: 1.5
-  linear_xmax_mm: 0.3
-  sensitivity_db: 86.0
-  power_rms_W: 10.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.0
+    winner: manu_page
+    sources:
+      manu_page: 4.0
+  Sd:  # effective piston area (m²)
+    value: 0.00022
+    winner: manu_page
+    sources:
+      manu_page: 0.00022
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00015
+    winner: manu_page
+    sources:
+      manu_page: 0.00015
+  BL:  # force factor (T·m)
+    value: 0.92
+    winner: manu_page
+    sources:
+      manu_page: 0.92
+  Le:  # voice coil inductance (H)
+    value: 4.0e-05
+    winner: manu_page
+    sources:
+      manu_page: 4.0e-05
+  Pe:  # rated power input (W)
+    value: 10.0
+    winner: manu_page
+    sources:
+      manu_page: 10.0
+  Fs:  # free air resonance (Hz)
+    value: 1300.0
+    winner: manu_page
+    sources:
+      manu_page: 1300.0
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00011
+    winner: manu_page
+    sources:
+      manu_page: 0.00011
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: manu_page
+    sources:
+      manu_page: 4.0
+  voice_coil_dia_mm:  # voice coil diameter (mm)
+    value: 12.4
+    winner: manu_page
+    sources:
+      manu_page: 12.4
+  Hg_mm:  # magnetic gap height (mm)
+    value: 1.5
+    winner: manu_page
+    sources:
+      manu_page: 1.5
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 86.0
+    winner: manu_page
+    sources:
+      manu_page: 86.0
+_sources:
+  datasheet: https://sbacoustics.com/wp-content/uploads/2025/12/SB14ST-C000-4.pdf
+  manu_page: https://sbacoustics.com/product/sb14st-c000-4/

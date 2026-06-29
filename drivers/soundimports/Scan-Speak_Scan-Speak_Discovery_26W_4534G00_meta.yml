@@ -15,4 +15,71 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 90.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.8
+    winner: vendor_page
+    sources:
+      vendor_page: 3.8
+  Sd:  # effective piston area (m²)
+    value: 0.035
+    winner: vendor_page
+    sources:
+      vendor_page: 0.035
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00092
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00092
+  Xmax:  # one-way linear excursion (m)
+    value: 0.006
+    winner: vendor_page
+    sources:
+      vendor_page: 0.006
+  Qes:  # electrical Q factor
+    value: 0.37
+    winner: vendor_page
+    sources:
+      vendor_page: 0.37
+  BL:  # force factor (T·m)
+    value: 8.8
+    winner: vendor_page
+    sources:
+      vendor_page: 8.8
+  Qts:  # total Q factor
+    value: 0.36
+    winner: vendor_page
+    sources:
+      vendor_page: 0.36
+  Qms:  # mechanical Q factor
+    value: 9.57
+    winner: vendor_page
+    sources:
+      vendor_page: 9.57
+  Le:  # voice coil inductance (H)
+    value: 0.00117
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00117
+  Pe:  # rated power input (W)
+    value: 90.0
+    winner: vendor_page
+    sources:
+      vendor_page: 90.0
+  Fs:  # free air resonance (Hz)
+    value: 23.0
+    winner: vendor_page
+    sources:
+      vendor_page: 23.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.156
+    winner: vendor_page
+    sources:
+      vendor_page: 0.156
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.052
+    winner: vendor_page
+    sources:
+      vendor_page: 0.052
+_sources:
+  datasheet: https://doc.soundimports.nl/pdf/brands/Scan-Speak/26W-4534G00/26W-4534G00.pdf
+  vendor_page: https://www.soundimports.eu/en/scan-speak-26w4534g00.html

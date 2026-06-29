@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 150.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.2
+    winner: vendor_page
+    sources:
+      vendor_page: 7.2
+  Sd:  # effective piston area (m²)
+    value: 0.0213
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0213
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00035
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00035
+  Xmax:  # one-way linear excursion (m)
+    value: 0.006
+    winner: vendor_page
+    sources:
+      vendor_page: 0.006
+  Qes:  # electrical Q factor
+    value: 0.41
+    winner: vendor_page
+    sources:
+      vendor_page: 0.41
+  BL:  # force factor (T·m)
+    value: 11.96
+    winner: vendor_page
+    sources:
+      vendor_page: 11.96
+  Qts:  # total Q factor
+    value: 0.32
+    winner: vendor_page
+    sources:
+      vendor_page: 0.32
+  Qms:  # mechanical Q factor
+    value: 1.52
+    winner: vendor_page
+    sources:
+      vendor_page: 1.52
+  Le:  # voice coil inductance (H)
+    value: 0.002
+    winner: vendor_page
+    sources:
+      vendor_page: 0.002
+  Pe:  # rated power input (W)
+    value: 150.0
+    winner: vendor_page
+    sources:
+      vendor_page: 150.0
+  Fs:  # free air resonance (Hz)
+    value: 56.0
+    winner: vendor_page
+    sources:
+      vendor_page: 56.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.022
+    winner: vendor_page
+    sources:
+      vendor_page: 0.022
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0228
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0228
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/monacor-sp-8-150pro.html

@@ -20,8 +20,77 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 264-1021
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 15.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.2
+    winner: vendor_page
+    sources:
+      vendor_page: 3.2
+  Sd:  # effective piston area (m²)
+    value: 0.000707
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000707
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00011
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00011
+  Xmax:  # one-way linear excursion (m)
+    value: 0.000867
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000867
+  Qes:  # electrical Q factor
+    value: 1.09
+    winner: vendor_page
+    sources:
+      vendor_page: 1.09
+  BL:  # force factor (T·m)
+    value: 2.26
+    winner: vendor_page
+    sources:
+      vendor_page: 2.26
+  Qts:  # total Q factor
+    value: 0.97
+    winner: vendor_page
+    sources:
+      vendor_page: 0.97
+  Qms:  # mechanical Q factor
+    value: 9.28
+    winner: vendor_page
+    sources:
+      vendor_page: 9.28
+  Le:  # voice coil inductance (H)
+    value: 2.1e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 2.1e-05
+  Pe:  # rated power input (W)
+    value: 15.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15.0
+  Fs:  # free air resonance (Hz)
+    value: 820.0
+    winner: vendor_page
+    sources:
+      vendor_page: 820.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 8.0e-06
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0e-06
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00034
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00034
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/264-1021--xt25sc50-04-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Peerless-by-Tymphany-XT25SC50-04-1-Silk-Diaphragm-Neo-Ring-Radiator-Tweeter-264-1021

@@ -40,7 +40,68 @@ manu_page_fields:
 - Re
 - SPL
 - Sd
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  sensitivity_db: 95.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.7
+    winner: manu_page
+    sources:
+      manu_page: 4.7
+  Sd:  # effective piston area (m²)
+    value: 0.00057
+    winner: manu_page
+    sources:
+      manu_page: 0.00057
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0002
+    winner: manu_page
+    sources:
+      manu_page: 0.0002
+  Qes:  # electrical Q factor
+    value: 1.2
+    winner: manu_page
+    sources:
+      manu_page: 1.2
+  BL:  # force factor (T·m)
+    value: 3.3
+    winner: manu_page
+    sources:
+      manu_page: 3.3
+  Qts:  # total Q factor
+    value: 0.7
+    winner: manu_page
+    sources:
+      manu_page: 0.7
+  Qms:  # mechanical Q factor
+    value: 21.0
+    winner: manu_page
+    sources:
+      manu_page: 21.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 95.0
+    winner: manu_page
+    sources:
+      manu_page: 95.0
+  Le:  # voice coil inductance (H)
+    value: 5.0e-05
+    winner: manu_page
+    sources:
+      manu_page: 5.0e-05
+  Fs:  # free air resonance (Hz)
+    value: 1030.0
+    winner: manu_page
+    sources:
+      manu_page: 1030.0
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00049
+    winner: manu_page
+    sources:
+      manu_page: 0.00049
+  Znom:  # nominal impedance (Ω)
+    value: 6.0
+    winner: manu_page
+    sources:
+      manu_page: 6.0
+_sources:
+  datasheet: https://www.scan-speak.dk/datasheet/pdf/h2606-920000.pdf
+  adv_datasheet: https://www.scan-speak.dk/datasheet/adv/h2606-920000.pdf
+  manu_page: https://www.scan-speak.dk/product/h2606-920000/

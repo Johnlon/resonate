@@ -15,4 +15,55 @@ community: null
 fetched_sku: null
 driver_type: mid-bass
 specs:
-  sensitivity_db: 88.4
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.8
+    winner: vendor_page
+    sources:
+      vendor_page: 4.8
+  Sd:  # effective piston area (m²)
+    value: 0.0093
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0093
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00076
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00076
+  Qes:  # electrical Q factor
+    value: 0.44
+    winner: vendor_page
+    sources:
+      vendor_page: 0.44
+  BL:  # force factor (T·m)
+    value: 6.8
+    winner: vendor_page
+    sources:
+      vendor_page: 6.8
+  Qts:  # total Q factor
+    value: 0.42
+    winner: vendor_page
+    sources:
+      vendor_page: 0.42
+  Qms:  # mechanical Q factor
+    value: 11.1
+    winner: vendor_page
+    sources:
+      vendor_page: 11.1
+  Fs:  # free air resonance (Hz)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0093
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0093
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 88.4
+    winner: vendor_page
+    sources:
+      vendor_page: 88.4
+_sources:
+  vendor_page: https://www.soundimports.eu/en/css-ldw6.html

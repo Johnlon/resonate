@@ -15,6 +15,90 @@ community: null
 fetched_sku: null
 driver_type: tweeter
 specs:
-  power_rms_W: 7.0
-  sensitivity_db: 87.5
-  linear_xmax_mm: 7.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.4
+    winner: vendor_page
+    sources:
+      vendor_page: 3.4
+  Sd:  # effective piston area (m²)
+    value: 0.00028
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00028
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00098
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00098
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0035
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0035
+  Qes:  # electrical Q factor
+    value: 0.69
+    winner: vendor_page
+    sources:
+      vendor_page: 0.69
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.51
+    winner: vendor_page
+    sources:
+      vendor_page: 0.51
+  BL:  # force factor (T·m)
+    value: 2.69
+    winner: vendor_page
+    sources:
+      vendor_page: 2.69
+  Qts:  # total Q factor
+    value: 0.55
+    winner: vendor_page
+    sources:
+      vendor_page: 0.55
+  Qms:  # mechanical Q factor
+    value: 2.83
+    winner: vendor_page
+    sources:
+      vendor_page: 2.83
+  Le:  # voice coil inductance (H)
+    value: 6.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 6.0e-05
+  Pe:  # rated power input (W)
+    value: 7.0
+    winner: vendor_page
+    sources:
+      vendor_page: 7.0
+  Fs:  # free air resonance (Hz)
+    value: 113.15
+    winner: vendor_page
+    sources:
+      vendor_page: 113.15
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00209
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00209
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 87.5
+    winner: vendor_page
+    sources:
+      vendor_page: 87.5
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 70.0
+    winner: vendor_page
+    sources:
+      vendor_page: 70.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 25.0
+    winner: vendor_page
+    sources:
+      vendor_page: 25.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/chn-50p-full-range-woofer.html

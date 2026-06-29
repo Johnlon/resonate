@@ -15,9 +15,52 @@ dq_issue: null
 community: null
 fetched_sku: null
 driver_type: midrange
-freq_low_hz: 100.0
-freq_high_hz: 12000.0
 specs:
-  sensitivity_db: 88.0
-  freq_low_hz: 100.0
-  freq_high_hz: 12000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.2
+    winner: manu_page
+    sources:
+      manu_page: 3.2
+  Sd:  # effective piston area (m²)
+    value: 0.0036
+    winner: manu_page
+    sources:
+      manu_page: 0.0036
+  BL:  # force factor (T·m)
+    value: 3.2
+    winner: manu_page
+    sources:
+      manu_page: 3.2
+  Qts:  # total Q factor
+    value: 0.53
+    winner: manu_page
+    sources:
+      manu_page: 0.53
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 88.0
+    winner: manu_page
+    sources:
+      manu_page: 88.0
+  Fs:  # free air resonance (Hz)
+    value: 110.0
+    winner: manu_page
+    sources:
+      manu_page: 110.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0013
+    winner: manu_page
+    sources:
+      manu_page: 0.0013
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 100.0
+    winner: manu_page
+    sources:
+      manu_page: 100.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 12000.0
+    winner: manu_page
+    sources:
+      manu_page: 12000.0
+_sources:
+  datasheet: https://www.scan-speak.dk/datasheet/pdf/10m-4614g06.pdf
+  manu_page: https://www.scan-speak.dk/product/10m-4614g06/

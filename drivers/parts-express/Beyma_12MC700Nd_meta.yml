@@ -20,8 +20,76 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 253-015
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 700.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.2
+    winner: vendor_page
+    sources:
+      vendor_page: 5.2
+  Sd:  # effective piston area (m²)
+    value: 0.055
+    winner: vendor_page
+    sources:
+      vendor_page: 0.055
+  Xmax:  # one-way linear excursion (m)
+    value: 0.007
+    winner: vendor_page
+    sources:
+      vendor_page: 0.007
+  Qes:  # electrical Q factor
+    value: 0.26
+    winner: vendor_page
+    sources:
+      vendor_page: 0.26
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.0056272820604788875
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0056272820604788875
+  BL:  # force factor (T·m)
+    value: 21.6
+    winner: vendor_page
+    sources:
+      vendor_page: 21.6
+  Qts:  # total Q factor
+    value: 0.24
+    winner: vendor_page
+    sources:
+      vendor_page: 0.24
+  Qms:  # mechanical Q factor
+    value: 4.1
+    winner: vendor_page
+    sources:
+      vendor_page: 4.1
+  Le:  # voice coil inductance (H)
+    value: 0.001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.001
+  Pe:  # rated power input (W)
+    value: 700.0
+    winner: vendor_page
+    sources:
+      vendor_page: 700.0
+  Fs:  # free air resonance (Hz)
+    value: 51.0
+    winner: vendor_page
+    sources:
+      vendor_page: 51.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.058049439999999994
+    winner: vendor_page
+    sources:
+      vendor_page: 0.058049439999999994
+  Mms:  # moving mass incl. air load (kg)
+    value: 7.199999999999999e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 7.199999999999999e-05
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.parts-express.com/Beyma-12MC700Nd-MC-Series-12-Neo-Subwoofer-8-Ohm-253-015

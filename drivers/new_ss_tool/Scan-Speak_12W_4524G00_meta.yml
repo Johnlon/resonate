@@ -42,7 +42,78 @@ manu_page_fields:
 - SPL
 - Sd
 - Vas
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  sensitivity_db: 89.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.1
+    winner: manu_page
+    sources:
+      manu_page: 3.1
+  Sd:  # effective piston area (m²)
+    value: 0.0059
+    winner: manu_page
+    sources:
+      manu_page: 0.0059
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00167
+    winner: manu_page
+    sources:
+      manu_page: 0.00167
+  Xmax:  # one-way linear excursion (m)
+    value: 0.003
+    winner: manu_page
+    sources:
+      manu_page: 0.003
+  Qes:  # electrical Q factor
+    value: 0.3
+    winner: manu_page
+    sources:
+      manu_page: 0.3
+  BL:  # force factor (T·m)
+    value: 4.4
+    winner: manu_page
+    sources:
+      manu_page: 4.4
+  Qts:  # total Q factor
+    value: 0.27
+    winner: manu_page
+    sources:
+      manu_page: 0.27
+  Qms:  # mechanical Q factor
+    value: 3.35
+    winner: manu_page
+    sources:
+      manu_page: 3.35
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 89.0
+    winner: manu_page
+    sources:
+      manu_page: 89.0
+  Le:  # voice coil inductance (H)
+    value: 0.0004
+    winner: manu_page
+    sources:
+      manu_page: 0.0004
+  Fs:  # free air resonance (Hz)
+    value: 50.0
+    winner: manu_page
+    sources:
+      manu_page: 50.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0082
+    winner: manu_page
+    sources:
+      manu_page: 0.0082
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00619
+    winner: manu_page
+    sources:
+      manu_page: 0.00619
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: manu_page
+    sources:
+      manu_page: 4.0
+_sources:
+  datasheet: https://www.scan-speak.dk/datasheet/pdf/12w-4524g00.pdf
+  adv_datasheet: https://www.scan-speak.dk/datasheet/adv/12w-4524g00.pdf
+  manu_page: https://www.scan-speak.dk/product/12w-4524g00/

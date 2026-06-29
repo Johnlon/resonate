@@ -15,6 +15,75 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 140.0
-  sensitivity_db: 84.0
-  linear_xmax_mm: 7.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 7.59
+    winner: vendor_page
+    sources:
+      vendor_page: 7.59
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0035
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0035
+  Qes:  # electrical Q factor
+    value: 1.82
+    winner: vendor_page
+    sources:
+      vendor_page: 1.82
+  Qts:  # total Q factor
+    value: 1.26
+    winner: vendor_page
+    sources:
+      vendor_page: 1.26
+  Qms:  # mechanical Q factor
+    value: 4.13
+    winner: vendor_page
+    sources:
+      vendor_page: 4.13
+  Le:  # voice coil inductance (H)
+    value: 0.0014
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0014
+  Pe:  # rated power input (W)
+    value: 100.0
+    winner: vendor_page
+    sources:
+      vendor_page: 100.0
+  Fs:  # free air resonance (Hz)
+    value: 32.0
+    winner: vendor_page
+    sources:
+      vendor_page: 32.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00336
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00336
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  power_peak_W:  # peak power handling (W)
+    value: 140.0
+    winner: vendor_page
+    sources:
+      vendor_page: 140.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 84.0
+    winner: vendor_page
+    sources:
+      vendor_page: 84.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 3.0
+    winner: vendor_page
+    sources:
+      vendor_page: 3.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/grs-12pr-8.html

@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 20.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.5
+    winner: vendor_page
+    sources:
+      vendor_page: 3.5
+  Sd:  # effective piston area (m²)
+    value: 0.00221
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00221
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00056
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00056
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0051
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0051
+  Qes:  # electrical Q factor
+    value: 1.48
+    winner: vendor_page
+    sources:
+      vendor_page: 1.48
+  BL:  # force factor (T·m)
+    value: 2.05
+    winner: vendor_page
+    sources:
+      vendor_page: 2.05
+  Qts:  # total Q factor
+    value: 0.92
+    winner: vendor_page
+    sources:
+      vendor_page: 0.92
+  Qms:  # mechanical Q factor
+    value: 3.97
+    winner: vendor_page
+    sources:
+      vendor_page: 3.97
+  Le:  # voice coil inductance (H)
+    value: 5.4e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 5.4e-05
+  Pe:  # rated power input (W)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  Fs:  # free air resonance (Hz)
+    value: 160.0
+    winner: vendor_page
+    sources:
+      vendor_page: 160.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.000385
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000385
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.00181
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00181
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/peerless-by-tymphany-tc7fd00-04.html

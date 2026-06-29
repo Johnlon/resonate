@@ -19,10 +19,92 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 295-522
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  freq_low_hz: 2019.1
-  freq_high_hz: 295.0
-  power_rms_W: 20.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.6
+    winner: vendor_page
+    sources:
+      vendor_page: 6.6
+  Sd:  # effective piston area (m²)
+    value: 0.00312
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00312
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00164
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00164
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0025
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0025
+  Qes:  # electrical Q factor
+    value: 0.45
+    winner: vendor_page
+    sources:
+      vendor_page: 0.45
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.6814187525930532
+    winner: vendor_page
+    sources:
+      vendor_page: 0.6814187525930532
+  BL:  # force factor (T·m)
+    value: 4.61
+    winner: vendor_page
+    sources:
+      vendor_page: 4.61
+  Qts:  # total Q factor
+    value: 0.37
+    winner: vendor_page
+    sources:
+      vendor_page: 0.37
+  Qms:  # mechanical Q factor
+    value: 2.15
+    winner: vendor_page
+    sources:
+      vendor_page: 2.15
+  Le:  # voice coil inductance (H)
+    value: 0.00053
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00053
+  Pe:  # rated power input (W)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  Fs:  # free air resonance (Hz)
+    value: 66.62
+    winner: vendor_page
+    sources:
+      vendor_page: 66.62
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.002265344
+    winner: vendor_page
+    sources:
+      vendor_page: 0.002265344
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0035
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0035
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 2019.1
+    winner: vendor_page
+    sources:
+      vendor_page: 2019.1
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 295.0
+    winner: vendor_page
+    sources:
+      vendor_page: 295.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/295-522--dayton-audio-DSA90-8-specifications.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-DSA90-8-3-Designer-Series-Aluminum-Cone-Full-Range-Driver-8-Ohm-295-522

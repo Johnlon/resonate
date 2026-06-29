@@ -19,8 +19,82 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 295-563
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 40.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.5
+    winner: vendor_page
+    sources:
+      vendor_page: 3.5
+  Sd:  # effective piston area (m²)
+    value: 0.0085
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0085
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00154
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00154
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0044
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0044
+  Qes:  # electrical Q factor
+    value: 0.42
+    winner: vendor_page
+    sources:
+      vendor_page: 0.42
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.2764036227806663
+    winner: vendor_page
+    sources:
+      vendor_page: 1.2764036227806663
+  BL:  # force factor (T·m)
+    value: 44.0
+    winner: vendor_page
+    sources:
+      vendor_page: 44.0
+  Qts:  # total Q factor
+    value: 0.34
+    winner: vendor_page
+    sources:
+      vendor_page: 0.34
+  Qms:  # mechanical Q factor
+    value: 1.85
+    winner: vendor_page
+    sources:
+      vendor_page: 1.85
+  Le:  # voice coil inductance (H)
+    value: 0.00039
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00039
+  Pe:  # rated power input (W)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  Fs:  # free air resonance (Hz)
+    value: 43.7
+    winner: vendor_page
+    sources:
+      vendor_page: 43.7
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0157
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0157
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0086
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0086
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/295-563--dayton-audio-rs150p-4a-reference-series-specifications.pdf
+  vendor_page: https://www.parts-express.com/Dayton-Audio-RS150P-4A-6-Reference-Paper-Woofer-4-Ohm-295-563

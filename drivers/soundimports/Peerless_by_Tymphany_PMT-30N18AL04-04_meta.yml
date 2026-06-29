@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: tweeter
 specs:
-  power_rms_W: 2.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.5
+    winner: vendor_page
+    sources:
+      vendor_page: 3.5
+  Sd:  # effective piston area (m²)
+    value: 0.000487
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000487
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00071
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00071
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00314
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00314
+  Qes:  # electrical Q factor
+    value: 0.94
+    winner: vendor_page
+    sources:
+      vendor_page: 0.94
+  BL:  # force factor (T·m)
+    value: 1.84
+    winner: vendor_page
+    sources:
+      vendor_page: 1.84
+  Qts:  # total Q factor
+    value: 0.65
+    winner: vendor_page
+    sources:
+      vendor_page: 0.65
+  Qms:  # mechanical Q factor
+    value: 2.13
+    winner: vendor_page
+    sources:
+      vendor_page: 2.13
+  Le:  # voice coil inductance (H)
+    value: 6.7e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 6.7e-05
+  Pe:  # rated power input (W)
+    value: 2.0
+    winner: vendor_page
+    sources:
+      vendor_page: 2.0
+  Fs:  # free air resonance (Hz)
+    value: 240.0
+    winner: vendor_page
+    sources:
+      vendor_page: 240.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 2.4e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 2.4e-05
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.000604
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000604
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/peerless-by-tymphany-pmt-30n18al04-04.html

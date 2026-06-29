@@ -21,11 +21,96 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-2949
-field_provenance: null
-freq_low_hz: 85.0
-freq_high_hz: 7500.0
 specs:
-  sensitivity_db: 95.0
-  power_rms_W: 85.0
-  freq_low_hz: 85.0
-  freq_high_hz: 7.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
+  Sd:  # effective piston area (m²)
+    value: 0.0143
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0143
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00029099999999999997
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00029099999999999997
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0054
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0054
+  Qes:  # electrical Q factor
+    value: 0.38
+    winner: vendor_page
+    sources:
+      vendor_page: 0.38
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.6852881029275502
+    winner: vendor_page
+    sources:
+      vendor_page: 1.6852881029275502
+  BL:  # force factor (T·m)
+    value: 9.77
+    winner: vendor_page
+    sources:
+      vendor_page: 9.77
+  Qts:  # total Q factor
+    value: 0.34
+    winner: vendor_page
+    sources:
+      vendor_page: 0.34
+  Qms:  # mechanical Q factor
+    value: 3.83
+    winner: vendor_page
+    sources:
+      vendor_page: 3.83
+  Le:  # voice coil inductance (H)
+    value: 0.00041999999999999996
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00041999999999999996
+  Pe:  # rated power input (W)
+    value: 275.0
+    winner: vendor_page
+    sources:
+      vendor_page: 275.0
+  Fs:  # free air resonance (Hz)
+    value: 84.9
+    winner: vendor_page
+    sources:
+      vendor_page: 84.9
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.008211871999999999
+    winner: vendor_page
+    sources:
+      vendor_page: 0.008211871999999999
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0121
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0121
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 95.0
+    winner: vendor_page
+    sources:
+      vendor_page: 95.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 85.0
+    winner: vendor_page
+    sources:
+      vendor_page: 85.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 7.0
+    winner: vendor_page
+    sources:
+      vendor_page: 7.0
+_sources:
+  vendor_page: https://www.parts-express.com/PRV-Audio-6MB550FT-6-Forte-Pro-Audio-Midrange-Speaker-294-2949

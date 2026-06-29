@@ -14,4 +14,36 @@ dq_issue: null
 community: null
 fetched_sku: null
 driver_type: subwoofer
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.036
+    winner: vendor_page
+    sources:
+      vendor_page: 0.036
+  Xmax:  # one-way linear excursion (m)
+    value: 0.025
+    winner: vendor_page
+    sources:
+      vendor_page: 0.025
+  Qms:  # mechanical Q factor
+    value: 7.1
+    winner: vendor_page
+    sources:
+      vendor_page: 7.1
+  Fs:  # free air resonance (Hz)
+    value: 19.0
+    winner: vendor_page
+    sources:
+      vendor_page: 19.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.082
+    winner: vendor_page
+    sources:
+      vendor_page: 0.082
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.161
+    winner: vendor_page
+    sources:
+      vendor_page: 0.161
+_sources:
+  vendor_page: https://www.soundimports.eu/en/purifi-ptt100pr-na2-01.html

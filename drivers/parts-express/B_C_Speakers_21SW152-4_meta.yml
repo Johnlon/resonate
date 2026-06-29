@@ -19,8 +19,76 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 294-689
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 2.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.4
+    winner: vendor_page
+    sources:
+      vendor_page: 3.4
+  Sd:  # effective piston area (m²)
+    value: 0.168
+    winner: vendor_page
+    sources:
+      vendor_page: 0.168
+  Xmax:  # one-way linear excursion (m)
+    value: 0.015
+    winner: vendor_page
+    sources:
+      vendor_page: 0.015
+  Qes:  # electrical Q factor
+    value: 0.31
+    winner: vendor_page
+    sources:
+      vendor_page: 0.31
+  Rms:  # mechanical resistance (kg/s)
+    value: 13.212641103097644
+    winner: vendor_page
+    sources:
+      vendor_page: 13.212641103097644
+  BL:  # force factor (T·m)
+    value: 32.5
+    winner: vendor_page
+    sources:
+      vendor_page: 32.5
+  Qts:  # total Q factor
+    value: 0.3
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3
+  Qms:  # mechanical Q factor
+    value: 7.0
+    winner: vendor_page
+    sources:
+      vendor_page: 7.0
+  Le:  # voice coil inductance (H)
+    value: 0.0015
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0015
+  Pe:  # rated power input (W)
+    value: 4000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4000.0
+  Fs:  # free air resonance (Hz)
+    value: 32.0
+    winner: vendor_page
+    sources:
+      vendor_page: 32.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.1982176
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1982176
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.46
+    winner: vendor_page
+    sources:
+      vendor_page: 0.46
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  vendor_page: https://www.parts-express.com/B-C-21SW152-4-21-Neodymium-Subwoofer-4-Ohm-294-689

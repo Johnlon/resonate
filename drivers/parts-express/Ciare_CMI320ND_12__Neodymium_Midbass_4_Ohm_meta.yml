@@ -15,9 +15,87 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 50.0
-freq_high_hz: 4000.0
 specs:
-  power_rms_W: 220.0
-  freq_low_hz: 50.0
-  freq_high_hz: 4000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 2.8
+    winner: vendor_page
+    sources:
+      vendor_page: 2.8
+  Sd:  # effective piston area (m²)
+    value: 0.0547
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0547
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005
+  Qes:  # electrical Q factor
+    value: 0.44
+    winner: vendor_page
+    sources:
+      vendor_page: 0.44
+  Rms:  # mechanical resistance (kg/s)
+    value: 1.3320352851220723
+    winner: vendor_page
+    sources:
+      vendor_page: 1.3320352851220723
+  BL:  # force factor (T·m)
+    value: 10.6
+    winner: vendor_page
+    sources:
+      vendor_page: 10.6
+  Qts:  # total Q factor
+    value: 0.43
+    winner: vendor_page
+    sources:
+      vendor_page: 0.43
+  Qms:  # mechanical Q factor
+    value: 13.5
+    winner: vendor_page
+    sources:
+      vendor_page: 13.5
+  Le:  # voice coil inductance (H)
+    value: 0.0006
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0006
+  Pe:  # rated power input (W)
+    value: 220.0
+    winner: vendor_page
+    sources:
+      vendor_page: 220.0
+  Fs:  # free air resonance (Hz)
+    value: 53.0
+    winner: vendor_page
+    sources:
+      vendor_page: 53.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.069942496
+    winner: vendor_page
+    sources:
+      vendor_page: 0.069942496
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.054
+    winner: vendor_page
+    sources:
+      vendor_page: 0.054
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 4000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4000.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/293-134--ciare-cmi320nd-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Ciare-CMI320ND-12-Neodymium-Midbass-4-Ohm-293-134

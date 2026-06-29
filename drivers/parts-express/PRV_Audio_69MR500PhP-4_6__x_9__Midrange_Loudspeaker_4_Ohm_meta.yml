@@ -15,9 +15,92 @@ community: null
 fetched_sku: null
 obsolete: null
 driver_type: subwoofer
-freq_low_hz: 500.0
-freq_high_hz: 12000.0
 specs:
-  power_rms_W: 1.0
-  freq_low_hz: 500.0
-  freq_high_hz: 12000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.7
+    winner: vendor_page
+    sources:
+      vendor_page: 3.7
+  Sd:  # effective piston area (m²)
+    value: 0.0231
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0231
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000204
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000204
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00287
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00287
+  Qes:  # electrical Q factor
+    value: 0.68
+    winner: vendor_page
+    sources:
+      vendor_page: 0.68
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.5991514535486248
+    winner: vendor_page
+    sources:
+      vendor_page: 0.5991514535486248
+  BL:  # force factor (T·m)
+    value: 6.8
+    winner: vendor_page
+    sources:
+      vendor_page: 6.8
+  Qts:  # total Q factor
+    value: 0.65
+    winner: vendor_page
+    sources:
+      vendor_page: 0.65
+  Qms:  # mechanical Q factor
+    value: 14.2
+    winner: vendor_page
+    sources:
+      vendor_page: 14.2
+  Le:  # voice coil inductance (H)
+    value: 0.00014000000000000001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00014000000000000001
+  Pe:  # rated power input (W)
+    value: 250.0
+    winner: vendor_page
+    sources:
+      vendor_page: 250.0
+  Fs:  # free air resonance (Hz)
+    value: 91.74
+    winner: vendor_page
+    sources:
+      vendor_page: 91.74
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.015291072000000001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.015291072000000001
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.01476
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01476
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 500.0
+    winner: vendor_page
+    sources:
+      vendor_page: 500.0
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 12000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 12000.0
+_sources:
+  datasheet: https://prvaudio.com/wp-content/uploads/2026/02/PRV-Catalog-2026.pdf
+  vendor_page: https://www.parts-express.com/PRV-Audio-69MR500PhP-4-6-x-9-Midrange-Loudspeaker-4-Ohm-294-2761

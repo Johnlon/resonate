@@ -16,4 +16,41 @@ community: null
 fetched_sku: null
 driver_type: midrange
 specs:
-  sensitivity_db: 90.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.3
+    winner: manu_page
+    sources:
+      manu_page: 3.3
+  Sd:  # effective piston area (m²)
+    value: 0.005
+    winner: manu_page
+    sources:
+      manu_page: 0.005
+  BL:  # force factor (T·m)
+    value: 5.5
+    winner: manu_page
+    sources:
+      manu_page: 5.5
+  Qts:  # total Q factor
+    value: 0.31
+    winner: manu_page
+    sources:
+      manu_page: 0.31
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 90.0
+    winner: manu_page
+    sources:
+      manu_page: 90.0
+  Fs:  # free air resonance (Hz)
+    value: 68.0
+    winner: manu_page
+    sources:
+      manu_page: 68.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0027
+    winner: manu_page
+    sources:
+      manu_page: 0.0027
+_sources:
+  datasheet: https://www.scan-speak.dk/datasheet/reviews/11M-4631G05-CarHiFi_2017-6.pdf
+  manu_page: https://www.scan-speak.dk/product/11m-4631g05/

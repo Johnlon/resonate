@@ -15,4 +15,75 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 120.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.6
+    winner: vendor_page
+    sources:
+      vendor_page: 5.6
+  Sd:  # effective piston area (m²)
+    value: 0.02243
+    winner: vendor_page
+    sources:
+      vendor_page: 0.02243
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00014
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00014
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00642
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00642
+  Qes:  # electrical Q factor
+    value: 0.57
+    winner: vendor_page
+    sources:
+      vendor_page: 0.57
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.87
+    winner: vendor_page
+    sources:
+      vendor_page: 0.87
+  BL:  # force factor (T·m)
+    value: 11.3
+    winner: vendor_page
+    sources:
+      vendor_page: 11.3
+  Qts:  # total Q factor
+    value: 0.55
+    winner: vendor_page
+    sources:
+      vendor_page: 0.55
+  Qms:  # mechanical Q factor
+    value: 14.63
+    winner: vendor_page
+    sources:
+      vendor_page: 14.63
+  Le:  # voice coil inductance (H)
+    value: 0.0005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0005
+  Pe:  # rated power input (W)
+    value: 120.0
+    winner: vendor_page
+    sources:
+      vendor_page: 120.0
+  Fs:  # free air resonance (Hz)
+    value: 89.0
+    winner: vendor_page
+    sources:
+      vendor_page: 89.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0101
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0101
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0228
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0228
+_sources:
+  vendor_page: https://www.soundimports.eu/en/sb-audience-bianco-8mw125.html

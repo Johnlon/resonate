@@ -20,8 +20,47 @@ obsolete: null
 dq_issue: missing_Sd
 community: null
 fetched_sku: 264-1478
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 25.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.47
+    winner: vendor_page
+    sources:
+      vendor_page: 3.47
+  Qes:  # electrical Q factor
+    value: 0.48
+    winner: vendor_page
+    sources:
+      vendor_page: 0.48
+  Qts:  # total Q factor
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
+  Qms:  # mechanical Q factor
+    value: 1.4
+    winner: vendor_page
+    sources:
+      vendor_page: 1.4
+  Le:  # voice coil inductance (H)
+    value: 1.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0e-05
+  Pe:  # rated power input (W)
+    value: 80.0
+    winner: vendor_page
+    sources:
+      vendor_page: 80.0
+  Fs:  # free air resonance (Hz)
+    value: 415.36
+    winner: vendor_page
+    sources:
+      vendor_page: 415.36
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/264-1478--tymphany-dx25bg60-04-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Peerless-DX25BG60-04-1-Silk-Dome-Tweeter-4-Ohm-264-1478

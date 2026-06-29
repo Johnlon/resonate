@@ -15,4 +15,45 @@ community: null
 fetched_sku: null
 driver_type: null
 specs:
-  power_rms_W: 15.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.7
+    winner: vendor_page
+    sources:
+      vendor_page: 4.7
+  Qes:  # electrical Q factor
+    value: 3.75
+    winner: vendor_page
+    sources:
+      vendor_page: 3.75
+  Qts:  # total Q factor
+    value: 1.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1.0
+  Qms:  # mechanical Q factor
+    value: 1.36
+    winner: vendor_page
+    sources:
+      vendor_page: 1.36
+  Le:  # voice coil inductance (H)
+    value: 3.3e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 3.3e-05
+  Pe:  # rated power input (W)
+    value: 15.0
+    winner: vendor_page
+    sources:
+      vendor_page: 15.0
+  Fs:  # free air resonance (Hz)
+    value: 1625.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1625.0
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0
+_sources:
+  vendor_page: https://www.soundimports.eu/en/peerless-by-tymphany-d26nc56-06.html

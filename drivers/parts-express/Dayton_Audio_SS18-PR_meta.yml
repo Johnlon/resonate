@@ -19,7 +19,46 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 295-737
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
-specs: null
+specs:
+  Sd:  # effective piston area (m²)
+    value: 0.11946
+    winner: vendor_page
+    sources:
+      vendor_page: 0.11946
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00017299999999999998
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00017299999999999998
+  Xmax:  # one-way linear excursion (m)
+    value: 0.045
+    winner: vendor_page
+    sources:
+      vendor_page: 0.045
+  Rms:  # mechanical resistance (kg/s)
+    value: 5.926001646306328
+    winner: vendor_page
+    sources:
+      vendor_page: 5.926001646306328
+  Qms:  # mechanical Q factor
+    value: 7.74
+    winner: vendor_page
+    sources:
+      vendor_page: 7.74
+  Fs:  # free air resonance (Hz)
+    value: 20.0
+    winner: vendor_page
+    sources:
+      vendor_page: 20.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.35112832
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35112832
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.365
+    winner: vendor_page
+    sources:
+      vendor_page: 0.365
+_sources:
+  vendor_page: https://www.parts-express.com/Dayton-Audio-SS18-PR-18-Signature-Series-Passive-Radiator-295-737

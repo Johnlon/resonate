@@ -19,11 +19,77 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 293-100
-field_provenance: null
-freq_low_hz: 2000.0
-freq_high_hz: 20000.0
 specs:
-  freq_low_hz: 2019.1
-  freq_high_hz: 293.0
-  sensitivity_db: 91.0
-  power_rms_W: 75.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.3
+    winner: vendor_page
+    sources:
+      vendor_page: 3.3
+  Sd:  # effective piston area (m²)
+    value: 0.0008
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0008
+  Qes:  # electrical Q factor
+    value: 1.23
+    winner: vendor_page
+    sources:
+      vendor_page: 1.23
+  BL:  # force factor (T·m)
+    value: 1.7
+    winner: vendor_page
+    sources:
+      vendor_page: 1.7
+  Qts:  # total Q factor
+    value: 0.54
+    winner: vendor_page
+    sources:
+      vendor_page: 0.54
+  Qms:  # mechanical Q factor
+    value: 0.97
+    winner: vendor_page
+    sources:
+      vendor_page: 0.97
+  SPL:  # sensitivity (dB, 2.83 V/1 m)
+    value: 91.0
+    winner: vendor_page
+    sources:
+      vendor_page: 91.0
+  Le:  # voice coil inductance (H)
+    value: 8.0e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 8.0e-05
+  Pe:  # rated power input (W)
+    value: 75.0
+    winner: vendor_page
+    sources:
+      vendor_page: 75.0
+  Fs:  # free air resonance (Hz)
+    value: 1400.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1400.0
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0003
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0003
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: vendor_page
+    sources:
+      vendor_page: 4.0
+  freq_low_hz:  # published lower frequency limit (Hz)
+    value: 2019.1
+    winner: vendor_page
+    sources:
+      vendor_page: 2019.1
+  freq_high_hz:  # published upper frequency limit (Hz)
+    value: 293.0
+    winner: vendor_page
+    sources:
+      vendor_page: 293.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/293-100--ciare-ct250-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Ciare-CT250-1-Neodymium-Dome-Tweeter-Pair-293-100

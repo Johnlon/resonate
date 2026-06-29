@@ -15,4 +15,65 @@ community: null
 fetched_sku: null
 driver_type: subwoofer
 specs:
-  power_rms_W: 1000.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.5
+    winner: vendor_page
+    sources:
+      vendor_page: 5.5
+  Sd:  # effective piston area (m²)
+    value: 0.099
+    winner: vendor_page
+    sources:
+      vendor_page: 0.099
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00637
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00637
+  Qes:  # electrical Q factor
+    value: 0.69
+    winner: vendor_page
+    sources:
+      vendor_page: 0.69
+  BL:  # force factor (T·m)
+    value: 14.54
+    winner: vendor_page
+    sources:
+      vendor_page: 14.54
+  Qts:  # total Q factor
+    value: 0.68
+    winner: vendor_page
+    sources:
+      vendor_page: 0.68
+  Qms:  # mechanical Q factor
+    value: 25.9
+    winner: vendor_page
+    sources:
+      vendor_page: 25.9
+  Le:  # voice coil inductance (H)
+    value: 0.00104
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00104
+  Pe:  # rated power input (W)
+    value: 1000.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1000.0
+  Fs:  # free air resonance (Hz)
+    value: 39.56
+    winner: vendor_page
+    sources:
+      vendor_page: 39.56
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.2061
+    winner: vendor_page
+    sources:
+      vendor_page: 0.2061
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.10745
+    winner: vendor_page
+    sources:
+      vendor_page: 0.10745
+_sources:
+  vendor_page: https://www.soundimports.eu/en/prv-audio-15w1000-v2.html

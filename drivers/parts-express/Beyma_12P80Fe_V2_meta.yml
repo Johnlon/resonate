@@ -20,8 +20,77 @@ obsolete: null
 dq_issue: null
 community: null
 fetched_sku: 253-006
-field_provenance: null
-freq_low_hz: null
-freq_high_hz: null
 specs:
-  power_rms_W: 700.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+  Sd:  # effective piston area (m²)
+    value: 0.055
+    winner: vendor_page
+    sources:
+      vendor_page: 0.055
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004
+  Qes:  # electrical Q factor
+    value: 0.22
+    winner: vendor_page
+    sources:
+      vendor_page: 0.22
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.003526316923167866
+    winner: vendor_page
+    sources:
+      vendor_page: 0.003526316923167866
+  BL:  # force factor (T·m)
+    value: 23.0
+    winner: vendor_page
+    sources:
+      vendor_page: 23.0
+  Qts:  # total Q factor
+    value: 0.21
+    winner: vendor_page
+    sources:
+      vendor_page: 0.21
+  Qms:  # mechanical Q factor
+    value: 6.5
+    winner: vendor_page
+    sources:
+      vendor_page: 6.5
+  Le:  # voice coil inductance (H)
+    value: 48.0
+    winner: vendor_page
+    sources:
+      vendor_page: 48.0
+  Pe:  # rated power input (W)
+    value: 700.0
+    winner: vendor_page
+    sources:
+      vendor_page: 700.0
+  Fs:  # free air resonance (Hz)
+    value: 48.0
+    winner: vendor_page
+    sources:
+      vendor_page: 48.0
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.06088112
+    winner: vendor_page
+    sources:
+      vendor_page: 0.06088112
+  Mms:  # moving mass incl. air load (kg)
+    value: 7.6e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 7.6e-05
+  Znom:  # nominal impedance (Ω)
+    value: 50.0
+    winner: vendor_page
+    sources:
+      vendor_page: 50.0
+_sources:
+  datasheet: https://www.parts-express.com/pedocs/specs/253-006--12p80fev2-spec-sheet.pdf
+  vendor_page: https://www.parts-express.com/Beyma-12P80Fe-V2-P80-Series-12-Subwoofer-8-Ohm-253-006

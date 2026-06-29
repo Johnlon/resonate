@@ -15,4 +15,40 @@ community: null
 fetched_sku: null
 driver_type: pr
 specs:
-  linear_xmax_mm: 8.0
+  Sd:  # effective piston area (m²)
+    value: 0.00312
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00312
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00255
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00255
+  Xmax:  # one-way linear excursion (m)
+    value: 0.004
+    winner: vendor_page
+    sources:
+      vendor_page: 0.004
+  Qms:  # mechanical Q factor
+    value: 5.72
+    winner: vendor_page
+    sources:
+      vendor_page: 5.72
+  Fs:  # free air resonance (Hz)
+    value: 43.7
+    winner: vendor_page
+    sources:
+      vendor_page: 43.7
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.000124
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000124
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005
+_sources:
+  vendor_page: https://www.soundimports.eu/en/dayton-audio-dsa90-pr.html
