@@ -1,0 +1,93 @@
+source: https://www.daytonaudio.com/product/1274/cf120-4-4-1-2-woven-carbon-fiber-midwoofer-4-ohms
+manu_page_url: https://www.daytonaudio.com/product/1274/cf120-4-4-1-2-woven-carbon-fiber-midwoofer-4-ohms
+vendor_page_url: null
+datasheet_url: https://www.daytonaudio.com/images/resources/295-298--dayton-audio-cf120-4-spec-sheet.pdf
+frd_url: null
+zma_url: null
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Dayton Audio website (scraped 20260630). T/S parameters
+  have not been verified by a human against the datasheet.
+corrections: '''Qts'' stored=0.28 differs from calculated=0.273665 (deps: Qms=1.89,
+  Qes=0.32); ''Vas'' stored=0.00487 differs from calculated=0.00492868 (deps: roo=1.20095,
+  c=343.684, Sd=0.00515, Cms=0.00131)'
+reviewed_by: null
+driver_type: null
+obsolete: null
+dq_issue: null
+community: null
+fetched_sku: null
+_sources:
+  datasheet: https://www.daytonaudio.com/images/resources/295-298--dayton-audio-cf120-4-spec-sheet.pdf
+  manu_page: https://www.daytonaudio.com/product/1274/cf120-4-4-1-2-woven-carbon-fiber-midwoofer-4-ohms
+specs:
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0069
+    winner: manu_page
+    sources:
+      manu_page: 0.0069
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: manu_page
+    sources:
+      manu_page: 4.0
+  BL:  # force factor (T·m)
+    value: 4.94
+    winner: manu_page
+    sources:
+      manu_page: 4.94
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.4
+    winner: manu_page
+    sources:
+      manu_page: 3.4
+  Le:  # voice coil inductance (H)
+    value: 0.00045
+    winner: manu_page
+    sources:
+      manu_page: 0.00045
+  Qms:  # mechanical Q factor
+    value: 1.89
+    winner: manu_page
+    sources:
+      manu_page: 1.89
+  Pe:  # rated power input (W)
+    value: 30.0
+    winner: manu_page
+    sources:
+      manu_page: 30.0
+  Sd:  # effective piston area (m²)
+    value: 0.00515
+    winner: manu_page
+    sources:
+      manu_page: 0.00515
+  Qts:  # total Q factor
+    value: 0.28
+    winner: manu_page
+    sources:
+      manu_page: 0.28
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.00487
+    winner: manu_page
+    sources:
+      manu_page: 0.00487
+  Qes:  # electrical Q factor
+    value: 0.32
+    winner: manu_page
+    sources:
+      manu_page: 0.32
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0035
+    winner: manu_page
+    sources:
+      manu_page: 0.0035
+  Fs:  # free air resonance (Hz)
+    value: 53.2
+    winner: manu_page
+    sources:
+      manu_page: 53.2
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00131
+    winner: manu_page
+    sources:
+      manu_page: 0.00131

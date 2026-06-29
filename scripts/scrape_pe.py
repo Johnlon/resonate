@@ -173,7 +173,7 @@ def main():
     json_cache = out / "_html"   # named _html for consistency with other scrapers
     json_cache.mkdir(exist_ok=True)
     manifest = load_manifest(out)
-    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    today = datetime.now(timezone.utc).strftime("%Y%m%d")
     start = datetime.now()
 
     # ── Collect all items from API (using JSON cache) ─────────────────────────

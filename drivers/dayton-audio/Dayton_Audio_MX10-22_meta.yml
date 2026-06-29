@@ -1,0 +1,92 @@
+source: https://www.daytonaudio.com/product/1791/mx10-22-10-max-x-high-excursion-dvc-subwoofer-2-ohms-per-coil
+manu_page_url: https://www.daytonaudio.com/product/1791/mx10-22-10-max-x-high-excursion-dvc-subwoofer-2-ohms-per-coil
+vendor_page_url: null
+datasheet_url: https://www.daytonaudio.com/images/resources/295-164--dayton-audio-mx10-22-spec-sheet.pdf
+frd_url: null
+zma_url: null
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Dayton Audio website (scraped 20260630). T/S parameters
+  have not been verified by a human against the datasheet.
+corrections: '''Vas'' stored=0.0237861 differs from calculated=0.0234636 (deps: roo=1.20095,
+  c=343.684, Sd=0.03567, Cms=0.00013)'
+reviewed_by: null
+driver_type: null
+obsolete: null
+dq_issue: null
+community: null
+fetched_sku: null
+_sources:
+  datasheet: https://www.daytonaudio.com/images/resources/295-164--dayton-audio-mx10-22-spec-sheet.pdf
+  manu_page: https://www.daytonaudio.com/product/1791/mx10-22-10-max-x-high-excursion-dvc-subwoofer-2-ohms-per-coil
+specs:
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.179
+    winner: manu_page
+    sources:
+      manu_page: 0.179
+  Znom:  # nominal impedance (Ω)
+    value: 2.0
+    winner: manu_page
+    sources:
+      manu_page: 2.0
+  BL:  # force factor (T·m)
+    value: 18.2
+    winner: manu_page
+    sources:
+      manu_page: 18.2
+  Re:  # DC voice coil resistance (Ω)
+    value: 4.76
+    winner: manu_page
+    sources:
+      manu_page: 4.76
+  Le:  # voice coil inductance (H)
+    value: 0.00433
+    winner: manu_page
+    sources:
+      manu_page: 0.00433
+  Qms:  # mechanical Q factor
+    value: 3.59
+    winner: manu_page
+    sources:
+      manu_page: 3.59
+  Pe:  # rated power input (W)
+    value: 400.0
+    winner: manu_page
+    sources:
+      manu_page: 400.0
+  Sd:  # effective piston area (m²)
+    value: 0.03567
+    winner: manu_page
+    sources:
+      manu_page: 0.03567
+  Qts:  # total Q factor
+    value: 0.46
+    winner: manu_page
+    sources:
+      manu_page: 0.46
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.023786112
+    winner: manu_page
+    sources:
+      manu_page: 0.023786112
+  Qes:  # electrical Q factor
+    value: 0.53
+    winner: manu_page
+    sources:
+      manu_page: 0.53
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0116
+    winner: manu_page
+    sources:
+      manu_page: 0.0116
+  Fs:  # free air resonance (Hz)
+    value: 32.6
+    winner: manu_page
+    sources:
+      manu_page: 32.6
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00013
+    winner: manu_page
+    sources:
+      manu_page: 0.00013

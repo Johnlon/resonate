@@ -1,0 +1,91 @@
+source: https://www.daytonaudio.com/product/1086/dc160-4-6-1-2-classic-woofer-4-ohm
+manu_page_url: https://www.daytonaudio.com/product/1086/dc160-4-6-1-2-classic-woofer-4-ohm
+vendor_page_url: null
+datasheet_url: https://www.daytonaudio.com/images/resources/295-309-dayton-audio-dc160-4-specifications.pdf
+frd_url: null
+zma_url: null
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Dayton Audio website (scraped 20260630). T/S parameters
+  have not been verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+driver_type: null
+obsolete: null
+dq_issue: null
+community: null
+fetched_sku: null
+_sources:
+  datasheet: https://www.daytonaudio.com/images/resources/295-309-dayton-audio-dc160-4-specifications.pdf
+  manu_page: https://www.daytonaudio.com/product/1086/dc160-4-6-1-2-classic-woofer-4-ohm
+specs:
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0292
+    winner: manu_page
+    sources:
+      manu_page: 0.0292
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: manu_page
+    sources:
+      manu_page: 4.0
+  BL:  # force factor (T·m)
+    value: 7.02
+    winner: manu_page
+    sources:
+      manu_page: 7.02
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.4
+    winner: manu_page
+    sources:
+      manu_page: 3.4
+  Le:  # voice coil inductance (H)
+    value: 0.00099
+    winner: manu_page
+    sources:
+      manu_page: 0.00099
+  Qms:  # mechanical Q factor
+    value: 3.31
+    winner: manu_page
+    sources:
+      manu_page: 3.31
+  Pe:  # rated power input (W)
+    value: 60.0
+    winner: manu_page
+    sources:
+      manu_page: 60.0
+  Sd:  # effective piston area (m²)
+    value: 0.01368
+    winner: manu_page
+    sources:
+      manu_page: 0.01368
+  Qts:  # total Q factor
+    value: 0.43
+    winner: manu_page
+    sources:
+      manu_page: 0.43
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.015
+    winner: manu_page
+    sources:
+      manu_page: 0.015
+  Qes:  # electrical Q factor
+    value: 0.49
+    winner: manu_page
+    sources:
+      manu_page: 0.49
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0034
+    winner: manu_page
+    sources:
+      manu_page: 0.0034
+  Fs:  # free air resonance (Hz)
+    value: 39.0
+    winner: manu_page
+    sources:
+      manu_page: 39.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00057
+    winner: manu_page
+    sources:
+      manu_page: 0.00057

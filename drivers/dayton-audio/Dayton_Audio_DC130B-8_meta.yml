@@ -1,0 +1,92 @@
+source: https://www.daytonaudio.com/product/1084/dc130b-8-5-1-4-classic-woofer-speaker-8-ohm
+manu_page_url: https://www.daytonaudio.com/product/1084/dc130b-8-5-1-4-classic-woofer-speaker-8-ohm
+vendor_page_url: null
+datasheet_url: https://www.daytonaudio.com/images/resources/295-304-dayton-audio-dc130b-8-specifications-9385.pdf
+frd_url: null
+zma_url: null
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Dayton Audio website (scraped 20260630). T/S parameters
+  have not been verified by a human against the datasheet.
+corrections: '''Vas'' stored=0.0124 differs from calculated=0.0120215 (deps: roo=1.20095,
+  c=343.684, Sd=0.00916, Cms=0.00101)'
+reviewed_by: null
+driver_type: null
+obsolete: null
+dq_issue: null
+community: null
+fetched_sku: null
+_sources:
+  datasheet: https://www.daytonaudio.com/images/resources/295-304-dayton-audio-dc130b-8-specifications-9385.pdf
+  manu_page: https://www.daytonaudio.com/product/1084/dc130b-8-5-1-4-classic-woofer-speaker-8-ohm
+specs:
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0091
+    winner: manu_page
+    sources:
+      manu_page: 0.0091
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: manu_page
+    sources:
+      manu_page: 8.0
+  BL:  # force factor (T·m)
+    value: 5.94
+    winner: manu_page
+    sources:
+      manu_page: 5.94
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.7
+    winner: manu_page
+    sources:
+      manu_page: 5.7
+  Le:  # voice coil inductance (H)
+    value: 0.00077
+    winner: manu_page
+    sources:
+      manu_page: 0.00077
+  Qms:  # mechanical Q factor
+    value: 1.85
+    winner: manu_page
+    sources:
+      manu_page: 1.85
+  Pe:  # rated power input (W)
+    value: 40.0
+    winner: manu_page
+    sources:
+      manu_page: 40.0
+  Sd:  # effective piston area (m²)
+    value: 0.00916
+    winner: manu_page
+    sources:
+      manu_page: 0.00916
+  Qts:  # total Q factor
+    value: 0.38
+    winner: manu_page
+    sources:
+      manu_page: 0.38
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0124
+    winner: manu_page
+    sources:
+      manu_page: 0.0124
+  Qes:  # electrical Q factor
+    value: 0.48
+    winner: manu_page
+    sources:
+      manu_page: 0.48
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0025
+    winner: manu_page
+    sources:
+      manu_page: 0.0025
+  Fs:  # free air resonance (Hz)
+    value: 52.5
+    winner: manu_page
+    sources:
+      manu_page: 52.5
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00101
+    winner: manu_page
+    sources:
+      manu_page: 0.00101

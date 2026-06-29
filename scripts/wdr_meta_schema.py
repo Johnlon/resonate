@@ -276,6 +276,13 @@ _WDR_FIELD_SPEC: dict[str, dict[str, Any]] = {
 # Fields that must be present and non-empty in every WDR.
 _WDR_MANDATORY = {"Brand", "Model"}
 
+# Minimum T/S parameter set for a driver to be usable in box simulation.
+# If any of these are absent the WDR is incomplete and should be rejected.
+# Le, Pe, Znom are desirable but not required for Thiele-Small analysis.
+WDR_MANDATORY_TS: frozenset[str] = frozenset({
+    "Fs", "Qts", "Qes", "Qms", "Re", "BL", "Mms", "Cms", "Sd", "Vas", "Xmax",
+})
+
 # 49 chars from {E, C, N}. Source: WDR_SCHEMA.md §8; confirmed via sample/ probe experiments.
 _PARSTATE_RE = re.compile(r"^[ECN]{49}$")
 
@@ -376,6 +383,10 @@ def validate_wdr(wdr_path: Path) -> list[str]:
     for field in _WDR_MANDATORY:
         if not items.get(field, "").strip():
             errors.append(f"Mandatory field missing or empty: {field!r}")
+
+    missing_ts = WDR_MANDATORY_TS - {f for f in WDR_MANDATORY_TS if items.get(f, "0") not in ("", "0")}
+    for field in sorted(missing_ts):
+        errors.append(f"Mandatory T/S field absent: {field!r}")
 
     for field, spec in _WDR_FIELD_SPEC.items():
         if spec["kind"] != "float":

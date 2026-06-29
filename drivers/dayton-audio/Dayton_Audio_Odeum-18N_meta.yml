@@ -1,0 +1,92 @@
+source: https://www.daytonaudio.com/product/1772/pro-18-in-8-ohm-neodymium-subwoofer-odeum-18n
+manu_page_url: https://www.daytonaudio.com/product/1772/pro-18-in-8-ohm-neodymium-subwoofer-odeum-18n
+vendor_page_url: null
+datasheet_url: https://www.daytonaudio.com/images/resources/295-644-dayton-audio-apollo-18n-specfications.pdf
+frd_url: null
+zma_url: null
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Dayton Audio website (scraped 20260630). T/S parameters
+  have not been verified by a human against the datasheet.
+corrections: '''Qts'' stored=0.33 differs from calculated=0.338187 (deps: Qms=10.02,
+  Qes=0.35)'
+reviewed_by: null
+driver_type: null
+obsolete: null
+dq_issue: 'schema:WDR: ''Vas'' stored=0.2536 differs from calculated=0.232869 (d'
+community: null
+fetched_sku: null
+_sources:
+  datasheet: https://www.daytonaudio.com/images/resources/295-644-dayton-audio-apollo-18n-specfications.pdf
+  manu_page: https://www.daytonaudio.com/product/1772/pro-18-in-8-ohm-neodymium-subwoofer-odeum-18n
+specs:
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.2178
+    winner: manu_page
+    sources:
+      manu_page: 0.2178
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: manu_page
+    sources:
+      manu_page: 8.0
+  BL:  # force factor (T·m)
+    value: 27.57
+    winner: manu_page
+    sources:
+      manu_page: 27.57
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.1
+    winner: manu_page
+    sources:
+      manu_page: 6.1
+  Le:  # voice coil inductance (H)
+    value: 0.00061
+    winner: manu_page
+    sources:
+      manu_page: 0.00061
+  Qms:  # mechanical Q factor
+    value: 10.02
+    winner: manu_page
+    sources:
+      manu_page: 10.02
+  Pe:  # rated power input (W)
+    value: 1200.0
+    winner: manu_page
+    sources:
+      manu_page: 1200.0
+  Sd:  # effective piston area (m²)
+    value: 0.12
+    winner: manu_page
+    sources:
+      manu_page: 0.12
+  Qts:  # total Q factor
+    value: 0.33
+    winner: manu_page
+    sources:
+      manu_page: 0.33
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.2536
+    winner: manu_page
+    sources:
+      manu_page: 0.2536
+  Qes:  # electrical Q factor
+    value: 0.35
+    winner: manu_page
+    sources:
+      manu_page: 0.35
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0091
+    winner: manu_page
+    sources:
+      manu_page: 0.0091
+  Fs:  # free air resonance (Hz)
+    value: 32.0
+    winner: manu_page
+    sources:
+      manu_page: 32.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000114
+    winner: manu_page
+    sources:
+      manu_page: 0.000114

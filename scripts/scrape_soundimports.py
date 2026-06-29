@@ -221,6 +221,13 @@ def parse_product(html: str, url: str) -> dict | None:
                         factor = 1.0                            # published in m²
                     else:
                         factor = 1e-4                           # cm² → m²
+                elif key == "Vas":
+                    # SI publishes Vas in litres (default), but some US-market
+                    # Dayton/Markaudio pages show ft³ — e.g. "0.33 ft.³"
+                    if "ft" in v:
+                        factor = 28.3168e-3                     # ft³ → m³
+                    else:
+                        factor = 1e-3                           # litres → m³
                 else:
                     factor = default_factor
                 fields[key] = round(val * factor, 9)

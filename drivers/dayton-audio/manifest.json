@@ -1,3 +1,431 @@
 {
-  "scraped": {}
+  "scraped": {
+    "https://www.daytonaudio.com/product/1274/cf120-4-4-1-2-woven-carbon-fiber-midwoofer-4-ohms": {
+      "scraped_at": "2026-06-29T23:07:07.361565+00:00",
+      "wdr": "Dayton_Audio_CF120-4.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/10/da115-8-4-aluminum-cone-woofer": {
+      "scraped_at": "2026-06-29T23:07:09.032990+00:00",
+      "wdr": "Dayton_Audio_DA115-8.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/8/da135-8-5-1-4-aluminum-cone-woofer": {
+      "scraped_at": "2026-06-29T23:07:10.776414+00:00",
+      "wdr": "Dayton_Audio_DA135-8.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/11/da175-8-7-aluminum-cone-woofer": {
+      "scraped_at": "2026-06-29T23:07:12.464503+00:00",
+      "wdr": "Dayton_Audio_DA175-8.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/12/da215-8-8-aluminum-cone-woofer": {
+      "scraped_at": "2026-06-29T23:07:14.635166+00:00",
+      "wdr": "Dayton_Audio_DA215-8.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/1044/da270-8-10-aluminum-cone-woofer": {
+      "scraped_at": "2026-06-29T23:07:16.368170+00:00",
+      "wdr": "Dayton_Audio_DA270-8.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/1083/dc130a-8-5-1-4-classic-woofer-speaker-8-ohm": {
+      "scraped_at": "2026-06-29T23:07:18.035905+00:00",
+      "wdr": "Dayton_Audio_DC130A-8.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/19/dc130as-8-5-1-4-classic-shielded-woofer-8-ohm": {
+      "scraped_at": "2026-06-29T23:07:19.719938+00:00",
+      "wdr": "Dayton_Audio_DC130AS-8.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/1085/dc130b-4-5-1-4-classic-woofer-speaker-4-ohm": {
+      "scraped_at": "2026-06-29T23:07:21.390564+00:00",
+      "wdr": "Dayton_Audio_DC130B-4.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/1084/dc130b-8-5-1-4-classic-woofer-speaker-8-ohm": {
+      "scraped_at": "2026-06-29T23:07:23.484416+00:00",
+      "wdr": "Dayton_Audio_DC130B-8.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/20/dc130bs-4-5-1-4-classic-shielded-woofer-4-ohm": {
+      "scraped_at": "2026-06-29T23:07:25.219391+00:00",
+      "wdr": "Dayton_Audio_DC130BS-4.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/21/dc130bs-8-5-1-4-classic-shielded-woofer-8-ohm": {
+      "scraped_at": "2026-06-29T23:07:26.915935+00:00",
+      "wdr": "Dayton_Audio_DC130BS-8.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/1086/dc160-4-6-1-2-classic-woofer-4-ohm": {
+      "scraped_at": "2026-06-29T23:07:28.582731+00:00",
+      "wdr": "Dayton_Audio_DC160-4.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/22/dc160-8-6-1-2-classic-woofer-8-ohm": {
+      "scraped_at": "2026-06-29T23:07:30.297625+00:00",
+      "wdr": "Dayton_Audio_DC160-8.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/23/dc160s-4-6-1-2-classic-shielded-woofer-4-ohm": {
+      "scraped_at": "2026-06-29T23:07:32.411922+00:00",
+      "wdr": "Dayton_Audio_DC160S-4.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/24/dc160s-8-6-1-2-classic-shielded-woofer-8-ohm": {
+      "scraped_at": "2026-06-29T23:07:34.068054+00:00",
+      "wdr": "Dayton_Audio_DC160S-8.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/25/dc200-8-8-classic-woofer-8-ohm": {
+      "scraped_at": "2026-06-29T23:07:35.735831+00:00",
+      "wdr": "Dayton_Audio_DC200-8.wdr",
+      "status": "schema_fail"
+    },
+    "https://www.daytonaudio.com/product/26/dc250-8-10-classic-woofer-8-ohm": {
+      "scraped_at": "2026-06-29T23:07:37.464158+00:00",
+      "wdr": "Dayton_Audio_DC250-8.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/34/dc300-8-12-classic-woofer-8-ohm": {
+      "scraped_at": "2026-06-29T23:07:39.141450+00:00",
+      "wdr": "Dayton_Audio_DC300-8.wdr",
+      "status": "schema_fail"
+    },
+    "https://www.daytonaudio.com/product/35/dc380-8-15-classic-woofer-8-ohm": {
+      "scraped_at": "2026-06-29T23:07:41.253504+00:00",
+      "wdr": "Dayton_Audio_DC380-8.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/1169/amt-mini-8-hi-res-air-motion-transformer-tweeter": {
+      "scraped_at": "2026-06-29T23:07:42.907615+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "Dayton Audio - AMT Mini-8 Hi-Res Air Motion Transformer Tweeter"
+    },
+    "https://www.daytonaudio.com/product/1166/amt2-4-air-motion-transformer-tweeter-4-ohm": {
+      "scraped_at": "2026-06-29T23:07:44.577656+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "Dayton Audio - AMT2-4 Air Motion Transformer Tweeter 4 Ohm"
+    },
+    "https://www.daytonaudio.com/product/1167/amt3-4-hi-res-air-motion-transformer-tweeter-4-ohm": {
+      "scraped_at": "2026-06-29T23:07:46.246925+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "Dayton Audio - AMT3-4 Hi-Res Air Motion Transformer Tweeter 4 Ohm"
+    },
+    "https://www.daytonaudio.com/product/1964/amthr-4-hi-res-air-motion-transformer-4-ohm": {
+      "scraped_at": "2026-06-29T23:07:47.948211+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "Dayton Audio - AMTHR-4 Hi-Res Air Motion Transformer 4 Ohm"
+    },
+    "https://www.daytonaudio.com/product/1235/amtpod-4-hi-res-air-motion-transformer-automotive-tweeter": {
+      "scraped_at": "2026-06-29T23:07:50.138097+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "Dayton Audio - AMTPOD-4 Hi-Res Air Motion Transformer Automotive Tweeter"
+    },
+    "https://www.daytonaudio.com/product/1168/amtpro-4-air-motion-transformer-tweeter-4-ohm": {
+      "scraped_at": "2026-06-29T23:07:51.891633+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "Dayton Audio - AMTPRO-4 Air Motion Transformer Tweeter 4 Ohm"
+    },
+    "https://www.daytonaudio.com/product/1567/an25f-4-1-soft-dome-neodymium-car-audio-tweeter-pair-4-ohm": {
+      "scraped_at": "2026-06-29T23:07:53.511430+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "an25f-4-1-soft-dome-neodymium-car-audio-tweeter-pair-4-ohm"
+    },
+    "https://www.daytonaudio.com/product/1574/an25ti-4-1-titanium-dome-neodymium-car-audio-tweeter-pair-4-ohm": {
+      "scraped_at": "2026-06-29T23:07:55.299293+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "an25ti-4-1-titanium-dome-neodymium-car-audio-tweeter-pair-4-ohm"
+    },
+    "https://www.daytonaudio.com/product/1918/ce35-4-1-silk-dome-tweeter-speaker-driver-10w-8-ohm": {
+      "scraped_at": "2026-06-29T23:07:57.012920+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "ce35-4-1-silk-dome-tweeter-speaker-driver-10w-8-ohm"
+    },
+    "https://www.daytonaudio.com/product/2086/cf18n-4-3-4-carbon-fiber-dome-neodymium-tweeter-4-ohm": {
+      "scraped_at": "2026-06-29T23:07:59.134430+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "cf18n-4-3-4-carbon-fiber-dome-neodymium-tweeter-4-ohm"
+    },
+    "https://www.daytonaudio.com/product/2083/cf18n-4mp-3-4-carbon-fiber-dome-neodymium-tweeter-matched-pair-4-ohm": {
+      "scraped_at": "2026-06-29T23:08:01.003927+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "cf18n-4mp-3-4-carbon-fiber-dome-neodymium-tweeter-matched-pair-4-ohm"
+    },
+    "https://www.daytonaudio.com/product/2085/cfcombo-4mp-3-4-and-2-carbon-fiber-tweeter-mid-combo-matched-sets-4-ohm": {
+      "scraped_at": "2026-06-29T23:08:02.679932+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "Dayton Audio - CFCOMBO-4MP 3/4&quot; and 2&quot; Carbon Fiber Tweeter/Mid Combo Matched Sets 4 Ohm"
+    },
+    "https://www.daytonaudio.com/product/1524/cx120-8-4-coaxial-driver-with-3-4-silk-dome-tweeter-8-ohm": {
+      "scraped_at": "2026-06-29T23:08:04.369016+00:00",
+      "wdr": "Dayton_Audio_CX120-8.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/27/dc25t-8-1-titanium-dome-tweeter-8-ohm": {
+      "scraped_at": "2026-06-29T23:08:06.225302+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "dc25t-8-1-titanium-dome-tweeter-8-ohm"
+    },
+    "https://www.daytonaudio.com/product/29/dc28f-8-1-1-8-silk-dome-tweeter-8-ohm": {
+      "scraped_at": "2026-06-29T23:08:08.355928+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "dc28f-8-1-1-8-silk-dome-tweeter-8-ohm"
+    },
+    "https://www.daytonaudio.com/product/31/dc28fs-8-1-1-8-silk-dome-shielded-tweeter-8-ohm": {
+      "scraped_at": "2026-06-29T23:08:10.037334+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "dc28fs-8-1-1-8-silk-dome-shielded-tweeter-8-ohm"
+    },
+    "https://www.daytonaudio.com/product/33/dc28ft-8-1-1-8-silk-dome-truncated-tweeter-8-ohm": {
+      "scraped_at": "2026-06-29T23:08:11.699978+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "dc28ft-8-1-1-8-silk-dome-truncated-tweeter-8-ohm"
+    },
+    "https://www.daytonaudio.com/product/1577/fp104-104mm-cast-aluminum-face-plate-for-nhp-tweeters": {
+      "scraped_at": "2026-06-29T23:08:13.382233+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "Dayton Audio - FP104 104mm Cast Aluminum Face Plate for NHP Tweeters"
+    },
+    "https://www.daytonaudio.com/product/1578/fp110-110mm-cast-aluminum-face-plate-for-nhp-tweeters": {
+      "scraped_at": "2026-06-29T23:08:15.138875+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "Dayton Audio - FP110 110mm Cast Aluminum Face Plate for NHP Tweeters"
+    },
+    "https://www.daytonaudio.com/product/2167/high-resolution-ceramic-dome-tweeter-30mm-4-ohm-ec30-4": {
+      "scraped_at": "2026-06-29T23:08:17.219077+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "high-resolution-ceramic-dome-tweeter-30mm-4-ohm-ec30-4"
+    },
+    "https://www.daytonaudio.com/product/1268/dcs165-4-6-1-2-classic-subwoofer-4-ohm": {
+      "scraped_at": "2026-06-29T23:08:18.935452+00:00",
+      "wdr": "Dayton_Audio_DCS165-4.wdr",
+      "status": "schema_fail"
+    },
+    "https://www.daytonaudio.com/product/37/dcs205-4-8-classic-subwoofer-4-ohm": {
+      "scraped_at": "2026-06-29T23:08:20.605000+00:00",
+      "wdr": "Dayton_Audio_DCS205-4.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/38/dcs255-4-10-classic-subwoofer-4-ohm": {
+      "scraped_at": "2026-06-29T23:08:22.276515+00:00",
+      "wdr": "Dayton_Audio_DCS255-4.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/39/dcs305-4-12-classic-subwoofer-4-ohm": {
+      "scraped_at": "2026-06-29T23:08:23.998968+00:00",
+      "wdr": "Dayton_Audio_DCS305-4.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/40/dcs380-4-15-classic-subwoofer-4-ohm": {
+      "scraped_at": "2026-06-29T23:08:26.137375+00:00",
+      "wdr": "Dayton_Audio_DCS380-4.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/41/dcs385-4-15-classic-subwoofer-4-ohm": {
+      "scraped_at": "2026-06-29T23:08:27.859488+00:00",
+      "wdr": "Dayton_Audio_DCS385-4.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/1911/e150he-44-5-1-2-dvc-mmag-extended-range-subwoofer-4-ohms-per-coil": {
+      "scraped_at": "2026-06-29T23:08:29.537091+00:00",
+      "wdr": "Dayton_Audio_E150HE-44.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/1910/e180he-44-7-dvc-mmag-extended-range-subwoofer-4-ohms-per-coil": {
+      "scraped_at": "2026-06-29T23:08:31.326139+00:00",
+      "wdr": "Dayton_Audio_E180HE-44.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/1679/hts545he-4-kraken-21-high-excursion-subwoofer-with-5-voice-coil-4-ohm": {
+      "scraped_at": "2026-06-29T23:08:33.005403+00:00",
+      "wdr": "Dayton_Audio_HTS545HE-4.wdr",
+      "status": "schema_fail"
+    },
+    "https://www.daytonaudio.com/product/1257/ls10-44-10-low-profile-subwoofer-dual-4-ohm": {
+      "scraped_at": "2026-06-29T23:08:35.120084+00:00",
+      "wdr": "Dayton_Audio_LS10-44.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/1791/mx10-22-10-max-x-high-excursion-dvc-subwoofer-2-ohms-per-coil": {
+      "scraped_at": "2026-06-29T23:08:36.932275+00:00",
+      "wdr": "Dayton_Audio_MX10-22.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/1792/mx12-22-12-max-x-high-excursion-dvc-subwoofer-2-ohms-per-coil": {
+      "scraped_at": "2026-06-29T23:08:38.748483+00:00",
+      "wdr": "Dayton_Audio_MX12-22.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/1793/mx15-22-15-max-x-high-excursion-dvc-subwoofer-2-ohms-per-coil": {
+      "scraped_at": "2026-06-29T23:08:40.485496+00:00",
+      "wdr": "Dayton_Audio_MX15-22.wdr",
+      "status": "schema_fail"
+    },
+    "https://www.daytonaudio.com/product/2152/mx5-22-5-1-4-max-x-high-excursion-dvc-subwoofer-driver-2-ohms-per-coil": {
+      "scraped_at": "2026-06-29T23:08:42.194572+00:00",
+      "wdr": "Dayton_Audio_MX5-22.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/2153/mx6-22-6-1-2-max-x-high-excursion-dvc-subwoofer-driver-2-ohms-per-coil": {
+      "scraped_at": "2026-06-29T23:08:44.301759+00:00",
+      "wdr": "Dayton_Audio_MX6-22.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/1772/pro-18-in-8-ohm-neodymium-subwoofer-odeum-18n": {
+      "scraped_at": "2026-06-29T23:08:45.959506+00:00",
+      "wdr": "Dayton_Audio_Odeum-18N.wdr",
+      "status": "schema_fail"
+    },
+    "https://www.daytonaudio.com/product/1771/pro-18-in-8-ohm-subwoofer-odeum-18f": {
+      "scraped_at": "2026-06-29T23:08:47.600481+00:00",
+      "wdr": "Dayton_Audio_Odeum-18F.wdr",
+      "status": "schema_fail"
+    },
+    "https://www.daytonaudio.com/product/1678/pss545he-4-vortex-21-pro-subwoofer-with-5-voice-coil-4-ohm": {
+      "scraped_at": "2026-06-29T23:08:49.258288+00:00",
+      "wdr": "Dayton_Audio_PSS545HE-4.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/1669/pss555-8-21-pro-subwoofer-with-4-5-voice-coil-8-ohm": {
+      "scraped_at": "2026-06-29T23:08:50.992186+00:00",
+      "wdr": "Dayton_Audio_PSS555-8.wdr",
+      "status": "schema_fail"
+    },
+    "https://www.daytonaudio.com/product/117/rss210hf-4-8-reference-hf-subwoofer-4-ohm": {
+      "scraped_at": "2026-06-29T23:08:53.317744+00:00",
+      "wdr": "Dayton_Audio_RSS210HF-4.wdr",
+      "status": "schema_fail"
+    },
+    "https://www.daytonaudio.com/product/1993/ce10z-16-3-8-round-mini-speaker-driver-buzzer-16-ohm": {
+      "scraped_at": "2026-06-29T23:08:54.987553+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "ce10z-16-3-8-round-mini-speaker-driver-buzzer-16-ohm"
+    },
+    "https://www.daytonaudio.com/product/1994/ce15z-8-5-8-round-mini-speaker-driver-buzzer-8-ohm": {
+      "scraped_at": "2026-06-29T23:08:56.655456+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "ce15z-8-5-8-round-mini-speaker-driver-buzzer-8-ohm"
+    },
+    "https://www.daytonaudio.com/product/1995/ce18z-8-3-4-round-mini-speaker-driver-buzzer-8-ohm": {
+      "scraped_at": "2026-06-29T23:08:58.453476+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "ce18z-8-3-4-round-mini-speaker-driver-buzzer-8-ohm"
+    },
+    "https://www.daytonaudio.com/product/1997/ce20mb-16-3-4-black-poly-cone-mini-speaker-driver-8-ohm": {
+      "scraped_at": "2026-06-29T23:09:00.112509+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "ce20mb-16-3-4-black-poly-cone-mini-speaker-driver-8-ohm"
+    },
+    "https://www.daytonaudio.com/product/1996/ce20z-8-3-4-round-mini-speaker-driver-buzzer-8-ohm": {
+      "scraped_at": "2026-06-29T23:09:02.240228+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "ce20z-8-3-4-round-mini-speaker-driver-buzzer-8-ohm"
+    },
+    "https://www.daytonaudio.com/product/1998/ce26mp-8-1-treated-paper-cone-mini-speaker-driver-8-ohm": {
+      "scraped_at": "2026-06-29T23:09:03.922919+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "ce26mp-8-1-treated-paper-cone-mini-speaker-driver-8-ohm"
+    },
+    "https://www.daytonaudio.com/product/2000/ce28m-4-1-1-8-clear-poly-cone-mini-speaker-driver-4-ohm": {
+      "scraped_at": "2026-06-29T23:09:05.577159+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "ce28m-4-1-1-8-clear-poly-cone-mini-speaker-driver-4-ohm"
+    },
+    "https://www.daytonaudio.com/product/1999/ce28mb-16-1-1-8-black-poly-cone-mini-speaker-driver-16-ohm": {
+      "scraped_at": "2026-06-29T23:09:07.219508+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "ce28mb-16-1-1-8-black-poly-cone-mini-speaker-driver-16-ohm"
+    },
+    "https://www.daytonaudio.com/product/1787/ce28mb-8-1-1-polyimide-full-range-speaker-driver-8-ohm": {
+      "scraped_at": "2026-06-29T23:09:08.850312+00:00",
+      "wdr": "Dayton_Audio_CE28MB-8.wdr",
+      "status": "schema_fail"
+    },
+    "https://www.daytonaudio.com/product/1917/ce28n-4-1-neo-extended-range-speaker-driver-2w-4-ohm": {
+      "scraped_at": "2026-06-29T23:09:10.923550+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "ce28n-4-1-neo-extended-range-speaker-driver-2w-4-ohm"
+    },
+    "https://www.daytonaudio.com/product/2001/ce30mb-8-1-1-8-black-poly-cone-mini-speaker-driver-8-ohm": {
+      "scraped_at": "2026-06-29T23:09:12.571248+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "ce30mb-8-1-1-8-black-poly-cone-mini-speaker-driver-8-ohm"
+    },
+    "https://www.daytonaudio.com/product/1143/ce30p-4-1-1-4-mini-speaker-driver-4-ohm": {
+      "scraped_at": "2026-06-29T23:09:14.228259+00:00",
+      "wdr": "Dayton_Audio_CE30P-4.wdr",
+      "status": "schema_fail"
+    },
+    "https://www.daytonaudio.com/product/1138/ce32a-4-1-1-4-mini-speaker-driver-4-ohm": {
+      "scraped_at": "2026-06-29T23:09:15.909448+00:00",
+      "wdr": "Dayton_Audio_CE32A-4.wdr",
+      "status": "schema_fail"
+    },
+    "https://www.daytonaudio.com/product/1137/ce32a-8-1-1-4-mini-speaker-driver-8-ohm": {
+      "scraped_at": "2026-06-29T23:09:17.570706+00:00",
+      "wdr": "Dayton_Audio_CE32A-8.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/2002/ce32m-4-1-1-4-clear-poly-cone-mini-speaker-driver-4-ohm": {
+      "scraped_at": "2026-06-29T23:09:19.860343+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "ce32m-4-1-1-4-clear-poly-cone-mini-speaker-driver-4-ohm"
+    },
+    "https://www.daytonaudio.com/product/2036/ce3525mp-8-1-1-2-x-1-paper-cone-mini-speaker-driver-8-ohm": {
+      "scraped_at": "2026-06-29T23:09:21.507176+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "ce3525mp-8-1-1-2-x-1-paper-cone-mini-speaker-driver-8-ohm"
+    },
+    "https://www.daytonaudio.com/product/1919/ce36-8-1-5-full-range-speaker-driver-3w-8-ohm": {
+      "scraped_at": "2026-06-29T23:09:23.193871+00:00",
+      "wdr": "Dayton_Audio_CE36-8.wdr",
+      "status": "ok"
+    },
+    "https://www.daytonaudio.com/product/2037/ce36mb-4-1-1-2-poly-cone-mini-speaker-driver-4-ohm": {
+      "scraped_at": "2026-06-29T23:09:24.947719+00:00",
+      "wdr": null,
+      "status": "skipped",
+      "title": "ce36mb-4-1-1-2-poly-cone-mini-speaker-driver-4-ohm"
+    },
+    "https://www.daytonaudio.com/product/1185/ce38m-8-1-1-2-mini-speaker-driver-8-ohm": {
+      "scraped_at": "2026-06-29T23:09:26.619330+00:00",
+      "wdr": "Dayton_Audio_CE38M-8.wdr",
+      "status": "schema_fail"
+    }
+  }
 }

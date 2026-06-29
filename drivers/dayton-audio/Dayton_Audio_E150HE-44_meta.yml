@@ -1,0 +1,91 @@
+source: https://www.daytonaudio.com/product/1911/e150he-44-5-1-2-dvc-mmag-extended-range-subwoofer-4-ohms-per-coil
+manu_page_url: https://www.daytonaudio.com/product/1911/e150he-44-5-1-2-dvc-mmag-extended-range-subwoofer-4-ohms-per-coil
+vendor_page_url: null
+datasheet_url: https://www.daytonaudio.com/images/resources/295-102--epique-e150he-44-spec-sheet.pdf
+frd_url: null
+zma_url: null
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Dayton Audio website (scraped 20260630). T/S parameters
+  have not been verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+driver_type: null
+obsolete: null
+dq_issue: null
+community: null
+fetched_sku: null
+_sources:
+  datasheet: https://www.daytonaudio.com/images/resources/295-102--epique-e150he-44-spec-sheet.pdf
+  manu_page: https://www.daytonaudio.com/product/1911/e150he-44-5-1-2-dvc-mmag-extended-range-subwoofer-4-ohms-per-coil
+specs:
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0325
+    winner: manu_page
+    sources:
+      manu_page: 0.0325
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: manu_page
+    sources:
+      manu_page: 8.0
+  BL:  # force factor (T·m)
+    value: 9.6
+    winner: manu_page
+    sources:
+      manu_page: 9.6
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.8
+    winner: manu_page
+    sources:
+      manu_page: 6.8
+  Le:  # voice coil inductance (H)
+    value: 0.0015
+    winner: manu_page
+    sources:
+      manu_page: 0.0015
+  Qms:  # mechanical Q factor
+    value: 2.93
+    winner: manu_page
+    sources:
+      manu_page: 2.93
+  Pe:  # rated power input (W)
+    value: 200.0
+    winner: manu_page
+    sources:
+      manu_page: 200.0
+  Sd:  # effective piston area (m²)
+    value: 0.01361
+    winner: manu_page
+    sources:
+      manu_page: 0.01361
+  Qts:  # total Q factor
+    value: 0.46
+    winner: manu_page
+    sources:
+      manu_page: 0.46
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.01614
+    winner: manu_page
+    sources:
+      manu_page: 0.01614
+  Qes:  # electrical Q factor
+    value: 0.54
+    winner: manu_page
+    sources:
+      manu_page: 0.54
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0147
+    winner: manu_page
+    sources:
+      manu_page: 0.0147
+  Fs:  # free air resonance (Hz)
+    value: 35.0
+    winner: manu_page
+    sources:
+      manu_page: 35.0
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00061
+    winner: manu_page
+    sources:
+      manu_page: 0.00061

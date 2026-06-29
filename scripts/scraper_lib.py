@@ -35,7 +35,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from dq_check import check_fields
-from wdr_meta_schema import validate_driver
+from wdr_meta_schema import validate_driver, reorder_meta_for_save, WDR_MANDATORY_TS
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; resonate-scraper/1.0)"}
 DEFAULT_DELAY_S = 1.0
@@ -390,7 +390,7 @@ def parse_number(text: str) -> float | None:
     else:
         # European decimal comma: "10,9" → "10.9", "0,044" → "0.044"
         cleaned = text.replace(",", ".")
-    m = re.search(r"[-+]?\d+(?:\.\d+)?", cleaned)
+    m = re.search(r"[-+]?(?:\d+\.?\d*|\.\d+)", cleaned)
     return float(m.group()) if m else None
 
 
@@ -511,6 +511,37 @@ def run_scraper(vendor_name: str,
             time.sleep(delay_s)
             return
 
+        # Reject drivers that don't provide the minimum T/S parameter set.
+        # Schema defines WDR_MANDATORY_TS — a WDR missing any of these is not
+        # useful for simulation and should not be written.
+        fields = product.get("fields", {})
+        missing_ts = WDR_MANDATORY_TS - set(fields)
+        if missing_ts:
+            print(f"[{ts()}]   [{i}/{total}] {slug} SKIP: missing T/S fields: {', '.join(sorted(missing_ts))}", flush=True)
+            # Delete any stale WDR/meta written by a previous run (before the
+            # mandatory-TS check existed) so they don't linger on disk.
+            _brand = product.get("brand", "")
+            _model = product.get("model", "")
+            if _brand and _model:
+                _stale = out / safe_filename(f"{_brand} {_model}".strip())
+                if _stale.exists():
+                    _stale.unlink()
+                    print(f"[{ts()}]   [{i}/{total}] {slug} DELETED stale WDR: {_stale.name}", flush=True)
+                _stale_meta = _stale.with_suffix("").with_name(_stale.stem + "_meta.yml")
+                if _stale_meta.exists():
+                    _stale_meta.unlink()
+            with counters_lock:
+                mark_scraped(url, manifest, None, status="skipped",
+                             title=slug, category="")
+                skipped += 1
+                done = ok + skipped + failed
+                if done % 50 == 0:
+                    save_manifest(out, manifest)
+                if done % 100 == 0:
+                    print(progress_line(), flush=True)
+            time.sleep(delay_s)
+            return
+
         comment_parts = [f"Source: {url}"]
         if product.get("pdf_url"):
             comment_parts.append(f"Datasheet: {product['pdf_url']}")
@@ -614,7 +645,7 @@ def run_scraper(vendor_name: str,
             "specs": product.get("specs") or None,
         }
         (out / wdr_name.replace(".wdr", "_meta.yml")).write_text(
-            yaml.dump(meta, allow_unicode=True, sort_keys=False), encoding="utf-8"
+            yaml.dump(reorder_meta_for_save(meta), allow_unicode=True, sort_keys=False), encoding="utf-8"
         )
 
         # Cross-check field consistency (Qts from Qes+Qms, Vas from Sd+Cms, etc.).
@@ -635,7 +666,7 @@ def run_scraper(vendor_name: str,
                 existing_dq = _m.get("dq_issue") or ""
                 schema_tags = [f"schema:{e[:60]}" for e in hard_errors]
                 _m["dq_issue"] = (existing_dq + "; " if existing_dq else "") + "; ".join(schema_tags)
-            meta_path.write_text(_yaml.dump(_m, allow_unicode=True, sort_keys=False), encoding="utf-8")
+            meta_path.write_text(_yaml.dump(reorder_meta_for_save(_m), allow_unicode=True, sort_keys=False), encoding="utf-8")
 
         suffix = " ".join(extras)
         if hard_errors:

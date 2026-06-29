@@ -1,0 +1,93 @@
+source: https://www.daytonaudio.com/product/1679/hts545he-4-kraken-21-high-excursion-subwoofer-with-5-voice-coil-4-ohm
+manu_page_url: https://www.daytonaudio.com/product/1679/hts545he-4-kraken-21-high-excursion-subwoofer-with-5-voice-coil-4-ohm
+vendor_page_url: null
+datasheet_url: https://www.daytonaudio.com/images/resources/295-054-dayton-audio-hts545he-4
+  spec-sheet-5vc.pdf
+frd_url: null
+zma_url: null
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Dayton Audio website (scraped 20260630). T/S parameters
+  have not been verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+driver_type: null
+obsolete: null
+dq_issue: 'schema:WDR: ''Vas'' stored=0.179 differs from calculated=0.166903 (de'
+community: null
+fetched_sku: null
+_sources:
+  datasheet: https://www.daytonaudio.com/images/resources/295-054-dayton-audio-hts545he-4
+    spec-sheet-5vc.pdf
+  manu_page: https://www.daytonaudio.com/product/1679/hts545he-4-kraken-21-high-excursion-subwoofer-with-5-voice-coil-4-ohm
+specs:
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.676
+    winner: manu_page
+    sources:
+      manu_page: 0.676
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
+    winner: manu_page
+    sources:
+      manu_page: 4.0
+  BL:  # force factor (T·m)
+    value: 38.2
+    winner: manu_page
+    sources:
+      manu_page: 38.2
+  Re:  # DC voice coil resistance (Ω)
+    value: 3.8
+    winner: manu_page
+    sources:
+      manu_page: 3.8
+  Le:  # voice coil inductance (H)
+    value: 0.0085
+    winner: manu_page
+    sources:
+      manu_page: 0.0085
+  Qms:  # mechanical Q factor
+    value: 7.9
+    winner: manu_page
+    sources:
+      manu_page: 7.9
+  Pe:  # rated power input (W)
+    value: 2000.0
+    winner: manu_page
+    sources:
+      manu_page: 2000.0
+  Sd:  # effective piston area (m²)
+    value: 0.1534
+    winner: manu_page
+    sources:
+      manu_page: 0.1534
+  Qts:  # total Q factor
+    value: 0.28
+    winner: manu_page
+    sources:
+      manu_page: 0.28
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.179
+    winner: manu_page
+    sources:
+      manu_page: 0.179
+  Qes:  # electrical Q factor
+    value: 0.29
+    winner: manu_page
+    sources:
+      manu_page: 0.29
+  Xmax:  # one-way linear excursion (m)
+    value: 0.021
+    winner: manu_page
+    sources:
+      manu_page: 0.021
+  Fs:  # free air resonance (Hz)
+    value: 26.3
+    winner: manu_page
+    sources:
+      manu_page: 26.3
+  Cms:  # mechanical compliance (m/N)
+    value: 5.0e-05
+    winner: manu_page
+    sources:
+      manu_page: 5.0e-05

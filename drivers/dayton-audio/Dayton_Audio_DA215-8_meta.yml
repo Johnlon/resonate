@@ -1,0 +1,94 @@
+source: https://www.daytonaudio.com/product/12/da215-8-8-aluminum-cone-woofer
+manu_page_url: https://www.daytonaudio.com/product/12/da215-8-8-aluminum-cone-woofer
+vendor_page_url: null
+datasheet_url: https://www.daytonaudio.com/images/resources/295-332-dayton-audio-da215-8-specifications-46942
+  (2).pdf
+frd_url: null
+zma_url: null
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Dayton Audio website (scraped 20260630). T/S parameters
+  have not been verified by a human against the datasheet.
+corrections: '''Qts'' stored=0.37 differs from calculated=0.365625 (deps: Qms=1.95,
+  Qes=0.45)'
+reviewed_by: null
+driver_type: null
+obsolete: null
+dq_issue: null
+community: null
+fetched_sku: null
+_sources:
+  datasheet: https://www.daytonaudio.com/images/resources/295-332-dayton-audio-da215-8-specifications-46942
+    (2).pdf
+  manu_page: https://www.daytonaudio.com/product/12/da215-8-8-aluminum-cone-woofer
+specs:
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0303
+    winner: manu_page
+    sources:
+      manu_page: 0.0303
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
+    winner: manu_page
+    sources:
+      manu_page: 8.0
+  BL:  # force factor (T·m)
+    value: 10.0
+    winner: manu_page
+    sources:
+      manu_page: 10.0
+  Re:  # DC voice coil resistance (Ω)
+    value: 6.8
+    winner: manu_page
+    sources:
+      manu_page: 6.8
+  Le:  # voice coil inductance (H)
+    value: 0.00144
+    winner: manu_page
+    sources:
+      manu_page: 0.00144
+  Qms:  # mechanical Q factor
+    value: 1.95
+    winner: manu_page
+    sources:
+      manu_page: 1.95
+  Pe:  # rated power input (W)
+    value: 60.0
+    winner: manu_page
+    sources:
+      manu_page: 60.0
+  Sd:  # effective piston area (m²)
+    value: 0.02112
+    winner: manu_page
+    sources:
+      manu_page: 0.02112
+  Qts:  # total Q factor
+    value: 0.37
+    winner: manu_page
+    sources:
+      manu_page: 0.37
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.0427
+    winner: manu_page
+    sources:
+      manu_page: 0.0427
+  Qes:  # electrical Q factor
+    value: 0.45
+    winner: manu_page
+    sources:
+      manu_page: 0.45
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0053
+    winner: manu_page
+    sources:
+      manu_page: 0.0053
+  Fs:  # free air resonance (Hz)
+    value: 34.9
+    winner: manu_page
+    sources:
+      manu_page: 34.9
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00068
+    winner: manu_page
+    sources:
+      manu_page: 0.00068
