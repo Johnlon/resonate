@@ -1,0 +1,19 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.parts-express.com/pedocs/specs/297-488--hivi-m6n-b-spec-sheet.pdf
+manu_page: null
+vendor_page: https://www.parts-express.com/HiVi-M6N-B-6-Damped-Aluminum-Magnesium-Cone-Woofer-297-488
+source: https://www.parts-express.com/HiVi-M6N-B-6-Damped-Aluminum-Magnesium-Cone-Woofer-297-488
+frd: null
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: null
+driver_type: woofer
+freq_low_hz: 46.0
+freq_high_hz: 8000.0

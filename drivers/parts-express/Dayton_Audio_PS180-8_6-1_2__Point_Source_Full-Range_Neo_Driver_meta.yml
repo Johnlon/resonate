@@ -1,0 +1,19 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.parts-express.com/pedocs/specs/PS180-8%206-1_2_%20Point%20Source%20Full-Range%20Neo%20Driver%20Specification%20Sheet.pdf
+manu_page: null
+vendor_page: https://www.parts-express.com/Dayton-Audio-PS180-8-6-1-2-Point-Source-Full-Range-Neo-Driv-295-344
+source: https://www.parts-express.com/Dayton-Audio-PS180-8-6-1-2-Point-Source-Full-Range-Neo-Driv-295-344
+frd: https://www.parts-express.com/pedocs/tech-docs/295-344--Dayton-Audio-PS180-8_data.zip
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: null
+driver_type: mid-bass
+freq_low_hz: 48.0
+freq_high_hz: 25000.0

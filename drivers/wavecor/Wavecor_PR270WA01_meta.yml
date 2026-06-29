@@ -1,0 +1,17 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Wavecor website (scraped 2026-06-27). T/S parameters
+  have not been verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.wavecor.com/Driver%20specifications%20PDF/PR270WA01_specifications.pdf
+manu_page: http://www.wavecor.com/html/pr270wa01.html
+vendor_page: null
+source: http://www.wavecor.com/html/pr270wa01.html
+frd: null
+impedance: null
+obsolete: null
+dq_issue: null
+community: null
+fetched_sku: null
+driver_type: subwoofer

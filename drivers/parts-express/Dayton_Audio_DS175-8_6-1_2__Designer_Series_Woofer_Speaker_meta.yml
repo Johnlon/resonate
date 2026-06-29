@@ -1,0 +1,19 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.parts-express.com/pedocs/specs/295-428--dayton-audio-ds175-8-specifications.pdf
+manu_page: null
+vendor_page: https://www.parts-express.com/Dayton-Audio-DS175-8-6-1-2-Designer-Series-Woofer-295-428
+source: https://www.parts-express.com/Dayton-Audio-DS175-8-6-1-2-Designer-Series-Woofer-295-428
+frd: https://www.parts-express.com/pedocs/tech-docs/295-428--Dayton-Audio-DS175-8_data.zip
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: null
+driver_type: subwoofer
+freq_low_hz: 40.0
+freq_high_hz: 4500.0

@@ -1,0 +1,18 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Wavecor website. T/S parameters cross-checked against
+  cached PDF WF259PA01_02_specifications.pdf.
+corrections: Split from combined WF259PA01_02 page. PA01 = 8 ohm variant. Before-burn-in
+  values used throughout. Rms=1.32 Ns/m taken from datasheet. DISCONTINUED.
+reviewed_by: null
+datasheet: https://www.wavecor.com/Driver%20specifications%20PDF/WF259PA01_02_specifications.pdf
+manu_page: http://www.wavecor.com/html/wf259pa01_02.html
+vendor_page: null
+source: http://www.wavecor.com/html/wf259pa01_02.html
+frd: null
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+discontinued: true
+driver_type: null

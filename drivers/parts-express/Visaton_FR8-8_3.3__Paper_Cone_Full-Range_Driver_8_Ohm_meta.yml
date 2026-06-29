@@ -1,0 +1,19 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.parts-express.com/pedocs/specs/292-694--visaton-fr8-8-spec-sheet.pdf
+manu_page: null
+vendor_page: https://www.parts-express.com/Visaton-FR8-3.3-Paper-Cone-Full-Range-Driver-8-Ohm-292-724
+source: https://www.parts-express.com/Visaton-FR8-3.3-Paper-Cone-Full-Range-Driver-8-Ohm-292-724
+frd: null
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: null
+driver_type: mid-bass
+freq_low_hz: 130.0
+freq_high_hz: 20000.0

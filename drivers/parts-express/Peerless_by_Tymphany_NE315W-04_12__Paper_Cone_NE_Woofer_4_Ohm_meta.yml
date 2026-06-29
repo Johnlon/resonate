@@ -1,0 +1,18 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: Product confirmed obsolete per Digikey (https://www.digikey.co.uk/en/products/detail/peerless-by-tymphany/NE315W-04/6557467).
+  PE page returns stub HTML — no spec sheet available.
+reviewed_by: null
+datasheet: null
+manu_page: null
+vendor_page: https://www.parts-express.com/Peerless-NE315W-04-12-Paper-Cone-NE-Woofer-4-Ohm-264-1520
+source: https://www.parts-express.com/Peerless-NE315W-04-12-Paper-Cone-NE-Woofer-4-Ohm-264-1520
+frd: null
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: true
+driver_type: subwoofer

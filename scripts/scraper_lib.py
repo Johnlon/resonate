@@ -21,6 +21,7 @@ subsequent runs only fetch new pages. Use --refresh to force re-scrape all.
 """
 
 import json
+import yaml
 import re
 import sys
 import time
@@ -159,6 +160,96 @@ def mark_scraped(url: str, manifest: dict, wdr_filename: str | None,
 
 
 # ---------------------------------------------------------------------------
+# ParState builder — dynamically reflects which fields are present
+# ---------------------------------------------------------------------------
+
+# T/S field → ParState position (0-indexed, confirmed via single-param probe files
+# in drivers/sample/; see README.md there for the full confirmed map).
+#
+# WinISD's internal order differs significantly from WDR write order.
+# Most notably: Qts is at position 14 (WDR writes it first).
+#
+# Positions not in this dict are either always-fixed (handled below in _parstate)
+# or not relevant to the modern WDR format (fLe, KLe, Xlim, Hc, Hg etc.).
+_PARSTATE_TS_POSITIONS: dict[str, int] = {
+    "Znom": 0, "Fs": 1, "Pe": 2,
+    # 3 = SPL (handled separately — C if computed, E if supplied in fields)
+    "Re": 4, "Le": 5,
+    # 6=fLe, 7=KLe — always N (not in modern format)
+    "BL": 8, "Xmax": 9,
+    # 10=Xlim — always N (not in modern format)
+    "Cms": 11, "Qms": 12, "Qes": 13, "Qts": 14,
+    "Rms": 15, "Mms": 16, "Sd": 17,
+    # 18=Vd — C when Sd+Xmax available (handled below)
+    "Vas": 19,
+}
+
+# Full confirmed position map (47/49 confirmed; see drivers/sample/README.md):
+#  20=??? (always N; no UI entry — possibly obsolete Dia placeholder)
+#  21=Dd  22=no  23=numVC  24=Hc  25=Hg
+#  26=SPLmax  27=SPLmaxLF  28=USPL
+#  29=alfaVC  30=Rt  31=Ct
+#  32=gamma  33=EBP  34=Rme  35=Mpow  36=Mcost  37=Gloss
+#  38=Thick  39=Depth  40=MagDepth  41=Magnet
+#  42=Basket  43=Outer  44=Vcd  45=DVol
+#  46=??? (always N; no UI entry)
+#  47=c  48=roo
+#  VCCon: NOT in ParState — confirmed pure WDR metadata field
+
+
+def _parstate(fields: dict) -> str:
+    """
+    Build a 49-char WinISD ParState string for a driver with the given fields.
+
+    E = user entered / scraper sourced from datasheet
+    C = WinISD computes from other E fields
+    N = not in play (field absent or not active)
+    """
+    base = list("N" * 49)
+
+    # Always-fixed positions
+    base[23] = "E"   # numVC — always E (WinISD defaults to 1)
+    base[32] = "C"   # gamma (probe s-gamma confirms pos 32)
+    base[33] = "C"   # EBP   (probe s-ebp confirms pos 33 — NOT Rme as WDR write order implies)
+    base[34] = "C"   # Rme   (probe s-rme confirms pos 34)
+    base[35] = "C"   # Mpow  (probe s-mpow confirms pos 35)
+    base[36] = "C"   # Mcost (probe s-mcost confirms pos 36 — NOT VCCon)
+    base[37] = "C"   # Gloss (probe s-gloss confirms pos 37)
+    base[47] = "C"   # c — speed of sound, always computed
+    base[48] = "C"   # roo — air density, always computed
+
+    # SPL (pos 3): E if user-supplied, C if WinISD computes it
+    spl = fields.get("SPL")
+    base[3] = "E" if (spl and spl != 0) else "C"
+
+    # T/S fields: E when present in the fields dict
+    for key, pos in _PARSTATE_TS_POSITIONS.items():
+        if fields.get(key):
+            base[pos] = "E"
+
+    # Computed fields: C when source fields are available
+    if fields.get("Sd") and fields.get("Xmax"):
+        base[18] = "C"   # Vd
+    if fields.get("Sd"):
+        base[21] = "C"   # Dd
+
+    # η₀ (no, pos 22): C when WinISD can compute it — needs Fs, Vas, Qes at minimum
+    if fields.get("Fs") and fields.get("Vas") and fields.get("Qes"):
+        base[22] = "C"
+
+    # SPLmax (26) and SPLmaxLF (27): C when SPL is computable
+    if fields.get("Sd") and fields.get("Re") and fields.get("Pe"):
+        base[26] = "C"
+        base[27] = "C"
+
+    # USPL (28): C when SPL and Pe are available
+    if fields.get("Pe"):
+        base[28] = "C"
+
+    return "".join(base)
+
+
+# ---------------------------------------------------------------------------
 # WDR output — must match schema documented in drivers/README.md
 # ---------------------------------------------------------------------------
 
@@ -166,21 +257,20 @@ def mark_scraped(url: str, manifest: dict, wdr_filename: str | None,
 def to_wdr(brand: str, model: str, fields: dict,
            provided_by: str = "", comment: str = "",
            manufacturer: str = "", date_added: str = "",
-           date_modified: str = "",
-           datasheet_url: str = "", vendor_page_url: str = "",
-           source_url: str = "", frd_url: str = "",
-           impedance_url: str = "") -> str:
+           date_modified: str = "") -> str:
     """
-    Produce a WDR file string matching the Resonate WDR schema.
+    Produce a WDR file string matching the WinISD native WDR schema exactly.
     fields must use canonical SI key names: Znom, BL, Le(H), Mms(kg),
     Cms(m/N), Sd(m²), Vas(m³), Xmax(m one-way). See drivers/README.md.
 
-    CRITICAL: only write a T/S field if the source document contained a value.
-    NEVER write 0 for any T/S field — real datasheets never publish 0 for Sd,
-    Re, BL, Mms, Pe, Xmax, Qts, Qms, Vas, or Fs. A zero means the scraper
-    found a blank cell and defaulted to 0; the field should be omitted instead.
-    Extended WinISD compatibility fields (fLe, KLe, etc.) must always be present,
-    set to 0. See drivers/README.md § Extended WinISD fields.
+    Provenance (datasheet URLs, FRD, impedance, source) must NOT go here —
+    they belong in the _meta.json sidecar. The WDR must stay schema-identical
+    to native WinISD exports (see drivers/sample/ for the authoritative format).
+
+    Only write a field if the source document contained a value or it can be
+    calculated from available values. Never write 0 for a field whose datasheet
+    value is genuinely absent — omit it instead. A zero in fields like Sd, Re,
+    BL, Mms, Xmax, Fs is always a scraper artifact (blank cell → 0).
     """
     import math
 
@@ -197,7 +287,13 @@ def to_wdr(brand: str, model: str, fields: dict,
         print(f"  [to_wdr] WARNING: dropped zero-value T/S fields (scraper artifact): "
               f"{', '.join(dropped)} — omit rather than write 0", file=sys.stderr)
 
-    # Derive computed fields only when source data exists
+    # Derive computed fields only when source data exists.
+    # Vd, Dd, EBP are always written; if dependencies are missing, write 0.
+    # Real WinISD files (drivers/matt/ collection: 411 files) confirm this pattern:
+    # - Vd (Sd × Xmax): 402/411 computed, 9 zeros (when Xmax missing)
+    # - Dd (√(4Sd/π)): 411/411 computed, 0 zeros (always derivable from Sd)
+    # - EBP (Fs/Qes): 410/411 computed, 1 zero (when Qes missing)
+    # WinISD recomputes these on load, so 0 is safe and expected for missing deps.
     vd = round(f["Sd"] * f["Xmax"], 9) if f.get("Sd") and f.get("Xmax") else None
     dd = round(math.sqrt(4 * f["Sd"] / math.pi), 9) if f.get("Sd") else None
     ebp = round(f["Fs"] / f["Qes"], 2) if f.get("Fs") and f.get("Qes") else None
@@ -207,46 +303,67 @@ def to_wdr(brand: str, model: str, fields: dict,
         "[Driver]",
         f"Brand={brand}",
         f"Model={model}",
-        f"Manufacturer={manufacturer}",
+        f"Manufacturer=",
         f"ProvidedBy={provided_by}",
         f"Comment={comment}",
         f"DateAdded={date_added}",
         f"DateModified={date_modified}",
-        "portingle=Y",
     ]
 
-    # T/S fields — only emit if value was sourced and non-zero
-    _TS_KEYS = ["Fs", "Qts", "Qes", "Qms", "Znom", "Re", "Le", "BL",
-                "Mms", "Cms", "Rms", "Sd", "Vas", "Xmax", "Pe", "SPL"]
-    for key in _TS_KEYS:
+    # Write fields in WinISD canonical order; only emit if sourced and non-zero.
+    for key in ("Qts", "Znom", "Fs", "Pe", "SPL", "Re", "Le", "fLe", "KLe"):
+        if key in f:
+            lines.append(f"{key}={f[key]}")
+    for key in ("BL", "Xmax", "Cms", "Qms", "Qes", "Rms", "Mms", "Sd", "Vas", "Dia"):
         if key in f:
             lines.append(f"{key}={f[key]}")
 
-    # Derived fields — only emit when computable
-    if vd is not None:
-        lines.append(f"Vd={vd}")
-    if dd is not None:
-        lines.append(f"Dd={dd}")
-    if ebp is not None:
-        lines.append(f"EBP={ebp}")
+    # Calculatable fields — computed when dependencies available, otherwise 0.
+    lines.append(f"Vd={vd}" if vd is not None else "Vd=0")
+    lines += ["no=0"]
+    lines.append(f"Dd={dd}" if dd is not None else "Dd=0")
+    lines.append(f"EBP={ebp}" if ebp is not None else "EBP=0")
 
     lines += [
-        f"numVC=1",
-        f"VCCon=2",
-        f"ParState=EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC",
+        "numVC=1",
+        "Hc=0",
+        "Hg=0",
+        "SPLmax=0",
+        "SPLmaxLF=0",
+        "USPL=0",
     ]
 
-    # boxbench_ metadata fields — always after ParState so WinISD-native block is uninterrupted
-    if datasheet_url:
-        lines.append(f"boxbench_datasheet={datasheet_url}")
-    if frd_url:
-        lines.append(f"boxbench_frd={frd_url}")
-    if impedance_url:
-        lines.append(f"boxbench_impedance={impedance_url}")
-    if vendor_page_url:
-        lines.append(f"boxbench_vendor_page={vendor_page_url}")
-    if source_url:
-        lines.append(f"boxbench_source={source_url}")
+    lines += [
+        "alfaVC=0",
+        "Rt=0",
+        "Ct=0",
+        "gamma=0",
+        "Rme=0",
+        "Mpow=0",
+        "Mcost=0",
+        "Gloss=0",
+    ]
+
+    # Connection + air properties (standard WinISD values for 20°C)
+    lines += [
+        "VCCon=1",
+        "c=343.684120962152",
+        "roo=1.20095217714682",
+    ]
+
+    # Physical dimensions — 0 (not scraped)
+    lines += [
+        "Thick=0",
+        "Depth=0",
+        "MagDepth=0",
+        "Magnet=0",
+        "Basket=0",
+        "Outer=0",
+        "Vcd=0",
+        "DVol=0",
+    ]
+
+    lines.append(f"ParState={_parstate(f)}")
 
     return "\n".join(lines) + "\n"
 
@@ -285,7 +402,8 @@ def run_scraper(vendor_name: str,
                 parse_product,
                 out_dir_default: str,
                 url_filter=None,
-                delay_s: float = DEFAULT_DELAY_S):
+                delay_s: float = DEFAULT_DELAY_S,
+                is_manufacturer_site: bool = True):
     """
     Generic scrape loop. Call from vendor __main__.
 
@@ -300,6 +418,8 @@ def run_scraper(vendor_name: str,
                         help="Re-scrape all URLs, not just new ones")
     parser.add_argument("--workers", type=int, default=1,
                         help="Parallel fetch workers (default 1; try 5-10 for speed)")
+    parser.add_argument("--cache-html-dir", default=None,
+                        help="Read cached HTML from this directory instead of fetching live")
     args = parser.parse_args()
 
     out = Path(args.out_dir)
@@ -309,20 +429,21 @@ def run_scraper(vendor_name: str,
 
     manifest = load_manifest(out)
 
+    _ts0 = datetime.now().strftime("%H:%M:%S")
     if callable(sitemap_url):
-        # Vendor supplies its own URL collector (e.g. category-page crawl instead of sitemap)
-        print(f"[{vendor_name}] Collecting product URLs ...")
+        print(f"[{_ts0}] [{vendor_name}] Collecting product URLs ...")
         all_urls = sitemap_url()
     else:
-        print(f"[{vendor_name}] Fetching sitemap(s) ...")
+        print(f"[{_ts0}] [{vendor_name}] Fetching sitemap(s) ...")
         all_urls = fetch_product_urls(sitemap_url, url_filter=url_filter, delay_s=delay_s)
-    print(f"[{vendor_name}] {len(all_urls)} product URLs")
+    _ts1 = datetime.now().strftime("%H:%M:%S")
+    print(f"[{_ts1}] [{vendor_name}] {len(all_urls)} product URLs")
 
     if args.refresh:
         to_scrape = all_urls
     else:
         to_scrape = [u for u in all_urls if is_new_url(u, manifest)]
-        print(f"[{vendor_name}] {len(to_scrape)} new (not yet scraped)")
+        print(f"[{_ts1}] [{vendor_name}] {len(to_scrape)} new (not yet scraped)")
 
     if args.limit:
         to_scrape = to_scrape[:args.limit]
@@ -331,25 +452,44 @@ def run_scraper(vendor_name: str,
     counters_lock = threading.Lock()
     html_dir = out / "_html"
     html_dir.mkdir(exist_ok=True)
+    cache_html_dir = Path(args.cache_html_dir) if args.cache_html_dir else None
     total = len(to_scrape)
+    start_time = datetime.now()
+
+    def ts():
+        return datetime.now().strftime("%H:%M:%S")
+
+    def progress_line():
+        done = ok + skipped + failed
+        pct = 100 * done // total if total else 0
+        elapsed = (datetime.now() - start_time).seconds
+        return (f"[{ts()}] [{vendor_name}] {done}/{total} ({pct}%) — "
+                f"{ok} WDRs, {skipped} skipped, {failed} errors — {elapsed}s elapsed")
 
     def process_one(idx_url):
         nonlocal ok, skipped, failed
         i, url = idx_url
         slug = url.rstrip("/").split("/")[-1]
+        html_filename = re.sub(r"[^\w\-.]", "_", slug) + ".html"
 
         try:
-            html = fetch(url)
-            html_path = html_dir / (re.sub(r"[^\w\-.]", "_", slug) + ".html")
-            html_path.write_text(html, encoding="utf-8")
+            cached = cache_html_dir / html_filename if cache_html_dir else None
+            if cached and cached.exists():
+                html = cached.read_text(encoding="utf-8", errors="replace")
+            else:
+                html = fetch(url)
+                (html_dir / html_filename).write_text(html, encoding="utf-8")
             product = parse_product(html, url)
         except Exception as e:
-            print(f"  [{i}/{total}] {slug} ERROR: {e}", flush=True)
+            print(f"[{ts()}]   [{i}/{total}] {slug} ERROR: {e}", flush=True)
             with counters_lock:
                 mark_scraped(url, manifest, None, status=f"error: {e}")
                 failed += 1
-                if (ok + skipped + failed) % 50 == 0:
+                done = ok + skipped + failed
+                if done % 50 == 0:
                     save_manifest(out, manifest)
+                if done % 100 == 0:
+                    print(progress_line(), flush=True)
             time.sleep(delay_s)
             return
 
@@ -358,14 +498,15 @@ def run_scraper(vendor_name: str,
             cat = (product or {}).get("category", "") if isinstance(product, dict) else ""
             title_m = re.search(r"<title[^>]*>(.*?)</title>", html, re.I | re.S)
             page_title = re.sub(r"<[^>]+>", "", title_m.group(1)).strip() if title_m else ""
-            label = f"(skipped — {cat})" if cat else "(skipped — no T/S data)"
-            print(f"  [{i}/{total}] {slug} {label}", flush=True)
             with counters_lock:
                 mark_scraped(url, manifest, None, status="skipped",
                              title=page_title, category=cat)
                 skipped += 1
-                if (ok + skipped + failed) % 50 == 0:
+                done = ok + skipped + failed
+                if done % 50 == 0:
                     save_manifest(out, manifest)
+                if done % 100 == 0:
+                    print(progress_line(), flush=True)
             time.sleep(delay_s)
             return
 
@@ -375,11 +516,11 @@ def run_scraper(vendor_name: str,
 
         brand = product.get("brand", "")
         model = product.get("model", "")
-        today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        today = datetime.now(timezone.utc).strftime("%Y%m%d")
 
         # Validate fields before writing — same rules as dq_check.py.
         for rule_id, desc, detail in check_fields(product["fields"]):
-            print(f"  [{i}/{total}] {slug} DQ {rule_id}: {detail} — {desc}", flush=True)
+            print(f"[{ts()}]   [{i}/{total}] {slug} DQ {rule_id}: {detail} — {desc}", flush=True)
 
         # Download FRD/impedance files first so the WDR can reference them.
         extras = []
@@ -430,50 +571,60 @@ def run_scraper(vendor_name: str,
                 except Exception as e:
                     extras.append(f"({fname} err: {e})")
 
-        # Write WDR after downloads so frd_ok / impedance_ok are resolved.
+        # Write WDR — pure WinISD schema, no boxbench_ fields.
         wdr_text = to_wdr(
             brand=brand, model=model, fields=product["fields"],
             provided_by=product.get("provided_by", vendor_name),
             comment=" | ".join(comment_parts),
             manufacturer=product.get("manufacturer", ""),
             date_added=today, date_modified=today,
-            datasheet_url=product.get("pdf_url") or "",
-            frd_url=frd_ok,
-            impedance_url=impedance_ok,
-            vendor_page_url=url,
-            source_url=url,
         )
         wdr_name = safe_filename(f"{brand} {model}".strip())
         (out / wdr_name).write_text(wdr_text, encoding="utf-8")
 
+        # Write sidecar — all provenance/quality metadata lives here, not in WDR.
         meta = {
-            "file": wdr_name, "quality": "M",
+            "quality": "M",
             "issue": "scraped_not_human_verified",
             "detail": (f"Automatically scraped from {product.get('provided_by', vendor_name)}. "
                        "T/S parameters have not been verified by a human against the datasheet."),
-            "datasheet": product.get("pdf_url") or url,
-            "reviewedBy": None,
+            "corrections": None,
+            "reviewed_by": None,
+            "datasheet": product.get("pdf_url") or None,
+            "manu_page": url if is_manufacturer_site else None,
+            "vendor_page": None if is_manufacturer_site else url,
+            "source": url,
+            "frd": frd_ok or None,
+            "impedance": impedance_ok or None,
+            "obsolete": None,
+            "dq_issue": None,
+            "community": None,
+            "fetched_sku": None,
         }
-        (out / wdr_name.replace(".wdr", "_meta.json")).write_text(
-            json.dumps(meta, indent=2, ensure_ascii=False), encoding="utf-8"
+        (out / wdr_name.replace(".wdr", "_meta.yml")).write_text(
+            yaml.dump(meta, allow_unicode=True, sort_keys=False), encoding="utf-8"
         )
 
         suffix = " ".join(extras)
-        print(f"  [{i}/{total}] {slug} OK {suffix}".rstrip(), flush=True)
+        print(f"[{ts()}]   [{i}/{total}] {slug} OK {suffix}".rstrip(), flush=True)
         with counters_lock:
             mark_scraped(url, manifest, wdr_name, status="ok")
             ok += 1
-            if (ok + skipped + failed) % 50 == 0:
+            done = ok + skipped + failed
+            if done % 50 == 0:
                 save_manifest(out, manifest)
+            if done % 100 == 0:
+                print(progress_line(), flush=True)
         time.sleep(delay_s)
 
     workers = args.workers
     if workers > 1:
-        print(f"[{vendor_name}] Running with {workers} parallel workers")
+        print(f"[{ts()}] [{vendor_name}] Running with {workers} parallel workers", flush=True)
     with ThreadPoolExecutor(max_workers=workers) as executor:
         list(executor.map(process_one, enumerate(to_scrape, 1)))
 
+    elapsed = (datetime.now() - start_time).seconds
     save_manifest(out, manifest)
-    print(f"\n[{vendor_name}] Done: {ok} new WDRs, {skipped} skipped, {failed} errors")
+    print(f"\n[{ts()}] [{vendor_name}] Done: {ok} new WDRs, {skipped} skipped, {failed} errors — {elapsed}s")
     print(f"  Output: {out.resolve()}")
     print(f"  Manifest: {len(manifest['scraped'])} total URLs recorded")

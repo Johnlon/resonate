@@ -1,0 +1,19 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.parts-express.com/pedocs/specs/264-1014--tymphany-xt25sc90-04-spec-sheet.pdf
+manu_page: null
+vendor_page: https://www.parts-express.com/Peerless-XT25SC90-04-1-Dual-Ring-Radiator-Tweeter-264-1014
+source: https://www.parts-express.com/Peerless-XT25SC90-04-1-Dual-Ring-Radiator-Tweeter-264-1014
+frd: null
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: null
+driver_type: tweeter
+freq_low_hz: 2000.0
+freq_high_hz: 20000.0

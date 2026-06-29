@@ -1,0 +1,19 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.parts-express.com/pedocs/manuals/295-635--dayton-audio-mb620-8-spec-sheet.pdf
+manu_page: null
+vendor_page: https://www.parts-express.com/Dayton-Audio-MB620-8-6.5-Professional-High-Power-Midbass-Driver-8-Ohm-295-635
+source: https://www.parts-express.com/Dayton-Audio-MB620-8-6.5-Professional-High-Power-Midbass-Driver-8-Ohm-295-635
+frd: null
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: null
+driver_type: subwoofer
+freq_low_hz: 100.0
+freq_high_hz: 7000.0

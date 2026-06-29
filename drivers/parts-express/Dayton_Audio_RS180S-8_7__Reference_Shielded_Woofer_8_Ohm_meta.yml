@@ -1,0 +1,19 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.parts-express.com/pedocs/specs/295-364--dayton-audio-rs180s-8-reference-woofer-8-ohm-specifications.pdf
+manu_page: null
+vendor_page: https://www.parts-express.com/Dayton-Audio-RS180S-8-7-Reference-Shielded-Woofer-8-Ohm-295-364
+source: https://www.parts-express.com/Dayton-Audio-RS180S-8-7-Reference-Shielded-Woofer-8-Ohm-295-364
+frd: https://www.parts-express.com/pedocs/tech-docs/295-364--Dayton-Audio-RS180S-8_data.zip
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: null
+driver_type: subwoofer
+freq_low_hz: 41.0
+freq_high_hz: 3600.0

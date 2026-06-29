@@ -1,0 +1,19 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://cdn.shopify.com/s/files/1/0840/9428/8174/files/Timpano-Flyer-2-Panel-spread-For-Website-1.pdf?v=1722888558
+manu_page: null
+vendor_page: https://www.parts-express.com/Timpano-Audio-TPT-T2500-12-D2-12-Cast-Frame-DVC-Subwoofer-2-Ohms-Per-Coil-294-4114
+source: https://www.parts-express.com/Timpano-Audio-TPT-T2500-12-D2-12-Cast-Frame-DVC-Subwoofer-2-Ohms-Per-Coil-294-4114
+frd: null
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: true
+driver_type: subwoofer
+freq_low_hz: 20.0
+freq_high_hz: 150.0

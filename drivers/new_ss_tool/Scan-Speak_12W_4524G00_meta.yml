@@ -1,0 +1,46 @@
+quality: M
+issue: scraped_not_human_verified
+detail: 'Automatically scraped from Scan-Speak website. T/S parameters not human-verified.
+  T/S extracted from PDF (pdf): BL,Cms,Fs,Le,Mms,Qes,Qms,Qts,Sd,Vas,Xmax,Znom.'
+corrections: null
+reviewed_by: null
+driver_type: midwoofer
+series: Discovery
+nominal_size_cm: 12.0
+datasheet: https://www.scan-speak.dk/datasheet/pdf/12w-4524g00.pdf
+adv_datasheet: https://www.scan-speak.dk/datasheet/adv/12w-4524g00.pdf
+drawing: https://www.scan-speak.dk/datasheet/drw/12w-4524g00.png
+cad: https://www.scan-speak.dk/datasheet/3d/12w-4524g00.ZIP
+manu_page: https://www.scan-speak.dk/product/12w-4524g00/
+vendor_page: null
+source: https://www.scan-speak.dk/product/12w-4524g00/
+frd: null
+impedance: null
+obsolete: null
+dq_issue: null
+community: null
+fetched_sku: null
+datasheet_fields:
+- BL
+- Cms
+- Fs
+- Le
+- Mms
+- Qes
+- Qms
+- Qts
+- Sd
+- Vas
+- Xmax
+- Znom
+adv_datasheet_fields: null
+manu_page_fields:
+- BL
+- Fs
+- Qts
+- Re
+- SPL
+- Sd
+- Vas
+freq_low_hz: null
+freq_high_hz: null

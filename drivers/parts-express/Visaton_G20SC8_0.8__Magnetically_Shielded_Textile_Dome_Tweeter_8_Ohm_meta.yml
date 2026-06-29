@@ -1,0 +1,19 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.parts-express.com/pedocs/specs/292-7804--visaton-g20sc8-spec-sheet.pdf
+manu_page: null
+vendor_page: https://www.parts-express.com/Visaton-G20SC8-0.8-Magnetically-Shielded-Textile-Dome-Tweeter-8-Ohm-292-7804
+source: https://www.parts-express.com/Visaton-G20SC8-0.8-Magnetically-Shielded-Textile-Dome-Tweeter-8-Ohm-292-7804
+frd: null
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: null
+driver_type: tweeter
+freq_low_hz: 1200.0
+freq_high_hz: 30000.0

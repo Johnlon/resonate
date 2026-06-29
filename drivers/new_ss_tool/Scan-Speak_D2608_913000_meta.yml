@@ -1,0 +1,34 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Scan-Speak website. T/S parameters not human-verified.
+  PDF extraction returned no matches; using HTML only.
+corrections: null
+reviewed_by: null
+driver_type: tweeter
+series: Discovery
+nominal_size_cm: 2.6
+datasheet: https://www.scan-speak.dk/datasheet/pdf/d2608-913000.pdf
+adv_datasheet: https://www.scan-speak.dk/datasheet/adv/d2608-913000.pdf
+drawing: https://www.scan-speak.dk/datasheet/drw/d2608-913000.png
+cad: https://www.scan-speak.dk/datasheet/3d/d2608-913000.ZIP
+manu_page: https://www.scan-speak.dk/product/d2608-913000/
+vendor_page: null
+source: https://www.scan-speak.dk/product/d2608-913000/
+frd: null
+impedance: null
+obsolete: null
+dq_issue: null
+community: null
+fetched_sku: null
+datasheet_fields: null
+adv_datasheet_fields: null
+manu_page_fields:
+- BL
+- Fs
+- Qts
+- Re
+- SPL
+- Sd
+- Vas
+freq_low_hz: null
+freq_high_hz: null

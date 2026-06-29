@@ -1,0 +1,19 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.parts-express.com/pedocs/specs/GRS%20Spec%20Sheets/292-438--grs-1tm-4-spec-sheet.pdf
+manu_page: null
+vendor_page: https://www.parts-express.com/GRS-1TM-4-1-Mylar-Tweeter-with-1-2-Voice-Coil-4-Ohm-292-438
+source: https://www.parts-express.com/GRS-1TM-4-1-Mylar-Tweeter-with-1-2-Voice-Coil-4-Ohm-292-438
+frd: null
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: null
+driver_type: tweeter
+freq_low_hz: 4800.0
+freq_high_hz: 20000.0

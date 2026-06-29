@@ -1,0 +1,19 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.parts-express.com/pedocs/specs/253-001--5g40ndn-spec-sheet.pdf
+manu_page: null
+vendor_page: https://www.parts-express.com/Beyma-5G40Nd-N-G40-Series-5-Midbass-Speaker-8-Ohm-253-001
+source: https://www.parts-express.com/Beyma-5G40Nd-N-G40-Series-5-Midbass-Speaker-8-Ohm-253-001
+frd: null
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: null
+driver_type: tweeter
+freq_low_hz: 150.0
+freq_high_hz: 17000.0

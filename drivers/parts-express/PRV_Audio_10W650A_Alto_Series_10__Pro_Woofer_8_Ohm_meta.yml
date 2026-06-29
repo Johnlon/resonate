@@ -1,0 +1,19 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://prvaudio.com/wp-content/uploads/2026/02/PRV-Catalog-2026.pdf
+manu_page: null
+vendor_page: https://www.parts-express.com/PRV-Audio-10W650A-10-Alto-Series-Professional-Woofer-8-Ohm-294-2725
+source: https://www.parts-express.com/PRV-Audio-10W650A-10-Alto-Series-Professional-Woofer-8-Ohm-294-2725
+frd: null
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: null
+driver_type: subwoofer
+freq_low_hz: 75.0
+freq_high_hz: 5500.0

@@ -1,0 +1,17 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.parts-express.com/pedocs/specs/264-1616--tymphany-tc55fd00-08-spec-sheet.pdf
+manu_page: null
+vendor_page: https://www.parts-express.com/Peerless-TC55FD00-08-1-3-4-Paper-Cone-Full-Range-Driver-8-Ohm-264-1616
+source: https://www.parts-express.com/Peerless-TC55FD00-08-1-3-4-Paper-Cone-Full-Range-Driver-8-Ohm-264-1616
+frd: null
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: null
+driver_type: tweeter

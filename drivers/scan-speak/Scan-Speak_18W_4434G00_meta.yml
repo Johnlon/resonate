@@ -1,0 +1,17 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Scan-Speak website (scraped 2026-06-28). T/S parameters
+  have not been verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.scan-speak.dk/datasheet/reviews/18W-4434G00-justdiyit_2012-11.pdf
+manu_page: https://www.scan-speak.dk/product/18w-4434g00/
+vendor_page: null
+source: https://www.scan-speak.dk/product/18w-4434g00/
+frd: null
+impedance: null
+obsolete: null
+dq_issue: null
+community: null
+fetched_sku: null
+driver_type: woofer

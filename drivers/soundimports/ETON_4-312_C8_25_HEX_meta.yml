@@ -1,0 +1,18 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T/S
+  parameters have not been verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://doc.soundimports.nl/pdf/brands/ETON/SYMPHONY%20II/SYMPHONY_II_4-312_C8_25_HEX.pdf
+manu_page: null
+vendor_page: https://www.soundimports.eu/en/eton-4-312-c8-25-hex.html
+source: https://www.soundimports.eu/en/eton-4-312-c8-25-hex.html
+frd: null
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+driver_type: mid-bass
+freq_low_hz: 100.0
+freq_high_hz: 5400.0

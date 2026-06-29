@@ -1,0 +1,19 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.parts-express.com/pedocs/specs/264-1676--peerless-da25tx00-08-spec-sheet.pdf
+manu_page: null
+vendor_page: https://www.parts-express.com/Peerless-DA25TX00-08-1-Corundum-Dome-Tweeter-264-1676
+source: https://www.parts-express.com/Peerless-DA25TX00-08-1-Corundum-Dome-Tweeter-264-1676
+frd: null
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: null
+driver_type: tweeter
+freq_low_hz: 1000.0
+freq_high_hz: 40000.0

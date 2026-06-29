@@ -1,0 +1,19 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.parts-express.com/pedocs/specs/285-020--dayton-audio-rs52an-8-spec-sheet-2.pdf
+manu_page: null
+vendor_page: https://www.parts-express.com/Dayton-Audio-RS52AN-8-2-Reference-Aluminum-Dome-Midrange-285-020
+source: https://www.parts-express.com/Dayton-Audio-RS52AN-8-2-Reference-Aluminum-Dome-Midrange-285-020
+frd: https://www.parts-express.com/pedocs/tech-docs/285-020--Dayton-Audio-RS52AN-8_data.zip
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: null
+driver_type: mid-bass
+freq_low_hz: 500.0
+freq_high_hz: 14000.0

@@ -1,0 +1,19 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.parts-express.com/pedocs/specs/Spec%20Sheets/292-818--grs-10sw-4he-spec-sheet.pdf
+manu_page: null
+vendor_page: https://www.parts-express.com/GRS-10SW-4HE-10-Paper-Cone-Rubber-Surround-High-Excursion-Subwoofer-4-Ohm-292-818
+source: https://www.parts-express.com/GRS-10SW-4HE-10-Paper-Cone-Rubber-Surround-High-Excursion-Subwoofer-4-Ohm-292-818
+frd: null
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: null
+driver_type: subwoofer
+freq_low_hz: 26.0
+freq_high_hz: 500.0

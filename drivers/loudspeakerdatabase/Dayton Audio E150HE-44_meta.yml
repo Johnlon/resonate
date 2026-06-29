@@ -1,0 +1,26 @@
+quality: L
+issue: sd_dd_inconsistency
+detail: |
+  Dual voice coil driver (numVC=2, Znom=4 Ohm per coil — wiring determines total impedance).
+  Known inconsistency: Sd=0.009503 m2 and Dd=0.132 m are inconsistent with each other.
+  Formula Dd = 2*sqrt(Sd/pi) gives Dd=0.110 m from the stored Sd — a 2 cm difference.
+  Dd appears sourced from a different diameter measurement than the Sd value.
+  Vd and Xmax are internally consistent: Sd * Xmax = 0.009503 * 0.0147 = 0.0001397 = stored Vd.
+  SPL=82.397... appears computed (many decimal places), not taken from a datasheet.
+  ParState is a fixed scraper template marking all fields E including computed fields
+  (Vd, Dd, EBP should be C) — not genuine WinISD-generated state.
+  Qts stored=0.39 vs formula Qms*Qes/(Qms+Qes) = 2.94*0.45/3.39 = 0.390 — consistent.
+corrections: Sd/Dd inconsistency not resolved. Do not use Dd as authoritative without
+  cross-checking the Dayton Audio E150HE-44 datasheet. Recommend verifying which value
+  (Sd or Dd) is correct and recomputing the other.
+reviewed_by: null
+datasheet: null
+manu_page: null
+vendor_page: null
+source: https://loudspeakerdatabase.com/Dayton/E150HE-44
+frd: null
+impedance: null
+dq_issue: sd_dd_mismatch
+community: null
+fetched_sku: null
+driver_type: null

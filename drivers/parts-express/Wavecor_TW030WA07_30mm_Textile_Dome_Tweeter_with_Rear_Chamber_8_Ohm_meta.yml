@@ -1,0 +1,19 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.parts-express.com/pedocs/specs/298-1108-1110-1112-1114--wavecor-tw030wa05-06-07-08-specifications.pdf
+manu_page: null
+vendor_page: https://www.parts-express.com/Wavecor-TW030WA07-30mm-Textile-Dome-Tweeter-with-Rear-Chamber-8-Ohm-298-1112
+source: https://www.parts-express.com/Wavecor-TW030WA07-30mm-Textile-Dome-Tweeter-with-Rear-Chamber-8-Ohm-298-1112
+frd: null
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: null
+driver_type: tweeter
+freq_low_hz: 1500.0
+freq_high_hz: 25000.0

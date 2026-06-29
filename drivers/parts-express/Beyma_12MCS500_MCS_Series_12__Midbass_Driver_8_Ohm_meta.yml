@@ -1,0 +1,19 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.parts-express.com/pedocs/specs/253-024--12mcs500-spec-sheet.pdf
+manu_page: null
+vendor_page: https://www.parts-express.com/Beyma-12MCS500-MCS-Series-12-Midbass-Driver-8-Ohm-253-024
+source: https://www.parts-express.com/Beyma-12MCS500-MCS-Series-12-Midbass-Driver-8-Ohm-253-024
+frd: null
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: null
+driver_type: tweeter
+freq_low_hz: 65.0
+freq_high_hz: 5000.0

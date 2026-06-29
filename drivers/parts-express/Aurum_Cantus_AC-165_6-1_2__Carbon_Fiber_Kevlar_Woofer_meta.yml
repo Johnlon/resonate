@@ -1,0 +1,17 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: null
+manu_page: null
+vendor_page: https://www.parts-express.com/Aurum-Cantus-AC-165-6-1-2-Carbon-Fiber-Kevlar-Woofer-296-410
+source: https://www.parts-express.com/Aurum-Cantus-AC-165-6-1-2-Carbon-Fiber-Kevlar-Woofer-296-410
+frd: null
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: null
+driver_type: subwoofer

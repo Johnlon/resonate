@@ -1,0 +1,19 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.parts-express.com/pedocs/specs/294-1324--faitalpro-10pr320-16-spec-sheet.pdf
+manu_page: null
+vendor_page: https://www.parts-express.com/FaitalPRO-10PR320-10-Professional-Neodymium-Woofer-16-Ohm-294-1324
+source: https://www.parts-express.com/FaitalPRO-10PR320-10-Professional-Neodymium-Woofer-16-Ohm-294-1324
+frd: null
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: null
+driver_type: subwoofer
+freq_low_hz: 50.0
+freq_high_hz: 4000.0

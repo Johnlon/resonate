@@ -1,0 +1,19 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.parts-express.com/pedocs/specs/275-070-dayton-audio-dc28f-8-silk-dome-tweeter-specifications.pdf
+manu_page: null
+vendor_page: https://www.parts-express.com/Dayton-Audio-DC28F-8-1-1-8-Silk-Dome-Tweeter-275-070
+source: https://www.parts-express.com/Dayton-Audio-DC28F-8-1-1-8-Silk-Dome-Tweeter-275-070
+frd: null
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: null
+driver_type: tweeter
+freq_low_hz: 1300.0
+freq_high_hz: 20000.0

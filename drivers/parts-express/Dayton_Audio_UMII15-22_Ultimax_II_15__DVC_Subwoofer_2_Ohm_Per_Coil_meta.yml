@@ -1,0 +1,19 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.parts-express.com/pedocs/specs/295-714--dayton-audio-UMII15-22-spec-sheet.pdf
+manu_page: null
+vendor_page: https://www.parts-express.com/Dayton-Audio-UMII15-22-ULTIMAX-II-15-800W-RMS-DVC-Subwoofer-2-Ohm-Per-Coil-295-714
+source: https://www.parts-express.com/Dayton-Audio-UMII15-22-ULTIMAX-II-15-800W-RMS-DVC-Subwoofer-2-Ohm-Per-Coil-295-714
+frd: https://www.parts-express.com/pedocs/tech-docs/UMII15-22_data.zip
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: null
+driver_type: subwoofer
+freq_low_hz: 20.0
+freq_high_hz: 300.0

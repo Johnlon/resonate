@@ -1,0 +1,19 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.parts-express.com/pedocs/specs/PS220-8%208_%20Point%20Source%20Full-Range%20Neo%20Driver%20Specification%20Sheet.pdf
+manu_page: null
+vendor_page: https://www.parts-express.com/Dayton-Audio-PS220-8-8-Point-Source-Full-Range-Neo-Driver-295-346
+source: https://www.parts-express.com/Dayton-Audio-PS220-8-8-Point-Source-Full-Range-Neo-Driver-295-346
+frd: https://www.parts-express.com/pedocs/tech-docs/295-346--Dayton-Audio-PS220-8_data.zip
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: null
+driver_type: mid-bass
+freq_low_hz: 40.0
+freq_high_hz: 25000.0

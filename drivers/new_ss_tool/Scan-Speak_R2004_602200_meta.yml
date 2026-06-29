@@ -1,0 +1,45 @@
+quality: M
+issue: scraped_not_human_verified
+detail: 'Automatically scraped from Scan-Speak website. T/S parameters not human-verified.
+  T/S extracted from PDF (pdf): BL,Cms,Fs,Le,Mms,Qes,Qms,Qts,Sd,Vas,Xmax.'
+corrections: null
+reviewed_by: null
+driver_type: tweeter
+series: Illuminator
+nominal_size_cm: 1.9
+datasheet: https://www.scan-speak.dk/datasheet/pdf/r2004-602200.pdf
+adv_datasheet: https://www.scan-speak.dk/datasheet/adv/r2004-602000.pdf
+drawing: https://www.scan-speak.dk/datasheet/drw/r2004-602200.png
+cad: https://www.scan-speak.dk/datasheet/3d/r2004-602200.ZIP
+manu_page: https://www.scan-speak.dk/product/r2004-602200/
+vendor_page: null
+source: https://www.scan-speak.dk/product/r2004-602200/
+frd: null
+impedance: null
+obsolete: null
+dq_issue: null
+community: null
+fetched_sku: null
+datasheet_fields:
+- BL
+- Cms
+- Fs
+- Le
+- Mms
+- Qes
+- Qms
+- Qts
+- Sd
+- Vas
+- Xmax
+adv_datasheet_fields: null
+manu_page_fields:
+- BL
+- Fs
+- Qts
+- Re
+- SPL
+- Sd
+- Vas
+freq_low_hz: 3000.0
+freq_high_hz: 40000.0

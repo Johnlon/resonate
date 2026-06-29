@@ -21,15 +21,12 @@ These are real measured T/S parameters, not manufacturer spec-sheet data. Varian
 
 ---
 
-## Transformations applied and signed off by John Lonergan
+## Restoring from archive
 
-The following changes were made to the original files before inclusion. The AI may use these for guidance, but should not apply them automatically without human review.
+To restore the matt collection from the original archive with approved transformations only, run:
 
-- Stripped the `00 ` sort-prefix from all filenames (original files used `00 <name>.wdr` as a WinISD sort trick — a personal hack to force entries to the top of a list; not a canonical name and interferes with duplicate detection, search, and filtering)
-- Stripped the `00 ` sort-prefix from the `Brand=` field inside each file (same reason as above)
-- Renamed `Dayton <model>.wdr` to `Dayton Audio <model>.wdr` for filename consistency
-- Updated `Brand=Dayton` to `Brand=Dayton Audio` inside each affected file
-- Fixed brand typo in `Faital Pro 15FH510.wdr`: `Failtal Pro` corrected to `Faital Pro`
-- RCF `L10/568H` and `L15/554K`: manufacturer uses hyphen (`L10-568H`, `L15-554K`) — internal model fields use slash, filenames use underscore. Pending rename to correct hyphen form.
-- Removed `Brand=00` from `Aura NS6-255-8A.wdr`, `B&C 8PE21 8in Woofer.wdr`, `WT3 Sony 5.25 Neo woofer buyout.wdr` — these had Brand set to the bare value `00` with the full name crammed into Model
-- Stripped `Brand=WT3 <brand>` prefix from all 53 WT3 files — `WT3` belongs in the filename only, not in `Brand=`
+```bash
+python3 scripts/restore_matt_from_archive.py
+```
+
+See script header for full documentation of transformations.

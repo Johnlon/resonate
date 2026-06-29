@@ -285,4 +285,4 @@ if __name__ == "__main__":
     else:
         url_source = SITEMAP_URL
     run_scraper(VENDOR, url_source, parse_product, OUT_DIR,
-                url_filter=url_filter, delay_s=DELAY_S)
+                url_filter=url_filter, delay_s=DELAY_S, is_manufacturer_site=False)

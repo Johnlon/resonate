@@ -1,0 +1,19 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.parts-express.com/pedocs/specs/264-949--tang-band-w3-2108-spec-sheet.pdf
+manu_page: null
+vendor_page: https://www.parts-express.com/Tang-Band-W3-2108-3-RBM-Micro-Subwoofer-4-Ohm-264-949
+source: https://www.parts-express.com/Tang-Band-W3-2108-3-RBM-Micro-Subwoofer-4-Ohm-264-949
+frd: null
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: true
+driver_type: subwoofer
+freq_low_hz: 45.0
+freq_high_hz: 1000.0

@@ -1,0 +1,19 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.parts-express.com/pedocs/specs/290-216-dayton-audio-nd140-4-specifications.pdf
+manu_page: null
+vendor_page: https://www.parts-express.com/Dayton-Audio-ND140-4-5-1-4-Aluminum-Cone-Midbass-Driver-290-216
+source: https://www.parts-express.com/Dayton-Audio-ND140-4-5-1-4-Aluminum-Cone-Midbass-Driver-290-216
+frd: https://www.parts-express.com/pedocs/tech-docs/290-216--Dayton-Audio-ND140-4_data.zip
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: null
+driver_type: mid-bass
+freq_low_hz: 54.0
+freq_high_hz: 8000.0

@@ -1,0 +1,19 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.parts-express.com/pedocs/specs/295-032--dayton-audio-pa310-8-spec-sheet.pdf
+manu_page: null
+vendor_page: https://www.parts-express.com/Dayton-Audio-PA310-8-12-Pro-Woofer-295-032
+source: https://www.parts-express.com/Dayton-Audio-PA310-8-12-Pro-Woofer-295-032
+frd: https://www.parts-express.com/pedocs/tech-docs/295-032--Dayton-Audio-PA310-8_data.zip
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: null
+driver_type: subwoofer
+freq_low_hz: 44.0
+freq_high_hz: 4000.0

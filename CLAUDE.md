@@ -1,10 +1,60 @@
 # Claude Code rules for this project
 
+## AI-locked files
+
+Files with a header comment containing "AI LOCKED — DO NOT EDIT" are protected from modification. These files define critical rules or transformations that must remain stable and auditable.
+
+**Rule:** Never edit AI-locked files, even if given explicit permission in conversation. If changes are needed, the human must remove the lock comment first, or provide documented authorization that explicitly overrides the lock.
+
+**Why:** Locked files are the single source of truth for deterministic processes (scrapers, data restoration, migrations). Unauthorized changes break repeatability and auditability.
+
+---
+
+## No history in documentation — hard rule
+
+**Never write history into any `.md` file.** This includes:
+
+- "As of \<date\>…" or "Prior to \<date\>…" sentences
+- "What was removed / what replaced X" blocks
+- Closed-item records with `[x]` and a **Closed:** description
+- "Previously this was called…" or "This was a one-time migration…" notes
+- Any block whose sole content is recording what changed in the past
+
+**Why:** Documentation must reflect current best knowledge only. History clutters docs, confuses AI agents, and rots as code evolves. Git history and commit messages are the authoritative record of what changed and why. Writing history in docs duplicates git — badly.
+
+**If tempted to record history:** write it in the commit message instead and move on. Delete closed items from TODO/backlog files immediately — a closed item is not a record, it is clutter.
+
+---
+
 ## Shell commands
+
 - Always use the **Bash** tool for shell commands. Never use PowerShell.
 
+## Markdown formatting
+
+- After writing or editing any `.md` file that contains tables, run `npx prettier --write <file>` to format the tables. Do not spend tokens manually aligning columns — use the tool.
+
+## Scraping pipeline — core goal and AI boundaries
+
+The scraping pipeline must be able to regenerate everything in `drivers/` from scratch by running the scrapers alone — no human or AI intervention, no post-hoc tweaks. This must be fast and repeatable.
+
+**Roles:**
+
+- Human + AI together decide what the rules are.
+- AI encodes those rules correctly in the scrapers, diagnoses problems, and is transparent about issues or bad ideas.
+- **AI may always read WDR and `_meta.yml` files freely** — for diagnosis, analysis, reporting, cross-referencing.
+- **AI must not modify WDR or `_meta.yml` files** unless the human explicitly authorises it in the current conversation. The correct fix is always to improve the scraper so the file is generated correctly on the next run. A direct file edit that is not backed by a scraper rule will be wiped on the next run and is therefore wrong by definition.
+
+**The test:** before touching any WDR or sidecar file, ask "is this fix encoded in the scraper?" If not, fix the scraper first. Only touch data files when the human explicitly says to, and record the authorisation.
+
+## Protected collections — DO NOT MODIFY
+
+**`drivers/matt/` is human-curated. Never write to, rename, delete, or modify any file in this collection without explicit human instruction in the current conversation.** Scripts, batch fixes, scrapers, and normalisation tools must all exclude `matt/` by default. If a script would touch `matt/`, it must stop and log a warning instead. This collection represents manual human work that cannot be recovered from a scraper.
+
 ## Script rules — progress, monitoring, and resume
+
 Every script that processes more than a handful of files or runs for more than a few seconds **MUST**:
+
 - **Timestamp every output line** — use `datetime.now().strftime('%H:%M:%S')` or equivalent. No silent scripts. A script that emits no output for 30+ seconds is indistinguishable from a hung script.
 - **Print a progress line per collection or per N files** — e.g. `[14:32:01] dayton-audio: 412 files, 3 issues found`.
 - **Print a final summary line** — total files scanned, total issues, elapsed time.
@@ -13,24 +63,109 @@ Every script that processes more than a handful of files or runs for more than a
 
 These rules apply equally to inline scripts run via `python -c`, subagent scripts, and standalone `.py` / `.mjs` files. **No exceptions.** A script that violates these rules must be fixed before its output is trusted.
 
+## Schema discipline — hard rule
+
+`scripts/wdr_meta_schema.py` is the **single source of truth** for every field
+that may appear in a `.wdr` or `_meta.yml` file. The schema is enforced at runtime:
+`scraper_lib._scrape_one()` validates every written file before counting it as success.
+
+**Rules for AI — non-negotiable:**
+
+1. **Never write a field that is not defined in the schema.** Check `_WDR_FIELD_SPEC` (WDR)
+   or `MetaModel` (meta) before writing any field.
+
+2. **Never change the schema unilaterally.** Any addition, removal, or rename of a field
+   requires: (a) describing the change to the human — field name, type, unit, reason;
+   (b) getting explicit human approval in the current conversation; (c) then and only then
+   updating `wdr_meta_schema.py`, then the scraper code, then `WDR_SCHEMA.md §9.1`.
+
+3. **Respect the schema in all scrapers and batch scripts.** Code that writes to `.wdr` or
+   `_meta.yml` must only use fields defined in the schema. When adding scraper features that
+   require new fields, propose the field first — do not add it speculatively.
+
+Full operational rules: `drivers/SCRAPING_RULES.md §Schema discipline`.
+
+## Scraper rules — cache everything
+
+Every scraper **MUST** cache all HTML it fetches to `drivers/<collection>/_html/`.
+`scraper_lib.py`'s `run_scraper` already does this automatically. Do not bypass it.
+
+**Why:** `_html/` is gitignored (large, regenerable), so it only exists on the local
+machine. It is the only source `enrich_drivers.py` can use to extract `driver_type`,
+`freq_low_hz`, `freq_high_hz`, and other product metadata without hitting the live site
+again. If `_html/` is missing for a collection, the enrichment script silently produces
+`source: none` for every driver in that collection.
+
+**Rule for AI agents:** if `_extract.yml` shows `source: none` for an entire collection
+and `drivers/<collection>/_html/` is absent, do NOT try to individually fetch and cache
+pages. Instead, tell the user: "run `python scripts/scrape_<collection>.py --refresh`
+to rebuild the HTML cache, then re-run `enrich_drivers.py --force --collection <name>`."
+Fetching pages one-by-one outside the scraper workflow bypasses rate-limit controls and
+creates an inconsistent partial cache.
+
+**Image / custom-encoded PDFs:** some collections (Scan-Speak, some wavecor) publish
+datasheets as image PDFs or PDFs with custom Type1 font encoding. `pypdf` extracts
+garbled token sequences (`/0/1/2/i255/...`) from these — not readable text. Detect this
+pattern in `extract_lib.extract_from_pdf()` and log `pdf_encoding=garbled` to the
+problems log instead of reporting a false "no frequency range found". For these
+collections, the HTML product page (once cached) is the primary extraction source.
+
+## Script rules — scraper problem logs
+
+Every scraper **MUST** write a problem log file alongside its output. The log is separate from stdout progress output.
+
+- **Log file location:** `drivers/<collection>/_problems.log`
+- **Append, never overwrite** — each run appends with a run header so history is preserved.
+- **Log every problem encountered**, including but not limited to:
+  - Missing mandatory fields (`Brand`, `Model`, `Manufacturer`, `Fs`, etc.) — log field name, the raw API/HTML value that was present (or `<absent>`), the source URL, the item ID or SKU, and the offset within the API page.
+  - Mandatory fields that could not be parsed — log the raw string, the regex or parse attempt, and why it failed.
+  - URLs that returned unexpected status codes or content types — log URL, expected type, actual status + content-type.
+  - Items skipped due to DQ rules — log the rule ID, the offending value, and the item.
+  - Any exception caught during processing — log full traceback, item identity, and source URL.
+- **Log format:** one entry per problem, structured as:
+
+  ```
+  [HH:MM:SS] RUN <iso-datetime> scraper=<name> collection=<dir>
+  [HH:MM:SS] PROBLEM field=<field> item=<id_or_sku> url=<url> offset=<N>
+             raw_value=<repr of what was found>
+             reason=<why this is a problem>
+  ```
+
+- **A scraper that produces zero problems is not exempt** — write the run header with `problems=0` so there is a record that the run completed cleanly.
+- **Log and continue — never abort.** A missing or unparseable mandatory field is a problem to log, not a reason to stop or raise an exception. The scraper must process every item it can, write whatever partial record is available, and move on. The log is the signal for an AI or human to review and fix later. Blowing up on bad data is itself a bug.
+
 ## Reading context
+
 - Read all `README.md` files in the repository (excluding `node_modules/`) before starting any task — they contain agent instructions and context for each directory.
 - **Always also read** (not READMEs but essential context):
   - `BACKLOG.md` — prioritised feature backlog (P0–P3) and list of what is already shipped. P0 gates all feature work.
   - `PLAN.md` — re-architecture phases, gates, and scope guards. Read before touching `src/core/` or any structural change.
   - `ARCHITECTURE.md` — hard, hard-to-reverse decisions.
   - `DEVELOPMENT.md` — coding practices and testing contract.
-- **Read for driver-data tasks:** `drivers/DRIVER_TYPES.md`, `drivers/WDR_FILE_MODEL_AND_WORKFLOWS.md`
+- **Read for driver-data tasks:** `WDR_SCHEMA.md` (field spec and sidecar format), `drivers/WDR_FILE_MODEL_AND_WORKFLOWS.md` (link-field workflows, DQ check, scripts reference)
 - **Read for WinISD-related tasks:** `WINISD.md`
 
 ## UI rules
+
 - Every `<button>` and every nav-like interactive element (toggles, chips, icon-only controls) **must** have a `title` attribute with a plain-English description of what it does. No exceptions.
-- Tooltip text should explain the *effect*, not just restate the label — e.g. `title="Set to 2.83V — IEC 60268-5 sensitivity standard"` not `title="2.83V button"`.
+- Tooltip text should explain the _effect_, not just restate the label — e.g. `title="Set to 2.83V — IEC 60268-5 sensitivity standard"` not `title="2.83V button"`.
 - **Box type symmetry rule:** Controls that apply to all box types (e.g. box losses, Vb) must appear in a fixed position common to all types — never inside a box-type-specific block. Box-type-specific controls (vent params, PR params, etc.) go in their own conditional blocks below the shared controls. All box types must have the same structural skeleton; only the middle section varies.
 - **WinISD cross-reference rule:** Every tooltip, label, doc section, and default value should mention the WinISD equivalent wherever one exists — the parameter name WinISD uses, its default value, where it appears in the WinISD UI, and any known difference in behaviour. Users migrate from WinISD; they need to map Resonate concepts to what they already know. Examples: `"WinISD default: 10"`, `"called 'Driver input voltage' in WinISD"`, `"WinISD shows this in the Box tab → Advanced→ popup"`.
-- **Intrinsic vs tunable rule:** Device-intrinsic parameters (datasheet specs that describe what the component *is*) belong inside a collapsible edit section. Tunable parameters (things the user adjusts during design — added mass, box volume, vent length, losses) must stay permanently visible outside any collapsible block so the user can tweak them without entering edit mode.
+- **Intrinsic vs tunable rule:** Device-intrinsic parameters (datasheet specs that describe what the component _is_) belong inside a collapsible edit section. Tunable parameters (things the user adjusts during design — added mass, box volume, vent length, losses) must stay permanently visible outside any collapsible block so the user can tweak them without entering edit mode.
+
+## Calculation stability — hard rule
+
+**Never change any calculation logic without explicit human permission.** This covers:
+
+- Formulas in `src/core/` (alignments, circuit, engine, filters, etc.)
+- Physical constants (`RHO`, `C`, end-correction coefficients, etc.)
+- `toFixed()` / display precision in stat bar or any rendered output
+- Default parameter values that affect computed results
+
+Cross-checks against external tools (micka.de, REW, WinISD, etc.) are **reference only**. A discrepancy does not authorise a fix — document it and stop. The human decides whether a difference warrants a change.
 
 ## Testing rules
+
 - **Direct unit tests required:** Every function in `src/core/` must have direct unit tests in `test/`. Tests are not optional.
 - **Human-readable scenarios:** Every test (`it(...)`) must describe its scenario in plain English — what physical situation is being tested and what the expected outcome is. A loudspeaker designer who has never seen the code must be able to read a test name and understand what it verifies.
 - **No magic numbers in tests:** Every numeric literal used in a test (inputs, expected values, tolerances) must be a named constant with a comment explaining what it represents and why it has that value. No unexplained `0.1`, `37`, `2.83`, etc.
@@ -40,31 +175,106 @@ These rules apply equally to inline scripts run via `python -c`, subagent script
 - **No magic numbers in source code:** Every non-obvious numeric constant in `src/core/` must have a comment explaining its physical meaning and a source reference where applicable. Named constants are preferred over inline literals.
 - **Test framework:** Use `node:test` (`import { describe, it } from 'node:test'`) with `node:assert/strict`. Run with `node --test test/*.test.mjs`.
 
+## Visual regression tests — SPL canvas
+
+`test/visual.browser.spec.js` takes pixel-exact screenshots of the SPL graph panel for all four box types and compares against committed baselines in `test/visual.browser.spec.js-snapshots/`.
+
+**Run:** `npm run test:visual`
+
+**When to regenerate baselines** (intentional visual change — CSS, layout, curve styling):
+
+```
+npm run test:visual -- --update-snapshots
+```
+
+Review with `git diff` to confirm only the intended panels changed, then commit the new PNGs.
+
+**Do NOT regenerate** to paper over a failing test caused by a physics or engine change. If a visual test fails unexpectedly, investigate the cause first.
+
+## Third-party cross-check — micka.de oracle tests
+
+`test/scenarios.js` is the source of truth for every UI test case. Each scenario defines the driver/box inputs AND both tools' expected outputs (Resonate stat-bar values and micka.de table values).
+
+**When to run `npm run test:crosscheck`:**
+
+- You add a new scenario to `scenarios.js` and need to confirm the expected values are physically correct.
+- You change a formula in `src/core/` and need to re-validate the frozen expected values before updating the tests.
+- NOT in normal CI — these tests hit an external site and are slow (~15s each).
+
+**SOP for adding a new test case:**
+
+1. Add a scenario to `test/scenarios.js` with `driver:` and `box:` filled in; leave `micka:` and `resonate:` blank.
+2. Run `npm run test:crosscheck` — read what micka.de reports and fill in `micka:`.
+3. Map micka's values to Resonate's display format (apply the same `toFixed` precision the stat bar uses) and fill in `resonate:`.
+4. Add the Resonate UI wiring test to `test/app.browser.spec.js` using the frozen `resonate:` values.
+5. Commit. `npm run test:crosscheck` does not run in CI.
+
+**Do not run `test:crosscheck` in CI.** Add it only to local workflows or manual validation steps.
+
 ## Driver data — human-verified flag rules
 
-These rules apply to all `boxbench_` fields in WDR files, and to any commentary or provenance text written into driver data files.
+These rules apply to all `_meta.yml` sidecar fields, and to any commentary or provenance text written into driver data files.
 
-- **NEVER write "human verified", "human-verified", "verified by human", or any equivalent phrase** in any WDR field (`boxbench_corrections`, `boxbench_detail`, `boxbench_reviewedBy`, or any other field) unless the user has **explicitly granted permission in this conversation**.
+- **NEVER write "human verified", "human-verified", "verified by human", or any equivalent phrase** in any sidecar field (`corrections`, `detail`, `reviewed_by`, or any other field) unless the user has **explicitly granted permission in this conversation**.
 - The only valid trigger is the user saying something like "mark as human verified", "you can mark it verified", or equivalent explicit instruction addressed to you in this session.
-- If you believe the user has reviewed the data and may have forgotten to grant this permission, you **may ask once**: *"Would you like me to mark this as human-verified?"* Do not assume permission; wait for an explicit yes.
-- An AI writing that it "confirmed" or "verified" data in `boxbench_corrections` does NOT count as human verification, even if the AI performed checks. `boxbench_corrections` is AI-owned and must never contain verification language implying human sign-off.
-- `boxbench_reviewedBy` must remain `null` or unset until the user explicitly authorises it for a specific driver or batch.
+- If you believe the user has reviewed the data and may have forgotten to grant this permission, you **may ask once**: _"Would you like me to mark this as human-verified?"_ Do not assume permission; wait for an explicit yes.
+- An AI writing that it "confirmed" or "verified" data in `corrections` does NOT count as human verification, even if the AI performed checks. `corrections` is AI-owned and must never contain verification language implying human sign-off.
+- `reviewed_by` must remain `null` or unset until the user explicitly authorises it for a specific driver or batch.
 
 ## Driver data — batch fix SOP
+
 - **Datasheet first, always.** Before applying any automated DQ fix to a WDR field, read the cached datasheet from `drivers/<collection>/datasheets/` and confirm the correct value is there. Never apply a batch fix on pattern alone.
 - **Be suspicious of repetition.** If multiple drivers in a family produce identical values, verify each PDF independently — the match may be a regex hitting boilerplate rather than real per-driver data.
-- **If the field doesn't exist in the datasheet, don't invent it.** Omit the field and add a `boxbench_corrections` note explaining why — e.g. AMT tweeters have no T/S Fs; compression drivers rarely publish Fs. A missing field is more honest than a plausible-sounding placeholder.
-- **Record datasheet evidence in `boxbench_corrections`.** State what the datasheet says and which file it came from. This lets a future reviewer verify the fix without re-fetching the PDF.
+- **If the field doesn't exist in the datasheet, don't invent it.** Omit the field and add a `corrections` note in `_meta.yml` explaining why — e.g. AMT tweeters have no T/S Fs; compression drivers rarely publish Fs. A missing field is more honest than a plausible-sounding placeholder.
+- **Record datasheet evidence in `corrections`.** State what the datasheet says and which file it came from. This lets a future reviewer verify the fix without re-fetching the PDF.
 
 ## Driver data — PDF sourcing and debugging
 
-- **Cached PDFs are the primary source.** Always try `drivers/<collection>/datasheets/<filename>` first. Filenames are derived from the `boxbench_datasheet` URL.
+- **Cached PDFs are the primary source.** Always try `drivers/<collection>/datasheets/<filename>` first. Filenames are derived from the `datasheet` URL in `_meta.yml`.
 - **If no cached PDF, or if pypdf extracts no text:** Search for the PDF using web search with query `pdf <Brand> <Model>` — e.g. `pdf HiVi F8`. Scan the results for a direct PDF link, preferring the manufacturer's own site. If no manufacturer PDF is found, accept a major vendor (Parts Express, Mouser, Digikey). Do not use random or unknown third-party sites.
 - **PDF link priority (strict):** manufacturer site PDF > Parts Express / Mouser / Digikey PDF > skip and fall back to human review. Never use an unknown site.
 - **Fallback to human review.** If no extractable PDF can be found after web search, use `scripts/verify-vas-tiny.py` — it opens the cached PDF in the local viewer and prompts for the field value.
 - **Add DQ post-check.** After writing any fix to a WDR, re-run `check_fields()` and confirm the flag is cleared. If the flag remains, the fix value is wrong or the rule threshold needs review.
 
+## Precision in communication — ALWAYS NAME THE EXACT DEVICE
+
+**This rule is non-negotiable. Violations make findings unverifiable and waste the human's time.**
+
+Every finding, diagnosis, example, or data quality report **must** identify the exact device(s) involved by full brand + model. No exceptions, no abbreviations.
+
+**BANNED phrases — never write these:**
+
+- "an 8Ω driver", "a large woofer", "a tweeter", "some drivers", "certain models"
+- "those drivers", "these files", "the affected ones", "the page", "the issue"
+- "etc.", "and others", "and similar", "among others"
+- "a driver with X problem", "drivers in this family"
+
+**Required replacement — always write the actual name AND the actual values from that device:**
+
+- Wrong: "an 8Ω driver where Znom extracted as 82"
+- Right: "Scan-Speak 10F/8414G10: OCR extracted Znom=82 from the text `Nominal impedance [Zn] 82` in `drivers/new_ss_tool/datasheets/10f-8414g10.pdf`; correct value is 8 Ω (HTML source: `https://www.scan-speak.dk/product/10f-8414g10/`)"
+- Wrong: "those pages showed incorrect values"
+- Right: "`https://www.scan-speak.dk/product/11m-4631g05/` (Scan-Speak 11M/4631G05): Vas extracted as 0.271 m³ from OCR text `Equivalent volume [Vas] 271`; correct value is 0.0027 m³"
+
+The example must be **verifiable by the human without any further lookup**. If the human has to open a file or visit a URL just to check whether your example is accurate, the example is not specific enough.
+
+**When reporting a data quality problem, always state all six:**
+
+1. Exact driver: brand + model (e.g. "Scan-Speak 15M/4531K00")
+2. Exact field: field name (e.g. "Vas")
+3. Exact wrong value: the number the tool extracted, **plus the local file path and location within the file where that value was found** (e.g. "0.161 m³ — extracted from `drivers/new_ss_tool/datasheets/15m-4531k00.pdf`, T/S parameters table, row 'Equivalent volume [Vas]'")
+4. Exact correct value: what the authoritative source says, **with the URL or local file path so the human can verify it without asking you** (e.g. "0.016 m³ per `https://www.scan-speak.dk/product/15m-4531k00/`, cached at `drivers/new_ss_tool/_html/15m-4531k00.html`, second table, row 'Equivalent Volume'")
+5. Exact cause: the verbatim raw text string that was misread, and which tool misread it (e.g. "OCR returned the line `Equivalent volume [Vas] 161`; decimal point between `16` and `1` was dropped by tesseract")
+6. Location in the file: describe where in the document the bad value appears (e.g. "3rd row of the Electrical Data table", "Key Features box top-right", "T/S parameter section, 5th row")
+
+**If a list is long, enumerate every item.** Do not truncate. If there are 14 affected drivers, name all 14.
+
+**If you cannot name the device with all five points above, you do not have enough information to report the finding.** Stop and look it up before writing anything.
+
+---
+
 ## External claims — require evidence, label inline
+
 - Never assert facts about external systems — tools (WinISD, LEAP, REW, etc.), websites, services, APIs, or data sources — without primary-source evidence obtained in the current conversation: a tool call, a fetched URL, a read file, or directly observed output.
 - **The user must not have to verify my claims.** Any external claim that has not been verified in the current session must be flagged inline in the response with "⚠ unverified" before it reaches the user — not corrected after they catch it.
 - Inferred or assumed behaviour **must** be labelled as such in code comments, docs, and conversation. Record tool-behaviour assumptions in `WINISD.md` (or the relevant tool's notes file) with an explicit "⚠ Assumption — NOT directly verified" marker and a verification procedure.

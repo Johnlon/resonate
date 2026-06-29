@@ -1,0 +1,19 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.parts-express.com/pedocs/specs/290-310-goldwood-gw-2084-specifications.pdf
+manu_page: null
+vendor_page: https://www.parts-express.com/Goldwood-GW-208-4-8-OEM-Woofer-4-Ohm-290-310
+source: https://www.parts-express.com/Goldwood-GW-208-4-8-OEM-Woofer-4-Ohm-290-310
+frd: null
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: null
+driver_type: woofer
+freq_low_hz: 45.0
+freq_high_hz: 7000.0

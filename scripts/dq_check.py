@@ -6,7 +6,7 @@ It is imported by scraper_lib.py to validate at write time.
 
 Run: python scripts/dq_check.py [--collection <name>] [--check-urls]
   --collection   only check one collection subdirectory
-  --check-urls   HTTP HEAD every URL in flagged files; report status + content-type
+  --check-urls   GET (Range: bytes=0-3) every URL in _meta.yml sidecars of flagged files; report real content-type
 """
 
 import math
@@ -22,8 +22,15 @@ if hasattr(sys.stdout, "reconfigure"):
 if hasattr(sys.stderr, "reconfigure"):
     sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
+try:
+    import yaml as _yaml
+    _YAML_OK = True
+except ImportError:
+    _YAML_OK = False
+
 DRIVERS_DIR = pathlib.Path(__file__).parent.parent / "drivers"
-URL_FIELDS = ["boxbench_datasheet", "boxbench_manu_page", "boxbench_vendor_page"]
+# URL fields live in _meta.yml sidecars (NOT in WDR files)
+SIDECAR_URL_FIELDS = ["datasheet", "manu_page", "vendor_page", "frd", "impedance"]
 
 
 def parse_fields(text: str) -> dict:
@@ -62,6 +69,9 @@ def _missing_Sd(f):
     if v is None or v < 0:     return f"Sd={f['Sd']} (invalid)"
 
 def _missing_Re(f):
+    # Passive radiators have no voice coil — Re and BL are both absent by design.
+    if "Re" not in f and "BL" not in f:
+        return None
     v = _n(f, "Re")
     if "Re" not in f:           return "Re absent"
     if v == 0:                  return "Re=0 (scraper artifact)"
@@ -178,7 +188,7 @@ def _SPL_low(f):
 
 
 RULES = [
-    # ── Absent or zero core fields ────────────────────────────────────────────
+    # ── Absent or zero fields ─────────────────────────────────────────────────
     ("missing_Fs",  "Fs absent, zero, or invalid — scraper artifact",                       _missing_Fs),
     ("missing_Sd",  "Sd absent, zero, or invalid — scraper artifact",                       _missing_Sd),
     ("missing_Re",  "Re absent, zero, or invalid — scraper artifact",                       _missing_Re),
@@ -237,14 +247,32 @@ def check_fields(fields: dict) -> list[tuple[str, str, str]]:
 # ── CLI ───────────────────────────────────────────────────────────────────────
 
 def _check_url(url: str) -> str:
+    """Fetch first 4 bytes via GET Range request and report Content-Type.
+
+    HEAD is not used because some hosts (e.g. Parts Express CDN) return
+    200 text/html for HEAD on any path regardless of whether the file
+    exists. A Range GET reveals the real content-type and a non-empty body.
+    """
     try:
-        req = urllib.request.Request(url, method="HEAD",
-                                     headers={"User-Agent": "resonate-dq/1.0"})
-        with urllib.request.urlopen(req, timeout=8) as r:
+        req = urllib.request.Request(url, headers={
+            "User-Agent": "resonate-dq/1.0",
+            "Range": "bytes=0-3",
+        })
+        with urllib.request.urlopen(req, timeout=10) as r:
+            body = r.read(4)
             ct = r.headers.get("Content-Type", "unknown").split(";")[0]
-            cl = r.headers.get("Content-Length", "")
-            kb = f" {int(cl)//1024}KB" if cl else ""
-            return f"{r.status} {ct}{kb}"
+            cl = r.headers.get("Content-Length", "") or r.headers.get("Content-Range", "")
+            # Warn if server returns HTML instead of the expected binary type
+            # Strip query string before checking extension
+            path = url.split("?")[0].lower()
+            warn = ""
+            if path.endswith(".pdf") and "pdf" not in ct:
+                warn = " ⚠ expected PDF"
+            elif path.endswith(".zip") and "zip" not in ct:
+                warn = " ⚠ expected ZIP"
+            elif not body:
+                warn = " ⚠ empty body"
+            return f"{r.status} {ct}{warn}"
     except urllib.error.HTTPError as e:
         return f"{e.code} {e.reason}"
     except Exception as e:
@@ -255,10 +283,10 @@ def main():
     ap = argparse.ArgumentParser(description="WDR data quality check")
     ap.add_argument("--collection", help="Only check this collection subdirectory")
     ap.add_argument("--check-urls", action="store_true",
-                    help="HTTP HEAD every URL in flagged files")
+                    help="GET (Range: bytes=0-3) every URL in _meta.yml sidecars; validates real content-type")
     args = ap.parse_args()
 
-    issues = []  # (collection, fname, rule_id, desc, detail, fields)
+    issues = []  # (collection, fname, rule_id, desc, detail, fields, sidecar)
 
     for coll_path in sorted(DRIVERS_DIR.iterdir()):
         if not coll_path.is_dir():
@@ -267,18 +295,26 @@ def main():
             continue
         for wdr_path in sorted(coll_path.glob("*.wdr")):
             fields = parse_fields(wdr_path.read_text(encoding="utf-8", errors="replace"))
+            # Load matching _meta.yml sidecar if present
+            sidecar_path = wdr_path.with_name(wdr_path.stem + "_meta.yml")
+            sidecar = {}
+            if sidecar_path.exists() and _YAML_OK:
+                try:
+                    sidecar = _yaml.safe_load(sidecar_path.read_text(encoding="utf-8")) or {}
+                except Exception:
+                    pass
             for rule_id, desc, detail in check_fields(fields):
-                issues.append((coll_path.name, wdr_path.name, rule_id, desc, detail, fields))
+                issues.append((coll_path.name, wdr_path.name, rule_id, desc, detail, fields, sidecar))
 
     url_status = {}
     if args.check_urls:
         url_set = set()
-        for *_, fields in issues:
-            for k in URL_FIELDS:
-                v = fields.get(k, "")
-                if v.startswith("http"):
+        for *_, sidecar in issues:
+            for k in SIDECAR_URL_FIELDS:
+                v = sidecar.get(k) or ""
+                if isinstance(v, str) and v.startswith("http"):
                     url_set.add(v)
-        print(f"\nChecking {len(url_set)} URLs (HEAD, 8 s timeout)…\n")
+        print(f"\nChecking {len(url_set)} URLs from sidecars (GET Range, 10 s timeout)…\n")
         for url in sorted(url_set):
             sys.stdout.write(f"  {url}  →  ")
             sys.stdout.flush()
@@ -287,27 +323,27 @@ def main():
             print(status)
 
     by_rule: dict[str, dict] = {}
-    for coll, fname, rule_id, desc, detail, fields in issues:
+    for coll, fname, rule_id, desc, detail, fields, sidecar in issues:
         if rule_id not in by_rule:
             by_rule[rule_id] = {"desc": desc, "hits": []}
-        by_rule[rule_id]["hits"].append((coll, fname, detail, fields))
+        by_rule[rule_id]["hits"].append((coll, fname, detail, fields, sidecar))
 
     total = 0
     seen_files = set()
     for rule_id, data in sorted(by_rule.items()):
         hits = data["hits"]
         print(f"\n── {rule_id} ({len(hits)}) — {data['desc']}")
-        for coll, fname, detail, fields in hits:
+        for coll, fname, detail, fields, sidecar in hits:
             print(f"   {coll}/{fname}  [{detail}]")
-            for k in URL_FIELDS:
-                url = fields.get(k, "")
-                if not url:
+            for k in SIDECAR_URL_FIELDS:
+                url = sidecar.get(k) or ""
+                if not isinstance(url, str) or not url.startswith("http"):
                     continue
                 status = f"  → {url_status[url]}" if url in url_status else ""
                 print(f"     {k}: {url}{status}")
-            corr = fields.get("boxbench_corrections", "")
+            corr = sidecar.get("corrections") or ""
             if corr:
-                print(f"     boxbench_corrections: {corr[:120]}{'…' if len(corr) > 120 else ''}")
+                print(f"     corrections: {str(corr)[:120]}{'…' if len(str(corr)) > 120 else ''}")
             seen_files.add(f"{coll}/{fname}")
         total += len(hits)
 

@@ -1,0 +1,47 @@
+quality: M
+issue: scraped_not_human_verified
+detail: 'Automatically scraped from Scan-Speak website. T/S parameters not human-verified.
+  T/S extracted from PDF (pdf): BL,Cms,Fs,Le,Mms,Qes,Qms,Qts,Re,SPL,Sd,Vas,Xmax.'
+corrections: null
+reviewed_by: null
+driver_type: fullrange
+series: Discovery
+nominal_size_cm: 10.0
+datasheet: https://www.scan-speak.dk/datasheet/pdf/10f-8414g10.pdf
+adv_datasheet: https://www.scan-speak.dk/datasheet/adv/10f-8414g10.pdf
+drawing: https://www.scan-speak.dk/datasheet/drw/10f-8414g10.png
+cad: https://www.scan-speak.dk/datasheet/3d/TYPENUMMER.zip
+manu_page: https://www.scan-speak.dk/product/10f-8414g10/
+vendor_page: null
+source: https://www.scan-speak.dk/product/10f-8414g10/
+frd: null
+impedance: null
+obsolete: null
+dq_issue: null
+community: null
+fetched_sku: null
+datasheet_fields:
+- BL
+- Cms
+- Fs
+- Le
+- Mms
+- Qes
+- Qms
+- Qts
+- Re
+- SPL
+- Sd
+- Vas
+- Xmax
+adv_datasheet_fields: null
+manu_page_fields:
+- BL
+- Fs
+- Qts
+- Re
+- SPL
+- Sd
+- Vas
+freq_low_hz: 130.0
+freq_high_hz: 10000.0

@@ -1,0 +1,46 @@
+quality: M
+issue: scraped_not_human_verified
+detail: 'Automatically scraped from Scan-Speak website. T/S parameters not human-verified.
+  T/S extracted from PDF (pdf): BL,Cms,Fs,Le,Mms,Qes,Qms,Qts,Sd,Vas,Xmax,Znom.'
+corrections: null
+reviewed_by: null
+driver_type: tweeter
+series: Discovery
+nominal_size_cm: 2.6
+datasheet: https://www.scan-speak.dk/datasheet/pdf/d2606-922000.pdf
+adv_datasheet: https://www.scan-speak.dk/datasheet/adv/d2606-922000.pdf
+drawing: https://www.scan-speak.dk/datasheet/drw/d2606-922000.png
+cad: https://www.scan-speak.dk/datasheet/3d/d2606-922000.ZIP
+manu_page: https://www.scan-speak.dk/product/d2606-922000/
+vendor_page: null
+source: https://www.scan-speak.dk/product/d2606-922000/
+frd: null
+impedance: null
+obsolete: null
+dq_issue: null
+community: null
+fetched_sku: null
+datasheet_fields:
+- BL
+- Cms
+- Fs
+- Le
+- Mms
+- Qes
+- Qms
+- Qts
+- Sd
+- Vas
+- Xmax
+- Znom
+adv_datasheet_fields: null
+manu_page_fields:
+- BL
+- Fs
+- Qts
+- Re
+- SPL
+- Sd
+- Vas
+freq_low_hz: 2500.0
+freq_high_hz: 20000.0

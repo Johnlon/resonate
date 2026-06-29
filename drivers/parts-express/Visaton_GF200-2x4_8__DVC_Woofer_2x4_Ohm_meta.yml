@@ -1,0 +1,17 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.parts-express.com/pedocs/specs/292-7808--visaton-gf200-2x4-spec-sheet.pdf
+manu_page: null
+vendor_page: https://www.parts-express.com/Visaton-GF200-2x4-8-DVC-Woofer-2x4-Ohm-292-7808
+source: https://www.parts-express.com/Visaton-GF200-2x4-8-DVC-Woofer-2x4-Ohm-292-7808
+frd: null
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: null
+driver_type: subwoofer

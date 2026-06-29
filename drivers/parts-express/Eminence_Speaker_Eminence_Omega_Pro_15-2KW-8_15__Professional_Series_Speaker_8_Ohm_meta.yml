@@ -1,0 +1,19 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.parts-express.com/pedocs/specs/290-4302--eminence-15-2kw-8-spec-sheet.pdf
+manu_page: null
+vendor_page: https://www.parts-express.com/Eminence-Omega-Pro-15-2KW-8-15-Professional-Series-Speaker-8-Ohm-290-4302
+source: https://www.parts-express.com/Eminence-Omega-Pro-15-2KW-8-15-Professional-Series-Speaker-8-Ohm-290-4302
+frd: null
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: null
+driver_type: subwoofer
+freq_low_hz: 39.0
+freq_high_hz: 1245.0

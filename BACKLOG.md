@@ -77,7 +77,8 @@ practices: [DEVELOPMENT.md](DEVELOPMENT.md) · oracles:
 
 ---
 
-## Signal chain & EQ  *(the curves are already complex — filters slot in cleanly)*
+## Signal chain & EQ _(the curves are already complex — filters slot in cleanly)_
+
 - [x] [x] **P1** Parametric (peaking) EQ — fc, Q, gain; multiple bands; applied to the transfer function `[unit]`
 - [ ] **P1** High-shelf / low-shelf filters
 - [x] [x] **P1** High-pass / low-pass filters (Butterworth; selectable Q; Bessel/LR orders not yet exposed) `[unit]`
@@ -89,6 +90,7 @@ practices: [DEVELOPMENT.md](DEVELOPMENT.md) · oracles:
 - [ ] **P2** Amplifier output impedance / damping-factor effect on response
 
 ## Enclosure types & box model
+
 - [x] [ ] **P1** Absorption / fill loss `Qa` (complete the Ql / Qa / Qp loss set)
 - [ ] **P2** 6th-order bandpass (both chambers ported) — extend the 4th-order branch
 - [ ] **P2** Isobaric / compound loading
@@ -97,26 +99,33 @@ practices: [DEVELOPMENT.md](DEVELOPMENT.md) · oracles:
 - [ ] **P3** Horn / waveguide (throat, mouth, flare)
 
 ## Vents & ports
+
 - [ ] **P1** Multiple vents (1–4) sharing the tuning
 - [ ] **P1** Slot / rectangular vents (in addition to round)
 - [ ] **P1** Selectable end-correction (free/flanged combinations, custom value)
 - [ ] **P2** Drag-to-adjust Vb / Fb directly on a graph, with lock-one
 
 ## Driver data & T/S
+
+- [ ] **P1** Guided parameter entry — step-by-step flow following the WinISD-recommended order (Mms+Cms → Sd+BL+Re → Qms → Hc/Hg/Pe → numVC → Znom). Each step shows which fields to fill, why they matter, and what WinISD computes from them. Minimum viable path (Qts+Vas+Fs) clearly signposted. WinISD gives you a blank form with no guidance; this should be meaningfully better.
 - [ ] **P1** Paste raw datasheet text → infer T/S parameters
 - [x] [x] **P1** In-app driver database search / filter (by size, brand, parameters) `[ui]`
 - [ ] **P1** "Duplicate / copy from" an existing driver to speed manual entry
+- [ ] **P1** WDR writer: when Resonate writes `.wdr` files, write `VCCon=2` for series wiring — the scraper always writes `VCCon=1` (correct for parallel/single-VC), but the full writer must emit the correct value. WinISD has a save bug and always writes 1; Resonate should not replicate that bug. See `WINISD.md §12`.
 - [ ] **P2** WinISD `.wpr` project import — format is decoded (INI sections:
       ProjectInfo, Driver, Box, Vent*, PassiveRadiator, SignalSource, Filters)
 - [ ] **P2** Unibox spreadsheet import
 - [ ] **P3** Import measured traces (SPL / impedance / ZMA / FRD)
+- [ ] **P3** Physical dimension extraction — Thick, Depth, MagDepth, Magnet, Basket, Outer, Vcd appear as text in some datasheets and as engineering drawings in most. Extracting them would let Resonate compute DVol (driver displacement volume) and display baffle cutout dimensions alongside the box design. Requires PDF/image parsing per manufacturer drawing conventions.
 
 ## Alignments & helpers
+
 - [ ] **P1** Expand vented alignment presets (SBB4, EBS, Bessel, Chebyshev) alongside QB3/B4
 - [ ] **P2** Guided design wizard (driver → count → box type → starting params)
 - [ ] **P2** Step-response curve (time-domain, from the transfer function)
 
 ## Construction & woodworking
+
 - [ ] **P2** Net / gross internal volume from panel thickness (+ separate baffle thickness)
 - [ ] **P2** Driver & port displacement subtraction
 - [ ] **P2** Bracing / lining / component (crossover, plate amp) volume subtraction
@@ -125,22 +134,25 @@ practices: [DEVELOPMENT.md](DEVELOPMENT.md) · oracles:
 - [ ] **P3** Sheet-layout cut optimiser (bin-packing, kerf, rip/cross cuts, PDF)
 - [ ] **P3** 3D-printable port export (STL)
 
-## Crossover & multi-way  *(larger arc)*
+## Crossover & multi-way _(larger arc)_
+
 - [ ] **P3** Crossover network design (1st–6th order, Butterworth / Linkwitz-Riley)
 - [ ] **P3** L-pad / level matching
 - [ ] **P3** Multi-driver system summation (2- and 3-way), driver offset / acoustic centre
 
 ## Storage & sharing
+
 - [x] [x] **P1** URL-encoded designs — the full design (driver, box, params, graph
       selection, comparisons) lives in a shareable link; no server needed `[ui]`
 - [x] [ ] **P1** Export / import the complete design as a JSON file
 - [ ] **P2** Optional Google Drive storage — let users save and open designs in
-      their *own* Google Drive. Keeps personal storage entirely on the user's
+      their _own_ Google Drive. Keeps personal storage entirely on the user's
       side with no server or accounts on ours (opt-in; nothing stored unless the
       user chooses it)
 - [ ] **P3** Optional Dropbox / generic cloud storage on the same opt-in basis
 
 ## UX & platform
+
 - [x] [ ] **P1** Save / restore graph layout (which graphs, sizes, positions) — graph selection persisted in localStorage
 - [ ] **P2** Draggable / resizable graph panels
 - [ ] **P2** Interactive schematic / lumped-model view of the signal path
@@ -149,10 +161,51 @@ practices: [DEVELOPMENT.md](DEVELOPMENT.md) · oracles:
 - [ ] **P2** Mobile / small-screen layout pass
 
 ## Learning & docs
+
 - [x] [ ] **P2** In-app parameter explanations / tooltips on inputs and curves — `title=` attributes on all controls
 - [ ] **P3** Open, community-editable knowledge base (T/S, box types, tuning, losses)
 - [ ] **P3** Worked-example tutorial
 
 ## Quality / infrastructure
+
 - [ ] **P1** `scripts/` utility (+ CI step) to detect duplicate / same-model drivers as the library grows
 - [x] [x] **P2** Per-feature engine tests added alongside each new box type / curve `[unit]`
+
+---
+
+## Physical dimension extraction gap
+
+**Priority:** P2  
+**Status:** Not started  
+**Type:** Feature gap / Scraper enhancement
+
+### Problem
+
+Scraper writes physical dimensions (Thick, Depth, MagDepth, Magnet, Basket, Outer, Vcd, DVol) as hardcoded 0.
+
+```python
+# Physical dimensions — 0 (not scraped)
+lines += ["Thick=0", "Depth=0", "MagDepth=0", "Magnet=0", "Basket=0", "Outer=0", "Vcd=0", "DVol=0"]
+```
+
+These measurements are often available in datasheets (PDF dimensions section, mechanical drawings, spec tables). Currently not extracted.
+
+### Gap
+
+- No PDF dimension extraction implemented
+- Physical measurements remain absent from WDR files
+- Users cannot design enclosures that account for driver displacement volume
+- WinISD users can import these; Resonate cannot
+
+### Known data sources
+
+- PDF datasheets: mechanical drawings, dimension tables
+- Vendor spec sheets (e.g., Parts Express, Mouser pages)
+- Datasheet fields: Dia (cone diameter), Xmax (already scraped), voice coil diameter, magnet depth
+
+### Questions for implementation
+
+1. Which dimensions are most commonly published? (priority order)
+2. How to parse dimension sections in PDFs reliably?
+3. Unit handling (mm, cm, inches)?
+4. Fallback: derive from other measurements (e.g., Sd → cone diameter via Sd=π(Dd/2)²)?

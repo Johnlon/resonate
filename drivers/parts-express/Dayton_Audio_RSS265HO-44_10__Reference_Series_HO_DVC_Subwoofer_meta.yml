@@ -1,0 +1,19 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.parts-express.com/pedocs/specs/295-463-dayton-audio-rss265-ho-44-specifications.pdf
+manu_page: null
+vendor_page: https://www.parts-express.com/Dayton-Audio-RSS265HO-44-10-Reference-Series-HO-DVC-Subwoofer-295-463
+source: https://www.parts-express.com/Dayton-Audio-RSS265HO-44-10-Reference-Series-HO-DVC-Subwoofer-295-463
+frd: https://www.parts-express.com/pedocs/tech-docs/295-463--Dayton-Audio-RSS265HO-44_data.zip
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: null
+driver_type: subwoofer
+freq_low_hz: 25.0
+freq_high_hz: 600.0

@@ -9,40 +9,45 @@
 A driver carries **multiple labels** simultaneously — selecting any chip shows every
 driver that carries that label.
 
-| Chip | ID | What it covers |
-|---|---|---|
-| **Bass** | `bass` | Anything that handles low frequencies — sub, woofer, mid-bass, full-range |
-| **Sub** | `sub` | Dedicated subwoofer (also carries `woofer` + `bass`) |
-| **Woofer** | `woofer` | Low to mid-bass cone driver (also carries `bass`) |
-| **Mid** | `mid` | Midrange / mid-bass — sits between woofer and tweeter |
-| **Tweet** | `tweet` | High-frequency driver — dome, ribbon, planar, AMT |
-| **Full-range** | `fullrange` | Single driver covering bass through treble (carries `woofer` + `mid` + `tweet` + `bass`) |
-| **PR** | `pr` | Passive radiator — no voice coil, no frequency range, purely mechanical |
+| Chip             | ID             | What it covers                                                                                   |
+| ---------------- | -------------- | ------------------------------------------------------------------------------------------------ |
+| **Bass**         | `bass`         | Anything that handles low frequencies — sub, woofer, mid-bass, full-range                        |
+| **Sub**          | `sub`          | Dedicated subwoofer (also carries `woofer` + `bass`)                                             |
+| **Woofer**       | `woofer`       | Low to mid-bass cone driver (also carries `bass`)                                                |
+| **Mid**          | `mid`          | Midrange / mid-bass — sits between woofer and tweeter                                            |
+| **Tweet**        | `tweet`        | High-frequency driver — dome, ribbon, planar, AMT                                                |
+| **Full-range**   | `fullrange`    | Single driver covering bass through treble (carries `woofer` + `mid` + `tweet` + `bass`)         |
+| **PR**           | `pr`           | Passive radiator — no voice coil, no frequency range, purely mechanical                          |
+| **Coaxial**      | `coax`         | Coaxial — woofer and tweeter sharing the same axis (carries `woofer` + `bass` + `mid` + `tweet`) |
+| **Unclassified** | `unclassified` | Drivers that did not match any type pattern                                                      |
 
 ## Label assignment per product type
 
-| Vendor/manufacturer calls it | Canonical name (displayed) | Labels assigned |
-|---|---|---|
-| Subwoofer | `Subwoofer` | `sub` + `woofer` + `bass` |
-| Woofer | `Woofer` | `woofer` + `bass` |
-| Mid-bass / mid-woofer / midbass | `Mid-bass` | `woofer` + `mid` + `bass` |
-| Midrange / mid-range | `Midrange` | `woofer` + `mid` (cone driver; no bass, no tweet) |
-| Full-range / fullrange | `Full-range` | `woofer` + `mid` + `tweet` + `bass` + `fullrange` |
-| BMR / balanced mode radiator | `BMR` | `mid` + `tweet` (NOT bass — needs separate woofer for LF) |
-| Tweeter | `Tweeter` | `tweet` |
-| Dome tweeter | `Tweeter` | `tweet` |
-| Ribbon tweeter | `Ribbon Tweeter` | `tweet` |
-| Planar | `Planar Tweeter` | `tweet` |
-| AMT / air motion transformer | `AMT` | `tweet` |
-| Passive radiator | `Passive Radiator` | `pr` |
-| *(no type keyword — piston is tweeter-sized, Sd < 12 cm²)* | `Tweeter` | `tweet` |
-| *(no type keyword — resonance below 40 Hz, only subs go that low)* | `Subwoofer` | `sub` + `woofer` + `bass` |
-| *(no type keyword and no distinctive params)* | `Unclassified` | *(none — appears in all filtered queries so the user notices)* |
+| Vendor/manufacturer calls it                                       | Canonical name (displayed) | Labels assigned                                                |
+| ------------------------------------------------------------------ | -------------------------- | -------------------------------------------------------------- |
+| Subwoofer                                                          | `Subwoofer`                | `sub` + `woofer` + `bass`                                      |
+| Woofer                                                             | `Woofer`                   | `woofer` + `bass`                                              |
+| Mid-bass / mid-woofer / midbass                                    | `Mid-bass`                 | `woofer` + `mid` + `bass`                                      |
+| Midrange / mid-range                                               | `Midrange`                 | `woofer` + `mid` (cone driver; no bass, no tweet)              |
+| Full-range / fullrange                                             | `Full-range`               | `woofer` + `mid` + `tweet` + `bass` + `fullrange`              |
+| BMR / balanced mode radiator                                       | `BMR`                      | `mid` + `tweet` (NOT bass — needs separate woofer for LF)      |
+| Tweeter                                                            | `Tweeter`                  | `tweet`                                                        |
+| Dome tweeter                                                       | `Tweeter`                  | `tweet`                                                        |
+| Ribbon tweeter                                                     | `Ribbon Tweeter`           | `tweet`                                                        |
+| Planar                                                             | `Planar Tweeter`           | `tweet`                                                        |
+| AMT / air motion transformer                                       | `AMT`                      | `tweet`                                                        |
+| Passive radiator                                                   | `Passive Radiator`         | `pr`                                                           |
+| Coaxial / coax                                                     | `Coaxial`                  | `coax` + `woofer` + `bass` + `mid` + `tweet`                   |
+| _(no type keyword — piston is tweeter-sized, Sd < 12 cm²)_         | `Tweeter`                  | `tweet`                                                        |
+| _(no type keyword — resonance below 40 Hz, only subs go that low)_ | `Subwoofer`                | `sub` + `woofer` + `bass`                                      |
+| _(no type keyword and no distinctive params)_                      | `Unclassified`             | _(none — appears in all filtered queries so the user notices)_ |
 
 ## Classification priority
 
 1. **PR keyword** → `['pr']` and stop (orthogonal to all frequency categories)
-2. **Name-based detection** (manufacturer's own label — most reliable):
+2. **Coaxial keyword** → `['coax', 'woofer', 'bass', 'mid', 'tweet']` and stop (combined driver, appears in all frequency filter chips)
+3. **Name-based detection** (manufacturer's own label — most reliable):
+   - Coaxial/coax → `coax` + `woofer` + `bass` + `mid` + `tweet`
    - Tweeter/dome/ribbon/planar/AMT → `tweet`
    - Subwoofer/sub → `sub` + `woofer` + `bass`
    - Mid-bass/mid-woofer/midbass → `woofer` + `mid` + `bass`
@@ -50,7 +55,7 @@ driver that carries that label.
    - Midrange/mid-range → `woofer` + `mid` (cone driver; not bass, not tweet)
    - Full-range/fullrange → `woofer` + `mid` + `tweet` + `bass` + `fullrange`
    - BMR/balanced mode → `mid` + `tweet`
-3. **T/S parameter fallbacks** (for drivers with non-descriptive model numbers):
+4. **T/S parameter fallbacks** (for drivers with non-descriptive model numbers):
    - Sd < 12 cm² → `['tweet']`
    - Fs < 40 Hz → `['sub', 'woofer', 'bass']`
    - Everything else → `['woofer', 'bass']` (safe default — most unknowns are woofers)
@@ -75,6 +80,7 @@ PR       ◯ orthogonal — no frequency range
 ```
 
 **Key relationships (verified 2026-06-25):**
+
 - Sub IS-A woofer (a woofer optimised for very low frequencies only)
 - Mid-bass IS-A woofer AND IS-A mid (sits in both ranges)
 - Midrange IS a woofer (same cone construction) but NOT bass (no LF extension) and NOT tweet

@@ -1,0 +1,1075 @@
+
+[06:59:25] RUN 2026-06-28T06:59:25 scraper=enrich_drivers collection=parts-express dry_run=True
+[06:59:25] META_UPDATE file=Aurum_Cantus_AC120_50CK_5__Midwoofer_meta.yml driver_type=woofer
+[06:59:25] META_UPDATE file=Aurum_Cantus_G2_Ribbon_Tweeter_meta.yml driver_type=subwoofer
+[06:59:25] META_UPDATE file=B_C_Speakers_B_C_10BG76-8_10__Neodymium_Subwoofer_meta.yml driver_type=subwoofer
+[06:59:25] META_UPDATE file=B_C_Speakers_B_C_10CL51_10__Neodymium_Woofer_meta.yml driver_type=subwoofer
+[06:59:25] META_UPDATE file=B_C_Speakers_B_C_10CXN64-8_10__Professional_Neodymium_Coaxial_Speaker_80_x_80_Degree_8_Ohm_meta.yml driver_type=coaxial
+[06:59:25] META_UPDATE file=B_C_Speakers_B_C_10FCX64_10__Professional_Coaxial_Speaker_70_x_70_8_Ohm_meta.yml driver_type=coaxial
+[06:59:25] META_UPDATE file=B_C_Speakers_B_C_10HPL64-16_10__Professional_Neodymium_Woofer_16_Ohm_meta.yml driver_type=subwoofer
+[06:59:25] META_UPDATE file=B_C_Speakers_B_C_10HPL64_10__Neodymium_Woofer_meta.yml driver_type=subwoofer
+[06:59:26] META_UPDATE file=B_C_Speakers_B_C_10MBX64_10__Professional_Neodymium_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[06:59:26] DONE  collection=parts-express total=20 extracted=20 updated=20 no_data=0 errors=0
+
+[07:03:10] RUN 2026-06-28T07:03:10 scraper=enrich_drivers collection=parts-express dry_run=False
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_10MD26_10__Midbass_Speaker_meta.yml driver_type=subwoofer
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_10NW64_10__Neodymium_Woofer_meta.yml driver_type=subwoofer
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_10NW76_10__Neodymium_Subwoofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_10PLB76_10__Woofer_meta.yml driver_type=subwoofer
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_10PS26_10__Woofer_meta.yml driver_type=subwoofer
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_12BG76_12__1000W_Neodymium_Subwoofer_meta.yml driver_type=subwoofer
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_12CL64_12__Neodymium_Woofer_meta.yml driver_type=subwoofer
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_12CL76_12__Neodymium_Woofer_meta.yml driver_type=subwoofer
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_12CLX64_12__Professional_Coaxial_Speaker_60_x_60_Degree_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_12CXN88_12__Professional_Coaxial_Speaker_80_x_80_Degree_8_Ohm_meta.yml driver_type=coaxial
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_12FCX76_12__Professional_Coaxial_Speaker_80_x_80_8_Ohm_meta.yml driver_type=coaxial
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_12FW76_12__Professional_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_12HCX76_12__Neodymium_Coaxial_Speaker_60_x_40_Degree_meta.yml driver_type=coaxial
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_12HPL76_12__Neodymium_Woofer_meta.yml driver_type=subwoofer
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_12MH32_12__Professional_Midbass_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_12NBX100_12__Professional_Neodymium_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_12NDL76-16_12__Professional_Neodymium_Woofer_16_Ohm_meta.yml driver_type=subwoofer
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_12NDL76_12__Neodymium_Woofer_meta.yml driver_type=subwoofer
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_12NDL88_12__Neodymium_Woofer_meta.yml driver_type=subwoofer
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_12NW100_12__Neodymium_Subwoofer_Speaker_meta.yml driver_type=subwoofer
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_12NW76_12__Neodymium_Woofer_meta.yml driver_type=subwoofer
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_12PE32_12__Midbass_Speaker_meta.yml driver_type=subwoofer
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_12PLB76_12__Woofer_meta.yml driver_type=subwoofer
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_12PS100_12__Woofer_meta.yml driver_type=subwoofer
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_12TBX100_12__Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_14CXN88_13.5__Professional_Neodymium_Coaxial_Speaker_80_x_80_Degree_4_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_14NDL88_14__Neodymium_Woofer_meta.yml driver_type=subwoofer
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_15CL76_15__Professional_Neodymium_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_15CXN88_15__Neodymium_Coaxial_Speaker_80_x_80_Degree_meta.yml driver_type=subwoofer
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_15FW76_15__Professional_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_15NDL88_15__Neodymium_Woofer_meta.yml driver_type=subwoofer
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_15NW76_15__Professional_Neodymium_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:10] META_UPDATE file=B_C_Speakers_B_C_15PLB76_15__Professional_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_18RBX100-4_18__Professional_Subwoofer_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_4CXN36_4__Professional_Coaxial_Speaker_70_x_70_8_Ohm_meta.yml driver_type=coaxial
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_4NDF34-8_4__Professional_Neodymium_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_5CXN44_5__Professional_Coaxial_Speaker_80_X_80_8_Ohm_meta.yml driver_type=coaxial
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_5MDN38_5__Professional_Neodymium_Midrange_Speaker_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_5NDL38_5__Professional_Neodymium_Midrange_Speaker_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_5NSM38-8_5__Professional_Neodymium_Sealed_Back_Midrange_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_6FHX51_6.5__Professional_Coaxial_Speaker_70_x_70_8_Ohm_meta.yml driver_type=coaxial
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_6HCX51_6.5__Professional_Neodymium_Coaxial_Speaker_70_x_70_8_Ohm_meta.yml driver_type=coaxial
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_6MBX44_6.5__Professional_Neodymium_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_6MD38-16_6.5__Professional_Midrange_Speaker_16_Ohm_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_6MD38_6-1_2__Midrange_Speaker_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_6MDN44-16_6.5__Professional_Neodymium_Midrange_Speaker_16_Ohm_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_6MDN44_6-1_2__Neodymium_Midrange_Speaker_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_6NDL38_6-1_2__Neodymium_Woofer_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_6NDL44_6-1_2__Professional_Neodymium_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_6NSM51-8_6__Professional_Neodymium_Sealed_Back_Midrange_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_6PEV13_6-1_2__Midrange_Speaker_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_8BG51_8__Neodymium_Woofer_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_8CX21_8__Professional_Coaxial_Speaker_100_x_100_8_Ohm_meta.yml driver_type=coaxial
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_8CXN51_8__Professional_Neodymium_Coaxial_Speaker_100_x_100_8_Ohm_meta.yml driver_type=coaxial
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_8FCX51_8__Professional_Coaxial_Speaker_100_x_100_8_Ohm_meta.yml driver_type=coaxial
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_8FG51_8__Professional_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_8MBX51_8__Professional_Neodymium_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_8MDN51-16_8__Professional_Neodymium_Woofer_16_Ohm_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_8MDN51_8__Neodymium_Woofer_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_8NDL51-16_8__Professional_Neodymium_Woofer_16_Ohm_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_8NDL51_8__Neodymium_Woofer_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_8NDL64-16_8__Neodymium_Woofer_16_Ohm_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_8NDL64_8__Neodymium_Woofer_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_8NSM64-8_8__Professional_Neodymium_Sealed_Back_Midrange_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_8PE21-8_8__Midrange_Speaker_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_8PS21-16_8__Professional_Woofer_16_Ohm_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=B_C_Speakers_B_C_8PS21-8_8__Professional_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=Beston_RT001A_Ribbon_Tweeter_6_Ohm_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=Beyma_T25M_NMF_Series_1__Aluminum_Dome_Tweeter_meta.yml driver_type=tweeter
+[07:03:11] META_UPDATE file=Beyma_T25S_NMF_Series_1__Fabric_Dome_Tweeter_meta.yml driver_type=tweeter
+[07:03:11] META_UPDATE file=Celestion_AN2075_2__Full-Range_Compact_Array_Driver_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=Celestion_AN2775_2-3_4__Full-Range_Compact_Array_Driver_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=Celestion_AN3510_3__Full-Range_Compact_Array_Driver_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=Celestion_CF0820BMB_8__Extended_Excursion_Midbass_Driver_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=Celestion_CF0820M_8__Professional_Midrange_Driver_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=Celestion_CF1025BMB_10__Extended_Excursion_Midbass_Driver_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=Celestion_CF1230BMB_12__Extended_Excursion_Midbass_Driver_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:11] META_UPDATE file=Celestion_FTR12-3070C_12__Professional_Cast_Frame_Speaker_350W_meta.yml driver_type=subwoofer
+[07:03:11] PROBLEM  file=Celestion_FTR12-4080DL_12__Subwoofer_8_Ohm_meta.yml
+         reason=PE HTML: could not parse Frequency Response: '200 to 300Hz'
+[07:03:12] META_UPDATE file=Celestion_FTX0820_8__Coaxial_Full-Range_Professional_Driver_meta.yml driver_type=coaxial
+[07:03:12] META_UPDATE file=Celestion_FTX1025_10__Coaxial_Full-Range_Professional_Driver_meta.yml driver_type=coaxial
+[07:03:12] META_UPDATE file=Celestion_FTX1225_12__Coaxial_Full-Range_Professional_Driver_meta.yml driver_type=coaxial
+[07:03:12] META_UPDATE file=Celestion_K12H-200TC_12__200_Watt_Full-Range_Professional_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Celestion_TF0510_5__Professional_Midrange_Speaker_30W_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Celestion_TF0615_6__100_Watt_Professional_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Celestion_TF0615MR_6__Professional_Midrange_Speaker_50W_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Celestion_TF0818_8__Professional_Speaker_150W_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Celestion_TF1020_10__Professional_Speaker_150W_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Celestion_TF1220_12__Professional_Speaker_150W_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Celestion_TF1225_12__Professional_Speaker_250W_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Celestion_TF1225e_12__Professional_Speaker_300W_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Celestion_TF1525e_15__Professional_Speaker_300W_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Celestion_TF1530_15__Professional_Speaker_400W_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Celestion_TFX0515_5__Coaxial_Full-Range_Professional_Driver_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Celestion_TN1230_12__Professional_Neodymium_Woofer_350W_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Celestion_Truvox_0615_6.5__Midbass_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Celestion_Truvox_0820_8__Midbass_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:12] PROBLEM  file=Celestion_Truvox_1225_12__Midbass_Woofer_8_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:12] META_UPDATE file=Celestion_Truvox_1225_12__Midbass_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Celestion_Truvox_1525_15__Midbass_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Ciare_10A500W-4_Americano_Series_10__Woofer_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Ciare_10A500W-8_Americano_Series_10__Woofer_8_OhmCiare_10A500W-8_Americano_Series_10__Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Ciare_12A500W-4_Americano_Series_12__Woofer_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Ciare_12A500W-8_Americano_Series_12__Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Ciare_6A200M-4_Americano_Series_6.5__Midrange_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:12] META_UPDATE file=Ciare_6A200M-8_Americano_Series_6.5__Midrange_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:12] META_UPDATE file=Ciare_6A200MS-4_Americano_Series_6.5__Sealed-Back_Midrange_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:12] META_UPDATE file=Ciare_6A200MS-8_Americano_Series_6.5__Sealed-Back_Midrange_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:12] META_UPDATE file=Ciare_8A250M-4_Americano_Series_8__Midrange_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:12] META_UPDATE file=Ciare_8A250M-8_Americano_Series_8__Midrange_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:12] META_UPDATE file=Ciare_8A250MS-4_Americano_Series_8__Sealed-Back_Midrange_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:12] META_UPDATE file=Ciare_8A250MS-8_Americano_Series_8__Sealed-Back_Midrange_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:12] META_UPDATE file=Ciare_CM100_4__Midrange_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:12] META_UPDATE file=Ciare_CME160_6.5__Woofer_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Ciare_CME200_8__Woofer_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Ciare_CME250_10__Woofer_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Ciare_CMI160ND_6.5__Neodymium_Woofer_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Ciare_CMI320ND_12__Neodymium_Midbass_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Ciare_CMR160_6.5__Full-Range_Driver_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Ciare_CMR200_8__Full-Range_Driver_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Ciare_CT250_1__Neodymium_Dome_Tweeter_Pair_meta.yml driver_type=tweeter
+[07:03:12] META_UPDATE file=Ciare_CT440_1.25__Neodymium_Horn_Tweeter_meta.yml driver_type=midrange
+[07:03:12] META_UPDATE file=Ciare_CW261SPL_10__High-Output_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Ciare_CXPA-4_4__Neodymium_Coaxial_Driver_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Ciare_HM500_2__Dome_Midrange_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:12] META_UPDATE file=Ciare_HT200_3_4__Dome_Tweeter_8_Ohm_meta.yml driver_type=tweeter
+[07:03:12] META_UPDATE file=Ciare_HW210_8__Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:12] META_UPDATE file=Ciare_HWG130_5__Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Ciare_PCXPA-6_6.5__Neodymium_Coaxial_Driver_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Ciare_PWA10.50_10__Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Ciare_PWA10.64_10__Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Ciare_PWA12.64_12__Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Ciare_PWA12.75_12__Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Ciare_PWA15.75_15__Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Ciare_PWA5.38_5__Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Ciare_PWA6.38_6__Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Ciare_PWA8.50_8__Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=CSS_LD25X_25mm_Silk_Dome_XBL2_Tweeter_meta.yml driver_type=tweeter
+[07:03:12] META_UPDATE file=Dayton_Audio_AMT2-4_Air_Motion_Transformer_Tweeter_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Dayton_Audio_AMT3-4_Hi-Res_Air_Motion_Transformer_Tweeter_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Dayton_Audio_AMTPRO-4_Air_Motion_Transformer_Tweeter_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:12] META_UPDATE file=Dayton_Audio_CE_Series_CE140-30S-8_1__x_5__Extended_Range_Speaker_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:12] META_UPDATE file=Dayton_Audio_CE_Series_CE65W-8_2-1_2__Shielded_Extended_Range_Speaker_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:12] META_UPDATE file=Dayton_Audio_CF120-4_4-1_2__Woven_Carbon_Fiber_Midwoofer_4_Ohms_meta.yml driver_type=mid-bass
+[07:03:12] META_UPDATE file=Dayton_Audio_CF18N-4_3_4__Carbon_Fiber_Dome_Neodymium_Tweeter_4_Ohm_meta.yml driver_type=tweeter
+[07:03:12] META_UPDATE file=Dayton_Audio_CF18N-4MP_3_4__Carbon_Fiber_Dome_Neodymium_Tweeter_Matched_Pair_4_Ohm_meta.yml driver_type=tweeter
+[07:03:12] META_UPDATE file=Dayton_Audio_CF50N-4_2__Carbon_Fiber_Dome_Midrange_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:12] META_UPDATE file=Dayton_Audio_CF50N-4MP_2__Carbon_Fiber_Dome_Midrange_Matched_Pair_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:12] META_UPDATE file=Dayton_Audio_CX120-8_4__Coaxial_Driver_with_3_4__Silk_Dome_Tweeter_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:12] META_UPDATE file=Dayton_Audio_DA115-8_4__Aluminum_Cone_Woofer_meta.yml driver_type=woofer
+[07:03:12] META_UPDATE file=Dayton_Audio_DA135-8_5-1_4__Aluminum_Cone_Woofer_meta.yml driver_type=woofer
+[07:03:12] META_UPDATE file=Dayton_Audio_DC130A-8_5-1_4__Classic_Woofer_Speaker_meta.yml driver_type=woofer
+[07:03:12] META_UPDATE file=Dayton_Audio_DC130AS-8_5-1_4__Classic_Shielded_Woofer_meta.yml driver_type=woofer
+[07:03:12] META_UPDATE file=Dayton_Audio_DC130B-4_5-1_4__Classic_Woofer_Speaker_meta.yml driver_type=woofer
+[07:03:12] META_UPDATE file=Dayton_Audio_DC130B-8_5-1_4__Classic_Woofer_Speaker_meta.yml driver_type=woofer
+[07:03:12] META_UPDATE file=Dayton_Audio_DC130BS-4_5-1_4__Classic_Shielded_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:12] META_UPDATE file=Dayton_Audio_DC130BS-8_5-1_4__Classic_Shielded_Woofer_meta.yml driver_type=woofer
+[07:03:12] META_UPDATE file=Dayton_Audio_DC25T-8_1__Titanium_Dome_Tweeter_meta.yml driver_type=tweeter
+[07:03:12] META_UPDATE file=Dayton_Audio_DC28F-8_1-1_8__Silk_Dome_Tweeter_meta.yml driver_type=tweeter
+[07:03:12] META_UPDATE file=Dayton_Audio_DC28FS-8_1-1_8__Silk_Dome_Shielded_Tweeter_meta.yml driver_type=tweeter
+[07:03:12] META_UPDATE file=Dayton_Audio_DC28FT-8_1-1_8__Silk_Dome_Truncated_Tweeter_meta.yml driver_type=tweeter
+[07:03:13] META_UPDATE file=Dayton_Audio_DMA105-4_4__Dual_Magnet_Aluminum_Cone_Full-Range_Driver_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:13] META_UPDATE file=Dayton_Audio_DMA105-8_4__Dual_Magnet_Aluminum_Cone_Full-Range_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:13] PROBLEM  file=Dayton_Audio_DMA105-PR_4__DMA_Series_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:13] PROBLEM  file=Dayton_Audio_DMA45-PR_1-1_2__DMA_Series_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:13] META_UPDATE file=Dayton_Audio_DMA58-4_2__Dual_Magnet_Aluminum_Cone_Full-Range_Driver_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:13] META_UPDATE file=Dayton_Audio_DMA58-8_2__Dual_Magnet_Aluminum_Cone_Full-Range_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:13] PROBLEM  file=Dayton_Audio_DMA58-PR_2__DMA_Series_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:13] META_UPDATE file=Dayton_Audio_DMA70-4_2-1_2__Dual_Magnet_Aluminum_Cone_Full-Range_Driver_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:13] META_UPDATE file=Dayton_Audio_DMA70-8_2-1_2__Dual_Magnet_Aluminum_Cone_Full-Range_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:13] PROBLEM  file=Dayton_Audio_DMA70-PR_2-1_2__DMA_Series_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:13] META_UPDATE file=Dayton_Audio_DMA80-4_3__Dual_Magnet_Aluminum_Cone_Full-Range_Driver_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:13] META_UPDATE file=Dayton_Audio_DMA80-8_3__Dual_Magnet_Aluminum_Cone_Full-Range_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:13] PROBLEM  file=Dayton_Audio_DMA80-PR_3__DMA_Series_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:13] META_UPDATE file=Dayton_Audio_DS115-8_4__Designer_Series_Woofer_Speaker_meta.yml driver_type=woofer
+[07:03:13] PROBLEM  file=Dayton_Audio_DS115-PR_4__Designer_Series_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:13] META_UPDATE file=Dayton_Audio_DS135-8_5__Designer_Series_Woofer_Speaker_meta.yml driver_type=woofer
+[07:03:13] PROBLEM  file=Dayton_Audio_DS135-PR_5__Designer_Series_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:13] PROBLEM  file=Dayton_Audio_DS175-PR_6-1_2__Designer_Series_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:13] PROBLEM  file=Dayton_Audio_DS215-PR_8__Designer_Series_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:13] PROBLEM  file=Dayton_Audio_DS270-PR_10__Designer_Series_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:13] PROBLEM  file=Dayton_Audio_DS315-PR_12__Designer_Series_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:13] META_UPDATE file=Dayton_Audio_DS90-8_3__Designer_Series_Full-Range_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:13] PROBLEM  file=Dayton_Audio_DS90-PR_3__Designer_Series_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:13] META_UPDATE file=Dayton_Audio_DS90-PR_3__Designer_Series_Passive_Radiator_meta.yml driver_type=pr
+[07:03:13] META_UPDATE file=Dayton_Audio_DSA115-8_4__Designer_Series_Aluminum_Cone_Woofer_meta.yml driver_type=woofer
+[07:03:13] PROBLEM  file=Dayton_Audio_DSA115-PR_4__Designer_Series_Aluminum_Cone_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:13] META_UPDATE file=Dayton_Audio_DSA135-8_5__Designer_Series_Aluminum_Cone_Woofer_meta.yml driver_type=woofer
+[07:03:13] PROBLEM  file=Dayton_Audio_DSA135-PR_5__Designer_Series_Aluminum_Cone_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:13] PROBLEM  file=Dayton_Audio_DSA175-PR_6-1_2__Designer_Series_Aluminum_Cone_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:13] PROBLEM  file=Dayton_Audio_DSA215-PR_8__Designer_Series_Aluminum_Cone_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:13] PROBLEM  file=Dayton_Audio_DSA270-PR_10__Designer_Series_Aluminum_Cone_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:13] PROBLEM  file=Dayton_Audio_DSA315-PR_12__Designer_Series_Aluminum_Cone_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:13] META_UPDATE file=Dayton_Audio_DSA90-8_3__Designer_Series_Aluminum_Cone_Full-Range_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:13] PROBLEM  file=Dayton_Audio_DSA90-PR_3__Designer_Series_Aluminum_Cone_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:13] META_UPDATE file=Dayton_Audio_DSA90-PR_3__Designer_Series_Aluminum_Cone_Passive_Radiator_meta.yml driver_type=pr
+[07:03:13] META_UPDATE file=Dayton_Audio_DW3-1053SC_3__Full_Range_Driver_meta.yml driver_type=mid-bass
+[07:03:13] META_UPDATE file=Dayton_Audio_GF180-4_6-1_2__Glass_Fiber_Cone_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:13] META_UPDATE file=Dayton_Audio_GF180-8_6-1_2__Glass_Fiber_Cone_Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:13] META_UPDATE file=Dayton_Audio_HARB252-8_1__x_5__Dual_Motor_High_Aspect_Ratio_Speaker_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:13] META_UPDATE file=Dayton_Audio_LW150-4_6__Low_Profile_Woofer_4_Ohms_meta.yml driver_type=subwoofer
+[07:03:13] META_UPDATE file=Dayton_Audio_MB1025-8_10__Professional_High_Power_Midbass_Driver_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:13] META_UPDATE file=Dayton_Audio_MB620-8_6-1_2__Professional_High_Power_Midbass_Driver_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:13] META_UPDATE file=Dayton_Audio_MB820-8_8__Professional_High_Power_Midbass_Driver_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:13] META_UPDATE file=Dayton_Audio_MX5-22_5-1_4__Max-X_High_Excursion_DVC_Subwoofer_Driver_2_Ohms_Per_Coil_meta.yml driver_type=subwoofer
+[07:03:13] META_UPDATE file=Dayton_Audio_ND105-4_4__Aluminum_Cone_Midbass_Neo_Driver_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:13] META_UPDATE file=Dayton_Audio_ND105-8_4__Aluminum_Cone_Midbass_Neo_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:13] PROBLEM  file=Dayton_Audio_ND105-PR_4__Aluminum_Cone_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:13] META_UPDATE file=Dayton_Audio_ND105-PR_4__Aluminum_Cone_Passive_Radiator_meta.yml driver_type=pr
+[07:03:13] META_UPDATE file=Dayton_Audio_ND13FA-4_1_2__Soft_Dome_Neodymium_Tweeter_4_Ohm_meta.yml driver_type=tweeter
+[07:03:13] META_UPDATE file=Dayton_Audio_ND140-4_5-1_4__Aluminum_Cone_Midbass_Neo_Driver_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:13] META_UPDATE file=Dayton_Audio_ND140-8_5-1_4__Aluminum_Cone_Midbass_Neo_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:13] PROBLEM  file=Dayton_Audio_ND140-PR_5-1_4__Aluminum_Cone_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:13] META_UPDATE file=Dayton_Audio_ND140-PR_5-1_4__Aluminum_Cone_Passive_Radiator_meta.yml driver_type=pr
+[07:03:13] META_UPDATE file=Dayton_Audio_ND16FA-4_5_8__Soft_Dome_Neodymium_Tweeter_4_Ohm_meta.yml driver_type=tweeter
+[07:03:13] META_UPDATE file=Dayton_Audio_ND16FA-6_5_8__Soft_Dome_Neodymium_Tweeter_meta.yml driver_type=tweeter
+[07:03:13] META_UPDATE file=Dayton_Audio_ND20FA-6_3_4__Soft_Dome_Neodymium_Tweeter_meta.yml driver_type=tweeter
+[07:03:13] META_UPDATE file=Dayton_Audio_ND20FB-4_Rear-Mount_3_4__Soft_Dome_Neodymium_Tweeter_meta.yml driver_type=tweeter
+[07:03:13] META_UPDATE file=Dayton_Audio_ND25FA-4_1__Soft_Dome_Neodymium_Tweeter_meta.yml driver_type=tweeter
+[07:03:13] META_UPDATE file=Dayton_Audio_ND25FN-4_1__Silk_Dome_Neodymium_Tweeter_Element_4_Ohm_meta.yml driver_type=tweeter
+[07:03:13] META_UPDATE file=Dayton_Audio_ND25FW-4_1__Soft_Dome_Neodymium_Tweeter_with_Waveguide_4_Ohm_meta.yml driver_type=tweeter
+[07:03:13] META_UPDATE file=Dayton_Audio_ND25TA-4_1__Titanium_Dome_Neodymium_Tweeter_with_Grill_meta.yml driver_type=tweeter
+[07:03:13] META_UPDATE file=Dayton_Audio_ND28F-6_1-1_8__Soft_Dome_Neodymium_Tweeter_meta.yml driver_type=tweeter
+[07:03:13] PROBLEM  file=Dayton_Audio_ND64-16_2-1_2__Aluminum_Magnesium_Cone_Full-Range_Neo_Driver_16_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:13] META_UPDATE file=Dayton_Audio_ND64-16_2-1_2__Aluminum_Magnesium_Cone_Full-Range_Neo_Driver_16_Ohm_meta.yml driver_type=mid-bass
+[07:03:13] META_UPDATE file=Dayton_Audio_ND64-4_2-1_2__Aluminum_Magnesium_Cone_Full-Range_Neo_Driver_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:13] META_UPDATE file=Dayton_Audio_ND65-4_2-1_2__Aluminum_Cone_Full-Range_Neo_Driver_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:13] META_UPDATE file=Dayton_Audio_ND65-8_2-1_2__Aluminum_Cone_Full-Range_Neo_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:13] PROBLEM  file=Dayton_Audio_ND65-PR_2-1_2__Aluminum_Cone_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:13] META_UPDATE file=Dayton_Audio_ND65-PR_2-1_2__Aluminum_Cone_Passive_Radiator_meta.yml driver_type=pr
+[07:03:13] META_UPDATE file=Dayton_Audio_ND90-4_3-1_2__Aluminum_Cone_Full-Range_Neo_Driver_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:13] META_UPDATE file=Dayton_Audio_ND90-8_3-1_2__Aluminum_Cone_Full-Range_Neo_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:13] PROBLEM  file=Dayton_Audio_ND90-PR_3-1_2__Aluminum_Cone_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:13] META_UPDATE file=Dayton_Audio_ND90-PR_3-1_2__Aluminum_Cone_Passive_Radiator_meta.yml driver_type=pr
+[07:03:13] META_UPDATE file=Dayton_Audio_ND91-4_3-1_2__Aluminum_Cone_Full-Range_Neo_Driver_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:13] META_UPDATE file=Dayton_Audio_ND91-8_3-1_2__Aluminum_Cone_Full-Range_Neo_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:13] META_UPDATE file=Dayton_Audio_PA130-8_5__Full_Range_PA_Driver_meta.yml driver_type=subwoofer
+[07:03:13] META_UPDATE file=Dayton_Audio_PA165-8_6__PA_Driver_Speaker_meta.yml driver_type=subwoofer
+[07:03:13] META_UPDATE file=Dayton_Audio_PA200-8_8__Pro_Woofer_Speaker_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:13] META_UPDATE file=Dayton_Audio_PA255-8_10__Pro_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:13] META_UPDATE file=Dayton_Audio_PC105-4_4__Full-Range_Poly_Cone_Driver_meta.yml driver_type=mid-bass
+[07:03:13] META_UPDATE file=Dayton_Audio_PC105-8_4__Full-Range_Poly_Cone_Driver_meta.yml driver_type=mid-bass
+[07:03:13] META_UPDATE file=Dayton_Audio_PC68-4_2-1_2__Full-Range_Poly_Cone_Driver_meta.yml driver_type=mid-bass
+[07:03:13] META_UPDATE file=Dayton_Audio_PC68-8_2-1_2__Full-Range_Poly_Cone_Driver_meta.yml driver_type=mid-bass
+[07:03:13] META_UPDATE file=Dayton_Audio_PC83-4_3__Full-Range_Poly_Cone_Driver_meta.yml driver_type=mid-bass
+[07:03:13] META_UPDATE file=Dayton_Audio_PC83-8_3__Full-Range_Poly_Cone_Driver_meta.yml driver_type=mid-bass
+[07:03:13] META_UPDATE file=Dayton_Audio_PCS115-4_4__Poly_Cone_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:13] META_UPDATE file=Dayton_Audio_PCS115-8_4__Poly_Cone_Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:13] META_UPDATE file=Dayton_Audio_PCS175-4_6-1_2__Poly_Cone_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:13] META_UPDATE file=Dayton_Audio_PCS175-8_6-1_2__Poly_Cone_Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:13] META_UPDATE file=Dayton_Audio_PCX12-8_12__Pro_Coaxial_Woofer_8_Ohm_meta.yml driver_type=coaxial
+[07:03:13] META_UPDATE file=Dayton_Audio_PM220-8_8__Wideband_Midbass_Neo_Driver_meta.yml driver_type=mid-bass
+[07:03:13] META_UPDATE file=Dayton_Audio_Pro_10_in._8_Ohm_Neodymium_Midbass_Woofer_Odeum_10N_meta.yml driver_type=subwoofer
+[07:03:13] META_UPDATE file=Dayton_Audio_Pro_15_in._8_Ohm_Neodymium_Midbass_Woofer_Odeum_15N_meta.yml driver_type=subwoofer
+[07:03:13] META_UPDATE file=Dayton_Audio_Pro_6.5_in._8_Ohm_Neodymium_Midbass_Woofer_Odeum_6.5N_meta.yml driver_type=subwoofer
+[07:03:13] META_UPDATE file=Dayton_Audio_Pro_8_in._8_Ohm_Neodymium_Midbass_Woofer_Odeum_8N_meta.yml driver_type=subwoofer
+[07:03:13] META_UPDATE file=Dayton_Audio_PS180-8_6-1_2__Point_Source_Full-Range_Neo_Driver_meta.yml driver_type=mid-bass
+[07:03:13] META_UPDATE file=Dayton_Audio_PS220-8_8__Point_Source_Full-Range_Neo_Driver_meta.yml driver_type=mid-bass
+[07:03:13] META_UPDATE file=Dayton_Audio_PS95-8_3-1_2__Point_Source_Full_Range_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:13] META_UPDATE file=Dayton_Audio_PT2C-8_Planar_Tweeter_meta.yml driver_type=subwoofer
+[07:03:13] META_UPDATE file=Dayton_Audio_PTMini-6_Planar_Tweeter_6_Ohm_meta.yml driver_type=tweeter
+[07:03:13] META_UPDATE file=Dayton_Audio_RC180-55_2__x_7__Res-Core__Neodymium_Woofer_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:13] META_UPDATE file=Dayton_Audio_RS100-4_4__Reference_Full-Range_Driver_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:13] META_UPDATE file=Dayton_Audio_RS100-8_4__Reference_Full-Range_Driver_meta.yml driver_type=mid-bass
+[07:03:13] META_UPDATE file=Dayton_Audio_RS100P-4_4__Reference_Paper_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:13] META_UPDATE file=Dayton_Audio_RS100P-8_4__Reference_Paper_Midwoofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:13] META_UPDATE file=Dayton_Audio_RS125-4_5__Reference_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:13] META_UPDATE file=Dayton_Audio_RS125-8_5__Reference_Woofer_meta.yml driver_type=woofer
+[07:03:13] META_UPDATE file=Dayton_Audio_RS125P-4_5__Reference_Paper_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:13] META_UPDATE file=Dayton_Audio_RS125P-8_5__Reference_Paper_Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:13] META_UPDATE file=Dayton_Audio_RS150-4_6__Reference_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:13] META_UPDATE file=Dayton_Audio_RS150-8_6__Reference_Woofer_meta.yml driver_type=woofer
+[07:03:13] META_UPDATE file=Dayton_Audio_RS150P-4A_6__Reference_Paper_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:13] META_UPDATE file=Dayton_Audio_RS150P-8A_6__Reference_Paper_Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:13] META_UPDATE file=Dayton_Audio_RS180P-8_7__Reference_Paper_Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:13] META_UPDATE file=Dayton_Audio_RS52AN-8_2__Reference_Aluminum_Dome_Midrange_meta.yml driver_type=mid-bass
+[07:03:13] META_UPDATE file=Dayton_Audio_RS52FN-8_2__Reference_Fabric_Dome_Midrange_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:13] META_UPDATE file=Dayton_Audio_RS75-8_3__Reference_Full-Range_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:13] PROBLEM  file=Dayton_Audio_RS75T-8_3__Reference_Full-Range_Driver_Truncated_Frame_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:13] PROBLEM  file=Dayton_Audio_RSS265-PR_10__Reference_Series_Aluminum_Cone_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:13] PROBLEM  file=Dayton_Audio_RSS315-PR_12__Reference_Series_Aluminum_Cone_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:13] PROBLEM  file=Dayton_Audio_RSS390-PR_15__Reference_Series_Aluminum_Cone_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:13] PROBLEM  file=Dayton_Audio_RSS460-PR_18__Reference_Series_Aluminum_Cone_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:13] META_UPDATE file=Dayton_Audio_RST28A-4_1-1_8__Reference_Series_Aluminum_Dome_Tweeter_4_Ohm_meta.yml driver_type=tweeter
+[07:03:13] META_UPDATE file=Dayton_Audio_RST28A-4_1-1_8__Reference_Series_Aluminum_Dome_Tweeter_with_Truncated_Faceplate_meta.yml driver_type=tweeter
+[07:03:13] META_UPDATE file=Dayton_Audio_RST28F-4_1-1_8__Reference_Series_Fabric_Dome_Tweeter_4_Ohm_meta.yml driver_type=tweeter
+[07:03:13] META_UPDATE file=Dayton_Audio_RST28F-4_1-1_8__Reference_Series_Fabric_Dome_Tweeter_with_Truncated_Faceplate_meta.yml driver_type=tweeter
+[07:03:14] META_UPDATE file=Dayton_Audio_SIG120-4_4__Signature_Series_Extended_Range_40W_Driver_4_Ohm_meta.yml driver_type=woofer
+[07:03:14] META_UPDATE file=Dayton_Audio_SIG225-4_8__Signature_Series_Woofer_100W_Driver_4_Ohm_meta.yml driver_type=woofer
+[07:03:14] PROBLEM  file=Dayton_Audio_SS10-PR_10__Signature_Series_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:14] PROBLEM  file=Dayton_Audio_SS12-PR_12__Signature_Series_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:14] PROBLEM  file=Dayton_Audio_SS15-PR_15__Signature_Series_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:14] PROBLEM  file=Dayton_Audio_SS18-PR_18__Signature_Series_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:14] PROBLEM  file=Dayton_Audio_SS8-PR_8__Signature_Series_Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:14] META_UPDATE file=Dayton_Audio_TCP115-4_4__Treated_Paper_Midbass_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:14] META_UPDATE file=Dayton_Audio_TCP115-8_4__Treated_Paper_Cone_Midbass_Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:14] META_UPDATE file=Dayton_Audio_TD20F-4_3_4__Soft_Dome_Neodymium_Tweeter_4_Ohm_meta.yml driver_type=tweeter
+[07:03:14] META_UPDATE file=Dayton_Audio_TD24F-4_1__Soft_Dome_Neodymium_Tweeter_4_Ohm_meta.yml driver_type=tweeter
+[07:03:14] META_UPDATE file=Dayton_Audio_TD25F-4_1__Soft_Dome_Tweeter_4_Ohm_meta.yml driver_type=tweeter
+[07:03:14] META_UPDATE file=Dayton_Audio_UMII8-22_Ultimax_II_8__DVC_Subwoofer_2_Ohm_Per_Coil_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=DS18_PRO-M6.2NEO_6-1_2__Professional_Water_Resistant_Neodymium_Full-Range_Speaker_2_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=DS18_PRO-M8.2NEO_8__Professional_Water_Resistant_Neodymium_Full-Range_Speaker_2_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=DS18_PRO-SM8.2_8__Professional_Water_Resistant_Slim_Midrange_Speaker_2_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=Eminence_Speaker_Eminence_Alpha_3-32_3__Full-Range_Speaker_32_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=Eminence_Speaker_Eminence_Beta-6A_6-1_2__High_Power_Midbass_Midrange_Woofer_Speaker_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=Eminence_Speaker_Eminence_Deltalite_II_2510_Neo_10__Speaker_Driver_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=Eminence_Speaker_Eminence_Deltalite_II_2512_Neo_12__Speaker_Driver_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=Eminence_Speaker_Eminence_Kappalite_3012HO_Neo_12__Speaker_Driver_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=Eminence_Speaker_Eminence_Kappalite_3015_Neo_15__Speaker_Driver_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=Eminence_Speaker_Eminence_Kappalite_3015LF_Neo_15__Speaker_Driver_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=Eminence_Speaker_Eminence_LA6-CBMR_6-1_2__Line_Array_Series_Sealed_Back_Midrange_Speaker_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=Eminence_Speaker_Eminence_Omega_Pro_12-2KW-8_12__Professional_Series_Speaker_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=EPIQUE_by_Dayton_Audio_Epique_High_Resolution_Ceramic_Dome_Tweeter_30mm_4_Ohm_EC30-4_meta.yml driver_type=tweeter
+[07:03:14] META_UPDATE file=EPIQUE_by_Dayton_Audio_Epique_High_Resolution_Ceramic_Dome_Tweeter_30mm_4_Ohm_Matched_Pair_meta.yml driver_type=tweeter
+[07:03:14] META_UPDATE file=Factory_Buyouts_Eminence_6-1_2__Line_Array_Series_Sealed_Back_Midrange_Speaker_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=Factory_Buyouts_Tang_Band_W3-2052SC_3__RBM_Neodymium_Subwoofer_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_10FE200_10__Professional_Woofer_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_10FE200_10__Professional_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_10FE300_10__Professional_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_10FE400_10__Professional_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_10HX240_10__Neodymium_Professional_Coaxial_Driver_8_Ohm_meta.yml driver_type=coaxial
+[07:03:14] META_UPDATE file=FaitalPRO_10PR300_10__Neodymium_Professional_Woofer_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_10PR300_10__Neodymium_Professional_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_10PR320-16_10__Professional_Neodymium_Woofer_16_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_10RS350-4_10__Professional_Subwoofer_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_10RS350-8_10__Professional_Subwoofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_12FE300_12__Professional_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_12FE400_12__Professional_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_12FH520_12__Neodymium_Professional_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_12HX500_12__Neodymium_Professional_Coaxial_Driver_8_Ohm_meta.yml driver_type=coaxial
+[07:03:14] META_UPDATE file=FaitalPRO_12PR300_12__Neodymium_Professional_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_12PR310_12__Professional_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_12PR320_12__Professional_Neodymium_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_12RS1066_12__Neodymium_Professional_Subwoofer_16_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_12RS1066_12__Neodymium_Professional_Subwoofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_15HP1010_15__Professional_Subwoofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_15HX500_15__Neodymium_Professional_Coaxial_Driver_8_Ohm_meta.yml driver_type=coaxial
+[07:03:14] META_UPDATE file=FaitalPRO_3FE22_3__Neodymium_Professional_Full-Range_Woofer_16_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_3FE22_3__Neodymium_Professional_Full-Range_Woofer_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_3FE22_3__Neodymium_Professional_Full-Range_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_3FE25_3__Professional_Full-Range_Woofer_16_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_3FE25_3__Professional_Full-Range_Woofer_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_3FE25_3__Professional_Full-Range_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_4FE32_4__Neodymium_Professional_Full-Range_Woofer_16_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_4FE32_4__Neodymium_Professional_Full-Range_Woofer_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_4FE32_4__Neodymium_Professional_Full-Range_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_4FE35_4__Professional_Full-Range_Woofer_16_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_4FE35_4__Professional_Full-Range_Woofer_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_4FE35_4__Professional_Full-Range_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_4FE42_4__Neodymium_Full-Range_Speaker_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:14] META_UPDATE file=FaitalPRO_4FE42_4__Neodymium_Full-Range_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:14] META_UPDATE file=FaitalPRO_4FE44_4__Neodymium_Professional_Midrange_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_5FE100_5__Professional_Midbass_Midrange_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_5FE120_5__Professional_Midbass_Midrange_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_5FE125_5__Professional_Midrange_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_5HX140_5__Neodymium_Professional_Coaxial_Driver_8_Ohm_meta.yml driver_type=coaxial
+[07:03:14] META_UPDATE file=FaitalPRO_5PR120_5__Professional_Neodymium_Midrange_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_6FE100_6__Professional_Midrange_Midbass_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_6FE200_6__Professional_Midrange_Speaker_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_6FE200_6__Professional_Midrange_Speaker_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_6FE300_6__Professional_Midrange_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_6FE400_6__Professional_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_6HX150_6__Neodymium_Coaxial_Driver_8_Ohm_meta.yml driver_type=coaxial
+[07:03:14] META_UPDATE file=FaitalPRO_6PR160_6__Professional_Neodymium_Midbass_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_6RS140_6__Professional_Neodymium_Midbass_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_8FE200_8__Professional_Midbass_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_8FE200_8__Professional_Midbass_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_8FE300_8__Professional_Midbass_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_8FE400_8__Professional_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_8HX150_8__Ferrite_and_Neodymium_Professional_Coaxial_Driver_8_Ohm_meta.yml driver_type=coaxial
+[07:03:14] META_UPDATE file=FaitalPRO_8HX240_8__Neodymium_Professional_Coaxial_Driver_8_Ohm_meta.yml driver_type=coaxial
+[07:03:14] META_UPDATE file=FaitalPRO_8PR200_8__Neodymium_Professional_Midbass_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_8PR320_8__Neodymium_Professional_Midbass_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_8RS340_8__Neodymium_Professional_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_M5N8-80_5__Neodymium_Professional_Midrange_12_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_W8N8-150_8__Neodymium_Professional_Woofer_16_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=FaitalPRO_W8N8-150_8__Neodymium_Professional_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=Goldwood_GM-35_5__Cone_Midrange_meta.yml driver_type=mid-bass
+[07:03:14] META_UPDATE file=Goldwood_GM-65_4_Sealed_Back_5-1_4__Midrange_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:14] META_UPDATE file=Goldwood_GM-65_8_Sealed_Back_5-1_4__Midrange_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:14] META_UPDATE file=Goldwood_GM-85_4_Heavy_Duty_5__Sealed_Back_Midrange_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:14] META_UPDATE file=Goldwood_GM-85_8_Heavy-Duty_5-1_4__Sealed_Back_Midrange_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:14] META_UPDATE file=Goldwood_GT-25_3__Cone_Tweeter_meta.yml driver_type=tweeter
+[07:03:14] META_UPDATE file=Goldwood_GT-302_1_2__Mylar_Dome_Tweeter_meta.yml driver_type=tweeter
+[07:03:14] META_UPDATE file=Goldwood_GT-302_S_1_2__Mylar_Dome_Tweeter_Shielded_meta.yml driver_type=tweeter
+[07:03:14] META_UPDATE file=Goldwood_GT-322_1__Titanium_Dome_Tweeter_3-3_4__Square_meta.yml driver_type=tweeter
+[07:03:14] META_UPDATE file=Goldwood_GT-324_1__Titanium_Dome_Tweeter_3-7_8__Round_meta.yml driver_type=tweeter
+[07:03:14] META_UPDATE file=Goldwood_GT-336_1__Titanium_Dome_Tweeter_4-1_2__x_3-1_2_meta.yml driver_type=tweeter
+[07:03:14] META_UPDATE file=Goldwood_GT-510_1__Soft_Dome_Tweeter_meta.yml driver_type=tweeter
+[07:03:14] META_UPDATE file=Goldwood_GT-520_1__Soft_Dome_Horn_Tweeter_meta.yml driver_type=tweeter
+[07:03:14] META_UPDATE file=Goldwood_GT-525_1__Soft_Dome_Tweeter_meta.yml driver_type=tweeter
+[07:03:14] META_UPDATE file=Goldwood_GW-1038_PA_10__PA___Musical_Instrument_Speaker_meta.yml driver_type=subwoofer
+[07:03:14] META_UPDATE file=Goldwood_GW-10PC-4_10__Heavy_Duty_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:14] META_UPDATE file=Goldwood_GW-10PC-8_10__Heavy_Duty_Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:14] META_UPDATE file=Goldwood_GW-204_4S_4__Shielded_Poly_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:14] META_UPDATE file=Goldwood_GW-204_8S_4__Shielded_Poly_Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:14] META_UPDATE file=Goldwood_GW-205_4S_5-1_4__Shielded_Poly_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:14] META_UPDATE file=Goldwood_GW-205_8S_5-1_4__Shielded_Poly_Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:14] META_UPDATE file=Goldwood_GW-206_4_6-1_2__OEM_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:14] META_UPDATE file=Goldwood_GW-206_8_6-1_2__OEM_Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:14] META_UPDATE file=Goldwood_GW-208_4_8__OEM_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=Goldwood_GW-208_8_8__OEM_Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=Goldwood_GW-210_4_10__OEM_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=Goldwood_GW-210_8_10__OEM_Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=Goldwood_GW-4028_S_4__Woofer_Shielded_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=Goldwood_GW-406D_6-1_2__Poly_DVC_Subwoofer_Shielded_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=Goldwood_GW-5028_S_5-1_4__Shielded_Woofer_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=Goldwood_GW-6024_6-1_2__Butyl_Surround_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=Goldwood_GW-6028_6-1_2__Butyl_Surround_Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=Goldwood_GW-6PC-4_6-1_2__Heavy_Duty_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=Goldwood_GW-8003_8_8__Full_Range_Driver_w_Whizzer_meta.yml driver_type=mid-bass
+[07:03:15] META_UPDATE file=Goldwood_GW-8004_8__Coaxial_Speaker_meta.yml driver_type=coaxial
+[07:03:15] META_UPDATE file=Goldwood_GW-8024_8__Butyl_Surround_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=Goldwood_GW-8PC-4_8__Heavy_Duty_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=Goldwood_GW-8PC-8_8__Delmar_Series_Heavy_Duty_Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=Goldwood_GW-S525_4_5-1_4__Poly_Cone_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=Goldwood_GW-S525_8_5-1_4__Poly_Cone_Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=Goldwood_GW-S650_4_6-1_2__Poly_Cone_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=Goldwood_GW-S650_8_6-1_2__Poly_Cone_Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=GRS_10PF-8_10__Paper_Cone_Foam_Surround_Woofer_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=GRS_10PR-8_10__Poly_Cone_Rubber_Surround_Woofer_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=GRS_10PT-8_10__Paper_Cone_Professional_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=GRS_10S-8_4__Full-Range_Driver_8_Ohm_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=GRS_10SW-4_10__Poly_Cone_Subwoofer_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=GRS_1TD1-8_1__Dome_Tweeter_8_Ohm_meta.yml driver_type=tweeter
+[07:03:15] META_UPDATE file=GRS_1TD2-8_1__Designer_Dome_Tweeter_8_Ohm_meta.yml driver_type=tweeter
+[07:03:15] META_UPDATE file=GRS_1TM-4_1__Mylar_Tweeter_4_Ohm_meta.yml driver_type=tweeter
+[07:03:15] META_UPDATE file=GRS_3FR-4_Full-Range_3__Speaker_Driver_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:15] META_UPDATE file=GRS_4__Woofer_Surface_Mount_Poly_Cone_4_Ohm_4SMP-4_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=GRS_4__Woofer_Surface_Mount_Poly_Cone_8_Ohm_4SMP-8_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=GRS_4FR-8_Full-Range_4-1_2__Speaker_Pioneer_Type_A11EC80-02F_meta.yml driver_type=mid-bass
+[07:03:15] META_UPDATE file=GRS_4PF-8_4__Paper_Cone_Foam_Surround_Woofer_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=GRS_5-1_4__Woofer_Surface_Mount_Poly_Cone_8_Ohm_5SMP-8_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=GRS_5PF-8_5-1_4__Paper_Cone_Foam_Surround_Woofer_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=GRS_5SBM-8_5__Sealed_Back_Midrange_meta.yml driver_type=mid-bass
+[07:03:15] META_UPDATE file=GRS_5SBM1-8_5-1_4__Sealed_Back_Midrange_with_1__Voice_Coil_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:15] META_UPDATE file=GRS_6-1_2__Woofer_Surface_Mount_Poly_Cone_4_Ohm_6SMP-4_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=GRS_6-1_2__Woofer_Surface_Mount_Poly_Cone_8_Ohm_6SMP-8_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=GRS_6LPSW-4_6-1_2__Low_Profile_Subwoofer_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=GRS_6PF-8_6-1_2__Paper_Cone_Foam_Surround_Woofer_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=GRS_6PR-8_6-1_2__Poly_Cone_Rubber_Surround_Woofer_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=GRS_6PT-8_6-1_2__Paper_Cone_Professional_Midbass_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=GRS_8__Woofer_Surface_Mount_Poly_Cone_8_Ohm_8SMP-8_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=GRS_8FR-8_Full-Range_8__Replacement_Speaker_Pioneer_Type_B20FU20-51FW_meta.yml driver_type=mid-bass
+[07:03:15] META_UPDATE file=GRS_8PF-8_8__Paper_Cone_Foam_Surround_Woofer_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=GRS_8PR-8_8__Poly_Cone_Rubber_Surround_Woofer_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=GRS_8PT-8_8__Paper_Cone_Professional_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=GRS_8SW-4_8__Poly_Cone_Subwoofer_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=HiVi_B2S_2__Shielded_Aluminum_Alloy_Full-Range_Driver_meta.yml driver_type=mid-bass
+[07:03:15] META_UPDATE file=HiVi_B3N_3__Aluminum_Alloy_Full-Range_Driver_Round_Frame_meta.yml driver_type=mid-bass
+[07:03:15] META_UPDATE file=HiVi_B3S_3__Shielded_Aluminum_Alloy_Full-Range_Driver_Square_Frame_meta.yml driver_type=mid-bass
+[07:03:15] META_UPDATE file=HiVi_B4N_4__Aluminum_Round_Frame_Midbass_meta.yml driver_type=mid-bass
+[07:03:15] PROBLEM  file=HiVi_C6.5_6-1_2__Reinforced_Paper_Cone_Woofer_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:15] META_UPDATE file=HiVi_C6.5_6-1_2__Reinforced_Paper_Cone_Woofer_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=HiVi_D5.4-II_5__Poly_Cone_Neodymium_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=HiVi_D6.8B_6__Poly_Bass_Midrange_Shielded_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=HiVi_DM-7500_3__Soft_Dome_Midrange_Driver_6_Ohm_meta.yml driver_type=mid-bass
+[07:03:15] META_UPDATE file=HiVi_DMB-A_2__Fabric_Dome_Midrange_meta.yml driver_type=mid-bass
+[07:03:15] META_UPDATE file=HiVi_DMN-A_Soft_Dome_Fabric_Midrange_meta.yml driver_type=mid-bass
+[07:03:15] PROBLEM  file=HiVi_E6.5_6-1_2__Treated_Paper_Cone_Woofer_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:15] PROBLEM  file=HiVi_E8_8__Treated_Paper_Cone_Woofer_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:15] META_UPDATE file=HiVi_F5_5__Bass_Midrange_meta.yml driver_type=mid-bass
+[07:03:15] META_UPDATE file=HiVi_F6_6-1_2__Bass_Midrange_meta.yml driver_type=woofer
+[07:03:15] PROBLEM  file=HiVi_HIVI_C8_8__Reinforced_Paper_Cone_Woofer_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:15] META_UPDATE file=HiVi_M3N-B_3__Damped_Aluminum_Magnesium_Cone_Full-Range_Driver_meta.yml driver_type=mid-bass
+[07:03:15] META_UPDATE file=HiVi_M3N_3__Aluminum___Magnesium_Midbass_meta.yml driver_type=mid-bass
+[07:03:15] META_UPDATE file=HiVi_M4N-B_4__Damped_Aluminum_Magnesium_Cone_Full-Range_Driver_meta.yml driver_type=mid-bass
+[07:03:15] META_UPDATE file=HiVi_M4N_4__Aluminum___Magnesium_Midbass_meta.yml driver_type=mid-bass
+[07:03:15] META_UPDATE file=HiVi_M5N-B_5__Damped_Aluminum_Magnesium_Cone_Woofer_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=HiVi_M5N_5__Aluminum___Magnesium_Midbass_meta.yml driver_type=mid-bass
+[07:03:15] META_UPDATE file=HiVi_M6N-B_6__Damped_Aluminum_Magnesium_Cone_Woofer_meta.yml driver_type=woofer
+[07:03:15] META_UPDATE file=HiVi_M6N_6__Aluminum_Magnesium_Midbass_meta.yml driver_type=mid-bass
+[07:03:15] META_UPDATE file=HiVi_Q2R_1-1_8__Textile_Dome_Tweeter_meta.yml driver_type=tweeter
+[07:03:15] META_UPDATE file=HiVi_SD1.1-A_1__Textile_Dome_Tweeter_meta.yml driver_type=tweeter
+[07:03:15] META_UPDATE file=HiVi_T20-8_3_4___20mm__Textile_Dome_Tweeter_8_Ohm_meta.yml driver_type=tweeter
+[07:03:15] META_UPDATE file=HiVi_TN25_Fabric_Dome_Tweeter_meta.yml driver_type=tweeter
+[07:03:15] META_UPDATE file=HiVi_TN28-B_1__Top_Mount_Soft_Dome_Tweeter_with_Mounting_Plate_meta.yml driver_type=tweeter
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_CSF051.21_5__Coaxial_Woofer_meta.yml driver_type=coaxial
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_CSF061.21_6.5__Coaxial_Woofer_meta.yml driver_type=coaxial
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_CSF082.00K_8__Coaxial_Woofer_meta.yml driver_type=coaxial
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_FSF030.70_3__Ferrite_Full-Range_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_FSF041.00_4__Ferrite_Full-Range_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_FSN020.72_2__Neodymium_Full-Range_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_FSN021.00_2__Neodymium_Full-Range_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_FSN030.71_3__Neodymium_Full-Range_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_FSN030.72_3__Neodymium_Full-Range_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_FSN041.00_4__Neodymium_Full-Range_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_MAF061.50_6-1_2__Professional_Midrange_Driver_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_MAF082.00_8__Professional_Midrange_Driver_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_MAN061.80_6-1_2__Neodymium_Midrange_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:15] PROBLEM  file=Lavoce_LaVoce_SAF184.02_18__Subwoofer_8_Ohm_meta.yml
+         reason=PE HTML: could not parse Frequency Response: '40 to, 1,000Hz'
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_SSF082.00L_8__Paper_Cone_Subwoofer_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_SSF102.50L_10__Paper_Cone_Subwoofer_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_SSF122.50L_12__Paper_Cone_Subwoofer_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_TN100.70_1__Soft_Dome_Neodymium_Tweeter_8_Ohm_meta.yml driver_type=tweeter
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_TN131.00_1.3__Soft_Dome_Neodymium_Tweeter_8_Ohm_meta.yml driver_type=tweeter
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_WAF061.80_6-1_2__Ferrite_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_WAF082.00_8__Ferrite_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_WAF102.50_10__Ferrite_Woofer_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_WAF123.01_12__Ferrite_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_WAF124.01_12__Woofer_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_WAF153.00_15__Ferrite_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_WAF154.02_15__Subwoofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_WAN082.50_8__Neodymium_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_WAN102.50_10__Neodymium_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_WAN123.00_12__Neodymium_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_WAN153.00_15__Neodymium_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_WAN153.01_15__Professional_Neodymium_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_WAN154.01_15__Neodymium_Subwoofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:15] META_UPDATE file=Lavoce_LaVoce_WSF030.70_3__Woofer_meta.yml driver_type=subwoofer
+[07:03:16] META_UPDATE file=Lavoce_LaVoce_WSF041.00_4__Ferrite_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:16] META_UPDATE file=Lavoce_LaVoce_WSF051.02_5__Woofer_meta.yml driver_type=subwoofer
+[07:03:16] META_UPDATE file=Lavoce_LaVoce_WSF081.82_8__Woofer_meta.yml driver_type=subwoofer
+[07:03:16] META_UPDATE file=Lavoce_LaVoce_WSF102.00_10__Woofer_meta.yml driver_type=subwoofer
+[07:03:16] META_UPDATE file=Lavoce_LaVoce_WSN041.00_4__Neodymium_Woofer_meta.yml driver_type=subwoofer
+[07:03:16] META_UPDATE file=Morel_CAM_558_2-1_8__Soft_Dome_Midrange_meta.yml driver_type=mid-bass
+[07:03:16] META_UPDATE file=Morel_CAT_298_1-1_8__Soft_Dome_Tweeter_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Morel_CAT_308_1-1_8__Soft_Dome_Tweeter_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Morel_CAT_378_1-1_8__Soft_Dome_Horn_Tweeter_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Morel_CAT_408_1-1_8__Compact_Soft_Dome_Tweeter_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Morel_CAW_538_5__Cast_Frame_Woofer_meta.yml driver_type=woofer
+[07:03:16] META_UPDATE file=Morel_CAW_638_6__Cast_Frame_Woofer_meta.yml driver_type=woofer
+[07:03:16] META_UPDATE file=Morel_EM_1308_2-1_8__Dome_Midrange_meta.yml driver_type=mid-bass
+[07:03:16] META_UPDATE file=Morel_ET_338-104_1-1_8__Soft_Dome_Tweeter_Matched_Pair_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Morel_ET_338_1-1_8__Soft_Dome_Tweeter_Matched_Pair_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Morel_ET_448_1-1_8__Soft_Dome_Tweeter_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Morel_Integra_424_Hybrid_Series_4__Point_Source_Coaxial_Full-Range_meta.yml driver_type=mid-bass
+[07:03:16] META_UPDATE file=Morel_Integra_524_Hybrid_Series_5__Point_Source_Coaxial_Full-Range_meta.yml driver_type=mid-bass
+[07:03:16] META_UPDATE file=Morel_Integra_624_Hybrid_Series_6__Point_Source_Coaxial_Full-Range_meta.yml driver_type=mid-bass
+[07:03:16] META_UPDATE file=Morel_MDM_55_2-1_8__Soft_Dome_Midrange_meta.yml driver_type=mid-bass
+[07:03:16] META_UPDATE file=Morel_MDT_12_1-1_8__Neodymium_Tweeter_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Morel_MDT_22T_1-1_8__Soft_Dome_Neodymium_Tweeter_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Morel_MDT_29_1-1_8__Soft_Dome_Tweeter_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Morel_MDT_39_1-1_8__Compact_Dome_Tweeter_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Morel_MSW_424D_Shallow_Classic_Series_4__DPC_Cone_Woofer_Midrange_4_Ohms_meta.yml driver_type=woofer
+[07:03:16] META_UPDATE file=Morel_MSW_538_Shallow_Classic_Series_5__DPC_Cone_Woofer_8_Ohms_meta.yml driver_type=woofer
+[07:03:16] META_UPDATE file=Morel_ST_1108_Supreme_1-1_8__Soft_Dome_Tweeter_Pair_-_Black_Faceplate_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Morel_Supreme_SCW_636_6__Woofer_meta.yml driver_type=woofer
+[07:03:16] META_UPDATE file=Morel_TM4055-8_2__Midrange_and_1-1_8__Tweeter_Speaker_Plate_meta.yml driver_type=mid-bass
+[07:03:16] META_UPDATE file=Morel_TSCM_634_Titanium_Supreme_Series_6__Midrange_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:16] META_UPDATE file=Morel_TSCT1044_Supreme_1__Silk_Dome_Neodymium_Tweeters_-_Matched_Pair_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Morel_TSCW_636_Titanium_Supreme_Series_6__Woofer_6_Ohm_meta.yml driver_type=woofer
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_ANC-50N25AL04-04_2__Full-Range_Speaker_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_BC25SC06-04_1__Textile_Dome_Tweeter_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_BC25SC08-04_1__Silk_Dome_Neodymium_Tweeter_with_Waveguide_4_Ohm_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_BC25SC08-08_1__Fabric_Dome_Tweeter_8_Ohm_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_BC25SC55-04_1__Square_Frame_Tweeter_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_BC25TG15-04_1__Fabric_Dome_Tweeter_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_BC25TG15-08_1__Fabric_Dome_Tweeter_8_Ohm_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_D19TD-05_3_4__Poly_Dome_Tweeter_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_D26NC56-06_1__Fabric_Dome_Tweeter_6_Ohm_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_D27TG35-06_1__Silk_Dome_Tweeter_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_DA25BG08-06_1__Aluminum_Dome_Tweeter_6_Ohm_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_DA25TX00-08_1__Corundum_Dome_Tweeter_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_DA32TX00-08_1-1_4__Corundum_Dome_Tweeter_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_DX20BF00-04_3_4__Silk_Dome_Tweeter_4_Ohm_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_DX20BF00-08_3_4__Silk_Dome_Tweeter_8_Ohm_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_DX25BG60-04_1__Silk_Dome_Tweeter_4_Ohm_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_DX25TG59-04_1__Fabric_Dome_Tweeter_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_FSL-0818R01-08_FSL_Series_8__Professional_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_FSL-1220R02-08_FSL_Series_12__Professional_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_FSL-1230PR01-04_FSL_Series_12__Woofer_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_FSL-1230PR01-08_FSL_Series_12__Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_GBS-115N25AL01-04_4-1_2__Aluminum_Dome_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_GBS-135F25AL02-04_5-1_4__Aluminum_Cone_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_GBS-200F35CP02-04_8__Paper_Cone_Woofer_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_GBS-85N25PR07-04_3-1_2__Paper_Dome_Low_Profile_Woofer_meta.yml driver_type=woofer
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_H25TG05-08_1__Titanium_Dome_Tweeter_with_Waveguide_8_Ohm_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_H26TG45-06_1__Silk_Dome_Tweeter_with_Waveguide_6_Ohm_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_HDS-P830860_5-1_4__PPB_Cone_HDS_Woofer_meta.yml driver_type=woofer
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_HDS-P830874_6-1_2__PPB_Cone_HDS_Woofer_meta.yml driver_type=woofer
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_HDS-P830875_6-1_2__Nomex_Cone_HDS_Woofer_meta.yml driver_type=woofer
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_HDS-P830883_6-1_2__Nomex_Cone_HDS_Woofer_meta.yml driver_type=woofer
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_HDS-P830933_5-1_4__Paper_Cone_HDS_Woofer_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_HDS-P830990_6-1_2__GFC_Cone_HDS_Woofer_meta.yml driver_type=woofer
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_HDS-P830991_5-1_4__GFC_Cone_HDS_Woofer_meta.yml driver_type=woofer
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_HDS-P830992_4__GFC_Cone_HDS_Woofer_meta.yml driver_type=woofer
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_HDS-P835025_6-1_2__Aluminum_Cone_HDS_Woofer_meta.yml driver_type=woofer
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_NE123W-04_4__Paper_Cone_NE_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_NE123W-08_4__Full_Range_Woofer_Speaker_meta.yml driver_type=mid-bass
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_NE149W-08_5-1_4__Fiber_Cone_Woofer_Speaker_8_Ohm_meta.yml driver_type=woofer
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_NE180W-08_6-1_2__Fiber_Cone_Woofer_Speaker_meta.yml driver_type=woofer
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_NE19VTS-04_3_4__Silk_Dome_Tweeter_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_NE25VTS-04_1__Silk_Dome_Tweeter_meta.yml driver_type=tweeter
+[07:03:16] PROBLEM  file=Peerless_by_Tymphany_NE315W-04_12__Paper_Cone_NE_Woofer_4_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_NE65W-04_2__Full_Range_Woofer_meta.yml driver_type=mid-bass
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_NE85W-04_2-1_2__Full_Range_Woofer_meta.yml driver_type=mid-bass
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_NE95W-04_3__Full-Range_Woofer_meta.yml driver_type=mid-bass
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_OC16SC00-04_16mm_Fabric_Dome_OC_Tweeter_4_Ohm_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_OC16SC04-04_16mm_Fabric_Dome_Tweeter_4_Ohm_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_OT19NC00-04_3_4__Fabric_Dome_Tweeter_4_Ohm_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_OX20SC00-04_3_4__Fabric_Dome_Tweeter_meta.yml driver_type=tweeter
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_OX32SC00-08_1.25__Teteron_Dome_Neo_Compact_Tweeter_meta.yml driver_type=tweeter
+[07:03:16] PROBLEM  file=Peerless_by_Tymphany_PLS-65F25AL01-04_2-1_2__Full-Range_Driver_4_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_PLS-65F25AL01-04_2-1_2__Full-Range_Driver_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_PLS-75F25AL05-08_3__Full-Range_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_PLS-P830970_2__Full_Range_Woofer_meta.yml driver_type=woofer
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_PLS-P830983_2__Full_Range_Woofer_meta.yml driver_type=mid-bass
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_PLS-P830984_2-1_2__Full_Range_Woofer_meta.yml driver_type=mid-bass
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_PLS-P830985_2-1_2__Full_Range_Woofer_meta.yml driver_type=mid-bass
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_PLS-P830986_3__Full_Range_Woofer_meta.yml driver_type=mid-bass
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_PLS-P830987_3__Full-Range_Woofer_meta.yml driver_type=mid-bass
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_PLS_Series_65F25AL02_2-1_2__Aluminum_Full-Range_Speaker_meta.yml driver_type=mid-bass
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_SDS-100F25CP09-04_SDS_Series_4__Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:16] PROBLEM  file=Peerless_by_Tymphany_SDS-160F25CP01-08_6-1_2__Paper_Cone_Woofer_8_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_SDS-160F25CP01-08_6-1_2__Paper_Cone_Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_SDS-P830656_5-1_4__Paper_Cone_SDS_Woofer_meta.yml driver_type=woofer
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_SDS-P830657_6-1_2__Paper_Cone_SDS_Woofer_meta.yml driver_type=woofer
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_SDS-P830855_4__Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:16] PROBLEM  file=Peerless_by_Tymphany_SDS-P830878_3-1_2__Passive_Radiator_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:16] PROBLEM  file=Peerless_by_Tymphany_SLS-135F32CP01-04_5-1_4__Paper_Cone_Woofer_4_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_SLS-135F32CP01-04_5-1_4__Paper_Cone_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_SLS-65S25PR03-04_SLS_Series_2.5__Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_SLS-85S25CP04-04_3-1_2__Paper_Cone_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_SLS-P830667_8__Paper_Cone_SLS_Subwoofer_meta.yml driver_type=subwoofer
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_SLS-P830945_5-1_4__Paper_Cone_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_SLS-P830946_6-1_2__Paper_Cone_Woofer_Speaker_4_Ohm_meta.yml driver_type=woofer
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_TA6FD00-04_2__Aluminum_Cone_Full-Range_Driver_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:16] PROBLEM  file=Peerless_by_Tymphany_TA6FD00-08_2__Aluminum_Cone_Full-Range_Driver_8_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_TA6FD00-08_2__Aluminum_Cone_Full-Range_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:16] PROBLEM  file=Peerless_by_Tymphany_TC55FD00-08_1-3_4__Paper_Cone_Full-Range_Driver_8_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:16] PROBLEM  file=Peerless_by_Tymphany_TC5FB00-08_1-1_2__Paper_Cone_Full-Range_Driver_8_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:16] META_UPDATE file=Peerless_by_Tymphany_TC6FD00-04_2__Full_Range_Paper_Cone_Woofer_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=Peerless_by_Tymphany_TC7FD00-04_2-1_2__Full_Range_Paper_Cone_Woofer_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=Peerless_by_Tymphany_TC7FD04-04_2-1_2__Full-Range_Line_Array_Driver_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=Peerless_by_Tymphany_TC7FD24-04_2.5__Compact_Full-Range_Speaker_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=Peerless_by_Tymphany_TC8FD05-04_3__Paper_Cone_Full-Range_Speaker_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=Peerless_by_Tymphany_TC9FD00-04_3-1_2__Full-Range_Line_Array_Driver_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=Peerless_by_Tymphany_TC9FD18-08_3-1_2__Full_Range_Paper_Cone_Woofer_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=Peerless_by_Tymphany_TC_Series_TC8FD00-04_3__Full_Range_Speaker_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=Peerless_by_Tymphany_TG9FD10-04_3-1_2__Glass_Fiber_Cone_Full_Range_meta.yml driver_type=mid-bass
+[07:03:17] PROBLEM  file=Peerless_by_Tymphany_TG9FD10-08_3-1_2__Glass_Fiber_Cone_Full-Range_Driver_8_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:17] META_UPDATE file=Peerless_by_Tymphany_TG9FD10-08_3-1_2__Glass_Fiber_Cone_Full-Range_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=Peerless_by_Tymphany_XT25BG60-04_1__Dual_Ring_Radiator_Tweeter_meta.yml driver_type=tweeter
+[07:03:17] META_UPDATE file=Peerless_by_Tymphany_XT25SC40-04_1__Ring_Radiator_XT_Tweeter_4_Ohm_meta.yml driver_type=tweeter
+[07:03:17] META_UPDATE file=Peerless_by_Tymphany_XT25SC50-04_1__Silk_Diaphragm_Neo_Ring_Radiator_Tweeter_meta.yml driver_type=tweeter
+[07:03:17] META_UPDATE file=Peerless_by_Tymphany_XT25SC90-04_1__Dual_Ring_Radiator_Tweeter_meta.yml driver_type=tweeter
+[07:03:17] META_UPDATE file=Peerless_by_Tymphany_XT25TG30-04_1__Dual_Ring_Radiator_Tweeter_meta.yml driver_type=tweeter
+[07:03:17] PROBLEM  file=Peerless_by_Tymphany_XXLS-300F50AL01-04_12__Black_Aluminum_Cone_Subwoofer_4_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:17] PROBLEM  file=Peerless_by_Tymphany_XXLS-P830845_12__Nomex_Cone_Subwoofer_8_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:17] PROBLEM  file=Peerless_by_Tymphany_XXLS-P835016_10__Black_Aluminum_Cone_Subwoofer_4_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:17] PROBLEM  file=Peerless_by_Tymphany_XXLS-P835037_10__Paper_Cone_Subwoofer_4_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:17] META_UPDATE file=PRV_Audio_10FR300PR_10__Professional_Full-Range_Speaker_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_10MB1000FT_Forte_Series_10__Midbass_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_10MB800FT_Forte_Series_10__Midbass_Speaker_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_10MR1200X_X_Series_10__Midrange_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_10MR2000-NDY_10__Neodymium_Pro_Audio_Woofer_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_10MR650A-4_Alto_Series_10__Midrange_Driver_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_10MR650A-NDY_Alto_Series_10__Shallow_Midrange_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_10MR650A_Alto_Series_10__Midrange_Driver_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_10W1000-NDY-4_10__Neodymium_Pro_Audio_Woofer_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_10W1000-NDY_10___Neodymium__Woofer_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_10W650A-4_Alto_Series_10__Pro_Woofer_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_10W650A_Alto_Series_10__Pro_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_12MB1000FT-4_Forte_Series_12__Midbass_Speaker_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_12MB1000FT_Forte_Series_12__Midbass_Speaker_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_12MB2000FT-NDY_Forte_Series_12__Neodymium_Midbass_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_12MR1000_PRO_Pro_Series_12__Midrange_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_12MR1200X_X_Series_12__Midrange_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_12MR2000-NDY_12__Neodymium_Professional_Midrange_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_12MR2000_12__Pro_Audio_Midrange_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_12MR2000X-NDY_X_Series_12__Neodymium_Midrange_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_12MR2000X_v2_X_Series_12__Midrange_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_12W1600_12__Professional_Woofer__8_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_12W750A_Alto_Series_12__Pro_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_12W800A_Alto_Series_12__Pro_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_15SW2000-4_15__Cast_Frame_Subwoofer_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_15SW2000_15__Pro_Audio_Subwoofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_15W1600_15__High_Power_PA_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_3MR40-NDY-4_3__Neodymium_Midrange_Speaker_4_Ohms_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_4MR60-4_4__Full-Range_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_4MR60-NDY-4_4__Neodymium_Midrange_Speaker_4_Ohms_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_5MR450-NDY-4_5__Midrange_Neodymium_Woofer_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_5MR450-NDY_5__Midrange_Neodymium_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_69FR250-4_6_x_9__Full-Range_Speaker_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_69MR500-4_BULLET_6__x_9__Midrange_Speaker_4_Ohms_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_69MR500CF-NDY-4_6_x9__Neodymium_Midrange_Speaker_Pair_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_69MR500PhP-4_6__x_9__Midrange_Loudspeaker_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_6CX380-4_SLIM_6.5__Professional_2-Way_Full-Range_Coaxial_Speaker_meta.yml driver_type=coaxial
+[07:03:17] META_UPDATE file=PRV_Audio_6MB100-4_6__Midbass_Woofer_Pair_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_6MB200-4_V2_6__Midbass_Woofer_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_6MB200_V2_6__Midbass_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_6MB400_6.5__Midbass_Woofer_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_6MB550FT-4_Forte_Series_6__Midbass_Speaker_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_6MB550FT_Forte_Series_6__Midbass_Speaker_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_6MR200A-4_6.5__Alto_Series_Midrange_Driver_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_6MR200A_Alto_Series_6.5__Midrange_Driver_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_6MR250B-4_SLIM_6__Midrange_Slim_Speaker_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_6MR250SEAL_6__Sealed_Back_Midrange_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_6MR400-4_BULLET_6__Midrange_Speaker_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_6MR400CF-4_Moto_Series_6.5__Carbon_Fiber_Neodymium_Midrange_Loudspeaker_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_6MR400SEAL_PRO_Pro_Series_6.5__Sealed_Basket_Midrange_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_6MR500-NDY-4_6-1_2__Neodymium_Midrange_Woofer_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_6MR500-NDY_6-1_2__Neodymium_Midrange_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_6MR500CF-NDY-4_6__Midrange_Neodymium_Speaker_Pair_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_6MR600X-NDY-4_X_Series_6.5__Neodymium_Midrange_Speaker_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_6MR600X-NDY_X_Series_6.5__Neodymium_Midrange_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_8CX380-4_SLIM_8__Full-Range_Slim_Coaxial_Speaker_meta.yml driver_type=coaxial
+[07:03:17] META_UPDATE file=PRV_Audio_8FR250_8__Full-Range_Speaker_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_8MB450-4_v2_8__Pro_Audio_Midbass_Speaker_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_8MB450_v2_8__Pro_Audio_Midbass_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_8MB500_-_8__Midbass_Woofer_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_8MB700FT-NDY-4_Forte_Series_8__Neodymium_Midbass_Speaker_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_8MB700FT-NDY_Forte_Series_8__Neodymium_Midbass_Speaker_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_8MB700FT_Forte_Series_8__Midbass_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_8MR400_8__Midrange_Woofer_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_8MR400B-4_SLIM_8__Midrange_Speaker_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_8MR450A_Alto_Series_8__Midrange_Driver_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_8MR450CF-4_Moto_Series_8__Carbon_Fiber_Midrange_Loudspeaker_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_8MR500-4_BULLET_8__Midrange_Speaker_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_8MR500CF-NDY-4_8__Midrange_Neodymium_Speaker_Pair_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_8MR500SEAL_PRO_Pro_Series_8__Sealed_Basket_Midrange_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_8MR600X-4_X_Series_8__Midrange_Speaker_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=PRV_Audio_8MR600X-NDY_X_Series_8__Neodymium_Midrange_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_8MR600X_X_Series_8__Midrange_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] PROBLEM  file=PRV_Audio_MT10SW1000_D4_Moto_Series_10__Shallow_Subwoofer_DVC_4x4_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:17] META_UPDATE file=PRV_Audio_MT10W1200-NDY-4_Moto_Series_10__Pro_Low_Frequency_Woofer_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] PROBLEM  file=PRV_Audio_MT2.2TWB-4_Moto_Series_2.25__Short_Horn_Black_Tweeter_4_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:17] PROBLEM  file=PRV_Audio_MT2.2TWC-4_Moto_Series_2.25__Short_Horn_Chrome_Tweeter_4_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:17] PROBLEM  file=PRV_Audio_MT2.7TWB-4_Moto_Series_2.75__Short_Horn_Chrome_Tweeter_4_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:17] META_UPDATE file=PRV_Audio_MT6CX580-NDY-4_Moto_Series_6.5__Coaxial_Loudspeaker_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_MT6MR400CF-NDY-4_SLIM_Moto_Series_6.5__Carbon_Fiber_Neodymium_Midrange_Loudspeaker_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_MT6MR600CF-NDY-2_Moto_Series_6.5__Neodymium_Midrange_Loudspeaker_2_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=PRV_Audio_MT8MR400CF-NDY-4_SLIM_Moto_Series_8__Carbon_Fiber_Neodymium_Midrange_Loudspeaker_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] PROBLEM  file=PRV_Audio_MT8SW800_D4_Moto_Series_8__Shallow_Subwoofer_DVC_4x4_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:17] META_UPDATE file=PRV_Audio_MT8SW800_D4_Moto_Series_8__Shallow_Subwoofer_DVC_4x4_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] PROBLEM  file=PRV_Audio_RS10-SUBD4_RS_Series_10__Subwoofer_DVC_4x4_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:17] META_UPDATE file=PRV_Audio_RS10-SUBD4_RS_Series_10__Subwoofer_DVC_4x4_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] PROBLEM  file=PRV_Audio_RS8-SUBD4_RS_Series_8__Subwoofer_DVC_4x4_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:17] META_UPDATE file=PRV_Audio_RS8-SUBD4_RS_Series_8__Subwoofer_DVC_4x4_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=Pyramid_WX65X_6-1_2__White_Poly_Woofer_meta.yml driver_type=woofer
+[07:03:17] META_UPDATE file=Selenium_JBL_Selenium_10M_PRO_10__350_Watt_Professional_Mid-Bass_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=Selenium_JBL_Selenium_10WP_350_10__350_Watt_Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:17] META_UPDATE file=Selenium_JBL_Selenium_12M_PRO_12__700_Watt_Professional_Mid-Bass_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=Selenium_JBL_Selenium_12WP_500_12__500_Watt_Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:17] META_UPDATE file=Selenium_JBL_Selenium_6W4P_6__Woofer_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=Selenium_JBL_Selenium_8PW-PRO_8__175_Watt_Professional_Woofer_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=Selenium_JBL_Selenium_8WP_300_8__300_Watt_Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:17] META_UPDATE file=Tang_Band_13-1761S_1_2__Silk_Dome_Tweeter_Pair_meta.yml driver_type=tweeter
+[07:03:17] META_UPDATE file=Tang_Band_20-2240S_20mm_Hi-Res_Neodymium_Tweeter_meta.yml driver_type=tweeter
+[07:03:17] META_UPDATE file=Tang_Band_25-1719S_1__Ceramic_Dome_Tweeter_meta.yml driver_type=tweeter
+[07:03:17] META_UPDATE file=Tang_Band_25-2234S_1__Hi-Resolution_40k_Aluminum___Magnesium_Dome_Neodymium_Tweeter_4_Ohm_meta.yml driver_type=tweeter
+[07:03:17] META_UPDATE file=Tang_Band_25-2234SD_1__Hi-Resolution_40k_Aluminum___Magnesium_Dome_Neo_Tweeter_Black_Grill_4_Ohm_meta.yml driver_type=tweeter
+[07:03:17] META_UPDATE file=Tang_Band_25-2234SE_1__Hi-Resolution_40k_Aluminum_Magnesium_Dome_Neo_Tweeter_Stainless_Grill_4_Ohm_meta.yml driver_type=tweeter
+[07:03:17] META_UPDATE file=Tang_Band_50-1426SE_2__Fabric_Dome_Midrange_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=Tang_Band_W1-1815SA_1__Neodymium_Full_Range_Driver_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=Tang_Band_W1-2396S_Extremely_Slim_1__Full-Range_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=Tang_Band_W2-1803S_2__Neodymium_Poly_Full-Range_Driver_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=Tang_Band_W2-2136S_2__Aluminum_Full_Range_Neodymium_Driver_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=Tang_Band_W2-2243S_2__Aluminum_Magnesium_Full-Range_Driver_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=Tang_Band_W2-803SM_2__Extended_Range_Speaker_Driver_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=Tang_Band_W2-852SH_2__Shielded_Speaker_Driver_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=Tang_Band_W3-1364SA_3__Bamboo_Cone_Driver_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=Tang_Band_W3-1797S_3__Neodymium_Midrange_Driver_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=Tang_Band_W3-1876S_3__Mini_Subwoofer_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=Tang_Band_W3-1878_3__Full-Range_Driver_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=Tang_Band_W3-2108_3-1_2__RBM_Micro_Subwoofer_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:17] META_UPDATE file=Tang_Band_W3-2141_3__Paper_Cone_Full-Range_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=Tang_Band_W3-881SJ_3__Cast_Frame_Neodymium_Driver_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=Tang_Band_W3-881SJF_3__Full_Range_Speaker_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=Tang_Band_W4-1052SD_4__Driver_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=Tang_Band_W4-1337SDF_4__Titanium_Full_Range_Speaker_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=Tang_Band_W4-1720_4__Underhung_Midbass_Driver_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=Tang_Band_W4-1757SB_4__Aluminum_Cone_Driver_meta.yml driver_type=mid-bass
+[07:03:17] META_UPDATE file=Tang_Band_W4-1879_4__Full-Range_Driver_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Tang_Band_W4-2142_4__Paper_Cone_Full_Range_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Tang_Band_W4-2356_4__Off-Axis_Poly_Cone_Full-Range_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Tang_Band_W4-2414_F_Series_4__Full-Range_with_Phase_Plug_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Tang_Band_W4-2417_F_Series_4__Full-Range_with_Dust_Cap_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Tang_Band_W4-656SC_4__Shielded_Driver_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Tang_Band_W5-1138SM_5-1_4__Neodymium_Subwoofer_meta.yml driver_type=subwoofer
+[07:03:18] META_UPDATE file=Tang_Band_W5-1138SMF_5-1_4__Paper_Cone_Subwoofer_Speaker_meta.yml driver_type=subwoofer
+[07:03:18] META_UPDATE file=Tang_Band_W5-1611SAF_5__Full_Range_Speaker_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Tang_Band_W5-2143_5__Paper_Cone_Full_Range_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Tang_Band_W5-704D_5-1_4__Woofer_meta.yml driver_type=woofer
+[07:03:18] META_UPDATE file=Tang_Band_W6-2090_6-1_2__Extreme_Conditions_Woofer_2_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Tang_Band_W6-2253S_6-1_2__Low_Profile_Subwoofer_meta.yml driver_type=subwoofer
+[07:03:18] META_UPDATE file=Tang_Band_W6-2313_6-1_2__Coaxial_Full-Range_Woofer_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Tang_Band_W8-1808_8__Neodymium_Full_Range_Driver_meta.yml driver_type=mid-bass
+[07:03:18] PROBLEM  file=Tang_Band_W8-2096B_8__Underhung_Midbass_Driver_4_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:18] META_UPDATE file=Tang_Band_W8-2145_8__Paper_Cone_Full_Range_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Tectonic_TEBM36S05-4_1-1_2__Square_BMR_Full-Range_Speaker_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Tectonic_TEBM65C20F-4_3-1_2__BMR_Full-Range_Speaker_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Tectonic_TEBM65C20F-8_3-1_2__BMR_Full-Range_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Timpano_Audio_TPT-MD12_12__Midbass_Speaker_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:18] META_UPDATE file=Timpano_Audio_TPT-MD12_PRO_12__Midrange_Speaker_8_Ohm_meta.yml driver_type=subwoofer
+[07:03:18] PROBLEM  file=Visaton_AL130M8_5__Aluminum_Cone_Midrange_Driver_8_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:18] META_UPDATE file=Visaton_AL130M8_5__Aluminum_Cone_Midrange_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] PROBLEM  file=Visaton_AL170-8_6.5__Aluminum_Cone_Midrange_Driver_8_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:18] PROBLEM  file=Visaton_AL200-8_8__Aluminum_Cone_Woofer_8_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:18] META_UPDATE file=Visaton_B_100_4__Full-Range_Driver_6_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_B_200_8__Full-Range_Driver_6_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_B_80_3.3__Full-Range_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_BF32-8_Ohm_1.3__Full-Range_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_BF45-4_Ohm_1.8__Full-Range_Speaker_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_BG13P_5__Full_Range_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_BG17-8_6.5__Full-Range_Speaker_with_Whizzer_Cone_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_DSM25FFL_1__Titanium_Dome_Tweeter_8_Ohm_meta.yml driver_type=tweeter
+[07:03:18] META_UPDATE file=Visaton_DSM50FFL8_2__Titanium_Dome_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_DT94-4_0.8__Polycarbonate_Dome_Tweeter_4_Ohm_meta.yml driver_type=tweeter
+[07:03:18] META_UPDATE file=Visaton_DT94-8_0.8__Polycarbonate_Dome_Tweeter_8_Ohm_meta.yml driver_type=tweeter
+[07:03:18] META_UPDATE file=Visaton_DTW72_1_2__Polycarbonate_Dome_Tweeter_8_Ohm_meta.yml driver_type=tweeter
+[07:03:18] META_UPDATE file=Visaton_F8SC8_3.3__Magnetically_Shielded_Full-Range_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FR10-4_4__Paper_Cone_Full-Range_Driver_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FR10HM-4_4__Full-Range_Driver_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FR10HM-8_4__Full-Range_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FR10HMP-4_4__Full-Range_Waterproof_Driver_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FR12-4_5__Paper_Cone_Low_Profile_Full-Range_Driver_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FR12-8_5__Paper_Cone_Low_Profile_Full-Range_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FR13-4_5__Full-Range_Speaker_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FR58-8_2-1_4__Full-Range_Paper_Cone_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FR6.5-8_6.5__Full-Range_Driver_with_Tweeter_Cone_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FR77-8_3__Full-Range_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FR8-8_3.3__Paper_Cone_Full-Range_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FR87-4_3.4__Full-Range_Speaker_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FR8JS_3.3__Poly_Cone_Full-Range_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FR8TA_3.3__Full-Range_Speaker_4_ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FR8WP-4_3.3__Full-Range_Driver_4_Ohm_Black_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FR8WP-4_3.3__Full-Range_Driver_4_Ohm_White_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FR8WP-8_3.3__Full-Range_Driver_8_Ohm_White_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FR8WP_3.3__Full-Range_Driver_8_Ohm_Black_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FR_10-8_4__Full-Range_Speaker_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FR_131.30_5.1__x_1.2__Fullrange_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FR_58-4_2.3__Full_Range_Speaker_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FR_7-4_2-1_2__Full-Range_Driver_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] PROBLEM  file=Visaton_FRS10WP-4_4__Full-Range_Saltwater_Resistant_Driver_4_Ohm_Black_meta.yml
+         reason=PE HTML: could not parse Frequency Response: '90 10 19,000Hz'
+[07:03:18] META_UPDATE file=Visaton_FRS10WP-4_4__Full-Range_Saltwater_Resistant_Driver_4_Ohm_Black_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FRS10WP-4_4__Full-Range_Saltwater_Resistant_Driver_4_Ohm_White_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FRS10WP-8_4__Full-Range_Saltwater_Resistant_Driver_8_Ohm_White_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FRS10WP-8_4__Full_Range_Saltwater_Resistant_Driver_8_Ohm_Black_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FRS7-4_2.5__Full-Range_Speaker_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FRS7-8_2.5__Full-Range_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FRS7A8_2.5__Full-Range_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FRS7S-8_2-1_2__Waterproof_Paper_Cone_Full-Range_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FRS7W-8_2-1_2__Paper_Cone_Full-Range_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] PROBLEM  file=Visaton_FRS7XWP8_2.5__Full-Range_Speaker_8_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:18] META_UPDATE file=Visaton_FRS7XWP8_2.5__Full-Range_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FRS8-4_3.3__Full-Range_Speaker_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FRS8-8_3.3__Full-Range_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FRS8M_3.3__Paper_Cone_Full-Range_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FRS_5X-8_2__Full_Range_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FRW10N8_4__Full-Range_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FRWS4ND8_1.6__Full-Range_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_FRWS_5_R_2__Full-Range_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_G50FFL8_2__Fabric_Dome_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_G_25_NDWG_1__Fabric_Dome_Tweeter_8_Ohm_meta.yml driver_type=tweeter
+[07:03:18] PROBLEM  file=Visaton_GF200-2x4_8__DVC_Woofer_2x4_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:18] META_UPDATE file=Visaton_HX10-4_4__2-way_Aluminum_Cone_Coaxial_Driver_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_K23SQ8_0.9__Miniature_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_K28GI8_1.1__Miniature_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_K50_SQ_2__Speaker_8_ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_K50WP-16_2__Full-Range_Water_Resistant_Speaker_16_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_K50WP-8_2__Full-Range_Water_Resistant_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_K64WP-50_2-1_2__Waterproof_Full-Range_Driver_with_Plastic_Diaphragm_50_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_K64WP-8_2.5__Full-Range_Water_Resistant_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_K_28_WP_1.1__Miniature_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_KT100V4_4__Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:18] META_UPDATE file=Visaton_M_10_4__Sealed_Back_Cone_Midrange_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_MR130-8_5__Midrange_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_PAM13-8_5__Midrange_Driver_8_Ohm_meta.yml driver_type=woofer
+[07:03:18] PROBLEM  file=Visaton_PAW25-8_10__Midrange_Driver_8_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:18] META_UPDATE file=Visaton_PAW25-8_10__Midrange_Driver_8_Ohm_meta.yml driver_type=woofer
+[07:03:18] PROBLEM  file=Visaton_PAW30ND8_12__Bass_Midrange_Driver_8_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:18] META_UPDATE file=Visaton_PAW30ND8_12__Bass_Midrange_Driver_8_Ohm_meta.yml driver_type=woofer
+[07:03:18] PROBLEM  file=Visaton_PAW38-8_15__Woofer_8_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:18] PROBLEM  file=Visaton_PAW46-8_18__Woofer_8_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:18] META_UPDATE file=Visaton_PL_5_RV_1-5_8__Full_Range_Speaker_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_R10ND8_4__Full-Range_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_R10S_4__Full-Range_Speaker_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_R10S_4__Full-Range_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_R10SC-4_4__Full-Range_Speaker_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_R10SC_4__Full-Range_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_R10SCSpezial8_4__Magnetically_Shielded_Full-Range_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_R10STE4_4__Full-Range_Speaker_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_R10STE4_4__Full-Range_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_SC10N-8_1__Soft_Dome_Tweeter_Shielded_8_Ohm_meta.yml driver_type=tweeter
+[07:03:18] META_UPDATE file=Visaton_SC13-8_5__Paper_Cone_Full-Range_Driver_Shielded_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_SC4.9FL8_1.6__x_3.5__Full-Range_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_SC5-8_Shielded_1_2__Polycarbonate_Tweeter_8_Ohm_meta.yml driver_type=tweeter
+[07:03:18] META_UPDATE file=Visaton_SC5.9ND4_Magnetically_Shielded_2__x_3.5__Full-Range_Driver_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_SC_4.7_ND_Full-Range_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_SC_5.9_2__x_3.5__Shielded_Full-Range_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_SC_5.9_OM-4_2__x_3-1_2__Full-Range_Driver_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_SL70NDV4_2.5__Full-Range_Speaker_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_SL713-4_2-3_4__x_5__Paper_Cone_Full-Range_Driver_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_SL87_FE-8_Ohm_3.4__Full_Range_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_SL87ND_3.4__Full-Range_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_SL87WPM-4_3.3__Full-Range_Speaker_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_SL87WPM-8_3.3__Full-Range_Speaker_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_SL87XA-4_3-1_4__Waterproof_Poly_Cone_Full-Range_Driver_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_SL87XA-8_3-1_4__Waterproof_Poly_Cone_Full-Range_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] PROBLEM  file=Visaton_TIW200XS8_8__High-End_Woofer_8_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:18] PROBLEM  file=Visaton_TIW250XS8_10__High-End_Woofer_8_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:18] PROBLEM  file=Visaton_TIW300-8_12__High-End_Woofer_8_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:18] META_UPDATE file=Visaton_TW6NG8_2__Cone_Tweeter_8_Ohm_meta.yml driver_type=tweeter
+[07:03:18] META_UPDATE file=Visaton_TW70-8_2.5__Cone_Tweeter_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_W100S-8_4__Woofer_with_Treated_Paper_Cone_8_Ohm_meta.yml driver_type=woofer
+[07:03:18] META_UPDATE file=Visaton_W130S-4_5__Woofer_with_Treated_Paper_Cone_4_Ohm_meta.yml driver_type=woofer
+[07:03:18] META_UPDATE file=Visaton_W130S-8_5__Woofer_with_Treated_Paper_Cone_8_Ohm_meta.yml driver_type=woofer
+[07:03:18] META_UPDATE file=Visaton_W150X4_5.9__Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:18] META_UPDATE file=Visaton_W170-8_6.5__Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:18] META_UPDATE file=Visaton_W200-8_8__Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:18] META_UPDATE file=Visaton_W_100_C_4__Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:18] META_UPDATE file=Visaton_W_100_C_4__Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:18] META_UPDATE file=Visaton_W_150_X_5.9__Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:18] META_UPDATE file=Visaton_WS-17E_6.5__HiFi_Woofer_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:18] META_UPDATE file=Visaton_WS13E_5__Paper_Cone_Full-Range_Driver_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:19] META_UPDATE file=Visaton_WS17E-4_6-1_2__Treated_Paper_Cone_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:19] META_UPDATE file=Visaton_WS20E-4_8__Poly_Cone_Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:19] META_UPDATE file=Visaton_WS20E-8_8__Poly_Cone_Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:19] META_UPDATE file=Wavecor_SW118WA01_4-1_2__Balanced_Drive_Paper_Cone_Subwoofer_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:19] META_UPDATE file=Wavecor_SW146WA01_5-3_4__Balanced_Drive_Paper_Cone_Subwoofer_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:19] META_UPDATE file=Wavecor_SW168WA01_6-1_2__Balanced_Drive_Paper_Cone_Subwoofer_4_Ohm_meta.yml driver_type=subwoofer
+[07:03:19] META_UPDATE file=Wavecor_TW022WA09_22mm_Chambered_Neo_Textile_Tweeter_4_Ohm_meta.yml driver_type=tweeter
+[07:03:19] META_UPDATE file=Wavecor_TW022WA10_22mm_Chambered_Neo_Textile_Tweeter_8_Ohm_meta.yml driver_type=tweeter
+[07:03:19] META_UPDATE file=Wavecor_TW030WA02_30mm_Textile_Dome_Neodymium_Tweeter_with_Heat_Sink_and_Ferrofluid_meta.yml driver_type=tweeter
+[07:03:19] META_UPDATE file=Wavecor_TW030WA06_30mm_Textile_Dome_Tweeter_with_Rear_Chamber_with_Ferrofluid_4_Ohm_meta.yml driver_type=tweeter
+[07:03:19] META_UPDATE file=Wavecor_TW030WA07_30mm_Textile_Dome_Tweeter_with_Rear_Chamber_8_Ohm_meta.yml driver_type=tweeter
+[07:03:19] META_UPDATE file=Wavecor_TW030WA11_30mm_Semi_Horn_Loaded_Textile_Dome_Tweeter_with_Rear_Chamber_4_Ohm_meta.yml driver_type=tweeter
+[07:03:19] META_UPDATE file=Wavecor_TW030WA12_30mm_Semi_Horn_Loaded_Textile_Dome_Tweeter_with_Rear_Chamber_8_Ohm_meta.yml driver_type=tweeter
+[07:03:19] META_UPDATE file=Wavecor_TW030WA13_30mm_Textile_Dome_Neodymium_Tweeter_with_Heat_Sink_and_Rear_Chamber_4_Ohm_meta.yml driver_type=tweeter
+[07:03:19] META_UPDATE file=Wavecor_TW030WA14_30mm_Textile_Dome_Neodymium_Tweeter_with_Heat_Sink_and_Rear_Chamber_8_Ohm_meta.yml driver_type=tweeter
+[07:03:19] META_UPDATE file=Wavecor_TW030WA21_30mm_Graphene_Dome_Tweeter_4_Ohm_meta.yml driver_type=tweeter
+[07:03:19] META_UPDATE file=Wavecor_TW030WA22_30mm_Graphene_Dome_Tweeter_8_Ohm_meta.yml driver_type=tweeter
+[07:03:19] META_UPDATE file=Wavecor_TW030WA23_30mm_Chambered_Graphene_Dome_Neo_Tweeter_4_Ohm_meta.yml driver_type=tweeter
+[07:03:19] META_UPDATE file=Wavecor_TW030WA24_30mm_Chambered_Graphene_Dome_Neo_Tweeter_8_Ohm_meta.yml driver_type=tweeter
+[07:03:19] META_UPDATE file=Wavecor_TW045WA01_45mm_Coaxial_Neo_Tweeter_4_Ohm_White_meta.yml driver_type=tweeter
+[07:03:19] META_UPDATE file=Wavecor_TW045WA02_45mm_Coaxial_Neo_Tweeter_4_Ohm_Black_meta.yml driver_type=tweeter
+[07:03:19] META_UPDATE file=Wavecor_WF090WA01_3-1_2__Paper_Cone_Mid-Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:19] PROBLEM  file=Wavecor_WF095WA01_3-3_4__Paper_Cone_Midwoofer_4_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:19] META_UPDATE file=Wavecor_WF095WA01_3-3_4__Paper_Cone_Midwoofer_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:19] PROBLEM  file=Wavecor_WF095WA02_3-3_4__Paper_Cone_Midwoofer_8_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:19] META_UPDATE file=Wavecor_WF095WA02_3-3_4__Paper_Cone_Midwoofer_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:19] META_UPDATE file=Wavecor_WF118WA02_4-1_2__Paper_Cone_Mid-Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:19] META_UPDATE file=Wavecor_WF118WA07_4-1_2__Balanced_Drive_Paper_Cone_Mid-Woofer_with_Truncated_Frame_4_Ohm_meta.yml driver_type=woofer
+[07:03:19] META_UPDATE file=Wavecor_WF118WA08_4-1_2__Balanced_Drive_Paper_Cone_Mid-Woofer_with_Truncated_Frame_8_Ohm_meta.yml driver_type=woofer
+[07:03:19] META_UPDATE file=Wavecor_WF120BD05_4-3_4__Balanced_Drive_Paper_Glass_Fiber_Cone_Mid-Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:19] PROBLEM  file=Wavecor_WF120BD11_4-3_4__Kevlar_Carbon_Fiber_Cone_Midwoofer_4_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:19] META_UPDATE file=Wavecor_WF120BD11_4-3_4__Kevlar_Carbon_Fiber_Cone_Midwoofer_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:19] PROBLEM  file=Wavecor_WF120BD12_4-3_4__Kevlar_Carbon_Fiber_Cone_Midwoofer_8_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:19] META_UPDATE file=Wavecor_WF120BD12_4-3_4__Kevlar_Carbon_Fiber_Cone_Midwoofer_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:19] META_UPDATE file=Wavecor_WF132TU02_5-1_4__Paper_Cone_Mid-Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:19] META_UPDATE file=Wavecor_WF146WA01_5-3_4__Paper_Cone_Mid-Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:19] META_UPDATE file=Wavecor_WF146WA02_5-3_4__Paper_Cone_Mid-Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:19] META_UPDATE file=Wavecor_WF146WA05_5-3_4__Glass_Fiber_Cone_Mid-Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:19] META_UPDATE file=Wavecor_WF146WA06_5-3_4__Glass_Fiber_Cone_Mid-Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:19] PROBLEM  file=Wavecor_WF152BD09_6__Kevlar_Carbon_Fiber_Cone_Midwoofer_4_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:19] META_UPDATE file=Wavecor_WF152BD09_6__Kevlar_Carbon_Fiber_Cone_Midwoofer_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:19] PROBLEM  file=Wavecor_WF152BD10_6__Kevlar_Carbon_Fiber_Cone_Midwoofer_8_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:19] META_UPDATE file=Wavecor_WF152BD10_6__Kevlar_Carbon_Fiber_Cone_Midwoofer_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:19] PROBLEM  file=Wavecor_WF152BD13_6__Black_Coated_Paper_Glass_Fiber_Cone_Midwoofer_4_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:19] META_UPDATE file=Wavecor_WF152BD13_6__Black_Coated_Paper_Glass_Fiber_Cone_Midwoofer_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:19] PROBLEM  file=Wavecor_WF152BD14_6__Black_Coated_Paper_Glass_Fiber_Cone_Midwoofer_8_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:19] META_UPDATE file=Wavecor_WF152BD14_6__Black_Coated_Paper_Glass_Fiber_Cone_Midwoofer_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:19] PROBLEM  file=Wavecor_WF166TU02_6-1_2__Paper_Cone_Mid-Woofer_4_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:19] META_UPDATE file=Wavecor_WF166TU02_6-1_2__Paper_Cone_Mid-Woofer_4_Ohm_meta.yml driver_type=woofer
+[07:03:19] META_UPDATE file=Wavecor_WF168WA02_6-1_2__Paper_Cone_Mid-Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:19] META_UPDATE file=Wavecor_WF168WA06_6-1_2__Glass_Fiber_Cone_Mid-Woofer_8_Ohm_meta.yml driver_type=woofer
+[07:03:19] PROBLEM  file=Wavecor_WF182BD13_7__Kevlar_Carbon_Fiber_Cone_Midwoofer_4_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:19] PROBLEM  file=Wavecor_WF182BD14_7__Kevlar_Carbon_Fiber_Cone_Midwoofer_8_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:19] PROBLEM  file=Wavecor_WF182BD17_7__Black_Coated_Paper_Glass_Fiber_Cone_Midwoofer_4_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:19] PROBLEM  file=Wavecor_WF182BD18_7__Black_Coated_Paper_Glass_Fiber_Cone_Midwoofer_8_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:19] PROBLEM  file=Wavecor_WF211PA01_8-1_4__Paper_Cone_Woofer_4_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:19] META_UPDATE file=Wavecor_WF211PA01_8-1_4__Paper_Cone_Woofer_4_Ohm_meta.yml driver_type=mid-bass
+[07:03:19] PROBLEM  file=Wavecor_WF211PA02_8-1_4__Paper_Cone_Woofer_8_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:19] META_UPDATE file=Wavecor_WF211PA02_8-1_4__Paper_Cone_Woofer_8_Ohm_meta.yml driver_type=mid-bass
+[07:03:19] PROBLEM  file=Wavecor_WF275BD01_10-3_4__Paper_Cone_Woofer_4_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:19] PROBLEM  file=Wavecor_WF275BD02_10-3_4__Paper_Cone_Woofer_8_Ohm_meta.yml
+         reason=PE HTML: no Frequency Response row in specs table
+[07:03:19] DONE  collection=parts-express total=1347 extracted=1325 updated=1266 no_data=2 errors=0

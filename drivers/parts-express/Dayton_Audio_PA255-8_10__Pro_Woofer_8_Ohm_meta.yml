@@ -1,0 +1,19 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.parts-express.com/pedocs/specs/295-030-dayton-audio-pa255-8-specifications-46882.pdf
+manu_page: null
+vendor_page: https://www.parts-express.com/Dayton-Audio-PA255-8-10-Pro-Woofer-295-030
+source: https://www.parts-express.com/Dayton-Audio-PA255-8-10-Pro-Woofer-295-030
+frd: https://www.parts-express.com/pedocs/tech-docs/295-030--Dayton-Audio-PA255-8_data.zip
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: null
+driver_type: subwoofer
+freq_low_hz: 46.0
+freq_high_hz: 3500.0

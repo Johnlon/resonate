@@ -1,0 +1,18 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T/S
+  parameters have not been verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://doc.soundimports.nl/pdf/brands/Accuton/C173-6-191/C173-6-191.pdf
+manu_page: null
+vendor_page: https://www.soundimports.eu/en/accuton-c173-6-191.html
+source: https://www.soundimports.eu/en/accuton-c173-6-191.html
+frd: null
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+driver_type: subwoofer
+freq_low_hz: 35.0
+freq_high_hz: 2800.0

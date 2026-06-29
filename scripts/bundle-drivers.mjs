@@ -14,7 +14,7 @@
  * Can also be run manually: node scripts/bundle-drivers.mjs
  */
 
-import { readFileSync, readdirSync, writeFileSync } from 'fs';
+import { readFileSync, readdirSync, writeFileSync, existsSync } from 'fs';
 import { join, extname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -56,26 +56,30 @@ for (const src of sources) {
     const dm = content.match(/^DateModified=(.+)$/m);
     const da = content.match(/^DateAdded=(.+)$/m);
     const date = (dm?.[1] || da?.[1] || '').trim();
-    // Extract link fields from WDR boxbench_ fields
-    const ds  = content.match(/^boxbench_datasheet=(.+)$/m);
-    const mp  = content.match(/^boxbench_manu_page=(.+)$/m);
-    const vp  = content.match(/^boxbench_vendor_page=(.+)$/m);
-    const fr  = content.match(/^boxbench_frd=(.+)$/m);
-    const im  = content.match(/^boxbench_impedance=(.+)$/m);
-    const datasheet  = ds ? ds[1].trim() : '';
-    const manupage   = mp ? mp[1].trim() : '';
-    const vendorpage = vp ? vp[1].trim() : '';
-    const frd        = fr ? fr[1].trim() : '';
-    const impedance  = im ? im[1].trim() : '';
+    // Extract link fields from _meta.yml sidecar
+    const sidecarPath = p.replace(/\.wdr$/i, '_meta.yml');
+    const sidecar = existsSync(sidecarPath) ? readFileSync(sidecarPath, 'utf8') : '';
+    const ymlVal = key => { const m = sidecar.match(new RegExp(`^${key}:\\s*(.+)$`, 'm')); if (!m) return ''; const v = m[1].trim(); return (v === 'null' || v === '~') ? '' : v; };
+    const datasheet    = ymlVal('datasheet');
+    const manupage     = ymlVal('manu_page');
+    const vendorpage   = ymlVal('vendor_page');
+    const frd          = ymlVal('frd');
+    const impedance    = ymlVal('impedance');
+    const driver_type  = ymlVal('driver_type');
+    const freq_low_hz  = ymlVal('freq_low_hz');
+    const freq_high_hz = ymlVal('freq_high_hz');
     return {
       name: p.split(/[\\/]/).pop().replace(/\.wdr$/i, ''),
       date,
       content,
-      ...(datasheet  ? { datasheet }  : {}),
-      ...(manupage   ? { manupage }   : {}),
-      ...(vendorpage ? { vendorpage } : {}),
-      ...(frd        ? { frd }        : {}),
-      ...(impedance  ? { impedance }  : {}),
+      ...(datasheet    ? { datasheet }    : {}),
+      ...(manupage     ? { manupage }     : {}),
+      ...(vendorpage   ? { vendorpage }   : {}),
+      ...(frd          ? { frd }          : {}),
+      ...(impedance    ? { impedance }    : {}),
+      ...(driver_type  ? { driver_type }  : {}),
+      ...(freq_low_hz  ? { freq_low_hz }  : {}),
+      ...(freq_high_hz ? { freq_high_hz } : {}),
     };
   });
 

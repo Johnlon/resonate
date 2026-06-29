@@ -1,0 +1,17 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Scan-Speak website (scraped 2026-06-28). T/S parameters
+  have not been verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.scan-speak.dk/datasheet/reviews/D3404-552000_18WE-4542T00-VoiceCoil_2018-4.pdf
+manu_page: https://www.scan-speak.dk/product/18we-4542t00/
+vendor_page: null
+source: https://www.scan-speak.dk/product/18we-4542t00/
+frd: null
+impedance: null
+obsolete: null
+dq_issue: null
+community: null
+fetched_sku: null
+driver_type: woofer

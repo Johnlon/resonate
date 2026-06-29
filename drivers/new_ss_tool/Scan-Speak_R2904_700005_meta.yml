@@ -1,0 +1,34 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Scan-Speak website. T/S parameters not human-verified.
+  PDF extraction returned no matches; using HTML only.
+corrections: null
+reviewed_by: null
+driver_type: tweeter
+series: Revelator
+nominal_size_cm: 2.6
+datasheet: https://www.scan-speak.dk/datasheet/pdf/r2904-700005.pdf
+adv_datasheet: https://www.scan-speak.dk/datasheet/adv/ddddd.pdf
+drawing: https://www.scan-speak.dk/datasheet/drw/r2904-700005.png
+cad: https://www.scan-speak.dk/datasheet/3d/r2904-700005.ZIP
+manu_page: https://www.scan-speak.dk/product/r2904-700005/
+vendor_page: null
+source: https://www.scan-speak.dk/product/r2904-700005/
+frd: null
+impedance: null
+obsolete: null
+dq_issue: null
+community: null
+fetched_sku: null
+datasheet_fields: null
+adv_datasheet_fields: null
+manu_page_fields:
+- BL
+- Fs
+- Qts
+- Re
+- SPL
+- Sd
+- Vas
+freq_low_hz: 2500.0
+freq_high_hz: 30000.0

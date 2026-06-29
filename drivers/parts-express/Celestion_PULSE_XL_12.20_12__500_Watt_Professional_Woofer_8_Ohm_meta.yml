@@ -1,0 +1,19 @@
+quality: M
+issue: scraped_not_human_verified
+detail: Automatically scraped from Parts Express API. T/S parameters have not been
+  verified by a human against the datasheet.
+corrections: null
+reviewed_by: null
+datasheet: https://www.parts-express.com/pedocs/specs/celestion-pulse-xl-12.20-spec-sheet.pdf
+manu_page: null
+vendor_page: https://www.parts-express.com/Celestion-PULSE-XL-12.20-12-500-Watt-Professional-Woofer-8-Ohm-294-2507
+source: https://www.parts-express.com/Celestion-PULSE-XL-12.20-12-500-Watt-Professional-Woofer-8-Ohm-294-2507
+frd: null
+impedance: null
+dq_issue: null
+community: null
+fetched_sku: null
+obsolete: null
+driver_type: subwoofer
+freq_low_hz: 35.0
+freq_high_hz: 2200.0

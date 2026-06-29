@@ -84,6 +84,21 @@ summation appear to be a focus. No independent testing performed.
 
 ---
 
+### Biquad Cookbook EQ Designer — <https://loudifier.github.io/Biquad-Cookbook/>
+*by loudifier · free, open source, GitHub-hosted*
+
+A focused, modern web-based EQ filter designer that complements (not replaces)
+enclosure simulators. Provides 15+ filter types (1st/2nd order lowpass, highpass,
+allpass, shelves, peaking EQ, bandpass, notch, Linkwitz transform) with real-time
+visualization across four plot types: frequency response, phase, impulse response,
+and group delay. Includes a filter optimizer that matches a target curve or flattens
+a response. Saves/loads EQ configurations in YAML format. Orthogonal to Resonate’s
+scope — Biquad focuses on signal-chain EQ filter design while Resonate simulates
+enclosure acoustics. Users often chain both tools: design an enclosure in Resonate,
+then use Biquad to design corrective EQ to flatten the result.
+
+---
+
 > Feature notes for closed tools are taken from their own sites and authors’
 > public posts, not independent testing. Treat all claims as ⚠ unverified
 > unless a Resonate contributor has directly compared outputs.
@@ -277,7 +292,12 @@ Resonate’s defensible edges:
 ## Where it needs to catch up
 Construction output (volume calc, cut list, 3D), amplifier-load graph, richer
 vents (multi/slot/selectable end-correction), 6th-order bandpass, `.wpr` import,
-datasheet→params paste, and EQ shelves. All tractable on the existing engine.
+and datasheet→params paste. All tractable on the existing engine.
+
+Note on EQ: Resonate includes basic parametric, HP/LP, and Linkwitz-transform
+filters. For detailed multi-filter EQ design and optimization, Biquad Cookbook
+(open-source companion tool) provides a focused, modern UI with 15+ filter types
+and automated optimization against target curves.
 
 ## Strategic framing
 Resonate’s pitch is not that it out-simulates the competition today — it doesn’t,
