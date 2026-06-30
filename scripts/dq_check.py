@@ -10,6 +10,7 @@ Run: python scripts/dq_check.py [--collection <name>] [--check-urls]
 """
 
 import math
+import os
 import pathlib
 import re
 import sys
@@ -297,7 +298,7 @@ def main():
             all_wdr.append((coll_path, wdr_path))
     total_files = len(all_wdr)
 
-    tty = sys.stdout.isatty()
+    tty = sys.stdout.isatty() or bool(os.environ.get("TERM"))
     for i, (coll_path, wdr_path) in enumerate(all_wdr, 1):
         msg = f"  {i}/{total_files}  {coll_path.name}/{wdr_path.name}"
         if tty:
@@ -345,9 +346,10 @@ def main():
     for rule_id, data in sorted(by_rule.items()):
         hits = data["hits"]
         print(f"\n── {rule_id} ({len(hits)}) — {data['desc']}")
-        for coll, fname, detail, fields, sidecar in hits:
+        n = len(hits)
+        for j, (coll, fname, detail, fields, sidecar) in enumerate(hits, 1):
             if tty:
-                sys.stdout.write(f"\r   {coll}/{fname}  [{detail}]\x1b[K")
+                sys.stdout.write(f"\r   {j}/{n}  {coll}/{fname}  [{detail}]\x1b[K")
                 sys.stdout.flush()
             else:
                 print(f"   {coll}/{fname}  [{detail}]")
@@ -355,7 +357,7 @@ def main():
         if tty:
             sys.stdout.write("\r\x1b[K")  # clear the flashed line
             sys.stdout.flush()
-        total += len(hits)
+        total += n
 
     print(f"\nTotal issues: {total} across {len(seen_files)} files")
 
