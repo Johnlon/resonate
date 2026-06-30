@@ -1,0 +1,7 @@
+[04:24:31] PROBLEM field=missing_Sd item=ND20FA-6 url=https://www.soundimports.eu/en/dayton-audio-nd20fa-6.html offset=0
+         raw_value='Sd absent'
+         reason=Sd absent, zero, or invalid — scraper artifact
+[04:24:31] PROBLEM field=missing_ts item=ND20FA-6 url=https://www.soundimports.eu/en/dayton-audio-nd20fa-6.html offset=0
+         raw_value="['BL', 'Cms', 'Mms', 'Sd', 'Vas', 'Xmax']"
+         reason=Missing mandatory T/S fields — driver not written
+[04:24:31] SKIP missing_ts=['BL', 'Cms', 'Mms', 'Sd', 'Vas', 'Xmax']

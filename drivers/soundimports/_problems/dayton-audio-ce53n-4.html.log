@@ -1,0 +1,19 @@
+[04:21:09] PROBLEM field=Qts_impossible item=CE53N-4 url=https://www.soundimports.eu/en/dayton-audio-ce53n-4.html offset=0
+         raw_value='Qts=1.0 Qes=0.43'
+         reason=Qts ≥ Qes — thermodynamically impossible (Qts must be < Qes)
+[04:21:09] PROBLEM field=Qts_impossible item=CE53N-4 url=https://www.soundimports.eu/en/dayton-audio-ce53n-4.html offset=0
+         raw_value='Qts_impossible'
+         reason=DQ check failure
+[04:21:09] PROBLEM field=suspect:Qts item=CE53N-4 url=https://www.soundimports.eu/en/dayton-audio-ce53n-4.html offset=0
+         raw_value='suspect:Qts'
+         reason=DQ check failure
+[04:21:09] PROBLEM field=suspect:Qes item=CE53N-4 url=https://www.soundimports.eu/en/dayton-audio-ce53n-4.html offset=0
+         raw_value='suspect:Qes'
+         reason=DQ check failure
+[04:21:09] PROBLEM field=suspect:Qms item=CE53N-4 url=https://www.soundimports.eu/en/dayton-audio-ce53n-4.html offset=0
+         raw_value='suspect:Qms'
+         reason=DQ check failure
+[04:21:09] PROBLEM field=schema_fail item=CE53N-4 url=https://www.soundimports.eu/en/dayton-audio-ce53n-4.html offset=0
+         raw_value="WDR: 'Qts' stored=1 differs from calculated=0.397274 (deps: Qms=5.22, Qes=0.43)"
+         reason=File failed strict schema validation
+[04:21:09] SCHEMA_FAIL errors=1

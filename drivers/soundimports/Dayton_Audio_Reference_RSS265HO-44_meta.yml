@@ -2,26 +2,41 @@ source: https://www.soundimports.eu/en/dayton-audio-rss265ho-44.html
 manu_page_url: null
 vendor_page_url: https://www.soundimports.eu/en/dayton-audio-rss265ho-44.html
 datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
 frd_url: null
 zma_url: null
 quality: M
 issue: scraped_not_human_verified
 detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T/S
-  parameters have not been verified by a human against the datasheet.
+  parameters not human-verified. PDF extraction returned no matches; using HTML only.
 corrections: null
 reviewed_by: null
-driver_type: subwoofer
-dq_issue: null
+driver_type: null
+nominal_size_cm: null
+obsolete: null
+dq_issue: 'schema:WDR: ''Vas'' stored=0.0348297 differs from calculated=0.036973'
 community: null
 fetched_sku: null
 _sources:
   vendor_page: https://www.soundimports.eu/en/dayton-audio-rss265ho-44.html
 specs:
-  Xmax:  # one-way linear excursion (m)
-    value: 0.01325
+  Znom:  # nominal impedance (Ω)
+    value: 4.0
     winner: vendor_page
     sources:
-      vendor_page: 0.01325
+      vendor_page: 4.0
+  Fs:  # free air resonance (Hz)
+    value: 27.6
+    winner: vendor_page
+    sources:
+      vendor_page: 27.6
+  Pe:  # rated power input (W)
+    value: 600.0
+    winner: vendor_page
+    sources:
+      vendor_page: 600.0
   Qts:  # total Q factor
     value: 0.45
     winner: vendor_page
@@ -32,78 +47,83 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 1.6
-  Sd:  # effective piston area (m²)
-    value: 0.03523
-    winner: vendor_page
-    sources:
-      vendor_page: 0.03523
-  Fs:  # free air resonance (Hz)
-    value: 27.6
-    winner: vendor_page
-    sources:
-      vendor_page: 27.6
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.161
-    winner: vendor_page
-    sources:
-      vendor_page: 0.161
-  Qms:  # mechanical Q factor
-    value: 4.42
-    winner: vendor_page
-    sources:
-      vendor_page: 4.42
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00021
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00021
-  Znom:  # nominal impedance (Ω)
-    value: 4.0
-    winner: vendor_page
-    sources:
-      vendor_page: 4.0
-  Qes:  # electrical Q factor
-    value: 0.5
-    winner: vendor_page
-    sources:
-      vendor_page: 0.5
-  Pe:  # rated power input (W)
-    value: 600.0
-    winner: vendor_page
-    sources:
-      vendor_page: 600.0
-  BL:  # force factor (T·m)
-    value: 9.39
-    winner: vendor_page
-    sources:
-      vendor_page: 9.39
   Le:  # voice coil inductance (H)
     value: 0.00077
     winner: vendor_page
     sources:
       vendor_page: 0.00077
-  Vas:  # equivalent acoustic volume (m³)
-    value: 0.00123
+  BL:  # force factor (T·m)
+    value: 9.39
     winner: vendor_page
     sources:
-      vendor_page: 0.00123
+      vendor_page: 9.39
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.161
+    winner: vendor_page
+    sources:
+      vendor_page: 0.161
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00021
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00021
+  Sd:  # effective piston area (m²)
+    value: 0.03523
+    winner: vendor_page
+    sources:
+      vendor_page: 0.03523
+  Qms:  # mechanical Q factor
+    value: 4.42
+    winner: vendor_page
+    sources:
+      vendor_page: 4.42
+  Qes:  # electrical Q factor
+    value: 0.5
+    winner: vendor_page
+    sources:
+      vendor_page: 0.5
+  Vas:  # equivalent acoustic volume (m³)
+    value: 0.034829664
+    winner: vendor_page
+    sources:
+      vendor_page: 0.034829664
+  Xmax:  # one-way linear excursion (m)
+    value: 0.01325
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01325
+  power_rms_W:
+    value: 600.0
+    winner: vendor_page
+    sources:
+      vendor_page: 600.0
   power_peak_W:  # peak power handling (W)
     value: 1200.0
     winner: vendor_page
     sources:
       vendor_page: 1200.0
-  SPL:  # sensitivity (dB, 2.83 V/1 m)
+  sensitivity_db:
     value: 90.5
     winner: vendor_page
     sources:
       vendor_page: 90.5
-  freq_low_hz:  # published lower frequency limit (Hz)
+  freq_high_hz:  # published upper frequency limit (Hz)
     value: 25.0
     winner: vendor_page
     sources:
       vendor_page: 25.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 600.0
-    winner: vendor_page
+  Vd:
+    value: 0.0004667975
+    winner: calculated
     sources:
-      vendor_page: 600.0
+      calculated: 0.0004667975
+  Dd:
+    value: 0.2117928921399861
+    winner: calculated
+    sources:
+      calculated: 0.2117928921399861
+  EBP:
+    value: 55.2
+    winner: calculated
+    sources:
+      calculated: 55.2

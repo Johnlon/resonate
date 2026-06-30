@@ -2,26 +2,48 @@ source: https://www.soundimports.eu/en/beyma-18lex1200nd.html
 manu_page_url: null
 vendor_page_url: https://www.soundimports.eu/en/beyma-18lex1200nd.html
 datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
 frd_url: null
 zma_url: null
 quality: M
 issue: scraped_not_human_verified
 detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T/S
-  parameters have not been verified by a human against the datasheet.
-corrections: null
+  parameters not human-verified. PDF extraction returned no matches; using HTML only.
+corrections: '''Qts'' stored=0.33 differs from calculated=0.339111 (deps: Qms=10.9,
+  Qes=0.35); ''Vas'' stored=0.219 differs from calculated=0.223425 (deps: roo=1.20095,
+  c=343.684, Sd=0.1255, Cms=0.0001)'
 reviewed_by: null
-driver_type: subwoofer
+driver_type: null
+nominal_size_cm: null
+obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 _sources:
   vendor_page: https://www.soundimports.eu/en/beyma-18lex1200nd.html
 specs:
-  Xmax:  # one-way linear excursion (m)
-    value: 0.011
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
     winner: vendor_page
     sources:
-      vendor_page: 0.011
+      vendor_page: 8.0
+  Rms:  # mechanical resistance (kg/s)
+    value: 4.1
+    winner: vendor_page
+    sources:
+      vendor_page: 4.1
+  Fs:  # free air resonance (Hz)
+    value: 36.0
+    winner: vendor_page
+    sources:
+      vendor_page: 36.0
+  Pe:  # rated power input (W)
+    value: 1200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1200.0
   Qts:  # total Q factor
     value: 0.33
     winner: vendor_page
@@ -32,72 +54,62 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 5.3
-  Sd:  # effective piston area (m²)
-    value: 0.1255
-    winner: vendor_page
-    sources:
-      vendor_page: 0.1255
-  Fs:  # free air resonance (Hz)
-    value: 36.0
-    winner: vendor_page
-    sources:
-      vendor_page: 36.0
-  Rms:  # mechanical resistance (kg/s)
-    value: 4.1
-    winner: vendor_page
-    sources:
-      vendor_page: 4.1
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.2
-    winner: vendor_page
-    sources:
-      vendor_page: 0.2
-  Qms:  # mechanical Q factor
-    value: 10.9
-    winner: vendor_page
-    sources:
-      vendor_page: 10.9
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0001
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0001
-  Znom:  # nominal impedance (Ω)
-    value: 8.0
-    winner: vendor_page
-    sources:
-      vendor_page: 8.0
-  Qes:  # electrical Q factor
-    value: 0.35
-    winner: vendor_page
-    sources:
-      vendor_page: 0.35
-  Pe:  # rated power input (W)
-    value: 1200.0
-    winner: vendor_page
-    sources:
-      vendor_page: 1200.0
-  BL:  # force factor (T·m)
-    value: 26.4
-    winner: vendor_page
-    sources:
-      vendor_page: 26.4
   Le:  # voice coil inductance (H)
     value: 0.0017
     winner: vendor_page
     sources:
       vendor_page: 0.0017
+  BL:  # force factor (T·m)
+    value: 26.4
+    winner: vendor_page
+    sources:
+      vendor_page: 26.4
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.2
+    winner: vendor_page
+    sources:
+      vendor_page: 0.2
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0001
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0001
+  Sd:  # effective piston area (m²)
+    value: 0.1255
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1255
+  Qms:  # mechanical Q factor
+    value: 10.9
+    winner: vendor_page
+    sources:
+      vendor_page: 10.9
+  Qes:  # electrical Q factor
+    value: 0.35
+    winner: vendor_page
+    sources:
+      vendor_page: 0.35
   Vas:  # equivalent acoustic volume (m³)
     value: 0.219
     winner: vendor_page
     sources:
       vendor_page: 0.219
+  Xmax:  # one-way linear excursion (m)
+    value: 0.011
+    winner: vendor_page
+    sources:
+      vendor_page: 0.011
+  power_rms_W:
+    value: 1200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1200.0
   power_peak_W:  # peak power handling (W)
     value: 2400.0
     winner: vendor_page
     sources:
       vendor_page: 2400.0
-  SPL:  # sensitivity (dB, 2.83 V/1 m)
+  sensitivity_db:
     value: 98.0
     winner: vendor_page
     sources:
@@ -117,3 +129,18 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 101.6
+  Vd:
+    value: 0.0013805
+    winner: calculated
+    sources:
+      calculated: 0.0013805
+  Dd:
+    value: 0.3997393686694656
+    winner: calculated
+    sources:
+      calculated: 0.3997393686694656
+  EBP:
+    value: 102.85714285714286
+    winner: calculated
+    sources:
+      calculated: 102.85714285714286

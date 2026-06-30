@@ -1,0 +1,16 @@
+[04:18:41] PROBLEM field=Sd_tiny item=4FR40 url=https://www.soundimports.eu/en/beyma-4fr40.html offset=0
+         raw_value='Sd=0.006 cm²'
+         reason=Sd < 0.5 cm² — scraper artifact (near-zero)
+[04:18:41] PROBLEM field=tweeter_fs item=4FR40 url=https://www.soundimports.eu/en/beyma-4fr40.html offset=0
+         raw_value='Sd=0.0 cm² Fs=92.0'
+         reason=Sd < 5 cm² but Fs < 100 Hz — tiny piston with woofer-range Fs
+[04:18:41] PROBLEM field=Sd_tiny item=4FR40 url=https://www.soundimports.eu/en/beyma-4fr40.html offset=0
+         raw_value='Sd_tiny'
+         reason=DQ check failure
+[04:18:41] PROBLEM field=tweeter_fs item=4FR40 url=https://www.soundimports.eu/en/beyma-4fr40.html offset=0
+         raw_value='tweeter_fs'
+         reason=DQ check failure
+[04:18:41] PROBLEM field=schema_fail item=4FR40 url=https://www.soundimports.eu/en/beyma-4fr40.html offset=0
+         raw_value="WDR: 'Sd' = 5.5e-07 below minimum 1e-05 m²"
+         reason=File failed strict schema validation
+[04:18:41] SCHEMA_FAIL errors=1

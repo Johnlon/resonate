@@ -1,0 +1,4 @@
+[04:19:19] PROBLEM field=missing_ts item=CHN-50P url=https://www.soundimports.eu/en/chn-50p-full-range-woofer.html offset=0
+         raw_value="['Vas']"
+         reason=Missing mandatory T/S fields — driver not written
+[04:19:19] SKIP missing_ts=['Vas']

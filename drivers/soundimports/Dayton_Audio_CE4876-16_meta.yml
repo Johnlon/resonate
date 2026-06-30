@@ -2,26 +2,37 @@ source: https://www.soundimports.eu/en/dayton-audio-ce4876-16.html
 manu_page_url: null
 vendor_page_url: https://www.soundimports.eu/en/dayton-audio-ce4876-16.html
 datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
 frd_url: null
 zma_url: null
 quality: M
 issue: scraped_not_human_verified
 detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T/S
-  parameters have not been verified by a human against the datasheet.
-corrections: null
+  parameters not human-verified. PDF extraction returned no matches; using HTML only.
+corrections: '''Vas'' stored=0.0006 differs from calculated=0.000579887 (deps: roo=1.20095,
+  c=343.684, Sd=0.00263, Cms=0.000591)'
 reviewed_by: null
-driver_type: fullrange
+driver_type: null
+nominal_size_cm: null
+obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 _sources:
   vendor_page: https://www.soundimports.eu/en/dayton-audio-ce4876-16.html
 specs:
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0025
+  Fs:  # free air resonance (Hz)
+    value: 150.0
     winner: vendor_page
     sources:
-      vendor_page: 0.0025
+      vendor_page: 150.0
+  Pe:  # rated power input (W)
+    value: 10.0
+    winner: vendor_page
+    sources:
+      vendor_page: 10.0
   Qts:  # total Q factor
     value: 1.14
     winner: vendor_page
@@ -32,53 +43,68 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 15.0
-  Sd:  # effective piston area (m²)
-    value: 0.00263
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00263
-  Fs:  # free air resonance (Hz)
-    value: 150.0
-    winner: vendor_page
-    sources:
-      vendor_page: 150.0
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0019
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0019
-  Qms:  # mechanical Q factor
-    value: 5.87
-    winner: vendor_page
-    sources:
-      vendor_page: 5.87
-  Cms:  # mechanical compliance (m/N)
-    value: 0.000591
-    winner: vendor_page
-    sources:
-      vendor_page: 0.000591
-  Qes:  # electrical Q factor
-    value: 1.41
-    winner: vendor_page
-    sources:
-      vendor_page: 1.41
-  Pe:  # rated power input (W)
-    value: 10.0
-    winner: vendor_page
-    sources:
-      vendor_page: 10.0
-  BL:  # force factor (T·m)
-    value: 4.37
-    winner: vendor_page
-    sources:
-      vendor_page: 4.37
   Le:  # voice coil inductance (H)
     value: 0.00044
     winner: vendor_page
     sources:
       vendor_page: 0.00044
+  BL:  # force factor (T·m)
+    value: 4.37
+    winner: vendor_page
+    sources:
+      vendor_page: 4.37
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0019
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0019
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000591
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000591
+  Sd:  # effective piston area (m²)
+    value: 0.00263
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00263
+  Qms:  # mechanical Q factor
+    value: 5.87
+    winner: vendor_page
+    sources:
+      vendor_page: 5.87
+  Qes:  # electrical Q factor
+    value: 1.41
+    winner: vendor_page
+    sources:
+      vendor_page: 1.41
   Vas:  # equivalent acoustic volume (m³)
     value: 0.0006
     winner: vendor_page
     sources:
       vendor_page: 0.0006
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0025
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0025
+  power_rms_W:
+    value: 10.0
+    winner: vendor_page
+    sources:
+      vendor_page: 10.0
+  Vd:
+    value: 6.575e-06
+    winner: calculated
+    sources:
+      calculated: 6.575e-06
+  Dd:
+    value: 0.057867261924627794
+    winner: calculated
+    sources:
+      calculated: 0.057867261924627794
+  EBP:
+    value: 106.38297872340426
+    winner: calculated
+    sources:
+      calculated: 106.38297872340426

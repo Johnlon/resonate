@@ -2,26 +2,42 @@ source: https://www.soundimports.eu/en/bliesma-m142a-6.html
 manu_page_url: null
 vendor_page_url: https://www.soundimports.eu/en/bliesma-m142a-6.html
 datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
 frd_url: null
 zma_url: null
 quality: M
 issue: scraped_not_human_verified
 detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T/S
-  parameters have not been verified by a human against the datasheet.
-corrections: null
+  parameters not human-verified. PDF extraction returned no matches; using HTML only.
+corrections: '''Vas'' stored=0.0246 differs from calculated=0.0249017 (deps: roo=1.20095,
+  c=343.684, Sd=0.01803, Cms=0.00054)'
 reviewed_by: null
-driver_type: midrange
+driver_type: null
+nominal_size_cm: null
+obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 _sources:
   vendor_page: https://www.soundimports.eu/en/bliesma-m142a-6.html
 specs:
-  Xmax:  # one-way linear excursion (m)
-    value: 0.00185
+  Znom:  # nominal impedance (Ω)
+    value: 6.0
     winner: vendor_page
     sources:
-      vendor_page: 0.00185
+      vendor_page: 6.0
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.54
+    winner: vendor_page
+    sources:
+      vendor_page: 0.54
+  Fs:  # free air resonance (Hz)
+    value: 65.0
+    winner: vendor_page
+    sources:
+      vendor_page: 65.0
   Qts:  # total Q factor
     value: 0.3
     winner: vendor_page
@@ -32,78 +48,78 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 5.4
-  Sd:  # effective piston area (m²)
-    value: 0.01803
-    winner: vendor_page
-    sources:
-      vendor_page: 0.01803
-  Fs:  # free air resonance (Hz)
-    value: 65.0
-    winner: vendor_page
-    sources:
-      vendor_page: 65.0
-  Rms:  # mechanical resistance (kg/s)
-    value: 0.54
-    winner: vendor_page
-    sources:
-      vendor_page: 0.54
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.011
-    winner: vendor_page
-    sources:
-      vendor_page: 0.011
-  Qms:  # mechanical Q factor
-    value: 8.3
-    winner: vendor_page
-    sources:
-      vendor_page: 8.3
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00054
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00054
-  Znom:  # nominal impedance (Ω)
-    value: 6.0
-    winner: vendor_page
-    sources:
-      vendor_page: 6.0
-  Qes:  # electrical Q factor
-    value: 0.31
-    winner: vendor_page
-    sources:
-      vendor_page: 0.31
-  BL:  # force factor (T·m)
-    value: 8.8
-    winner: vendor_page
-    sources:
-      vendor_page: 8.8
   Le:  # voice coil inductance (H)
     value: 3.0e-05
     winner: vendor_page
     sources:
       vendor_page: 3.0e-05
+  BL:  # force factor (T·m)
+    value: 8.8
+    winner: vendor_page
+    sources:
+      vendor_page: 8.8
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.011
+    winner: vendor_page
+    sources:
+      vendor_page: 0.011
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00054
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00054
+  Sd:  # effective piston area (m²)
+    value: 0.01803
+    winner: vendor_page
+    sources:
+      vendor_page: 0.01803
+  Qms:  # mechanical Q factor
+    value: 8.3
+    winner: vendor_page
+    sources:
+      vendor_page: 8.3
+  Qes:  # electrical Q factor
+    value: 0.31
+    winner: vendor_page
+    sources:
+      vendor_page: 0.31
   Vas:  # equivalent acoustic volume (m³)
     value: 0.0246
     winner: vendor_page
     sources:
       vendor_page: 0.0246
-  SPL:  # sensitivity (dB, 2.83 V/1 m)
+  Xmax:  # one-way linear excursion (m)
+    value: 0.00185
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00185
+  sensitivity_db:
     value: 94.5
     winner: vendor_page
     sources:
       vendor_page: 94.5
-  freq_low_hz:  # published lower frequency limit (Hz)
+  freq_high_hz:  # published upper frequency limit (Hz)
     value: 180.0
     winner: vendor_page
     sources:
       vendor_page: 180.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 2.8
-    winner: vendor_page
-    sources:
-      vendor_page: 2.8
   voice_coil_dia_mm:  # voice coil diameter (mm)
     value: 137.0
     winner: vendor_page
     sources:
       vendor_page: 137.0
+  Vd:
+    value: 3.33555e-05
+    winner: calculated
+    sources:
+      calculated: 3.33555e-05
+  Dd:
+    value: 0.15151405542580856
+    winner: calculated
+    sources:
+      calculated: 0.15151405542580856
+  EBP:
+    value: 209.67741935483872
+    winner: calculated
+    sources:
+      calculated: 209.67741935483872

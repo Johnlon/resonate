@@ -1,11 +1,11 @@
 [Driver]
 Brand=Dayton Audio
 Model=MX12-22
-Manufacturer=
+Manufacturer=Dayton Audio
 ProvidedBy=SoundImports (scraped via soundimports.eu)
 Comment=Source: https://www.soundimports.eu/en/dayton-audio-mx12-22.html
-DateAdded=20260629
-DateModified=20260629
+DateAdded=20260630
+DateModified=20260630
 Qts=0.35
 Znom=4.0
 Fs=28.8

@@ -1,0 +1,10 @@
+[04:21:28] PROBLEM field=missing_Sd item=DAEX32Q-8 url=https://www.soundimports.eu/en/dayton-audio-daex32q-8.html offset=0
+         raw_value='Sd absent'
+         reason=Sd absent, zero, or invalid — scraper artifact
+[04:21:28] PROBLEM field=Fs_no_Q item=DAEX32Q-8 url=https://www.soundimports.eu/en/dayton-audio-daex32q-8.html offset=0
+         raw_value="Fs=580 Hz with no Qts/Qes — likely crossover/range freq, not T/S resonance; compression drivers and AMTs don't publish T/S Fs"
+         reason=Fs > 500 Hz but no Qts/Qes — crossover/range freq captured as Fs (compression driver or AMT)
+[04:21:28] PROBLEM field=missing_ts item=DAEX32Q-8 url=https://www.soundimports.eu/en/dayton-audio-daex32q-8.html offset=0
+         raw_value="['BL', 'Cms', 'Mms', 'Qes', 'Qms', 'Qts', 'Sd', 'Vas', 'Xmax']"
+         reason=Missing mandatory T/S fields — driver not written
+[04:21:28] SKIP missing_ts=['BL', 'Cms', 'Mms', 'Qes', 'Qms', 'Qts', 'Sd', 'Vas', 'Xmax']

@@ -2,26 +2,46 @@ source: https://www.soundimports.eu/en/beyma-21qlex1600fe.html
 manu_page_url: null
 vendor_page_url: https://www.soundimports.eu/en/beyma-21qlex1600fe.html
 datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
 frd_url: null
 zma_url: null
 quality: M
 issue: scraped_not_human_verified
 detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T/S
-  parameters have not been verified by a human against the datasheet.
+  parameters not human-verified. PDF extraction returned no matches; using HTML only.
 corrections: null
 reviewed_by: null
-driver_type: subwoofer
+driver_type: null
+nominal_size_cm: null
+obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 _sources:
   vendor_page: https://www.soundimports.eu/en/beyma-21qlex1600fe.html
 specs:
-  Xmax:  # one-way linear excursion (m)
-    value: 0.013
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
     winner: vendor_page
     sources:
-      vendor_page: 0.013
+      vendor_page: 8.0
+  Rms:  # mechanical resistance (kg/s)
+    value: 16.2
+    winner: vendor_page
+    sources:
+      vendor_page: 16.2
+  Fs:  # free air resonance (Hz)
+    value: 30.0
+    winner: vendor_page
+    sources:
+      vendor_page: 30.0
+  Pe:  # rated power input (W)
+    value: 1600.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1600.0
   Qts:  # total Q factor
     value: 0.28
     winner: vendor_page
@@ -32,72 +52,62 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 5.4
-  Sd:  # effective piston area (m²)
-    value: 0.1734
-    winner: vendor_page
-    sources:
-      vendor_page: 0.1734
-  Fs:  # free air resonance (Hz)
-    value: 30.0
-    winner: vendor_page
-    sources:
-      vendor_page: 30.0
-  Rms:  # mechanical resistance (kg/s)
-    value: 16.2
-    winner: vendor_page
-    sources:
-      vendor_page: 16.2
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.388
-    winner: vendor_page
-    sources:
-      vendor_page: 0.388
-  Qms:  # mechanical Q factor
-    value: 4.5
-    winner: vendor_page
-    sources:
-      vendor_page: 4.5
-  Cms:  # mechanical compliance (m/N)
-    value: 7.2e-05
-    winner: vendor_page
-    sources:
-      vendor_page: 7.2e-05
-  Znom:  # nominal impedance (Ω)
-    value: 8.0
-    winner: vendor_page
-    sources:
-      vendor_page: 8.0
-  Qes:  # electrical Q factor
-    value: 0.3
-    winner: vendor_page
-    sources:
-      vendor_page: 0.3
-  Pe:  # rated power input (W)
-    value: 1600.0
-    winner: vendor_page
-    sources:
-      vendor_page: 1600.0
-  BL:  # force factor (T·m)
-    value: 36.4
-    winner: vendor_page
-    sources:
-      vendor_page: 36.4
   Le:  # voice coil inductance (H)
     value: 0.004
     winner: vendor_page
     sources:
       vendor_page: 0.004
+  BL:  # force factor (T·m)
+    value: 36.4
+    winner: vendor_page
+    sources:
+      vendor_page: 36.4
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.388
+    winner: vendor_page
+    sources:
+      vendor_page: 0.388
+  Cms:  # mechanical compliance (m/N)
+    value: 7.2e-05
+    winner: vendor_page
+    sources:
+      vendor_page: 7.2e-05
+  Sd:  # effective piston area (m²)
+    value: 0.1734
+    winner: vendor_page
+    sources:
+      vendor_page: 0.1734
+  Qms:  # mechanical Q factor
+    value: 4.5
+    winner: vendor_page
+    sources:
+      vendor_page: 4.5
+  Qes:  # electrical Q factor
+    value: 0.3
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3
   Vas:  # equivalent acoustic volume (m³)
     value: 0.309
     winner: vendor_page
     sources:
       vendor_page: 0.309
+  Xmax:  # one-way linear excursion (m)
+    value: 0.013
+    winner: vendor_page
+    sources:
+      vendor_page: 0.013
+  power_rms_W:
+    value: 1600.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1600.0
   power_peak_W:  # peak power handling (W)
     value: 3200.0
     winner: vendor_page
     sources:
       vendor_page: 3200.0
-  SPL:  # sensitivity (dB, 2.83 V/1 m)
+  sensitivity_db:
     value: 98.0
     winner: vendor_page
     sources:
@@ -117,3 +127,18 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 101.6
+  Vd:
+    value: 0.0022542
+    winner: calculated
+    sources:
+      calculated: 0.0022542
+  Dd:
+    value: 0.4698720432810162
+    winner: calculated
+    sources:
+      calculated: 0.4698720432810162
+  EBP:
+    value: 100.0
+    winner: calculated
+    sources:
+      calculated: 100.0

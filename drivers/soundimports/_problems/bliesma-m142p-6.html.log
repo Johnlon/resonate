@@ -1,0 +1,4 @@
+[04:19:00] PROBLEM field=missing_ts item=M142P-6 url=https://www.soundimports.eu/en/bliesma-m142p-6.html offset=0
+         raw_value="['Cms']"
+         reason=Missing mandatory T/S fields — driver not written
+[04:19:00] SKIP missing_ts=['Cms']

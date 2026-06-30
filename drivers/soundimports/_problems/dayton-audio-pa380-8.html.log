@@ -1,0 +1,16 @@
+[04:24:40] PROBLEM field=Qts_impossible item=PA380-8 url=https://www.soundimports.eu/en/dayton-audio-pa380-8.html offset=0
+         raw_value='Qts=0.27 Qes=0.27'
+         reason=Qts ≥ Qes — thermodynamically impossible (Qts must be < Qes)
+[04:24:40] PROBLEM field=Qts_impossible item=PA380-8 url=https://www.soundimports.eu/en/dayton-audio-pa380-8.html offset=0
+         raw_value='Qts_impossible'
+         reason=DQ check failure
+[04:24:40] PROBLEM field=suspect:Qts item=PA380-8 url=https://www.soundimports.eu/en/dayton-audio-pa380-8.html offset=0
+         raw_value='suspect:Qts'
+         reason=DQ check failure
+[04:24:40] PROBLEM field=suspect:Qes item=PA380-8 url=https://www.soundimports.eu/en/dayton-audio-pa380-8.html offset=0
+         raw_value='suspect:Qes'
+         reason=DQ check failure
+[04:24:40] PROBLEM field=suspect:Qms item=PA380-8 url=https://www.soundimports.eu/en/dayton-audio-pa380-8.html offset=0
+         raw_value='suspect:Qms'
+         reason=DQ check failure
+[04:24:40] DONE problems=5

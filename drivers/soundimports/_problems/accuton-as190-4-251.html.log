@@ -1,0 +1,4 @@
+[04:13:35] PROBLEM field=html_pdf_mismatch item=AS190-4-251 url=https://www.soundimports.eu/en/accuton-as190-4-251.html offset=0
+         raw_value='Xmax: HTML=0.009 PDF=0.016 (78% diff)'
+         reason=HTML and PDF values disagree by >10%
+[04:13:35] DONE problems=1

@@ -2,26 +2,46 @@ source: https://www.soundimports.eu/en/accuton-as250-6-552.html
 manu_page_url: null
 vendor_page_url: https://www.soundimports.eu/en/accuton-as250-6-552.html
 datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
 frd_url: null
 zma_url: null
 quality: M
 issue: scraped_not_human_verified
 detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T/S
-  parameters have not been verified by a human against the datasheet.
-corrections: null
+  parameters not human-verified. PDF extraction returned no matches; using HTML only.
+corrections: '''Qts'' stored=0.38 differs from calculated=0.37037 (deps: Qms=5, Qes=0.4)'
 reviewed_by: null
-driver_type: subwoofer
+driver_type: null
+nominal_size_cm: null
+obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 _sources:
   vendor_page: https://www.soundimports.eu/en/accuton-as250-6-552.html
 specs:
-  Xmax:  # one-way linear excursion (m)
-    value: 0.009
+  Znom:  # nominal impedance (Ω)
+    value: 6.0
     winner: vendor_page
     sources:
-      vendor_page: 0.009
+      vendor_page: 6.0
+  Rms:  # mechanical resistance (kg/s)
+    value: 2.52
+    winner: vendor_page
+    sources:
+      vendor_page: 2.52
+  Fs:  # free air resonance (Hz)
+    value: 22.0
+    winner: vendor_page
+    sources:
+      vendor_page: 22.0
+  Pe:  # rated power input (W)
+    value: 300.0
+    winner: vendor_page
+    sources:
+      vendor_page: 300.0
   Qts:  # total Q factor
     value: 0.38
     winner: vendor_page
@@ -32,68 +52,73 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 7.3
-  Sd:  # effective piston area (m²)
-    value: 0.0382
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0382
-  Fs:  # free air resonance (Hz)
-    value: 22.0
-    winner: vendor_page
-    sources:
-      vendor_page: 22.0
-  Rms:  # mechanical resistance (kg/s)
-    value: 2.52
-    winner: vendor_page
-    sources:
-      vendor_page: 2.52
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.092
-    winner: vendor_page
-    sources:
-      vendor_page: 0.092
-  Qms:  # mechanical Q factor
-    value: 5.0
-    winner: vendor_page
-    sources:
-      vendor_page: 5.0
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00057
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00057
-  Znom:  # nominal impedance (Ω)
-    value: 6.0
-    winner: vendor_page
-    sources:
-      vendor_page: 6.0
-  Qes:  # electrical Q factor
-    value: 0.4
-    winner: vendor_page
-    sources:
-      vendor_page: 0.4
-  Pe:  # rated power input (W)
-    value: 300.0
-    winner: vendor_page
-    sources:
-      vendor_page: 300.0
-  BL:  # force factor (T·m)
-    value: 14.8
-    winner: vendor_page
-    sources:
-      vendor_page: 14.8
   Le:  # voice coil inductance (H)
     value: 0.00067
     winner: vendor_page
     sources:
       vendor_page: 0.00067
+  BL:  # force factor (T·m)
+    value: 14.8
+    winner: vendor_page
+    sources:
+      vendor_page: 14.8
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.092
+    winner: vendor_page
+    sources:
+      vendor_page: 0.092
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00057
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00057
+  Sd:  # effective piston area (m²)
+    value: 0.0382
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0382
+  Qms:  # mechanical Q factor
+    value: 5.0
+    winner: vendor_page
+    sources:
+      vendor_page: 5.0
+  Qes:  # electrical Q factor
+    value: 0.4
+    winner: vendor_page
+    sources:
+      vendor_page: 0.4
   Vas:  # equivalent acoustic volume (m³)
     value: 0.119
     winner: vendor_page
     sources:
       vendor_page: 0.119
+  Xmax:  # one-way linear excursion (m)
+    value: 0.009
+    winner: vendor_page
+    sources:
+      vendor_page: 0.009
+  power_rms_W:
+    value: 300.0
+    winner: vendor_page
+    sources:
+      vendor_page: 300.0
   power_peak_W:  # peak power handling (W)
     value: 600.0
     winner: vendor_page
     sources:
       vendor_page: 600.0
+  Vd:
+    value: 0.00034379999999999995
+    winner: calculated
+    sources:
+      calculated: 0.00034379999999999995
+  Dd:
+    value: 0.2205396803500069
+    winner: calculated
+    sources:
+      calculated: 0.2205396803500069
+  EBP:
+    value: 55.0
+    winner: calculated
+    sources:
+      calculated: 55.0

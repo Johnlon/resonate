@@ -1,0 +1,4 @@
+[04:23:28] PROBLEM field=schema_fail item=DS215-8 url=https://www.soundimports.eu/en/dayton-audio-ds215-8.html offset=0
+         raw_value="WDR: 'Vas' stored=0.0431 differs from calculated=0.045558 (deps: roo=1.20095, c=343.684, Sd=0.02112, Cms=0.00072)"
+         reason=File failed strict schema validation
+[04:23:28] SCHEMA_FAIL errors=1

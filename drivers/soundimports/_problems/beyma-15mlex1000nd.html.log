@@ -1,0 +1,16 @@
+[04:18:37] PROBLEM field=Qts_impossible item=15MLEX1000Nd url=https://www.soundimports.eu/en/beyma-15mlex1000nd.html offset=0
+         raw_value='Qts=0.21 Qes=0.21'
+         reason=Qts ≥ Qes — thermodynamically impossible (Qts must be < Qes)
+[04:18:37] PROBLEM field=Qts_impossible item=15MLEX1000Nd url=https://www.soundimports.eu/en/beyma-15mlex1000nd.html offset=0
+         raw_value='Qts_impossible'
+         reason=DQ check failure
+[04:18:37] PROBLEM field=suspect:Qts item=15MLEX1000Nd url=https://www.soundimports.eu/en/beyma-15mlex1000nd.html offset=0
+         raw_value='suspect:Qts'
+         reason=DQ check failure
+[04:18:37] PROBLEM field=suspect:Qes item=15MLEX1000Nd url=https://www.soundimports.eu/en/beyma-15mlex1000nd.html offset=0
+         raw_value='suspect:Qes'
+         reason=DQ check failure
+[04:18:37] PROBLEM field=suspect:Qms item=15MLEX1000Nd url=https://www.soundimports.eu/en/beyma-15mlex1000nd.html offset=0
+         raw_value='suspect:Qms'
+         reason=DQ check failure
+[04:18:37] DONE problems=5

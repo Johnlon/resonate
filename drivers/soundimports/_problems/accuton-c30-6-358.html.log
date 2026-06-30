@@ -1,0 +1,4 @@
+[04:14:56] PROBLEM field=missing_ts item=C30-6-358 url=https://www.soundimports.eu/en/accuton-c30-6-358.html offset=0
+         raw_value="['BL', 'Vas', 'Xmax']"
+         reason=Missing mandatory T/S fields — driver not written
+[04:14:56] SKIP missing_ts=['BL', 'Vas', 'Xmax']

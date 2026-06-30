@@ -1,0 +1,4 @@
+[04:21:03] PROBLEM field=schema_fail item=CE36-8 url=https://www.soundimports.eu/en/dayton-audio-ce36-8.html offset=0
+         raw_value="WDR: 'Vas' stored=5.5e-05 differs from calculated=7.64791e-05 (deps: roo=1.20095, c=343.684, Sd=0.00072, Cms=0.00104)"
+         reason=File failed strict schema validation
+[04:21:03] SCHEMA_FAIL errors=1

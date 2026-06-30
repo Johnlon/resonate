@@ -1,0 +1,10 @@
+[04:20:52] PROBLEM field=missing_Sd item=AMT3-4 url=https://www.soundimports.eu/en/dayton-audio-amt3-4.html offset=0
+         raw_value='Sd absent'
+         reason=Sd absent, zero, or invalid — scraper artifact
+[04:20:52] PROBLEM field=Qts_high item=AMT3-4 url=https://www.soundimports.eu/en/dayton-audio-amt3-4.html offset=0
+         raw_value='Qts=6.15'
+         reason=Qts > 5 — physically unreasonable for any driver
+[04:20:52] PROBLEM field=missing_ts item=AMT3-4 url=https://www.soundimports.eu/en/dayton-audio-amt3-4.html offset=0
+         raw_value="['BL', 'Cms', 'Mms', 'Qes', 'Sd', 'Vas', 'Xmax']"
+         reason=Missing mandatory T/S fields — driver not written
+[04:20:52] SKIP missing_ts=['BL', 'Cms', 'Mms', 'Qes', 'Sd', 'Vas', 'Xmax']

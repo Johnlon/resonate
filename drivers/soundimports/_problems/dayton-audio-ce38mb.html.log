@@ -1,0 +1,4 @@
+[04:21:04] PROBLEM field=missing_ts item=CE38MB-32 url=https://www.soundimports.eu/en/dayton-audio-ce38mb.html offset=0
+         raw_value="['Vas']"
+         reason=Missing mandatory T/S fields — driver not written
+[04:21:04] SKIP missing_ts=['Vas']

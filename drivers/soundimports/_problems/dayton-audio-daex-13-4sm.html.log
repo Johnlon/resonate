@@ -1,0 +1,13 @@
+[04:21:21] PROBLEM field=html_pdf_mismatch item=DAEX-13-4SM url=https://www.soundimports.eu/en/dayton-audio-daex-13-4sm.html offset=0
+         raw_value='Znom: HTML=4 PDF=8 (100% diff)'
+         reason=HTML and PDF values disagree by >10%
+[04:21:21] PROBLEM field=missing_Sd item=DAEX-13-4SM url=https://www.soundimports.eu/en/dayton-audio-daex-13-4sm.html offset=0
+         raw_value='Sd absent'
+         reason=Sd absent, zero, or invalid — scraper artifact
+[04:21:21] PROBLEM field=Fs_no_Q item=DAEX-13-4SM url=https://www.soundimports.eu/en/dayton-audio-daex-13-4sm.html offset=0
+         raw_value="Fs=950 Hz with no Qts/Qes — likely crossover/range freq, not T/S resonance; compression drivers and AMTs don't publish T/S Fs"
+         reason=Fs > 500 Hz but no Qts/Qes — crossover/range freq captured as Fs (compression driver or AMT)
+[04:21:21] PROBLEM field=missing_ts item=DAEX-13-4SM url=https://www.soundimports.eu/en/dayton-audio-daex-13-4sm.html offset=0
+         raw_value="['BL', 'Cms', 'Mms', 'Qes', 'Qms', 'Qts', 'Sd', 'Vas', 'Xmax']"
+         reason=Missing mandatory T/S fields — driver not written
+[04:21:21] SKIP missing_ts=['BL', 'Cms', 'Mms', 'Qes', 'Qms', 'Qts', 'Sd', 'Vas', 'Xmax']

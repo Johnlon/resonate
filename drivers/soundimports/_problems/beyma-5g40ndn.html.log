@@ -1,0 +1,4 @@
+[04:18:41] PROBLEM field=missing_ts item=5G40Nd/N url=https://www.soundimports.eu/en/beyma-5g40ndn.html offset=0
+         raw_value="['Mms']"
+         reason=Missing mandatory T/S fields — driver not written
+[04:18:41] SKIP missing_ts=['Mms']

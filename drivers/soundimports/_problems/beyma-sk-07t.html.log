@@ -1,0 +1,7 @@
+[04:18:53] PROBLEM field=missing_Sd item=SK-07/T url=https://www.soundimports.eu/en/beyma-sk-07t.html offset=0
+         raw_value='Sd absent'
+         reason=Sd absent, zero, or invalid — scraper artifact
+[04:18:53] PROBLEM field=missing_ts item=SK-07/T url=https://www.soundimports.eu/en/beyma-sk-07t.html offset=0
+         raw_value="['BL', 'Cms', 'Mms', 'Qes', 'Qms', 'Qts', 'Re', 'Sd', 'Vas', 'Xmax']"
+         reason=Missing mandatory T/S fields — driver not written
+[04:18:53] SKIP missing_ts=['BL', 'Cms', 'Mms', 'Qes', 'Qms', 'Qts', 'Re', 'Sd', 'Vas', 'Xmax']

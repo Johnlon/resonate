@@ -1,0 +1,4 @@
+[04:13:42] PROBLEM field=schema_fail item=C173-6-096 url=https://www.soundimports.eu/en/accuton-c173-6-096.html offset=0
+         raw_value="WDR: 'Qts' stored=0.22 differs from calculated=0.228293 (deps: Qms=4.68, Qes=0.24)"
+         reason=File failed strict schema validation
+[04:13:42] SCHEMA_FAIL errors=1

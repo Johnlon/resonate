@@ -1,0 +1,4 @@
+[04:24:29] PROBLEM field=missing_ts item=ND105-PR url=https://www.soundimports.eu/en/dayton-audio-nd105-pr.html offset=0
+         raw_value="['BL', 'Qes', 'Qts', 'Re']"
+         reason=Missing mandatory T/S fields — driver not written
+[04:24:29] SKIP missing_ts=['BL', 'Qes', 'Qts', 'Re']

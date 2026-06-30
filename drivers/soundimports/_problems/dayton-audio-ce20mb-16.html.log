@@ -1,0 +1,7 @@
+[04:21:00] PROBLEM field=missing_Sd item=CE20MB-16 url=https://www.soundimports.eu/en/dayton-audio-ce20mb-16.html offset=0
+         raw_value='Sd absent'
+         reason=Sd absent, zero, or invalid — scraper artifact
+[04:21:00] PROBLEM field=missing_ts item=CE20MB-16 url=https://www.soundimports.eu/en/dayton-audio-ce20mb-16.html offset=0
+         raw_value="['BL', 'Cms', 'Mms', 'Qes', 'Qms', 'Qts', 'Re', 'Sd', 'Vas', 'Xmax']"
+         reason=Missing mandatory T/S fields — driver not written
+[04:21:00] SKIP missing_ts=['BL', 'Cms', 'Mms', 'Qes', 'Qms', 'Qts', 'Re', 'Sd', 'Vas', 'Xmax']

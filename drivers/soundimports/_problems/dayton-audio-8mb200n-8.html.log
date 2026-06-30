@@ -1,0 +1,22 @@
+[04:20:46] PROBLEM field=Qts_impossible item=8MB200N-8 url=https://www.soundimports.eu/en/dayton-audio-8mb200n-8.html offset=0
+         raw_value='Qts=0.32 Qes=0.32'
+         reason=Qts ≥ Qes — thermodynamically impossible (Qts must be < Qes)
+[04:20:46] PROBLEM field=Qts_impossible item=8MB200N-8 url=https://www.soundimports.eu/en/dayton-audio-8mb200n-8.html offset=0
+         raw_value='Qts_impossible'
+         reason=DQ check failure
+[04:20:46] PROBLEM field=suspect:Qts item=8MB200N-8 url=https://www.soundimports.eu/en/dayton-audio-8mb200n-8.html offset=0
+         raw_value='suspect:Qts'
+         reason=DQ check failure
+[04:20:46] PROBLEM field=suspect:Qes item=8MB200N-8 url=https://www.soundimports.eu/en/dayton-audio-8mb200n-8.html offset=0
+         raw_value='suspect:Qes'
+         reason=DQ check failure
+[04:20:46] PROBLEM field=suspect:Qms item=8MB200N-8 url=https://www.soundimports.eu/en/dayton-audio-8mb200n-8.html offset=0
+         raw_value='suspect:Qms'
+         reason=DQ check failure
+[04:20:46] PROBLEM field=schema_fail item=8MB200N-8 url=https://www.soundimports.eu/en/dayton-audio-8mb200n-8.html offset=0
+         raw_value="WDR: 'Qts' stored=0.32 differs from calculated=0.298442 (deps: Qms=4.43, Qes=0.32)"
+         reason=File failed strict schema validation
+[04:20:46] PROBLEM field=schema_fail item=8MB200N-8 url=https://www.soundimports.eu/en/dayton-audio-8mb200n-8.html offset=0
+         raw_value="WDR: 'Vas' stored=0.00877821 differs from calculated=0.00784846 (deps: roo=1.20095, c=343.684, Sd=0.020096, Cms=0.000137)"
+         reason=File failed strict schema validation
+[04:20:46] SCHEMA_FAIL errors=2

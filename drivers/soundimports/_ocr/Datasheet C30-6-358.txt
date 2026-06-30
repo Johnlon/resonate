@@ -1,0 +1,190 @@
+C30-6-358
+
+Tweeter
+
+MAIN FEATURES :
+
+FULL FEATURED CELL CONCEPT
+UNDERHUNG MOTOR DESIGN
+VENTED VC & POLE PIECE
+
+NO FERROFLUID FILLING
+
+1800 HZ - 30 KHZ
+
+The C30 - 6 - 358 is a1.2 inch
+tweeter with ultra hard
+ceramic dome in a 58 mm body.
+
+A proprietary clamping tech-
+nique provides easy mounting
+and adapting to individual front-
+plates.
+
+As the dome breakup is above
+the audible range and well
+damped, no dome cutouts are
+required.
+
+A unique FEA optimized under-
+hung motor design with vented
+aluminium voice coil former and
+double neodymium magnet gua-
+rantees low energy storage,
+excellent heat transfer and high
+excursion capability for low
+power compression and ultra
+low distortion around 0.07% @
+2.83V and 0.5% max. @ 110dB.
+
+The new designed soft fabric
+surround centers the moving
+
+parts with improved linearity.
+
+We recommend an application
+above 1800 Hz.
+
+CELL
+
+CONCEPT DRIVER
+
+CELL
+
+Sound Pressure [dB]
+
+Impedance [Ohm]
+
+Relative Distortion [%}
+
+CONCEPT DRIVER 3
+
+110
+
+105
+
+100
+
+95
+
+90
+
+8s
+
+80
+
+7S
+
+7O
+
+65
+
+60
+
+22,5
+
+20,0
+
+17,5
+
+15,0
+
+12,5
+
+10,0
+
+accuton’
+
+as
+Frequency Response
+KLIPPEL
+102 104
+Frequency [Hz]
+a
+Impedance
+KLIPPEL
+102 10% 104
+Frequency [Hz]
+— a
+2nd Harmonic 3rd Harmonic
+KLIPPEL
+
+103 104
+Frequency [Hz]
+accuton
+
+. C30- 6 -358
+Tweeter
+75 057.6
+6,45 ~ ; ~
+= recommended cutout diameter: 58 -0/+0.1
+| _-28
+Mechanical data
+Overall diameter 57.6 mm
+Cutout hole diameter 58 mm
+Frontplate depth minimum 6 mm
+Overall depth 28 mm
+Motor assembly diameter -
+Motor assembly depth -
+Screwdriver required DIN 7984, 3mm
+Terminal +:48x08/-:28x0.8 mm
+Shipping weight / net weight (one piece) 0.48 / 0.38 mm
+Shipping box size (pair) 130 / 130/190 mm
+Thiele/Small Parameters
+Sensitivity (2.83V / 1m) Lp 93.5* dB
+DC-resistance Re 5.8 Ohm
+resonance frequency Fs 810 Hz
+equivalent volume of air Vas - L
+mechanical Q Qms 2.54
+electrical Q Qes 0.81
+total Q Qts 0.62
+effective piston area Sd 8.55 cm?
+moving mass Mms 0.28 g
+suspension compl. Cms 0.145 mm/N
+mechanical resistance Rms 0.97 kg xs
+
+Voice Coil data
+
+Power handling
+
+Linear excursion
+
+Voice coil diameter
+
+Voice coil former material
+Voice coil wire material
+Voice coil inductance
+Force factor
+
+Motor type
+
+Ferrofluid filling
+
+Xmax
+
+BI
+
+* Please refer to www.accuton.com for exact measurement conditions and further information.
+
+120*
+
++/- 1.2
+
+Al
+
+Cu
+
+0.01
+
+3.98
+Underhung
+
+no
+
+Watt
+mm
+
+mm
+
+mH
+N/A

@@ -2,26 +2,47 @@ source: https://www.soundimports.eu/en/beyma-18p1000fev2s.html
 manu_page_url: null
 vendor_page_url: https://www.soundimports.eu/en/beyma-18p1000fev2s.html
 datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
 frd_url: null
 zma_url: null
 quality: M
 issue: scraped_not_human_verified
 detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T/S
-  parameters have not been verified by a human against the datasheet.
-corrections: null
+  parameters not human-verified. PDF extraction returned no matches; using HTML only.
+corrections: '''Vas'' stored=0.23 differs from calculated=0.232731 (deps: roo=1.20095,
+  c=343.684, Sd=0.125, Cms=0.000105)'
 reviewed_by: null
-driver_type: subwoofer
+driver_type: null
+nominal_size_cm: null
+obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 _sources:
   vendor_page: https://www.soundimports.eu/en/beyma-18p1000fev2s.html
 specs:
-  Xmax:  # one-way linear excursion (m)
-    value: 0.008
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
     winner: vendor_page
     sources:
-      vendor_page: 0.008
+      vendor_page: 8.0
+  Rms:  # mechanical resistance (kg/s)
+    value: 4.4
+    winner: vendor_page
+    sources:
+      vendor_page: 4.4
+  Fs:  # free air resonance (Hz)
+    value: 33.0
+    winner: vendor_page
+    sources:
+      vendor_page: 33.0
+  Pe:  # rated power input (W)
+    value: 1200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1200.0
   Qts:  # total Q factor
     value: 0.32
     winner: vendor_page
@@ -32,83 +53,83 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 5.2
-  Sd:  # effective piston area (m²)
-    value: 0.125
-    winner: vendor_page
-    sources:
-      vendor_page: 0.125
-  Fs:  # free air resonance (Hz)
-    value: 33.0
-    winner: vendor_page
-    sources:
-      vendor_page: 33.0
-  Rms:  # mechanical resistance (kg/s)
-    value: 4.4
-    winner: vendor_page
-    sources:
-      vendor_page: 4.4
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.221
-    winner: vendor_page
-    sources:
-      vendor_page: 0.221
-  Qms:  # mechanical Q factor
-    value: 10.5
-    winner: vendor_page
-    sources:
-      vendor_page: 10.5
-  Cms:  # mechanical compliance (m/N)
-    value: 0.000105
-    winner: vendor_page
-    sources:
-      vendor_page: 0.000105
-  Znom:  # nominal impedance (Ω)
-    value: 8.0
-    winner: vendor_page
-    sources:
-      vendor_page: 8.0
-  Qes:  # electrical Q factor
-    value: 0.33
-    winner: vendor_page
-    sources:
-      vendor_page: 0.33
-  Pe:  # rated power input (W)
-    value: 1200.0
-    winner: vendor_page
-    sources:
-      vendor_page: 1200.0
-  BL:  # force factor (T·m)
-    value: 26.8
-    winner: vendor_page
-    sources:
-      vendor_page: 26.8
   Le:  # voice coil inductance (H)
     value: 0.00175
     winner: vendor_page
     sources:
       vendor_page: 0.00175
+  BL:  # force factor (T·m)
+    value: 26.8
+    winner: vendor_page
+    sources:
+      vendor_page: 26.8
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.221
+    winner: vendor_page
+    sources:
+      vendor_page: 0.221
+  Cms:  # mechanical compliance (m/N)
+    value: 0.000105
+    winner: vendor_page
+    sources:
+      vendor_page: 0.000105
+  Sd:  # effective piston area (m²)
+    value: 0.125
+    winner: vendor_page
+    sources:
+      vendor_page: 0.125
+  Qms:  # mechanical Q factor
+    value: 10.5
+    winner: vendor_page
+    sources:
+      vendor_page: 10.5
+  Qes:  # electrical Q factor
+    value: 0.33
+    winner: vendor_page
+    sources:
+      vendor_page: 0.33
   Vas:  # equivalent acoustic volume (m³)
     value: 0.23
     winner: vendor_page
     sources:
       vendor_page: 0.23
-  SPL:  # sensitivity (dB, 2.83 V/1 m)
+  Xmax:  # one-way linear excursion (m)
+    value: 0.008
+    winner: vendor_page
+    sources:
+      vendor_page: 0.008
+  power_rms_W:
+    value: 1200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 1200.0
+  sensitivity_db:
     value: 98.0
     winner: vendor_page
     sources:
       vendor_page: 98.0
-  freq_low_hz:  # published lower frequency limit (Hz)
+  freq_high_hz:  # published upper frequency limit (Hz)
     value: 30.0
     winner: vendor_page
     sources:
       vendor_page: 30.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 2.0
-    winner: vendor_page
-    sources:
-      vendor_page: 2.0
   voice_coil_dia_mm:  # voice coil diameter (mm)
     value: 101.6
     winner: vendor_page
     sources:
       vendor_page: 101.6
+  Vd:
+    value: 0.001
+    winner: calculated
+    sources:
+      calculated: 0.001
+  Dd:
+    value: 0.3989422804014327
+    winner: calculated
+    sources:
+      calculated: 0.3989422804014327
+  EBP:
+    value: 100.0
+    winner: calculated
+    sources:
+      calculated: 100.0

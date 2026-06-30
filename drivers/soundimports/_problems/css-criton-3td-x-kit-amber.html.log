@@ -1,0 +1,4 @@
+[04:20:19] PROBLEM field=missing_ts item=Criton-3TD-X-Tower-Kit-AMBER url=https://www.soundimports.eu/en/css-criton-3td-x-kit-amber.html offset=0
+         raw_value="['BL', 'Cms', 'Mms', 'Vas', 'Xmax']"
+         reason=Missing mandatory T/S fields — driver not written
+[04:20:19] SKIP missing_ts=['BL', 'Cms', 'Mms', 'Vas', 'Xmax']

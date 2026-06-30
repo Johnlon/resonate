@@ -1,0 +1,4 @@
+[04:14:58] PROBLEM field=missing_ts item=S220-11-221 url=https://www.soundimports.eu/en/accuton-s220-11-221.html offset=0
+         raw_value="['Mms']"
+         reason=Missing mandatory T/S fields — driver not written
+[04:14:58] SKIP missing_ts=['Mms']

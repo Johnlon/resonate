@@ -1,0 +1,16 @@
+[04:18:44] PROBLEM field=Sd_tiny item=6CX200Nd/N url=https://www.soundimports.eu/en/beyma-6cx200ndn.html offset=0
+         raw_value='Sd=0.013 cm²'
+         reason=Sd < 0.5 cm² — scraper artifact (near-zero)
+[04:18:44] PROBLEM field=tweeter_fs item=6CX200Nd/N url=https://www.soundimports.eu/en/beyma-6cx200ndn.html offset=0
+         raw_value='Sd=0.0 cm² Fs=65.0'
+         reason=Sd < 5 cm² but Fs < 100 Hz — tiny piston with woofer-range Fs
+[04:18:44] PROBLEM field=Sd_tiny item=6CX200Nd/N url=https://www.soundimports.eu/en/beyma-6cx200ndn.html offset=0
+         raw_value='Sd_tiny'
+         reason=DQ check failure
+[04:18:44] PROBLEM field=tweeter_fs item=6CX200Nd/N url=https://www.soundimports.eu/en/beyma-6cx200ndn.html offset=0
+         raw_value='tweeter_fs'
+         reason=DQ check failure
+[04:18:44] PROBLEM field=schema_fail item=6CX200Nd/N url=https://www.soundimports.eu/en/beyma-6cx200ndn.html offset=0
+         raw_value="WDR: 'Sd' = 1.35e-06 below minimum 1e-05 m²"
+         reason=File failed strict schema validation
+[04:18:44] SCHEMA_FAIL errors=1

@@ -1,0 +1,4 @@
+[04:20:33] PROBLEM field=schema_fail item=10MB250N-8 url=https://www.soundimports.eu/en/dayton-audio-10mb250n-8.html offset=0
+         raw_value="WDR: 'Vas' stored=0.0433247 differs from calculated=0.0393537 (deps: roo=1.20095, c=343.684, Sd=0.033312, Cms=0.00025)"
+         reason=File failed strict schema validation
+[04:20:33] SCHEMA_FAIL errors=1

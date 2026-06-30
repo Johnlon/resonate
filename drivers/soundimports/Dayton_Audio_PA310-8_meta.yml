@@ -2,26 +2,41 @@ source: https://www.soundimports.eu/en/dayton-audio-pa310-8.html
 manu_page_url: null
 vendor_page_url: https://www.soundimports.eu/en/dayton-audio-pa310-8.html
 datasheet_url: null
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
 frd_url: null
 zma_url: null
 quality: M
 issue: scraped_not_human_verified
 detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T/S
-  parameters have not been verified by a human against the datasheet.
+  parameters not human-verified. PDF extraction returned no matches; using HTML only.
 corrections: null
 reviewed_by: null
-driver_type: subwoofer
+driver_type: null
+nominal_size_cm: null
+obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
 _sources:
   vendor_page: https://www.soundimports.eu/en/dayton-audio-pa310-8.html
 specs:
-  Xmax:  # one-way linear excursion (m)
-    value: 0.005
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
     winner: vendor_page
     sources:
-      vendor_page: 0.005
+      vendor_page: 8.0
+  Fs:  # free air resonance (Hz)
+    value: 39.0
+    winner: vendor_page
+    sources:
+      vendor_page: 39.0
+  Pe:  # rated power input (W)
+    value: 450.0
+    winner: vendor_page
+    sources:
+      vendor_page: 450.0
   Qts:  # total Q factor
     value: 0.29
     winner: vendor_page
@@ -32,67 +47,62 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 5.5
-  Sd:  # effective piston area (m²)
-    value: 0.05309
-    winner: vendor_page
-    sources:
-      vendor_page: 0.05309
-  Fs:  # free air resonance (Hz)
-    value: 39.0
-    winner: vendor_page
-    sources:
-      vendor_page: 39.0
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0728
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0728
-  Qms:  # mechanical Q factor
-    value: 8.85
-    winner: vendor_page
-    sources:
-      vendor_page: 8.85
-  Cms:  # mechanical compliance (m/N)
-    value: 0.00023
-    winner: vendor_page
-    sources:
-      vendor_page: 0.00023
-  Znom:  # nominal impedance (Ω)
-    value: 8.0
-    winner: vendor_page
-    sources:
-      vendor_page: 8.0
-  Qes:  # electrical Q factor
-    value: 0.3
-    winner: vendor_page
-    sources:
-      vendor_page: 0.3
-  Pe:  # rated power input (W)
-    value: 450.0
-    winner: vendor_page
-    sources:
-      vendor_page: 450.0
-  BL:  # force factor (T·m)
-    value: 18.0
-    winner: vendor_page
-    sources:
-      vendor_page: 18.0
   Le:  # voice coil inductance (H)
     value: 0.00168
     winner: vendor_page
     sources:
       vendor_page: 0.00168
+  BL:  # force factor (T·m)
+    value: 18.0
+    winner: vendor_page
+    sources:
+      vendor_page: 18.0
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0728
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0728
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00023
+    winner: vendor_page
+    sources:
+      vendor_page: 0.00023
+  Sd:  # effective piston area (m²)
+    value: 0.05309
+    winner: vendor_page
+    sources:
+      vendor_page: 0.05309
+  Qms:  # mechanical Q factor
+    value: 8.85
+    winner: vendor_page
+    sources:
+      vendor_page: 8.85
+  Qes:  # electrical Q factor
+    value: 0.3
+    winner: vendor_page
+    sources:
+      vendor_page: 0.3
   Vas:  # equivalent acoustic volume (m³)
     value: 0.0918
     winner: vendor_page
     sources:
       vendor_page: 0.0918
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005
+    winner: vendor_page
+    sources:
+      vendor_page: 0.005
+  power_rms_W:
+    value: 450.0
+    winner: vendor_page
+    sources:
+      vendor_page: 450.0
   power_peak_W:  # peak power handling (W)
     value: 900.0
     winner: vendor_page
     sources:
       vendor_page: 900.0
-  SPL:  # sensitivity (dB, 2.83 V/1 m)
+  sensitivity_db:
     value: 96.1
     winner: vendor_page
     sources:
@@ -103,12 +113,27 @@ specs:
     sources:
       vendor_page: 44.0
   freq_high_hz:  # published upper frequency limit (Hz)
-    value: 4.0
+    value: 4000.0
     winner: vendor_page
     sources:
-      vendor_page: 4.0
+      vendor_page: 4000.0
   voice_coil_dia_mm:  # voice coil diameter (mm)
     value: 76.0
     winner: vendor_page
     sources:
       vendor_page: 76.0
+  Vd:
+    value: 0.00026545
+    winner: calculated
+    sources:
+      calculated: 0.00026545
+  Dd:
+    value: 0.25999286034425984
+    winner: calculated
+    sources:
+      calculated: 0.25999286034425984
+  EBP:
+    value: 130.0
+    winner: calculated
+    sources:
+      calculated: 130.0

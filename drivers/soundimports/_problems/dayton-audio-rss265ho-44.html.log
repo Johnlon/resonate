@@ -1,0 +1,4 @@
+[04:25:07] PROBLEM field=schema_fail item=RSS265HO-44 url=https://www.soundimports.eu/en/dayton-audio-rss265ho-44.html offset=0
+         raw_value="WDR: 'Vas' stored=0.0348297 differs from calculated=0.0369734 (deps: roo=1.20095, c=343.684, Sd=0.03523, Cms=0.00021)"
+         reason=File failed strict schema validation
+[04:25:07] SCHEMA_FAIL errors=1

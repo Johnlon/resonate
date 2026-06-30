@@ -1,0 +1,4 @@
+[04:25:05] PROBLEM field=schema_fail item=RSS210HF-4 url=https://www.soundimports.eu/en/dayton-audio-rss210hf-4.html offset=0
+         raw_value="WDR: 'Vas' stored=0.0237 differs from calculated=0.025173 (deps: roo=1.20095, c=343.684, Sd=0.0219, Cms=0.00037)"
+         reason=File failed strict schema validation
+[04:25:05] SCHEMA_FAIL errors=1

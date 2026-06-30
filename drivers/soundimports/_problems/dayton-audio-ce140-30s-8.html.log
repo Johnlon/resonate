@@ -1,0 +1,7 @@
+[04:20:59] PROBLEM field=Qts_impossible item=CE140-30S-8 url=https://www.soundimports.eu/en/dayton-audio-ce140-30s-8.html offset=0
+         raw_value='Qts=2.76 Qes=1.35'
+         reason=Qts ≥ Qes — thermodynamically impossible (Qts must be < Qes)
+[04:20:59] PROBLEM field=missing_ts item=CE140-30S-8 url=https://www.soundimports.eu/en/dayton-audio-ce140-30s-8.html offset=0
+         raw_value="['Vas']"
+         reason=Missing mandatory T/S fields — driver not written
+[04:20:59] SKIP missing_ts=['Vas']

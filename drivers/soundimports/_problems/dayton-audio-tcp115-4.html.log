@@ -1,0 +1,4 @@
+[04:25:24] PROBLEM field=schema_fail item=TCP115-4 url=https://www.soundimports.eu/en/dayton-audio-tcp115-4.html offset=0
+         raw_value="WDR: 'Vas' stored=0.00311485 differs from calculated=0.00294303 (deps: roo=1.20095, c=343.684, Sd=0.00503, Cms=0.00082)"
+         reason=File failed strict schema validation
+[04:25:24] SCHEMA_FAIL errors=1

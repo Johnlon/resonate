@@ -1,0 +1,4 @@
+[04:24:51] PROBLEM field=schema_fail item=PS180-8 url=https://www.soundimports.eu/en/dayton-audio-ps180-8.html offset=0
+         raw_value="WDR: 'Vas' stored=0.0276 differs from calculated=0.0262286 (deps: roo=1.20095, c=343.684, Sd=0.01327, Cms=0.00105)"
+         reason=File failed strict schema validation
+[04:24:51] SCHEMA_FAIL errors=1

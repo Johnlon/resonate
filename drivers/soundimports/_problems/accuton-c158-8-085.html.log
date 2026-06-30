@@ -1,0 +1,19 @@
+[04:13:39] PROBLEM field=html_pdf_mismatch item=C158-8-085 url=https://www.soundimports.eu/en/accuton-c158-8-085.html offset=0
+         raw_value='Fs: HTML=37 PDF=33 (11% diff)'
+         reason=HTML and PDF values disagree by >10%
+[04:13:39] PROBLEM field=html_pdf_mismatch item=C158-8-085 url=https://www.soundimports.eu/en/accuton-c158-8-085.html offset=0
+         raw_value='Qms: HTML=4.91 PDF=4.12 (16% diff)'
+         reason=HTML and PDF values disagree by >10%
+[04:13:39] PROBLEM field=html_pdf_mismatch item=C158-8-085 url=https://www.soundimports.eu/en/accuton-c158-8-085.html offset=0
+         raw_value='Qes: HTML=0.39 PDF=0.34 (13% diff)'
+         reason=HTML and PDF values disagree by >10%
+[04:13:39] PROBLEM field=html_pdf_mismatch item=C158-8-085 url=https://www.soundimports.eu/en/accuton-c158-8-085.html offset=0
+         raw_value='Qts: HTML=0.36 PDF=0.31 (14% diff)'
+         reason=HTML and PDF values disagree by >10%
+[04:13:39] PROBLEM field=html_pdf_mismatch item=C158-8-085 url=https://www.soundimports.eu/en/accuton-c158-8-085.html offset=0
+         raw_value='Cms: HTML=0.0015 PDF=0.00189 (26% diff)'
+         reason=HTML and PDF values disagree by >10%
+[04:13:39] PROBLEM field=html_pdf_mismatch item=C158-8-085 url=https://www.soundimports.eu/en/accuton-c158-8-085.html offset=0
+         raw_value='Vas: HTML=0.0273 PDF=0.035 (28% diff)'
+         reason=HTML and PDF values disagree by >10%
+[04:13:39] DONE problems=6

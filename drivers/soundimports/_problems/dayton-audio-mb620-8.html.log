@@ -1,0 +1,4 @@
+[04:24:23] PROBLEM field=schema_fail item=MB620-8 url=https://www.soundimports.eu/en/dayton-audio-mb620-8.html offset=0
+         raw_value="WDR: 'Qts' stored=0.55 differs from calculated=0.593818 (deps: Qms=4.26, Qes=0.69)"
+         reason=File failed strict schema validation
+[04:24:23] SCHEMA_FAIL errors=1

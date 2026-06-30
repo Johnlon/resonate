@@ -2,15 +2,20 @@ source: https://www.soundimports.eu/en/accuton-c220-6-221.html
 manu_page_url: null
 vendor_page_url: https://www.soundimports.eu/en/accuton-c220-6-221.html
 datasheet_url: https://doc.soundimports.nl/pdf/brands/Accuton/C220-6-221/C220-6-221.pdf
+adv_datasheet_url: null
+drawing_url: null
+cad_url: null
 frd_url: null
 zma_url: null
 quality: M
 issue: scraped_not_human_verified
-detail: Automatically scraped from SoundImports (scraped via soundimports.eu). T/S
-  parameters have not been verified by a human against the datasheet.
+detail: 'Automatically scraped from SoundImports (scraped via soundimports.eu). T/S
+  parameters not human-verified. T/S extracted from PDF (pdf_spatial): BL,Cms,Fs,Le,Mms,Qes,Qms,Qts,Re,Rms,Sd,Vas,Xmax.'
 corrections: null
 reviewed_by: null
-driver_type: subwoofer
+driver_type: null
+nominal_size_cm: null
+obsolete: null
 dq_issue: null
 community: null
 fetched_sku: null
@@ -18,73 +23,111 @@ _sources:
   datasheet: https://doc.soundimports.nl/pdf/brands/Accuton/C220-6-221/C220-6-221.pdf
   vendor_page: https://www.soundimports.eu/en/accuton-c220-6-221.html
 specs:
-  Xmax:  # one-way linear excursion (m)
-    value: 0.005
-    winner: vendor_page
+  Rms:  # mechanical resistance (kg/s)
+    value: 0.72
+    winner: datasheet
     sources:
-      vendor_page: 0.005
-  Qts:  # total Q factor
-    value: 0.4
-    winner: vendor_page
-    sources:
-      vendor_page: 0.4
-  Re:  # DC voice coil resistance (Ω)
-    value: 6.3
-    winner: vendor_page
-    sources:
-      vendor_page: 6.3
-  Sd:  # effective piston area (m²)
-    value: 0.0224
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0224
+      datasheet: 0.72
   Fs:  # free air resonance (Hz)
     value: 28.0
-    winner: vendor_page
+    winner: datasheet
     sources:
+      datasheet: 28.0
       vendor_page: 28.0
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0304
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0304
-  Qms:  # mechanical Q factor
-    value: 7.1
-    winner: vendor_page
-    sources:
-      vendor_page: 7.1
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0012
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0012
-  Qes:  # electrical Q factor
-    value: 0.42
-    winner: vendor_page
-    sources:
-      vendor_page: 0.42
   Pe:  # rated power input (W)
     value: 150.0
     winner: vendor_page
     sources:
       vendor_page: 150.0
-  BL:  # force factor (T·m)
-    value: 8.7
-    winner: vendor_page
+    note: Not in datasheet; value from vendor_page
+  Qts:  # total Q factor
+    value: 0.37
+    winner: datasheet
     sources:
+      datasheet: 0.37
+      vendor_page: 0.4
+  Re:  # DC voice coil resistance (Ω)
+    value: 5.8
+    winner: datasheet
+    sources:
+      datasheet: 5.8
+      vendor_page: 6.3
+  BL:  # force factor (T·m)
+    value: 8.9
+    winner: datasheet
+    sources:
+      datasheet: 8.9
       vendor_page: 8.7
   Le:  # voice coil inductance (H)
-    value: 0.00083
-    winner: vendor_page
+    value: 0.0008
+    winner: datasheet
     sources:
+      datasheet: 0.0008
       vendor_page: 0.00083
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0309
+    winner: datasheet
+    sources:
+      datasheet: 0.0309
+      vendor_page: 0.0304
+  Cms:  # mechanical compliance (m/N)
+    value: 0.00108
+    winner: datasheet
+    sources:
+      datasheet: 0.00108
+      vendor_page: 0.0012
+  Sd:  # effective piston area (m²)
+    value: 0.0227
+    winner: datasheet
+    sources:
+      datasheet: 0.0227
+      vendor_page: 0.0224
+  Qms:  # mechanical Q factor
+    value: 7.4
+    winner: datasheet
+    sources:
+      datasheet: 7.4
+      vendor_page: 7.1
+  Qes:  # electrical Q factor
+    value: 0.39
+    winner: datasheet
+    sources:
+      datasheet: 0.39
+      vendor_page: 0.42
   Vas:  # equivalent acoustic volume (m³)
-    value: 0.0862
+    value: 0.079
+    winner: datasheet
+    sources:
+      datasheet: 0.079
+      vendor_page: 0.0862
+  Xmax:  # one-way linear excursion (m)
+    value: 0.005
+    winner: datasheet
+    sources:
+      datasheet: 0.005
+      vendor_page: 0.005
+  power_rms_W:
+    value: 150.0
     winner: vendor_page
     sources:
-      vendor_page: 0.0862
-  SPL:  # sensitivity (dB, 2.83 V/1 m)
+      vendor_page: 150.0
+  sensitivity_db:
     value: 90.0
     winner: vendor_page
     sources:
       vendor_page: 90.0
+  Vd:
+    value: 0.00011350000000000001
+    winner: calculated
+    sources:
+      calculated: 0.00011350000000000001
+  Dd:
+    value: 0.17000746355818674
+    winner: calculated
+    sources:
+      calculated: 0.17000746355818674
+  EBP:
+    value: 71.7948717948718
+    winner: calculated
+    sources:
+      calculated: 71.7948717948718

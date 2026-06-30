@@ -1,0 +1,16 @@
+[04:18:29] PROBLEM field=Qts_impossible item=12G40 url=https://www.soundimports.eu/en/beyma-12g40.html offset=0
+         raw_value='Qts=0.3 Qes=0.3'
+         reason=Qts ≥ Qes — thermodynamically impossible (Qts must be < Qes)
+[04:18:29] PROBLEM field=Qts_impossible item=12G40 url=https://www.soundimports.eu/en/beyma-12g40.html offset=0
+         raw_value='Qts_impossible'
+         reason=DQ check failure
+[04:18:29] PROBLEM field=suspect:Qts item=12G40 url=https://www.soundimports.eu/en/beyma-12g40.html offset=0
+         raw_value='suspect:Qts'
+         reason=DQ check failure
+[04:18:29] PROBLEM field=suspect:Qes item=12G40 url=https://www.soundimports.eu/en/beyma-12g40.html offset=0
+         raw_value='suspect:Qes'
+         reason=DQ check failure
+[04:18:29] PROBLEM field=suspect:Qms item=12G40 url=https://www.soundimports.eu/en/beyma-12g40.html offset=0
+         raw_value='suspect:Qms'
+         reason=DQ check failure
+[04:18:29] DONE problems=5

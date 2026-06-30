@@ -1,0 +1,7 @@
+[04:24:27] PROBLEM field=schema_fail item=MX15-22 url=https://www.soundimports.eu/en/dayton-audio-mx15-22.html offset=0
+         raw_value="WDR: 'Qts' stored=0.4 differs from calculated=0.415264 (deps: Qms=4.27, Qes=0.46)"
+         reason=File failed strict schema validation
+[04:24:27] PROBLEM field=schema_fail item=MX15-22 url=https://www.soundimports.eu/en/dayton-audio-mx15-22.html offset=0
+         raw_value="WDR: 'Vas' stored=0.146115 differs from calculated=0.152539 (deps: roo=1.20095, c=343.684, Sd=0.08198, Cms=0.00016)"
+         reason=File failed strict schema validation
+[04:24:27] SCHEMA_FAIL errors=2

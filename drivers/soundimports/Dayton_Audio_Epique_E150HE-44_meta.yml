@@ -22,11 +22,21 @@ fetched_sku: null
 _sources:
   vendor_page: https://www.soundimports.eu/en/dayton-audio-e150he-44.html
 specs:
-  Xmax:  # one-way linear excursion (m)
-    value: 0.0147
+  Znom:  # nominal impedance (Ω)
+    value: 8.0
     winner: vendor_page
     sources:
-      vendor_page: 0.0147
+      vendor_page: 8.0
+  Fs:  # free air resonance (Hz)
+    value: 40.0
+    winner: vendor_page
+    sources:
+      vendor_page: 40.0
+  Pe:  # rated power input (W)
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
   Qts:  # total Q factor
     value: 0.39
     winner: vendor_page
@@ -37,78 +47,83 @@ specs:
     winner: vendor_page
     sources:
       vendor_page: 6.6
-  Sd:  # effective piston area (m²)
-    value: 0.0095
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0095
-  Fs:  # free air resonance (Hz)
-    value: 40.0
-    winner: vendor_page
-    sources:
-      vendor_page: 40.0
-  Mms:  # moving mass incl. air load (kg)
-    value: 0.0266
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0266
-  Qms:  # mechanical Q factor
-    value: 2.94
-    winner: vendor_page
-    sources:
-      vendor_page: 2.94
-  Cms:  # mechanical compliance (m/N)
-    value: 0.0006
-    winner: vendor_page
-    sources:
-      vendor_page: 0.0006
-  Znom:  # nominal impedance (Ω)
-    value: 8.0
-    winner: vendor_page
-    sources:
-      vendor_page: 8.0
-  Qes:  # electrical Q factor
-    value: 0.45
-    winner: vendor_page
-    sources:
-      vendor_page: 0.45
-  Pe:  # rated power input (W)
-    value: 200.0
-    winner: vendor_page
-    sources:
-      vendor_page: 200.0
-  BL:  # force factor (T·m)
-    value: 9.8
-    winner: vendor_page
-    sources:
-      vendor_page: 9.8
   Le:  # voice coil inductance (H)
     value: 0.0016
     winner: vendor_page
     sources:
       vendor_page: 0.0016
+  BL:  # force factor (T·m)
+    value: 9.8
+    winner: vendor_page
+    sources:
+      vendor_page: 9.8
+  Mms:  # moving mass incl. air load (kg)
+    value: 0.0266
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0266
+  Cms:  # mechanical compliance (m/N)
+    value: 0.0006
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0006
+  Sd:  # effective piston area (m²)
+    value: 0.0095
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0095
+  Qms:  # mechanical Q factor
+    value: 2.94
+    winner: vendor_page
+    sources:
+      vendor_page: 2.94
+  Qes:  # electrical Q factor
+    value: 0.45
+    winner: vendor_page
+    sources:
+      vendor_page: 0.45
   Vas:  # equivalent acoustic volume (m³)
     value: 0.007645536
     winner: vendor_page
     sources:
       vendor_page: 0.007645536
+  Xmax:  # one-way linear excursion (m)
+    value: 0.0147
+    winner: vendor_page
+    sources:
+      vendor_page: 0.0147
+  power_rms_W:
+    value: 200.0
+    winner: vendor_page
+    sources:
+      vendor_page: 200.0
   power_peak_W:  # peak power handling (W)
     value: 400.0
     winner: vendor_page
     sources:
       vendor_page: 400.0
-  SPL:  # sensitivity (dB, 2.83 V/1 m)
+  sensitivity_db:
     value: 83.3
     winner: vendor_page
     sources:
       vendor_page: 83.3
-  freq_low_hz:  # published lower frequency limit (Hz)
+  freq_high_hz:  # published upper frequency limit (Hz)
     value: 30.0
     winner: vendor_page
     sources:
       vendor_page: 30.0
-  freq_high_hz:  # published upper frequency limit (Hz)
-    value: 4.0
-    winner: vendor_page
+  Vd:
+    value: 0.00013964999999999998
+    winner: calculated
     sources:
-      vendor_page: 4.0
+      calculated: 0.00013964999999999998
+  Dd:
+    value: 0.10998079684646792
+    winner: calculated
+    sources:
+      calculated: 0.10998079684646792
+  EBP:
+    value: 88.88888888888889
+    winner: calculated
+    sources:
+      calculated: 88.88888888888889

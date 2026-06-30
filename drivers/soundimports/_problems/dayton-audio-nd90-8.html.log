@@ -1,0 +1,4 @@
+[04:24:35] PROBLEM field=schema_fail item=ND90-8 url=https://www.soundimports.eu/en/dayton-audio-nd90-8.html offset=0
+         raw_value="WDR: 'Vas' stored=0.00177 differs from calculated=0.00168467 (deps: roo=1.20095, c=343.684, Sd=0.00312, Cms=0.00122)"
+         reason=File failed strict schema validation
+[04:24:35] SCHEMA_FAIL errors=1

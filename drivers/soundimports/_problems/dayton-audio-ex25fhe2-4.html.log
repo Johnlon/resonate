@@ -1,0 +1,7 @@
+[04:23:47] PROBLEM field=missing_Sd item=EX25FHE2-4 url=https://www.soundimports.eu/en/dayton-audio-ex25fhe2-4.html offset=0
+         raw_value='Sd absent'
+         reason=Sd absent, zero, or invalid — scraper artifact
+[04:23:47] PROBLEM field=missing_ts item=EX25FHE2-4 url=https://www.soundimports.eu/en/dayton-audio-ex25fhe2-4.html offset=0
+         raw_value="['BL', 'Cms', 'Mms', 'Qes', 'Qms', 'Qts', 'Re', 'Sd', 'Vas', 'Xmax']"
+         reason=Missing mandatory T/S fields — driver not written
+[04:23:47] SKIP missing_ts=['BL', 'Cms', 'Mms', 'Qes', 'Qms', 'Qts', 'Re', 'Sd', 'Vas', 'Xmax']

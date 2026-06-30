@@ -1,11 +1,11 @@
 [Driver]
 Brand=Dayton Audio Epique
 Model=E150HE-44
-Manufacturer=
+Manufacturer=Dayton Audio Epique
 ProvidedBy=SoundImports (scraped via soundimports.eu)
 Comment=Source: https://www.soundimports.eu/en/dayton-audio-e150he-44.html
-DateAdded=20260629
-DateModified=20260629
+DateAdded=20260630
+DateModified=20260630
 Qts=0.39
 Znom=8.0
 Fs=40.0

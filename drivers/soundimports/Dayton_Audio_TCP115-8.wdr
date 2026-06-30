@@ -1,11 +1,11 @@
 [Driver]
 Brand=Dayton Audio
 Model=TCP115-8
-Manufacturer=
+Manufacturer=Dayton Audio
 ProvidedBy=SoundImports (scraped via soundimports.eu)
 Comment=Source: https://www.soundimports.eu/en/dayton-audio-tcp115-8.html
-DateAdded=20260629
-DateModified=20260629
+DateAdded=20260630
+DateModified=20260630
 Qts=0.43
 Znom=8.0
 Fs=59.2

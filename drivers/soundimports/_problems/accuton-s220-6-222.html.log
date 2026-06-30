@@ -1,0 +1,4 @@
+[04:14:59] PROBLEM field=schema_fail item=S220-6-222 url=https://www.soundimports.eu/en/accuton-s220-6-222.html offset=0
+         raw_value="WDR: 'Qts' stored=0.26 differs from calculated=0.25222 (deps: Qms=3.83, Qes=0.27)"
+         reason=File failed strict schema validation
+[04:14:59] SCHEMA_FAIL errors=1

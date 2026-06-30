@@ -1,0 +1,13 @@
+[04:19:02] PROBLEM field=pdf_range_SPL item=T25A-6 url=https://doc.soundimports.nl/pdf/brands/BlieSMa/T25A-6/datasheet-t25a-6.pdf offset=0
+         raw_value="extracted=SPL=2.83 raw='2.83' range=50–120 dB pos=889 local=C:\\Users\\johnl\\work\\resonate\\drivers\\soundimports\\datasheets\\datasheet-t25a-6.pdf context=…Ω↵Rated power handling*↵100 W↵Sensitivity 2.83V/1m↵91.5 dB↵Net weight↵0.23 kg↵Effectiv…"
+         reason=PDF extraction rejected: value outside physical range — likely font-encoding artifact
+[04:19:02] PROBLEM field=pdf_range_SPL item=T25A-6 url=https://doc.soundimports.nl/pdf/brands/BlieSMa/T25A-6/datasheet-t25a-6.pdf offset=0
+         raw_value="extracted=SPL=2.83 raw='2.83' range=50–120 dB pos=980 local=C:\\Users\\johnl\\work\\resonate\\drivers\\soundimports\\datasheets\\datasheet-t25a-6.pdf context=…Ω↵Rated power handling* 100 W↵Sensitivity 2.83V/1m 91.5 dB↵Net weight 0.23 kg↵Effectiv…"
+         reason=PDF extraction rejected: value outside physical range — likely font-encoding artifact
+[04:19:02] PROBLEM field=html_pdf_mismatch item=T25A-6 url=https://www.soundimports.eu/en/bliesma-t25a-6.html offset=0
+         raw_value='Fs: HTML=870 PDF=980 (13% diff)'
+         reason=HTML and PDF values disagree by >10%
+[04:19:02] PROBLEM field=missing_ts item=T25A-6 url=https://www.soundimports.eu/en/bliesma-t25a-6.html offset=0
+         raw_value="['Cms', 'Vas']"
+         reason=Missing mandatory T/S fields — driver not written
+[04:19:02] SKIP missing_ts=['Cms', 'Vas']

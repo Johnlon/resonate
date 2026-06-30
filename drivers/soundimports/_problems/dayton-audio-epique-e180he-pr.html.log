@@ -1,0 +1,4 @@
+[04:23:46] PROBLEM field=missing_ts item=E180HE-PR url=https://www.soundimports.eu/en/dayton-audio-epique-e180he-pr.html offset=0
+         raw_value="['BL', 'Cms', 'Mms', 'Qes', 'Qts', 'Re', 'Vas']"
+         reason=Missing mandatory T/S fields — driver not written
+[04:23:46] SKIP missing_ts=['BL', 'Cms', 'Mms', 'Qes', 'Qts', 'Re', 'Vas']

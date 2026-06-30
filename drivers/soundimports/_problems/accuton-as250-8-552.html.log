@@ -1,0 +1,4 @@
+[04:13:36] PROBLEM field=schema_fail item=AS250-8-552 url=https://www.soundimports.eu/en/accuton-as250-8-552.html offset=0
+         raw_value="WDR: 'Vas' stored=0.159 differs from calculated=0.14904 (deps: roo=1.20095, c=343.684, Sd=0.0382, Cms=0.00072)"
+         reason=File failed strict schema validation
+[04:13:36] SCHEMA_FAIL errors=1

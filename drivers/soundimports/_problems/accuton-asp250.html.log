@@ -1,0 +1,4 @@
+[04:13:36] PROBLEM field=missing_ts item=ASP250 url=https://www.soundimports.eu/en/accuton-asp250.html offset=0
+         raw_value="['BL']"
+         reason=Missing mandatory T/S fields — driver not written
+[04:13:36] SKIP missing_ts=['BL']

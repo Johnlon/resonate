@@ -1,0 +1,4 @@
+[04:24:52] PROBLEM field=schema_fail item=PS95-8 url=https://www.soundimports.eu/en/dayton-audio-ps95-8.html offset=0
+         raw_value="WDR: 'Vas' stored=0.00094 differs from calculated=0.000897521 (deps: roo=1.20095, c=343.684, Sd=0.00283, Cms=0.00079)"
+         reason=File failed strict schema validation
+[04:24:52] SCHEMA_FAIL errors=1

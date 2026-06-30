@@ -1,0 +1,4 @@
+[04:25:21] PROBLEM field=missing_ts item=SS8-PR url=https://www.soundimports.eu/en/dayton-audio-ss8-pr.html offset=0
+         raw_value="['BL', 'Mms', 'Qes', 'Qms', 'Qts', 'Re', 'Xmax']"
+         reason=Missing mandatory T/S fields — driver not written
+[04:25:21] SKIP missing_ts=['BL', 'Mms', 'Qes', 'Qms', 'Qts', 'Re', 'Xmax']

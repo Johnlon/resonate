@@ -1,0 +1,4 @@
+[04:14:12] PROBLEM field=schema_fail item=C220-6-222 url=https://www.soundimports.eu/en/accuton-c220-6-222.html offset=0
+         raw_value="WDR: 'Vas' stored=0.115 differs from calculated=0.138795 (deps: roo=1.20095, c=343.684, Sd=0.0224, Cms=0.00195)"
+         reason=File failed strict schema validation
+[04:14:12] SCHEMA_FAIL errors=1

@@ -1,0 +1,7 @@
+[04:14:26] PROBLEM field=html_pdf_mismatch item=C25-4-158 url=https://www.soundimports.eu/en/accuton-c25-4-158.html offset=0
+         raw_value='Znom: HTML=8 PDF=25 (212% diff)'
+         reason=HTML and PDF values disagree by >10%
+[04:14:26] PROBLEM field=missing_ts item=C25-4-158 url=https://www.soundimports.eu/en/accuton-c25-4-158.html offset=0
+         raw_value="['BL', 'Mms', 'Vas', 'Xmax']"
+         reason=Missing mandatory T/S fields — driver not written
+[04:14:26] SKIP missing_ts=['BL', 'Mms', 'Vas', 'Xmax']

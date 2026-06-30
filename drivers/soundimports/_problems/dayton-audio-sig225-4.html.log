@@ -1,0 +1,4 @@
+[04:25:16] PROBLEM field=schema_fail item=SIG225-4 url=https://www.soundimports.eu/en/dayton-audio-sig225-4.html offset=0
+         raw_value="WDR: 'Vas' stored=0.0294495 differs from calculated=0.0314038 (deps: roo=1.20095, c=343.684, Sd=0.02269, Cms=0.00043)"
+         reason=File failed strict schema validation
+[04:25:16] SCHEMA_FAIL errors=1

@@ -1,0 +1,16 @@
+[04:18:29] PROBLEM field=Sd_tiny item=12GA50 url=https://www.soundimports.eu/en/beyma-12ga50.html offset=0
+         raw_value='Sd=0.053 cm²'
+         reason=Sd < 0.5 cm² — scraper artifact (near-zero)
+[04:18:29] PROBLEM field=tweeter_fs item=12GA50 url=https://www.soundimports.eu/en/beyma-12ga50.html offset=0
+         raw_value='Sd=0.1 cm² Fs=90.0'
+         reason=Sd < 5 cm² but Fs < 100 Hz — tiny piston with woofer-range Fs
+[04:18:29] PROBLEM field=Sd_tiny item=12GA50 url=https://www.soundimports.eu/en/beyma-12ga50.html offset=0
+         raw_value='Sd_tiny'
+         reason=DQ check failure
+[04:18:29] PROBLEM field=tweeter_fs item=12GA50 url=https://www.soundimports.eu/en/beyma-12ga50.html offset=0
+         raw_value='tweeter_fs'
+         reason=DQ check failure
+[04:18:29] PROBLEM field=schema_fail item=12GA50 url=https://www.soundimports.eu/en/beyma-12ga50.html offset=0
+         raw_value="WDR: 'Sd' = 5.3e-06 below minimum 1e-05 m²"
+         reason=File failed strict schema validation
+[04:18:29] SCHEMA_FAIL errors=1
