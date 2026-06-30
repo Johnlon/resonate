@@ -116,21 +116,21 @@ describe('parseWdr — validation gate', () => {
 // ── parseWdr — YAML sidecar URL field override ────────────────────────────────
 
 describe('parseWdr — YAML sidecar overrides URL fields', () => {
-  it('sidecar sets datasheetUrl from the datasheet field', () => {
-    const sidecar = 'datasheet: https://new.example.com/sheet.pdf\n';
+  it('sidecar sets datasheetUrl from the datasheet_url field', () => {
+    const sidecar = 'datasheet_url: https://new.example.com/sheet.pdf\n';
     const d = parseWdr(MINIMAL_WDR, sidecar);
     assert.equal(d.datasheetUrl, 'https://new.example.com/sheet.pdf',
-      'sidecar datasheet field must populate datasheetUrl');
+      'sidecar datasheet_url field must populate datasheetUrl');
   });
 
-  it('sidecar sets vendor_page, source, frd, and impedance URLs — '
+  it('sidecar sets vendor_page_url, source, frd_url, and zma_url — '
    + 'all five sidecar URL keys are mapped to their driver object fields', () => {
     const sidecar = [
-      'datasheet: https://example.com/sheet.pdf',
-      'vendor_page: https://example.com/buy',
+      'datasheet_url: https://example.com/sheet.pdf',
+      'vendor_page_url: https://example.com/buy',
       'source: https://example.com/source',
-      'frd: https://example.com/frd.frd',
-      'impedance: https://example.com/imp.zma',
+      'frd_url: https://example.com/frd.frd',
+      'zma_url: https://example.com/imp.zma',
     ].join('\n');
     const d = parseWdr(MINIMAL_WDR, sidecar);
     assert.equal(d.datasheetUrl,  'https://example.com/sheet.pdf');
@@ -146,33 +146,33 @@ describe('parseWdr — YAML sidecar overrides URL fields', () => {
 
 describe('_parseSimpleYaml (via parseWdr sidecar) — YAML parser edge cases', () => {
   it('parses a plain key: value pair — the common case', () => {
-    const d = parseWdr(MINIMAL_WDR, 'vendor_page: https://example.com/buy\n');
+    const d = parseWdr(MINIMAL_WDR, 'vendor_page_url: https://example.com/buy\n');
     assert.equal(d.vendorpageUrl, 'https://example.com/buy');
   });
 
   it('treats null literal as absent — sidecar null means the field was intentionally cleared', () => {
-    // The guard `if (s.vendor_page)` skips null values, leaving the field unset.
-    const d = parseWdr(MINIMAL_WDR, 'vendor_page: null\n');
+    // The guard `if (s.vendor_page_url)` skips null values, leaving the field unset.
+    const d = parseWdr(MINIMAL_WDR, 'vendor_page_url: null\n');
     assert.equal(d.vendorpageUrl, undefined,
       'null sidecar value must not set vendorpageUrl');
   });
 
   it('treats an empty value as absent — bare key: with no value is treated like null', () => {
-    // Line `vendor_page:` has v='' which matches `if (!v || v === 'null')`
-    const d = parseWdr(MINIMAL_WDR, 'vendor_page:\n');
+    // Line `vendor_page_url:` has v='' which matches `if (!v || v === 'null')`
+    const d = parseWdr(MINIMAL_WDR, 'vendor_page_url:\n');
     assert.equal(d.vendorpageUrl, undefined);
   });
 
   it('unescapes doubled single-quotes in YAML single-quoted strings — '
    + "YAML rule: '' inside '...' is a literal apostrophe", () => {
-    // `vendor_page: 'it''s here'` → value is "it's here"
-    const d = parseWdr(MINIMAL_WDR, "vendor_page: 'it''s here'\n");
+    // `vendor_page_url: 'it''s here'` → value is "it's here"
+    const d = parseWdr(MINIMAL_WDR, "vendor_page_url: 'it''s here'\n");
     assert.equal(d.vendorpageUrl, "it's here");
   });
 
   it('ignores lines with no colon — blank lines and comment-style separators pass silently', () => {
     // A blank line in the sidecar should not cause a parse error.
-    const sidecar = '\nvendor_page: https://example.com/buy\n\n';
+    const sidecar = '\nvendor_page_url: https://example.com/buy\n\n';
     const d = parseWdr(MINIMAL_WDR, sidecar);
     assert.equal(d.vendorpageUrl, 'https://example.com/buy');
   });
@@ -181,7 +181,7 @@ describe('_parseSimpleYaml (via parseWdr sidecar) — YAML parser edge cases', (
    + 'multi-line description text is joined with newlines', () => {
     // YAML block scalar: key: |\n  line one\n  line two → value is "line one\nline two"
     const sidecar = [
-      'vendor_page: |',
+      'vendor_page_url: |',
       '  line one',
       '  line two',
       'source: https://example.com/src',
@@ -196,9 +196,9 @@ describe('_parseSimpleYaml (via parseWdr sidecar) — YAML parser edge cases', (
   it('parses block scalar at end of file without a trailing key — '
    + 'end-of-input guard must flush the accumulated block lines', () => {
     // When a block scalar is the last item and there is no following non-indented line,
-    // the flush happens at line 57: `if (blockKey !== null) r[blockKey] = blockLines.join('\n')`
+    // the flush happens at end-of-input: `if (blockKey !== null) r[blockKey] = blockLines.join('\n')`
     const sidecar = [
-      'vendor_page: |',
+      'vendor_page_url: |',
       '  only line',
     ].join('\n');
     const d = parseWdr(MINIMAL_WDR, sidecar);

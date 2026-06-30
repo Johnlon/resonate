@@ -1,10 +1,14 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import { VitePWA } from 'vite-plugin-pwa';
+import { fileURLToPath } from 'url';
+import { join } from 'path';
 
 const base = process.env.GITHUB_PAGES ? '/resonate/' : '/';
+const UI_ROOT = join(fileURLToPath(import.meta.url), '..', 'packages', 'ui');
 
 export default defineConfig({
+  root: UI_ROOT,
   base,
   server: {
     watch: {

@@ -1,0 +1,12 @@
+{
+  "name": "@resonate/ui",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Resonate loudspeaker enclosure simulator — Vue 3 UI",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@resonate/engine": "*",
+    "vue": "^3.5.38"
+  }
+}

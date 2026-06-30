@@ -61,7 +61,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 from scraper_lib import (
     run_scraper, parse_number, parse_field_value, fetch, to_wdr, safe_filename,
-    write_driver,
+    write_driver, match_ts_fields,
 )
 
 VENDOR      = "Wavecor"
@@ -162,7 +162,7 @@ def _parse_html_fields(html: str, col_idx: int = 0) -> dict[str, float]:
       7-col [notes, label, v0b, v0a, v1b, v1a, unit]— two variants + before/after burn-in
     """
     html_rows = re.findall(r"<tr[^>]*>(.*?)</tr>", html, re.S | re.I)
-    fields: dict[str, float] = {}
+    entries: list[tuple] = []
 
     for row in html_rows:
         cells = re.findall(r"<td[^>]*>(.*?)</td>", row, re.S | re.I)
@@ -189,23 +189,17 @@ def _parse_html_fields(html: str, col_idx: int = 0) -> dict[str, float]:
             value_cell = cells[1]
             unit_cell  = cells[-1] if len(cells) > 2 else ""
 
-        label = re.sub(r"<[^>]+>", "", label_cell).strip().lower()
+        label = re.sub(r"<[^>]+>", "", label_cell).strip()
 
-        # Replace <br> with space BEFORE stripping HTML so multi-value cells
-        # (e.g. Wavecor PR pages list Fs at multiple added-mass steps, separated
-        # by <br>) don't concatenate into a single unparseable number.
+        # Replace <br> with space before stripping HTML so multi-value cells
+        # (Wavecor PR pages list Fs at multiple added-mass steps via <br>) don't
+        # concatenate into a single unparseable number.
         value_text = re.sub(r"<br\s*/?>", " ", value_cell, flags=re.I)
         value_text = re.sub(r"<[^>]+>", "", value_text).strip()
         unit_text  = _html_mod.unescape(re.sub(r"<[^>]+>", "", unit_cell)).strip().lower()
+        entries.append((label, value_text, unit_text))
 
-        for fragment, (key, factor) in FIELD_MAP.items():
-            if fragment in label and key not in fields:
-                si_val = parse_field_value(key, value_text, factor, unit_text=unit_text)
-                if si_val is not None:
-                    fields[key] = si_val
-                break
-
-    return fields
+    return match_ts_fields(entries, FIELD_MAP)
 
 
 def _driver_type_from_url(url: str) -> str | None:

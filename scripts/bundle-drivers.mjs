@@ -88,8 +88,8 @@ for (const src of sources) {
 }
 
 const total = bundle.sources.reduce((n, s) => n + s.files.length, 0);
-const outPath = join(ROOT, 'src', 'drivers-bundle.json');
+const outPath = join(ROOT, 'packages', 'ui', 'src', 'drivers-bundle.json');
 writeFileSync(outPath, JSON.stringify(bundle));
 
 const kb = Math.round(JSON.stringify(bundle).length / 1024);
-console.log(`\nBundled ${total} WDR files → src/drivers-bundle.json (${kb} KB raw)`);
+console.log(`\nBundled ${total} WDR files → packages/ui/src/drivers-bundle.json (${kb} KB raw)`);

@@ -350,7 +350,7 @@ describe('.wdr driver file import and export', () => {
   // The Tang Band W5-1138SMF .wdr is a committed test fixture — a real driver file
   // from the loudspeakerdatabase repository. Its known parameters are used to
   // verify the parser reads the correct values.
-  const TANG_BAND_WDR_PATH = join(here, '..', 'drivers', 'loudspeakerdatabase', 'Tang Band W5-1138SMF.wdr');
+  const TANG_BAND_WDR_PATH = join(here, '..', '..', '..', 'drivers', 'loudspeakerdatabase', 'Tang Band W5-1138SMF.wdr');
   const EXPECTED_MODEL_NAME = 'Tang Band W5-1138SMF';
   const EXPECTED_FS_HZ      = 45;   // Hz  — as written in the .wdr file
   const EXPECTED_SD_M2      = 0.0094; // m² — as written in the .wdr file

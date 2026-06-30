@@ -4,7 +4,7 @@ import globals from 'globals';
 
 export default [
   // ── Ignore generated and dependency directories ──────────────────────────
-  { ignores: ['dist/**', 'node_modules/**', 'public/**'] },
+  { ignores: ['dist/**', 'node_modules/**', 'packages/ui/public/**'] },
 
   // ── Vue SFC files: use eslint-plugin-vue's flat/essential preset ─────────
   // This preset installs vue-eslint-parser and all essential Vue 3 rules.
@@ -12,7 +12,7 @@ export default [
 
   // ── Override: tighten rules for Vue components ───────────────────────────
   {
-    files: ['src/**/*.vue'],
+    files: ['packages/ui/src/**/*.vue'],
     languageOptions: {
       globals: { ...globals.browser, ...globals.es2022 },
     },
@@ -25,10 +25,10 @@ export default [
     },
   },
 
-  // ── Engine package: packages/engine/**/*.js ──────────────────────────────
+  // ── Engine package: packages/engine/src/*.js ─────────────────────────────
   // Pure Node-importable modules — no browser globals or console logging.
   {
-    files: ['packages/engine/**/*.js'],
+    files: ['packages/engine/src/**/*.js'],
     languageOptions: {
       ecmaVersion: 2022,
       sourceType: 'module',
@@ -41,10 +41,9 @@ export default [
     },
   },
 
-  // ── Other source JS: src/*.js and src/utils/*.js ─────────────────────────
+  // ── UI source JS: packages/ui/src/**/*.js ────────────────────────────────
   {
-    files: ['src/**/*.js'],
-    ignores: ['src/core/**/*.js'],
+    files: ['packages/ui/src/**/*.js'],
     languageOptions: {
       ecmaVersion: 2022,
       sourceType: 'module',
@@ -57,9 +56,23 @@ export default [
     },
   },
 
-  // ── Unit tests: test/*.test.mjs ───────────────────────────────────────────
+  // ── Engine tests: packages/engine/test/*.mjs ─────────────────────────────
   {
-    files: ['test/**/*.test.mjs', 'test/**/*.mjs'],
+    files: ['packages/engine/test/**/*.mjs', 'packages/engine/test/**/*.js'],
+    languageOptions: {
+      ecmaVersion: 2022,
+      sourceType: 'module',
+      globals: { ...globals.node, ...globals.es2022 },
+    },
+    rules: {
+      'no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
+      'no-undef': 'error',
+    },
+  },
+
+  // ── UI unit tests: packages/ui/test/*.test.mjs ────────────────────────────
+  {
+    files: ['packages/ui/test/**/*.test.mjs', 'packages/ui/test/**/*.mjs'],
     languageOptions: {
       ecmaVersion: 2022,
       sourceType: 'module',
@@ -75,8 +88,8 @@ export default [
   // deriveDriver / sweep / maxCurves must go through store.js (which wraps them
   // with error handling). selftest.js is exempt — it tests the raw engine bundle.
   {
-    files: ['src/components/**', 'src/utils/**'],
-    ignores: ['src/utils/selftest.js'],
+    files: ['packages/ui/src/components/**', 'packages/ui/src/utils/**'],
+    ignores: ['packages/ui/src/utils/selftest.js'],
     rules: {
       'no-restricted-imports': ['error', {
         patterns: [
@@ -95,10 +108,10 @@ export default [
     },
   },
 
-  // ── Playwright tests: test/*.browser.spec.js ─────────────────────────────
+  // ── Playwright tests: packages/ui/test/*.browser.spec.js ─────────────────
   {
     ...pluginPlaywright.configs['flat/recommended'],
-    files: ['test/**/*.browser.spec.js'],
+    files: ['packages/ui/test/**/*.browser.spec.js'],
     rules: {
       ...pluginPlaywright.configs['flat/recommended'].rules,
       'playwright/no-page-pause': 'error',

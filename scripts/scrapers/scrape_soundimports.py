@@ -29,7 +29,7 @@ import time
 
 # ── Import new scraper_lib from this directory ────────────────────────────────
 sys.path.insert(0, str(Path(__file__).parent))
-from scraper_lib import run_scraper, parse_number, parse_field_value, fetch
+from scraper_lib import run_scraper, parse_number, parse_field_value, fetch, match_ts_fields
 
 VENDOR      = "SoundImports"
 SITEMAP_URL = "https://www.soundimports.eu/en/sitemap.xml"
@@ -190,17 +190,7 @@ def parse_product(html: str, url: str) -> dict | None:
     # Some brands publish Mms in kg, Cms in µm/N, or Sd in m² rather than
     # the assumed g/mm·N⁻¹/cm² — detect the unit in the value string and
     # override the default conversion factor where needed.
-    fields: dict[str, float] = {}
-    for label, value_str in specs_raw.items():
-        label_l = label.lower()
-        for fragment, (key, default_factor) in FIELD_MAP.items():
-            if fragment in label_l:
-                if key in fields:  # first match wins
-                    break
-                si_val = parse_field_value(key, value_str, default_factor)
-                if si_val is not None:
-                    fields[key] = si_val
-                break
+    fields: dict[str, float] = match_ts_fields(specs_raw, FIELD_MAP)
 
     if not fields.get("Fs"):
         return None
