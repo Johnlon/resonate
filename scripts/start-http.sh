@@ -49,4 +49,22 @@ done
 
 sleep 2
 echo ""
-npm run dev -- --port 4000 --strictPort
+npm run dev -- --port 4000 --strictPort &
+SERVER_PID=$!
+
+echo "Waiting for server on http://localhost:4000/ ..."
+for i in $(seq 1 30); do
+  code=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:4000/ 2>/dev/null || echo "000")
+  if [ "$code" = "200" ]; then
+    echo "========================================"
+    echo "  Server UP — http://localhost:4000/"
+    echo "========================================"
+    wait "$SERVER_PID"
+    exit 0
+  fi
+  sleep 2
+done
+
+echo "ERROR: server did not respond on port 4000 after 60s"
+kill "$SERVER_PID" 2>/dev/null || true
+exit 1
