@@ -45,13 +45,15 @@ Files with a header comment containing "AI LOCKED — DO NOT EDIT" are protected
 
 ## Shell environment — Windows + Git Bash only
 
-This project runs on **Windows with Git Bash as the primary shell**. Git Bash is placed first in the Windows `PATH` so that `bash` always resolves to Git Bash, not WSL or any other shell. The SDLC has not yet been made cross-platform — WSL and Linux are not tested or supported for project scripts.
+This project runs on **Windows with Git Bash as the primary shell**. Git Bash is placed first in the Windows `PATH` so that `bash` always resolves to Git Bash, not WSL or any other shell.
+
+**The SDLC scripts have not yet been made cross-platform.** Running them in the wrong shell (WSL, PowerShell, cmd) causes errors and confusion. To avoid this, every project script asserts it is running in Git Bash at startup and exits immediately with a clear error if not.
 
 **Consequences for AI:**
 - Always use the **Bash** tool for shell commands. Never use PowerShell.
 - All scripts use Windows-native tools via Git Bash: `netstat` is `C:\Windows\System32\NETSTAT.EXE`, process killing uses `cmd /c "taskkill ..."`, not Unix `kill`.
-- Do not use WSL commands (`wsl --`, `wsl.exe`) in scripts — WSL processes are in a separate namespace and cannot reliably kill Windows-side listeners.
-- Every script that uses Windows-specific tools (`netstat`, `taskkill`, `cmd`) **must** guard against running in the wrong shell. The guard is `[ -z "${MSYSTEM:-}" ] && echo "ERROR: run in Git Bash" && exit 1`. `MSYSTEM` is set by Git Bash (`MINGW64`/`MINGW32`) and absent in WSL, PowerShell, and cmd.
+- Do not use WSL commands (`wsl --`, `wsl.exe`) in scripts — WSL processes are in a separate namespace and cannot reliably interact with Windows-side listeners.
+- Every script **must** include the Git Bash guard immediately after `set -euo pipefail`: `[ -z "${MSYSTEM:-}" ] && echo "ERROR: must run in Git Bash on Windows, not WSL or PowerShell" && exit 1`. `MSYSTEM` is set by Git Bash (`MINGW64`/`MINGW32`) and absent in WSL, PowerShell, and cmd. This applies to any new script added to `scripts/`.
 
 ## AI role — build tools, don't perform ad-hoc tasks
 
