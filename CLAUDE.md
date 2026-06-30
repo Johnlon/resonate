@@ -64,6 +64,8 @@ When a task recurs (killing ports, cleaning build artefacts, resetting state, et
 **Available utility scripts:**
 
 - `scripts/kill-port.sh <port> [port …]` — kill all processes listening on the given port(s) on Windows.
+- `scripts/preview-4000.sh` — kill ports 4000-4005 then start `vite preview` on port 4000.
+- `scripts/health-check.sh` — run all health checks: lint, unit tests, golden tests, DQ validation. Single entry point — add new checks here as they are created.
 
 ## Port range — hard rule
 
