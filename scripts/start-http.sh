@@ -62,7 +62,6 @@ for i in $(seq 1 45); do
     echo "========================================"
     echo "  Server UP — http://localhost:4000/"
     echo "========================================"
-    wait "$SERVER_PID"
     exit 0
   fi
   # Bail early if npm died
