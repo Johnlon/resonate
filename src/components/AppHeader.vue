@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import { state, driver } from '../store.js';
-import { toWdr, parseWdr } from '../core/driver.js';
+import { toWdr, parseWdr } from '@resonate/engine';
 import { serialize, stateToUrl } from '../utils/persist.js';
 import { flash } from '../utils/flash.js';
 

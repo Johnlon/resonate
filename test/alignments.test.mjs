@@ -29,8 +29,8 @@ import {
   tuningFromLength,
   prTuning,
   prMassForFp,
-} from '../src/core/alignments.js';
-import { RHO, C } from '../src/core/constants.js';
+} from '@resonate/engine';
+import { RHO, C } from '@resonate/engine';
 
 // ---------------------------------------------------------------------------
 // Test driver: a typical 6.5" mid-woofer — same parameters used throughout

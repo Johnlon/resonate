@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed, watch } from 'vue';
 import { state } from '../store.js';
-import { parseWdr } from '../core/driver.js';
+import { parseWdr } from '@resonate/engine';
 import sourcesJson from '../../drivers/sources.json';
 import bundleJson  from '../drivers-bundle.json';
 

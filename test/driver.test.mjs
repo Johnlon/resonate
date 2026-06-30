@@ -12,7 +12,7 @@
 
 import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
-import { deriveDriver, parseWdr, toWdr } from '../src/core/driver.js';
+import { deriveDriver, parseWdr, toWdr } from '@resonate/engine';
 
 // ── Q-derivation test values ─────────────────────────────────────────────────
 const QES = 0.400;    // electrical Q — resistance damping from voice coil

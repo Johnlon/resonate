@@ -1,8 +1,8 @@
 <script setup>
 import { computed, ref } from 'vue';
 import { state, driver } from '../store.js';
-import { prTuning, prMassForFp, ventedAlignment } from '../core/alignments.js';
-import { RHO, C } from '../core/constants.js';
+import { prTuning, prMassForFp, ventedAlignment } from '@resonate/engine';
+import { RHO, C } from '@resonate/engine';
 import { savePR, listPRs, deletePR } from '../utils/prLibrary.js';
 import NumInput from './NumInput.vue';
 

@@ -1,7 +1,7 @@
 <script setup>
 import { computed } from 'vue';
 import { state, driver, driverShort } from '../store.js';
-import { ebp } from '../core/alignments.js';
+import { ebp } from '@resonate/engine';
 
 const d = computed(() => state.driverRaw);
 const drv = driver;

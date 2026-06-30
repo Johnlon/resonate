@@ -1,6 +1,5 @@
 import { reactive, computed, ref, watch } from 'vue';
-import { deriveDriver } from './core/driver.js';
-import { sweep, maxCurves } from './core/sweep.js';
+import { deriveDriver, sweep, maxCurves } from '@resonate/engine';
 import { DPAL } from './presets.js';
 
 const STORAGE_KEY = 'resonate_v2';

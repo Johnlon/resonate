@@ -1,7 +1,7 @@
 <script setup>
 import { computed, ref } from 'vue';
 import { state, driver } from '../store.js';
-import { sealedFromQtc, ventedAlignment, ventLength, tuningFromLength } from '../core/alignments.js';
+import { sealedFromQtc, ventedAlignment, ventLength, tuningFromLength } from '@resonate/engine';
 import NumInput from './NumInput.vue';
 import PRPanel from './PRPanel.vue';
 

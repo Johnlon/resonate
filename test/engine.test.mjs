@@ -20,7 +20,7 @@ import {
   highPass, lowPass, linkwitz, peakingEQ, evalFilter, applyFilters,
   unwrap, portLoss,
   cAbs,
-} from '../src/core/index.js';
+} from '@resonate/engine';
 
 const here = dirname(fileURLToPath(import.meta.url));
 

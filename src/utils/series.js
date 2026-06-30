@@ -1,4 +1,4 @@
-import { C } from '../core/constants.js';
+import { C } from '@resonate/engine';
 import { DPAL } from '../presets.js';
 
 export const TABS = [

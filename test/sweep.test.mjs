@@ -16,8 +16,8 @@
 
 import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
-import { sweep, maxCurves } from '../src/core/sweep.js';
-import { deriveDriver } from '../src/core/driver.js';
+import { sweep, maxCurves } from '@resonate/engine';
+import { deriveDriver } from '@resonate/engine';
 
 // Reference driver: same synthetic 6.5" mid-woofer as engine.test.mjs
 const DRV = deriveDriver({

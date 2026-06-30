@@ -11,9 +11,9 @@
 
 import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
-import { solve } from '../src/core/circuit.js';
-import { deriveDriver } from '../src/core/driver.js';
-import { cAbs } from '../src/core/complex.js';
+import { solve } from '@resonate/engine';
+import { deriveDriver } from '@resonate/engine';
+import { cAbs } from '@resonate/engine';
 
 // Reference driver: synthetic 6.5" mid-woofer, identical to engine.test.mjs
 const RAW_DRIVER = {

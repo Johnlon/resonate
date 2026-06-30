@@ -1,2 +1,2 @@
-import * as engine from '../src/core/index.js';
+import * as engine from '@resonate/engine';
 export { engine };

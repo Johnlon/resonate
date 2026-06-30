@@ -25,10 +25,10 @@ export default [
     },
   },
 
-  // ── Core modules: src/core/**/*.js ───────────────────────────────────────
+  // ── Engine package: packages/engine/**/*.js ──────────────────────────────
   // Pure Node-importable modules — no browser globals or console logging.
   {
-    files: ['src/core/**/*.js'],
+    files: ['packages/engine/**/*.js'],
     languageOptions: {
       ecmaVersion: 2022,
       sourceType: 'module',
@@ -68,6 +68,30 @@ export default [
     rules: {
       'no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
       'no-undef': 'error',
+    },
+  },
+
+  // ── Engine boundary — only store.js and selftest.js may call raw physics ────
+  // deriveDriver / sweep / maxCurves must go through store.js (which wraps them
+  // with error handling). selftest.js is exempt — it tests the raw engine bundle.
+  {
+    files: ['src/components/**', 'src/utils/**'],
+    ignores: ['src/utils/selftest.js'],
+    rules: {
+      'no-restricted-imports': ['error', {
+        patterns: [
+          {
+            group: ['@resonate/engine'],
+            importNamePattern: '^deriveDriver$',
+            message: 'Use driver from store.js — the store wraps deriveDriver with error handling.',
+          },
+          {
+            group: ['@resonate/engine'],
+            importNamePattern: '^(sweep|maxCurves)$',
+            message: 'Use curvesData/maxData from store.js — the store wraps sweep/maxCurves with error handling.',
+          },
+        ],
+      }],
     },
   },
 

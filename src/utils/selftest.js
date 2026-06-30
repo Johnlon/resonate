@@ -25,9 +25,9 @@
  *
  * See ARCHITECTURE.md AD-5 for the full rationale.
  */
-import { RHO, C } from '../core/constants.js';
-import { deriveDriver } from '../core/driver.js';
-import { sweep } from '../core/sweep.js';
+import { RHO, C } from '@resonate/engine';
+import { deriveDriver } from '@resonate/engine';
+import { sweep } from '@resonate/engine';
 import { flash } from './flash.js';
 
 // ---------------------------------------------------------------------------
@@ -143,6 +143,7 @@ export function runSelfTest() {
   const p3 = Math.abs(slope - VENTED_THEORETICAL_SLOPE) < GATE3_SLOPE_TOLERANCE_DB_OCT && peaks.length === EXPECTED_Z_PEAKS;
   const allPass = p1 && p2 && p3;
 
+  // eslint-disable-next-line no-console
   console.log('[Resonate self-test]',
     `GATE1 sealed≡closed-form: max err ${e1.toFixed(4)} dB → ${p1 ? 'PASS' : 'FAIL'}`,
     `GATE2 sensitivity: circuit ${pb.toFixed(2)} vs predicted ${sensPredicted.toFixed(2)} dB → ${p2 ? 'PASS' : 'FAIL'}`,

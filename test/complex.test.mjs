@@ -11,7 +11,7 @@
  */
 import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
-import { cx, cAdd, cSub, cMul, cDiv, cInv, cAbs, cArg, cScale, cPar } from '../src/core/complex.js';
+import { cx, cAdd, cSub, cMul, cDiv, cInv, cAbs, cArg, cScale, cPar } from '@resonate/engine';
 
 // Tolerance for floating-point comparisons (effectively exact for these operations).
 const EPS = 1e-12;
