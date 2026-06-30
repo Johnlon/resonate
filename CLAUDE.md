@@ -63,10 +63,11 @@ When a task recurs (killing ports, cleaning build artefacts, resetting state, et
 
 **Available utility scripts:**
 
-- `scripts/start-http.sh` — **PRIMARY SCRIPT. AI must use this to start the server.** Runs all health checks then starts `vite preview` on port 4000. Never use `npm run dev`, `npm run preview`, or ad-hoc vite commands directly.
+- `scripts/start-http.sh` — **PRIMARY SCRIPT. AI must use this to start the server.** Runs all health checks then starts `vite dev` on port 4000. Never use `npm run dev`, `npm run preview`, or ad-hoc vite commands directly.
+- `scripts/build-release.sh` — production dist build (`GITHUB_PAGES=true`). Used by the release-drivers workflow; never run ad-hoc.
 - `scripts/health-check.sh` — all health checks: lint, unit tests, golden tests, DQ validation. Single entry point — add new checks here as they are created.
-- `scripts/preview-4000.sh` — kill ports 4000-4005 then start `vite preview` on port 4000 (called by `start-http.sh`).
-- `scripts/kill-http.sh <port> [port …]` — kill all processes listening on the given port(s) on Windows (called by `preview-4000.sh`).
+- `scripts/preview-4000.sh` — kill ports 4000-4005 then start `vite preview` on port 4000.
+- `scripts/kill-http.sh [port …]` — kill all processes on ports 4000-4005 (or specified ports).
 
 ## Port range — hard rule
 

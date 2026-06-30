@@ -133,8 +133,7 @@ e.g. `data: release scan-speak + wavecor refresh (121 + 79 drivers)`.
 Still inside the worktree (`../resonate-main`):
 
 ```bash
-bash scripts/kill-http.sh
-GITHUB_PAGES=true npm run build
+bash scripts/build-release.sh
 ```
 
 `prebuild` runs `scripts/bundle-drivers.mjs` (rebundles from the updated `drivers/`)
@@ -195,7 +194,7 @@ git diff --stat HEAD                               # confirm only drivers/
 python scripts/dq_check.py                        # re-validate
 git add drivers/
 git commit -m "data: release ..."
-GITHUB_PAGES=true npm run build                   # dist build
+bash scripts/build-release.sh                      # dist build
 git push origin main --no-verify                  # deploy
 cd ../resonate
 git checkout dev
