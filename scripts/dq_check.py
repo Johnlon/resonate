@@ -299,7 +299,7 @@ def main():
 
     for i, (coll_path, wdr_path) in enumerate(all_wdr, 1):
         msg = f"  {i}/{total_files}  {coll_path.name}/{wdr_path.name}"
-        sys.stdout.write(f"\r{msg:<80}")
+        sys.stdout.write(f"\r{msg}\x1b[K")
         sys.stdout.flush()
         fields = parse_fields(wdr_path.read_text(encoding="utf-8", errors="replace"))
         sidecar_path = wdr_path.with_name(wdr_path.stem + "_meta.yml")
