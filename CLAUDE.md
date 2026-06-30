@@ -7,6 +7,7 @@
 **`main` is the release branch. It is reserved exclusively for production releases.**
 
 **AI must never commit to or push `main` directly** except through the approved release workflow:
+
 - `/release-drivers` skill (driver data releases)
 - Any future release skill added to `.claude/skills/`
 - Explicit human instruction in the current conversation that names `main` specifically
@@ -50,6 +51,7 @@ This project has been developed exclusively on **Windows 11 with Git Bash**. Oth
 **The SDLC scripts have not yet been made cross-platform.** Running them in the wrong shell (WSL, PowerShell, cmd) causes errors and confusion. To avoid this, every project script asserts it is running in Git Bash at startup and exits immediately with a clear error if not.
 
 **Consequences for AI:**
+
 - Always use the **Bash** tool for shell commands. Never use PowerShell.
 - All scripts use Windows-native tools via Git Bash: `netstat` is `C:\Windows\System32\NETSTAT.EXE`, process killing uses `cmd /c "taskkill ..."`, not Unix `kill`.
 - Do not use WSL commands (`wsl --`, `wsl.exe`) in scripts — WSL processes are in a separate namespace and cannot reliably interact with Windows-side listeners.
@@ -71,32 +73,38 @@ When a task recurs (killing ports, cleaning build artefacts, resetting state, et
 
 **Available utility scripts:**
 
-- `scripts/start-http.sh` — **PRIMARY SCRIPT. AI must use this to start the server.** Runs all health checks then starts `vite dev` on port 4000. Never use `npm run dev`, `npm run preview`, or ad-hoc vite commands directly. **Always run in the foreground** (`run_in_background: false`) — the script blocks until the server stops. This keeps node children in the user process tree so they are killable. Writes its own PID to `.server.pid` for `stop-http.sh` to target.
-- `scripts/stop-http.sh` — stop the dev server. Calls `kill-http.sh` to kill all processes on ports 4000-4005. **Always run in the foreground** so kill progress is visible.
-- `scripts/kill-http.sh [port …]` — kill all processes on ports 4000-4005 (or specified ports). Contains all kill logic — escalates from PID tree-kill to image-name kill. Called by `start-http.sh` and `stop-http.sh`; never call ad-hoc.
+- `scripts/start-http.sh [port]` — start Vite dev on the given port (default 4000). Runs all health checks first (lint, unit, golden, DQ), kills the port, then starts the server in the background. Writes PID to `.server-<port>.pid`. AI always calls this as `bash scripts/dev-4200.sh` (which wraps `start-http.sh 4200`).
+- `scripts/stop-http.sh [port]` — stop the server on the given port (default 4000). Reads `.server-<port>.pid` then calls `kill-http.sh <port>`.
+- `scripts/kill-http.sh [port …]` — kill all processes on the specified ports (default: 4000–4005). Escalates from PID tree-kill to image-name kill. Called by `start-http.sh` and `stop-http.sh`; never call ad-hoc.
+- `scripts/dev-4200.sh` — **AI primary start script.** Calls `start-http.sh 4200`. Use `stop-http.sh 4200` to stop.
+- `scripts/preview-4000.sh` — human's lightweight preview server: kills 4000–4005 then starts `vite preview` on 4000 (no health checks).
 - `scripts/build-release.sh` — production dist build (`GITHUB_PAGES=true`). Used by the release-drivers workflow; never run ad-hoc.
 - `scripts/health-check.sh` — all health checks: lint, unit tests, golden tests, DQ validation. Single entry point — add new checks here as they are created.
-- `scripts/preview-4000.sh` — kill ports 4000-4005 then start `vite preview` on port 4000.
 
-## Port range — hard rule
+## Port assignments — hard rule
 
-**This project uses ports 4000–4005 only. NEVER use a port outside this range — not for any reason.**
+All project servers use ports in the 4000–4299 range only. Never use a port outside this range.
 
-- **Reserved ports:** 4000 = dev/preview server, 4001 = Playwright webServer, 4002–4005 = experiments.
-- **Before starting any server:** run `bash scripts/kill-http.sh` to clear the range. Never reach for `taskkill` ad-hoc.
-- **If a port outside 4000–4005 is suggested by a tool or auto-incremented by Vite:** stop, run `bash scripts/kill-http.sh`, and restart on 4000. Never accept drift.
+| Port | Purpose                                                 | Script                                                        |
+| ---- | ------------------------------------------------------- | ------------------------------------------------------------- |
+| 4000 | Human's preview/dev server — **exclusive to the human** | `scripts/preview-4000.sh` or `scripts/start-http.sh` (no arg) |
+| 4100 | Playwright browser tests — started by Playwright itself | `playwright.config.js` (`reuseExistingServer: false`)         |
+| 4200 | Agent-started vite dev server                           | `scripts/dev-4200.sh` or `scripts/start-http.sh 4200`         |
+
+- **Before starting any server:** kill the target port first with `bash scripts/kill-http.sh <port>`. Never reach for `taskkill` ad-hoc.
+- **If Vite auto-increments to a wrong port:** stop, kill the correct port, restart with `--strictPort`. Never accept drift.
 
 ## Dev server — hard rules
 
-- **Always start the server with `bash scripts/start-http.sh`.** Never use `npm run dev`, `npm run preview`, `npx vite`, or any ad-hoc vite command directly. `start-http.sh` runs all quality checks first (lint, unit tests, golden tests, DQ), kills the port range, then starts the dev server on port 4000. If you bypass it you skip the checks and risk serving broken code.
-- **After starting, verify the page loads.** Run `curl -s -o /dev/null -w "%{http_code}" http://localhost:4000/` and confirm 200. If the server log shows a compile error, fix it first — never hand off a broken URL.
-- **Unregister any stale service worker before handing off to the user.** Use browser automation to run `const regs = await navigator.serviceWorker.getRegistrations(); for (const r of regs) await r.unregister();` on `http://localhost:4000`. Do this silently. The SW is only registered from a production build; in dev sessions it is usually absent, but if present it will serve stale JS and make changes invisible.
+- **AI must start the dev server with `bash scripts/dev-4200.sh`.** This runs all quality checks (lint, unit, golden, DQ), kills port 4200, then starts Vite dev on 4200 with `--strictPort`. Never use `npm run dev`, `npx vite`, or any ad-hoc command.
+- **After starting, verify the page loads.** Run `curl -s -o /dev/null -w "%{http_code}" http://localhost:4200/` and confirm 200. If the server log shows a compile error, fix it first — never hand off a broken URL.
+- **Unregister any stale service worker before handing off to the user.** Use browser automation to run `const regs = await navigator.serviceWorker.getRegistrations(); for (const r of regs) await r.unregister();` on `http://localhost:4200`. Do this silently. The SW is only registered from a production build; in dev sessions it is usually absent, but if present it will serve stale JS and make changes invisible.
 
 ## Post-deploy / post-build test — hard rule
 
 **After every `npm run build` or any change that is handed to the user as "ready to check", run a post-deploy smoke test before saying it is done.** Minimum checks:
 
-1. `curl -s -o /dev/null -w "%{http_code}" http://localhost:8000/` → must be 200.
+1. `curl -s -o /dev/null -w "%{http_code}" http://localhost:4200/` → must be 200.
 2. Fetch the compiled JS entry point from the Vite server log output and confirm no `[vite] error` lines appear in the server output.
 3. For UI changes: use the browser automation tools (`mcp__claude-in-chrome__*`) to load the page and visually confirm the changed element is present and correct — do not rely on source-file grep alone. A component that compiles but renders incorrectly is still broken.
 
@@ -158,6 +166,7 @@ The scraping pipeline must be able to regenerate everything in `drivers/` from s
 **Why the backfill/enrich pattern is especially dangerous:** it creates three separate authorities — the scraper vocabulary (what the scraper writes), the backfill vocabulary (what the backfill writes), and the runtime classifier (what the app computes). These inevitably diverge and produce driver cards that show the wrong type, silently. The chaos is invisible until users notice wrong filter results.
 
 **The two valid authorities for any sidecar field:**
+
 1. The scraper writes it directly at scrape time from authoritative source data (HTML, PDF).
 2. The app computes it at runtime (e.g. `classifyTypes()` in `DriverBrowser.vue`).
 

@@ -1,19 +1,22 @@
 #!/usr/bin/env bash
-# Stop the dev server.
-# Primary: kill the start-http.sh bash process via .server.pid (takes node children with it)
-# Fallback: kill-http.sh port scan
+# Stop the dev server on the given port (default: 4000).
+# Primary: kill via the PID file written by start-http.sh.
+# Fallback: kill-http.sh port scan.
+# Usage: bash scripts/stop-http.sh [port]
 set -euo pipefail
 [ -z "${MSYSTEM:-}" ] && echo "ERROR: must run in Git Bash on Windows, not WSL or PowerShell" && exit 1
 
+PORT=${1:-4000}
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PID_FILE="$(dirname "$SCRIPT_DIR")/.server.pid"
+ROOT_DIR="$(dirname "$SCRIPT_DIR")"
+PID_FILE="$ROOT_DIR/.server-${PORT}.pid"
 
 if [ -f "$PID_FILE" ]; then
   pid=$(cat "$PID_FILE")
-  echo "Killing start-http.sh PID $pid and its children..."
+  echo "Killing server PID $pid (port $PORT) and its children..."
   kill -TERM "-$pid" 2>/dev/null || kill -9 "$pid" 2>/dev/null || echo "PID $pid already gone"
   rm -f "$PID_FILE"
   sleep 1
 fi
 
-bash "$SCRIPT_DIR/kill-http.sh"
+bash "$SCRIPT_DIR/kill-http.sh" "$PORT"
