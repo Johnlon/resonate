@@ -25,9 +25,12 @@ _winpids_on_port() {
     | sort -u
 }
 
+# netstat -ano col 5 = PID (native Windows PID, shown by -o flag).
 # ps -W columns: PID  PPID  PGID  WINPID  TTY  UID  STIME  COMMAND
-# Map Windows PID (col 4) to POSIX PID (col 1), but only if PPID (col 2) != 0.
-# Processes with PPID=0 are native Windows orphans — bash kill can't signal them.
+#   WINPID (col 4) = same native Windows PID as netstat — used to match the two.
+#   PID    (col 1) = MSYS2 internal PID — what bash kill targets.
+# Only attempt bash kill when PPID (col 2) != 0: processes with PPID=0 are
+# native Windows orphans with no MSYS2 handle — bash kill cannot signal them.
 _posix_pid_for_winpid() {
   ps -W 2>/dev/null | awk -v wpid="$1" '$4 == wpid && $2 != 0 {print $1; exit}'
 }
