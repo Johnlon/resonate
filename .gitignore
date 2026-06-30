@@ -1,6 +1,8 @@
 node_modules/
 dist/
 test-results/
+.server.pid
+.server.log
 
 # WinISD shipped driver database — historical reference only, not part of this project
 drivers/winisd/
