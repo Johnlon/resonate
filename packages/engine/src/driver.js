@@ -88,7 +88,8 @@ export function parseWdr(text, sidecarText) {
   if (name) d.name = name;
   if (f.ProvidedBy)              d.providedBy    = f.ProvidedBy.trim();
   if (f.Comment)                 d.comment       = f.Comment.trim();
-  if (!(d.Fs && d.Sd && d.Re && (d.Vas || (d.Qts && d.Qes))))
+  const _qCount = [d.Qts, d.Qes, d.Qms].filter(v => v != null).length;
+  if (!(d.Fs && d.Sd && d.Re && d.Vas && _qCount >= 2))
     throw new Error('missing core T/S parameters');
   if (sidecarText) {
     const s = _parseSimpleYaml(sidecarText);
@@ -107,6 +108,8 @@ export function toWdr(raw) {
   const Sd  = d.Sd, Vd = Sd * (d.Xmax || 0), Dd = 2 * Math.sqrt(Sd / Math.PI);
   const g   = (x, p = 6) => (x == null || !isFinite(x)) ? '' : (+x.toPrecision(p));
   const brand = raw.brand || '', model = raw.model || '';
+  // WinISD per-field edit-state flags: E=enabled, C=calculated, N=not-used.
+  // The sequence maps to the WDR field list order (Qts, Znom, Fs, Pe, Re, Le, BL, Xmax, Cms, Qms, Qes, Rms, Mms, Sd, Vas, Vd, Dd, numVC, VCCon). Exact values are opaque to us — kept as WinISD requires.
   const ParState = 'EEECEENNEENEEEEEEEEEEECENNCCCNNNCCCCECNNNNNNNNECC';
   const L = [
     '[Driver]', 'Brand=' + brand, 'Model=' + model, 'Manufacturer=',

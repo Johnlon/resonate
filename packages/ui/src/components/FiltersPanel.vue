@@ -1,8 +1,6 @@
 <script setup>
 import { state } from '../store.js';
 
-let nextId = 1;
-
 const defaults = {
   highpass: { fc: 80,  Q: 0.7071 },
   lowpass:  { fc: 200, Q: 0.7071 },
@@ -11,7 +9,7 @@ const defaults = {
 };
 
 function addFilter(type) {
-  state.P.filters.push({ id: nextId++, type, enabled: true, ...defaults[type] });
+  state.P.filters.push({ id: crypto.randomUUID(), type, enabled: true, ...defaults[type] });
 }
 
 function removeFilter(i) {

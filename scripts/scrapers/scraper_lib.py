@@ -70,24 +70,21 @@ HEADERS             = _plib.HEADERS             # noqa: F401
 check_fields        = _dqlib.check_fields       # noqa: F401
 
 
-def match_ts_fields(entries, field_map: dict) -> dict[str, float]:
+def match_ts_fields(specs: dict[str, str], field_map: dict) -> dict[str, float]:
     """
-    Match T/S fields from label/value pairs using a fragment → (key, factor) map.
+    Match T/S fields from a {label: "value unit"} dict using a fragment→(key,factor) map.
 
-    entries: a dict {label: value_text}, or an iterable of (label, value_text)
-             or (label, value_text, unit_text) tuples. unit_text is forwarded to
-             parse_field_value() for vendors that carry units in a separate column
-             (e.g. Wavecor). Omit for vendors where the unit is embedded in value_text.
+    Every scraper normalises its HTML into this one shape before calling here —
+    whether that means concatenating a separate unit cell (Wavecor) or passing a
+    dt/dd string directly (SoundImports). parse_field_value() then extracts the
+    numeric value and detects the unit from the combined string.
     """
     fields: dict[str, float] = {}
-    items = entries.items() if isinstance(entries, dict) else entries
-    for entry in items:
-        label = entry[0].lower()
-        value_text = entry[1]
-        unit_text = entry[2] if len(entry) > 2 else ""
+    for label, value_str in specs.items():
+        label_l = label.lower()
         for fragment, (key, factor) in field_map.items():
-            if fragment in label and key not in fields:
-                v = parse_field_value(key, value_text, factor, unit_text=unit_text)
+            if fragment in label_l and key not in fields:
+                v = parse_field_value(key, value_str, factor)
                 if v is not None:
                     fields[key] = v
                 break
@@ -115,15 +112,16 @@ def parse_html_table_ts(
         if not m:
             return {}
         html = m.group()
-    entries = []
+    specs: dict[str, str] = {}
     for row in _re.findall(r"<tr[^>]*>(.*?)</tr>", html, _re.S | _re.I):
         cells = _re.findall(r"<t[dh][^>]*>(.*?)</t[dh]>", row, _re.S | _re.I)
         if len(cells) < 2:
             continue
         label = _re.sub(r"<[^>]+>", "", cells[0]).replace("&nbsp;", " ").strip()
-        value_text = _re.sub(r"<[^>]+>", "", cells[1]).replace("&nbsp;", "").strip()
-        entries.append((label, value_text))
-    return match_ts_fields(entries, field_map)
+        value = _re.sub(r"<[^>]+>", "", cells[1]).replace("&nbsp;", "").strip()
+        if label:
+            specs[label] = value
+    return match_ts_fields(specs, field_map)
 
 
 def parse_html_li_ts(html: str, field_map: dict) -> dict[str, float]:
@@ -134,12 +132,15 @@ def parse_html_li_ts(html: str, field_map: dict) -> dict[str, float]:
     number extraction so they don't confuse parse_field_value().
     """
     import re as _re, html as _html
-    entries = []
+    specs: dict[str, str] = {}
     for li_raw in _re.findall(r"<li>(.*?)</li>", html, _re.S | _re.I):
         text = _html.unescape(_re.sub(r"<[^>]+>", "", li_raw)).strip()
-        parse_text = _re.sub(r"\([^)]*\)", " ", text)  # strip "(2.83V/1m)" qualifiers
-        entries.append((text, parse_text))
-    return match_ts_fields(entries, field_map)
+        # Strip parenthesized qualifiers like "(2.83V/1m)" before number extraction.
+        # Use the raw text as label key so match_ts_fields can fragment-match on it.
+        value = _re.sub(r"\([^)]*\)", " ", text)
+        if text:
+            specs[text] = value
+    return match_ts_fields(specs, field_map)
 
 
 # pdf_lib is NOT imported at module level here — imported inside each worker process.

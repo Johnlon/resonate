@@ -39,7 +39,7 @@ const BASE = {
 
 // ── Minimal WDR text for parseWdr tests ─────────────────────────────────────
 // Contains every field required by parseWdr's validation gate:
-//   Fs, Sd, Re must be present; Vas OR (Qts AND Qes) must be present.
+//   Fs, Sd, Re, Vas must be present; at least two of {Qts, Qes, Qms} must be present.
 const MINIMAL_WDR = `[Driver]
 Brand=TestBrand
 Model=TestModel
@@ -100,12 +100,21 @@ describe('parseWdr — validation gate', () => {
     );
   });
 
-  it('throws when both Vas and the Qts/Qes pair are absent — '
-   + 'compliance must come from at least one source', () => {
-    // Strip Vas and Qts — Qes alone cannot satisfy (Qts && Qes)
+  it('throws when Vas is absent — Vas is always required to derive Mms for T/S calculations', () => {
+    // Without Vas, deriveDriver cannot compute Mms, which poisons Bl, Rms, and all circuit math.
+    // Explicit rejection here prevents silent NaN propagation through charts.
+    const stripped = MINIMAL_WDR.replace(/Vas=[\d.]+\n/, '');
+    assert.throws(
+      () => parseWdr(stripped),
+      /missing core T\/S parameters/,
+    );
+  });
+
+  it('throws when fewer than two Q parameters are present — deriveDriver needs at least two to solve the third', () => {
+    // Qts alone cannot derive Qes or Qms — throws rather than silently NaN-poisoning.
     const stripped = MINIMAL_WDR
-      .replace(/Vas=[\d.]+\n/, '')
-      .replace(/Qts=[\d.]+\n/, '');
+      .replace(/Qes=[\d.]+\n/, '')
+      .replace(/Qms=[\d.]+\n/, '');
     assert.throws(
       () => parseWdr(stripped),
       /missing core T\/S parameters/,
@@ -220,13 +229,9 @@ describe('parseWdr — individual required-field validation sub-branches', () =>
     assert.throws(() => parseWdr(noRe), /missing core T\/S parameters/);
   });
 
-  it('accepts a WDR with Qts and Qes but no Vas — Q pair satisfies compliance requirement', () => {
+  it('throws when Vas is missing even with a complete Q set — Vas is always required for Mms derivation', () => {
     const noVas = MINIMAL_WDR.replace(/Vas=[\d.]+\n/, '');
-    const d = parseWdr(noVas);
-    // Validate that Qts and Qes are both present and correct
-    assert.equal(d.Qts, 0.38);
-    assert.equal(d.Qes, 0.40);
-    assert.equal(d.Vas, undefined, 'Vas must be absent when not in WDR');
+    assert.throws(() => parseWdr(noVas), /missing core T\/S parameters/);
   });
 });
 

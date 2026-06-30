@@ -488,7 +488,13 @@ async function loadDriver(f) {
     state.browseOpen = false; previewFile.value = null; return;
   }
   if (f.content) {
-    state.driverRaw = parseWdr(f.content);
+    const d = parseWdr(f.content);
+    if (f.datasheet)  d.datasheetUrl  = f.datasheet;
+    if (f.manupage)   d.manuPageUrl   = f.manupage;
+    if (f.vendorpage) d.vendorpageUrl = f.vendorpage;
+    if (f.frd)        d.frdUrl        = f.frd;
+    if (f.impedance)  d.impedanceUrl  = f.impedance;
+    state.driverRaw = d;
     state.browseOpen = false; previewFile.value = null; return;
   }
   statusErr.value = false; statusMsg.value = 'Loading ' + f.name + '…';

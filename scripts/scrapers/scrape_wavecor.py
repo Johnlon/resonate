@@ -162,7 +162,7 @@ def _parse_html_fields(html: str, col_idx: int = 0) -> dict[str, float]:
       7-col [notes, label, v0b, v0a, v1b, v1a, unit]— two variants + before/after burn-in
     """
     html_rows = re.findall(r"<tr[^>]*>(.*?)</tr>", html, re.S | re.I)
-    entries: list[tuple] = []
+    specs: dict[str, str] = {}
 
     for row in html_rows:
         cells = re.findall(r"<td[^>]*>(.*?)</td>", row, re.S | re.I)
@@ -196,10 +196,12 @@ def _parse_html_fields(html: str, col_idx: int = 0) -> dict[str, float]:
         # concatenate into a single unparseable number.
         value_text = re.sub(r"<br\s*/?>", " ", value_cell, flags=re.I)
         value_text = re.sub(r"<[^>]+>", "", value_text).strip()
-        unit_text  = _html_mod.unescape(re.sub(r"<[^>]+>", "", unit_cell)).strip().lower()
-        entries.append((label, value_text, unit_text))
+        unit_text  = _html_mod.unescape(re.sub(r"<[^>]+>", "", unit_cell)).strip()
+        # Normalise to "value unit" string — same shape as all other scrapers.
+        if label:
+            specs[label] = f"{value_text} {unit_text}".strip()
 
-    return match_ts_fields(entries, FIELD_MAP)
+    return match_ts_fields(specs, FIELD_MAP)
 
 
 def _driver_type_from_url(url: str) -> str | None:
