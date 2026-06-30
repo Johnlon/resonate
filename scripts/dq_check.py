@@ -350,18 +350,15 @@ def main():
             by_rule[rule_id] = {"desc": desc, "hits": []}
         by_rule[rule_id]["hits"].append((coll, fname, detail, fields, sidecar))
 
-    rule_col = max(len(r[0]) for r in RULES)  # fixed width for rule_id column
-
     total = 0
     seen_files = set()
     for rule_id, data in sorted(by_rule.items()):
         hits = data["hits"]
         print(f"\n── {rule_id} ({len(hits)}) — {data['desc']}")
-        n = len(hits)
         for j, (coll, fname, detail, fields, sidecar) in enumerate(hits, 1):
-            print(f"   {j}/{n}  [{rule_id:<{rule_col}}]  {coll}/{fname}  {detail}")
+            print(f"   {rule_id}:{j:<4}  {coll}/{fname}  {detail}")
             seen_files.add(f"{coll}/{fname}")
-        total += n
+        total += len(hits)
 
     print(f"\nTotal issues: {total} across {len(seen_files)} files")
 
