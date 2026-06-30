@@ -292,7 +292,10 @@ def main():
                     help="GET (Range: bytes=0-3) every URL in _meta.yml sidecars; validates real content-type")
     args = ap.parse_args()
 
-    issues = []  # (collection, fname, rule_id, desc, detail, fields, sidecar)
+    def file_url(path: pathlib.Path) -> str:
+        return "file:///" + str(path).replace("\\", "/")
+
+    issues = []  # (collection, fname, rule_id, desc, detail, fields, sidecar, path)
 
     # Count total files first so we can show N/M progress
     all_wdr = []
@@ -324,7 +327,7 @@ def main():
             except Exception:
                 pass
         for rule_id, desc, detail in check_fields(fields):
-            issues.append((coll_path.name, wdr_path.name, rule_id, desc, detail, fields, sidecar))
+            issues.append((coll_path.name, wdr_path.name, rule_id, desc, detail, fields, sidecar, wdr_path))
 
     print()  # end the in-place progress line
 
@@ -345,22 +348,33 @@ def main():
             print(status)
 
     by_rule: dict[str, dict] = {}
-    for coll, fname, rule_id, desc, detail, fields, sidecar in issues:
+    for coll, fname, rule_id, desc, detail, fields, sidecar, wdr_path in issues:
         if rule_id not in by_rule:
             by_rule[rule_id] = {"desc": desc, "hits": []}
-        by_rule[rule_id]["hits"].append((coll, fname, detail, fields, sidecar))
+        by_rule[rule_id]["hits"].append((coll, fname, detail, fields, sidecar, wdr_path))
 
+    report_path = DRIVERS_DIR.parent / "dq_report.txt"
     total = 0
     seen_files = set()
-    for rule_id, data in sorted(by_rule.items()):
-        hits = data["hits"]
-        print(f"\n── {rule_id} ({len(hits)}) — {data['desc']}")
-        for j, (coll, fname, detail, fields, sidecar) in enumerate(hits, 1):
-            print(f"   {rule_id}:{j:<4}  {coll}/{fname}  {detail}")
-            seen_files.add(f"{coll}/{fname}")
-        total += len(hits)
+    with open(report_path, "w", encoding="utf-8") as rpt:
+        for rule_id, data in sorted(by_rule.items()):
+            hits = data["hits"]
+            header = f"\n── {rule_id} ({len(hits)}) — {data['desc']}"
+            print(header)
+            rpt.write(header + "\n")
+            for j, (coll, fname, detail, fields, sidecar, wdr_path) in enumerate(hits, 1):
+                line = f"   {rule_id}:{j:<4}  {detail}  {file_url(wdr_path)}"
+                rpt.write(line + "\n")
+                if j <= 2:
+                    print(line)
+            if len(hits) > 2:
+                print(f"   … {len(hits) - 2} more — {file_url(report_path)}")
+            for coll, fname, *_ in hits:
+                seen_files.add(f"{coll}/{fname}")
+            total += len(hits)
 
-    print(f"\nTotal issues: {total} across {len(seen_files)} files")
+    summary = f"\nTotal issues: {total} across {len(seen_files)} files — {file_url(report_path)}"
+    print(summary)
 
 
 if __name__ == "__main__":

@@ -3,6 +3,7 @@ dist/
 test-results/
 .server.pid
 .server.log
+dq_report.txt
 
 # WinISD shipped driver database — historical reference only, not part of this project
 drivers/winisd/
