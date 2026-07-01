@@ -1,5 +1,17 @@
 # Claude Code rules for this project
 
+## Linting — hard rule
+
+**Never work around the linter.** This means:
+
+- Never add `// eslint-disable`, `/* eslint-disable */`, or any per-line/per-file ESLint suppression comments.
+- Never rename a variable to `_foo` solely to bypass an `no-unused-vars` rule when the variable is actually meant to be used.
+- Never delete code just to silence a lint error — fix the underlying problem instead (e.g. reconnect the function to a call site, or fix the logic so the variable is used).
+
+**The linter is always right about the symptom.** If ESLint says a function is unused, the correct fix is to either wire it to a call site or genuinely remove it because it is dead code that will never be needed — not to suppress the warning. When in doubt, ask.
+
+---
+
 ## Branch model — hard rule
 
 **`dev` is the working branch. All development, scraping, and feature work happens on `dev`.**

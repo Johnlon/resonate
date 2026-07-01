@@ -12,6 +12,7 @@ import { runSelfTest } from './utils/selftest.js';
 
 const mobileTab = ref('graphs');
 const isMobile = ref(false);
+const sideCollapsed = ref(false);
 const MQ = typeof window !== 'undefined' ? window.matchMedia('(max-width: 720px)') : null;
 function onMqChange(e) { isMobile.value = e.matches; }
 
@@ -61,8 +62,15 @@ onUnmounted(() => {
     <button :class="{ active: mobileTab === 'graphs' }" title="Show simulation graphs" @click="mobileTab = 'graphs'">Graphs</button>
   </div>
   <div class="layout">
-    <div id="side" class="side" :class="{ 'mob-hidden': isMobile && mobileTab !== 'controls' }">
-      <SidePanel />
+    <div id="side" class="side" :class="{ 'side--collapsed': sideCollapsed, 'mob-hidden': isMobile && mobileTab !== 'controls' }">
+      <button class="side-toggle"
+              @click="sideCollapsed = !sideCollapsed"
+              :title="sideCollapsed ? 'Expand controls panel' : 'Collapse controls panel'">
+        {{ sideCollapsed ? '› expand' : '‹‹ collapse' }}
+      </button>
+      <div class="side-body" v-show="!sideCollapsed">
+        <SidePanel />
+      </div>
     </div>
     <div class="main" :class="{ 'mob-hidden': isMobile && mobileTab !== 'graphs' }">
       <GraphArea />

@@ -1,6 +1,7 @@
 <script setup>
 import { computed } from 'vue';
 import { state, driver } from '../store.js';
+import HelpTip from './HelpTip.vue';
 
 const drv = driver;
 
@@ -19,8 +20,9 @@ function setIEC() {
 <template>
   <fieldset>
     <legend>Signal &amp; drivers</legend>
-    <div class="row" title="WinISD: Le excluded from acoustic circuit — matches WinISD output exactly. Full gyrator: Le included in acoustic drive — physically more complete but diverges slightly from WinISD.">
+    <div class="row">
       <label>Circuit model</label>
+      <HelpTip text="Controls how the voice-coil inductance Le is treated. WinISD mode excludes Le from the acoustic circuit — use this to match WinISD output exactly. Full gyrator includes Le everywhere — physically more complete but curves will diverge slightly from WinISD." />
       <select v-model="state.P.circuitModel" style="flex:1">
         <option value="winisd">WinISD (Le acoustic-only)</option>
         <option value="gyrator">Full gyrator (Le everywhere)</option>

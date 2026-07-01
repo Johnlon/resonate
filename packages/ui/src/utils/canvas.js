@@ -115,8 +115,13 @@ export function drawOne(canvas, plotData, cursorF, readEl, dragRange) {
     ctx.setLineDash([]);
     if (readEl) {
       const ff = f => f >= 100 ? f.toFixed(0) : f.toFixed(1);
-      let html = `<b>${ff(dragRange.fLo)}–${ff(dragRange.fHi)} Hz</b>`;
-      if (dragRange.dy != null) html += `  Δ = <b>${Math.abs(dragRange.dy).toFixed(1)} ${plotData.unit}</b>`;
+      const u = plotData.unit;
+      const st = dragRange.stats;
+      let html = `<b>${ff(dragRange.fLo)} Hz</b> – <b>${ff(dragRange.fHi)} Hz</b>`;
+      if (st) {
+        html += `  ripple <b>${st.ripple.toFixed(1)} ${u}</b>`;
+        html += `<br>peak <b>${st.peak.toFixed(1)} ${u}</b>  trough <b>${st.trough.toFixed(1)} ${u}</b>  Δ <b>${st.ripple.toFixed(1)} ${u}</b>`;
+      }
       readEl.innerHTML = html; readEl.style.display = 'block';
     }
   }
@@ -136,7 +141,7 @@ export function drawOne(canvas, plotData, cursorF, readEl, dragRange) {
       html += ` <span style="color:${s.color}">${fmtVal(y, plotData.unit)}</span>`;
     }
     if (readEl) { readEl.innerHTML = html; readEl.style.display = 'block'; }
-  } else if (readEl) {
+  } else if (readEl && !dragRange) {
     readEl.style.display = 'none';
   }
 

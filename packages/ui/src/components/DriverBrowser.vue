@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed, watch } from 'vue';
 import { state } from '../store.js';
+import HelpTip from './HelpTip.vue';
 import { parseWdr } from '@resonate/engine';
 import sourcesJson from '../../../../drivers/sources.json';
 import bundleJson  from '../drivers-bundle.json';
@@ -12,10 +13,6 @@ const statusMsg   = ref('');
 const statusErr   = ref(false);
 const customUrl   = ref('');
 const initialized = ref(false);
-
-// SpeakerBoxLite opt-in state
-const sblLoaded   = ref(false);
-const sblLoading  = ref(false);
 
 // Source filter
 const selectedSources = ref([]);   // empty = all
@@ -231,7 +228,13 @@ async function fetchSource(src) {
     const branch = src.branch || await ghDefaultBranch(src.repo);
     const r = await fetch(`https://api.github.com/repos/${src.repo}/git/trees/${branch}?recursive=1`);
     if (!r.ok) return;
-    const tree = (await r.json()).tree || [];
+    const result = await r.json();
+    if (result.truncated) {
+      statusErr.value = true;
+      statusMsg.value = `Repo "${src.name}" is too large to list fully. Specify a direct subfolder in the URL — e.g. github.com/${src.repo}/tree/main/drivers — so only that folder is scanned.`;
+      return;
+    }
+    const tree = result.tree || [];
     const base = (src.path || '').replace(/^\/|\/$/g, '');
     const found = tree
       .filter(t => t.type === 'blob' && t.path.toLowerCase().endsWith('.wdr')
@@ -327,63 +330,6 @@ async function init() {
     : 'No drivers loaded — check network';
 }
 
-// ── SpeakerBoxLite opt-in load ───────────────────────────────────────────────
-
-async function loadSpeakerBoxLite() {
-  if (sblLoaded.value || sblLoading.value) return;
-  sblLoading.value = true; statusErr.value = false;
-  const PAGE = 500, base = 'https://speakerboxlite.com/api/v1/speakers';
-
-  // Probe first so we can tell network-block from CORS from real errors.
-  // NOTE: speakerboxlite.com returns Access-Control-Allow-Origin: * on HEAD but NOT on GET.
-  // This is a server-side CORS misconfiguration — the browser blocks the GET response.
-  let countResp;
-  try { countResp = await fetch(base + '/count'); }
-  catch {
-    statusErr.value = true;
-    statusMsg.value = 'speakerboxlite.com CORS error — their API returns Access-Control-Allow-Origin '
-      + 'on HEAD requests but not GET requests, so browsers block it. '
-      + 'This is a bug on their server; nothing can be done client-side.';
-    sblLoading.value = false; return;
-  }
-  if (!countResp.ok) {
-    statusErr.value = true;
-    statusMsg.value = `SpeakerBoxLite: server returned ${countResp.status}`;
-    sblLoading.value = false; return;
-  }
-
-  try {
-    const { count } = await countResp.json();
-    const batches = Math.ceil(count / PAGE);
-    const sblFiles = [];
-    for (let i = 0; i < batches; i++) {
-      statusMsg.value = `SpeakerBoxLite: loading ${Math.min((i+1)*PAGE, count)} / ${count}…`;
-      const rows = await (await fetch(`${base}?offset=${i*PAGE}&limit=${PAGE}`)).json();
-      for (const d of rows) {
-        const SblSd = d.sd_cm2 != null ? d.sd_cm2 / 1e4 : null;
-        const sblName = [d.brand, d.model, d.name].filter(Boolean).join(' ') || 'Unknown';
-        sblFiles.push({
-          path: null, branch: null, repo: null,
-          name: sblName,
-          sourceName: 'SpeakerBoxLite',
-          sourceUrl:  'https://www.speakerboxlite.com/',
-          sourceDesc: 'speakerboxlite.com community database',
-          sblData: d,
-          _Fs: d.fs || null, _Sd: SblSd, _Re: d.re || null, _Znom: null, _Pe: d.pe || null,
-          ...(({ types, canonical }) => ({ _types: types, _canonical: canonical }))(classifyTypes(d.fs, SblSd, sblName, d.driver_type)),
-        });
-      }
-    }
-    allFiles.value = [...allFiles.value.filter(f => f.sourceName !== 'SpeakerBoxLite'), ...sblFiles];
-    sblLoaded.value = true;
-    statusMsg.value = `${allFiles.value.length} drivers total`;
-  } catch (err) {
-    statusErr.value = true;
-    statusMsg.value = 'SpeakerBoxLite load failed mid-stream: ' + err.message;
-  }
-  sblLoading.value = false;
-}
-
 // ── Add custom source ────────────────────────────────────────────────────────
 
 async function loadCustom() {
@@ -396,7 +342,19 @@ async function loadCustom() {
 
 // ── Pick / preview a driver ──────────────────────────────────────────────────
 
-const previewFile = ref(null);
+const previewFile  = ref(null);
+const myDrivers    = ref([]);   // drivers saved by the user to localStorage
+
+const MY_DRIVERS_KEY = 'resonate_my_drivers';
+function reloadMyDrivers() {
+  try { myDrivers.value = JSON.parse(localStorage.getItem(MY_DRIVERS_KEY) || '[]'); }
+  catch { myDrivers.value = []; }
+}
+function deleteMyDriver(name) {
+  const list = myDrivers.value.filter(d => d.name !== name);
+  try { localStorage.setItem(MY_DRIVERS_KEY, JSON.stringify(list)); } catch {}
+  myDrivers.value = list;
+}
 
 // Lightweight WDR parser — returns whatever it finds, never throws
 function parseWdrLoose(content) {
@@ -419,75 +377,76 @@ const previewData = computed(() => {
   if (f.vendorpage && f.vendorpage !== f.manupage) links.push({ href: f.vendorpage, label: 'Vendor page' });
   if (f.frd)       links.push({ href: f.frd,        label: 'FRD / ZMA data' });
 
-  if (f.sblData) {
-    const d = f.sblData;
-    const n = v => (v != null && isFinite(v) && v !== 0) ? v : null;
-    const Fs = n(d.fs), Qes = n(d.qes);
+  if (f.myDriverData) {
+    const d = f.myDriverData;
+    const n = (v, scale = 1) => (v != null && isFinite(v * scale) && v !== 0) ? v * scale : null;
+    const Fs = n(d.Fs), Qes = n(d.Qes);
     return {
-      name: f.name, source: f.sourceName, providedBy: '', links,
+      name: d.name || 'My Driver', source: 'My Drivers', providedBy: '', links,
       specs: [
-        { label: 'Fs',   value: Fs?.toFixed(1),                    unit: 'Hz'   },
-        { label: 'Qts',  value: n(d.qts)?.toFixed(3) },
+        { label: 'Fs',   value: Fs?.toFixed(1),                         unit: 'Hz'  },
+        { label: 'Qts',  value: n(d.Qts)?.toFixed(3) },
         { label: 'Qes',  value: Qes?.toFixed(3) },
-        { label: 'Qms',  value: n(d.qms)?.toFixed(3) },
-        { label: 'Re',   value: n(d.re)?.toFixed(2),               unit: 'Ω'    },
-        { label: 'BL',   value: n(d.bl)?.toFixed(2),               unit: 'T·m'  },
-        { label: 'Vas',  value: n(d.vas_l)?.toFixed(2),            unit: 'L'    },
-        { label: 'Sd',   value: n(d.sd_cm2)?.toFixed(1),           unit: 'cm²'  },
-        { label: 'Xmax', value: n(d.xmax_mm)?.toFixed(1),          unit: 'mm'   },
-        { label: 'Pe',   value: n(d.pe)?.toFixed(0),               unit: 'W'    },
-        { label: 'EBP',  value: (Fs && Qes) ? (Fs/Qes).toFixed(0) : null       },
-        { label: 'Freq', value: f._freqRange ? fmtHz(f._freqRange.lo) + '–' + fmtHz(f._freqRange.hi) : null },
+        { label: 'Qms',  value: n(d.Qms)?.toFixed(3) },
+        { label: 'Re',   value: n(d.Re)?.toFixed(2),                    unit: 'Ω'   },
+        { label: 'Le',   value: d.Le ? (d.Le*1000).toFixed(3) : null,   unit: 'mH'  },
+        { label: 'Vas',  value: d.Vas ? (d.Vas*1000).toFixed(2) : null, unit: 'L'   },
+        { label: 'Sd',   value: d.Sd ? (d.Sd*1e4).toFixed(1) : null,   unit: 'cm²' },
+        { label: 'Xmax', value: d.Xmax ? (d.Xmax*1000).toFixed(1) : null, unit: 'mm' },
+        { label: 'Pe',   value: n(d.Pe)?.toFixed(0),                    unit: 'W'   },
+        { label: 'EBP',  value: (Fs && Qes) ? (Fs/Qes).toFixed(0) : null },
       ].filter(s => s.value != null),
     };
   }
 
   const raw = parseWdrLoose(f.content);
-  const n = k => { const v = parseFloat(raw[k]); return isFinite(v) && v !== 0 ? v : null; };
+  const n   = k => { const v = parseFloat(raw[k]); return isFinite(v) && v !== 0 ? v : null; };
+  const str = k => (raw[k] || '').trim() || null;
   const Fs = n('Fs'), Qes = n('Qes'), Le = n('Le'), Vas = n('Vas'), Sd = n('Sd'), Xmax = n('Xmax');
+  const Mms = n('Mms'), Cms = n('Cms'), Rms = n('Rms'), Vd = n('Vd'), Dia = n('Dia'), noEff = n('no');
   return {
     name: f.name,
     source: f.sourceName,
-    providedBy: raw.ProvidedBy || '',
+    sourceUrl: f.sourceUrl || '',
+    providedBy: str('ProvidedBy'),
+    brand: str('Brand'),
+    model: str('Model'),
+    manufacturer: str('Manufacturer'),
+    notes: str('Comment'),
+    added: str('DateAdded'),
     links,
     specs: [
-      { label: 'Fs',   value: Fs?.toFixed(1),                     unit: 'Hz'   },
-      { label: 'Qts',  value: n('Qts')?.toFixed(3) },
-      { label: 'Qes',  value: Qes?.toFixed(3) },
-      { label: 'Qms',  value: n('Qms')?.toFixed(3) },
-      { label: 'Re',   value: n('Re')?.toFixed(2),                unit: 'Ω'    },
-      { label: 'Znom', value: n('Znom')?.toFixed(0),              unit: 'Ω'    },
-      { label: 'Le',   value: Le ? (Le*1000).toFixed(3) : null,   unit: 'mH'   },
-      { label: 'BL',   value: n('BL')?.toFixed(2),                unit: 'T·m'  },
-      { label: 'Vas',  value: Vas ? (Vas*1000).toFixed(2) : null, unit: 'L'    },
-      { label: 'Sd',   value: Sd ? (Sd*1e4).toFixed(1) : null,   unit: 'cm²'  },
-      { label: 'Xmax', value: Xmax ? (Xmax*1000).toFixed(1):null, unit: 'mm'   },
-      { label: 'Pe',   value: n('Pe')?.toFixed(0),                unit: 'W'    },
-      { label: 'SPL',  value: n('SPL')?.toFixed(1),               unit: 'dB'   },
-      { label: 'Freq', value: f._freqRange ? fmtHz(f._freqRange.lo) + '–' + fmtHz(f._freqRange.hi) : null },
-      { label: 'EBP',  value: (Fs && Qes) ? (Fs/Qes).toFixed(0) : null        },
-    ].filter(s => s.value != null),
+      { label: 'Fs',     value: Fs?.toFixed(1),                       unit: 'Hz'    },
+      { label: 'Qts',    value: n('Qts')?.toFixed(3) },
+      { label: 'Qes',    value: Qes?.toFixed(3) },
+      { label: 'Qms',    value: n('Qms')?.toFixed(3) },
+      { label: 'Re',     value: n('Re')?.toFixed(2),                  unit: 'Ω'     },
+      { label: 'Znom',   value: n('Znom')?.toFixed(0),                unit: 'Ω'     },
+      { label: 'Le',     value: Le  ? (Le*1000).toFixed(3)  : null,   unit: 'mH'    },
+      { label: 'Bl',     value: n('BL')?.toFixed(2),                  unit: 'T·m'   },
+      { label: 'Vas',    value: Vas ? (Vas*1000).toFixed(2) : null,   unit: 'L'     },
+      { label: 'Sd',     value: Sd  ? (Sd*1e4).toFixed(1)   : null,   unit: 'cm²'   },
+      { label: 'Xmax',   value: Xmax? (Xmax*1000).toFixed(1): null,   unit: 'mm'    },
+      { label: 'Pe',     value: n('Pe')?.toFixed(0),                  unit: 'W'     },
+      { label: 'SPL',    value: n('SPL')?.toFixed(1),                 unit: 'dB'    },
+      { label: 'SPLmax', value: n('SPLmax')?.toFixed(1),              unit: 'dB'    },
+      { label: 'Mms',    value: Mms ? (Mms*1000).toFixed(1) : null,   unit: 'g'     },
+      { label: 'Cms',    value: Cms ? (Cms*1000).toFixed(3) : null,   unit: 'mm/N'  },
+      { label: 'Rms',    value: Rms?.toFixed(2),                      unit: 'N·s/m' },
+      { label: 'Vd',     value: Vd  ? (Vd*1e6).toFixed(1)  : null,   unit: 'cm³'   },
+      { label: 'Dia',    value: Dia ? (Dia*1000).toFixed(0) : null,   unit: 'mm'    },
+      { label: 'η₀',     value: noEff ? (noEff*100).toFixed(3): null, unit: '%'     },
+      { label: 'Type',   value: f._canonical && f._canonical !== 'Unclassified' ? f._canonical : null },
+      { label: 'Freq',   value: f._freqRange ? fmtHz(f._freqRange.lo) + '–' + fmtHz(f._freqRange.hi) : null },
+      { label: 'EBP',    value: (Fs && Qes) ? (Fs/Qes).toFixed(0) : null },
+    ].filter(sp => sp.value != null),
   };
 });
 
 async function loadDriver(f) {
-  if (f.sblData) {
-    const d = f.sblData;
-    const raw = {
-      name:  f.name, brand: d.brand || '', model: d.model || '',
-      Fs: d.fs, Qts: d.qts, Qes: d.qes, Qms: d.qms,
-      Vas:  d.vas_l   != null ? d.vas_l   / 1000   : undefined,
-      Sd:   d.sd_cm2  != null ? d.sd_cm2  / 1e4    : undefined,
-      Re:   d.re,
-      Le:   d.le_mh   != null ? d.le_mh   / 1000   : undefined,
-      Bl:   d.bl,
-      Xmax: d.xmax_mm != null ? d.xmax_mm / 1000   : undefined,
-      Mms:  d.mms_g   != null ? d.mms_g   / 1000   : undefined,
-      Cms:  d.cms_mm_n!= null ? 1 / (d.cms_mm_n * 1000) : undefined,
-      Rms:  d.rms, Pe: d.pe,
-    };
-    Object.keys(raw).forEach(k => raw[k] === undefined && delete raw[k]);
-    state.driverRaw = raw;
+  if (f.myDriverData) {
+    state.driverRaw    = { ...f.myDriverData };
+    state.driverSource = { ...f.myDriverData };
     state.browseOpen = false; previewFile.value = null; return;
   }
   if (f.content) {
@@ -498,6 +457,7 @@ async function loadDriver(f) {
     if (f.frd)        d.frdUrl        = f.frd;
     if (f.impedance)  d.impedanceUrl  = f.impedance;
     state.driverRaw = d;
+    state.driverSource = { ...d };
     state.browseOpen = false; previewFile.value = null; return;
   }
   statusErr.value = false; statusMsg.value = 'Loading ' + f.name + '…';
@@ -505,12 +465,12 @@ async function loadDriver(f) {
     const url = `https://raw.githubusercontent.com/${f.repo}/${f.branch}/${f.path.split('/').map(encodeURIComponent).join('/')}`;
     const r = await fetch(url); if (!r.ok) throw new Error('fetch failed (' + r.status + ')');
     state.driverRaw = parseWdr(await r.text());
+    state.driverSource = { ...state.driverRaw };
     state.browseOpen = false; previewFile.value = null;
   } catch(err) { statusErr.value = true; statusMsg.value = 'Could not load: ' + err.message; }
 }
 
 function pickFile(f) {
-  if (state.browseMode === 'select') { loadDriver(f); return; }
   previewFile.value = f;
 }
 
@@ -518,7 +478,10 @@ function openSourceUrl(url) {
   if (url) window.open(url, '_blank', 'noopener');
 }
 
-watch(() => state.browseOpen, val => { if (val) init(); else previewFile.value = null; });
+watch(() => state.browseOpen, val => {
+  if (val) { init(); reloadMyDrivers(); }
+  else previewFile.value = null;
+});
 function close() { state.browseOpen = false; }
 function onBackdrop(e) { if (e.target === e.currentTarget) close(); }
 </script>
@@ -527,7 +490,7 @@ function onBackdrop(e) { if (e.target === e.currentTarget) close(); }
   <div class="overlay" :class="{ on: state.browseOpen }" @click="onBackdrop">
     <div class="modal" v-if="state.browseOpen">
       <h2>
-        {{ state.browseMode === 'select' ? 'Select driver' : (previewFile ? previewData.name : 'Browse driver library') }}
+        {{ previewFile ? previewData.name : 'Driver library' }}
         <span class="x" @click="close" title="Close the driver library browser">&times;</span>
       </h2>
       <div class="body">
@@ -622,11 +585,6 @@ function onBackdrop(e) { if (e.target === e.currentTarget) close(); }
         </div>
         <div class="statusrow">
           <span class="status" :class="{ err: statusErr }">{{ statusMsg }}</span>
-          <button v-if="!sblLoaded" class="sblbtn" :disabled="sblLoading"
-                  title="Load ~6000 drivers from the speakerboxlite.com community database (fetched live)"
-                  @click="loadSpeakerBoxLite">
-            {{ sblLoading ? 'Loading…' : '+ SpeakerBoxLite' }}
-          </button>
         </div>
         </template><!-- end !previewFile controls -->
         <!-- ── Driver summary (browse mode) ── -->
@@ -648,13 +606,45 @@ function onBackdrop(e) { if (e.target === e.currentTarget) close(); }
                  :href="lnk.href" target="_blank" rel="noopener"
                  class="prev-link">{{ lnk.label }} ↗</a>
             </div>
-            <div v-if="previewData.providedBy" class="prev-source">{{ previewData.providedBy }}</div>
-            <div v-else-if="previewData.source" class="prev-source">{{ previewData.source }}</div>
+            <div v-if="previewData.brand || previewData.model || previewData.manufacturer || previewData.notes || previewData.added || previewData.providedBy" class="prev-textinfo">
+              <div v-if="previewData.brand || previewData.model" class="prev-textrow">
+                <span class="prev-src-lbl">Brand / Model</span>
+                {{ [previewData.brand, previewData.model].filter(Boolean).join(' — ') }}
+              </div>
+              <div v-if="previewData.manufacturer" class="prev-textrow">
+                <span class="prev-src-lbl">Manufacturer</span> {{ previewData.manufacturer }}
+              </div>
+              <div v-if="previewData.providedBy" class="prev-textrow">
+                <span class="prev-src-lbl">Measured by</span> {{ previewData.providedBy }}
+              </div>
+              <div v-if="previewData.added" class="prev-textrow">
+                <span class="prev-src-lbl">Date added</span> {{ previewData.added }}
+              </div>
+              <div v-if="previewData.notes" class="prev-textrow prev-notes">
+                <span class="prev-src-lbl">Notes</span> {{ previewData.notes }}
+              </div>
+            </div>
+            <div v-if="previewData.source" class="prev-source">
+              <span class="prev-src-lbl">Source</span>
+              <a v-if="previewData.sourceUrl" :href="previewData.sourceUrl" target="_blank" rel="noopener" :title="previewData.sourceUrl">{{ previewData.source }} ↗</a>
+              <span v-else>{{ previewData.source }}</span>
+            </div>
           </div>
         </div>
 
         <!-- ── Driver list ── -->
         <div v-else class="dlist">
+          <!-- My Drivers -->
+          <template v-if="myDrivers.length">
+            <div class="dlist-section">My Drivers</div>
+            <div v-for="d in myDrivers" :key="d.name + d._savedAt"
+                 class="ditem my-ditem"
+                 @click="pickFile({ name: d.name, myDriverData: d })">
+              <b>{{ d.name }}</b>
+              <button class="my-del" @click.stop="deleteMyDriver(d.name)" title="Remove from My Drivers">✕</button>
+            </div>
+            <div class="dlist-sep"></div>
+          </template>
           <div v-for="f in filteredFiles.slice(0, 5000)" :key="(f.sourceName || '') + (f.path || '') + f.name"
                :class="['ditem', f._isLatest && 'ditem-latest', f._isOlder && 'ditem-older']"
                @click="pickFile(f)">
@@ -685,10 +675,26 @@ function onBackdrop(e) { if (e.target === e.currentTarget) close(); }
           </div>
         </div><!-- end dlist -->
         <div class="addrow">
-          <input v-model="customUrl" placeholder="Add GitHub source: owner/repo or full URL"
-                 @keydown.enter="loadCustom"
-                 title="Load .wdr files from any public GitHub repository and add them to the pool">
-          <button @click="loadCustom" title="Fetch .wdr files from the specified GitHub repository">Add</button>
+          <div class="addrow-label">
+            Add GitHub URL where other WinISD files are found
+            <HelpTip text="Paste a GitHub URL pointing to a folder containing .wdr files — e.g. github.com/owner/repo or github.com/owner/repo/tree/main/subfolder. The drivers load temporarily for this session only and won't be saved." />
+          </div>
+          <div class="addrow-inputs">
+            <input v-model="customUrl" placeholder="github.com/owner/repo or full URL"
+                   @keydown.enter="loadCustom"
+                   title="Load .wdr files from any public GitHub repository">
+            <button @click="loadCustom" title="Fetch .wdr files from the specified GitHub repository">Add</button>
+          </div>
+        </div>
+        <div class="browser-footer">
+          <button @click="state.defineOpen = true; state.browseOpen = false"
+                  title="Define a new driver model from datasheet T/S parameters">
+            Add new Driver
+          </button>
+          <a href="https://speakerboxlite.com/manufacturers/shared" target="_blank" rel="noopener"
+             title="Browse shared WinISD driver files on SpeakerBoxLite">
+            Find more drivers at SpeakerBoxLite.com ↗
+          </a>
         </div>
       </div>
     </div>
@@ -708,8 +714,12 @@ h2 { margin:0; padding:12px 16px; font-size:14px; font-weight:600; display:flex;
 .statusrow { display:flex; align-items:center; gap:8px; }
 .status { font-size:11px; color:var(--mut); flex:1; }
 .status.err { color:#ff6b6b; }
-.sblbtn { font-size:11px; padding:2px 8px; white-space:nowrap; }
 .dlist { flex:1; overflow-y:auto; border:1px solid var(--mut); border-radius:4px; min-height:200px; }
+.dlist-section { padding:4px 10px; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.5px; color:var(--acc2); background:rgba(255,180,84,.07); border-bottom:1px solid var(--line); }
+.dlist-sep { height:1px; background:var(--line); margin:4px 0; }
+.my-ditem { background:rgba(255,180,84,.04); }
+.my-del { flex-shrink:0; background:none; border:none; color:var(--mut); cursor:pointer; padding:0 4px; font-size:12px; line-height:1; min-height:unset; }
+.my-del:hover { color:var(--bad); }
 .ditem { padding:4px 10px; cursor:pointer; font-size:12px; display:flex; justify-content:space-between; align-items:center; gap:6px; }
 .ditem b { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; min-width:0; flex:1; }
 .ditem:hover { background:var(--bg3); }
@@ -725,10 +735,16 @@ h2 { margin:0; padding:12px 16px; font-size:14px; font-weight:600; display:flex;
 .stag { font-size:10px; color:var(--mut); white-space:nowrap; cursor:pointer; }
 .stag:hover { color:var(--acc); text-decoration:underline; }
 .status.loading { padding:8px 10px; }
-.addrow { display:flex; gap:6px; }
-.addrow input { flex:1; padding:4px 8px; font-size:11px; background:var(--bg); border:1px solid var(--mut); border-radius:4px; color:var(--fg); }
-.addrow input:focus { outline:none; border-color:var(--acc); }
-.addrow button { font-size:11px; padding:3px 10px; }
+.addrow { display:flex; flex-direction:column; gap:4px; }
+.addrow-label { font-size:11px; color:var(--mut); display:flex; align-items:center; gap:5px; }
+.addrow-inputs { display:flex; gap:6px; }
+.addrow-inputs input { flex:1; padding:4px 8px; font-size:11px; background:var(--bg); border:1px solid var(--mut); border-radius:4px; color:var(--fg); }
+.addrow-inputs input:focus { outline:none; border-color:var(--acc); }
+.addrow-inputs button { font-size:11px; padding:3px 10px; }
+.browser-footer { display:flex; align-items:center; justify-content:space-between; gap:8px; padding:4px 0 2px; flex-wrap:wrap; }
+.browser-footer a { font-size:11px; color:var(--mut); text-decoration:none; }
+.browser-footer a:hover { color:var(--acc); }
+.browser-footer button { font-size:11px; padding:3px 10px; }
 .src-row { position:relative; }
 .src-wrap { position:relative; display:inline-block; }
 .src-btn { font-size:11px; padding:3px 8px; background:var(--bg); border:1px solid var(--mut); border-radius:4px; color:var(--mut); cursor:pointer; white-space:nowrap; }
@@ -780,5 +796,9 @@ h2 { margin:0; padding:12px 16px; font-size:14px; font-weight:600; display:flex;
 .prev-links { display:flex; flex-direction:column; gap:5px; }
 .prev-link { font-size:12px; color:var(--acc); text-decoration:none; padding:5px 8px; border:1px solid var(--acc); border-radius:4px; }
 .prev-link:hover { background:var(--acc); color:var(--bg); }
-.prev-source { font-size:11px; color:var(--mut); }
+.prev-source { font-size:11px; color:var(--mut); margin-top:2px; }
+.prev-src-lbl { font-weight:600; color:var(--acc2); margin-right:4px; }
+.prev-textinfo { display:flex; flex-direction:column; gap:3px; padding:7px 9px; background:var(--bg); border-radius:4px; border:1px solid var(--line); }
+.prev-textrow { font-size:11px; color:var(--mut); line-height:1.4; }
+.prev-notes { white-space:pre-wrap; }
 </style>

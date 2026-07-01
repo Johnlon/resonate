@@ -1,6 +1,8 @@
 <script setup>
-import { computed } from 'vue';
+import { ref, computed } from 'vue';
 import { state, pinCompare } from '../store.js';
+
+const showHelp = ref(false);
 import { TABS } from '../utils/series.js';
 
 function toggleGraph(id) {
@@ -36,9 +38,6 @@ function toggleLock() {
 
 <template>
   <div class="gtoolbar">
-    <button @click="state.browseMode = 'browse'; state.browseOpen = true"
-            title="Browse the driver library — view specs and datasheets without changing the current design">Browse drivers</button>
-    <span class="sep"></span>
     <span class="lab">Graphs:</span>
     <span v-for="t in TABS" :key="t.id"
           class="gchip" :class="{ on: state.graphs.includes(t.id) }"
@@ -69,7 +68,52 @@ function toggleLock() {
       {{ state.cursorLocked ? '🔒' : '🔓' }}
     </button>
     <button v-if="state.pinnedF" class="nudge-btn" @click="clearPin" title="Clear pinned cursor">✕</button>
+    <span class="sep"></span>
+    <button class="nudge-btn help-btn" @click="showHelp = true" title="Graph interaction guide — hover, click, drag, right-click">Graph help ?</button>
   </div>
+
+  <Teleport to="body">
+    <div v-if="showHelp" class="help-overlay" @click.self="showHelp = false">
+      <div class="help-modal">
+        <div class="help-header">
+          <span>Graph interactions</span>
+          <button class="help-close" @click="showHelp = false" title="Close">✕</button>
+        </div>
+        <table class="help-table">
+          <tbody>
+            <tr>
+              <td class="hk">Hover</td>
+              <td>Crosshair tracks the cursor — the readout (top-right of each graph) shows the frequency and Y value at that point.</td>
+            </tr>
+            <tr>
+              <td class="hk">Click</td>
+              <td>Pins (locks) the cursor at that frequency so it stays put while you adjust settings.</td>
+            </tr>
+            <tr>
+              <td class="hk">Drag</td>
+              <td>Select a frequency range — the readout shows the <b>average</b>, <b>peak</b>, and <b>ripple</b> (peak − trough) of the curve within the band. Useful for checking flatness in a target passband.</td>
+            </tr>
+            <tr>
+              <td class="hk">Right-click</td>
+              <td>Context menu — snap and lock the cursor to the nearest <b>peak</b> or <b>trough</b> to the left or right of the current position.</td>
+            </tr>
+            <tr>
+              <td class="hk">Hz input</td>
+              <td>Type a frequency to jump the cursor there directly.</td>
+            </tr>
+            <tr>
+              <td class="hk">± buttons</td>
+              <td>Nudge the cursor up or down by ~1% (log-uniform step).</td>
+            </tr>
+            <tr>
+              <td class="hk">🔒 / 🔓</td>
+              <td>Toggle cursor lock — locked cursor stays at the pinned frequency; unlocked cursor follows the mouse.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </Teleport>
 </template>
 
 <style scoped>
@@ -95,4 +139,31 @@ function toggleLock() {
 }
 .nudge-btn:hover { color: var(--fg); border-color: var(--fg); }
 .lock-btn.locked { border-color: var(--acc); color: var(--acc); }
+.help-btn { font-weight: 700; }
+
+.help-overlay {
+  position: fixed; inset: 0; background: rgba(0,0,0,.55); z-index: 200;
+  display: flex; align-items: center; justify-content: center;
+}
+.help-modal {
+  background: var(--panel); border: 1px solid var(--line); border-radius: 7px;
+  padding: 18px 22px; max-width: 540px; width: 94vw;
+  box-shadow: 0 8px 32px #0008; font-size: 12px;
+}
+.help-header {
+  display: flex; align-items: center; justify-content: space-between;
+  font-size: 13px; font-weight: 600; color: var(--fg); margin-bottom: 14px;
+}
+.help-close {
+  background: none; border: none; color: var(--mut); font-size: 15px;
+  cursor: pointer; padding: 0 2px; line-height: 1;
+}
+.help-close:hover { color: var(--fg); }
+.help-table { width: 100%; border-collapse: collapse; }
+.help-table tr + tr td { border-top: 1px solid var(--line); }
+.help-table td { padding: 7px 4px; vertical-align: top; color: var(--fg); line-height: 1.45; }
+.hk {
+  white-space: nowrap; font-weight: 600; color: var(--acc2);
+  padding-right: 14px; width: 1%;
+}
 </style>

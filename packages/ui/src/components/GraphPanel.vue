@@ -26,8 +26,7 @@ const effectiveF = computed(() =>
 );
 
 let geoRef = null;
-const dragRange = ref(null); // { fLo, fHi, dy } — set while dragging
-let dragOrigin = null;       // { clientX, f } — set on mousedown
+let dragOrigin = null; // { clientX, f } — set on pointerdown
 
 function freqAt(clientX) {
   if (!geoRef) return null;
@@ -38,31 +37,51 @@ function freqAt(clientX) {
   return Math.pow(10, Math.log10(f0) + frac * (Math.log10(f1) - Math.log10(f0)));
 }
 
-function splNear(f) {
-  const s = plotData.value?.series?.[0]; if (!s) return null;
-  let bi = 0, bd = 1e9;
-  for (let i = 0; i < s.xs.length; i++) { const d = Math.abs(Math.log10(s.xs[i]) - Math.log10(f)); if (d < bd) { bd = d; bi = i; } }
-  return s.ys[bi];
+function rangeStats(fLo, fHi) {
+  const s = plotData.value?.series?.find(s => !s.dash && !s.phantom);
+  if (!s) return null;
+  let peakY = -Infinity, peakF = null, troughY = Infinity, sum = 0, n = 0;
+  for (let i = 0; i < s.xs.length; i++) {
+    if (s.xs[i] < fLo || s.xs[i] > fHi) continue;
+    const y = s.ys[i];
+    if (!isFinite(y)) continue;
+    if (y > peakY) { peakY = y; peakF = s.xs[i]; }
+    if (y < troughY) troughY = y;
+    sum += y; n++;
+  }
+  if (!n) return null;
+  return { peak: peakY, peakF, trough: troughY, ripple: peakY - troughY, avg: sum / n };
 }
+
+// Per-panel view of the shared frequency selection — stats come from this panel's series
+const localDragRange = computed(() => {
+  if (!state.dragRange) return null;
+  const { fLo, fHi } = state.dragRange;
+  return { fLo, fHi, stats: rangeStats(fLo, fHi) };
+});
 
 function redraw() {
-  geoRef = drawOne(canvasEl.value, plotData.value, dragRange.value ? null : effectiveF.value, readEl.value, dragRange.value);
+  geoRef = drawOne(canvasEl.value, plotData.value, localDragRange.value ? null : effectiveF.value, readEl.value, localDragRange.value);
 }
 
-function onMouseDown(e) {
+function onPointerDown(e) {
   if (e.button !== 0 || !geoRef) return;
   const f = freqAt(e.clientX);
-  if (f !== null) dragOrigin = { clientX: e.clientX, f };
+  if (f !== null) {
+    state.dragRange = null; // clear previous selection
+    dragOrigin = { clientX: e.clientX, f };
+    canvasEl.value.setPointerCapture(e.pointerId);
+  }
 }
 
-function onMouseMove(e) {
+function onPointerMove(e) {
+  e.preventDefault(); // prevent scroll/zoom on touch and stylus
   if (dragOrigin && (e.buttons & 1)) {
     if (Math.abs(e.clientX - dragOrigin.clientX) >= 5) {
       const f2 = freqAt(e.clientX);
       if (f2 !== null) {
         const fLo = Math.min(dragOrigin.f, f2), fHi = Math.max(dragOrigin.f, f2);
-        const yLo = splNear(fLo), yHi = splNear(fHi);
-        dragRange.value = { fLo, fHi, dy: (yLo != null && yHi != null) ? yHi - yLo : null };
+        state.dragRange = { fLo, fHi };
         redraw();
       }
       return;
@@ -76,18 +95,24 @@ function onMouseMove(e) {
   state.cursorF = Math.pow(10, Math.log10(f0) + frac * (Math.log10(f1) - Math.log10(f0)));
 }
 
-function onMouseUp(e) {
+function onPointerUp(e) {
   if (!dragOrigin || e.button !== 0) { dragOrigin = null; return; }
   const wasDrag = Math.abs(e.clientX - dragOrigin.clientX) >= 5;
   dragOrigin = null;
-  if (wasDrag) return; // leave dragRange visible; cleared on next mousedown or leave
-  dragRange.value = null;
+  if (wasDrag) return; // leave selection visible; cleared on next pointerdown
+  state.dragRange = null;
   const f = freqAt(e.clientX);
   if (f !== null) { state.pinnedF = f; state.cursorLocked = true; }
 }
 
-function onMouseLeave() {
-  dragOrigin = null; dragRange.value = null;
+function onPointerLeave() {
+  dragOrigin = null;
+  // Don't clear state.dragRange — selection persists across all panels
+  if (!state.cursorLocked) state.cursorF = null;
+}
+
+function onPointerCancel() {
+  dragOrigin = null; state.dragRange = null;
   if (!state.cursorLocked) state.cursorF = null;
 }
 
@@ -153,16 +178,17 @@ onUnmounted(() => {
   document.removeEventListener('click', onDocClick);
 });
 
-watch([plotData, effectiveF], redraw, { flush: 'post' });
+watch([plotData, effectiveF, localDragRange], redraw, { flush: 'post' });
 </script>
 
 <template>
   <div class="gpanel">
     <canvas ref="canvasEl"
-            @mousedown="onMouseDown"
-            @mouseup="onMouseUp"
-            @mousemove="onMouseMove"
-            @mouseleave="onMouseLeave"
+            @pointerdown="onPointerDown"
+            @pointerup="onPointerUp"
+            @pointermove="onPointerMove"
+            @pointerleave="onPointerLeave"
+            @pointercancel="onPointerCancel"
             @contextmenu="onContextMenu" />
     <div class="gtitle">{{ meta.name }}</div>
     <div ref="readEl" class="gread"></div>
@@ -184,6 +210,8 @@ watch([plotData, effectiveF], redraw, { flush: 'post' });
 </template>
 
 <style scoped>
+canvas { touch-action: none; }
+
 .ctx-menu {
   position: fixed;
   z-index: 9999;

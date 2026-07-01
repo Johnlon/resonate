@@ -33,8 +33,10 @@ export const state = reactive({
   cursorF:     null,
   pinnedF:     null,
   cursorLocked: false,
-  browseOpen:  false,
-  browseMode:  'select',   // 'select' = load into project on click | 'browse' = show summary only
+  dragRange:   null,  // { fLo, fHi } — shared frequency selection across all graph panels
+  browseOpen:   false,
+  defineOpen:   false,
+  driverSource: null,  // snapshot of the last driver loaded from the library — used for reset
 });
 
 let _saveTimer = null;
